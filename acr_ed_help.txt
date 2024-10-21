@@ -1,0 +1,54 @@
+acr_ed: Script generator for common dev tasks
+Usage: acr_ed [options]
+    OPTION      TYPE    DFLT    COMMENT
+    -in         string  "data"  Input directory or filename, - for stdin
+    -create                     Create new entity (-finput, -target, -ctype, -field)
+    -del                        Delete mode
+    -rename     string  ""      Rename to something else
+    -finput                     Create in-memory table based on ssimfile
+    -foutput                    Declare field as an output
+    -srcfile    string  ""      Create/Rename/Delete a source file
+    -gstatic                    Like -finput, but data is loaded at compile time
+    -indexed                    (with -finput) Add hash index
+    -target     string  ""      Create/Rename/Delete target
+    -nstype     string  "exe"   (with -create -target): exe,lib,etc.
+    -ctype      string  ""      Create/Rename/Delete ctype
+    -pooltype   string  ""       Pool reftype (Lary,Lpool etc) for finput/ctype
+    -ssimfile   string  ""        Ssimfile for new ctype
+    -subset     string  ""        Primary key is a subset of this ctype
+    -subset2    string  ""        Primary key is also a subset of this ctype
+    -separator  string  "."         Key separator
+    -field      string  ""      Create field
+    -arg        string  ""        Field type (e.g. u32, etc), (with -ctype) add the base field
+    -dflt       string  ""        Field default value
+    -anon                         Anonymous field (use with command lines)
+    -bigend                       Big-endian field
+    -cascdel                      Field is cascdel
+    -before     string  ""        Place field before this one
+    -substr     string  ""        New field is a substring
+    -alias                      Create alias field (requires -srcfield)
+    -srcfield   string  ""        Source field for bitfld/substr
+    -fstep      string  ""        Add fstep record
+    -inscond    string  "true"    Insert condition (for xref)
+    -reftype    string  ""        Reftype (e.g. Val, Thash, Llist, etc)
+    -hashfld    string  ""          (-reftype:Thash) Hash field
+    -sortfld    string  ""          (-reftype:Bheap) Sort field
+    -unittest   string  ""      Create unit test, <ns>.<functionname>
+    -citest     string  ""      Create CI test
+    -cppfunc    string  ""      Field is a cppfunc, pass c++ expression as argument
+    -xref                           X-ref with field type
+    -via        string  ""            X-ref argument (index, pointer, or index/key)
+    -write                      Commit output to disk
+    -e                           (with -create -unittest) Edit new testcase
+    -comment    string  ""      Comment for new entity
+    -sandbox                    Make changes in sandbox
+    -test                       Build resulting changes, run tests
+    -showcpp                    (With -sandbox), show resulting diff
+    -msgtype    string  ""      (with -ctype) use this msgtype as type
+    -anonfld                    Create anonfld
+    -verbose    int             Verbosity level (0..255); alias -v; cumulative
+    -debug      int             Debug level (0..255); alias -d; cumulative
+    -help                       Print help and exit; alias -h
+    -version                    Print version and exit
+    -signature                  Show signatures and exit; alias -sig
+

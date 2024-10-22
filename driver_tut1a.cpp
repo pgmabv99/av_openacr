@@ -85,5 +85,5 @@ void samp_tut1a::Main() {
     // but they aren't attached to any project
     Show();
 
-    prlog("av done33")
+    prlog("av done7")
 }

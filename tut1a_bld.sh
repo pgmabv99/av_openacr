@@ -3,7 +3,7 @@ set -x
 cd $HOME/openacr
 
 echo "delete all" 
-rm bin/samp_tut1a
+# rm bin/samp_tut1a
 acr_ed -delete -target samp_tut1a -write
 
 acr_ed -create -target samp_tut1a -write
@@ -23,6 +23,6 @@ acr_ed -create -field samp_tut1a.Proj.zd_partproj -cascdel -write -comment "List
 # exit 0
 
 cat cpp/samp_tut1a/samp_tut1a.cpp  
-cp ~/openacrav/samp_tut1a.cpp cpp/samp_tut1a/samp_tut1a.cpp
+cp ~/openacrav/driver_tut1a.cpp cpp/samp_tut1a/samp_tut1a.cpp
 ai samp_tut1a 
 samp_tut1a

@@ -1,0 +1,51 @@
+Vladimir Parizhsky
+2:54 PM
+acr tool_opt
+Vladimir Parizhsky
+2:56 PM
+acr tool_opt:%over% | grep stringop
+acr tool_opt | grep stringop
+Vladimir Parizhsky
+3:06 PM
+gcache -h
+Vladimir Parizhsky
+3:13 PM
+prlog(Keyval("a","b"));
+Vladimir Parizhsky
+3:22 PM
+acr ctype:samp_tut1.Proj
+Vladimir Parizhsky
+3:23 PM
+acr ctype:samp_%
+Vladimir Parizhsky
+3:25 PM
+acr ctype:samp_tut1a.Part -t
+Vladimir Parizhsky
+3:27 PM
+grep samp_tut1a -R data/
+Vladimir Parizhsky
+3:32 PM
+$ acr -check
+acr -check -write
+Vladimir Parizhsky
+3:33 PM
+git diff master data/dmmeta/ctype.ssim
+Vladimir Parizhsky
+3:43 PM
+acr target:samp_tuta1 -t
+Vladimir Parizhsky
+3:52 PM
+struct_CopyPut()
+part_CopyOut(part,part_out);
+samp_tut1a::Part part_out;
+prlog(part_out);
+Vladimir Parizhsky
+3:53 PM
+samp_tut1a | acr -replace -write
+ns.table table:value ket:value
+Vladimir Parizhsky
+3:55 PM
+samp_tut1a.part part:kuku | acr -replace -write
+Vladimir Parizhsky
+3:57 PM
+acr finput

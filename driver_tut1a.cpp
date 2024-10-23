@@ -44,6 +44,7 @@ static void Show() {
         prlog("  part "<<part.part);
         if (samp_tut1a::Partproj *partproj = part.c_partproj) {
             prlog("    has project "<<partproj->p_proj->proj);
+            prlog(Keyval("    has part ", partproj->p_part->part));
         }
     }ind_end;
     prlog("");
@@ -85,5 +86,5 @@ void samp_tut1a::Main() {
     // but they aren't attached to any project
     Show();
 
-    prlog("av done7")
+    prlog("av done8")
 }

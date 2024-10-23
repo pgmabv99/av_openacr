@@ -4,7 +4,7 @@ cd $HOME/openacr
 
 echo "delete all" 
 # rm bin/samp_tut1a
-acr_ed -delete -target samp_tut1a -write
+# acr_ed -delete -target samp_tut1a -write
 
 acr_ed -create -target samp_tut1a -write
 acr_ed -create -ctype samp_tut1a.Proj -pooltype Tpool -indexed -write

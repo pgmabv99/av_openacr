@@ -37,16 +37,17 @@ static void Show() {
         prlog("  project "<<proj.proj);
         ind_beg(samp_tut1a::proj_zd_partproj_curs,partproj,proj) {
             prlog("    has part "<<partproj.p_part->part);
+            prlog("    has myi32 "<<partproj.p_part->myi32);
         }ind_end
     }ind_end;
-    prlog("list of parts and their projects");
-    ind_beg(samp_tut1a::_db_zd_part_curs,part,samp_tut1a::_db) {
-        prlog("  part "<<part.part);
-        if (samp_tut1a::Partproj *partproj = part.c_partproj) {
-            prlog("    has project "<<partproj->p_proj->proj);
-            prlog(Keyval("    has part ", partproj->p_part->part));
-        }
-    }ind_end;
+    // prlog("list of parts and their projects");
+    // ind_beg(samp_tut1a::_db_zd_part_curs,part,samp_tut1a::_db) {
+    //     prlog("  part "<<part.part);
+    //     if (samp_tut1a::Partproj *partproj = part.c_partproj) {
+    //         prlog("    has project "<<partproj->p_proj->proj);
+    //         prlog(Keyval("    has part ", partproj->p_part->part));
+    //     }
+    // }ind_end;
     prlog("");
 }
 

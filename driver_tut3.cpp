@@ -27,6 +27,17 @@ void samp_tut3::zd_value_Step() {
     value_Delete(value);
 }
 
+void samp_tut3::update_Step() {
+    int num=algo::get_cycles() % 10;
+    if (Value *value=ind_value_Find(num)) {
+        prlog("deleted "<<value->value);
+        value_Delete(*value);
+    }
+    if (ind_value_N()==0) {
+        _db.update=false;
+    }
+}
+
 void samp_tut3::Main() {
     for (int i=0; i < 10; i++) {
         Value &value=value_Alloc();

@@ -15,8 +15,10 @@ echo "mynsdb.orders orders:order2 amt:20" | acr -replace -write
 
 echo "create program"
 acr_ed -create -target:myns -write
+acr_ed -create -ctype myns.Orders -pooltype Tpool -indexed -write
+acr_ed -create -field myns.Orders.amt -arg i32 -write -comment "amount of order"
+
 acr_ed -create -field myns.FDb.zd_orders -write -comment "List of all orders"
-# acr_ed -del -field myns.FDb.zd_orders -write -comment "List of all orders"
 acr_ed -create -finput -target:myns -ssimfile:mynsdb.orders -write
 acr_ed -create -foutput -target:myns -ssimfile:mynsdb.orders -write
 

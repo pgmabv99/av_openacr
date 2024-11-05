@@ -24,20 +24,41 @@
 
 void myns::Main()
 {
-    prlog("Hello, World!");
-    prlog("list of ");
-    ind_beg(myns::_db_orders_curs, order, myns::_db)
+    prlog("manual creation of orders");
+
+    myns::Orders &order14 = myns::ind_orders_GetOrCreate("order14");
+    order14.amt = 14;
+    prlog("order inserted in memory " << order14.orders << " amt " << order14.amt);
+    myns::Orders &order16  = myns::ind_orders_GetOrCreate("order16");
+    order16.amt = 16;
+    prlog("order inserted in memory " << order16.orders << " amt " << order16.amt);
+    prlog("==delete order16");
+    orders_Delete(order16);
+    
+    prlog("==scan  ");
+    ind_beg(myns::_db_zd_orders_curs, order, myns::_db)
     {
         prlog(Keyval("order", order.orders));
         prlog(Keyval("amount", order.amt));
-        if (order.amt > 15) {
-            // orders(order);
-            // prlog("deleted order");
-            order.amt +=1000;
+
+    }
+    ind_end;
+    
+    prlog("==scan list and update ");
+        ind_beg(myns::_db_zd_orders_curs, order, myns::_db)
+    {
+        prlog(Keyval("order", order.orders));
+        prlog(Keyval("amount", order.amt));
+        if (order.amt < 15) {
+            prlog("deleting  order " << order.orders);
+            orders_Delete(order);
+        } else {
             prlog("adding 1000 to order -> " << order.amt);
+            order.amt +=1000;
         }
 
     }
     ind_end;
+
     myns::MainLoop();
 }

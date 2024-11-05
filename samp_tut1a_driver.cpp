@@ -1,4 +1,5 @@
 //
+// License: GPL
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -14,7 +15,7 @@
 //
 // Target: samp_tut1a (exe)
 // Exceptions: yes
-// Source: cpp/samp_tut1a.cpp
+// Source: cpp/samp_tut1a/samp_tut1a.cpp
 //
 
 #include "include/algo.h"

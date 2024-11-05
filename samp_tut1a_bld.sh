@@ -22,7 +22,3 @@ acr_ed -create -field samp_tut1a.FDb.zd_proj -write -comment "List of all projec
 
 acr_ed -create -field samp_tut1a.Part.c_partproj -reftype Ptr -cascdel -write -comment "List of projects by part"
 acr_ed -create -field samp_tut1a.Proj.zd_partproj -cascdel -write -comment "List of parts by project"
-# exit 0
-cp /home/pgmabv/openacrav/driver_tut1a.cpp cpp/samp_tut1a/samp_tut1a.cpp
-ai samp_tut1a 
-samp_tut1a

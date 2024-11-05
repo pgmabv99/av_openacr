@@ -13,23 +13,31 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
-// Target: samp_tut1a (exe)
+// Target: myns (exe)
 // Exceptions: yes
-// Header: include/samp_tut1a.h
+// Source: cpp/myns/myns.cpp
 //
 
-#include "include/gen/samp_tut1a_gen.h"
-#include "include/gen/samp_tut1a_gen.inl.h"
+#include "include/algo.h"
+#include "include/algo.h"
+#include "include/myns.h"
 
-namespace samp_tut1a { // update-hdr
-    // Dear human:
-    //     Text from here to the closing curly brace was produced by scanning
-    //     source files. Editing this text is futile.
-    //     To refresh the contents of this section, run 'update-hdr'.
-    //     To convert this section to a hand-written section, remove the word 'update-hdr' from namespace line.
+void myns::Main()
+{
+    prlog("Hello, World!");
+    prlog("list of ");
+    ind_beg(myns::_db_orders_curs, order, myns::_db)
+    {
+        prlog(Keyval("order", order.orders));
+        prlog(Keyval("amount", order.amt));
+        if (order.amt > 15) {
+            // orders(order);
+            // prlog("deleted order");
+            order.amt +=1000;
+            prlog("adding 1000 to order -> " << order.amt);
+        }
 
-    // -------------------------------------------------------------------
-    // cpp/samp_tut1a/samp_tut1a.cpp
-    //
-    void Main();
+    }
+    ind_end;
+    myns::MainLoop();
 }

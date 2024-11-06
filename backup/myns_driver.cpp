@@ -41,6 +41,8 @@ namespace myns
     } mcb_t;
     void scan();
     void load_data(mcb_t* mcb);
+    i32 av_delete_test(mcb_t* mcb);
+    void test_scan_update();
 }
 
 void myns::scan()
@@ -50,6 +52,30 @@ void myns::scan()
     {
         prlog(Keyval("order", order.orders)<<Keyval("amount", order.amt));
 
+    }
+    ind_end;
+}
+
+i32 myns::av_delete_test(myns::mcb_t *mcb)
+{
+    auto iorder = 2;
+    prlog("==delete order " << iorder);
+    prlog("==delete order name " << mcb->order_data[iorder].name);
+    myns::Orders *order2 = mcb->order_data[iorder].order;
+    prlog("==delete order name " << order2->orders);
+    orders_Delete(*order2);
+    return 0;
+}
+
+void myns::test_scan_update(){
+    prlog("==scan list and update ");
+    ind_beg(myns::_db_zd_orders_curs, order, myns::_db)
+    {
+        prlog(Keyval("order", order.orders)<<Keyval("amount", order.amt));;
+        if (order.amt < 2) {
+            prlog("adding 1000 to  " << Keyval("Order",order.orders));
+            order.amt +=1000;
+        }
     }
     ind_end;
 }
@@ -92,6 +118,8 @@ void myns::load_data(myns::mcb_t* mcb)
         };
     }
 }
+
+// =================
 void myns::Main()
 {
     prlog("manual creation and deletion of orders");
@@ -99,30 +127,13 @@ void myns::Main()
     myns::mcb_t *mcb = (myns::mcb_t *)calloc(1, sizeof(mcb_t));
 
     myns::load_data(mcb);
-     
     myns::scan();
-
-    auto  iorder=2;
-    prlog("==delete order "<<iorder);
-    prlog("==delete order name "<<mcb->order_data[iorder].name);
-    myns::Orders* order2= mcb->order_data[iorder].order;
-    orders_Delete(*order2);
-    
+    myns::av_delete_test(mcb);
     myns::scan();
     
-    prlog("==scan list and update ");
-        ind_beg(myns::_db_zd_orders_curs, order, myns::_db)
-    {
-        prlog(Keyval("order", order.orders)<<Keyval("amount", order.amt));;
-        if (order.amt < 2) {
-            prlog("adding 1000 to  " << Keyval("Order",order.orders));
-            order.amt +=1000;
-        }
-    }
-    ind_end;
-
+    myns::test_scan_update();
     myns::scan();
 
     myns::MainLoop();
-    prlog("==done 17");
+    prlog("==done 21");
 }

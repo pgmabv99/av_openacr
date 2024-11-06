@@ -98,14 +98,9 @@ void myns::load_data(myns::mcb_t* mcb)
     mcb->order_data = (myns::order_data_t *)calloc(N_ORDERS, sizeof(myns::order_data_t));
     for (int i = 0; i < N_ORDERS; i++)
     {
-        std::string  tmpstr ="order"+std::to_string(i);
-        char tmpchr[100] ;
-        strcpy(tmpchr,tmpstr.c_str());
-        // rely on Smallstr50 to clip the char array
-        mcb->order_data[i].name =tmpchr;
-
-        // no constructor for Smallstr50 to take string
-        // mcb->order_data[i].name =algo::strptr(tmpstr);
+        cstring tmpcstr;
+        tmpcstr << "order" << i;
+        mcb->order_data[i].name = tmpcstr;
         mcb->order_data[i].amt = i*10;
 
         mcb->order_data[i].order = nullptr;
@@ -130,25 +125,25 @@ void myns::load_data(myns::mcb_t* mcb)
     }
 }
 
-void test_save()
-{
-    // cstring text;
-    // ind_beg(amc::_db_tracefld_curs, tracefld, amc::_db) {
-    //     dmmeta::Tracefld out;
-    //     tracefld_CopyOut(tracefld, out);
-    //     dmmeta::Tracefld_Print(out, text);
-    //     text << eol;
-    // }ind_end;
-    cstring text("");
-    ind_beg(myns::_db_zd_orders_curs, temp, myns::_db) {
-        myns::Orders out;
-        myns::orders_CopyOut(temp, out);
-        myns:orders_Print(out, text);
-        text << eol;
-    }ind_end;
-   prlog(text);
-   myns::SaveTuples();
-}
+// void test_save()
+// {
+//     // cstring text;
+//     // ind_beg(amc::_db_tracefld_curs, tracefld, amc::_db) {
+//     //     dmmeta::Tracefld out;
+//     //     tracefld_CopyOut(tracefld, out);
+//     //     dmmeta::Tracefld_Print(out, text);
+//     //     text << eol;
+//     // }ind_end;
+//     cstring text("");
+//     ind_beg(myns::_db_zd_orders_curs, temp, myns::_db) {
+//         myns::Orders out;
+//         myns::orders_CopyOut(temp, out);
+//         myns:orders_Print(out, text);
+//         text << eol;
+//     }ind_end;
+//    prlog(text);
+//    myns::SaveTuples();
+// }
 // =================
 void myns::Main()
 {
@@ -169,5 +164,6 @@ void myns::Main()
     myns::scan(mcb);
 
     myns::MainLoop();
-    prlog("==done 23");
+    prlog("==done 25");
 }
+

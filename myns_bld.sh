@@ -11,8 +11,8 @@ echo "create db"
 acr_ed -create -target:mynsdb  -nstype:ssimdb -write
 acr_ed -create  -ssimfile:mynsdb.orders -write
 acr_ed -create -field mynsdb.Orders.amt -arg i32 -write -comment "amount of order"
-echo "mynsdb.orders orders:order1 amt:10" | acr -replace -write
-echo "mynsdb.orders orders:order2 amt:20" | acr -replace -write
+echo "mynsdb.orders orders:order98 amt:980" | acr -replace -write
+echo "mynsdb.orders orders:order99 amt:990" | acr -replace -write
 
 echo "create program"
 acr_ed -create -target:myns -write

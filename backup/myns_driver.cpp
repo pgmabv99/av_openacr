@@ -22,6 +22,7 @@
 #include "include/algo.h"
 #include "include/myns.h"
 #include <string>
+#include <cstring>
 
 namespace myns
 {
@@ -29,8 +30,8 @@ namespace myns
     typedef struct
     {
         // std::string name;
-        // algo::Smallstr50 name;
-        const char *name;
+        algo::Smallstr50 name;
+        // const char *name;
         int amt;
         myns::Orders *order;
     } order_data_t;
@@ -55,26 +56,28 @@ void myns::scan()
 
 void myns::load_data(myns::mcb_t* mcb)
 {
-    myns::Orders *order = nullptr;
-    #define N_ORDERS 4
+    prlog("==generate data (exercize in char vs str vs Smallstr) ");
+    #define N_ORDERS 3
     mcb->order_data = (myns::order_data_t *)calloc(N_ORDERS, sizeof(myns::order_data_t));
     for (int i = 0; i < N_ORDERS; i++)
-    // {
-    //     mcb->order_data[i].order = nullptr;
-    //     // std::string order_name = "order" + std::to_string(i);
-    //     // mcb->order_data[i].name = order_name.c_str();
-    //     // mcb->order_data[i].name = algo::Smallstr50("order" + std::to_string(i));
-    //     mcb->order_data[i].name = algo::Smallstr50(std::string("order")) ;
-    //     mcb->order_data[i].amt = i*10;
-    // }
-    mcb->order_data[0] = {"order0", 0};
-    mcb->order_data[1] = {"order1", 10};
-    mcb->order_data[2] = {"order2", 20};
-    mcb->order_data[3] = {"order3", 30};
+    {
+        std::string  tmpstr ="order"+std::to_string(i);
+        char tmpchr[100] ;
+        strcpy(tmpchr,tmpstr.c_str());
+        // rely on Smallstr50 to clip the char array
+        mcb->order_data[i].name =tmpchr;
 
+        // no constructor for Smallstr50 to take string
+        // mcb->order_data[i].name =algo::strptr(tmpstr);
+        mcb->order_data[i].amt = i*10;
+
+        mcb->order_data[i].order = nullptr;
+    }
+
+    // load into acr
     for (long unsigned int i = 0; i < N_ORDERS; i++)
     {
-        order = &orders_Alloc();
+        myns::Orders *order = &orders_Alloc();
         if (!orders_XrefMaybe(*order))
         {
             orders_Delete(*order);
@@ -99,28 +102,27 @@ void myns::Main()
      
     myns::scan();
 
-    auto  iorder=3-1;
+    auto  iorder=2;
     prlog("==delete order "<<iorder);
     prlog("==delete order name "<<mcb->order_data[iorder].name);
-    myns::Orders* order= mcb->order_data[iorder].order;
-    orders_Delete(*order);
+    myns::Orders* order2= mcb->order_data[iorder].order;
+    orders_Delete(*order2);
     
     myns::scan();
     
-    // prlog("==scan list and update ");
-    //     ind_beg(myns::_db_zd_orders_curs, order, myns::_db)
-    // {
-    //     prlog(Keyval("order", order.orders)<<Keyval("amount", order.amt));;
-    //     if (order.amt < 15) {
-    //         prlog("deleting  order " << order.orders);
-    //         orders_Delete(order);
-    //     } else {
-    //         prlog("adding 1000 to order -> " << order.amt);
-    //         order.amt +=1000;
-    //     }
+    prlog("==scan list and update ");
+        ind_beg(myns::_db_zd_orders_curs, order, myns::_db)
+    {
+        prlog(Keyval("order", order.orders)<<Keyval("amount", order.amt));;
+        if (order.amt < 2) {
+            prlog("adding 1000 to  " << Keyval("Order",order.orders));
+            order.amt +=1000;
+        }
+    }
+    ind_end;
 
-    // }
-    // ind_end;
+    myns::scan();
 
     myns::MainLoop();
+    prlog("==done 17");
 }

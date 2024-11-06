@@ -2,7 +2,8 @@
 set -x
 cd $HOME/openacr
 
-rm bin/myns
+# save the driver cpp as the genration creates a new one
+cp  cpp/myns/myns.cpp ~/openacrav/backup/myns_driver.cpp
 acr_ed -del -nstype:ssimdb  -target:mynsdb  -write
 acr_ed -del -target:myns -write
 
@@ -23,4 +24,9 @@ acr_ed -create -finput -target:myns -ssimfile:mynsdb.orders -write
 acr_ed -create -foutput -target:myns -ssimfile:mynsdb.orders -write
 
 acr dmmeta.ctype:myns%.%
-acr dmmeta.field:myns%.%  
+acr dmmeta.field:myns%.% 
+
+cat cpp/myns/myns.cpp
+
+# restore the driver cpp
+cp  ~/openacrav/backup/myns_driver.cpp cpp/myns/myns.cpp 

@@ -21,7 +21,7 @@ acr_ed -create -field myns.Orders.amt -arg i32 -write -comment "amount of order"
 
 acr_ed -create -field myns.FDb.zd_orders -write -comment "List of all orders"
 acr_ed -create -finput -target:myns -ssimfile:mynsdb.orders -write
-acr_ed -create -foutput -target:myns -ssimfile:mynsdb.orders -write
+# acr_ed -create -foutput -target:myns -ssimfile:mynsdb.orders -write
 
 acr dmmeta.ctype:myns%.%
 acr dmmeta.field:myns%.% 

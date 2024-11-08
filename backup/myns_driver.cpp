@@ -23,6 +23,7 @@
 #include "include/myns.h"
 #include <string>
 #include <cstring>
+#include <vector>
 
 namespace myns
 {
@@ -46,7 +47,7 @@ namespace myns
         //       private:
     private:
         algo::Smallstr50 eyecatcher;
-        order_data_t *order_data;
+        std::vector<order_data_t> order_data;
     };
 }
 
@@ -55,14 +56,14 @@ myns::mcb_t::mcb_t()
 {
     eyecatcher = "mcb_t";
     prlog("create instance " << eyecatcher);
-    order_data = (myns::order_data_t *)calloc(N_ORDERS, sizeof(myns::order_data_t));
+    order_data.resize(N_ORDERS);
+
 }
 
 // destructor
 myns::mcb_t::~mcb_t()
 {
     prlog("destroy instance " << eyecatcher);
-    free(order_data);
 }
 
 void myns::mcb_t::scan()

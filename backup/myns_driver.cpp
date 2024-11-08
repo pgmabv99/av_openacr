@@ -33,96 +33,128 @@ namespace myns
         algo::Smallstr50 name;
         // const char *name;
         int amt;
-        myns::Orders *order;
+        myns::Orders *order_obj;
     } order_data_t;
     typedef struct
     {
         order_data_t *order_data;
     } mcb_t;
-    void scan(mcb_t* mcb);
-    void load_data(mcb_t* mcb);
-    i32 delete_test_by_obj(mcb_t* mcb);
-    i32 delete_test_by_key(mcb_t* mcb);
+    void scan(mcb_t *mcb);
+    void load_data(mcb_t *mcb);
+    i32 delete_test_by_obj(mcb_t *mcb);
+    i32 test_delete_update(mcb_t *mcb);
     void test_save();
     void test_scan_update();
 }
 
-void myns::scan(myns::mcb_t* mcb)
+void myns::scan(myns::mcb_t *mcb)
 {
     (void)mcb;
     prlog("==scan  ");
     ind_beg(myns::_db_zd_orders_curs, order, myns::_db)
     {
-        prlog(Keyval("order", order.orders)<<Keyval("amount", order.amt));
-
+        prlog(Keyval("order", order.orders) << Keyval("amount", order.amt));
     }
     ind_end;
 }
 
-i32 myns::delete_test_by_obj(myns::mcb_t *mcb)
+
+i32 myns::test_delete_update(myns::mcb_t *mcb)
 {
+    // delete by obj
+    algo::Smallstr50 order_key;
+    myns::Orders *order_obj;
+
     auto iorder = 2;
-    myns::Orders *order2 = mcb->order_data[iorder].order;
-    prlog("==delete by obj  : " << order2->orders);
-    orders_Delete(*order2);
-    return 0;
-}
-
-i32 myns::delete_test_by_key(myns::mcb_t *mcb)
-{
-    (void)mcb;
-    algo::Smallstr50 order_key ("order3");
-    prlog("==find and delete  by key : " << order_key);
-    myns::Orders *order_obj= myns::ind_orders_Find(order_key);
-    orders_Delete(*order_obj);
-    return 0;
-}
-
-void myns::test_scan_update(){
-    prlog("==scan list and update ");
-    ind_beg(myns::_db_zd_orders_curs, order, myns::_db)
+    order_obj= mcb->order_data[iorder].order_obj;
+    // prlog("==delete by obj  : " << order_obj->orders);
+    // if (order_obj)
+    // {
+    //     orders_Delete(*order_obj);
+    //     prlog("order deleted");
+    // }
+    // else
+    // {
+    //     prlog("order not found");
+    // }
+    
+    order_key = "order1";    //hash found. 
+    // order_key = "order4"; //hash not found. ind=7
+    prlog("==find and update  by key : " << order_key);
+    order_obj = myns::ind_orders_Find(order_key);
+    if (order_obj)
     {
-        prlog(Keyval("order", order.orders)<<Keyval("amount", order.amt));;
-        if (order.amt < 2) {
-            prlog("adding 1000 to  " << Keyval("Order",order.orders));
-            order.amt +=1000;
-        }
+        order_obj->amt += 1000;
+        prlog("order updated");
     }
-    ind_end;
+    else
+    {
+        prlog("order not found");
+    }
+
+    // order_key = "order4";
+    // prlog("==find and delete  by key : " << order_key);
+    // order_obj = myns::ind_orders_Find(order_key);
+    // if (order_obj)
+    // {
+    //     orders_Delete(*order_obj);
+    //     prlog("order deleted");
+    // }
+    // else
+    // {
+    //     prlog("order not found");
+    // }
+
+    return 0;
 }
 
-void myns::load_data(myns::mcb_t* mcb)
+void myns::test_scan_update()
+{
+    // prlog("==scan list and update ");
+    // ind_beg(myns::_db_zd_orders_curs, order, myns::_db)
+    // {
+    //     prlog(Keyval("order", order.orders) << Keyval("amount", order.amt));
+    //     ;
+    //     if (order.amt < 2)
+    //     {
+    //         prlog("adding 1000 to  " << Keyval("Order", order.orders));
+    //         order.amt += 1000;
+    //     }
+    // }
+    // ind_end;
+}
+
+void myns::load_data(myns::mcb_t *mcb)
 {
     prlog("==generate data (exercize in char vs str vs Smallstr) ");
-    #define N_ORDERS 5
+#define N_ORDERS 5
     mcb->order_data = (myns::order_data_t *)calloc(N_ORDERS, sizeof(myns::order_data_t));
     for (int i = 0; i < N_ORDERS; i++)
     {
         cstring tmpcstr;
         tmpcstr << "order" << i;
         mcb->order_data[i].name = tmpcstr;
-        mcb->order_data[i].amt = i*10;
+        mcb->order_data[i].amt = i * 10;
 
-        mcb->order_data[i].order = nullptr;
+        mcb->order_data[i].order_obj = nullptr;
     }
 
     prlog("==load data into acr  ");
     for (long unsigned int i = 0; i < N_ORDERS; i++)
     {
-        myns::Orders *order = &orders_Alloc();
-        if (!orders_XrefMaybe(*order))
+        myns::Orders *order_obj = &orders_Alloc();
+        if (orders_XrefMaybe(*order_obj))
         {
-            orders_Delete(*order);
-            order = NULL;
+            order_obj->orders = mcb->order_data[i].name;
+            order_obj->amt = mcb->order_data[i].amt;
+            mcb->order_data[i].order_obj = order_obj;
+            // prlog("order inserted in memory " << order_obj->orders << " amt " << order_obj->amt);
         }
         else
         {
-            order->orders = mcb->order_data[i].name;
-            order->amt = mcb->order_data[i].amt;
-            mcb->order_data[i].order = order;
-            // prlog("order inserted in memory " << order->orders << " amt " << order->amt);
+            orders_Delete(*order_obj);
         };
-    }
+    };
 }
 
 // void test_save()
@@ -154,16 +186,13 @@ void myns::Main()
     myns::load_data(mcb);
     myns::scan(mcb);
 
-    myns::delete_test_by_obj(mcb);
+
+    myns::test_delete_update(mcb);
     myns::scan(mcb);
 
-    myns::delete_test_by_key(mcb);
-    myns::scan(mcb);
-    
-    myns::test_scan_update();
-    myns::scan(mcb);
+    // myns::test_scan_update();
+    // myns::scan(mcb);
 
     myns::MainLoop();
-    prlog("==done 25");
+    prlog("==done 26");
 }
-

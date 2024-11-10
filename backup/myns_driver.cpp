@@ -80,7 +80,7 @@ void  myns::mcb_t::test_delete_update()
 {
     // delete by obj
     algo::Smallstr50 order_key;
-    myns::Orders *order_obj;
+    myns::FOrders *order_obj;
 
     auto iorder = 2;
     order_obj = order_data[iorder].order_obj;

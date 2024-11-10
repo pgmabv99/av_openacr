@@ -32,7 +32,7 @@ namespace myns
     {
         algo::Smallstr50 order_key;
         int amt;
-        myns::Orders *order_obj;
+        myns::FOrders *order_obj;
     } order_data_t;
 
     class mcb_t
@@ -140,7 +140,7 @@ void myns::mcb_t::load_data()
     prlog("==load data into acr  ");
     for (int i = 0; i < N_ORDERS; i++)
     {
-        myns::Orders *order_obj = &orders_Alloc();
+        myns::FOrders *order_obj = &orders_Alloc();
         // this has to be set before calling orders_XrefMaybe
         order_obj->orders = order_data[i].order_key;
         if (orders_XrefMaybe(*order_obj))
@@ -152,8 +152,8 @@ void myns::mcb_t::load_data()
         else
         {
 
-            prlog("order not inserted in memory with xref " << order_obj->orders << " amt " << order_obj->amt);
-            orders_Delete(*order_obj);
+            // prlog("order not inserted in memory with xref " << order_obj->orders << " amt " << order_obj->amt);
+            // orders_Delete(*order_obj);
         };
     };
 }

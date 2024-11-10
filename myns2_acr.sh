@@ -27,12 +27,13 @@ echo "mynsdb.orders orders:order99 amt:990" | acr -replace -write
  
 echo "==============create program and inherit from db"
 acr_ed -create -target:myns -write
-junk
 echo  "create struct Forder inherited from -ssimfile:mynsdb.orders " 
 acr_ed -create -finput -target:myns -ssimfile:mynsdb.orders -write
 
 echo "create iterator for Forder"
 acr_ed -create -field myns.FDb.zd_orders -write -comment "List of all orders"
+echo "create index  for Forder"
+acr_ed -create -field myns.FDb.ind_orders -reftype:Thash -write -comment "index of orders"
 
 acr dmmeta.ctype:myns%.%
 acr dmmeta.field:myns%.% 

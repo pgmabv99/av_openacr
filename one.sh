@@ -19,8 +19,10 @@ else
     echo "File cpp/myns/myns.cpp does not exist."
 fi
 
+acr_ed -create -foutput -target:myns -ssimfile:mynsdb.orders -write
+
 # grep -r --include="*.md" "-reftype:" .
-acr_ed -create -field myns.FDb.ind_orders -reftype:thash -write -comment "index of orders"
+# acr_ed -create -field myns.FDb.ind_orders -reftype:thash -write -comment "index of orders"
 
 # dmmeta.field  field:myns.FDb.ind_orders  arg:myns.FOrders reftype:Thash  dflt:""  comment:""
 #   dmmeta.thash  field:myns.FDb.ind_orders  hashfld:mynsdb.Orders.orders  unique:Y  comment:""

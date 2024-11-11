@@ -42,7 +42,8 @@ namespace myns
         mcb_t();
         ~mcb_t();
         void scan();
-        void test_delete_update();
+        void test_delete();
+        void test_update(algo::Smallstr50 order_key);
         void load_data();
         void test_save();
         //       private:
@@ -72,19 +73,36 @@ void myns::mcb_t::scan()
     prlog("==scan  ");
     ind_beg(myns::_db_zd_orders_curs, order_obj, myns::_db)
     {
-        prlog(Keyval("order", order_obj.orders) << Keyval("amount", order_obj.amt));
+        prlog(Keyval("order", order_obj.orders) << Keyval("amount", order_obj.amt)  << Keyval("f_amt", order_obj.f_amt));
     }
     ind_end;
 }
 
-void  myns::mcb_t::test_delete_update()
+void myns::mcb_t::test_update(algo::Smallstr50 order_key)
+{
+    myns::FOrders *order_obj;
+    prlog("==find and update  by key : " << order_key); 
+    order_obj = myns::ind_orders_Find(order_key);
+    if (order_obj)
+    {
+        order_obj->amt *= -1;
+        order_obj->f_amt = 99;
+        prlog("order updated");
+    }
+    else
+    {
+        prlog("order not found");
+    }
+}
+
+void  myns::mcb_t::test_delete()
 {
     // delete by obj
-    algo::Smallstr50 order_key;
-    myns::FOrders *order_obj;
+    // algo::Smallstr50 order_key;
+    // myns::FOrders *order_obj;
 
-    auto iorder = 2;
-    order_obj = order_data[iorder].order_obj;
+    // auto iorder = 2;
+    // order_obj = order_data[iorder].order_obj;
     // prlog("==delete by obj  : " << order_obj->orders);
     // if (order_obj)
     // {
@@ -109,18 +127,6 @@ void  myns::mcb_t::test_delete_update()
     //     prlog("order not found");
     // }
 
-    order_key = "order5"; // hash not found. ind=7
-    prlog("==find and update  by key : " << order_key);
-    order_obj = myns::ind_orders_Find(order_key);
-    if (order_obj)
-    {
-        order_obj->amt += 1000;
-        prlog("order updated");
-    }
-    else
-    {
-        prlog("order not found");
-    }
 
     return ;
 }
@@ -176,7 +182,7 @@ void myns::mcb_t::test_save()
 //         text << eol;
 //     }ind_end;
 //    prlog(text);
-   myns::SaveTubles();
+//    mynsdb::SaveTuples();
 }
 // =================
 
@@ -190,10 +196,17 @@ void myns::Main()
     mcb->load_data();
     mcb->scan();
 
-    mcb->test_delete_update();
+    // mcb->test_delete();
+    // mcb->scan();
+
+    algo::Smallstr50 order_key;
+    order_key = "order5";
+    mcb->test_update(order_key);
+    order_key = "order98";
+    mcb->test_update(order_key);
     mcb->scan();
 
     myns::MainLoop();
-    prlog("==done 29");
+    prlog("==done 30");
     delete mcb;
 }

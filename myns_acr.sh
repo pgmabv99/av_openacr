@@ -36,17 +36,21 @@ acr_ed -create -target:myns -write
 echo  "create struct Forder inherited from -ssimfile:mynsdb.orders " 
 acr_ed -create -finput -target:myns -ssimfile:mynsdb.orders -write
 
-acr_ed -create -foutput -target:myns -ssimfile:mynsdb.orders -write
+# acr_ed -create -foutput -target:myns -ssimfile:mynsdb.orders -write
 
 echo "create iterator for Forder"
 acr_ed -create -field myns.FDb.zd_orders -write -comment "List of all orders"
 echo "create index  for Forder"
 acr_ed -create -field myns.FDb.ind_orders -reftype:Thash -write -comment "index of orders"
+echo "create user field for Forder"
+acr_ed -create -field myns.FOrders.f_amt -arg i32 -write -comment "f_amount of order. not inherited"
 
+echo
+echo " ==ctypes"
 acr dmmeta.ctype:myns%.%
+echo  " ==fields"
 acr dmmeta.field:myns%.% 
 
-# cat cpp/myns/myns.cpp
 
 # restore the driver cpp
 cp  ~/openacrav/backup/myns_driver.cpp cpp/myns/myns.cpp 

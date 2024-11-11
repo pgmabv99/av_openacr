@@ -12,9 +12,15 @@ trap '{
 cd $HOME/openacr
 
 # save the driver cpp as the genration creates a dummy  one
-cp  cpp/myns/myns.cpp ~/openacrav/backup/myns_driver.cpp
+# save the driver cpp as the genration creates a dummy  one
+if [ -f cpp/myns/myns.cpp ] && ! grep -q "hello" cpp/myns/myns.cpp; then
+    cp cpp/myns/myns.cpp ~/openacrav/backup/myns_driver.cpp
+else
+    echo "File cpp/myns/myns.cpp does not exist."
+fi
 
-acr_ed -create -field myns.FDb.ind_orders -reftype:Thash -write -comment "index of orders"
+# grep -r --include="*.md" "-reftype:" .
+acr_ed -create -field myns.FDb.ind_orders -reftype:thash -write -comment "index of orders"
 
 # dmmeta.field  field:myns.FDb.ind_orders  arg:myns.FOrders reftype:Thash  dflt:""  comment:""
 #   dmmeta.thash  field:myns.FDb.ind_orders  hashfld:mynsdb.Orders.orders  unique:Y  comment:""

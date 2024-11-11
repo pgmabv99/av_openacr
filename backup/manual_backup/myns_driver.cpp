@@ -84,29 +84,29 @@ void  myns::mcb_t::test_delete_update()
 
     auto iorder = 2;
     order_obj = order_data[iorder].order_obj;
-    // prlog("==delete by obj  : " << order_obj->orders);
-    // if (order_obj)
-    // {
-    //     orders_Delete(*order_obj);
-    //     prlog("order deleted");
-    // }
-    // else
-    // {
-    //     prlog("order not found");
-    // }
+    prlog("==delete by obj  : " << order_obj->orders);
+    if (order_obj)
+    {
+        orders_Delete(*order_obj);
+        prlog("order deleted");
+    }
+    else
+    {
+        prlog("order not found");
+    }
 
-    // order_key = "order4";
-    // prlog("==find and delete  by key : " << order_key);
-    // order_obj = myns::ind_orders_Find(order_key);
-    // if (order_obj)
-    // {
-    //     orders_Delete(*order_obj);
-    //     prlog("order deleted");
-    // }
-    // else
-    // {
-    //     prlog("order not found");
-    // }
+    order_key = "order4";
+    prlog("==find and delete  by key : " << order_key);
+    order_obj = myns::ind_orders_Find(order_key);
+    if (order_obj)
+    {
+        orders_Delete(*order_obj);
+        prlog("order deleted");
+    }
+    else
+    {
+        prlog("order not found");
+    }
 
     order_key = "order5"; // hash not found. ind=7
     prlog("==find and update  by key : " << order_key);
@@ -193,6 +193,6 @@ void myns::Main()
     mcb->scan();
 
     myns::MainLoop();
-    prlog("==done 30");
+    prlog("==done 29");
     delete mcb;
 }

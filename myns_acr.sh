@@ -12,11 +12,14 @@ trap '{
 cd $HOME/openacr
 
 # save the driver cpp as the genration creates a dummy  one
-cp  cpp/myns/myns.cpp ~/openacrav/backup/myns_driver.cpp
-
-echo "===============delete all"
-acr_ed -del -nstype:ssimdb  -target:mynsdb  -write
+if [ -f cpp/myns/myns.cpp ] && ! grep -q "hello" cpp/myns/myns.cpp; then
+    cp cpp/myns/myns.cpp ~/openacrav/backup/myns_driver.cpp
+else
+    echo "File cpp/myns/myns.cpp does not exist."
+fi
+echo "===============delete all in reverse order"
 acr_ed -del -target:myns -write
+acr_ed -del -nstype:ssimdb  -target:mynsdb  -write
 
 echo "===============create db" 
 acr_ed -create -target:mynsdb  -nstype:ssimdb -write

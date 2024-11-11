@@ -44,6 +44,7 @@ namespace myns
         void scan();
         void test_delete_update();
         void load_data();
+        void test_save();
         //       private:
     private:
         algo::Smallstr50 eyecatcher;
@@ -158,16 +159,16 @@ void myns::mcb_t::load_data()
     };
 }
 
-// myns::mcb_t::void test_save()
-// {
-//     // cstring text;
-//     // ind_beg(amc::_db_tracefld_curs, tracefld, amc::_db) {
-//     //     dmmeta::Tracefld out;
-//     //     tracefld_CopyOut(tracefld, out);
-//     //     dmmeta::Tracefld_Print(out, text);
-//     //     text << eol;
-//     // }ind_end;
-//     cstring text("");
+void myns::mcb_t::test_save()
+{
+    // cstring text;
+    // ind_beg(amc::_db_tracefld_curs, tracefld, amc::_db) {
+    //     dmmeta::Tracefld out;
+    //     tracefld_CopyOut(tracefld, out);
+    //     dmmeta::Tracefld_Print(out, text);
+    //     text << eol;
+    // }ind_end;
+    cstring text("");
 //     ind_beg(myns::_db_zd_orders_curs, temp, myns::_db) {
 //         myns::Orders out;
 //         myns::orders_CopyOut(temp, out);
@@ -175,8 +176,8 @@ void myns::mcb_t::load_data()
 //         text << eol;
 //     }ind_end;
 //    prlog(text);
-//    myns::SaveTuples();
-// }
+   myns::SaveTubles();
+}
 // =================
 
 
@@ -193,6 +194,6 @@ void myns::Main()
     mcb->scan();
 
     myns::MainLoop();
-    prlog("==done 30");
+    prlog("==done 29");
     delete mcb;
 }

@@ -23,15 +23,20 @@ acr_ed -del -nstype:ssimdb  -target:mynsdb  -write
 
 echo "===============create db" 
 acr_ed -create -target:mynsdb  -nstype:ssimdb -write
+
 acr_ed -create  -ssimfile:mynsdb.orders -write
 acr_ed -create -field mynsdb.Orders.amt -arg i32 -write -comment "amount of order"
 echo "mynsdb.orders orders:order98 amt:980" | acr -replace -write
 echo "mynsdb.orders orders:order99 amt:990" | acr -replace -write
+
+# acr_ed -create  -ssimfile:mynsdb.orders_out -write
  
 echo "==============create program and inherit from db"
 acr_ed -create -target:myns -write
 echo  "create struct Forder inherited from -ssimfile:mynsdb.orders " 
 acr_ed -create -finput -target:myns -ssimfile:mynsdb.orders -write
+
+acr_ed -create -foutput -target:myns -ssimfile:mynsdb.orders -write
 
 echo "create iterator for Forder"
 acr_ed -create -field myns.FDb.zd_orders -write -comment "List of all orders"

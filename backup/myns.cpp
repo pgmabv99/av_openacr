@@ -44,7 +44,8 @@ namespace myns
         void scan();
         void test_delete();
         void test_update(algo::Smallstr50 part_key);
-        void add_data_to_struct();
+        void add_prod();
+        void add_order();
         void test_save();
         //       private:
     private:
@@ -59,7 +60,6 @@ myns::mcb_t::mcb_t()
     eyecatcher = "mcb_t";
     prlog("create instance " << eyecatcher);
     part_data.resize(N_part);
-
 }
 
 // destructor
@@ -73,7 +73,7 @@ void myns::mcb_t::scan()
     prlog("==scan  ");
     ind_beg(myns::_db_zd_part_curs, part_obj, myns::_db)
     {
-        prlog(Keyval("part", part_obj.part) << Keyval("amount", part_obj.amt)  << Keyval("f_amt", part_obj.f_amt));
+        prlog(Keyval("part", part_obj.part) << Keyval("amount", part_obj.amt) << Keyval("f_amt", part_obj.f_amt));
     }
     ind_end;
 }
@@ -81,7 +81,7 @@ void myns::mcb_t::scan()
 void myns::mcb_t::test_update(algo::Smallstr50 part_key)
 {
     myns::FPart *part_obj;
-    prlog("==find and update  by key : " << part_key); 
+    prlog("==find and update  by key : " << part_key);
     part_obj = myns::ind_part_Find(part_key);
     if (part_obj)
     {
@@ -95,7 +95,7 @@ void myns::mcb_t::test_update(algo::Smallstr50 part_key)
     }
 }
 
-void  myns::mcb_t::test_delete()
+void myns::mcb_t::test_delete()
 {
     // delete by obj
     // algo::Smallstr50 part_key;
@@ -127,11 +127,10 @@ void  myns::mcb_t::test_delete()
     //     prlog("part not found");
     // }
 
-
-    return ;
+    return;
 }
 
-void myns::mcb_t::add_data_to_struct()
+void myns::mcb_t::add_prod()
 {
     prlog("==generate data (exercize in char vs str vs Smallstr) ");
 
@@ -158,10 +157,31 @@ void myns::mcb_t::add_data_to_struct()
         }
         else
         {
-
             // prlog("part not inserted in memory with xref " << part_obj->part << " amt " << part_obj->amt);
             // part_Delete(*part_obj);
         };
+    };
+
+};
+
+void myns::mcb_t::add_order()
+{
+    algo::Smallstr50 order_key;
+    order_key = "order98_1";
+    myns::FPart  *part_obj = myns::ind_part_Find("part98");
+
+    myns::Order *order_obj = &order_Alloc();
+    order_obj->order = order_key;
+    order_obj->p_part = part_obj;
+    if (order_XrefMaybe(*order_obj))
+    {
+        prlog("order  inserted in memory with xref " << order_obj->order << " p_part " << order_obj->p_part->part);
+    }
+    else
+    {
+
+        prlog("fail to insert with xref " << order_obj->order << " p_part " << order_obj->p_part);
+        order_Delete(*order_obj);
     };
 }
 
@@ -175,25 +195,24 @@ void myns::mcb_t::test_save()
     //     text << eol;
     // }ind_end;
     cstring text("");
-//     ind_beg(myns::_db_zd_part_curs, temp, myns::_db) {
-//         myns::part out;
-//         myns::part_CopyOut(temp, out);
-//         myns:part_Print(out, text);
-//         text << eol;
-//     }ind_end;
-//    prlog(text);
-//    mynsdb::SaveTuples();
+    //     ind_beg(myns::_db_zd_part_curs, temp, myns::_db) {
+    //         myns::part out;
+    //         myns::part_CopyOut(temp, out);
+    //         myns:part_Print(out, text);
+    //         text << eol;
+    //     }ind_end;
+    //    prlog(text);
+    //    mynsdb::SaveTuples();
 }
 // =================
-
 
 void myns::Main()
 {
     prlog("manual creation and deletion of part");
 
     myns::mcb_t *mcb = new myns::mcb_t();
- 
-    mcb->add_data_to_struct();
+
+    mcb->add_prod();
     mcb->scan();
 
     // mcb->test_delete();
@@ -205,6 +224,7 @@ void myns::Main()
     part_key = "part98";
     mcb->test_update(part_key);
     mcb->scan();
+    mcb->add_order();
 
     myns::MainLoop();
     prlog("==done 31");

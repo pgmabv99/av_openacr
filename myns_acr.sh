@@ -28,7 +28,7 @@ echo "==============create program and inherit from db"
 acr_ed -create -target:$targ -write -comment "create program and inherit from db"
 
 acr_ed -create -finput -target:$targ -ssimfile:${targ}db.part -write -comment "inherited from ssimfile"
-acr_ed -create -field ${targ}.FDb.zd_part -write -comment "zero termindated list"
+acr_ed -create -field ${targ}.FDb.zd_part -write -comment "zero terminated list"
 acr_ed -create -field ${targ}.FDb.ind_part -reftype:Thash -write -comment "hash/index/iterator"
 acr_ed -create -field ${targ}.FPart.f_amt -arg i32 -write -comment "f_amount of part. not inherited"
 
@@ -38,6 +38,8 @@ acr_ed -create -field ${targ}.FPart.f_amt -arg i32 -write -comment "f_amount of 
 
 acr_ed -create -ctype $targ.Order -pooltype Tpool -indexed -write -comment "not inherited"
 acr_ed -create -field $targ.Order.p_part -arg $targ.FPart -reftype Upptr -write
+acr_ed -create -field $targ.Order.quantity -arg i32  -write
+acr_ed -create -field $targ.FPart.zd_order -cascdel -write -comment "List of orders from parent part"
 echo
 echo " ==ctypes"
 acr dmmeta.ctype:${targ}%.%

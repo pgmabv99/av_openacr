@@ -27,7 +27,7 @@
 
 namespace myns
 {
-#define N_part 6
+#define N_part 3
     typedef struct
     {
         algo::Smallstr50 part_key;
@@ -44,8 +44,9 @@ namespace myns
         void scan();
         void test_delete();
         void test_update(algo::Smallstr50 part_key);
-        void add_prod();
-        void add_order();
+        void add_part();
+        void add_order(algo::Smallstr50 order_key, algo::Smallstr50 part_key, int quantity);
+        void add_orders();
         void test_save();
         //       private:
     private:
@@ -73,7 +74,12 @@ void myns::mcb_t::scan()
     prlog("==scan  ");
     ind_beg(myns::_db_zd_part_curs, part_obj, myns::_db)
     {
-        prlog(Keyval("part", part_obj.part) << Keyval("amount", part_obj.amt) << Keyval("f_amt", part_obj.f_amt));
+        prlog("="<< Keyval("part", part_obj.part) << Keyval("amount", part_obj.amt) << Keyval("f_amt", part_obj.f_amt));
+        ind_beg(myns::part_zd_order_curs, order_obj, part_obj)
+        {
+                prlog("=== "<<Keyval("order", order_obj.order) << Keyval("quantity", order_obj.quantity));
+        };
+        ind_end;
     }
     ind_end;
 }
@@ -130,7 +136,7 @@ void myns::mcb_t::test_delete()
     return;
 }
 
-void myns::mcb_t::add_prod()
+void myns::mcb_t::add_part()
 {
     prlog("==generate data (exercize in char vs str vs Smallstr) ");
 
@@ -161,26 +167,36 @@ void myns::mcb_t::add_prod()
             // part_Delete(*part_obj);
         };
     };
-
 };
 
-void myns::mcb_t::add_order()
+void myns::mcb_t::add_orders()
 {
-    algo::Smallstr50 order_key;
-    order_key = "order98_1";
-    myns::FPart  *part_obj = myns::ind_part_Find("part98");
+    add_order(algo::Smallstr50 ("order98_1"),algo::Smallstr50 ( "part98"),98);
+    add_order(algo::Smallstr50 ("order99_1"),algo::Smallstr50 ( "part99"),99);
+    // duplicate order
+    add_order(algo::Smallstr50 ("order99_1"),algo::Smallstr50 ( "part99"),99);
+    // non-existing part
+    add_order(algo::Smallstr50 ("order66_1"),algo::Smallstr50 ( "part66"),66);
+}
+
+void myns::mcb_t::add_order(algo::Smallstr50 order_key, algo::Smallstr50 part_key, int quantity) 
+{
+    myns::FPart *part_obj = myns::ind_part_Find(part_key);
 
     myns::Order *order_obj = &order_Alloc();
     order_obj->order = order_key;
     order_obj->p_part = part_obj;
+    order_obj->quantity = quantity;
     if (order_XrefMaybe(*order_obj))
     {
-        prlog("order  inserted in memory with xref " << order_obj->order << " p_part " << order_obj->p_part->part);
+        prlog("order  inserted in memory with xref " << order_obj->order 
+        << " p_part "   << order_obj->p_part->part
+        << " quantity " << order_obj->quantity);
     }
     else
     {
 
-        prlog("fail to insert with xref " << order_obj->order << " p_part " << order_obj->p_part);
+        prlog("xref: fail to insert  " << order_obj->order);
         order_Delete(*order_obj);
     };
 }
@@ -212,7 +228,7 @@ void myns::Main()
 
     myns::mcb_t *mcb = new myns::mcb_t();
 
-    mcb->add_prod();
+    mcb->add_part();
     mcb->scan();
 
     // mcb->test_delete();
@@ -224,7 +240,8 @@ void myns::Main()
     part_key = "part98";
     mcb->test_update(part_key);
     mcb->scan();
-    mcb->add_order();
+    mcb->add_orders();
+    mcb->scan();
 
     myns::MainLoop();
     prlog("==done 31");

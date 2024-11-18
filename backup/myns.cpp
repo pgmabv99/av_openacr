@@ -63,7 +63,10 @@ namespace myns
         void add_orders();
         void test_save();
         int epol_server();
-        void epoll_set_nonblocking(int fd);
+        void native_set_nonblocking(int fd);
+        void my_listen();
+        static void my_accept();
+        static void my_read(myns::Client &client_obj);
         //       private:
     private:
         algo::Smallstr50 eyecatcher;
@@ -239,7 +242,7 @@ void myns::mcb_t::test_save()
 // =================
 
 // Helper function to set a file descriptor to non-blocking mode
-void myns::mcb_t::epoll_set_nonblocking(int fd) {
+void myns::mcb_t::native_set_nonblocking(int fd) {
     int flags = fcntl(fd, F_GETFL, 0);
     if (flags == -1) {
         prlog("fcntl(F_GETFL)");
@@ -250,8 +253,130 @@ void myns::mcb_t::epoll_set_nonblocking(int fd) {
         exit(EXIT_FAILURE);
     }
 }
+
+void myns::mcb_t::my_listen(){
+    // Create a TCP socket
+    int server_fd;
+    struct sockaddr_in address;
+    server_fd = socket(AF_INET, SOCK_STREAM, 0);
+    if (server_fd == -1) {
+        prlog("socket failed");
+        exit(EXIT_FAILURE);
+    }
+
+    // Make the server socket reusable and non-blocking
+    int opt = 1;
+    setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
+
+    // native_set_nonblocking(server_fd);
+
+    // Bind to the specified port
+    address.sin_family = AF_INET;
+    address.sin_addr.s_addr = INADDR_ANY;
+    address.sin_port = htons(PORT);
+
+    if (bind(server_fd, (struct sockaddr*)&address, sizeof(address)) < 0) {
+        prlog("bind failed");
+        close(server_fd);
+        exit(EXIT_FAILURE);
+    }
+
+
+    // Start listening for incoming connections
+    if (listen(server_fd, 10) < 0) {
+        prlog("listen failed ");
+        close(server_fd);
+        exit(EXIT_FAILURE);
+    }
+    prlog("Server listening  on port  . " << PORT);
+
+    _db.listen.fildes=algo::Fildes(server_fd);
+    algo::SetBlockingMode(_db.listen.fildes,false);
+
+    callback_Set0(_db.listen,my_accept);
+    _db.listen.callback_ctx=(u64)this;
+
+    IOEvtFlags flags;
+    read_Set(flags,true);
+    IohookAdd(_db.listen,flags);
+
+}
+
+void myns::mcb_t::my_accept(){
+    struct sockaddr_in client_address;
+    int addrlen = sizeof(client_address);
+    prlog("==my_accept");
+
+    int server_fd = _db.listen.fildes.value;
+    // Accept a new connection
+    int client_socket = accept(server_fd, (struct sockaddr*)&client_address, (socklen_t*)&addrlen);
+    if (client_socket == -1) {
+        prlog("accept??? ");
+    }
+    prlog("Accepted new connection from "<<
+            inet_ntoa(client_address.sin_addr) << " port " << ntohs(client_address.sin_port));
+
+    // Client object to track the new connection
+    myns::Client &client_obj = client_Alloc();
+
+    char port_char_array[6];  // Array to store the port as a string (max length 5 digits + 1 for '\0')
+    sprintf(port_char_array, "%d", ntohs(client_address.sin_port));  // Convert port to character array
+    client_obj.client = port_char_array;
+
+    // Make the new socket non-blocking and add it to epoll  via callback
+    client_obj.read.fildes = algo::Fildes(client_socket);
+    algo::SetBlockingMode(client_obj.read.fildes,false);
+
+    callback_Set1(client_obj.read,client_obj, my_read);
+         
+    IOEvtFlags flags;
+    read_Set(flags,true);
+    IohookAdd(client_obj.read,flags);
+    
+    
+    if (client_XrefMaybe(client_obj))
+    {
+        prlog("client  object inserted in memory with xref. socket  " << client_obj.read.fildes.value);
+    }
+    else
+    {
+        prlog("xref: fail to insert.. exit  " << client_obj.read.fildes.value);
+        client_Delete(client_obj);
+        exit(EXIT_FAILURE);
+    };
+
+    client_obj.lastbuff = "empty";
+}
+
+void myns::mcb_t::my_read(myns::Client &client_obj){
+    // (void)xx;
+    prlog("==my_read desc 5 " << client_obj.read.fildes.value);  
+    char buffer[BUFFER_SIZE];
+
+    ssize_t count;
+    count = read(client_obj.read.fildes.value, buffer, sizeof(buffer) - 1); 
+    if (count > 0)
+    {
+        buffer[count] = '\0';  // Null-terminate the buffer
+        prlog("Received from client_fd " << client_obj.read.fildes.value << " buffer "<<buffer);
+
+        // Echo the data back to the client
+        if (write(client_obj.read.fildes.value, buffer, count) == -1) {
+            prlog("write error");
+            close(client_obj.read.fildes.value);
+        }
+    }
+    if (count == -1 && errno != EAGAIN) {
+        prlog("read error" << client_obj.read.fildes.value);
+        close(client_obj.read.fildes.value);
+    } else if (count == 0) {
+        prlog("Client  disconnected " << client_obj.read.fildes.value);
+        close(client_obj.read.fildes.value);
+    }
+}
+
 int  myns::mcb_t::epol_server(){
-    int server_fd, new_socket, epoll_fd;
+    int server_fd, client_socket, epoll_fd;
     struct sockaddr_in address;
     struct epoll_event event, events[MAX_EVENTS];
     int addrlen = sizeof(address);
@@ -266,7 +391,7 @@ int  myns::mcb_t::epol_server(){
     // Make the server socket reusable and non-blocking
     int opt = 1;
     setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
-    epoll_set_nonblocking(server_fd);
+    native_set_nonblocking(server_fd);
 
     // Bind to the specified port
     address.sin_family = AF_INET;
@@ -316,8 +441,8 @@ int  myns::mcb_t::epol_server(){
         for (int i = 0; i < nfds; i++) {
             if (events[i].data.fd == server_fd) {
                 // Accept a new connection
-                new_socket = accept(server_fd, (struct sockaddr*)&address, (socklen_t*)&addrlen);
-                if (new_socket == -1) {
+                client_socket = accept(server_fd, (struct sockaddr*)&address, (socklen_t*)&addrlen);
+                if (client_socket == -1) {
                     prlog("accept");
                     continue;
                 }
@@ -325,12 +450,12 @@ int  myns::mcb_t::epol_server(){
                        inet_ntoa(address.sin_addr) << "port " << ntohs(address.sin_port));
 
                 // Make the new socket non-blocking and add it to epoll
-                epoll_set_nonblocking(new_socket);
+                native_set_nonblocking(client_socket);
                 event.events = EPOLLIN | EPOLLET;  // Edge-triggered read event
-                event.data.fd = new_socket;
-                if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, new_socket, &event) == -1) {
-                    prlog("epoll_ctl: new_socket");
-                    close(new_socket);
+                event.data.fd = client_socket;
+                if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, client_socket, &event) == -1) {
+                    prlog("epoll_ctl: client_socket");
+                    close(client_socket);
                 }
             } else {
                 // Handle data from a connected client
@@ -373,22 +498,23 @@ void myns::Main()
 
     myns::mcb_t *mcb = new myns::mcb_t();
 
-    mcb->add_part();
-    mcb->scan();
-
-    // mcb->test_delete();
+    // mcb->add_part();
     // mcb->scan();
 
-    algo::Smallstr50 part_key;
-    part_key = "part5";
-    mcb->test_update(part_key);
-    part_key = "part98";
-    mcb->test_update(part_key);
-    mcb->scan();
-    mcb->add_orders();
-    mcb->scan();
+    // // mcb->test_delete();
+    // // mcb->scan();
 
-    mcb->epol_server();
+    // algo::Smallstr50 part_key;
+    // part_key = "part5";
+    // mcb->test_update(part_key);
+    // part_key = "part98";
+    // mcb->test_update(part_key);
+    // mcb->scan();
+    // mcb->add_orders();
+    // mcb->scan();
+
+    // mcb->epol_server();
+    mcb->my_listen();	
 
     myns::MainLoop();
     prlog("==done 31");

@@ -56,23 +56,31 @@ namespace myns
         mcb_t();
         ~mcb_t();
         static void scan();
-        void test_delete();
-        void test_update(algo::Smallstr50 part_key);
-        void add_part();
-        static void add_order(algo::Smallstr50 order_key, algo::Smallstr50 part_key, int quantity);
-        void add_orders();
-        void test_save();
+        static void test_delete();
+        static void test_update(algo::Smallstr50 part_key);
+        static void add_part();
+        static void add_order( algo::Smallstr50 part_key, int quantity);
+        static void add_orders();
+        static void test_save();
 
-        void tcp_listen();
+        //for tcp
+        static void tcp_listen();
         static void tcp_accept();
         static void tcp_read(myns::Client &client_obj);
         static void tcp_close(myns::Client &client_obj);
-        //       private:
+
+        //for terminal
+        static void trm_listen();
+        static void trm_read();
     private:
-        algo::Smallstr50 eyecatcher;
-        std::vector<part_data_t> part_data;
+        static algo::Smallstr50 eyecatcher;
+        static std::vector<part_data_t> part_data;
     };
 }
+
+// Definition of static members
+algo::Smallstr50 myns::mcb_t::eyecatcher;
+std::vector<myns::part_data_t> myns::mcb_t::part_data;
 
 // constructor
 myns::mcb_t::mcb_t()
@@ -190,19 +198,20 @@ void myns::mcb_t::add_part()
 
 void myns::mcb_t::add_orders()
 {
-    add_order(algo::Smallstr50("order98_1"), algo::Smallstr50("part98"), 98);
-    add_order(algo::Smallstr50("order99_1"), algo::Smallstr50("part99"), 99);
+    add_order( algo::Smallstr50("part98"), 98);
+    add_order( algo::Smallstr50("part99"), 99);
     // duplicate order
-    add_order(algo::Smallstr50("order99_1"), algo::Smallstr50("part99"), 99);
+    add_order( algo::Smallstr50("part99"), 99);
     // non-existing part
-    add_order(algo::Smallstr50("order66_1"), algo::Smallstr50("part66"), 66);
+    add_order(algo::Smallstr50("part66"), 66);
 }
 
-void myns::mcb_t::add_order(algo::Smallstr50 order_key, algo::Smallstr50 part_key, int quantity)
+void myns::mcb_t::add_order( algo::Smallstr50 part_key, int quantity)
 {
     myns::FPart *part_obj = myns::ind_part_Find(part_key);
-
     myns::Order *order_obj = &order_Alloc();
+    algo::cstring order_key;
+    order_key <<part_key<<"_order_"<<part_obj->zd_order_n;
     order_obj->order = order_key;
     order_obj->p_part = part_obj;
     order_obj->quantity = quantity;
@@ -285,13 +294,14 @@ void myns::mcb_t::tcp_listen()
     algo::SetBlockingMode(_db.listen.fildes, false);
 
     callback_Set0(_db.listen, tcp_accept);
-    _db.listen.callback_ctx = (u64)this;
+    // _db.listen.callback_ctx = (u64)this;
 
     IOEvtFlags flags;
     read_Set(flags, true);
     IohookAdd(_db.listen, flags);
 }
 
+// called on events on listening socket
 void myns::mcb_t::tcp_accept()
 {
     struct sockaddr_in client_address;
@@ -337,6 +347,7 @@ void myns::mcb_t::tcp_accept()
     };
 }
 
+//called on events on client socket like err/eof
 void myns::mcb_t::tcp_close(myns::Client &client_obj)
 {
     close(client_obj.read.fildes.value);
@@ -344,6 +355,7 @@ void myns::mcb_t::tcp_close(myns::Client &client_obj)
     client_Delete(client_obj);
 };
 
+// called on events on client socket like read/write
 void myns::mcb_t::tcp_read(myns::Client &client_obj)
 {
     prlog("==tcp_read fd " << client_obj.read.fildes.value);
@@ -355,13 +367,17 @@ void myns::mcb_t::tcp_read(myns::Client &client_obj)
     {
         buffer[count] = '\0'; // Null-terminate the buffer
         prlog("Received from client fd " << client_obj.read.fildes.value << " buffer " << buffer);
+
         // Parse buffer into 6-byte char array and integer using sscanf
         char part_key[7]; // 6 bytes for the string part + 1 for the null terminator
         int amt;
         sscanf(buffer, "%6s%d", part_key, &amt);
 
         prlog("part_key: " << part_key << ", amt: " << amt);
-        add_order(algo::Smallstr50("order_tcp"), algo::Smallstr50(part_key), amt);
+        
+        //add the order
+        add_order( algo::Smallstr50(part_key), amt);
+
         // Echo the data back to the client
         if (write(client_obj.read.fildes.value, buffer, count) == -1)
         {
@@ -379,9 +395,59 @@ void myns::mcb_t::tcp_read(myns::Client &client_obj)
         prlog("Client  disconnected " << client_obj.read.fildes.value);
         tcp_close(client_obj);
     }
+    
+    
     scan();
 }
 
+void myns::mcb_t::trm_listen(){
+    _db.terminal.fildes = algo::Fildes(0);
+    algo::SetBlockingMode(_db.terminal.fildes, false);
+
+    callback_Set0(_db.terminal, trm_read);
+
+    IOEvtFlags flags;
+    read_Set(flags, true);
+    IohookAdd(_db.terminal, flags);
+
+}
+
+void myns::mcb_t::trm_read(){
+    // prlog("==trm_read");
+    char buffer[BUFFER_SIZE];
+    ssize_t count;
+    #define CMD_LEN 4
+    count = read(_db.terminal.fildes.value, buffer, sizeof(buffer) - 1);
+    if (count > 0)
+    {
+        buffer[count] = '\0'; 
+
+        char cmd[CMD_LEN+1]; 
+    strncpy(cmd, buffer, CMD_LEN);
+        cmd[CMD_LEN] = '\0'; 
+        if (strcmp(cmd, "show") == 0) {
+            scan();
+        }
+        else if (strcmp(cmd,"save") == 0){
+            test_save();
+        }
+        else if (strcmp(cmd,"exit")==0){
+            prlog("exiting");
+            exit(EXIT_SUCCESS);
+        }
+        else{
+            prlog("unknown command");
+        }
+
+    }
+    if (count == -1 && errno != EAGAIN)
+    { // no code ?
+    }
+    else if (count == 0)
+    {
+        IohookRemove(_db.terminal);
+    }
+}
 void myns::Main()
 {
     prlog("manual creation and deletion of part");
@@ -404,6 +470,7 @@ void myns::Main()
     // mcb->scan();
 
     mcb->tcp_listen();
+    mcb->trm_listen();
 
     myns::MainLoop();
     prlog("==done 31");

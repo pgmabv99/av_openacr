@@ -41,12 +41,15 @@ acr_ed -create -field $targ.Order.p_part -arg $targ.FPart -reftype Upptr -write
 acr_ed -create -field $targ.Order.quantity -arg i32  -write
 acr_ed -create -field $targ.FPart.zd_order -cascdel -write -comment "List of orders from parent part"
 
-echo "server listening hook/ socket"
+echo "server listening hook/ fd"
 acr_ed -create -field $targ.FDb.listen -arg algo_lib.FIohook -write
 echo "client connection hook/ socket"
 acr_ed -create -ctype $targ.Client -pooltype Tpool -indexed -write  -comment "client hook/socket"
 acr_ed -create -field $targ.Client.read -arg algo_lib.FIohook -write
 acr_ed -create -field $targ.Client.lastbuff -arg algo.Smallstr50 -write
+
+echo "terminal  hook/ fd"
+acr_ed -create -field $targ.FDb.terminal -arg algo_lib.FIohook -write
 
 echo
 echo " ==ctypes"

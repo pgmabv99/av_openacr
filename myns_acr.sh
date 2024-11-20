@@ -4,11 +4,9 @@ set -e
 cd $HOME/openacr
 targ="myns"
 
-source /home/pgmabv/openacrav/util.sh
+# reset git to last commit and checkout my files, removing acr generated files
+source /home/pgmabv/openacrav/backup_git.sh
 
-echo "===============delete all in reverse order"
-acr_ed -del -target:$targ -write
-acr_ed -del -nstype:ssimdb  -target:${targ}db  -write
 
 echo "===============create db" 
 acr_ed -create -target:${targ}db  -nstype:ssimdb -write
@@ -57,7 +55,7 @@ acr dmmeta.ctype:${targ}%.%
 echo  " ==fields"
 acr dmmeta.field:${targ}%.%
 
-restore_backup
+restore_backup_git
 
 ai $targ
 

@@ -1,5 +1,8 @@
 #!/bin/bash
 set -x
-
-# save the driver cpp as the genration creates a new one
-cp  ~/openacr/cpp/myns/myns.cpp ~/openacrav/backup/myns.cpp
+set -e
+##### to be used before openacr repro commit 
+# reset git to last commit and checkout my files, removing acr generated files
+cd /home/pgmabv/openacr
+source /home/pgmabv/openacrav/backup_git.sh
+restore_backup_git

@@ -37,6 +37,7 @@ acr_ed -create -field ${targ}.FPart.f_amt -arg i32 -write -comment "f_amount of 
 acr_ed -create -ctype $targ.Order -pooltype Tpool -indexed -write -comment "not inherited"
 acr_ed -create -field $targ.Order.p_part -arg $targ.FPart -reftype Upptr -write
 acr_ed -create -field $targ.Order.quantity -arg i32  -write
+acr_ed -create -field $targ.Order.filled -arg bool  -write -comment "filled or not"
 acr_ed -create -field $targ.FPart.zd_order -cascdel -write -comment "List of orders from parent part"
 
 echo "server listening hook/ fd"

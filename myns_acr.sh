@@ -5,7 +5,7 @@ cd $HOME/openacr
 targ="myns"
 
 # reset git to last commit and checkout my files, removing acr generated files
-source /home/pgmabv/openacrav/backup_git.sh
+source av_openacr/backup_git.sh
 
 echo "===============create db" 
 acr_ed -create -target:${targ}db  -nstype:ssimdb -write

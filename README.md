@@ -7,3 +7,10 @@ to show
 amc myns.%order% 
 -Show prototypes
 amc myns.%order% -proto
+
+
+to keep my repo under openacr 
+.git\info\exclude
+
+av_openacr
+.gitmodules

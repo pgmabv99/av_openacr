@@ -13,8 +13,8 @@ acr_ed -create -target:${targ}db  -nstype:ssimdb -write
 
 acr_ed -create  -ssimfile:${targ}db.part -write
 acr_ed -create -field ${targ}db.Part.amt -arg i32 -write -comment "amount of part"
-echo "${targ}db.part part:part98 amt:980" | acr -replace -write
-echo "${targ}db.part part:part99 amt:990" | acr -replace -write
+echo "${targ}db.part part:part98 amt:10" | acr -replace -write
+echo "${targ}db.part part:part99 amt:10" | acr -replace -write
 
 # acr_ed -create  -ssimfile:${targ}db.order -write
 # acr_ed -create -field ${targ}db.Order.p_part -arg ${targ}db.Part -reftype Upptr -write -comment "up pointer"

@@ -26,8 +26,11 @@ acr_ed -create -target:$targ -write -comment "create program and inherit from db
 
 acr_ed -create -finput -target:$targ -ssimfile:${targ}db.part -write -comment "inherited from ssimfile"
 acr_ed -create -field ${targ}.FDb.zd_part -write -comment "zero terminated list"
+# acr_ed -create -field ${targ}.FDb.zd_part -write -fstep Inline -comment "zero terminated list"
 acr_ed -create -field ${targ}.FDb.ind_part -reftype:Thash -write -comment "hash/index/iterator"
 acr_ed -create -field ${targ}.FPart.f_amt -arg i32 -write -comment "f_amount of part. not inherited"
+
+# acr_ed -create -field samp_tut3.FDb.zd_value -fstep Inline -write
 
 # echo  "create struct Forder inherited from -ssimfile:${targ}db.order " 
 # acr_ed -create -finput -target:$targ -ssimfile:${targ}db.order -write -comment "inherited from ssimfile"

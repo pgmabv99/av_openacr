@@ -48,7 +48,7 @@ acr_ed -create -field $targ.Order.filled -arg bool  -write -comment "filled or n
 
 # 2 lists to the same ctype 
 acr_ed -create -field $targ.FDb.zd_order -cascdel -write -comment "List _db->order"
-acr_ed -create -field $targ.FPart.zd_partorder -arg $targ.Order -via $targ.FDb.ind_part/$targ.Order.p_part -cascdel -write -comment "List part->order"
+acr_ed -create -field $targ.FPart.zd_partorder -arg $targ.Order -via $targ.Order.p_part -cascdel -write -comment "List part->order"
 
 # duplicate name not allowed ?
 # acr_ed -create -field $targ.FPart.zd_order -cascdel -write -comment "List of orders from parent part"

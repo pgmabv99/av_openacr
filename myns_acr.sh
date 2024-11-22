@@ -26,12 +26,17 @@ acr_ed -create -target:$targ -write -comment "create program and inherit from db
 
 acr_ed -create -finput -target:$targ -ssimfile:${targ}db.part -write -comment "inherited from ssimfile"
 acr_ed -create -field ${targ}.FDb.zd_part -write -comment "zero terminated list"
-# acr_ed -create -field ${targ}.FDb.zd_part -write -fstep Inline -comment "zero terminated list"
 acr_ed -create -field ${targ}.FDb.ind_part -reftype:Thash -write -comment "hash/index/iterator"
 acr_ed -create -field ${targ}.FPart.f_amt -arg i32 -write -comment "f_amount of part. not inherited"
 
-# acr_ed -create -field samp_tut3.FDb.zd_value -fstep Inline -write
+# steps  
+acr_ed -create -field $targ.FDb.sched1 -arg bool -fstep InlineRecur -dflt true -write
+echo dmmeta.fdelay fstep:$targ.FDb.sched1 delay:5 scale:N | acr -insert -write
 
+# this fails 
+# acr_ed -create -field ${targ}.FDb.zd_part -write -fstep Inline -comment "zero terminated list"
+
+# wip: attempt to add zd on ctype inherited from ssimfile
 # echo  "create struct Forder inherited from -ssimfile:${targ}db.order " 
 # acr_ed -create -finput -target:$targ -ssimfile:${targ}db.order -write -comment "inherited from ssimfile"
 # # acr_ed -create -field ${targ}.FDb.zd_order -write -comment "hash/index/iterator"
@@ -40,6 +45,8 @@ acr_ed -create -ctype $targ.Order -pooltype Tpool -indexed -write -comment "not 
 acr_ed -create -field $targ.Order.p_part -arg $targ.FPart -reftype Upptr -write
 acr_ed -create -field $targ.Order.quantity -arg i32  -write
 acr_ed -create -field $targ.Order.filled -arg bool  -write -comment "filled or not"
+
+# acr_ed -create -field $targ.FDb.zd_order -cascdel -write -comment "List of orders from _db"
 acr_ed -create -field $targ.FPart.zd_order -cascdel -write -comment "List of orders from parent part"
 
 echo "server listening hook/ fd"

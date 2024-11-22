@@ -4,9 +4,6 @@ set -e
 targ="samp_tut3"
 source av_openacr/backup_git.sh
 
-echo "delete all"
-# exit
-acr_ed -del -target $targ -write 
 acr_ed -create -target $targ -write
 # acr_ed -create -ctype $targ.Value -subset i32 -pooltype Tpool -write
 acr_ed -create -ctype $targ.Value  -pooltype   Tpool -indexed -write

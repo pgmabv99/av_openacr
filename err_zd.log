@@ -1,0 +1,21 @@
++ acr_ed -create -field myns.FDb.zd_order -cascdel -write -comment 'List _db->order'
+report.acr_check  records:4  errors:0
+acr.insert  dmmeta.field  field:myns.FDb.zd_order  arg:myns.Order  reftype:Llist  dflt:""  comment:"List _db->order"
+  acr.insert  dmmeta.cascdel  field:myns.FDb.zd_order  comment:""
+  acr.insert  dmmeta.llist  field:myns.FDb.zd_order  havetail:Y  havecount:Y  comment:""
+  acr.insert  dmmeta.xref  field:myns.FDb.zd_order  inscond:true  via:""
+report.acr  n_select:4  n_insert:4  n_delete:0  n_ignore:0  n_update:0  n_file_mod:1
+report.amc  n_cppfile:210  n_cppline:468750  n_ctype:1397  n_func:34713  n_xref:715  n_filemod:4
+
++ acr_ed -create -field myns.FPart.zd_partorder -arg myns.Order -via myns.FDb.ind_part/myns.Order.p_part -cascdel -write -comment 'List part->order'
+report.acr_check  records:4  errors:0
+acr.insert  dmmeta.field  field:myns.FPart.zd_partorder  arg:myns.Order  reftype:Llist  dflt:""  comment:"List part->order"
+  acr.insert  dmmeta.cascdel  field:myns.FPart.zd_partorder  comment:""
+  acr.insert  dmmeta.llist  field:myns.FPart.zd_partorder  havetail:Y  havecount:Y  comment:""
+  acr.insert  dmmeta.xref  field:myns.FPart.zd_partorder  inscond:true  via:myns.FDb.ind_part/myns.Order.p_part
+report.acr  n_select:4  n_insert:4  n_delete:0  n_ignore:0  n_update:0  n_file_mod:1
+amc.badvia  xref:myns.FPart.zd_partorder  xreffld:myns.Order.p_part  comment:"Use xreffld instead of xrefvia here"
+dmmeta.xreffld  xref:myns.FPart.zd_partorder  field:myns.FDb.ind_part
+acr  dmmeta.xrefvia:myns.FPart.zd_partorder  -del -write
+amc.no_output  comment:"no files were modified"
+report.amc  n_cppfile:0  n_cppline:0  n_ctype:1397  n_func:34730  n_xref:716  n_filemod:0

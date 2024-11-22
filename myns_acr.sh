@@ -46,8 +46,12 @@ acr_ed -create -field $targ.Order.p_part -arg $targ.FPart -reftype Upptr -write
 acr_ed -create -field $targ.Order.quantity -arg i32  -write
 acr_ed -create -field $targ.Order.filled -arg bool  -write -comment "filled or not"
 
-# acr_ed -create -field $targ.FDb.zd_order -cascdel -write -comment "List of orders from _db"
-acr_ed -create -field $targ.FPart.zd_order -cascdel -write -comment "List of orders from parent part"
+# 2 lists to the same ctype 
+acr_ed -create -field $targ.FDb.zd_order -cascdel -write -comment "List _db->order"
+acr_ed -create -field $targ.FPart.zd_partorder -arg $targ.Order -via $targ.FDb.ind_part/$targ.Order.p_part -cascdel -write -comment "List part->order"
+
+# duplicate name not allowed ?
+# acr_ed -create -field $targ.FPart.zd_order -cascdel -write -comment "List of orders from parent part"
 
 echo "server listening hook/ fd"
 acr_ed -create -field $targ.FDb.listen -arg algo_lib.FIohook -write
@@ -67,5 +71,5 @@ acr dmmeta.field:${targ}%.%
 
 restore_backup_git
 
-ai $targ
+# ai $targ
 

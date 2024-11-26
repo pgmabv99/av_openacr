@@ -32,3 +32,9 @@ zd       Llist    Zero-terminated doubly linked list
 zdl      Llist    Zero-terminated doubly linked LIFO list
 zs       Llist    Zero-terminated singly linked list
 zsl      Llist    Zero-terminated singly linked LIFO list
+
+
+todo:
+=test heap
+-attempt to inherit order from the ssim file
+-test UI 

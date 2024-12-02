@@ -4,10 +4,11 @@ set -e
 
 targ="myns"
 
-# reset git to last commit and checkout my files, removing acr generated files
-source av_openacr/backup_git.sh
 
-echo "===============create db" 
+# reset git to last commit and checkout my files, removing acr generated files
+source av_openacr/backup_tmp.sh
+
+echo "===============create db"
 acr_ed -create -target:${targ}db  -nstype:ssimdb -write
 
 acr_ed -create  -ssimfile:${targ}db.part -write
@@ -20,7 +21,7 @@ echo "${targ}db.part part:part99 amt:10" | acr -replace -write
 # echo "${targ}db.order order:order98_1 p_part:part98" | acr -replace -write
 # echo "${targ}db.order order:order99_1 p_part:part99" | acr -replace -write
 # echo "${targ}db.order order:order99_2 p_part:part99" | acr -replace -write
- 
+
 echo "==============create program and inherit from db"
 acr_ed -create -target:$targ -write -comment "create program and inherit from db"
 
@@ -29,15 +30,15 @@ acr_ed -create -field ${targ}.FDb.zd_part -write -comment "zero terminated list"
 acr_ed -create -field ${targ}.FDb.ind_part -reftype:Thash -write -comment "hash/index/iterator"
 acr_ed -create -field ${targ}.FPart.f_amt -arg i32 -write -comment "f_amount of part. not inherited"
 
-# steps anchored in FDb  
+# steps anchored in FDb
 acr_ed -create -field $targ.FDb.sched1 -arg bool -fstep InlineRecur -dflt true -write
 echo dmmeta.fdelay fstep:$targ.FDb.sched1 delay:5 scale:N | acr -insert -write
 
-# this fails 
+# this fails
 # acr_ed -create -field ${targ}.FDb.zd_part -write -fstep Inline -comment "zero terminated list"
 
 # wip: attempt to add zd on ctype inherited from ssimfile
-# echo  "create struct Forder inherited from -ssimfile:${targ}db.order " 
+# echo  "create struct Forder inherited from -ssimfile:${targ}db.order "
 # acr_ed -create -finput -target:$targ -ssimfile:${targ}db.order -write -comment "inherited from ssimfile"
 
 acr_ed -create -ctype $targ.Order -pooltype Tpool -indexed -write -comment "not inherited"
@@ -45,7 +46,7 @@ acr_ed -create -field $targ.Order.p_part -arg $targ.FPart -reftype Upptr -write
 acr_ed -create -field $targ.Order.quantity -arg i32  -write
 acr_ed -create -field $targ.Order.filled -arg bool  -write -comment "filled or not"
 
-# 2 lists to the same ctype 
+# 2 lists to the same ctype
 acr_ed -create -field $targ.FDb.zd_order -cascdel -write -fstep InlineRecur -comment "List _db->order with fstep"
 echo dmmeta.fdelay fstep:$targ.FDb.zd_order delay:5 scale:Y | acr -insert -write
 
@@ -70,7 +71,7 @@ acr dmmeta.field:${targ}%.%
 echo  " ==fdelay"
 acr dmmeta.fdelay:${targ}%.%
 
-restore_backup_git
+restore_backup_tmp
+# restore_backup_git
 
 # ai $targ
-

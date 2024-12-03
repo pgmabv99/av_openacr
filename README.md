@@ -9,12 +9,24 @@ amc myns.%order%
 -Show prototypes
 amc myns.%order% -proto
 
+===visuals
+amc_vis myns.%
+amc_vis dmmeta.'(Ctype|Field|Ns)'
+
+===visuals svg
+
+amc_vis myns.% -dot:av_openacr/pic
+dot -Tsvg av_openacr/pic -o av_openacr/pic.svg
 
 ===to keep my repo under openacr without affecting main branch
 add to this  .git\info\exclude
 
 av_openacr
 .gitmodules
+
+==visual of lay :)
+
+https://chatgpt.com/share/674f50a6-58ac-8006-a82d-950838d12039
 
 ===to see prefixes
 (base) pgmabv@avlaptop:~/openacr$ acr fprefix | ssimfilt ^ -t

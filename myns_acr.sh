@@ -9,6 +9,9 @@ targ="myns"
 source av_openacr/backup_tmp.sh
 
 echo "===============create db"
+acr_ed -del -target:${targ}     -write
+acr_ed -del -target:${targ}db    -write
+
 acr_ed -create -target:${targ}db  -nstype:ssimdb -write
 
 acr_ed -create  -ssimfile:${targ}db.part -write
@@ -24,6 +27,8 @@ echo "${targ}db.part part:part99 amt:10" | acr -replace -write
 
 echo "==============create program and inherit from db"
 acr_ed -create -target:$targ -write -comment "create program and inherit from db"
+#
+acr_ed -create -srcfile cpp/myns/util.cpp -target myns -write
 
 acr_ed -create -finput -target:$targ -ssimfile:${targ}db.part -write -comment "inherited from ssimfile"
 acr_ed -create -field ${targ}.FDb.zd_part -write -comment "zero terminated list"

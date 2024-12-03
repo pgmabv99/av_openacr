@@ -3,7 +3,7 @@
 # function to backup /restore during acr
 
 restore_backup_tmp() {
-    cp /tmp/$targ.cpp cpp/$targ/$targ.cpp
+    cp /tmp/$targ/* cpp/$targ/
 }
 
 trap '{
@@ -14,4 +14,6 @@ trap '{
 }' ERR
 
 echo "save  the $targ.cpp. "
-cp  cpp/$targ/$targ.cpp /tmp/$targ.cpp
+mkdir -p /tmp/$targ
+rm -rf /tmp/$targ/*
+cp cpp/$targ/* /tmp/$targ/

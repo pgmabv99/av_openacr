@@ -1,9 +1,6 @@
 #!/bin/bash
 #
-# Define a trap to catch any errors and display a visible error message
-# and restore the driver cpp
-#!/bin/bash
-
+# function to backup /restore during acr
 
 restore_backup_tmp() {
     cp /tmp/$targ.cpp cpp/$targ/$targ.cpp
@@ -16,5 +13,5 @@ trap '{
     restore_backup_tmp
 }' ERR
 
-echo "save all the $targ.cpp. "
+echo "save  the $targ.cpp. "
 cp  cpp/$targ/$targ.cpp /tmp/$targ.cpp

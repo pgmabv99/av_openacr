@@ -5,7 +5,7 @@ set -e
 targ="myns"
 
 
-# reset git to last commit and checkout my files, removing acr generated files
+# backup  the current driver code
 source av_openacr/backup_tmp.sh
 
 echo "===============create db"
@@ -72,6 +72,5 @@ echo  " ==fdelay"
 acr dmmeta.fdelay:${targ}%.%
 
 restore_backup_tmp
-# restore_backup_git
 
 # ai $targ

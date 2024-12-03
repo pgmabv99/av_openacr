@@ -1,6 +1,7 @@
 #!/bin/bash
 set -x
 set -e
+##### clean all generated code and data
 ##### to be used before openacr repro commit
 git restore --source=HEAD -- include/
 git restore --source=HEAD -- cpp/gen

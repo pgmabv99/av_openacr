@@ -2,6 +2,14 @@
 set -x
 set -e
 
+targ="sample"
+# backup  the current driver code
+source av_openacr/backup_tmp.sh
+
+# rm bin/sample 
+acr_ed -del -target:${targ}     -write
+acr_ed -create -target:${targ} -write 
+
 acr -merge -write <<EOF
 dev.license  license:GPL  comment:""
 dmmeta.nstype  nstype:exe  comment:Executable
@@ -53,3 +61,7 @@ dmmeta.nstype  nstype:exe  comment:Executable
     dmmeta.tracerec  tracerec:sample.trace  comment:""
 report.acr  n_select:41  n_insert:0  n_delete:0  n_ignore:0  n_update:0  n_file_mod:0
 EOF
+
+amc 
+restore_backup_tmp
+ai sample

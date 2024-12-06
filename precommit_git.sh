@@ -16,4 +16,5 @@ git reset HEAD txt/
 # git restore --source=HEAD -- bin/
 # git reset HEAD bin/
 rm  bin/myns
+rm  bin/sample
 git add .

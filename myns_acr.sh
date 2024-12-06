@@ -29,6 +29,7 @@ echo "==============create program and inherit from db"
 acr_ed -create -target:$targ -write -comment "create program and inherit from db"
 #
 acr_ed -create -srcfile cpp/myns/util.cpp -target myns -write
+acr_ed -create -srcfile cpp/myns/util.h -target myns -write
 
 acr_ed -create -finput -target:$targ -ssimfile:${targ}db.part -write -comment "inherited from ssimfile"
 acr_ed -create -field ${targ}.FDb.zd_part -write -comment "zero terminated list"

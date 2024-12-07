@@ -61,7 +61,7 @@ dmmeta.nstype  nstype:exe  comment:Executable
     dmmeta.tracerec  tracerec:sample.trace  comment:""
 report.acr  n_select:41  n_insert:0  n_delete:0  n_ignore:0  n_update:0  n_file_mod:0
 EOF
-
+acr_compl -install
 amc 
 restore_backup_tmp
 ai sample

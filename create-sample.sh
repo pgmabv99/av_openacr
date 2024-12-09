@@ -6,9 +6,11 @@ targ="sample"
 # backup  the current driver code
 source av_openacr/backup_tmp.sh
 
-# rm bin/sample 
 acr_ed -del -target:${targ}     -write
+# [ -L bin/$targ ] && rm bin/$targ && [ -e "$(readlink -f bin/$targ)" ] && rm "$(readlink -f bin/$targ)"
 acr_ed -create -target:${targ} -write 
+
+
 
 acr -merge -write <<EOF
 dev.license  license:GPL  comment:""
@@ -45,7 +47,6 @@ dmmeta.nstype  nstype:exe  comment:Executable
     dmmeta.ctype  ctype:sample.FRec  comment:""
       dmmeta.field  field:sample.FRec.rec  arg:sample.Reckey  reftype:Val  dflt:""  comment:""
       dmmeta.field  field:sample.FRec.hashkey  arg:i32  reftype:Val  dflt:""  comment:""
-      dmmeta.ctypelen  ctype:sample.FRec  len:68  alignment:8  padbytes:4  plaindata:N
 
     dmmeta.ctype  ctype:sample.Reckey  comment:""
       dmmeta.ccmp  ctype:sample.Reckey  extrn:N  genop:Y  order:Y  minmax:N  comment:""
@@ -63,7 +64,11 @@ dmmeta.nstype  nstype:exe  comment:Executable
     dmmeta.tracerec  tracerec:sample.trace  comment:""
 report.acr  n_select:41  n_insert:0  n_delete:0  n_ignore:0  n_update:0  n_file_mod:0
 EOF
+      # dmmeta.ctypelen  ctype:sample.FRec  len:68  alignment:8  padbytes:4  plaindata:N
+
 acr_compl -install
+acr dmmeta.ctypelen:$targ.%
 amc 
+acr dmmeta.ctypelen:$targ.%
 restore_backup_tmp
 ai sample

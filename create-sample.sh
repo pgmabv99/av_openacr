@@ -29,9 +29,10 @@ dmmeta.nstype  nstype:exe  comment:Executable
         dmmeta.fcmdline  field:sample.FDb.cmdline  read:Y  basecmdline:algo_lib.FDb.cmdline  comment:""
 
       dmmeta.field  field:sample.FDb.rec      arg:sample.FRec  reftype:Tpool  dflt:""  comment:""
-      dmmeta.field  field:sample.FDb.ind_rec  arg:sample.FRec  reftype:Thash  dflt:""  comment:""
-        dmmeta.thash  field:sample.FDb.ind_rec  hashfld:sample.FRec.rec  unique:Y  comment:""
-        dmmeta.xref  field:sample.FDb.ind_rec  inscond:true  via:""
+
+      dmmeta.field  field:sample.FDb.ind_hashkey  arg:sample.FRec  reftype:Thash  dflt:""  comment:""
+        dmmeta.thash  field:sample.FDb.ind_hashkey  hashfld:sample.FRec.hashkey  unique:Y  comment:""
+        dmmeta.xref  field:sample.FDb.ind_hashkey  inscond:true  via:""
 
       dmmeta.field  field:sample.FDb.bh_rec  arg:sample.FRec  reftype:Bheap  dflt:""  comment:""
         dmmeta.sortfld  field:sample.FDb.bh_rec  sortfld:sample.FRec.rec
@@ -43,7 +44,8 @@ dmmeta.nstype  nstype:exe  comment:Executable
 
     dmmeta.ctype  ctype:sample.FRec  comment:""
       dmmeta.field  field:sample.FRec.rec  arg:sample.Reckey  reftype:Val  dflt:""  comment:""
-      dmmeta.ctypelen  ctype:sample.FRec  len:64  alignment:8  padbytes:4  plaindata:N
+      dmmeta.field  field:sample.FRec.hashkey  arg:i32  reftype:Val  dflt:""  comment:""
+      dmmeta.ctypelen  ctype:sample.FRec  len:68  alignment:8  padbytes:4  plaindata:N
 
     dmmeta.ctype  ctype:sample.Reckey  comment:""
       dmmeta.ccmp  ctype:sample.Reckey  extrn:N  genop:Y  order:Y  minmax:N  comment:""

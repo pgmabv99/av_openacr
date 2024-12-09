@@ -5,6 +5,8 @@
 restore_backup_tmp() {
     if [ -d "/tmp/$targ" ]; then
         cp /tmp/$targ/* cpp/$targ/
+        # needed because acr_ staged empty files
+        git add cpp/$targ/*
     fi
 }
 

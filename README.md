@@ -63,6 +63,10 @@ git show | nogen
 git show HEAD~1 | nogen
 git show HEAD~3..HEAD |nogen
 ```
+## Git 
+```
+git log --oneline --decorate --pretty=format:"%h %ad | %s%d [%an]" --date=short``
+```
 
 ## Todo
 

@@ -2,33 +2,42 @@
 # ACR notes
 
 
-===to show
+## To Show code
 
--all gen c code
+```bash
+# All generated C code
 amc myns.%order%
--Show prototypes
-amc myns.%order% -proto
 
-===visuals
+# Show prototypes
+amc myns.%order% -proto
+```
+
+## Visuals
+
+```bash
 amc_vis myns.%
 amc_vis dmmeta.'(Ctype|Field|Ns)'
+```
 
-===visuals svg
+## Visuals SVG
 
+```bash
 amc_vis myns.% -dot:av_openacr/pic
 dot -Tsvg av_openacr/pic -o av_openacr/pic.svg
+```
 
-===to keep my repo under openacr without affecting main branch
-add to this  .git\info\exclude
+## To Keep My Repo Under OpenACR Without Affecting Main Branch
 
+Add to this `.git\info\exclude`:
+
+```
 av_openacr
 .gitmodules
+```
 
-==visual of lay :)
+## To See Prefixes
 
-https://chatgpt.com/share/674f50a6-58ac-8006-a82d-950838d12039
-
-===to see prefixes
+```bash
 (base) pgmabv@avlaptop:~/openacr$ acr fprefix | ssimfilt ^ -t
 FPREFIX  REFTYPE  COMMENT
 bh       Bheap    Binary heap
@@ -45,9 +54,18 @@ zd       Llist    Zero-terminated doubly linked list
 zdl      Llist    Zero-terminated doubly linked LIFO list
 zs       Llist    Zero-terminated singly linked list
 zsl      Llist    Zero-terminated singly linked LIFO list
+```
 
+## separate generated code
 
-todo:
-=test heap
--attempt to inherit order from the ssim file
--test UI
+```bash
+git show | nogen
+git show HEAD~1 | nogen
+git show HEAD~3..HEAD |nogen
+```
+
+## Todo
+
+- Test heap
+- Attempt to inherit order from the ssim file
+- Test UI

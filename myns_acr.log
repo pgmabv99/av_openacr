@@ -374,3 +374,19 @@ dmmeta.fdelay  fstep:myns.FDb.zd_order  delay:5  scale:Y  comment:""
 report.acr  n_select:2  n_insert:0  n_delete:0  n_ignore:0  n_update:0  n_file_mod:0
 + restore_backup_tmp
 + cp /tmp/myns/myns.cpp /tmp/myns/util.cpp /tmp/myns/util.h cpp/myns/
+
+
+=================
++ acr_ed -del -target:sample -write
+acr_ed.load_input  acr_ed.bad_xref  index:acr_ed.FDb.ind_ctype  key:Smallstr20
+data/dmmeta/field.ssim:4533: dmmeta.field  field:sample.FRec.data  arg:Smallstr20  reftype:Val  dflt:""  comment:""
+
+
+++ echo -e '\n\033[1;31mERROR: Script exited due to an error!\033[0m'
+
+ERROR: Script exited due to an error!
+
+(venv) pgmabv@DESKTOP-3DQ1QS6:~/openacr$ echo dmmeta.field  field:sample.FRec.data | acr -del -write
+report.acr  n_select:0  n_insert:0  n_delete:0  n_ignore:0  n_update:0  n_file_mod:0
+(venv) pgmabv@DESKTOP-3DQ1QS6:~/openacr$ echo dmmeta.field  field:sample.FRec.data  arg:Smallstr20  reftype:Val  dflt:""  comment:""| acr -del -write
+report.acr  n_select:0  n_insert:0  n_delete:0  n_ignore:0  n_update:0  n_file_mod:0

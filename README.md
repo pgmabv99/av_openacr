@@ -69,3 +69,4 @@ git show HEAD~3..HEAD |nogen
 - Test heap
 - Attempt to inherit order from the ssim file
 - Test UI
+-how to reinit cstring

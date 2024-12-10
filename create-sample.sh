@@ -26,6 +26,7 @@ acr -merge -write <<EOF
     dmmeta.ctype  ctype:sample.FRec  comment:""
       dmmeta.field  field:sample.FRec.rec  arg:sample.Reckey  reftype:Val  dflt:""  comment:""
       dmmeta.field  field:sample.FRec.hashkey  arg:i32  reftype:Val  dflt:""  comment:""
+      dmmeta.field  field:sample.FRec.data  arg:algo.Smallstr20  reftype:Val  dflt:""  comment:""
 
     dmmeta.ctype  ctype:sample.Reckey  comment:""
       dmmeta.ccmp  ctype:sample.Reckey  extrn:N  genop:Y  order:Y  minmax:N  comment:""

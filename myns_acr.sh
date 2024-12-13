@@ -36,6 +36,9 @@ dev.targsrc  targsrc:myns/cpp/myns/util.h    comment:""
 dmmeta.ctype  ctype:myns.Client  comment:"client hook/socket"
   dmmeta.field  field:myns.Client.client    arg:algo.Smallstr50   reftype:Val  dflt:""  comment:""
   dmmeta.field  field:myns.Client.read      arg:algo_lib.FIohook  reftype:Val  dflt:""  comment:""
+  # dmmeta.field  field:myns.Client.in  arg:char  reftype:Fbuf  dflt:"'\\n'"  comment:""
+      #  dmmeta.fbuf  field:myns.Client.in  max:8192  fbuftype:Linebuf   comment:""
+      #  dmmeta.fbuf  field:myns.Client.in  max:8192  fbuftype:Linebuf  insready:myns.FDb.??  inseof:myns.FDb.??  comment:""
   dmmeta.field  field:myns.Client.lastbuff  arg:algo.Smallstr50   reftype:Val  dflt:""  comment:""
 
 dmmeta.ctype  ctype:myns.FDb  comment:""
@@ -92,6 +95,29 @@ dmmeta.ctype  ctype:myns.Order  comment:"not inherited"
 
   dmmeta.field  field:myns.Order.quantity  arg:i32   reftype:Val  dflt:""  comment:""
   dmmeta.field  field:myns.Order.filled  arg:bool  reftype:Val  dflt:""  comment:"filled or not"
+
+dmmeta.ctype  ctype:myns.MsgHeader  comment:""
+  dmmeta.cpptype  ctype:myns.MsgHeader  ctor:Y  dtor:N  cheap_copy:N
+  dmmeta.pack     ctype:myns.MsgHeader  comment:""
+
+  dmmeta.field  field:myns.MsgHeader.type         arg:u8                   reftype:Val   dflt:""  comment:""
+    dmmeta.typefld  field:myns.MsgHeader.type         comment:""
+  dmmeta.field  field:myns.MsgHeader.length       arg:u8                   reftype:Val   dflt:""  comment:""
+    dmmeta.lenfld  field:myns.MsgHeader.length  extra:0
+
+  dmmeta.cfmt  cfmt:myns.MsgHeader.String  printfmt:Tuple  read:Y  print:Y  sep:""  genop:Y  comment:""
+
+dmmeta.ctype  ctype:myns.NewOrderReqMsg  comment:"From user: new order request"
+  dmmeta.cpptype  ctype:myns.NewOrderReqMsg  ctor:Y  dtor:N  cheap_copy:N
+  dmmeta.msgtype  ctype:myns.NewOrderReqMsg  type:66
+  dmmeta.pack     ctype:myns.NewOrderReqMsg  comment:""
+
+  dmmeta.field  field:myns.NewOrderReqMsg.base   arg:myns.MsgHeader       reftype:Base  dflt:""  comment:""
+  dmmeta.field  field:myns.NewOrderReqMsg.part_key   arg:algo.Smallstr50  reftype:Val  dflt:""  comment:">0 = buy, <0 = sell"
+  dmmeta.field  field:myns.NewOrderReqMsg.amt        arg:i32              reftype:Val  dflt:""  comment:""
+  
+  dmmeta.cfmt  cfmt:myns.NewOrderReqMsg.String  printfmt:Tuple  read:Y  print:Y  sep:""  genop:Y  comment:""
+
 EOF
 
 acr_compl -install

@@ -70,14 +70,14 @@ zs       Llist    Zero-terminated singly linked list
 zsl      Llist    Zero-terminated singly linked LIFO list
 ```
 
-## separate generated code
+## Git separate generated code
 
 ```bash
 git show | nogen
 git show HEAD~1 | nogen
 git show HEAD~3..HEAD |nogen
 ```
-## Git 
+ 
 ```
 git log --oneline --decorate --pretty=format:"%h %ad | %s%d [%an]" --date=short``
 We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.md) which can be installed with the bin/gitconfig-setup script. It automatically resolves conflicts in ssim files because it understands that nearby lines are not logically related (by default, git treats files like code, where nearby changes are considered a conflict). acr_dm can even resolve 3-way merges where one branch changes attribute A and another changes attribute B - it's not a conflict because different attributes were changed.
@@ -87,10 +87,12 @@ We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.
 
 ## Todo
 
-- Test heap
++ Test heap
 - Attempt to inherit order from the ssim file
 - Test UI
 -how to reinit cstring
+-implement messages
+-review I64Price8
 
 
 ## messages

@@ -53,6 +53,10 @@ dmmeta.ctype  ctype:myns.Client  comment:"client hook/socket"
   
   dmmeta.field  field:myns.Client.lastbuff  arg:algo.Smallstr50   reftype:Val  dflt:""  comment:""
 
+  dmmeta.dispatch  dispatch:myns.In  unk:N  read:Y  print:Y  haslen:N  call:Y  strict:N  comment:""
+    dmmeta.dispatch_msg  dispatch_msg:myns.In/myns.NewOrderReqMsg    comment:""
+    # dmmeta.dispatch_msg  dispatch_msg:myns.In/myns.TextMsg           comment:""
+
 dmmeta.ctype  ctype:myns.FDb  comment:""
 
   dmmeta.field  field:myns.FDb.sched1  arg:bool  reftype:Val  dflt:true  comment:""

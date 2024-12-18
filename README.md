@@ -27,7 +27,7 @@ amc myns.%order% -proto
 amc_vis myns.%
 amc_vis dmmeta.'(Ctype|Field|Ns)'
 ```
-
+to see all bad ref
 ``` acr -check %
 ```
 

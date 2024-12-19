@@ -46,11 +46,12 @@ dmmeta.ctype  ctype:myns.Client  comment:"client hook/socket"
     dmmeta.xref  field:myns.FDb.cd_client_read  inscond:false  via:""
 
 
-  dmmeta.field  field:myns.Client.read      arg:algo_lib.FIohook  reftype:Val  dflt:""  comment:""
-     
-  dmmeta.field  field:myns.Client.in        arg:myns.MsgHeader    reftype:Fbuf  dflt:"'\\n'"  comment:""
-    dmmeta.fbuf  field:myns.Client.in  max:8192  fbuftype:Msgbuf  insready:myns.FDb.cd_client_read  inseof:myns.FDb.cd_client_eof   comment:""
-    # dmmeta.fbuf  field:myns.Client.in  max:8192  fbuftype:Linebuf  insready:myns.FDb.cd_client_read  inseof:myns.FDb.cd_client_eof   comment:""
+  dmmeta.field  field:myns.Client.iohook      arg:algo_lib.FIohook  reftype:Val  dflt:""  comment:""
+  dmmeta.field  field:myns.Client.in        arg:char   reftype:Fbuf  dflt:"'\\n'"  comment:""
+    dmmeta.fbuf  field:myns.Client.in  max:8192  fbuftype:Linebuf  insready:myns.FDb.cd_client_read  inseof:myns.FDb.cd_client_eof   comment:""
+  
+  # dmmeta.field  field:myns.Client.in        arg:myns.MsgHeader    reftype:Fbuf  dflt:"'\\n'"  comment:""
+    # dmmeta.fbuf  field:myns.Client.in  max:8192  fbuftype:Msgbuf  insready:myns.FDb.cd_client_read  inseof:myns.FDb.cd_client_eof   comment:""
   
   dmmeta.field  field:myns.Client.lastbuff  arg:algo.Smallstr50   reftype:Val  dflt:""  comment:""
 

@@ -7,7 +7,7 @@ PORT="8080"
 
 # Define the input to be sent to the telnet session
 # INPUTS=("part99 10" "part98 10")
-INPUTS=("myns.NewOrderReqMsg part_key:part98  amt:10")
+INPUTS=("myns.NewOrderReqMsg part_key:part98  amt:10" "myns.NewOrderReqMsg part_key:part99  amt:10")
 
 # Use netcat to connect to the host and port, send the inputs separately, and resume live input after
 {

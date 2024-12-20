@@ -84,6 +84,9 @@ We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.
 
 ```
 
+## messages
+samp_meng.NewSymbolReqMsg symbol:wwww
+myns.NewOrderReqMsg part_key:part98  amt:10
 
 ## Todo
 
@@ -96,5 +99,3 @@ We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.
 -try -e option for VScode
 
 
-## messages
-samp_meng.NewSymbolReqMsg symbol:wwww

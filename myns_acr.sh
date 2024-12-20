@@ -141,6 +141,10 @@ EOF
 acr_compl -install
 amc
 
+
+sed -i '/\/\/ delimiter?/a\        if ( hdr[msglen] == '\''\\n'\'') { // delimiter?' cpp/gen/myns_gen.cpp
+sed -i '/if (hdr\[msglen\]/,+1d' cpp/gen/myns_gen.cpp
+
 echo
 echo " ==ctypes"
 acr dmmeta.ctype:${targ}%.%

@@ -4,5 +4,16 @@
 			"path": ".."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"folder-color.pathColors": [
+			{
+				"folderPath": "openacr/av_openacr/",
+				"badge": "av"
+			},
+			{
+				"folderPath": "openacr/cpp/gen/",
+				"badge": "ge"
+			}
+		]
+	}
 }

@@ -34,9 +34,15 @@ dev.targsrc  targsrc:myns/cpp/myns/util.cpp  comment:""
 dev.targsrc  targsrc:myns/cpp/myns/util.h    comment:""
 
 dmmeta.ctype  ctype:myns.Client  comment:"client hook/socket"
-  dmmeta.field  field:myns.Client.client    arg:algo.Smallstr50   reftype:Val  dflt:""  comment:""
+  dmmeta.field  field:myns.FDb.client        arg:myns.Client  reftype:Lary  dflt:""  comment:""
+  dmmeta.field  field:myns.Client.client_port    arg:algo.Smallstr50   reftype:Val  dflt:""  comment:""
 
-  dmmeta.field  field:myns.FDb.cd_client_eof  arg:myns.Client  reftype:Llist  dflt:""  comment:"End reading from stdin"
+  dmmeta.field  field:myns.FDb.zd_client_dbg  arg:myns.Client  reftype:Llist  dflt:""  comment:"list to debug"
+  dmmeta.llist  field:myns.FDb.zd_client_dbg  havetail:Y  havecount:Y  comment:""
+  dmmeta.xref  field:myns.FDb.zd_client_dbg  inscond:true  via:""
+
+
+  dmmeta.field  field:myns.FDb.cd_client_eof  arg:myns.Client  reftype:Llist  dflt:""  comment:"End reading from socket"
     dmmeta.llist  field:myns.FDb.cd_client_eof  havetail:N  havecount:Y  comment:""
     dmmeta.fstep  fstep:myns.FDb.cd_client_eof  steptype:Inline  comment:""
     dmmeta.xref  field:myns.FDb.cd_client_eof  inscond:false  via:""
@@ -67,9 +73,6 @@ dmmeta.ctype  ctype:myns.FDb  comment:""
 
   dmmeta.field  field:myns.FDb.listen      arg:algo_lib.FIohook  reftype:Val    dflt:""  comment:""
   dmmeta.field  field:myns.FDb.client      arg:myns.Client  reftype:Tpool  dflt:""  comment:""
-  dmmeta.field  field:myns.FDb.ind_client  arg:myns.Client  reftype:Thash  dflt:""  comment:""
-    dmmeta.thash  field:myns.FDb.ind_client  hashfld:myns.Client.client  unique:Y  comment:""
-    dmmeta.xref  field:myns.FDb.ind_client  inscond:true  via:""
 
   dmmeta.field  field:myns.FDb.terminal  arg:algo_lib.FIohook  reftype:Val  dflt:""  comment:""
   dmmeta.ctypelen  ctype:myns.FDb  len:520  alignment:8  padbytes:26  plaindata:N

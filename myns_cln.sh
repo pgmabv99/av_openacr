@@ -13,7 +13,7 @@ INPUTS=("myns.NewOrderReqMsg part_key:part98  amt:10" "myns.NewOrderReqMsg part_
 {
     for input in "${INPUTS[@]}"; do
         echo -e "$input"
-        sleep 1
+        # sleep 1
     done
     cat
 } | nc $HOST $PORT

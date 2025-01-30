@@ -99,3 +99,9 @@ myns.NewOrderReqMsg part_key:part98  amt:10
 -try -e option for VScode
 
 
+## git login cheat sheet
+
+#for arnd gitlab use ssh private key
+git config --global core.sshCommand "ssh -i /home/avorovich/.ssh/algox2_av"
+#for av_openacl github use token (gdrive) 
+git clone https://pgmabv99:<avtoken4>@github.com/pgmabv99/algo_util.git

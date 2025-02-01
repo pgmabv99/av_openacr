@@ -39,6 +39,9 @@ dot -Tsvg av_openacr/pic -o av_openacr/pic.svg
 amc_vis samp_meng.% -dot:av_openacr/meng
 dot -Tsvg av_openacr/meng -o av_openacr/meng.svg
 ```
+## to run pipeline locally 
+atf_ci -cijob:%
+
 
 ## To Keep My Repo Under OpenACR Without Affecting Main Branch
 

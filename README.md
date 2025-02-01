@@ -43,14 +43,6 @@ dot -Tsvg av_openacr/meng -o av_openacr/meng.svg
 atf_ci -cijob:%
 
 
-## To Keep My Repo Under OpenACR Without Affecting Main Branch
-
-Add to this `.git\info\exclude`:
-
-```
-av_openacr
-.gitmodules
-```
 
 ## To See Prefixes
 
@@ -73,18 +65,35 @@ zs       Llist    Zero-terminated singly linked list
 zsl      Llist    Zero-terminated singly linked LIFO list
 ```
 
-## Git separate generated code
+## Git cheat sheet
+
+git push   #to defalt remote
+
+git push ssh://git@gitlab.vovaco.com:1008/algornd/arnd.git HEAD    #non-default 
+
+
+### Separate generated code
 
 ```bash
 git show | nogen
 git show HEAD~1 | nogen
 git show HEAD~3..HEAD |nogen
 ```
- 
+### git log
+
 ```
 git log --oneline --decorate --pretty=format:"%h %ad | %s%d [%an]" --date=short``
 We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.md) which can be installed with the bin/gitconfig-setup script. It automatically resolves conflicts in ssim files because it understands that nearby lines are not logically related (by default, git treats files like code, where nearby changes are considered a conflict). acr_dm can even resolve 3-way merges where one branch changes attribute A and another changes attribute B - it's not a conflict because different attributes were changed.
 
+```
+
+### To Keep My Repo Under OpenACR Without Affecting Main Branch
+
+Add to this `.git\info\exclude`:
+
+```
+av_openacr
+.gitmodules
 ```
 
 ## messages

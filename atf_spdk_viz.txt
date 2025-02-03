@@ -1,0 +1,26 @@
+                                                                                               
+                                                                                               
+                         / atf_spdk.FDb                                                        
+                         |                                                                     
+                         |Lary ctrlr------->/ atf_spdk.FCtrlr                                  
+                         |                  |                                                  
+                         |Tpool req---------|---------------------------------->/ atf_spdk.FReq
+                         |                  |                                   |              
+                     /<atf_spdk.ReqType-----|-----------------------------------|Val req_type  
+                     -   |                  |                                   |              
+                         |                  |                                   |              
+                         |                  |                                   |              
+                         |Lary ns-----------|------------->/ atf_spdk.FNs       |              
+                         -                  |              |                    |              
+                                            |              |                    |              
+                                            |<-------------|Upptr p_ctrlr       |              
+                                            |              |Llist zd_freereq--->|              
+                                            |              |Llist zd_complreq-->|              
+                                            |              |Llist zd_req------->|              
+                                            |              |<-------------------|Upptr p_ns    
+                                            |              |                    -              
+                                            |              |                                   
+                                            |Llist zd_ns-->|                                   
+                                            -              |                                   
+                                                           |                                   
+                                                           -                                   

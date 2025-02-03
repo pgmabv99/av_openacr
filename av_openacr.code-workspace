@@ -10,5 +10,9 @@
 			"path": "../spdk"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"random": "cpp"
+		}
+	}
 }

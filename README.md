@@ -3,8 +3,9 @@
 
 ## to show all dependencies
 ```
-acr dmmeta.ctype:myns.% -ndown 99  -tree > av_openacr/myns.txt
+acr dmmeta.ctype:myns.% -ndown 99  -tree > $Yav_openacr/myns.txt
 acr dmmeta.ns:myns -ndown 99  -tree > av_openacr/myns.txt
+acr dmmeta.ns:atf_spdk -ndown 99  -tree > $HOME1/av_openacr/atf_spdk.txt
 (venv) pgmabv@DESKTOP-3DQ1QS6:~/openacr$ acr dev.targsrc:myns/cpp/myns/%.%
 dev.targsrc  targsrc:myns/cpp/myns/myns.cpp  comment:""
 dev.targsrc  targsrc:myns/cpp/myns/util.cpp  comment:""
@@ -24,7 +25,7 @@ amc myns.%order% -proto
 ## Visuals
 
 ```bash
-amc_vis myns.%
+amc_vis atf_spdk.% > $HOME1/av_openacr/atf_spdk_viz.txt
 amc_vis dmmeta.'(Ctype|Field|Ns)'
 ```
 to see all bad ref
@@ -139,3 +140,43 @@ Usage: atf_spdk [options]
     -version                       Print version and exit
     -signature                     Show signatures and exit; alias -sig
 ```
+
+# atf work log
+## 2/3 
+- add vrfy and verblog
+- research why some dtr + cleanup are not called. 
+```
+called
+// --- atf_spdk.FCtrlr..Dtor
+inline  atf_spdk::FCtrlr::~FCtrlr() {
+    atf_spdk::FCtrlr_Uninit(*this);
+}
+// --- atf_spdk.FCtrlr..Uninit
+inline void atf_spdk::FCtrlr_Uninit(atf_spdk::FCtrlr& ctrlr) {
+    atf_spdk::FCtrlr &row = ctrlr; (void)row;
+    ctrlr_Cleanup(ctrlr); // dmmeta.fcleanup:atf_spdk.FCtrlr.ctrlr
+}
+
+not called
+// --- atf_spdk.FNs..Dtor
+inline  atf_spdk::FNs::~FNs() {
+    atf_spdk::FNs_Uninit(*this);
+}
+
+// --- atf_spdk.FNs..Uninit
+void atf_spdk::FNs_Uninit(atf_spdk::FNs& ns) {
+    atf_spdk::FNs &row = ns; (void)row;
+    qpair_Cleanup(ns); // dmmeta.fcleanup:atf_spdk.FNs.qpair
+    zd_req_Cascdel(ns); // dmmeta.cascdel:atf_spdk.FNs.zd_req
+    atf_spdk::FCtrlr* p_p_ctrlr = row.p_ctrlr;
+    if (p_p_ctrlr)  {
+        zd_ns_Remove(*p_p_ctrlr, row);// remove ns from index zd_ns
+    }
+}
+
+2/2  - set up debuging  and git double repo
+
+```
+
+
+

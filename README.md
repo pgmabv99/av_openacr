@@ -3,9 +3,14 @@
 
 ## to show all dependencies
 ```
-acr dmmeta.ctype:myns.% -ndown 99  -tree > $Yav_openacr/myns.txt
-acr dmmeta.ns:myns -ndown 99  -tree > av_openacr/myns.txt
-acr dmmeta.ns:atf_spdk -ndown 99  -tree > $HOME1/av_openacr/atf_spdk.txt
+acr dmmeta.ns:atf_spdk -ndown 99  -tree -e
+acr dmmeta.ns:atf_spdk -ndown 99  -tree > $HOME1/av_openacr/atf_spdk.sh
+
+  dmmeta.fcleanup  field:atf_spdk.FCtrlr.ctrlr  comment:""
+
+
+    # dmmeta.field  field:atf_spdk.FDb.av22         acr.rowid:2       arg:u64                     reftype:Val   dflt:""  comment:""
+
 (venv) pgmabv@DESKTOP-3DQ1QS6:~/openacr$ acr dev.targsrc:myns/cpp/myns/%.%
 dev.targsrc  targsrc:myns/cpp/myns/myns.cpp  comment:""
 dev.targsrc  targsrc:myns/cpp/myns/util.cpp  comment:""
@@ -177,6 +182,18 @@ void atf_spdk::FNs_Uninit(atf_spdk::FNs& ns) {
 2/2  - set up debuging  and git double repo
 
 ```
+call stack
+atf_spdk::ctrlr_Cleanup(atf_spdk::FCtrlr & ctrlr) (\home\avorovich\arnd\cpp\atf_spdk\atf_spdk.cpp:131)
+atf_spdk::FCtrlr_Uninit(atf_spdk::FCtrlr & ctrlr) (\home\avorovich\arnd\include\gen\atf_spdk_gen.inl.h:123)
+atf_spdk::FCtrlr::~FCtrlr(atf_spdk::FCtrlr * const this) (\home\avorovich\arnd\include\gen\atf_spdk_gen.inl.h:133)
+atf_spdk::ctrlr_RemoveAll() (\home\avorovich\arnd\cpp\gen\atf_spdk_gen.cpp:477)
+atf_spdk::Main() (\home\avorovich\arnd\cpp\atf_spdk\atf_spdk.cpp:267)
+main(int argc, char ** argv) (\home\avorovich\arnd\cpp\gen\atf_spdk_gen.cpp:1450)
 
-
-
+--call stack for ns
+atf_spdk::qpair_Cleanup(atf_spdk::FNs & ns) (\home\avorovich\arnd\cpp\atf_spdk\atf_spdk.cpp:142)
+atf_spdk::FNs_Uninit(atf_spdk::FNs & ns) (\home\avorovich\arnd\cpp\gen\atf_spdk_gen.cpp:1078)
+atf_spdk::FNs::~FNs(atf_spdk::FNs * const this) (\home\avorovich\arnd\include\gen\atf_spdk_gen.inl.h:524)
+atf_spdk::ns_RemoveAll() (\home\avorovich\arnd\cpp\gen\atf_spdk_gen.cpp:554)
+atf_spdk::Main() (\home\avorovich\arnd\cpp\atf_spdk\atf_spdk.cpp:266)
+main(int argc, char ** argv) (\home\avorovich\arnd\cpp\gen\atf_spdk_gen.cpp:1450)

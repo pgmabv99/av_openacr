@@ -88,7 +88,7 @@ dmmeta.ns  ns:atf_spdk  nstype:exe  license:GPL  comment:"SPDK testing tool"
 
   dmmeta.ctype  ctype:atf_spdk.FCtrlr  comment:""
     dmmeta.field  field:atf_spdk.FCtrlr.ctrlr  acr.rowid:0       arg:spdk_nvme_ctrlr  reftype:Ptr  dflt:""  comment:"controller handle from SPDK"
-      dmmeta.fcleanup  field:atf_spdk.FCtrlr.ctrlr  comment:""
+      # dmmeta.fcleanup  field:atf_spdk.FCtrlr.ctrlr  comment:""
 
     dmmeta.field  field:atf_spdk.FCtrlr.key  acr.rowid:1       arg:algo.cstring  reftype:Val  dflt:""  comment:"controller primary key (PCI address)"
     dmmeta.ctypelen  ctype:atf_spdk.FCtrlr  len:48  alignment:8  padbytes:4  plaindata:N
@@ -98,59 +98,70 @@ dmmeta.ns  ns:atf_spdk  nstype:exe  license:GPL  comment:"SPDK testing tool"
     dmmeta.field  field:atf_spdk.FDb.cmdline  acr.rowid:1       arg:command.atf_spdk  reftype:Val     dflt:""  comment:""
       dmmeta.fcmdline  field:atf_spdk.FDb.cmdline  read:Y  basecmdline:algo_lib.FDb.cmdline  comment:""
 
-    dmmeta.field  field:atf_spdk.FDb.ctrlr        acr.rowid:2       arg:atf_spdk.FCtrlr         reftype:Lary  dflt:""  comment:""
-    dmmeta.field  field:atf_spdk.FDb.spdk_opts    acr.rowid:3       arg:spdk_env_opts           reftype:Ptr  dflt:""  comment:""
-    dmmeta.field  field:atf_spdk.FDb.trid         acr.rowid:4       arg:spdk_nvme_transport_id  reftype:Ptr  dflt:""  comment:""
-    dmmeta.field  field:atf_spdk.FDb.n_req_read   acr.rowid:6       arg:u64                     reftype:Val  dflt:""  comment:""
-    dmmeta.field  field:atf_spdk.FDb.n_req_write  acr.rowid:7       arg:u64                     reftype:Val  dflt:""  comment:""
-    dmmeta.field  field:atf_spdk.FDb.n_req_compl  acr.rowid:8       arg:u64                     reftype:Val  dflt:""  comment:"Total requests completed"
-    dmmeta.field  field:atf_spdk.FDb.n_req_post   acr.rowid:9       arg:u64                     reftype:Val  dflt:""  comment:"Total requests posted"
-    dmmeta.field  field:atf_spdk.FDb.bytes_total  acr.rowid:10      arg:u64                     reftype:Val  dflt:""  comment:""
-    dmmeta.field  field:atf_spdk.FDb.next_req_id  acr.rowid:12      arg:u64                     reftype:Val  dflt:""  comment:""
-    dmmeta.ctypelen  ctype:atf_spdk.FDb  len:752  alignment:8  padbytes:15  plaindata:N
+    dmmeta.field  field:atf_spdk.FDb.ctrlr         acr.rowid:2       arg:atf_spdk.FCtrlr         reftype:Lary  dflt:""  comment:""
+    dmmeta.field  field:atf_spdk.FDb.spdk_opts     acr.rowid:3       arg:spdk_env_opts           reftype:Ptr  dflt:""  comment:""
+    dmmeta.field  field:atf_spdk.FDb.trid          acr.rowid:4       arg:spdk_nvme_transport_id  reftype:Ptr  dflt:""  comment:""
+    dmmeta.field  field:atf_spdk.FDb.n_req_compl   acr.rowid:6       arg:u64                     reftype:Val  dflt:""  comment:"Total requests completed"
+    dmmeta.field  field:atf_spdk.FDb.n_req_post    acr.rowid:7       arg:u64                     reftype:Val  dflt:""  comment:"Total # of reqs posted"
+    dmmeta.field  field:atf_spdk.FDb.n_req_read    acr.rowid:8       arg:u64                     reftype:Val  dflt:""  comment:""
+    dmmeta.field  field:atf_spdk.FDb.n_req_write   acr.rowid:9       arg:u64                     reftype:Val  dflt:""  comment:""
+    dmmeta.field  field:atf_spdk.FDb.next_req_id   acr.rowid:11      arg:u64                     reftype:Val  dflt:""  comment:""
+    dmmeta.field  field:atf_spdk.FDb.n_byte_total  acr.rowid:13      arg:u64                     reftype:Val  dflt:""  comment:""
+    dmmeta.ctypelen  ctype:atf_spdk.FDb  len:552  alignment:8  padbytes:19  plaindata:N
 
   dmmeta.ctype  ctype:atf_spdk.FNs  comment:"Namespace - a piece of controller"
     dmmeta.field  field:atf_spdk.FCtrlr.zd_ns  acr.rowid:2       arg:atf_spdk.FNs  reftype:Llist  dflt:""  comment:"List of namespaces"
       dmmeta.cascdel  field:atf_spdk.FCtrlr.zd_ns  comment:""
       dmmeta.llist  field:atf_spdk.FCtrlr.zd_ns  havetail:Y  havecount:Y  comment:""
 
-    dmmeta.field  field:atf_spdk.FDb.ns        acr.rowid:5       arg:atf_spdk.FNs     reftype:Lary   dflt:""  comment:""
+    dmmeta.field  field:atf_spdk.FDb.ns        acr.rowid:5       arg:atf_spdk.FNs  reftype:Tpool  dflt:""  comment:""
+    dmmeta.field  field:atf_spdk.FDb.cd_selns  acr.rowid:12      arg:atf_spdk.FNs  reftype:Llist  dflt:""  comment:""
+      dmmeta.llist  field:atf_spdk.FDb.cd_selns  havetail:N  havecount:Y  comment:""
+      dmmeta.xref  field:atf_spdk.FDb.cd_selns  acr.rowid:2       inscond:false  via:""
+
+    dmmeta.field  field:atf_spdk.FDb.zd_allns  acr.rowid:14      arg:atf_spdk.FNs  reftype:Llist  dflt:""  comment:""
+      dmmeta.llist  field:atf_spdk.FDb.zd_allns  havetail:Y  havecount:Y  comment:""
+      dmmeta.xref  field:atf_spdk.FDb.zd_allns  acr.rowid:5       inscond:true  via:""
+
     dmmeta.field  field:atf_spdk.FNs.p_ctrlr   acr.rowid:0       arg:atf_spdk.FCtrlr  reftype:Upptr  dflt:""  comment:""
       dmmeta.xref  field:atf_spdk.FCtrlr.zd_ns  acr.rowid:0       inscond:true  via:atf_spdk.FNs.p_ctrlr/atf_spdk.FNs.p_ctrlr
 
     dmmeta.field  field:atf_spdk.FNs.ns     acr.rowid:1       arg:spdk_nvme_ns     reftype:Ptr  dflt:""  comment:""
     dmmeta.field  field:atf_spdk.FNs.qpair  acr.rowid:2       arg:spdk_nvme_qpair  reftype:Ptr  dflt:""  comment:"qpair for namespace"
-      dmmeta.fcleanup  field:atf_spdk.FNs.qpair  comment:""
+      # dmmeta.fcleanup  field:atf_spdk.FNs.qpair  comment:""
 
-    dmmeta.field  field:atf_spdk.FNs.ns_size      acr.rowid:3       arg:u64           reftype:Val  dflt:""  comment:"namespace size in bytes"
-    dmmeta.field  field:atf_spdk.FNs.sector_size  acr.rowid:4       arg:u32           reftype:Val  dflt:""  comment:"sector size in bytes"
-    dmmeta.field  field:atf_spdk.FNs.n_req_compl  acr.rowid:5       arg:u64           reftype:Val  dflt:""  comment:"Total # of reqs completed"
-    dmmeta.field  field:atf_spdk.FNs.n_req_post   acr.rowid:6       arg:u64           reftype:Val  dflt:""  comment:"Total # of reqs posted"
-    dmmeta.field  field:atf_spdk.FNs.key          acr.rowid:9       arg:algo.cstring  reftype:Val  dflt:""  comment:""
+    dmmeta.field  field:atf_spdk.FNs.ns_size        acr.rowid:3       arg:u64           reftype:Val  dflt:""  comment:"namespace size in bytes"
+    dmmeta.field  field:atf_spdk.FNs.sector_size    acr.rowid:4       arg:u32           reftype:Val  dflt:""  comment:"sector size in bytes"
+    dmmeta.field  field:atf_spdk.FNs.n_req_compl    acr.rowid:5       arg:u64           reftype:Val  dflt:""  comment:"Total # of reqs completed"
+    dmmeta.field  field:atf_spdk.FNs.n_req_post     acr.rowid:6       arg:u64           reftype:Val  dflt:""  comment:"Total # of reqs posted"
+    dmmeta.field  field:atf_spdk.FNs.key            acr.rowid:9       arg:algo.cstring  reftype:Val  dflt:""  comment:""
+    dmmeta.field  field:atf_spdk.FNs.next_block_id  acr.rowid:11      arg:u64           reftype:Val  dflt:""  comment:""
     dmmeta.cfmt  cfmt:atf_spdk.FNs.String  printfmt:Tuple  read:Y  print:Y  sep:""  genop:Y  comment:""
-    dmmeta.ctypelen  ctype:atf_spdk.FNs  len:160  alignment:8  padbytes:16  plaindata:N
+    dmmeta.ctypelen  ctype:atf_spdk.FNs  len:208  alignment:8  padbytes:16  plaindata:N
 
   dmmeta.ctype  ctype:atf_spdk.FReq  comment:""
     dmmeta.cpptype  ctype:atf_spdk.FReq  ctor:Y  dtor:N  cheap_copy:N
     dmmeta.pack  ctype:atf_spdk.FReq  comment:""
-    dmmeta.field  field:atf_spdk.FDb.req     acr.rowid:11      arg:atf_spdk.FReq  reftype:Tpool  dflt:""  comment:""
+    dmmeta.field  field:atf_spdk.FDb.req     acr.rowid:10      arg:atf_spdk.FReq  reftype:Tpool  dflt:""  comment:""
     dmmeta.field  field:atf_spdk.FNs.zd_req  acr.rowid:7       arg:atf_spdk.FReq  reftype:Llist  dflt:""  comment:"All requests"
       dmmeta.cascdel  field:atf_spdk.FNs.zd_req  comment:""
       dmmeta.llist  field:atf_spdk.FNs.zd_req  havetail:Y  havecount:Y  comment:""
 
     dmmeta.field  field:atf_spdk.FNs.zd_freereq  acr.rowid:8       arg:atf_spdk.FReq  reftype:Llist  dflt:""  comment:"Free requests (not participating in I/O)"
+      dmmeta.cascdel  field:atf_spdk.FNs.zd_freereq  comment:""
       dmmeta.llist  field:atf_spdk.FNs.zd_freereq  havetail:Y  havecount:Y  comment:""
 
     dmmeta.field  field:atf_spdk.FNs.zd_complreq  acr.rowid:10      arg:atf_spdk.FReq  reftype:Llist  dflt:""  comment:""
+      dmmeta.cascdel  field:atf_spdk.FNs.zd_complreq  comment:""
       dmmeta.llist  field:atf_spdk.FNs.zd_complreq  havetail:Y  havecount:Y  comment:""
 
     dmmeta.field  field:atf_spdk.FReq.p_ns        acr.rowid:0       arg:atf_spdk.FNs  reftype:Upptr  dflt:""  comment:"ns_entry for current operation"
       dmmeta.xref  field:atf_spdk.FNs.zd_req       acr.rowid:1       inscond:true   via:atf_spdk.FReq.p_ns/atf_spdk.FReq.p_ns
-      dmmeta.xref  field:atf_spdk.FNs.zd_freereq   acr.rowid:2       inscond:true   via:atf_spdk.FReq.p_ns/atf_spdk.FReq.p_ns
-      dmmeta.xref  field:atf_spdk.FNs.zd_complreq  acr.rowid:3       inscond:false  via:atf_spdk.FReq.p_ns
+      dmmeta.xref  field:atf_spdk.FNs.zd_freereq   acr.rowid:3       inscond:true   via:atf_spdk.FReq.p_ns/atf_spdk.FReq.p_ns
+      dmmeta.xref  field:atf_spdk.FNs.zd_complreq  acr.rowid:4       inscond:false  via:atf_spdk.FReq.p_ns
 
     dmmeta.field  field:atf_spdk.FReq.buf  acr.rowid:1       arg:algo.memptr  reftype:Val  dflt:""  comment:"spdk memory"
-      dmmeta.fcleanup  field:atf_spdk.FReq.buf  comment:""
+      # dmmeta.fcleanup  field:atf_spdk.FReq.buf  comment:""
 
     dmmeta.field  field:atf_spdk.FReq.req_id        acr.rowid:2       arg:u64   reftype:Val  dflt:""  comment:"request id"
     dmmeta.field  field:atf_spdk.FReq.block_id      acr.rowid:4       arg:u32   reftype:Val  dflt:""  comment:"current  block number for this context"
@@ -169,7 +180,7 @@ dmmeta.ns  ns:atf_spdk  nstype:exe  license:GPL  comment:"SPDK testing tool"
       dmmeta.fconst  fconst:atf_spdk.ReqType.value/write       acr.rowid:1       value:1  comment:""
       dmmeta.fconst  fconst:atf_spdk.ReqType.value/write_zero  acr.rowid:2       value:2  comment:""
 
-    dmmeta.cfmt  cfmt:atf_spdk.ReqType.String  printfmt:Bitset  read:Y  print:Y  sep:,  genop:Y  comment:""
+    dmmeta.cfmt  cfmt:atf_spdk.ReqType.String  printfmt:Raw  read:Y  print:Y  sep:""  genop:Y  comment:""
     dmmeta.ctypelen  ctype:atf_spdk.ReqType  len:1  alignment:1  padbytes:0  plaindata:Y
 
   dmmeta.fwddecl  fwddecl:atf_spdk.spdk_env_opts           comment:""

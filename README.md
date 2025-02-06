@@ -188,31 +188,3 @@ void atf_spdk::FNs_Uninit(atf_spdk::FNs& ns) {
 
 
 
-# style questions
-
-## pointer and reference names
-```
-static atf_spdk::FReq* CreateReq(atf_spdk::FNs *fns) {
-    atf_spdk::FReq *req= &atf_spdk::req_Alloc();
-    req->p_ns = fns;
-```
--when to use lower case f{type}? should this be? 
-```
-    atf_spdk::FReq *freq= &atf_spdk::req_Alloc();
-```
--when to use p_{type} ?
-
-## exit on err
-```
-    if (_db.cmdline.test && cd_selns_EmptyQ()) {
-        prlog("No namespaces matched selector. Try with -list flag to see the list of available namespaces");
-        algo_lib::_db.exit_code=1;
-    }
-
-    if (_db.cmdline.test) {
-        RunTest();
-    }
-```
-
-Is it desirable to enter RunTest after algo_lib::_db.exit_code=1; relying on a separate fact that list is empty or should there be a separate test ??
-

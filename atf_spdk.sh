@@ -144,15 +144,15 @@ dmmeta.ns  ns:atf_spdk  nstype:exe  license:GPL  comment:"SPDK testing tool"
     dmmeta.pack  ctype:atf_spdk.FReq  comment:""
     dmmeta.field  field:atf_spdk.FDb.req     acr.rowid:10      arg:atf_spdk.FReq  reftype:Tpool  dflt:""  comment:""
     dmmeta.field  field:atf_spdk.FNs.zd_req  acr.rowid:7       arg:atf_spdk.FReq  reftype:Llist  dflt:""  comment:"All requests"
-      dmmeta.cascdel  field:atf_spdk.FNs.zd_req  comment:""
+      # dmmeta.cascdel  field:atf_spdk.FNs.zd_req  comment:""
       dmmeta.llist  field:atf_spdk.FNs.zd_req  havetail:Y  havecount:Y  comment:""
 
     dmmeta.field  field:atf_spdk.FNs.zd_freereq  acr.rowid:8       arg:atf_spdk.FReq  reftype:Llist  dflt:""  comment:"Free requests (not participating in I/O)"
-      dmmeta.cascdel  field:atf_spdk.FNs.zd_freereq  comment:""
+      # dmmeta.cascdel  field:atf_spdk.FNs.zd_freereq  comment:""
       dmmeta.llist  field:atf_spdk.FNs.zd_freereq  havetail:Y  havecount:Y  comment:""
 
     dmmeta.field  field:atf_spdk.FNs.zd_complreq  acr.rowid:10      arg:atf_spdk.FReq  reftype:Llist  dflt:""  comment:""
-      dmmeta.cascdel  field:atf_spdk.FNs.zd_complreq  comment:""
+      # dmmeta.cascdel  field:atf_spdk.FNs.zd_complreq  comment:""
       dmmeta.llist  field:atf_spdk.FNs.zd_complreq  havetail:Y  havecount:Y  comment:""
 
     dmmeta.field  field:atf_spdk.FReq.p_ns        acr.rowid:0       arg:atf_spdk.FNs  reftype:Upptr  dflt:""  comment:"ns_entry for current operation"

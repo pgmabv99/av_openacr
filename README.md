@@ -48,7 +48,11 @@ dot -Tsvg av_openacr/meng -o av_openacr/meng.svg
 ## to run pipeline locally 
 atf_ci -cijob:%
 
-
+```
+atf_ci.begin  citest:spnx  sandbox:N
+atf_ci.citest  citest:spnx  runtime:00:00:00.010202231  success:Y  comment:"Re-generate sphinx website from readme - check all links"
+report.atf_ci  n_citest:42  n_run:42  n_pass:42  success:Y  comment:"The coast is clear. Proceed with caution :-)
+```
 
 ## To See Prefixes
 

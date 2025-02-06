@@ -29,3 +29,4 @@ explict test on algo_lib::_db.exit_code=1; ??
 - If yes, what is the style ? nested if ? goto err  ?
 
 - Note that goto had religious wars around it . I was surpised to find it in spdk proper code. What is our policy on that ?
+https://github.com/spdk/spdk/blob/e01cb43b8578f9155d07a9bc6eee4e70a3af96b0/lib/util/uuid.c#L168

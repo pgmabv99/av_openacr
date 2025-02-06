@@ -76,6 +76,7 @@ zsl      Llist    Zero-terminated singly linked LIFO list
 git push   #to defalt remote
 
 git push ssh://git@gitlab.vovaco.com:1008/algornd/arnd.git HEAD    #non-default 
+git log --oneline HEAD..FETCH_HEAD    dif:  HEAD munus FETCH_HEAD
 
 
 ### Separate generated code
@@ -147,6 +148,9 @@ Usage: atf_spdk [options]
 ```
 
 # atf work log
+## 2/5
+- rebase mistery
+- convert to explicit destrucitrs for spdk
 ## 2/3 
 - add vrfy and verblog
 - research why some dtr + cleanup are not called. 
@@ -178,22 +182,37 @@ void atf_spdk::FNs_Uninit(atf_spdk::FNs& ns) {
         zd_ns_Remove(*p_p_ctrlr, row);// remove ns from index zd_ns
     }
 }
-
-2/2  - set up debuging  and git double repo
-
 ```
-call stack
-atf_spdk::ctrlr_Cleanup(atf_spdk::FCtrlr & ctrlr) (\home\avorovich\arnd\cpp\atf_spdk\atf_spdk.cpp:131)
-atf_spdk::FCtrlr_Uninit(atf_spdk::FCtrlr & ctrlr) (\home\avorovich\arnd\include\gen\atf_spdk_gen.inl.h:123)
-atf_spdk::FCtrlr::~FCtrlr(atf_spdk::FCtrlr * const this) (\home\avorovich\arnd\include\gen\atf_spdk_gen.inl.h:133)
-atf_spdk::ctrlr_RemoveAll() (\home\avorovich\arnd\cpp\gen\atf_spdk_gen.cpp:477)
-atf_spdk::Main() (\home\avorovich\arnd\cpp\atf_spdk\atf_spdk.cpp:267)
-main(int argc, char ** argv) (\home\avorovich\arnd\cpp\gen\atf_spdk_gen.cpp:1450)
 
---call stack for ns
-atf_spdk::qpair_Cleanup(atf_spdk::FNs & ns) (\home\avorovich\arnd\cpp\atf_spdk\atf_spdk.cpp:142)
-atf_spdk::FNs_Uninit(atf_spdk::FNs & ns) (\home\avorovich\arnd\cpp\gen\atf_spdk_gen.cpp:1078)
-atf_spdk::FNs::~FNs(atf_spdk::FNs * const this) (\home\avorovich\arnd\include\gen\atf_spdk_gen.inl.h:524)
-atf_spdk::ns_RemoveAll() (\home\avorovich\arnd\cpp\gen\atf_spdk_gen.cpp:554)
-atf_spdk::Main() (\home\avorovich\arnd\cpp\atf_spdk\atf_spdk.cpp:266)
-main(int argc, char ** argv) (\home\avorovich\arnd\cpp\gen\atf_spdk_gen.cpp:1450)
+## 2/2  - set up debuging  and git double repo
+
+
+
+# style questions
+
+## pointer and reference names
+```
+static atf_spdk::FReq* CreateReq(atf_spdk::FNs *fns) {
+    atf_spdk::FReq *req= &atf_spdk::req_Alloc();
+    req->p_ns = fns;
+```
+-when to use lower case f{type}? should this be? 
+```
+    atf_spdk::FReq *freq= &atf_spdk::req_Alloc();
+```
+-when to use p_{type} ?
+
+## exit on err
+```
+    if (_db.cmdline.test && cd_selns_EmptyQ()) {
+        prlog("No namespaces matched selector. Try with -list flag to see the list of available namespaces");
+        algo_lib::_db.exit_code=1;
+    }
+
+    if (_db.cmdline.test) {
+        RunTest();
+    }
+```
+
+Is it desirable to enter RunTest after algo_lib::_db.exit_code=1; relying on a separate fact that list is empty or should there be a separate test ??
+

@@ -42,4 +42,7 @@ avorovich@nj1:~/spdk/dpdk$
 
 https://github.com/DPDK/dpdk/blob/main/doc/guides/tools/dumpcap.rst
 
+
+find $HOME  -name "*rtf.a"
+
 ```

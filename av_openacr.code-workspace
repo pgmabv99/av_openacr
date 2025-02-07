@@ -8,9 +8,6 @@
 		},
 		{
 			"path": "../dpdk"
-		},
-		{
-			"path": "../dpdkcap"
 		}
 	],
 	"settings": {

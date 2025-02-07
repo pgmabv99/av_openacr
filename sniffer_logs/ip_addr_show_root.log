@@ -26,7 +26,7 @@ ip addr show
 5: enxb03af2b6059f: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
     link/ether b0:3a:f2:b6:05:9f brd ff:ff:ff:ff:ff:ff
     inet 169.254.3.1/24 metric 100 brd 169.254.3.255 scope global dynamic enxb03af2b6059f
-       valid_lft 840942sec preferred_lft 840942sec
+       valid_lft 839197sec preferred_lft 839197sec
     inet6 fe80::b23a:f2ff:feb6:59f/64 scope link 
        valid_lft forever preferred_lft forever
 6: data2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000

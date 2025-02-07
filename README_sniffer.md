@@ -19,30 +19,86 @@ sudo dpdk-devbind.py -b vfio-pci 0000:81:00.0
 sudo dpdk-devbind.py -b vfio-pci 0000:01:00.0
 
 
-cd $HOME/spdk/dpdk/app/dumpcap
-meson build
-ninja -C build
+sudo dpdk-devbind.py -b vfio-pci 0000:01:00.0
+sudo dpdk-devbind.py --status
+
+# ---- find the interface by PCI adress
+avorovich@nj1:~/av_openacr$ ls -l /sys/bus/pci/devices/0000:01:00.0/net/
+total 0
+drwxr-xr-x 11 root root 0 Feb  2 17:58 data2
+
+avorovich@nj1:~/av_openacr$ ls -l /sys/bus/pci/devices/0000:c5:00.0/net/
+total 0
+drwxr-xr-x 11 root root 0 Feb  2 17:58 data0
+
+avorovich@nj1:~/av_openacr$ ls -l /sys/bus/pci/devices/0000:81:00.0/net/
+total 0
+drwxr-xr-x 5 root root 0 Feb  2 17:58 ibI
+
+# -----find current ip
+avorovich@nj1:~/av_openacr$ ip addr show | grep -A 3  'data2'
+6: data2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 0c:42:a1:2d:5b:88 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.210.51/24 scope global data2
+       valid_lft forever preferred_lft forever
+    inet6 fe80::e42:a1ff:fe2d:5b88/64 scope link 
+       valid_lft forever preferred_lft forever
+
+avorovich@nj1:~/av_openacr$ ip addr show | grep -A 3  'data0'
+4: data0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 0c:42:a1:66:9d:5e brd ff:ff:ff:ff:ff:ff
+    inet 192.168.110.51/24 scope global data0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::e42:a1ff:fe66:9d5e/64 scope link 
+       valid_lft forever preferred_lft forever
+
+avorovich@nj1:~/av_openacr$ ip addr show | grep -A 3  'ibI'
+7: ibI: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 2044 qdisc mq state UP group default qlen 256
+    link/infiniband 00:00:10:27:fe:80:00:00:00:00:00:00:b8:59:9f:03:00:54:0d:70 brd 00:ff:ff:ff:ff:12:40:1b:ff:ff:00:00:00:00:00:00:ff:ff:ff:ff
+    inet 192.168.118.51/24 scope global ibI
+       valid_lft forever preferred_lft forever
+    inet6 fe80::ba59:9f03:54:d70/64 scope link 
+       valid_lft forever preferred_lft forever
 
 
+#------ note lsof usage
+redpanda  3077523            1082  392u  IPv4 3672237      0t0  TCP 192.168.210.51:1092->192.168.210.21:60544 (ESTABLISHED)
+redpanda  3077523            1082  498u  IPv4 3586967      0t0  TCP 192.168.110.51:1096->192.168.110.11:44004 (ESTABLISHED)
+redpanda  3077523            1082  498u  IPv4 3586967      0t0  TCP 192.168.110.51:1096->192.168.110.11:44004 (ESTABLISHED)
+
+
+# Bring Down the data2 Interface
+sudo ip link set dev data2 down
+ip link show data2
+
+# unbind the device
+readlink /sys/bus/pci/devices/0000:01:00.0/driver
+echo 0000:01:00.0 | sudo tee /sys/bus/pci/devices/0000:01:00.0/driver/unbind
+
+# bind the device via dpdk util
+#sudo modprobe vfio-pci  # Ensure vfio-pci module is loaded
+sudo dpdk-devbind.py -b vfio-pci 0000:01:00.0
+```
+ ##  tools
+ 
+
+ ### dumpcap (part of dpdk)
+ - needs a primary process
+```
 sudo apt update
 sudo apt install libisal-dev
 sudo apt update
 sudo apt install libpcap-dev
 
-$HOME/av_openacr/s_make_dpdk.sh
-
-
-find $HOME/dpdk -name "*dumpcap*"
-find $HOME/dpdk -name "*test-acl*"
-./build/app/dumpcap
-./app/dumpcap
-./doc/guides/tools/dumpcap.rst
-avorovich@nj1:~/spdk/dpdk$ 
-
-
 https://github.com/DPDK/dpdk/blob/main/doc/guides/tools/dumpcap.rst
 
+cpp/atf_snf/dumpcap
 
-find $HOME  -name "*rtf.a"
+```
+
+ ### dpdkcap (separate) https://github.com/dpdkcap/dpdkcap
+ - wip
+
+cpp/atf_snf/dpdkcap
 
 ```

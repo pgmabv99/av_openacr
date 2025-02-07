@@ -7,12 +7,16 @@
 			"path": "../arnd"
 		},
 		{
-			"path": "../spdk"
+			"path": "../dpdk"
+		},
+		{
+			"path": "../dpdkcap"
 		}
 	],
 	"settings": {
 		"files.associations": {
-			"random": "cpp"
+			"random": "cpp",
+			"rte_os.h": "c"
 		}
 	}
 }

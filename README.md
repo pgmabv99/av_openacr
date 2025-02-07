@@ -31,6 +31,7 @@ amc myns.%order% -proto
 
 ```bash
 amc_vis atf_spdk.% > $HOME1/av_openacr/atf_spdk_viz.txt
+amc_vis x2net.% > $HOME1/av_openacr/x2net_viz.txt
 amc_vis dmmeta.'(Ctype|Field|Ns)'
 ```
 to see all bad ref
@@ -79,7 +80,7 @@ zsl      Llist    Zero-terminated singly linked LIFO list
 
 git push   #to defalt remote
 
-git push ssh://git@gitlab.vovaco.com:1008/algornd/arnd.git HEAD    #non-default 
+git push ssh://git@gitlab.vovaco.com:1008/algornd/arnd.git HEAD  --force  #non-default 
 git log --oneline HEAD..FETCH_HEAD    dif:  HEAD munus FETCH_HEAD
 
 

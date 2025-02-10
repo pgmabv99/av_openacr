@@ -1,7 +1,11 @@
 
 # Sniffer notes
 
-## to show all dependencies
+## mount hugepages
+sudo mkdir -p /mnt/huge
+
+sudo mount -t hugetlbfs nodev /mnt/huge
+## NIC research 
 
 ```
 
@@ -79,7 +83,7 @@ echo 0000:01:00.0 | sudo tee /sys/bus/pci/devices/0000:01:00.0/driver/unbind
 #sudo modprobe vfio-pci  # Ensure vfio-pci module is loaded
 sudo dpdk-devbind.py -b vfio-pci 0000:01:00.0
 ```
- ##  tools
+ ##  tools and version oc capture code 
  
 
  ### dumpcap (part of dpdk)
@@ -101,4 +105,18 @@ cpp/atf_snf/dumpcap
 
 cpp/atf_snf/dpdkcap
 
-```
+
+ ### 3 version of AI tools in the repo
+
+
+1. gemini (yours)  using  #include <infiniband/verbs.h>
+
+https://github.com/pgmabv99/arnd/blob/algornd/arnd.513/cpp/atf_snf/dpdkcap/src/test_mlx5_gemini.c
+
+2. chatGPT(mine) using  #include <infiniband/verbs.h>
+
+https://github.com/pgmabv99/arnd/blob/algornd/arnd.513/cpp/atf_snf/dpdkcap/src/test_mlx5_gpt.c
+
+3. ChatGPT using higher level RDMA API #include <rdma/rdma_cma.h> (that is used by x2net !!)
+
+https://github.com/pgmabv99/arnd/blob/algornd/arnd.513/cpp/atf_snf/dpdkcap/src/test_mlx5_rdma_gpt.c

@@ -8,12 +8,23 @@
 		},
 		{
 			"path": "../dpdk"
+		},
+		{
+			"path": "../spdk"
+		},
+		{
+			"path": "../../../etc/x2.d/script"
+		},
+		{
+			"path": "../algo"
 		}
 	],
 	"settings": {
 		"files.associations": {
 			"random": "cpp",
-			"rte_os.h": "c"
+			"rte_os.h": "c",
+			"verbs.h": "c",
+			"rdma_cma.h": "c"
 		}
 	}
 }

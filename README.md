@@ -130,29 +130,38 @@ git config --global core.sshCommand "ssh -i /home/avorovich/.ssh/algox2_av"
 #for av_openacl github use token (gdrive) 
 git clone https://pgmabv99:<avtoken4>@github.com/pgmabv99/algo_util.git
 
-# atf_spdk help
+## acr docker cheat sheet
 ```
-atf_spdk: SPDK testing tool
-Usage: atf_spdk [options]
-    OPTION         TYPE    DFLT    COMMENT
-    -in            string  "data"  Input directory or filename, - for stdin
-    -list                          (action) List discovered controllers & namespaces
-    -test                          (action) Test selected controller
-    -read                          (with -test) Perform reads
-    -vmd                           Enable Intel VMD module (Volume Management Device)
-    -ns            regx    ""      Regx of namespace(s) to test
-    -reqdepth      int     5       Max request depth
-    -logblocksize  int     20      Request block size
-    -write                         (with -test) Perform writes
-    -nblocks       int     0       Number of blocks to read/write
-    -verbose       int             Verbosity level (0..255); alias -v; cumulative
-    -debug         int             Debug level (0..255); alias -d; cumulative
-    -help                          Print help and exit; alias -h
-    -version                       Print version and exit
-    -signature                     Show signatures and exit; alias -sig
+#log to host of sn5 from sn1
+x2ipmi -device:nj1.sv5 -sol
+to exit
+~.
+#from sn1: login from sn1 to sn5 container
+x2node  -node:nj1.sn5.avorovich 
+x2node  -node:nj1.sn5.kafka-4 
+
+
+#from sn1: login  to host 
+x2node  -node:nj1.sn5.bm -t -root
+
+#from sn1 : docker rm and docker start new container
+dkr -clean_run  -node:nj1.sn5.avorovich 
+
+
+#passtru cat /etc/hostname
+#from sn1 : ps 
+dkr ps   -node:nj1.sn5.avorovich 
+
+docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
+
+
 ```
 
+
+
 # atf work log
+## 2/8-2/10
+- sniffer (5 version wip)
 ## 2/5
 - rebase mistery
 - convert to explicit destrucitrs for spdk

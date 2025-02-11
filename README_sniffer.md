@@ -1,6 +1,10 @@
 
 # Sniffer notes
 
+## extra install
+sudo apt-get install -y libarchive-dev 
+sudo apt-get install -y libpcap-dev
+
 ## mount hugepages
 sudo mkdir -p /mnt/huge
 
@@ -21,6 +25,8 @@ sudo dpdk-devbind.py -b igb_uio 0000:c5:00.0
 sudo dpdk-devbind.py -b vfio-pci 0000:c5:00.0
 sudo dpdk-devbind.py -b vfio-pci 0000:81:00.0
 sudo dpdk-devbind.py -b vfio-pci 0000:01:00.0
+sudo dpdk-devbind.py -b vfio-pci 0000:01:00.2 
+
 
 
 sudo dpdk-devbind.py -b vfio-pci 0000:01:00.0
@@ -83,8 +89,53 @@ echo 0000:01:00.0 | sudo tee /sys/bus/pci/devices/0000:01:00.0/driver/unbind
 #sudo modprobe vfio-pci  # Ensure vfio-pci module is loaded
 sudo dpdk-devbind.py -b vfio-pci 0000:01:00.0
 ```
- ##  tools and version oc capture code 
+
+ ## mirror  by VP
+```
+https://chatgpt.com/share/67ab88aa-428c-8006-aa25-4b3912a47133
+
+ oot@nj1:~# tc -s filter show dev data0rf0 ingress
+filter protocol all pref 49152 flower chain 0
+filter protocol all pref 49152 flower chain 0 handle 0x1
+  skip_sw
+  in_hw in_hw_count 1
+        action order 1: mirred (Egress Mirror to device data0rf1) pipe
+        index 1 ref 1 bind 1 installed 386 sec used 0 sec
+        Action statistics:
+        Sent 37894 bytes 394 pkt (dropped 0, overlimits 0 requeues 0)
+        Sent software 0 bytes 0 pkt
+        Sent hardware 37894 bytes 394 pkt
+        backlog 0b 0p requeues 0
+        used_hw_stats delayed
+
+        action order 2: mirred (Egress Redirect to device data0pf) stolen
+        index 2 ref 1 bind 1 installed 386 sec used 0 sec
+        Action statistics:
+        Sent 37894 bytes 394 pkt (dropped 0, overlimits 0 requeues 0)
+        Sent software 0 bytes 0 pkt
+        Sent hardware 37894 bytes 394 pkt
+        backlog 0b 0p requeues 0
+        used_hw_stats delayed
+
+ ```
+
+ ```
+ avorovich@nj1:~/av_openacr$ ethtool -i data0pf
+driver: mlx5_core
+version: 24.10-0.7.0
+firmware-version: 20.43.1014 (MT_0000000223)
+expansion-rom-version: 
+bus-info: 0000:c5:00.0
+supports-statistics: yes
+supports-test: yes
+supports-eeprom-access: no
+supports-register-dump: no
+supports-priv-flags: yes
+ ```
+ ##  tools and versions of capture code 
  
+ tcpdump -i tap0 -v -v -v
+ibv_devices
 
  ### dumpcap (part of dpdk)
  - needs a primary process

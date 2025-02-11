@@ -1,0 +1,66 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: ipmi: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+    link/ether 3c:ec:ef:78:e5:1a brd ff:ff:ff:ff:ff:ff
+    altname enp67s0f0np0
+    inet 192.168.11.2/24 scope global ipmi
+       valid_lft forever preferred_lft forever
+3: ctrl: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 3c:ec:ef:78:e5:1b brd ff:ff:ff:ff:ff:ff
+    altname enp67s0f1np1
+    inet 192.168.10.51/24 scope global ctrl
+       valid_lft forever preferred_lft forever
+    inet6 fe80::3eec:efff:fe78:e51b/64 scope link 
+       valid_lft forever preferred_lft forever
+4: data0pf: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 0c:42:a1:66:9d:5e brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::e42:a1ff:fe66:9d5e/64 scope link 
+       valid_lft forever preferred_lft forever
+5: enxb03af2b6059f: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
+    link/ether b0:3a:f2:b6:05:9f brd ff:ff:ff:ff:ff:ff
+    inet 169.254.3.1/24 metric 100 brd 169.254.3.255 scope global dynamic enxb03af2b6059f
+       valid_lft 862600sec preferred_lft 862600sec
+    inet6 fe80::b23a:f2ff:feb6:59f/64 scope link 
+       valid_lft forever preferred_lft forever
+6: data2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 0c:42:a1:2d:5b:88 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.210.51/24 scope global data2
+       valid_lft forever preferred_lft forever
+    inet6 fe80::e42:a1ff:fe2d:5b88/64 scope link 
+       valid_lft forever preferred_lft forever
+7: ibI: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 2044 qdisc mq state UP group default qlen 256
+    link/infiniband 00:00:10:27:fe:80:00:00:00:00:00:00:b8:59:9f:03:00:54:0d:70 brd 00:ff:ff:ff:ff:12:40:1b:ff:ff:00:00:00:00:00:00:ff:ff:ff:ff
+    inet 192.168.118.51/24 scope global ibI
+       valid_lft forever preferred_lft forever
+    inet6 fe80::ba59:9f03:54:d70/64 scope link 
+       valid_lft forever preferred_lft forever
+9: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:83:42:57:8e brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+11: data0rf0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether da:c5:56:92:f2:85 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::d8c5:56ff:fe92:f285/64 scope link 
+       valid_lft forever preferred_lft forever
+12: data0rf1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 2e:25:98:46:78:30 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::2c25:98ff:fe46:7830/64 scope link 
+       valid_lft forever preferred_lft forever
+13: data0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether ee:be:e1:16:91:5b brd ff:ff:ff:ff:ff:ff permaddr 36:e7:85:8e:55:a2
+    inet 192.168.110.51/24 scope global data0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::ecbe:e1ff:fe16:915b/64 scope link 
+       valid_lft forever preferred_lft forever
+14: tap0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 0e:94:e9:1b:ae:65 brd ff:ff:ff:ff:ff:ff permaddr 3a:b0:31:75:a6:ce
+    inet6 fe80::c94:e9ff:fe1b:ae65/64 scope link 
+       valid_lft forever preferred_lft forever
+15: enp1s0v0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 2a:2b:83:f3:de:d1 brd ff:ff:ff:ff:ff:ff permaddr 32:a5:68:49:84:a3
+16: enp1s0v1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 86:3d:5c:ae:22:83 brd ff:ff:ff:ff:ff:ff permaddr 4a:09:56:eb:5b:c9

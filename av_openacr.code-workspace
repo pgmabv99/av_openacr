@@ -27,7 +27,8 @@
 			"random": "cpp",
 			"rte_os.h": "c",
 			"verbs.h": "c",
-			"rdma_cma.h": "c"
+			"rdma_cma.h": "c",
+			"inet.h": "c"
 		}
 	}
 }

@@ -160,6 +160,9 @@ docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 
 
 # atf work log
+## 2/11
+- sniffer . verbs version
+https://www.ibm.com/docs/en/aix/7.2?topic=sv-queue-pair-management
 ## 2/8-2/10
 - sniffer (5 version wip)
 ## 2/5

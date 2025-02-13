@@ -7,12 +7,6 @@
 			"path": "../arnd"
 		},
 		{
-			"path": "../dpdk"
-		},
-		{
-			"path": "../spdk"
-		},
-		{
 			"path": "../../../etc/x2.d/script"
 		},
 		{
@@ -20,6 +14,12 @@
 		},
 		{
 			"path": "../pcap"
+		},
+		{
+			"path": "../rdma-core"
+		},
+		{
+			"path": "../../../usr/include/infiniband"
 		}
 	],
 	"settings": {

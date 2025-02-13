@@ -1,10 +1,11 @@
 
 # Sniffer notes
 
-## extra install
+## extra install and source
 sudo apt-get install -y libarchive-dev 
 sudo apt-get install -y libpcap-dev
 
+ls -ltr MLNX_OFED_LINUX-24.10-0.7.0.0-ubuntu24.04-x86_64/src/
 ## mount hugepages
 sudo mkdir -p /mnt/huge
 

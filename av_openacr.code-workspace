@@ -28,7 +28,8 @@
 			"rte_os.h": "c",
 			"verbs.h": "c",
 			"rdma_cma.h": "c",
-			"inet.h": "c"
+			"inet.h": "c",
+			"mlx5dv.h": "c"
 		}
 	}
 }

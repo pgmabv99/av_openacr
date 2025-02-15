@@ -7,9 +7,6 @@
 			"path": "../arnd"
 		},
 		{
-			"path": "../../../etc/x2.d/script"
-		},
-		{
 			"path": "../algo"
 		},
 		{
@@ -17,9 +14,6 @@
 		},
 		{
 			"path": "../rdma-core"
-		},
-		{
-			"path": "../../../usr/include/infiniband"
 		}
 	],
 	"settings": {

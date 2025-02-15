@@ -11,20 +11,20 @@ acr dmmeta.ns:atf_spdk -ndown 99  -tree > $HOME1/av_openacr/atf_spdk.sh
 
     # dmmeta.field  field:atf_spdk.FDb.av22         acr.rowid:2       arg:u64                     reftype:Val   dflt:""  comment:""
 
-(venv) pgmabv@DESKTOP-3DQ1QS6:~/openacr$ acr dev.targsrc:myns/cpp/myns/%.%
-dev.targsrc  targsrc:myns/cpp/myns/myns.cpp  comment:""
-dev.targsrc  targsrc:myns/cpp/myns/util.cpp  comment:""
-dev.targsrc  targsrc:myns/cpp/myns/util.h    comment:""
+(venv) pgmabv@DESKTOP-3DQ1QS6:~/openacr$ acr dev.targsrc:x2bm_pcap/cpp/x2bm_pcap/%.%
+dev.targsrc  targsrc:x2bm_pcap/cpp/x2bm_pcap/x2bm_pcap.cpp  comment:""
+dev.targsrc  targsrc:x2bm_pcap/cpp/x2bm_pcap/util.cpp  comment:""
+dev.targsrc  targsrc:x2bm_pcap/cpp/x2bm_pcap/util.h    comment:""
 ```
 
 ## To Show code
 
 ```bash
 # All generated C code
-amc myns.%order%
+amc x2bm_pcap.%
 
 # Show prototypes
-amc myns.%order% -proto
+amc x2bm_pcap.%order% -proto
 ```
 
 ## Visuals
@@ -41,7 +41,7 @@ to see all bad ref
 ## Visuals SVG
 
 ```bash
-amc_vis myns.% -dot:av_openacr/pic
+amc_vis x2bm_pcap.% -dot:av_openacr/pic
 dot -Tsvg av_openacr/pic -o av_openacr/pic.svg
 amc_vis samp_meng.% -dot:av_openacr/meng
 dot -Tsvg av_openacr/meng -o av_openacr/meng.svg
@@ -110,7 +110,7 @@ av_openacr
 
 ## messages
 samp_meng.NewSymbolReqMsg symbol:wwww
-myns.NewOrderReqMsg part_key:part98  amt:10
+x2bm_pcap.NewOrderReqMsg part_key:part98  amt:10
 
 ## Todo
 

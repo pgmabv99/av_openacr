@@ -24,7 +24,9 @@ dev.targsrc  targsrc:x2bm_pcap/cpp/x2bm_pcap/util.h    comment:""
 amc x2bm_pcap.%
 
 # Show prototypes
-amc x2bm_pcap.%order% -proto
+amc x2bm_pcap.%TMac% -proto
+
+cpp-indent cpp/x2bm_pcap/x2bm_pcap.cpp
 ```
 
 ## Visuals

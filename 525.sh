@@ -18,7 +18,8 @@ acr_ed -create -field x2bm_pcap.FDb.zd_tcp_pair -cascdel -write -comment ""
 #tcp pair
 acr_ed -create -ctype x2bm_pcap.FTcp_pair -pooltype Tpool -indexed -write  -comment "tcp pair entry"
 acr_ed -create -field x2bm_pcap.FTcp_pair.count -arg i32  -write
-acr_ed -create -field x2bm_pcap.FTcp_pair.zd_frames -arg x2bm_pcap.FFrame -via x2bm_pcap.FFrame.p_tcp_pair -cascdel -write -comment "L"
+acr_ed -create -field x2bm_pcap.FTcp_pair.zd_frames -arg x2bm_pcap.FFrame -via x2bm_pcap.FFrame.p_tcp_pair                                 -cascdel -write -comment "double list of frames"
+acr_ed -create -field x2bm_pcap.FTcp_pair.bh_frames -arg x2bm_pcap.FFrame -via x2bm_pcap.FFrame.p_tcp_pair  -sortfld x2bm_pcap.FFrame.seq  -cascdel -write -comment "binary heap  of frames"
 
 #frame 
 acr_ed -create -ctype x2bm_pcap.FFrame -pooltype Tpool -write  -comment "tcp frame entry"

@@ -26,7 +26,6 @@ amc x2bm_pcap.%
 # Show prototypes
 amc x2bm_pcap.%TMac% -proto
 
-cpp-indent cpp/x2bm_pcap/x2bm_pcap.cpp
 ```
 
 ## Visuals
@@ -49,6 +48,8 @@ amc_vis samp_meng.% -dot:av_openacr/meng
 dot -Tsvg av_openacr/meng -o av_openacr/meng.svg
 ```
 ## to run pipeline locally 
+
+cpp-indent cpp/x2bm_pcap/x2bm_pcap.cpp
 atf_ci -cijob:%
 
 ```

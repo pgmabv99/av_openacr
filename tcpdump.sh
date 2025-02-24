@@ -5,7 +5,7 @@ set -e -x
 
 pair1="192.168.210.51:1092-192.168.210.21:62720"
 pair2="192.168.210.51:1092-192.168.210.21:49413"
-pair=$pair1
+pair=$pair2
 src_host=$(echo $pair | cut -d'-' -f1 | cut -d':' -f1)
 src_port=$(echo $pair | cut -d'-' -f1 | cut -d':' -f2)
 trg_host=$(echo $pair | cut -d'-' -f2 | cut -d':' -f1)

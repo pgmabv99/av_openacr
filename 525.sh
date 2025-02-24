@@ -22,7 +22,7 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.syn_count -arg i32  -write  --comment 
 acr_ed -create -field x2bm_pcap.FTcp_pair.fin_count -arg i32  -write  --comment "number of fin (connection end)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_gap_count   -arg i32               -write     -comment "sequence   gap count "
 acr_ed -create -field x2bm_pcap.FTcp_pair.isn       -arg i32  -write  --comment "initial sequence number"
-acr_ed -create -field x2bm_pcap.FTcp_pair.rend     -arg i32  -write  --comment "running highe end of seq+payload"
+acr_ed -create -field x2bm_pcap.FTcp_pair.seq_next    -arg i32  -write  --comment "running high end of seq+payload"
 # pointers from above
 acr_ed -create -field x2bm_pcap.FDb.zd_tcp_pair -cascdel -write -comment ""
 

@@ -17,4 +17,4 @@ tcpdump -r /home/avorovich/pcap/rp_tap2.pcap \
 
 # ~/arnd/bin/x2bm_pcap -files:%2% > ~/av_openacr/sniffer_logs/tcp_pair.log
 # ~/arnd/bin/x2bm_pcap -files:%2% > ~/av_openacr/sniffer_logs/tcp_pair2.log
-# ~/arnd/bin/x2bm_pcap -files:%2% > ~/av_openacr/sniffer_logs/tcp_pairk1.log
+# ~/arnd/bin/x2bm_pcap -files:%2% > ~/av_openacr/sniffer_logs/tcp_pairk1req.log

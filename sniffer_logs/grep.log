@@ -1,60 +1,24 @@
-srp_daemon/srp_handle_traps.c:	rc = ibv_modify_qp(qp, &attr, flags);
-srp_daemon/srp_handle_traps.c:	rc = ibv_modify_qp(qp, &attr, flags);
-srp_daemon/srp_handle_traps.c:	rc = ibv_modify_qp(qp, &attr, flags);
-srp_daemon/srp_handle_traps.c:	return ibv_modify_qp(qp, &attr, IBV_QP_STATE);
-libibverbs/verbs.h:int ibv_modify_qp(struct ibv_qp *qp, struct ibv_qp_attr *attr,
-libibverbs/compat-1_0.c:	return ibv_modify_qp(qp->real_qp, attr, attr_mask);
-libibverbs/man/ibv_query_qp.3:.B ibv_modify_qp()\fR.
-libibverbs/man/ibv_query_qp.3:.B ibv_modify_qp()\fR.
-libibverbs/man/ibv_modify_qp.3:.BI "int ibv_modify_qp(struct ibv_qp " "*qp" ", struct ibv_qp_attr " "*attr" ,
-libibverbs/man/ibv_modify_qp.3:.B ibv_modify_qp()
-libibverbs/man/ibv_modify_qp.3:uint8_t                 sq_draining;            /* Is the QP draining? Irrelevant for ibv_modify_qp() */
-libibverbs/man/ibv_modify_qp.3:.B ibv_modify_qp()
-libibverbs/examples/srq_pingpong.c:		if (ibv_modify_qp(ctx->qp[i], &attr,
-libibverbs/examples/srq_pingpong.c:		if (ibv_modify_qp(ctx->qp[i], &attr,
-libibverbs/examples/srq_pingpong.c:		if (ibv_modify_qp(ctx->qp[i], &attr,
-libibverbs/examples/uc_pingpong.c:	if (ibv_modify_qp(ctx->qp, &attr,
-libibverbs/examples/uc_pingpong.c:	if (ibv_modify_qp(ctx->qp, &attr,
-libibverbs/examples/uc_pingpong.c:		if (ibv_modify_qp(ctx->qp, &attr,
-libibverbs/examples/xsrq_pingpong.c:		if (ibv_modify_qp(ctx.recv_qp[i], &mod,
-libibverbs/examples/xsrq_pingpong.c:		if (ibv_modify_qp(ctx.send_qp[i], &mod,
-libibverbs/examples/xsrq_pingpong.c:	if (ibv_modify_qp(ctx.recv_qp[index], &attr,
-libibverbs/examples/xsrq_pingpong.c:	if (ibv_modify_qp(ctx.recv_qp[index], &attr,
-libibverbs/examples/xsrq_pingpong.c:	if (ibv_modify_qp(ctx.send_qp[index], &attr,
-libibverbs/examples/xsrq_pingpong.c:	if (ibv_modify_qp(ctx.send_qp[index], &attr,
-libibverbs/examples/rc_pingpong.c:	if (ibv_modify_qp(ctx->qp, &attr,
-libibverbs/examples/rc_pingpong.c:	if (ibv_modify_qp(ctx->qp, &attr,
-libibverbs/examples/rc_pingpong.c:		if (ibv_modify_qp(ctx->qp, &attr,
-libibverbs/examples/ud_pingpong.c:	if (ibv_modify_qp(ctx->qp, &attr, IBV_QP_STATE)) {
-libibverbs/examples/ud_pingpong.c:	if (ibv_modify_qp(ctx->qp, &attr,
-libibverbs/examples/ud_pingpong.c:		if (ibv_modify_qp(ctx->qp, &attr,
-pyverbs/libibverbs.pxd:    int ibv_modify_qp(ibv_qp *qp, ibv_qp_attr *qp_attr, int comp_mask)
-pyverbs/qp.pyx:        rc =  v.ibv_modify_qp(self.qp, &qp_attr.attr, mask)
-pyverbs/qp.pyx:        rc = v.ibv_modify_qp(self.qp, &qp_attr.attr, mask)
-pyverbs/qp.pyx:        rc = v.ibv_modify_qp(self.qp, &qp_attr.attr, mask)
-pyverbs/qp.pyx:        rc = v.ibv_modify_qp(self.qp, &qp_attr.attr, comp_mask)
-librdmacm/man/rdma_set_local_ece.3.md: * ibv_modify_qp() <- enable data QP.
-librdmacm/man/rdma_create_qp.3:ibv_modify_qp(3)
-librdmacm/man/rdma_get_remote_ece.3.md: * ibv_modify_qp() <- enable data QP.
-librdmacm/cma.c:	ret = ibv_modify_qp(id->qp, &qp_attr, qp_attr_mask);
-librdmacm/cma.c:	return rdma_seterrno(ibv_modify_qp(id->qp, &qp_attr, qp_attr_mask));
-librdmacm/cma.c:	return rdma_seterrno(ibv_modify_qp(id->qp, &qp_attr, qp_attr_mask));
-librdmacm/cma.c:	return rdma_seterrno(ibv_modify_qp(id->qp, &qp_attr, IBV_QP_STATE));
-librdmacm/cma.c:	return rdma_seterrno(ibv_modify_qp(id->qp, &qp_attr, IBV_QP_STATE));
-librdmacm/cma.c:	ret = ibv_modify_qp(qp, &qp_attr, IBV_QP_STATE | IBV_QP_ACCESS_FLAGS |
-librdmacm/cma.c:	return rdma_seterrno(ibv_modify_qp(qp, &qp_attr, qp_attr_mask));
-librdmacm/cma.c:	ret = ibv_modify_qp(qp, &qp_attr, IBV_QP_STATE | IBV_QP_QKEY |
-librdmacm/cma.c:	ret = ibv_modify_qp(qp, &qp_attr, IBV_QP_STATE);
-librdmacm/cma.c:	ret = ibv_modify_qp(qp, &qp_attr, IBV_QP_STATE | IBV_QP_SQ_PSN);
-librdmacm/cma.c:	ret = ibv_modify_qp(qp, &qp_attr, qp_attr_mask);
-librdmacm/cma.c:	ret = ibv_modify_qp(qp, &qp_attr, IBV_QP_STATE);
-librdmacm/cma.c:	ret = ibv_modify_qp(qp, &qp_attr, IBV_QP_STATE | IBV_QP_SQ_PSN);
-librdmacm/examples/rping.c:	ret = ibv_modify_qp(cb->qp, &qp_attr, qp_attr_mask);
-librdmacm/examples/rping.c:	ret = ibv_modify_qp(cb->qp, &qp_attr, qp_attr_mask);
-librdmacm/examples/rping.c:	return ibv_modify_qp(cb->qp, &qp_attr, qp_attr_mask);
-librdmacm/examples/rping.c:		err = ibv_modify_qp(cb->qp, &qp_attr, IBV_QP_STATE);
-librdmacm/examples/rping.c:		ret = ibv_modify_qp(cb->qp, &attr,
-librdmacm/examples/cmtime.c:		ret = ibv_modify_qp(n->qp, &attr, mask);
-ibacm/prov/acmp/src/acmp.c:	ret = ibv_modify_qp(ep->qp, &attr, IBV_QP_STATE | IBV_QP_PKEY_INDEX |
-ibacm/prov/acmp/src/acmp.c:	ret = ibv_modify_qp(ep->qp, &attr, IBV_QP_STATE);
-ibacm/prov/acmp/src/acmp.c:	ret = ibv_modify_qp(ep->qp, &attr, IBV_QP_STATE | IBV_QP_SQ_PSN);
+00000150: 0000 0100 1a74 6573 742d 746f 7069 632d  .....test-topic-
+000001f0: 0000 0100 1a74 6573 742d 746f 7069 632d  .....test-topic-
+00000290: 0000 0100 1a74 6573 742d 746f 7069 632d  .....test-topic-
+00000340: 6573 742d 746f 7069 632d 3030 3030 3030  est-topic-000000
+00011180: 0100 1a74 6573 742d 746f 7069 632d 3030  ...test-topic-00
+00014950: 0100 1a74 6573 742d 746f 7069 632d 3030  ...test-topic-00
+0011a180: 0100 1a74 6573 742d 746f 7069 632d 3030  ...test-topic-00
+0014f8b0: 0000 0001 001a 7465 7374 2d74 6f70 6963  ......test-topic
+001a0900: 0100 1a74 6573 742d 746f 7069 632d 3030  ...test-topic-00
+001c4f80: 1a74 6573 742d 746f 7069 632d 3030 3030  .test-topic-0000
+00247d20: 742d 746f 7069 632d 3030 3030 3030 302d  t-topic-0000000-
+00308570: 2d74 6f70 6963 2d30 3030 3030 3030 2d34  -topic-0000000-4
+00336300: 1a74 6573 742d 746f 7069 632d 3030 3030  .test-topic-0000
+003c06e0: 0000 0100 1a74 6573 742d 746f 7069 632d  .....test-topic-
+0053bcf0: 0001 001a 7465 7374 2d74 6f70 6963 2d30  ....test-topic-0
+00864960: 0100 1a74 6573 742d 746f 7069 632d 3030  ...test-topic-00
+00864ac0: 6573 742d 746f 7069 632d 3030 3030 3030  est-topic-000000
+0098df10: 001a 7465 7374 2d74 6f70 6963 2d30 3030  ..test-topic-000
+00a59b30: 0100 1a74 6573 742d 746f 7069 632d 3030  ...test-topic-00
+00adba70: 1a74 6573 742d 746f 7069 632d 3030 3030  .test-topic-0000
+00b57df0: 742d 746f 7069 632d 3030 3030 3030 302d  t-topic-0000000-
+00b6bdc0: 6573 742d 746f 7069 632d 3030 3030 3030  est-topic-000000
+00d7aec0: 746f 7069 632d 3030 3030 3030 302d 344a  topic-0000000-4J
+00dbabf0: 0100 1a74 6573 742d 746f 7069 632d 3030  ...test-topic-00

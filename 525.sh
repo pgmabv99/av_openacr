@@ -23,6 +23,10 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.fin_count -arg i32  -write  --comment 
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_gap_count   -arg u32              -write     -comment "sequence   gap count "
 acr_ed -create -field x2bm_pcap.FTcp_pair.isn       -arg u32  -write  --comment "initial sequence number"
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_next    -arg u32  -write  --comment "running high end of seq+payload"
+acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_req_count   -arg u32  -write  --comment "kafka req count"
+acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_req_len_tot   -arg u32  -write  --comment "total of kafka req length per pair"
+acr_ed -create -field x2bm_pcap.FTcp_pair.tcp_payload_len_tot   -arg u32  -write  --comment "total of tcp payload  length per pair"
+
 # pointers from above
 acr_ed -create -field x2bm_pcap.FDb.zd_tcp_pair -cascdel -write -comment ""
 
@@ -38,6 +42,11 @@ acr_ed -create -field x2bm_pcap.FFrame.ack   -arg u32               -write     -
 acr_ed -create -field x2bm_pcap.FFrame.p_pay -arg  u8  -reftype Tary -write     -comment "p to payload buffer "
 acr_ed -create -field x2bm_pcap.FFrame.th_flags -arg  u8             -write     -comment "tcp flags "
 acr_ed -create -field x2bm_pcap.FFrame.direction -arg  i32            -write     -comment "direction : 1 low to high IP. -1 high to low IP"
+
+# kafka detection sliding window
+acr_ed -create -field x2bm_pcap.FFrame.swin_buf -arg  u8  -reftype Tary -write     -comment "p to sliding window   buffer "
+acr_ed -create -field x2bm_pcap.FFrame.swin_offset    -arg u64            -write     -comment "sliding window offset"
+acr_ed -create -field x2bm_pcap.FFrame.swin_len    -arg u64            -write     -comment "sliding window len"
 
 #  pointers from above
 acr_ed -create -field x2bm_pcap.FTcp_pair.zd_frames -arg x2bm_pcap.FFrame -via x2bm_pcap.FFrame.p_tcp_pair                                 -cascdel -write -comment "double list of frames"

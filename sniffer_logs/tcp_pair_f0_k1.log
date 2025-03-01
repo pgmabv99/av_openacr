@@ -1,0 +1,1184 @@
+Hello, World!333
+====--PcapFileProcess  fname:/home/avorovich/pcap/rp_tap0.pcap
+--iframe:000002  seq:001979239428:001979239563  seq_gap:1979239428  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........J......test-topic-0000000-4JA-IpQ.......,..........\\..................."
+fkafka request  " accum.swin_len":135  accum_offset:0  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........J......test-topic-0000000-4JA-IpQ.......,..........\\..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 1f 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 4a 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 5c 19 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:002768  seq:001979239563:001979239698  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T#..consumer-sub-000-nOkgFv0-7............. ..........K......test-topic-0000000-4JA-IpQ.......,..........`..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T#..consumer-sub-000-nOkgFv0-7............. ..........K......test-topic-0000000-4JA-IpQ.......,..........`..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 23 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 4b 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 60 0e ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:004916  seq:001979239698:001979239833  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T'..consumer-sub-000-nOkgFv0-7............. ..........L......test-topic-0000000-4JA-IpQ.......,..........d..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T'..consumer-sub-000-nOkgFv0-7............. ..........L......test-topic-0000000-4JA-IpQ.......,..........d..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 27 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 4c 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 64 04 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:005126  seq:001979239833:001979239968  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T+..consumer-sub-000-nOkgFv0-7............. ..........M......test-topic-0000000-4JA-IpQ.......,..........g..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T+..consumer-sub-000-nOkgFv0-7............. ..........M......test-topic-0000000-4JA-IpQ.......,..........g..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 2b 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 4d 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 67 f9 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:008042  seq:001979240238:001979240373  seq_gap:0270  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T7..consumer-sub-000-nOkgFv0-7............. ..........P......test-topic-0000000-4JA-IpQ.......,..........s..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T7..consumer-sub-000-nOkgFv0-7............. ..........P......test-topic-0000000-4JA-IpQ.......,..........s..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 37 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 50 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 73 da ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:008357  seq:001979240373:001979240508  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T;..consumer-sub-000-nOkgFv0-7............. ..........Q......test-topic-0000000-4JA-IpQ.......,..........w..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T;..consumer-sub-000-nOkgFv0-7............. ..........Q......test-topic-0000000-4JA-IpQ.......,..........w..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 3b 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 51 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 77 d0 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:009058  seq:001979240643:001979240778  seq_gap:0135  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........TC..consumer-sub-000-nOkgFv0-7............. ..........S......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........TC..consumer-sub-000-nOkgFv0-7............. ..........S......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 43 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 53 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 7f bc ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:009774  seq:001979240778:001979240913  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........TG..consumer-sub-000-nOkgFv0-7............. ..........T......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........TG..consumer-sub-000-nOkgFv0-7............. ..........T......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 47 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 54 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 83 b2 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:010228  seq:001979240913:001979241048  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........TK..consumer-sub-000-nOkgFv0-7............. ..........U......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........TK..consumer-sub-000-nOkgFv0-7............. ..........U......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 4b 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 55 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 87 a7 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:011765  seq:001979241048:001979241183  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........TO..consumer-sub-000-nOkgFv0-7............. ..........V......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........TO..consumer-sub-000-nOkgFv0-7............. ..........V......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 4f 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 56 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 8b 9d ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:012701  seq:001979241183:001979241318  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........TS..consumer-sub-000-nOkgFv0-7............. ..........W......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........TS..consumer-sub-000-nOkgFv0-7............. ..........W......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 53 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 57 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 8f 93 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:014453  seq:001979241318:001979241453  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........TW..consumer-sub-000-nOkgFv0-7............. ..........X......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........TW..consumer-sub-000-nOkgFv0-7............. ..........X......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 57 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 58 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 93 89 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:015949  seq:001979241453:001979241588  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T[..consumer-sub-000-nOkgFv0-7............. ..........Y......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T[..consumer-sub-000-nOkgFv0-7............. ..........Y......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 5b 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 59 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 97 7f ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:016941  seq:001979241588:001979241663  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......T^..consumer-sub-000-nOkgFv0-7............. ..........Z.........."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......T^..consumer-sub-000-nOkgFv0-7............. ..........Z......"
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 54 5e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 5a 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:017149  seq:001979241663:001979241738  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......T_..consumer-sub-000-nOkgFv0-7............. ..........[.........."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......T_..consumer-sub-000-nOkgFv0-7............. ..........[......"
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 54 5f 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 5b 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:017431  seq:001979241738:001979241813  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......T`..consumer-sub-000-nOkgFv0-7............. ..........\\.........."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......T`..consumer-sub-000-nOkgFv0-7............. ..........\\......"
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 54 60 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 5c 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:018949  seq:001979241813:001979241888  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......Ta..consumer-sub-000-nOkgFv0-7............. ..........].........."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......Ta..consumer-sub-000-nOkgFv0-7............. ..........]......"
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 54 61 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 5d 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:019366  seq:001979241888:001979242023  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Td..consumer-sub-000-nOkgFv0-7............. ..........^......test-topic-0000000-4JA-IpQ.......,...........u.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Td..consumer-sub-000-nOkgFv0-7............. ..........^......test-topic-0000000-4JA-IpQ.......,...........u.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 64 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 5e 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 9b 75 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:021177  seq:001979242158:001979242293  seq_gap:0135  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Tk..consumer-sub-000-nOkgFv0-7............. ..........`......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Tk..consumer-sub-000-nOkgFv0-7............. ..........`......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 6b 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 60 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 a3 2e ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:021914  seq:001979242293:001979242428  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........To..consumer-sub-000-nOkgFv0-7............. ..........a......test-topic-0000000-4JA-IpQ.......,...........#.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........To..consumer-sub-000-nOkgFv0-7............. ..........a......test-topic-0000000-4JA-IpQ.......,...........#.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 6f 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 61 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 a7 23 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:022088  seq:001979242428:001979242563  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Ts..consumer-sub-000-nOkgFv0-7............. ..........b......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Ts..consumer-sub-000-nOkgFv0-7............. ..........b......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 73 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 62 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 ab 19 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:022371  seq:001979242563:001979242698  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Tw..consumer-sub-000-nOkgFv0-7............. ..........c......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Tw..consumer-sub-000-nOkgFv0-7............. ..........c......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 77 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 63 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 af 0e ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:022711  seq:001979242698:001979242833  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T}..consumer-sub-000-nOkgFv0-7............. ..........d......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T}..consumer-sub-000-nOkgFv0-7............. ..........d......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 7d 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 64 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 b6 fa ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:024172  seq:001979242833:001979242968  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........e......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........e......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 81 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 65 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 ba f0 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:024310  seq:001979242968:001979243103  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........f......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........f......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 85 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 66 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 be e5 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:029098  seq:001979243103:001979243238  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........g......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........g......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 89 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 67 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 c2 da ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:029264  seq:001979243238:001979243373  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........h......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........h......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 8d 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 68 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 c6 cf ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:030641  seq:001979243373:001979243508  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........i......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........i......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 91 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 69 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 ca c5 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:032319  seq:001979243508:001979243643  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........j......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........j......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 95 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 6a 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 ce bb ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:035575  seq:001979243643:001979243778  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........k......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........k......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 99 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 6b 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 d2 b1 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:039686  seq:001979243778:001979243913  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........l......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........l......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 9e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 6c 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 d6 a7 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:039790  seq:001979243913:001979244048  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........m......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........m......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 a2 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 6d 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 da 9d ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:040768  seq:001979244048:001979244183  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........n......test-topic-0000000-4JA-IpQ.......,...........s.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........n......test-topic-0000000-4JA-IpQ.......,...........s.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 ac 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 6e 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 ea 73 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:041007  seq:001979244183:001979244318  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........o......test-topic-0000000-4JA-IpQ.......,...........i.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........o......test-topic-0000000-4JA-IpQ.......,...........i.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 b0 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 6f 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 ee 69 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:042568  seq:001979244453:001979244588  seq_gap:0135  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........q......test-topic-0000000-4JA-IpQ.......,...........T.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........q......test-topic-0000000-4JA-IpQ.......,...........T.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 b8 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 71 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 f6 54 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:043017  seq:001979244588:001979244723  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........r......test-topic-0000000-4JA-IpQ.......,...........J.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........r......test-topic-0000000-4JA-IpQ.......,...........J.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 bc 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 72 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 fa 4a ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:043163  seq:001979244723:001979244858  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........s......test-topic-0000000-4JA-IpQ.......,...........@.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........s......test-topic-0000000-4JA-IpQ.......,...........@.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 c0 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 73 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 19 fe 40 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:045733  seq:001979244858:001979244993  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........t......test-topic-0000000-4JA-IpQ.......,...........6.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........t......test-topic-0000000-4JA-IpQ.......,...........6.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 c4 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 74 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 02 36 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:046337  seq:001979244993:001979245128  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:'..........T...consumer-sub-000-nOkgFv0-7............. ..........u......test-topic-0000000-4JA-IpQ.......,..........."..................'
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":'..........T...consumer-sub-000-nOkgFv0-7............. ..........u......test-topic-0000000-4JA-IpQ.......,..........."..............'
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 ca 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 75 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 0a 22 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:047174  seq:001979245128:001979245263  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........v......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........v......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 d2 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 76 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 16 03 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:049811  seq:001979245263:001979245338  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......T...consumer-sub-000-nOkgFv0-7............. ..........w.........."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......T...consumer-sub-000-nOkgFv0-7............. ..........w......"
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 54 d4 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 77 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:049936  seq:001979245338:001979245413  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......T...consumer-sub-000-nOkgFv0-7............. ..........x.........."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......T...consumer-sub-000-nOkgFv0-7............. ..........x......"
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 54 d5 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 78 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:050205  seq:001979245413:001979245548  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........y......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........y......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 d8 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 79 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 19 f9 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:051045  seq:001979245548:001979245683  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........z......test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........z......test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 dc 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 7a 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 1d ef ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:051772  seq:001979245818:001979245953  seq_gap:0135  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........|......test-topic-0000000-4JA-IpQ.......,..........)..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........|......test-topic-0000000-4JA-IpQ.......,..........)..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 e6 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 7c 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 29 d0 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:052811  seq:001979245953:001979246088  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........}......test-topic-0000000-4JA-IpQ.......,..........-..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........}......test-topic-0000000-4JA-IpQ.......,..........-..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 ea 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 7d 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 2d c6 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:053514  seq:001979246088:001979246223  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. ..........~......test-topic-0000000-4JA-IpQ.......,........../R.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. ..........~......test-topic-0000000-4JA-IpQ.......,........../R.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 ec 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 7e 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 2f 52 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:053633  seq:001979246223:001979246358  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........3H.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........3H.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 f0 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 7f 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 33 48 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:055997  seq:001979246358:001979246493  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........7>.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........7>.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 f4 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 80 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 37 3e ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:057443  seq:001979246628:001979246763  seq_gap:0135  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........T...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........?*.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........T...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........?*.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 54 fc 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 82 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 3f 2a ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:057721  seq:001979246763:001979246898  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........C .................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........C .............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 00 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 83 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 43 20 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:058627  seq:001979246898:001979247033  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........G..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........G..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 04 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 84 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 47 16 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:058865  seq:001979247033:001979247168  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........K..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........K..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 08 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 85 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 4b 0b ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:066591  seq:001979247438:001979247573  seq_gap:0270  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........V..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........V..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 14 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 88 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 56 ec ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:068419  seq:001979247573:001979247708  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........Z..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........Z..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 18 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 89 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 5a e1 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:068679  seq:001979247708:001979247843  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........e6.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........e6.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 1f 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 8a 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 65 36 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:068937  seq:001979247843:001979247978  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U%..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........m .................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U%..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........m .............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 25 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 8b 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 6d 20 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:069030  seq:001979247978:001979248113  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U)..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........q..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U)..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........q..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 29 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 8c 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 71 16 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:069127  seq:001979248113:001979248248  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U-..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........u..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U-..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........u..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 2d 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 8d 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 75 0c ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:069845  seq:001979248248:001979248383  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U0..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........wy.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U0..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........wy.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 30 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 8e 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 77 79 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:069917  seq:001979248383:001979248518  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U3..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........zx.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U3..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........zx.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 33 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 8f 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 7a 78 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:070508  seq:001979248518:001979248653  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U7..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........~n.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U7..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........~n.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 37 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 90 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 7e 6e ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:071285  seq:001979248653:001979248788  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U;..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........d.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U;..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........d.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 3b 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 91 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 82 64 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:071897  seq:001979248788:001979248923  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U?..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........Z.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U?..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........Z.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 3f 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 92 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 86 5a ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:072039  seq:001979248923:001979249058  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........UC..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........O.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........UC..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........O.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 43 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 93 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 8a 4f ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:072857  seq:001979249058:001979249193  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........UG..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........D.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........UG..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........D.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 47 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 94 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 8e 44 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:073133  seq:001979249193:001979249328  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........UK..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........9.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........UK..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........9.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 4b 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 95 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 92 39 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:077802  seq:001979249328:001979249403  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......UN..consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......UN..consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 55 4e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 96 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:077835  seq:001979249403:001979249478  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......UO..consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......UO..consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 55 4f 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 97 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:078446  seq:001979249478:001979249553  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......UP..consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......UP..consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 55 50 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 98 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:081015  seq:001979249553:001979249628  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......UQ..consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......UQ..consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 55 51 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 99 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:084964  seq:001979249628:001979249763  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........UT..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........UT..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 54 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 9a 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 96 2e ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:086129  seq:001979249763:001979249898  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........UX..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........$.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........UX..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........$.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 58 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 9b 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 9a 24 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:086250  seq:001979249898:001979250033  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U\\..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U\\..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 5c 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 9c 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a 9e 1a ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:086349  seq:001979250033:001979250168  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U`..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U`..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 60 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 9d 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a a2 10 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:088949  seq:001979250168:001979250303  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Ud..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Ud..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 64 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 9e 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a a6 06 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:090091  seq:001979250303:001979250438  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Uf..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Uf..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 66 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 9f 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a a6 0b ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:090301  seq:001979250438:001979250573  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Uj..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Uj..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 6a 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 a0 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a aa 01 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:090414  seq:001979250573:001979250708  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Un..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Un..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 6e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 a1 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a ad f7 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:090720  seq:001979250708:001979250843  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Ur..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Ur..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 72 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 a2 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a b1 ed ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:093147  seq:001979250843:001979250978  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Uv..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Uv..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 76 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 a3 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a b5 e3 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:093222  seq:001979250978:001979251113  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Uz..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Uz..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 7a 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 a4 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a b9 d9 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:093434  seq:001979251113:001979251248  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U~..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U~..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 7e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 a5 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a bd ce ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:093647  seq:001979251248:001979251383  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 82 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 a6 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a c1 c3 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:094186  seq:001979251383:001979251518  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 86 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 a7 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a c5 b9 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:095440  seq:001979251518:001979251653  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 8a 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 a8 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a c9 af ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:096225  seq:001979251788:001979251923  seq_gap:0135  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 92 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 aa 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a d1 9b ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:098698  seq:001979251923:001979252058  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 97 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 ab 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a d5 91 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:098882  seq:001979252058:001979252193  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 9b 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 ac 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a d9 87 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:102036  seq:001979252193:001979252268  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......U...consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......U...consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 55 9d 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 ad 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:102069  seq:001979252268:001979252343  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......U...consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......U...consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 55 9e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 ae 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:102161  seq:001979252343:001979252418  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......U...consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......U...consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 55 9f 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 af 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:103862  seq:001979252418:001979252493  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......U...consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......U...consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 55 a0 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 b0 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:106931  seq:001979252493:001979252628  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........}.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........}.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 a3 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 b1 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a dd 7d ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:108218  seq:001979252628:001979252763  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........r.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........r.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 a7 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 b2 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a e1 72 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:109286  seq:001979252763:001979252898  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 aa 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 b3 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a e3 a0 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:109450  seq:001979252898:001979253033  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 ae 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 b4 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a e7 96 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:109772  seq:001979253168:001979253303  seq_gap:0135  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 b6 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 b6 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a ef 82 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:110555  seq:001979253303:001979253438  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........w.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........w.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 ba 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 b7 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a f3 77 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:110954  seq:001979253438:001979253573  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........l.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........l.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 be 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 b8 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a f7 6c ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:112204  seq:001979253573:001979253708  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........b.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........b.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 c2 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 b9 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a fb 62 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:113149  seq:001979253708:001979253843  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........W.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........W.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 c6 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 ba 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1a ff 57 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:114541  seq:001979253843:001979253978  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........M.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........M.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 ca 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 bb 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 03 4d ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:114842  seq:001979253978:001979254113  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........2.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........2.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 cc 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 bc 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 05 32 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:114959  seq:001979254113:001979254248  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........(.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........(.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 d0 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 bd 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 09 28 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:117259  seq:001979254248:001979254383  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 d4 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 be 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 0d 1d ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:119985  seq:001979254383:001979254518  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 d8 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 bf 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 11 13 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:122746  seq:001979254518:001979254653  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 dd 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 c0 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 15 08 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:123937  seq:001979254653:001979254788  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 e1 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 c1 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 18 fe ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:126037  seq:001979254788:001979254923  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 e5 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 c2 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 1c f4 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:127912  seq:001979254923:001979255058  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.......... ..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.......... ..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 e9 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 c3 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 20 ea ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:128027  seq:001979255058:001979255193  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........$..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........$..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 ed 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 c4 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 24 df ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:128375  seq:001979255193:001979255328  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........(..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........(..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 f1 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 c5 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 28 d4 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:128642  seq:001979255328:001979255463  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........,..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........,..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 f5 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 c6 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 2c ca ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:129798  seq:001979255463:001979255598  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........0..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........0..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 f9 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 c7 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 30 bf ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:130469  seq:001979255598:001979255733  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........4..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........U...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........4..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 55 fd 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 c8 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 34 b4 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:131880  seq:001979256003:001979256138  seq_gap:0270  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........D..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........D..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 0b 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 cb 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 44 8a ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:134054  seq:001979256138:001979256273  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........E..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........E..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 0d 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 cc 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 45 a5 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:134180  seq:001979256273:001979256408  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........E..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........E..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 0f 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 cd 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 45 ed ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:134565  seq:001979256408:001979256543  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........I..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........I..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 13 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 ce 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 49 e3 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:134992  seq:001979256543:001979256678  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........M..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........M..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 16 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 cf 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 4d 8a ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:135355  seq:001979256678:001979256813  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........Q..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........Q..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 1a 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 d0 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 51 80 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:136633  seq:001979256813:001979256948  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........Uv.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........Uv.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 1e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 d1 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 55 76 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:136704  seq:001979256948:001979257083  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:'..........V"..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........Yk..................'
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":'..........V"..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........Yk..............'
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 22 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 d2 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 59 6b ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:136889  seq:001979257083:001979257218  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V&..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........]a.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V&..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........]a.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 26 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 d3 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 5d 61 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:138117  seq:001979257353:001979257488  seq_gap:0135  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........eM.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........eM.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 2e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 d5 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 65 4d ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:138505  seq:001979257488:001979257623  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V2..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........iC.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V2..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........iC.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 32 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 d6 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 69 43 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:139183  seq:001979257623:001979257758  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V6..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........m9.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V6..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........m9.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 36 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 d7 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 6d 39 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:139580  seq:001979257758:001979257893  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V:..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........q/.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V:..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........q/.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 3a 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 d8 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 71 2f ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:139701  seq:001979257893:001979257968  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......V<..consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......V<..consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 56 3c 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 d9 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:141589  seq:001979257968:001979258043  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......V=..consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......V=..consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 56 3d 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 da 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:141813  seq:001979258043:001979258118  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......V>..consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......V>..consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 56 3e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 db 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:141896  seq:001979258118:001979258253  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V?..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........s..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V?..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........s..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 3f 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 dc 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 73 19 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:141953  seq:001979258253:001979258388  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........VA..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........t..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........VA..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........t..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 41 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 dd 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 74 f9 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:142036  seq:001979258388:001979258523  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........VE..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........x..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........VE..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........x..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 45 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 de 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 78 ef ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:144776  seq:001979258523:001979258598  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......VH..consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......VH..consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 56 48 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 df 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:146953  seq:001979258598:001979258733  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........VK..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........|..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........VK..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........|..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 4b 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 e0 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 7c e4 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:147174  seq:001979258733:001979258868  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........VN..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........P.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........VN..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........P.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 4e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 e1 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 80 50 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:147267  seq:001979258868:001979259003  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........VR..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........F.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........VR..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........F.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 52 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 e2 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 84 46 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:148021  seq:001979259003:001979259138  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........VV..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........;.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........VV..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........;.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 56 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 e3 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 88 3b ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:148397  seq:001979259138:001979259273  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........VZ..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........1.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........VZ..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........1.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 5a 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 e4 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 8c 31 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:148710  seq:001979259273:001979259408  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V^..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........'.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V^..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........'.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 5e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 e5 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 90 27 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:153659  seq:001979259408:001979259543  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Vb..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Vb..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 62 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 e6 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 94 1d ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:154502  seq:001979259543:001979259678  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Vf..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Vf..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 66 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 e7 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 98 13 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:155212  seq:001979259813:001979259948  seq_gap:0135  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Vn..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Vn..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 6e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 e9 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b 9f ff ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:155827  seq:001979259948:001979260083  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........Vr..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........Vr..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 72 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 ea 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b a3 f5 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:156651  seq:001979260218:001979260353  seq_gap:0135  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V~..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V~..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 7e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 ec 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b b3 cc ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:157150  seq:001979260353:001979260488  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 82 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 ed 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b b7 c2 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:159253  seq:001979260488:001979260623  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 86 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 ee 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b bb b7 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:159670  seq:001979260623:001979260758  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 88 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 ef 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b bb bd ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:159735  seq:001979260758:001979260893  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........x.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........x.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 8a 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 f0 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b bd 78 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:159847  seq:001979260893:001979261028  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........n.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........n.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 8e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 f1 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b c1 6e ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:160367  seq:001979261028:001979261163  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........d.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........d.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 92 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 f2 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b c5 64 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:160464  seq:001979261163:001979261298  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........Z.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........Z.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 96 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 f3 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b c9 5a ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:161485  seq:001979261298:001979261433  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........P.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........P.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 9a 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 f4 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b cd 50 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:163425  seq:001979261433:001979261568  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........F.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........F.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 9e 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 f5 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b d1 46 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:166000  seq:001979261568:001979261703  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........<.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........<.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 a2 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 f6 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b d5 3c ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:166194  seq:001979261703:001979261838  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........(.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........(.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 a8 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 f7 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b dd 28 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:166541  seq:001979261838:001979261973  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 ac 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 f8 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b e1 1e ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:166933  seq:001979261973:001979262108  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 ae 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 f9 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b e2 9b ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:167040  seq:001979262108:001979262243  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 b2 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 fa 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b e6 91 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:169173  seq:001979262243:001979262378  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........).................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,...........).............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 b4 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 fb 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b e8 29 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:169277  seq:001979262378:001979262513  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 b8 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 fc 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b ec 1f ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:171060  seq:001979262513:001979262588  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......V...consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......V...consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 56 ba 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 fd 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:171130  seq:001979262588:001979262663  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......V...consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......V...consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 56 bb 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 fe 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:171230  seq:001979262663:001979262798  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 bc 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 09 ff 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b ee 01 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:171342  seq:001979262798:001979262933  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 c0 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 00 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b f1 f7 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:171376  seq:001979262933:001979263008  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......V...consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......V...consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 56 c2 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 01 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:171561  seq:001979263008:001979263143  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 c6 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 02 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b f5 ed ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:171637  seq:001979263143:001979263278  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 ca 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b f9 e3 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:172569  seq:001979263278:001979263413  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 ce 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 04 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1b fd d9 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:173073  seq:001979263413:001979263548  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 d2 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 05 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 01 cf ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:174328  seq:001979263548:001979263683  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 d6 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 06 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 05 c5 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:175945  seq:001979263683:001979263818  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 da 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 07 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 09 bb ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:179268  seq:001979263818:001979263953  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 de 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 08 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 0d b1 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:181983  seq:001979263953:001979264088  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 e2 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 09 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 11 a6 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:182265  seq:001979264088:001979264223  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 e6 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 0a 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 15 9c ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:185402  seq:001979264223:001979264358  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 ea 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 0b 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 19 92 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:186283  seq:001979264358:001979264493  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.............................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,.........................."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 ee 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 0c 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 1d 87 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:188072  seq:001979264493:001979264628  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........!|.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........!|.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 f2 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 0d 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 21 7c ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:188379  seq:001979264628:001979264763  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........)h.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........)h.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 f8 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 0e 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 29 68 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:188671  seq:001979264763:001979264898  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........-^.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........V...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........-^.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 56 fc 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 0f 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 2d 5e ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:188852  seq:001979264898:001979265033  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........W...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........1T.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........W...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........1T.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 57 00 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 10 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 31 54 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:189350  seq:001979265033:001979265168  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........W...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........5I.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........W...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........5I.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 57 04 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 11 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 35 49 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:192519  seq:001979265168:001979265303  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........W...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........9?.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........W...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........9?.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 57 08 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 12 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 39 3f ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:194646  seq:001979265303:001979265438  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........W...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........=5.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........W...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........=5.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 57 0c 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 13 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 3d 35 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:194914  seq:001979265438:001979265573  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........W...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........A+.................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........W...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........A+.............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 57 10 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 14 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 41 2b ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:198966  seq:001979265708:001979265843  seq_gap:0135  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........W...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........I..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........W...consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........I..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 57 18 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 16 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 49 16 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:199535  seq:001979265978:001979266113  seq_gap:0135  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........W ..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........Q..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........W ..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........Q..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 57 20 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 18 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 51 01 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:201280  seq:001979266113:001979266248  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........W$..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........T..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........W$..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........T..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 57 24 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 19 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 54 f6 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:201791  seq:001979266248:001979266383  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........W(..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........X..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........W(..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........X..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 57 28 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 1a 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 58 eb ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:201941  seq:001979266383:001979266518  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........W,..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........\\..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........W,..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........\\..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 57 2c 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 1b 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 5c e1 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:202636  seq:001979266518:001979266653  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........W0..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........`..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........W0..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........`..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 57 30 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 1c 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 60 d7 ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:202845  seq:001979266653:001979266788  seq_gap:0000  p_pay_n:000135  th_flags:"PSH ACK "
+p_pay_asci:"..........W4..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........d..................."
+fkafka request  " accum.swin_len":139  accum_offset:4  req_len:131  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"..........W4..consumer-sub-000-nOkgFv0-7............. .................test-topic-0000000-4JA-IpQ.......,..........d..............."
+"req_hex  ":"00 00 00 83 00 01 00 0b 00 00 57 34 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 1d 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c ff ff ff ff 00 00 00 00 00 1c 64 cc ff ff ff ff ff ff ff ff 00 a0 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:135  " accum.swin_len":4
+--iframe:204093  seq:001979266788:001979266863  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......W6..consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......W6..consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 57 36 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 1e 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:204204  seq:001979266863:001979266938  seq_gap:0000  p_pay_n:000075  th_flags:"PSH ACK "
+p_pay_asci:"...G......W7..consumer-sub-000-nOkgFv0-7............. ....................."
+fkafka request  " accum.swin_len":79  accum_offset:4  req_len:71  api_key:0  correlation_id:65547  client_id_len:26
+"req_asci ":"...G......W7..consumer-sub-000-nOkgFv0-7............. ................."
+"req_hex  ":"00 00 00 47 00 01 00 0b 00 00 57 37 00 1a 63 6f 6e 73 75 6d 65 72 2d 73 75 62 2d 30 30 30 2d 6e 4f 6b 67 46 76 30 2d 37 ff ff ff ff 00 00 01 f4 00 00 00 01 03 20 00 00 00 0e ee ee ef 00 00 0a 1f 00 00 00 00 00 00"
+kafka_req_per_frame:1  p_pay_n:75  " accum.swin_len":4
+--iframe:204649  seq:001979266938:001979266938  seq_gap:0000  p_pay_n:000000  th_flags:"RST ACK "
+p_pay_asci:""
+kafka_req_per_frame:0  p_pay_n:0  " accum.swin_len":4
+tcp_pair  tcp_pair_key:192.168.110.61:41072-192.168.110.51:1096  count:197  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":8
+kafka_req_count:196  kafka_req_len_tot:24296  tcp_payload_len_tot:25080
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:7.59415  ind_tcp_pair_n:1

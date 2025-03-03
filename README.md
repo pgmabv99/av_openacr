@@ -130,8 +130,22 @@ x2bm_pcap.NewOrderReqMsg part_key:part98  amt:10
 
 #for arnd gitlab use ssh private key
 git config --global core.sshCommand "ssh -i /home/avorovich/.ssh/algox2_av"
+ssh://git@gitlab.vovaco.com:1008/algornd/arnd.git
 #for av_openacl github use token (gdrive) 
 git clone https://pgmabv99:<avtoken4>@github.com/pgmabv99/algo_util.git
+
+
+or 
+chmod 600 ~/.ssh/algox2_av
+
+#Start the SSH agent if it's not already running
+eval "$(ssh-agent -s)"
+
+#Add the SSH key
+ssh-add ~/.ssh/algox2_av
+
+#Confirm the key was added
+ssh-add -l
 
 ## acr docker cheat sheet
 ```
@@ -146,9 +160,10 @@ x2node  -node:nj1.sn5.kafka-4
 
 #from sn1: login  to host 
 x2node  -node:nj1.sn5.bm -t -root
+x2node  -node:nj1.sn1.bm -t -root
 
 #from sn1 : docker rm and docker start new container
-dkr -clean_run  -node:nj1.sn5.avorovich 
+dkr -clean_run  -node:nj1.sn1.avorovich 
 
 
 #passtru cat /etc/hostname

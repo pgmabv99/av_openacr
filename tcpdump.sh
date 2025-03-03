@@ -18,4 +18,4 @@ tcpdump -r /home/avorovich/pcap/rp_tap2.pcap \
 # ~/arnd/bin/x2bm_pcap -files:%2% > ~/av_openacr/sniffer_logs/tcp_pair.log
 # ~/arnd/bin/x2bm_pcap -files:%2% > ~/av_openacr/sniffer_logs/tcp_pair2.log
 ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_k1.log
-~/arnd/bin/x2bm_pcap -files:%0% > $ofile; tail -n 20 $ofile
+~/arnd/bin/x2bm_pcap -files:%0% -ndisp:20> $ofile; tail -n 20 $ofile

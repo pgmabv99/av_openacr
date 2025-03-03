@@ -1,4 +1,10 @@
 #!/bin/bash
+
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
 set -x
 hostname
 #lspci -nn | grep -i nvm
@@ -45,5 +51,6 @@ gco() {
   echo "Last 2 commits on branch algornd/arnd.$branch:"
   git log -n 3 --oneline --date=local
 }
+
 
 

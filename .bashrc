@@ -1,10 +1,13 @@
 #!/bin/bash
 
+PATH=.:$PATH:$HOME/av_openacr:$HOME/arnd/bin
+
 case $- in
     *i*) ;;
       *) return;;
 esac
 
+# the rest for interactive shell only
 set -x
 hostname
 #lspci -nn | grep -i nvm
@@ -16,7 +19,7 @@ export EDITOR="$tmp_code/server/bin/remote-cli/code --wait"
 
 lspci -nn | grep -i ConnectX-6
 set +x
-PATH=.:$PATH:$HOME/av_openacr
+
 
 # source    $HOME/algo/s_setup_home.sh
 if [ -f /usr/share/bash-completion/completions/git ]; then

@@ -9,10 +9,12 @@ cd $HOME/arnd
 # acr_compl -install
 # amc
 
-acr_ed -del  -ctype x2bm_pcap.FTcp_pair -write || true
-acr_ed -del  -ctype x2bm_pcap.FFrame     -write || true
-# acr_ed -del  -ctype x2bm_pcap.FTcp_pair -write 
-# acr_ed -del  -ctype x2bm_pcap.FFrame     -write 
+# acr_ed -del  -ctype x2bm_pcap.FTcp_pair -write || true
+# acr_ed -del  -ctype x2bm_pcap.FFrame     -write || true
+# acr_ed -del  -ctype x2bm_pcap.FClient_id    -write || true
+acr_ed -del  -ctype x2bm_pcap.FTcp_pair -write 
+acr_ed -del  -ctype x2bm_pcap.FFrame     -write 
+acr_ed -del  -ctype x2bm_pcap.FClient_id    -write 
 
 
 #--------------tcp pair
@@ -52,11 +54,19 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.zd_frames -arg x2bm_pcap.FFrame -via x
 acr_ed -create -field x2bm_pcap.FTcp_pair.bh_frames -arg x2bm_pcap.FFrame -via x2bm_pcap.FFrame.p_tcp_pair  -sortfld x2bm_pcap.FFrame.seq  -cascdel -write -comment "binary heap  of frames"
 
 #-------------kafka client_id entry
-acr_ed -create -ctype x2bm_pcap.FClient_id  -arg Smallstr50 -indexed  -write  -comment "Kafka client entry"
+# acr_ed -create -ctype x2bm_pcap.FClient_id  -arg Smallstr50 -indexed  -write  -comment "Kafka client entry"
+# acr_ed -create -field x2bm_pcap.FClient_id.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reftype Upptr -write
+# #  pointers from above
+# acr_ed -create -field x2bm_pcap.FTcp_pair.zd_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair       
+# acr_ed -create -field x2bm_pcap.FTcp_pair.ind_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair  
+
+#-------------kafka client_id entry
+acr_ed -create -ctype x2bm_pcap.FClient_id  -pooltype Tpool   -write  -comment "Kafka client entry"
+acr_ed -create -field x2bm_pcap.FClient_id.client_id_key -arg algo.Smallstr50 -indexed  -write  -comment ""
 acr_ed -create -field x2bm_pcap.FClient_id.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reftype Upptr -write
 #  pointers from above
-acr_ed -create -field x2bm_pcap.FTcp_pair.zd_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair       
-acr_ed -create -field x2bm_pcap.FTcp_pair.ind_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair       
+acr_ed -create -field x2bm_pcap.FTcp_pair.zd_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair  -cascdel -write -comment "double list of client_id"     
+acr_ed -create -field x2bm_pcap.FTcp_pair.ind_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair  -cascdel -write -comment "index of client_id"     
 
 #  set parms for x2bm_pcap
 acr -merge  -write <<EOF
@@ -71,6 +81,6 @@ dmmeta.field  field:command.x2bm_pcap.ndisp  arg:i32  reftype:Val  dflt:5  comme
 EOF
 
 amc 
-ai 
+# ai 
 
 echo "done!!!!!!!!!!!!"

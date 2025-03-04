@@ -1,0 +1,1398 @@
+Hello, World!333
+====--PcapFileProcess  fname:/home/avorovich/pcap/rp_tap0.pcap
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41072-192.168.110.51:1096  count:197  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":8
+tcp_pair kafka stats  kafka_req_count:196  kafka_req_len_tot:24296  tcp_payload_len_tot:25080  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-nOkgFv0-7
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58796  count:56  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:56  kafka_req_len_tot:4144  tcp_payload_len_tot:4368  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:test-topic-0000000-4JA-IpQ
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58848  count:48  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:48  kafka_req_len_tot:3552  tcp_payload_len_tot:3744  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39656  count:9616  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:165  kafka_req_len_tot:143150085  tcp_payload_len_tot:203589219  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:""
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48528  count:47  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":10
+tcp_pair kafka stats  kafka_req_count:47  kafka_req_len_tot:3478  tcp_payload_len_tot:3666  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39634  count:8443  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:146  kafka_req_len_tot:133645162  tcp_payload_len_tot:179042895  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58824  count:38  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:37  kafka_req_len_tot:2738  tcp_payload_len_tot:2886  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58862  count:42  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:42  kafka_req_len_tot:3108  tcp_payload_len_tot:3276  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:50974  count:5539  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:122  kafka_req_len_tot:116829225  tcp_payload_len_tot:154416471  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:39634-192.168.110.51:1096  count:183  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:182  kafka_req_len_tot:22524  tcp_payload_len_tot:23252  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-nOkgFv0-13
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58824-192.168.110.51:1096  count:547  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":18
+tcp_pair kafka stats  kafka_req_count:15  kafka_req_len_tot:14398027  tcp_payload_len_tot:26716777  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-20
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48528-192.168.110.51:1096  count:753  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":17
+tcp_pair kafka stats  kafka_req_count:21  kafka_req_len_tot:19785323  tcp_payload_len_tot:37009491  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-4
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48556  count:51  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":1
+tcp_pair kafka stats  kafka_req_count:51  kafka_req_len_tot:3774  tcp_payload_len_tot:3978  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:39656-192.168.110.51:1096  count:180  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:179  kafka_req_len_tot:21769  tcp_payload_len_tot:22485  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-nOkgFv0-4
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58848-192.168.110.51:1096  count:756  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":14
+tcp_pair kafka stats  kafka_req_count:21  kafka_req_len_tot:19180063  tcp_payload_len_tot:38609101  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-16
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58796-192.168.110.51:1096  count:890  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":14
+tcp_pair kafka stats  kafka_req_count:26  kafka_req_len_tot:25981323  tcp_payload_len_tot:47271039  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-24
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58862-192.168.110.51:1096  count:654  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":24
+tcp_pair kafka stats  kafka_req_count:18  kafka_req_len_tot:18873696  tcp_payload_len_tot:32736378  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-21
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48556-192.168.110.51:1096  count:748  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":14
+tcp_pair kafka stats  kafka_req_count:21  kafka_req_len_tot:18797275  tcp_payload_len_tot:39386737  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-25
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58734  count:44  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:44  kafka_req_len_tot:3256  tcp_payload_len_tot:3432  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48622-192.168.110.51:1096  count:759  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":18
+tcp_pair kafka stats  kafka_req_count:15  kafka_req_len_tot:14997049  tcp_payload_len_tot:37447715  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-9
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48686  count:48  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:47  kafka_req_len_tot:3478  tcp_payload_len_tot:3666  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58734-192.168.110.51:1096  count:636  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":24
+tcp_pair kafka stats  kafka_req_count:14  kafka_req_len_tot:14286536  tcp_payload_len_tot:29949567  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-7
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48686-192.168.110.51:1096  count:817  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":18
+tcp_pair kafka stats  kafka_req_count:17  kafka_req_len_tot:17825150  tcp_payload_len_tot:39811728  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-23
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48700  count:45  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":10
+tcp_pair kafka stats  kafka_req_count:45  kafka_req_len_tot:3330  tcp_payload_len_tot:3510  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39650  count:9004  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:116  kafka_req_len_tot:144471280  tcp_payload_len_tot:191888087  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48700-192.168.110.51:1096  count:621  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":20
+tcp_pair kafka stats  kafka_req_count:17  kafka_req_len_tot:17825194  tcp_payload_len_tot:31586820  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-18
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48496  count:52  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:52  kafka_req_len_tot:3848  tcp_payload_len_tot:4056  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58872-192.168.110.51:1096  count:663  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":18
+tcp_pair kafka stats  kafka_req_count:17  kafka_req_len_tot:17825194  tcp_payload_len_tot:33915424  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:39650-192.168.110.51:1096  count:163  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":2
+tcp_pair kafka stats  kafka_req_count:162  kafka_req_len_tot:19464  tcp_payload_len_tot:20112  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-nOkgFv0-14
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58764  count:37  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":15
+tcp_pair kafka stats  kafka_req_count:37  kafka_req_len_tot:2738  tcp_payload_len_tot:2886  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58758-192.168.110.51:1096  count:793  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":14
+tcp_pair kafka stats  kafka_req_count:22  kafka_req_len_tot:22077436  tcp_payload_len_tot:42097296  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-13
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58764-192.168.110.51:1096  count:553  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":17
+tcp_pair kafka stats  kafka_req_count:20  kafka_req_len_tot:14017865  tcp_payload_len_tot:25112292  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-19
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58682  count:48  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:48  kafka_req_len_tot:3552  tcp_payload_len_tot:3744  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48496-192.168.110.51:1096  count:766  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":21
+tcp_pair kafka stats  kafka_req_count:19  kafka_req_len_tot:19922242  tcp_payload_len_tot:38983670  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48518  count:25  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":23
+tcp_pair kafka stats  kafka_req_count:25  kafka_req_len_tot:1850  tcp_payload_len_tot:1950  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58682-192.168.110.51:1096  count:698  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":25
+tcp_pair kafka stats  kafka_req_count:16  kafka_req_len_tot:16776676  tcp_payload_len_tot:33388539  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-1
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58700  count:44  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:44  kafka_req_len_tot:3256  tcp_payload_len_tot:3432  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:50974-192.168.110.51:1096  count:180  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":8
+tcp_pair kafka stats  kafka_req_count:179  kafka_req_len_tot:22368  tcp_payload_len_tot:23084  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-nOkgFv0-22
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48518-192.168.110.51:1096  count:426  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":24
+tcp_pair kafka stats  kafka_req_count:9  kafka_req_len_tot:9436795  tcp_payload_len_tot:19650272  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-3
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58758  count:50  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:50  kafka_req_len_tot:3700  tcp_payload_len_tot:3900  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48470  count:46  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":8
+tcp_pair kafka stats  kafka_req_count:46  kafka_req_len_tot:3404  tcp_payload_len_tot:3588  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58700-192.168.110.51:1096  count:694  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":24
+tcp_pair kafka stats  kafka_req_count:18  kafka_req_len_tot:18873678  tcp_payload_len_tot:34258104  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58696  count:49  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":8
+tcp_pair kafka stats  kafka_req_count:49  kafka_req_len_tot:3626  tcp_payload_len_tot:3822  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48470-192.168.110.51:1096  count:677  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":24
+tcp_pair kafka stats  kafka_req_count:14  kafka_req_len_tot:14679578  tcp_payload_len_tot:34530432  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-15
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39658  count:8425  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:148  kafka_req_len_tot:141761134  tcp_payload_len_tot:177916523  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:40110  count:8510  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:162  kafka_req_len_tot:139448763  tcp_payload_len_tot:180457695  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48540  count:46  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:46  kafka_req_len_tot:3404  tcp_payload_len_tot:3588  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48554  count:66  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":2
+tcp_pair kafka stats  kafka_req_count:65  kafka_req_len_tot:4810  tcp_payload_len_tot:5070  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48554-192.168.110.51:1096  count:948  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":19
+tcp_pair kafka stats  kafka_req_count:22  kafka_req_len_tot:22935462  tcp_payload_len_tot:49399842  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-6
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58696-192.168.110.51:1096  count:714  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":25
+tcp_pair kafka stats  kafka_req_count:17  kafka_req_len_tot:16786051  tcp_payload_len_tot:35285389  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-2
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48540-192.168.110.51:1096  count:710  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":16
+tcp_pair kafka stats  kafka_req_count:17  kafka_req_len_tot:16972144  tcp_payload_len_tot:36749796  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-12
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58810  count:37  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":18
+tcp_pair kafka stats  kafka_req_count:37  kafka_req_len_tot:2738  tcp_payload_len_tot:2886  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58810-192.168.110.51:1096  count:617  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":22
+tcp_pair kafka stats  kafka_req_count:13  kafka_req_len_tot:13630953  tcp_payload_len_tot:30850260  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:42332  count:6024  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:134  kafka_req_len_tot:133301778  tcp_payload_len_tot:174453456  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:42332-192.168.110.51:1096  count:166  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:165  kafka_req_len_tot:19875  tcp_payload_len_tot:20535  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:39658-192.168.110.51:1096  count:170  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:169  kafka_req_len_tot:21048  tcp_payload_len_tot:21724  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-nOkgFv0-19
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41072  count:6615  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:148  kafka_req_len_tot:138292953  tcp_payload_len_tot:176014575  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48618  count:37  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":15
+tcp_pair kafka stats  kafka_req_count:37  kafka_req_len_tot:2738  tcp_payload_len_tot:2886  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48618-192.168.110.51:1096  count:605  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":25
+tcp_pair kafka stats  kafka_req_count:12  kafka_req_len_tot:12582496  tcp_payload_len_tot:28396032  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-8
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58780  count:44  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:44  kafka_req_len_tot:3256  tcp_payload_len_tot:3432  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58842  count:71  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":2
+tcp_pair kafka stats  kafka_req_count:71  kafka_req_len_tot:5254  tcp_payload_len_tot:5538  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48718  count:46  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:46  kafka_req_len_tot:3404  tcp_payload_len_tot:3588  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48634  count:52  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:52  kafka_req_len_tot:3848  tcp_payload_len_tot:4056  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58760  count:53  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:53  kafka_req_len_tot:3922  tcp_payload_len_tot:4134  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58746  count:45  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":15
+tcp_pair kafka stats  kafka_req_count:45  kafka_req_len_tot:3330  tcp_payload_len_tot:3510  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58842-192.168.110.51:1096  count:1008  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":20
+tcp_pair kafka stats  kafka_req_count:26  kafka_req_len_tot:27262042  tcp_payload_len_tot:52089772  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-10
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48718-192.168.110.51:1096  count:708  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":15
+tcp_pair kafka stats  kafka_req_count:22  kafka_req_len_tot:20254939  tcp_payload_len_tot:35410139  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48634-192.168.110.51:1096  count:810  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":28
+tcp_pair kafka stats  kafka_req_count:20  kafka_req_len_tot:20970876  tcp_payload_len_tot:38984330  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-22
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58780-192.168.110.51:1096  count:706  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":20
+tcp_pair kafka stats  kafka_req_count:20  kafka_req_len_tot:20970788  tcp_payload_len_tot:36893414  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58760-192.168.110.51:1096  count:794  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":17
+tcp_pair kafka stats  kafka_req_count:25  kafka_req_len_tot:26213496  tcp_payload_len_tot:42434628  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-17
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58746-192.168.110.51:1096  count:691  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":24
+tcp_pair kafka stats  kafka_req_count:16  kafka_req_len_tot:16776610  tcp_payload_len_tot:34966224  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:48552  count:6942  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:157  kafka_req_len_tot:151603958  tcp_payload_len_tot:201582068  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:48552-192.168.110.51:1096  count:162  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:161  kafka_req_len_tot:19872  tcp_payload_len_tot:20516  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-nOkgFv0-10
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48622  count:48  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:47  kafka_req_len_tot:3478  tcp_payload_len_tot:3666  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:40108  count:8466  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:129  kafka_req_len_tot:132000452  tcp_payload_len_tot:172871092  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:40108-192.168.110.51:1096  count:147  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:146  kafka_req_len_tot:17592  tcp_payload_len_tot:18176  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-nOkgFv0-21
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48672  count:41  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:41  kafka_req_len_tot:3034  tcp_payload_len_tot:3198  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48672-192.168.110.51:1096  count:653  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":19
+tcp_pair kafka stats  kafka_req_count:16  kafka_req_len_tot:16776626  tcp_payload_len_tot:32645506  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58904  count:31  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":9
+tcp_pair kafka stats  kafka_req_count:31  kafka_req_len_tot:2294  tcp_payload_len_tot:2418  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58904-192.168.110.51:1096  count:482  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:15  kafka_req_len_tot:13321496  tcp_payload_len_tot:24399536  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48588  count:49  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:49  kafka_req_len_tot:3626  tcp_payload_len_tot:3822  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48588-192.168.110.51:1096  count:787  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":19
+tcp_pair kafka stats  kafka_req_count:17  kafka_req_len_tot:15733516  tcp_payload_len_tot:38197991  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48482  count:43  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":9
+tcp_pair kafka stats  kafka_req_count:43  kafka_req_len_tot:3182  tcp_payload_len_tot:3354  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48482-192.168.110.51:1096  count:688  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":15
+tcp_pair kafka stats  kafka_req_count:17  kafka_req_len_tot:17825194  tcp_payload_len_tot:35181790  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48572-192.168.110.51:1096  count:624  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":18
+tcp_pair kafka stats  kafka_req_count:16  kafka_req_len_tot:16776648  tcp_payload_len_tot:30840070  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48480  count:54  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":9
+tcp_pair kafka stats  kafka_req_count:54  kafka_req_len_tot:3996  tcp_payload_len_tot:4212  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:40110-192.168.110.51:1096  count:215  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:214  kafka_req_len_tot:27048  tcp_payload_len_tot:27904  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48480-192.168.110.51:1096  count:824  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":22
+tcp_pair kafka stats  kafka_req_count:16  kafka_req_len_tot:15885557  tcp_payload_len_tot:39908349  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-11
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48648-192.168.110.51:1096  count:512  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":14
+tcp_pair kafka stats  kafka_req_count:18  kafka_req_len_tot:13835581  tcp_payload_len_tot:25356519  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48572  count:41  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:41  kafka_req_len_tot:3034  tcp_payload_len_tot:3198  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48648  count:36  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:36  kafka_req_len_tot:2664  tcp_payload_len_tot:2808  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48530  count:34  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":17
+tcp_pair kafka stats  kafka_req_count:34  kafka_req_len_tot:2516  tcp_payload_len_tot:2652  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39624  count:9013  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:156  kafka_req_len_tot:144264700  tcp_payload_len_tot:188822885  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48530-192.168.110.51:1096  count:558  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":19
+tcp_pair kafka stats  kafka_req_count:15  kafka_req_len_tot:14288793  tcp_payload_len_tot:26963663  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48460-192.168.110.51:1096  count:477  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":15
+tcp_pair kafka stats  kafka_req_count:12  kafka_req_len_tot:11469530  tcp_payload_len_tot:22907135  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:39624-192.168.110.51:1096  count:183  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":2
+tcp_pair kafka stats  kafka_req_count:182  kafka_req_len_tot:22404  tcp_payload_len_tot:23132  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-nOkgFv0-20
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58872  count:41  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":9
+tcp_pair kafka stats  kafka_req_count:41  kafka_req_len_tot:3034  tcp_payload_len_tot:3198  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48662-192.168.110.51:1096  count:865  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:24  kafka_req_len_tot:22238390  tcp_payload_len_tot:45037798  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58888-192.168.110.51:1096  count:539  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":17
+tcp_pair kafka stats  kafka_req_count:15  kafka_req_len_tot:15728102  tcp_payload_len_tot:28057240  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48662  count:55  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":1
+tcp_pair kafka stats  kafka_req_count:54  kafka_req_len_tot:3996  tcp_payload_len_tot:4212  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48506-192.168.110.51:1096  count:481  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":19
+tcp_pair kafka stats  kafka_req_count:11  kafka_req_len_tot:11533808  tcp_payload_len_tot:23946998  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48506  count:34  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:34  kafka_req_len_tot:2516  tcp_payload_len_tot:2652  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48552-192.168.110.51:1096  count:639  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":21
+tcp_pair kafka stats  kafka_req_count:16  kafka_req_len_tot:14434697  tcp_payload_len_tot:30866510  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48552  count:41  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:41  kafka_req_len_tot:3034  tcp_payload_len_tot:3198  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48460  count:31  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:31  kafka_req_len_tot:2294  tcp_payload_len_tot:2418  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58750-192.168.110.51:1096  count:470  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":15
+tcp_pair kafka stats  kafka_req_count:11  kafka_req_len_tot:11330242  tcp_payload_len_tot:22267662  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58730-192.168.110.51:1096  count:808  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:25  kafka_req_len_tot:23533213  tcp_payload_len_tot:41821130  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58860-192.168.110.51:1096  count:686  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:17  kafka_req_len_tot:16792311  tcp_payload_len_tot:35803929  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-5
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48604-192.168.110.51:1096  count:727  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":19
+tcp_pair kafka stats  kafka_req_count:24  kafka_req_len_tot:22025348  tcp_payload_len_tot:37423307  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48604  count:47  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":10
+tcp_pair kafka stats  kafka_req_count:47  kafka_req_len_tot:3478  tcp_payload_len_tot:3666  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58834-192.168.110.51:1096  count:498  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":18
+tcp_pair kafka stats  kafka_req_count:12  kafka_req_len_tot:7884254  tcp_payload_len_tot:23403400  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-14
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58860  count:40  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:40  kafka_req_len_tot:2960  tcp_payload_len_tot:3120  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58716-192.168.110.51:1096  count:649  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":22
+tcp_pair kafka stats  kafka_req_count:19  kafka_req_len_tot:18315516  tcp_payload_len_tot:32519492  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58716  count:44  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":8
+tcp_pair kafka stats  kafka_req_count:44  kafka_req_len_tot:3256  tcp_payload_len_tot:3432  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:58752-192.168.110.51:1096  count:503  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":19
+tcp_pair kafka stats  kafka_req_count:14  kafka_req_len_tot:13409652  tcp_payload_len_tot:24239986  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58888  count:40  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:40  kafka_req_len_tot:2960  tcp_payload_len_tot:3120  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:48716-192.168.110.51:1096  count:491  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":14
+tcp_pair kafka stats  kafka_req_count:12  kafka_req_len_tot:10987046  tcp_payload_len_tot:22680985  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48716  count:29  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:28  kafka_req_len_tot:2072  tcp_payload_len_tot:2184  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58750  count:27  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":10
+tcp_pair kafka stats  kafka_req_count:27  kafka_req_len_tot:1998  tcp_payload_len_tot:2106  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58752  count:32  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":15
+tcp_pair kafka stats  kafka_req_count:31  kafka_req_len_tot:2294  tcp_payload_len_tot:2418  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58834  count:34  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:34  kafka_req_len_tot:2516  tcp_payload_len_tot:2652  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58730  count:53  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:53  kafka_req_len_tot:3922  tcp_payload_len_tot:4134  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:54976-192.168.110.51:1096  count:10  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":9
+tcp_pair kafka stats  kafka_req_count:1  kafka_req_len_tot:44  tcp_payload_len_tot:570  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:kafka-ui-admin-1739114666-1
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:54976  count:10  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":9
+tcp_pair kafka stats  kafka_req_count:24  kafka_req_len_tot:15551  tcp_payload_len_tot:16923  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41064-192.168.110.51:1096  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:39610-192.168.110.51:1096  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41064  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39610  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:34008-192.168.110.51:1096  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:48556-192.168.110.51:1096  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:48538-192.168.110.51:1096  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:39616-192.168.110.51:1096  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:39590-192.168.110.51:1096  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:39566-192.168.110.51:1096  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:39568-192.168.110.51:1096  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:39554-192.168.110.51:1096  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:39606-192.168.110.51:1096  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39566  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:48556  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:48538  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39590  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39568  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:34008  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39554  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39606  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39616  count:1  syn_count:0  fin_count:1  isn:0  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:44884-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:439608734  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44884  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:44886-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:2986089256  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44886  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:44892-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:3662413928  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44892  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:44900-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:1078563824  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44900  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:44904-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:3700540755  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44904  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:44912-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:346644811  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44912  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:44920-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:3145356131  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44920  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:44928-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:589040807  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44928  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:44932-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:4210381879  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44932  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:44934-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:750873443  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44934  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:44942-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:3624190070  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44942  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:35448-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:2120058215  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:35448  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:35452-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:3742514939  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:35452  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:35458-192.168.110.51:1096  count:1  syn_count:1  fin_count:0  isn:2256573282  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:0  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:35458  count:1  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:0  kafka_req_len_tot:0  tcp_payload_len_tot:6  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42396-192.168.110.51:1096  count:2164  syn_count:1  fin_count:0  isn:2828735207  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:95  kafka_req_len_tot:56914049  tcp_payload_len_tot:104915204  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42396  count:181  syn_count:1  fin_count:0  isn:2585912227  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:180  kafka_req_len_tot:45376  tcp_payload_len_tot:46096  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:test-topic-0000000-LVhPkfU
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42412-192.168.110.51:1096  count:1796  syn_count:1  fin_count:0  isn:4289482206  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:56  kafka_req_len_tot:41822546  tcp_payload_len_tot:81248331  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42412  count:118  syn_count:1  fin_count:0  isn:773277119  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:117  kafka_req_len_tot:16846  tcp_payload_len_tot:17314  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42422-192.168.110.51:1096  count:1472  syn_count:1  fin_count:0  isn:1615395963  "seq_gap_count %":15
+tcp_pair kafka stats  kafka_req_count:51  kafka_req_len_tot:34728270  tcp_payload_len_tot:71227389  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42422  count:113  syn_count:1  fin_count:0  isn:2052973127  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:112  kafka_req_len_tot:21780  tcp_payload_len_tot:22228  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42428-192.168.110.51:1096  count:1848  syn_count:1  fin_count:0  isn:921131342  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:68  kafka_req_len_tot:47271286  tcp_payload_len_tot:88190316  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42428  count:132  syn_count:1  fin_count:0  isn:4206390970  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:131  kafka_req_len_tot:15230  tcp_payload_len_tot:15754  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42444-192.168.110.51:1096  count:1304  syn_count:1  fin_count:0  isn:502883082  "seq_gap_count %":10
+tcp_pair kafka stats  kafka_req_count:52  kafka_req_len_tot:30501629  tcp_payload_len_tot:60729379  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42444  count:99  syn_count:1  fin_count:0  isn:1321939890  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:98  kafka_req_len_tot:23396  tcp_payload_len_tot:23788  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42450-192.168.110.51:1096  count:1796  syn_count:1  fin_count:0  isn:1765876534  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:66  kafka_req_len_tot:44870724  tcp_payload_len_tot:87001233  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42450  count:125  syn_count:1  fin_count:0  isn:2479039874  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:124  kafka_req_len_tot:17364  tcp_payload_len_tot:17860  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42454-192.168.110.51:1096  count:1322  syn_count:1  fin_count:0  isn:4185878867  "seq_gap_count %":10
+tcp_pair kafka stats  kafka_req_count:61  kafka_req_len_tot:38713540  tcp_payload_len_tot:62710268  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42454  count:100  syn_count:1  fin_count:0  isn:970765402  "seq_gap_count %":10
+tcp_pair kafka stats  kafka_req_count:99  kafka_req_len_tot:26122  tcp_payload_len_tot:26518  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42466-192.168.110.51:1096  count:2252  syn_count:1  fin_count:0  isn:2456003264  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:118  kafka_req_len_tot:53469787  tcp_payload_len_tot:106938721  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42466  count:199  syn_count:1  fin_count:0  isn:4151025174  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:198  kafka_req_len_tot:17536  tcp_payload_len_tot:18328  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42482-192.168.110.51:1096  count:1462  syn_count:1  fin_count:0  isn:1678219199  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:57  kafka_req_len_tot:41249812  tcp_payload_len_tot:71622707  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42482  count:119  syn_count:1  fin_count:0  isn:4182775128  "seq_gap_count %":2
+tcp_pair kafka stats  kafka_req_count:118  kafka_req_len_tot:16920  tcp_payload_len_tot:17392  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42492-192.168.110.51:1096  count:1622  syn_count:1  fin_count:0  isn:2256434954  "seq_gap_count %":8
+tcp_pair kafka stats  kafka_req_count:75  kafka_req_len_tot:56557805  tcp_payload_len_tot:79477146  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42492  count:112  syn_count:1  fin_count:0  isn:1464228374  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:111  kafka_req_len_tot:21706  tcp_payload_len_tot:22150  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42504-192.168.110.51:1096  count:1589  syn_count:1  fin_count:0  isn:3552122942  "seq_gap_count %":10
+tcp_pair kafka stats  kafka_req_count:65  kafka_req_len_tot:47746614  tcp_payload_len_tot:76462617  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42504  count:121  syn_count:1  fin_count:0  isn:4009783409  "seq_gap_count %":9
+tcp_pair kafka stats  kafka_req_count:120  kafka_req_len_tot:19720  tcp_payload_len_tot:20200  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42516-192.168.110.51:1096  count:1639  syn_count:1  fin_count:0  isn:1531213625  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:92  kafka_req_len_tot:46676272  tcp_payload_len_tot:78861643  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42516  count:140  syn_count:1  fin_count:0  isn:260871364  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:139  kafka_req_len_tot:21126  tcp_payload_len_tot:21682  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42530-192.168.110.51:1096  count:2206  syn_count:1  fin_count:0  isn:3799059542  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:105  kafka_req_len_tot:52866551  tcp_payload_len_tot:103418847  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42530  count:191  syn_count:1  fin_count:0  isn:3903779985  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:190  kafka_req_len_tot:32856  tcp_payload_len_tot:33616  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42532-192.168.110.51:1096  count:1700  syn_count:1  fin_count:0  isn:837052390  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:70  kafka_req_len_tot:49150159  tcp_payload_len_tot:84212568  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42532  count:134  syn_count:1  fin_count:0  isn:253522599  "seq_gap_count %":9
+tcp_pair kafka stats  kafka_req_count:133  kafka_req_len_tot:20682  tcp_payload_len_tot:21214  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42546-192.168.110.51:1096  count:1852  syn_count:1  fin_count:0  isn:2272551189  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:116  kafka_req_len_tot:46910895  tcp_payload_len_tot:86363036  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42546  count:182  syn_count:1  fin_count:0  isn:3232205245  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:181  kafka_req_len_tot:53406  tcp_payload_len_tot:54130  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42552-192.168.110.51:1096  count:2542  syn_count:1  fin_count:0  isn:512875932  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:177  kafka_req_len_tot:63410641  tcp_payload_len_tot:116006460  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42552  count:287  syn_count:1  fin_count:0  isn:726974267  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:286  kafka_req_len_tot:39960  tcp_payload_len_tot:41104  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42568-192.168.110.51:1096  count:2142  syn_count:1  fin_count:0  isn:2185707711  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:95  kafka_req_len_tot:59736792  tcp_payload_len_tot:105743192  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42568  count:171  syn_count:1  fin_count:0  isn:1553056825  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:170  kafka_req_len_tot:23420  tcp_payload_len_tot:24100  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42570-192.168.110.51:1096  count:1729  syn_count:1  fin_count:0  isn:273853088  "seq_gap_count %":10
+tcp_pair kafka stats  kafka_req_count:90  kafka_req_len_tot:42111145  tcp_payload_len_tot:78012413  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42570  count:168  syn_count:1  fin_count:0  isn:1398102266  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:167  kafka_req_len_tot:17894  tcp_payload_len_tot:18562  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42576-192.168.110.51:1096  count:2007  syn_count:1  fin_count:0  isn:612637799  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:71  kafka_req_len_tot:46046226  tcp_payload_len_tot:91456033  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42576  count:151  syn_count:1  fin_count:0  isn:2395280291  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:150  kafka_req_len_tot:27244  tcp_payload_len_tot:27844  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42588-192.168.110.51:1096  count:1698  syn_count:1  fin_count:0  isn:681924696  "seq_gap_count %":9
+tcp_pair kafka stats  kafka_req_count:79  kafka_req_len_tot:51141024  tcp_payload_len_tot:80413441  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42588  count:134  syn_count:1  fin_count:0  isn:1995790741  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:133  kafka_req_len_tot:15378  tcp_payload_len_tot:15910  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42596-192.168.110.51:1096  count:1716  syn_count:1  fin_count:0  isn:3326259042  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:113  kafka_req_len_tot:41393448  tcp_payload_len_tot:83542801  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42596  count:182  syn_count:1  fin_count:0  isn:874410856  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:181  kafka_req_len_tot:48102  tcp_payload_len_tot:48826  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42602-192.168.110.51:1096  count:1454  syn_count:1  fin_count:0  isn:3231504654  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:59  kafka_req_len_tot:42232099  tcp_payload_len_tot:72284501  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42602  count:115  syn_count:1  fin_count:0  isn:3581726555  "seq_gap_count %":8
+tcp_pair kafka stats  kafka_req_count:5  kafka_req_len_tot:3182  tcp_payload_len_tot:15632  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42606-192.168.110.51:1096  count:1550  syn_count:1  fin_count:0  isn:200032112  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:79  kafka_req_len_tot:40258090  tcp_payload_len_tot:76291846  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42606  count:149  syn_count:1  fin_count:0  isn:1318224664  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:148  kafka_req_len_tot:53616  tcp_payload_len_tot:54208  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42620-192.168.110.51:1096  count:2499  syn_count:1  fin_count:0  isn:2794438288  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:81  kafka_req_len_tot:54940370  tcp_payload_len_tot:117296806  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42620  count:183  syn_count:1  fin_count:0  isn:1123936573  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:182  kafka_req_len_tot:21656  tcp_payload_len_tot:22384  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42624-192.168.110.51:1096  count:1702  syn_count:1  fin_count:0  isn:1982233763  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:62  kafka_req_len_tot:43803652  tcp_payload_len_tot:83354220  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42624  count:122  syn_count:1  fin_count:0  isn:2585346707  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:121  kafka_req_len_tot:11838  tcp_payload_len_tot:12322  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42626-192.168.110.51:1096  count:1542  syn_count:1  fin_count:0  isn:195172603  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:81  kafka_req_len_tot:38509449  tcp_payload_len_tot:70560656  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42626  count:148  syn_count:1  fin_count:0  isn:1123740043  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:147  kafka_req_len_tot:48238  tcp_payload_len_tot:48826  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42642-192.168.110.51:1096  count:1896  syn_count:1  fin_count:0  isn:3763536380  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:79  kafka_req_len_tot:46013764  tcp_payload_len_tot:90278737  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42642  count:157  syn_count:1  fin_count:0  isn:2018682537  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:156  kafka_req_len_tot:30340  tcp_payload_len_tot:30964  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42650-192.168.110.51:1096  count:1746  syn_count:1  fin_count:0  isn:3502166880  "seq_gap_count %":10
+tcp_pair kafka stats  kafka_req_count:69  kafka_req_len_tot:45402711  tcp_payload_len_tot:82862216  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42650  count:131  syn_count:1  fin_count:0  isn:24991109  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:130  kafka_req_len_tot:52284  tcp_payload_len_tot:52804  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42660-192.168.110.51:1096  count:1734  syn_count:1  fin_count:0  isn:3362162979  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:131  kafka_req_len_tot:49069662  tcp_payload_len_tot:80096754  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42660  count:180  syn_count:1  fin_count:0  isn:3354215457  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:179  kafka_req_len_tot:18782  tcp_payload_len_tot:19498  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42670-192.168.110.51:1096  count:1724  syn_count:1  fin_count:0  isn:1501515842  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:78  kafka_req_len_tot:44942529  tcp_payload_len_tot:82387005  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42670  count:151  syn_count:1  fin_count:0  isn:759382504  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:12  kafka_req_len_tot:3700  tcp_payload_len_tot:18440  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42678-192.168.110.51:1096  count:1839  syn_count:1  fin_count:0  isn:516319708  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:77  kafka_req_len_tot:50632569  tcp_payload_len_tot:88253779  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42678  count:156  syn_count:1  fin_count:0  isn:3317144308  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:155  kafka_req_len_tot:24962  tcp_payload_len_tot:25582  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42682-192.168.110.51:1096  count:1803  syn_count:1  fin_count:0  isn:598955286  "seq_gap_count %":9
+tcp_pair kafka stats  kafka_req_count:80  kafka_req_len_tot:51862073  tcp_payload_len_tot:88090738  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42682  count:151  syn_count:1  fin_count:0  isn:1197236090  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:150  kafka_req_len_tot:19288  tcp_payload_len_tot:19888  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42694-192.168.110.51:1096  count:1814  syn_count:1  fin_count:0  isn:1475433275  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:77  kafka_req_len_tot:46105008  tcp_payload_len_tot:86058191  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42694  count:149  syn_count:1  fin_count:0  isn:1166605842  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:148  kafka_req_len_tot:11184  tcp_payload_len_tot:11776  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42702-192.168.110.51:1096  count:1892  syn_count:1  fin_count:0  isn:1888805231  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:75  kafka_req_len_tot:50107967  tcp_payload_len_tot:90033910  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42702  count:139  syn_count:1  fin_count:0  isn:1594382661  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:138  kafka_req_len_tot:13096  tcp_payload_len_tot:13648  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42710-192.168.110.51:1096  count:1832  syn_count:1  fin_count:0  isn:4182679845  "seq_gap_count %":14
+tcp_pair kafka stats  kafka_req_count:66  kafka_req_len_tot:42239034  tcp_payload_len_tot:82765067  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42710  count:132  syn_count:1  fin_count:0  isn:3723667025  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:131  kafka_req_len_tot:9926  tcp_payload_len_tot:10450  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42712-192.168.110.51:1096  count:1698  syn_count:1  fin_count:0  isn:2859993917  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:130  kafka_req_len_tot:50537980  tcp_payload_len_tot:79137593  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42712  count:204  syn_count:1  fin_count:0  isn:2117224407  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:203  kafka_req_len_tot:49730  tcp_payload_len_tot:50542  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42728-192.168.110.51:1096  count:2016  syn_count:1  fin_count:0  isn:2803614967  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:75  kafka_req_len_tot:55628837  tcp_payload_len_tot:96569846  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42728  count:134  syn_count:1  fin_count:0  isn:1773598689  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:133  kafka_req_len_tot:10074  tcp_payload_len_tot:10606  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42740-192.168.110.51:1096  count:2089  syn_count:1  fin_count:0  isn:3467453827  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:90  kafka_req_len_tot:55562309  tcp_payload_len_tot:103328071  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42740  count:172  syn_count:1  fin_count:0  isn:2229522663  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:171  kafka_req_len_tot:15538  tcp_payload_len_tot:16222  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42752-192.168.110.51:1096  count:2135  syn_count:1  fin_count:0  isn:3405800628  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:94  kafka_req_len_tot:54238713  tcp_payload_len_tot:103749929  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42752  count:173  syn_count:1  fin_count:0  isn:2869814601  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:172  kafka_req_len_tot:26220  tcp_payload_len_tot:26908  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41508-192.168.110.51:1096  count:3  syn_count:1  fin_count:0  isn:3757245993  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:119  tcp_payload_len_tot:127  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-14
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41514-192.168.110.51:1096  count:3  syn_count:1  fin_count:0  isn:3310195571  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:117  tcp_payload_len_tot:125  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-9
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41508  count:3  syn_count:1  fin_count:0  isn:1187511446  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:345  tcp_payload_len_tot:353  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41538-192.168.110.51:1096  count:3  syn_count:1  fin_count:0  isn:1868556823  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:119  tcp_payload_len_tot:127  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-18
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41590-192.168.110.51:1096  count:1231  syn_count:1  fin_count:0  isn:149470750  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:1230  kafka_req_len_tot:159935  tcp_payload_len_tot:164855  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-23
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41578-192.168.110.51:1096  count:4  syn_count:1  fin_count:0  isn:1162667567  "seq_gap_count %":40
+tcp_pair kafka stats  kafka_req_count:3  kafka_req_len_tot:191  tcp_payload_len_tot:203  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-13
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41546-192.168.110.51:1096  count:3  syn_count:1  fin_count:0  isn:1620422466  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:119  tcp_payload_len_tot:127  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-10
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41618-192.168.110.51:1096  count:3  syn_count:1  fin_count:0  isn:3665463212  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:119  tcp_payload_len_tot:127  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41530-192.168.110.51:1096  count:158  syn_count:1  fin_count:0  isn:1102002309  "seq_gap_count %":17
+tcp_pair kafka stats  kafka_req_count:157  kafka_req_len_tot:19979  tcp_payload_len_tot:20607  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-22
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41568-192.168.110.51:1096  count:510  syn_count:1  fin_count:0  isn:1878572647  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:509  kafka_req_len_tot:41574  tcp_payload_len_tot:43610  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-1
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41556-192.168.110.51:1096  count:3  syn_count:1  fin_count:0  isn:802989545  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:117  tcp_payload_len_tot:125  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-5
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41514  count:3  syn_count:1  fin_count:0  isn:1280686244  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:345  tcp_payload_len_tot:353  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41606-192.168.110.51:1096  count:3  syn_count:1  fin_count:0  isn:2578659014  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:119  tcp_payload_len_tot:127  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41530  count:6676  syn_count:1  fin_count:0  isn:3452239742  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:122  kafka_req_len_tot:110022200  tcp_payload_len_tot:134195715  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41626-192.168.110.51:1096  count:3  syn_count:1  fin_count:0  isn:846219688  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:119  tcp_payload_len_tot:127  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-12
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41628-192.168.110.51:1096  count:3  syn_count:1  fin_count:0  isn:2992198601  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:117  tcp_payload_len_tot:125  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-4
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41568  count:3612  syn_count:1  fin_count:0  isn:4138545284  "seq_gap_count %":5
+tcp_pair kafka stats  kafka_req_count:73  kafka_req_len_tot:67293512  tcp_payload_len_tot:85344305  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41546  count:3  syn_count:1  fin_count:0  isn:2529080635  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:345  tcp_payload_len_tot:353  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41578  count:4  syn_count:1  fin_count:0  isn:1584572480  "seq_gap_count %":40
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:345  tcp_payload_len_tot:3083  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41538  count:3  syn_count:1  fin_count:0  isn:1515484340  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:345  tcp_payload_len_tot:353  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41590  count:34623  syn_count:1  fin_count:0  isn:806481096  "seq_gap_count %":1
+tcp_pair kafka stats  kafka_req_count:1215  kafka_req_len_tot:776763723  tcp_payload_len_tot:904424022  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41556  count:3  syn_count:1  fin_count:0  isn:3535675510  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:345  tcp_payload_len_tot:353  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41618  count:3  syn_count:1  fin_count:0  isn:3700754817  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:345  tcp_payload_len_tot:353  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41606  count:3  syn_count:1  fin_count:0  isn:1257213560  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:345  tcp_payload_len_tot:353  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41626  count:3  syn_count:1  fin_count:0  isn:2393002790  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:345  tcp_payload_len_tot:353  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41628  count:3  syn_count:1  fin_count:0  isn:3881740790  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:345  tcp_payload_len_tot:353  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41638-192.168.110.51:1096  count:3  syn_count:1  fin_count:0  isn:325858148  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:117  tcp_payload_len_tot:125  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-6
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41638  count:3  syn_count:1  fin_count:0  isn:2585108104  "seq_gap_count %":50
+tcp_pair kafka stats  kafka_req_count:2  kafka_req_len_tot:345  tcp_payload_len_tot:353  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41644-192.168.110.51:1096  count:4  syn_count:1  fin_count:0  isn:3712621294  "seq_gap_count %":40
+tcp_pair kafka stats  kafka_req_count:3  kafka_req_len_tot:226  tcp_payload_len_tot:238  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-3
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41644  count:4  syn_count:1  fin_count:0  isn:2363389834  "seq_gap_count %":40
+tcp_pair kafka stats  kafka_req_count:3  kafka_req_len_tot:3102  tcp_payload_len_tot:3114  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41654-192.168.110.51:1096  count:4  syn_count:1  fin_count:0  isn:3903183458  "seq_gap_count %":40
+tcp_pair kafka stats  kafka_req_count:3  kafka_req_len_tot:229  tcp_payload_len_tot:241  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-15
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41654  count:4  syn_count:1  fin_count:0  isn:640473314  "seq_gap_count %":40
+tcp_pair kafka stats  kafka_req_count:3  kafka_req_len_tot:3102  tcp_payload_len_tot:3114  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41668-192.168.110.51:1096  count:4  syn_count:1  fin_count:0  isn:622451030  "seq_gap_count %":40
+tcp_pair kafka stats  kafka_req_count:3  kafka_req_len_tot:229  tcp_payload_len_tot:241  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-19
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41668  count:4  syn_count:1  fin_count:0  isn:382703131  "seq_gap_count %":40
+tcp_pair kafka stats  kafka_req_count:3  kafka_req_len_tot:3102  tcp_payload_len_tot:3114  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41676-192.168.110.51:1096  count:109  syn_count:1  fin_count:0  isn:1604832677  "seq_gap_count %":2
+tcp_pair kafka stats  kafka_req_count:108  kafka_req_len_tot:14029  tcp_payload_len_tot:14461  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-20
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41676  count:2735  syn_count:1  fin_count:0  isn:2068885160  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:117  kafka_req_len_tot:58397782  tcp_payload_len_tot:73043845  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41678-192.168.110.51:1096  count:673  syn_count:1  fin_count:0  isn:4288235465  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:80  kafka_req_len_tot:10369  tcp_payload_len_tot:59881  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-25
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41678  count:6747  syn_count:1  fin_count:0  isn:3053969928  "seq_gap_count %":2
+tcp_pair kafka stats  kafka_req_count:667  kafka_req_len_tot:118800518  tcp_payload_len_tot:147957569  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41684-192.168.110.51:1096  count:1064  syn_count:1  fin_count:0  isn:1002114898  "seq_gap_count %":2
+tcp_pair kafka stats  kafka_req_count:1063  kafka_req_len_tot:135306  tcp_payload_len_tot:139558  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41684  count:40740  syn_count:1  fin_count:0  isn:2605083301  "seq_gap_count %":1
+tcp_pair kafka stats  kafka_req_count:1114  kafka_req_len_tot:664945537  tcp_payload_len_tot:885086393  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41688-192.168.110.51:1096  count:4  syn_count:1  fin_count:0  isn:2986127015  "seq_gap_count %":40
+tcp_pair kafka stats  kafka_req_count:3  kafka_req_len_tot:229  tcp_payload_len_tot:241  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41688  count:4  syn_count:1  fin_count:0  isn:554051002  "seq_gap_count %":40
+tcp_pair kafka stats  kafka_req_count:3  kafka_req_len_tot:3102  tcp_payload_len_tot:3114  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41696-192.168.110.51:1096  count:90  syn_count:1  fin_count:0  isn:3100026957  "seq_gap_count %":2
+tcp_pair kafka stats  kafka_req_count:89  kafka_req_len_tot:11521  tcp_payload_len_tot:11877  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41696  count:3657  syn_count:1  fin_count:0  isn:1667610161  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:83  kafka_req_len_tot:71585279  tcp_payload_len_tot:76171584  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41704-192.168.110.51:1096  count:249  syn_count:1  fin_count:0  isn:831128429  "seq_gap_count %":14
+tcp_pair kafka stats  kafka_req_count:75  kafka_req_len_tot:9394  tcp_payload_len_tot:32629  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41704  count:10040  syn_count:1  fin_count:0  isn:2836910543  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:206  kafka_req_len_tot:207668989  tcp_payload_len_tot:251087409  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42754-192.168.110.51:1096  count:1762  syn_count:1  fin_count:0  isn:1083657020  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:64  kafka_req_len_tot:47765231  tcp_payload_len_tot:83480471  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42754  count:126  syn_count:1  fin_count:0  isn:952605920  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:125  kafka_req_len_tot:17468  tcp_payload_len_tot:17968  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42760-192.168.110.51:1096  count:2178  syn_count:1  fin_count:0  isn:4275868053  "seq_gap_count %":10
+tcp_pair kafka stats  kafka_req_count:75  kafka_req_len_tot:58813695  tcp_payload_len_tot:107330640  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42760  count:140  syn_count:1  fin_count:0  isn:1915363398  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:139  kafka_req_len_tot:13200  tcp_payload_len_tot:13756  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42772-192.168.110.51:1096  count:2023  syn_count:1  fin_count:0  isn:3051366101  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:86  kafka_req_len_tot:52229564  tcp_payload_len_tot:101366385  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42772  count:170  syn_count:1  fin_count:0  isn:3153500806  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:169  kafka_req_len_tot:55170  tcp_payload_len_tot:55846  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42788-192.168.110.51:1096  count:1839  syn_count:1  fin_count:0  isn:1696967157  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:59  kafka_req_len_tot:43403522  tcp_payload_len_tot:86318135  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42788  count:131  syn_count:1  fin_count:0  isn:3619100635  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:130  kafka_req_len_tot:23112  tcp_payload_len_tot:23632  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42792-192.168.110.51:1096  count:1816  syn_count:1  fin_count:0  isn:4191124643  "seq_gap_count %":9
+tcp_pair kafka stats  kafka_req_count:76  kafka_req_len_tot:50938209  tcp_payload_len_tot:88628877  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42792  count:138  syn_count:1  fin_count:0  isn:1835887684  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:137  kafka_req_len_tot:15674  tcp_payload_len_tot:16222  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42800-192.168.110.51:1096  count:1200  syn_count:1  fin_count:0  isn:1610301681  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:44  kafka_req_len_tot:27764074  tcp_payload_len_tot:51965328  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42800  count:85  syn_count:1  fin_count:0  isn:2365501119  "seq_gap_count %":10
+tcp_pair kafka stats  kafka_req_count:84  kafka_req_len_tot:6448  tcp_payload_len_tot:6784  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:42816-192.168.110.51:1096  count:1856  syn_count:1  fin_count:0  isn:208704978  "seq_gap_count %":9
+tcp_pair kafka stats  kafka_req_count:72  kafka_req_len_tot:53045205  tcp_payload_len_tot:87556800  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42816  count:127  syn_count:1  fin_count:0  isn:3751824641  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:126  kafka_req_len_tot:14860  tcp_payload_len_tot:15364  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:59234-192.168.110.51:1096  count:1850  syn_count:1  fin_count:0  isn:2169342491  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:76  kafka_req_len_tot:50894887  tcp_payload_len_tot:90576718  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:59234  count:145  syn_count:1  fin_count:0  isn:4143758761  "seq_gap_count %":13
+tcp_pair kafka stats  kafka_req_count:144  kafka_req_len_tot:18844  tcp_payload_len_tot:19420  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:59244-192.168.110.51:1096  count:1744  syn_count:1  fin_count:0  isn:2903868130  "seq_gap_count %":9
+tcp_pair kafka stats  kafka_req_count:141  kafka_req_len_tot:44731829  tcp_payload_len_tot:73946857  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:59244  count:215  syn_count:1  fin_count:0  isn:440125070  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:214  kafka_req_len_tot:26676  tcp_payload_len_tot:27532  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:59254-192.168.110.51:1096  count:1273  syn_count:1  fin_count:0  isn:2467376588  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:57  kafka_req_len_tot:36434506  tcp_payload_len_tot:60068919  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:59254  count:97  syn_count:1  fin_count:0  isn:313459521  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:96  kafka_req_len_tot:7336  tcp_payload_len_tot:7720  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.71:59258-192.168.110.51:1096  count:1945  syn_count:1  fin_count:0  isn:3459861632  "seq_gap_count %":12
+tcp_pair kafka stats  kafka_req_count:87  kafka_req_len_tot:47164121  tcp_payload_len_tot:88530653  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:59258  count:159  syn_count:1  fin_count:0  isn:570752936  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:158  kafka_req_len_tot:22562  tcp_payload_len_tot:23194  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41708-192.168.110.51:1096  count:954  syn_count:1  fin_count:0  isn:1739472980  "seq_gap_count %":2
+tcp_pair kafka stats  kafka_req_count:953  kafka_req_len_tot:122367  tcp_payload_len_tot:126179  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-21
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41708  count:37232  syn_count:1  fin_count:0  isn:3810407274  "seq_gap_count %":1
+tcp_pair kafka stats  kafka_req_count:945  kafka_req_len_tot:684384681  tcp_payload_len_tot:850720079  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:41724-192.168.110.51:1096  count:905  syn_count:1  fin_count:0  isn:724426659  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:904  kafka_req_len_tot:116679  tcp_payload_len_tot:120295  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-11
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41724  count:38411  syn_count:1  fin_count:0  isn:1665610750  "seq_gap_count %":1
+tcp_pair kafka stats  kafka_req_count:854  kafka_req_len_tot:690677167  tcp_payload_len_tot:830207425  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.11:52448-192.168.110.51:1096  count:10  syn_count:1  fin_count:0  isn:1105545321  "seq_gap_count %":18
+tcp_pair kafka stats  kafka_req_count:3  kafka_req_len_tot:147  tcp_payload_len_tot:439  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:52448  count:10  syn_count:1  fin_count:0  isn:2606163886  "seq_gap_count %":18
+tcp_pair kafka stats  kafka_req_count:38  kafka_req_len_tot:704  tcp_payload_len_tot:14986  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:37722-192.168.110.51:1096  count:1039  syn_count:1  fin_count:0  isn:2553090944  "seq_gap_count %":2
+tcp_pair kafka stats  kafka_req_count:1038  kafka_req_len_tot:87447  tcp_payload_len_tot:91599  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:37722  count:8360  syn_count:1  fin_count:0  isn:1670995829  "seq_gap_count %":3
+tcp_pair kafka stats  kafka_req_count:1009  kafka_req_len_tot:164621038  tcp_payload_len_tot:210428561  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:37734-192.168.110.51:1096  count:408  syn_count:1  fin_count:0  isn:3558410418  "seq_gap_count %":7
+tcp_pair kafka stats  kafka_req_count:407  kafka_req_len_tot:52768  tcp_payload_len_tot:54396  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-7
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:37734  count:7105  syn_count:1  fin_count:0  isn:453622125  "seq_gap_count %":4
+tcp_pair kafka stats  kafka_req_count:357  kafka_req_len_tot:164328073  tcp_payload_len_tot:194949189  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:45652-192.168.110.51:1096  count:365  syn_count:1  fin_count:0  isn:1546806203  "seq_gap_count %":6
+tcp_pair kafka stats  kafka_req_count:364  kafka_req_len_tot:30635  tcp_payload_len_tot:32091  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:45652  count:3804  syn_count:1  fin_count:0  isn:1850025844  "seq_gap_count %":11
+tcp_pair kafka stats  kafka_req_count:332  kafka_req_len_tot:68561380  tcp_payload_len_tot:100018967  ind_client_id_n:0
+tcp_pair kafka client_id list  
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.61:45656-192.168.110.51:1096  count:386  syn_count:1  fin_count:0  isn:3474083499  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:385  kafka_req_len_tot:27771  tcp_payload_len_tot:29311  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:consumer-sub-000-pJwgHFc-24
+=================
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:45656  count:386  syn_count:1  fin_count:0  isn:4151278749  "seq_gap_count %":0
+tcp_pair kafka stats  kafka_req_count:385  kafka_req_len_tot:38268  tcp_payload_len_tot:39808  ind_client_id_n:0
+tcp_pair kafka client_id list  
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:10.8559  ind_tcp_pair_n:334  max_pkt_len:65226

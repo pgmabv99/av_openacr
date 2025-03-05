@@ -70,8 +70,8 @@ acr_ed -create -field x2bm_pcap.FKafka.kafka_corr_id -arg u32  -write  -comment 
 acr_ed -create -field x2bm_pcap.FKafka.seq -arg u32   -write  -comment "seq of frame where the kafka started"
 acr_ed -create -field x2bm_pcap.FKafka.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reftype Upptr -write  -comment  "tcp pair pointer"
 #  pointers from above
-acr_ed -create -field x2bm_pcap.FTcp_pair.zd_corr_id -arg x2bm_pcap.FKafka -via x2bm_pcap.FKafka.p_tcp_pair  -cascdel -write -comment "double list of corr_id"     
-acr_ed -create -field x2bm_pcap.FTcp_pair.ind_corr_id -arg x2bm_pcap.FKafka -via x2bm_pcap.FKafka.p_tcp_pair  -xref -cascdel -write -comment "index of corr_id"     
+acr_ed -create -field x2bm_pcap.FTcp_pair.zd_kafka_corr_id -arg x2bm_pcap.FKafka -via x2bm_pcap.FKafka.p_tcp_pair  -cascdel -write -comment "double list of corr_id"     
+acr_ed -create -field x2bm_pcap.FTcp_pair.ind_kafka_corr_id -arg x2bm_pcap.FKafka -via x2bm_pcap.FKafka.p_tcp_pair  -xref -cascdel -write -comment "index of corr_id"     
 
 #  706  acr_ed -create -target xyz -write
 #   707  acr_ed -create -ctype xyz.FConn -pooltype Tpool -write

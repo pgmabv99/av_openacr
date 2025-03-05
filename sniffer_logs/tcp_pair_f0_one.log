@@ -1,6 +1,6 @@
 Hello, World!333
 ====--PcapFileProcess  fname:/home/avorovich/pcap/rp_tap0.pcap
-=================high to low 
+======================client to broker 
 tcp_pair stats  tcp_pair_key:192.168.110.71:48528-192.168.110.51:1096  count:753  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":17
 tcp_pair kafka stats  kafka_req_count:21  kafka_req_len_tot:19785323  tcp_payload_len_tot:37009491  ind_client_id_n:1
 tcp_pair kafka client_id list  
@@ -27,7 +27,7 @@ corr_id_key:2032
 corr_id_key:2040
 corr_id_key:2047
 corr_id_key:2049
-=============low to high 
+=============broker to client 
 tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48528  count:47  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":10
 tcp_pair kafka stats  kafka_req_count:47  kafka_req_len_tot:3478  tcp_payload_len_tot:3666  ind_client_id_n:0
 tcp_pair kafka client_id list  
@@ -60,4 +60,4 @@ corr_id_key:2046
 corr_id_key:2048
 corr_id_key:2051
 corr_id_key:2056
-======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:4.73226  ind_tcp_pair_n:2  max_pkt_len:65226
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:4.69946  ind_tcp_pair_n:2  max_pkt_len:65226

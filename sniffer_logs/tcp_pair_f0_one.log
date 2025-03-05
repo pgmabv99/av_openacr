@@ -1,11 +1,137 @@
 Hello, World!333
 ====--PcapFileProcess  fname:/home/avorovich/pcap/rp_tap0.pcap
 ======================client to broker 
-tcp_pair stats  tcp_pair_key:192.168.110.71:48528-192.168.110.51:1096  count:753  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":17
+tcp_pair stats  tcp_pair_key:192.168.110.71:48528-192.168.110.51:1096  "count of frames ":753  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":17
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff e1 00 00 00 07 00 00 07 44 00 0a"
+fkafka request header req_len:1048545  correlation_id:1860  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1100480  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ............................................|.%.....|.^............V.............6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 09 00 0f ff 99 00 00 00 00 00 00 00 00 00 0f ff 8d ff ff ff ff 02 ed 90 d7 c9 00 00 00 00 03 f5 00 00 01 94 f2 7c c7 25 00 00 01 94 f2 7c c7 5e 00 00 00 00 00 00 00 04 00 00 00 00 56 1f 00 00 03 f6 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff e1 00 00 00 07 00 00 07 49 00 0a"
+fkafka request header req_len:1048545  correlation_id:1865  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1099032  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ.............................?!.............|./.....|.5..........................6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 0f ff 99 00 00 00 00 00 00 00 00 00 0f ff 8d ff ff ff ff 02 3f 21 da 8e 00 00 00 00 03 f5 00 00 01 94 f2 7c c8 2f 00 00 01 94 f2 7c c8 35 00 00 00 00 00 00 00 04 00 00 00 00 8d d1 00 00 03 f6 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0c 32 77 00 00 00 07 00 00 07 56 00 0a"
+fkafka request header req_len:799351  correlation_id:1878  api_key:0  api_version:7  client_id_len:10  swin_buf_n:799355  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ..........2/..........2#......I.K...........|.1.....|.7..........................6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 0c 32 2f 00 00 00 00 00 00 00 00 00 0c 32 23 ff ff ff ff 02 91 49 cd 4b 00 00 00 00 03 04 00 00 01 94 f2 7c cd 31 00 00 01 94 f2 7c cd 37 00 00 00 00 00 00 00 04 00 00 00 00 94 07 00 00 03 05 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 05 96 19 00 00 00 07 00 00 07 69 00 0a"
+fkafka request header req_len:366105  correlation_id:1897  api_key:0  api_version:7  client_id_len:10  swin_buf_n:382037  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ.............................42Te.....a.....|.......|............../....b........6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1b 00 05 95 d1 00 00 00 00 00 00 00 00 00 05 95 c5 ff ff ff ff 02 34 32 54 65 00 00 00 00 01 61 00 00 01 94 f2 7c da f0 00 00 01 94 f2 7c da fa 00 00 00 00 00 00 00 04 00 00 00 00 2f 82 00 00 01 62 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff e1 00 00 00 07 00 00 07 78 00 0a"
+fkafka request header req_len:1048545  correlation_id:1912  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1048549  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ.......,......................o.............|.......|...............+............6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c 00 0f ff 99 00 00 00 00 00 00 00 00 00 0f ff 8d ff ff ff ff 02 9e 6f 84 1f 00 00 00 00 03 f5 00 00 01 94 f2 7c dd 98 00 00 01 94 f2 7c dd a4 00 00 00 00 00 00 00 04 00 00 00 00 c5 2b 00 00 03 f6 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff cb 00 00 00 07 00 00 07 7a 00 0a"
+fkafka request header req_len:1048523  correlation_id:1914  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1049975  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ.......................w....................|.n.....|..............^.............6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 09 00 0f ff 83 00 00 00 00 00 00 00 00 00 0f ff 77 ff ff ff ff 02 92 96 a4 a5 00 00 00 00 03 f4 00 00 01 94 f2 7c e0 6e 00 00 01 94 f2 7c e0 cd 00 00 00 00 00 00 00 04 00 00 00 00 5e 0b 00 00 03 f5 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff e1 00 00 00 07 00 00 07 8b 00 0a"
+fkafka request header req_len:1048545  correlation_id:1931  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1112261  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ.............................i..............|.......|............................6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 0f ff 99 00 00 00 00 00 00 00 00 00 0f ff 8d ff ff ff ff 02 69 a1 a3 f8 00 00 00 00 03 f5 00 00 01 94 f2 7c e8 e0 00 00 01 94 f2 7c e8 e9 00 00 00 00 00 00 00 04 00 00 00 00 9a b0 00 00 03 f6 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff cb 00 00 00 07 00 00 07 9a 00 0a"
+fkafka request header req_len:1048523  correlation_id:1946  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1067351  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ.......&...............w......p.............|.i.....|.O.............|............6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 26 00 0f ff 83 00 00 00 00 00 00 00 00 00 0f ff 77 ff ff ff ff 02 04 70 99 01 00 00 00 00 03 f4 00 00 01 94 f2 7c ed 69 00 00 01 94 f2 7c ee 4f 00 00 00 00 00 00 00 04 00 00 00 00 b0 7c 00 00 03 f5 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff e1 00 00 00 07 00 00 07 a9 00 0a"
+fkafka request header req_len:1048545  correlation_id:1961  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1080405  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ..............................._............|.......|..............h.............6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 19 00 0f ff 99 00 00 00 00 00 00 00 00 00 0f ff 8d ff ff ff ff 02 d6 91 5f 1f 00 00 00 00 03 f5 00 00 01 94 f2 7c f5 ea 00 00 01 94 f2 7c f5 f2 00 00 00 00 00 00 00 04 00 00 00 00 68 16 00 00 03 f6 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff e1 00 00 00 07 00 00 07 ab 00 0a"
+fkafka request header req_len:1048545  correlation_id:1963  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1048549  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ............................................|.......|............................6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 02 00 0f ff 99 00 00 00 00 00 00 00 00 00 0f ff 8d ff ff ff ff 02 d3 07 bc b9 00 00 00 00 03 f5 00 00 01 94 f2 7c f5 f4 00 00 01 94 f2 7c f5 fc 00 00 00 00 00 00 00 04 00 00 00 00 86 a7 00 00 03 f6 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff e1 00 00 00 07 00 00 07 ae 00 0a"
+fkafka request header req_len:1048545  correlation_id:1966  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1071717  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ.............................`..............|.......|............................6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 02 00 0f ff 99 00 00 00 00 00 00 00 00 00 0f ff 8d ff ff ff ff 02 60 a4 90 1c 00 00 00 00 03 f5 00 00 01 94 f2 7c f5 fc 00 00 01 94 f2 7c f5 fd 00 00 00 00 00 00 00 04 00 00 00 00 8a 9d 00 00 03 f6 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff e1 00 00 00 07 00 00 07 b8 00 0a"
+fkafka request header req_len:1048545  correlation_id:1976  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1077615  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ.............................x .7...........|.......|.'..........................6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 08 00 0f ff 99 00 00 00 00 00 00 00 00 00 0f ff 8d ff ff ff ff 02 78 20 e1 37 00 00 00 00 03 f5 00 00 01 94 f2 7c fb 1a 00 00 01 94 f2 7c fb 27 00 00 00 00 00 00 00 04 00 00 00 00 9c a4 00 00 03 f6 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 04 d0 2f 00 00 00 07 00 00 07 ca 00 0a"
+fkafka request header req_len:315439  correlation_id:1994  api_key:0  api_version:7  client_id_len:10  swin_buf_n:315443  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ................................y.....0.....}.?.....}.F............5....1........6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 0a 00 04 cf e7 00 00 00 00 00 00 00 00 00 04 cf db ff ff ff ff 02 af 85 a3 79 00 00 00 00 01 30 00 00 01 94 f2 7d 01 3f 00 00 01 94 f2 7d 01 46 00 00 00 00 00 00 00 04 00 00 00 00 35 0d 00 00 01 31 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff cb 00 00 00 07 00 00 07 d3 00 0a"
+fkafka request header req_len:1048523  correlation_id:2003  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1097759  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ.......,...............w......Zh............}.w.....}...............!............6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c 00 0f ff 83 00 00 00 00 00 00 00 00 00 0f ff 77 ff ff ff ff 02 ab 5a 68 bb 00 00 00 00 03 f4 00 00 01 94 f2 7d 01 77 00 00 01 94 f2 7d 03 b6 00 00 00 00 00 00 00 04 00 00 00 00 c9 21 00 00 03 f5 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff e1 00 00 00 07 00 00 07 dc 00 0a"
+fkafka request header req_len:1048545  correlation_id:2012  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1086197  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ..............................3t2...........}.3.....}.:..........................6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 0f ff 99 00 00 00 00 00 00 00 00 00 0f ff 8d ff ff ff ff 02 fc 33 74 32 00 00 00 00 03 f5 00 00 01 94 f2 7d 08 33 00 00 01 94 f2 7d 08 3a 00 00 00 00 00 00 00 04 00 00 00 00 9e a6 00 00 03 f6 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff e1 00 00 00 07 00 00 07 e0 00 0a"
+fkafka request header req_len:1048545  correlation_id:2016  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1052893  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ.............................[e.............}.:.....}.R..........................6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 0f ff 99 00 00 00 00 00 00 00 00 00 0f ff 8d ff ff ff ff 02 5b 65 d3 0f 00 00 00 00 03 f5 00 00 01 94 f2 7d 08 3a 00 00 01 94 f2 7d 08 52 00 00 00 00 00 00 00 04 00 00 00 00 a2 9c 00 00 03 f6 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff cb 00 00 00 07 00 00 07 ec 00 0a"
+fkafka request header req_len:1048523  correlation_id:2028  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1100655  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ.......................w.....`PJ............}.$.....}............................6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 02 00 0f ff 83 00 00 00 00 00 00 00 00 00 0f ff 77 ff ff ff ff 02 60 50 4a b2 00 00 00 00 03 f4 00 00 01 94 f2 7d 0b 24 00 00 01 94 f2 7d 0b 8e 00 00 00 00 00 00 00 04 00 00 00 00 96 7f 00 00 03 f5 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 07 50 29 00 00 00 07 00 00 07 f0 00 0a"
+fkafka request header req_len:479273  correlation_id:2032  api_key:0  api_version:7  client_id_len:10  swin_buf_n:485069  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ..........O...........O.....................}.......}..............;.............6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1b 00 07 4f e1 00 00 00 00 00 00 00 00 00 07 4f d5 ff ff ff ff 02 ba c2 fe ef 00 00 00 00 01 ce 00 00 01 94 f2 7d 0b a2 00 00 01 94 f2 7d 0f 05 00 00 00 00 00 00 00 04 00 00 00 00 3b d6 00 00 01 cf 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff cb 00 00 00 07 00 00 07 f8 00 0a"
+fkafka request header req_len:1048523  correlation_id:2040  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1049975  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ.......................w...../V.............}.......}...............j............6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 14 00 0f ff 83 00 00 00 00 00 00 00 00 00 0f ff 77 ff ff ff ff 02 2f 56 d5 ee 00 00 00 00 03 f4 00 00 01 94 f2 7d 0f 0e 00 00 01 94 f2 7d 11 2e 00 00 00 00 00 00 00 04 00 00 00 00 86 6a 00 00 03 f5 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff e1 00 00 00 07 00 00 07 ff 00 0a"
+fkafka request header req_len:1048545  correlation_id:2047  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1048549  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ.............................B.o............}.......}...............j............6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 02 00 0f ff 99 00 00 00 00 00 00 00 00 00 0f ff 8d ff ff ff ff 02 42 bc 6f a0 00 00 00 00 03 f5 00 00 01 94 f2 7d 15 b3 00 00 01 94 f2 7d 15 b8 00 00 00 00 00 00 00 04 00 00 00 00 9e 6a 00 00 03 f6 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
+-----------------
+"kafka req_hdr_hex  ":" 00 0f ff e1 00 00 00 07 00 00 08 01 00 0a"
+fkafka request header req_len:1048545  correlation_id:2049  api_key:0  api_version:7  client_id_len:10  swin_buf_n:1048549  swin_offset:0
+client_id_key:producer-4
+pay_asci:"......u0......test-topic-0000000-4JA-IpQ..............................+.i...........}.......}...............T............6b8d0ca6d616a2e39d674b73c9b11f9a3262a4f03444451f01f27003e84dc3469e61ddcfad9c2bc7_trunc_"
+pay_hex:" ff ff ff ff 00 00 75 30 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 14 00 0f ff 99 00 00 00 00 00 00 00 00 00 0f ff 8d ff ff ff ff 02 ac 2b a8 69 00 00 00 00 03 f5 00 00 01 94 f2 7d 15 d4 00 00 01 94 f2 7d 15 dd 00 00 00 00 00 00 00 04 00 00 00 00 8e 54 00 00 03 f6 8e 10 00 00 00 01 80 10 36 62 38 64 30 63 61 36 64 36 31 36 61 32 65 33 39 64 36 37 34 62 37 33 63 39 62 31 31 66 39 61 33 32 36 32 61 34 66 30 33 34 34 34 34 35 31 66 30 31 66 32 37 30 30 33 65 38 34 64 63 33 34 36 39 65 36 31 64 64 63 66 61 64 39 63 32 62 63 37_trunc_"
 tcp_pair kafka stats  kafka_req_count:21  kafka_req_len_tot:19785323  tcp_payload_len_tot:37009491  ind_client_id_n:1
 tcp_pair kafka client_id list  
 client_id_key:producer-4
-tcp_pair kafka corr_id list  
+tcp_pair kafka kafka list  
 corr_id_key:1860
 corr_id_key:1865
 corr_id_key:1878
@@ -28,10 +154,245 @@ corr_id_key:2040
 corr_id_key:2047
 corr_id_key:2049
 =============broker to client 
-tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48528  count:47  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":10
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48528  "count of frames ":47  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":10
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 3e"
+fkafka response header rsp_len:74  correlation_id:1854  swin_buf_n:78  swin_offset:0
+pay_asci:......test-topic-0000000-4JA-IpQ................%P................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 09 00 00 00 00 00 00 00 18 25 50 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 44"
+fkafka response header rsp_len:74  correlation_id:1860  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ................O.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 09 00 00 00 00 00 00 00 18 4f 0a ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 48"
+fkafka response header rsp_len:74  correlation_id:1864  swin_buf_n:82  swin_offset:4
+pay_asci:"......test-topic-0000000-4JA-IpQ................>h................"
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 00 00 00 00 00 00 19 3e 68 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 54"
+fkafka response header rsp_len:74  correlation_id:1876  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ..................................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 00 00 00 00 00 00 19 7f b5 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 56"
+fkafka response header rsp_len:74  correlation_id:1878  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ..................................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 00 00 00 00 00 00 19 81 f5 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 71"
+fkafka response header rsp_len:74  correlation_id:1905  swin_buf_n:82  swin_offset:4
+pay_asci:"......test-topic-0000000-4JA-IpQ................>................."
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1b 00 00 00 00 00 00 00 19 3e f6 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 77"
+fkafka response header rsp_len:74  correlation_id:1911  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ.......,........aA................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c 00 00 00 00 00 00 00 1a 61 41 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 78"
+fkafka response header rsp_len:74  correlation_id:1912  swin_buf_n:82  swin_offset:4
+pay_asci:"......test-topic-0000000-4JA-IpQ.......,........m ................"
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c 00 00 00 00 00 00 00 1a 6d 20 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 79"
+fkafka response header rsp_len:74  correlation_id:1913  swin_buf_n:82  swin_offset:4
+pay_asci:"......test-topic-0000000-4JA-IpQ................]................."
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 09 00 00 00 00 00 00 00 19 5d 1f ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 7a"
+fkafka response header rsp_len:74  correlation_id:1914  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ................a.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 09 00 00 00 00 00 00 00 19 61 15 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 89"
+fkafka response header rsp_len:74  correlation_id:1929  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ................d.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 00 00 00 00 00 00 1a 64 07 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 8b"
+fkafka response header rsp_len:74  correlation_id:1931  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ................g.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 00 00 00 00 00 00 1a 67 ab ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 8f"
+fkafka response header rsp_len:74  correlation_id:1935  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ.................c................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 14 00 00 00 00 00 00 00 18 97 63 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 92"
+fkafka response header rsp_len:74  correlation_id:1938  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ.................w................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 14 00 00 00 00 00 00 00 18 ad 77 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 9a"
+fkafka response header rsp_len:74  correlation_id:1946  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ.......&........m.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 26 00 00 00 00 00 00 00 1b 6d ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 9c"
+fkafka response header rsp_len:74  correlation_id:1948  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ.......&........q.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 26 00 00 00 00 00 00 00 1b 71 f4 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 a9"
+fkafka response header rsp_len:74  correlation_id:1961  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ................;.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 19 00 00 00 00 00 00 00 1a 3b f5 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 aa"
+fkafka response header rsp_len:74  correlation_id:1962  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ................Cr................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 19 00 00 00 00 00 00 00 1a 43 72 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 ab"
+fkafka response header rsp_len:74  correlation_id:1963  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ..................................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 02 00 00 00 00 00 00 00 1b c1 c6 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 ae"
+fkafka response header rsp_len:74  correlation_id:1966  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ..................................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 02 00 00 00 00 00 00 00 1b c9 b2 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 b5"
+fkafka response header rsp_len:74  correlation_id:1973  swin_buf_n:82  swin_offset:4
+pay_asci:"......test-topic-0000000-4JA-IpQ................(................."
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1b 00 00 00 00 00 00 00 1a 28 8f ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 b7"
+fkafka response header rsp_len:74  correlation_id:1975  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ..................................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 08 00 00 00 00 00 00 00 1c 85 f6 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 b8"
+fkafka response header rsp_len:74  correlation_id:1976  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ..................................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 08 00 00 00 00 00 00 00 1c 95 ce ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 bb"
+fkafka response header rsp_len:74  correlation_id:1979  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ..................................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 08 00 00 00 00 00 00 00 1c 9d ba ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 bc"
+fkafka response header rsp_len:74  correlation_id:1980  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ.................3................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 08 00 00 00 00 00 00 00 1c a4 33 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 ca"
+fkafka response header rsp_len:74  correlation_id:1994  swin_buf_n:82  swin_offset:4
+pay_asci:"......test-topic-0000000-4JA-IpQ................8(................"
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 0a 00 00 00 00 00 00 00 1c 38 28 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 d3"
+fkafka response header rsp_len:74  correlation_id:2003  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ.......,.........F................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c 00 00 00 00 00 00 00 1b 84 46 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 d4"
+fkafka response header rsp_len:74  correlation_id:2004  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ.......-..........................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2d 00 00 00 00 00 00 00 1c a4 02 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 d5"
+fkafka response header rsp_len:74  correlation_id:2005  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ................l.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 0a 00 00 00 00 00 00 00 1c 6c ea ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 db"
+fkafka response header rsp_len:74  correlation_id:2011  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ.......,.........F................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2c 00 00 00 00 00 00 00 1b d1 46 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 dc"
+fkafka response header rsp_len:74  correlation_id:2012  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ................q.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 00 00 00 00 00 00 1b 71 04 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 de"
+fkafka response header rsp_len:74  correlation_id:2014  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ.......-.........^................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 2d 00 00 00 00 00 00 00 1c e3 5e ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 e0"
+fkafka response header rsp_len:74  correlation_id:2016  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ................t.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 00 00 00 00 00 00 1b 74 fa ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 e2"
+fkafka response header rsp_len:74  correlation_id:2018  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ..................................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 02 00 00 00 00 00 00 00 1c ba fc ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 e9"
+fkafka response header rsp_len:74  correlation_id:2025  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ..................................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 02 00 00 00 00 00 00 00 1c be f2 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 ec"
+fkafka response header rsp_len:74  correlation_id:2028  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ..................................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 02 00 00 00 00 00 00 00 1c c2 e8 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 ee"
+fkafka response header rsp_len:74  correlation_id:2030  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ..................................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 02 00 00 00 00 00 00 00 1c ca d3 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 f0"
+fkafka response header rsp_len:74  correlation_id:2032  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ................1.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1b 00 00 00 00 00 00 00 1b 31 da ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 f5"
+fkafka response header rsp_len:74  correlation_id:2037  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ................;.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1b 00 00 00 00 00 00 00 1b 3b 95 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 f8"
+fkafka response header rsp_len:74  correlation_id:2040  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ................7.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 14 00 00 00 00 00 00 00 1a 37 aa ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 fd"
+fkafka response header rsp_len:74  correlation_id:2045  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ.................W................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 00 00 00 00 00 00 1b c9 57 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 fe"
+fkafka response header rsp_len:74  correlation_id:2046  swin_buf_n:82  swin_offset:4
+pay_asci:"......test-topic-0000000-4JA-IpQ................[L................"
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 14 00 00 00 00 00 00 00 1a 5b 4c ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 07 ff"
+fkafka response header rsp_len:74  correlation_id:2047  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ..................................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 02 00 00 00 00 00 00 00 1d 16 09 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 08 00"
+fkafka response header rsp_len:74  correlation_id:2048  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ.................9................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 1c 00 00 00 00 00 00 00 1b d5 39 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 08 01"
+fkafka response header rsp_len:74  correlation_id:2049  swin_buf_n:82  swin_offset:4
+pay_asci:"......test-topic-0000000-4JA-IpQ................k#................"
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 14 00 00 00 00 00 00 00 1a 6b 23 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 08 03"
+fkafka response header rsp_len:74  correlation_id:2051  swin_buf_n:82  swin_offset:4
+pay_asci:"......test-topic-0000000-4JA-IpQ................~................."
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 14 00 00 00 00 00 00 00 1a 7e f1 ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 00 4a 00 00 08 08"
+fkafka response header rsp_len:74  correlation_id:2056  swin_buf_n:82  swin_offset:4
+pay_asci:......test-topic-0000000-4JA-IpQ................P.................
+pay_hex:" 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 0a 00 00 00 00 00 00 00 1d 50 1f ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
 tcp_pair kafka stats  kafka_req_count:47  kafka_req_len_tot:3478  tcp_payload_len_tot:3666  ind_client_id_n:0
 tcp_pair kafka client_id list  
-tcp_pair kafka corr_id list  
+tcp_pair kafka kafka list  
 corr_id_key:1854
 corr_id_key:1864
 corr_id_key:1876
@@ -60,4 +421,4 @@ corr_id_key:2046
 corr_id_key:2048
 corr_id_key:2051
 corr_id_key:2056
-======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:4.69946  ind_tcp_pair_n:2  max_pkt_len:65226
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:4.34124  ind_tcp_pair_n:2  max_pkt_len:65226

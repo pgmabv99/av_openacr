@@ -42,6 +42,7 @@ to see all bad ref
 ## Visuals SVG
 
 ```bash
+amc_vis x2bm_pcap.% 
 amc_vis x2bm_pcap.% -dot:av_openacr/pic
 dot -Tsvg av_openacr/pic -o av_openacr/pic.svg
 amc_vis samp_meng.% -dot:av_openacr/meng

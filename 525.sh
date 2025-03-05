@@ -12,7 +12,7 @@ cd $HOME/arnd
 acr_ed -del  -ctype x2bm_pcap.FTcp_pair -write || true
 acr_ed -del  -ctype x2bm_pcap.FFrame     -write || true
 acr_ed -del  -ctype x2bm_pcap.FClient_id    -write || true
-acr_ed -del  -ctype x2bm_pcap.FCorr_id    -write || true
+acr_ed -del  -ctype x2bm_pcap.FKafka    -write || true
 # acr_ed -del  -ctype x2bm_pcap.FTcp_pair -write 
 # acr_ed -del  -ctype x2bm_pcap.FFrame     -write 
 # acr_ed -del  -ctype x2bm_pcap.FClient_id   -write 
@@ -21,7 +21,7 @@ acr_ed -del  -ctype x2bm_pcap.FCorr_id    -write || true
 
 #--------------tcp pair
 acr_ed -create -ctype x2bm_pcap.FTcp_pair -pooltype Tpool -arg Smallstr50 -indexed -write  -comment "tcp pair entry"
-acr_ed -create -field x2bm_pcap.FTcp_pair.count -arg i32  -write
+acr_ed -create -field x2bm_pcap.FTcp_pair.count -arg i32  -write  --comment "number of frames"
 acr_ed -create -field x2bm_pcap.FTcp_pair.syn_count -arg i32  -write  --comment "number of syn (connection start)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.fin_count -arg i32  -write  --comment "number of fin (connection end)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_gap_count   -arg u32              -write     -comment "sequence   gap count "
@@ -55,12 +55,6 @@ acr_ed -create -field x2bm_pcap.FFrame.direction -arg  i32            -write    
 acr_ed -create -field x2bm_pcap.FTcp_pair.zd_frames -arg x2bm_pcap.FFrame -via x2bm_pcap.FFrame.p_tcp_pair                                 -cascdel -write -comment "double list of frames"
 acr_ed -create -field x2bm_pcap.FTcp_pair.bh_frames -arg x2bm_pcap.FFrame -via x2bm_pcap.FFrame.p_tcp_pair  -sortfld x2bm_pcap.FFrame.seq  -cascdel -write -comment "binary heap  of frames"
 
-#-------------kafka client_id entry
-# acr_ed -create -ctype x2bm_pcap.FClient_id  -arg Smallstr50 -indexed  -write  -comment "Kafka client entry"
-# acr_ed -create -field x2bm_pcap.FClient_id.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reftype Upptr -write
-# #  pointers from above
-# acr_ed -create -field x2bm_pcap.FTcp_pair.zd_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair       
-# acr_ed -create -field x2bm_pcap.FTcp_pair.ind_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair  
 
 #-------------kafka client_id entry
 acr_ed -create -ctype x2bm_pcap.FClient_id  -pooltype Tpool   -write  -comment "Kafka client entry"
@@ -70,14 +64,14 @@ acr_ed -create -field x2bm_pcap.FClient_id.p_tcp_pair -arg x2bm_pcap.FTcp_pair -
 acr_ed -create -field x2bm_pcap.FTcp_pair.zd_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair  -cascdel -write -comment "double list of client_id"     
 acr_ed -create -field x2bm_pcap.FTcp_pair.ind_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair  -cascdel -write -comment "index of client_id"     
 
-#-------------kafka correlation  entry
-acr_ed -create -ctype x2bm_pcap.FCorr_id  -pooltype Tpool   -write  -comment "Kafka correlation   entry"
-acr_ed -create -field x2bm_pcap.FCorr_id.corr_id_key -arg u32 -indexed  -write  -comment ""
-acr_ed -create -field x2bm_pcap.FCorr_id.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reftype Upptr -write
+#-------------kafka req/rsp object
+acr_ed -create -ctype x2bm_pcap.FKafka  -pooltype Tpool   -write  -comment "Kafka req/rsp object"
+acr_ed -create -field x2bm_pcap.FKafka.kafka_corr_id -arg u32 -indexed  -write  -comment "correlation_id from hdr"
+acr_ed -create -field x2bm_pcap.FKafka.seq -arg u32   -write  -comment "seq of frame where the kafka started"
+acr_ed -create -field x2bm_pcap.FKafka.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reftype Upptr -write  -comment  "tcp pair pointer"
 #  pointers from above
-acr_ed -create -field x2bm_pcap.FTcp_pair.zd_corr_id -arg x2bm_pcap.FCorr_id -via x2bm_pcap.FCorr_id.p_tcp_pair  -cascdel -write -comment "double list of corr_id"     
-acr_ed -create -field x2bm_pcap.FTcp_pair.ind_corr_id -arg x2bm_pcap.FCorr_id -via x2bm_pcap.FCorr_id.p_tcp_pair  -cascdel -write -comment "index of corr_id"     
-# acr_ed -del  -field x2bm_pcap.FTcp_pair.ind_corr_id -write
+acr_ed -create -field x2bm_pcap.FTcp_pair.zd_corr_id -arg x2bm_pcap.FKafka -via x2bm_pcap.FKafka.p_tcp_pair  -cascdel -write -comment "double list of corr_id"     
+acr_ed -create -field x2bm_pcap.FTcp_pair.ind_corr_id -arg x2bm_pcap.FKafka -via x2bm_pcap.FKafka.p_tcp_pair  -cascdel -write -comment "index of corr_id"     
 #  set parms for x2bm_pcap
 acr -merge  -write <<EOF
 acr.delete dmmeta.field  field:command.x2bm_pcap.files  arg:algo.cstring  reftype:RegxSql  dflt:'""'  comment:""
@@ -90,7 +84,8 @@ dmmeta.field  field:command.x2bm_pcap.dir   arg:algo.cstring  reftype:Val       
 dmmeta.field  field:command.x2bm_pcap.ndisp  arg:i32  reftype:Val  dflt:5  comment:"default number pairs to display"
 EOF
 
-amc 
+amc
+amc_vis x2bm_pcap.%  
 # ai 
 
 echo "done!!!!!!!!!!!!"

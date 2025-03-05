@@ -66,12 +66,20 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.ind_client_id -arg x2bm_pcap.FClient_i
 
 #-------------kafka req/rsp object
 acr_ed -create -ctype x2bm_pcap.FKafka  -pooltype Tpool   -write  -comment "Kafka req/rsp object"
-acr_ed -create -field x2bm_pcap.FKafka.kafka_corr_id -arg u32 -indexed  -write  -comment "correlation_id from hdr"
+acr_ed -create -field x2bm_pcap.FKafka.kafka_corr_id -arg u32  -write  -comment "correlation_id from hdr"
 acr_ed -create -field x2bm_pcap.FKafka.seq -arg u32   -write  -comment "seq of frame where the kafka started"
 acr_ed -create -field x2bm_pcap.FKafka.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reftype Upptr -write  -comment  "tcp pair pointer"
 #  pointers from above
 acr_ed -create -field x2bm_pcap.FTcp_pair.zd_corr_id -arg x2bm_pcap.FKafka -via x2bm_pcap.FKafka.p_tcp_pair  -cascdel -write -comment "double list of corr_id"     
-acr_ed -create -field x2bm_pcap.FTcp_pair.ind_corr_id -arg x2bm_pcap.FKafka -via x2bm_pcap.FKafka.p_tcp_pair  -cascdel -write -comment "index of corr_id"     
+acr_ed -create -field x2bm_pcap.FTcp_pair.ind_corr_id -arg x2bm_pcap.FKafka -via x2bm_pcap.FKafka.p_tcp_pair  -xref -cascdel -write -comment "index of corr_id"     
+
+#  706  acr_ed -create -target xyz -write
+#   707  acr_ed -create -ctype xyz.FConn -pooltype Tpool -write
+#   708  acr_ed -create -ctype xyz.FReq -pooltype Tpool -write
+#   709  acr_ed -create -field xyz.FReq.mykey  -arg u32  -write
+#   709  acr_ed -create -field xyz.FReq.p_conn -arg xyz.FConn -reftype Upptr -write
+#   710  acr_ed -create -field xyz.FConn.ind_req -arg xyz.FReq -via xyz.FReq.p_conn -xref -write -cascdel
+
 #  set parms for x2bm_pcap
 acr -merge  -write <<EOF
 acr.delete dmmeta.field  field:command.x2bm_pcap.files  arg:algo.cstring  reftype:RegxSql  dflt:'""'  comment:""
@@ -85,7 +93,7 @@ dmmeta.field  field:command.x2bm_pcap.ndisp  arg:i32  reftype:Val  dflt:5  comme
 EOF
 
 amc
-amc_vis x2bm_pcap.%   > ~/av_openacr/x2bm_pcap.txt
+amc_vis x2bm_pcap.%   > ~/av_openacr/x2bm_pcap_viz.txt
 
 # ai 
 

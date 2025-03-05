@@ -9,12 +9,14 @@ cd $HOME/arnd
 # acr_compl -install
 # amc
 
-# acr_ed -del  -ctype x2bm_pcap.FTcp_pair -write || true
-# acr_ed -del  -ctype x2bm_pcap.FFrame     -write || true
-# acr_ed -del  -ctype x2bm_pcap.FClient_id    -write || true
-acr_ed -del  -ctype x2bm_pcap.FTcp_pair -write 
-acr_ed -del  -ctype x2bm_pcap.FFrame     -write 
-acr_ed -del  -ctype x2bm_pcap.FClient_id    -write 
+acr_ed -del  -ctype x2bm_pcap.FTcp_pair -write || true
+acr_ed -del  -ctype x2bm_pcap.FFrame     -write || true
+acr_ed -del  -ctype x2bm_pcap.FClient_id    -write || true
+acr_ed -del  -ctype x2bm_pcap.FCorr_id    -write || true
+# acr_ed -del  -ctype x2bm_pcap.FTcp_pair -write 
+# acr_ed -del  -ctype x2bm_pcap.FFrame     -write 
+# acr_ed -del  -ctype x2bm_pcap.FClient_id   -write 
+# acr_ed -del  -ctype x2bm_pcap.FCorr_id    -write 
 
 
 #--------------tcp pair
@@ -47,7 +49,7 @@ acr_ed -create -field x2bm_pcap.FFrame.seq_gap   -arg u32              -write   
 acr_ed -create -field x2bm_pcap.FFrame.ack   -arg u32               -write     -comment "ack      number"
 acr_ed -create -field x2bm_pcap.FFrame.p_pay -arg  u8  -reftype Tary -write     -comment "p to payload buffer "
 acr_ed -create -field x2bm_pcap.FFrame.th_flags -arg  u8             -write     -comment "tcp flags "
-acr_ed -create -field x2bm_pcap.FFrame.direction -arg  i32            -write     -comment "direction : 1 low to high IP. -1 high to low IP"
+acr_ed -create -field x2bm_pcap.FFrame.direction -arg  i32            -write     -comment "direction : =1 high->low port (req) =2 opposite(rsp)"
 
 #  pointers from above
 acr_ed -create -field x2bm_pcap.FTcp_pair.zd_frames -arg x2bm_pcap.FFrame -via x2bm_pcap.FFrame.p_tcp_pair                                 -cascdel -write -comment "double list of frames"
@@ -68,6 +70,14 @@ acr_ed -create -field x2bm_pcap.FClient_id.p_tcp_pair -arg x2bm_pcap.FTcp_pair -
 acr_ed -create -field x2bm_pcap.FTcp_pair.zd_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair  -cascdel -write -comment "double list of client_id"     
 acr_ed -create -field x2bm_pcap.FTcp_pair.ind_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair  -cascdel -write -comment "index of client_id"     
 
+#-------------kafka correlation  entry
+acr_ed -create -ctype x2bm_pcap.FCorr_id  -pooltype Tpool   -write  -comment "Kafka correlation   entry"
+acr_ed -create -field x2bm_pcap.FCorr_id.corr_id_key -arg u32 -indexed  -write  -comment ""
+acr_ed -create -field x2bm_pcap.FCorr_id.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reftype Upptr -write
+#  pointers from above
+acr_ed -create -field x2bm_pcap.FTcp_pair.zd_corr_id -arg x2bm_pcap.FCorr_id -via x2bm_pcap.FCorr_id.p_tcp_pair  -cascdel -write -comment "double list of corr_id"     
+acr_ed -create -field x2bm_pcap.FTcp_pair.ind_corr_id -arg x2bm_pcap.FCorr_id -via x2bm_pcap.FCorr_id.p_tcp_pair  -cascdel -write -comment "index of corr_id"     
+# acr_ed -del  -field x2bm_pcap.FTcp_pair.ind_corr_id -write
 #  set parms for x2bm_pcap
 acr -merge  -write <<EOF
 acr.delete dmmeta.field  field:command.x2bm_pcap.files  arg:algo.cstring  reftype:RegxSql  dflt:'""'  comment:""

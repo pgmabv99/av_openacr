@@ -1,0 +1,33 @@
+                                                                                            
+                                                                                            
+    / x2bm_pcap.FDb                                                                         
+    |                                                                                       
+    |Tpool frame--------------------------------->/ x2bm_pcap.FFrame                        
+    |                                             |                                         
+    |Tpool kafka--------------------------------->/ x2bm_pcap.FKafka                        
+    |Thash ind_kafka_corr_id--------------------->|                                         
+    |                                             |                                         
+    |Tpool client_id------------------------------|------------------>/ x2bm_pcap.FClient_id
+    |Thash ind_client_id_key----------------------|------------------>|                     
+    |                                             |                   |                     
+    |Tpool tcp_pair------->/ x2bm_pcap.FTcp_pair  |                   |                     
+    |Thash ind_tcp_pair--->|                      |                   |                     
+    |Llist zd_tcp_pair---->|                      |                   |                     
+    -                      |                      |                   |                     
+                           |                      |                   |                     
+                           |Bheap bh_frames------>|                   |                     
+                           |Llist zd_frames------>|                   |                     
+                           |Llist zd_client_id----|------------------>|                     
+                           |Thash ind_client_id---|------------------>|                     
+                           |Llist zd_corr_id----->|                   |                     
+                           |Thash ind_corr_id---->|                   |                     
+                           |<---------------------|Upptr p_tcp_pair   |                     
+                           |                      |                   |                     
+                           |                      |                   |                     
+                           |<---------------------|-------------------|Upptr p_tcp_pair     
+                           |                      |                   -                     
+                           |                      |                                         
+                           |<---------------------|Upptr p_tcp_pair                         
+                           |                      -                                         
+                           |                                                                
+                           -                                                                

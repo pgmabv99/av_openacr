@@ -85,7 +85,8 @@ dmmeta.field  field:command.x2bm_pcap.ndisp  arg:i32  reftype:Val  dflt:5  comme
 EOF
 
 amc
-amc_vis x2bm_pcap.%  
+amc_vis x2bm_pcap.%   > ~/av_openacr/x2bm_pcap.txt
+
 # ai 
 
 echo "done!!!!!!!!!!!!"

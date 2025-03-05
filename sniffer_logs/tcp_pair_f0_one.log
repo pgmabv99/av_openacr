@@ -4644,4 +4644,4 @@ tcp_pair kafka kafka list
 corr_id_key:2785017875
 corr_id_key:2
 corr_id_key:1139813
-======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:4.32076  ind_tcp_pair_n:2  max_pkt_len:65226
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:4.36385  ind_tcp_pair_n:2  max_pkt_len:65226

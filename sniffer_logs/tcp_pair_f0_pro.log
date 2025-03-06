@@ -1,82 +1,69 @@
 Hello, World!333
 ====--PcapFileProcess  fname:/home/avorovich/pcap/rp_tap0.pcap
+tcp_pair_key_rev not found tcp_pair_key_rev:192.168.110.71:48528-192.168.110.51:1096
 ======================client to broker 
-tcp_pair stats  tcp_pair_key:192.168.110.71:48528-192.168.110.51:1096  "count of frames ":753  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":17
-tcp_pair kafka stats  kafka_req_count:21  kafka_req_len_tot:19785323  tcp_payload_len_tot:37009491  ind_client_id_n:1
-tcp_pair kafka client_id list  
+frame stats  tcp_pair_key:192.168.110.71:48528-192.168.110.51:1096  frame_count:753  syn_count:0  fin_count:0  isn:2832401489  "seq_gap_count %":17
+kafka stats  kafka_count:34  kafka_len_tot:31844609  tcp_payload_len_tot:37009491  ind_client_id_n:1
+kafka client_id list (req only) 
 client_id_key:producer-4
-tcp_pair kafka kafka list  
-corr_id_key:1860
-corr_id_key:1865
-corr_id_key:1878
-corr_id_key:1897
-corr_id_key:1912
-corr_id_key:1914
-corr_id_key:1931
-corr_id_key:1946
-corr_id_key:1961
-corr_id_key:1963
-corr_id_key:1966
-corr_id_key:1976
-corr_id_key:1994
-corr_id_key:2003
-corr_id_key:2012
-corr_id_key:2016
-corr_id_key:2028
-corr_id_key:2032
-corr_id_key:2040
-corr_id_key:2047
-corr_id_key:2049
+kafka req  list  
+kafka_corr_id:1860  ack:0
+kafka_corr_id:1864  ack:0
+kafka_corr_id:1865  ack:0
+kafka_corr_id:1876  ack:1
+kafka_corr_id:1878  ack:1
+kafka_corr_id:1897  ack:0
+kafka_corr_id:1905  ack:0
+kafka_corr_id:1912  ack:1
+kafka_corr_id:1913  ack:1
+kafka_corr_id:1914  ack:1
+kafka_corr_id:1929  ack:1
+kafka_corr_id:1931  ack:1
+kafka_corr_id:1935  ack:1
+kafka_corr_id:1946  ack:1
+kafka_corr_id:1961  ack:1
+kafka_corr_id:1962  ack:1
+kafka_corr_id:1963  ack:1
+kafka_corr_id:1966  ack:1
+kafka_corr_id:1973  ack:1
+kafka_corr_id:1976  ack:0
+kafka_corr_id:1980  ack:0
+kafka_corr_id:1994  ack:1
+kafka_corr_id:2003  ack:1
+kafka_corr_id:2004  ack:1
+kafka_corr_id:2012  ack:1
+kafka_corr_id:2016  ack:1
+kafka_corr_id:2028  ack:1
+kafka_corr_id:2032  ack:1
+kafka_corr_id:2037  ack:1
+kafka_corr_id:2040  ack:1
+kafka_corr_id:2045  ack:0
+kafka_corr_id:2047  ack:1
+kafka_corr_id:2049  ack:1
+kafka_corr_id:2056  ack:1
+kafka_non_ack_count:8  percent_of_non_ack:0.228571
 =============broker to client 
-tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48528  "count of frames ":47  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":10
-tcp_pair kafka stats  kafka_req_count:47  kafka_req_len_tot:3478  tcp_payload_len_tot:3666  ind_client_id_n:0
-tcp_pair kafka client_id list  
-tcp_pair kafka kafka list  
-corr_id_key:1854
-corr_id_key:1860
-corr_id_key:1864
-corr_id_key:1876
-corr_id_key:1878
-corr_id_key:1905
-corr_id_key:1911
-corr_id_key:1912
-corr_id_key:1913
-corr_id_key:1914
-corr_id_key:1929
-corr_id_key:1931
-corr_id_key:1935
-corr_id_key:1938
-corr_id_key:1946
-corr_id_key:1948
-corr_id_key:1961
-corr_id_key:1962
-corr_id_key:1963
-corr_id_key:1966
-corr_id_key:1973
-corr_id_key:1975
-corr_id_key:1976
-corr_id_key:1979
-corr_id_key:1980
-corr_id_key:1994
-corr_id_key:2003
-corr_id_key:2004
-corr_id_key:2005
-corr_id_key:2011
-corr_id_key:2012
-corr_id_key:2014
-corr_id_key:2016
-corr_id_key:2018
-corr_id_key:2025
-corr_id_key:2028
-corr_id_key:2030
-corr_id_key:2032
-corr_id_key:2037
-corr_id_key:2040
-corr_id_key:2045
-corr_id_key:2046
-corr_id_key:2047
-corr_id_key:2048
-corr_id_key:2049
-corr_id_key:2051
-corr_id_key:2056
-======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:4.39026  ind_tcp_pair_n:2  max_pkt_len:65226
+frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48528  frame_count:47  syn_count:0  fin_count:0  isn:1023270306  "seq_gap_count %":8
+kafka stats  kafka_count:47  kafka_len_tot:3478  tcp_payload_len_tot:3666  ind_client_id_n:0
+kafka rsp without req!!  list  
+kafka_corr_id:1860
+kafka_corr_id:1864
+kafka_corr_id:1905
+kafka_corr_id:1911
+kafka_corr_id:1938
+kafka_corr_id:1948
+kafka_corr_id:1975
+kafka_corr_id:1976
+kafka_corr_id:1979
+kafka_corr_id:1980
+kafka_corr_id:2005
+kafka_corr_id:2011
+kafka_corr_id:2014
+kafka_corr_id:2018
+kafka_corr_id:2025
+kafka_corr_id:2030
+kafka_corr_id:2045
+kafka_corr_id:2046
+kafka_corr_id:2048
+kafka_corr_id:2051
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:4.42197  ind_tcp_pair_n:2  max_pkt_len:65226

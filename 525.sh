@@ -25,7 +25,7 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.frame_count -arg i32  -write  --commen
 acr_ed -create -field x2bm_pcap.FTcp_pair.syn_count -arg i32  -write  --comment "number of syn (connection start)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.fin_count -arg i32  -write  --comment "number of fin (connection end)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_gap_count   -arg u32              -write     -comment "sequence   gap count "
-acr_ed -create -field x2bm_pcap.FTcp_pair.isn       -arg u32  -write  --comment "initial sequence number"
+acr_ed -create -field x2bm_pcap.FTcp_pair.isn       -arg u32  -write  --comment "initial sequence number (not alwasy from SYN frame)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_next    -arg u32  -write  --comment "running high end of seq+payload"
 acr_ed -create -field x2bm_pcap.FTcp_pair.direction     -arg i32  -write  --comment "direction :=1 (for req high->low port)  =2 (for rsp)"
 #kafka stats

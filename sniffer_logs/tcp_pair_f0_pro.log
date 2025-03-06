@@ -1,0 +1,82 @@
+Hello, World!333
+====--PcapFileProcess  fname:/home/avorovich/pcap/rp_tap0.pcap
+======================client to broker 
+tcp_pair stats  tcp_pair_key:192.168.110.71:48528-192.168.110.51:1096  "count of frames ":753  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":17
+tcp_pair kafka stats  kafka_req_count:21  kafka_req_len_tot:19785323  tcp_payload_len_tot:37009491  ind_client_id_n:1
+tcp_pair kafka client_id list  
+client_id_key:producer-4
+tcp_pair kafka kafka list  
+corr_id_key:1860
+corr_id_key:1865
+corr_id_key:1878
+corr_id_key:1897
+corr_id_key:1912
+corr_id_key:1914
+corr_id_key:1931
+corr_id_key:1946
+corr_id_key:1961
+corr_id_key:1963
+corr_id_key:1966
+corr_id_key:1976
+corr_id_key:1994
+corr_id_key:2003
+corr_id_key:2012
+corr_id_key:2016
+corr_id_key:2028
+corr_id_key:2032
+corr_id_key:2040
+corr_id_key:2047
+corr_id_key:2049
+=============broker to client 
+tcp_pair stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48528  "count of frames ":47  syn_count:0  fin_count:0  isn:0  "seq_gap_count %":10
+tcp_pair kafka stats  kafka_req_count:47  kafka_req_len_tot:3478  tcp_payload_len_tot:3666  ind_client_id_n:0
+tcp_pair kafka client_id list  
+tcp_pair kafka kafka list  
+corr_id_key:1854
+corr_id_key:1860
+corr_id_key:1864
+corr_id_key:1876
+corr_id_key:1878
+corr_id_key:1905
+corr_id_key:1911
+corr_id_key:1912
+corr_id_key:1913
+corr_id_key:1914
+corr_id_key:1929
+corr_id_key:1931
+corr_id_key:1935
+corr_id_key:1938
+corr_id_key:1946
+corr_id_key:1948
+corr_id_key:1961
+corr_id_key:1962
+corr_id_key:1963
+corr_id_key:1966
+corr_id_key:1973
+corr_id_key:1975
+corr_id_key:1976
+corr_id_key:1979
+corr_id_key:1980
+corr_id_key:1994
+corr_id_key:2003
+corr_id_key:2004
+corr_id_key:2005
+corr_id_key:2011
+corr_id_key:2012
+corr_id_key:2014
+corr_id_key:2016
+corr_id_key:2018
+corr_id_key:2025
+corr_id_key:2028
+corr_id_key:2030
+corr_id_key:2032
+corr_id_key:2037
+corr_id_key:2040
+corr_id_key:2045
+corr_id_key:2046
+corr_id_key:2047
+corr_id_key:2048
+corr_id_key:2049
+corr_id_key:2051
+corr_id_key:2056
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:4.39026  ind_tcp_pair_n:2  max_pkt_len:65226

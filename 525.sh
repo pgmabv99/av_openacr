@@ -62,12 +62,13 @@ acr_ed -create -field x2bm_pcap.FClient_id.client_id_key -arg algo.Smallstr50 -i
 acr_ed -create -field x2bm_pcap.FClient_id.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reftype Upptr -write
 #  pointers from above
 acr_ed -create -field x2bm_pcap.FTcp_pair.zd_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair  -cascdel -write -comment "double list of client_id"     
-acr_ed -create -field x2bm_pcap.FTcp_pair.ind_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair  -cascdel -write -comment "index of client_id"     
+acr_ed -create -field x2bm_pcap.FTcp_pair.ind_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair  -xref -cascdel -write -comment "index of client_id"     
 
 #-------------kafka req/rsp object
 acr_ed -create -ctype x2bm_pcap.FKafka  -pooltype Tpool   -write  -comment "Kafka req/rsp object"
 acr_ed -create -field x2bm_pcap.FKafka.kafka_corr_id -arg u32  -write  -comment "correlation_id from hdr"
-acr_ed -create -field x2bm_pcap.FKafka.seq -arg u32   -write  -comment "seq of frame where the kafka started"
+acr_ed -create -field x2bm_pcap.FKafka.seq -arg u32   -write  -comment "unused ;? seq of frame where the kafka started"
+acr_ed -create -field x2bm_pcap.FKafka.ack -arg u32   -write  -comment "0 intially, =1 when rsp is seen with same corr_id"
 acr_ed -create -field x2bm_pcap.FKafka.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reftype Upptr -write  -comment  "tcp pair pointer"
 #  pointers from above
 acr_ed -create -field x2bm_pcap.FTcp_pair.zd_kafka_corr_id -arg x2bm_pcap.FKafka -via x2bm_pcap.FKafka.p_tcp_pair  -cascdel -write -comment "double list of corr_id"     

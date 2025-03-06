@@ -21,15 +21,16 @@ acr_ed -del  -ctype x2bm_pcap.FKafka    -write || true
 
 #--------------tcp pair
 acr_ed -create -ctype x2bm_pcap.FTcp_pair -pooltype Tpool -arg Smallstr50 -indexed -write  -comment "tcp pair entry"
-acr_ed -create -field x2bm_pcap.FTcp_pair.count -arg i32  -write  --comment "number of frames"
+acr_ed -create -field x2bm_pcap.FTcp_pair.frame_count -arg i32  -write  --comment "number of frames for this pair"
 acr_ed -create -field x2bm_pcap.FTcp_pair.syn_count -arg i32  -write  --comment "number of syn (connection start)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.fin_count -arg i32  -write  --comment "number of fin (connection end)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_gap_count   -arg u32              -write     -comment "sequence   gap count "
 acr_ed -create -field x2bm_pcap.FTcp_pair.isn       -arg u32  -write  --comment "initial sequence number"
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_next    -arg u32  -write  --comment "running high end of seq+payload"
+acr_ed -create -field x2bm_pcap.FTcp_pair.direction     -arg i32  -write  --comment "direction :=1 (for req high->low port)  =2 (for rsp)"
 #kafka stats
-acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_req_count   -arg u32  -write  --comment "kafka req count"
-acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_req_len_tot   -arg u32  -write  --comment "total of kafka req length per pair"
+acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_count   -arg u32  -write  --comment "kafka   count"
+acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_len_tot   -arg u32  -write  --comment "total of kafka  length per pair"
 acr_ed -create -field x2bm_pcap.FTcp_pair.tcp_payload_len_tot   -arg u32  -write  --comment "total of tcp payload  length per pair"
 # kafka detection sliding window
 acr_ed -create -field x2bm_pcap.FTcp_pair.swin_buf -arg  u8  -reftype Tary -write     -comment "p to sliding window   buffer "
@@ -49,7 +50,6 @@ acr_ed -create -field x2bm_pcap.FFrame.seq_gap   -arg u32              -write   
 acr_ed -create -field x2bm_pcap.FFrame.ack   -arg u32               -write     -comment "ack      number"
 acr_ed -create -field x2bm_pcap.FFrame.p_pay -arg  u8  -reftype Tary -write     -comment "p to payload buffer "
 acr_ed -create -field x2bm_pcap.FFrame.th_flags -arg  u8             -write     -comment "tcp flags "
-acr_ed -create -field x2bm_pcap.FFrame.direction -arg  i32            -write     -comment "direction : =1 high->low port (req) =2 opposite(rsp)"
 
 #  pointers from above
 acr_ed -create -field x2bm_pcap.FTcp_pair.zd_frames -arg x2bm_pcap.FFrame -via x2bm_pcap.FFrame.p_tcp_pair                                 -cascdel -write -comment "double list of frames"

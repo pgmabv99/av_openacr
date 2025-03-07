@@ -25,7 +25,8 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.frame_count -arg i32  -write  --commen
 acr_ed -create -field x2bm_pcap.FTcp_pair.syn_count -arg i32  -write  --comment "number of syn (connection start)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.fin_count -arg i32  -write  --comment "number of fin (connection end)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_gap_count   -arg u32              -write     -comment "sequence   gap count "
-acr_ed -create -field x2bm_pcap.FTcp_pair.isn       -arg u32  -write  --comment "initial sequence number (not alwasy from SYN frame)"
+acr_ed -create -field x2bm_pcap.FTcp_pair.isn       -arg u32  -write  --comment "initial sequence number (not always from SYN frame)"
+acr_ed -create -field x2bm_pcap.FTcp_pair.seq       -arg u32  -write  --comment "current sequence number"
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_next    -arg u32  -write  --comment "running high end of seq+payload"
 acr_ed -create -field x2bm_pcap.FTcp_pair.direction     -arg i32  -write  --comment "direction :=1 (for req high->low port)  =2 (for rsp)"
 #kafka stats
@@ -45,7 +46,7 @@ acr_ed -create -field x2bm_pcap.FFrame.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reft
 
 acr_ed -create -field x2bm_pcap.FFrame.iframe    -arg u64                -write     -comment "global frame number"
 acr_ed -create -field x2bm_pcap.FFrame.seq   -arg     u32               -write     -comment "sequence number"
-acr_ed -create -field x2bm_pcap.FFrame.seq_gap   -arg u32              -write     -comment "sequence number gap "
+acr_ed -create -field x2bm_pcap.FFrame.seq_gap   -arg i64             -write     -comment "sequence number gap (could be negative)"
 
 acr_ed -create -field x2bm_pcap.FFrame.ack   -arg u32               -write     -comment "ack      number"
 acr_ed -create -field x2bm_pcap.FFrame.p_pay -arg  u8  -reftype Tary -write     -comment "p to payload buffer "

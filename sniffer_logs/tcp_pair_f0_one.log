@@ -2398,12 +2398,69 @@ tcp_pair_key_rev not found tcp_pair_key_rev:192.168.110.71:48528-192.168.110.51:
 --iframe:204624  seq:001023274206:001023274284  seq_rel:000000003900:000000003978  seq_gap:0000  p_pay_n:000078  th_flags:"PSH ACK "
 "p_pay_hex   ":" 00 00 00 4a 00 00 08 08 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 34 4a 41 2d 49 70 51 00 00 00 01 00 00 00 0a 00 00 00 00 00 00 00 1d 50 1f ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff 00 00 00 00"
 "p_pay_asci  ":...J..........test-topic-0000000-4JA-IpQ................P.....................
-tcp_pay_len is 0  th_flags:"RST ACK "
---iframe:204718  seq:002880639272:002880639272  seq_rel:000048237783:000048237783  seq_gap:0000  p_pay_n:000000  th_flags:"RST ACK "
-"p_pay_hex   ":""
-"p_pay_asci  ":""
-realloc failed  len:0
---iframe:204718  seq:002880639272:002880639272  seq_rel:000048237783:000048237783  seq_gap:0000  p_pay_n:000000  th_flags:"RST ACK "
-"p_pay_hex   ":""
-"p_pay_asci  ":""
-x2bm_pcap.error  realloc failed
+======================client to broker 
+frame stats  tcp_pair_key:192.168.110.71:48528-192.168.110.51:1096  frame_count:752  syn_count:0  fin_count:0  isn:2832401489  "seq_gap_count %":17
+kafka stats  kafka_count:34  kafka_len_tot:31844745  tcp_payload_len_tot:37009491  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:producer-4
+kafka req  list  
+kafka_corr_id:1860  ack:0
+kafka_corr_id:1864  ack:0
+kafka_corr_id:1865  ack:0
+kafka_corr_id:1876  ack:1
+kafka_corr_id:1878  ack:1
+kafka_corr_id:1897  ack:0
+kafka_corr_id:1905  ack:0
+kafka_corr_id:1912  ack:1
+kafka_corr_id:1913  ack:1
+kafka_corr_id:1914  ack:1
+kafka_corr_id:1929  ack:1
+kafka_corr_id:1931  ack:1
+kafka_corr_id:1935  ack:1
+kafka_corr_id:1946  ack:1
+kafka_corr_id:1961  ack:1
+kafka_corr_id:1962  ack:1
+kafka_corr_id:1963  ack:1
+kafka_corr_id:1966  ack:1
+kafka_corr_id:1973  ack:1
+kafka_corr_id:1976  ack:0
+kafka_corr_id:1980  ack:0
+kafka_corr_id:1994  ack:1
+kafka_corr_id:2003  ack:1
+kafka_corr_id:2004  ack:1
+kafka_corr_id:2012  ack:1
+kafka_corr_id:2016  ack:1
+kafka_corr_id:2028  ack:1
+kafka_corr_id:2032  ack:1
+kafka_corr_id:2037  ack:1
+kafka_corr_id:2040  ack:1
+kafka_corr_id:2045  ack:0
+kafka_corr_id:2047  ack:1
+kafka_corr_id:2049  ack:1
+kafka_corr_id:2056  ack:1
+kafka_non_ack_count:8  percent_of_non_ack:0.228571
+=============broker to client 
+frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48528  frame_count:47  syn_count:0  fin_count:0  isn:1023270306  "seq_gap_count %":8
+kafka stats  kafka_count:47  kafka_len_tot:3666  tcp_payload_len_tot:3666  ind_client_id_n:0
+kafka rsp without req!!  list  
+kafka_corr_id:1860
+kafka_corr_id:1864
+kafka_corr_id:1905
+kafka_corr_id:1911
+kafka_corr_id:1938
+kafka_corr_id:1948
+kafka_corr_id:1975
+kafka_corr_id:1976
+kafka_corr_id:1979
+kafka_corr_id:1980
+kafka_corr_id:2005
+kafka_corr_id:2011
+kafka_corr_id:2014
+kafka_corr_id:2018
+kafka_corr_id:2025
+kafka_corr_id:2030
+kafka_corr_id:2045
+kafka_corr_id:2046
+kafka_corr_id:2048
+kafka_corr_id:2051
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:4.35676  ind_tcp_pair_n:2  max_pkt_len:65226

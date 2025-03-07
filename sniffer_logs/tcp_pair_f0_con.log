@@ -2,7 +2,7 @@ Hello, World!333
 ====--PcapFileProcess  fname:/home/avorovich/pcap/rp_tap0.pcap
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.61:45656-192.168.110.51:1096  frame_count:386  syn_count:1  fin_count:0  isn:3474083499  "seq_gap_count %":0
-kafka stats  kafka_count:385  kafka_len_tot:27771  tcp_payload_len_tot:29311  ind_client_id_n:1
+kafka stats  kafka_count:385  kafka_len_tot:29311  tcp_payload_len_tot:29311  ind_client_id_n:1
 kafka client_id list (req only) 
 client_id_key:consumer-sub-000-pJwgHFc-24
 kafka req  list  
@@ -390,13 +390,10 @@ kafka_corr_id:4658  ack:1
 kafka_corr_id:4659  ack:1
 kafka_corr_id:4660  ack:1
 kafka_corr_id:4662  ack:1
-kafka_corr_id:4937  ack:0
-kafka_non_ack_count:1  percent_of_non_ack:0.00259067
+kafka_corr_id:4937  ack:1
+kafka_non_ack_count:0  percent_of_non_ack:0
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:45656  frame_count:386  syn_count:1  fin_count:0  isn:4151278749  "seq_gap_count %":0
-kafka stats  kafka_count:387  kafka_len_tot:35558  tcp_payload_len_tot:39808  ind_client_id_n:0
+kafka stats  kafka_count:385  kafka_len_tot:39808  tcp_payload_len_tot:39808  ind_client_id_n:0
 kafka rsp without req!!  list  
-kafka_corr_id:2785017875
-kafka_corr_id:2
-kafka_corr_id:1139813
-======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:4.36218  ind_tcp_pair_n:2  max_pkt_len:65226
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:4.44431  ind_tcp_pair_n:2  max_pkt_len:65226

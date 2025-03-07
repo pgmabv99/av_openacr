@@ -67,6 +67,7 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.ind_client_id -arg x2bm_pcap.FClient_i
 #-------------kafka req/rsp object
 acr_ed -create -ctype x2bm_pcap.FKafka  -pooltype Tpool   -write  -comment "Kafka req/rsp object"
 acr_ed -create -field x2bm_pcap.FKafka.kafka_corr_id -arg u32  -write  -comment "correlation_id from hdr"
+acr_ed -create -field x2bm_pcap.FKafka.iframe  -arg u32   -write  -comment "iframe of frame where the kafka completed "
 acr_ed -create -field x2bm_pcap.FKafka.seq -arg u32   -write  -comment "unused ;? seq of frame where the kafka started"
 acr_ed -create -field x2bm_pcap.FKafka.ack -arg u32   -write  -comment "0 intially, =1 when rsp is seen with same corr_id"
 acr_ed -create -field x2bm_pcap.FKafka.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reftype Upptr -write  -comment  "tcp pair pointer"

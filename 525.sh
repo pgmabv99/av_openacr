@@ -58,7 +58,7 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.bh_frames -arg x2bm_pcap.FFrame -via x
 
 #-------------kafka client_id entry
 acr_ed -create -ctype x2bm_pcap.FClient_id  -pooltype Tpool   -write  -comment "Kafka client entry"
-acr_ed -create -field x2bm_pcap.FClient_id.client_id_key -arg algo.Smallstr50 -indexed  -write  -comment ""
+acr_ed -create -field x2bm_pcap.FClient_id.client_id_key -arg algo.Smallstr50  -write  -comment ""
 acr_ed -create -field x2bm_pcap.FClient_id.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reftype Upptr -write
 #  pointers from above
 acr_ed -create -field x2bm_pcap.FTcp_pair.zd_client_id -arg x2bm_pcap.FClient_id -via x2bm_pcap.FClient_id.p_tcp_pair  -cascdel -write -comment "double list of client_id"     

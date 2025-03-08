@@ -1,0 +1,71 @@
+Hello, World!333
+====--PcapFileProcess  fname:/home/avorovich/pcap/rp_tap0.pcap
+tcp_pair req for the rsp not found  tcp_pair_key_rev:192.168.110.71:48528-192.168.110.51:1096
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:134
+frame stats  tcp_pair_key:192.168.110.71:48528-192.168.110.51:1096  frame_count:753  syn_count:0  fin_count:0  isn:2832401489  "seq_gap_pos_count %":0.177719  "seq_gap_neg_count %":0
+kafka stats  kafka_count:34  kafka_len_tot:31844745  tcp_payload_len_tot:37009491  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:producer-4
+kafka_non_ack_count:8  percent_of_non_ack:0.228571
+kafka req  list  
+kafka_corr_id:1860  ack:0  iframe:7373
+kafka_corr_id:1864  ack:0  iframe:7835
+kafka_corr_id:1865  ack:0  iframe:16952
+kafka_corr_id:1876  ack:1  iframe:16976
+kafka_corr_id:1878  ack:1  iframe:17041
+kafka_corr_id:1897  ack:0  iframe:49929
+kafka_corr_id:1905  ack:0  iframe:66703
+kafka_corr_id:1912  ack:1  iframe:68556
+kafka_corr_id:1913  ack:1  iframe:68961
+kafka_corr_id:1914  ack:1  iframe:69374
+kafka_corr_id:1929  ack:1  iframe:80845
+kafka_corr_id:1931  ack:1  iframe:80947
+kafka_corr_id:1935  ack:1  iframe:81264
+kafka_corr_id:1946  ack:1  iframe:99369
+kafka_corr_id:1961  ack:1  iframe:103953
+kafka_corr_id:1962  ack:1  iframe:104191
+kafka_corr_id:1963  ack:1  iframe:104558
+kafka_corr_id:1966  ack:1  iframe:104675
+kafka_corr_id:1973  ack:1  iframe:121931
+kafka_corr_id:1976  ack:0  iframe:133729
+kafka_corr_id:1980  ack:0  iframe:141562
+kafka_corr_id:1994  ack:1  iframe:141582
+kafka_corr_id:2003  ack:1  iframe:147631
+kafka_corr_id:2004  ack:1  iframe:148013
+kafka_corr_id:2012  ack:1  iframe:166090
+kafka_corr_id:2016  ack:1  iframe:166560
+kafka_corr_id:2028  ack:1  iframe:170461
+kafka_corr_id:2032  ack:1  iframe:171155
+kafka_corr_id:2037  ack:1  iframe:177379
+kafka_corr_id:2040  ack:1  iframe:187253
+kafka_corr_id:2045  ack:0  iframe:192678
+kafka_corr_id:2047  ack:1  iframe:195463
+kafka_corr_id:2049  ack:1  iframe:196206
+kafka_corr_id:2056  ack:1  iframe:203534
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:4
+frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48528  frame_count:47  syn_count:0  fin_count:0  isn:1023270306  "seq_gap_pos_count %":0.0833333  "seq_gap_neg_count %":0
+kafka stats  kafka_count:47  kafka_len_tot:3666  tcp_payload_len_tot:3666  ind_client_id_n:0
+kafka rsp without req!!  list  
+kafka_corr_id:1860  iframe:7338
+kafka_corr_id:1864  iframe:7769
+kafka_corr_id:1905  iframe:66623
+kafka_corr_id:1911  iframe:68380
+kafka_corr_id:1938  iframe:96679
+kafka_corr_id:1948  iframe:99840
+kafka_corr_id:1975  iframe:131889
+kafka_corr_id:1976  iframe:132721
+kafka_corr_id:1979  iframe:133863
+kafka_corr_id:1980  iframe:136215
+kafka_corr_id:2005  iframe:163026
+kafka_corr_id:2011  iframe:165936
+kafka_corr_id:2014  iframe:166384
+kafka_corr_id:2018  iframe:168181
+kafka_corr_id:2025  iframe:168757
+kafka_corr_id:2030  iframe:170846
+kafka_corr_id:2045  iframe:192451
+kafka_corr_id:2046  iframe:195326
+kafka_corr_id:2048  iframe:196105
+kafka_corr_id:2051  iframe:197821
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  pkt_count:706793  elapsed:4.44515  ind_tcp_pair_n:2  max_pkt_len:65226

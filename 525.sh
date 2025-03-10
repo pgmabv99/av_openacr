@@ -32,6 +32,7 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.tcp_pay_len       -arg i64 -write -com
 acr_ed -create -field x2bm_pcap.FTcp_pair.frame_count       -arg i32 -write -comment "number of frames for this pair"
 acr_ed -create -field x2bm_pcap.FTcp_pair.syn_count         -arg i32 -write -comment "number of syn (connection start)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.fin_count         -arg i32 -write -comment "number of fin (connection end)"
+acr_ed -create -field x2bm_pcap.FTcp_pair.rst_count         -arg i32 -write -comment "number of rst (connection reset)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_gap_pos_count -arg u32 -write -comment "pos sequence gap count"
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_gap_neg_count -arg u32 -write -comment "neg sequence gap count"
 # kafka detection sliding window
@@ -39,6 +40,7 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.swin_buf          -arg u8  -reftype Ta
 acr_ed -create -field x2bm_pcap.FTcp_pair.swin_offset       -arg u64 -write -comment "sliding window offset"
 # kafka stats
 acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_count       -arg u32 -write -comment "kafka count"
+acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_non_ack_count -arg u32 -write -comment "kafka non ack count"
 acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_len_tot     -arg u32 -write -comment "total of kafka length per pair"
 acr_ed -create -field x2bm_pcap.FTcp_pair.tcp_payload_len_tot -arg u32 -write -comment "total of tcp payload length per pair"
 # pointers from above
@@ -50,7 +52,7 @@ acr_ed -create -ctype x2bm_pcap.FFrame          -pooltype Tpool       -write  -c
 acr_ed -create -field  x2bm_pcap.FFrame.p_tcp_pair -arg x2bm_pcap.FTcp_pair -reftype Upptr -write
 
 acr_ed -create -field  x2bm_pcap.FFrame.iframe    -arg u64                -write -comment "global frame number"
-acr_ed -create -field  x2bm_pcap.FFrame.seq       -arg u32                -write -comment "sequence number"
+acr_ed -create -field  x2bm_pcap.FFrame.seq       -arg u32                -write -comment "sequence number/ used in hash"
 acr_ed -create -field  x2bm_pcap.FFrame.p_pay     -arg u8  -reftype Tary  -write -comment "p to payload buffer"
 acr_ed -create -field  x2bm_pcap.FFrame.th_flags  -arg u8                 -write -comment "tcp flags"
 

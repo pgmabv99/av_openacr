@@ -1,0 +1,19 @@
+Analyzing TCP sequence number gaps...
+----------------------------------------
+Gap 1: Frame 5127 (seq 406, len 135) -> Frame 8043 (seq 811), Gap size: 270 bytes
+Gap 2: Frame 8358 (seq 946, len 135) -> Frame 9059 (seq 1216), Gap size: 135 bytes
+Gap 3: Frame 19367 (seq 2461, len 135) -> Frame 21178 (seq 2731), Gap size: 135 bytes
+Gap 4: Frame 41008 (seq 4756, len 135) -> Frame 42569 (seq 5026), Gap size: 135 bytes
+Gap 5: Frame 51046 (seq 6121, len 135) -> Frame 51773 (seq 6391), Gap size: 135 bytes
+Gap 6: Frame 55998 (seq 6931, len 135) -> Frame 57444 (seq 7201), Gap size: 135 bytes
+Gap 7: Frame 58866 (seq 7606, len 135) -> Frame 66592 (seq 8011), Gap size: 270 bytes
+Gap 8: Frame 95441 (seq 12091, len 135) -> Frame 96226 (seq 12361), Gap size: 135 bytes
+Gap 9: Frame 109451 (seq 13471, len 135) -> Frame 109773 (seq 13741), Gap size: 135 bytes
+Gap 10: Frame 130470 (seq 16171, len 135) -> Frame 131881 (seq 16576), Gap size: 270 bytes
+Gap 11: Frame 136890 (seq 17656, len 135) -> Frame 138118 (seq 17926), Gap size: 135 bytes
+Gap 12: Frame 154503 (seq 20116, len 135) -> Frame 155213 (seq 20386), Gap size: 135 bytes
+Gap 13: Frame 155828 (seq 20521, len 135) -> Frame 156652 (seq 20791), Gap size: 135 bytes
+Gap 14: Frame 194915 (seq 26011, len 135) -> Frame 198967 (seq 26281), Gap size: 135 bytes
+Gap 15: Frame 198967 (seq 26281, len 135) -> Frame 199536 (seq 26551), Gap size: 135 bytes
+----------------------------------------
+Total number of gaps: 15

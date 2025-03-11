@@ -1,78 +1,74 @@
-Hello, World!333
+Hello, World!33333333333333333333333333333333333333333333333333333333333333333
 ====--PcapFileProcess  fname:/home/avorovich/pcap/rp_tap0.pcap
-tcp_pair req for the rsp not found  tcp_pair_key_rev:192.168.110.71:48496-192.168.110.51:1096
+tcp_pair req for the rsp not found  tcp_pair_key_rev:192.168.110.71:48528-192.168.110.51:1096
 ======================client to broker 
-gaps_pos!!!  seq_gap_pos_count:161
-frame stats  tcp_pair_key:192.168.110.71:48496-192.168.110.51:1096  frame_count:766  syn_count:0  fin_count:0  rst_count:1  isn:003080811052  "seq_gap_pos_count %":0.209909  "seq_gap_neg_count %":0
-kafka stats  kafka_count:28  kafka_len_tot:000029359180  tcp_payload_len_tot:000038983670  ind_client_id_n:1
+gaps_pos!!!  seq_gap_pos_count:134
+frame stats  tcp_pair_key:192.168.110.71:48528-192.168.110.51:1096  frame_count:753  syn_count:0  fin_count:0  rst_count:1  isn:002832401489  "seq_gap_pos_count %":0.177719  "seq_gap_neg_count %":0
+kafka stats  kafka_count:31  kafka_len_tot:000029884521  tcp_payload_len_tot:000037009491  ind_client_id_n:1
 kafka client_id list (req only) 
-client_id_key:producer-24
-kafka_non_ack_count:5  pct_non_ack:0.172414
+client_id_key:producer-4
+kafka_non_ack_count:7  pct_non_ack!!!:0.21875
 kafka req  list  
-kafka_corr_id:2065  ack:1  iframe:1058
-kafka_corr_id:2068  ack:0  iframe:11446
-kafka_corr_id:2070  ack:0  iframe:11819
-kafka_corr_id:2082  ack:1  iframe:20264
-kafka_corr_id:2084  ack:1  iframe:20779
-kafka_corr_id:2090  ack:1  iframe:25219
-kafka_corr_id:2091  ack:1  iframe:31731
-kafka_corr_id:2092  ack:1  iframe:33621
-kafka_corr_id:2112  ack:0  iframe:54254
-kafka_corr_id:2133  ack:0  iframe:63963
-kafka_corr_id:2136  ack:1  iframe:64083
-kafka_corr_id:2143  ack:1  iframe:72527
-kafka_corr_id:2163  ack:1  iframe:85022
-kafka_corr_id:2164  ack:1  iframe:85451
-kafka_corr_id:2165  ack:1  iframe:85773
-kafka_corr_id:2177  ack:1  iframe:96973
-kafka_corr_id:2212  ack:1  iframe:112831
-kafka_corr_id:2213  ack:1  iframe:113142
-kafka_corr_id:2215  ack:0  iframe:120674
-kafka_corr_id:2218  ack:1  iframe:128407
-kafka_corr_id:2219  ack:1  iframe:128917
-kafka_corr_id:2232  ack:1  iframe:137556
-kafka_corr_id:2233  ack:1  iframe:138149
-kafka_corr_id:2240  ack:1  iframe:140758
-kafka_corr_id:2246  ack:1  iframe:144656
-kafka_corr_id:2250  ack:1  iframe:152116
-kafka_corr_id:2277  ack:1  iframe:184787
-kafka_corr_id:2282  ack:1  iframe:201338
+kafka_corr_id:1860  ack:0  iframe:7373
+kafka_corr_id:1865  ack:0  iframe:16952
+kafka_corr_id:1878  ack:1  iframe:17041
+kafka_corr_id:1897  ack:0  iframe:49929
+kafka_corr_id:1905  ack:0  iframe:66703
+kafka_corr_id:1912  ack:1  iframe:68556
+kafka_corr_id:1913  ack:1  iframe:68961
+kafka_corr_id:1914  ack:1  iframe:69374
+kafka_corr_id:1929  ack:1  iframe:80845
+kafka_corr_id:1931  ack:1  iframe:80947
+kafka_corr_id:1935  ack:1  iframe:81264
+kafka_corr_id:1946  ack:1  iframe:99369
+kafka_corr_id:1961  ack:1  iframe:103953
+kafka_corr_id:1962  ack:1  iframe:104191
+kafka_corr_id:1963  ack:1  iframe:104558
+kafka_corr_id:1966  ack:1  iframe:104675
+kafka_corr_id:1973  ack:1  iframe:121931
+kafka_corr_id:1976  ack:0  iframe:133729
+kafka_corr_id:1980  ack:0  iframe:141562
+kafka_corr_id:2003  ack:1  iframe:147631
+kafka_corr_id:2004  ack:1  iframe:148013
+kafka_corr_id:2012  ack:1  iframe:166090
+kafka_corr_id:2016  ack:1  iframe:166560
+kafka_corr_id:2028  ack:1  iframe:170461
+kafka_corr_id:2032  ack:1  iframe:171155
+kafka_corr_id:2037  ack:1  iframe:177379
+kafka_corr_id:2040  ack:1  iframe:187253
+kafka_corr_id:2045  ack:0  iframe:192678
+kafka_corr_id:2047  ack:1  iframe:195463
+kafka_corr_id:2049  ack:1  iframe:196206
+kafka_corr_id:2056  ack:1  iframe:203534
 =============broker to client 
-gaps_pos!!!  seq_gap_pos_count:3
-frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48496  frame_count:52  syn_count:0  fin_count:0  rst_count:0  isn:002295340603  "seq_gap_pos_count %":0.0566038  "seq_gap_neg_count %":0
-kafka stats  kafka_count:52  kafka_len_tot:000000004056  tcp_payload_len_tot:000000004056  ind_client_id_n:0
+gaps_pos!!!  seq_gap_pos_count:4
+frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48528  frame_count:47  syn_count:0  fin_count:0  rst_count:0  isn:001023270306  "seq_gap_pos_count %":0.0833333  "seq_gap_neg_count %":0
+kafka stats  kafka_count:47  kafka_len_tot:000000003666  tcp_payload_len_tot:000000003666  ind_client_id_n:0
 kafka rsp without req!!  list  
-kafka_corr_id:2064  iframe:769
-kafka_corr_id:2068  iframe:11099
-kafka_corr_id:2070  iframe:11596
-kafka_corr_id:2072  iframe:13139
-kafka_corr_id:2073  iframe:20145
-kafka_corr_id:2098  iframe:46214
-kafka_corr_id:2100  iframe:46893
-kafka_corr_id:2101  iframe:51260
-kafka_corr_id:2112  iframe:54214
-kafka_corr_id:2117  iframe:58439
-kafka_corr_id:2130  iframe:61035
-kafka_corr_id:2131  iframe:61568
-kafka_corr_id:2132  iframe:62904
-kafka_corr_id:2133  iframe:63864
-kafka_corr_id:2144  iframe:84772
-kafka_corr_id:2166  iframe:85908
-kafka_corr_id:2167  iframe:96867
-kafka_corr_id:2214  iframe:120073
-kafka_corr_id:2216  iframe:120823
-kafka_corr_id:2217  iframe:128140
-kafka_corr_id:2220  iframe:131125
-kafka_corr_id:2221  iframe:137509
-kafka_corr_id:2247  iframe:152004
-kafka_corr_id:2251  iframe:164448
-kafka_corr_id:2254  iframe:178015
-kafka_corr_id:2271  iframe:178377
-kafka_corr_id:2272  iframe:184683
-kafka_corr_id:2280  iframe:200643
-kafka_corr_id:2281  iframe:201208
+kafka_corr_id:1854  iframe:8
+kafka_corr_id:1860  iframe:7338
+kafka_corr_id:1864  iframe:7769
+kafka_corr_id:1876  iframe:16979
+kafka_corr_id:1905  iframe:66623
+kafka_corr_id:1911  iframe:68380
+kafka_corr_id:1938  iframe:96679
+kafka_corr_id:1948  iframe:99840
+kafka_corr_id:1975  iframe:131889
+kafka_corr_id:1976  iframe:132721
+kafka_corr_id:1979  iframe:133863
+kafka_corr_id:1980  iframe:136215
+kafka_corr_id:1994  iframe:147562
+kafka_corr_id:2005  iframe:163026
+kafka_corr_id:2011  iframe:165936
+kafka_corr_id:2014  iframe:166384
+kafka_corr_id:2018  iframe:168181
+kafka_corr_id:2025  iframe:168757
+kafka_corr_id:2030  iframe:170846
+kafka_corr_id:2045  iframe:192451
+kafka_corr_id:2046  iframe:195326
+kafka_corr_id:2048  iframe:196105
+kafka_corr_id:2051  iframe:197821
 =============rsp without req 
-======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  start_kafka_at_frame_boundary:N  pkt_count:706793  elapsed:5.0414  ind_tcp_pair_n:2  max_pkt_len:65226
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  start_kafka_at_frame_boundary:Y  pkt_count:706793  elapsed:4.98263  ind_tcp_pair_n:2  max_pkt_len:65226
 Kafka Non-ACK(BAD - request without response) Ratio Histogram:
-range:10-20%  count:1
-range:50-60%  count:1
+range:20-30%  count_of_tcp_pairs:1

@@ -2073,12 +2073,11 @@ gaps_pos!!!  seq_gap_pos_count:99
 frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:62720  frame_count:331  syn_count:1  fin_count:0  rst_count:0  isn:000697969602  "seq_gap_pos_count %":0.298193  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000075105  ind_client_id_n:0
 =============rsp without req 
-======final stats  fname:/home/avorovich/pcap/rp_tap2.pcap  start_kafka_at_frame_boundary:N  pkt_count:1544657  elapsed:199.962  ind_tcp_pair_n:384  max_pkt_len:65521
+======final stats  fname:/home/avorovich/pcap/rp_tap2.pcap  start_kafka_at_frame_boundary:N  pkt_count:1544657  elapsed:208.569  ind_tcp_pair_n:384  max_pkt_len:65521
 Kafka Non-ACK(BAD - request without response) Ratio Histogram:
-range:00-00%  count_of_tcp_pairs:234
+range:00-00%  count_of_tcp_pairs:66
 range:00-10%  count_of_tcp_pairs:45
-range:10-20%  count_of_tcp_pairs:51
-range:20-30%  count_of_tcp_pairs:12
-range:30-40%  count_of_tcp_pairs:2
-range:40-50%  count_of_tcp_pairs:21
-range:60-70%  count_of_tcp_pairs:19
+range:10-20%  count_of_tcp_pairs:49
+range:20-30%  count_of_tcp_pairs:14
+range:60-70%  count_of_tcp_pairs:1
+range:90-100%  count_of_tcp_pairs:17

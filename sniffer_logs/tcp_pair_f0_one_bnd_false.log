@@ -1,0 +1,242 @@
+Hello, World!333
+====--PcapFileProcess  fname:/home/avorovich/pcap/rp_tap0.pcap
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:15
+frame stats  tcp_pair_key:192.168.110.61:41072-192.168.110.51:1096  frame_count:197  syn_count:0  fin_count:0  rst_count:1  isn:001979239428  "seq_gap_pos_count %":0.0757576  "seq_gap_neg_count %":0
+kafka stats  kafka_count:196  kafka_len_tot:000000025080  tcp_payload_len_tot:000000025080  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:consumer-sub-000-nOkgFv0-7
+kafka_non_ack_count:192  pct_non_ack!!!:0.974619
+kafka req  list  
+kafka_corr_id:21535  ack:1  iframe:2
+kafka_corr_id:21539  ack:1  iframe:2768
+kafka_corr_id:21543  ack:1  iframe:4916
+kafka_corr_id:21547  ack:1  iframe:5126
+kafka_corr_id:21559  ack:0  iframe:8042
+kafka_corr_id:21563  ack:0  iframe:8357
+kafka_corr_id:21571  ack:0  iframe:9058
+kafka_corr_id:21575  ack:0  iframe:9774
+kafka_corr_id:21579  ack:0  iframe:10228
+kafka_corr_id:21583  ack:0  iframe:11765
+kafka_corr_id:21587  ack:0  iframe:12701
+kafka_corr_id:21591  ack:0  iframe:14453
+kafka_corr_id:21595  ack:0  iframe:15949
+kafka_corr_id:21598  ack:0  iframe:16941
+kafka_corr_id:21599  ack:0  iframe:17149
+kafka_corr_id:21600  ack:0  iframe:17431
+kafka_corr_id:21601  ack:0  iframe:18949
+kafka_corr_id:21604  ack:0  iframe:19366
+kafka_corr_id:21611  ack:0  iframe:21177
+kafka_corr_id:21615  ack:0  iframe:21914
+kafka_corr_id:21619  ack:0  iframe:22088
+kafka_corr_id:21623  ack:0  iframe:22371
+kafka_corr_id:21629  ack:0  iframe:22711
+kafka_corr_id:21633  ack:0  iframe:24172
+kafka_corr_id:21637  ack:0  iframe:24310
+kafka_corr_id:21641  ack:0  iframe:29098
+kafka_corr_id:21645  ack:0  iframe:29264
+kafka_corr_id:21649  ack:0  iframe:30641
+kafka_corr_id:21653  ack:0  iframe:32319
+kafka_corr_id:21657  ack:0  iframe:35575
+kafka_corr_id:21662  ack:0  iframe:39686
+kafka_corr_id:21666  ack:0  iframe:39790
+kafka_corr_id:21676  ack:0  iframe:40768
+kafka_corr_id:21680  ack:0  iframe:41007
+kafka_corr_id:21688  ack:0  iframe:42568
+kafka_corr_id:21692  ack:0  iframe:43017
+kafka_corr_id:21696  ack:0  iframe:43163
+kafka_corr_id:21700  ack:0  iframe:45733
+kafka_corr_id:21706  ack:0  iframe:46337
+kafka_corr_id:21714  ack:0  iframe:47174
+kafka_corr_id:21716  ack:0  iframe:49811
+kafka_corr_id:21717  ack:0  iframe:49936
+kafka_corr_id:21720  ack:0  iframe:50205
+kafka_corr_id:21724  ack:0  iframe:51045
+kafka_corr_id:21734  ack:0  iframe:51772
+kafka_corr_id:21738  ack:0  iframe:52811
+kafka_corr_id:21740  ack:0  iframe:53514
+kafka_corr_id:21744  ack:0  iframe:53633
+kafka_corr_id:21748  ack:0  iframe:55997
+kafka_corr_id:21756  ack:0  iframe:57443
+kafka_corr_id:21760  ack:0  iframe:57721
+kafka_corr_id:21764  ack:0  iframe:58627
+kafka_corr_id:21768  ack:0  iframe:58865
+kafka_corr_id:21780  ack:0  iframe:66591
+kafka_corr_id:21784  ack:0  iframe:68419
+kafka_corr_id:21791  ack:0  iframe:68679
+kafka_corr_id:21797  ack:0  iframe:68937
+kafka_corr_id:21801  ack:0  iframe:69030
+kafka_corr_id:21805  ack:0  iframe:69127
+kafka_corr_id:21808  ack:0  iframe:69845
+kafka_corr_id:21811  ack:0  iframe:69917
+kafka_corr_id:21815  ack:0  iframe:70508
+kafka_corr_id:21819  ack:0  iframe:71285
+kafka_corr_id:21823  ack:0  iframe:71897
+kafka_corr_id:21827  ack:0  iframe:72039
+kafka_corr_id:21831  ack:0  iframe:72857
+kafka_corr_id:21835  ack:0  iframe:73133
+kafka_corr_id:21838  ack:0  iframe:77802
+kafka_corr_id:21839  ack:0  iframe:77835
+kafka_corr_id:21840  ack:0  iframe:78446
+kafka_corr_id:21841  ack:0  iframe:81015
+kafka_corr_id:21844  ack:0  iframe:84964
+kafka_corr_id:21848  ack:0  iframe:86129
+kafka_corr_id:21852  ack:0  iframe:86250
+kafka_corr_id:21856  ack:0  iframe:86349
+kafka_corr_id:21860  ack:0  iframe:88949
+kafka_corr_id:21862  ack:0  iframe:90091
+kafka_corr_id:21866  ack:0  iframe:90301
+kafka_corr_id:21870  ack:0  iframe:90414
+kafka_corr_id:21874  ack:0  iframe:90720
+kafka_corr_id:21878  ack:0  iframe:93147
+kafka_corr_id:21882  ack:0  iframe:93222
+kafka_corr_id:21886  ack:0  iframe:93434
+kafka_corr_id:21890  ack:0  iframe:93647
+kafka_corr_id:21894  ack:0  iframe:94186
+kafka_corr_id:21898  ack:0  iframe:95440
+kafka_corr_id:21906  ack:0  iframe:96225
+kafka_corr_id:21911  ack:0  iframe:98698
+kafka_corr_id:21915  ack:0  iframe:98882
+kafka_corr_id:21917  ack:0  iframe:102036
+kafka_corr_id:21918  ack:0  iframe:102069
+kafka_corr_id:21919  ack:0  iframe:102161
+kafka_corr_id:21920  ack:0  iframe:103862
+kafka_corr_id:21923  ack:0  iframe:106931
+kafka_corr_id:21927  ack:0  iframe:108218
+kafka_corr_id:21930  ack:0  iframe:109286
+kafka_corr_id:21934  ack:0  iframe:109450
+kafka_corr_id:21942  ack:0  iframe:109772
+kafka_corr_id:21946  ack:0  iframe:110555
+kafka_corr_id:21950  ack:0  iframe:110954
+kafka_corr_id:21954  ack:0  iframe:112204
+kafka_corr_id:21958  ack:0  iframe:113149
+kafka_corr_id:21962  ack:0  iframe:114541
+kafka_corr_id:21964  ack:0  iframe:114842
+kafka_corr_id:21968  ack:0  iframe:114959
+kafka_corr_id:21972  ack:0  iframe:117259
+kafka_corr_id:21976  ack:0  iframe:119985
+kafka_corr_id:21981  ack:0  iframe:122746
+kafka_corr_id:21985  ack:0  iframe:123937
+kafka_corr_id:21989  ack:0  iframe:126037
+kafka_corr_id:21993  ack:0  iframe:127912
+kafka_corr_id:21997  ack:0  iframe:128027
+kafka_corr_id:22001  ack:0  iframe:128375
+kafka_corr_id:22005  ack:0  iframe:128642
+kafka_corr_id:22009  ack:0  iframe:129798
+kafka_corr_id:22013  ack:0  iframe:130469
+kafka_corr_id:22027  ack:0  iframe:131880
+kafka_corr_id:22029  ack:0  iframe:134054
+kafka_corr_id:22031  ack:0  iframe:134180
+kafka_corr_id:22035  ack:0  iframe:134565
+kafka_corr_id:22038  ack:0  iframe:134992
+kafka_corr_id:22042  ack:0  iframe:135355
+kafka_corr_id:22046  ack:0  iframe:136633
+kafka_corr_id:22050  ack:0  iframe:136704
+kafka_corr_id:22054  ack:0  iframe:136889
+kafka_corr_id:22062  ack:0  iframe:138117
+kafka_corr_id:22066  ack:0  iframe:138505
+kafka_corr_id:22070  ack:0  iframe:139183
+kafka_corr_id:22074  ack:0  iframe:139580
+kafka_corr_id:22076  ack:0  iframe:139701
+kafka_corr_id:22077  ack:0  iframe:141589
+kafka_corr_id:22078  ack:0  iframe:141813
+kafka_corr_id:22079  ack:0  iframe:141896
+kafka_corr_id:22081  ack:0  iframe:141953
+kafka_corr_id:22085  ack:0  iframe:142036
+kafka_corr_id:22088  ack:0  iframe:144776
+kafka_corr_id:22091  ack:0  iframe:146953
+kafka_corr_id:22094  ack:0  iframe:147174
+kafka_corr_id:22098  ack:0  iframe:147267
+kafka_corr_id:22102  ack:0  iframe:148021
+kafka_corr_id:22106  ack:0  iframe:148397
+kafka_corr_id:22110  ack:0  iframe:148710
+kafka_corr_id:22114  ack:0  iframe:153659
+kafka_corr_id:22118  ack:0  iframe:154502
+kafka_corr_id:22126  ack:0  iframe:155212
+kafka_corr_id:22130  ack:0  iframe:155827
+kafka_corr_id:22142  ack:0  iframe:156651
+kafka_corr_id:22146  ack:0  iframe:157150
+kafka_corr_id:22150  ack:0  iframe:159253
+kafka_corr_id:22152  ack:0  iframe:159670
+kafka_corr_id:22154  ack:0  iframe:159735
+kafka_corr_id:22158  ack:0  iframe:159847
+kafka_corr_id:22162  ack:0  iframe:160367
+kafka_corr_id:22166  ack:0  iframe:160464
+kafka_corr_id:22170  ack:0  iframe:161485
+kafka_corr_id:22174  ack:0  iframe:163425
+kafka_corr_id:22178  ack:0  iframe:166000
+kafka_corr_id:22184  ack:0  iframe:166194
+kafka_corr_id:22188  ack:0  iframe:166541
+kafka_corr_id:22190  ack:0  iframe:166933
+kafka_corr_id:22194  ack:0  iframe:167040
+kafka_corr_id:22196  ack:0  iframe:169173
+kafka_corr_id:22200  ack:0  iframe:169277
+kafka_corr_id:22202  ack:0  iframe:171060
+kafka_corr_id:22203  ack:0  iframe:171130
+kafka_corr_id:22204  ack:0  iframe:171230
+kafka_corr_id:22208  ack:0  iframe:171342
+kafka_corr_id:22210  ack:0  iframe:171376
+kafka_corr_id:22214  ack:0  iframe:171561
+kafka_corr_id:22218  ack:0  iframe:171637
+kafka_corr_id:22222  ack:0  iframe:172569
+kafka_corr_id:22226  ack:0  iframe:173073
+kafka_corr_id:22230  ack:0  iframe:174328
+kafka_corr_id:22234  ack:0  iframe:175945
+kafka_corr_id:22238  ack:0  iframe:179268
+kafka_corr_id:22242  ack:0  iframe:181983
+kafka_corr_id:22246  ack:0  iframe:182265
+kafka_corr_id:22250  ack:0  iframe:185402
+kafka_corr_id:22254  ack:0  iframe:186283
+kafka_corr_id:22258  ack:0  iframe:188072
+kafka_corr_id:22264  ack:0  iframe:188379
+kafka_corr_id:22268  ack:0  iframe:188671
+kafka_corr_id:22272  ack:0  iframe:188852
+kafka_corr_id:22276  ack:0  iframe:189350
+kafka_corr_id:22280  ack:0  iframe:192519
+kafka_corr_id:22284  ack:0  iframe:194646
+kafka_corr_id:22288  ack:0  iframe:194914
+kafka_corr_id:22296  ack:0  iframe:198966
+kafka_corr_id:22304  ack:0  iframe:199535
+kafka_corr_id:22308  ack:0  iframe:201280
+kafka_corr_id:22312  ack:0  iframe:201791
+kafka_corr_id:22316  ack:0  iframe:201941
+kafka_corr_id:22320  ack:0  iframe:202636
+kafka_corr_id:22324  ack:0  iframe:202845
+kafka_corr_id:22326  ack:0  iframe:204093
+kafka_corr_id:22327  ack:0  iframe:204204
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:395
+frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41072  frame_count:6615  syn_count:0  fin_count:0  rst_count:0  isn:001707734536  "seq_gap_pos_count %":0.0597037  "seq_gap_neg_count %":0
+kafka stats  kafka_count:31  kafka_len_tot:000203248147  tcp_payload_len_tot:000176014575  ind_client_id_n:0
+kafka rsp without req!!  list  
+kafka_corr_id:1667510832  iframe:7619
+kafka_corr_id:243400961  iframe:14254
+kafka_corr_id:176947457  iframe:22513
+kafka_corr_id:217710849  iframe:39722
+kafka_corr_id:42205697  iframe:43061
+kafka_corr_id:143524353  iframe:51157
+kafka_corr_id:3993081858  iframe:57562
+kafka_corr_id:217189633  iframe:68710
+kafka_corr_id:2818876932  iframe:72653
+kafka_corr_id:1650549561  iframe:72677
+kafka_corr_id:2617475585  iframe:90543
+kafka_corr_id:50201089  iframe:98615
+kafka_corr_id:8913665  iframe:110789
+kafka_corr_id:2382733322  iframe:125847
+kafka_corr_id:268436100  iframe:125847
+kafka_corr_id:42337537  iframe:131289
+kafka_corr_id:879112243  iframe:131289
+kafka_corr_id:2416150022  iframe:137973
+kafka_corr_id:451281665  iframe:147914
+kafka_corr_id:878915888  iframe:147914
+kafka_corr_id:4228417031  iframe:156114
+kafka_corr_id:842543671  iframe:156114
+kafka_corr_id:250218753  iframe:163280
+kafka_corr_id:217055745  iframe:171335
+kafka_corr_id:149032449  iframe:182166
+kafka_corr_id:250351105  iframe:192478
+kafka_corr_id:217452033  iframe:201934
+=============rsp without req 
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  start_kafka_at_frame_boundary:N  pkt_count:706793  elapsed:5.2373  ind_tcp_pair_n:2  max_pkt_len:65226
+Kafka Non-ACK(BAD - request without response) Ratio Histogram:
+range:90-100%  count_of_tcp_pairs:1

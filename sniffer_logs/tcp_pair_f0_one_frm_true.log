@@ -1,0 +1,33 @@
+Hello, World!333
+====--PcapFileProcess  fname:/home/avorovich/pcap/rp_tap0.pcap
+tcp_pair req for the rsp not found  tcp_pair_key_rev:192.168.110.71:48496-192.168.110.51:1096
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:161
+frame stats  tcp_pair_key:192.168.110.71:48496-192.168.110.51:1096  frame_count:766  syn_count:0  fin_count:0  rst_count:1  isn:003080811052  "seq_gap_pos_count %":0.209909  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000002097100  tcp_payload_len_tot:000038983670  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:producer-24
+kafka_non_ack_count:1  pct_non_ack:0.333333
+kafka req  list  
+kafka_corr_id:2065  ack:1  iframe:1058
+kafka_corr_id:2068  ack:0  iframe:11446
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:3
+frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48496  frame_count:52  syn_count:0  fin_count:0  rst_count:0  isn:002295340603  "seq_gap_pos_count %":0.0566038  "seq_gap_neg_count %":0
+kafka stats  kafka_count:11  kafka_len_tot:000000000858  tcp_payload_len_tot:000000004056  ind_client_id_n:0
+kafka rsp without req!!  list  
+kafka_corr_id:2064  iframe:769
+kafka_corr_id:2068  iframe:11099
+kafka_corr_id:2070  iframe:11596
+kafka_corr_id:2072  iframe:13139
+kafka_corr_id:2073  iframe:20145
+kafka_corr_id:2082  iframe:20403
+kafka_corr_id:2084  iframe:25135
+kafka_corr_id:2090  iframe:31510
+kafka_corr_id:2091  iframe:33245
+kafka_corr_id:2092  iframe:44249
+=============rsp without req 
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  start_kafka_at_frame_boundary:Y  pkt_count:706793  elapsed:4.98009  ind_tcp_pair_n:2  max_pkt_len:65226
+Kafka Non-ACK(BAD - request without response) Ratio Histogram:
+range:30-40%  count:1
+range:80-90%  count:1

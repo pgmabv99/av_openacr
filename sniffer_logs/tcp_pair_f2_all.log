@@ -1,0 +1,2084 @@
+Hello, World!333
+====--PcapFileProcess  fname:/home/avorovich/pcap/rp_tap2.pcap
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:203
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.41:64416-192.168.210.51:1092  frame_count:1720  syn_count:0  fin_count:1  rst_count:0  isn:001282043294  "seq_gap_pos_count %":0.117955  "seq_gap_neg_count %":0.000581058
+kafka stats  kafka_count:40  kafka_len_tot:000066330745  tcp_payload_len_tot:000084751957  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:6  pct_non_ack:0.146341
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:10
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:64416  frame_count:387  syn_count:0  fin_count:1  rst_count:0  isn:002321724608  "seq_gap_pos_count %":0.0257732  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000123912  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:100
+gaps_neg!!!  seq_gap_ned_count:2
+frame stats  tcp_pair_key:192.168.210.21:53949-192.168.210.51:1092  frame_count:1955  syn_count:0  fin_count:1  rst_count:0  isn:002463230755  "seq_gap_pos_count %":0.0511247  "seq_gap_neg_count %":0.00102249
+kafka stats  kafka_count:189  kafka_len_tot:000080167058  tcp_payload_len_tot:000100335972  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:49  pct_non_ack:0.257895
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:4
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:53949  frame_count:399  syn_count:0  fin_count:1  rst_count:0  isn:003158066539  "seq_gap_pos_count %":0.01  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000121631  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:178
+gaps_neg!!!  seq_gap_ned_count:2
+frame stats  tcp_pair_key:192.168.210.41:59837-192.168.210.51:1092  frame_count:1795  syn_count:0  fin_count:1  rst_count:0  isn:003985210117  "seq_gap_pos_count %":0.0991091  "seq_gap_neg_count %":0.00111359
+kafka stats  kafka_count:35  kafka_len_tot:000063352176  tcp_payload_len_tot:000089078699  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0555556
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:5
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:59837  frame_count:383  syn_count:0  fin_count:1  rst_count:0  isn:003284717973  "seq_gap_pos_count %":0.0130208  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000125033  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:63
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.41:64583-192.168.210.51:1092  frame_count:1671  syn_count:0  fin_count:1  rst_count:0  isn:003705183487  "seq_gap_pos_count %":0.0376794  "seq_gap_neg_count %":0.000598086
+kafka stats  kafka_count:37  kafka_len_tot:000056612420  tcp_payload_len_tot:000083207199  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0526316
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:7
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:64583  frame_count:378  syn_count:0  fin_count:1  rst_count:0  isn:003189781344  "seq_gap_pos_count %":0.0184697  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000121860  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:131
+frame stats  tcp_pair_key:192.168.210.51:52363-192.168.210.31:1090  frame_count:1661  syn_count:0  fin_count:1  rst_count:0  isn:002781025696  "seq_gap_pos_count %":0.0788207  "seq_gap_neg_count %":0
+kafka stats  kafka_count:42  kafka_len_tot:000074508484  tcp_payload_len_tot:000084265182  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0465116
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:8
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:52363  frame_count:392  syn_count:0  fin_count:1  rst_count:0  isn:000893636613  "seq_gap_pos_count %":0.0203562  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000121849  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:119
+frame stats  tcp_pair_key:192.168.210.51:56683-192.168.210.41:1091  frame_count:1670  syn_count:0  fin_count:1  rst_count:0  isn:000505861762  "seq_gap_pos_count %":0.0712148  "seq_gap_neg_count %":0
+kafka stats  kafka_count:45  kafka_len_tot:000065789084  tcp_payload_len_tot:000084014299  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:6  pct_non_ack:0.130435
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:7
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:56683  frame_count:366  syn_count:0  fin_count:1  rst_count:0  isn:003268330335  "seq_gap_pos_count %":0.0190736  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000128175  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:57000-192.168.210.51:1092  frame_count:326  syn_count:0  fin_count:1  rst_count:0  isn:004095688730  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000047108  tcp_payload_len_tot:000000069304  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:1
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:57000  frame_count:325  syn_count:0  fin_count:1  rst_count:0  isn:000816218119  "seq_gap_pos_count %":0.00306748  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000131274  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1
+frame stats  tcp_pair_key:192.168.210.31:63360-192.168.210.51:1092  frame_count:475  syn_count:0  fin_count:1  rst_count:0  isn:002580581559  "seq_gap_pos_count %":0.00210084  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000019908  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:63360  frame_count:474  syn_count:0  fin_count:1  rst_count:0  isn:003995690323  "seq_gap_pos_count %":0.00421053  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000019866  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:77
+gaps_neg!!!  seq_gap_ned_count:3
+frame stats  tcp_pair_key:192.168.210.21:61077-192.168.210.51:1092  frame_count:2292  syn_count:0  fin_count:1  rst_count:0  isn:001031670325  "seq_gap_pos_count %":0.0335805  "seq_gap_neg_count %":0.00130833
+kafka stats  kafka_count:406  kafka_len_tot:000084999171  tcp_payload_len_tot:000120397397  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:50  pct_non_ack:0.12285
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:7
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:61077  frame_count:417  syn_count:0  fin_count:1  rst_count:0  isn:003403739273  "seq_gap_pos_count %":0.0167464  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000126843  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:111
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.21:52127-192.168.210.51:1092  frame_count:1909  syn_count:0  fin_count:1  rst_count:0  isn:000806001166  "seq_gap_pos_count %":0.0581152  "seq_gap_neg_count %":0.00052356
+kafka stats  kafka_count:142  kafka_len_tot:000073922954  tcp_payload_len_tot:000099643187  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:36  pct_non_ack:0.251748
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:8
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:52127  frame_count:386  syn_count:0  fin_count:1  rst_count:0  isn:003920637339  "seq_gap_pos_count %":0.0206718  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000117834  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:164
+frame stats  tcp_pair_key:192.168.210.51:60165-192.168.210.41:1091  frame_count:1697  syn_count:0  fin_count:1  rst_count:0  isn:001884995082  "seq_gap_pos_count %":0.0965842  "seq_gap_neg_count %":0
+kafka stats  kafka_count:51  kafka_len_tot:000085579815  tcp_payload_len_tot:000084680977  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:8  pct_non_ack:0.153846
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:60165  frame_count:351  syn_count:0  fin_count:1  rst_count:0  isn:001196490210  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000130775  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:173
+frame stats  tcp_pair_key:192.168.210.51:56085-192.168.210.31:1090  frame_count:1702  syn_count:0  fin_count:1  rst_count:0  isn:004083569673  "seq_gap_pos_count %":0.101585  "seq_gap_neg_count %":0
+kafka stats  kafka_count:43  kafka_len_tot:000081031382  tcp_payload_len_tot:000086308743  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:8  pct_non_ack:0.181818
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:12
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:56085  frame_count:399  syn_count:0  fin_count:1  rst_count:0  isn:002218140215  "seq_gap_pos_count %":0.03  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000127385  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:232
+frame stats  tcp_pair_key:192.168.210.21:65082-192.168.210.51:1092  frame_count:4820  syn_count:0  fin_count:1  rst_count:0  isn:001973585968  "seq_gap_pos_count %":0.0481228  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000007685  tcp_payload_len_tot:000002953925  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:56
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:65082  frame_count:4701  syn_count:0  fin_count:1  rst_count:0  isn:001639259422  "seq_gap_pos_count %":0.0119098  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000849284  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:128
+gaps_neg!!!  seq_gap_ned_count:3
+frame stats  tcp_pair_key:192.168.210.31:60258-192.168.210.51:1092  frame_count:1821  syn_count:0  fin_count:1  rst_count:0  isn:000210222322  "seq_gap_pos_count %":0.0702525  "seq_gap_neg_count %":0.00164654
+kafka stats  kafka_count:279  kafka_len_tot:000065995470  tcp_payload_len_tot:000091459147  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:53  pct_non_ack:0.189286
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:6
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:60258  frame_count:388  syn_count:0  fin_count:1  rst_count:0  isn:002039841178  "seq_gap_pos_count %":0.0154242  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000119931  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:152
+frame stats  tcp_pair_key:192.168.210.51:54601-192.168.210.31:1090  frame_count:1180  syn_count:0  fin_count:1  rst_count:0  isn:002373941503  "seq_gap_pos_count %":0.128704  "seq_gap_neg_count %":0
+kafka stats  kafka_count:28  kafka_len_tot:000054375408  tcp_payload_len_tot:000053681775  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0689655
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:11
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:54601  frame_count:368  syn_count:0  fin_count:1  rst_count:0  isn:003458135676  "seq_gap_pos_count %":0.0298103  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000118872  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:143
+frame stats  tcp_pair_key:192.168.210.51:56041-192.168.210.21:1089  frame_count:1203  syn_count:0  fin_count:1  rst_count:0  isn:000917722396  "seq_gap_pos_count %":0.118771  "seq_gap_neg_count %":0
+kafka stats  kafka_count:28  kafka_len_tot:000064356912  tcp_payload_len_tot:000056720998  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.0344828
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:9
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:56041  frame_count:370  syn_count:0  fin_count:1  rst_count:0  isn:000732847870  "seq_gap_pos_count %":0.0242588  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000119031  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:65
+frame stats  tcp_pair_key:192.168.210.21:49748-192.168.210.51:1092  frame_count:1806  syn_count:0  fin_count:1  rst_count:0  isn:002397213192  "seq_gap_pos_count %":0.0359712  "seq_gap_neg_count %":0
+kafka stats  kafka_count:163  kafka_len_tot:000060861522  tcp_payload_len_tot:000092034890  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:33  pct_non_ack:0.20122
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:7
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:49748  frame_count:381  syn_count:0  fin_count:1  rst_count:0  isn:003798268776  "seq_gap_pos_count %":0.0183246  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000120170  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:124
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.31:64093-192.168.210.51:1092  frame_count:1866  syn_count:0  fin_count:1  rst_count:0  isn:003793421139  "seq_gap_pos_count %":0.0664167  "seq_gap_neg_count %":0.000535619
+kafka stats  kafka_count:133  kafka_len_tot:000086114637  tcp_payload_len_tot:000093994750  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:18  pct_non_ack:0.134328
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:10
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:64093  frame_count:396  syn_count:0  fin_count:1  rst_count:0  isn:003211409123  "seq_gap_pos_count %":0.0251889  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000129383  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:204
+frame stats  tcp_pair_key:192.168.210.51:54879-192.168.210.41:1091  frame_count:1729  syn_count:0  fin_count:1  rst_count:0  isn:000334050504  "seq_gap_pos_count %":0.117919  "seq_gap_neg_count %":0
+kafka stats  kafka_count:54  kafka_len_tot:000080590666  tcp_payload_len_tot:000087647746  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:8  pct_non_ack:0.145455
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:4
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:54879  frame_count:346  syn_count:0  fin_count:1  rst_count:0  isn:002199065463  "seq_gap_pos_count %":0.0115274  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000131260  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:196
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.51:61839-192.168.210.21:1089  frame_count:1850  syn_count:0  fin_count:1  rst_count:0  isn:003149431081  "seq_gap_pos_count %":0.105889  "seq_gap_neg_count %":0.000540249
+kafka stats  kafka_count:42  kafka_len_tot:000093307914  tcp_payload_len_tot:000095120785  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0465116
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:14
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:61839  frame_count:404  syn_count:0  fin_count:1  rst_count:0  isn:001904858133  "seq_gap_pos_count %":0.0345679  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000127544  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:135
+frame stats  tcp_pair_key:192.168.210.51:52488-192.168.210.31:1090  frame_count:1896  syn_count:0  fin_count:1  rst_count:0  isn:002227493643  "seq_gap_pos_count %":0.071165  "seq_gap_neg_count %":0
+kafka stats  kafka_count:42  kafka_len_tot:000090965741  tcp_payload_len_tot:000098646550  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:4  pct_non_ack:0.0930233
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:12
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:52488  frame_count:401  syn_count:0  fin_count:1  rst_count:0  isn:002803089501  "seq_gap_pos_count %":0.0298507  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000127958  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:126
+frame stats  tcp_pair_key:192.168.210.51:56868-192.168.210.41:1091  frame_count:2018  syn_count:0  fin_count:1  rst_count:0  isn:001823155617  "seq_gap_pos_count %":0.0624071  "seq_gap_neg_count %":0
+kafka stats  kafka_count:46  kafka_len_tot:000082729221  tcp_payload_len_tot:000104836162  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:6  pct_non_ack:0.12766
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:56868  frame_count:343  syn_count:0  fin_count:1  rst_count:0  isn:002135984928  "seq_gap_pos_count %":0.00581395  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000133972  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:152
+gaps_neg!!!  seq_gap_ned_count:2
+frame stats  tcp_pair_key:192.168.210.41:56936-192.168.210.51:1092  frame_count:1670  syn_count:0  fin_count:1  rst_count:0  isn:001745283339  "seq_gap_pos_count %":0.0909635  "seq_gap_neg_count %":0.00119689
+kafka stats  kafka_count:32  kafka_len_tot:000068924480  tcp_payload_len_tot:000077214667  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0606061
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:7
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:56936  frame_count:374  syn_count:0  fin_count:1  rst_count:0  isn:001405428032  "seq_gap_pos_count %":0.0186667  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000121734  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:84
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.41:62529-192.168.210.51:1092  frame_count:1650  syn_count:0  fin_count:1  rst_count:0  isn:000385494562  "seq_gap_pos_count %":0.0508783  "seq_gap_neg_count %":0.000605693
+kafka stats  kafka_count:33  kafka_len_tot:000058615316  tcp_payload_len_tot:000082396996  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0588235
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:62529  frame_count:389  syn_count:0  fin_count:1  rst_count:0  isn:002863349508  "seq_gap_pos_count %":0.00512821  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000125144  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:128
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.31:54136-192.168.210.51:1092  frame_count:1754  syn_count:0  fin_count:0  rst_count:0  isn:001349616810  "seq_gap_pos_count %":0.0729345  "seq_gap_neg_count %":0.000569801
+kafka stats  kafka_count:123  kafka_len_tot:000083867354  tcp_payload_len_tot:000088115676  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:31  pct_non_ack:0.25
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:8
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:54136  frame_count:398  syn_count:0  fin_count:0  rst_count:1  isn:002373939109  "seq_gap_pos_count %":0.0200501  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000122247  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:132
+gaps_neg!!!  seq_gap_ned_count:3
+frame stats  tcp_pair_key:192.168.210.31:63605-192.168.210.51:1092  frame_count:1969  syn_count:0  fin_count:1  rst_count:0  isn:000093334662  "seq_gap_pos_count %":0.0670051  "seq_gap_neg_count %":0.00152284
+kafka stats  kafka_count:190  kafka_len_tot:000074185078  tcp_payload_len_tot:000095974669  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:38  pct_non_ack:0.198953
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:6
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:63605  frame_count:397  syn_count:0  fin_count:1  rst_count:0  isn:000775392743  "seq_gap_pos_count %":0.0150754  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000121600  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:97
+gaps_neg!!!  seq_gap_ned_count:3
+frame stats  tcp_pair_key:192.168.210.31:53385-192.168.210.51:1092  frame_count:1634  syn_count:0  fin_count:1  rst_count:0  isn:000197311606  "seq_gap_pos_count %":0.0593272  "seq_gap_neg_count %":0.00183486
+kafka stats  kafka_count:86  kafka_len_tot:000064403301  tcp_payload_len_tot:000075819896  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:23  pct_non_ack:0.264368
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:10
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:53385  frame_count:372  syn_count:0  fin_count:1  rst_count:0  isn:002499877296  "seq_gap_pos_count %":0.0268097  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000119214  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:115
+frame stats  tcp_pair_key:192.168.210.31:61796-192.168.210.51:1092  frame_count:1547  syn_count:0  fin_count:1  rst_count:0  isn:001690675890  "seq_gap_pos_count %":0.0742894  "seq_gap_neg_count %":0
+kafka stats  kafka_count:271  kafka_len_tot:000040246940  tcp_payload_len_tot:000076242548  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:"P`g}q"
+kafka_non_ack_count:56  pct_non_ack:0.205882
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:6
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:61796  frame_count:378  syn_count:0  fin_count:1  rst_count:0  isn:003073567458  "seq_gap_pos_count %":0.0158311  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000119887  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:87
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.21:59309-192.168.210.51:1092  frame_count:1758  syn_count:0  fin_count:1  rst_count:0  isn:003474562814  "seq_gap_pos_count %":0.0494599  "seq_gap_neg_count %":0.000568505
+kafka stats  kafka_count:114  kafka_len_tot:000082160295  tcp_payload_len_tot:000087707750  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:,
+kafka_non_ack_count:31  pct_non_ack:0.269565
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:9
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:59309  frame_count:401  syn_count:0  fin_count:1  rst_count:0  isn:000973277805  "seq_gap_pos_count %":0.0223881  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000119913  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:137
+frame stats  tcp_pair_key:192.168.210.51:59181-192.168.210.31:1090  frame_count:1518  syn_count:0  fin_count:1  rst_count:0  isn:001089569478  "seq_gap_pos_count %":0.0901909  "seq_gap_neg_count %":0
+kafka stats  kafka_count:42  kafka_len_tot:000070629066  tcp_payload_len_tot:000075395561  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:7  pct_non_ack:0.162791
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:10
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:59181  frame_count:380  syn_count:0  fin_count:1  rst_count:0  isn:001414914647  "seq_gap_pos_count %":0.0262467  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000118156  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:137
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.51:53541-192.168.210.41:1091  frame_count:1603  syn_count:0  fin_count:1  rst_count:0  isn:003484370314  "seq_gap_pos_count %":0.0854115  "seq_gap_neg_count %":0.000623441
+kafka stats  kafka_count:39  kafka_len_tot:000072515178  tcp_payload_len_tot:000079694726  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:5  pct_non_ack:0.125
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:3
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:53541  frame_count:359  syn_count:0  fin_count:1  rst_count:0  isn:001738915156  "seq_gap_pos_count %":0.00833333  "seq_gap_neg_count %":0
+kafka stats  kafka_count:3  kafka_len_tot:000000072719  tcp_payload_len_tot:000000126107  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.51:65460-192.168.210.41:1091  frame_count:474  syn_count:0  fin_count:1  rst_count:0  isn:003574018452  "seq_gap_pos_count %":0.00421053  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000019866  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:1
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:65460  frame_count:475  syn_count:0  fin_count:1  rst_count:0  isn:002795420009  "seq_gap_pos_count %":0.00210084  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000019908  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.51:56340-192.168.210.21:1089  frame_count:474  syn_count:0  fin_count:1  rst_count:0  isn:000941186358  "seq_gap_pos_count %":0.00421053  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000019866  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:1
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:56340  frame_count:475  syn_count:0  fin_count:1  rst_count:0  isn:003880973718  "seq_gap_pos_count %":0.00210084  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000019908  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.51:62400-192.168.210.31:1090  frame_count:474  syn_count:0  fin_count:1  rst_count:0  isn:003194534735  "seq_gap_pos_count %":0.00421053  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000019866  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:3
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:62400  frame_count:473  syn_count:0  fin_count:1  rst_count:0  isn:004212246519  "seq_gap_pos_count %":0.00632911  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000019824  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.21:51240-192.168.210.51:1092  frame_count:473  syn_count:0  fin_count:1  rst_count:0  isn:002573812759  "seq_gap_pos_count %":0.00421941  "seq_gap_neg_count %":0
+kafka stats  kafka_count:7  kafka_len_tot:000000017948  tcp_payload_len_tot:000000019824  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.125
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:3
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:51240  frame_count:472  syn_count:0  fin_count:1  rst_count:0  isn:000666917077  "seq_gap_pos_count %":0.00634249  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000019782  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:146
+gaps_neg!!!  seq_gap_ned_count:3
+frame stats  tcp_pair_key:192.168.210.31:60437-192.168.210.51:1092  frame_count:1895  syn_count:0  fin_count:1  rst_count:0  isn:000609575476  "seq_gap_pos_count %":0.0770042  "seq_gap_neg_count %":0.00158228
+kafka stats  kafka_count:142  kafka_len_tot:000081245594  tcp_payload_len_tot:000094167700  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:38  pct_non_ack:0.265734
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:3
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:60437  frame_count:397  syn_count:0  fin_count:1  rst_count:0  isn:001553003897  "seq_gap_pos_count %":0.00753769  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000121894  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:162
+frame stats  tcp_pair_key:192.168.210.51:62480-192.168.210.21:1089  frame_count:1548  syn_count:0  fin_count:1  rst_count:0  isn:003521687052  "seq_gap_pos_count %":0.104584  "seq_gap_neg_count %":0
+kafka stats  kafka_count:36  kafka_len_tot:000079805091  tcp_payload_len_tot:000077787951  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0540541
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:8
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:62480  frame_count:387  syn_count:0  fin_count:1  rst_count:0  isn:003763540784  "seq_gap_pos_count %":0.0206186  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000119453  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:152
+frame stats  tcp_pair_key:192.168.210.51:62060-192.168.210.31:1090  frame_count:1629  syn_count:0  fin_count:1  rst_count:0  isn:000016967767  "seq_gap_pos_count %":0.0932515  "seq_gap_neg_count %":0
+kafka stats  kafka_count:35  kafka_len_tot:000077789554  tcp_payload_len_tot:000082398068  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0555556
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:9
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:62060  frame_count:387  syn_count:0  fin_count:1  rst_count:0  isn:004200786537  "seq_gap_pos_count %":0.0231959  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000119340  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:128
+frame stats  tcp_pair_key:192.168.210.51:65193-192.168.210.31:1090  frame_count:1641  syn_count:0  fin_count:1  rst_count:0  isn:001625600331  "seq_gap_pos_count %":0.0779537  "seq_gap_neg_count %":0
+kafka stats  kafka_count:33  kafka_len_tot:000073119297  tcp_payload_len_tot:000081780101  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0588235
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:9
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:65193  frame_count:391  syn_count:0  fin_count:1  rst_count:0  isn:003051253362  "seq_gap_pos_count %":0.0229592  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000122485  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:131
+frame stats  tcp_pair_key:192.168.210.51:65313-192.168.210.41:1091  frame_count:1629  syn_count:0  fin_count:1  rst_count:0  isn:001270839715  "seq_gap_pos_count %":0.0803681  "seq_gap_neg_count %":0
+kafka stats  kafka_count:41  kafka_len_tot:000070825067  tcp_payload_len_tot:000081213597  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.047619
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:5
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:65313  frame_count:364  syn_count:0  fin_count:1  rst_count:0  isn:001838543880  "seq_gap_pos_count %":0.0136986  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000128093  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:102
+gaps_neg!!!  seq_gap_ned_count:3
+frame stats  tcp_pair_key:192.168.210.41:56687-192.168.210.51:1092  frame_count:1729  syn_count:0  fin_count:1  rst_count:0  isn:003972001702  "seq_gap_pos_count %":0.0589595  "seq_gap_neg_count %":0.0017341
+kafka stats  kafka_count:32  kafka_len_tot:000061328660  tcp_payload_len_tot:000082639380  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:3  pct_non_ack:0.0909091
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:5
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:56687  frame_count:378  syn_count:0  fin_count:1  rst_count:0  isn:003122466725  "seq_gap_pos_count %":0.0131926  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000121321  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.51:50654-192.168.210.21:1089  frame_count:318  syn_count:0  fin_count:1  rst_count:0  isn:001494737490  "seq_gap_pos_count %":0.00626959  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000068472  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:1
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:50654  frame_count:319  syn_count:0  fin_count:1  rst_count:0  isn:000839058782  "seq_gap_pos_count %":0.003125  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000118296  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:56654-192.168.210.31:1090  frame_count:320  syn_count:0  fin_count:1  rst_count:0  isn:002507056391  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000047108  tcp_payload_len_tot:000000068904  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:56654  frame_count:318  syn_count:0  fin_count:1  rst_count:0  isn:000863311177  "seq_gap_pos_count %":0.00626959  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000117924  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:205
+frame stats  tcp_pair_key:192.168.210.51:60047-192.168.210.41:1091  frame_count:1511  syn_count:0  fin_count:1  rst_count:0  isn:001347779355  "seq_gap_pos_count %":0.135582  "seq_gap_neg_count %":0
+kafka stats  kafka_count:49  kafka_len_tot:000070642390  tcp_payload_len_tot:000073760430  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:9  pct_non_ack:0.18
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:6
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:60047  frame_count:342  syn_count:0  fin_count:1  rst_count:0  isn:002520889643  "seq_gap_pos_count %":0.0174927  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000125949  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:216
+frame stats  tcp_pair_key:192.168.210.51:57107-192.168.210.31:1090  frame_count:1478  syn_count:0  fin_count:1  rst_count:0  isn:002076903852  "seq_gap_pos_count %":0.146045  "seq_gap_neg_count %":0
+kafka stats  kafka_count:37  kafka_len_tot:000075809665  tcp_payload_len_tot:000071880652  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:@
+kafka_non_ack_count:3  pct_non_ack:0.0789474
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:22
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:57107  frame_count:375  syn_count:0  fin_count:1  rst_count:0  isn:003036291407  "seq_gap_pos_count %":0.0585106  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000121113  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:97
+gaps_neg!!!  seq_gap_ned_count:2
+frame stats  tcp_pair_key:192.168.210.31:50792-192.168.210.51:1092  frame_count:1430  syn_count:0  fin_count:1  rst_count:0  isn:002283330839  "seq_gap_pos_count %":0.0677848  "seq_gap_neg_count %":0.00139762
+kafka stats  kafka_count:136  kafka_len_tot:000063223129  tcp_payload_len_tot:000068862697  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:32  pct_non_ack:0.233577
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:6
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:50792  frame_count:368  syn_count:0  fin_count:1  rst_count:0  isn:000267376066  "seq_gap_pos_count %":0.0162602  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000118945  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:50
+frame stats  tcp_pair_key:192.168.210.21:51310-192.168.210.51:1092  frame_count:1417  syn_count:0  fin_count:1  rst_count:0  isn:002892861059  "seq_gap_pos_count %":0.0352609  "seq_gap_neg_count %":0
+kafka stats  kafka_count:217  kafka_len_tot:000029449286  tcp_payload_len_tot:000069012602  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:45  pct_non_ack:0.206422
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:5
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:51310  frame_count:357  syn_count:0  fin_count:1  rst_count:0  isn:001550582548  "seq_gap_pos_count %":0.0139665  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000117202  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:71
+gaps_neg!!!  seq_gap_ned_count:2
+frame stats  tcp_pair_key:192.168.210.41:52512-192.168.210.51:1092  frame_count:1573  syn_count:0  fin_count:1  rst_count:0  isn:000641610182  "seq_gap_pos_count %":0.045108  "seq_gap_neg_count %":0.00127065
+kafka stats  kafka_count:35  kafka_len_tot:000054366236  tcp_payload_len_tot:000075980556  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0555556
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:7
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:52512  frame_count:373  syn_count:0  fin_count:1  rst_count:0  isn:002890011189  "seq_gap_pos_count %":0.0187166  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000121688  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:108
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.41:65314-192.168.210.51:1092  frame_count:1896  syn_count:0  fin_count:1  rst_count:0  isn:001547519610  "seq_gap_pos_count %":0.056932  "seq_gap_neg_count %":0.000527148
+kafka stats  kafka_count:38  kafka_len_tot:000077033144  tcp_payload_len_tot:000096168690  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0512821
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:4
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:65314  frame_count:392  syn_count:0  fin_count:1  rst_count:0  isn:002984713660  "seq_gap_pos_count %":0.0101781  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000122776  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1
+frame stats  tcp_pair_key:192.168.210.41:59220-192.168.210.51:1092  frame_count:471  syn_count:0  fin_count:1  rst_count:0  isn:001599723228  "seq_gap_pos_count %":0.00211864  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000019740  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:1
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:59220  frame_count:471  syn_count:0  fin_count:1  rst_count:0  isn:003954597609  "seq_gap_pos_count %":0.00211864  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000019740  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:148
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.31:51276-192.168.210.51:1092  frame_count:1747  syn_count:0  fin_count:1  rst_count:0  isn:000884014999  "seq_gap_pos_count %":0.0846682  "seq_gap_neg_count %":0.000572082
+kafka stats  kafka_count:302  kafka_len_tot:000019735286  tcp_payload_len_tot:000082179740  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:18  pct_non_ack:0.0594059
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:7
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:51276  frame_count:390  syn_count:0  fin_count:1  rst_count:0  isn:000856852842  "seq_gap_pos_count %":0.0179028  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000128624  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.51:53850-192.168.210.41:1091  frame_count:318  syn_count:0  fin_count:1  rst_count:0  isn:003661755472  "seq_gap_pos_count %":0.00626959  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000047108  tcp_payload_len_tot:000000068472  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:53850  frame_count:318  syn_count:0  fin_count:1  rst_count:0  isn:001697944601  "seq_gap_pos_count %":0.00626959  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000117924  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.51:52110-192.168.210.21:1089  frame_count:318  syn_count:0  fin_count:1  rst_count:0  isn:001234354328  "seq_gap_pos_count %":0.00626959  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000068472  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:1
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:52110  frame_count:319  syn_count:0  fin_count:1  rst_count:0  isn:001891789822  "seq_gap_pos_count %":0.003125  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000118296  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:137
+frame stats  tcp_pair_key:192.168.210.51:49567-192.168.210.41:1091  frame_count:1564  syn_count:0  fin_count:1  rst_count:0  isn:002357755016  "seq_gap_pos_count %":0.0875399  "seq_gap_neg_count %":0
+kafka stats  kafka_count:42  kafka_len_tot:000074322545  tcp_payload_len_tot:000077281691  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:7  pct_non_ack:0.162791
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:7
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:49567  frame_count:357  syn_count:0  fin_count:1  rst_count:0  isn:001504255615  "seq_gap_pos_count %":0.0195531  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000125379  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:138
+frame stats  tcp_pair_key:192.168.210.51:50347-192.168.210.31:1090  frame_count:1510  syn_count:0  fin_count:1  rst_count:0  isn:003902756378  "seq_gap_pos_count %":0.0913302  "seq_gap_neg_count %":0
+kafka stats  kafka_count:35  kafka_len_tot:000070601321  tcp_payload_len_tot:000075429984  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0555556
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:13
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:50347  frame_count:380  syn_count:0  fin_count:1  rst_count:0  isn:002319706020  "seq_gap_pos_count %":0.0341207  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000118278  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:111
+gaps_neg!!!  seq_gap_ned_count:2
+frame stats  tcp_pair_key:192.168.210.41:56129-192.168.210.51:1092  frame_count:1932  syn_count:0  fin_count:1  rst_count:0  isn:002818638137  "seq_gap_pos_count %":0.0574237  "seq_gap_neg_count %":0.00103466
+kafka stats  kafka_count:38  kafka_len_tot:000067444328  tcp_payload_len_tot:000090444986  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.0512821
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:5
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:56129  frame_count:394  syn_count:0  fin_count:1  rst_count:0  isn:003714551676  "seq_gap_pos_count %":0.0126582  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000125575  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:102
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.31:51181-192.168.210.51:1092  frame_count:1529  syn_count:0  fin_count:1  rst_count:0  isn:000131000495  "seq_gap_pos_count %":0.0666667  "seq_gap_neg_count %":0.000653595
+kafka stats  kafka_count:87  kafka_len_tot:000065779049  tcp_payload_len_tot:000073992058  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:23  pct_non_ack:0.261364
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:4
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:51181  frame_count:387  syn_count:0  fin_count:1  rst_count:0  isn:000911637202  "seq_gap_pos_count %":0.0103093  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000121207  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:152
+frame stats  tcp_pair_key:192.168.210.51:60312-192.168.210.21:1089  frame_count:1902  syn_count:0  fin_count:1  rst_count:0  isn:002565457591  "seq_gap_pos_count %":0.0798739  "seq_gap_neg_count %":0
+kafka stats  kafka_count:48  kafka_len_tot:000097125131  tcp_payload_len_tot:000099512131  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:8  pct_non_ack:0.163265
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:12
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:60312  frame_count:404  syn_count:0  fin_count:1  rst_count:0  isn:000026669868  "seq_gap_pos_count %":0.0296296  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000126089  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:155
+frame stats  tcp_pair_key:192.168.210.51:64992-192.168.210.41:1091  frame_count:1951  syn_count:0  fin_count:1  rst_count:0  isn:000573553499  "seq_gap_pos_count %":0.0794057  "seq_gap_neg_count %":0
+kafka stats  kafka_count:49  kafka_len_tot:000090081819  tcp_payload_len_tot:000101455092  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:6  pct_non_ack:0.12
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:3
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:64992  frame_count:340  syn_count:0  fin_count:1  rst_count:0  isn:002842177665  "seq_gap_pos_count %":0.00879765  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000134457  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:124
+gaps_neg!!!  seq_gap_ned_count:2
+frame stats  tcp_pair_key:192.168.210.31:57757-192.168.210.51:1092  frame_count:1768  syn_count:0  fin_count:1  rst_count:0  isn:001511500054  "seq_gap_pos_count %":0.0700961  "seq_gap_neg_count %":0.00113058
+kafka stats  kafka_count:165  kafka_len_tot:000052094076  tcp_payload_len_tot:000085687104  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:40  pct_non_ack:0.240964
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:7
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:57757  frame_count:382  syn_count:0  fin_count:1  rst_count:0  isn:000307739346  "seq_gap_pos_count %":0.0182768  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000120213  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.41:60120-192.168.210.51:1092  frame_count:6  syn_count:0  fin_count:1  rst_count:0  isn:001649553947  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000000015  tcp_payload_len_tot:000000000265  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:60120  frame_count:6  syn_count:0  fin_count:1  rst_count:0  isn:003028022823  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000012865  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:54000-192.168.210.51:1092  frame_count:6  syn_count:0  fin_count:1  rst_count:0  isn:000252500468  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000000015  tcp_payload_len_tot:000000000265  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:54000  frame_count:6  syn_count:0  fin_count:1  rst_count:0  isn:000157079321  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000012865  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:65100-192.168.210.31:1090  frame_count:6  syn_count:0  fin_count:1  rst_count:0  isn:002209454576  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000000015  tcp_payload_len_tot:000000000265  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:65100  frame_count:6  syn_count:0  fin_count:1  rst_count:0  isn:002802621470  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000013135  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:53580-192.168.210.21:1089  frame_count:6  syn_count:0  fin_count:1  rst_count:0  isn:001363069318  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:5  kafka_len_tot:000000000075  tcp_payload_len_tot:000000000265  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.166667
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:53580  frame_count:6  syn_count:0  fin_count:1  rst_count:0  isn:002348732253  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000013140  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:61020-192.168.210.41:1091  frame_count:6  syn_count:0  fin_count:1  rst_count:0  isn:003109193458  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000000015  tcp_payload_len_tot:000000000265  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:61020  frame_count:6  syn_count:0  fin_count:1  rst_count:0  isn:001598602963  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000012645  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:58505-192.168.210.41:1091  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:004047072190  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:58505  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:004239359154  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:52727-192.168.210.21:1089  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000975918859  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:52727  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002569034416  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:60956-192.168.210.21:1089  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002260341469  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:60956  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000756601623  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:63776-192.168.210.31:1090  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:003209905670  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:63776  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:003011427211  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:50438-192.168.210.21:1089  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001198915536  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:50438  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001103695518  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:50165-192.168.210.31:1090  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001639263057  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:50165  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000670282271  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:49725-192.168.210.21:1089  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001705044679  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:49725  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002247809722  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:61221-192.168.210.21:1089  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001896916612  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:61221  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:004021524731  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:51033-192.168.210.21:1089  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:003003829938  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:51033  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002276353715  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:62858-192.168.210.41:1091  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000865283207  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:62858  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001993882317  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:61870-192.168.210.31:1090  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:003439785066  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:61870  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002009215652  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:54010-192.168.210.21:1089  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002498168398  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:54010  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001490394985  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:52278-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000035602010  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:52278  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002930707597  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:59285-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000779410963  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:59285  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:003792166466  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:65068-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001501030680  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:65068  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000204230800  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:61404-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001936477398  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:61404  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000794343989  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:59007-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:003072781052  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:59007  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002136589715  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:54863-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001314727361  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:54863  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002513985335  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:64605-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002735504363  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:64605  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002375551852  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:61372-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:003341567891  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:61372  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001982719444  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:54481-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002664463099  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:54481  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002070187326  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.41:49691-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000749636769  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:49691  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:004272427028  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.41:59338-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000927082386  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:59338  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002023749359  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.41:55946-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002247715534  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:55946  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001455685411  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.41:59432-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001856188680  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:59432  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001435617440  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.41:59907-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:004200760063  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:59907  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001629722282  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.41:52595-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001095160554  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:52595  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002367133536  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:51289-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:003639261635  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:51289  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001967303549  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:57664-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002074990439  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:57664  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001677904761  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:49399-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000377265911  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:49399  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000787185485  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:54027-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:004269745000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:54027  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000298284199  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:51778-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000697473032  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:51778  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002481724465  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:52688-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000952850062  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:52688  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001353687684  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:60675-192.168.210.51:1092  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:004089806197  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:60675  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000338675570  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:59580-192.168.210.21:1089  frame_count:3  syn_count:1  fin_count:1  rst_count:0  isn:000392586911  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000000018  tcp_payload_len_tot:000000000191  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:59580  frame_count:3  syn_count:1  fin_count:1  rst_count:0  isn:001285112891  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000002229  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:57780-192.168.210.41:1091  frame_count:3  syn_count:1  fin_count:1  rst_count:0  isn:001248895232  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000032  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:57780  frame_count:3  syn_count:1  fin_count:1  rst_count:0  isn:001817525926  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000002566  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.51:51780-192.168.210.21:1089  frame_count:3  syn_count:1  fin_count:1  rst_count:0  isn:002626699813  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000000018  tcp_payload_len_tot:000000000191  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:51780  frame_count:3  syn_count:1  fin_count:1  rst_count:0  isn:003061766478  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000002256  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:81
+frame stats  tcp_pair_key:192.168.210.21:62400-192.168.210.51:1092  frame_count:907  syn_count:1  fin_count:0  rst_count:0  isn:004105023658  "seq_gap_pos_count %":0.089207  "seq_gap_neg_count %":0
+kafka stats  kafka_count:15  kafka_len_tot:000000039996  tcp_payload_len_tot:000000038052  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.125
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:78
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:62400  frame_count:915  syn_count:1  fin_count:0  rst_count:0  isn:003781992189  "seq_gap_pos_count %":0.0851528  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000038388  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:59
+frame stats  tcp_pair_key:192.168.210.21:49500-192.168.210.51:1092  frame_count:702  syn_count:1  fin_count:0  rst_count:0  isn:000496600172  "seq_gap_pos_count %":0.083926  "seq_gap_neg_count %":0
+kafka stats  kafka_count:3  kafka_len_tot:000000112151  tcp_payload_len_tot:000000172925  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.5
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:55
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:49500  frame_count:707  syn_count:1  fin_count:0  rst_count:0  isn:001415804683  "seq_gap_pos_count %":0.0776836  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000271238  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:69
+frame stats  tcp_pair_key:192.168.210.31:64260-192.168.210.51:1092  frame_count:937  syn_count:1  fin_count:0  rst_count:0  isn:000005743090  "seq_gap_pos_count %":0.0735608  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000039312  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:79
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:64260  frame_count:926  syn_count:1  fin_count:0  rst_count:0  isn:002979357029  "seq_gap_pos_count %":0.0852211  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000038850  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:75
+frame stats  tcp_pair_key:192.168.210.41:60900-192.168.210.51:1092  frame_count:942  syn_count:1  fin_count:0  rst_count:0  isn:002716093774  "seq_gap_pos_count %":0.0795334  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000039522  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:77
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:60900  frame_count:937  syn_count:1  fin_count:0  rst_count:0  isn:003900943000  "seq_gap_pos_count %":0.0820896  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000039312  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:72
+frame stats  tcp_pair_key:192.168.210.51:64920-192.168.210.41:1091  frame_count:950  syn_count:1  fin_count:0  rst_count:0  isn:001526305763  "seq_gap_pos_count %":0.0757098  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000039858  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:82
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:64920  frame_count:936  syn_count:1  fin_count:0  rst_count:0  isn:000224483845  "seq_gap_pos_count %":0.0875133  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000039270  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:72
+frame stats  tcp_pair_key:192.168.210.51:64680-192.168.210.21:1089  frame_count:944  syn_count:1  fin_count:0  rst_count:0  isn:003044655626  "seq_gap_pos_count %":0.0761905  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000039606  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:85
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:64680  frame_count:929  syn_count:1  fin_count:0  rst_count:0  isn:001468033549  "seq_gap_pos_count %":0.0913979  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000038976  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:89
+frame stats  tcp_pair_key:192.168.210.51:55800-192.168.210.31:1090  frame_count:932  syn_count:1  fin_count:0  rst_count:0  isn:001013322382  "seq_gap_pos_count %":0.0953912  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000039102  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:90
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:55800  frame_count:917  syn_count:1  fin_count:0  rst_count:0  isn:000167954247  "seq_gap_pos_count %":0.0980392  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000038472  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2427
+gaps_neg!!!  seq_gap_ned_count:18
+frame stats  tcp_pair_key:192.168.210.41:61323-192.168.210.51:1092  frame_count:19148  syn_count:1  fin_count:0  rst_count:0  isn:001419880676  "seq_gap_pos_count %":0.126743  "seq_gap_neg_count %":0.000939997
+kafka stats  kafka_count:651  kafka_len_tot:001067373974  tcp_payload_len_tot:001069065181  ind_client_id_n:4
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:+
+client_id_key:9PfR,B
+client_id_key:m/
+kafka_non_ack_count:65  pct_non_ack:0.0996933
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:210
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:61323  frame_count:1718  syn_count:1  fin_count:0  rst_count:0  isn:000603736200  "seq_gap_pos_count %":0.122164  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000309255  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.41:59490-192.168.210.51:1092  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:002534955434  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000003103  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:59490  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:003135940553  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000001815  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.41:62706-192.168.210.51:1092  frame_count:10  syn_count:1  fin_count:0  rst_count:0  isn:002398226208  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000003187  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:62706  frame_count:10  syn_count:1  fin_count:0  rst_count:0  isn:000949343872  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000001877  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2488
+gaps_neg!!!  seq_gap_ned_count:25
+frame stats  tcp_pair_key:192.168.210.41:64030-192.168.210.51:1092  frame_count:18681  syn_count:1  fin_count:0  rst_count:0  isn:002406921492  "seq_gap_pos_count %":0.133176  "seq_gap_neg_count %":0.00133819
+kafka stats  kafka_count:585  kafka_len_tot:001110502154  tcp_payload_len_tot:001032826555  ind_client_id_n:3
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:c
+client_id_key:$g
+kafka_non_ack_count:55  pct_non_ack:0.0938567
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:217
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:64030  frame_count:1883  syn_count:1  fin_count:0  rst_count:0  isn:002601470442  "seq_gap_pos_count %":0.11518  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000290160  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2570
+gaps_neg!!!  seq_gap_ned_count:16
+frame stats  tcp_pair_key:192.168.210.41:58033-192.168.210.51:1092  frame_count:18365  syn_count:1  fin_count:0  rst_count:0  isn:002974945682  "seq_gap_pos_count %":0.139932  "seq_gap_neg_count %":0.000871175
+kafka stats  kafka_count:589  kafka_len_tot:001129366224  tcp_payload_len_tot:001053957896  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:"("
+kafka_non_ack_count:48  pct_non_ack:0.0813559
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:214
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:58033  frame_count:1606  syn_count:1  fin_count:0  rst_count:0  isn:001174271520  "seq_gap_pos_count %":0.133167  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000267251  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.41:56351-192.168.210.51:1092  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:002842372957  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000003103  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:56351  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:001804812817  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000001815  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.41:60215-192.168.210.51:1092  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:003919007196  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000003103  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:60215  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:000745621726  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000001815  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2270
+gaps_neg!!!  seq_gap_ned_count:21
+frame stats  tcp_pair_key:192.168.210.41:61302-192.168.210.51:1092  frame_count:17953  syn_count:1  fin_count:0  rst_count:0  isn:001313386340  "seq_gap_pos_count %":0.126434  "seq_gap_neg_count %":0.00116966
+kafka stats  kafka_count:565  kafka_len_tot:001085945644  tcp_payload_len_tot:001027296715  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:47  pct_non_ack:0.0830389
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:182
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:61302  frame_count:1571  syn_count:1  fin_count:0  rst_count:0  isn:002720545638  "seq_gap_pos_count %":0.115776  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000266583  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2373
+gaps_neg!!!  seq_gap_ned_count:22
+frame stats  tcp_pair_key:192.168.210.41:51714-192.168.210.51:1092  frame_count:17454  syn_count:1  fin_count:0  rst_count:0  isn:000219953208  "seq_gap_pos_count %":0.13595  "seq_gap_neg_count %":0.00126038
+kafka stats  kafka_count:554  kafka_len_tot:001054448914  tcp_payload_len_tot:000988715114  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:T
+kafka_non_ack_count:44  pct_non_ack:0.0792793
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:206
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:51714  frame_count:1538  syn_count:1  fin_count:0  rst_count:0  isn:000257853212  "seq_gap_pos_count %":0.133853  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000279285  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2332
+gaps_neg!!!  seq_gap_ned_count:19
+frame stats  tcp_pair_key:192.168.210.41:55419-192.168.210.51:1092  frame_count:19216  syn_count:1  fin_count:0  rst_count:0  isn:000810032578  "seq_gap_pos_count %":0.121351  "seq_gap_neg_count %":0.000988708
+kafka stats  kafka_count:645  kafka_len_tot:001166775575  tcp_payload_len_tot:001105586475  ind_client_id_n:3
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:"kb#"
+client_id_key:o
+kafka_non_ack_count:55  pct_non_ack:0.0851393
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:192
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:55419  frame_count:1671  syn_count:1  fin_count:0  rst_count:0  isn:003656848418  "seq_gap_pos_count %":0.114833  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000270766  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1285
+gaps_neg!!!  seq_gap_ned_count:11
+frame stats  tcp_pair_key:192.168.210.41:51343-192.168.210.51:1092  frame_count:12406  syn_count:1  fin_count:0  rst_count:0  isn:003307469598  "seq_gap_pos_count %":0.103571  "seq_gap_neg_count %":0.000886596
+kafka stats  kafka_count:361  kafka_len_tot:000654951805  tcp_payload_len_tot:000701070982  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:43  pct_non_ack:0.118785
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:82
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:51343  frame_count:1259  syn_count:1  fin_count:0  rst_count:0  isn:000192851082  "seq_gap_pos_count %":0.0650794  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000190881  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2578
+gaps_neg!!!  seq_gap_ned_count:22
+frame stats  tcp_pair_key:192.168.210.21:64105-192.168.210.51:1092  frame_count:15543  syn_count:1  fin_count:0  rst_count:0  isn:004032231309  "seq_gap_pos_count %":0.165852  "seq_gap_neg_count %":0.00141534
+kafka stats  kafka_count:2035  kafka_len_tot:000919930401  tcp_payload_len_tot:000854366015  ind_client_id_n:3
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:G,
+client_id_key:"d#"
+kafka_non_ack_count:152  pct_non_ack:0.0746562
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:212
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:64105  frame_count:1359  syn_count:1  fin_count:0  rst_count:0  isn:003131135090  "seq_gap_pos_count %":0.155882  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000284181  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2241
+gaps_neg!!!  seq_gap_ned_count:11
+frame stats  tcp_pair_key:192.168.210.21:51065-192.168.210.51:1092  frame_count:15479  syn_count:1  fin_count:0  rst_count:0  isn:002231600549  "seq_gap_pos_count %":0.144767  "seq_gap_neg_count %":0.000710594
+kafka stats  kafka_count:1576  kafka_len_tot:001032687583  tcp_payload_len_tot:000884968897  ind_client_id_n:4
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key::
+client_id_key:"]"
+client_id_key:PK
+kafka_non_ack_count:144  pct_non_ack:0.0913126
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:206
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:51065  frame_count:1536  syn_count:1  fin_count:0  rst_count:0  isn:000184417843  "seq_gap_pos_count %":0.134027  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000297869  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:50560-192.168.210.51:1092  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:002727058411  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000003103  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:50560  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:002172598343  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000001815  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:54148-192.168.210.51:1092  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:001027525889  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000003103  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:54148  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:002887914729  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000001815  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:61776-192.168.210.51:1092  frame_count:10  syn_count:1  fin_count:0  rst_count:0  isn:003609621158  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000003389  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:61776  frame_count:10  syn_count:1  fin_count:0  rst_count:0  isn:000414430232  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000002187  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2331
+gaps_neg!!!  seq_gap_ned_count:22
+frame stats  tcp_pair_key:192.168.210.21:62215-192.168.210.51:1092  frame_count:14507  syn_count:1  fin_count:0  rst_count:0  isn:003283208472  "seq_gap_pos_count %":0.16067  "seq_gap_neg_count %":0.0015164
+kafka stats  kafka_count:2038  kafka_len_tot:000551113920  tcp_payload_len_tot:000810561030  ind_client_id_n:3
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:$
+client_id_key:8U
+kafka_non_ack_count:161  pct_non_ack:0.0789603
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:196
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:62215  frame_count:1363  syn_count:1  fin_count:0  rst_count:0  isn:002383361950  "seq_gap_pos_count %":0.143695  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000280130  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2554
+gaps_neg!!!  seq_gap_ned_count:25
+frame stats  tcp_pair_key:192.168.210.21:64861-192.168.210.51:1092  frame_count:15982  syn_count:1  fin_count:0  rst_count:0  isn:000016448970  "seq_gap_pos_count %":0.159795  "seq_gap_neg_count %":0.00156416
+kafka stats  kafka_count:1614  kafka_len_tot:001000046022  tcp_payload_len_tot:000863537268  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:138  pct_non_ack:0.0854489
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:200
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:64861  frame_count:1438  syn_count:1  fin_count:0  rst_count:0  isn:001923853328  "seq_gap_pos_count %":0.138985  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000293014  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2081
+gaps_neg!!!  seq_gap_ned_count:19
+frame stats  tcp_pair_key:192.168.210.21:61488-192.168.210.51:1092  frame_count:14123  syn_count:1  fin_count:0  rst_count:0  isn:001062622244  "seq_gap_pos_count %":0.147338  "seq_gap_neg_count %":0.00134523
+kafka stats  kafka_count:1472  kafka_len_tot:000829592200  tcp_payload_len_tot:000784991355  ind_client_id_n:4
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:4
+client_id_key:s0
+client_id_key:l
+kafka_non_ack_count:140  pct_non_ack:0.0950441
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:209
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:61488  frame_count:1265  syn_count:1  fin_count:0  rst_count:0  isn:001935503697  "seq_gap_pos_count %":0.165087  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000265864  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2377
+gaps_neg!!!  seq_gap_ned_count:18
+frame stats  tcp_pair_key:192.168.210.21:61204-192.168.210.51:1092  frame_count:14591  syn_count:1  fin_count:0  rst_count:0  isn:000918581866  "seq_gap_pos_count %":0.162897  "seq_gap_neg_count %":0.00123355
+kafka stats  kafka_count:2086  kafka_len_tot:000544869070  tcp_payload_len_tot:000813814108  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:143  pct_non_ack:0.0685194
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:194
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:61204  frame_count:1333  syn_count:1  fin_count:0  rst_count:0  isn:002329153241  "seq_gap_pos_count %":0.145427  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000284432  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2149
+gaps_neg!!!  seq_gap_ned_count:10
+frame stats  tcp_pair_key:192.168.210.21:49413-192.168.210.51:1092  frame_count:14688  syn_count:1  fin_count:0  rst_count:0  isn:000157854403  "seq_gap_pos_count %":0.1463  "seq_gap_neg_count %":0.000680782
+kafka stats  kafka_count:3401  kafka_len_tot:000233373101  tcp_payload_len_tot:000840329579  ind_client_id_n:4
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:$
+client_id_key:"("
+client_id_key:"g{"
+kafka_non_ack_count:165  pct_non_ack:0.0485009
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:186
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:49413  frame_count:1376  syn_count:1  fin_count:0  rst_count:0  isn:002436289096  "seq_gap_pos_count %":0.135076  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000288316  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.21:51171-192.168.210.51:1092  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:001121873873  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000003103  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:51171  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:000556518868  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000001815  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2298
+gaps_neg!!!  seq_gap_ned_count:19
+frame stats  tcp_pair_key:192.168.210.21:57989-192.168.210.51:1092  frame_count:14223  syn_count:1  fin_count:0  rst_count:0  isn:001582485792  "seq_gap_pos_count %":0.161558  "seq_gap_neg_count %":0.00133577
+kafka stats  kafka_count:1476  kafka_len_tot:000743684502  tcp_payload_len_tot:000795305913  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:141  pct_non_ack:0.0954638
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:217
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:57989  frame_count:1269  syn_count:1  fin_count:0  rst_count:0  isn:003483674310  "seq_gap_pos_count %":0.170866  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000265714  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.41:64320-192.168.210.51:1092  frame_count:13  syn_count:1  fin_count:0  rst_count:0  isn:003357021465  "seq_gap_pos_count %":0.142857  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000000015  tcp_payload_len_tot:000000001652  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:3
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:64320  frame_count:12  syn_count:1  fin_count:0  rst_count:0  isn:001266541911  "seq_gap_pos_count %":0.230769  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000023439  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1
+frame stats  tcp_pair_key:192.168.210.31:52320-192.168.210.51:1092  frame_count:12  syn_count:1  fin_count:0  rst_count:0  isn:003577924798  "seq_gap_pos_count %":0.0769231  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000000015  tcp_payload_len_tot:000000002431  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:1
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:52320  frame_count:11  syn_count:1  fin_count:0  rst_count:0  isn:000542196697  "seq_gap_pos_count %":0.0833333  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000018327  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:63093-192.168.210.51:1092  frame_count:8  syn_count:1  fin_count:0  rst_count:0  isn:003140995285  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000002817  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:63093  frame_count:8  syn_count:1  fin_count:0  rst_count:0  isn:003090434579  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000001443  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1622
+gaps_neg!!!  seq_gap_ned_count:14
+frame stats  tcp_pair_key:192.168.210.31:57272-192.168.210.51:1092  frame_count:15322  syn_count:1  fin_count:0  rst_count:0  isn:003350777753  "seq_gap_pos_count %":0.105854  "seq_gap_neg_count %":0.000913659
+kafka stats  kafka_count:1523  kafka_len_tot:000678727314  tcp_payload_len_tot:000872860816  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:eW
+kafka_non_ack_count:214  pct_non_ack:0.14042
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:94
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:57272  frame_count:1144  syn_count:1  fin_count:0  rst_count:0  isn:001301655926  "seq_gap_pos_count %":0.0820961  "seq_gap_neg_count %":0
+kafka stats  kafka_count:9  kafka_len_tot:000000051422  tcp_payload_len_tot:000000202541  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1847
+gaps_neg!!!  seq_gap_ned_count:15
+frame stats  tcp_pair_key:192.168.210.31:61180-192.168.210.51:1092  frame_count:15687  syn_count:1  fin_count:0  rst_count:0  isn:002558394252  "seq_gap_pos_count %":0.117733  "seq_gap_neg_count %":0.000956145
+kafka stats  kafka_count:3378  kafka_len_tot:000122015904  tcp_payload_len_tot:000891934903  ind_client_id_n:6
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:ZEe
+client_id_key:AaI
+client_id_key:"="
+client_id_key:"}U"
+client_id_key:",=xx."
+kafka_non_ack_count:315  pct_non_ack:0.0932228
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:89
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:61180  frame_count:1112  syn_count:1  fin_count:0  rst_count:0  isn:001233011051  "seq_gap_pos_count %":0.0799641  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000204238  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:64018-192.168.210.51:1092  frame_count:8  syn_count:1  fin_count:0  rst_count:0  isn:002177579561  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000002817  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:64018  frame_count:8  syn_count:1  fin_count:0  rst_count:0  isn:002288410892  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000001443  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2408
+gaps_neg!!!  seq_gap_ned_count:18
+frame stats  tcp_pair_key:192.168.210.31:51853-192.168.210.51:1092  frame_count:18856  syn_count:1  fin_count:0  rst_count:0  isn:000371977117  "seq_gap_pos_count %":0.127698  "seq_gap_neg_count %":0.000954553
+kafka stats  kafka_count:1921  kafka_len_tot:001049626629  tcp_payload_len_tot:001068284415  ind_client_id_n:4
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:E
+client_id_key:"]"
+client_id_key:d
+kafka_non_ack_count:320  pct_non_ack:0.166493
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:241
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:51853  frame_count:1644  syn_count:1  fin_count:0  rst_count:0  isn:000479515352  "seq_gap_pos_count %":0.146505  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051320  tcp_payload_len_tot:000000296652  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:59402-192.168.210.51:1092  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:002255078508  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000002901  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:59402  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:000659852701  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000001505  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:57054-192.168.210.51:1092  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:000928322575  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000003103  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:57054  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:003137214469  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000001815  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1532
+gaps_neg!!!  seq_gap_ned_count:30
+frame stats  tcp_pair_key:192.168.210.31:55411-192.168.210.51:1092  frame_count:14638  syn_count:1  fin_count:0  rst_count:0  isn:003539311749  "seq_gap_pos_count %":0.104652  "seq_gap_neg_count %":0.00204932
+kafka stats  kafka_count:1315  kafka_len_tot:000585293993  tcp_payload_len_tot:000818443468  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:"|b"
+kafka_non_ack_count:200  pct_non_ack:0.151976
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:84
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:55411  frame_count:1032  syn_count:1  fin_count:0  rst_count:0  isn:000266015624  "seq_gap_pos_count %":0.0813166  "seq_gap_neg_count %":0
+kafka stats  kafka_count:3  kafka_len_tot:000000051262  tcp_payload_len_tot:000000181041  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2375
+gaps_neg!!!  seq_gap_ned_count:26
+frame stats  tcp_pair_key:192.168.210.31:57587-192.168.210.51:1092  frame_count:19804  syn_count:1  fin_count:0  rst_count:0  isn:001546629270  "seq_gap_pos_count %":0.119919  "seq_gap_neg_count %":0.0013128
+kafka stats  kafka_count:1692  kafka_len_tot:001072471609  tcp_payload_len_tot:001107529743  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:bX@
+kafka_non_ack_count:304  pct_non_ack:0.179563
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:209
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:57587  frame_count:1751  syn_count:1  fin_count:0  rst_count:0  isn:002067311368  "seq_gap_pos_count %":0.119292  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000282771  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:64581-192.168.210.51:1092  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:001079740758  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000002901  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:64581  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:000506437830  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000001505  ind_client_id_n:0
+======================client to broker 
+frame stats  tcp_pair_key:192.168.210.31:60939-192.168.210.51:1092  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:003742976783  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000002901  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:60939  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:003478877340  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000001505  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1636
+gaps_neg!!!  seq_gap_ned_count:14
+frame stats  tcp_pair_key:192.168.210.31:53525-192.168.210.51:1092  frame_count:13253  syn_count:1  fin_count:0  rst_count:0  isn:002934068992  "seq_gap_pos_count %":0.123434  "seq_gap_neg_count %":0.00105628
+kafka stats  kafka_count:1035  kafka_len_tot:000657263107  tcp_payload_len_tot:000742142774  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:y
+kafka_non_ack_count:189  pct_non_ack:0.182432
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:79
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:53525  frame_count:1081  syn_count:1  fin_count:0  rst_count:0  isn:000841415351  "seq_gap_pos_count %":0.0730129  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000181295  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2406
+gaps_neg!!!  seq_gap_ned_count:23
+frame stats  tcp_pair_key:192.168.210.31:58443-192.168.210.51:1092  frame_count:20915  syn_count:1  fin_count:0  rst_count:0  isn:003709956001  "seq_gap_pos_count %":0.115032  "seq_gap_neg_count %":0.00109964
+kafka stats  kafka_count:4711  kafka_len_tot:000757318276  tcp_payload_len_tot:001214860814  ind_client_id_n:5
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:"W]"
+client_id_key:%
+client_id_key:s
+client_id_key:">"
+kafka_non_ack_count:685  pct_non_ack:0.145374
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:187
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:58443  frame_count:1629  syn_count:1  fin_count:0  rst_count:0  isn:000300786176  "seq_gap_pos_count %":0.114724  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000269443  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2371
+gaps_neg!!!  seq_gap_ned_count:18
+frame stats  tcp_pair_key:192.168.210.31:52784-192.168.210.51:1092  frame_count:19137  syn_count:1  fin_count:0  rst_count:0  isn:001293763507  "seq_gap_pos_count %":0.12389  "seq_gap_neg_count %":0.000940537
+kafka stats  kafka_count:1886  kafka_len_tot:001244776287  tcp_payload_len_tot:001080802926  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:357  pct_non_ack:0.189189
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:221
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:52784  frame_count:1966  syn_count:1  fin_count:0  rst_count:0  isn:002583891142  "seq_gap_pos_count %":0.112354  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000051210  tcp_payload_len_tot:000000309629  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:14
+frame stats  tcp_pair_key:192.168.210.21:54861-192.168.210.51:1092  frame_count:393  syn_count:1  fin_count:0  rst_count:0  isn:001023222102  "seq_gap_pos_count %":0.035533  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000064776  tcp_payload_len_tot:000000084460  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.666667
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:16
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:54861  frame_count:391  syn_count:1  fin_count:0  rst_count:0  isn:003639032588  "seq_gap_pos_count %":0.0408163  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000143472  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:58
+frame stats  tcp_pair_key:192.168.210.41:51961-192.168.210.51:1092  frame_count:618  syn_count:1  fin_count:0  rst_count:0  isn:003902315881  "seq_gap_pos_count %":0.0936995  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000133192  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:56
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:51961  frame_count:620  syn_count:1  fin_count:0  rst_count:0  isn:000954704693  "seq_gap_pos_count %":0.0901771  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000228970  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1169
+gaps_neg!!!  seq_gap_ned_count:12
+frame stats  tcp_pair_key:192.168.210.41:55978-192.168.210.51:1092  frame_count:12107  syn_count:1  fin_count:0  rst_count:0  isn:003920382282  "seq_gap_pos_count %":0.0965477  "seq_gap_neg_count %":0.00099108
+kafka stats  kafka_count:310  kafka_len_tot:000638463109  tcp_payload_len_tot:000690498635  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:"{"
+kafka_non_ack_count:26  pct_non_ack:0.0836013
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:56
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:55978  frame_count:989  syn_count:1  fin_count:0  rst_count:0  isn:000246271339  "seq_gap_pos_count %":0.0565657  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000165569  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2458
+gaps_neg!!!  seq_gap_ned_count:14
+frame stats  tcp_pair_key:192.168.210.41:49622-192.168.210.51:1092  frame_count:18360  syn_count:1  fin_count:0  rst_count:0  isn:002121821574  "seq_gap_pos_count %":0.133871  "seq_gap_neg_count %":0.000762486
+kafka stats  kafka_count:570  kafka_len_tot:001071856172  tcp_payload_len_tot:001041183352  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:"?"
+kafka_non_ack_count:49  pct_non_ack:0.0858144
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:212
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:49622  frame_count:1522  syn_count:1  fin_count:0  rst_count:0  isn:000586465549  "seq_gap_pos_count %":0.139199  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000291165  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2055
+gaps_neg!!!  seq_gap_ned_count:3
+frame stats  tcp_pair_key:192.168.210.51:54947-192.168.210.21:1089  frame_count:13194  syn_count:1  fin_count:0  rst_count:0  isn:000782264084  "seq_gap_pos_count %":0.155741  "seq_gap_neg_count %":0.000227359
+kafka stats  kafka_count:586  kafka_len_tot:001028074375  tcp_payload_len_tot:000766878322  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:@
+kafka_non_ack_count:77  pct_non_ack:0.131175
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:228
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:54947  frame_count:1499  syn_count:1  fin_count:0  rst_count:0  isn:003893141851  "seq_gap_pos_count %":0.152  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000349831  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2159
+frame stats  tcp_pair_key:192.168.210.51:55367-192.168.210.41:1091  frame_count:12526  syn_count:1  fin_count:0  rst_count:0  isn:003157634377  "seq_gap_pos_count %":0.172348  "seq_gap_neg_count %":0
+kafka stats  kafka_count:592  kafka_len_tot:000966979157  tcp_payload_len_tot:000728531025  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:z
+kafka_non_ack_count:72  pct_non_ack:0.121417
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:255
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:55367  frame_count:1798  syn_count:1  fin_count:0  rst_count:0  isn:003048372357  "seq_gap_pos_count %":0.141745  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000336029  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1966
+gaps_neg!!!  seq_gap_ned_count:2
+frame stats  tcp_pair_key:192.168.210.51:62786-192.168.210.21:1089  frame_count:14593  syn_count:1  fin_count:0  rst_count:0  isn:004268838220  "seq_gap_pos_count %":0.134713  "seq_gap_neg_count %":0.000137043
+kafka stats  kafka_count:610  kafka_len_tot:001096858882  tcp_payload_len_tot:000851861792  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:73  pct_non_ack:0.119476
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:216
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:62786  frame_count:1592  syn_count:1  fin_count:0  rst_count:0  isn:002001232592  "seq_gap_pos_count %":0.135593  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000354888  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2037
+frame stats  tcp_pair_key:192.168.210.51:50846-192.168.210.41:1091  frame_count:13694  syn_count:1  fin_count:0  rst_count:0  isn:002269299073  "seq_gap_pos_count %":0.14874  "seq_gap_neg_count %":0
+kafka stats  kafka_count:622  kafka_len_tot:001033408522  tcp_payload_len_tot:000804935760  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:77  pct_non_ack:0.123596
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:244
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:50846  frame_count:1896  syn_count:1  fin_count:0  rst_count:0  isn:001110890980  "seq_gap_pos_count %":0.128624  "seq_gap_neg_count %":0.000527148
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000320909  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2106
+gaps_neg!!!  seq_gap_ned_count:4
+frame stats  tcp_pair_key:192.168.210.51:64617-192.168.210.41:1091  frame_count:12658  syn_count:1  fin_count:0  rst_count:0  isn:002759435564  "seq_gap_pos_count %":0.166364  "seq_gap_neg_count %":0.000315981
+kafka stats  kafka_count:521  kafka_len_tot:000971057338  tcp_payload_len_tot:000740322162  ind_client_id_n:4
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:TN
+client_id_key:T
+client_id_key:"|"
+kafka_non_ack_count:59  pct_non_ack:0.113027
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:238
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:64617  frame_count:1626  syn_count:1  fin_count:0  rst_count:0  isn:002166736115  "seq_gap_pos_count %":0.146281  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000301843  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1909
+gaps_neg!!!  seq_gap_ned_count:2
+frame stats  tcp_pair_key:192.168.210.51:60357-192.168.210.21:1089  frame_count:13145  syn_count:1  fin_count:0  rst_count:0  isn:004059153920  "seq_gap_pos_count %":0.145215  "seq_gap_neg_count %":0.000152138
+kafka stats  kafka_count:528  kafka_len_tot:000995721100  tcp_payload_len_tot:000770587410  ind_client_id_n:3
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:P
+client_id_key:%
+kafka_non_ack_count:66  pct_non_ack:0.124764
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:191
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:60357  frame_count:1403  syn_count:1  fin_count:0  rst_count:0  isn:002061090166  "seq_gap_pos_count %":0.13604  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000330130  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:18
+frame stats  tcp_pair_key:192.168.210.21:65475-192.168.210.51:1092  frame_count:387  syn_count:1  fin_count:0  rst_count:0  isn:001494685624  "seq_gap_pos_count %":0.0463918  "seq_gap_neg_count %":0
+kafka stats  kafka_count:2  kafka_len_tot:000000064776  tcp_payload_len_tot:000000083266  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:2  pct_non_ack:0.666667
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:12
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:65475  frame_count:392  syn_count:1  fin_count:0  rst_count:0  isn:003540219781  "seq_gap_pos_count %":0.0305344  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000143844  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1520
+gaps_neg!!!  seq_gap_ned_count:15
+frame stats  tcp_pair_key:192.168.210.31:54507-192.168.210.51:1092  frame_count:14222  syn_count:1  fin_count:0  rst_count:0  isn:002872630317  "seq_gap_pos_count %":0.106869  "seq_gap_neg_count %":0.00105463
+kafka stats  kafka_count:3067  kafka_len_tot:000076495010  tcp_payload_len_tot:000814291762  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:q
+kafka_non_ack_count:322  pct_non_ack:0.104954
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:78
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:54507  frame_count:1029  syn_count:1  fin_count:0  rst_count:0  isn:001722075815  "seq_gap_pos_count %":0.0757282  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000186070  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1861
+gaps_neg!!!  seq_gap_ned_count:2
+frame stats  tcp_pair_key:192.168.210.51:58930-192.168.210.21:1089  frame_count:12621  syn_count:1  fin_count:0  rst_count:0  isn:001130742655  "seq_gap_pos_count %":0.147441  "seq_gap_neg_count %":0.000158453
+kafka stats  kafka_count:571  kafka_len_tot:000950763165  tcp_payload_len_tot:000749023225  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:,F
+kafka_non_ack_count:71  pct_non_ack:0.124126
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:186
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:58930  frame_count:1261  syn_count:1  fin_count:0  rst_count:0  isn:004135673343  "seq_gap_pos_count %":0.147385  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000304081  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1877
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.51:49870-192.168.210.31:1090  frame_count:12567  syn_count:1  fin_count:0  rst_count:0  isn:000466977614  "seq_gap_pos_count %":0.149348  "seq_gap_neg_count %":7.95672e-05
+kafka stats  kafka_count:522  kafka_len_tot:000985638259  tcp_payload_len_tot:000754164354  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:"\\"
+kafka_non_ack_count:52  pct_non_ack:0.0994264
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:239
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:49870  frame_count:1472  syn_count:1  fin_count:0  rst_count:0  isn:004167558259  "seq_gap_pos_count %":0.162254  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000269945  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2482
+gaps_neg!!!  seq_gap_ned_count:23
+frame stats  tcp_pair_key:192.168.210.31:62284-192.168.210.51:1092  frame_count:19329  syn_count:1  fin_count:0  rst_count:0  isn:001071155953  "seq_gap_pos_count %":0.128401  "seq_gap_neg_count %":0.00118986
+kafka stats  kafka_count:2628  kafka_len_tot:000873051393  tcp_payload_len_tot:001086808631  ind_client_id_n:3
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:$
+client_id_key:8@
+kafka_non_ack_count:410  pct_non_ack:0.155953
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:191
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:62284  frame_count:1499  syn_count:1  fin_count:0  rst_count:0  isn:002457276923  "seq_gap_pos_count %":0.127333  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000277007  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2460
+gaps_neg!!!  seq_gap_ned_count:20
+frame stats  tcp_pair_key:192.168.210.21:58770-192.168.210.51:1092  frame_count:15373  syn_count:1  fin_count:0  rst_count:0  isn:003689598436  "seq_gap_pos_count %":0.16001  "seq_gap_neg_count %":0.0013009
+kafka stats  kafka_count:3462  kafka_len_tot:000746299538  tcp_payload_len_tot:000860262578  ind_client_id_n:3
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:V
+client_id_key:"("
+kafka_non_ack_count:161  pct_non_ack:0.0464915
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:206
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:58770  frame_count:1357  syn_count:1  fin_count:0  rst_count:0  isn:004194073469  "seq_gap_pos_count %":0.151694  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000275140  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2434
+gaps_neg!!!  seq_gap_ned_count:26
+frame stats  tcp_pair_key:192.168.210.31:56929-192.168.210.51:1092  frame_count:19406  syn_count:1  fin_count:0  rst_count:0  isn:002086916271  "seq_gap_pos_count %":0.125419  "seq_gap_neg_count %":0.00133972
+kafka stats  kafka_count:2586  kafka_len_tot:000653894949  tcp_payload_len_tot:001115278114  ind_client_id_n:3
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:LT^
+client_id_key:A
+kafka_non_ack_count:450  pct_non_ack:0.173947
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:220
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:56929  frame_count:1456  syn_count:1  fin_count:0  rst_count:0  isn:000931012044  "seq_gap_pos_count %":0.150995  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000244422  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2325
+gaps_neg!!!  seq_gap_ned_count:13
+frame stats  tcp_pair_key:192.168.210.41:49297-192.168.210.51:1092  frame_count:18213  syn_count:1  fin_count:0  rst_count:0  isn:001986950986  "seq_gap_pos_count %":0.127649  "seq_gap_neg_count %":0.000713737
+kafka stats  kafka_count:548  kafka_len_tot:001093750830  tcp_payload_len_tot:001036452390  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:47  pct_non_ack:0.0856102
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:232
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:49297  frame_count:1911  syn_count:1  fin_count:0  rst_count:0  isn:003613257661  "seq_gap_pos_count %":0.121339  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000299224  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2369
+gaps_neg!!!  seq_gap_ned_count:10
+frame stats  tcp_pair_key:192.168.210.41:55145-192.168.210.51:1092  frame_count:18783  syn_count:1  fin_count:0  rst_count:0  isn:001189131641  "seq_gap_pos_count %":0.126118  "seq_gap_neg_count %":0.000532368
+kafka stats  kafka_count:599  kafka_len_tot:001134385456  tcp_payload_len_tot:001058696266  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:u3
+kafka_non_ack_count:55  pct_non_ack:0.0916667
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:223
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:55145  frame_count:1991  syn_count:1  fin_count:0  rst_count:0  isn:003120705845  "seq_gap_pos_count %":0.111948  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000312445  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1576
+gaps_neg!!!  seq_gap_ned_count:12
+frame stats  tcp_pair_key:192.168.210.41:58268-192.168.210.51:1092  frame_count:14503  syn_count:1  fin_count:0  rst_count:0  isn:001962072063  "seq_gap_pos_count %":0.10866  "seq_gap_neg_count %":0.000827358
+kafka stats  kafka_count:419  kafka_len_tot:000795608398  tcp_payload_len_tot:000841979373  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:37  pct_non_ack:0.0880952
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:94
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.41:58268  frame_count:1181  syn_count:1  fin_count:0  rst_count:0  isn:002746610369  "seq_gap_pos_count %":0.0795262  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000202899  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1514
+gaps_neg!!!  seq_gap_ned_count:11
+frame stats  tcp_pair_key:192.168.210.31:65025-192.168.210.51:1092  frame_count:14085  syn_count:1  fin_count:0  rst_count:0  isn:001123528132  "seq_gap_pos_count %":0.107483  "seq_gap_neg_count %":0.000780917
+kafka stats  kafka_count:1775  kafka_len_tot:000697341822  tcp_payload_len_tot:000802760185  ind_client_id_n:3
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:h
+client_id_key:U
+kafka_non_ack_count:271  pct_non_ack:0.15259
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:68
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.31:65025  frame_count:1094  syn_count:1  fin_count:0  rst_count:0  isn:004123653620  "seq_gap_pos_count %":0.0621005  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000172910  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:1
+frame stats  tcp_pair_key:192.168.210.51:63960-192.168.210.21:1089  frame_count:15  syn_count:1  fin_count:0  rst_count:0  isn:003825546644  "seq_gap_pos_count %":0.0625  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000000015  tcp_payload_len_tot:000000001445  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:1
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:63960  frame_count:15  syn_count:1  fin_count:0  rst_count:0  isn:002927148640  "seq_gap_pos_count %":0.0625  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000024199  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:3
+frame stats  tcp_pair_key:192.168.210.51:65220-192.168.210.31:1090  frame_count:14  syn_count:1  fin_count:0  rst_count:0  isn:003874661175  "seq_gap_pos_count %":0.2  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000000015  tcp_payload_len_tot:000000001386  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:4
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:65220  frame_count:13  syn_count:1  fin_count:0  rst_count:0  isn:000456468102  "seq_gap_pos_count %":0.285714  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000021568  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.51:59760-192.168.210.41:1091  frame_count:15  syn_count:1  fin_count:0  rst_count:0  isn:004054974614  "seq_gap_pos_count %":0.125  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000000015  tcp_payload_len_tot:000000001439  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:1  pct_non_ack:0.5
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:2
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:59760  frame_count:15  syn_count:1  fin_count:0  rst_count:0  isn:001550763516  "seq_gap_pos_count %":0.125  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000025923  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:747
+frame stats  tcp_pair_key:192.168.210.51:64342-192.168.210.41:1091  frame_count:5076  syn_count:1  fin_count:0  rst_count:0  isn:001413173225  "seq_gap_pos_count %":0.147134  "seq_gap_neg_count %":0
+kafka stats  kafka_count:313  kafka_len_tot:000435650304  tcp_payload_len_tot:000306984334  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:39  pct_non_ack:0.124204
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:139
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:64342  frame_count:596  syn_count:1  fin_count:0  rst_count:0  isn:000135972851  "seq_gap_pos_count %":0.232831  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000100123  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:290
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.51:51142-192.168.210.21:1089  frame_count:3517  syn_count:1  fin_count:0  rst_count:0  isn:002755729027  "seq_gap_pos_count %":0.0824332  "seq_gap_neg_count %":0.000284252
+kafka stats  kafka_count:147  kafka_len_tot:000247871346  tcp_payload_len_tot:000208613564  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:"="
+kafka_non_ack_count:26  pct_non_ack:0.175676
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:59
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:51142  frame_count:382  syn_count:1  fin_count:0  rst_count:0  isn:001155710011  "seq_gap_pos_count %":0.154047  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000073580  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:805
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.51:60770-192.168.210.31:1090  frame_count:4541  syn_count:1  fin_count:0  rst_count:0  isn:003345273923  "seq_gap_pos_count %":0.177235  "seq_gap_neg_count %":0.000220167
+kafka stats  kafka_count:210  kafka_len_tot:000445957333  tcp_payload_len_tot:000258016183  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:22  pct_non_ack:0.104265
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:161
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:60770  frame_count:775  syn_count:1  fin_count:0  rst_count:0  isn:000649656035  "seq_gap_pos_count %":0.207474  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000121681  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:779
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.51:49550-192.168.210.41:1091  frame_count:4490  syn_count:1  fin_count:0  rst_count:0  isn:003423920579  "seq_gap_pos_count %":0.173458  "seq_gap_neg_count %":0.000222668
+kafka stats  kafka_count:241  kafka_len_tot:000448399651  tcp_payload_len_tot:000257380722  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:"|"
+kafka_non_ack_count:31  pct_non_ack:0.128099
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:150
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:49550  frame_count:785  syn_count:1  fin_count:0  rst_count:0  isn:001690008338  "seq_gap_pos_count %":0.19084  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000125191  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:723
+gaps_neg!!!  seq_gap_ned_count:2
+frame stats  tcp_pair_key:192.168.210.21:63598-192.168.210.51:1092  frame_count:2927  syn_count:1  fin_count:0  rst_count:0  isn:003826063604  "seq_gap_pos_count %":0.246926  "seq_gap_neg_count %":0.00068306
+kafka stats  kafka_count:407  kafka_len_tot:000206789300  tcp_payload_len_tot:000162196153  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:49  pct_non_ack:0.120098
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:115
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:63598  frame_count:383  syn_count:1  fin_count:0  rst_count:0  isn:002793557847  "seq_gap_pos_count %":0.299479  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000093342  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:251
+frame stats  tcp_pair_key:192.168.210.51:56563-192.168.210.21:1089  frame_count:3049  syn_count:1  fin_count:0  rst_count:0  isn:000203591677  "seq_gap_pos_count %":0.0822951  "seq_gap_neg_count %":0
+kafka stats  kafka_count:134  kafka_len_tot:000208008155  tcp_payload_len_tot:000179664374  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:22  pct_non_ack:0.162963
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:54
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:56563  frame_count:353  syn_count:1  fin_count:0  rst_count:0  isn:002593896138  "seq_gap_pos_count %":0.152542  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000070224  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:656
+frame stats  tcp_pair_key:192.168.210.51:51043-192.168.210.31:1090  frame_count:4498  syn_count:1  fin_count:0  rst_count:0  isn:000886340879  "seq_gap_pos_count %":0.14581  "seq_gap_neg_count %":0
+kafka stats  kafka_count:215  kafka_len_tot:000396446930  tcp_payload_len_tot:000270040398  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:23  pct_non_ack:0.106481
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:133
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:51043  frame_count:527  syn_count:1  fin_count:0  rst_count:0  isn:003880877379  "seq_gap_pos_count %":0.251894  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000092271  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:38
+frame stats  tcp_pair_key:192.168.210.51:65248-192.168.210.21:1089  frame_count:229  syn_count:1  fin_count:0  rst_count:0  isn:003465153300  "seq_gap_pos_count %":0.165217  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000049315  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:40
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:65248  frame_count:220  syn_count:1  fin_count:0  rst_count:0  isn:003466479803  "seq_gap_pos_count %":0.180995  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000080982  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:36
+frame stats  tcp_pair_key:192.168.210.51:64168-192.168.210.31:1090  frame_count:229  syn_count:0  fin_count:0  rst_count:0  isn:002931120073  "seq_gap_pos_count %":0.156522  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000049531  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:38
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:64168  frame_count:226  syn_count:1  fin_count:0  rst_count:0  isn:003799864014  "seq_gap_pos_count %":0.167401  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000083214  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:631
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.51:57039-192.168.210.21:1089  frame_count:3080  syn_count:1  fin_count:0  rst_count:0  isn:001129841381  "seq_gap_pos_count %":0.204804  "seq_gap_neg_count %":0.00032457
+kafka stats  kafka_count:170  kafka_len_tot:000356655164  tcp_payload_len_tot:000176375171  ind_client_id_n:2
+kafka client_id list (req only) 
+client_id_key:""
+client_id_key:r7
+kafka_non_ack_count:21  pct_non_ack:0.122807
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:107
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:57039  frame_count:393  syn_count:1  fin_count:0  rst_count:0  isn:003650416446  "seq_gap_pos_count %":0.271574  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000106433  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:682
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.51:54039-192.168.210.31:1090  frame_count:2983  syn_count:1  fin_count:0  rst_count:0  isn:000229789533  "seq_gap_pos_count %":0.228552  "seq_gap_neg_count %":0.000335121
+kafka stats  kafka_count:186  kafka_len_tot:000331771403  tcp_payload_len_tot:000173964239  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:21  pct_non_ack:0.112299
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:144
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:54039  frame_count:476  syn_count:1  fin_count:0  rst_count:0  isn:003549767803  "seq_gap_pos_count %":0.301887  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000000006  tcp_payload_len_tot:000000103813  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:642
+frame stats  tcp_pair_key:192.168.210.51:53986-192.168.210.31:1090  frame_count:3306  syn_count:1  fin_count:0  rst_count:0  isn:000895338438  "seq_gap_pos_count %":0.194134  "seq_gap_neg_count %":0
+kafka stats  kafka_count:201  kafka_len_tot:000351738213  tcp_payload_len_tot:000196450101  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:20  pct_non_ack:0.0990099
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:129
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:53986  frame_count:471  syn_count:1  fin_count:0  rst_count:0  isn:002655166387  "seq_gap_pos_count %":0.273305  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000085580  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:658
+frame stats  tcp_pair_key:192.168.210.51:50146-192.168.210.41:1091  frame_count:3239  syn_count:1  fin_count:0  rst_count:0  isn:000422921895  "seq_gap_pos_count %":0.203086  "seq_gap_neg_count %":0
+kafka stats  kafka_count:185  kafka_len_tot:000327705425  tcp_payload_len_tot:000189810270  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:19  pct_non_ack:0.102151
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:116
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:50146  frame_count:471  syn_count:1  fin_count:0  rst_count:0  isn:004233539745  "seq_gap_pos_count %":0.245763  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000087380  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:39
+frame stats  tcp_pair_key:192.168.210.51:52151-192.168.210.41:1091  frame_count:226  syn_count:1  fin_count:0  rst_count:0  isn:001525408202  "seq_gap_pos_count %":0.171806  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000048586  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:40
+frame stats  tcp_pair_key:192.168.210.41:1091-192.168.210.51:52151  frame_count:224  syn_count:1  fin_count:0  rst_count:0  isn:002444567077  "seq_gap_pos_count %":0.177778  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000082211  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:45
+frame stats  tcp_pair_key:192.168.210.51:52751-192.168.210.21:1089  frame_count:216  syn_count:1  fin_count:0  rst_count:0  isn:002013387181  "seq_gap_pos_count %":0.207373  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000046426  ind_client_id_n:0
+kafka client_id list (req only) 
+kafka_non_ack_count:0  pct_non_ack:0
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:39
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:52751  frame_count:226  syn_count:1  fin_count:0  rst_count:0  isn:001201937872  "seq_gap_pos_count %":0.171806  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000083327  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:545
+frame stats  tcp_pair_key:192.168.210.51:63052-192.168.210.31:1090  frame_count:2683  syn_count:1  fin_count:0  rst_count:0  isn:000018143731  "seq_gap_pos_count %":0.203055  "seq_gap_neg_count %":0
+kafka stats  kafka_count:173  kafka_len_tot:000299291207  tcp_payload_len_tot:000158250815  ind_client_id_n:3
+kafka client_id list (req only) 
+client_id_key:8
+client_id_key:""
+client_id_key:l
+kafka_non_ack_count:19  pct_non_ack:0.109195
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:131
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:63052  frame_count:430  syn_count:1  fin_count:0  rst_count:0  isn:000219120941  "seq_gap_pos_count %":0.303944  "seq_gap_neg_count %":0
+kafka stats  kafka_count:1  kafka_len_tot:000000000006  tcp_payload_len_tot:000000089517  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:558
+gaps_neg!!!  seq_gap_ned_count:2
+frame stats  tcp_pair_key:192.168.210.51:51352-192.168.210.21:1089  frame_count:2670  syn_count:0  fin_count:0  rst_count:0  isn:000835486352  "seq_gap_pos_count %":0.208911  "seq_gap_neg_count %":0.000748783
+kafka stats  kafka_count:155  kafka_len_tot:000313628067  tcp_payload_len_tot:000152373379  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:17  pct_non_ack:0.108974
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:102
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:51352  frame_count:362  syn_count:0  fin_count:0  rst_count:0  isn:000145554692  "seq_gap_pos_count %":0.280992  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000095991  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:543
+frame stats  tcp_pair_key:192.168.210.51:59929-192.168.210.31:1090  frame_count:3715  syn_count:0  fin_count:0  rst_count:0  isn:003274582176  "seq_gap_pos_count %":0.146125  "seq_gap_neg_count %":0
+kafka stats  kafka_count:176  kafka_len_tot:000372236814  tcp_payload_len_tot:000224270120  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:16  pct_non_ack:0.0903955
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:121
+frame stats  tcp_pair_key:192.168.210.31:1090-192.168.210.51:59929  frame_count:443  syn_count:0  fin_count:0  rst_count:0  isn:003683722518  "seq_gap_pos_count %":0.272523  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000075153  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:237
+gaps_neg!!!  seq_gap_ned_count:1
+frame stats  tcp_pair_key:192.168.210.51:54169-192.168.210.21:1089  frame_count:2446  syn_count:0  fin_count:0  rst_count:0  isn:001936106578  "seq_gap_pos_count %":0.0968533  "seq_gap_neg_count %":0.000408664
+kafka stats  kafka_count:106  kafka_len_tot:000185656528  tcp_payload_len_tot:000144133460  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:15  pct_non_ack:0.140187
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:55
+frame stats  tcp_pair_key:192.168.210.21:1089-192.168.210.51:54169  frame_count:295  syn_count:0  fin_count:0  rst_count:0  isn:003628967948  "seq_gap_pos_count %":0.185811  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000057521  ind_client_id_n:0
+======================client to broker 
+gaps_pos!!!  seq_gap_pos_count:641
+gaps_neg!!!  seq_gap_ned_count:4
+frame stats  tcp_pair_key:192.168.210.21:62720-192.168.210.51:1092  frame_count:2705  syn_count:1  fin_count:0  rst_count:0  isn:003401757513  "seq_gap_pos_count %":0.236881  "seq_gap_neg_count %":0.0014782
+kafka stats  kafka_count:707  kafka_len_tot:000083091554  tcp_payload_len_tot:000147946418  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:""
+kafka_non_ack_count:48  pct_non_ack:0.0677966
+=============broker to client 
+gaps_pos!!!  seq_gap_pos_count:99
+frame stats  tcp_pair_key:192.168.210.51:1092-192.168.210.21:62720  frame_count:331  syn_count:1  fin_count:0  rst_count:0  isn:000697969602  "seq_gap_pos_count %":0.298193  "seq_gap_neg_count %":0
+kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000075105  ind_client_id_n:0
+=============rsp without req 
+======final stats  fname:/home/avorovich/pcap/rp_tap2.pcap  start_kafka_at_frame_boundary:N  pkt_count:1544657  elapsed:199.962  ind_tcp_pair_n:384  max_pkt_len:65521
+Kafka Non-ACK(BAD - request without response) Ratio Histogram:
+range:00-00%  count_of_tcp_pairs:234
+range:00-10%  count_of_tcp_pairs:45
+range:10-20%  count_of_tcp_pairs:51
+range:20-30%  count_of_tcp_pairs:12
+range:30-40%  count_of_tcp_pairs:2
+range:40-50%  count_of_tcp_pairs:21
+range:60-70%  count_of_tcp_pairs:19

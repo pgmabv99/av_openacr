@@ -28,6 +28,7 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.seq_gap           -arg i64 -write -com
 
 acr_ed -create -field x2bm_pcap.FTcp_pair.direction         -arg i32 -write -comment "direction :=1 (for req high->low port) =2 (for rsp)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.tcp_pay_len       -arg i64 -write -comment "tcp pay len for current frame"
+acr_ed -create -field x2bm_pcap.FTcp_pair.tsval             -arg u32 -write -comment "timestamp value of curent packet"
 # TCP stats
 acr_ed -create -field x2bm_pcap.FTcp_pair.frame_count       -arg i32 -write -comment "number of frames for this pair"
 acr_ed -create -field x2bm_pcap.FTcp_pair.syn_count         -arg i32 -write -comment "number of syn (connection start)"

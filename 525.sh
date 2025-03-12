@@ -39,6 +39,7 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.seq_gap_neg_count -arg u32 -write -com
 # kafka detection sliding window
 acr_ed -create -field x2bm_pcap.FTcp_pair.swin_buf          -arg u8  -reftype Tary -write -comment "p to sliding window buffer"
 acr_ed -create -field x2bm_pcap.FTcp_pair.swin_offset       -arg u64 -write -comment "sliding window offset"
+acr_ed -create -field  x2bm_pcap.FTcp_pair.kafka_req_corr_id -arg u32             -write  -comment "latest kafka req corr_id. used to prescreen rsp"
 # kafka stats
 acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_count       -arg u32 -write -comment "kafka count"
 acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_non_ack_count -arg u32 -write -comment "kafka non ack count"
@@ -72,6 +73,7 @@ acr_ed -create -field  x2bm_pcap.FTcp_pair.ind_client_id  -arg x2bm_pcap.FClient
 #-------------kafka req/rsp object
 acr_ed -create -ctype x2bm_pcap.FKafka               -pooltype Tpool       -write  -comment "Kafka req/rsp object"
 acr_ed -create -field  x2bm_pcap.FKafka.kafka_corr_id -arg u32             -write  -comment "correlation_id from hdr"
+acr_ed -create -field  x2bm_pcap.FKafka.kafka_len     -arg u32             -write  -comment "len of req/rsp w/o 4"
 acr_ed -create -field  x2bm_pcap.FKafka.iframe        -arg u32             -write  -comment "iframe of frame where the kafka completed "
 acr_ed -create -field  x2bm_pcap.FKafka.seq           -arg u32             -write  -comment "unused ;? seq of frame where the kafka started"
 acr_ed -create -field  x2bm_pcap.FKafka.ack           -arg u32             -write  -comment "0 intially, =1 when rsp is seen with same corr_id"

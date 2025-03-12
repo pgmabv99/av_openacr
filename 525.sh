@@ -85,14 +85,15 @@ acr_ed -create -field  x2bm_pcap.FTcp_pair.ind_kafka_corr_id -arg x2bm_pcap.FKaf
 
 #  set parms for x2bm_pcap
 acr -merge  -write <<EOF
-acr.delete dmmeta.field  field:command.x2bm_pcap.files  arg:algo.cstring  reftype:RegxSql  dflt:'""'  comment:""
-acr.delete dmmeta.field  field:command.x2bm_pcap.dir    arg:algo.cstring  reftype:RegxSql  dflt:'""'  comment:""
-acr.delete dmmeta.field  field:command.x2bm_pcap.ndisp  arg:i32  reftype:Val  dflt:5  comment:"default number pairs to display"
+acr.delete dmmeta.field  field:command.x2bm_pcap.files  
+acr.delete dmmeta.field  field:command.x2bm_pcap.dir     
+acr.delete dmmeta.field  field:command.x2bm_pcap.ndisp 
+acr.delete dmmeta.field  field:command.x2bm_pcap.kafka_at_frame
 EOF
 acr -merge -write <<EOF
-dmmeta.field  field:command.x2bm_pcap.files  arg:algo.cstring  reftype:RegxSql  dflt:'"%"'  comment:"Regx of file(s) to test"
+dmmeta.field  field:command.x2bm_pcap.files  arg:algo.cstring  reftype:RegxSql  dflt:'"%0%"'  comment:"Regx of file(s) to test"
 dmmeta.field  field:command.x2bm_pcap.dir   arg:algo.cstring  reftype:Val       dflt:'"/home/avorovich/pcap/"'  comment:"dir with file(s) to test"
-dmmeta.field  field:command.x2bm_pcap.ndisp  arg:i32  reftype:Val  dflt:5  comment:"default number pairs to display"
+dmmeta.field  field:command.x2bm_pcap.kafka_at_frame   arg:bool  reftype:Val       dflt:true  comment:"parse mode: true if kafka starts at  frame boundary"
 EOF
 
 amc

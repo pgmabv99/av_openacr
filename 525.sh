@@ -36,15 +36,17 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.fin_count         -arg i32 -write -com
 acr_ed -create -field x2bm_pcap.FTcp_pair.rst_count         -arg i32 -write -comment "number of rst (connection reset)"
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_gap_pos_count -arg u32 -write -comment "pos sequence gap count"
 acr_ed -create -field x2bm_pcap.FTcp_pair.seq_gap_neg_count -arg u32 -write -comment "neg sequence gap count"
+acr_ed -create -field x2bm_pcap.FTcp_pair.tcp_payload_len_tot -arg u32 -write -comment "total of tcp payload length per pair"
 # kafka detection sliding window
 acr_ed -create -field x2bm_pcap.FTcp_pair.swin_buf          -arg u8  -reftype Tary -write -comment "p to sliding window buffer"
 acr_ed -create -field x2bm_pcap.FTcp_pair.swin_offset       -arg u64 -write -comment "sliding window offset"
-acr_ed -create -field  x2bm_pcap.FTcp_pair.kafka_req_corr_id -arg u32             -write  -comment "latest kafka req corr_id. used to prescreen rsp"
+acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_req_corr_id -arg u32 -write -comment "latest kafka req corr_id. used to prescreen rsp"
+acr_ed -create -field x2bm_pcap.FTcp_pair.frame_in_kafka    -arg i32 -write -comment "=1 if current frame inside kafka req/rsp.  =0 otherwise"
 # kafka stats
-acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_count       -arg u32 -write -comment "kafka count"
-acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_non_ack_count -arg u32 -write -comment "kafka non ack count"
-acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_len_tot     -arg u32 -write -comment "total of kafka length per pair"
-acr_ed -create -field x2bm_pcap.FTcp_pair.tcp_payload_len_tot -arg u32 -write -comment "total of tcp payload length per pair"
+acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_count       -arg u32 -write -comment "kafka req/rsp count"
+acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_non_ack_count -arg u32 -write -comment "kafka req non ack count"
+acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_len_tot     -arg u32 -write -comment "total of kafka req/rsp length per pair"
+acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_per_frame_count   -arg u32 -write -comment "count of kafka req/rsp per frame"
 # pointers from above
 acr_ed -create -field x2bm_pcap.FDb.zd_tcp_pair -cascdel -write -comment ""
 
@@ -76,6 +78,7 @@ acr_ed -create -field  x2bm_pcap.FKafka.kafka_corr_id -arg u32             -writ
 acr_ed -create -field  x2bm_pcap.FKafka.kafka_len     -arg u32             -write  -comment "len of req/rsp w/o 4"
 acr_ed -create -field  x2bm_pcap.FKafka.iframe        -arg u32             -write  -comment "iframe of frame where the kafka completed "
 acr_ed -create -field  x2bm_pcap.FKafka.seq           -arg u32             -write  -comment "unused ;? seq of frame where the kafka started"
+acr_ed -create -field  x2bm_pcap.FKafka.index_in_frame   -arg u32             -write  -comment "index of kafka req/rsp in it's frame"
 acr_ed -create -field  x2bm_pcap.FKafka.ack           -arg u32             -write  -comment "0 intially, =1 when rsp is seen with same corr_id"
 acr_ed -create -field  x2bm_pcap.FKafka.p_tcp_pair    -arg x2bm_pcap.FTcp_pair -reftype Upptr -write  -comment  "tcp pair pointer"
 #  pointers from above

@@ -25,14 +25,14 @@ exit
 
 
 
-ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_all.log
-~/arnd/bin/x2bm_pcap > $ofile 2>&1; tail -n 20 $ofile
+ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_all_at_frame_true.log
+~/arnd/bin/x2bm_pcap -kafka_at_frame:true > $ofile 2>&1; tail -n 20 $ofile
 
 ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_all_at_frame_false.log
 ~/arnd/bin/x2bm_pcap -kafka_at_frame:false > $ofile 2>&1; tail -n 20 $ofile
 
-ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_one.log
-~/arnd/bin/x2bm_pcap > $ofile 2>&1; tail -n 20 $ofile
+ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_one_at_frame_true.log
+~/arnd/bin/x2bm_pcap -kafka_at_frame:true > $ofile 2>&1; tail -n 20 $ofile
 
 ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_one_at_frame_false.log
 ~/arnd/bin/x2bm_pcap -kafka_at_frame:false > $ofile 2>&1; tail -n 20 $ofile

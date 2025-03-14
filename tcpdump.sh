@@ -25,15 +25,15 @@ exit
 
 
 
-ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_all_at_frame_true.log
-~/arnd/bin/x2bm_pcap -kafka_at_frame:true > $ofile 2>&1; tail -n 20 $ofile
+ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_all_mult_true.log
+~/arnd/bin/x2bm_pcap -mult_req_per_frame:true > $ofile 2>&1; tail -n 20 $ofile
 
-ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_all_at_frame_false.log
-~/arnd/bin/x2bm_pcap -kafka_at_frame:false > $ofile 2>&1; tail -n 20 $ofile
+ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_all_mult_false.log
+~/arnd/bin/x2bm_pcap -mult_req_per_frame:false > $ofile 2>&1; tail -n 20 $ofile
 
-ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_one_at_frame_true.log
-~/arnd/bin/x2bm_pcap -kafka_at_frame:true > $ofile 2>&1; tail -n 20 $ofile
+ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_one_mult_true.log
+~/arnd/bin/x2bm_pcap -mult_req_per_frame:true > $ofile 2>&1; tail -n 20 $ofile
 
-ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_one_at_frame_false.log
-~/arnd/bin/x2bm_pcap -kafka_at_frame:false > $ofile 2>&1; tail -n 20 $ofile
+ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_one_mult_false.log
+~/arnd/bin/x2bm_pcap -mult_req_per_frame:false > $ofile 2>&1; tail -n 20 $ofile
 

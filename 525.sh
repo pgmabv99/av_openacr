@@ -41,7 +41,6 @@ acr_ed -create -field x2bm_pcap.FTcp_pair.tcp_payload_len_tot -arg u32 -write -c
 acr_ed -create -field x2bm_pcap.FTcp_pair.swin_buf          -arg u8  -reftype Tary -write -comment "p to sliding window buffer"
 acr_ed -create -field x2bm_pcap.FTcp_pair.swin_offset       -arg u64 -write -comment "sliding window offset"
 acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_req_corr_id -arg u32 -write -comment "latest kafka req corr_id. used to prescreen rsp"
-acr_ed -create -field x2bm_pcap.FTcp_pair.frame_in_kafka    -arg i32 -write -comment "=1 if current frame inside kafka req/rsp.  =0 otherwise"
 # kafka stats
 acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_count       -arg u32 -write -comment "kafka req/rsp count"
 acr_ed -create -field x2bm_pcap.FTcp_pair.kafka_non_ack_count -arg u32 -write -comment "kafka req non ack count"
@@ -92,11 +91,12 @@ acr.delete dmmeta.field  field:command.x2bm_pcap.files
 acr.delete dmmeta.field  field:command.x2bm_pcap.dir     
 acr.delete dmmeta.field  field:command.x2bm_pcap.ndisp 
 acr.delete dmmeta.field  field:command.x2bm_pcap.kafka_at_frame
+acr.delete dmmeta.field  field:command.x2bm_pcap.mult_req_per_frame
 EOF
 acr -merge -write <<EOF
 dmmeta.field  field:command.x2bm_pcap.files  arg:algo.cstring  reftype:RegxSql  dflt:'"%0%"'  comment:"Regx of file(s) to test"
 dmmeta.field  field:command.x2bm_pcap.dir   arg:algo.cstring  reftype:Val       dflt:'"/home/avorovich/pcap/"'  comment:"dir with file(s) to test"
-dmmeta.field  field:command.x2bm_pcap.kafka_at_frame   arg:bool  reftype:Val       dflt:true  comment:"parse mode: true if kafka starts at  frame boundary"
+dmmeta.field  field:command.x2bm_pcap.mult_req_per_frame   arg:bool  reftype:Val       dflt:true  comment:"parse mode: true multiple req/rsp are exepcted per frame"
 EOF
 
 amc

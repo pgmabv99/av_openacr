@@ -21,11 +21,20 @@ if [ ! -f "$PRODUCER_BIN" ] || [ ! -f "$CONSUMER_BIN" ]; then
     exit 1
 fi
 
+echo "Starting tcpdump..."
+sudo pkill tcpdump
+if [ -f /home/avorovich/pcap/klocal.pcap ]; then
+    sudo rm /home/avorovich/pcap/klocal.pcap
+fi
+sudo tcpdump -i lo -w /home/avorovich/pcap/klocal.pcap port 9092  &
+TCPDUMP_PID=$!
+sleep 1
+
 # Start consumer in background
 echo "Starting consumer..."
 $CONSUMER_BIN > $CONSUMER_LOG 2>&1 &
 CONSUMER_PID=$!
-sleep 4  # Give consumer time to start
+sleep 2  # Give consumer time to start
 
 # Start producer in background
 echo "Starting producer..."
@@ -38,8 +47,10 @@ cleanup() {
     if ps -p $PRODUCER_PID > /dev/null; then
         kill $PRODUCER_PID
     fi
-    kill   $CONSUMER_PID
-    wait $PRODUCER_PID $CONSUMER_PID
+    kill $CONSUMER_PID
+    # kill $TCPDUMP_PID
+    wait $PRODUCER_PID $CONSUMER_PID 
+    # wait $PRODUCER_PID $CONSUMER_PID $TCPDUMP_PID
     exit 0
 }
 
@@ -47,9 +58,9 @@ cleanup() {
 trap cleanup SIGINT SIGTERM
 
 # Monitor processes
-echo "Producer PID: $PRODUCER_PID, Consumer PID: $CONSUMER_PID"
+echo "Producer PID: $PRODUCER_PID, Consumer PID: $CONSUMER_PID "
 echo "Press Ctrl+C to stop both processes."
 echo "Logs: $PRODUCER_LOG, $CONSUMER_LOG"
 
 # Wait for processes to exit
-wait $PRODUCER_PID $CONSUMER_PID
+wait $PRODUCER_PID $CONSUMER_PID 

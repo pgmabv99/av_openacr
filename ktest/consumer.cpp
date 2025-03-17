@@ -41,6 +41,11 @@ int main() {
         return 1;
     }
 
+    if (rd_kafka_conf_set(conf, "client.id", "my-consumer-1", errstr, sizeof(errstr)) != RD_KAFKA_CONF_OK) {
+        std::cerr << "Failed to set client.id: " << errstr << std::endl;
+        rd_kafka_conf_destroy(conf);
+        return 1;
+    }
     // Set bootstrap.servers configuration
     if (rd_kafka_conf_set(conf, "bootstrap.servers", brokers.c_str(), errstr, sizeof(errstr)) != RD_KAFKA_CONF_OK) {
         std::cerr << "Failed to set bootstrap.servers: " << errstr << std::endl;

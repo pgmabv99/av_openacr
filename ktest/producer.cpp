@@ -41,6 +41,11 @@ int main() {
     // Set delivery report callback
     rd_kafka_conf_set_dr_msg_cb(conf, dr_msg_cb);
 
+    if (rd_kafka_conf_set(conf, "client.id", "my-producer-1", errstr, sizeof(errstr)) != RD_KAFKA_CONF_OK) {
+        std::cerr << "Failed to set client.id: " << errstr << std::endl;
+        rd_kafka_conf_destroy(conf);
+        return 1;
+    }
     // Set bootstrap.servers configuration
     if (rd_kafka_conf_set(conf, "bootstrap.servers", brokers.c_str(), errstr, sizeof(errstr)) != RD_KAFKA_CONF_OK) {
         std::cerr << "Failed to set bootstrap.servers: " << errstr << std::endl;
@@ -67,7 +72,7 @@ int main() {
 
     // Generate messages with incrementing numbers
     uint64_t message_number = 0;
-#define MAX_MESSAGE_NUMBER 1000
+#define MAX_MESSAGE_NUMBER 10000
     while (run && message_number < MAX_MESSAGE_NUMBER) {
         // Convert number to ASCII string
         std::string message_tmp = std::to_string(message_number);

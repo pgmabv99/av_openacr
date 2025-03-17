@@ -4,6 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
+                "/usr/include/librdkafka" 
                 // "${workspaceFolder}/../spdk/include",
                 // "/home/avorovich/spdk/include"
             ],

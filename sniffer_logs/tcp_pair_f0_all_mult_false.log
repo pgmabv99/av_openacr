@@ -208,7 +208,7 @@ kafka_corr_id:22327  ack:1  iframe:204205  index_in_frame:1  kafka_len:71
 gaps_pos!!!  seq_gap_pos_count:395
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41072  frame_count:6615  syn_count:0  fin_count:0  rst_count:0  isn:001707734536  "seq_gap_pos_count %":0.0597037  "seq_gap_neg_count %":0
 kafka stats  kafka_count:180  kafka_len_tot:000168895223  tcp_payload_len_tot:000176014575  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:21535  ack:1  iframe:2658  index_in_frame:1  kafka_len:1048543
 kafka_corr_id:21539  ack:1  iframe:4846  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:21543  ack:1  iframe:6499  index_in_frame:1  kafka_len:1048543
@@ -583,7 +583,7 @@ kafka_corr_id:5725  ack:1  iframe:204525  index_in_frame:1  kafka_len:72
 gaps_pos!!!  seq_gap_pos_count:374
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39634  frame_count:8443  syn_count:0  fin_count:0  rst_count:0  isn:002878680297  "seq_gap_pos_count %":0.0442918  "seq_gap_neg_count %":0
 kafka stats  kafka_count:161  kafka_len_tot:000169443873  tcp_payload_len_tot:000179042895  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4964  ack:1  iframe:764  index_in_frame:1  kafka_len:1048543
 kafka_corr_id:4968  ack:1  iframe:945  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:4972  ack:1  iframe:2112  index_in_frame:1  kafka_len:1048565
@@ -778,7 +778,7 @@ kafka_corr_id:2131  ack:0  iframe:182694  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58824  frame_count:38  syn_count:0  fin_count:1  rst_count:0  isn:000371299607  "seq_gap_pos_count %":0.025641  "seq_gap_neg_count %":0
 kafka stats  kafka_count:36  kafka_len_tot:000000002808  tcp_payload_len_tot:000000002886  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1985  ack:1  iframe:1061  index_in_frame:1  kafka_len:74
 kafka_corr_id:1986  ack:1  iframe:1605  index_in_frame:1  kafka_len:74
 kafka_corr_id:1987  ack:0  iframe:4008  index_in_frame:1  kafka_len:74
@@ -858,7 +858,7 @@ kafka_corr_id:2056  ack:1  iframe:203535  index_in_frame:1  kafka_len:375773
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48528  frame_count:47  syn_count:0  fin_count:0  rst_count:0  isn:001023270306  "seq_gap_pos_count %":0.0833333  "seq_gap_neg_count %":0
 kafka stats  kafka_count:46  kafka_len_tot:000000003588  tcp_payload_len_tot:000000003666  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1860  ack:0  iframe:7339  index_in_frame:1  kafka_len:74
 kafka_corr_id:1864  ack:0  iframe:7770  index_in_frame:1  kafka_len:74
 kafka_corr_id:1876  ack:0  iframe:16980  index_in_frame:1  kafka_len:74
@@ -1096,7 +1096,7 @@ kafka_corr_id:6420  ack:1  iframe:204513  index_in_frame:1  kafka_len:71
 gaps_pos!!!  seq_gap_pos_count:370
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39656  frame_count:9616  syn_count:0  fin_count:0  rst_count:0  isn:003701981536  "seq_gap_pos_count %":0.0384735  "seq_gap_neg_count %":0
 kafka stats  kafka_count:164  kafka_len_tot:000193895118  tcp_payload_len_tot:000203589219  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:5635  ack:1  iframe:2351  index_in_frame:1  kafka_len:6290930
 kafka_corr_id:5661  ack:1  iframe:3223  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:5665  ack:1  iframe:3462  index_in_frame:1  kafka_len:1048565
@@ -1305,7 +1305,7 @@ kafka_corr_id:2168  ack:1  iframe:201782  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58848  frame_count:48  syn_count:0  fin_count:0  rst_count:0  isn:000675592113  "seq_gap_pos_count %":0.102041  "seq_gap_neg_count %":0
 kafka stats  kafka_count:47  kafka_len_tot:000000003666  tcp_payload_len_tot:000000003744  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1969  ack:1  iframe:7386  index_in_frame:1  kafka_len:74
 kafka_corr_id:1971  ack:0  iframe:8472  index_in_frame:1  kafka_len:74
 kafka_corr_id:1972  ack:0  iframe:8968  index_in_frame:1  kafka_len:74
@@ -1398,7 +1398,7 @@ kafka_corr_id:2162  ack:0  iframe:199930  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:2
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58796  frame_count:56  syn_count:0  fin_count:0  rst_count:0  isn:000483036503  "seq_gap_pos_count %":0.0350877  "seq_gap_neg_count %":0
 kafka stats  kafka_count:55  kafka_len_tot:000000004290  tcp_payload_len_tot:000000004368  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1911  ack:1  iframe:1056  index_in_frame:1  kafka_len:74
 kafka_corr_id:1912  ack:0  iframe:3999  index_in_frame:1  kafka_len:74
 kafka_corr_id:1923  ack:0  iframe:4488  index_in_frame:1  kafka_len:74
@@ -1490,7 +1490,7 @@ kafka_corr_id:2017  ack:0  iframe:186797  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58862  frame_count:42  syn_count:0  fin_count:0  rst_count:0  isn:003904411763  "seq_gap_pos_count %":0.116279  "seq_gap_neg_count %":0
 kafka stats  kafka_count:41  kafka_len_tot:000000003198  tcp_payload_len_tot:000000003276  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1838  ack:0  iframe:661  index_in_frame:1  kafka_len:74
 kafka_corr_id:1839  ack:0  iframe:11556  index_in_frame:1  kafka_len:74
 kafka_corr_id:1845  ack:0  iframe:13605  index_in_frame:1  kafka_len:74
@@ -1569,7 +1569,7 @@ kafka_corr_id:2412  ack:1  iframe:191863  index_in_frame:1  kafka_len:1048524
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48556  frame_count:51  syn_count:0  fin_count:0  rst_count:0  isn:002425088087  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:50  kafka_len_tot:000000003900  tcp_payload_len_tot:000000003978  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2220  ack:1  iframe:4003  index_in_frame:1  kafka_len:74
 kafka_corr_id:2223  ack:0  iframe:12005  index_in_frame:1  kafka_len:74
 kafka_corr_id:2227  ack:1  iframe:21501  index_in_frame:1  kafka_len:74
@@ -1654,7 +1654,7 @@ kafka_corr_id:2039  ack:1  iframe:174654  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:2
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48622  frame_count:48  syn_count:0  fin_count:1  rst_count:0  isn:001859090730  "seq_gap_pos_count %":0.0408163  "seq_gap_neg_count %":0
 kafka stats  kafka_count:47  kafka_len_tot:000000003666  tcp_payload_len_tot:000000003666  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1874  ack:0  iframe:4070  index_in_frame:1  kafka_len:74
 kafka_corr_id:1875  ack:0  iframe:10755  index_in_frame:1  kafka_len:74
 kafka_corr_id:1877  ack:1  iframe:11313  index_in_frame:1  kafka_len:74
@@ -1732,7 +1732,7 @@ kafka_corr_id:2299  ack:1  iframe:199054  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:2
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58734  frame_count:44  syn_count:0  fin_count:0  rst_count:0  isn:003656580331  "seq_gap_pos_count %":0.0444444  "seq_gap_neg_count %":0
 kafka stats  kafka_count:43  kafka_len_tot:000000003354  tcp_payload_len_tot:000000003432  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2134  ack:1  iframe:7343  index_in_frame:1  kafka_len:74
 kafka_corr_id:2139  ack:0  iframe:7853  index_in_frame:1  kafka_len:74
 kafka_corr_id:2140  ack:0  iframe:8374  index_in_frame:1  kafka_len:74
@@ -1810,7 +1810,7 @@ kafka_corr_id:2354  ack:1  iframe:184276  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48686  frame_count:48  syn_count:0  fin_count:1  rst_count:0  isn:000863805322  "seq_gap_pos_count %":0.102041  "seq_gap_neg_count %":0
 kafka stats  kafka_count:46  kafka_len_tot:000000003588  tcp_payload_len_tot:000000003666  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2148  ack:0  iframe:8551  index_in_frame:1  kafka_len:74
 kafka_corr_id:2149  ack:0  iframe:17182  index_in_frame:1  kafka_len:74
 kafka_corr_id:2173  ack:1  iframe:20354  index_in_frame:1  kafka_len:74
@@ -1891,7 +1891,7 @@ kafka_corr_id:2023  ack:1  iframe:198735  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48700  frame_count:45  syn_count:0  fin_count:0  rst_count:0  isn:004253711130  "seq_gap_pos_count %":0.0869565  "seq_gap_neg_count %":0
 kafka stats  kafka_count:44  kafka_len_tot:000000003432  tcp_payload_len_tot:000000003510  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1838  ack:0  iframe:8489  index_in_frame:1  kafka_len:74
 kafka_corr_id:1839  ack:0  iframe:8865  index_in_frame:1  kafka_len:74
 kafka_corr_id:1840  ack:0  iframe:9210  index_in_frame:1  kafka_len:74
@@ -1972,7 +1972,7 @@ kafka_corr_id:2159  ack:0  iframe:201031  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:3
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58872  frame_count:41  syn_count:0  fin_count:0  rst_count:0  isn:000793378783  "seq_gap_pos_count %":0.0714286  "seq_gap_neg_count %":0
 kafka stats  kafka_count:41  kafka_len_tot:000000003198  tcp_payload_len_tot:000000003198  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1939  ack:1  iframe:7509  index_in_frame:1  kafka_len:74
 kafka_corr_id:1940  ack:0  iframe:8120  index_in_frame:1  kafka_len:74
 kafka_corr_id:1941  ack:0  iframe:14822  index_in_frame:1  kafka_len:74
@@ -2188,7 +2188,7 @@ kafka_corr_id:6338  ack:1  iframe:204251  index_in_frame:1  kafka_len:72
 gaps_pos!!!  seq_gap_pos_count:416
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39650  frame_count:9004  syn_count:0  fin_count:0  rst_count:0  isn:001692390263  "seq_gap_pos_count %":0.0461966  "seq_gap_neg_count %":0
 kafka stats  kafka_count:142  kafka_len_tot:000191028334  tcp_payload_len_tot:000191888087  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:5612  ack:1  iframe:1377  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:5616  ack:1  iframe:1960  index_in_frame:1  kafka_len:1048543
 kafka_corr_id:5624  ack:1  iframe:4390  index_in_frame:1  kafka_len:1048543
@@ -2370,7 +2370,7 @@ kafka_corr_id:2347  ack:1  iframe:199359  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:2
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58758  frame_count:50  syn_count:0  fin_count:0  rst_count:0  isn:002540935872  "seq_gap_pos_count %":0.0392157  "seq_gap_neg_count %":0
 kafka stats  kafka_count:50  kafka_len_tot:000000003900  tcp_payload_len_tot:000000003900  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2159  ack:1  iframe:1211  index_in_frame:1  kafka_len:74
 kafka_corr_id:2160  ack:0  iframe:11558  index_in_frame:1  kafka_len:74
 kafka_corr_id:2161  ack:1  iframe:17575  index_in_frame:1  kafka_len:74
@@ -2465,7 +2465,7 @@ kafka_corr_id:2013  ack:1  iframe:204008  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58764  frame_count:37  syn_count:0  fin_count:0  rst_count:0  isn:001108440298  "seq_gap_pos_count %":0.131579  "seq_gap_neg_count %":0
 kafka stats  kafka_count:36  kafka_len_tot:000000002808  tcp_payload_len_tot:000000002886  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1818  ack:1  iframe:9886  index_in_frame:1  kafka_len:74
 kafka_corr_id:1833  ack:1  iframe:10073  index_in_frame:1  kafka_len:74
 kafka_corr_id:1834  ack:1  iframe:17437  index_in_frame:1  kafka_len:74
@@ -2540,7 +2540,7 @@ kafka_corr_id:2282  ack:1  iframe:201339  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:3
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48496  frame_count:52  syn_count:0  fin_count:0  rst_count:0  isn:002295340603  "seq_gap_pos_count %":0.0566038  "seq_gap_neg_count %":0
 kafka stats  kafka_count:51  kafka_len_tot:000000003978  tcp_payload_len_tot:000000004056  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2065  ack:1  iframe:10165  index_in_frame:1  kafka_len:74
 kafka_corr_id:2068  ack:0  iframe:11100  index_in_frame:1  kafka_len:74
 kafka_corr_id:2070  ack:0  iframe:11597  index_in_frame:1  kafka_len:74
@@ -2625,7 +2625,7 @@ kafka_corr_id:2282  ack:1  iframe:201235  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:2
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58682  frame_count:48  syn_count:0  fin_count:0  rst_count:0  isn:000823641673  "seq_gap_pos_count %":0.0408163  "seq_gap_neg_count %":0
 kafka stats  kafka_count:47  kafka_len_tot:000000003666  tcp_payload_len_tot:000000003744  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2008  ack:0  iframe:1584  index_in_frame:1  kafka_len:74
 kafka_corr_id:2009  ack:0  iframe:2147  index_in_frame:1  kafka_len:74
 kafka_corr_id:2010  ack:0  iframe:3998  index_in_frame:1  kafka_len:74
@@ -2864,7 +2864,7 @@ kafka_corr_id:12873  ack:1  iframe:204507  index_in_frame:1  kafka_len:72
 gaps_pos!!!  seq_gap_pos_count:400
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:50974  frame_count:5539  syn_count:0  fin_count:0  rst_count:0  isn:002352473606  "seq_gap_pos_count %":0.0722022  "seq_gap_neg_count %":0
 kafka stats  kafka_count:156  kafka_len_tot:000144805714  tcp_payload_len_tot:000154416471  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:12151  ack:1  iframe:1497  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:12155  ack:1  iframe:5440  index_in_frame:1  kafka_len:1048543
 kafka_corr_id:12163  ack:1  iframe:7220  index_in_frame:1  kafka_len:1048543
@@ -3046,7 +3046,7 @@ kafka_corr_id:2125  ack:1  iframe:196567  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48518  frame_count:25  syn_count:0  fin_count:0  rst_count:0  isn:000611252137  "seq_gap_pos_count %":0.192308  "seq_gap_neg_count %":0
 kafka stats  kafka_count:24  kafka_len_tot:000000001872  tcp_payload_len_tot:000000001950  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1982  ack:0  iframe:11768  index_in_frame:1  kafka_len:74
 kafka_corr_id:1988  ack:0  iframe:21338  index_in_frame:1  kafka_len:74
 kafka_corr_id:1994  ack:1  iframe:21688  index_in_frame:1  kafka_len:74
@@ -3104,7 +3104,7 @@ kafka_corr_id:1800  ack:0  iframe:201664  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58700  frame_count:44  syn_count:0  fin_count:0  rst_count:0  isn:000906384567  "seq_gap_pos_count %":0.0888889  "seq_gap_neg_count %":0
 kafka stats  kafka_count:43  kafka_len_tot:000000003354  tcp_payload_len_tot:000000003432  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1633  ack:0  iframe:11886  index_in_frame:1  kafka_len:74
 kafka_corr_id:1637  ack:1  iframe:12420  index_in_frame:1  kafka_len:74
 kafka_corr_id:1638  ack:0  iframe:13247  index_in_frame:1  kafka_len:74
@@ -3180,7 +3180,7 @@ kafka_corr_id:2184  ack:1  iframe:189237  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:3
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48470  frame_count:46  syn_count:0  fin_count:0  rst_count:0  isn:003051053324  "seq_gap_pos_count %":0.0638298  "seq_gap_neg_count %":0
 kafka stats  kafka_count:45  kafka_len_tot:000000003510  tcp_payload_len_tot:000000003588  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1987  ack:0  iframe:10166  index_in_frame:1  kafka_len:74
 kafka_corr_id:1990  ack:0  iframe:19559  index_in_frame:1  kafka_len:74
 kafka_corr_id:2012  ack:1  iframe:25450  index_in_frame:1  kafka_len:74
@@ -3270,7 +3270,7 @@ kafka_corr_id:2108  ack:1  iframe:203905  index_in_frame:1  kafka_len:502043
 gaps_pos!!!  seq_gap_pos_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48554  frame_count:66  syn_count:0  fin_count:1  rst_count:0  isn:002337744406  "seq_gap_pos_count %":0.0149254  "seq_gap_neg_count %":0
 kafka stats  kafka_count:64  kafka_len_tot:000000004992  tcp_payload_len_tot:000000005070  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1863  ack:0  iframe:10162  index_in_frame:1  kafka_len:74
 kafka_corr_id:1870  ack:1  iframe:13610  index_in_frame:1  kafka_len:74
 kafka_corr_id:1873  ack:0  iframe:14817  index_in_frame:1  kafka_len:74
@@ -3371,7 +3371,7 @@ kafka_corr_id:2202  ack:1  iframe:191085  index_in_frame:1  kafka_len:1048523
 gaps_pos!!!  seq_gap_pos_count:3
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58696  frame_count:49  syn_count:0  fin_count:0  rst_count:0  isn:001431256176  "seq_gap_pos_count %":0.06  "seq_gap_neg_count %":0
 kafka stats  kafka_count:48  kafka_len_tot:000000003744  tcp_payload_len_tot:000000003822  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1955  ack:0  iframe:10161  index_in_frame:1  kafka_len:74
 kafka_corr_id:1956  ack:0  iframe:13606  index_in_frame:1  kafka_len:74
 kafka_corr_id:1963  ack:0  iframe:14816  index_in_frame:1  kafka_len:74
@@ -3455,7 +3455,7 @@ kafka_corr_id:2138  ack:1  iframe:183728  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:2
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48540  frame_count:46  syn_count:0  fin_count:0  rst_count:0  isn:002465599657  "seq_gap_pos_count %":0.0425532  "seq_gap_neg_count %":0
 kafka stats  kafka_count:45  kafka_len_tot:000000003510  tcp_payload_len_tot:000000003588  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1951  ack:0  iframe:2229  index_in_frame:1  kafka_len:74
 kafka_corr_id:1952  ack:0  iframe:2881  index_in_frame:1  kafka_len:74
 kafka_corr_id:1953  ack:1  iframe:2969  index_in_frame:1  kafka_len:74
@@ -3533,7 +3533,7 @@ kafka_corr_id:2143  ack:0  iframe:193649  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:6
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58810  frame_count:37  syn_count:0  fin_count:0  rst_count:0  isn:002068451174  "seq_gap_pos_count %":0.157895  "seq_gap_neg_count %":0
 kafka stats  kafka_count:36  kafka_len_tot:000000002808  tcp_payload_len_tot:000000002886  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1978  ack:1  iframe:2521  index_in_frame:1  kafka_len:74
 kafka_corr_id:1979  ack:0  iframe:10160  index_in_frame:1  kafka_len:74
 kafka_corr_id:1980  ack:0  iframe:20888  index_in_frame:1  kafka_len:74
@@ -3747,7 +3747,7 @@ kafka_corr_id:8209  ack:1  iframe:204248  index_in_frame:1  kafka_len:71
 gaps_pos!!!  seq_gap_pos_count:462
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:42332  frame_count:6024  syn_count:0  fin_count:0  rst_count:0  isn:000678456381  "seq_gap_pos_count %":0.0766805  "seq_gap_neg_count %":0
 kafka stats  kafka_count:150  kafka_len_tot:000171758907  tcp_payload_len_tot:000174453456  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:7476  ack:1  iframe:2935  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:7480  ack:1  iframe:3251  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:7484  ack:1  iframe:3499  index_in_frame:1  kafka_len:1048565
@@ -4079,7 +4079,7 @@ kafka_corr_id:5881  ack:1  iframe:204254  index_in_frame:1  kafka_len:72
 gaps_pos!!!  seq_gap_pos_count:379
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39658  frame_count:8425  syn_count:0  fin_count:0  rst_count:0  isn:003642976310  "seq_gap_pos_count %":0.0449798  "seq_gap_neg_count %":0
 kafka stats  kafka_count:166  kafka_len_tot:000177219182  tcp_payload_len_tot:000177916523  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:5131  ack:1  iframe:3049  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:5135  ack:1  iframe:5417  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:5139  ack:0  iframe:6735  index_in_frame:1  kafka_len:1048565
@@ -4275,7 +4275,7 @@ kafka_corr_id:2230  ack:1  iframe:180010  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48618  frame_count:37  syn_count:0  fin_count:0  rst_count:0  isn:001550653939  "seq_gap_pos_count %":0.131579  "seq_gap_neg_count %":0
 kafka stats  kafka_count:36  kafka_len_tot:000000002808  tcp_payload_len_tot:000000002886  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2024  ack:1  iframe:10163  index_in_frame:1  kafka_len:74
 kafka_corr_id:2028  ack:1  iframe:18996  index_in_frame:1  kafka_len:74
 kafka_corr_id:2051  ack:1  iframe:25861  index_in_frame:1  kafka_len:74
@@ -4356,7 +4356,7 @@ kafka_corr_id:2231  ack:1  iframe:204242  index_in_frame:1  kafka_len:773214
 gaps_pos!!!  seq_gap_pos_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58842  frame_count:71  syn_count:0  fin_count:0  rst_count:0  isn:000310329460  "seq_gap_pos_count %":0.0138889  "seq_gap_neg_count %":0
 kafka stats  kafka_count:70  kafka_len_tot:000000005460  tcp_payload_len_tot:000000005538  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1964  ack:0  iframe:11914  index_in_frame:1  kafka_len:74
 kafka_corr_id:1971  ack:0  iframe:21461  index_in_frame:1  kafka_len:74
 kafka_corr_id:1983  ack:1  iframe:22055  index_in_frame:1  kafka_len:74
@@ -4466,7 +4466,7 @@ kafka_corr_id:2053  ack:1  iframe:204362  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:2
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48718  frame_count:46  syn_count:0  fin_count:0  rst_count:0  isn:000999076009  "seq_gap_pos_count %":0.0425532  "seq_gap_neg_count %":0
 kafka stats  kafka_count:45  kafka_len_tot:000000003510  tcp_payload_len_tot:000000003588  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1857  ack:0  iframe:4247  index_in_frame:1  kafka_len:74
 kafka_corr_id:1858  ack:0  iframe:4813  index_in_frame:1  kafka_len:74
 kafka_corr_id:1859  ack:0  iframe:5268  index_in_frame:1  kafka_len:74
@@ -4551,7 +4551,7 @@ kafka_corr_id:2165  ack:1  iframe:193157  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48634  frame_count:52  syn_count:0  fin_count:0  rst_count:0  isn:002105669788  "seq_gap_pos_count %":0.0943396  "seq_gap_neg_count %":0
 kafka stats  kafka_count:51  kafka_len_tot:000000003978  tcp_payload_len_tot:000000004056  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1952  ack:0  iframe:10164  index_in_frame:1  kafka_len:74
 kafka_corr_id:1955  ack:0  iframe:13609  index_in_frame:1  kafka_len:74
 kafka_corr_id:1969  ack:0  iframe:14273  index_in_frame:1  kafka_len:74
@@ -4640,7 +4640,7 @@ kafka_corr_id:2365  ack:1  iframe:197808  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:2
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58780  frame_count:44  syn_count:0  fin_count:0  rst_count:0  isn:000307837616  "seq_gap_pos_count %":0.0444444  "seq_gap_neg_count %":0
 kafka stats  kafka_count:43  kafka_len_tot:000000003354  tcp_payload_len_tot:000000003432  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2153  ack:0  iframe:10167  index_in_frame:1  kafka_len:74
 kafka_corr_id:2154  ack:1  iframe:13604  index_in_frame:1  kafka_len:74
 kafka_corr_id:2161  ack:0  iframe:14813  index_in_frame:1  kafka_len:74
@@ -4724,7 +4724,7 @@ kafka_corr_id:2189  ack:1  iframe:194752  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:3
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58760  frame_count:53  syn_count:0  fin_count:0  rst_count:0  isn:002557955991  "seq_gap_pos_count %":0.0555556  "seq_gap_neg_count %":0
 kafka stats  kafka_count:52  kafka_len_tot:000000004056  tcp_payload_len_tot:000000004134  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1993  ack:0  iframe:10168  index_in_frame:1  kafka_len:74
 kafka_corr_id:1994  ack:0  iframe:13477  index_in_frame:1  kafka_len:74
 kafka_corr_id:1997  ack:1  iframe:14812  index_in_frame:1  kafka_len:74
@@ -4812,7 +4812,7 @@ kafka_corr_id:2232  ack:0  iframe:195045  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:6
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58746  frame_count:45  syn_count:0  fin_count:0  rst_count:0  isn:000251391853  "seq_gap_pos_count %":0.130435  "seq_gap_neg_count %":0
 kafka stats  kafka_count:44  kafka_len_tot:000000003432  tcp_payload_len_tot:000000003510  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2032  ack:0  iframe:4267  index_in_frame:1  kafka_len:74
 kafka_corr_id:2035  ack:1  iframe:4907  index_in_frame:1  kafka_len:74
 kafka_corr_id:2037  ack:0  iframe:5329  index_in_frame:1  kafka_len:74
@@ -5030,7 +5030,7 @@ kafka_corr_id:32759  ack:1  iframe:204455  index_in_frame:1  kafka_len:132
 gaps_pos!!!  seq_gap_pos_count:258
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:48552  frame_count:6942  syn_count:0  fin_count:0  rst_count:0  isn:002381276264  "seq_gap_pos_count %":0.0371597  "seq_gap_neg_count %":0
 kafka stats  kafka_count:157  kafka_len_tot:000183062409  tcp_payload_len_tot:000201582068  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:32016  ack:1  iframe:6926  index_in_frame:1  kafka_len:1048543
 kafka_corr_id:32028  ack:1  iframe:8493  index_in_frame:1  kafka_len:1048543
 kafka_corr_id:32036  ack:0  iframe:11697  index_in_frame:1  kafka_len:1048565
@@ -5346,7 +5346,7 @@ kafka_corr_id:14404  ack:1  iframe:204245  index_in_frame:1  kafka_len:72
 gaps_pos!!!  seq_gap_pos_count:463
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:40108  frame_count:8466  syn_count:0  fin_count:0  rst_count:0  isn:004180150058  "seq_gap_pos_count %":0.0546829  "seq_gap_neg_count %":0
 kafka stats  kafka_count:138  kafka_len_tot:000164580387  tcp_payload_len_tot:000172871092  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:13722  ack:1  iframe:5058  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:13726  ack:1  iframe:6756  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:13730  ack:1  iframe:7690  index_in_frame:1  kafka_len:1048565
@@ -5519,7 +5519,7 @@ kafka_corr_id:2226  ack:1  iframe:199846  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48672  frame_count:41  syn_count:0  fin_count:0  rst_count:0  isn:000791223498  "seq_gap_pos_count %":0.0952381  "seq_gap_neg_count %":0
 kafka stats  kafka_count:40  kafka_len_tot:000000003120  tcp_payload_len_tot:000000003198  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2038  ack:1  iframe:5579  index_in_frame:1  kafka_len:74
 kafka_corr_id:2039  ack:0  iframe:12529  index_in_frame:1  kafka_len:74
 kafka_corr_id:2040  ack:0  iframe:21502  index_in_frame:1  kafka_len:74
@@ -5590,7 +5590,7 @@ kafka_corr_id:2313  ack:0  iframe:198915  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:2
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58904  frame_count:31  syn_count:0  fin_count:0  rst_count:0  isn:003205356656  "seq_gap_pos_count %":0.0625  "seq_gap_neg_count %":0
 kafka stats  kafka_count:30  kafka_len_tot:000000002340  tcp_payload_len_tot:000000002418  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2151  ack:0  iframe:5596  index_in_frame:1  kafka_len:74
 kafka_corr_id:2152  ack:0  iframe:10753  index_in_frame:1  kafka_len:74
 kafka_corr_id:2185  ack:1  iframe:53169  index_in_frame:1  kafka_len:74
@@ -5656,7 +5656,7 @@ kafka_corr_id:2166  ack:1  iframe:204502  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48588  frame_count:49  syn_count:0  fin_count:0  rst_count:0  isn:002098294545  "seq_gap_pos_count %":0.1  "seq_gap_neg_count %":0
 kafka stats  kafka_count:48  kafka_len_tot:000000003744  tcp_payload_len_tot:000000003822  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1986  ack:0  iframe:5753  index_in_frame:1  kafka_len:74
 kafka_corr_id:1987  ack:0  iframe:12531  index_in_frame:1  kafka_len:74
 kafka_corr_id:1990  ack:0  iframe:17708  index_in_frame:1  kafka_len:74
@@ -5739,7 +5739,7 @@ kafka_corr_id:2153  ack:1  iframe:193811  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:3
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48482  frame_count:43  syn_count:0  fin_count:0  rst_count:0  isn:003207815382  "seq_gap_pos_count %":0.0681818  "seq_gap_neg_count %":0
 kafka stats  kafka_count:42  kafka_len_tot:000000003276  tcp_payload_len_tot:000000003354  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1934  ack:1  iframe:5818  index_in_frame:1  kafka_len:74
 kafka_corr_id:1935  ack:0  iframe:12802  index_in_frame:1  kafka_len:74
 kafka_corr_id:1938  ack:0  iframe:13267  index_in_frame:1  kafka_len:74
@@ -5812,7 +5812,7 @@ kafka_corr_id:2352  ack:1  iframe:175359  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48572  frame_count:41  syn_count:0  fin_count:0  rst_count:0  isn:000117477242  "seq_gap_pos_count %":0.0238095  "seq_gap_neg_count %":0
 kafka stats  kafka_count:41  kafka_len_tot:000000003198  tcp_payload_len_tot:000000003198  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2129  ack:0  iframe:6248  index_in_frame:1  kafka_len:74
 kafka_corr_id:2130  ack:0  iframe:12836  index_in_frame:1  kafka_len:74
 kafka_corr_id:2136  ack:1  iframe:21550  index_in_frame:1  kafka_len:74
@@ -6080,7 +6080,7 @@ kafka_corr_id:27466  ack:1  iframe:204522  index_in_frame:1  kafka_len:132
 gaps_pos!!!  seq_gap_pos_count:342
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:40110  frame_count:8510  syn_count:0  fin_count:0  rst_count:0  isn:000462044935  "seq_gap_pos_count %":0.0401833  "seq_gap_neg_count %":0
 kafka stats  kafka_count:187  kafka_len_tot:000166059395  tcp_payload_len_tot:000180457695  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:26643  ack:1  iframe:6702  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:26647  ack:1  iframe:6913  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:26651  ack:1  iframe:7341  index_in_frame:1  kafka_len:1048565
@@ -6302,7 +6302,7 @@ kafka_corr_id:2106  ack:1  iframe:200367  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48480  frame_count:54  syn_count:0  fin_count:0  rst_count:0  isn:003719342628  "seq_gap_pos_count %":0.0727273  "seq_gap_neg_count %":0
 kafka stats  kafka_count:53  kafka_len_tot:000000004134  tcp_payload_len_tot:000000004212  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1878  ack:0  iframe:6475  index_in_frame:1  kafka_len:74
 kafka_corr_id:1880  ack:0  iframe:7310  index_in_frame:1  kafka_len:74
 kafka_corr_id:1881  ack:1  iframe:8231  index_in_frame:1  kafka_len:74
@@ -6396,7 +6396,7 @@ kafka_corr_id:2234  ack:1  iframe:200010  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48648  frame_count:36  syn_count:0  fin_count:0  rst_count:0  isn:003394377763  "seq_gap_pos_count %":0.027027  "seq_gap_neg_count %":0
 kafka stats  kafka_count:36  kafka_len_tot:000000002808  tcp_payload_len_tot:000000002808  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2090  ack:0  iframe:6554  index_in_frame:1  kafka_len:74
 kafka_corr_id:2091  ack:0  iframe:7074  index_in_frame:1  kafka_len:74
 kafka_corr_id:2092  ack:1  iframe:7408  index_in_frame:1  kafka_len:74
@@ -6467,7 +6467,7 @@ kafka_corr_id:2176  ack:0  iframe:187393  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48530  frame_count:34  syn_count:0  fin_count:0  rst_count:0  isn:000182108039  "seq_gap_pos_count %":0.142857  "seq_gap_neg_count %":0
 kafka stats  kafka_count:33  kafka_len_tot:000000002574  tcp_payload_len_tot:000000002652  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2002  ack:0  iframe:8045  index_in_frame:1  kafka_len:74
 kafka_corr_id:2004  ack:0  iframe:14819  index_in_frame:1  kafka_len:74
 kafka_corr_id:2008  ack:0  iframe:29083  index_in_frame:1  kafka_len:74
@@ -6533,7 +6533,7 @@ kafka_corr_id:2119  ack:1  iframe:204201  index_in_frame:1  kafka_len:995738
 gaps_pos!!!  seq_gap_pos_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48460  frame_count:31  syn_count:0  fin_count:0  rst_count:0  isn:003389401986  "seq_gap_pos_count %":0.03125  "seq_gap_neg_count %":0
 kafka stats  kafka_count:31  kafka_len_tot:000000002418  tcp_payload_len_tot:000000002418  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1964  ack:0  iframe:14619  index_in_frame:1  kafka_len:74
 kafka_corr_id:1982  ack:0  iframe:46013  index_in_frame:1  kafka_len:74
 kafka_corr_id:1987  ack:1  iframe:48291  index_in_frame:1  kafka_len:74
@@ -6759,7 +6759,7 @@ kafka_corr_id:5787  ack:1  iframe:204516  index_in_frame:1  kafka_len:72
 gaps_pos!!!  seq_gap_pos_count:288
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39624  frame_count:9013  syn_count:0  fin_count:0  rst_count:0  isn:001839109340  "seq_gap_pos_count %":0.0319503  "seq_gap_neg_count %":0
 kafka stats  kafka_count:168  kafka_len_tot:000176404981  tcp_payload_len_tot:000188822885  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:5043  ack:1  iframe:8233  index_in_frame:1  kafka_len:1048565
 kafka_corr_id:5051  ack:1  iframe:8707  index_in_frame:1  kafka_len:2097016
 kafka_corr_id:5057  ack:1  iframe:9269  index_in_frame:1  kafka_len:1048565
@@ -6970,7 +6970,7 @@ kafka_corr_id:2267  ack:1  iframe:200689  index_in_frame:1  kafka_len:1048545
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48662  frame_count:55  syn_count:0  fin_count:1  rst_count:0  isn:002163511902  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:54  kafka_len_tot:000000004212  tcp_payload_len_tot:000000004212  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2062  ack:1  iframe:10037  index_in_frame:1  kafka_len:74
 kafka_corr_id:2063  ack:1  iframe:10280  index_in_frame:1  kafka_len:74
 kafka_corr_id:2065  ack:1  iframe:28142  index_in_frame:1  kafka_len:74
@@ -7057,7 +7057,7 @@ kafka_corr_id:2132  ack:0  iframe:199345  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58888  frame_count:40  syn_count:0  fin_count:0  rst_count:0  isn:001263152619  "seq_gap_pos_count %":0.0243902  "seq_gap_neg_count %":0
 kafka stats  kafka_count:40  kafka_len_tot:000000003120  tcp_payload_len_tot:000000003120  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1957  ack:0  iframe:19405  index_in_frame:1  kafka_len:74
 kafka_corr_id:1969  ack:1  iframe:36460  index_in_frame:1  kafka_len:74
 kafka_corr_id:1975  ack:0  iframe:39726  index_in_frame:1  kafka_len:74
@@ -7125,7 +7125,7 @@ kafka_corr_id:2004  ack:0  iframe:194926  index_in_frame:1  kafka_len:369208
 gaps_pos!!!  seq_gap_pos_count:3
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48506  frame_count:34  syn_count:0  fin_count:0  rst_count:0  isn:003357980368  "seq_gap_pos_count %":0.0857143  "seq_gap_neg_count %":0
 kafka stats  kafka_count:34  kafka_len_tot:000000002652  tcp_payload_len_tot:000000002652  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1838  ack:0  iframe:10919  index_in_frame:1  kafka_len:74
 kafka_corr_id:1840  ack:0  iframe:29738  index_in_frame:1  kafka_len:74
 kafka_corr_id:1848  ack:0  iframe:33824  index_in_frame:1  kafka_len:74
@@ -7193,7 +7193,7 @@ kafka_corr_id:2059  ack:1  iframe:203451  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:2
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48552  frame_count:41  syn_count:0  fin_count:0  rst_count:0  isn:002228620949  "seq_gap_pos_count %":0.047619  "seq_gap_neg_count %":0
 kafka stats  kafka_count:41  kafka_len_tot:000000003198  tcp_payload_len_tot:000000003198  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1884  ack:1  iframe:14618  index_in_frame:1  kafka_len:74
 kafka_corr_id:1885  ack:1  iframe:14706  index_in_frame:1  kafka_len:74
 kafka_corr_id:1886  ack:1  iframe:14754  index_in_frame:1  kafka_len:74
@@ -7264,7 +7264,7 @@ kafka_corr_id:1989  ack:1  iframe:204141  index_in_frame:1  kafka_len:687680
 gaps_pos!!!  seq_gap_pos_count:2
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58750  frame_count:27  syn_count:0  fin_count:0  rst_count:0  isn:003931689705  "seq_gap_pos_count %":0.0714286  "seq_gap_neg_count %":0
 kafka stats  kafka_count:27  kafka_len_tot:000000002106  tcp_payload_len_tot:000000002106  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1802  ack:0  iframe:23244  index_in_frame:1  kafka_len:74
 kafka_corr_id:1816  ack:1  iframe:31455  index_in_frame:1  kafka_len:74
 kafka_corr_id:1817  ack:1  iframe:33818  index_in_frame:1  kafka_len:74
@@ -7337,7 +7337,7 @@ kafka_corr_id:2269  ack:1  iframe:203404  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58730  frame_count:53  syn_count:0  fin_count:0  rst_count:0  isn:000721872663  "seq_gap_pos_count %":0.0185185  "seq_gap_neg_count %":0
 kafka stats  kafka_count:53  kafka_len_tot:000000004134  tcp_payload_len_tot:000000004134  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2053  ack:1  iframe:29786  index_in_frame:1  kafka_len:74
 kafka_corr_id:2081  ack:1  iframe:31160  index_in_frame:1  kafka_len:74
 kafka_corr_id:2086  ack:1  iframe:32492  index_in_frame:1  kafka_len:74
@@ -7428,7 +7428,7 @@ kafka_corr_id:2283  ack:1  iframe:203487  index_in_frame:1  kafka_len:806589
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58860  frame_count:40  syn_count:0  fin_count:0  rst_count:0  isn:001107756381  "seq_gap_pos_count %":0.097561  "seq_gap_neg_count %":0
 kafka stats  kafka_count:40  kafka_len_tot:000000003120  tcp_payload_len_tot:000000003120  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2069  ack:1  iframe:18010  index_in_frame:1  kafka_len:74
 kafka_corr_id:2077  ack:1  iframe:18655  index_in_frame:1  kafka_len:74
 kafka_corr_id:2082  ack:1  iframe:20790  index_in_frame:1  kafka_len:74
@@ -7510,7 +7510,7 @@ kafka_corr_id:2268  ack:1  iframe:182987  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48604  frame_count:47  syn_count:0  fin_count:0  rst_count:0  isn:003425482348  "seq_gap_pos_count %":0.0833333  "seq_gap_neg_count %":0
 kafka stats  kafka_count:47  kafka_len_tot:000000003666  tcp_payload_len_tot:000000003666  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2084  ack:1  iframe:16612  index_in_frame:1  kafka_len:74
 kafka_corr_id:2085  ack:1  iframe:16671  index_in_frame:1  kafka_len:74
 kafka_corr_id:2087  ack:0  iframe:16757  index_in_frame:1  kafka_len:74
@@ -7584,7 +7584,7 @@ kafka_corr_id:2022  ack:1  iframe:115053  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58834  frame_count:34  syn_count:0  fin_count:0  rst_count:0  isn:002142023052  "seq_gap_pos_count %":0.0285714  "seq_gap_neg_count %":0
 kafka stats  kafka_count:34  kafka_len_tot:000000002652  tcp_payload_len_tot:000000002652  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1895  ack:1  iframe:28140  index_in_frame:1  kafka_len:74
 kafka_corr_id:1900  ack:1  iframe:32755  index_in_frame:1  kafka_len:74
 kafka_corr_id:1909  ack:0  iframe:33813  index_in_frame:1  kafka_len:74
@@ -7656,7 +7656,7 @@ kafka_corr_id:2215  ack:1  iframe:198048  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:3
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58716  frame_count:44  syn_count:0  fin_count:0  rst_count:0  isn:000196606009  "seq_gap_pos_count %":0.0666667  "seq_gap_neg_count %":0
 kafka stats  kafka_count:44  kafka_len_tot:000000003432  tcp_payload_len_tot:000000003432  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2022  ack:1  iframe:18894  index_in_frame:1  kafka_len:74
 kafka_corr_id:2023  ack:1  iframe:34055  index_in_frame:1  kafka_len:74
 kafka_corr_id:2032  ack:0  iframe:34560  index_in_frame:1  kafka_len:74
@@ -7731,7 +7731,7 @@ kafka_corr_id:2235  ack:1  iframe:204518  index_in_frame:1  kafka_len:1167
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:58752  frame_count:32  syn_count:0  fin_count:1  rst_count:0  isn:001597107376  "seq_gap_pos_count %":0.121212  "seq_gap_neg_count %":0
 kafka stats  kafka_count:31  kafka_len_tot:000000002418  tcp_payload_len_tot:000000002418  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2074  ack:1  iframe:23683  index_in_frame:1  kafka_len:74
 kafka_corr_id:2078  ack:0  iframe:26618  index_in_frame:1  kafka_len:74
 kafka_corr_id:2079  ack:1  iframe:35588  index_in_frame:1  kafka_len:74
@@ -7790,7 +7790,7 @@ kafka_corr_id:2058  ack:1  iframe:170214  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:48716  frame_count:29  syn_count:0  fin_count:1  rst_count:0  isn:003219198763  "seq_gap_pos_count %":0.0333333  "seq_gap_neg_count %":0
 kafka stats  kafka_count:28  kafka_len_tot:000000002184  tcp_payload_len_tot:000000002184  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:1945  ack:1  iframe:21642  index_in_frame:1  kafka_len:74
 kafka_corr_id:1946  ack:0  iframe:22058  index_in_frame:1  kafka_len:74
 kafka_corr_id:1950  ack:0  iframe:37335  index_in_frame:1  kafka_len:74
@@ -7839,7 +7839,7 @@ kafka_corr_id:52791  ack:0  iframe:204754  index_in_frame:1  kafka_len:44
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:54976  frame_count:10  syn_count:0  fin_count:0  rst_count:1  isn:000582360673  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:9  kafka_len_tot:000000016923  tcp_payload_len_tot:000000016923  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:52769  ack:1  iframe:49833  index_in_frame:1  kafka_len:187
 kafka_corr_id:52770  ack:1  iframe:49836  index_in_frame:1  kafka_len:943
 kafka_corr_id:52774  ack:1  iframe:49838  index_in_frame:1  kafka_len:2907
@@ -7858,7 +7858,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41064  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002906277504  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.61:39610-192.168.110.51:1096  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000327115672  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7868,7 +7868,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39610  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000659530949  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.61:34008-192.168.110.51:1096  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000744817261  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7878,7 +7878,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:34008  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000487275595  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.61:48556-192.168.110.51:1096  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001583742027  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7888,7 +7888,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:48556  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:004012339960  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.61:48538-192.168.110.51:1096  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001909292119  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7898,7 +7898,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:48538  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:003157205029  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.61:39616-192.168.110.51:1096  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:003385294660  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7908,7 +7908,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39616  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:004130340506  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.61:39590-192.168.110.51:1096  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001055778587  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7918,7 +7918,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39590  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:003332794232  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.61:39566-192.168.110.51:1096  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002785240490  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7928,7 +7928,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39566  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001672810751  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.61:39568-192.168.110.51:1096  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000102060433  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7938,7 +7938,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39568  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002870855268  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.61:39554-192.168.110.51:1096  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001192094811  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7948,7 +7948,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39554  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002139696888  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.61:39606-192.168.110.51:1096  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002630494370  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7958,7 +7958,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:39606  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:000157551237  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:44884-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000439608734  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7968,7 +7968,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44884  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:44886-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002986089256  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7978,7 +7978,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44886  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:44892-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003662413928  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7988,7 +7988,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44892  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:44900-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001078563824  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -7998,7 +7998,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44900  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:44904-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003700540755  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -8008,7 +8008,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44904  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:44912-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000346644811  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -8018,7 +8018,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44912  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:44920-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003145356131  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -8028,7 +8028,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44920  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:44928-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000589040807  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -8038,7 +8038,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44928  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:44932-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004210381879  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -8048,7 +8048,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44932  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:44934-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000750873443  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -8058,7 +8058,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44934  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:44942-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003624190070  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -8068,7 +8068,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:44942  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:35448-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002120058215  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -8078,7 +8078,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:35448  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:35452-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003742514939  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -8088,7 +8088,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:35452  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 frame stats  tcp_pair_key:192.168.110.11:35458-192.168.110.51:1096  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002256573282  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
@@ -8098,7 +8098,7 @@ kafka req  list
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:35458  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000006  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 ======================client to broker 
 gaps_pos!!!  seq_gap_pos_count:299
 frame stats  tcp_pair_key:192.168.110.71:42396-192.168.110.51:1096  frame_count:2164  syn_count:1  fin_count:0  rst_count:0  isn:002828735207  "seq_gap_pos_count %":0.138106  "seq_gap_neg_count %":0
@@ -8237,7 +8237,7 @@ kafka_corr_id:1315  ack:1  iframe:705673  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:9
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42396  frame_count:181  syn_count:1  fin_count:0  rst_count:0  isn:002585912227  "seq_gap_pos_count %":0.0494506  "seq_gap_neg_count %":0
 kafka stats  kafka_count:180  kafka_len_tot:000000046096  tcp_payload_len_tot:000000046096  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4  ack:1  iframe:204793  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:204796  index_in_frame:1  kafka_len:2726
 kafka_corr_id:6  ack:1  iframe:204963  index_in_frame:1  kafka_len:74
@@ -8512,7 +8512,7 @@ kafka_corr_id:1145  ack:1  iframe:690663  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:3
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42412  frame_count:118  syn_count:1  fin_count:0  rst_count:0  isn:000773277119  "seq_gap_pos_count %":0.0252101  "seq_gap_neg_count %":0
 kafka stats  kafka_count:117  kafka_len_tot:000000017314  tcp_payload_len_tot:000000017314  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4  ack:1  iframe:204803  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:204806  index_in_frame:1  kafka_len:2726
 kafka_corr_id:6  ack:1  iframe:204969  index_in_frame:1  kafka_len:74
@@ -8713,7 +8713,7 @@ kafka_corr_id:1271  ack:0  iframe:702818  index_in_frame:1  kafka_len:1048523
 gaps_pos!!!  seq_gap_pos_count:11
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42422  frame_count:113  syn_count:1  fin_count:0  rst_count:0  isn:002052973127  "seq_gap_pos_count %":0.0964912  "seq_gap_neg_count %":0
 kafka stats  kafka_count:112  kafka_len_tot:000000022228  tcp_payload_len_tot:000000022228  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4  ack:1  iframe:204813  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:204816  index_in_frame:1  kafka_len:2726
 kafka_corr_id:6  ack:1  iframe:215364  index_in_frame:1  kafka_len:74
@@ -8937,7 +8937,7 @@ kafka_corr_id:1280  ack:0  iframe:699704  index_in_frame:1  kafka_len:1024718
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42428  frame_count:132  syn_count:1  fin_count:0  rst_count:0  isn:004206390970  "seq_gap_pos_count %":0.0300752  "seq_gap_neg_count %":0
 kafka stats  kafka_count:131  kafka_len_tot:000000015754  tcp_payload_len_tot:000000015754  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4  ack:1  iframe:204823  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:204826  index_in_frame:1  kafka_len:2726
 kafka_corr_id:6  ack:1  iframe:204971  index_in_frame:1  kafka_len:74
@@ -9141,7 +9141,7 @@ kafka_corr_id:1142  ack:0  iframe:699752  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42444  frame_count:99  syn_count:1  fin_count:0  rst_count:0  isn:001321939890  "seq_gap_pos_count %":0.05  "seq_gap_neg_count %":0
 kafka stats  kafka_count:98  kafka_len_tot:000000023788  tcp_payload_len_tot:000000023788  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:3  ack:1  iframe:204833  index_in_frame:1  kafka_len:306
 kafka_corr_id:4  ack:1  iframe:204836  index_in_frame:1  kafka_len:2726
 kafka_corr_id:5  ack:1  iframe:204976  index_in_frame:1  kafka_len:74
@@ -9340,7 +9340,7 @@ kafka_corr_id:1092  ack:1  iframe:689391  index_in_frame:1  kafka_len:802453
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42450  frame_count:125  syn_count:1  fin_count:0  rst_count:0  isn:002479039874  "seq_gap_pos_count %":0.031746  "seq_gap_neg_count %":0
 kafka stats  kafka_count:124  kafka_len_tot:000000017860  tcp_payload_len_tot:000000017860  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4  ack:1  iframe:204843  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:204846  index_in_frame:1  kafka_len:2726
 kafka_corr_id:6  ack:1  iframe:206995  index_in_frame:1  kafka_len:74
@@ -9549,7 +9549,7 @@ kafka_corr_id:1239  ack:1  iframe:706150  index_in_frame:1  kafka_len:246162
 gaps_pos!!!  seq_gap_pos_count:9
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42454  frame_count:100  syn_count:1  fin_count:0  rst_count:0  isn:000970765402  "seq_gap_pos_count %":0.0891089  "seq_gap_neg_count %":0
 kafka stats  kafka_count:99  kafka_len_tot:000000026518  tcp_payload_len_tot:000000026518  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4  ack:1  iframe:204853  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:204856  index_in_frame:1  kafka_len:2726
 kafka_corr_id:6  ack:1  iframe:207027  index_in_frame:1  kafka_len:74
@@ -9818,7 +9818,7 @@ kafka_corr_id:1439  ack:0  iframe:702792  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42466  frame_count:199  syn_count:1  fin_count:0  rst_count:0  isn:004151025174  "seq_gap_pos_count %":0.025  "seq_gap_neg_count %":0
 kafka stats  kafka_count:198  kafka_len_tot:000000018328  tcp_payload_len_tot:000000018328  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:3  ack:1  iframe:204863  index_in_frame:1  kafka_len:306
 kafka_corr_id:4  ack:1  iframe:204866  index_in_frame:1  kafka_len:2726
 kafka_corr_id:5  ack:1  iframe:205011  index_in_frame:1  kafka_len:74
@@ -10114,7 +10114,7 @@ kafka_corr_id:1183  ack:1  iframe:696322  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42482  frame_count:119  syn_count:1  fin_count:0  rst_count:0  isn:004182775128  "seq_gap_pos_count %":0.00833333  "seq_gap_neg_count %":0
 kafka stats  kafka_count:118  kafka_len_tot:000000017392  tcp_payload_len_tot:000000017392  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4  ack:1  iframe:204873  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:204876  index_in_frame:1  kafka_len:2726
 kafka_corr_id:6  ack:1  iframe:207531  index_in_frame:1  kafka_len:74
@@ -10333,7 +10333,7 @@ kafka_corr_id:1159  ack:0  iframe:701447  index_in_frame:1  kafka_len:851052
 gaps_pos!!!  seq_gap_pos_count:7
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42492  frame_count:112  syn_count:1  fin_count:0  rst_count:0  isn:001464228374  "seq_gap_pos_count %":0.0619469  "seq_gap_neg_count %":0
 kafka stats  kafka_count:111  kafka_len_tot:000000022150  tcp_payload_len_tot:000000022150  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4  ack:1  iframe:204883  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:204886  index_in_frame:1  kafka_len:2726
 kafka_corr_id:6  ack:1  iframe:207518  index_in_frame:1  kafka_len:74
@@ -10549,7 +10549,7 @@ kafka_corr_id:1286  ack:0  iframe:704732  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:10
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42504  frame_count:121  syn_count:1  fin_count:0  rst_count:0  isn:004009783409  "seq_gap_pos_count %":0.0819672  "seq_gap_neg_count %":0
 kafka stats  kafka_count:120  kafka_len_tot:000000020200  tcp_payload_len_tot:000000020200  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:3  ack:1  iframe:204893  index_in_frame:1  kafka_len:306
 kafka_corr_id:4  ack:1  iframe:204896  index_in_frame:1  kafka_len:2726
 kafka_corr_id:5  ack:1  iframe:205059  index_in_frame:1  kafka_len:74
@@ -10797,7 +10797,7 @@ kafka_corr_id:1213  ack:0  iframe:667231  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42516  frame_count:140  syn_count:1  fin_count:0  rst_count:0  isn:000260871364  "seq_gap_pos_count %":0.0283688  "seq_gap_neg_count %":0
 kafka stats  kafka_count:139  kafka_len_tot:000000021682  tcp_payload_len_tot:000000021682  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4  ack:1  iframe:204903  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:204906  index_in_frame:1  kafka_len:2726
 kafka_corr_id:6  ack:1  iframe:205099  index_in_frame:1  kafka_len:74
@@ -11084,7 +11084,7 @@ kafka_corr_id:1556  ack:0  iframe:702805  index_in_frame:1  kafka_len:1027866
 gaps_pos!!!  seq_gap_pos_count:13
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42530  frame_count:191  syn_count:1  fin_count:0  rst_count:0  isn:003903779985  "seq_gap_pos_count %":0.0677083  "seq_gap_neg_count %":0
 kafka stats  kafka_count:190  kafka_len_tot:000000033616  tcp_payload_len_tot:000000033616  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:3  ack:1  iframe:204913  index_in_frame:1  kafka_len:306
 kafka_corr_id:4  ack:1  iframe:204916  index_in_frame:1  kafka_len:2726
 kafka_corr_id:5  ack:1  iframe:205097  index_in_frame:1  kafka_len:74
@@ -11382,7 +11382,7 @@ kafka_corr_id:1339  ack:1  iframe:705753  index_in_frame:1  kafka_len:287522
 gaps_pos!!!  seq_gap_pos_count:11
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42532  frame_count:134  syn_count:1  fin_count:0  rst_count:0  isn:000253522599  "seq_gap_pos_count %":0.0814815  "seq_gap_neg_count %":0
 kafka stats  kafka_count:133  kafka_len_tot:000000021214  tcp_payload_len_tot:000000021214  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4  ack:1  iframe:204923  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:204926  index_in_frame:1  kafka_len:2726
 kafka_corr_id:6  ack:1  iframe:205102  index_in_frame:1  kafka_len:74
@@ -11668,7 +11668,7 @@ kafka_corr_id:1461  ack:0  iframe:682917  index_in_frame:1  kafka_len:7365
 gaps_pos!!!  seq_gap_pos_count:6
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42546  frame_count:182  syn_count:1  fin_count:0  rst_count:0  isn:003232205245  "seq_gap_pos_count %":0.0327869  "seq_gap_neg_count %":0
 kafka stats  kafka_count:181  kafka_len_tot:000000054130  tcp_payload_len_tot:000000054130  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4  ack:1  iframe:204933  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:204936  index_in_frame:1  kafka_len:2726
 kafka_corr_id:6  ack:1  iframe:205109  index_in_frame:1  kafka_len:74
@@ -12088,7 +12088,7 @@ kafka_corr_id:1588  ack:1  iframe:705466  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:13
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42552  frame_count:287  syn_count:1  fin_count:0  rst_count:0  isn:000726974267  "seq_gap_pos_count %":0.0451389  "seq_gap_neg_count %":0
 kafka stats  kafka_count:286  kafka_len_tot:000000041104  tcp_payload_len_tot:000000041104  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4  ack:1  iframe:204943  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:204946  index_in_frame:1  kafka_len:2726
 kafka_corr_id:6  ack:1  iframe:205137  index_in_frame:1  kafka_len:74
@@ -12516,7 +12516,7 @@ kafka_corr_id:1363  ack:1  iframe:697519  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:6
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42568  frame_count:171  syn_count:1  fin_count:0  rst_count:0  isn:001553056825  "seq_gap_pos_count %":0.0348837  "seq_gap_neg_count %":0
 kafka stats  kafka_count:170  kafka_len_tot:000000024100  tcp_payload_len_tot:000000024100  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:5  ack:1  iframe:204959  index_in_frame:1  kafka_len:306
 kafka_corr_id:6  ack:1  iframe:204968  index_in_frame:1  kafka_len:74
 kafka_corr_id:20  ack:1  iframe:206777  index_in_frame:1  kafka_len:2726
@@ -12832,7 +12832,7 @@ kafka_corr_id:1139  ack:0  iframe:702963  index_in_frame:1  kafka_len:1048523
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42570  frame_count:168  syn_count:1  fin_count:0  rst_count:0  isn:001398102266  "seq_gap_pos_count %":0.0236686  "seq_gap_neg_count %":0
 kafka stats  kafka_count:167  kafka_len_tot:000000018562  tcp_payload_len_tot:000000018562  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:204958  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:204965  index_in_frame:1  kafka_len:74
 kafka_corr_id:33  ack:1  iframe:209448  index_in_frame:1  kafka_len:2726
@@ -13116,7 +13116,7 @@ kafka_corr_id:1236  ack:1  iframe:705358  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:7
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42576  frame_count:151  syn_count:1  fin_count:0  rst_count:0  isn:002395280291  "seq_gap_pos_count %":0.0460526  "seq_gap_neg_count %":0
 kafka stats  kafka_count:150  kafka_len_tot:000000027844  tcp_payload_len_tot:000000027844  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:5  ack:1  iframe:204979  index_in_frame:1  kafka_len:306
 kafka_corr_id:6  ack:1  iframe:204982  index_in_frame:1  kafka_len:74
 kafka_corr_id:9  ack:1  iframe:205483  index_in_frame:1  kafka_len:2726
@@ -13385,7 +13385,7 @@ kafka_corr_id:1170  ack:0  iframe:691804  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:6
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42588  frame_count:134  syn_count:1  fin_count:0  rst_count:0  isn:001995790741  "seq_gap_pos_count %":0.0444444  "seq_gap_neg_count %":0
 kafka stats  kafka_count:133  kafka_len_tot:000000015910  tcp_payload_len_tot:000000015910  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:204988  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:204996  index_in_frame:1  kafka_len:74
 kafka_corr_id:26  ack:1  iframe:208661  index_in_frame:1  kafka_len:74
@@ -13666,7 +13666,7 @@ kafka_corr_id:1386  ack:0  iframe:691836  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:9
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42596  frame_count:182  syn_count:1  fin_count:0  rst_count:0  isn:000874410856  "seq_gap_pos_count %":0.0491803  "seq_gap_neg_count %":0
 kafka stats  kafka_count:181  kafka_len_tot:000000048826  tcp_payload_len_tot:000000048826  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:204997  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:205000  index_in_frame:1  kafka_len:74
 kafka_corr_id:43  ack:1  iframe:215333  index_in_frame:1  kafka_len:74
@@ -13947,7 +13947,7 @@ gaps_pos!!!  seq_gap_pos_count:7
 gaps_neg!!!  seq_gap_ned_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42602  frame_count:115  syn_count:1  fin_count:0  rst_count:0  isn:003581726555  "seq_gap_pos_count %":0.0603448  "seq_gap_neg_count %":0.00862069
 kafka stats  kafka_count:113  kafka_len_tot:000000014350  tcp_payload_len_tot:000000015632  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205006  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:205009  index_in_frame:1  kafka_len:74
 kafka_corr_id:29  ack:1  iframe:209047  index_in_frame:1  kafka_len:74
@@ -14188,7 +14188,7 @@ kafka_corr_id:1202  ack:1  iframe:686048  index_in_frame:1  kafka_len:976074
 gaps_pos!!!  seq_gap_pos_count:6
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42606  frame_count:149  syn_count:1  fin_count:0  rst_count:0  isn:001318224664  "seq_gap_pos_count %":0.04  "seq_gap_neg_count %":0
 kafka stats  kafka_count:148  kafka_len_tot:000000054208  tcp_payload_len_tot:000000054208  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205019  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:205022  index_in_frame:1  kafka_len:74
 kafka_corr_id:8  ack:1  iframe:205443  index_in_frame:1  kafka_len:74
@@ -14468,7 +14468,7 @@ kafka_corr_id:1285  ack:0  iframe:703898  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:6
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42620  frame_count:183  syn_count:1  fin_count:0  rst_count:0  isn:001123936573  "seq_gap_pos_count %":0.0326087  "seq_gap_neg_count %":0
 kafka stats  kafka_count:182  kafka_len_tot:000000022384  tcp_payload_len_tot:000000022384  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205030  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:205033  index_in_frame:1  kafka_len:74
 kafka_corr_id:32  ack:1  iframe:212124  index_in_frame:1  kafka_len:74
@@ -14747,7 +14747,7 @@ kafka_corr_id:1200  ack:1  iframe:705929  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:6
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42624  frame_count:122  syn_count:1  fin_count:0  rst_count:0  isn:002585346707  "seq_gap_pos_count %":0.0487805  "seq_gap_neg_count %":0
 kafka stats  kafka_count:121  kafka_len_tot:000000012322  tcp_payload_len_tot:000000012322  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205042  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:205045  index_in_frame:1  kafka_len:74
 kafka_corr_id:27  ack:1  iframe:208124  index_in_frame:1  kafka_len:74
@@ -15000,7 +15000,7 @@ kafka_corr_id:1324  ack:0  iframe:703134  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:9
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42626  frame_count:148  syn_count:1  fin_count:0  rst_count:0  isn:001123740043  "seq_gap_pos_count %":0.0604027  "seq_gap_neg_count %":0
 kafka stats  kafka_count:147  kafka_len_tot:000000048826  tcp_payload_len_tot:000000048826  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205052  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:205056  index_in_frame:1  kafka_len:74
 kafka_corr_id:83  ack:1  iframe:224672  index_in_frame:1  kafka_len:74
@@ -15273,7 +15273,7 @@ kafka_corr_id:1397  ack:1  iframe:700489  index_in_frame:1  kafka_len:899650
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42642  frame_count:157  syn_count:1  fin_count:0  rst_count:0  isn:002018682537  "seq_gap_pos_count %":0.0316456  "seq_gap_neg_count %":0
 kafka stats  kafka_count:156  kafka_len_tot:000000030964  tcp_payload_len_tot:000000030964  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205065  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:205068  index_in_frame:1  kafka_len:74
 kafka_corr_id:40  ack:0  iframe:213753  index_in_frame:1  kafka_len:74
@@ -15542,7 +15542,7 @@ kafka_corr_id:1154  ack:0  iframe:701417  index_in_frame:1  kafka_len:773502
 gaps_pos!!!  seq_gap_pos_count:2
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42650  frame_count:131  syn_count:1  fin_count:0  rst_count:0  isn:000024991109  "seq_gap_pos_count %":0.0151515  "seq_gap_neg_count %":0
 kafka stats  kafka_count:130  kafka_len_tot:000000052804  tcp_payload_len_tot:000000052804  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:5  ack:1  iframe:205074  index_in_frame:1  kafka_len:306
 kafka_corr_id:6  ack:1  iframe:205082  index_in_frame:1  kafka_len:74
 kafka_corr_id:30  ack:1  iframe:208667  index_in_frame:1  kafka_len:74
@@ -15841,7 +15841,7 @@ kafka_corr_id:1306  ack:0  iframe:700264  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42660  frame_count:180  syn_count:1  fin_count:0  rst_count:0  isn:003354215457  "seq_gap_pos_count %":0.0276243  "seq_gap_neg_count %":0
 kafka stats  kafka_count:179  kafka_len_tot:000000019498  tcp_payload_len_tot:000000019498  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:5  ack:1  iframe:205088  index_in_frame:1  kafka_len:306
 kafka_corr_id:6  ack:1  iframe:205096  index_in_frame:1  kafka_len:74
 kafka_corr_id:48  ack:1  iframe:216692  index_in_frame:1  kafka_len:2726
@@ -16147,7 +16147,7 @@ gaps_pos!!!  seq_gap_pos_count:6
 gaps_neg!!!  seq_gap_ned_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42670  frame_count:151  syn_count:1  fin_count:0  rst_count:0  isn:000759382504  "seq_gap_pos_count %":0.0394737  "seq_gap_neg_count %":0.00657895
 kafka stats  kafka_count:149  kafka_len_tot:000000017158  tcp_payload_len_tot:000000018440  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205089  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:205095  index_in_frame:1  kafka_len:74
 kafka_corr_id:8  ack:1  iframe:205486  index_in_frame:1  kafka_len:74
@@ -16433,7 +16433,7 @@ kafka_corr_id:1357  ack:0  iframe:706294  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:9
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42678  frame_count:156  syn_count:1  fin_count:0  rst_count:0  isn:003317144308  "seq_gap_pos_count %":0.0573248  "seq_gap_neg_count %":0
 kafka stats  kafka_count:155  kafka_len_tot:000000025582  tcp_payload_len_tot:000000025582  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205110  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:205113  index_in_frame:1  kafka_len:74
 kafka_corr_id:88  ack:1  iframe:219622  index_in_frame:1  kafka_len:74
@@ -16726,7 +16726,7 @@ kafka_corr_id:1349  ack:1  iframe:684767  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42682  frame_count:151  syn_count:1  fin_count:0  rst_count:0  isn:001197236090  "seq_gap_pos_count %":0.0263158  "seq_gap_neg_count %":0
 kafka stats  kafka_count:150  kafka_len_tot:000000019888  tcp_payload_len_tot:000000019888  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:5  ack:1  iframe:205121  index_in_frame:1  kafka_len:306
 kafka_corr_id:6  ack:1  iframe:205130  index_in_frame:1  kafka_len:74
 kafka_corr_id:7  ack:1  iframe:205448  index_in_frame:1  kafka_len:74
@@ -16999,7 +16999,7 @@ kafka_corr_id:1384  ack:1  iframe:697735  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:6
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42694  frame_count:149  syn_count:1  fin_count:0  rst_count:0  isn:001166605842  "seq_gap_pos_count %":0.04  "seq_gap_neg_count %":0
 kafka stats  kafka_count:148  kafka_len_tot:000000011776  tcp_payload_len_tot:000000011776  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205127  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:205132  index_in_frame:1  kafka_len:74
 kafka_corr_id:30  ack:1  iframe:207479  index_in_frame:1  kafka_len:74
@@ -17260,7 +17260,7 @@ kafka_corr_id:1343  ack:1  iframe:685299  index_in_frame:1  kafka_len:335409
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42702  frame_count:139  syn_count:1  fin_count:0  rst_count:0  isn:001594382661  "seq_gap_pos_count %":0.0357143  "seq_gap_neg_count %":0
 kafka stats  kafka_count:138  kafka_len_tot:000000013648  tcp_payload_len_tot:000000013648  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:5  ack:1  iframe:205140  index_in_frame:1  kafka_len:306
 kafka_corr_id:6  ack:1  iframe:205144  index_in_frame:1  kafka_len:74
 kafka_corr_id:18  ack:1  iframe:206371  index_in_frame:1  kafka_len:74
@@ -17500,7 +17500,7 @@ kafka_corr_id:1226  ack:0  iframe:704112  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:7
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42710  frame_count:132  syn_count:1  fin_count:0  rst_count:0  isn:003723667025  "seq_gap_pos_count %":0.0526316  "seq_gap_neg_count %":0
 kafka stats  kafka_count:131  kafka_len_tot:000000010450  tcp_payload_len_tot:000000010450  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205150  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:205153  index_in_frame:1  kafka_len:74
 kafka_corr_id:13  ack:1  iframe:206003  index_in_frame:1  kafka_len:74
@@ -17804,7 +17804,7 @@ kafka_corr_id:1408  ack:0  iframe:698407  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:10
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42712  frame_count:204  syn_count:1  fin_count:0  rst_count:0  isn:002117224407  "seq_gap_pos_count %":0.0487805  "seq_gap_neg_count %":0
 kafka stats  kafka_count:203  kafka_len_tot:000000050542  tcp_payload_len_tot:000000050542  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205159  index_in_frame:1  kafka_len:306
 kafka_corr_id:7  ack:1  iframe:205163  index_in_frame:1  kafka_len:74
 kafka_corr_id:27  ack:1  iframe:208000  index_in_frame:1  kafka_len:74
@@ -18118,7 +18118,7 @@ kafka_corr_id:1322  ack:0  iframe:701660  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:13
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42728  frame_count:134  syn_count:1  fin_count:0  rst_count:0  isn:001773598689  "seq_gap_pos_count %":0.0962963  "seq_gap_neg_count %":0
 kafka stats  kafka_count:133  kafka_len_tot:000000010606  tcp_payload_len_tot:000000010606  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:9  ack:1  iframe:205186  index_in_frame:1  kafka_len:306
 kafka_corr_id:10  ack:1  iframe:205189  index_in_frame:1  kafka_len:74
 kafka_corr_id:34  ack:1  iframe:210554  index_in_frame:1  kafka_len:74
@@ -18385,7 +18385,7 @@ kafka_corr_id:1228  ack:0  iframe:700656  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:11
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42740  frame_count:172  syn_count:1  fin_count:0  rst_count:0  isn:002229522663  "seq_gap_pos_count %":0.0635838  "seq_gap_neg_count %":0
 kafka stats  kafka_count:171  kafka_len_tot:000000016222  tcp_payload_len_tot:000000016222  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:11  ack:1  iframe:205196  index_in_frame:1  kafka_len:306
 kafka_corr_id:12  ack:1  iframe:205199  index_in_frame:1  kafka_len:74
 kafka_corr_id:33  ack:1  iframe:209306  index_in_frame:1  kafka_len:74
@@ -18692,7 +18692,7 @@ kafka_corr_id:1516  ack:0  iframe:702674  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:10
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42752  frame_count:173  syn_count:1  fin_count:0  rst_count:0  isn:002869814601  "seq_gap_pos_count %":0.0574713  "seq_gap_neg_count %":0
 kafka stats  kafka_count:172  kafka_len_tot:000000026908  tcp_payload_len_tot:000000026908  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:16  ack:1  iframe:205206  index_in_frame:1  kafka_len:306
 kafka_corr_id:17  ack:1  iframe:205209  index_in_frame:1  kafka_len:74
 kafka_corr_id:92  ack:1  iframe:219541  index_in_frame:1  kafka_len:74
@@ -18877,7 +18877,7 @@ kafka_corr_id:5  ack:1  iframe:205281  index_in_frame:1  kafka_len:56
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41508  frame_count:3  syn_count:1  fin_count:0  rst_count:0  isn:001187511446  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:2  kafka_len_tot:000000000353  tcp_payload_len_tot:000000000353  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205275  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208585  index_in_frame:1  kafka_len:39
 ======================client to broker 
@@ -18892,7 +18892,7 @@ kafka_corr_id:5  ack:1  iframe:205272  index_in_frame:1  kafka_len:55
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41514  frame_count:3  syn_count:1  fin_count:0  rst_count:0  isn:001280686244  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:2  kafka_len_tot:000000000353  tcp_payload_len_tot:000000000353  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205270  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208573  index_in_frame:1  kafka_len:39
 ======================client to broker 
@@ -18907,7 +18907,7 @@ kafka_corr_id:5  ack:1  iframe:205320  index_in_frame:1  kafka_len:56
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41538  frame_count:3  syn_count:1  fin_count:0  rst_count:0  isn:001515484340  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:2  kafka_len_tot:000000000353  tcp_payload_len_tot:000000000353  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205299  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208567  index_in_frame:1  kafka_len:39
 ======================client to broker 
@@ -20152,7 +20152,7 @@ kafka_corr_id:4408  ack:0  iframe:703842  index_in_frame:1  kafka_len:132
 gaps_pos!!!  seq_gap_pos_count:519
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41590  frame_count:34623  syn_count:1  fin_count:0  rst_count:0  isn:000806481096  "seq_gap_pos_count %":0.0149896  "seq_gap_neg_count %":0
 kafka stats  kafka_count:1202  kafka_len_tot:000868702385  tcp_payload_len_tot:000904424022  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205279  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208569  index_in_frame:1  kafka_len:39
 kafka_corr_id:15  ack:1  iframe:248461  index_in_frame:1  kafka_len:2726
@@ -21368,7 +21368,7 @@ kafka_corr_id:147  ack:1  iframe:255413  index_in_frame:1  kafka_len:72
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41578  frame_count:4  syn_count:1  fin_count:0  rst_count:0  isn:001584572480  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:3  kafka_len_tot:000000003083  tcp_payload_len_tot:000000003083  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205316  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208577  index_in_frame:1  kafka_len:39
 kafka_corr_id:147  ack:1  iframe:255415  index_in_frame:1  kafka_len:2726
@@ -21384,7 +21384,7 @@ kafka_corr_id:5  ack:1  iframe:205318  index_in_frame:1  kafka_len:56
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41546  frame_count:3  syn_count:1  fin_count:0  rst_count:0  isn:002529080635  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:2  kafka_len_tot:000000000353  tcp_payload_len_tot:000000000353  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205295  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208578  index_in_frame:1  kafka_len:39
 ======================client to broker 
@@ -21399,7 +21399,7 @@ kafka_corr_id:5  ack:1  iframe:205267  index_in_frame:1  kafka_len:56
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41618  frame_count:3  syn_count:1  fin_count:0  rst_count:0  isn:003700754817  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:2  kafka_len_tot:000000000353  tcp_payload_len_tot:000000000353  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205265  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208595  index_in_frame:1  kafka_len:39
 ======================client to broker 
@@ -21571,7 +21571,7 @@ kafka_corr_id:4227  ack:1  iframe:704271  index_in_frame:1  kafka_len:132
 gaps_pos!!!  seq_gap_pos_count:250
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41530  frame_count:6676  syn_count:1  fin_count:0  rst_count:0  isn:003452239742  "seq_gap_pos_count %":0.037442  "seq_gap_neg_count %":0
 kafka stats  kafka_count:141  kafka_len_tot:000131398560  tcp_payload_len_tot:000134195715  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205312  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208572  index_in_frame:1  kafka_len:39
 kafka_corr_id:109  ack:1  iframe:255419  index_in_frame:1  kafka_len:2726
@@ -22234,7 +22234,7 @@ kafka_corr_id:11821  ack:0  iframe:705118  index_in_frame:1  kafka_len:131
 gaps_pos!!!  seq_gap_pos_count:179
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41568  frame_count:3612  syn_count:1  fin_count:0  rst_count:0  isn:004138545284  "seq_gap_pos_count %":0.0495433  "seq_gap_neg_count %":0
 kafka stats  kafka_count:507  kafka_len_tot:000088041776  tcp_payload_len_tot:000085344305  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205259  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208575  index_in_frame:1  kafka_len:39
 kafka_corr_id:3503  ack:1  iframe:633357  index_in_frame:1  kafka_len:2726
@@ -22754,7 +22754,7 @@ kafka_corr_id:5  ack:1  iframe:205261  index_in_frame:1  kafka_len:55
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41556  frame_count:3  syn_count:1  fin_count:0  rst_count:0  isn:003535675510  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:2  kafka_len_tot:000000000353  tcp_payload_len_tot:000000000353  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205255  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208579  index_in_frame:1  kafka_len:39
 ======================client to broker 
@@ -22769,7 +22769,7 @@ kafka_corr_id:5  ack:1  iframe:205314  index_in_frame:1  kafka_len:56
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41606  frame_count:3  syn_count:1  fin_count:0  rst_count:0  isn:001257213560  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:2  kafka_len_tot:000000000353  tcp_payload_len_tot:000000000353  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205302  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208570  index_in_frame:1  kafka_len:39
 ======================client to broker 
@@ -22784,7 +22784,7 @@ kafka_corr_id:5  ack:1  iframe:205319  index_in_frame:1  kafka_len:56
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41626  frame_count:3  syn_count:1  fin_count:0  rst_count:0  isn:002393002790  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:2  kafka_len_tot:000000000353  tcp_payload_len_tot:000000000353  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205307  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208591  index_in_frame:1  kafka_len:39
 ======================client to broker 
@@ -22799,7 +22799,7 @@ kafka_corr_id:5  ack:1  iframe:205311  index_in_frame:1  kafka_len:55
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41628  frame_count:3  syn_count:1  fin_count:0  rst_count:0  isn:003881740790  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:2  kafka_len_tot:000000000353  tcp_payload_len_tot:000000000353  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205296  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208594  index_in_frame:1  kafka_len:39
 ======================client to broker 
@@ -22814,7 +22814,7 @@ kafka_corr_id:5  ack:1  iframe:205306  index_in_frame:1  kafka_len:55
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41638  frame_count:3  syn_count:1  fin_count:0  rst_count:0  isn:002585108104  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:2  kafka_len_tot:000000000353  tcp_payload_len_tot:000000000353  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:6  ack:1  iframe:205285  index_in_frame:1  kafka_len:306
 kafka_corr_id:5  ack:1  iframe:208593  index_in_frame:1  kafka_len:39
 ======================client to broker 
@@ -22830,7 +22830,7 @@ kafka_corr_id:20  ack:1  iframe:205346  index_in_frame:1  kafka_len:71
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41644  frame_count:4  syn_count:1  fin_count:0  rst_count:0  isn:002363389834  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:3  kafka_len_tot:000000003114  tcp_payload_len_tot:000000003114  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:19  ack:1  iframe:205342  index_in_frame:1  kafka_len:306
 kafka_corr_id:18  ack:1  iframe:205345  index_in_frame:1  kafka_len:70
 kafka_corr_id:20  ack:1  iframe:205347  index_in_frame:1  kafka_len:2726
@@ -22847,7 +22847,7 @@ kafka_corr_id:18  ack:1  iframe:205358  index_in_frame:1  kafka_len:72
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41654  frame_count:4  syn_count:1  fin_count:0  rst_count:0  isn:000640473314  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:3  kafka_len_tot:000000003114  tcp_payload_len_tot:000000003114  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:17  ack:1  iframe:205354  index_in_frame:1  kafka_len:306
 kafka_corr_id:15  ack:1  iframe:205357  index_in_frame:1  kafka_len:70
 kafka_corr_id:18  ack:1  iframe:205359  index_in_frame:1  kafka_len:2726
@@ -22864,7 +22864,7 @@ kafka_corr_id:17  ack:1  iframe:205370  index_in_frame:1  kafka_len:72
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41668  frame_count:4  syn_count:1  fin_count:0  rst_count:0  isn:000382703131  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:3  kafka_len_tot:000000003114  tcp_payload_len_tot:000000003114  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:16  ack:1  iframe:205366  index_in_frame:1  kafka_len:306
 kafka_corr_id:15  ack:1  iframe:205369  index_in_frame:1  kafka_len:70
 kafka_corr_id:17  ack:1  iframe:205371  index_in_frame:1  kafka_len:2726
@@ -22988,7 +22988,7 @@ kafka_corr_id:1321  ack:1  iframe:239236  index_in_frame:1  kafka_len:132
 gaps_pos!!!  seq_gap_pos_count:7
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41676  frame_count:2735  syn_count:1  fin_count:0  rst_count:0  isn:002068885160  "seq_gap_pos_count %":0.00255848  "seq_gap_neg_count %":0
 kafka stats  kafka_count:109  kafka_len_tot:000073533581  tcp_payload_len_tot:000073043845  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:21  ack:1  iframe:205378  index_in_frame:1  kafka_len:306
 kafka_corr_id:19  ack:1  iframe:205381  index_in_frame:1  kafka_len:70
 kafka_corr_id:22  ack:1  iframe:205445  index_in_frame:1  kafka_len:1186
@@ -23782,7 +23782,7 @@ kafka_corr_id:8053  ack:0  iframe:706134  index_in_frame:1  kafka_len:132
 gaps_pos!!!  seq_gap_pos_count:186
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41678  frame_count:6747  syn_count:1  fin_count:0  rst_count:0  isn:003053969928  "seq_gap_pos_count %":0.0275637  "seq_gap_neg_count %":0
 kafka stats  kafka_count:655  kafka_len_tot:000142426657  tcp_payload_len_tot:000147957569  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:16  ack:1  iframe:205388  index_in_frame:1  kafka_len:306
 kafka_corr_id:15  ack:1  iframe:205391  index_in_frame:1  kafka_len:70
 kafka_corr_id:17  ack:1  iframe:205488  index_in_frame:1  kafka_len:1186
@@ -25514,7 +25514,7 @@ gaps_pos!!!  seq_gap_pos_count:617
 gaps_neg!!!  seq_gap_ned_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41684  frame_count:40740  syn_count:1  fin_count:0  rst_count:0  isn:002605083301  "seq_gap_pos_count %":0.0151444  "seq_gap_neg_count %":2.45453e-05
 kafka stats  kafka_count:1036  kafka_len_tot:000811332898  tcp_payload_len_tot:000885086393  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:15  ack:1  iframe:205398  index_in_frame:1  kafka_len:306
 kafka_corr_id:14  ack:1  iframe:205401  index_in_frame:1  kafka_len:70
 kafka_corr_id:966  ack:1  iframe:248249  index_in_frame:1  kafka_len:410005
@@ -26564,7 +26564,7 @@ kafka_corr_id:17  ack:1  iframe:205421  index_in_frame:1  kafka_len:72
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41688  frame_count:4  syn_count:1  fin_count:0  rst_count:0  isn:000554051002  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:3  kafka_len_tot:000000003114  tcp_payload_len_tot:000000003114  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:16  ack:1  iframe:205415  index_in_frame:1  kafka_len:306
 kafka_corr_id:15  ack:1  iframe:205419  index_in_frame:1  kafka_len:70
 kafka_corr_id:17  ack:1  iframe:205422  index_in_frame:1  kafka_len:2726
@@ -26668,7 +26668,7 @@ kafka_corr_id:870  ack:1  iframe:237344  index_in_frame:1  kafka_len:72
 gaps_pos!!!  seq_gap_pos_count:29
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41696  frame_count:3657  syn_count:1  fin_count:0  rst_count:0  isn:001667610161  "seq_gap_pos_count %":0.00792783  "seq_gap_neg_count %":0
 kafka stats  kafka_count:88  kafka_len_tot:000074212373  tcp_payload_len_tot:000076171584  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:16  ack:1  iframe:205412  index_in_frame:1  kafka_len:306
 kafka_corr_id:15  ack:1  iframe:205420  index_in_frame:1  kafka_len:70
 kafka_corr_id:17  ack:1  iframe:205426  index_in_frame:1  kafka_len:2846
@@ -27018,7 +27018,7 @@ gaps_pos!!!  seq_gap_pos_count:377
 gaps_neg!!!  seq_gap_ned_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41704  frame_count:10040  syn_count:1  fin_count:0  rst_count:0  isn:002836910543  "seq_gap_pos_count %":0.0375461  "seq_gap_neg_count %":9.95917e-05
 kafka stats  kafka_count:222  kafka_len_tot:000241110888  tcp_payload_len_tot:000251087409  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:20  ack:1  iframe:205433  index_in_frame:1  kafka_len:306
 kafka_corr_id:17  ack:1  iframe:205436  index_in_frame:1  kafka_len:70
 kafka_corr_id:21  ack:1  iframe:206304  index_in_frame:1  kafka_len:1048565
@@ -27339,7 +27339,7 @@ kafka_corr_id:1356  ack:0  iframe:704712  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:12
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42754  frame_count:126  syn_count:1  fin_count:0  rst_count:0  isn:000952605920  "seq_gap_pos_count %":0.0944882  "seq_gap_neg_count %":0
 kafka stats  kafka_count:125  kafka_len_tot:000000017968  tcp_payload_len_tot:000000017968  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:7  ack:1  iframe:206957  index_in_frame:1  kafka_len:306
 kafka_corr_id:10  ack:1  iframe:207461  index_in_frame:1  kafka_len:104
 kafka_corr_id:19  ack:0  iframe:209066  index_in_frame:1  kafka_len:74
@@ -27576,7 +27576,7 @@ kafka_corr_id:1332  ack:0  iframe:703187  index_in_frame:1  kafka_len:1048524
 gaps_pos!!!  seq_gap_pos_count:7
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42760  frame_count:140  syn_count:1  fin_count:0  rst_count:0  isn:001915363398  "seq_gap_pos_count %":0.0496454  "seq_gap_neg_count %":0
 kafka stats  kafka_count:139  kafka_len_tot:000000013756  tcp_payload_len_tot:000000013756  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:7  ack:1  iframe:207098  index_in_frame:1  kafka_len:306
 kafka_corr_id:9  ack:1  iframe:207348  index_in_frame:1  kafka_len:74
 kafka_corr_id:11  ack:1  iframe:208325  index_in_frame:1  kafka_len:104
@@ -27839,7 +27839,7 @@ kafka_corr_id:1404  ack:0  iframe:701208  index_in_frame:1  kafka_len:964792
 gaps_pos!!!  seq_gap_pos_count:5
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42772  frame_count:170  syn_count:1  fin_count:0  rst_count:0  isn:003153500806  "seq_gap_pos_count %":0.0292398  "seq_gap_neg_count %":0
 kafka stats  kafka_count:169  kafka_len_tot:000000055846  tcp_payload_len_tot:000000055846  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:9  ack:1  iframe:207196  index_in_frame:1  kafka_len:306
 kafka_corr_id:12  ack:1  iframe:207331  index_in_frame:1  kafka_len:74
 kafka_corr_id:13  ack:1  iframe:207340  index_in_frame:1  kafka_len:2726
@@ -28109,7 +28109,7 @@ kafka_corr_id:1275  ack:0  iframe:698214  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:2
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42788  frame_count:131  syn_count:1  fin_count:0  rst_count:0  isn:003619100635  "seq_gap_pos_count %":0.0151515  "seq_gap_neg_count %":0
 kafka stats  kafka_count:130  kafka_len_tot:000000023632  tcp_payload_len_tot:000000023632  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:8  ack:1  iframe:207398  index_in_frame:1  kafka_len:306
 kafka_corr_id:11  ack:1  iframe:207444  index_in_frame:1  kafka_len:74
 kafka_corr_id:24  ack:1  iframe:214532  index_in_frame:1  kafka_len:2726
@@ -28345,7 +28345,7 @@ kafka_corr_id:1162  ack:1  iframe:694578  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:7
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42792  frame_count:138  syn_count:1  fin_count:0  rst_count:0  isn:001835887684  "seq_gap_pos_count %":0.0503597  "seq_gap_neg_count %":0
 kafka stats  kafka_count:137  kafka_len_tot:000000016222  tcp_payload_len_tot:000000016222  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:8  ack:1  iframe:207430  index_in_frame:1  kafka_len:306
 kafka_corr_id:9  ack:1  iframe:207488  index_in_frame:1  kafka_len:74
 kafka_corr_id:18  ack:1  iframe:210244  index_in_frame:1  kafka_len:74
@@ -28558,7 +28558,7 @@ kafka_corr_id:1010  ack:0  iframe:702872  index_in_frame:1  kafka_len:1048546
 gaps_pos!!!  seq_gap_pos_count:7
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42800  frame_count:85  syn_count:1  fin_count:0  rst_count:0  isn:002365501119  "seq_gap_pos_count %":0.0813954  "seq_gap_neg_count %":0
 kafka stats  kafka_count:84  kafka_len_tot:000000006784  tcp_payload_len_tot:000000006784  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:8  ack:1  iframe:207573  index_in_frame:1  kafka_len:306
 kafka_corr_id:11  ack:1  iframe:207674  index_in_frame:1  kafka_len:74
 kafka_corr_id:15  ack:1  iframe:208705  index_in_frame:1  kafka_len:74
@@ -28743,7 +28743,7 @@ kafka_corr_id:1347  ack:1  iframe:701741  index_in_frame:1  kafka_len:1167
 gaps_pos!!!  seq_gap_pos_count:6
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:42816  frame_count:127  syn_count:1  fin_count:0  rst_count:0  isn:003751824641  "seq_gap_pos_count %":0.046875  "seq_gap_neg_count %":0
 kafka stats  kafka_count:126  kafka_len_tot:000000015364  tcp_payload_len_tot:000000015364  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:8  ack:1  iframe:207542  index_in_frame:1  kafka_len:306
 kafka_corr_id:11  ack:1  iframe:207583  index_in_frame:1  kafka_len:74
 kafka_corr_id:16  ack:1  iframe:209788  index_in_frame:1  kafka_len:2726
@@ -28987,7 +28987,7 @@ kafka_corr_id:1363  ack:1  iframe:706367  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:18
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:59234  frame_count:145  syn_count:1  fin_count:0  rst_count:0  isn:004143758761  "seq_gap_pos_count %":0.123288  "seq_gap_neg_count %":0
 kafka stats  kafka_count:144  kafka_len_tot:000000019420  tcp_payload_len_tot:000000019420  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:9  ack:1  iframe:214471  index_in_frame:1  kafka_len:306
 kafka_corr_id:13  ack:1  iframe:214847  index_in_frame:1  kafka_len:2726
 kafka_corr_id:35  ack:1  iframe:226267  index_in_frame:1  kafka_len:74
@@ -29336,7 +29336,7 @@ kafka_corr_id:1316  ack:1  iframe:700133  index_in_frame:1  kafka_len:522743
 gaps_pos!!!  seq_gap_pos_count:6
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:59244  frame_count:215  syn_count:1  fin_count:0  rst_count:0  isn:000440125070  "seq_gap_pos_count %":0.0277778  "seq_gap_neg_count %":0
 kafka stats  kafka_count:214  kafka_len_tot:000000027532  tcp_payload_len_tot:000000027532  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:9  ack:1  iframe:214876  index_in_frame:1  kafka_len:306
 kafka_corr_id:12  ack:1  iframe:214928  index_in_frame:1  kafka_len:74
 kafka_corr_id:42  ack:1  iframe:231550  index_in_frame:1  kafka_len:74
@@ -29637,7 +29637,7 @@ kafka_corr_id:1141  ack:0  iframe:702881  index_in_frame:1  kafka_len:1048545
 gaps_pos!!!  seq_gap_pos_count:9
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:59254  frame_count:97  syn_count:1  fin_count:0  rst_count:0  isn:000313459521  "seq_gap_pos_count %":0.0918367  "seq_gap_neg_count %":0
 kafka stats  kafka_count:96  kafka_len_tot:000000007720  tcp_payload_len_tot:000000007720  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:9  ack:1  iframe:215318  index_in_frame:1  kafka_len:306
 kafka_corr_id:12  ack:1  iframe:215442  index_in_frame:1  kafka_len:74
 kafka_corr_id:21  ack:1  iframe:217982  index_in_frame:1  kafka_len:74
@@ -29867,7 +29867,7 @@ kafka_corr_id:1135  ack:1  iframe:693853  index_in_frame:1  kafka_len:1048523
 gaps_pos!!!  seq_gap_pos_count:4
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.71:59258  frame_count:159  syn_count:1  fin_count:0  rst_count:0  isn:000570752936  "seq_gap_pos_count %":0.025  "seq_gap_neg_count %":0
 kafka stats  kafka_count:158  kafka_len_tot:000000023194  tcp_payload_len_tot:000000023194  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:8  ack:1  iframe:215142  index_in_frame:1  kafka_len:306
 kafka_corr_id:11  ack:1  iframe:215379  index_in_frame:1  kafka_len:104
 kafka_corr_id:12  ack:1  iframe:215460  index_in_frame:1  kafka_len:2726
@@ -30992,7 +30992,7 @@ gaps_pos!!!  seq_gap_pos_count:596
 gaps_neg!!!  seq_gap_ned_count:1
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41708  frame_count:37232  syn_count:1  fin_count:0  rst_count:0  isn:003810407274  "seq_gap_pos_count %":0.0160073  "seq_gap_neg_count %":2.68579e-05
 kafka stats  kafka_count:920  kafka_len_tot:000817606601  tcp_payload_len_tot:000850720079  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:17  ack:1  iframe:248456  index_in_frame:1  kafka_len:306
 kafka_corr_id:85  ack:1  iframe:254463  index_in_frame:1  kafka_len:5718873
 kafka_corr_id:98  ack:1  iframe:255493  index_in_frame:1  kafka_len:18
@@ -32829,7 +32829,7 @@ kafka_corr_id:3478  ack:0  iframe:705779  index_in_frame:1  kafka_len:132
 gaps_pos!!!  seq_gap_pos_count:469
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:41724  frame_count:38411  syn_count:1  fin_count:0  rst_count:0  isn:001665610750  "seq_gap_pos_count %":0.0122097  "seq_gap_neg_count %":0
 kafka stats  kafka_count:885  kafka_len_tot:000786738477  tcp_payload_len_tot:000830207425  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:18  ack:1  iframe:248479  index_in_frame:1  kafka_len:306
 kafka_corr_id:86  ack:1  iframe:254151  index_in_frame:1  kafka_len:3299574
 kafka_corr_id:94  ack:1  iframe:255490  index_in_frame:1  kafka_len:18
@@ -33734,7 +33734,7 @@ kafka_corr_id:52835  ack:1  iframe:689120  index_in_frame:1  kafka_len:44
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.11:52448  frame_count:10  syn_count:1  fin_count:0  rst_count:0  isn:002606163886  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:9  kafka_len_tot:000000014986  tcp_payload_len_tot:000000014986  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:52815  ack:1  iframe:278521  index_in_frame:1  kafka_len:306
 kafka_corr_id:52817  ack:1  iframe:278524  index_in_frame:1  kafka_len:943
 kafka_corr_id:52819  ack:1  iframe:440403  index_in_frame:1  kafka_len:187
@@ -34794,7 +34794,7 @@ kafka_corr_id:8797  ack:0  iframe:706301  index_in_frame:1  kafka_len:132
 gaps_pos!!!  seq_gap_pos_count:261
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:37722  frame_count:8360  syn_count:1  fin_count:0  rst_count:0  isn:001670995829  "seq_gap_pos_count %":0.0312164  "seq_gap_neg_count %":0
 kafka stats  kafka_count:1024  kafka_len_tot:000191862621  tcp_payload_len_tot:000210428561  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:2574  ack:1  iframe:526837  index_in_frame:1  kafka_len:306
 kafka_corr_id:2573  ack:1  iframe:526846  index_in_frame:1  kafka_len:92
 kafka_corr_id:2575  ack:1  iframe:526849  index_in_frame:1  kafka_len:92
@@ -36238,7 +36238,7 @@ kafka_corr_id:5011  ack:0  iframe:704498  index_in_frame:1  kafka_len:131
 gaps_pos!!!  seq_gap_pos_count:297
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:37734  frame_count:7105  syn_count:1  fin_count:0  rst_count:0  isn:000453622125  "seq_gap_pos_count %":0.0417957  "seq_gap_neg_count %":0
 kafka stats  kafka_count:382  kafka_len_tot:000191063177  tcp_payload_len_tot:000194949189  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:3350  ack:1  iframe:530682  index_in_frame:1  kafka_len:306
 kafka_corr_id:3349  ack:1  iframe:530769  index_in_frame:1  kafka_len:1048543
 kafka_corr_id:3353  ack:1  iframe:530886  index_in_frame:1  kafka_len:1048565
@@ -36997,7 +36997,7 @@ kafka_corr_id:5491  ack:0  iframe:706452  index_in_frame:1  kafka_len:131
 gaps_pos!!!  seq_gap_pos_count:438
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:45652  frame_count:3804  syn_count:1  fin_count:0  rst_count:0  isn:001850025844  "seq_gap_pos_count %":0.115112  "seq_gap_neg_count %":0
 kafka stats  kafka_count:351  kafka_len_tot:000103168203  tcp_payload_len_tot:000100018967  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4385  ack:1  iframe:577067  index_in_frame:1  kafka_len:306
 kafka_corr_id:4384  ack:1  iframe:577071  index_in_frame:1  kafka_len:92
 kafka_corr_id:4386  ack:1  iframe:577078  index_in_frame:1  kafka_len:92
@@ -37744,7 +37744,7 @@ kafka_corr_id:4937  ack:1  iframe:594224  index_in_frame:1  kafka_len:72
 =============broker to client 
 frame stats  tcp_pair_key:192.168.110.51:1096-192.168.110.61:45656  frame_count:386  syn_count:1  fin_count:0  rst_count:0  isn:004151278749  "seq_gap_pos_count %":0  "seq_gap_neg_count %":0
 kafka stats  kafka_count:385  kafka_len_tot:000000039808  tcp_payload_len_tot:000000039808  ind_client_id_n:0
-kafka rsp without req!!  list  
+kafka rsp list  
 kafka_corr_id:4279  ack:1  iframe:591948  index_in_frame:1  kafka_len:306
 kafka_corr_id:4278  ack:1  iframe:591951  index_in_frame:1  kafka_len:92
 kafka_corr_id:4280  ack:1  iframe:591953  index_in_frame:1  kafka_len:92
@@ -38131,7 +38131,7 @@ kafka_corr_id:4660  ack:1  iframe:593689  index_in_frame:1  kafka_len:92
 kafka_corr_id:4662  ack:1  iframe:593692  index_in_frame:1  kafka_len:92
 kafka_corr_id:4937  ack:1  iframe:594230  index_in_frame:1  kafka_len:2726
 =============rsp without req 
-======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  kafka_at_frame:N  pkt_count:706794  elapsed:19.7329  ind_tcp_pair_n:334  max_pkt_len:65226
+======final stats  fname:/home/avorovich/pcap/rp_tap0.pcap  kafka_at_frame:N  pkt_count:706794  elapsed:19.2755  ind_tcp_pair_n:334  max_pkt_len:65226  kafka_count_total:16800  kafka_non_ack_count_total:1442
 Kafka Non-ACK(BAD - request without response) Ratio Histogram:
 range:00-00%  count_of_tcp_pairs:43
 range:00-10%  count_of_tcp_pairs:48

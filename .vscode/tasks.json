@@ -2,43 +2,15 @@
     "version": "2.0.0",
     "tasks": [
       {
-        "label": "ai_task",
+        "label": "kbld",
         "type": "shell",
-        "command": "${workspaceFolder}/ai.sh",
-        "args": [
-          "${fileBasenameNoExtension}" // Compile the currently opened file
-        ],
-        "group": {
-          "kind": "build",
-          "isDefault": true
+        "options": {
+          "cwd": "${workspaceFolder:av_openacr}/ktest"
         },
-        "problemMatcher": [
-          "$gcc"
-        ],
-        "presentation": {
-          "reveal": "silent", // Terminal opens only on errors
-          "panel": "shared", // Reuse the same terminal
-          "echo": true // Echo the command in the terminal if shown
-        },
-        "detail": "ai task"
-      },
-      {
-        "label": "gcc_task",
-        "type": "shell",
-        "command": "gcc",
-        "args": [
-          "${file}",
-          "-o",
-          "${fileDirname}/${fileBasenameNoExtension}.out" // Output executable
-        ],
-        "group": {
-          "kind": "build",
-          "isDefault": false
-        },
-        "problemMatcher": [
-          "$gcc"
-        ],
-        "detail": "Compile into executable"
+        "command": "${workspaceFolder:av_openacr}/ktest/kbld.sh",
+        "group": "build",
+        "problemMatcher": []
       }
+  
     ]
   }

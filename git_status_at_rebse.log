@@ -1,0 +1,53 @@
+avorovich@nj1:~/arnd$ git status
+interactive rebase in progress; onto 1fb83bd9
+Last command done (1 command done):
+   pick cd5e95a8 pcap parse first cut
+Next commands to do (73 remaining commands):
+   pick fc9d9f47 add  mac headers
+   pick c71a46ad build hash and zd_list
+  (use "git rebase --edit-todo" to view and edit)
+You are currently rebasing branch 'algornd/arnd.525' on '1fb83bd9'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   bin/x2bm_pcap
+        modified:   cpp/gen/command_gen.cpp
+        modified:   cpp/gen/dmmeta_gen.cpp
+        new file:   cpp/gen/x2bm_pcap_gen.cpp
+        new file:   cpp/x2bm_pcap/x2bm_pcap.cpp
+        modified:   data/dev/rpm.ssim
+        modified:   data/dev/syslib.ssim
+        modified:   include/gen/command_gen.h
+        modified:   include/gen/command_gen.inl.h
+        modified:   include/gen/dmmeta_gen.h
+        new file:   include/gen/x2bm_pcap_gen.h
+        new file:   include/gen/x2bm_pcap_gen.inl.h
+        new file:   include/x2bm_pcap.h
+        new file:   txt/exe/x2bm_pcap/README.md
+        new file:   txt/exe/x2bm_pcap/internals.md
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   data/dev/gitfile.ssim
+        both modified:   data/dev/readme.ssim
+        both modified:   data/dev/targdep.ssim
+        both modified:   data/dev/target.ssim
+        both modified:   data/dev/targsrc.ssim
+        both modified:   data/dev/targsyslib.ssim
+        both modified:   data/dmmeta/cfmt.ssim
+        both modified:   data/dmmeta/ctype.ssim
+        both modified:   data/dmmeta/ctypelen.ssim
+        both modified:   data/dmmeta/fcmdline.ssim
+        both modified:   data/dmmeta/field.ssim
+        both modified:   data/dmmeta/floadtuples.ssim
+        both modified:   data/dmmeta/main.ssim
+        both modified:   data/dmmeta/ns.ssim
+        both modified:   data/dmmeta/nscpp.ssim
+        both modified:   data/dmmeta/nsx.ssim
+        both modified:   data/dmmeta/tracerec.ssim
+
+avorovich@nj1:~/arnd$ 

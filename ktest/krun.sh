@@ -1,66 +1,58 @@
 #!/bin/bash
+set -x
 #rebuild 
 kbld.sh
-# Paths to executables
-PRODUCER_BIN="./producer"
-CONSUMER_BIN="./consumer"
 
-# Log files
-PRODUCER_LOG="logs/producer.log"
-CONSUMER_LOG="logs/consumer.log"
 
-# Remove old log files
-rm -f $PRODUCER_LOG $CONSUMER_LOG
-# recreate the topic
-/opt/kafka/bin/kafka-topics.sh --delete --topic test-topic --bootstrap-server localhost:9092
-/opt/kafka/bin/kafka-topics.sh --create --topic test-topic --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+PCAP_FILE="/home/avorovich/pcap/klocal.pcap"
 
-# Check if executables exist
-if [ ! -f "$PRODUCER_BIN" ] || [ ! -f "$CONSUMER_BIN" ]; then
-    echo "Error: $PRODUCER_BIN or $CONSUMER_BIN not found. Compile them first."
-    exit 1
-fi
-
-echo "Starting tcpdump..."
-sudo pkill tcpdump
-if [ -f /home/avorovich/pcap/klocal.pcap ]; then
-    sudo rm /home/avorovich/pcap/klocal.pcap
-fi
-sudo tcpdump -i lo -w /home/avorovich/pcap/klocal.pcap port 9092  &
-TCPDUMP_PID=$!
+# Stop any existing tcpdump instances
+sudo pkill -INT -x tcpdump
 sleep 1
 
-# Start consumer in background
-echo "Starting consumer..."
-$CONSUMER_BIN > $CONSUMER_LOG 2>&1 &
-CONSUMER_PID=$!
-sleep 2  # Give consumer time to start
+# Remove old pcap file
+rm -f "$PCAP_FILE"
 
-# Start producer in background
-echo "Starting producer..."
-$PRODUCER_BIN > $PRODUCER_LOG 2>&1 &
-PRODUCER_PID=$!
+# Start tcpdump in the background and capture the correct PID
+echo "Starting tcpdump..."
+sudo tcpdump -i lo -w "$PCAP_FILE" port 9092 &
+sleep 1
 
-# Function to handle cleanup
+TCPDUMP_PID=$(pgrep -x tcpdump)
+echo "tcpdump started with PID: $TCPDUMP_PID"
+
+
+# Function to cleanup processes
 cleanup() {
-    echo "Shutting down..."
-    if ps -p $PRODUCER_PID > /dev/null; then
-        kill $PRODUCER_PID
-    fi
-    kill $CONSUMER_PID
-    # kill $TCPDUMP_PID
-    wait $PRODUCER_PID $CONSUMER_PID 
-    # wait $PRODUCER_PID $CONSUMER_PID $TCPDUMP_PID
+    echo "Stopping processes..."
+    kill "$CONSUMER_PID" "$PRODUCER_PID"
+    wait "$CONSUMER_PID" "$PRODUCER_PID" 2>/dev/null
+
+    # Gracefully stop tcpdump
+    echo "Stopping tcpdump (PID: $TCPDUMP_PID)..."
+    sudo kill -INT "$TCPDUMP_PID"
+    rm -f /tmp/tcpdump.pid
     exit 0
 }
 
-# Trap signals for cleanup
+# Trap Ctrl+C and termination signals
 trap cleanup SIGINT SIGTERM
 
-# Monitor processes
-echo "Producer PID: $PRODUCER_PID, Consumer PID: $CONSUMER_PID "
-echo "Press Ctrl+C to stop both processes."
-echo "Logs: $PRODUCER_LOG, $CONSUMER_LOG"
+# Start consumer
+echo "Starting consumer..."
+./consumer > logs/consumer.log 2>&1 &
+CONSUMER_PID=$!
+sleep 2
 
-# Wait for processes to exit
-wait $PRODUCER_PID $CONSUMER_PID 
+# Start producer
+echo "Starting producer..."
+./producer > logs/producer.log 2>&1 &
+PRODUCER_PID=$!
+
+# Show PIDs
+echo "Producer PID: $PRODUCER_PID, Consumer PID: $CONSUMER_PID (tcpdump PID: $TCPDUMP_PID)"
+echo "Press Ctrl+C to stop all processes."
+
+# Wait for processes
+wait "$PRODUCER_PID" "$CONSUMER_PID"
+cleanup

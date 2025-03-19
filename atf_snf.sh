@@ -9,6 +9,7 @@ dmmeta.ns  ns:atf_snf  nstype:exe  license:GPL  comment:"IBV Sniffer testing too
     dev.targsrc  targsrc:atf_snf/include/gen/atf_snf_gen.inl.h  comment:""
     dev.targsyslib  targsyslib:Linux/atf_snf.ibverbs  comment:""
     dev.targsyslib  targsyslib:Linux/atf_snf.rdmacm  comment:""
+    dev.tgtcov  target:atf_snf  cov_min:0.00  maxerr:0.00  comment:""
 
   dmmeta.ctype  ctype:atf_snf.FDb  comment:""
     dmmeta.field  field:atf_snf.FDb._db      arg:atf_snf.FDb      reftype:Global  dflt:""  comment:""
@@ -86,4 +87,4 @@ dmmeta.ns  ns:atf_snf  nstype:exe  license:GPL  comment:"IBV Sniffer testing too
   dmmeta.nsinclude  nsinclude:atf_snf/rdma/rdma_cma.h  sys:Y  comment:""
   dmmeta.nsx  ns:atf_snf  genthrow:Y  correct_getorcreate:Y  pool:algo_lib.FDb.malloc  sortxref:Y  pack:N  comment:""
   dmmeta.tracerec  tracerec:atf_snf.trace  comment:""
-report.acr  n_select:75  n_insert:0  n_delete:0  n_ignore:0  n_update:0  n_file_mod:0
+report.acr  n_select:76  n_insert:0  n_delete:0  n_ignore:0  n_update:0  n_file_mod:0

@@ -1,0 +1,50 @@
+                                                                                                          
+                                                                                                          
+    / atf_snf.WcOpcode                                                                                    
+    -                                                                                                     
+                                                                                                          
+                                                                                                          
+                   / atf_snf.FDb                                                                          
+                   |                                                                                      
+                   |Lary memqp---------------------->/ atf_snf.FMemqp                                     
+                   |                                 |                                                    
+                   |Lary intfname--------------------|-->/ atf_snf.FIntfname                              
+                   |Thash ind_intfname---------------|-->|                                                
+                   |                                 |   |                                                
+                   |Lary snf------>/ atf_snf.FSnf    |   |                                                
+                   |               |Ptrary c_memqp-->|   |                                                
+                   |               |                 -   |                                                
+                   |               |                     |                                                
+                   |               |Ptr p_intfname------>|                                                
+                   |               -                     |                                                
+                   |                                     |                                                
+                   |                                     -                                                
+                   |                                                                                      
+                   |                                                                                      
+                   |Tpool client_id-------------------------------->/ atf_snf.FClient_id                  
+                   |                                                |                                     
+                   |Tpool frame-------------------------------------|------------------>/ atf_snf.FFrame  
+                   |                                                |                   |                 
+                   |Tpool kafka------------------------------------>/ atf_snf.FKafka    |                 
+                   |                                                |                   |                 
+                   |Tpool tcp_pair------>/ atf_snf.FTcp_pair        |                   |                 
+                   |Thash ind_tcp_pair-->|                          |                   |                 
+                   |Llist zd_tcp_pair--->|                          |                   |                 
+                   -                     |                          |                   |                 
+                                         |                          |                   |                 
+                                         |Thash ind_kafka_corr_id-->|                   |                 
+                                         |Llist zd_frames-----------|------------------>|                 
+                                         |Llist zd_client_id------->|                   |                 
+                                         |Llist zd_kafka_corr_id--->|                   |                 
+                                         |Bheap bh_frames-----------|------------------>|                 
+                                         |Thash ind_client_id------>|                   |                 
+                                         |<-------------------------|Upptr p_tcp_pair   |                 
+                                         |                          |                   |                 
+                                         |                          |                   |                 
+                                         |<-------------------------|Upptr p_tcp_pair   |                 
+                                         |                          -                   |                 
+                                         |                                              |                 
+                                         |<---------------------------------------------|Upptr p_tcp_pair 
+                                         |                                              -                 
+                                         |                                                                
+                                         -                                                                

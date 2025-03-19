@@ -11,6 +11,7 @@ kbld.sh
 
 pcap_file="/home/avorovich/pcap/klocal_dat0.pcap"
 interface="data0"
+interface="lo"
 ip="192.168.110.11:9092"
 tcpdump_bin="tcpdump"
 

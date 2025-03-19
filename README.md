@@ -3,28 +3,28 @@
 
 ## to show all dependencies
 ```
-acr dmmeta.ns:atf_spdk -ndown 99  -tree -e
-acr dmmeta.ns:atf_spdk -ndown 99  -tree > $HOME1/av_openacr/atf_spdk.sh
+acr dmmeta.ns:atf_snf  -ndown 99  -tree -e
+acr dmmeta.ns:atf_snf  -ndown 99  -tree > ~/av_openacr/atf_snf.sh
 
   dmmeta.fcleanup  field:atf_spdk.FCtrlr.ctrlr  comment:""
 
 
     # dmmeta.field  field:atf_spdk.FDb.av22         acr.rowid:2       arg:u64                     reftype:Val   dflt:""  comment:""
 
-(venv) pgmabv@DESKTOP-3DQ1QS6:~/openacr$ acr dev.targsrc:x2bm_pcap/cpp/x2bm_pcap/%.%
-dev.targsrc  targsrc:x2bm_pcap/cpp/x2bm_pcap/x2bm_pcap.cpp  comment:""
-dev.targsrc  targsrc:x2bm_pcap/cpp/x2bm_pcap/util.cpp  comment:""
-dev.targsrc  targsrc:x2bm_pcap/cpp/x2bm_pcap/util.h    comment:""
+(venv) pgmabv@DESKTOP-3DQ1QS6:~/openacr$ acr dev.targsrc:atf_snf/cpp/atf_snf/%.%
+dev.targsrc  targsrc:atf_snf/cpp/atf_snf/atf_snf.cpp  comment:""
+dev.targsrc  targsrc:atf_snf/cpp/atf_snf/util.cpp  comment:""
+dev.targsrc  targsrc:atf_snf/cpp/atf_snf/util.h    comment:""
 ```
 
 ## To Show code
 
 ```bash
 # All generated C code
-amc x2bm_pcap.%
+amc atf_snf.%
 
 # Show prototypes
-amc x2bm_pcap.%TKaf% -proto
+amc atf_snf.%TKaf% -proto
 
 ```
 
@@ -42,15 +42,15 @@ to see all bad ref
 ## Visuals SVG
 
 ```bash
-amc_vis x2bm_pcap.% 
-amc_vis x2bm_pcap.% -dot:av_openacr/pic
+amc_vis atf_snf.% 
+amc_vis atf_snf.% -dot:av_openacr/pic
 dot -Tsvg av_openacr/pic -o av_openacr/pic.svg
 amc_vis samp_meng.% -dot:av_openacr/meng
 dot -Tsvg av_openacr/meng -o av_openacr/meng.svg
 ```
 ## to run pipeline locally 
 
-cpp-indent cpp/x2bm_pcap/x2bm_pcap.cpp
+cpp-indent cpp/atf_snf/atf_snf.cpp
 atf_ci -cijob:%
 
 ```
@@ -114,7 +114,7 @@ av_openacr
 
 ## messages
 samp_meng.NewSymbolReqMsg symbol:wwww
-x2bm_pcap.NewOrderReqMsg part_key:part98  amt:10
+atf_snf.NewOrderReqMsg part_key:part98  amt:10
 
 ## Todo
 

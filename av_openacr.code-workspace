@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "../pcap"
+		},
+		{
+			"path": ".."
 		}
 	],
 	"settings": {

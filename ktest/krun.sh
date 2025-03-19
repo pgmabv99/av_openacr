@@ -4,38 +4,48 @@ set -x
 kbld.sh
 
 
-# PCAP_FILE="/home/avorovich/pcap/klocal.pcap"
+# pcap_file="/home/avorovich/pcap/klocal.pcap"
 # interface="lo"
-PCAP_FILE="/home/avorovich/pcap/klocal_dat0.pcap"
+# ip="localhost:9092"
+# tcpdump_bin="tcpdump"
+
+pcap_file="/home/avorovich/pcap/klocal_dat0.pcap"
 interface="data0"
+ip="192.168.110.11:9092"
+tcpdump_bin="tcpdump"
+
+echo "rebuild topics"
+/opt/kafka/bin/kafka-topics.sh --delete --topic test-topic --bootstrap-server $ip
+/opt/kafka/bin/kafka-topics.sh --create --topic test-topic --bootstrap-server $ip --partitions 1 --replication-factor 1
+/opt/kafka/bin/kafka-topics.sh --list --bootstrap-server $ip
 
 # Stop any existing tcpdump instances
-sudo pkill -INT -x tcpdump
+sudo pkill -INT -x $tcpdump_bin
 sleep 1
 
 # Remove old pcap file
-rm -f "$PCAP_FILE"
+rm -f "$pcap_file"
 
 # Start tcpdump in the background and capture the correct PID
-echo "Starting tcpdump..."
-sudo tcpdump -i $interface -w "$PCAP_FILE" port 9092 &
+echo "Starting $tcpdump_bin on interface $interface, capturing to $pcap_file..."
+sudo $tcpdump_bin -i $interface -w "$pcap_file" port 9092 &
 sleep 1
 
-TCPDUMP_PID=$(pgrep -x tcpdump)
-echo "tcpdump started with PID: $TCPDUMP_PID"
+tcpdump_pid=$(pgrep -x $tcpdump_bin)
+echo "tcpdump started with PID: $tcpdump_pid"
 
 
 # Function to cleanup processes
 cleanup() {
     echo "Stopping processes..."
-    kill "$CONSUMER_PID" "$PRODUCER_PID"
-    wait "$CONSUMER_PID" "$PRODUCER_PID" 2>/dev/null
+    kill "$consumer_pid" "$producer_pid"
+    wait "$consumer_pid" "$producer_pid" 2>/dev/null
 
     # Gracefully stop tcpdump
-    echo "Stopping tcpdump (PID: $TCPDUMP_PID)..."
-    sudo kill -INT "$TCPDUMP_PID"
+    echo "Stopping $tcpdump_bin (PID: $tcpdump_pid)..."
+    sudo kill -INT "$tcpdump_pid"
 
-    tcpdump -r $PCAP_FILE -c 10 -tttt
+    $tcpdump_bin -r $pcap_file -c 10 -tttt
     exit 0
 }
 
@@ -45,18 +55,18 @@ trap cleanup SIGINT SIGTERM
 # Start consumer
 echo "Starting consumer..."
 ./consumer > logs/consumer.log 2>&1 &
-CONSUMER_PID=$!
+consumer_pid=$!
 sleep 2
 
 # Start producer
 echo "Starting producer..."
 ./producer > logs/producer.log 2>&1 &
-PRODUCER_PID=$!
+producer_pid=$!
 
 # Show PIDs
-echo "Producer PID: $PRODUCER_PID, Consumer PID: $CONSUMER_PID (tcpdump PID: $TCPDUMP_PID)"
+echo "Producer PID: $producer_pid, Consumer PID: $consumer_pid (tcpdump PID: $tcpdump_pid)"
 echo "Press Ctrl+C to stop all processes."
 
 # Wait for processes
-wait "$PRODUCER_PID" "$CONSUMER_PID"
+wait "$producer_pid" "$consumer_pid"
 cleanup

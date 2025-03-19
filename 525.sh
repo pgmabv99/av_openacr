@@ -100,11 +100,7 @@ dmmeta.field  field:command.$trg.mult_req_per_frame   arg:bool  reftype:Val     
 dmmeta.field  field:command.$trg.use_files   arg:bool  reftype:Val       dflt:false comment:"true -  read static pcap. false - live sniffer"
 EOF
 
-# if [ "$trg" == "atf_snf" ]; then
-# acr -merge -write <<EOF
-# dev.targsrc  targsrc:atf_snf/cpp/atf_snf/PcapFilesProcess.cpp  comment:""
-# EOF
-# fi
+
 
 amc
 amc_vis $trg.%   > ~/av_openacr/${trg}_viz.txt

@@ -40,3 +40,6 @@ ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_one_mult_false.log
 ofile=~/av_openacr/sniffer_logs/tcp_pair_klocal.log
 ~/arnd/bin/x2bm_pcap -mult_req_per_frame:true  -files:%klocal%> $ofile 2>&1; tail -n 20 $ofile
 
+ofile=~/av_openacr/sniffer_logs/tcp_pair_klocal_dat0.log
+~/arnd/bin/x2bm_pcap -mult_req_per_frame:true  -files:%klocal_dat0%> $ofile 2>&1; tail -n 20 $ofile
+

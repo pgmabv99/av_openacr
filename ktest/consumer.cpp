@@ -25,7 +25,8 @@ void msg_consume(rd_kafka_message_t *rkmessage, void *opaque) {
 }
 
 int main() {
-    std::string brokers = "localhost:9092";  // Kafka broker(s) address
+    std::string brokers = "192.168.110.11:9092";  // Kafka broker(s) address
+    // std::string brokers = "localhost:9092";  // Kafka broker(s) address
     std::string topic = "test-topic";        // Kafka topic name
     std::string group_id = "my_group";       // Consumer group ID
     char errstr[512];                        // Error string buffer
@@ -96,7 +97,7 @@ int main() {
         return 1;
     }
 
-    std::cout << "Subscribed to topic: " << topic << ". Press Ctrl+C to exit." << std::endl;
+    std::cout << "Subscribed to topic: " << topic << " brokers:"<< brokers << ". Press Ctrl+C to exit." << std::endl;
 
     // Main consumption loop
     while (run) {

@@ -131,7 +131,10 @@ x2bm_pcap.NewOrderReqMsg part_key:part98  amt:10
 
 #for arnd gitlab use ssh private key
 git config --global core.sshCommand "ssh -i /home/avorovich/.ssh/algox2_av"
-git clone ssh://git@gitlab.vovaco.com:1008/algornd/arnd.git
+
+cd arnd
+gitconfig-setup
+ai
 
 #for av_openacl github use token (gdrive) 
 git clone https://pgmabv99:<avtoken4>@github.com/pgmabv99/algo_util.git

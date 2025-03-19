@@ -4,7 +4,10 @@ set -x
 kbld.sh
 
 
-PCAP_FILE="/home/avorovich/pcap/klocal.pcap"
+# PCAP_FILE="/home/avorovich/pcap/klocal.pcap"
+# interface="lo"
+PCAP_FILE="/home/avorovich/pcap/klocal_dat0.pcap"
+interface="data0"
 
 # Stop any existing tcpdump instances
 sudo pkill -INT -x tcpdump
@@ -15,7 +18,7 @@ rm -f "$PCAP_FILE"
 
 # Start tcpdump in the background and capture the correct PID
 echo "Starting tcpdump..."
-sudo tcpdump -i lo -w "$PCAP_FILE" port 9092 &
+sudo tcpdump -i $interface -w "$PCAP_FILE" port 9092 &
 sleep 1
 
 TCPDUMP_PID=$(pgrep -x tcpdump)
@@ -31,7 +34,8 @@ cleanup() {
     # Gracefully stop tcpdump
     echo "Stopping tcpdump (PID: $TCPDUMP_PID)..."
     sudo kill -INT "$TCPDUMP_PID"
-    rm -f /tmp/tcpdump.pid
+
+    tcpdump -r $PCAP_FILE -c 10 -tttt
     exit 0
 }
 

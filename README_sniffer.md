@@ -133,10 +133,28 @@ supports-eeprom-access: no
 supports-register-dump: no
 supports-priv-flags: yes
  ```
- ##  tools and versions of capture code 
- 
+ ##  tools and versions of capture code (upd 3/18)
+ ```
  tcpdump -i tap0 -v -v -v
 ibv_devices
+
+# brief interface display 
+ip -br a 
+```
+ ##  routing in-container via dat0
+ ```
+#change broker 2 listners
+listeners=PLAINTEXT://192.168.110.11:9092
+advertised.listeners=PLAINTEXT://192.168.110.11:9092
+
+#change cpp code in producer/consumer  to 
+std::string brokers = "192.168.110.11:9092";
+
+#change routing tables  
+sudo ip route add 192.168.110.11/32 dev data0
+ip route 
+```
+
 
  ### dumpcap (part of dpdk)
  - needs a primary process

@@ -6417,6 +6417,6 @@ kafka_corr_id:1585  ack:1  iframe:9528  index_in_frame:1  kafka_len:58
 kafka_corr_id:1586  ack:1  iframe:9534  index_in_frame:1  kafka_len:58
 kafka_corr_id:1587  ack:1  iframe:9540  index_in_frame:1  kafka_len:58
 =============rsp without req 
-======final stats  fname:/home/avorovich/pcap/klocal.pcap  kafka_at_frame:Y  pkt_count:9544  elapsed:0.0545744  ind_tcp_pair_n:10  max_pkt_len:546  kafka_count_total:3179  kafka_non_ack_count_total:0
+======final stats  fname:/home/avorovich/pcap/klocal.pcap  kafka_at_frame:Y  pkt_count:9544  elapsed:0.0533747  ind_tcp_pair_n:10  max_pkt_len:546  kafka_count_total:3179  kafka_non_ack_count_total:0
 Kafka Non-ACK(BAD - request without response) Ratio Histogram:
 range:00-00%  count_of_tcp_pairs:5

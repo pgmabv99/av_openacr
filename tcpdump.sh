@@ -49,3 +49,6 @@ ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_all_mult_true.log
 
 ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_all_mult_true.log
 ~/arnd/bin/atf_snf -use_files:true -files:%tap0% -mult_req_per_frame:true > $ofile 2>&1; tail -n 20 $ofile
+
+ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_one_mult_true.log
+~/arnd/bin/atf_snf -use_files:true -files:%tap0% -mult_req_per_frame:true > $ofile 2>&1; tail -n 20 $ofile

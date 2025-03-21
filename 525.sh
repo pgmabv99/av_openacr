@@ -10,6 +10,7 @@ cd $HOME/arnd
 # acr_compl -install
 # amc
 
+acr_ed -del  -ctype $trg.FMcb    -write || true
 acr_ed -del  -ctype $trg.FTcp_pair -write || true
 acr_ed -del  -ctype $trg.FFrame     -write || true
 acr_ed -del  -ctype $trg.FClient_id    -write || true
@@ -18,6 +19,7 @@ acr_ed -del  -ctype $trg.FKafka    -write || true
 # acr_ed -del  -ctype $trg.FFrame     -write 
 # acr_ed -del  -ctype $trg.FClient_id   -write 
 # acr_ed -del  -ctype $trg.FCorr_id    -write 
+# acr_ed -del  -ctype $trg.FMcb   -write 
 
 
 #--------------tcp pair
@@ -85,6 +87,22 @@ acr_ed -create -field  $trg.FKafka.p_tcp_pair    -arg $trg.FTcp_pair -reftype Up
 acr_ed -create -field  $trg.FTcp_pair.zd_kafka_corr_id -arg $trg.FKafka -via $trg.FKafka.p_tcp_pair -cascdel -write -comment "double list of corr_id"     
 acr_ed -create -field  $trg.FTcp_pair.ind_kafka_corr_id -arg $trg.FKafka -via $trg.FKafka.p_tcp_pair -xref -cascdel -write -comment "index of corr_id"     
 
+# #-------------main CB
+acr_ed -create -ctype $trg.FMcb                              -write -comment "Main CB"
+# stats
+acr_ed -create -field $trg.FMcb.pkt_count                   -arg u32  -write -comment "global pkt count including non-tcp"
+acr_ed -create -field $trg.FMcb.max_pkt_len                 -arg u32  -write -comment "max pkt len"
+acr_ed -create -field $trg.FMcb.kafka_count_total           -arg u32  -write -comment ""
+acr_ed -create -field $trg.FMcb.kafka_non_ack_count_total   -arg u32  -write -comment ""
+# debug
+acr_ed -create -field $trg.FMcb.mac_print_flg               -arg bool -write -comment "debug mac"
+acr_ed -create -field $trg.FMcb.frame_print_flg             -arg bool -write -comment "debug frame"
+acr_ed -create -field $trg.FMcb.kafka_print_flg             -arg bool -write -comment "debug kafka"
+acr_ed -create -field $trg.FMcb.swin_print_flg              -arg bool -write -comment "debug sliding window"
+acr_ed -create -field $trg.FMcb.kafka_pair_final_print_flg  -arg bool -write -comment "debug kafka pair final"
+#  include into _db
+acr_ed -del -field $trg.FDb.mcb -write
+acr_ed -create -field $trg.FDb.mcb  -arg  $trg.FMcb  -write -comment ""
 
 #  set parms for $trg
 acr -merge  -write <<EOF

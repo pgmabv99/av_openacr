@@ -95,6 +95,7 @@ acr_ed -create -field $trg.FMcb.frame_print_flg             -arg bool -write -co
 acr_ed -create -field $trg.FMcb.kafka_print_flg             -arg bool -write -comment "debug kafka"
 acr_ed -create -field $trg.FMcb.swin_print_flg              -arg bool -write -comment "debug sliding window"
 acr_ed -create -field $trg.FMcb.kafka_pair_final_print_flg  -arg bool -write -comment "debug kafka pair final"
+acr_ed -create -field $trg.FMcb.snf_memqp_print_flg         -arg bool -write -comment "debug memqp print"
 #  include into _db
 acr_ed -del -field $trg.FDb.mcb -write
 acr_ed -create -field $trg.FDb.mcb  -arg  $trg.FMcb  -write -comment ""

@@ -12,11 +12,9 @@ cd $HOME/arnd
 
 acr_ed -del  -ctype $trg.FMcb    -write || true
 acr_ed -del  -ctype $trg.FTcp_pair -write || true
-acr_ed -del  -ctype $trg.FFrame     -write || true
 acr_ed -del  -ctype $trg.FClient_id    -write || true
 acr_ed -del  -ctype $trg.FKafka    -write || true
 # acr_ed -del  -ctype $trg.FTcp_pair -write 
-# acr_ed -del  -ctype $trg.FFrame     -write 
 # acr_ed -del  -ctype $trg.FClient_id   -write 
 # acr_ed -del  -ctype $trg.FCorr_id    -write 
 # acr_ed -del  -ctype $trg.FMcb   -write 
@@ -55,17 +53,6 @@ acr_ed -create -field $trg.FTcp_pair.kafka_per_frame_count   -arg u32 -write -co
 acr_ed -create -field $trg.FDb.zd_tcp_pair -cascdel -write -comment ""
 
 
-#---------------frame 
-acr_ed -create -ctype $trg.FFrame          -pooltype Tpool       -write  -comment "tcp frame entry"
-acr_ed -create -field  $trg.FFrame.p_tcp_pair -arg $trg.FTcp_pair -reftype Upptr -write
-
-acr_ed -create -field  $trg.FFrame.iframe    -arg u64                -write -comment "global frame number"
-acr_ed -create -field  $trg.FFrame.seq       -arg u32                -write -comment "sequence number/ used in hash"
-acr_ed -create -field  $trg.FFrame.p_pay     -arg u8  -reftype Tary  -write -comment "p to payload buffer"
-
-#  pointers from above
-acr_ed -create -field  $trg.FTcp_pair.zd_frames -arg $trg.FFrame -via $trg.FFrame.p_tcp_pair -cascdel -write -comment "double list of frames"
-acr_ed -create -field  $trg.FTcp_pair.bh_frames -arg $trg.FFrame -via $trg.FFrame.p_tcp_pair -sortfld $trg.FFrame.seq -cascdel -write -comment "binary heap of frames"
 
 #-------------kafka client_id entry
 acr_ed -create -ctype $trg.FClient_id          -pooltype Tpool       -write  -comment "Kafka client entry"
@@ -79,10 +66,11 @@ acr_ed -create -field  $trg.FTcp_pair.ind_client_id  -arg $trg.FClient_id -via $
 acr_ed -create -ctype $trg.FKafka               -pooltype Tpool       -write  -comment "Kafka req/rsp object"
 acr_ed -create -field  $trg.FKafka.kafka_corr_id -arg u32             -write  -comment "correlation_id from hdr"
 acr_ed -create -field  $trg.FKafka.kafka_len     -arg u32             -write  -comment "len of req/rsp w/o 4"
-acr_ed -create -field  $trg.FKafka.iframe        -arg u32             -write  -comment "iframe of frame where the kafka completed "
+acr_ed -create -field  $trg.FKafka.iframe        -arg u32             -write  -comment "iframe of frame where the kafka req/rsp completed "
 acr_ed -create -field  $trg.FKafka.seq           -arg u32             -write  -comment "unused ;? seq of frame where the kafka started"
 acr_ed -create -field  $trg.FKafka.index_in_frame   -arg u32             -write  -comment "index of kafka req/rsp in it's frame"
 acr_ed -create -field  $trg.FKafka.ack           -arg u32             -write  -comment "0 intially, =1 when rsp is seen with same corr_id"
+acr_ed -create -field  $trg.FKafka.api_key       -arg u32             -write  -comment "kafka api key "
 acr_ed -create -field  $trg.FKafka.p_tcp_pair    -arg $trg.FTcp_pair -reftype Upptr -write  -comment  "tcp pair pointer"
 #  pointers from above
 acr_ed -create -field  $trg.FTcp_pair.zd_kafka_corr_id -arg $trg.FKafka -via $trg.FKafka.p_tcp_pair -cascdel -write -comment "double list of corr_id"     

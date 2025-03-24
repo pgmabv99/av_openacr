@@ -27,8 +27,6 @@
                      |                                                                    
                      |Tpool client_id-------------------------------->/ atf_snf.FClient_id
                      |                                                |                   
-                     |Tpool frame------------------------------------>/ atf_snf.FFrame    
-                     |                                                |                   
                      |Tpool kafka------------------------------------>/ atf_snf.FKafka    
                      |                                                |                   
                      |Tpool tcp_pair------>/ atf_snf.FTcp_pair        |                   
@@ -36,15 +34,10 @@
                      |Llist zd_tcp_pair--->|                          |                   
                      -                     |                          |                   
                                            |                          |                   
-                                           |Thash ind_kafka_corr_id-->|                   
-                                           |Llist zd_frames---------->|                   
-                                           |Llist zd_kafka_corr_id--->|                   
                                            |Thash ind_client_id------>|                   
+                                           |Thash ind_kafka_corr_id-->|                   
                                            |Llist zd_client_id------->|                   
-                                           |Bheap bh_frames---------->|                   
-                                           |<-------------------------|Upptr p_tcp_pair   
-                                           |                          |                   
-                                           |                          |                   
+                                           |Llist zd_kafka_corr_id--->|                   
                                            |<-------------------------|Upptr p_tcp_pair   
                                            |                          |                   
                                            |                          |                   

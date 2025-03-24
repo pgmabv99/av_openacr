@@ -9,138 +9,111 @@ atf_snf.info comment:"SGE and WR are initialised"
 atf_snf.info dev:data0  port:1  ib:mlx5_0  pci:0000:81:00.0  comment:"Flow created successfully, sniffing all traffic"
 +++++++++++++kafka req
 swin_buf_n:45  swin_offset:0
-swin_buf_elems:" 00 00 00 29| 00 03 00 02| 00 00 71 42| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 32 38 31 36| 31 33 39 2d| 31 00 00 00| 00"
-req_hdr_hex___:" 00 00 00 29| 00 03 00 02| 00 00 71 42| 00 1b"
-fkafka request header req_length:41  api_key:3  api_key_str:Metadata  api_version:2  correlation_id:28994  client_id_len:27
+swin_buf_elems:" 00 00 00 29| 00 03 00 02| 00 00 8c bb| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 32 38 31 36| 31 33 39 2d| 31 00 00 00| 00"
+req_hdr_hex___:" 00 00 00 29| 00 03 00 02| 00 00 8c bb| 00 1b"
+fkafka request header req_length:41  api_key:3  api_key_str:Metadata  api_version:2  correlation_id:36027  client_id_len:27
 client_id_key:kafka-ui-admin-1742816139-1
 kafka_pay_asci:""
 kafka_pay_hex:""
 ++++++++++++++kafka rsp
 swin_buf_n:264  swin_offset:0
-swin_buf_elems:" 00 00 01 04| 00 00 71 42| 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 03 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62_trunc_"
+swin_buf_elems:" 00 00 01 04| 00 00 8c bb| 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 01 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62_trunc_"
 -----------------
-"kafka rsp_hdr_hex  ":" 00 00 01 04| 00 00 71 42|"
-fkafka response header rsp_length:260  correlation_id:28994  swin_buf_n:264  swin_offset:0
+"kafka rsp_hdr_hex  ":" 00 00 01 04| 00 00 8c bb|"
+fkafka response header rsp_length:260  correlation_id:36027  swin_buf_n:264  swin_offset:0
+kafka_pay_asci:..........dev.x2-01.ext...r........dev.x2-02.ext...s........dev.x2-03.ext...t........dev.x2-04.ext...u................/public/imdb.........................................................../public/anon_trunc_
+kafka_pay_hex:" 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 01 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62 6c 69 63| 2f 61 6e 6f| 6e_trunc_"
++++++++++++++kafka req
+swin_buf_n:45  swin_offset:0
+swin_buf_elems:" 00 00 00 29| 00 03 00 02| 00 00 8c c1| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 32 38 31 36| 31 33 39 2d| 31 ff ff ff| ff"
+req_hdr_hex___:" 00 00 00 29| 00 03 00 02| 00 00 8c c1| 00 1b"
+fkafka request header req_length:41  api_key:3  api_key_str:Metadata  api_version:2  correlation_id:36033  client_id_len:27
+client_id_key:kafka-ui-admin-1742816139-1
+kafka_pay_asci:""
+kafka_pay_hex:""
++++++++++++++kafka req
+swin_buf_n:45  swin_offset:0
+swin_buf_elems:" 00 00 00 29| 00 03 00 02| 00 00 8c c0| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 32 38 31 36| 31 33 39 2d| 31 ff ff ff| ff"
+req_hdr_hex___:" 00 00 00 29| 00 03 00 02| 00 00 8c c0| 00 1b"
+fkafka request header req_length:41  api_key:3  api_key_str:Metadata  api_version:2  correlation_id:36032  client_id_len:27
+client_id_key:kafka-ui-admin-1742816139-1
+kafka_pay_asci:""
+kafka_pay_hex:""
+++++++++++++++kafka rsp
+swin_buf_n:264  swin_offset:0
+swin_buf_elems:" 00 00 01 04| 00 00 8c c1| 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 01 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62_trunc_"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 01 04| 00 00 8c c1|"
+fkafka response header rsp_length:260  correlation_id:36033  swin_buf_n:264  swin_offset:0
+kafka_pay_asci:..........dev.x2-01.ext...r........dev.x2-02.ext...s........dev.x2-03.ext...t........dev.x2-04.ext...u................/public/imdb.........................................................../public/anon_trunc_
+kafka_pay_hex:" 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 01 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62 6c 69 63| 2f 61 6e 6f| 6e_trunc_"
++++++++++++++kafka req
+swin_buf_n:45  swin_offset:0
+swin_buf_elems:" 00 00 00 29| 00 03 00 02| 00 00 8c c3| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 32 38 31 36| 31 33 39 2d| 31 ff ff ff| ff"
+req_hdr_hex___:" 00 00 00 29| 00 03 00 02| 00 00 8c c3| 00 1b"
+fkafka request header req_length:41  api_key:3  api_key_str:Metadata  api_version:2  correlation_id:36035  client_id_len:27
+client_id_key:kafka-ui-admin-1742816139-1
+kafka_pay_asci:""
+kafka_pay_hex:""
+++++++++++++++kafka rsp
+swin_buf_n:264  swin_offset:0
+swin_buf_elems:" 00 00 01 04| 00 00 8c c0| 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62_trunc_"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 01 04| 00 00 8c c0|"
+fkafka response header rsp_length:260  correlation_id:36032  swin_buf_n:264  swin_offset:0
+kafka_pay_asci:..........dev.x2-01.ext...r........dev.x2-02.ext...s........dev.x2-03.ext...t........dev.x2-04.ext...u................/public/imdb.........................................................../public/anon_trunc_
+kafka_pay_hex:" 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62 6c 69 63| 2f 61 6e 6f| 6e_trunc_"
+++++++++++++++kafka rsp
+swin_buf_n:264  swin_offset:0
+swin_buf_elems:" 00 00 01 04| 00 00 8c c3| 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 03 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62_trunc_"
+-----------------
+"kafka rsp_hdr_hex  ":" 00 00 01 04| 00 00 8c c3|"
+fkafka response header rsp_length:260  correlation_id:36035  swin_buf_n:264  swin_offset:0
 kafka_pay_asci:..........dev.x2-01.ext...r........dev.x2-02.ext...s........dev.x2-03.ext...t........dev.x2-04.ext...u................/public/imdb.........................................................../public/anon_trunc_
 kafka_pay_hex:" 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 03 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62 6c 69 63| 2f 61 6e 6f| 6e_trunc_"
-+++++++++++++kafka req
-swin_buf_n:45  swin_offset:0
-swin_buf_elems:" 00 00 00 29| 00 03 00 02| 00 00 71 47| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 32 38 31 36| 31 33 39 2d| 31 ff ff ff| ff"
-req_hdr_hex___:" 00 00 00 29| 00 03 00 02| 00 00 71 47| 00 1b"
-fkafka request header req_length:41  api_key:3  api_key_str:Metadata  api_version:2  correlation_id:28999  client_id_len:27
-client_id_key:kafka-ui-admin-1742816139-1
-kafka_pay_asci:""
-kafka_pay_hex:""
-++++++++++++++kafka rsp
-swin_buf_n:264  swin_offset:0
-swin_buf_elems:" 00 00 01 04| 00 00 71 47| 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 03 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62_trunc_"
------------------
-"kafka rsp_hdr_hex  ":" 00 00 01 04| 00 00 71 47|"
-fkafka response header rsp_length:260  correlation_id:28999  swin_buf_n:264  swin_offset:0
-kafka_pay_asci:..........dev.x2-01.ext...r........dev.x2-02.ext...s........dev.x2-03.ext...t........dev.x2-04.ext...u................/public/imdb.........................................................../public/anon_trunc_
-kafka_pay_hex:" 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 03 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62 6c 69 63| 2f 61 6e 6f| 6e_trunc_"
-+++++++++++++kafka req
-swin_buf_n:45  swin_offset:0
-swin_buf_elems:" 00 00 00 29| 00 03 00 02| 00 00 71 48| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 32 38 31 36| 31 33 39 2d| 31 ff ff ff| ff"
-req_hdr_hex___:" 00 00 00 29| 00 03 00 02| 00 00 71 48| 00 1b"
-fkafka request header req_length:41  api_key:3  api_key_str:Metadata  api_version:2  correlation_id:29000  client_id_len:27
-client_id_key:kafka-ui-admin-1742816139-1
-kafka_pay_asci:""
-kafka_pay_hex:""
-++++++++++++++kafka rsp
-swin_buf_n:264  swin_offset:0
-swin_buf_elems:" 00 00 01 04| 00 00 71 48| 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 03 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62_trunc_"
------------------
-"kafka rsp_hdr_hex  ":" 00 00 01 04| 00 00 71 48|"
-fkafka response header rsp_length:260  correlation_id:29000  swin_buf_n:264  swin_offset:0
-kafka_pay_asci:..........dev.x2-01.ext...r........dev.x2-02.ext...s........dev.x2-03.ext...t........dev.x2-04.ext...u................/public/imdb.........................................................../public/anon_trunc_
-kafka_pay_hex:" 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 03 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62 6c 69 63| 2f 61 6e 6f| 6e_trunc_"
-+++++++++++++kafka req
-swin_buf_n:45  swin_offset:0
-swin_buf_elems:" 00 00 00 29| 00 03 00 02| 00 00 71 4b| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 32 38 31 36| 31 33 39 2d| 31 ff ff ff| ff"
-req_hdr_hex___:" 00 00 00 29| 00 03 00 02| 00 00 71 4b| 00 1b"
-fkafka request header req_length:41  api_key:3  api_key_str:Metadata  api_version:2  correlation_id:29003  client_id_len:27
-client_id_key:kafka-ui-admin-1742816139-1
-kafka_pay_asci:""
-kafka_pay_hex:""
-++++++++++++++kafka rsp
-swin_buf_n:264  swin_offset:0
-swin_buf_elems:" 00 00 01 04| 00 00 71 4b| 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 02 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62_trunc_"
------------------
-"kafka rsp_hdr_hex  ":" 00 00 01 04| 00 00 71 4b|"
-fkafka response header rsp_length:260  correlation_id:29003  swin_buf_n:264  swin_offset:0
-kafka_pay_asci:..........dev.x2-01.ext...r........dev.x2-02.ext...s........dev.x2-03.ext...t........dev.x2-04.ext...u................/public/imdb.........................................................../public/anon_trunc_
-kafka_pay_hex:" 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 02 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62 6c 69 63| 2f 61 6e 6f| 6e_trunc_"
-+++++++++++++kafka req
-swin_buf_n:45  swin_offset:0
-swin_buf_elems:" 00 00 00 29| 00 03 00 02| 00 00 71 4c| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 32 38 31 36| 31 33 39 2d| 31 00 00 00| 00"
-req_hdr_hex___:" 00 00 00 29| 00 03 00 02| 00 00 71 4c| 00 1b"
-fkafka request header req_length:41  api_key:3  api_key_str:Metadata  api_version:2  correlation_id:29004  client_id_len:27
-client_id_key:kafka-ui-admin-1742816139-1
-kafka_pay_asci:""
-kafka_pay_hex:""
-++++++++++++++kafka rsp
-swin_buf_n:264  swin_offset:0
-swin_buf_elems:" 00 00 01 04| 00 00 71 4c| 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 02 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62_trunc_"
------------------
-"kafka rsp_hdr_hex  ":" 00 00 01 04| 00 00 71 4c|"
-fkafka response header rsp_length:260  correlation_id:29004  swin_buf_n:264  swin_offset:0
-kafka_pay_asci:..........dev.x2-01.ext...r........dev.x2-02.ext...s........dev.x2-03.ext...t........dev.x2-04.ext...u................/public/imdb.........................................................../public/anon_trunc_
-kafka_pay_hex:" 00 00 00 04| 00 00 00 01| 00 0d 64 65| 76 2e 78 32| 2d 30 31 2e| 65 78 74 00| 00 04 72 ff| ff 00 00 00| 02 00 0d 64| 65 76 2e 78| 32 2d 30 32| 2e 65 78 74| 00 00 04 73| ff ff 00 00| 00 03 00 0d| 64 65 76 2e| 78 32 2d 30| 33 2e 65 78| 74 00 00 04| 74 ff ff 00| 00 00 04 00| 0d 64 65 76| 2e 78 32 2d| 30 34 2e 65| 78 74 00 00| 04 75 ff ff| ff ff 00 00| 00 01 00 00| 00 02 00 00| 00 0c 2f 70| 75 62 6c 69| 63 2f 69 6d| 64 62 00 00| 00 00 01 00| 00 00 00 00| 00 00 00 00| 02 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 04 00 00 00| 01 00 00 00| 02 00 00 00| 03 00 00 00| 04 00 00 00| 0c 2f 70 75| 62 6c 69 63| 2f 61 6e 6f| 6e_trunc_"
 atf_snf.info comment:"Ctrl+C detected, exiting..."
 ======================client to broker 
-frame stats  tcp_pair_key:192.168.110.11:37934-192.168.110.21:1138  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001249653207
-kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka client_id list (req only) 
-kafka_non_ack_count:0  pct_non_ack!!!:0
-kafka req  list  
-=============broker to client 
-frame stats  tcp_pair_key:192.168.110.21:1138-192.168.110.11:37934  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001629767038
-kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka rsp list  
-======================client to broker 
-frame stats  tcp_pair_key:192.168.110.11:54098-192.168.110.51:1141  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:002736528669
-kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka client_id list (req only) 
-kafka_non_ack_count:0  pct_non_ack!!!:0
-kafka req  list  
-=============broker to client 
-frame stats  tcp_pair_key:192.168.110.51:1141-192.168.110.11:54098  frame_count:1  syn_count:0  fin_count:1  rst_count:0  isn:001058959472
-kafka stats  kafka_count:0  kafka_len_tot:000000000000  tcp_payload_len_tot:000000000000  ind_client_id_n:0
-kafka rsp list  
-======================client to broker 
-frame stats  tcp_pair_key:192.168.110.11:41254-192.168.110.41:1140  frame_count:3  syn_count:0  fin_count:0  rst_count:0  isn:001073425361
-kafka stats  kafka_count:3  kafka_len_tot:000000000135  tcp_payload_len_tot:000000000135  ind_client_id_n:1
-kafka client_id list (req only) 
-client_id_key:kafka-ui-admin-1742816139-1
-kafka_non_ack_count:0  pct_non_ack!!!:0
-kafka req  list  
-kafka_corr_id:28994  ack:1  iframe:28  index_in_frame:1  api_key_str:Metadata  kafka_len:41
-kafka_corr_id:28999  ack:1  iframe:31  index_in_frame:1  api_key_str:Metadata  kafka_len:41
-kafka_corr_id:29000  ack:1  iframe:33  index_in_frame:1  api_key_str:Metadata  kafka_len:41
-=============broker to client 
-frame stats  tcp_pair_key:192.168.110.41:1140-192.168.110.11:41254  frame_count:3  syn_count:0  fin_count:0  rst_count:0  isn:003835121129
-kafka stats  kafka_count:3  kafka_len_tot:000000000792  tcp_payload_len_tot:000000000792  ind_client_id_n:0
-kafka rsp list  
-kafka_corr_id:28994  ack:1  iframe:29  index_in_frame:1  api_key_str:rsp  kafka_len:260
-kafka_corr_id:28999  ack:1  iframe:32  index_in_frame:1  api_key_str:rsp  kafka_len:260
-kafka_corr_id:29000  ack:1  iframe:34  index_in_frame:1  api_key_str:rsp  kafka_len:260
-======================client to broker 
-frame stats  tcp_pair_key:192.168.110.11:48790-192.168.110.31:1139  frame_count:2  syn_count:0  fin_count:0  rst_count:0  isn:003387073532
+frame stats  tcp_pair_key:192.168.110.11:53256-192.168.110.21:1138  frame_count:2  syn_count:0  fin_count:0  rst_count:0  isn:003292579712
 kafka stats  kafka_count:2  kafka_len_tot:000000000090  tcp_payload_len_tot:000000000090  ind_client_id_n:1
 kafka client_id list (req only) 
 client_id_key:kafka-ui-admin-1742816139-1
 kafka_non_ack_count:0  pct_non_ack!!!:0
 kafka req  list  
-kafka_corr_id:29003  ack:1  iframe:35  index_in_frame:1  api_key_str:Metadata  kafka_len:41
-kafka_corr_id:29004  ack:1  iframe:43  index_in_frame:1  api_key_str:Metadata  kafka_len:41
+kafka_corr_id:36027  ack:1  iframe:1  index_in_frame:1  api_key_str:Metadata  kafka_len:41
+kafka_corr_id:36033  ack:1  iframe:4  index_in_frame:1  api_key_str:Metadata  kafka_len:41
 =============broker to client 
-frame stats  tcp_pair_key:192.168.110.31:1139-192.168.110.11:48790  frame_count:2  syn_count:0  fin_count:0  rst_count:0  isn:000848198221
+frame stats  tcp_pair_key:192.168.110.21:1138-192.168.110.11:53256  frame_count:2  syn_count:0  fin_count:0  rst_count:0  isn:002917440522
 kafka stats  kafka_count:2  kafka_len_tot:000000000528  tcp_payload_len_tot:000000000528  ind_client_id_n:0
 kafka rsp list  
-kafka_corr_id:29003  ack:1  iframe:36  index_in_frame:1  api_key_str:rsp  kafka_len:260
-kafka_corr_id:29004  ack:1  iframe:44  index_in_frame:1  api_key_str:rsp  kafka_len:260
+kafka_corr_id:36027  ack:1  iframe:2  index_in_frame:1  api_key_str:rsp  kafka_len:260
+kafka_corr_id:36033  ack:1  iframe:6  index_in_frame:1  api_key_str:rsp  kafka_len:260
+======================client to broker 
+frame stats  tcp_pair_key:192.168.110.11:57470-192.168.110.51:1141  frame_count:1  syn_count:0  fin_count:0  rst_count:0  isn:001242424184
+kafka stats  kafka_count:1  kafka_len_tot:000000000045  tcp_payload_len_tot:000000000045  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:kafka-ui-admin-1742816139-1
+kafka_non_ack_count:0  pct_non_ack!!!:0
+kafka req  list  
+kafka_corr_id:36032  ack:1  iframe:5  index_in_frame:1  api_key_str:Metadata  kafka_len:41
+=============broker to client 
+frame stats  tcp_pair_key:192.168.110.51:1141-192.168.110.11:57470  frame_count:1  syn_count:0  fin_count:0  rst_count:0  isn:003019841476
+kafka stats  kafka_count:1  kafka_len_tot:000000000264  tcp_payload_len_tot:000000000264  ind_client_id_n:0
+kafka rsp list  
+kafka_corr_id:36032  ack:1  iframe:8  index_in_frame:1  api_key_str:rsp  kafka_len:260
+======================client to broker 
+frame stats  tcp_pair_key:192.168.110.11:41254-192.168.110.41:1140  frame_count:1  syn_count:0  fin_count:0  rst_count:0  isn:001073454161
+kafka stats  kafka_count:1  kafka_len_tot:000000000045  tcp_payload_len_tot:000000000045  ind_client_id_n:1
+kafka client_id list (req only) 
+client_id_key:kafka-ui-admin-1742816139-1
+kafka_non_ack_count:0  pct_non_ack!!!:0
+kafka req  list  
+kafka_corr_id:36035  ack:1  iframe:7  index_in_frame:1  api_key_str:Metadata  kafka_len:41
+=============broker to client 
+frame stats  tcp_pair_key:192.168.110.41:1140-192.168.110.11:41254  frame_count:1  syn_count:0  fin_count:0  rst_count:0  isn:003835290089
+kafka stats  kafka_count:1  kafka_len_tot:000000000264  tcp_payload_len_tot:000000000264  ind_client_id_n:0
+kafka rsp list  
+kafka_corr_id:36035  ack:1  iframe:9  index_in_frame:1  api_key_str:rsp  kafka_len:260
 =============rsp without req 
-======batch stats  mult_req_per_frame:Y  iframe_count:45  elapsed:0  ind_tcp_pair_n:8  max_pkt_len:0  kafka_count_total:5  kafka_non_ack_count_total:0
+======batch stats  mult_req_per_frame:Y  iframe_count:14  elapsed:0  ind_tcp_pair_n:6  max_pkt_len:0  kafka_count_total:4  kafka_non_ack_count_total:0
 Kafka Non-ACK(BAD - request without response) Ratio Histogram:
-range:00-00%  count_of_tcp_pairs:4
+range:00-00%  count_of_tcp_pairs:3

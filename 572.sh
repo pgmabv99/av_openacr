@@ -50,6 +50,7 @@ acr_ed -create -field $trg.FTcp_pair.tcp_payload_len_tot -arg u32 -write -commen
 acr_ed -create -field $trg.FTcp_pair.swin_buf          -arg u8  -reftype Tary -write -comment "p to sliding window buffer"
 acr_ed -create -field $trg.FTcp_pair.swin_offset       -arg u64 -write -comment "sliding window offset"
 acr_ed -create -field $trg.FTcp_pair.kafka_req_corr_id -arg u32 -write -comment "latest kafka req corr_id. used to prescreen rsp"
+
 # kafka stats
 acr_ed -create -field $trg.FTcp_pair.kafka_count       -arg u32 -write -comment "kafka req/rsp count"
 acr_ed -create -field $trg.FTcp_pair.kafka_non_ack_count -arg u32 -write -comment "kafka req non ack count"
@@ -77,11 +78,12 @@ acr_ed -create -field  $trg.FKafka.seq           -arg u32             -write  -c
 acr_ed -create -field  $trg.FKafka.index_in_frame   -arg u32             -write  -comment "index of kafka req/rsp in it's frame"
 acr_ed -create -field  $trg.FKafka.ack           -arg u32             -write  -comment "0 intially, =1 when rsp is seen with same corr_id"
 acr_ed -create -field  $trg.FKafka.api_key       -arg u32             -write  -comment "kafka api key "
+
+#  pointers from up/down  
 acr_ed -create -field  $trg.FKafka.p_tcp_pair    -arg $trg.FTcp_pair -reftype Upptr -write  -comment  "tcp pair pointer"
-#  pointers from above
 acr_ed -create -field  $trg.FTcp_pair.zd_kafka_corr_id -arg $trg.FKafka -via $trg.FKafka.p_tcp_pair -cascdel -write -comment "double list of corr_id"     
 acr_ed -create -field  $trg.FTcp_pair.ind_kafka_corr_id -arg $trg.FKafka -via $trg.FKafka.p_tcp_pair -xref -cascdel -write -comment "index of corr_id"     
-
+acr_ed -create -field $trg.FTcp_pair.p_cur_kafka         -arg atf_snf.FKafka -reftype Ptr  -write -comment "current kafka obj being built"
 # #-------------main CB
 acr_ed -create -ctype $trg.FMcb                              -write -comment "Main CB"
 # stats

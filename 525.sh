@@ -31,7 +31,9 @@ acr_ed -create -field $trg.FTcp_pair.seq_gap           -arg i64 -write -comment 
 
 acr_ed -create -field $trg.FTcp_pair.direction         -arg i32 -write -comment "direction :=1 (for req high->low port) =2 (for rsp)"
 acr_ed -create -field $trg.FTcp_pair.tcp_pay_len       -arg i64 -write -comment "tcp pay len for current frame"
-acr_ed -create -field $trg.FTcp_pair.tsval             -arg u32 -write -comment "timestamp value of curent packet"
+acr_ed -create -field $trg.FTcp_pair.tsval             -arg u32 -write -comment "timestamp value of current frame"
+acr_ed -create -field  $trg.FTcp_pair.th_flags              -arg u8                 -write -comment "tcp flags of current frame"
+
 # TCP stats
 acr_ed -create -field $trg.FTcp_pair.frame_count       -arg i32 -write -comment "number of frames for this pair"
 acr_ed -create -field $trg.FTcp_pair.syn_count         -arg i32 -write -comment "number of syn (connection start)"
@@ -60,7 +62,6 @@ acr_ed -create -field  $trg.FFrame.p_tcp_pair -arg $trg.FTcp_pair -reftype Upptr
 acr_ed -create -field  $trg.FFrame.iframe    -arg u64                -write -comment "global frame number"
 acr_ed -create -field  $trg.FFrame.seq       -arg u32                -write -comment "sequence number/ used in hash"
 acr_ed -create -field  $trg.FFrame.p_pay     -arg u8  -reftype Tary  -write -comment "p to payload buffer"
-acr_ed -create -field  $trg.FFrame.th_flags  -arg u8                 -write -comment "tcp flags"
 
 #  pointers from above
 acr_ed -create -field  $trg.FTcp_pair.zd_frames -arg $trg.FFrame -via $trg.FFrame.p_tcp_pair -cascdel -write -comment "double list of frames"

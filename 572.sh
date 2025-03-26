@@ -81,26 +81,40 @@ acr_ed -create -field  $trg.FKafka.api_key       -arg u32             -write  -c
 
 #  pointers from up/down  
 acr_ed -create -field  $trg.FKafka.p_tcp_pair    -arg $trg.FTcp_pair -reftype Upptr -write  -comment  "tcp pair pointer"
+acr_ed -create -field $trg.FTcp_pair.p_cur_kafka         -arg atf_snf.FKafka -reftype Ptr  -write -comment "current kafka obj being built"
+# lists
 acr_ed -create -field  $trg.FTcp_pair.zd_kafka_corr_id -arg $trg.FKafka -via $trg.FKafka.p_tcp_pair -cascdel -write -comment "double list of corr_id"     
 acr_ed -create -field  $trg.FTcp_pair.ind_kafka_corr_id -arg $trg.FKafka -via $trg.FKafka.p_tcp_pair -xref -cascdel -write -comment "index of corr_id"     
-acr_ed -create -field $trg.FTcp_pair.p_cur_kafka         -arg atf_snf.FKafka -reftype Ptr  -write -comment "current kafka obj being built"
-# #-------------main CB
+# 
+#-------------main CB
 acr_ed -create -ctype $trg.FMcb                              -write -comment "Main CB"
 # stats
 acr_ed -create -field $trg.FMcb.iframe                      -arg u32  -write -comment "global iframe index including non-tcp. start at 1"
 acr_ed -create -field $trg.FMcb.kafka_count_total           -arg u32  -write -comment ""
 acr_ed -create -field $trg.FMcb.kafka_non_ack_count_total   -arg u32  -write -comment ""
 acr_ed -create -field $trg.FMcb.max_pkt_len                 -arg u32  -write -comment "max pkt len"
+
+
+# 
+acr_ed -create -field $trg.FMcb.snf                      -arg atf_snf.FSnf -reftype Ptr  -write -comment "pointer to snf"
 # debug
-acr_ed -create -field $trg.FMcb.mac_print_flg               -arg bool -write -comment "debug mac"
-acr_ed -create -field $trg.FMcb.frame_print_flg             -arg bool -write -comment "debug frame"
-acr_ed -create -field $trg.FMcb.kafka_print_flg             -arg bool -write -comment "debug kafka"
-acr_ed -create -field $trg.FMcb.swin_print_flg              -arg bool -write -comment "debug sliding window"
-acr_ed -create -field $trg.FMcb.kafka_pair_final_print_flg  -arg bool -write -comment "debug kafka pair final"
-acr_ed -create -field $trg.FMcb.snf_memqp_print_flg         -arg bool -write -comment "debug memqp print"
-#  include into _db
-acr_ed -del -field $trg.FDb.mcb -write
-acr_ed -create -field $trg.FDb.mcb  -arg  $trg.FMcb  -write -comment ""
+acr_ed -create -field $trg.FMcb.mac_print_flg            -arg bool        -write -comment "print mac"
+acr_ed -create -field $trg.FMcb.frame_print_flg          -arg bool        -write -comment "print frame"
+acr_ed -create -field $trg.FMcb.kafka_print_flg          -arg bool        -write -comment "print kafka"
+acr_ed -create -field $trg.FMcb.swin_print_flg           -arg bool        -write -comment "print sliding window"
+acr_ed -create -field $trg.FMcb.tcp_pair_list_print_flg  -arg bool        -write -comment "print tcp pair list"
+acr_ed -create -field $trg.FMcb.kafka_list_print_flg     -arg bool        -write -comment "print outstanding kafka req/rsp lists"
+acr_ed -create -field $trg.FMcb.snf_memqp_print_flg      -arg bool        -write -comment "print memqp print"
+# include into _db
+acr_ed -del    -field $trg.FDb.mcb                       -write
+acr_ed -create -field $trg.FDb.mcb                      -arg $trg.FMcb   -write -comment ""
+
+#step
+acr_ed -del -field $trg.FDb.snf_poll -write || true
+acr_ed -create -field $trg.FDb.snf_poll                   -arg bool -write -comment "step field for snf polling loop"
+acr -merge -write <<EOF
+dmmeta.fstep  fstep:$trg.FDb.snf_poll steptype:Inline  comment:"should be without delay"
+EOF
 
 #  set parms for $trg
 acr -merge  -write <<EOF

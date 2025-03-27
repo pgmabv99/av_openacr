@@ -37,9 +37,9 @@
                                                         |                          |                   |                   
                                                         |Llist zd_client_id--------|------------------>|                   
                                                         |Thash ind_client_id-------|------------------>|                   
-                                                        |Thash ind_kafka_corr_id-->|                   |                   
+                                                        |Bheap bh_kafka_corr_id--->|                   |                   
                                                         |Ptr p_cur_kafka---------->|                   |                   
-                                                        |Llist zd_kafka_corr_id--->|                   |                   
+                                                        |Thash ind_kafka_corr_id-->|                   |                   
                                                         |<-------------------------|Upptr p_tcp_pair   |                   
                                                         |                          -                   |                   
                                                         |                                              |                   

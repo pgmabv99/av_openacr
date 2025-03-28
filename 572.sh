@@ -112,11 +112,18 @@ acr_ed -create -field $trg.FMcb.snf_memqp_print_flg         -arg bool           
 acr_ed -del    -field $trg.FDb.mcb                          -write
 acr_ed -create -field $trg.FDb.mcb                          -arg $trg.FMcb        -write -comment ""
 
-#----------FDb
+#----------FDb  steps
 acr_ed -del    -field $trg.FDb.snf_poll                     -write || true
 acr_ed -create -field $trg.FDb.snf_poll                     -arg bool             -write -comment "step field for snf polling loop"
 acr -merge -write <<EOF
-dmmeta.fstep  fstep:$trg.FDb.snf_poll steptype:Inline  comment:"should be without delay"
+    dmmeta.fstep  fstep:$trg.FDb.snf_poll steptype:Inline  comment:"should be without delay"
+EOF
+
+acr_ed -del    -field $trg.FDb.snf_clean                     -write || true
+acr_ed -create -field $trg.FDb.snf_clean                     -arg bool             -write -comment "step field for cleaning old or completed kafka req/rsp"
+acr -merge -write <<EOF
+    dmmeta.fstep   fstep:$trg.FDb.snf_clean   steptype:InlineRecur  comment:""
+    dmmeta.fdelay  fstep:$trg.FDb.snf_clean   delay:1.0  scale:N  comment:""
 EOF
 
 #  set parms for $trg

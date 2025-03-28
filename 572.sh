@@ -68,7 +68,8 @@ acr_ed -create -field  $trg.FClient_id.client_id_key -arg algo.Smallstr50 -write
 acr_ed -create -field  $trg.FClient_id.p_tcp_pair    -arg $trg.FTcp_pair -reftype Upptr -write
 #  pointers from above
 acr_ed -create -field  $trg.FTcp_pair.zd_client_id   -arg $trg.FClient_id -via $trg.FClient_id.p_tcp_pair -cascdel -write -comment "double list of client_id"     
-acr_ed -create -field  $trg.FTcp_pair.ind_client_id  -arg $trg.FClient_id -via $trg.FClient_id.p_tcp_pair -xref -cascdel -write -comment "index of client_id"     
+acr_ed -create -field  $trg.FTcp_pair.ind_client_id  -arg $trg.FClient_id -via $trg.FClient_id.p_tcp_pair -xref -cascdel -write -comment "index of client_id"  
+   
 #-------------kafka req/rsp object
 acr_ed -create -ctype $trg.FKafka                   -pooltype Tpool       -write  -comment "Kafka req/rsp object"
 acr_ed -create -field $trg.FKafka.kafka_corr_id     -arg u32              -write  -comment "correlation_id from hdr"

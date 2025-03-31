@@ -86,22 +86,23 @@ acr_ed -create -field $trg.FKafka.ts_order          -arg bool             -write
 acr_ed -create -field $trg.FKafka.p_tcp_pair        -arg $trg.FTcp_pair   -reftype Upptr -write  -comment "tcp pair pointer"
 acr_ed -create -field $trg.FTcp_pair.p_cur_kafka    -arg atf_snf.FKafka   -reftype Ptr   -write  -comment "current kafka obj being built"
 # lists
-# acr_ed -create -field $trg.FTcp_pair.zd_kafka_corr_id  -arg $trg.FKafka   -via $trg.FKafka.p_tcp_pair -cascdel -write -comment "double list of corr_id"
-acr_ed -create -field $trg.FTcp_pair.ind_kafka_corr_id -arg $trg.FKafka   -via $trg.FKafka.p_tcp_pair -xref -cascdel -write -comment "index of corr_id"
-acr_ed -create -field $trg.FTcp_pair.bh_kafka_corr_id  -arg $trg.FKafka   -via $trg.FKafka.p_tcp_pair -sortfld $trg.FKafka.ts_ns -cascdel -write -comment "bheap of kafka on ts_ns"
+acr_ed -create -field $trg.FTcp_pair.zd_kafka_obsolete  -arg $trg.FKafka   -via $trg.FKafka.p_tcp_pair -inscond:false -cascdel -write -comment "temp list of kafka objects to be deleted"
+acr_ed -create -field $trg.FTcp_pair.ind_kafka_corr_id  -arg $trg.FKafka   -via $trg.FKafka.p_tcp_pair -xref -cascdel -write -comment "index of corr_id"
+acr_ed -create -field $trg.FTcp_pair.bh_kafka_corr_id   -arg $trg.FKafka   -via $trg.FKafka.p_tcp_pair -sortfld $trg.FKafka.ts_ns -cascdel -write -comment "bheap of kafka on ts_ns"
 
 
 #-------------main CB
 acr_ed -create -ctype $trg.FMcb                              -write -comment "Main CB"
 # stats
-acr_ed -create -field $trg.FMcb.iframe                      -arg u32              -write -comment "global iframe index including non-tcp. start at 1"
-acr_ed -create -field $trg.FMcb.kafka_count_total           -arg u32              -write -comment ""
-acr_ed -create -field $trg.FMcb.kafka_non_ack_count_total   -arg u32              -write -comment ""
-acr_ed -create -field $trg.FMcb.max_pkt_len                 -arg u32              -write -comment "max pkt len"
+acr_ed -create -field $trg.FMcb.iframe                      -arg u64              -write -comment "global iframe index including non-tcp. start at 1"
+acr_ed -create -field $trg.FMcb.kafka_count_total           -arg u64              -write -comment "total kafka count"
+acr_ed -create -field $trg.FMcb.kafka_non_ack_count_total   -arg u64              -write -comment "total kafka non-ack count"
+acr_ed -create -field $trg.FMcb.max_pkt_len                 -arg u32              -write -comment "maximum packet length"
 acr_ed -create -field $trg.FMcb.time0                       -arg algo.SchedTime   -write -comment "starting time"
+acr_ed -create -field $trg.FMcb.round_trip_dur_tot          -arg u64              -write -comment "total accumulated round-trip duration"
 acr_ed -create -field $trg.FMcb.snf                         -arg atf_snf.FSnf     -reftype Ptr  -write -comment "pointer to snf"
 # debug
-acr_ed -create -field $trg.FMcb.mac_print_flg               -arg bool             -write -comment "print mac info at parse"
+acr_ed -create -field $trg.FMcb.mac_print_flg               -arg bool             -write -comment "print MAC info at parse"
 acr_ed -create -field $trg.FMcb.frame_print_flg             -arg bool             -write -comment "print frame at parse"
 acr_ed -create -field $trg.FMcb.kafka_print_flg             -arg bool             -write -comment "print kafka at parse"
 acr_ed -create -field $trg.FMcb.swin_print_flg              -arg bool             -write -comment "print sliding window"

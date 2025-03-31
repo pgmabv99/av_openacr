@@ -27,40 +27,39 @@ acr_ed -del  -ctype $trg.FKafka    -write || true
 
 
 #--------------tcp pair
-acr_ed -create -ctype $trg.FTcp_pair -pooltype Tpool -arg Smallstr50 -indexed -write -comment "tcp pair entry"
-acr_ed -create -field $trg.FTcp_pair.isn               -arg u32 -write -comment "initial sequence number (not always from SYN frame)"
-acr_ed -create -field $trg.FTcp_pair.seq               -arg u32 -write -comment "current sequence number"
-acr_ed -create -field $trg.FTcp_pair.seq_next          -arg u32 -write -comment "running high end of seq+payload. start of next"
-acr_ed -create -field $trg.FTcp_pair.seq_gap           -arg i64 -write -comment "sequence number gap with previous frame(could be negative)"
-
-acr_ed -create -field $trg.FTcp_pair.direction         -arg i32 -write -comment "direction :=1 (for req high->low port) =2 (for rsp)"
-acr_ed -create -field $trg.FTcp_pair.tcp_pay_len       -arg i64 -write -comment "tcp pay len for current frame"
-acr_ed -create -field $trg.FTcp_pair.tsval             -arg u32 -write -comment "ts of current frame in some increasing units from tcp header"
-acr_ed -create -field $trg.FTcp_pair.ts_ns             -arg u64 -write -comment "ts of current frame in ns from ibv_wc_read_completion_ts or PcapPacketHeader "
-acr_ed -create -field  $trg.FTcp_pair.th_flags              -arg u8                 -write -comment "tcp flags of current frame"
+acr_ed -create -ctype $trg.FTcp_pair                   -pooltype Tpool       -arg Smallstr50 -indexed -write -comment "tcp pair entry"
+acr_ed -create -field $trg.FTcp_pair.isn              -arg u32              -write -comment "initial sequence number (not always from SYN frame)"
+acr_ed -create -field $trg.FTcp_pair.seq              -arg u32              -write -comment "current sequence number"
+acr_ed -create -field $trg.FTcp_pair.seq_next         -arg u32              -write -comment "running high end of seq+payload. start of next"
+acr_ed -create -field $trg.FTcp_pair.seq_gap          -arg i64              -write -comment "sequence number gap with previous frame(could be negative)"
+acr_ed -create -field $trg.FTcp_pair.direction        -arg i32              -write -comment "direction :=1 (for req high->low port) =2 (for rsp)"
+acr_ed -create -field $trg.FTcp_pair.tcp_pay_len      -arg i64              -write -comment "tcp pay len for current frame"
+acr_ed -create -field $trg.FTcp_pair.tsval            -arg u32              -write -comment "ts of current frame in some increasing units from tcp header"
+acr_ed -create -field $trg.FTcp_pair.ts_ns            -arg u64              -write -comment "ts of current frame in ns from ibv_wc_read_completion_ts or PcapPacketHeader"
+acr_ed -create -field $trg.FTcp_pair.th_flags         -arg u8               -write -comment "tcp flags of current frame"
 
 # TCP stats
-acr_ed -create -field $trg.FTcp_pair.frame_count       -arg i32 -write -comment "number of frames for this pair"
-acr_ed -create -field $trg.FTcp_pair.syn_count         -arg i32 -write -comment "number of syn (connection start)"
-acr_ed -create -field $trg.FTcp_pair.fin_count         -arg i32 -write -comment "number of fin (connection end)"
-acr_ed -create -field $trg.FTcp_pair.rst_count         -arg i32 -write -comment "number of rst (connection reset)"
-acr_ed -create -field $trg.FTcp_pair.seq_gap_pos_count -arg u32 -write -comment "pos sequence gap count"
-acr_ed -create -field $trg.FTcp_pair.seq_gap_neg_count -arg u32 -write -comment "neg sequence gap count"
-acr_ed -create -field $trg.FTcp_pair.tcp_payload_len_tot -arg u32 -write -comment "total of tcp payload length per pair"
+acr_ed -create -field $trg.FTcp_pair.frame_count      -arg i32              -write -comment "number of frames for this pair"
+acr_ed -create -field $trg.FTcp_pair.syn_count        -arg i32              -write -comment "number of syn (connection start)"
+acr_ed -create -field $trg.FTcp_pair.fin_count        -arg i32              -write -comment "number of fin (connection end)"
+acr_ed -create -field $trg.FTcp_pair.rst_count        -arg i32              -write -comment "number of rst (connection reset)"
+acr_ed -create -field $trg.FTcp_pair.seq_gap_pos_count -arg u32             -write -comment "pos sequence gap count"
+acr_ed -create -field $trg.FTcp_pair.seq_gap_neg_count -arg u32             -write -comment "neg sequence gap count"
+acr_ed -create -field $trg.FTcp_pair.tcp_payload_len_tot -arg u32           -write -comment "total of tcp payload length per pair"
+
 # kafka detection sliding window
-acr_ed -create -field $trg.FTcp_pair.swin_buf          -arg u8  -reftype Tary -write -comment "p to sliding window buffer"
-acr_ed -create -field $trg.FTcp_pair.swin_offset       -arg u64 -write -comment "sliding window offset"
-acr_ed -create -field $trg.FTcp_pair.kafka_req_corr_id -arg u32 -write -comment "latest kafka req corr_id. used to prescreen rsp"
+acr_ed -create -field $trg.FTcp_pair.swin_buf         -arg u8               -reftype Tary -write -comment "p to sliding window buffer"
+acr_ed -create -field $trg.FTcp_pair.swin_offset      -arg u64              -write -comment "sliding window offset"
+acr_ed -create -field $trg.FTcp_pair.kafka_req_corr_id -arg u32             -write -comment "latest kafka req corr_id. used to prescreen rsp"
 
 # kafka stats
-acr_ed -create -field $trg.FTcp_pair.kafka_count       -arg u32 -write -comment "kafka req/rsp count"
-acr_ed -create -field $trg.FTcp_pair.kafka_non_ack_count -arg u32 -write -comment "kafka req non ack count"
-acr_ed -create -field $trg.FTcp_pair.kafka_len_tot     -arg u32 -write -comment "total of kafka req/rsp length per pair"
-acr_ed -create -field $trg.FTcp_pair.kafka_per_frame_count   -arg u32 -write -comment "count of kafka req/rsp per frame"
+acr_ed -create -field $trg.FTcp_pair.kafka_count  -arg u32                  -write -comment "kafka req or rsp  count"
+acr_ed -create -field $trg.FTcp_pair.kafka_req_non_ack_count -arg u32       -write -comment "kafka req non ack count"
+acr_ed -create -field $trg.FTcp_pair.kafka_len_tot    -arg u32              -write -comment "total of kafka req/rsp length per pair"
+acr_ed -create -field $trg.FTcp_pair.kafka_per_frame_count -arg u32         -write -comment "count of kafka req/rsp per frame"
+
 # pointers from above
-acr_ed -create -field $trg.FDb.zd_tcp_pair -cascdel -write -comment ""
-
-
+acr_ed -create -field $trg.FDb.zd_tcp_pair            -cascdel              -write -comment ""
 
 #-------------kafka client_id entry
 acr_ed -create -ctype $trg.FClient_id          -pooltype Tpool       -write  -comment "Kafka client entry"
@@ -93,14 +92,16 @@ acr_ed -create -field $trg.FTcp_pair.bh_kafka_corr_id   -arg $trg.FKafka   -via 
 
 #-------------main CB
 acr_ed -create -ctype $trg.FMcb                              -write -comment "Main CB"
+
 # stats
 acr_ed -create -field $trg.FMcb.iframe                      -arg u64              -write -comment "global iframe index including non-tcp. start at 1"
-acr_ed -create -field $trg.FMcb.kafka_count_total           -arg u64              -write -comment "total kafka count"
-acr_ed -create -field $trg.FMcb.kafka_non_ack_count_total   -arg u64              -write -comment "total kafka non-ack count"
+acr_ed -create -field $trg.FMcb.kafka_req_count_total       -arg u64              -write -comment "total kafka req count"
+acr_ed -create -field $trg.FMcb.kafka_req_non_ack_count_total -arg u64            -write -comment "total kafka req non-ack count"
 acr_ed -create -field $trg.FMcb.max_pkt_len                 -arg u32              -write -comment "maximum packet length"
 acr_ed -create -field $trg.FMcb.time0                       -arg algo.SchedTime   -write -comment "starting time"
 acr_ed -create -field $trg.FMcb.round_trip_dur_tot          -arg u64              -write -comment "total accumulated round-trip duration"
 acr_ed -create -field $trg.FMcb.snf                         -arg atf_snf.FSnf     -reftype Ptr  -write -comment "pointer to snf"
+
 # debug
 acr_ed -create -field $trg.FMcb.mac_print_flg               -arg bool             -write -comment "print MAC info at parse"
 acr_ed -create -field $trg.FMcb.frame_print_flg             -arg bool             -write -comment "print frame at parse"
@@ -110,6 +111,7 @@ acr_ed -create -field $trg.FMcb.tcp_pair_list_print_flg     -arg bool           
 acr_ed -create -field $trg.FMcb.tcp_pair_wo_kafka           -arg bool             -write -comment "include pairs without kafka"
 acr_ed -create -field $trg.FMcb.kafka_list_print_flg        -arg bool             -write -comment "print outstanding kafka req/rsp lists"
 acr_ed -create -field $trg.FMcb.snf_memqp_print_flg         -arg bool             -write -comment "print memqp print"
+
 # include into _db
 acr_ed -del    -field $trg.FDb.mcb                          -write
 acr_ed -create -field $trg.FDb.mcb                          -arg $trg.FMcb        -write -comment ""

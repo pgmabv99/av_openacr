@@ -81,6 +81,7 @@ acr_ed -create -field $trg.FKafka.api_key           -arg u32              -write
 acr_ed -create -field $trg.FKafka.ts_ns             -arg u64              -write  -comment "ts of last or only frame that completed kafka req/rsp, in ns"
 acr_ed -create -field $trg.FKafka.round_trip_dur    -arg u64              -write  -comment "duration dif between rsp and req"
 acr_ed -create -field $trg.FKafka.ts_order          -arg bool             -write  -comment "true if req is before rsp"
+acr_ed -create -field $trg.FKafka.clean_step_n      -arg u64              -write  -comment "number of latest clean step run"
 # pointers from up/down
 acr_ed -create -field $trg.FKafka.p_tcp_pair        -arg $trg.FTcp_pair   -reftype Upptr -write  -comment "tcp pair pointer"
 acr_ed -create -field $trg.FTcp_pair.p_cur_kafka    -arg atf_snf.FKafka   -reftype Ptr   -write  -comment "current kafka obj being built"
@@ -100,6 +101,7 @@ acr_ed -create -field $trg.FMcb.kafka_req_non_ack_count_total -arg u64          
 acr_ed -create -field $trg.FMcb.max_pkt_len                 -arg u32              -write -comment "maximum packet length"
 acr_ed -create -field $trg.FMcb.time0                       -arg algo.SchedTime   -write -comment "starting time"
 acr_ed -create -field $trg.FMcb.round_trip_dur_tot          -arg u64              -write -comment "total accumulated round-trip duration"
+acr_ed -create -field $trg.FMcb.clean_step_n                -arg u64              -write -comment "number of latest clean step run "
 acr_ed -create -field $trg.FMcb.snf                         -arg atf_snf.FSnf     -reftype Ptr  -write -comment "pointer to snf"
 
 # debug
@@ -128,6 +130,13 @@ acr_ed -create -field $trg.FDb.snf_clean                     -arg bool          
 acr -merge -write <<EOF
     dmmeta.fstep   fstep:$trg.FDb.snf_clean   steptype:InlineRecur  comment:""
     dmmeta.fdelay  fstep:$trg.FDb.snf_clean   delay:1.0  scale:N  comment:""
+EOF
+
+acr_ed -del    -field $trg.FDb.snf_mon                       -write || true
+acr_ed -create -field $trg.FDb.snf_mon                       -arg bool             -write -comment "step field for monitor"
+acr -merge -write <<EOF
+    dmmeta.fstep   fstep:$trg.FDb.snf_mon   steptype:InlineRecur  comment:""
+    dmmeta.fdelay  fstep:$trg.FDb.snf_mon   delay:1.0  scale:N  comment:""
 EOF
 
 #  set parms for $trg

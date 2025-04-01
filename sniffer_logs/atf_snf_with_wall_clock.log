@@ -1,0 +1,816 @@
+atf_snf.info dev:data0  port:1  comment:"creating QP"
+atf_snf.info comment:"opened the device"
+atf_snf.info comment:"allocated protected domain"
+atf_snf.info comment:"created CQ ex"
+atf_snf.info comment:"created QP ex"
+atf_snf.info comment:"init QP port"
+atf_snf.info comment:"QO Ready To Receive"
+atf_snf.info comment:"SGE and WR are initialised"
+atf_snf.info dev:data0  port:1  ib:mlx5_0  pci:0000:81:00.0  comment:"Flow created successfully, sniffing all traffic"
+  
+ comment:"Enter an option:"
+ comment:"q - query"
+ comment:"x - exit"
+ comment:"r - resume"
+ comment:"tp - toggle poll"
+ comment:"tc - toggle clean"
+ comment:"rc - run clean"
+ comment:Exiting...
+
+=============tcp_pairs req with matching rsp
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50652-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000720034898  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:50652  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:49904-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003088417156  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:49904  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:48090-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000285894970  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:48090  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:34458-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002720428670  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:34458  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50658-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002618907677  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:50658  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:49908-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000885185479  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:49908  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:53622-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001297544109  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:53622  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:48642-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002980914736  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:48642  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:36344-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002494051143  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:36344  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:48092-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000611901141  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:48092  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:36350-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000701837539  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:36350  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:34474-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000352989747  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:34474  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:48648-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003325257600  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:48648  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:53624-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000693539317  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:53624  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50666-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003713612179  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:50666  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:49916-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003255699362  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:49916  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:48096-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000405959250  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:48096  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:34484-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003035723029  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:34484  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50678-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001828750152  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:50678  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:49928-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002096429777  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:49928  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:48108-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004075657633  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:48108  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:34490-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001785208422  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:34490  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:49936-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002081145757  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:49936  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:47698-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000025741540  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:47698  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50686-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003656774824  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:50686  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:47706-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000567588815  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:47706  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59332-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002420727228  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:59332  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:45842-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003421450060  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:45842  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:40236-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001497055777  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:40236  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59526-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000200519848  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:59526  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:57966-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001713469127  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:57966  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:33334-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002487721873  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:33334  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50494-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000100698727  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:50494  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:37562-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000420211054  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:37562  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:40252-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001492167892  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:40252  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59532-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000628407908  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:59532  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50502-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001116386991  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:50502  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:37576-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001484612392  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:37576  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:40256-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002358744993  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:40256  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59534-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003672397723  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:59534  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50510-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000858609631  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:50510  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:33346-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000923187953  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:33346  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:40264-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003133789114  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:40264  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:57978-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000054037926  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:57978  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:37590-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002157355661  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:37590  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59548-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002912863536  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:59548  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:45848-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000788792572  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:45848  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:45850-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001471159195  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:45850  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50520-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001805397700  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:50520  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59346-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002964572723  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:59346  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59350-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002529587996  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:59350  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:37606-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002269480656  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:37606  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59556-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000398470178  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:59556  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:40276-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003430828889  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:40276  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50532-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000503846803  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:50532  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59558-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001198803599  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:59558  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:37608-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004110695111  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:37608  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:40284-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001438014859  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:40284  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50538-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002987844315  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:50538  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59570-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001254913570  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:59570  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:37610-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000319710679  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:37610  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:33358-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000897248841  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:33358  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:40286-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001259401395  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:40286  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50550-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001775181636  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:50550  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:45852-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002319237710  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:45852  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:57982-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001971639119  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:57982  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59366-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002981069625  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:59366  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:45868-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001756886709  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:45868  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:37622-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000052558280  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:37622  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:45876-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000196959199  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:45876  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50558-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000638107453  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:50558  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59586-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001806921869  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:59586  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:40300-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001709102917  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:40300  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:37638-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004283204165  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:37638  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50574-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001739715742  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:50574  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59588-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002953950928  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:59588  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:40316-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001256060856  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:40316  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59600-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002080453969  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:59600  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:37650-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000754117319  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:37650  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:33368-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001136312175  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:33368  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:50586-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001238871719  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:50586  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:40326-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002566661005  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:40326  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:33376-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003907775415  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:33376  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59374-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003973351058  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:59374  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:57068-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001671106519  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:57068  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44120-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001748864595  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:44120  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:57080-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003667552845  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:57080  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44408-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001995117164  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:44408  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:56552-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000112676666  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:56552  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:41822-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001458101279  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:41822  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:32816-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001150369883  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:32816  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44132-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001764685756  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:44132  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44412-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003101542271  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:44412  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:41828-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003474531415  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:41828  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:32830-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004182602753  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:32830  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44138-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003643209728  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:44138  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44414-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002334628943  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:44414  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:41840-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002675151781  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:41840  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:32832-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001724979495  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:32832  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:60064-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001997940961  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:60064  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:42650-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001681367517  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:42650  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:42664-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000901210008  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:42664  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:56556-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001473817526  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:56556  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44144-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003300981468  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:44144  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:57086-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000663917045  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:57086  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:60076-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003463153456  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:60076  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44428-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003965797920  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:44428  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:41854-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002415213848  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:41854  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:32842-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001549649725  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:32842  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44160-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002193368989  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:44160  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44438-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001356428542  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:44438  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:41856-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002326889284  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:41856  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:32852-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004084624654  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:32852  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44162-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001598642705  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:44162  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:41862-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000711178040  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:41862  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:32858-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001089053814  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:32858  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44444-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004205370709  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:44444  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:56558-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001609443011  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:56558  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:57092-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000323708979  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:57092  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44166-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000151227033  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:44166  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:60090-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001517183891  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:60090  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:57106-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000251375191  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:57106  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:42680-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003043659094  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:42680  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:41878-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003950847324  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:41878  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:32870-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001995070538  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:32870  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44456-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003202844237  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:44456  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:42692-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001921472522  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:42692  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44176-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000168445559  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:44176  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44468-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002971314342  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:44468  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:32882-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001420607431  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:32882  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:41884-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000837153407  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:41884  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44178-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001371763622  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:44178  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44472-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000345716159  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:44472  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:32890-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003588730249  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:32890  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:41888-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002459135166  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:41888  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:56566-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001302122145  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:56566  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:60094-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001388870705  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:60094  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:60106-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003261918411  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:60106  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44482-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000771172546  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:44482  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:57120-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002511255563  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:57120  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:44194-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002614584866  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:44194  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:53614-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004111371215  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:53614  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:33278-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003618511369  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:33278  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:59418-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003378576443  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:59418  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:56958-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001468035687  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:56958  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:45714-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003360159544  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:45714  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:56466-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003865265141  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:56466  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:53620-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000143396544  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:53620  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:33282-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000562710938  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:33282  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:45730-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001384266197  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:45730  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:53636-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001016888068  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:53636  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:56468-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002192938360  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:56468  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:33288-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003123671263  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:33288  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:45734-192.168.110.31:1139  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003204996133  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.31:1139-192.168.110.11:45734  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:40668-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003406911543  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:40668  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:53640-192.168.110.41:1140  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001864006531  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.41:1140-192.168.110.11:53640  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:37576-192.168.110.51:1141  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001946119220  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.51:1141-192.168.110.11:37576  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+  
+==frame stats  direction:"c->b"  tcp_pair_key:192.168.110.11:56974-192.168.110.21:1138  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001805230261  tcp_payload_len_tot:000000000000
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+==frame stats  direction:"b->c"  tcp_pair_key:192.168.110.21:1138-192.168.110.11:56974  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+  kafka stats  kafka_count:0  kafka_count_in_bh:0  kafka_active_count:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+
+=============tcp_pairs rsp without req 
+
+==========================================batch stats
+"elapsed(sec)":26.8382  iframe_count:330  kafka_req_count_total:0  kafka_req_non_ack_count_total:0  "kafka_duration_avg (ns)":0  ind_tcp_pair_n:316  max_pkt_len:259
+Kafka Non-ACK(BAD - request without response) Ratio Histogram:

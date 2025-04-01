@@ -39,3 +39,6 @@ ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_one_mult_true.log
 
 ofile=~/av_openacr/sniffer_logs/atf_snf.log
 sudo ~/arnd/bin/atf_snf -dev:data0 > $ofile 2>&1; tail -n 20 $ofile
+
+ofile=~/av_openacr/sniffer_logs/atf_snf_with_wall_clock.log
+sudo ~/arnd/bin/atf_snf -dev:data0 -with_wall_clock:true > $ofile 2>&1; tail -n 20 $ofile

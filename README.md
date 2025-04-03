@@ -112,20 +112,11 @@ av_openacr
 .gitmodules
 ```
 
-## messages
-samp_meng.NewSymbolReqMsg symbol:wwww
-atf_snf.NewOrderReqMsg part_key:part98  amt:10
+## git rebase
 
-## Todo
-
-+ Test heap
-- Attempt to inherit order from the ssim file
-- Test UI
--how to reinit cstring
--implement messages
--review I64Price8
--try -e option for VScode
-
+when conflict in in gen files
+amc
+git add */gen
 
 ## git login cheat sheet
 
@@ -179,52 +170,5 @@ docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 
 
 ```
-
-
-
-# atf work log
-## 2/11
-- sniffer . verbs version
-https://www.ibm.com/docs/en/aix/7.2?topic=sv-queue-pair-management
-## 2/8-2/10
-- sniffer (5 version wip)
-## 2/5
-- rebase mistery
-- convert to explicit destrucitrs for spdk
-## 2/3 
-- add vrfy and verblog
-- research why some dtr + cleanup are not called. 
-```
-called
-// --- atf_spdk.FCtrlr..Dtor
-inline  atf_spdk::FCtrlr::~FCtrlr() {
-    atf_spdk::FCtrlr_Uninit(*this);
-}
-// --- atf_spdk.FCtrlr..Uninit
-inline void atf_spdk::FCtrlr_Uninit(atf_spdk::FCtrlr& ctrlr) {
-    atf_spdk::FCtrlr &row = ctrlr; (void)row;
-    ctrlr_Cleanup(ctrlr); // dmmeta.fcleanup:atf_spdk.FCtrlr.ctrlr
-}
-
-not called
-// --- atf_spdk.FNs..Dtor
-inline  atf_spdk::FNs::~FNs() {
-    atf_spdk::FNs_Uninit(*this);
-}
-
-// --- atf_spdk.FNs..Uninit
-void atf_spdk::FNs_Uninit(atf_spdk::FNs& ns) {
-    atf_spdk::FNs &row = ns; (void)row;
-    qpair_Cleanup(ns); // dmmeta.fcleanup:atf_spdk.FNs.qpair
-    zd_req_Cascdel(ns); // dmmeta.cascdel:atf_spdk.FNs.zd_req
-    atf_spdk::FCtrlr* p_p_ctrlr = row.p_ctrlr;
-    if (p_p_ctrlr)  {
-        zd_ns_Remove(*p_p_ctrlr, row);// remove ns from index zd_ns
-    }
-}
-```
-
-## 2/2  - set up debuging  and git double repo
-
 
 

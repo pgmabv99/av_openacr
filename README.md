@@ -162,6 +162,7 @@ x2node  -node:nj1.sn1.bm -t -root
 dkr -clean_run  -node:nj1.sn1.avorovich 
 
 
+
 #passtru cat /etc/hostname
 #from sn1 : ps 
 dkr ps   -node:nj1.sn5.avorovich 

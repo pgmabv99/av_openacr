@@ -1,4 +1,4 @@
-atf_snf.info dev:data0  port:1  comment:"creating QP"
+atf_snf.info dev:data0-7  port:1  comment:"creating QP"
 atf_snf.info comment:"opened the device"
 atf_snf.info comment:"allocated protected domain"
 atf_snf.info comment:"created CQ ex"
@@ -6,23 +6,7 @@ atf_snf.info comment:"created QP ex"
 atf_snf.info comment:"init QP port"
 atf_snf.info comment:"QO Ready To Receive"
 atf_snf.info comment:"SGE and WR are initialised"
-atf_snf.info dev:data0  port:1  ib:mlx5_0  pci:0000:81:00.0  comment:"Flow created successfully, sniffing all traffic"
-  
- comment:"Enter an option:"
- comment:"q - query"
- comment:"x - exit"
- comment:"r - resume"
- comment:"tp - toggle poll"
- comment:"tc - toggle clean"
- comment:"rc - run clean"
-
-=============tcp_pairs req with matching rsp
-
-=============tcp_pairs rsp without req 
-
-==========================================batch stats
-"elapsed(sec)":50.954  iframe_count:15  kafka_req_count_total:0  kafka_req_non_ack_count_total:0  "kafka_duration_avg (ns)":0  ind_tcp_pair_n:0  max_pkt_len:259
-Kafka Non-ACK(BAD - request without response) Ratio Histogram:
+atf_snf.info dev:data0-7  port:1  ib:mlx5_13  pci:0000:81:00.7  comment:"Flow created successfully, sniffing all traffic"
   
  comment:"Enter an option:"
  comment:"q - query"
@@ -38,5 +22,5 @@ Kafka Non-ACK(BAD - request without response) Ratio Histogram:
 =============tcp_pairs rsp without req 
 
 ==========================================batch stats
-"elapsed(sec)":126.599  iframe_count:15  kafka_req_count_total:0  kafka_req_non_ack_count_total:0  "kafka_duration_avg (ns)":0  ind_tcp_pair_n:0  max_pkt_len:259
+"elapsed(sec)":57.2703  iframe_count:1  kafka_req_count_total:0  kafka_req_non_ack_count_total:0  "kafka_duration_avg (ns)":0  ind_tcp_pair_n:0  max_pkt_len:0
 Kafka Non-ACK(BAD - request without response) Ratio Histogram:

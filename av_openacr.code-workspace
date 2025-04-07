@@ -1,4 +1,5 @@
 {
+
 	"folders": [
 		{
 			"path": "."
@@ -13,6 +14,7 @@
 			"path": "../pcap"
 		}
 	],
+	
 	"settings": {
 		"files.associations": {
 			"array": "cpp",

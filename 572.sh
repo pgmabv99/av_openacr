@@ -27,7 +27,9 @@ acr_ed -del  -ctype $trg.FKafka    -write || true
 
 
 #--------------tcp pair
-acr_ed -create -ctype $trg.FTcp_pair                   -pooltype Tpool       -arg Smallstr50 -indexed -write -comment "tcp pair entry"
+# acr_ed -create -ctype $trg.FTcp_pair                   -pooltype Tpool       -arg Smallstr50 -indexed -write -comment "tcp pair entry"
+acr_ed -create -ctype $trg.FTcp_pair                   -pooltype Tpool       -write -comment "tcp pair entry"
+acr_ed -create -field $trg.FTcp_pair.tcp_pair         -arg algo.Smallstr50        -write -comment "initial sequence number (not always from SYN frame)"
 acr_ed -create -field $trg.FTcp_pair.isn              -arg u32              -write -comment "initial sequence number (not always from SYN frame)"
 acr_ed -create -field $trg.FTcp_pair.seq              -arg u32              -write -comment "current sequence number"
 acr_ed -create -field $trg.FTcp_pair.seq_next         -arg u32              -write -comment "running high end of seq+payload. start of next"
@@ -59,7 +61,8 @@ acr_ed -create -field $trg.FTcp_pair.kafka_len_tot    -arg u32              -wri
 acr_ed -create -field $trg.FTcp_pair.kafka_per_frame_count -arg u32         -write -comment "count of kafka req/rsp per frame"
 
 # pointers from above
-acr_ed -create -field $trg.FDb.zd_tcp_pair            -cascdel              -write -comment ""
+acr_ed -create -field $trg.FDb.zd_tcp_pair             -cascdel              -write -comment ""
+acr_ed -create -field $trg.FDb.ind_tcp_pair            -cascdel              -write -comment ""
 
 #-------------kafka client_id entry
 acr_ed -create -ctype $trg.FClient_id          -pooltype Tpool       -write  -comment "Kafka client entry"
@@ -129,14 +132,14 @@ acr_ed -del    -field $trg.FDb.snf_clean                     -write || true
 acr_ed -create -field $trg.FDb.snf_clean                     -arg bool             -write -comment "step field for cleaning old or completed kafka req/rsp"
 acr -merge -write <<EOF
     dmmeta.fstep   fstep:$trg.FDb.snf_clean   steptype:InlineRecur  comment:""
-    dmmeta.fdelay  fstep:$trg.FDb.snf_clean   delay:1.0  scale:N  comment:""
+    dmmeta.fdelay  fstep:$trg.FDb.snf_clean   delay:1.000000000  scale:N  comment:""
 EOF
 
 acr_ed -del    -field $trg.FDb.snf_mon                       -write || true
 acr_ed -create -field $trg.FDb.snf_mon                       -arg bool             -write -comment "step field for monitor"
 acr -merge -write <<EOF
     dmmeta.fstep   fstep:$trg.FDb.snf_mon   steptype:InlineRecur  comment:""
-    dmmeta.fdelay  fstep:$trg.FDb.snf_mon   delay:1.0  scale:N  comment:""
+    dmmeta.fdelay  fstep:$trg.FDb.snf_mon   delay:1.000000000  scale:N  comment:""
 EOF
 
 #  set parms for $trg

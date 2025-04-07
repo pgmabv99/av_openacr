@@ -31,8 +31,8 @@
                                   |Tpool kafka------------------------------------>/ atf_snf.FKafka    
                                   |                                                |                   
                                   |Tpool tcp_pair------>/ atf_snf.FTcp_pair        |                   
-                                  |Thash ind_tcp_pair-->|                          |                   
                                   |Llist zd_tcp_pair--->|                          |                   
+                                  |Thash ind_tcp_pair-->|                          |                   
                                   -                     |                          |                   
                                                         |                          |                   
                                                         |Llist zd_client_id------->|                   

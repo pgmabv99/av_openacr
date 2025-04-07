@@ -22,5 +22,5 @@ atf_snf.info dev:data0  port:1  ib:mlx5_0  pci:0000:81:00.0  comment:"Flow creat
 =============tcp_pairs rsp without req 
 
 ==========================================batch stats
-"elapsed(sec)":8.32666  iframe_count:2  kafka_req_count_total:0  kafka_req_non_ack_count_total:0  "kafka_duration_avg (ns)":0  ind_tcp_pair_n:0  max_pkt_len:259
+"elapsed(sec)":9.49114  iframe_count:1  kafka_req_count_total:0  kafka_req_non_ack_count_total:0  "kafka_duration_avg (ns)":0  ind_tcp_pair_n:0  max_pkt_len:0
 Kafka Non-ACK(BAD - request without response) Ratio Histogram:

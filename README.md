@@ -155,8 +155,8 @@ x2node  -node:nj1.sn5.kafka-4
 
 
 #from sn1: login  to host 
-x2node  -node:nj1.sn5.bm -t -root
-x2node  -node:nj1.sn1.bm -t -root
+x2node  -node:nj1.sn5.bm -root
+x2node  -node:nj1.sn1.bm -root
 
 #from sn1 : docker rm and docker start new container
 dkr -clean_run  -node:nj1.sn1.avorovich 
@@ -177,4 +177,10 @@ docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 omcli -omnode:dev.ak-8.b%  -status 
 omcli -omnode:dev.ak-8.b%   -stop
 omcli -omnode:dev.ak-8.b%  -start 
+
+omcli -omnode:dev.ak-8.%  -stop
+omcli -omnode:dev.ak-8.b%  -start
+omcli -omnode:dev.ak-8.u%  -start
+omcli -omnode:dev.ak-8.%   -status
+
 

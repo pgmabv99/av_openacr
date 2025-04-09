@@ -183,4 +183,10 @@ omcli -omnode:dev.ak-8.b%  -start
 omcli -omnode:dev.ak-8.u%  -start
 omcli -omnode:dev.ak-8.%   -status
 
+// kafka ui
+omcli -omnode:dev.ak-8.uip -stop
+omcli -omnode:dev.ak-8.uip -start
+omcli -omnode:dev.ak-8.uip -status
+// redpanda ui
+omcli -omnode:dev.ak-8.uir -start/stop
 

@@ -1,0 +1,64 @@
+
+atf_snf.info comment:"List of network interfaces"  family:AF_INET
+ifa_name:"lo          "  dev_name:"        "  pci_addr:"              "  ifa_addr:"127.0.0.1       "  subnet_range:127.0.0.0/8
+ifa_name:"ipmiaccess  "  dev_name:"        "  pci_addr:"0000:43:00.0  "  ifa_addr:"192.168.11.1    "  subnet_range:192.168.11.0/24
+ifa_name:"ctrl        "  dev_name:"        "  pci_addr:"0000:43:00.1  "  ifa_addr:"192.168.10.11   "  subnet_range:192.168.10.0/24
+ifa_name:"docker0     "  dev_name:"        "  pci_addr:"              "  ifa_addr:"172.17.0.1      "  subnet_range:172.17.0.0/16
+ifa_name:"data0-1     "  dev_name:"mlx5_1  "  pci_addr:"0000:81:00.1  "  ifa_addr:"192.168.101.1   "  subnet_range:192.168.101.0/24
+ifa_name:"data0-2     "  dev_name:"mlx5_3  "  pci_addr:"0000:81:00.2  "  ifa_addr:"192.168.102.1   "  subnet_range:192.168.102.0/24
+ifa_name:"data0-3     "  dev_name:"mlx5_5  "  pci_addr:"0000:81:00.3  "  ifa_addr:"192.168.103.1   "  subnet_range:192.168.103.0/24
+ifa_name:"data0-4     "  dev_name:"mlx5_7  "  pci_addr:"0000:81:00.4  "  ifa_addr:"192.168.104.1   "  subnet_range:192.168.104.0/24
+ifa_name:"data0-5     "  dev_name:"mlx5_9  "  pci_addr:"0000:81:00.5  "  ifa_addr:"192.168.105.1   "  subnet_range:192.168.105.0/24
+ifa_name:"data0-6     "  dev_name:"mlx5_11 "  pci_addr:"0000:81:00.6  "  ifa_addr:"192.168.106.1   "  subnet_range:192.168.106.0/24
+ifa_name:"data0-7     "  dev_name:"mlx5_13 "  pci_addr:"0000:81:00.7  "  ifa_addr:"192.168.107.1   "  subnet_range:192.168.107.0/24
+ifa_name:"data0-8     "  dev_name:"mlx5_15 "  pci_addr:"0000:81:01.0  "  ifa_addr:"192.168.108.1   "  subnet_range:192.168.108.0/24
+
+atf_snf.info comment:"List of network interfaces"  family:AF_INET6
+ifa_name:"lo          "  dev_name:"        "  pci_addr:"              "  ifa_addr:"::1                       "  subnet_range:::1/128
+ifa_name:"ipmiaccess  "  dev_name:"        "  pci_addr:"0000:43:00.0  "  ifa_addr:"fe80::3eec:efff:fe78:e3e6 "  subnet_range:fe80::/64
+ifa_name:"ctrl        "  dev_name:"        "  pci_addr:"0000:43:00.1  "  ifa_addr:"fe80::3eec:efff:fe78:e3e7 "  subnet_range:fe80::/64
+ifa_name:enp4s0f3u2u2c2  dev_name:"        "  pci_addr:"1-2.2:2.0     "  ifa_addr:"fe80::b23a:f2ff:feb6:59f  "  subnet_range:fe80::/64
+ifa_name:"docker0     "  dev_name:"        "  pci_addr:"              "  ifa_addr:"fe80::42:77ff:fed1:673b   "  subnet_range:fe80::/64
+ifa_name:"veth7df4c2e "  dev_name:"        "  pci_addr:"              "  ifa_addr:"fe80::4c29:b1ff:fe97:5d6f "  subnet_range:fe80::/64
+ifa_name:"veth99d840b "  dev_name:"        "  pci_addr:"              "  ifa_addr:"fe80::70a9:35ff:fe9f:438f "  subnet_range:fe80::/64
+ifa_name:"veth9783ab7 "  dev_name:"        "  pci_addr:"              "  ifa_addr:"fe80::6ccc:8fff:fe86:819f "  subnet_range:fe80::/64
+ifa_name:"veth3afda20 "  dev_name:"        "  pci_addr:"              "  ifa_addr:"fe80::9071:6dff:fee5:4a96 "  subnet_range:fe80::/64
+ifa_name:"veth5e7e2f0 "  dev_name:"        "  pci_addr:"              "  ifa_addr:"fe80::506c:a9ff:fe18:8b6c "  subnet_range:fe80::/64
+ifa_name:"vetha75c236 "  dev_name:"        "  pci_addr:"              "  ifa_addr:"fe80::f842:9cff:fe1e:43cf "  subnet_range:fe80::/64
+ifa_name:"veth45fb939 "  dev_name:"        "  pci_addr:"              "  ifa_addr:"fe80::d49f:ecff:fe65:e31e "  subnet_range:fe80::/64
+ifa_name:"data0       "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::bace:f6ff:fecc:7a66 "  subnet_range:fe80::/64
+ifa_name:"enp129s0r0  "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::c8c7:feff:fe8f:4240 "  subnet_range:fe80::/64
+ifa_name:"enp129s0r1  "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::f891:3bff:fec4:3cae "  subnet_range:fe80::/64
+ifa_name:"enp129s0r2  "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::909e:6fff:fe95:1f6e "  subnet_range:fe80::/64
+ifa_name:"enp129s0r3  "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::d028:52ff:fea2:6a98 "  subnet_range:fe80::/64
+ifa_name:"enp129s0r4  "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::50e0:2ff:fe4d:7571  "  subnet_range:fe80::/64
+ifa_name:"enp129s0r5  "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::4438:22ff:fe22:d9a5 "  subnet_range:fe80::/64
+ifa_name:"enp129s0r6  "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::882f:39ff:fe4e:a607 "  subnet_range:fe80::/64
+ifa_name:"enp129s0r7  "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::18e4:64ff:fe0b:ef24 "  subnet_range:fe80::/64
+ifa_name:"enp129s0r8  "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::400d:efff:fe58:7a9a "  subnet_range:fe80::/64
+ifa_name:"enp129s0r9  "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::78de:7eff:fe7b:48f6 "  subnet_range:fe80::/64
+ifa_name:"enp129s0r10 "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::f063:f4ff:fe8f:6207 "  subnet_range:fe80::/64
+ifa_name:"enp129s0r11 "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::1882:e0ff:fe3e:c087 "  subnet_range:fe80::/64
+ifa_name:"enp129s0r12 "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::4b4:5bff:fe26:3d33  "  subnet_range:fe80::/64
+ifa_name:"enp129s0r13 "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::38d9:29ff:fef7:92b3 "  subnet_range:fe80::/64
+ifa_name:"enp129s0r14 "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::5cb6:74ff:fe74:dfad "  subnet_range:fe80::/64
+ifa_name:"enp129s0r15 "  dev_name:"mlx5_0  "  pci_addr:"0000:81:00.0  "  ifa_addr:"fe80::d83d:68ff:feca:3fd1 "  subnet_range:fe80::/64
+ifa_name:"data0-1     "  dev_name:"mlx5_1  "  pci_addr:"0000:81:00.1  "  ifa_addr:"fe80::200:ff:fe00:101     "  subnet_range:fe80::/64
+ifa_name:"enp129s0v8  "  dev_name:"mlx5_2  "  pci_addr:"0000:81:01.1  "  ifa_addr:"fe80::6470:98ff:fe4d:e601 "  subnet_range:fe80::/64
+ifa_name:"data0-2     "  dev_name:"mlx5_3  "  pci_addr:"0000:81:00.2  "  ifa_addr:"fe80::200:ff:fe00:201     "  subnet_range:fe80::/64
+ifa_name:"enp129s0v9  "  dev_name:"mlx5_4  "  pci_addr:"0000:81:01.2  "  ifa_addr:"fe80::d8a5:95ff:febd:b3d7 "  subnet_range:fe80::/64
+ifa_name:"data0-3     "  dev_name:"mlx5_5  "  pci_addr:"0000:81:00.3  "  ifa_addr:"fe80::200:ff:fe00:301     "  subnet_range:fe80::/64
+ifa_name:"enp129s0v10 "  dev_name:"mlx5_6  "  pci_addr:"0000:81:01.3  "  ifa_addr:"fe80::14f7:63ff:fedc:c3d5 "  subnet_range:fe80::/64
+ifa_name:"data0-4     "  dev_name:"mlx5_7  "  pci_addr:"0000:81:00.4  "  ifa_addr:"fe80::200:ff:fe00:401     "  subnet_range:fe80::/64
+ifa_name:"enp129s0v11 "  dev_name:"mlx5_8  "  pci_addr:"0000:81:01.4  "  ifa_addr:"fe80::406e:72ff:fec1:ae40 "  subnet_range:fe80::/64
+ifa_name:"data0-5     "  dev_name:"mlx5_9  "  pci_addr:"0000:81:00.5  "  ifa_addr:"fe80::200:ff:fe00:501     "  subnet_range:fe80::/64
+ifa_name:"enp129s0v12 "  dev_name:"mlx5_10 "  pci_addr:"0000:81:01.5  "  ifa_addr:"fe80::dc92:81ff:fe18:5bcd "  subnet_range:fe80::/64
+ifa_name:"data0-6     "  dev_name:"mlx5_11 "  pci_addr:"0000:81:00.6  "  ifa_addr:"fe80::200:ff:fe00:601     "  subnet_range:fe80::/64
+ifa_name:"enp129s0v13 "  dev_name:"mlx5_12 "  pci_addr:"0000:81:01.6  "  ifa_addr:"fe80::84a0:41ff:fea3:c4a2 "  subnet_range:fe80::/64
+ifa_name:"data0-7     "  dev_name:"mlx5_13 "  pci_addr:"0000:81:00.7  "  ifa_addr:"fe80::200:ff:fe00:701     "  subnet_range:fe80::/64
+ifa_name:"data0-7T    "  dev_name:"mlx5_14 "  pci_addr:"0000:81:01.7  "  ifa_addr:"fe80::644d:60ff:fea9:5a4b "  subnet_range:fe80::/64
+ifa_name:"data0-8     "  dev_name:"mlx5_15 "  pci_addr:"0000:81:01.0  "  ifa_addr:"fe80::200:ff:fe00:801     "  subnet_range:fe80::/64
+ifa_name:"data0-8T    "  dev_name:"mlx5_16 "  pci_addr:"0000:81:02.0  "  ifa_addr:"fe80::aca3:47ff:fe3d:6d6a "  subnet_range:fe80::/64
+ifa_name:"vethc3dc412 "  dev_name:"        "  pci_addr:"              "  ifa_addr:"fe80::ec8e:96ff:fed9:ab4a "  subnet_range:fe80::/64
+ifa_name:"veth01447f4 "  dev_name:"        "  pci_addr:"              "  ifa_addr:"fe80::309a:49ff:feaa:5c05 "  subnet_range:fe80::/64
+ifa_name:"veth43475b2 "  dev_name:"        "  pci_addr:"              "  ifa_addr:"fe80::8898:71ff:fe24:8099 "  subnet_range:fe80::/64

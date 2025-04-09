@@ -172,4 +172,9 @@ docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 
 ```
 
+## omcli
+
+omcli -omnode:dev.ak-8.b%  -status 
+omcli -omnode:dev.ak-8.b%   -stop
+omcli -omnode:dev.ak-8.b%  -start 
 

@@ -8,10 +8,10 @@
 			"path": "../arnd"
 		},
 		{
-			"path": "../../../opt/kafka"
+			"path": "../pcap"
 		},
 		{
-			"path": "../pcap"
+			"path": "../.ssh"
 		}
 	],
 	

@@ -2027,7 +2027,7 @@ FrameParseHeaders MAC  iframe:510  mac_pair_key:00:00:00:00:08:04-00:00:00:00:08
 ---  iframe:000000000510  tcp_pair_key:192.168.108.4:1043-192.168.108.1:45782  direction:2  th_flags:"ACK  10"  seq_rel:000000000000:000000000000  seq_gap:"            "  tsval:004110135938  ts_ns:00000000000929583112  tcp_pay_len:000000
 p_pay_hex:""
 p_pay_asci:""
-====--PcapFileProcess  fname:""
+PcapFileProcess -EOF
 
 =============tcp_pairs req with matching rsp
   
@@ -2120,7 +2120,8 @@ p_pay_asci:""
 =============tcp_pairs rsp without req 
 
 ==========================================batch stats
-"elapsed(sec)":0.00906828  iframe_count:510  kafka_req_count_total:12  kafka_req_ack_count_total:10  "kafka_duration_avg (ns)":683700  ind_tcp_pair_n:10  max_pkt_len:1514
+"elapsed(sec)":0.00910211  iframe_count:510  kafka_req_count_total:12  kafka_req_ack_count_total:10  "kafka_duration_avg (ns)":683700  ind_tcp_pair_n:10  max_pkt_len:1514
 Kafka Non-ACK(BAD - request without response) Ratio Histogram:
 range:00-00%  count_of_tcp_pairs:2
 range:90-100%  count_of_tcp_pairs:1
+exit to OS

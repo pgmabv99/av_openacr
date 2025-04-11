@@ -143,6 +143,9 @@ ssh-add ~/.ssh/algox2_av
 #Confirm the key was added
 ssh-add -l
 
+## git cherry pick
+
+465c66d7 (HEAD -> algornd/arnd.604, origin/algornd/arnd.604) Issue algornd/arnd#604 atf_snf should detect if the device is in usegco 
 ## acr docker cheat sheet
 ```
 #log to host of sn5 from sn1

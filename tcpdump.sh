@@ -20,29 +20,13 @@ exit
 #         (ip.src == 192.168.110.51 && ip.dst == 192.168.110.61 && tcp.srcport == 1096 && tcp.dstport == 41072)) && \
 #         tcp.flags.reset == 1"
 
-# ~/arnd/bin/x2bm_pcap -files:%2% > ~/av_openacr/sniffer_logs/tcp_pair.log
-# ~/arnd/bin/x2bm_pcap -files:%2% > ~/av_openacr/sniffer_logs/tcp_pair2.log
+# ~/arnd/bin/x2bm_pcap -in_file:%2% > ~/av_openacr/sniffer_logs/tcp_pair.log
+# ~/arnd/bin/x2bm_pcap -in_file:%2% > ~/av_openacr/sniffer_logs/tcp_pair2.log
 
 
 
 
+cp ~/pcap/o1.pcap ~/pcap/o1_fixed.pcap
 
-
-ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_all_mult_true.log
-~/arnd/bin/atf_snf -use_files:true -files:%klocal_dat0% -mult_req_per_frame:true > $ofile 2>&1; tail -n 20 $ofile
-
-ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_all_mult_true.log
-~/arnd/bin/atf_snf -use_files:true -files:%tap0% -mult_req_per_frame:true > $ofile 2>&1; tail -n 20 $ofile
-
-ofile=~/av_openacr/sniffer_logs/tcp_pair_f0_one_mult_true.log
-~/arnd/bin/atf_snf -use_files:true -files:%tap0% -mult_req_per_frame:true > $ofile 2>&1; tail -n 20 $ofile
-# 
-ofile=~/av_openacr/sniffer_logs/atf_snf_with_wall_clock.log
-sudo ~/arnd/bin/atf_snf -dev:data0-8 -with_wall_clock:true > $ofile 2>&1; tail -n 20 $ofile
-
-
-
-
-ofile=~/av_openacr/sniffer_logs/atf_snf.log
-sudo ~/arnd/bin/atf_snf -dev:data0-8 > $ofile 2>&1; tail -n 20 $ofile
-
+ofile=~/av_openacr/sniffer_logs/o1_fixed.log
+~/arnd/bin/atf_snf  -in_file:o1_fixed.pcap  > $ofile 2>&1; tail -n 20 $ofile

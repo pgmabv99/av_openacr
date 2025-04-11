@@ -102,12 +102,13 @@ acr_ed -create -ctype $trg.FMcb                              -write -comment "Ma
 # stats
 acr_ed -create -field $trg.FMcb.iframe                      -arg u64              -write -comment "global iframe index including non-tcp. start at 1"
 acr_ed -create -field $trg.FMcb.kafka_req_count_total       -arg u64              -write -comment "total kafka req count"
-acr_ed -create -field $trg.FMcb.kafka_req_ack_count_total -arg u64            -write -comment "total kafka req  ack count"
+acr_ed -create -field $trg.FMcb.kafka_req_ack_count_total   -arg u64              -write -comment "total kafka req ack count"
 acr_ed -create -field $trg.FMcb.max_pkt_len                 -arg u32              -write -comment "maximum packet length"
 acr_ed -create -field $trg.FMcb.time0                       -arg algo.SchedTime   -write -comment "starting time"
 acr_ed -create -field $trg.FMcb.round_trip_dur_tot          -arg u64              -write -comment "total accumulated round-trip duration"
-acr_ed -create -field $trg.FMcb.mon_step_n                -arg u64              -write -comment "number of latest mon  step run "
+acr_ed -create -field $trg.FMcb.mon_step_n                  -arg u64              -write -comment "number of latest mon step run"
 acr_ed -create -field $trg.FMcb.snf                         -arg atf_snf.FSnf     -reftype Ptr  -write -comment "pointer to snf"
+acr_ed -create -field $trg.FMcb.fd_out_file                 -arg i32              -write -comment "fd of output file"
 
 # debug
 acr_ed -create -field $trg.FMcb.mac_print_flg               -arg bool             -write -comment "print MAC info at parse"
@@ -146,18 +147,17 @@ EOF
 
 #  set parms for $trg
 acr -merge  -write <<EOF
-acr.delete dmmeta.field  field:command.$trg.use_files  
-acr.delete dmmeta.field  field:command.$trg.files  
+acr.delete dmmeta.field  field:command.$trg.in_file
+acr.delete dmmeta.field  field:command.$trg.out_file  
 acr.delete dmmeta.field  field:command.$trg.dir     
 acr.delete dmmeta.field  field:command.$trg.mult_req_per_frame
 EOF
 acr -merge -write <<EOF
-dmmeta.field  field:command.$trg.files  arg:algo.cstring  reftype:RegxSql  dflt:'"%0%"'  comment:"Regx of file(s) to test"
-dmmeta.field  field:command.$trg.dir   arg:algo.cstring  reftype:Val       dflt:'"/home/avorovich/pcap/"'  comment:"dir with file(s) to test"
-dmmeta.field  field:command.$trg.mult_req_per_frame   arg:bool  reftype:Val       dflt:true  comment:"parse mode: true multiple req/rsp are exepcted per frame"
-dmmeta.field  field:command.$trg.use_files   arg:bool  reftype:Val       dflt:false comment:"true -  read static pcap. false - live sniffer"
+    dmmeta.field  field:command.$trg.in_file                arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input file uder dir. empty for live"
+    dmmeta.field  field:command.$trg.out_file               arg:algo.cstring  reftype:Val      dflt:'""'  comment:"output file under dir to shadow pkts"
+    dmmeta.field  field:command.$trg.dir                    arg:algo.cstring  reftype:Val      dflt:'"/home/avorovich/pcap/"'  comment:"dir with file(s) to test"
+    dmmeta.field  field:command.$trg.mult_req_per_frame     arg:bool          reftype:Val      dflt:true        comment:"parse mode: true multiple req/rsp are expected per frame"
 EOF
-
 
 
 amc

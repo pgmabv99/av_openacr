@@ -76,6 +76,7 @@ acr_ed -create -field  $trg.FTcp_pair.ind_client_id  -arg $trg.FClient_id -via $
 #-------------kafka req/rsp object
 acr_ed -create -ctype $trg.FKafka                   -pooltype Tpool       -write  -comment "Kafka req/rsp object"
 acr_ed -create -field $trg.FKafka.kafka_corr_id     -arg u32              -write  -comment "correlation_id from hdr"
+acr_ed -create -field $trg.FKafka.api_version       -arg u32              -write  -comment "req api_version"
 acr_ed -create -field $trg.FKafka.kafka_len         -arg u32              -write  -comment "len of req/rsp w/o 4"
 acr_ed -create -field $trg.FKafka.iframe            -arg u32              -write  -comment "iframe of frame where the kafka req/rsp completed"
 acr_ed -create -field $trg.FKafka.seq               -arg u32              -write  -comment "unused; seq of frame where the kafka started"

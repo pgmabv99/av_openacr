@@ -4,15 +4,13 @@
 # omcli -omnode:dev.ak-8.uip -start
 # omcli -omnode:dev.ak-8.uip -status
 
-omcli -omnode:dev.ak-8.uir -stop
-omcli -omnode:dev.ak-8.uir -start
-omcli -omnode:dev.ak-8.uir -status
+omcli -omnode:dev.ak-8.% -stop
+omcli -omnode:dev.ak-8.b% -start
+omcli -omnode:dev.ak-8.b% -status
+# omcli -omnode:dev.ak-8.uir -start
 
-# omcli -omnode:dev.ak-8.ui% -stop
-# omcli -omnode:dev.ak-8.ui% -start
-# omcli -omnode:dev.ak-8.ui% -status
 ofile=~/av_openacr/sniffer_logs/atf_snf.log
-export LIBIBVERBS_DEBUG=1
+echo "....starting atf_snf. use ctrl+C to enter commands . stdout is rediected to $ofile"
+echo "....monitoring subset in temp/atf_snf.dat . "
 sudo ~/arnd/bin/atf_snf -dev:data0-8  -out_file:o1.pcap > $ofile 2>&1; tail -n 20 $ofile
-exit
-sudo ~/arnd/bin/atf_snf -dev:data0-8   > $ofile 2>&1; tail -n 20 $ofile
+

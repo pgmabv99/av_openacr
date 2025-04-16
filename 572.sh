@@ -21,6 +21,12 @@ acr_ed -del  -ctype $trg.FMcb    -write || true
 acr_ed -del  -ctype $trg.FTcp_pair -write || true
 acr_ed -del  -ctype $trg.FClient_id    -write || true
 acr_ed -del  -ctype $trg.FKafka    -write || true
+
+#  detlete indices from fdb 
+acr -merge  -write <<EOF
+acr.delete dmmeta.field  field:$trg._db.ind%
+EOF
+
 # acr_ed -del  -ctype $trg.FTcp_pair -write
 # acr_ed -del  -ctype $trg.FClient_id   -write
 # acr_ed -del  -ctype $trg.FCorr_id    -write
@@ -62,6 +68,7 @@ acr_ed -create -field $trg.FTcp_pair.kafka_len_tot         -arg u32             
 acr_ed -create -field $trg.FTcp_pair.kafka_per_frame_count -arg u32              -write -comment "count of kafka req/rsp per frame"
 
 # pointers from above
+# acr_ed -del  -field $trg.FDb.zd_tcp_pair                    -write  
 acr_ed -create -field $trg.FDb.zd_tcp_pair             -cascdel              -write -comment ""
 acr_ed -create -field $trg.FDb.ind_tcp_pair            -cascdel              -write -comment ""
 
@@ -164,6 +171,16 @@ acr -merge -write <<EOF
     dmmeta.field  field:command.$trg.mult_req_per_frame     arg:bool          reftype:Val      dflt:true        comment:"parse mode: true multiple req/rsp are expected per frame"
 EOF
 
+set -x
+# acr_ed -del    -ctype $trg.Fdctrport                          -write || true
+# acr_ed -create -ctype $trg.Fdctrport                          -write -comment "host/port mapping"
+# acr_ed -create -field $trg.Fdctrport.base                     -arg dkrdb.Dctrport -reftype Base -write -comment "reference to ssim file"
+# acr_ed -create -field $trg.Fdctrport.base                     -arg dkrdb.dctrport -reftype Base -write -comment "reference to ssim file"
+
+acr_ed -del    -ctype  atf_snf.FDctrport                          -write || true
+acr_ed -create -finput -target atf_snf   -ssimfile dkrdb.dctrport  -write -comment "inherited from ssimfile"
+acr_ed -del -field atf_snf.FDb.ind_uid   -write  || true
+acr_ed -create -field atf_snf.FDb.ind_uid  -arg atf_snf.FDctrport -reftype:Thash -write -comment "hash"
 
 amc
 amc_vis $trg.%   > ~/av_openacr/${trg}_viz.txt

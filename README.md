@@ -1,6 +1,9 @@
 
 # ACR notes
 
+## to filter fields
+ acr dmmeta.field:atf_snf.%ctrport%
+
 ## to show all dependencies
 ```
 acr dmmeta.ns:atf_snf  -ndown 99  -tree -e

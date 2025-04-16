@@ -23,9 +23,9 @@ acr_ed -del  -ctype $trg.FClient_id    -write || true
 acr_ed -del  -ctype $trg.FKafka    -write || true
 
 #  detlete indices from fdb 
-acr -merge  -write <<EOF
-acr.delete dmmeta.field  field:$trg._db.ind%
-EOF
+# acr -merge  -write <<EOF
+# acr.delete dmmeta.field  field:$trg._db.ind%
+# EOF
 
 # acr_ed -del  -ctype $trg.FTcp_pair -write
 # acr_ed -del  -ctype $trg.FClient_id   -write

@@ -3,6 +3,7 @@
 
 ## to filter fields
  acr dmmeta.field:atf_snf.%ctrport%
+ acr dmmeta.field:atf_snf.FDb.ind_%
 
 ## to show all dependencies
 ```

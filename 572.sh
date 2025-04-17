@@ -22,9 +22,9 @@ acr_ed -del  -ctype atf_snf.FTcp_pair -write || true
 acr_ed -del  -ctype atf_snf.FClient_id    -write || true
 acr_ed -del  -ctype atf_snf.FKafka    -write || true
 
-#  detlete indices from fdb 
+#  detlete indices from fdb todo
 # acr -merge  -write <<EOF
-# acr.delete dmmeta.field  field:atf_snf._db.ind%
+# acr.delete dmmeta.field  field:atf_snf.FDb.ind%
 # EOF
 
 # acr_ed -del  -ctype atf_snf.FTcp_pair -write
@@ -165,22 +165,20 @@ acr.delete dmmeta.field  field:command.atf_snf.dir
 acr.delete dmmeta.field  field:command.atf_snf.mult_req_per_frame
 EOF
 acr -merge -write <<EOF
-    dmmeta.field  field:command.atf_snf.in_file                arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input file uder dir. empty for live"
-    dmmeta.field  field:command.atf_snf.out_file               arg:algo.cstring  reftype:Val      dflt:'""'  comment:"output file under dir to shadow pkts"
+    dmmeta.field  field:command.atf_snf.in_file                arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input PCAP file under dir. empty for live NIC capture"
+    dmmeta.field  field:command.atf_snf.out_file               arg:algo.cstring  reftype:Val      dflt:'""'  comment:"output PCAP file under dir to shadow pkts"
     dmmeta.field  field:command.atf_snf.dir                    arg:algo.cstring  reftype:Val      dflt:'"/home/avorovich/pcap/"'  comment:"dir with file(s) to test"
-    dmmeta.field  field:command.atf_snf.mult_req_per_frame     arg:bool          reftype:Val      dflt:true        comment:"parse mode: true multiple req/rsp are expected per frame"
+    dmmeta.field  field:command.atf_snf.mult_req_per_frame     arg:bool          reftype:Val      dflt:true        comment:"parse mode: true - multiple req/rsp are expected per frame"
 EOF
 
-set -x
-# acr_ed -del    -ctype atf_snf.Fdctrport                          -write || true
-# acr_ed -create -ctype atf_snf.Fdctrport                          -write -comment "host/port mapping"
-# acr_ed -create -field atf_snf.Fdctrport.base                     -arg dkrdb.Dctrport -reftype Base -write -comment "reference to ssim file"
-# acr_ed -create -field atf_snf.Fdctrport.base                     -arg dkrdb.dctrport -reftype Base -write -comment "reference to ssim file"
 
-# acr_ed -del    -ctype  atf_snf.FDctrport                          -write || true
-# acr_ed -create -finput -target atf_snf   -ssimfile dkrdb.dctrport  -write -comment "inherited from ssimfile"
-# acr_ed -del -field atf_snf.FDb.ind_uid   -write  || true
-# acr_ed -create -field atf_snf.FDb.ind_uid  -arg atf_snf.FDctrport -reftype:Thash -write -comment "hash"
+# include port config file
+acr_ed -del    -ctype atf_snf.FDctrport                          -write || true
+acr_ed -create -finput -target atf_snf   -ssimfile dkrdb.dctrport  -write -comment "inherited from ssimfile"
+acr_ed -del    -field atf_snf.FDb.ind_uid                        -write || true
+acr_ed -create -field atf_snf.FDb.ind_uid  -arg atf_snf.FDctrport -hashfld dkrdb.Dctrport.uid -xref -write -comment ""
+acr_ed -del    -field atf_snf.FDb.zd_dctrport                     -write || true
+acr_ed -create -field atf_snf.FDb.zd_dctrport                    -arg atf_snf.FDctrport -xref -write -comment ""
 
 amc
 amc_vis atf_snf.%   > ~/av_openacr/${trg}_viz.txt

@@ -7,6 +7,7 @@
 omcli -omnode:dev.ak-8.% -stop
 omcli -omnode:dev.ak-8.b% -start
 omcli -omnode:dev.ak-8.b% -status
+
 # omcli -omnode:dev.ak-8.uir -start
 
 ofile=~/av_openacr/sniffer_logs/atf_snf.log

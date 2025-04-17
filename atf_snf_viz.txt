@@ -13,6 +13,12 @@
                        |          |Lary intfname--------------------|-->/ atf_snf.FIntfname            
                        |          |Thash ind_intfname---------------|-->|                              
                        |          |                                 |   |                              
+                       |          |Lary dctrport--------------------|---|---->/ atf_snf.FDctrport      
+                       |          |Thash ind_uid--------------------|---|---->|                        
+                       |          |Llist zd_dctrport----------------|---|---->|                        
+                       |          |                                 |   |     -                        
+                       |          |                                 |   |                              
+                       |          |                                 |   |                              
                        |          |Tpool client_id------------------|---|--------->/ atf_snf.FClient_id
                        |          |                                 |   |          |                   
                        |          |Lary snf------>/ atf_snf.FSnf    |   |          |                   
@@ -37,10 +43,10 @@
                                                         |                          |                   
                                                         |Llist zd_client_id------->|                   
                                                         |Thash ind_client_id------>|                   
-                                                        |Thash ind_kafka_corr_id-->|                   
-                                                        |Bheap bh_kafka_corr_id--->|                   
-                                                        |Ptr p_cur_kafka---------->|                   
                                                         |Llist zd_kafka_obsolete-->|                   
+                                                        |Bheap bh_kafka_corr_id--->|                   
+                                                        |Thash ind_kafka_corr_id-->|                   
+                                                        |Ptr p_cur_kafka---------->|                   
                                                         |<-------------------------|Upptr p_tcp_pair   
                                                         |                          |                   
                                                         |                          |                   

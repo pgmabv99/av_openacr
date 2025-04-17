@@ -9,6 +9,7 @@ omcli -omnode:dev.ak-8.b% -start
 omcli -omnode:dev.ak-8.b% -status
 
 # omcli -omnode:dev.ak-8.uir -start
+# omcli -omnode:dev.ak-8.uip -start
 
 ofile=~/av_openacr/sniffer_logs/atf_snf.log
 echo "....starting atf_snf. use ctrl+C to enter commands . stdout is rediected to $ofile"

@@ -1,3 +1,4 @@
+logging standalone files in cap_dir:/home/avorovich/pcap/cap
 atf_snf.info dev:data0-8  port:1
 atf_snf.info comment:"opened the device"
 atf_snf.info comment:"allocated protected domain"
@@ -25,208 +26,203 @@ PcapOutFileClose  fname:o1.pcap
 
 =============tcp_pairs req with matching rsp
   
-==frame stats  direction:"c->b"  tcp_short:108.1-108.4  tcp_pair_key:192.168.108.1:58026-192.168.108.4:1043  frame_count:12  syn_count:1  fin_count:1  rst_count:0  isn:001886649250  tcp_payload_len_tot:000000000110
-  kafka req stats  kafka_count:3  kafka_req_ack_count:3  kafka_count_in_bh:3  pct_non_ack!!!:0  kafka_len_tot:000000000110
-  ..client_id_key:redpanda-console
-  -req  kafka_corr_id:0  ack:1  iframe:000000000096  api_key_str:ApiVersions  api_key:18  api_version:3  kafka_len:40  mon_step_age:56
-   kafka_buf_n:44  kafka_buf:"...(..........redpanda-console..kgo.v1.18.0."
-   kafka_buf_hex:" 00 00 00 28| 00 12 00 03| 00 00 00 00| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 04| 6b 67 6f 08| 76 31 2e 31| 38 2e 30 00|"
-  -rsp  kafka_corr_id:0  ack:1  iframe:000000000103  kafka_len:499  mon_step_age:56
+==frame stats  direction:"c->b"  tcp_short:108.1-108.4  tcp_pair_key:192.168.108.1:44128-192.168.108.4:1043  frame_count:36  syn_count:1  fin_count:0  rst_count:0  isn:001328617967  tcp_payload_len_tot:000000001989
+  kafka req stats  kafka_count:20  kafka_req_ack_count:20  kafka_count_in_bh:20  pct_non_ack!!!:0  kafka_len_tot:000000001989
+  ..client_id_key:kafka-ui-admin-1744927081-1
+  -req  kafka_corr_id:8  ack:1  iframe:000000000050  api_key_str:ApiVersions  api_key:18  api_version:3  kafka_len:63  mon_step_age:68
+   kafka_buf_n:67  kafka_buf:"...?..........kafka-ui-admin-1744927081-1..apache-kafka-java.3.5.0."
+   kafka_buf_hex:" 00 00 00 3f| 00 12 00 03| 00 00 00 08| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 12 61| 70 61 63 68| 65 2d 6b 61| 66 6b 61 2d| 6a 61 76 61| 06 33 2e 35| 2e 30 00"
+  -rsp  kafka_corr_id:8  ack:1  iframe:000000000057  kafka_len:499  mon_step_age:68
    kafka_buf_n:503  kafka_buf:"..........>.............................................................................................................................................................................................._trunc_"
-   kafka_buf_hex:" 00 00 01 f3| 00 00 00 00| 00 00 3e 00| 00 00 00 00| 0b 00 00 01| 00 00 00 11| 00 00 02 00| 00 00 09 00| 00 03 00 00| 00 0c 00 00| 08 00 00 00| 09 00 00 09| 00 00 00 09| 00 00 0a 00| 00 00 06 00| 00 0b 00 00| 00 09 00 00| 0c 00 00 00| 04 00 00 0d| 00 00 00 05| 00 00 0e 00| 00 00 05 00| 00 0f 00 00| 00 05 00 00| 10 00 00 00| 05 00 00 11| 00 00 00 01| 00 00 12 00| 00 00 04 00| 00 13 00 00| 00 07 00 00| 14 00 00 00| 06 00 00 15| 00 00 00 02| 00 00 16 00| 00 00 05 00| 00 17 00 00| 00 04 00 00| 18 00 00 00| 05 00 00 19| 00 00 00 04| 00 00 1a 00| 00 00 04 00| 00 1b 00 00| 00 01 00 00| 1c 00 00 00| 04 00 00 1d| 00 00 00 03| 00 00 1e 00| 00 00 03 00| 00_trunc_"
+   kafka_buf_hex:" 00 00 01 f3| 00 00 00 08| 00 00 3e 00| 00 00 00 00| 0b 00 00 01| 00 00 00 11| 00 00 02 00| 00 00 09 00| 00 03 00 00| 00 0c 00 00| 08 00 00 00| 09 00 00 09| 00 00 00 09| 00 00 0a 00| 00 00 06 00| 00 0b 00 00| 00 09 00 00| 0c 00 00 00| 04 00 00 0d| 00 00 00 05| 00 00 0e 00| 00 00 05 00| 00 0f 00 00| 00 05 00 00| 10 00 00 00| 05 00 00 11| 00 00 00 01| 00 00 12 00| 00 00 04 00| 00 13 00 00| 00 07 00 00| 14 00 00 00| 06 00 00 15| 00 00 00 02| 00 00 16 00| 00 00 05 00| 00 17 00 00| 00 04 00 00| 18 00 00 00| 05 00 00 19| 00 00 00 04| 00 00 1a 00| 00 00 04 00| 00 1b 00 00| 00 01 00 00| 1c 00 00 00| 04 00 00 1d| 00 00 00 03| 00 00 1e 00| 00 00 03 00| 00_trunc_"
 
-  -req  kafka_corr_id:1  ack:1  iframe:000000000105  api_key_str:DescribeLogDirs  api_key:35  api_version:2  kafka_len:29  mon_step_age:56
-   kafka_buf_n:33  kafka_buf:".....#........redpanda-console..."
-   kafka_buf_hex:" 00 00 00 1d| 00 23 00 02| 00 00 00 01| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00"
-  -rsp  kafka_corr_id:1  ack:1  iframe:000000000108  kafka_len:970  mon_step_age:56
-   kafka_buf_n:974  kafka_buf:'................"/mnt/data-1/kraft-combined-logs-8..__consumer_offsets................................................".....................-....................av4.........................test-topic-0_trunc_'
-   kafka_buf_hex:" 00 00 03 ca| 00 00 00 01| 00 00 00 00| 00 05 00 00| 22 2f 6d 6e| 74 2f 64 61| 74 61 2d 31| 2f 6b 72 61| 66 74 2d 63| 6f 6d 62 69| 6e 65 64 2d| 6c 6f 67 73| 2d 38 04 13| 5f 5f 63 6f| 6e 73 75 6d| 65 72 5f 6f| 66 66 73 65| 74 73 05 00| 00 00 15 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 1c 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 22 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 2d 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 04 61 76 34| 02 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 1b 74 65 73| 74 2d 74 6f| 70 69 63 2d| 30_trunc_"
+  -req  kafka_corr_id:12  ack:1  iframe:000000000061  api_key_str:DescribeLogDirs  api_key:35  api_version:4  kafka_len:40  mon_step_age:68
+   kafka_buf_n:44  kafka_buf:"...(.#........kafka-ui-admin-1744927081-1..."
+   kafka_buf_hex:" 00 00 00 28| 00 23 00 04| 00 00 00 0c| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 00 00|"
+  -rsp  kafka_corr_id:12  ack:1  iframe:000000000065  kafka_len:1036  mon_step_age:68
+   kafka_buf_n:1040  kafka_buf:'.................."/mnt/data-1/kraft-combined-logs-8..__consumer_offsets................................................".....................-....................test-topic-0000000-9HHKC60............_trunc_'
+   kafka_buf_hex:" 00 00 04 0c| 00 00 00 0c| 00 00 00 00| 00 00 00 05| 00 00 22 2f| 6d 6e 74 2f| 64 61 74 61| 2d 31 2f 6b| 72 61 66 74| 2d 63 6f 6d| 62 69 6e 65| 64 2d 6c 6f| 67 73 2d 38| 03 13 5f 5f| 63 6f 6e 73| 75 6d 65 72| 5f 6f 66 66| 73 65 74 73| 05 00 00 00| 15 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 1c 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 22 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 2d 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 1b 74| 65 73 74 2d| 74 6f 70 69| 63 2d 30 30| 30 30 30 30| 30 2d 39 48| 48 4b 43 36| 30 03 00 00| 00 04 00 00| 00 00 00 00| 00_trunc_"
 
-  -req  kafka_corr_id:2  ack:1  iframe:000000000147  api_key_str:ListGroups  api_key:16  api_version:4  kafka_len:29  mon_step_age:56
-   kafka_buf_n:33  kafka_buf:..............redpanda-console...
-   kafka_buf_hex:" 00 00 00 1d| 00 10 00 04| 00 00 00 02| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 01| 00"
-  -rsp  kafka_corr_id:2  ack:1  iframe:000000000152  kafka_len:13  mon_step_age:56
-   kafka_buf_n:17  kafka_buf:.................
-   kafka_buf_hex:" 00 00 00 0d| 00 00 00 02| 00 00 00 00| 00 00 00 01| 00"
+  -req  kafka_corr_id:14  ack:1  iframe:000000000067  api_key_str:Metadata  api_key:3  api_version:12  kafka_len:42  mon_step_age:68
+   kafka_buf_n:46  kafka_buf:...*..........kafka-ui-admin-1744927081-1.....
+   kafka_buf_hex:" 00 00 00 2a| 00 03 00 0c| 00 00 00 0e| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 00 01| 00 00"
+  -rsp  kafka_corr_id:14  ack:1  iframe:000000000069  kafka_len:2699  mon_step_age:68
+   kafka_buf_n:2703  kafka_buf:"...................dev.ak-8.b1.ext...........dev.ak-8.b2.ext...........dev.ak-8.b3.ext...........dev.ak-8.b4.ext.......dev.ak-8........av6.'s..sH\"../)...S..............................................._trunc_"
+   kafka_buf_hex:" 00 00 0a 8b| 00 00 00 0e| 00 00 00 00| 00 05 00 00| 00 01 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 31 2e 65| 78 74 00 00| 04 07 00 00| 00 00 00 02| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 32| 2e 65 78 74| 00 00 04 0f| 00 00 00 00| 00 03 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 33 2e 65| 78 74 00 00| 04 13 00 00| 00 00 00 04| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 34| 2e 65 78 74| 00 00 04 17| 00 00 09 64| 65 76 2e 61| 6b 2d 38 00| 00 00 01 0a| 00 00 04 61| 76 36 0f 27| 73 89 89 73| 48 22 9e ae| 2f 29 e0 0d| a1 53 00 04| 00 00 00 00| 00 00 00 00| 00 03 00 00| 00 08 02 00| 00 00 03 02| 00 00 00 03| 01 00 00 00| 00 00 00 01| 00 00 00 04| 00 00 00 0a| 02 00 00 00| 04_trunc_"
 
-==frame stats  direction:"b->c"  tcp_short:108.4-108.1  tcp_pair_key:192.168.108.4:1043-192.168.108.1:58026  frame_count:8  syn_count:1  fin_count:1  rst_count:0  isn:001836007942  tcp_payload_len_tot:000000001494
-  kafka rsp stats  kafka_count:3  kafka_count_in_bh:3  kafka_len_tot:000000001494
+  -req  kafka_corr_id:15  ack:1  iframe:000000000071  api_key_str:Metadata  api_key:3  api_version:12  kafka_len:42  mon_step_age:68
+   kafka_buf_n:46  kafka_buf:...*..........kafka-ui-admin-1744927081-1.....
+   kafka_buf_hex:" 00 00 00 2a| 00 03 00 0c| 00 00 00 0f| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 00 01| 00 00"
+  -rsp  kafka_corr_id:15  ack:1  iframe:000000000073  kafka_len:2699  mon_step_age:68
+   kafka_buf_n:2703  kafka_buf:"...................dev.ak-8.b1.ext...........dev.ak-8.b2.ext...........dev.ak-8.b3.ext...........dev.ak-8.b4.ext.......dev.ak-8........av6.'s..sH\"../)...S..............................................._trunc_"
+   kafka_buf_hex:" 00 00 0a 8b| 00 00 00 0f| 00 00 00 00| 00 05 00 00| 00 01 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 31 2e 65| 78 74 00 00| 04 07 00 00| 00 00 00 02| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 32| 2e 65 78 74| 00 00 04 0f| 00 00 00 00| 00 03 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 33 2e 65| 78 74 00 00| 04 13 00 00| 00 00 00 04| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 34| 2e 65 78 74| 00 00 04 17| 00 00 09 64| 65 76 2e 61| 6b 2d 38 00| 00 00 04 0a| 00 00 04 61| 76 36 0f 27| 73 89 89 73| 48 22 9e ae| 2f 29 e0 0d| a1 53 00 04| 00 00 00 00| 00 00 00 00| 00 03 00 00| 00 08 02 00| 00 00 03 02| 00 00 00 03| 01 00 00 00| 00 00 00 01| 00 00 00 04| 00 00 00 0a| 02 00 00 00| 04_trunc_"
+
+  -req  kafka_corr_id:23  ack:1  iframe:000000000147  api_key_str:ListOffsets  api_key:2  api_version:8  kafka_len:470  mon_step_age:61
+   kafka_buf_n:474  kafka_buf:..............kafka-ui-admin-1744927081-1........av6....................av5....................avtopic1....................av7....................av2....................test-topic-0000000-9HHKC60......_trunc_
+   kafka_buf_hex:" 00 00 01 d6| 00 02 00 08| 00 00 00 17| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 ff ff| ff ff 00 08| 04 61 76 36| 02 00 00 00| 00 ff ff ff| ff ff ff ff| ff ff ff ff| fe 00 00 04| 61 76 35 02| 00 00 00 01| ff ff ff ff| ff ff ff ff| ff ff ff fe| 00 00 09 61| 76 74 6f 70| 69 63 31 02| 00 00 00 00| ff ff ff ff| ff ff ff ff| ff ff ff fe| 00 00 04 61| 76 37 02 00| 00 00 02 ff| ff ff ff ff| ff ff ff ff| ff ff fe 00| 00 04 61 76| 32 02 00 00| 00 01 ff ff| ff ff ff ff| ff ff ff ff| ff fe 00 00| 1b 74 65 73| 74 2d 74 6f| 70 69 63 2d| 30 30 30 30| 30 30 30 2d| 39 48 48 4b| 43 36 30 03| 00 00 00 03| ff_trunc_"
+  -rsp  kafka_corr_id:23  ack:1  iframe:000000000151  kafka_len:636  mon_step_age:61
+   kafka_buf_n:640  kafka_buf:"...|...........av6..............................av5..............................avtopic1..............................av7..............................av2..............................test-topic-00000_trunc_"
+   kafka_buf_hex:" 00 00 02 7c| 00 00 00 17| 00 00 00 00| 00 08 04 61| 76 36 02 00| 00 00 00 00| 00 ff ff ff| ff ff ff ff| ff 00 00 00| 00 00 00 00| 00 00 00 00| 08 00 00 04| 61 76 35 02| 00 00 00 01| 00 00 ff ff| ff ff ff ff| ff ff 00 00| 00 00 00 00| 00 00 00 00| 00 0a 00 00| 09 61 76 74| 6f 70 69 63| 31 02 00 00| 00 00 00 00| ff ff ff ff| ff ff ff ff| 00 00 00 00| 00 00 00 00| 00 00 00 1c| 00 00 04 61| 76 37 02 00| 00 00 02 00| 00 ff ff ff| ff ff ff ff| ff 00 00 00| 00 00 00 00| 00 00 00 00| 06 00 00 04| 61 76 32 02| 00 00 00 01| 00 00 ff ff| ff ff ff ff| ff ff 00 00| 00 00 00 00| 00 00 00 00| 00 10 00 00| 1b 74 65 73| 74 2d 74 6f| 70 69 63 2d| 30 30 30 30| 30_trunc_"
+
+  -req  kafka_corr_id:28  ack:1  iframe:000000000156  api_key_str:ListOffsets  api_key:2  api_version:8  kafka_len:470  mon_step_age:61
+   kafka_buf_n:474  kafka_buf:..............kafka-ui-admin-1744927081-1........av6....................av5....................avtopic1....................av7....................av2....................test-topic-0000000-9HHKC60......_trunc_
+   kafka_buf_hex:" 00 00 01 d6| 00 02 00 08| 00 00 00 1c| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 ff ff| ff ff 00 08| 04 61 76 36| 02 00 00 00| 00 ff ff ff| ff ff ff ff| ff ff ff ff| ff 00 00 04| 61 76 35 02| 00 00 00 01| ff ff ff ff| ff ff ff ff| ff ff ff ff| 00 00 09 61| 76 74 6f 70| 69 63 31 02| 00 00 00 00| ff ff ff ff| ff ff ff ff| ff ff ff ff| 00 00 04 61| 76 37 02 00| 00 00 02 ff| ff ff ff ff| ff ff ff ff| ff ff ff 00| 00 04 61 76| 32 02 00 00| 00 01 ff ff| ff ff ff ff| ff ff ff ff| ff ff 00 00| 1b 74 65 73| 74 2d 74 6f| 70 69 63 2d| 30 30 30 30| 30 30 30 2d| 39 48 48 4b| 43 36 30 03| 00 00 00 03| ff_trunc_"
+  -rsp  kafka_corr_id:28  ack:1  iframe:000000000160  kafka_len:636  mon_step_age:61
+   kafka_buf_n:640  kafka_buf:"...|...........av6..............................av5..............................avtopic1..............................av7..............................av2..............................test-topic-00000_trunc_"
+   kafka_buf_hex:" 00 00 02 7c| 00 00 00 1c| 00 00 00 00| 00 08 04 61| 76 36 02 00| 00 00 00 00| 00 ff ff ff| ff ff ff ff| ff 00 00 00| 00 00 00 00| 00 00 00 00| 08 00 00 04| 61 76 35 02| 00 00 00 01| 00 00 ff ff| ff ff ff ff| ff ff 00 00| 00 00 00 00| 00 00 00 00| 00 0a 00 00| 09 61 76 74| 6f 70 69 63| 31 02 00 00| 00 00 00 00| ff ff ff ff| ff ff ff ff| 00 00 00 00| 00 00 00 00| 00 00 00 1c| 00 00 04 61| 76 37 02 00| 00 00 02 00| 00 ff ff ff| ff ff ff ff| ff 00 00 00| 00 00 00 00| 00 00 00 00| 06 00 00 04| 61 76 32 02| 00 00 00 01| 00 00 ff ff| ff ff ff ff| ff ff 00 00| 00 00 00 00| 00 00 00 00| 00 10 00 00| 1b 74 65 73| 74 2d 74 6f| 70 69 63 2d| 30 30 30 30| 30_trunc_"
+
+  -req  kafka_corr_id:31  ack:1  iframe:000000000166  api_key_str:DescribeCluster  api_key:60  api_version:0  kafka_len:40  mon_step_age:41
+   kafka_buf_n:44  kafka_buf:"...(.<........kafka-ui-admin-1744927081-1..."
+   kafka_buf_hex:" 00 00 00 28| 00 3c 00 00| 00 00 00 1f| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 01 00|"
+  -rsp  kafka_corr_id:31  ack:1  iframe:000000000167  kafka_len:135  mon_step_age:41
+   kafka_buf_n:139  kafka_buf:.................dev.ak-8..........dev.ak-8.b1.ext...........dev.ak-8.b2.ext...........dev.ak-8.b3.ext...........dev.ak-8.b4.ext...........
+   kafka_buf_hex:" 00 00 00 87| 00 00 00 1f| 00 00 00 00| 00 00 00 00| 09 64 65 76| 2e 61 6b 2d| 38 00 00 00| 03 05 00 00| 00 01 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 31 2e 65| 78 74 00 00| 04 07 00 00| 00 00 00 02| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 32| 2e 65 78 74| 00 00 04 0f| 00 00 00 00| 00 03 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 33 2e 65| 78 74 00 00| 04 13 00 00| 00 00 00 04| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 34| 2e 65 78 74| 00 00 04 17| 00 00 00 00| 1f a0 00"
+
+  -req  kafka_corr_id:32  ack:1  iframe:000000000171  api_key_str:DescribeLogDirs  api_key:35  api_version:4  kafka_len:40  mon_step_age:41
+   kafka_buf_n:44  kafka_buf:"...(.#..... ..kafka-ui-admin-1744927081-1..."
+   kafka_buf_hex:" 00 00 00 28| 00 23 00 04| 00 00 00 20| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 00 00|"
+  -rsp  kafka_corr_id:32  ack:1  iframe:000000000173  kafka_len:1036  mon_step_age:41
+   kafka_buf_n:1040  kafka_buf:'....... .........."/mnt/data-1/kraft-combined-logs-8..__consumer_offsets................................................".....................-....................test-topic-0000000-9HHKC60............_trunc_'
+   kafka_buf_hex:" 00 00 04 0c| 00 00 00 20| 00 00 00 00| 00 00 00 05| 00 00 22 2f| 6d 6e 74 2f| 64 61 74 61| 2d 31 2f 6b| 72 61 66 74| 2d 63 6f 6d| 62 69 6e 65| 64 2d 6c 6f| 67 73 2d 38| 03 13 5f 5f| 63 6f 6e 73| 75 6d 65 72| 5f 6f 66 66| 73 65 74 73| 05 00 00 00| 15 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 1c 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 22 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 2d 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 1b 74| 65 73 74 2d| 74 6f 70 69| 63 2d 30 30| 30 30 30 30| 30 2d 39 48| 48 4b 43 36| 30 03 00 00| 00 04 00 00| 00 00 00 00| 00_trunc_"
+
+  -req  kafka_corr_id:36  ack:1  iframe:000000000180  api_key_str:Metadata  api_key:3  api_version:12  kafka_len:42  mon_step_age:41
+   kafka_buf_n:46  kafka_buf:...*.......$..kafka-ui-admin-1744927081-1.....
+   kafka_buf_hex:" 00 00 00 2a| 00 03 00 0c| 00 00 00 24| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 00 01| 00 00"
+  -rsp  kafka_corr_id:36  ack:1  iframe:000000000182  kafka_len:2699  mon_step_age:41
+   kafka_buf_n:2703  kafka_buf:".......$...........dev.ak-8.b1.ext...........dev.ak-8.b2.ext...........dev.ak-8.b3.ext...........dev.ak-8.b4.ext.......dev.ak-8........av6.'s..sH\"../)...S..............................................._trunc_"
+   kafka_buf_hex:" 00 00 0a 8b| 00 00 00 24| 00 00 00 00| 00 05 00 00| 00 01 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 31 2e 65| 78 74 00 00| 04 07 00 00| 00 00 00 02| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 32| 2e 65 78 74| 00 00 04 0f| 00 00 00 00| 00 03 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 33 2e 65| 78 74 00 00| 04 13 00 00| 00 00 00 04| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 34| 2e 65 78 74| 00 00 04 17| 00 00 09 64| 65 76 2e 61| 6b 2d 38 00| 00 00 01 0a| 00 00 04 61| 76 36 0f 27| 73 89 89 73| 48 22 9e ae| 2f 29 e0 0d| a1 53 00 04| 00 00 00 00| 00 00 00 00| 00 03 00 00| 00 08 02 00| 00 00 03 02| 00 00 00 03| 01 00 00 00| 00 00 00 01| 00 00 00 04| 00 00 00 0a| 02 00 00 00| 04_trunc_"
+
+  -req  kafka_corr_id:37  ack:1  iframe:000000000184  api_key_str:Metadata  api_key:3  api_version:12  kafka_len:42  mon_step_age:41
+   kafka_buf_n:46  kafka_buf:...*.......%..kafka-ui-admin-1744927081-1.....
+   kafka_buf_hex:" 00 00 00 2a| 00 03 00 0c| 00 00 00 25| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 00 01| 00 00"
+  -rsp  kafka_corr_id:37  ack:1  iframe:000000000187  kafka_len:2699  mon_step_age:41
+   kafka_buf_n:2703  kafka_buf:".......%...........dev.ak-8.b1.ext...........dev.ak-8.b2.ext...........dev.ak-8.b3.ext...........dev.ak-8.b4.ext.......dev.ak-8........av6.'s..sH\"../)...S..............................................._trunc_"
+   kafka_buf_hex:" 00 00 0a 8b| 00 00 00 25| 00 00 00 00| 00 05 00 00| 00 01 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 31 2e 65| 78 74 00 00| 04 07 00 00| 00 00 00 02| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 32| 2e 65 78 74| 00 00 04 0f| 00 00 00 00| 00 03 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 33 2e 65| 78 74 00 00| 04 13 00 00| 00 00 00 04| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 34| 2e 65 78 74| 00 00 04 17| 00 00 09 64| 65 76 2e 61| 6b 2d 38 00| 00 00 04 0a| 00 00 04 61| 76 36 0f 27| 73 89 89 73| 48 22 9e ae| 2f 29 e0 0d| a1 53 00 04| 00 00 00 00| 00 00 00 00| 00 03 00 00| 00 08 02 00| 00 00 03 02| 00 00 00 03| 01 00 00 00| 00 00 00 01| 00 00 00 04| 00 00 00 0a| 02 00 00 00| 04_trunc_"
+
+  -req  kafka_corr_id:42  ack:1  iframe:000000000216  api_key_str:DescribeConfigs  api_key:32  api_version:4  kafka_len:50  mon_step_age:35
+   kafka_buf_n:54  kafka_buf:"...2. .....*..kafka-ui-admin-1744927081-1....kav1....."
+   kafka_buf_hex:" 00 00 00 32| 00 20 00 04| 00 00 00 2a| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 02 02| 05 6b 61 76| 31 00 00 01| 00 00"
+  -rsp  kafka_corr_id:42  ack:1  iframe:000000000219  kafka_len:2458  mon_step_age:35
+   kafka_buf_n:2462  kafka_buf:.......*...........kav1%.compression.type.producer.....compression.type.producer......remote.log.delete.on.disable.false.......&leader.replication.throttled.replicas.........remote.storage.enable.false_trunc_
+   kafka_buf_hex:" 00 00 09 9a| 00 00 00 2a| 00 00 00 00| 00 02 00 00| 01 02 05 6b| 61 76 31 25| 11 63 6f 6d| 70 72 65 73| 73 69 6f 6e| 2e 74 79 70| 65 09 70 72| 6f 64 75 63| 65 72 00 05| 00 02 11 63| 6f 6d 70 72| 65 73 73 69| 6f 6e 2e 74| 79 70 65 09| 70 72 6f 64| 75 63 65 72| 05 00 02 00| 00 1d 72 65| 6d 6f 74 65| 2e 6c 6f 67| 2e 64 65 6c| 65 74 65 2e| 6f 6e 2e 64| 69 73 61 62| 6c 65 06 66| 61 6c 73 65| 00 05 00 01| 01 00 00 26| 6c 65 61 64| 65 72 2e 72| 65 70 6c 69| 63 61 74 69| 6f 6e 2e 74| 68 72 6f 74| 74 6c 65 64| 2e 72 65 70| 6c 69 63 61| 73 01 00 05| 00 01 07 00| 00 16 72 65| 6d 6f 74 65| 2e 73 74 6f| 72 61 67 65| 2e 65 6e 61| 62 6c 65 06| 66 61 6c 73| 65_trunc_"
+
+  -req  kafka_corr_id:46  ack:1  iframe:000000000229  api_key_str:Metadata  api_key:3  api_version:12  kafka_len:64  mon_step_age:35
+   kafka_buf_n:68  kafka_buf:...@..........kafka-ui-admin-1744927081-1...................kav1....
+   kafka_buf_hex:" 00 00 00 40| 00 03 00 0c| 00 00 00 2e| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 02 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 05| 6b 61 76 31| 00 00 00 00|"
+  -rsp  kafka_corr_id:46  ack:1  iframe:000000000232  kafka_len:211  mon_step_age:35
+   kafka_buf_n:215  kafka_buf:"...................dev.ak-8.b1.ext...........dev.ak-8.b2.ext...........dev.ak-8.b3.ext...........dev.ak-8.b4.ext.......dev.ak-8........kav1......B..f.... '.............................................._trunc_"
+   kafka_buf_hex:" 00 00 00 d3| 00 00 00 2e| 00 00 00 00| 00 05 00 00| 00 01 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 31 2e 65| 78 74 00 00| 04 07 00 00| 00 00 00 02| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 32| 2e 65 78 74| 00 00 04 0f| 00 00 00 00| 00 03 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 33 2e 65| 78 74 00 00| 04 13 00 00| 00 00 00 04| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 34| 2e 65 78 74| 00 00 04 17| 00 00 09 64| 65 76 2e 61| 6b 2d 38 00| 00 00 04 02| 00 00 05 6b| 61 76 31 e4| d1 ce 09 8d| e7 42 a6 ba| 66 8b f0 b9| cb 20 27 00| 03 00 00 00| 00 00 01 00| 00 00 04 00| 00 00 00 02| 00 00 00 04| 02 00 00 00| 04 01 00 00| 00 00 00 00| 00 00 00 00| 03 00 00 00| 00 02 00 00| 00_trunc_"
+
+  -req  kafka_corr_id:48  ack:1  iframe:000000000234  api_key_str:ListOffsets  api_key:2  api_version:8  kafka_len:69  mon_step_age:35
+   kafka_buf_n:73  kafka_buf:...E.......0..kafka-ui-admin-1744927081-1........kav1....................
+   kafka_buf_hex:" 00 00 00 45| 00 02 00 08| 00 00 00 30| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 ff ff| ff ff 00 02| 05 6b 61 76| 31 02 00 00| 00 00 ff ff| ff ff ff ff| ff ff ff ff| ff fe 00 00| 00"
+  -rsp  kafka_corr_id:48  ack:1  iframe:000000000237  kafka_len:45  mon_step_age:35
+   kafka_buf_n:49  kafka_buf:...-...0.......kav1..............................
+   kafka_buf_hex:" 00 00 00 2d| 00 00 00 30| 00 00 00 00| 00 02 05 6b| 61 76 31 02| 00 00 00 00| 00 00 ff ff| ff ff ff ff| ff ff 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00"
+
+  -req  kafka_corr_id:50  ack:1  iframe:000000000238  api_key_str:ListOffsets  api_key:2  api_version:8  kafka_len:69  mon_step_age:35
+   kafka_buf_n:73  kafka_buf:...E.......2..kafka-ui-admin-1744927081-1........kav1....................
+   kafka_buf_hex:" 00 00 00 45| 00 02 00 08| 00 00 00 32| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 ff ff| ff ff 00 02| 05 6b 61 76| 31 02 00 00| 00 00 ff ff| ff ff ff ff| ff ff ff ff| ff ff 00 00| 00"
+  -rsp  kafka_corr_id:50  ack:1  iframe:000000000239  kafka_len:45  mon_step_age:35
+   kafka_buf_n:49  kafka_buf:...-...2.......kav1..............................
+   kafka_buf_hex:" 00 00 00 2d| 00 00 00 32| 00 00 00 00| 00 02 05 6b| 61 76 31 02| 00 00 00 00| 00 00 ff ff| ff ff ff ff| ff ff 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00"
+
+  -req  kafka_corr_id:52  ack:1  iframe:000000000244  api_key_str:DescribeConfigs  api_key:32  api_version:4  kafka_len:50  mon_step_age:35
+   kafka_buf_n:54  kafka_buf:"...2. .....4..kafka-ui-admin-1744927081-1....kav1....."
+   kafka_buf_hex:" 00 00 00 32| 00 20 00 04| 00 00 00 34| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 02 02| 05 6b 61 76| 31 00 00 01| 00 00"
+  -rsp  kafka_corr_id:52  ack:1  iframe:000000000248  kafka_len:2458  mon_step_age:35
+   kafka_buf_n:2462  kafka_buf:.......4...........kav1%.compression.type.producer.....compression.type.producer......remote.log.delete.on.disable.false.......&leader.replication.throttled.replicas.........remote.storage.enable.false_trunc_
+   kafka_buf_hex:" 00 00 09 9a| 00 00 00 34| 00 00 00 00| 00 02 00 00| 01 02 05 6b| 61 76 31 25| 11 63 6f 6d| 70 72 65 73| 73 69 6f 6e| 2e 74 79 70| 65 09 70 72| 6f 64 75 63| 65 72 00 05| 00 02 11 63| 6f 6d 70 72| 65 73 73 69| 6f 6e 2e 74| 79 70 65 09| 70 72 6f 64| 75 63 65 72| 05 00 02 00| 00 1d 72 65| 6d 6f 74 65| 2e 6c 6f 67| 2e 64 65 6c| 65 74 65 2e| 6f 6e 2e 64| 69 73 61 62| 6c 65 06 66| 61 6c 73 65| 00 05 00 01| 01 00 00 26| 6c 65 61 64| 65 72 2e 72| 65 70 6c 69| 63 61 74 69| 6f 6e 2e 74| 68 72 6f 74| 74 6c 65 64| 2e 72 65 70| 6c 69 63 61| 73 01 00 05| 00 01 07 00| 00 16 72 65| 6d 6f 74 65| 2e 73 74 6f| 72 61 67 65| 2e 65 6e 61| 62 6c 65 06| 66 61 6c 73| 65_trunc_"
+
+  -req  kafka_corr_id:55  ack:1  iframe:000000000254  api_key_str:ListOffsets  api_key:2  api_version:8  kafka_len:69  mon_step_age:35
+   kafka_buf_n:73  kafka_buf:...E.......7..kafka-ui-admin-1744927081-1........kav1....................
+   kafka_buf_hex:" 00 00 00 45| 00 02 00 08| 00 00 00 37| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 ff ff| ff ff 00 02| 05 6b 61 76| 31 02 00 00| 00 00 ff ff| ff ff ff ff| ff ff ff ff| ff fe 00 00| 00"
+  -rsp  kafka_corr_id:55  ack:1  iframe:000000000255  kafka_len:45  mon_step_age:35
+   kafka_buf_n:49  kafka_buf:...-...7.......kav1..............................
+   kafka_buf_hex:" 00 00 00 2d| 00 00 00 37| 00 00 00 00| 00 02 05 6b| 61 76 31 02| 00 00 00 00| 00 00 ff ff| ff ff ff ff| ff ff 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00"
+
+  -req  kafka_corr_id:57  ack:1  iframe:000000000259  api_key_str:ListOffsets  api_key:2  api_version:8  kafka_len:69  mon_step_age:35
+   kafka_buf_n:73  kafka_buf:...E.......9..kafka-ui-admin-1744927081-1........kav1....................
+   kafka_buf_hex:" 00 00 00 45| 00 02 00 08| 00 00 00 39| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 ff ff| ff ff 00 02| 05 6b 61 76| 31 02 00 00| 00 00 ff ff| ff ff ff ff| ff ff ff ff| ff ff 00 00| 00"
+  -rsp  kafka_corr_id:57  ack:1  iframe:000000000261  kafka_len:45  mon_step_age:35
+   kafka_buf_n:49  kafka_buf:...-...9.......kav1..............................
+   kafka_buf_hex:" 00 00 00 2d| 00 00 00 39| 00 00 00 00| 00 02 05 6b| 61 76 31 02| 00 00 00 00| 00 00 ff ff| ff ff ff ff| ff ff 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00"
+
+  -req  kafka_corr_id:64  ack:1  iframe:000000000319  api_key_str:ListOffsets  api_key:2  api_version:8  kafka_len:69  mon_step_age:20
+   kafka_buf_n:73  kafka_buf:...E.......@..kafka-ui-admin-1744927081-1........kav1....................
+   kafka_buf_hex:" 00 00 00 45| 00 02 00 08| 00 00 00 40| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 ff ff| ff ff 00 02| 05 6b 61 76| 31 02 00 00| 00 00 ff ff| ff ff ff ff| ff ff ff ff| ff fe 00 00| 00"
+  -rsp  kafka_corr_id:64  ack:1  iframe:000000000322  kafka_len:45  mon_step_age:20
+   kafka_buf_n:49  kafka_buf:...-...@.......kav1..............................
+   kafka_buf_hex:" 00 00 00 2d| 00 00 00 40| 00 00 00 00| 00 02 05 6b| 61 76 31 02| 00 00 00 00| 00 00 ff ff| ff ff ff ff| ff ff 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00"
+
+  -req  kafka_corr_id:66  ack:1  iframe:000000000325  api_key_str:ListOffsets  api_key:2  api_version:8  kafka_len:69  mon_step_age:20
+   kafka_buf_n:73  kafka_buf:...E.......B..kafka-ui-admin-1744927081-1........kav1....................
+   kafka_buf_hex:" 00 00 00 45| 00 02 00 08| 00 00 00 42| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 ff ff| ff ff 00 02| 05 6b 61 76| 31 02 00 00| 00 00 ff ff| ff ff ff ff| ff ff ff ff| ff ff 00 00| 00"
+  -rsp  kafka_corr_id:66  ack:1  iframe:000000000327  kafka_len:45  mon_step_age:20
+   kafka_buf_n:49  kafka_buf:...-...B.......kav1..............................
+   kafka_buf_hex:" 00 00 00 2d| 00 00 00 42| 00 00 00 00| 00 02 05 6b| 61 76 31 02| 00 00 00 00| 00 00 ff ff| ff ff ff ff| ff ff 00 00| 00 00 00 00| 00 01 00 00| 00 00 00 00| 00"
+
+  -req  kafka_corr_id:69  ack:1  iframe:000000000337  api_key_str:DescribeLogDirs  api_key:35  api_version:4  kafka_len:40  mon_step_age:14
+   kafka_buf_n:44  kafka_buf:"...(.#.....E..kafka-ui-admin-1744927081-1..."
+   kafka_buf_hex:" 00 00 00 28| 00 23 00 04| 00 00 00 45| 00 1b 6b 61| 66 6b 61 2d| 75 69 2d 61| 64 6d 69 6e| 2d 31 37 34| 34 39 32 37| 30 38 31 2d| 31 00 00 00|"
+  -rsp  kafka_corr_id:69  ack:1  iframe:000000000342  kafka_len:1065  mon_step_age:14
+   kafka_buf_n:1069  kafka_buf:'...)...E.........."/mnt/data-1/kraft-combined-logs-8..kav1............H............__consumer_offsets................................................".....................-....................test-topi_trunc_'
+   kafka_buf_hex:" 00 00 04 29| 00 00 00 45| 00 00 00 00| 00 00 00 05| 00 00 22 2f| 6d 6e 74 2f| 64 61 74 61| 2d 31 2f 6b| 72 61 66 74| 2d 63 6f 6d| 62 69 6e 65| 64 2d 6c 6f| 67 73 2d 38| 04 05 6b 61| 76 31 02 00| 00 00 00 00| 00 00 00 00| 00 00 48 00| 00 00 00 00| 00 00 00 00| 00 00 13 5f| 5f 63 6f 6e| 73 75 6d 65| 72 5f 6f 66| 66 73 65 74| 73 05 00 00| 00 15 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 1c| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 22 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 2d| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 1b| 74 65 73 74| 2d 74 6f 70| 69_trunc_"
+
+==frame stats  direction:"b->c"  tcp_short:108.4-108.1  tcp_pair_key:192.168.108.4:1043-192.168.108.1:44128  frame_count:28  syn_count:1  fin_count:0  rst_count:0  isn:000826716503  tcp_payload_len_tot:000000021316
+  kafka rsp stats  kafka_count:20  kafka_count_in_bh:20  kafka_len_tot:000000021316
   
-==frame stats  direction:"c->b"  tcp_short:108.1-108.4  tcp_pair_key:192.168.108.1:58036-192.168.108.4:1043  frame_count:10  syn_count:1  fin_count:1  rst_count:0  isn:000464361933  tcp_payload_len_tot:000000000080
-  kafka req stats  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000080
-  ..client_id_key:redpanda-console
-  -req  kafka_corr_id:0  ack:1  iframe:000000000113  api_key_str:ApiVersions  api_key:18  api_version:3  kafka_len:40  mon_step_age:56
-   kafka_buf_n:44  kafka_buf:"...(..........redpanda-console..kgo.v1.18.0."
-   kafka_buf_hex:" 00 00 00 28| 00 12 00 03| 00 00 00 00| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 04| 6b 67 6f 08| 76 31 2e 31| 38 2e 30 00|"
-  -rsp  kafka_corr_id:0  ack:1  iframe:000000000115  kafka_len:499  mon_step_age:56
-   kafka_buf_n:503  kafka_buf:"..........>.............................................................................................................................................................................................._trunc_"
-   kafka_buf_hex:" 00 00 01 f3| 00 00 00 00| 00 00 3e 00| 00 00 00 00| 0b 00 00 01| 00 00 00 11| 00 00 02 00| 00 00 09 00| 00 03 00 00| 00 0c 00 00| 08 00 00 00| 09 00 00 09| 00 00 00 09| 00 00 0a 00| 00 00 06 00| 00 0b 00 00| 00 09 00 00| 0c 00 00 00| 04 00 00 0d| 00 00 00 05| 00 00 0e 00| 00 00 05 00| 00 0f 00 00| 00 05 00 00| 10 00 00 00| 05 00 00 11| 00 00 00 01| 00 00 12 00| 00 00 04 00| 00 13 00 00| 00 07 00 00| 14 00 00 00| 06 00 00 15| 00 00 00 02| 00 00 16 00| 00 00 05 00| 00 17 00 00| 00 04 00 00| 18 00 00 00| 05 00 00 19| 00 00 00 04| 00 00 1a 00| 00 00 04 00| 00 1b 00 00| 00 01 00 00| 1c 00 00 00| 04 00 00 1d| 00 00 00 03| 00 00 1e 00| 00 00 03 00| 00_trunc_"
-
-  -req  kafka_corr_id:1  ack:1  iframe:000000000117  api_key_str:Metadata  api_key:3  api_version:9  kafka_len:32  mon_step_age:56
-   kafka_buf_n:36  kafka_buf:"... ..........redpanda-console......"
-   kafka_buf_hex:" 00 00 00 20| 00 03 00 09| 00 00 00 01| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00 00 00 00|"
-  -rsp  kafka_corr_id:1  ack:1  iframe:000000000119  kafka_len:2377  mon_step_age:56
-   kafka_buf_n:2381  kafka_buf:...I...............dev.ak-8.b1.ext...........dev.ak-8.b2.ext...........dev.ak-8.b3.ext...........dev.ak-8.b4.ext.......dev.ak-8........av5..............................................................._trunc_
-   kafka_buf_hex:" 00 00 09 49| 00 00 00 01| 00 00 00 00| 00 05 00 00| 00 01 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 31 2e 65| 78 74 00 00| 04 07 00 00| 00 00 00 02| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 32| 2e 65 78 74| 00 00 04 0f| 00 00 00 00| 00 03 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 33 2e 65| 78 74 00 00| 04 13 00 00| 00 00 00 04| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 34| 2e 65 78 74| 00 00 04 17| 00 00 09 64| 65 76 2e 61| 6b 2d 38 00| 00 00 03 08| 00 00 04 61| 76 35 00 04| 00 00 00 00| 00 01 00 00| 00 03 00 00| 00 02 02 00| 00 00 03 02| 00 00 00 03| 01 00 00 00| 00 00 00 02| 00 00 00 04| 00 00 00 02| 02 00 00 00| 04 02 00 00| 00 04 01 00| 00 00 00 00| 00 00 00 00| 00_trunc_"
-
-==frame stats  direction:"b->c"  tcp_short:108.4-108.1  tcp_pair_key:192.168.108.4:1043-192.168.108.1:58036  frame_count:8  syn_count:1  fin_count:1  rst_count:0  isn:001963071764  tcp_payload_len_tot:000000002884
-  kafka rsp stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000002884
-  
-==frame stats  direction:"c->b"  tcp_short:108.1-108.4  tcp_pair_key:192.168.108.1:57956-192.168.108.4:1043  frame_count:35  syn_count:1  fin_count:0  rst_count:0  isn:000596189357  tcp_payload_len_tot:000000001309
-  kafka req stats  kafka_count:16  kafka_req_ack_count:15  kafka_count_in_bh:16  pct_non_ack!!!:0.0588235  kafka_len_tot:000000001309
-  ..client_id_key:redpanda-console
-  -req  kafka_corr_id:0  ack:1  iframe:000000000192  api_key_str:ApiVersions  api_key:18  api_version:3  kafka_len:40  mon_step_age:40
-   kafka_buf_n:44  kafka_buf:"...(..........redpanda-console..kgo.v1.18.0."
-   kafka_buf_hex:" 00 00 00 28| 00 12 00 03| 00 00 00 00| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 04| 6b 67 6f 08| 76 31 2e 31| 38 2e 30 00|"
-  -rsp  kafka_corr_id:0  ack:1  iframe:000000000201  kafka_len:499  mon_step_age:40
-   kafka_buf_n:503  kafka_buf:"..........>.............................................................................................................................................................................................._trunc_"
-   kafka_buf_hex:" 00 00 01 f3| 00 00 00 00| 00 00 3e 00| 00 00 00 00| 0b 00 00 01| 00 00 00 11| 00 00 02 00| 00 00 09 00| 00 03 00 00| 00 0c 00 00| 08 00 00 00| 09 00 00 09| 00 00 00 09| 00 00 0a 00| 00 00 06 00| 00 0b 00 00| 00 09 00 00| 0c 00 00 00| 04 00 00 0d| 00 00 00 05| 00 00 0e 00| 00 00 05 00| 00 0f 00 00| 00 05 00 00| 10 00 00 00| 05 00 00 11| 00 00 00 01| 00 00 12 00| 00 00 04 00| 00 13 00 00| 00 07 00 00| 14 00 00 00| 06 00 00 15| 00 00 00 02| 00 00 16 00| 00 00 05 00| 00 17 00 00| 00 04 00 00| 18 00 00 00| 05 00 00 19| 00 00 00 04| 00 00 1a 00| 00 00 04 00| 00 1b 00 00| 00 01 00 00| 1c 00 00 00| 04 00 00 1d| 00 00 00 03| 00 00 1e 00| 00 00 03 00| 00_trunc_"
-
-  -req  kafka_corr_id:1  ack:1  iframe:000000000205  api_key_str:ApiVersions  api_key:18  api_version:3  kafka_len:45  mon_step_age:40
-   kafka_buf_n:49  kafka_buf:...-..........redpanda-console..RPConsole.v2.8.2.
-   kafka_buf_hex:" 00 00 00 2d| 00 12 00 03| 00 00 00 01| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 0a| 52 50 43 6f| 6e 73 6f 6c| 65 07 76 32| 2e 38 2e 32| 00"
-  -rsp  kafka_corr_id:1  ack:1  iframe:000000000216  kafka_len:499  mon_step_age:40
+==frame stats  direction:"c->b"  tcp_short:108.1-108.4  tcp_pair_key:192.168.108.1:51288-192.168.108.4:1043  frame_count:8  syn_count:1  fin_count:1  rst_count:0  isn:001887103674  tcp_payload_len_tot:000000000091
+  kafka req stats  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000091
+  ..client_id_key:producer-1
+  -req  kafka_corr_id:1  ack:1  iframe:000000000276  api_key_str:ApiVersions  api_key:18  api_version:3  kafka_len:46  mon_step_age:21
+   kafka_buf_n:50  kafka_buf:..............producer-1..apache-kafka-java.3.5.0.
+   kafka_buf_hex:" 00 00 00 2e| 00 12 00 03| 00 00 00 01| 00 0a 70 72| 6f 64 75 63| 65 72 2d 31| 00 12 61 70| 61 63 68 65| 2d 6b 61 66| 6b 61 2d 6a| 61 76 61 06| 33 2e 35 2e| 30 00"
+  -rsp  kafka_corr_id:1  ack:1  iframe:000000000280  kafka_len:499  mon_step_age:21
    kafka_buf_n:503  kafka_buf:"..........>.............................................................................................................................................................................................._trunc_"
    kafka_buf_hex:" 00 00 01 f3| 00 00 00 01| 00 00 3e 00| 00 00 00 00| 0b 00 00 01| 00 00 00 11| 00 00 02 00| 00 00 09 00| 00 03 00 00| 00 0c 00 00| 08 00 00 00| 09 00 00 09| 00 00 00 09| 00 00 0a 00| 00 00 06 00| 00 0b 00 00| 00 09 00 00| 0c 00 00 00| 04 00 00 0d| 00 00 00 05| 00 00 0e 00| 00 00 05 00| 00 0f 00 00| 00 05 00 00| 10 00 00 00| 05 00 00 11| 00 00 00 01| 00 00 12 00| 00 00 04 00| 00 13 00 00| 00 07 00 00| 14 00 00 00| 06 00 00 15| 00 00 00 02| 00 00 16 00| 00 00 05 00| 00 17 00 00| 00 04 00 00| 18 00 00 00| 05 00 00 19| 00 00 00 04| 00 00 1a 00| 00 00 04 00| 00 1b 00 00| 00 01 00 00| 1c 00 00 00| 04 00 00 1d| 00 00 00 03| 00 00 1e 00| 00 00 03 00| 00_trunc_"
 
-  -req  kafka_corr_id:2  ack:1  iframe:000000000206  api_key_str:Metadata  api_key:3  api_version:9  kafka_len:32  mon_step_age:40
-   kafka_buf_n:36  kafka_buf:"... ..........redpanda-console......"
-   kafka_buf_hex:" 00 00 00 20| 00 03 00 09| 00 00 00 02| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00 00 00 00|"
-  -rsp  kafka_corr_id:2  ack:1  iframe:000000000235  kafka_len:2377  mon_step_age:39
-   kafka_buf_n:2381  kafka_buf:...I...............dev.ak-8.b1.ext...........dev.ak-8.b2.ext...........dev.ak-8.b3.ext...........dev.ak-8.b4.ext.......dev.ak-8........av5..............................................................._trunc_
-   kafka_buf_hex:" 00 00 09 49| 00 00 00 02| 00 00 00 00| 00 05 00 00| 00 01 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 31 2e 65| 78 74 00 00| 04 07 00 00| 00 00 00 02| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 32| 2e 65 78 74| 00 00 04 0f| 00 00 00 00| 00 03 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 33 2e 65| 78 74 00 00| 04 13 00 00| 00 00 00 04| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 34| 2e 65 78 74| 00 00 04 17| 00 00 09 64| 65 76 2e 61| 6b 2d 38 00| 00 00 02 08| 00 00 04 61| 76 35 00 04| 00 00 00 00| 00 01 00 00| 00 03 00 00| 00 02 02 00| 00 00 03 02| 00 00 00 03| 01 00 00 00| 00 00 00 02| 00 00 00 04| 00 00 00 02| 02 00 00 00| 04 02 00 00| 00 04 01 00| 00 00 00 00| 00 00 00 00| 00_trunc_"
+  -req  kafka_corr_id:3  ack:1  iframe:000000000283  api_key_str:InitProducerId  api_key:22  api_version:4  kafka_len:37  mon_step_age:21
+   kafka_buf_n:41  kafka_buf:...%..........producer-1.................
+   kafka_buf_hex:" 00 00 00 25| 00 16 00 04| 00 00 00 03| 00 0a 70 72| 6f 64 75 63| 65 72 2d 31| 00 00 7f ff| ff ff ff ff| ff ff ff ff| ff ff ff ff| 00"
+  -rsp  kafka_corr_id:3  ack:1  iframe:000000000285  kafka_len:22  mon_step_age:21
+   kafka_buf_n:26  kafka_buf:..........................
+   kafka_buf_hex:" 00 00 00 16| 00 00 00 03| 00 00 00 00| 00 00 0e ff| ff ff ff ff| ff ff ff ff| ff 00"
 
-  -req  kafka_corr_id:3  ack:1  iframe:000000000224  api_key_str:DescribeLogDirs  api_key:35  api_version:2  kafka_len:29  mon_step_age:39
-   kafka_buf_n:33  kafka_buf:".....#........redpanda-console..."
-   kafka_buf_hex:" 00 00 00 1d| 00 23 00 02| 00 00 00 03| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00"
-  -rsp  kafka_corr_id:3  ack:1  iframe:000000000239  kafka_len:970  mon_step_age:39
-   kafka_buf_n:974  kafka_buf:'................"/mnt/data-1/kraft-combined-logs-8..__consumer_offsets................................................".....................-....................av4.........................test-topic-0_trunc_'
-   kafka_buf_hex:" 00 00 03 ca| 00 00 00 03| 00 00 00 00| 00 05 00 00| 22 2f 6d 6e| 74 2f 64 61| 74 61 2d 31| 2f 6b 72 61| 66 74 2d 63| 6f 6d 62 69| 6e 65 64 2d| 6c 6f 67 73| 2d 38 04 13| 5f 5f 63 6f| 6e 73 75 6d| 65 72 5f 6f| 66 66 73 65| 74 73 05 00| 00 00 15 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 1c 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 22 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 2d 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 04 61 76 34| 02 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 1b 74 65 73| 74 2d 74 6f| 70 69 63 2d| 30_trunc_"
-
-  -req  kafka_corr_id:4  ack:1  iframe:000000000232  api_key_str:DescribeConfigs  api_key:32  api_version:3  kafka_len:40  mon_step_age:39
-   kafka_buf_n:44  kafka_buf:"...(. ........redpanda-console.......3......"
-   kafka_buf_hex:" 00 00 00 28| 00 20 00 03| 00 00 00 04| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00 01 04 00| 01 33 ff ff| ff ff 01 01|"
-  -rsp  kafka_corr_id:4  ack:1  iframe:000000000389  kafka_len:93702  mon_step_age:39
-   kafka_buf_n:93706  kafka_buf:"..n....................3...=.!log.cleaner.min.compaction.lag.ms..0........!log.cleaner.min.compaction.lag.ms..0...qThe minimum time a message will remain uncompacted in the log. Only applicable for log_trunc_"
-   kafka_buf_hex:" 00 01 6e 06| 00 00 00 04| 00 00 00 00| 00 00 00 01| 00 00 00 00| 04 00 01 33| 00 00 01 3d| 00 21 6c 6f| 67 2e 63 6c| 65 61 6e 65| 72 2e 6d 69| 6e 2e 63 6f| 6d 70 61 63| 74 69 6f 6e| 2e 6c 61 67| 2e 6d 73 00| 01 30 00 05| 00 00 00 00| 01 00 21 6c| 6f 67 2e 63| 6c 65 61 6e| 65 72 2e 6d| 69 6e 2e 63| 6f 6d 70 61| 63 74 69 6f| 6e 2e 6c 61| 67 2e 6d 73| 00 01 30 05| 05 00 71 54| 68 65 20 6d| 69 6e 69 6d| 75 6d 20 74| 69 6d 65 20| 61 20 6d 65| 73 73 61 67| 65 20 77 69| 6c 6c 20 72| 65 6d 61 69| 6e 20 75 6e| 63 6f 6d 70| 61 63 74 65| 64 20 69 6e| 20 74 68 65| 20 6c 6f 67| 2e 20 4f 6e| 6c 79 20 61| 70 70 6c 69| 63 61 62 6c| 65 20 66 6f| 72 20 6c 6f| 67_trunc_"
-
-  -req  kafka_corr_id:5  ack:0  iframe:000000000469  api_key_str:DescribeLogDirs  api_key:35  api_version:2  kafka_len:29  mon_step_age:39
-   kafka_buf_n:33  kafka_buf:".....#........redpanda-console..."
-   kafka_buf_hex:" 00 00 00 1d| 00 23 00 02| 00 00 00 05| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00"
-  - response not found
-
-  -req  kafka_corr_id:6  ack:1  iframe:000000000516  api_key_str:ApiVersions  api_key:18  api_version:3  kafka_len:45  mon_step_age:39
-   kafka_buf_n:49  kafka_buf:...-..........redpanda-console..RPConsole.v2.8.2.
-   kafka_buf_hex:" 00 00 00 2d| 00 12 00 03| 00 00 00 06| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 0a| 52 50 43 6f| 6e 73 6f 6c| 65 07 76 32| 2e 38 2e 32| 00"
-  -rsp  kafka_corr_id:6  ack:1  iframe:000000000521  kafka_len:499  mon_step_age:39
-   kafka_buf_n:503  kafka_buf:"..........>.............................................................................................................................................................................................._trunc_"
-   kafka_buf_hex:" 00 00 01 f3| 00 00 00 06| 00 00 3e 00| 00 00 00 00| 0b 00 00 01| 00 00 00 11| 00 00 02 00| 00 00 09 00| 00 03 00 00| 00 0c 00 00| 08 00 00 00| 09 00 00 09| 00 00 00 09| 00 00 0a 00| 00 00 06 00| 00 0b 00 00| 00 09 00 00| 0c 00 00 00| 04 00 00 0d| 00 00 00 05| 00 00 0e 00| 00 00 05 00| 00 0f 00 00| 00 05 00 00| 10 00 00 00| 05 00 00 11| 00 00 00 01| 00 00 12 00| 00 00 04 00| 00 13 00 00| 00 07 00 00| 14 00 00 00| 06 00 00 15| 00 00 00 02| 00 00 16 00| 00 00 05 00| 00 17 00 00| 00 04 00 00| 18 00 00 00| 05 00 00 19| 00 00 00 04| 00 00 1a 00| 00 00 04 00| 00 1b 00 00| 00 01 00 00| 1c 00 00 00| 04 00 00 1d| 00 00 00 03| 00 00 1e 00| 00 00 03 00| 00_trunc_"
-
-  -req  kafka_corr_id:7  ack:1  iframe:000000000545  api_key_str:DescribeLogDirs  api_key:35  api_version:2  kafka_len:29  mon_step_age:39
-   kafka_buf_n:33  kafka_buf:".....#........redpanda-console..."
-   kafka_buf_hex:" 00 00 00 1d| 00 23 00 02| 00 00 00 07| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00"
-  -rsp  kafka_corr_id:7  ack:1  iframe:000000000555  kafka_len:970  mon_step_age:39
-   kafka_buf_n:974  kafka_buf:'................"/mnt/data-1/kraft-combined-logs-8..__consumer_offsets................................................".....................-....................av4.........................test-topic-0_trunc_'
-   kafka_buf_hex:" 00 00 03 ca| 00 00 00 07| 00 00 00 00| 00 05 00 00| 22 2f 6d 6e| 74 2f 64 61| 74 61 2d 31| 2f 6b 72 61| 66 74 2d 63| 6f 6d 62 69| 6e 65 64 2d| 6c 6f 67 73| 2d 38 04 13| 5f 5f 63 6f| 6e 73 75 6d| 65 72 5f 6f| 66 66 73 65| 74 73 05 00| 00 00 15 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 1c 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 22 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 2d 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 04 61 76 34| 02 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 1b 74 65 73| 74 2d 74 6f| 70 69 63 2d| 30_trunc_"
-
-  -req  kafka_corr_id:8  ack:1  iframe:000000000575  api_key_str:ListGroups  api_key:16  api_version:4  kafka_len:29  mon_step_age:36
-   kafka_buf_n:33  kafka_buf:..............redpanda-console...
-   kafka_buf_hex:" 00 00 00 1d| 00 10 00 04| 00 00 00 08| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 01| 00"
-  -rsp  kafka_corr_id:8  ack:1  iframe:000000000579  kafka_len:13  mon_step_age:36
-   kafka_buf_n:17  kafka_buf:.................
-   kafka_buf_hex:" 00 00 00 0d| 00 00 00 08| 00 00 00 00| 00 00 00 01| 00"
-
-  -req  kafka_corr_id:9  ack:1  iframe:000000000595  api_key_str:ListOffsets  api_key:2  api_version:5  kafka_len:477  mon_step_age:36
-   kafka_buf_n:481  kafka_buf:'..............redpanda-console...........av2......................__consumer_offsets......................................................................................................."............._trunc_'
-   kafka_buf_hex:" 00 00 01 dd| 00 02 00 05| 00 00 00 09| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00 00 00 00| 00 00 07 00| 03 61 76 32| 00 00 00 01| 00 00 00 01| ff ff ff ff| ff ff ff ff| ff ff ff ff| 00 12 5f 5f| 63 6f 6e 73| 75 6d 65 72| 5f 6f 66 66| 73 65 74 73| 00 00 00 0d| 00 00 00 1a| ff ff ff ff| ff ff ff ff| ff ff ff ff| 00 00 00 1c| ff ff ff ff| ff ff ff ff| ff ff ff ff| 00 00 00 00| ff ff ff ff| ff ff ff ff| ff ff ff ff| 00 00 00 0e| ff ff ff ff| ff ff ff ff| ff ff ff ff| 00 00 00 11| ff ff ff ff| ff ff ff ff| ff ff ff ff| 00 00 00 0b| ff ff ff ff| ff ff ff ff| ff ff ff ff| 00 00 00 22| ff ff ff ff| ff ff ff ff| ff ff ff ff| 00_trunc_"
-  -rsp  kafka_corr_id:9  ack:1  iframe:000000000599  kafka_len:664  mon_step_age:36
-   kafka_buf_n:668  kafka_buf:..................av2................................__consumer_offsets.............................@.........................@.........................@.........................@......................_trunc_
-   kafka_buf_hex:" 00 00 02 98| 00 00 00 09| 00 00 00 00| 00 00 00 07| 00 03 61 76| 32 00 00 00| 01 00 00 00| 01 00 00 ff| ff ff ff ff| ff ff ff 00| 00 00 00 00| 00 00 00 00| 00 00 08 00| 12 5f 5f 63| 6f 6e 73 75| 6d 65 72 5f| 6f 66 66 73| 65 74 73 00| 00 00 0d 00| 00 00 1a 00| 00 ff ff ff| ff ff ff ff| ff 00 00 00| 00 00 00 00| 00 00 00 00| 40 00 00 00| 1c 00 00 ff| ff ff ff ff| ff ff ff 00| 00 00 00 00| 00 00 00 00| 00 00 40 00| 00 00 00 00| 00 ff ff ff| ff ff ff ff| ff 00 00 00| 00 00 00 00| 00 00 00 00| 40 00 00 00| 0e 00 00 ff| ff ff ff ff| ff ff ff 00| 00 00 00 00| 00 00 00 00| 00 00 40 00| 00 00 11 00| 00 ff ff ff| ff ff ff ff| ff 00 00 00| 00 00 00 00| 00_trunc_"
-
-  -req  kafka_corr_id:10  ack:1  iframe:000000000619  api_key_str:Metadata  api_key:3  api_version:9  kafka_len:32  mon_step_age:31
-   kafka_buf_n:36  kafka_buf:"... ..........redpanda-console......"
-   kafka_buf_hex:" 00 00 00 20| 00 03 00 09| 00 00 00 0a| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00 00 00 00|"
-  -rsp  kafka_corr_id:10  ack:1  iframe:000000000624  kafka_len:2377  mon_step_age:31
-   kafka_buf_n:2381  kafka_buf:...I...............dev.ak-8.b1.ext...........dev.ak-8.b2.ext...........dev.ak-8.b3.ext...........dev.ak-8.b4.ext.......dev.ak-8........av5..............................................................._trunc_
-   kafka_buf_hex:" 00 00 09 49| 00 00 00 0a| 00 00 00 00| 00 05 00 00| 00 01 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 31 2e 65| 78 74 00 00| 04 07 00 00| 00 00 00 02| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 32| 2e 65 78 74| 00 00 04 0f| 00 00 00 00| 00 03 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 33 2e 65| 78 74 00 00| 04 13 00 00| 00 00 00 04| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 34| 2e 65 78 74| 00 00 04 17| 00 00 09 64| 65 76 2e 61| 6b 2d 38 00| 00 00 01 08| 00 00 04 61| 76 35 00 04| 00 00 00 00| 00 01 00 00| 00 03 00 00| 00 02 02 00| 00 00 03 02| 00 00 00 03| 01 00 00 00| 00 00 00 02| 00 00 00 04| 00 00 00 02| 02 00 00 00| 04 02 00 00| 00 04 01 00| 00 00 00 00| 00 00 00 00| 00_trunc_"
-
-  -req  kafka_corr_id:11  ack:1  iframe:000000000626  api_key_str:Metadata  api_key:3  api_version:9  kafka_len:32  mon_step_age:31
-   kafka_buf_n:36  kafka_buf:"... ..........redpanda-console......"
-   kafka_buf_hex:" 00 00 00 20| 00 03 00 09| 00 00 00 0b| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00 00 00 00|"
-  -rsp  kafka_corr_id:11  ack:1  iframe:000000000628  kafka_len:2377  mon_step_age:31
-   kafka_buf_n:2381  kafka_buf:...I...............dev.ak-8.b1.ext...........dev.ak-8.b2.ext...........dev.ak-8.b3.ext...........dev.ak-8.b4.ext.......dev.ak-8........av5..............................................................._trunc_
-   kafka_buf_hex:" 00 00 09 49| 00 00 00 0b| 00 00 00 00| 00 05 00 00| 00 01 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 31 2e 65| 78 74 00 00| 04 07 00 00| 00 00 00 02| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 32| 2e 65 78 74| 00 00 04 0f| 00 00 00 00| 00 03 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 33 2e 65| 78 74 00 00| 04 13 00 00| 00 00 00 04| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 34| 2e 65 78 74| 00 00 04 17| 00 00 09 64| 65 76 2e 61| 6b 2d 38 00| 00 00 01 08| 00 00 04 61| 76 35 00 04| 00 00 00 00| 00 01 00 00| 00 03 00 00| 00 02 02 00| 00 00 03 02| 00 00 00 03| 01 00 00 00| 00 00 00 02| 00 00 00 04| 00 00 00 02| 02 00 00 00| 04 02 00 00| 00 04 01 00| 00 00 00 00| 00 00 00 00| 00_trunc_"
-
-  -req  kafka_corr_id:12  ack:1  iframe:000000000633  api_key_str:DescribeLogDirs  api_key:35  api_version:2  kafka_len:29  mon_step_age:31
-   kafka_buf_n:33  kafka_buf:".....#........redpanda-console..."
-   kafka_buf_hex:" 00 00 00 1d| 00 23 00 02| 00 00 00 0c| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00"
-  -rsp  kafka_corr_id:12  ack:1  iframe:000000000641  kafka_len:970  mon_step_age:31
-   kafka_buf_n:974  kafka_buf:'................"/mnt/data-1/kraft-combined-logs-8..__consumer_offsets................................................".....................-....................av4.........................test-topic-0_trunc_'
-   kafka_buf_hex:" 00 00 03 ca| 00 00 00 0c| 00 00 00 00| 00 05 00 00| 22 2f 6d 6e| 74 2f 64 61| 74 61 2d 31| 2f 6b 72 61| 66 74 2d 63| 6f 6d 62 69| 6e 65 64 2d| 6c 6f 67 73| 2d 38 04 13| 5f 5f 63 6f| 6e 73 75 6d| 65 72 5f 6f| 66 66 73 65| 74 73 05 00| 00 00 15 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 1c 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 22 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 2d 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 04 61 76 34| 02 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 1b 74 65 73| 74 2d 74 6f| 70 69 63 2d| 30_trunc_"
-
-  -req  kafka_corr_id:13  ack:1  iframe:000000000709  api_key_str:DescribeConfigs  api_key:32  api_version:3  kafka_len:283  mon_step_age:18
-   kafka_buf_n:287  kafka_buf:"..... ........redpanda-console.......av6......cleanup.policy...av5......cleanup.policy...avtopic1......cleanup.policy...av2......cleanup.policy...__consumer_offsets......cleanup.policy...av4......clean_trunc_"
-   kafka_buf_hex:" 00 00 01 1b| 00 20 00 03| 00 00 00 0d| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00 08 02 00| 03 61 76 36| 00 00 00 01| 00 0e 63 6c| 65 61 6e 75| 70 2e 70 6f| 6c 69 63 79| 02 00 03 61| 76 35 00 00| 00 01 00 0e| 63 6c 65 61| 6e 75 70 2e| 70 6f 6c 69| 63 79 02 00| 08 61 76 74| 6f 70 69 63| 31 00 00 00| 01 00 0e 63| 6c 65 61 6e| 75 70 2e 70| 6f 6c 69 63| 79 02 00 03| 61 76 32 00| 00 00 01 00| 0e 63 6c 65| 61 6e 75 70| 2e 70 6f 6c| 69 63 79 02| 00 12 5f 5f| 63 6f 6e 73| 75 6d 65 72| 5f 6f 66 66| 73 65 74 73| 00 00 00 01| 00 0e 63 6c| 65 61 6e 75| 70 2e 70 6f| 6c 69 63 79| 02 00 03 61| 76 34 00 00| 00 01 00 0e| 63 6c 65 61| 6e_trunc_"
-  -rsp  kafka_corr_id:13  ack:1  iframe:000000000726  kafka_len:5210  mon_step_age:18
-   kafka_buf_n:5214  kafka_buf:'...Z...................av6......cleanup.policy..delete.........cleanup.policy..delete...log.cleanup.policy..delete...!This config designates the retention policy to use on log segments. The "delete" po_trunc_'
-   kafka_buf_hex:" 00 00 14 5a| 00 00 00 0d| 00 00 00 00| 00 00 00 08| 00 00 00 00| 02 00 03 61| 76 36 00 00| 00 01 00 0e| 63 6c 65 61| 6e 75 70 2e| 70 6f 6c 69| 63 79 00 06| 64 65 6c 65| 74 65 00 01| 00 00 00 00| 02 00 0e 63| 6c 65 61 6e| 75 70 2e 70| 6f 6c 69 63| 79 00 06 64| 65 6c 65 74| 65 01 00 12| 6c 6f 67 2e| 63 6c 65 61| 6e 75 70 2e| 70 6f 6c 69| 63 79 00 06| 64 65 6c 65| 74 65 05 07| 02 21 54 68| 69 73 20 63| 6f 6e 66 69| 67 20 64 65| 73 69 67 6e| 61 74 65 73| 20 74 68 65| 20 72 65 74| 65 6e 74 69| 6f 6e 20 70| 6f 6c 69 63| 79 20 74 6f| 20 75 73 65| 20 6f 6e 20| 6c 6f 67 20| 73 65 67 6d| 65 6e 74 73| 2e 20 54 68| 65 20 22 64| 65 6c 65 74| 65 22 20 70| 6f_trunc_"
-
-  -req  kafka_corr_id:14  ack:1  iframe:000000000721  api_key_str:DescribeLogDirs  api_key:35  api_version:2  kafka_len:29  mon_step_age:18
-   kafka_buf_n:33  kafka_buf:".....#........redpanda-console..."
-   kafka_buf_hex:" 00 00 00 1d| 00 23 00 02| 00 00 00 0e| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00"
-  -rsp  kafka_corr_id:14  ack:1  iframe:000000000732  kafka_len:998  mon_step_age:18
-   kafka_buf_n:1002  kafka_buf:'................"/mnt/data-1/kraft-combined-logs-8..__consumer_offsets................................................".....................-....................av4.........................test-topic-0_trunc_'
-   kafka_buf_hex:" 00 00 03 e6| 00 00 00 0e| 00 00 00 00| 00 05 00 00| 22 2f 6d 6e| 74 2f 64 61| 74 61 2d 31| 2f 6b 72 61| 66 74 2d 63| 6f 6d 62 69| 6e 65 64 2d| 6c 6f 67 73| 2d 38 04 13| 5f 5f 63 6f| 6e 73 75 6d| 65 72 5f 6f| 66 66 73 65| 74 73 05 00| 00 00 15 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 1c 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 22 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 2d 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 04 61 76 34| 02 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 1b 74 65 73| 74 2d 74 6f| 70 69 63 2d| 30_trunc_"
-
-  -req  kafka_corr_id:15  ack:1  iframe:000000000735  api_key_str:ApiVersions  api_key:18  api_version:3  kafka_len:45  mon_step_age:18
-   kafka_buf_n:49  kafka_buf:...-..........redpanda-console..RPConsole.v2.8.2.
-   kafka_buf_hex:" 00 00 00 2d| 00 12 00 03| 00 00 00 0f| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 0a| 52 50 43 6f| 6e 73 6f 6c| 65 07 76 32| 2e 38 2e 32| 00"
-  -rsp  kafka_corr_id:15  ack:1  iframe:000000000738  kafka_len:499  mon_step_age:18
-   kafka_buf_n:503  kafka_buf:"..........>.............................................................................................................................................................................................._trunc_"
-   kafka_buf_hex:" 00 00 01 f3| 00 00 00 0f| 00 00 3e 00| 00 00 00 00| 0b 00 00 01| 00 00 00 11| 00 00 02 00| 00 00 09 00| 00 03 00 00| 00 0c 00 00| 08 00 00 00| 09 00 00 09| 00 00 00 09| 00 00 0a 00| 00 00 06 00| 00 0b 00 00| 00 09 00 00| 0c 00 00 00| 04 00 00 0d| 00 00 00 05| 00 00 0e 00| 00 00 05 00| 00 0f 00 00| 00 05 00 00| 10 00 00 00| 05 00 00 11| 00 00 00 01| 00 00 12 00| 00 00 04 00| 00 13 00 00| 00 07 00 00| 14 00 00 00| 06 00 00 15| 00 00 00 02| 00 00 16 00| 00 00 05 00| 00 17 00 00| 00 04 00 00| 18 00 00 00| 05 00 00 19| 00 00 00 04| 00 00 1a 00| 00 00 04 00| 00 1b 00 00| 00 01 00 00| 1c 00 00 00| 04 00 00 1d| 00 00 00 03| 00 00 1e 00| 00 00 03 00| 00_trunc_"
-
-==frame stats  direction:"b->c"  tcp_short:108.4-108.1  tcp_pair_key:192.168.108.4:1043-192.168.108.1:57956  frame_count:88  syn_count:1  fin_count:0  rst_count:0  isn:003956313067  tcp_payload_len_tot:000000112684
-  !!seq_gap_pos_count:1
-  kafka rsp stats  kafka_count:15  kafka_count_in_bh:15  kafka_len_tot:000000112684
+==frame stats  direction:"b->c"  tcp_short:108.4-108.1  tcp_pair_key:192.168.108.4:1043-192.168.108.1:51288  frame_count:5  syn_count:1  fin_count:1  rst_count:0  isn:002809526184  tcp_payload_len_tot:000000000529
+  kafka rsp stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000529
   
-==frame stats  direction:"c->b"  tcp_short:108.1-108.4  tcp_pair_key:192.168.108.1:57964-192.168.108.4:1043  frame_count:9  syn_count:1  fin_count:1  rst_count:0  isn:000643368553  tcp_payload_len_tot:000000000083
-  kafka req stats  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000083
-  ..client_id_key:redpanda-console
-  -req  kafka_corr_id:0  ack:1  iframe:000000000519  api_key_str:ApiVersions  api_key:18  api_version:3  kafka_len:40  mon_step_age:39
-   kafka_buf_n:44  kafka_buf:"...(..........redpanda-console..kgo.v1.18.0."
-   kafka_buf_hex:" 00 00 00 28| 00 12 00 03| 00 00 00 00| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 04| 6b 67 6f 08| 76 31 2e 31| 38 2e 30 00|"
-  -rsp  kafka_corr_id:0  ack:1  iframe:000000000523  kafka_len:499  mon_step_age:39
+==frame stats  direction:"c->b"  tcp_short:108.1-108.4  tcp_pair_key:192.168.108.1:51302-192.168.108.4:1043  frame_count:9  syn_count:1  fin_count:1  rst_count:0  isn:002088890772  tcp_payload_len_tot:000000000210
+  kafka req stats  kafka_count:3  kafka_req_ack_count:3  kafka_count_in_bh:3  pct_non_ack!!!:0  kafka_len_tot:000000000210
+  ..client_id_key:producer-1
+  -req  kafka_corr_id:4  ack:1  iframe:000000000289  api_key_str:ApiVersions  api_key:18  api_version:3  kafka_len:46  mon_step_age:21
+   kafka_buf_n:50  kafka_buf:..............producer-1..apache-kafka-java.3.5.0.
+   kafka_buf_hex:" 00 00 00 2e| 00 12 00 03| 00 00 00 04| 00 0a 70 72| 6f 64 75 63| 65 72 2d 31| 00 12 61 70| 61 63 68 65| 2d 6b 61 66| 6b 61 2d 6a| 61 76 61 06| 33 2e 35 2e| 30 00"
+  -rsp  kafka_corr_id:4  ack:1  iframe:000000000291  kafka_len:499  mon_step_age:21
    kafka_buf_n:503  kafka_buf:"..........>.............................................................................................................................................................................................._trunc_"
-   kafka_buf_hex:" 00 00 01 f3| 00 00 00 00| 00 00 3e 00| 00 00 00 00| 0b 00 00 01| 00 00 00 11| 00 00 02 00| 00 00 09 00| 00 03 00 00| 00 0c 00 00| 08 00 00 00| 09 00 00 09| 00 00 00 09| 00 00 0a 00| 00 00 06 00| 00 0b 00 00| 00 09 00 00| 0c 00 00 00| 04 00 00 0d| 00 00 00 05| 00 00 0e 00| 00 00 05 00| 00 0f 00 00| 00 05 00 00| 10 00 00 00| 05 00 00 11| 00 00 00 01| 00 00 12 00| 00 00 04 00| 00 13 00 00| 00 07 00 00| 14 00 00 00| 06 00 00 15| 00 00 00 02| 00 00 16 00| 00 00 05 00| 00 17 00 00| 00 04 00 00| 18 00 00 00| 05 00 00 19| 00 00 00 04| 00 00 1a 00| 00 00 04 00| 00 1b 00 00| 00 01 00 00| 1c 00 00 00| 04 00 00 1d| 00 00 00 03| 00 00 1e 00| 00 00 03 00| 00_trunc_"
+   kafka_buf_hex:" 00 00 01 f3| 00 00 00 04| 00 00 3e 00| 00 00 00 00| 0b 00 00 01| 00 00 00 11| 00 00 02 00| 00 00 09 00| 00 03 00 00| 00 0c 00 00| 08 00 00 00| 09 00 00 09| 00 00 00 09| 00 00 0a 00| 00 00 06 00| 00 0b 00 00| 00 09 00 00| 0c 00 00 00| 04 00 00 0d| 00 00 00 05| 00 00 0e 00| 00 00 05 00| 00 0f 00 00| 00 05 00 00| 10 00 00 00| 05 00 00 11| 00 00 00 01| 00 00 12 00| 00 00 04 00| 00 13 00 00| 00 07 00 00| 14 00 00 00| 06 00 00 15| 00 00 00 02| 00 00 16 00| 00 00 05 00| 00 17 00 00| 00 04 00 00| 18 00 00 00| 05 00 00 19| 00 00 00 04| 00 00 1a 00| 00 00 04 00| 00 1b 00 00| 00 01 00 00| 1c 00 00 00| 04 00 00 1d| 00 00 00 03| 00 00 1e 00| 00 00 03 00| 00_trunc_"
 
-  -req  kafka_corr_id:1  ack:1  iframe:000000000525  api_key_str:DescribeAcls  api_key:29  api_version:2  kafka_len:35  mon_step_age:39
-   kafka_buf_n:39  kafka_buf:"...#..........redpanda-console........."
-   kafka_buf_hex:" 00 00 00 23| 00 1d 00 02| 00 00 00 01| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 01| 00 01 00 00| 01 01 00"
-  -rsp  kafka_corr_id:1  ack:1  iframe:000000000529  kafka_len:14  mon_step_age:39
-   kafka_buf_n:18  kafka_buf:..................
-   kafka_buf_hex:" 00 00 00 0e| 00 00 00 01| 00 00 00 00| 00 00 00 01| 01 00"
+  -req  kafka_corr_id:5  ack:1  iframe:000000000295  api_key_str:InitProducerId  api_key:22  api_version:4  kafka_len:37  mon_step_age:21
+   kafka_buf_n:41  kafka_buf:...%..........producer-1.................
+   kafka_buf_hex:" 00 00 00 25| 00 16 00 04| 00 00 00 05| 00 0a 70 72| 6f 64 75 63| 65 72 2d 31| 00 00 7f ff| ff ff ff ff| ff ff ff ff| ff ff ff ff| 00"
+  -rsp  kafka_corr_id:5  ack:1  iframe:000000000296  kafka_len:22  mon_step_age:21
+   kafka_buf_n:26  kafka_buf:.....................FP...
+   kafka_buf_hex:" 00 00 00 16| 00 00 00 05| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 46 50 00| 00 00"
 
-==frame stats  direction:"b->c"  tcp_short:108.4-108.1  tcp_pair_key:192.168.108.4:1043-192.168.108.1:57964  frame_count:6  syn_count:1  fin_count:1  rst_count:0  isn:000438784973  tcp_payload_len_tot:000000000521
-  kafka rsp stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000521
-  
-==frame stats  direction:"c->b"  tcp_short:108.1-108.4  tcp_pair_key:192.168.108.1:38732-192.168.108.4:1043  frame_count:5  syn_count:1  fin_count:0  rst_count:0  isn:004111594078  tcp_payload_len_tot:000000000036
-  kafka req stats  kafka_count:1  kafka_req_ack_count:1  kafka_count_in_bh:1  pct_non_ack!!!:0  kafka_len_tot:000000000036
-  ..client_id_key:redpanda-console
-  -req  kafka_corr_id:0  ack:1  iframe:000000000704  api_key_str:Metadata  api_key:3  api_version:9  kafka_len:32  mon_step_age:18
-   kafka_buf_n:36  kafka_buf:"... ..........redpanda-console......"
-   kafka_buf_hex:" 00 00 00 20| 00 03 00 09| 00 00 00 00| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00 00 00 00|"
-  -rsp  kafka_corr_id:0  ack:1  iframe:000000000707  kafka_len:2468  mon_step_age:18
-   kafka_buf_n:2472  kafka_buf:...................dev.ak-8.b1.ext...........dev.ak-8.b2.ext...........dev.ak-8.b3.ext...........dev.ak-8.b4.ext.......dev.ak-8........av6..............................................................._trunc_
-   kafka_buf_hex:" 00 00 09 a4| 00 00 00 00| 00 00 00 00| 00 05 00 00| 00 01 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 31 2e 65| 78 74 00 00| 04 07 00 00| 00 00 00 02| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 32| 2e 65 78 74| 00 00 04 0f| 00 00 00 00| 00 03 10 64| 65 76 2e 61| 6b 2d 38 2e| 62 33 2e 65| 78 74 00 00| 04 13 00 00| 00 00 00 04| 10 64 65 76| 2e 61 6b 2d| 38 2e 62 34| 2e 65 78 74| 00 00 04 17| 00 00 09 64| 65 76 2e 61| 6b 2d 38 00| 00 00 01 09| 00 00 04 61| 76 36 00 04| 00 00 00 00| 00 02 00 00| 00 01 00 00| 00 00 02 00| 00 00 01 02| 00 00 00 01| 01 00 00 00| 00 00 00 01| 00 00 00 04| 00 00 00 00| 02 00 00 00| 04 02 00 00| 00 04 01 00| 00 00 00 00| 00 00 00 00| 00_trunc_"
+  -req  kafka_corr_id:6  ack:1  iframe:000000000298  api_key_str:Produce  api_key:0  api_version:9  kafka_len:115  mon_step_age:20
+   kafka_buf_n:119  kafka_buf:"...s..........producer-1......u0..kav1.....I...........<.....(.............E.......E.........FP...............k1.v1...."
+   kafka_buf_hex:" 00 00 00 73| 00 00 00 09| 00 00 00 06| 00 0a 70 72| 6f 64 75 63| 65 72 2d 31| 00 00 ff ff| 00 00 75 30| 02 05 6b 61| 76 31 02 00| 00 00 00 49| 00 00 00 00| 00 00 00 00| 00 00 00 3c| ff ff ff ff| 02 28 a0 c7| 01 00 00 00| 00 00 00 00| 00 01 96 45| c3 0d 89 00| 00 01 96 45| c3 0d 89 00| 00 00 00 00| 00 46 50 00| 00 00 00 00| 00 00 00 00| 01 14 00 00| 00 04 6b 31| 04 76 31 00| 00 00 00"
+  -rsp  kafka_corr_id:6  ack:1  iframe:000000000299  kafka_len:51  mon_step_age:20
+   kafka_buf_n:55  kafka_buf:...3.......kav1........................................
+   kafka_buf_hex:" 00 00 00 33| 00 00 00 06| 00 02 05 6b| 61 76 31 02| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 ff ff| ff ff ff ff| ff ff 00 00| 00 00 00 00| 00 00 01 00| 00 00 00 00| 00 00 00"
 
-==frame stats  direction:"b->c"  tcp_short:108.4-108.1  tcp_pair_key:192.168.108.4:1043-192.168.108.1:38732  frame_count:5  syn_count:1  fin_count:0  rst_count:0  isn:000179775276  tcp_payload_len_tot:000000002472
-  kafka rsp stats  kafka_count:1  kafka_count_in_bh:1  kafka_len_tot:000000002472
+==frame stats  direction:"b->c"  tcp_short:108.4-108.1  tcp_pair_key:192.168.108.4:1043-192.168.108.1:51302  frame_count:6  syn_count:1  fin_count:1  rst_count:0  isn:001794177037  tcp_payload_len_tot:000000000584
+  kafka rsp stats  kafka_count:3  kafka_count_in_bh:3  kafka_len_tot:000000000584
 
 =============tcp_pairs rsp without req 
 
 ==========================================batch stats
-"elapsed(sec)":78.1273  iframe_count:770  kafka_req_count_total:24  kafka_req_ack_count_total:23  "kafka_duration_avg (ns)":3949806  ind_tcp_pair_n:10  max_pkt_len:1514
+"elapsed(sec)":84.651  iframe_count:376  kafka_req_count_total:25  kafka_req_ack_count_total:25  "kafka_duration_avg (ns)":3442856  ind_tcp_pair_n:6  max_pkt_len:1514
 Kafka Non-ACK(BAD - request without response) Ratio Histogram:
-range:00-00%  count_of_tcp_pairs:4
-range:00-10%  count_of_tcp_pairs:1
+range:00-00%  count_of_tcp_pairs:3
 exit to OS

@@ -2,10 +2,10 @@
 
 PATH=.:$PATH:$HOME/av_openacr:$HOME/arnd/bin
 
-case $- in
-    *i*) ;;
-      *) return;;
-esac
+# case $- in
+#     *i*) ;;
+#       *) return;;
+# esac
 
 # the rest for interactive shell only
 set -x
@@ -27,18 +27,22 @@ if [ -f /usr/share/bash-completion/completions/git ]; then
 fi
 
 
-alias acre="acr dmmeta.ns:x2bm_pcap -ndown 99  -tree -e"
+alias acre="acr dmmeta.ns:atf_snf -ndown 99  -tree -e"
+alias ci="atf_ci -cijob:%"
+alias ci_clean="rm -rf temp/sand*"
 alias ppath='echo $PATH | tr ":" "\n"'
 alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'
 alias gitlog1='git log --oneline --decorate --pretty=format:"%h %ad | %s%d [%an]" --date=iso-strict'
+alias gitlog2='git log origin/$(git symbolic-ref --short HEAD)..HEAD --oneline --decorate --pretty=format:"%h %ad | %s%d [%an]" --date=iso-strict'
+
 alias gbranch='git for-each-ref --format="%(refname:short) %(contents:subject) %(authorname)" refs/heads/'
 alias al='source  ~/arnd/conf/alexei/bash_profile'
 gco() {
   # Check for uncommitted changes
-  if ! git diff-index --quiet HEAD --; then
-    echo "You have uncommitted changes. Please commit or stash them before switching branches."
-    return 1
-  fi
+  # if ! git diff-index --quiet HEAD --; then
+  #   echo "You have uncommitted changes. Please commit or stash them before switching branches."
+  #   return 1
+  # fi
 
   # Check if a branch name is passed as an argument or prompt the user
   if [ -z "$1" ]; then

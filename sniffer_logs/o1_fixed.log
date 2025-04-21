@@ -1,8 +1,0 @@
-TestParseCaptureRead  f_name:/home/avorovich/pcap/cap/DescribeLogDirs_req.kafka  len:33
-
-ParseReqDescribeLogDirs  len:33  buf:" 00 00 00 1d| 00 23 00 02| 00 00 00 06| 00 10 72 65| 64 70 61 6e| 64 61 2d 63| 6f 6e 73 6f| 6c 65 00 00| 00"
-ParseReqDescribeLogDirs  buf:".....#........redpanda-console..."
-TestParseCaptureRead  f_name:/home/avorovich/pcap/cap/DescribeLogDirs_rsp.kafka  len:829
-
-ParseRspDescribeLogDirs  len:829  buf:" 00 00 03 39| 00 00 00 06| 00 00 00 00| 00 05 00 00| 22 2f 6d 6e| 74 2f 64 61| 74 61 2d 31| 2f 6b 72 61| 66 74 2d 63| 6f 6d 62 69| 6e 65 64 2d| 6c 6f 67 73| 2d 38 03 13| 5f 5f 63 6f| 6e 73 75 6d| 65 72 5f 6f| 66 66 73 65| 74 73 05 00| 00 00 2d 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 15 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 1c 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 22 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 1b 74 65 73| 74 2d 74 6f| 70 69 63 2d| 30 30 30 30| 30 30 30 2d| 39 48 48 4b| 43 36 30 03| 00 00 00 03| 00 00 00 00| b6 3f 1b 25| 00_trunc_"
-ParseRspDescribeLogDirs  buf:'...9............"/mnt/data-1/kraft-combined-logs-8..__consumer_offsets....-................................................................."....................test-topic-0000000-9HHKC60..........?.%._trunc_'

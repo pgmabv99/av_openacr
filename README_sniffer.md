@@ -194,12 +194,15 @@ https://github.com/pgmabv99/arnd/blob/algornd/arnd.513/cpp/atf_snf/dpdkcap/src/t
 
 
 ## discussion points 04/22
-- atf_snf.cpp walclock removal
+- atf_snf.cpp wallclock removal
 - atf_snf.cpp /util.cpp use of C code to scan device/interface/pci instead of bash 
-- util.cpp use parsee hex conversion utilities
+- util.cpp use parse hex conversion utilities
 - how to keep captured kafka : stdout  vs folders/files for individual  requests vs both.  
 - overall future goals
  - - study kafka format to help debug ui to x2
  - - input to parse testing
  - - perf measurement
  
+
+ ## kafka parse util. extract struct
+ perl -0777 -ne 'while (/struct\s+PartitionData..a\s*\{.*?\};/sg) { print "$&\n\n" }' include/gen/kafka2_gen.h >  ~/av_openacr/kapi.h

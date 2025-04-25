@@ -55,7 +55,9 @@ dot -Tsvg av_openacr/meng -o av_openacr/meng.svg
 ## to run pipeline locally 
 
 cpp-indent cpp/atf_snf/atf_snf.cpp
-atf_ci -cijob:%
+atf_ci -cijob:% -check_clean:N |& timestamps
+// show tests
+acr atfdb.cijob:% -ndown 1 -tree
 
 ```
 atf_ci.begin  citest:spnx  sandbox:N
@@ -122,6 +124,10 @@ when conflict in in gen files
 amc
 git add */gen
 
+///
+in master 
+abt amc
+git status --short
 ## git login cheat sheet
 
 #for arnd gitlab use ssh private key
@@ -150,7 +156,7 @@ ssh-add -l
 ## git cherry pick
 
 465c66d7 (HEAD -> algornd/arnd.604, origin/algornd/arnd.604) Issue algornd/arnd#604 atf_snf should detect if the device is in usegco 
-## acr docker cheat sheet
+# acr docker cheat sheet
 ```
 #log to host of sn5 from sn1
 x2ipmi -device:nj1.sv5 -sol
@@ -176,6 +182,7 @@ dkr ps   -node:nj1.sn5.avorovich
 
 docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 
+sed -i 's/id_rsa/id_rsa2/g'  ~/.ssh/config.d/*
 
 ```
 

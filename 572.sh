@@ -4,7 +4,9 @@ set -e
 
 trg=atf_snf
 
-
+#  by hand
+    # dev.targdep  targdep:atf_snf.lib_kafka  comment:""
+    #     dev.targdep  targdep:atf_snf.kafka2  comment:""
 
 # one time only !!!!!!!!!!!!!!!!!!
 # acr_ed -create -srcfile cpp/atf_snf/parse.cpp -write -comment "parsing frames and kafka req/rsp  "
@@ -127,7 +129,7 @@ acr_ed -create -field atf_snf.FMcb.kafka_list_print_flg        -arg bool        
 acr_ed -create -field atf_snf.FMcb.tcp_filter                  -arg bool             -write -comment "apply tcp filter for debugging "
 acr_ed -create -field atf_snf.FMcb.snf_memqp_print_flg         -arg bool             -write -comment "print memqp print"
 
-acr_ed -create -field atf_snf.FMcb.cap_kafka_to_file           -arg bool             -write -comment "capture each kafka req/rsp to separate file"
+acr_ed -create -field atf_snf.FMcb.cap_solo                    -arg bool             -write -comment "capture each solo  kafka req/rsp to separate file"
 acr_ed -create -field atf_snf.FMcb.cap_buf                     -arg u8               -reftype Tary -write -comment "cap tmp pointer"
 
 # include into _db
@@ -157,7 +159,9 @@ EOF
 
 #  set parms for atf_snf
 acr -merge  -write <<EOF
+acr.delete dmmeta.field  field:command.atf_snf.kapi
 acr.delete dmmeta.field  field:command.atf_snf.in_file
+acr.delete dmmeta.field  field:command.atf_snf.in_solo_dir
 acr.delete dmmeta.field  field:command.atf_snf.out_file
 acr.delete dmmeta.field  field:command.atf_snf.dir
 acr.delete dmmeta.field  field:command.atf_snf.mult_req_per_frame
@@ -165,6 +169,7 @@ EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_snf.kapi                   arg:bool          reftype:Val      dflt:false        comment:"invoke tcp header and kafka parse code"
     dmmeta.field  field:command.atf_snf.in_file                arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input PCAP file under dir. empty for live NIC capture"
+    dmmeta.field  field:command.atf_snf.in_solo_dir            arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input folder under dir for solo req files. empty for live NIC capture"
     dmmeta.field  field:command.atf_snf.out_file               arg:algo.cstring  reftype:Val      dflt:'""'  comment:"output PCAP file under dir to shadow pkts. empty for no shadow"
     dmmeta.field  field:command.atf_snf.dir                    arg:algo.cstring  reftype:Val      dflt:'"/home/avorovich/pcap/"'  comment:"dir for in and out files"
     dmmeta.field  field:command.atf_snf.mult_req_per_frame     arg:bool          reftype:Val      dflt:true        comment:"parse mode: true - multiple req/rsp are expected per frame"
@@ -178,6 +183,9 @@ acr_ed -del    -field atf_snf.FDb.ind_uid                        -write || true
 acr_ed -create -field atf_snf.FDb.ind_uid  -arg atf_snf.FDctrport -hashfld dkrdb.Dctrport.uid -xref -write -comment ""
 acr_ed -del    -field atf_snf.FDb.zd_dctrport                     -write || true
 acr_ed -create -field atf_snf.FDb.zd_dctrport                    -arg atf_snf.FDctrport -xref -write -comment ""
+
+# -dmmeta.funique  field:dkrdb.Dctrport.dctrport  comment:""
+# +dmmeta.funique  field:dkrdb.Dctrport.uid  comment:""
 
 amc
 amc_vis atf_snf.%   > ~/av_openacr/${trg}_viz.txt

@@ -130,7 +130,6 @@ acr_ed -create -field atf_snf.FMcb.tcp_filter                  -arg bool        
 acr_ed -create -field atf_snf.FMcb.snf_memqp_print_flg         -arg bool             -write -comment "print memqp print"
 
 acr_ed -create -field atf_snf.FMcb.cap_solo                    -arg bool             -write -comment "capture each solo  kafka req/rsp to separate file"
-acr_ed -create -field atf_snf.FMcb.cap_buf                     -arg u8               -reftype Tary -write -comment "cap tmp pointer"
 
 # include into _db
 acr_ed -del    -field atf_snf.FDb.mcb                          -write

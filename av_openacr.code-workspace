@@ -80,6 +80,12 @@
 			"typeinfo": "cpp",
 			"variant": "cpp",
 			"fstream": "cpp"
+		},
+		"search.exclude": {
+			"**/kafka2_gen.h": true,
+			"**/kafka2_gen.inl.h": true,
+			"**/kafka2_gen.cpp": true,
+
 		}
 	}
 }

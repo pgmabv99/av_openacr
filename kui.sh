@@ -1,7 +1,8 @@
 #!/bin/bash
 
 omcli -omnode:dev.ak-8.% -stop
-omcli -omnode:dev.ak-8.kafka-% -start
+# omcli -omnode:dev.ak-8.kafka-% -start
+omcli -omnode:dev.ak-8.kafka-% -start_clean
 omcli -omnode:dev.ak-8.kafka-% -status
 
 

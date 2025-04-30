@@ -1,0 +1,6 @@
+comptest kapi.DescribeAclsRspV2Rdp -decode -hex   -rsp:- -apiver:2.29.2
+comment DescribeAclsRspV2Rdp
+exit_code 0
+00 00 00 0e 00 00 00 02 00 00 00 00 00 00 00 01 01 00
+# Expected output below 
+# kafka2.DescribeAclsResponse  request_api_version:2  correlation_id:2  throttle_time_ms:0  error_code:0  error_message:""

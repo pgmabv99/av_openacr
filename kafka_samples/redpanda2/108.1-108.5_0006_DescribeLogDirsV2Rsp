@@ -1,0 +1,8 @@
+comptest kapi.DescribeLogDirsRspV2Rdp -decode -hex   -rsp:- -apiver:6.35.2
+comment DescribeLogDirsRspV2Rdp
+exit_code 0
+00 00 00 3d 00 00 00 06 00 00 00 00 00 03 00 00 15 2f 6d 6e 74 2f 64 61 74 61 2d 31 2f 64 65 76 
+2e 61 6b 2d 38 01 00 00 00 15 2f 6d 6e 74 2f 64 61 74 61 2d 32 2f 64 65 76 2e 61 6b 2d 38 01 00 
+00
+# Expected output below 
+# kafka2.DescribeLogDirsResponse  request_api_version:2  correlation_id:6  throttle_time_ms:0  error_code:0  results.0:"kafka2.DescribeLogDirsResult35a  error_code:0  log_dir:/mnt/data-1/dev.ak-8  total_bytes:-1  usable_bytes:-1"  results.1:"kafka2.DescribeLogDirsResult35a  error_code:0  log_dir:/mnt/data-2/dev.ak-8  total_bytes:-1  usable_bytes:-1"

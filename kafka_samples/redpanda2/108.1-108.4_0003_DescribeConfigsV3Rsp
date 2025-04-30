@@ -1,0 +1,6 @@
+comptest kapi.DescribeConfigsRspV3Rdp -decode -hex   -rsp:- -apiver:3.32.3
+comment DescribeConfigsRspV3Rdp
+exit_code 0
+00 00 00 0c 00 00 00 03 00 00 00 00 00 00 00 00
+# Expected output below 
+# kafka2.DescribeConfigsResponse  request_api_version:3  correlation_id:3  throttle_time_ms:0

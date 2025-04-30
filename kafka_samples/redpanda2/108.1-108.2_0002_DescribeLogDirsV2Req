@@ -1,0 +1,7 @@
+comptest kapi.DescribeLogDirsReqV2Rdp -decode -hex   -req:- 
+comment DescribeLogDirsReqV2Rdp
+exit_code 0
+00 00 00 1d 00 23 00 02 00 00 00 02 00 10 72 65 64 70 61 6e 64 61 2d 63 6f 6e 73 6f 6c 65 00 00 
+00
+# Expected output below 
+# kafka2.DescribeLogDirsRequest  request_api_version:2  correlation_id:2  client_id:redpanda-console

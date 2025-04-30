@@ -1,0 +1,7 @@
+comptest kapi.ListGroupsReqV4Rdp -decode -hex   -req:- 
+comment ListGroupsReqV4Rdp
+exit_code 0
+00 00 00 1d 00 10 00 04 00 00 00 04 00 10 72 65 64 70 61 6e 64 61 2d 63 6f 6e 73 6f 6c 65 00 01 
+00
+# Expected output below 
+# kafka2.ListGroupsRequest  request_api_version:4  correlation_id:4  client_id:redpanda-console

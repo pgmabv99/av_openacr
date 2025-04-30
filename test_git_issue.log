@@ -1,0 +1,279 @@
+vorovich@nj1:~/arnd$ acr % -check -x
+report.acr_check  records:61501  errors:0
+report.acr  n_select:0  n_insert:0  n_delete:0  n_ignore:0  n_update:0  n_file_mod:0
+avorovich@nj1:~/arnd$ normalize_loop 
+Attempt 1: Running 'normalize'...
+# Running tests: checkclean,gitfile,scanreadme,ssimfile,normalize_acr,dkr_gen,omcli_gen,x2admin_gen,fast_gen,x2topo,src_lim,amc,bootstrap,shebang,encoding,readme,file_header,non-copyrighted,iffy_src,stray_gen,tempcode,lineendings,update_script,indent_script,cppcheck,indent_srcfile,ts_indent,normalize_amc_vis,normalize_acr_my,apm_check,
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:105  time:00:00:00.082905324  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:0
+atf_ci.begin  citest:checkclean  sandbox:N
+atf_ci.citest  citest:checkclean  runtime:00:00:00.026684739  success:Y  comment:"Check that no files are modified"
+atf_ci.begin  citest:gitfile  sandbox:N
+atf_ci.modified_files  during:gitfile  files:data/dev/gitfile.ssim  success:N  comment:"Please resolve modified files and try again"
+Some of the diffs are shown below
+diff --git a/data/dev/gitfile.ssim b/data/dev/gitfile.ssim
+index 76b909d3..4a5e6c2a 100644
+--- a/data/dev/gitfile.ssim
++++ b/data/dev/gitfile.ssim
+@@ -2075,6 +2075,7 @@ dev.gitfile  gitfile:test/atf_comp/fast.EncodeUnsignedNullable
+ dev.gitfile  gitfile:test/atf_comp/kapi.DecodeApiVersionsRequestV3rdp
+ dev.gitfile  gitfile:test/atf_comp/kapi.DecodeApiVersionsResponseV3rdp
+ dev.gitfile  gitfile:test/atf_comp/kapi.MetadataReqV9Rdp
++dev.gitfile  gitfile:test/atf_comp/kapi.MetadataRequestV9rdp
+ dev.gitfile  gitfile:test/atf_comp/kapi.MetadataRspV9Rdp
+ dev.gitfile  gitfile:test/atf_comp/mdbg.OutOfOrderArgs
+ dev.gitfile  gitfile:test/atf_comp/mdbg.Smoke
+atf_ci.citest  citest:gitfile  runtime:00:00:00.428878258  success:N  comment:"Update gitfile tables by scanning filesystem"
+atf_ci.failed  citest:gitfile  success:N  comment:"See prior output for more information"
+report.atf_ci  n_citest:48  n_run:2  n_pass:1  success:N  comment:"Some errors occured. Please examine them and try again."
+Normalize failed! Amending last commit and retrying...
+[algornd/arnd.643 b9452993] adopt kapi.cpp style:ByteAry/memptr/strptr *prep solo files for testing *add metadata files by hand
+ Date: Mon Apr 28 15:26:48 2025 -0400
+ 19 files changed, 187 insertions(+), 529 deletions(-)
+ create mode 100644 test/atf_comp/kapi.MetadataReqV9Rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRequestV9rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRspV9Rdp
+Attempt 2: Running 'normalize'...
+# Running tests: checkclean,gitfile,scanreadme,ssimfile,normalize_acr,dkr_gen,omcli_gen,x2admin_gen,fast_gen,x2topo,src_lim,amc,bootstrap,shebang,encoding,readme,file_header,non-copyrighted,iffy_src,stray_gen,tempcode,lineendings,update_script,indent_script,cppcheck,indent_srcfile,ts_indent,normalize_amc_vis,normalize_acr_my,apm_check,
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:105  time:00:00:00.082503111  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:0
+atf_ci.begin  citest:checkclean  sandbox:N
+atf_ci.citest  citest:checkclean  runtime:00:00:00.026918356  success:Y  comment:"Check that no files are modified"
+atf_ci.begin  citest:gitfile  sandbox:N
+atf_ci.citest  citest:gitfile  runtime:00:00:00.407071542  success:Y  comment:"Update gitfile tables by scanning filesystem"
+atf_ci.begin  citest:scanreadme  sandbox:N
+atf_ci.citest  citest:scanreadme  runtime:00:00:00.100394834  success:Y  comment:"Update readme tables by scanning filesystem"
+atf_ci.begin  citest:ssimfile  sandbox:N
+atf_ci.citest  citest:ssimfile  runtime:00:00:00.028272777  success:Y  comment:"Check for .ssim files with no corresponding ssimfile entry"
+atf_ci.begin  citest:normalize_acr  sandbox:N
+data/dev/gitfile.ssim:2078: acr.ssimreq  ssimreq:atfdb.Comptest.comptest:%  record:dev.gitfile:test/atf_comp/kapi.MetadataRequestV9rdp  regx:test/atf_comp/%  comment:"record has no match in atfdb.comptest"
+dev.gitfile  gitfile:test/atf_comp/kapi.MetadataRequestV9rdp
+
+algo_lib.exec  cmd:"bin/acr  -query:% -check:Y -write:Y -x:Y -report:N -print:N"  comment:"exit code 1"
+atf_ci.citest  citest:normalize_acr  runtime:00:00:00.530359462  success:N  comment:"Read ssim databases into memory and write back"
+atf_ci.failed  citest:normalize_acr  success:N  comment:"See prior output for more information"
+report.atf_ci  n_citest:48  n_run:5  n_pass:4  success:N  comment:"Some errors occured. Please examine them and try again."
+Normalize failed! Amending last commit and retrying...
+[algornd/arnd.643 3c082ee9] adopt kapi.cpp style:ByteAry/memptr/strptr *prep solo files for testing *add metadata files by hand
+ Date: Mon Apr 28 15:26:48 2025 -0400
+ 19 files changed, 187 insertions(+), 529 deletions(-)
+ create mode 100644 test/atf_comp/kapi.MetadataReqV9Rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRequestV9rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRspV9Rdp
+Attempt 3: Running 'normalize'...
+# Running tests: checkclean,gitfile,scanreadme,ssimfile,normalize_acr,dkr_gen,omcli_gen,x2admin_gen,fast_gen,x2topo,src_lim,amc,bootstrap,shebang,encoding,readme,file_header,non-copyrighted,iffy_src,stray_gen,tempcode,lineendings,update_script,indent_script,cppcheck,indent_srcfile,ts_indent,normalize_amc_vis,normalize_acr_my,apm_check,
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:105  time:00:00:00.082987596  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:0
+atf_ci.begin  citest:checkclean  sandbox:N
+atf_ci.citest  citest:checkclean  runtime:00:00:00.026597508  success:Y  comment:"Check that no files are modified"
+atf_ci.begin  citest:gitfile  sandbox:N
+atf_ci.citest  citest:gitfile  runtime:00:00:00.408855062  success:Y  comment:"Update gitfile tables by scanning filesystem"
+atf_ci.begin  citest:scanreadme  sandbox:N
+atf_ci.citest  citest:scanreadme  runtime:00:00:00.100302155  success:Y  comment:"Update readme tables by scanning filesystem"
+atf_ci.begin  citest:ssimfile  sandbox:N
+atf_ci.citest  citest:ssimfile  runtime:00:00:00.028384452  success:Y  comment:"Check for .ssim files with no corresponding ssimfile entry"
+atf_ci.begin  citest:normalize_acr  sandbox:N
+data/dev/gitfile.ssim:2078: acr.ssimreq  ssimreq:atfdb.Comptest.comptest:%  record:dev.gitfile:test/atf_comp/kapi.MetadataRequestV9rdp  regx:test/atf_comp/%  comment:"record has no match in atfdb.comptest"
+dev.gitfile  gitfile:test/atf_comp/kapi.MetadataRequestV9rdp
+
+algo_lib.exec  cmd:"bin/acr  -query:% -check:Y -write:Y -x:Y -report:N -print:N"  comment:"exit code 1"
+atf_ci.citest  citest:normalize_acr  runtime:00:00:00.531299027  success:N  comment:"Read ssim databases into memory and write back"
+atf_ci.failed  citest:normalize_acr  success:N  comment:"See prior output for more information"
+report.atf_ci  n_citest:48  n_run:5  n_pass:4  success:N  comment:"Some errors occured. Please examine them and try again."
+Normalize failed! Amending last commit and retrying...
+[algornd/arnd.643 507f4647] adopt kapi.cpp style:ByteAry/memptr/strptr *prep solo files for testing *add metadata files by hand
+ Date: Mon Apr 28 15:26:48 2025 -0400
+ 19 files changed, 187 insertions(+), 529 deletions(-)
+ create mode 100644 test/atf_comp/kapi.MetadataReqV9Rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRequestV9rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRspV9Rdp
+Attempt 4: Running 'normalize'...
+# Running tests: checkclean,gitfile,scanreadme,ssimfile,normalize_acr,dkr_gen,omcli_gen,x2admin_gen,fast_gen,x2topo,src_lim,amc,bootstrap,shebang,encoding,readme,file_header,non-copyrighted,iffy_src,stray_gen,tempcode,lineendings,update_script,indent_script,cppcheck,indent_srcfile,ts_indent,normalize_amc_vis,normalize_acr_my,apm_check,
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:105  time:00:00:00.083275689  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:0
+atf_ci.begin  citest:checkclean  sandbox:N
+atf_ci.citest  citest:checkclean  runtime:00:00:00.026493375  success:Y  comment:"Check that no files are modified"
+atf_ci.begin  citest:gitfile  sandbox:N
+atf_ci.citest  citest:gitfile  runtime:00:00:00.40462872  success:Y  comment:"Update gitfile tables by scanning filesystem"
+atf_ci.begin  citest:scanreadme  sandbox:N
+atf_ci.citest  citest:scanreadme  runtime:00:00:00.099973345  success:Y  comment:"Update readme tables by scanning filesystem"
+atf_ci.begin  citest:ssimfile  sandbox:N
+atf_ci.citest  citest:ssimfile  runtime:00:00:00.029362431  success:Y  comment:"Check for .ssim files with no corresponding ssimfile entry"
+atf_ci.begin  citest:normalize_acr  sandbox:N
+data/dev/gitfile.ssim:2078: acr.ssimreq  ssimreq:atfdb.Comptest.comptest:%  record:dev.gitfile:test/atf_comp/kapi.MetadataRequestV9rdp  regx:test/atf_comp/%  comment:"record has no match in atfdb.comptest"
+dev.gitfile  gitfile:test/atf_comp/kapi.MetadataRequestV9rdp
+
+algo_lib.exec  cmd:"bin/acr  -query:% -check:Y -write:Y -x:Y -report:N -print:N"  comment:"exit code 1"
+atf_ci.citest  citest:normalize_acr  runtime:00:00:00.529438328  success:N  comment:"Read ssim databases into memory and write back"
+atf_ci.failed  citest:normalize_acr  success:N  comment:"See prior output for more information"
+report.atf_ci  n_citest:48  n_run:5  n_pass:4  success:N  comment:"Some errors occured. Please examine them and try again."
+Normalize failed! Amending last commit and retrying...
+[algornd/arnd.643 79e3b9b2] adopt kapi.cpp style:ByteAry/memptr/strptr *prep solo files for testing *add metadata files by hand
+ Date: Mon Apr 28 15:26:48 2025 -0400
+ 19 files changed, 187 insertions(+), 529 deletions(-)
+ create mode 100644 test/atf_comp/kapi.MetadataReqV9Rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRequestV9rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRspV9Rdp
+Attempt 5: Running 'normalize'...
+# Running tests: checkclean,gitfile,scanreadme,ssimfile,normalize_acr,dkr_gen,omcli_gen,x2admin_gen,fast_gen,x2topo,src_lim,amc,bootstrap,shebang,encoding,readme,file_header,non-copyrighted,iffy_src,stray_gen,tempcode,lineendings,update_script,indent_script,cppcheck,indent_srcfile,ts_indent,normalize_amc_vis,normalize_acr_my,apm_check,
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:105  time:00:00:00.083042978  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:0
+atf_ci.begin  citest:checkclean  sandbox:N
+atf_ci.citest  citest:checkclean  runtime:00:00:00.026948108  success:Y  comment:"Check that no files are modified"
+atf_ci.begin  citest:gitfile  sandbox:N
+atf_ci.citest  citest:gitfile  runtime:00:00:00.408832919  success:Y  comment:"Update gitfile tables by scanning filesystem"
+atf_ci.begin  citest:scanreadme  sandbox:N
+atf_ci.citest  citest:scanreadme  runtime:00:00:00.099228633  success:Y  comment:"Update readme tables by scanning filesystem"
+atf_ci.begin  citest:ssimfile  sandbox:N
+atf_ci.citest  citest:ssimfile  runtime:00:00:00.028928581  success:Y  comment:"Check for .ssim files with no corresponding ssimfile entry"
+atf_ci.begin  citest:normalize_acr  sandbox:N
+data/dev/gitfile.ssim:2078: acr.ssimreq  ssimreq:atfdb.Comptest.comptest:%  record:dev.gitfile:test/atf_comp/kapi.MetadataRequestV9rdp  regx:test/atf_comp/%  comment:"record has no match in atfdb.comptest"
+dev.gitfile  gitfile:test/atf_comp/kapi.MetadataRequestV9rdp
+
+algo_lib.exec  cmd:"bin/acr  -query:% -check:Y -write:Y -x:Y -report:N -print:N"  comment:"exit code 1"
+atf_ci.citest  citest:normalize_acr  runtime:00:00:00.528832737  success:N  comment:"Read ssim databases into memory and write back"
+atf_ci.failed  citest:normalize_acr  success:N  comment:"See prior output for more information"
+report.atf_ci  n_citest:48  n_run:5  n_pass:4  success:N  comment:"Some errors occured. Please examine them and try again."
+Normalize failed! Amending last commit and retrying...
+[algornd/arnd.643 a02e1c41] adopt kapi.cpp style:ByteAry/memptr/strptr *prep solo files for testing *add metadata files by hand
+ Date: Mon Apr 28 15:26:48 2025 -0400
+ 19 files changed, 187 insertions(+), 529 deletions(-)
+ create mode 100644 test/atf_comp/kapi.MetadataReqV9Rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRequestV9rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRspV9Rdp
+Attempt 6: Running 'normalize'...
+# Running tests: checkclean,gitfile,scanreadme,ssimfile,normalize_acr,dkr_gen,omcli_gen,x2admin_gen,fast_gen,x2topo,src_lim,amc,bootstrap,shebang,encoding,readme,file_header,non-copyrighted,iffy_src,stray_gen,tempcode,lineendings,update_script,indent_script,cppcheck,indent_srcfile,ts_indent,normalize_amc_vis,normalize_acr_my,apm_check,
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:105  time:00:00:00.083817372  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:0
+atf_ci.begin  citest:checkclean  sandbox:N
+atf_ci.citest  citest:checkclean  runtime:00:00:00.026368499  success:Y  comment:"Check that no files are modified"
+atf_ci.begin  citest:gitfile  sandbox:N
+atf_ci.citest  citest:gitfile  runtime:00:00:00.404922117  success:Y  comment:"Update gitfile tables by scanning filesystem"
+atf_ci.begin  citest:scanreadme  sandbox:N
+atf_ci.citest  citest:scanreadme  runtime:00:00:00.098008026  success:Y  comment:"Update readme tables by scanning filesystem"
+atf_ci.begin  citest:ssimfile  sandbox:N
+atf_ci.citest  citest:ssimfile  runtime:00:00:00.027844652  success:Y  comment:"Check for .ssim files with no corresponding ssimfile entry"
+atf_ci.begin  citest:normalize_acr  sandbox:N
+data/dev/gitfile.ssim:2078: acr.ssimreq  ssimreq:atfdb.Comptest.comptest:%  record:dev.gitfile:test/atf_comp/kapi.MetadataRequestV9rdp  regx:test/atf_comp/%  comment:"record has no match in atfdb.comptest"
+dev.gitfile  gitfile:test/atf_comp/kapi.MetadataRequestV9rdp
+
+algo_lib.exec  cmd:"bin/acr  -query:% -check:Y -write:Y -x:Y -report:N -print:N"  comment:"exit code 1"
+atf_ci.citest  citest:normalize_acr  runtime:00:00:00.526196038  success:N  comment:"Read ssim databases into memory and write back"
+atf_ci.failed  citest:normalize_acr  success:N  comment:"See prior output for more information"
+report.atf_ci  n_citest:48  n_run:5  n_pass:4  success:N  comment:"Some errors occured. Please examine them and try again."
+Normalize failed! Amending last commit and retrying...
+[algornd/arnd.643 c7dfd56b] adopt kapi.cpp style:ByteAry/memptr/strptr *prep solo files for testing *add metadata files by hand
+ Date: Mon Apr 28 15:26:48 2025 -0400
+ 19 files changed, 187 insertions(+), 529 deletions(-)
+ create mode 100644 test/atf_comp/kapi.MetadataReqV9Rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRequestV9rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRspV9Rdp
+Attempt 7: Running 'normalize'...
+# Running tests: checkclean,gitfile,scanreadme,ssimfile,normalize_acr,dkr_gen,omcli_gen,x2admin_gen,fast_gen,x2topo,src_lim,amc,bootstrap,shebang,encoding,readme,file_header,non-copyrighted,iffy_src,stray_gen,tempcode,lineendings,update_script,indent_script,cppcheck,indent_srcfile,ts_indent,normalize_amc_vis,normalize_acr_my,apm_check,
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:105  time:00:00:00.083195859  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:0
+atf_ci.begin  citest:checkclean  sandbox:N
+atf_ci.citest  citest:checkclean  runtime:00:00:00.026255008  success:Y  comment:"Check that no files are modified"
+atf_ci.begin  citest:gitfile  sandbox:N
+atf_ci.citest  citest:gitfile  runtime:00:00:00.407075303  success:Y  comment:"Update gitfile tables by scanning filesystem"
+atf_ci.begin  citest:scanreadme  sandbox:N
+atf_ci.citest  citest:scanreadme  runtime:00:00:00.098178368  success:Y  comment:"Update readme tables by scanning filesystem"
+atf_ci.begin  citest:ssimfile  sandbox:N
+atf_ci.citest  citest:ssimfile  runtime:00:00:00.029440512  success:Y  comment:"Check for .ssim files with no corresponding ssimfile entry"
+atf_ci.begin  citest:normalize_acr  sandbox:N
+data/dev/gitfile.ssim:2078: acr.ssimreq  ssimreq:atfdb.Comptest.comptest:%  record:dev.gitfile:test/atf_comp/kapi.MetadataRequestV9rdp  regx:test/atf_comp/%  comment:"record has no match in atfdb.comptest"
+dev.gitfile  gitfile:test/atf_comp/kapi.MetadataRequestV9rdp
+
+algo_lib.exec  cmd:"bin/acr  -query:% -check:Y -write:Y -x:Y -report:N -print:N"  comment:"exit code 1"
+atf_ci.citest  citest:normalize_acr  runtime:00:00:00.530890308  success:N  comment:"Read ssim databases into memory and write back"
+atf_ci.failed  citest:normalize_acr  success:N  comment:"See prior output for more information"
+report.atf_ci  n_citest:48  n_run:5  n_pass:4  success:N  comment:"Some errors occured. Please examine them and try again."
+Normalize failed! Amending last commit and retrying...
+[algornd/arnd.643 c1b81427] adopt kapi.cpp style:ByteAry/memptr/strptr *prep solo files for testing *add metadata files by hand
+ Date: Mon Apr 28 15:26:48 2025 -0400
+ 19 files changed, 187 insertions(+), 529 deletions(-)
+ create mode 100644 test/atf_comp/kapi.MetadataReqV9Rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRequestV9rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRspV9Rdp
+Attempt 8: Running 'normalize'...
+# Running tests: checkclean,gitfile,scanreadme,ssimfile,normalize_acr,dkr_gen,omcli_gen,x2admin_gen,fast_gen,x2topo,src_lim,amc,bootstrap,shebang,encoding,readme,file_header,non-copyrighted,iffy_src,stray_gen,tempcode,lineendings,update_script,indent_script,cppcheck,indent_srcfile,ts_indent,normalize_amc_vis,normalize_acr_my,apm_check,
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:105  time:00:00:00.083670776  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:0
+atf_ci.begin  citest:checkclean  sandbox:N
+atf_ci.citest  citest:checkclean  runtime:00:00:00.026653379  success:Y  comment:"Check that no files are modified"
+atf_ci.begin  citest:gitfile  sandbox:N
+atf_ci.citest  citest:gitfile  runtime:00:00:00.408029116  success:Y  comment:"Update gitfile tables by scanning filesystem"
+atf_ci.begin  citest:scanreadme  sandbox:N
+atf_ci.citest  citest:scanreadme  runtime:00:00:00.099169128  success:Y  comment:"Update readme tables by scanning filesystem"
+atf_ci.begin  citest:ssimfile  sandbox:N
+atf_ci.citest  citest:ssimfile  runtime:00:00:00.029145715  success:Y  comment:"Check for .ssim files with no corresponding ssimfile entry"
+atf_ci.begin  citest:normalize_acr  sandbox:N
+data/dev/gitfile.ssim:2078: acr.ssimreq  ssimreq:atfdb.Comptest.comptest:%  record:dev.gitfile:test/atf_comp/kapi.MetadataRequestV9rdp  regx:test/atf_comp/%  comment:"record has no match in atfdb.comptest"
+dev.gitfile  gitfile:test/atf_comp/kapi.MetadataRequestV9rdp
+
+algo_lib.exec  cmd:"bin/acr  -query:% -check:Y -write:Y -x:Y -report:N -print:N"  comment:"exit code 1"
+atf_ci.citest  citest:normalize_acr  runtime:00:00:00.529780747  success:N  comment:"Read ssim databases into memory and write back"
+atf_ci.failed  citest:normalize_acr  success:N  comment:"See prior output for more information"
+report.atf_ci  n_citest:48  n_run:5  n_pass:4  success:N  comment:"Some errors occured. Please examine them and try again."
+Normalize failed! Amending last commit and retrying...
+[algornd/arnd.643 81ee71fe] adopt kapi.cpp style:ByteAry/memptr/strptr *prep solo files for testing *add metadata files by hand
+ Date: Mon Apr 28 15:26:48 2025 -0400
+ 19 files changed, 187 insertions(+), 529 deletions(-)
+ create mode 100644 test/atf_comp/kapi.MetadataReqV9Rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRequestV9rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRspV9Rdp
+Attempt 9: Running 'normalize'...
+# Running tests: checkclean,gitfile,scanreadme,ssimfile,normalize_acr,dkr_gen,omcli_gen,x2admin_gen,fast_gen,x2topo,src_lim,amc,bootstrap,shebang,encoding,readme,file_header,non-copyrighted,iffy_src,stray_gen,tempcode,lineendings,update_script,indent_script,cppcheck,indent_srcfile,ts_indent,normalize_amc_vis,normalize_acr_my,apm_check,
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:105  time:00:00:00.082930952  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:0
+atf_ci.begin  citest:checkclean  sandbox:N
+atf_ci.citest  citest:checkclean  runtime:00:00:00.026919752  success:Y  comment:"Check that no files are modified"
+atf_ci.begin  citest:gitfile  sandbox:N
+atf_ci.citest  citest:gitfile  runtime:00:00:00.406671759  success:Y  comment:"Update gitfile tables by scanning filesystem"
+atf_ci.begin  citest:scanreadme  sandbox:N
+atf_ci.citest  citest:scanreadme  runtime:00:00:00.10068488  success:Y  comment:"Update readme tables by scanning filesystem"
+atf_ci.begin  citest:ssimfile  sandbox:N
+atf_ci.citest  citest:ssimfile  runtime:00:00:00.029606593  success:Y  comment:"Check for .ssim files with no corresponding ssimfile entry"
+atf_ci.begin  citest:normalize_acr  sandbox:N
+data/dev/gitfile.ssim:2078: acr.ssimreq  ssimreq:atfdb.Comptest.comptest:%  record:dev.gitfile:test/atf_comp/kapi.MetadataRequestV9rdp  regx:test/atf_comp/%  comment:"record has no match in atfdb.comptest"
+dev.gitfile  gitfile:test/atf_comp/kapi.MetadataRequestV9rdp
+
+algo_lib.exec  cmd:"bin/acr  -query:% -check:Y -write:Y -x:Y -report:N -print:N"  comment:"exit code 1"
+atf_ci.citest  citest:normalize_acr  runtime:00:00:00.535835793  success:N  comment:"Read ssim databases into memory and write back"
+atf_ci.failed  citest:normalize_acr  success:N  comment:"See prior output for more information"
+report.atf_ci  n_citest:48  n_run:5  n_pass:4  success:N  comment:"Some errors occured. Please examine them and try again."
+Normalize failed! Amending last commit and retrying...
+[algornd/arnd.643 0afbae8d] adopt kapi.cpp style:ByteAry/memptr/strptr *prep solo files for testing *add metadata files by hand
+ Date: Mon Apr 28 15:26:48 2025 -0400
+ 19 files changed, 187 insertions(+), 529 deletions(-)
+ create mode 100644 test/atf_comp/kapi.MetadataReqV9Rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRequestV9rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRspV9Rdp
+Attempt 10: Running 'normalize'...
+# Running tests: checkclean,gitfile,scanreadme,ssimfile,normalize_acr,dkr_gen,omcli_gen,x2admin_gen,fast_gen,x2topo,src_lim,amc,bootstrap,shebang,encoding,readme,file_header,non-copyrighted,iffy_src,stray_gen,tempcode,lineendings,update_script,indent_script,cppcheck,indent_srcfile,ts_indent,normalize_amc_vis,normalize_acr_my,apm_check,
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:105  time:00:00:00.082281294  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:0
+atf_ci.begin  citest:checkclean  sandbox:N
+atf_ci.citest  citest:checkclean  runtime:00:00:00.026956628  success:Y  comment:"Check that no files are modified"
+atf_ci.begin  citest:gitfile  sandbox:N
+atf_ci.citest  citest:gitfile  runtime:00:00:00.406324929  success:Y  comment:"Update gitfile tables by scanning filesystem"
+atf_ci.begin  citest:scanreadme  sandbox:N
+atf_ci.citest  citest:scanreadme  runtime:00:00:00.09968902  success:Y  comment:"Update readme tables by scanning filesystem"
+atf_ci.begin  citest:ssimfile  sandbox:N
+atf_ci.citest  citest:ssimfile  runtime:00:00:00.028666887  success:Y  comment:"Check for .ssim files with no corresponding ssimfile entry"
+atf_ci.begin  citest:normalize_acr  sandbox:N
+data/dev/gitfile.ssim:2078: acr.ssimreq  ssimreq:atfdb.Comptest.comptest:%  record:dev.gitfile:test/atf_comp/kapi.MetadataRequestV9rdp  regx:test/atf_comp/%  comment:"record has no match in atfdb.comptest"
+dev.gitfile  gitfile:test/atf_comp/kapi.MetadataRequestV9rdp
+
+algo_lib.exec  cmd:"bin/acr  -query:% -check:Y -write:Y -x:Y -report:N -print:N"  comment:"exit code 1"
+atf_ci.citest  citest:normalize_acr  runtime:00:00:00.531077194  success:N  comment:"Read ssim databases into memory and write back"
+atf_ci.failed  citest:normalize_acr  success:N  comment:"See prior output for more information"
+report.atf_ci  n_citest:48  n_run:5  n_pass:4  success:N  comment:"Some errors occured. Please examine them and try again."
+Normalize failed! Amending last commit and retrying...
+[algornd/arnd.643 d2382c4e] adopt kapi.cpp style:ByteAry/memptr/strptr *prep solo files for testing *add metadata files by hand
+ Date: Mon Apr 28 15:26:48 2025 -0400
+ 19 files changed, 187 insertions(+), 529 deletions(-)
+ create mode 100644 test/atf_comp/kapi.MetadataReqV9Rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRequestV9rdp
+ create mode 100644 test/atf_comp/kapi.MetadataRspV9Rdp
+avorovich@nj1:~/arnd$ 

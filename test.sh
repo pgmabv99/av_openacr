@@ -7,6 +7,9 @@ test=kapi.MetadataRspV9Rdp
 atf_comp -e $test
 atf_comp -capture  $test
 atf_comp -run   $test
+acr % -check -x
+
+
 
 kapi -decode -hex -echo -req:/home/avorovich/av_openacr/108.1-108.2_0000_MetadataV9Req  
 kapi -decode -hex -echo -rsp:/home/avorovich/av_openacr/108.1-108.2_0000_MetadataV9Rsp  -apiver:9

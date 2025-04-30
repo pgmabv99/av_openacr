@@ -8,6 +8,7 @@ atf_comp -e $test
 atf_comp -capture  $test
 atf_comp -run   $test
 acr % -check -x
+git-add-to-last-commit
 
 
 

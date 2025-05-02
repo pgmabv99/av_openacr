@@ -119,7 +119,9 @@ acr_ed -create -field atf_snf.FMcb.time0                       -arg algo.SchedTi
 acr_ed -create -field atf_snf.FMcb.round_trip_dur_tot          -arg u64              -write -comment "total accumulated round-trip duration"
 acr_ed -create -field atf_snf.FMcb.mon_step_n                  -arg u64              -write -comment "number of latest mon step run"
 acr_ed -create -field atf_snf.FMcb.snf                         -arg atf_snf.FSnf     -reftype Ptr  -write -comment "pointer to snf"
-acr_ed -create -field atf_snf.FMcb.fd_out_file                 -arg i32              -write -comment "fd of output file"
+acr_ed -create -field atf_snf.FMcb.fd_out_file                 -arg i32              -write -comment ""
+acr_ed -create -field atf_snf.FMcb.i_kafka_solo                -arg i32              -write -comment "index of kafka req/rsp pair solo generation"
+acr_ed -create -field atf_snf.FMcb.kafka_solo_err_count        -arg i32              -write -comment "count of solo generation errors"
 
 # debug
 acr_ed -create -field atf_snf.FMcb.mac_print_flg               -arg bool             -write -comment "print MAC info at parse"

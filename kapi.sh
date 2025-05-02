@@ -1,4 +1,3 @@
 #!/bin/bash
-kapi -decode  -msgdir ../pcap/cap2
- kapi -decode  -req:/home/avorovich/pcap/cap/108.1-108.2_0000_Metadata_req.kafka   -echo
- kapi -decode  -req:../pcap/cap/108.1-108.2_0000_Metadata_req.kafka -rsp_auto:true  
+# kapi -decode  -msgdir ../pcap/cap2
+kapi -decode  -rsp:/home/avorovich/av_openacr/kafka_samples/bug1/151_108.1-108.3_0003_DescribeConfigsRsp.bin -apiver:3.32.3

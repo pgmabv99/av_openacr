@@ -1,6 +1,7 @@
 logging standalone files in cap_dir:/home/avorovich/pcap/cap
 ====--PcapFileProcess  fname:/home/avorovich/pcap/o1.pcap
 PcapFileProcess -EOF
+chmod: cannot access '/home/avorovich/pcap/cap/*.sh': No such file or directory
 
 =============tcp_pairs req with matching rsp
   
@@ -756,7 +757,7 @@ PcapFileProcess -EOF
 
 ==========================================batch stats
 TCP_FILTER.ATTENTION!!!!:N
-  "elapsed(sec)":0.136282  iframe_count:994  kafka_req_count_total:78  kafka_req_ack_count_total:76  "kafka_duration_avg (ns)":7104868  ind_tcp_pair_n:68  max_pkt_len:1514
+  "elapsed(sec)":0.169166  iframe_count:994  kafka_req_count_total:78  kafka_req_ack_count_total:76  "kafka_duration_avg (ns)":7104868  ind_tcp_pair_n:68  max_pkt_len:1514
 Kafka Non-ACK(BAD - request without response) Ratio Histogram:
 range:00-00%  count_of_tcp_pairs:33
 range:20-30%  count_of_tcp_pairs:1

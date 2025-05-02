@@ -8,6 +8,7 @@
 ## to show all dependencies
 ```
 acr dmmeta.ns:atf_snf  -ndown 99  -tree -e
+acr dmmeta.ns:atfdb  -ndown 99  -tree -e
 acr dmmeta.ns:atf_snf  -ndown 99  -tree > ~/av_openacr/atf_snf.sh
 
   dmmeta.fcleanup  field:atf_spdk.FCtrlr.ctrlr  comment:""
@@ -29,14 +30,16 @@ amc atf_snf.%
 
 # Show prototypes
 amc atf_snf.%TKaf% -proto
+amc algo.% -proto
 
 ```
 
 ## Visuals
 
 ```bash
-amc_vis atf_spdk.% > $HOME1/av_openacr/atf_spdk_viz.txt
-amc_vis x2net.% > $HOME1/av_openacr/x2net_viz.txt
+amc_vis atf_spdk.% > $HOME/av_openacr/atf_spdk_viz.txt
+amc_vis atfdb.% > $HOME/av_openacr/atfdb_viz.txt
+amc_vis x2net.% > $HOME/av_openacr/x2net_viz.txt
 amc_vis dmmeta.'(Ctype|Field|Ns)'
 ```
 to see all bad ref

@@ -62,11 +62,11 @@ atf_ci -cijob:% -check_clean:N |& timestamps
 // show tests
 acr atfdb.cijob:% -ndown 1 -tree
 
-```
-atf_ci.begin  citest:spnx  sandbox:N
-atf_ci.citest  citest:spnx  runtime:00:00:00.010202231  success:Y  comment:"Re-generate sphinx website from readme - check all links"
-report.atf_ci  n_citest:42  n_run:42  n_pass:42  success:Y  comment:"The coast is clear. Proceed with caution :-)
-```
+//remove nre tests from current commit
+git restore --source=HEAD~1 --staged --worktree -- test/atf_comp/
+git restore --source=HEAD~1 --staged --worktree -- data/atfdb
+git restore --source=HEAD~1 --staged --worktree -- data/dev/gitfile.ssim
+
 
 ## To See Prefixes
 

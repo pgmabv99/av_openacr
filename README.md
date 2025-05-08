@@ -185,6 +185,7 @@ dkr ps   -node:nj1.sn5.avorovich
 
 docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 
+sed -i 's/id_rsa22/id_rsa2/g'  ~/.ssh/config.d/*
 sed -i 's/id_rsa/id_rsa2/g'  ~/.ssh/config.d/*
 
 ```

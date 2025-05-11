@@ -11,4 +11,4 @@ tag=cat
 sudo ~/arnd/bin/atf_snf -dev:data0-8 -kapi:true  -out_file:$tag.pcap  -out_solo_dir:$tag > $ofile 2>&1; tail -n 20 $ofile
 exit
 
-q
+omcli -omnode:dev.ak-8.kafka-1   -kcat_plaintext  -kcat_cmd:"-t av1 -C -o beginning -e"      `

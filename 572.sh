@@ -187,6 +187,10 @@ acr_ed -create -field atf_snf.FDb.ind_uid  -arg atf_snf.FDctrport -hashfld dkrdb
 acr_ed -del    -field atf_snf.FDb.zd_dctrport                     -write || true
 acr_ed -create -field atf_snf.FDb.zd_dctrport                    -arg atf_snf.FDctrport -xref -write -comment ""
 
+# force reading of dkrdb.dctrport
+acr -merge -write <<EOF 
+    dmmeta.floadtuples  field:command.atf_snf.in  comment:""   
+EOF
 # -dmmeta.funique  field:dkrdb.Dctrport.dctrport  comment:""
 # +dmmeta.funique  field:dkrdb.Dctrport.uid  comment:""
 

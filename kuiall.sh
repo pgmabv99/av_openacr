@@ -12,3 +12,4 @@ exit
 
 #to be issued form a separate terminal
 omcli -omnode:dev.ak-8.% -start_clean
+ gdb --args /home/avorovich/arnd/temp/sandbox.abt_md/build/Linux-g++.debug-x86_64/omcli -omnode:dev.ak-8.% -status

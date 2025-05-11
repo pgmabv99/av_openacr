@@ -10,6 +10,7 @@
 acr dmmeta.ns:atf_snf  -ndown 99  -tree -e
 acr dmmeta.ns:atfdb  -ndown 99  -tree -e
 acr dmmeta.ns:atf_snf  -ndown 99  -tree > ~/av_openacr/atf_snf.sh
+acr dmmeta.ns:omcli -ndown 99  -tree > ~/av_openacr/omcli.sh
 
   dmmeta.fcleanup  field:atf_spdk.FCtrlr.ctrlr  comment:""
 
@@ -40,6 +41,7 @@ amc algo.% -proto
 amc_vis atf_spdk.% > $HOME/av_openacr/atf_spdk_viz.txt
 amc_vis atfdb.% > $HOME/av_openacr/atfdb_viz.txt
 amc_vis x2net.% > $HOME/av_openacr/x2net_viz.txt
+amc_vis omcli.% > $HOME/av_openacr/omcli_viz.txt
 amc_vis dmmeta.'(Ctype|Field|Ns)'
 ```
 to see all bad ref

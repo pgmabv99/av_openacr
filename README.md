@@ -210,3 +210,6 @@ omcli -omnode:dev.ak-8.uip -status
 // redpanda ui
 omcli -omnode:dev.ak-8.uir -start/stop
 
+
+#todo
+-duplicate corr_id in rdp ??

@@ -110,9 +110,12 @@ git show HEAD~3..HEAD |nogen
 
 ```
 git log --oneline --decorate --pretty=format:"%h %ad | %s%d [%an]" --date=short``
+
 We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.md) which can be installed with the bin/gitconfig-setup script. It automatically resolves conflicts in ssim files because it understands that nearby lines are not logically related (by default, git treats files like code, where nearby changes are considered a conflict). acr_dm can even resolve 3-way merges where one branch changes attribute A and another changes attribute B - it's not a conflict because different attributes were changed.
 
 ```
+### gitlab
+git-rebase-origin, normalize, gcli -create mr
 
 ### To Keep My Repo Under OpenACR Without Affecting Main Branch
 
@@ -198,18 +201,13 @@ omcli -omnode:dev.ak-8.b%  -status
 omcli -omnode:dev.ak-8.b%   -stop
 omcli -omnode:dev.ak-8.b%  -start 
 
-omcli -omnode:dev.ak-8.%  -stop
-omcli -omnode:dev.ak-8.b%  -start
-omcli -omnode:dev.ak-8.u%  -start
-omcli -omnode:dev.ak-8.%   -status
+## x2node x2rel
 
-// kafka ui
-omcli -omnode:dev.ak-8.uip -stop
-omcli -omnode:dev.ak-8.uip -start
-omcli -omnode:dev.ak-8.uip -status
-// redpanda ui
-omcli -omnode:dev.ak-8.uir -start/stop
+x2node -node:dev.x2-17 
+x2rel -product:x2 -build:N -create 
+x2rel -product:x2 -build:N -upload 
+x2rel -product:x2 -build:N -upload -omnode:dev.x2-4.x2-1
+x2rel -product:x2 -build:N -upload -omnode:dev.x2-4.x2-1 -dev
 
-
-#todo
+## todo
 -duplicate corr_id in rdp ??

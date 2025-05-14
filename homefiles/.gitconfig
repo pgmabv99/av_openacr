@@ -1,0 +1,21 @@
+[user]
+	name = alexey vorovich
+	email = alexey.vorovich@gmail.com
+[core]
+	sshCommand = ssh -i /home/avorovich/.ssh/algox2_av
+[alias]
+		up = pull origin master
+		co = checkout
+		br = branch
+		st = status --short
+		l = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --decorate -n 10
+		ll = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --decorate
+		su = submodule update --init --recursive
+		sh = show --name-only
+		a = commit -a --amend --no-edit
+		p = push origin HEAD
+		pf = push origin HEAD -f
+		f = fetch
+		r = rebase origin/master
+		ri = rebase -i origin/master
+		rc = rebase --continue

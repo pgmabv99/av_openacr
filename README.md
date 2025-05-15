@@ -164,6 +164,7 @@ ssh-add -l
 ## git cherry pick
 
 465c66d7 (HEAD -> algornd/arnd.604, origin/algornd/arnd.604) Issue algornd/arnd#604 atf_snf should detect if the device is in usegco 
+
 # acr docker cheat sheet
 ```
 #log to host of sn5 from sn1
@@ -180,7 +181,7 @@ x2node  -node:nj1.sn5.bm -root
 x2node  -node:nj1.sn1.bm -root
 
 #from sn1 : docker rm and docker start new container
-dkr -clean_run  -node:nj1.sn1.avorovich 
+dkr -help
 
 
 
@@ -200,6 +201,7 @@ sed -i 's/id_rsa/id_rsa2/g'  ~/.ssh/config.d/*
 omcli -omnode:dev.ak-8.b%  -status 
 omcli -omnode:dev.ak-8.b%   -stop
 omcli -omnode:dev.ak-8.b%  -start 
+omcli -omnode:dev.x2-4.%  -status
 
 ## x2node x2rel
 
@@ -211,3 +213,10 @@ x2rel -product:x2 -build:N -upload -omnode:dev.x2-4.x2-1 -dev
 
 ## todo
 -duplicate corr_id in rdp ??
+
+x2sup -v -v
+atf_x2
+x2gw
+netcat
+acr 
+kapi

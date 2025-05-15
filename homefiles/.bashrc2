@@ -24,21 +24,22 @@ alias acre="acr dmmeta.ns:atf_snf -ndown 99  -tree -e"
 alias ci="atf_ci -cijob:% |& timestamps"
 alias ci_clean="rm -rf temp/sand*"
 alias ppath='echo $PATH | tr ":" "\n"'
-alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'
-alias gitlog1='git log --oneline --decorate --pretty=format:"%h %ad | %s%d [%an]" --date=iso-strict'
-alias gitlog2='git log origin/$(git symbolic-ref --short HEAD)..HEAD --oneline --decorate --pretty=format:"%h %ad | %s%d [%an]" --date=iso-strict'
+alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'ci
+alias ppath='echo $PATH | tr ":" "\n"'
+
+
 alias al='source  ~/arnd/conf/alexei/bash_profile'
 
 # cp common files
 cp ~/av_openacr/homefiles/.gitconfig ~/.gitconfig
 cp ~/av_openacr/homefiles/.gdbinit ~/.gdbinit
 
+gitlog1() {
+  git log --oneline --decorate --pretty=format:"%h %ad %an | %s%d" --date=format:"%m-%d %H:%M" "$@"
+
+}
 gco() {
   # Check for uncommitted changes
-  # if ! git diff-index --quiet HEAD --; then
-  #   echo "You have uncommitted changes. Please commit or stash them before switching branches."
-  #   return 1
-  # fi
 
   # Check if a branch name is passed as an argument or prompt the user
   if [ -z "$1" ]; then
@@ -51,15 +52,18 @@ gco() {
   git checkout algornd/arnd.$branch
   
   # Display the last two commits
-  echo "Last 2 commits on branch algornd/arnd.$branch:"
+  echo "Last  commits on branch algornd/arnd.$branch:"
   git log -n 3 --oneline --date=local
+
+  echo " recompile , man !!"
+  ai
 }
 
 
 gb(){
   git for-each-ref \
    --sort=-committerdate \
-   --format="%(refname:short) - %(committerdate:short) - %(subject)" \
+   --format="%(refname:short) - %(committername) %(committerdate:short) - %(subject)" \
   refs/heads/ | \
   while read branch rest; do
     ahead=$(git rev-list --count "$branch" ^master)
@@ -69,3 +73,47 @@ gb(){
   echo "     "
   echo "Current branch: $(git rev-parse --abbrev-ref HEAD)"
 }
+
+# set -x
+# from alexei as of 5/14/25
+
+if [ "$PS1" != "" ]; then
+    unset SSH_ASKPASS
+    HISTFILESIZE=100000
+    HISTCONTROL="ignoreboth"
+    alias more=less
+    shopt -s histappend
+    PROMPT_COMMAND='history -a'
+    bind "set completion-query-items 1000"
+    HOSTNAME=`hostname -f 2>/dev/null`
+    PS1="\e[0;34m[\$? \D{%b %d %H:%M:%S}] \u@$HOSTNAME\e[0;32m:\w\e[m \n\$ "
+    LS_OPTIONS='--color=auto --quoting-style=shell'
+
+    # PREV="$PWD"
+    # cd $(dirname $(dirname $(dirname "$(readlink -f ~/.bash_profile)"))) 2>/dev/null && $(bin/acr_compl -install) 
+    # cd "$PREV"
+    # PREV="$PWD"
+    cd $HOME/arnd 
+    acr_compl -install >/dev/null 2>&1
+    cd "$PREV"
+fi
+
+# acr_compl -install needs a list of executables to work
+# so it cannot be invoked until we switch to a particular directory
+function beginwork() {
+    cd "$1"  
+    $(acr_compl -install)
+}
+beginwork 
+# beginwork "$HOME/arnd"
+# export section
+export PS1
+export LS_OPTIONS
+export PATH
+export EDITOR
+export HISTFILESIZE
+export HISTCONTROL
+export PROMPT_COMMAND
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export TERM=xterm-256color

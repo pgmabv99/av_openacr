@@ -28,11 +28,25 @@ alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'ci
 alias ppath='echo $PATH | tr ":" "\n"'
 
 
+
 alias al='source  ~/arnd/conf/alexei/bash_profile'
 
 # cp common files
 cp ~/av_openacr/homefiles/.gitconfig ~/.gitconfig
 cp ~/av_openacr/homefiles/.gdbinit ~/.gdbinit
+
+up() {
+  set -x
+  rsync -ac --delete \
+    --exclude=build/x2ui \
+    --exclude=node_modules \
+    --exclude=temp/* \
+    --exclude=ts \
+    . x2usr@dev.x2-17:arnd
+  rsync -ac --delete ../av_openacr  x2usr@dev.x2-17: 
+  rsync -ac --delete ../.bashrc  x2usr@dev.x2-17: 
+  set +x
+}
 
 gitlog1() {
   git log --oneline --decorate --pretty=format:"%h %ad %an | %s%d" --date=format:"%m-%d %H:%M" "$@"
@@ -93,9 +107,9 @@ if [ "$PS1" != "" ]; then
     # cd $(dirname $(dirname $(dirname "$(readlink -f ~/.bash_profile)"))) 2>/dev/null && $(bin/acr_compl -install) 
     # cd "$PREV"
     # PREV="$PWD"
-    cd $HOME/arnd 
-    acr_compl -install >/dev/null 2>&1
-    cd "$PREV"
+    # cd $HOME/arnd 
+    # acr_compl -install >/dev/null 2>&1
+    # cd "$PREV"
 fi
 
 # acr_compl -install needs a list of executables to work
@@ -104,8 +118,7 @@ function beginwork() {
     cd "$1"  
     $(acr_compl -install)
 }
-beginwork 
-# beginwork "$HOME/arnd"
+# beginwork 
 # export section
 export PS1
 export LS_OPTIONS

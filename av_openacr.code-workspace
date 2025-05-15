@@ -2,7 +2,7 @@
 
 	"folders": [
 		{
-			"path": "."
+			"path": "../av_openacr"
 		},
 		{
 			"path": "../arnd"
@@ -19,6 +19,9 @@
 	],
 	
 	"settings": {
+		"terminal.integrated.env.linux": {
+			"PATH": "${env:PATH}:${env:HOME}/arnd/bin"
+		},
 		"files.associations": {
 			"array": "cpp",
 			"atomic": "cpp",

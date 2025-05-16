@@ -60,7 +60,7 @@ dot -Tsvg av_openacr/meng -o av_openacr/meng.svg
 ## to run pipeline locally 
 
 cpp-indent cpp/atf_snf/atf_snf.cpp
-atf_ci -cijob:% -check_clean:N |& timestamps
+atf_ci -cijob:% -check_clean:N |& timestampsatf
 // show tests
 acr atfdb.cijob:% -ndown 1 -tree
 

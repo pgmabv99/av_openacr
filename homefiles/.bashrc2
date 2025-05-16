@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PATH=.:$PATH:$HOME/av_openacr:$HOME/arnd/bin
+PATH=.:bin:$HOME/arnd/bin:$HOME/av_openacr:$PATH
 
 # the rest for interactive shell only
 # hostname
@@ -106,10 +106,10 @@ if [ "$PS1" != "" ]; then
     # PREV="$PWD"
     # cd $(dirname $(dirname $(dirname "$(readlink -f ~/.bash_profile)"))) 2>/dev/null && $(bin/acr_compl -install) 
     # cd "$PREV"
-    # PREV="$PWD"
-    # cd $HOME/arnd 
-    # acr_compl -install >/dev/null 2>&1
-    # cd "$PREV"
+    PREV="$PWD"
+    cd $HOME/arnd 
+    acr_compl -install >/dev/null 2>&1
+    cd "$PREV"
 fi
 
 # acr_compl -install needs a list of executables to work

@@ -19,9 +19,9 @@
 	],
 	
 	"settings": {
-		"terminal.integrated.env.linux": {
-			"PATH": "${env:PATH}:${env:HOME}/arnd/bin"
-		},
+		// "terminal.integrated.env.linux": {
+		// 	"PATH": "${env:PATH}:arnd/bin"
+		// },
 		"files.associations": {
 			"array": "cpp",
 			"atomic": "cpp",

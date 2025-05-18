@@ -191,8 +191,7 @@ dkr ps   -node:nj1.sn5.avorovich
 
 docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 
-sed -i 's/id_rsa22/id_rsa2/g'  ~/.ssh/config.d/*
-sed -i 's/id_rsa/id_rsa2/g'  ~/.ssh/config.d/*
+
 
 ```
 
@@ -211,6 +210,17 @@ x2rel -product:x2 -build:N -upload
 x2rel -product:x2 -build:N -upload -omnode:dev.x2-4.x2-1
 x2rel -product:x2 -build:N -upload -omnode:dev.x2-4.x2-1 -dev
 
+## private keys 
+
+sed -i 's/id_rsa/algox2_av/g'  ~/.ssh/config.d/*
+sed -i 's/dkr/algox2_av/g'  ~/.ssh/config.d/*
+algo_x2: laptop->nj1.sn1.avorovich
+algo_x2: laptop->dev.x2-17
+algo_x2:  nj1.sn1.avorovich->dev.x2-17
+algo_x2:  nj1.sn1.avorovich->gitlab
+ 
+
+
 ## todo
 -duplicate corr_id in rdp ??
 
@@ -220,3 +230,6 @@ x2gw
 netcat
 acr 
 kapi
+
+
+-add errcheck in x2node for failed key

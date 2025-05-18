@@ -12,13 +12,14 @@
 
 
 
-omcli -omnode:dev.x2-4.%  -start_clean
+omcli -omnode:dev.x2-4.x2-1 -start_clean
 omcli -omnode:dev.x2-4.kafkaui-1   -start_clean
 
 omcli -omnode:dev.x2-4.%  -status
 omcli -omnode:dev.x2-4.kafkaui-1   -status
 
 omcli -omnode:dev.x2-4.%  -stop
+omcli -omnode:dev.x2-4.x2-1 -stop
 omcli -omnode:dev.x2-4.kafkaui-1   -stop
 
 # goto browser url

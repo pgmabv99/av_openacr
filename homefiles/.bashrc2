@@ -5,9 +5,9 @@ PATH=.:bin:$HOME/arnd/bin:$HOME/av_openacr:$PATH
 # the rest for interactive shell only
 # hostname
 #lspci -nn | grep -i nvm
-# tmp_code=$(find /home/avorovich/.vscode-server/cli/servers/ -type d -name "Stable*" | sort | tail -n 1)
-# echo "tmp_code=$tmp_code"
+tmp_code=$(find "$HOME/.vscode-server/cli/servers/" -type d -name "Stable*" | sort | tail -n 1)
 export EDITOR="$tmp_code/server/bin/remote-cli/code --wait"
+# export EDITOR="/home/avorovich/.vscode-server/cli/servers/Stable-4949701c880d4bdb949e3c0e6b400288da7f474b/server/bin/remote-cli/code --wait"
 # this does not work
 # git config --global core.editor "$tmp_code/server/bin/remote-cli/code"
 # lspci -nn | grep -i ConnectX-6
@@ -28,19 +28,23 @@ alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'ci
 alias ppath='echo $PATH | tr ":" "\n"'
 
 
-
 alias al='source  ~/arnd/conf/alexei/bash_profile'
 
 # cp common files
 cp ~/av_openacr/homefiles/.gitconfig ~/.gitconfig
 cp ~/av_openacr/homefiles/.gdbinit ~/.gdbinit
 
+abtd(){
+ bin/abt -target:% -cfg:debug
+}
+
 up() {
+  abtd
   set -x
   rsync -ac --delete \
     --exclude=build/x2ui \
     --exclude=node_modules \
-    --exclude=temp/* \
+    --exclude=temp/ \
     --exclude=ts \
     . x2usr@dev.x2-17:arnd
   rsync -ac --delete ../av_openacr  x2usr@dev.x2-17: 
@@ -86,6 +90,10 @@ gb(){
   done
   echo "     "
   echo "Current branch: $(git rev-parse --abbrev-ref HEAD)"
+}
+
+ident(){
+     bin/cpp-indent  ${file}; update-hdr
 }
 
 # set -x

@@ -1,10 +1,12 @@
 #!/bin/bash
+bin/x2node  -node:'dev.x2-18|dev.x2-17|dev.x2-19' -cmd:hostname -q:N -fail_on_error:Y
+gdb --args bin/x2node -node:'dev.x2-18|dev.x2-17|dev.x2-19' -cmd:hostname -q:N -fail_on_error:Y
 
-bin/x2node  -node:'dev.x2-18|dev.x2-17|dev.x2-19' -cmd:hostname -q:Y -fail_on_error:Y
+
 echo "---------------------"
-omcli -omnode:dev.x2-4.x2% -start_clean -verbose
+omcli -omnode:dev.x2-4.x2-% -start_clean -verbose
 echo "---------------------"
-omcli -omnode:dev.x2-4.x2% -status -verbose
+omcli -omnode:dev.x2-4.x2-% -status -verbose
 exit 0
 
 

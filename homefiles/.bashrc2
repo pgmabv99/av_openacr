@@ -38,7 +38,8 @@ cp ~/av_openacr/homefiles/.gdbinit ~/.gdbinit
 abtd(){
  bin/abt -target:% -cfg:debug
  abt   -cfg:debug % -install
- ls -ltr bin/x2*
+#  abt   -cfg:release % -install
+#  ls -ltr bin/x2*
 }
 
 up() {

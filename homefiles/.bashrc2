@@ -42,7 +42,6 @@ abtd(){
 }
 
 up() {
-  # abtd
   set -x
   rsync -ac --delete \
     --exclude=build/x2ui \

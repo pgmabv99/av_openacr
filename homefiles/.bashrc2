@@ -1,6 +1,7 @@
 #!/bin/bash
 
-PATH=.:bin:$HOME/arnd/bin:$HOME/av_openacr:$PATH
+# PATH=.:bin:$HOME/arnd/bin:$HOME/av_openacr:$PATH
+PATH=bin:$HOME/arnd/bin:$HOME/av_openacr:$PATH
 
 # the rest for interactive shell only
 # hostname
@@ -36,16 +37,19 @@ cp ~/av_openacr/homefiles/.gdbinit ~/.gdbinit
 
 abtd(){
  bin/abt -target:% -cfg:debug
+ abt   -cfg:debug % -install
+ ls -ltr bin/x2*
 }
 
 up() {
-  abtd
+  # abtd
   set -x
   rsync -ac --delete \
     --exclude=build/x2ui \
     --exclude=node_modules \
     --exclude=temp/ \
     --exclude=ts \
+    --exclude=build/debug \
     . x2usr@dev.x2-17:arnd
   rsync -ac --delete ../av_openacr  x2usr@dev.x2-17: 
   rsync -ac --delete ../.bashrc  x2usr@dev.x2-17: 
@@ -74,7 +78,7 @@ gco() {
   git log -n 3 --oneline --date=local
 
   echo " recompile , man !!"
-  ai
+  abtd
 }
 
 

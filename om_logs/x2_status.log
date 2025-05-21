@@ -1,0 +1,40 @@
+--
+script:info  node:dev.kafkaui-5 omnode:dev.x2-4.kafkaui-1 option:status 
+Checking kafkaui status...
+COMMAND   PID     USER   FD   TYPE   DEVICE SIZE/OFF NODE NAME
+java    10243 kafkausr  393u  IPv6 16401486      0t0  TCP *:http-alt (LISTEN)
+java    10243 kafkausr  395u  IPv6 16372576      0t0  UDP *:37486 
+java    10243 kafkausr  398u  IPv6 16405662      0t0  TCP 172.17.0.24:36532->dev.x2-4.x2-4.ext:1558 (ESTABLISHED)
+java    10243 kafkausr  399u  IPv6 16405663      0t0  TCP 172.17.0.24:36536->dev.x2-4.x2-4.ext:1558 (ESTABLISHED)
+java    10243 kafkausr  400u  IPv6 16405664      0t0  TCP 172.17.0.24:53336->dev.x2-4.x2-1.ext:1519 (ESTABLISHED)
+java    10243 kafkausr  401u  IPv6 16405665      0t0  TCP 172.17.0.24:37386->dev.x2-4.x2-2.ext:1532 (ESTABLISHED)
+java    10243 kafkausr  402u  IPv6 16405666      0t0  TCP 172.17.0.24:41540->dev.x2-4.x2-3.ext:1545 (ESTABLISHED)
+script:info  node:dev.kafkaw-04 omnode:dev.x2-4.kafkaw-1 option:status 
+COMMAND  PID      USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+java    2005 kafkawrkr  228u  IPv6 2333203      0t0  TCP *:1080 (LISTEN)
+script:info  node:dev.kafkaw-12 omnode:dev.x2-4.kafkaw-2 option:status 
+COMMAND  PID      USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+java    2018 kafkawrkr  228u  IPv6 2252343      0t0  TCP *:1130 (LISTEN)
+script:info  node:dev.rdpui-5 omnode:dev.x2-4.rdpui-1 option:status 
+Checking status rdpui...
+ 1021 rdpusr    0:01 ./rdpui -config.filepath=rdp_console.yaml
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-1 option:status 
+Checking status x2...
+COMMAND    PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    120945 x2usr   27u  IPv4 5727237      0t0  TCP *:1519 (LISTEN)
+x2gw    120945 x2usr   32u  IPv4 5727242      0t0  TCP dev.x2-4.x2-1.ext:1519->dev.x2-4.kafkaui-1.ext:53336 (ESTABLISHED)
+x2gw    120945 x2usr   33u  IPv4 5727242      0t0  TCP dev.x2-4.x2-1.ext:1519->dev.x2-4.kafkaui-1.ext:53336 (ESTABLISHED)
+x2node.error node:dev.x2-18  status:255  cmd:"ssh -q x2usr@dev.x2-18 $'./$(hostname) status'"
+x2node.error node:dev.x2-19  status:255  cmd:"ssh -q x2usr@dev.x2-19 $'./$(hostname) status'"
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-4 option:status 
+Checking status x2...
+COMMAND  PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    3694 x2usr   27u  IPv4 2751929      0t0  TCP *:1558 (LISTEN)
+x2gw    3694 x2usr   32u  IPv4 2751934      0t0  TCP dev.x2-4.x2-4.ext:1558->dev.x2-4.kafkaui-1.ext:36532 (ESTABLISHED)
+x2gw    3694 x2usr   33u  IPv4 2751934      0t0  TCP dev.x2-4.x2-4.ext:1558->dev.x2-4.kafkaui-1.ext:36532 (ESTABLISHED)
+x2gw    3694 x2usr   34u  IPv4 2751936      0t0  TCP dev.x2-4.x2-4.ext:1558->dev.x2-4.kafkaui-1.ext:36536 (ESTABLISHED)
+x2gw    3694 x2usr   35u  IPv4 2751936      0t0  TCP dev.x2-4.x2-4.ext:1558->dev.x2-4.kafkaui-1.ext:36536 (ESTABLISHED)
+x2node.error node:dev.x2w-08  status:255  cmd:"ssh -q x2w@dev.x2w-08 $'./$(hostname) status'"
+x2node.error node:dev.x2-18  status:255  cmd:"ssh -q x2usr@dev.x2-18 $'./$(hostname) status'"  comment:failed
+x2node.error node:dev.x2-19  status:255  cmd:"ssh -q x2usr@dev.x2-19 $'./$(hostname) status'"  comment:failed
+x2node.error node:dev.x2w-08  status:255  cmd:"ssh -q x2w@dev.x2w-08 $'./$(hostname) status'"  comment:failed

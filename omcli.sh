@@ -8,6 +8,8 @@ echo "---------------------"
 omcli -omnode:dev.x2-4.x2-% -start_clean -verbose
 echo "---------------------"
 omcli -omnode:dev.x2-4.x2-% -status -verbose
+
+
 exit 0
 
 
@@ -24,18 +26,12 @@ x2rel -product:x2 -omnode:dev.x2-4.x2%    -upload -dev
 
 # # for i in 1 2 3 4; do
 # #   x2rel -product:x2 -omnode:dev.x2-4.x2-%    -upload -dev;
-# # done
+# # doneomcli -omnode:dev.x2-4.x2-% -start_clean -verbose
 
 
 
 omcli -omnode:dev.x2-4.% -start_clean -verbose
-omcli -omnode:dev.x2-4.kafkaui-1   -start_clean
-
-omcli -omnode:dev.x2-4.%  -status
-omcli -omnode:dev.x2-4.kafkaui-1   -status
-
-omcli -omnode:dev.x2-4.%  -stop
-omcli -omnode:dev.x2-4.x2-1 -stop
 omcli -omnode:dev.x2-4.kafkaui-1   -stop
+omcli -omnode:dev.x2-4.kafkaui-1   -start_clean
 
 # goto browser url

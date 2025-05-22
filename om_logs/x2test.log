@@ -1,0 +1,247 @@
+atf_ci.begin  citest:smokex2_ib  sandbox:N
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:106  time:00:00:00.083837044  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:0
+atf_ci.smokex2  omenv:dev.x2-4  apihost:""  mcasttype:ib  force:N
+x2admin.info node:ct0.vm1.nginx-1  cmd:"x2admin/gen/script/ct0.vm1.nginx-1  sshconfig update"
+x2admin.info node:ct0.vm1.nginx2-1  cmd:"x2admin/gen/script/ct0.vm1.nginx2-1  sshconfig update"
+x2admin.info node:ct0.vm1.postfix-1  cmd:"x2admin/gen/script/ct0.vm1.postfix-1  sshconfig update"
+x2admin.info node:ct0.vm1.user-alebedev  cmd:"x2admin/gen/script/ct0.vm1.user-alebedev  sshconfig update"
+x2admin.info node:ct0.vm1.user-apolov  cmd:"x2admin/gen/script/ct0.vm1.user-apolov  sshconfig update"
+x2admin.info node:ct0.vm1.user-vparizhs  cmd:"x2admin/gen/script/ct0.vm1.user-vparizhs  sshconfig update"
+x2admin.info node:ct0.vm1.vm  cmd:"x2admin/gen/script/ct0.vm1.vm  sshconfig update"
+x2admin.info node:dev.easyca-01  cmd:"x2admin/gen/script/dev.easyca-01  sshconfig update"
+x2admin.info node:dev.gitlab-docs  cmd:"x2admin/gen/script/dev.gitlab-docs  sshconfig update"
+x2admin.info node:dev.gitlab-images  cmd:"x2admin/gen/script/dev.gitlab-images  sshconfig update"
+x2admin.info node:dev.gitlab-main  cmd:"x2admin/gen/script/dev.gitlab-main  sshconfig update"
+x2admin.info node:dev.gitlab-runner-1  cmd:"x2admin/gen/script/dev.gitlab-runner-1  sshconfig update"
+x2admin.info node:dev.gitlab-runner-2  cmd:"x2admin/gen/script/dev.gitlab-runner-2  sshconfig update"
+x2admin.info node:dev.gitlab-runner-3  cmd:"x2admin/gen/script/dev.gitlab-runner-3  sshconfig update"
+x2admin.info node:dev.gitlab-runner-4  cmd:"x2admin/gen/script/dev.gitlab-runner-4  sshconfig update"
+x2admin.info node:dev.gitlab-runner-5  cmd:"x2admin/gen/script/dev.gitlab-runner-5  sshconfig update"
+x2admin.info node:dev.gitlab-runner-6  cmd:"x2admin/gen/script/dev.gitlab-runner-6  sshconfig update"
+x2admin.info node:dev.gitlab-runner-docs  cmd:"x2admin/gen/script/dev.gitlab-runner-docs  sshconfig update"
+x2admin.info node:dev.kafka-01  cmd:"x2admin/gen/script/dev.kafka-01  sshconfig update"
+x2admin.info node:dev.kafka-02  cmd:"x2admin/gen/script/dev.kafka-02  sshconfig update"
+x2admin.info node:dev.kafka-03  cmd:"x2admin/gen/script/dev.kafka-03  sshconfig update"
+x2admin.info node:dev.kafka-04  cmd:"x2admin/gen/script/dev.kafka-04  sshconfig update"
+x2admin.info node:dev.kafka-05  cmd:"x2admin/gen/script/dev.kafka-05  sshconfig update"
+x2admin.info node:dev.kafka-06  cmd:"x2admin/gen/script/dev.kafka-06  sshconfig update"
+x2admin.info node:dev.kafka-07  cmd:"x2admin/gen/script/dev.kafka-07  sshconfig update"
+x2admin.info node:dev.kafka-08  cmd:"x2admin/gen/script/dev.kafka-08  sshconfig update"
+x2admin.info node:dev.kafkaui-1  cmd:"x2admin/gen/script/dev.kafkaui-1  sshconfig update"
+x2admin.info node:dev.kafkaui-2  cmd:"x2admin/gen/script/dev.kafkaui-2  sshconfig update"
+x2admin.info node:dev.kafkaui-3  cmd:"x2admin/gen/script/dev.kafkaui-3  sshconfig update"
+x2admin.info node:dev.kafkaui-4  cmd:"x2admin/gen/script/dev.kafkaui-4  sshconfig update"
+x2admin.info node:dev.kafkaui-5  cmd:"x2admin/gen/script/dev.kafkaui-5  sshconfig update"
+x2admin.info node:dev.kafkaw-01  cmd:"x2admin/gen/script/dev.kafkaw-01  sshconfig update"
+x2admin.info node:dev.kafkaw-02  cmd:"x2admin/gen/script/dev.kafkaw-02  sshconfig update"
+x2admin.info node:dev.kafkaw-03  cmd:"x2admin/gen/script/dev.kafkaw-03  sshconfig update"
+x2admin.info node:dev.kafkaw-04  cmd:"x2admin/gen/script/dev.kafkaw-04  sshconfig update"
+x2admin.info node:dev.kafkaw-05  cmd:"x2admin/gen/script/dev.kafkaw-05  sshconfig update"
+x2admin.info node:dev.kafkaw-06  cmd:"x2admin/gen/script/dev.kafkaw-06  sshconfig update"
+x2admin.info node:dev.kafkaw-07  cmd:"x2admin/gen/script/dev.kafkaw-07  sshconfig update"
+x2admin.info node:dev.kafkaw-08  cmd:"x2admin/gen/script/dev.kafkaw-08  sshconfig update"
+x2admin.info node:dev.kafkaw-09  cmd:"x2admin/gen/script/dev.kafkaw-09  sshconfig update"
+x2admin.info node:dev.kafkaw-10  cmd:"x2admin/gen/script/dev.kafkaw-10  sshconfig update"
+x2admin.info node:dev.kafkaw-11  cmd:"x2admin/gen/script/dev.kafkaw-11  sshconfig update"
+x2admin.info node:dev.kafkaw-12  cmd:"x2admin/gen/script/dev.kafkaw-12  sshconfig update"
+x2admin.info node:dev.kafkaw-13  cmd:"x2admin/gen/script/dev.kafkaw-13  sshconfig update"
+x2admin.info node:dev.kafkaw-14  cmd:"x2admin/gen/script/dev.kafkaw-14  sshconfig update"
+x2admin.info node:dev.kafkaw-15  cmd:"x2admin/gen/script/dev.kafkaw-15  sshconfig update"
+x2admin.info node:dev.kafkaw-16  cmd:"x2admin/gen/script/dev.kafkaw-16  sshconfig update"
+x2admin.info node:dev.plantuml-01  cmd:"x2admin/gen/script/dev.plantuml-01  sshconfig update"
+x2admin.info node:dev.plantuml-02  cmd:"x2admin/gen/script/dev.plantuml-02  sshconfig update"
+x2admin.info node:dev.rdp-1  cmd:"x2admin/gen/script/dev.rdp-1  sshconfig update"
+x2admin.info node:dev.rdp-2  cmd:"x2admin/gen/script/dev.rdp-2  sshconfig update"
+x2admin.info node:dev.rdp-3  cmd:"x2admin/gen/script/dev.rdp-3  sshconfig update"
+x2admin.info node:dev.rdp-4  cmd:"x2admin/gen/script/dev.rdp-4  sshconfig update"
+x2admin.info node:dev.rdpui-1  cmd:"x2admin/gen/script/dev.rdpui-1  sshconfig update"
+x2admin.info node:dev.rdpui-2  cmd:"x2admin/gen/script/dev.rdpui-2  sshconfig update"
+x2admin.info node:dev.rdpui-3  cmd:"x2admin/gen/script/dev.rdpui-3  sshconfig update"
+x2admin.info node:dev.rdpui-4  cmd:"x2admin/gen/script/dev.rdpui-4  sshconfig update"
+x2admin.info node:dev.rdpui-5  cmd:"x2admin/gen/script/dev.rdpui-5  sshconfig update"
+x2admin.info node:dev.vault-1  cmd:"x2admin/gen/script/dev.vault-1  sshconfig update"
+x2admin.info node:dev.vault-2  cmd:"x2admin/gen/script/dev.vault-2  sshconfig update"
+x2admin.info node:dev.wiki-algornd  cmd:"x2admin/gen/script/dev.wiki-algornd  sshconfig update"
+x2admin.info node:dev.wiki-qa1  cmd:"x2admin/gen/script/dev.wiki-qa1  sshconfig update"
+x2admin.info node:dev.wiki-qa2  cmd:"x2admin/gen/script/dev.wiki-qa2  sshconfig update"
+x2admin.info node:dev.wiki-qa3  cmd:"x2admin/gen/script/dev.wiki-qa3  sshconfig update"
+x2admin.info node:dev.x2-01  cmd:"x2admin/gen/script/dev.x2-01  sshconfig update"
+x2admin.info node:dev.x2-02  cmd:"x2admin/gen/script/dev.x2-02  sshconfig update"
+x2admin.info node:dev.x2-03  cmd:"x2admin/gen/script/dev.x2-03  sshconfig update"
+x2admin.info node:dev.x2-04  cmd:"x2admin/gen/script/dev.x2-04  sshconfig update"
+x2admin.info node:dev.x2-05  cmd:"x2admin/gen/script/dev.x2-05  sshconfig update"
+x2admin.info node:dev.x2-06  cmd:"x2admin/gen/script/dev.x2-06  sshconfig update"
+x2admin.info node:dev.x2-07  cmd:"x2admin/gen/script/dev.x2-07  sshconfig update"
+x2admin.info node:dev.x2-08  cmd:"x2admin/gen/script/dev.x2-08  sshconfig update"
+x2admin.info node:dev.x2-09  cmd:"x2admin/gen/script/dev.x2-09  sshconfig update"
+x2admin.info node:dev.x2-10  cmd:"x2admin/gen/script/dev.x2-10  sshconfig update"
+x2admin.info node:dev.x2-11  cmd:"x2admin/gen/script/dev.x2-11  sshconfig update"
+x2admin.info node:dev.x2-12  cmd:"x2admin/gen/script/dev.x2-12  sshconfig update"
+x2admin.info node:dev.x2-13  cmd:"x2admin/gen/script/dev.x2-13  sshconfig update"
+x2admin.info node:dev.x2-14  cmd:"x2admin/gen/script/dev.x2-14  sshconfig update"
+x2admin.info node:dev.x2-15  cmd:"x2admin/gen/script/dev.x2-15  sshconfig update"
+x2admin.info node:dev.x2-16  cmd:"x2admin/gen/script/dev.x2-16  sshconfig update"
+x2admin.info node:dev.x2-17  cmd:"x2admin/gen/script/dev.x2-17  sshconfig update"
+x2admin.info node:dev.x2-18  cmd:"x2admin/gen/script/dev.x2-18  sshconfig update"
+x2admin.info node:dev.x2-19  cmd:"x2admin/gen/script/dev.x2-19  sshconfig update"
+x2admin.info node:dev.x2-20  cmd:"x2admin/gen/script/dev.x2-20  sshconfig update"
+x2admin.info node:dev.x2ui-1  cmd:"x2admin/gen/script/dev.x2ui-1  sshconfig update"
+x2admin.info node:dev.x2ui-2  cmd:"x2admin/gen/script/dev.x2ui-2  sshconfig update"
+x2admin.info node:dev.x2ui-3  cmd:"x2admin/gen/script/dev.x2ui-3  sshconfig update"
+x2admin.info node:dev.x2ui-4  cmd:"x2admin/gen/script/dev.x2ui-4  sshconfig update"
+x2admin.info node:dev.x2w-01  cmd:"x2admin/gen/script/dev.x2w-01  sshconfig update"
+x2admin.info node:dev.x2w-02  cmd:"x2admin/gen/script/dev.x2w-02  sshconfig update"
+x2admin.info node:dev.x2w-03  cmd:"x2admin/gen/script/dev.x2w-03  sshconfig update"
+x2admin.info node:dev.x2w-04  cmd:"x2admin/gen/script/dev.x2w-04  sshconfig update"
+x2admin.info node:dev.x2w-05  cmd:"x2admin/gen/script/dev.x2w-05  sshconfig update"
+x2admin.info node:dev.x2w-06  cmd:"x2admin/gen/script/dev.x2w-06  sshconfig update"
+x2admin.info node:dev.x2w-07  cmd:"x2admin/gen/script/dev.x2w-07  sshconfig update"
+x2admin.info node:dev.x2w-08  cmd:"x2admin/gen/script/dev.x2w-08  sshconfig update"
+x2admin.info node:nj1.sn1.bm  cmd:"x2admin/gen/script/nj1.sn1.bm  sshconfig update"
+x2admin.info node:nj1.sn1.nginx-1  cmd:"x2admin/gen/script/nj1.sn1.nginx-1  sshconfig update"
+x2admin.info node:nj1.sn1.postfix-1  cmd:"x2admin/gen/script/nj1.sn1.postfix-1  sshconfig update"
+x2admin.info node:nj1.sn1.user-alebedev  cmd:"x2admin/gen/script/nj1.sn1.user-alebedev  sshconfig update"
+x2admin.info node:nj1.sn1.user-alexjedi  cmd:"x2admin/gen/script/nj1.sn1.user-alexjedi  sshconfig update"
+x2admin.info node:nj1.sn1.user-apolov  cmd:"x2admin/gen/script/nj1.sn1.user-apolov  sshconfig update"
+x2admin.info node:nj1.sn1.user-avorovich  cmd:"x2admin/gen/script/nj1.sn1.user-avorovich  sshconfig update"
+x2admin.info node:nj1.sn1.user-shared  cmd:"x2admin/gen/script/nj1.sn1.user-shared  sshconfig update"
+x2admin.info node:nj1.sn1.user-vparizhs  cmd:"x2admin/gen/script/nj1.sn1.user-vparizhs  sshconfig update"
+x2admin.info node:nj1.sn2.bm  cmd:"x2admin/gen/script/nj1.sn2.bm  sshconfig update"
+x2admin.info node:nj1.sn2.user-alebedev  cmd:"x2admin/gen/script/nj1.sn2.user-alebedev  sshconfig update"
+x2admin.info node:nj1.sn2.user-apolov  cmd:"x2admin/gen/script/nj1.sn2.user-apolov  sshconfig update"
+x2admin.info node:nj1.sn2.user-vparizhs  cmd:"x2admin/gen/script/nj1.sn2.user-vparizhs  sshconfig update"
+x2admin.info node:nj1.sn3.bm  cmd:"x2admin/gen/script/nj1.sn3.bm  sshconfig update"
+x2admin.info node:nj1.sn3.user-alebedev  cmd:"x2admin/gen/script/nj1.sn3.user-alebedev  sshconfig update"
+x2admin.info node:nj1.sn3.user-apolov  cmd:"x2admin/gen/script/nj1.sn3.user-apolov  sshconfig update"
+x2admin.info node:nj1.sn3.user-vparizhs  cmd:"x2admin/gen/script/nj1.sn3.user-vparizhs  sshconfig update"
+x2admin.info node:nj1.sn4.bm  cmd:"x2admin/gen/script/nj1.sn4.bm  sshconfig update"
+x2admin.info node:nj1.sn4.user-alebedev  cmd:"x2admin/gen/script/nj1.sn4.user-alebedev  sshconfig update"
+x2admin.info node:nj1.sn4.user-apolov  cmd:"x2admin/gen/script/nj1.sn4.user-apolov  sshconfig update"
+x2admin.info node:nj1.sn4.user-vparizhs  cmd:"x2admin/gen/script/nj1.sn4.user-vparizhs  sshconfig update"
+x2admin.info node:nj1.sn5.bm  cmd:"x2admin/gen/script/nj1.sn5.bm  sshconfig update"
+x2admin.info node:nj1.sn5.user-alebedev  cmd:"x2admin/gen/script/nj1.sn5.user-alebedev  sshconfig update"
+x2admin.info node:nj1.sn5.user-apolov  cmd:"x2admin/gen/script/nj1.sn5.user-apolov  sshconfig update"
+x2admin.info node:nj1.sn5.user-avorovich  cmd:"x2admin/gen/script/nj1.sn5.user-avorovich  sshconfig update"
+x2admin.info node:nj1.sn5.user-vparizhs  cmd:"x2admin/gen/script/nj1.sn5.user-vparizhs  sshconfig update"
+x2admin.info node:nj1.sn6.bm  cmd:"x2admin/gen/script/nj1.sn6.bm  sshconfig update"
+x2admin.info node:nj1.sn6.user-alebedev  cmd:"x2admin/gen/script/nj1.sn6.user-alebedev  sshconfig update"
+x2admin.info node:nj1.sn6.user-apolov  cmd:"x2admin/gen/script/nj1.sn6.user-apolov  sshconfig update"
+x2admin.info node:nj1.sn6.user-vparizhs  cmd:"x2admin/gen/script/nj1.sn6.user-vparizhs  sshconfig update"
+x2admin.info node:nj1.sn7.bm  cmd:"x2admin/gen/script/nj1.sn7.bm  sshconfig update"
+x2admin.info node:nj1.sn7.user-alebedev  cmd:"x2admin/gen/script/nj1.sn7.user-alebedev  sshconfig update"
+x2admin.info node:nj1.sn7.user-apolov  cmd:"x2admin/gen/script/nj1.sn7.user-apolov  sshconfig update"
+x2admin.info node:nj1.sn7.user-vparizhs  cmd:"x2admin/gen/script/nj1.sn7.user-vparizhs  sshconfig update"
+x2admin.info node:nj1.sw1.bm  cmd:"x2admin/gen/script/nj1.sw1.bm  sshconfig update"
+x2admin.info node:nyc0.vm1.nginx-1  cmd:"x2admin/gen/script/nyc0.vm1.nginx-1  sshconfig update"
+x2admin.info node:nyc0.vm1.postfix-1  cmd:"x2admin/gen/script/nyc0.vm1.postfix-1  sshconfig update"
+x2admin.info node:nyc0.vm1.user-alebedev  cmd:"x2admin/gen/script/nyc0.vm1.user-alebedev  sshconfig update"
+x2admin.info node:nyc0.vm1.user-apolov  cmd:"x2admin/gen/script/nyc0.vm1.user-apolov  sshconfig update"
+x2admin.info node:nyc0.vm1.user-vparizhs  cmd:"x2admin/gen/script/nyc0.vm1.user-vparizhs  sshconfig update"
+x2admin.info node:nyc0.vm1.vm  cmd:"x2admin/gen/script/nyc0.vm1.vm  sshconfig update"
+x2admin.info admsvc:sshconfig  tot:137  success:137  failure:0  completed:137
+x2admin.info admsvc:sshconfig  tot:0  success:0  failure:0  completed:0
+x2admin.info admsvc:script  tot:0  success:0  failure:0  completed:0
+x2admin.info admsvc:user  tot:0  success:0  failure:0  completed:0
+x2admin.info admsvc:ssh  tot:0  success:0  failure:0  completed:0
+x2admin.info admsvc:host  tot:0  success:0  failure:0  completed:0
+x2admin.info admsvc:nodename  tot:0  success:0  failure:0  completed:0
+x2admin.info admsvc:nginx  tot:0  success:0  failure:0  completed:0
+atf_ci.smokex2  comment:"Restarting Containers"
+dkr.report command:generate_dockerbuild  cmd:""  targets:9
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.run comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.build comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.run comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.build comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.run comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.build comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/Dockerfile comment:copying Dockerfile
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.run comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.build comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-17 file:temp/docker/x2-17/x2-17.run comment:copying script
+dkr.info image:x2-17 file:temp/docker/x2-17/x2-17.build comment:copying script
+dkr.info image:x2-17 file:temp/docker/x2-17/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-18 file:temp/docker/x2-18/x2-18.run comment:copying script
+dkr.info image:x2-18 file:temp/docker/x2-18/x2-18.build comment:copying script
+dkr.info image:x2-18 file:temp/docker/x2-18/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-19 file:temp/docker/x2-19/x2-19.run comment:copying script
+dkr.info image:x2-19 file:temp/docker/x2-19/x2-19.build comment:copying script
+dkr.info image:x2-19 file:temp/docker/x2-19/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-20 file:temp/docker/x2-20/x2-20.run comment:copying script
+dkr.info image:x2-20 file:temp/docker/x2-20/x2-20.build comment:copying script
+dkr.info image:x2-20 file:temp/docker/x2-20/Dockerfile comment:copying Dockerfile
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.run comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.build comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/Dockerfile comment:copying Dockerfile
+dkr.report command:docker_clean_run  cmd:'ps --filter "name=x2w-08"'  targets:9
+--
+x2node.error node:nj1.sn1.bm  status:255  cmd:"ssh -q dkrusr@nj1.sn1.bm << 'RUNDOC'\ndocker kill kafkaui-5\ndocker rm kafkaui-5\n#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafkaui-5\nchmod g+w /srv/script/kafkaui-5\ntouch  /srv/script/kafkaui-5/kafkaui-5.start\nchmod ugo+wx  /srv/script/kafkaui-5/kafkaui-5.start\nln -sfr /srv/script/kafkaui-5/kafkaui-5.start /srv/script/kafkaui-5/start\ntee >/srv/script/kafkaui-5/kafkaui-5.start << 'EOFSCRIPT'\n#\n# Script docker/kafkaui/kafkaui.start for kafkaui-5\n#\n#!/bin/bash\nsed -i '/imklog/s/^/#/' /etc/rsyslog.conf\nrsyslogd\nservice ssh restart\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafkaui/kafkaui.run for kafkaui-5\n#\n# Replaced run.dctr:kafkaui-5\n# Replaced run.image:kafkaui\n# Replaced run.dserv:dev.kafkaui-5\n# Replaced run.nhost:192.168.10.11\n# Replaced run.port22:1561\n# Replaced run.port8080:1562\ndocker run \\\n--restart always \\\n-h dev.kafkaui-5 \\\n   -p 192.168.10.11:1561:22 \\\n   -p 192.168.10.11:1562:8080 \\\n--name kafkaui-5 \\\n-v /etc/timezone:/etc/timezone:ro \\\n-v /etc/localtime:/etc/localtime:ro \\\n -v /srv/script/kafkaui-5:/etc//x2.d/script \\\n-dit kafkaui\n\n\nRUNDOC\n"
+
+--
+x2node.error node:nj1.sn1.bm  status:255  cmd:'ssh -q dkrusr@nj1.sn1.bm docker ps --filter "name=kafkaui-5"'
+
+--
+x2node.error node:nj1.sn6.bm  status:255  cmd:"ssh -q dkrusr@nj1.sn6.bm << 'RUNDOC'\ndocker kill kafkaw-04\ndocker rm kafkaw-04\n#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafkaw-04\nchmod g+w /srv/script/kafkaw-04\ntouch  /srv/script/kafkaw-04/kafkaw-04.start\nchmod ugo+wx  /srv/script/kafkaw-04/kafkaw-04.start\nln -sfr /srv/script/kafkaw-04/kafkaw-04.start /srv/script/kafkaw-04/start\ntee >/srv/script/kafkaw-04/kafkaw-04.start << 'EOFSCRIPT'\n#\n# Script docker/kafkaw/kafkaw.start for kafkaw-04\n#\n# Replaced run.port22:1079\n#!/bin/bash\n# Rsyslog\nsed -i 's/#Port 22/Port 1079/' /etc/ssh/sshd_config\nservice ssh restart\nsed -i '/imklog/s/^/#/' /etc/rsyslog.conf\nrsyslogd\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafkaw/kafkaw.run for kafkaw-04\n#\n# Replaced run.dctr:kafkaw-04\n# Replaced run.image:kafkaw\n# Replaced run.dserv:dev.kafkaw-04\n# Replaced run.nhost:192.168.10.61\n# Replaced run.port22:1079\n# Replaced run.port8080:1080\n# Replaced run.port8081:1081\ndocker run \\\n--restart always \\\n-h dev.kafkaw-04 \\\n--network host \\\n   -p 192.168.10.61:1079:1079 \\\n   -p 192.168.10.61:1080:1080 \\\n   -p 192.168.10.61:1081:1081 \\\n--name kafkaw-04 \\\n-v /etc/timezone:/etc/timezone:ro \\\n-v /etc/localtime:/etc/localtime:ro \\\n -v /srv/script/kafkaw-04:/etc//x2.d/script \\\n-dit kafkaw\n\nRUNDOC\n"
+
+--
+x2node.error node:nj1.sn6.bm  status:255  cmd:'ssh -q dkrusr@nj1.sn6.bm docker ps --filter "name=kafkaw-04"'
+
+--
+x2node.error node:nj1.sn7.bm  status:255  cmd:"ssh -q dkrusr@nj1.sn7.bm << 'RUNDOC'\ndocker kill kafkaw-12\ndocker rm kafkaw-12\n#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafkaw-12\nchmod g+w /srv/script/kafkaw-12\ntouch  /srv/script/kafkaw-12/kafkaw-12.start\nchmod ugo+wx  /srv/script/kafkaw-12/kafkaw-12.start\nln -sfr /srv/script/kafkaw-12/kafkaw-12.start /srv/script/kafkaw-12/start\ntee >/srv/script/kafkaw-12/kafkaw-12.start << 'EOFSCRIPT'\n#\n# Script docker/kafkaw/kafkaw.start for kafkaw-12\n#\n# Replaced run.port22:1129\n#!/bin/bash\n# Rsyslog\nsed -i 's/#Port 22/Port 1129/' /etc/ssh/sshd_config\nservice ssh restart\nsed -i '/imklog/s/^/#/' /etc/rsyslog.conf\nrsyslogd\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafkaw/kafkaw.run for kafkaw-12\n#\n# Replaced run.dctr:kafkaw-12\n# Replaced run.image:kafkaw\n# Replaced run.dserv:dev.kafkaw-12\n# Replaced run.nhost:192.168.10.71\n# Replaced run.port22:1129\n# Replaced run.port8080:1130\n# Replaced run.port8081:1131\ndocker run \\\n--restart always \\\n-h dev.kafkaw-12 \\\n--network host \\\n   -p 192.168.10.71:1129:1129 \\\n   -p 192.168.10.71:1130:1130 \\\n   -p 192.168.10.71:1131:1131 \\\n--name kafkaw-12 \\\n-v /etc/timezone:/etc/timezone:ro \\\n-v /etc/localtime:/etc/localtime:ro \\\n -v /srv/script/kafkaw-12:/etc//x2.d/script \\\n-dit kafkaw\n\nRUNDOC\n"
+
+--
+x2node.error node:nj1.sn7.bm  status:255  cmd:'ssh -q dkrusr@nj1.sn7.bm docker ps --filter "name=kafkaw-12"'
+
+--
+x2node.error node:nj1.sn1.bm  status:255  cmd:"ssh -q dkrusr@nj1.sn1.bm << 'RUNDOC'\ndocker kill rdpui-5\ndocker rm rdpui-5\n#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/rdpui-5\nchmod g+w /srv/script/rdpui-5\ntouch  /srv/script/rdpui-5/rdpui-5.start\nchmod ugo+wx  /srv/script/rdpui-5/rdpui-5.start\nln -sfr /srv/script/rdpui-5/rdpui-5.start /srv/script/rdpui-5/start\ntee >/srv/script/rdpui-5/rdpui-5.start << 'EOFSCRIPT'\n#\n# Script docker/rdpui/rdpui.start for rdpui-5\n#\n#!/bin/bash\nuseradd rdpusr -u 1082 -U -m -s /bin/bash\n# \"unlock\" user\n# idiotic alpine locks the user w/o password!!!\nusermod -p '$1$sCG/p.qT$IWdZx.M9.wCgoWvh5coq/0' rdpusr\nln -s /app/console /home/rdpusr/rdpui\n# generate keys for ssh\n$(which ssh-keygen) -A\n# idiotic alpine locks the user w/o password!!!\nusermod -p '$1$sCG/p.qT$IWdZx.M9.wCgoWvh5coq/0' x2admin\n$(which sshd)\nsed -i '/imklog/s/^/#/' /etc/rsyslog.conf\nrsyslogd\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/rdpui/rdpui.run for rdpui-5\n#\n# Replaced run.dctr:rdpui-5\n# Replaced run.image:rdpui\n# Replaced run.dserv:dev.rdpui-5\n# Replaced run.nhost:192.168.10.11\n# Replaced run.port22:1493\n# Replaced run.port8080:1494\ndocker run \\\n--restart always \\\n-h dev.rdpui-5 \\\n   -p 192.168.10.11:1493:22 \\\n   -p 192.168.10.11:1494:8080 \\\n--name rdpui-5 \\\n-v /etc/timezone:/etc/timezone:ro \\\n-v /etc/localtime:/etc/localtime:ro \\\n -v /srv/script/rdpui-5:/etc//x2.d/script \\\n-dit rdpui\n\nRUNDOC\n"
+
+--
+x2node.error node:nj1.sn1.bm  status:255  cmd:'ssh -q dkrusr@nj1.sn1.bm docker ps --filter "name=rdpui-5"'
+
+--
+x2node.error node:nj1.sn2.bm  status:255  cmd:"ssh -q dkrusr@nj1.sn2.bm << 'RUNDOC'\ndocker kill x2-17\ndocker rm x2-17\n#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/x2-17\nchmod g+w /srv/script/x2-17\ntouch  /srv/script/x2-17/x2-17.start\nchmod ugo+wx  /srv/script/x2-17/x2-17.start\nln -sfr /srv/script/x2-17/x2-17.start /srv/script/x2-17/start\ntee >/srv/script/x2-17/x2-17.start << 'EOFSCRIPT'\n#\n# Script docker/x2/x2.start for x2-17\n#\n# Replaced run.port22:1512\n#!/bin/bash\n#!/bin/bash\n# mount dirs based on the labels\nfor i in {1..4}; do\n  sudo mkdir -p /mnt/data-${i}\n  sudo mount -t xfs -o defaults,noatime,nodiscard -L kafka-data-${i} /mnt/data-${i} || { \n    echo \"Mount failed for /mnt/data-${i}. Removing directory...\"\n    sudo umount /mnt/data-${i} || true\n    sudo rmdir /mnt/data-${i} \n  }\n  sudo chown x2usr:x2usr /mnt/data-${i}/\ndone\n\nsed -i 's/#Port 22/Port 1512/' /etc/ssh/sshd_config\nservice ssh restart\n\necho 'x2usr soft nofile 999999' | sudo tee -a /etc/security/limits.conf\necho 'x2usr hard nofile 999999' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/x2/x2_native.run for x2-17\n#\n# Replaced run.image:x2\n# Replaced run.runname:x2-17\n# Replaced run.dserv:dev.x2-17\n# Replaced run.nhost:192.168.10.21\n# Replaced run.port18184:1508\n# Replaced run.port18185:1509\n# Replaced run.port1883:1510\n# Replaced run.port2080:1511\n# Replaced run.port22:1512\n# Replaced run.port4222:1513\n# Replaced run.port4223:1514\n# Replaced run.port443:1515\n# Replaced run.port6379:1516\n# Replaced run.port6380:1517\n# Replaced run.port8883:1518\n# Replaced run.port9092:1519\n# Replaced run.port9093:1520\ndocker run \\\n--restart always \\\n-h dev.x2-17 \\\n--add-host dev.x2-17:192.168.10.21 \\\n--name x2-17 \\\n--network host \\\n--privileged \\\n-p 192.168.10.21:1512:1512 \\\n-p 192.168.10.21:1508:1508 \\\n-p 192.168.10.21:1509:1509 \\\n-p 192.168.10.21:1510:1510 \\\n-p 192.168.10.21:1511:1511 \\\n-p 192.168.10.21:1512:1512 \\\n-p 192.168.10.21:1513:1513 \\\n-p 192.168.10.21:1514:1514 \\\n-p 192.168.10.21:1515:1515 \\\n-p 192.168.10.21:1516:1516 \\\n-p 192.168.10.21:1517:1517 \\\n-p 192.168.10.21:1518:1518 \\\n-p 192.168.10.21:1519:1519 \\\n-p 192.168.10.21:1520:1520 \\\n-v /dev/vfio:/dev/vfio \\\n-v /etc/timezone:/etc/timezone:ro \\\n-v /etc/localtime:/etc/localtime:ro \\\n-v /etc/ssmtp:/etc/ssmtp:ro \\\n -v /srv/script/x2-17:/etc//x2.d/script \\\n-dit x2\n\nRUNDOC\n"
+
+--
+x2node.error node:nj1.sn2.bm  status:255  cmd:'ssh -q dkrusr@nj1.sn2.bm docker ps --filter "name=x2-17"'
+
+--
+x2node.error node:nj1.sn3.bm  status:255  cmd:"ssh -q dkrusr@nj1.sn3.bm << 'RUNDOC'\ndocker kill x2-18\ndocker rm x2-18\n#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/x2-18\nchmod g+w /srv/script/x2-18\ntouch  /srv/script/x2-18/x2-18.start\nchmod ugo+wx  /srv/script/x2-18/x2-18.start\nln -sfr /srv/script/x2-18/x2-18.start /srv/script/x2-18/start\ntee >/srv/script/x2-18/x2-18.start << 'EOFSCRIPT'\n#\n# Script docker/x2/x2.start for x2-18\n#\n# Replaced run.port22:1525\n#!/bin/bash\n#!/bin/bash\n# mount dirs based on the labels\nfor i in {1..4}; do\n  sudo mkdir -p /mnt/data-${i}\n  sudo mount -t xfs -o defaults,noatime,nodiscard -L kafka-data-${i} /mnt/data-${i} || { \n    echo \"Mount failed for /mnt/data-${i}. Removing directory...\"\n    sudo umount /mnt/data-${i} || true\n    sudo rmdir /mnt/data-${i} \n  }\n  sudo chown x2usr:x2usr /mnt/data-${i}/\ndone\n\nsed -i 's/#Port 22/Port 1525/' /etc/ssh/sshd_config\nservice ssh restart\n\necho 'x2usr soft nofile 999999' | sudo tee -a /etc/security/limits.conf\necho 'x2usr hard nofile 999999' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/x2/x2_native.run for x2-18\n#\n# Replaced run.image:x2\n# Replaced run.runname:x2-18\n# Replaced run.dserv:dev.x2-18\n# Replaced run.nhost:192.168.10.31\n# Replaced run.port18184:1521\n# Replaced run.port18185:1522\n# Replaced run.port1883:1523\n# Replaced run.port2080:1524\n# Replaced run.port22:1525\n# Replaced run.port4222:1526\n# Replaced run.port4223:1527\n# Replaced run.port443:1528\n# Replaced run.port6379:1529\n# Replaced run.port6380:1530\n# Replaced run.port8883:1531\n# Replaced run.port9092:1532\n# Replaced run.port9093:1533\ndocker run \\\n--restart always \\\n-h dev.x2-18 \\\n--add-host dev.x2-18:192.168.10.31 \\\n--name x2-18 \\\n--network host \\\n--privileged \\\n-p 192.168.10.31:1525:1525 \\\n-p 192.168.10.31:1521:1521 \\\n-p 192.168.10.31:1522:1522 \\\n-p 192.168.10.31:1523:1523 \\\n-p 192.168.10.31:1524:1524 \\\n-p 192.168.10.31:1525:1525 \\\n-p 192.168.10.31:1526:1526 \\\n-p 192.168.10.31:1527:1527 \\\n-p 192.168.10.31:1528:1528 \\\n-p 192.168.10.31:1529:1529 \\\n-p 192.168.10.31:1530:1530 \\\n-p 192.168.10.31:1531:1531 \\\n-p 192.168.10.31:1532:1532 \\\n-p 192.168.10.31:1533:1533 \\\n-v /dev/vfio:/dev/vfio \\\n-v /etc/timezone:/etc/timezone:ro \\\n-v /etc/localtime:/etc/localtime:ro \\\n-v /etc/ssmtp:/etc/ssmtp:ro \\\n -v /srv/script/x2-18:/etc//x2.d/script \\\n-dit x2\n\nRUNDOC\n"
+
+--
+x2node.error node:nj1.sn3.bm  status:255  cmd:'ssh -q dkrusr@nj1.sn3.bm docker ps --filter "name=x2-18"'
+
+--
+x2node.error node:nj1.sn4.bm  status:255  cmd:"ssh -q dkrusr@nj1.sn4.bm << 'RUNDOC'\ndocker kill x2-19\ndocker rm x2-19\n#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/x2-19\nchmod g+w /srv/script/x2-19\ntouch  /srv/script/x2-19/x2-19.start\nchmod ugo+wx  /srv/script/x2-19/x2-19.start\nln -sfr /srv/script/x2-19/x2-19.start /srv/script/x2-19/start\ntee >/srv/script/x2-19/x2-19.start << 'EOFSCRIPT'\n#\n# Script docker/x2/x2.start for x2-19\n#\n# Replaced run.port22:1538\n#!/bin/bash\n#!/bin/bash\n# mount dirs based on the labels\nfor i in {1..4}; do\n  sudo mkdir -p /mnt/data-${i}\n  sudo mount -t xfs -o defaults,noatime,nodiscard -L kafka-data-${i} /mnt/data-${i} || { \n    echo \"Mount failed for /mnt/data-${i}. Removing directory...\"\n    sudo umount /mnt/data-${i} || true\n    sudo rmdir /mnt/data-${i} \n  }\n  sudo chown x2usr:x2usr /mnt/data-${i}/\ndone\n\nsed -i 's/#Port 22/Port 1538/' /etc/ssh/sshd_config\nservice ssh restart\n\necho 'x2usr soft nofile 999999' | sudo tee -a /etc/security/limits.conf\necho 'x2usr hard nofile 999999' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/x2/x2_native.run for x2-19\n#\n# Replaced run.image:x2\n# Replaced run.runname:x2-19\n# Replaced run.dserv:dev.x2-19\n# Replaced run.nhost:192.168.10.41\n# Replaced run.port18184:1534\n# Replaced run.port18185:1535\n# Replaced run.port1883:1536\n# Replaced run.port2080:1537\n# Replaced run.port22:1538\n# Replaced run.port4222:1539\n# Replaced run.port4223:1540\n# Replaced run.port443:1541\n# Replaced run.port6379:1542\n# Replaced run.port6380:1543\n# Replaced run.port8883:1544\n# Replaced run.port9092:1545\n# Replaced run.port9093:1546\ndocker run \\\n--restart always \\\n-h dev.x2-19 \\\n--add-host dev.x2-19:192.168.10.41 \\\n--name x2-19 \\\n--network host \\\n--privileged \\\n-p 192.168.10.41:1538:1538 \\\n-p 192.168.10.41:1534:1534 \\\n-p 192.168.10.41:1535:1535 \\\n-p 192.168.10.41:1536:1536 \\\n-p 192.168.10.41:1537:1537 \\\n-p 192.168.10.41:1538:1538 \\\n-p 192.168.10.41:1539:1539 \\\n-p 192.168.10.41:1540:1540 \\\n-p 192.168.10.41:1541:1541 \\\n-p 192.168.10.41:1542:1542 \\\n-p 192.168.10.41:1543:1543 \\\n-p 192.168.10.41:1544:1544 \\\n-p 192.168.10.41:1545:1545 \\\n-p 192.168.10.41:1546:1546 \\\n-v /dev/vfio:/dev/vfio \\\n-v /etc/timezone:/etc/timezone:ro \\\n-v /etc/localtime:/etc/localtime:ro \\\n-v /etc/ssmtp:/etc/ssmtp:ro \\\n -v /srv/script/x2-19:/etc//x2.d/script \\\n-dit x2\n\nRUNDOC\n"
+
+--
+x2node.error node:nj1.sn4.bm  status:255  cmd:'ssh -q dkrusr@nj1.sn4.bm docker ps --filter "name=x2-19"'
+
+--
+x2node.error node:nj1.sn5.bm  status:255  cmd:"ssh -q dkrusr@nj1.sn5.bm << 'RUNDOC'\ndocker kill x2-20\ndocker rm x2-20\n#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/x2-20\nchmod g+w /srv/script/x2-20\ntouch  /srv/script/x2-20/x2-20.start\nchmod ugo+wx  /srv/script/x2-20/x2-20.start\nln -sfr /srv/script/x2-20/x2-20.start /srv/script/x2-20/start\ntee >/srv/script/x2-20/x2-20.start << 'EOFSCRIPT'\n#\n# Script docker/x2/x2.start for x2-20\n#\n# Replaced run.port22:1551\n#!/bin/bash\n#!/bin/bash\n# mount dirs based on the labels\nfor i in {1..4}; do\n  sudo mkdir -p /mnt/data-${i}\n  sudo mount -t xfs -o defaults,noatime,nodiscard -L kafka-data-${i} /mnt/data-${i} || { \n    echo \"Mount failed for /mnt/data-${i}. Removing directory...\"\n    sudo umount /mnt/data-${i} || true\n    sudo rmdir /mnt/data-${i} \n  }\n  sudo chown x2usr:x2usr /mnt/data-${i}/\ndone\n\nsed -i 's/#Port 22/Port 1551/' /etc/ssh/sshd_config\nservice ssh restart\n\necho 'x2usr soft nofile 999999' | sudo tee -a /etc/security/limits.conf\necho 'x2usr hard nofile 999999' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/x2/x2_native.run for x2-20\n#\n# Replaced run.image:x2\n# Replaced run.runname:x2-20\n# Replaced run.dserv:dev.x2-20\n# Replaced run.nhost:192.168.10.51\n# Replaced run.port18184:1547\n# Replaced run.port18185:1548\n# Replaced run.port1883:1549\n# Replaced run.port2080:1550\n# Replaced run.port22:1551\n# Replaced run.port4222:1552\n# Replaced run.port4223:1553\n# Replaced run.port443:1554\n# Replaced run.port6379:1555\n# Replaced run.port6380:1556\n# Replaced run.port8883:1557\n# Replaced run.port9092:1558\n# Replaced run.port9093:1559\ndocker run \\\n--restart always \\\n-h dev.x2-20 \\\n--add-host dev.x2-20:192.168.10.51 \\\n--name x2-20 \\\n--network host \\\n--privileged \\\n-p 192.168.10.51:1551:1551 \\\n-p 192.168.10.51:1547:1547 \\\n-p 192.168.10.51:1548:1548 \\\n-p 192.168.10.51:1549:1549 \\\n-p 192.168.10.51:1550:1550 \\\n-p 192.168.10.51:1551:1551 \\\n-p 192.168.10.51:1552:1552 \\\n-p 192.168.10.51:1553:1553 \\\n-p 192.168.10.51:1554:1554 \\\n-p 192.168.10.51:1555:1555 \\\n-p 192.168.10.51:1556:1556 \\\n-p 192.168.10.51:1557:1557 \\\n-p 192.168.10.51:1558:1558 \\\n-p 192.168.10.51:1559:1559 \\\n-v /dev/vfio:/dev/vfio \\\n-v /etc/timezone:/etc/timezone:ro \\\n-v /etc/localtime:/etc/localtime:ro \\\n-v /etc/ssmtp:/etc/ssmtp:ro \\\n -v /srv/script/x2-20:/etc//x2.d/script \\\n-dit x2\n\nRUNDOC\n"
+
+--
+x2node.error node:nj1.sn5.bm  status:255  cmd:'ssh -q dkrusr@nj1.sn5.bm docker ps --filter "name=x2-20"'
+
+--
+x2node.error node:nj1.sn1.bm  status:255  cmd:"ssh -q dkrusr@nj1.sn1.bm << 'RUNDOC'\ndocker kill x2w-08\ndocker rm x2w-08\n#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/x2w-08\nchmod g+w /srv/script/x2w-08\ntouch  /srv/script/x2w-08/x2w-08.start\nchmod ugo+wx  /srv/script/x2w-08/x2w-08.start\nln -sfr /srv/script/x2w-08/x2w-08.start /srv/script/x2w-08/start\ntee >/srv/script/x2w-08/x2w-08.start << 'EOFSCRIPT'\n#\n# Script docker/x2w/x2w.start for x2w-08\n#\n# Replaced run.port22:1560\nsed -i 's/#Port 22/Port 1560/' /etc/ssh/sshd_config\nservice ssh restart\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/x2w/x2w.run for x2w-08\n#\n# Replaced run.image:x2w\n# Replaced run.runname:x2w-08\n# Replaced run.dserv:dev.x2w-08\n# Replaced run.nhost:192.168.10.11\n# Replaced run.port22:1560\ndocker run \\\n--restart always \\\n-h dev.x2w-08 \\\n--name x2w-08 \\\n--network host \\\n--privileged \\\n-p 192.168.10.11:1560:1560 \\\n-v /etc/timezone:/etc/timezone:ro \\\n-v /etc/localtime:/etc/localtime:ro \\\n-v /etc/ssmtp:/etc/ssmtp:ro \\\n -v /srv/script/x2w-08:/etc//x2.d/script \\\n-dit x2w\n\n\nRUNDOC\n"
+
+--
+x2node.error node:nj1.sn1.bm  status:255  cmd:'ssh -q dkrusr@nj1.sn1.bm docker ps --filter "name=x2w-08"'
+
+nodes:"dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.rdpui-5|dev.x2-17|dev.x2-18|dev.x2-19|dev.x2-20|dev.x2w-08"
+bin/x2node  -node:$'dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.rdpui-5|dev.x2-17|dev.x2-18|dev.x2-19|dev.x2-20|dev.x2w-08' -cmd:hostname -q:Y >&6
+dev.x2-4.kafkaui-1:dead
+dev.x2-4.kafkaw-1:dead
+dev.x2-4.kafkaw-2:dead
+dev.x2-4.rdpui-1:dead
+dev.x2-4.x2-1:dead
+dev.x2-4.x2-2:dead
+dev.x2-4.x2-3:dead
+dev.x2-4.x2-4:dead
+dev.x2-4.x2w-1:dead
+omcli.error  try_cnt
+algo_lib.exec  cmd:"bin/omcli  -omnode:dev.x2-4.% -dkr_clean_run:Y"  comment:"exit code 1"
+atf_ci.citest  citest:smokex2_ib  runtime:00:00:39.944297419  success:N  comment:"Run X2 in CI e

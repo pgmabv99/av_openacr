@@ -25,8 +25,7 @@ alias acre="acr dmmeta.ns:atf_snf -ndown 99  -tree -e"
 alias ci="atf_ci -cijob:% |& timestamps"
 alias ci_clean="rm -rf temp/sand*"
 alias ppath='echo $PATH | tr ":" "\n"'
-alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'ci
-alias ppath='echo $PATH | tr ":" "\n"'
+alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'
 
 
 alias al='source  ~/arnd/conf/alexei/bash_profile'
@@ -44,15 +43,23 @@ abtd(){
 
 up() {
   set -x
-  rsync -ac --delete \
-    --exclude=build/x2ui \
-    --exclude=node_modules \
-    --exclude=temp/ \
-    --exclude=ts \
-    --exclude=build/debug \
-    . x2usr@dev.x2-17:arnd
+  # rsync -ac --delete \
+  #   --exclude=build/x2ui \
+  #   --exclude=node_modules \
+  #   --exclude=temp/ \
+  #   --exclude=ts \
+  #   --exclude=build/debug \
+  #   . x2usr@dev.x2-17:arnd
   rsync -ac --delete ../av_openacr  x2usr@dev.x2-17: 
   rsync -ac --delete ../.bashrc  x2usr@dev.x2-17: 
+  set +x
+}
+
+down() {
+  set -x
+  rsync -ac --delete x2usr@dev.x2-17:arnd/.vscode ~/arnd/
+  rsync -ac --delete x2usr@dev.x2-17:arnd/cpp     ~/arnd/
+  rsync -ac --delete x2usr@dev.x2-17:arnd/include     ~/arnd/
   set +x
 }
 
@@ -77,8 +84,8 @@ gco() {
   echo "Last  commits on branch algornd/arnd.$branch:"
   git log -n 3 --oneline --date=local
 
-  echo " recompile , man !!"
-  abtd
+  # echo " recompile , man !!"
+  # abtd
 }
 
 

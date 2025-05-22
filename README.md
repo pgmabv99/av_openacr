@@ -116,7 +116,7 @@ We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.
 ```
 ### gitlab
 git-rebase-origin, normalize, gcli -create mr
-
+git-add_last_commit
 ### To Keep My Repo Under OpenACR Without Affecting Main Branch
 
 Add to this `.git\info\exclude`:
@@ -219,7 +219,9 @@ algo_x2: laptop->dev.x2-17
 algo_x2:  nj1.sn1.avorovich->dev.x2-17
 algo_x2:  nj1.sn1.avorovich->gitlab
  
+##regex for  strings
 
+^(?=.*name_Set)(?=.*MetadataResponseTopic)
 
 ## todo
 -duplicate corr_id in rdp ??

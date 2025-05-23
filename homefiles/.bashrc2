@@ -57,9 +57,9 @@ up() {
 
 down() {
   set -x
+  # only active files
   rsync -ac --delete x2usr@dev.x2-17:arnd/.vscode ~/arnd/
-  rsync -ac --delete x2usr@dev.x2-17:arnd/cpp     ~/arnd/
-  rsync -ac --delete x2usr@dev.x2-17:arnd/include     ~/arnd/
+  rsync -ac --delete x2usr@dev.x2-17:arnd/cpp/x2gw/kafka.cpp     ~/arnd/
   set +x
 }
 

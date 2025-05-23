@@ -19,6 +19,9 @@ exit 0
 #export OMENV=dev.x2-4 && atf_ci -citest:smokex2 | hilite atf_ci.smokex2.*
 
 x2rel -create -product:x2
+x2rel -product:x2 -omnode:dev.x2-4.x2%    -upload 
+omcli -omnode:dev.x2-4.x2-1 -start_clean
+
 x2rel -product:x2 -omnode:dev.x2-4.x2%    -upload -dev
 # x2rel -product:x2 -omnode:dev.x2-4.kafkaui-1  -upload -dev
 

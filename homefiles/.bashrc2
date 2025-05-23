@@ -41,15 +41,17 @@ abtd(){
 #  ls -ltr bin/x2*
 }
 
+
 up() {
+  return
   set -x
-  # rsync -ac --delete \
-  #   --exclude=build/x2ui \
-  #   --exclude=node_modules \
-  #   --exclude=temp/ \
-  #   --exclude=ts \
-  #   --exclude=build/debug \
-  #   . x2usr@dev.x2-17:arnd
+  rsync -ac --delete \
+    --exclude=build/x2ui \
+    --exclude=node_modules \
+    --exclude=temp/ \
+    --exclude=ts \
+    --exclude=build/debug \
+    . x2usr@dev.x2-17:arnd
   rsync -ac --delete ../av_openacr  x2usr@dev.x2-17: 
   rsync -ac --delete ../.bashrc  x2usr@dev.x2-17: 
   set +x

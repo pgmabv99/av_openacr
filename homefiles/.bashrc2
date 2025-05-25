@@ -28,6 +28,7 @@ alias ppath='echo $PATH | tr ":" "\n"'
 alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'
 
 
+
 alias al='source  ~/arnd/conf/alexei/bash_profile'
 
 # cp common files
@@ -64,6 +65,7 @@ down() {
   rsync -ac --delete x2usr@dev.x2-17:arnd/cpp/x2gw/kafka.cpp     ~/arnd/cpp/x2gw/kafka.cpp
   set +x
 }
+
 
 gitlog1() {
   git log --oneline --decorate --pretty=format:"%h %ad %an | %s%d" --date=format:"%m-%d %H:%M" "$@"

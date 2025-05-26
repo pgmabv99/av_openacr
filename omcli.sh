@@ -25,7 +25,8 @@ omcli -omnode:dev.x2-4.x2% -stop
 x2rel -create -product:x2
 x2rel -product:x2 -omnode:dev.x2-4.x2%    -upload
 omcli -omnode:dev.x2-4.x2% -start_clean
-omcli -omnode:dev.x2-4.x2% -status
+
+
 
 # x2rel -product:x2 -omnode:dev.x2-4.x2%    -upload -dev
 # x2rel -product:x2 -omnode:dev.x2-4.kafkaui-1  -upload -dev

@@ -22,19 +22,26 @@ exit 0
 down
 ai
 omcli -omnode:dev.x2-4.x2% -stop
-x2rel -create -product:x2
-x2rel -product:x2 -omnode:dev.x2-4.x2%    -upload
+x2rel -create  -product:x2
+x2rel  -upload -product:x2 -omnode:dev.x2-4.x2%
 omcli -omnode:dev.x2-4.x2% -start_clean
+omcli -omnode:dev.x2-4.x2% -status
 
-
+# sudo lsof -nP -iTCP -sTCP:LISTEN | grep x2gw
 
 # x2rel -product:x2 -omnode:dev.x2-4.x2%    -upload -dev
 # x2rel -product:x2 -omnode:dev.x2-4.kafkaui-1  -upload -dev
 
 
-omcli -omnode:dev.x2-4.x2-1 -start_clean
+omcli -omnode:dev.x2-4.x2-0 -start_clean
+
+omcli -omnode:dev.x2-4.kafkaui-1   -dkr_clean_run
 omcli -omnode:dev.x2-4.kafkaui-1   -stop
 omcli -omnode:dev.x2-4.kafkaui-1   -start_clean
+
+omcli -omnode:dev.x2-4.rdpui-1  -dkr_clean_run
+omcli -omnode:dev.x2-4.rdpui-1  -stop
+omcli -omnode:dev.x2-4.rdpui-1   -start_clean
 
 
 omcli -omnode:dev.ak-8.% -stop

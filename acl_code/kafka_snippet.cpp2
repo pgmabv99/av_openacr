@@ -1,0 +1,71 @@
+
+// add one ACL creation to the database
+void x2gw::KafkaUtil_CreateAclsRequest(kafka2::AclCreation30q &creation) {
+    bool ok = creation.resource_type != kafka_ResourceType_UNKNOWN
+        && creation.resource_type != kafka_ResourceType_ANY;
+    ok = ok && (creation.resource_pattern_type == kafka_PatternType_LITERAL
+                || creation.resource_pattern_type == kafka_PatternType_PREFIXED);
+    ok = ok && creation.operation != kafka_AclOperationType_UNKNOWN
+        && creation.operation != kafka_AclOperationType_ANY;
+    ok = ok && (creation.permission_type == kafka_AclPermissionType_ALLOW
+                || creation.permission_type == kafka_AclPermissionType_DENY);
+    if (ok) {
+        KafkaAclResourceKey key;
+        key.resource_type.value = creation.resource_type;
+        key.resource_name = creation.resource_name;
+        key.resource_pattern_type.value = creation.resource_pattern_type;
+        FKafkaAclResource &resource = ind_kafka_acl_resource_GetOrCreate(key);
+        bool found(false);
+        ind_beg(kafka_acl_resource_zd_acl_curs,acl,resource) {
+            found = acl.principal ==  creation.principal
+                && acl.host == creation.host
+                && acl.operation.value == creation.operation
+                && acl.permission_type.value == creation.permission_type;
+            if (found) {
+                break;
+            }
+        }ind_end;
+        if (!found) {
+            FKafkaAcl &acl = kafka_acl_Alloc();
+            acl.p_resource = &resource;
+            acl.principal = creation.principal;
+            acl.host = creation.host;
+            acl.operation.value = creation.operation;
+            acl.permission_type.value = creation.permission_type;
+            kafka_acl_XrefMaybe(acl);
+        }
+    }
+}
+
+// add one ACL creation to the database
+void x2gw::KafkaUtil_CreateDefaultAcl() {
+    kafka2::AclCreation30q creation_full;
+    creation_full.resource_type = 2; // ResourceType::TOPIC (example)
+    creation_full.resource_name = "*"; // Wildcard for all resources
+
+    creation_full.resource_pattern_type = 3; // PatternType::MATCH (or 1 for PREFIXED, depending on support)
+    creation_full.principal = "User:*"; // Wildcard for all users
+    creation_full.host = "*"; // All hosts
+
+    creation_full.operation =  8; // Typically  All = 8 (depends on Kafka impl.)
+    creation_full.permission_type = kafka_AclPermissionType_ALLOW;
+
+    KafkaUtil_CreateAclsRequest(creation_full);
+}
+
+void x2gw::KafkaIn_CreateAclsRequest(kafka2::CreateAclsRequest &req, u32) {
+    kafka2::CreateAclsResponse rsp;
+    rsp.request_api_version = req.request_api_version;
+    rsp.correlation_id = req.correlation_id;
+    ind_beg(kafka2::CreateAclsRequest_creations_curs,creation,req) {
+        KafkaUtil_CreateAclsRequest(creation);
+    }ind_end;
+    KafkaSendMessage(rsp);
+}
+
+
+
+    // avtodo: check if we have any ACLs. to be moved to init
+    if (_db.zd_kafka_acl_resource_n==0) {
+        x2gw::KafkaUtil_CreateDefaultAcl();
+    }

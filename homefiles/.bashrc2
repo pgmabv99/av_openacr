@@ -61,9 +61,19 @@ up() {
 
 down() {
   set -x
-  # only active files
+  # only active code  files
   rsync -ac --delete x2usr@dev.x2-17:arnd/.vscode ~/arnd/
   rsync -ac --delete x2usr@dev.x2-17:arnd/cpp/x2gw/kafka.cpp     ~/arnd/cpp/x2gw/kafka.cpp
+  rsync -ac --delete x2usr@dev.x2-17:arnd/cpp/lib_kafka/encode.cpp     ~/arnd/cpp/lib_kafka/encode.cpp
+  set +x
+}
+
+down_rdpui() {
+  set -x
+
+  rsync -ac --delete rdpusr@dev.rdpui-5:rdp_console_log     ~/av_openacr/om_logs/rdpui-5.rdp_console.log
+   tail -n 20  /home/avorovich/av_openacr/om_logs/rdpui-5.rdp_console.log > /tmp/tmp.log && mv /tmp/tmp.log /home/avorovich/av_openacr/om_logs/rdpui-5.rdp_console.log
+
   set +x
 }
 

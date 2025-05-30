@@ -1,0 +1,20 @@
+{"level":"error","ts":"2025-05-30T13:15:21.629-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.629-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.629-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.629-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.630-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.630-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.630-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.630-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.631-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.631-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"info","ts":"2025-05-30T13:15:21.631-0400","logger":"kafka_client","msg":"immediate metadata update triggered","why":"fetch had inner topic errors from broker 1: encoded crc 0 does not match calculated crc 15858c0a{public.anon[0]}"}
+{"level":"error","ts":"2025-05-30T13:15:21.631-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.631-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.632-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.632-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.632-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.632-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.632-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.633-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}
+{"level":"error","ts":"2025-05-30T13:15:21.633-0400","msg":"errors while fetching records","topic_name":"public.anon","partition":0,"error":"encoded crc 0 does not match calculated crc 15858c0a"}

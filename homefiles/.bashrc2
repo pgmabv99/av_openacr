@@ -26,7 +26,7 @@ alias ci="atf_ci -cijob:% |& timestamps"
 alias ci_clean="rm -rf temp/sand*"
 alias ppath='echo $PATH | tr ":" "\n"'
 alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'
-
+alias gitbin='git checkout -- bin'
 
 
 alias al='source  ~/arnd/conf/alexei/bash_profile'

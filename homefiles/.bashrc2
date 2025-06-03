@@ -44,27 +44,27 @@ abtd(){
 
 
 up() {
-  return
+  # return
   set -x
   rsync -ac --delete \
-    --exclude=build/x2ui \
-    --exclude=node_modules \
-    --exclude=temp/ \
-    --exclude=ts \
-    --exclude=build/debug \
-    --exclude=build/release \
     . x2usr@dev.x2-17:arnd
   rsync -ac --delete ../av_openacr  x2usr@dev.x2-17:
   rsync -ac --delete ../.bashrc  x2usr@dev.x2-17:
   set +x
+    # --exclude=temp/ \
+    # --exclude=build/debug \
+    # --exclude=build/release \
+    # --exclude=build/x2ui \
+    # --exclude=node_modules \
+    # --exclude=ts \
 }
 
 down() {
   set -x
   # only active code  files
-  rsync -ac --delete x2usr@dev.x2-17:arnd/.vscode ~/arnd/
-  rsync -ac --delete x2usr@dev.x2-17:arnd/cpp/x2gw/kafka.cpp     ~/arnd/cpp/x2gw/kafka.cpp
-  rsync -ac --delete x2usr@dev.x2-17:arnd/cpp/lib_kafka/encode.cpp     ~/arnd/cpp/lib_kafka/encode.cpp
+  rsync -ac --delete x2usr@dev.x2-17:arnd/  ~/arnd
+  # rsync -ac --delete x2usr@dev.x2-17:arnd/cpp/x2gw/kafka.cpp     ~/arnd/cpp/x2gw/kafka.cpp
+  # rsync -ac --delete x2usr@dev.x2-17:arnd/cpp/lib_kafka/encode.cpp     ~/arnd/cpp/lib_kafka/encode.cpp
   set +x
 }
 

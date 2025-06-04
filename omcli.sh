@@ -46,8 +46,8 @@ bin/x2node  -node:dev.rdpui-5 -cmd:'./rdpui_only start_clean'  -fail_on_error:Y
 bin/x2node  -node:dev.rdpui-5 -shell
 
 #          ===============
-omcli -omnode:dev.x2-4.kafkaui-1  -stop
-bin/x2node  -node:dev.kafkaui-5 -cmd:'./kafkaui_only start_clean'  -fail_on_error:Y
+omcli -omnode:dev.x2-4.kabin/x2node  -node:dev.kafkaui-5 -cmd:'./kafkaui_only start_clean'  -fail_on_error:Yfkaui-1  -stop
+
 omcli -omnode:dev.x2-4.kafkaui-1  -status
 
 

@@ -77,6 +77,61 @@ down_rdpui() {
   set +x
 }
 
+down_env() {
+
+  down_kafka_worker() {
+    local omenv="$1"
+    local node="$2"
+    local node_dir="$down_root/$omenv/$node"
+
+    rm -rf "$node_dir"
+    mkdir -p "$node_dir"
+
+    rsync -ac --delete kafkawrkr@"$node":kafka_worker.log "$node_dir/"
+    rsync -ac --delete kafkawrkr@"$node":"$node" "$node_dir/$node.sh"
+  }
+
+  down_kafka_broker() {
+    local omenv="$1"
+    local node="$2"
+    local node_dir="$down_root/$omenv/$node"
+
+    rm -rf "$node_dir"
+    mkdir -p "$node_dir"
+
+    rsync -ac --delete kafkausr@"$node":"$node" "$node_dir/$node.sh"
+    rsync -ac $rem_opt --delete kafkausr@"$node":kafka/logs/server.log "$node_dir/"
+    rsync -ac $rem_opt --delete kafkausr@"$node":kafka/logs/controller.log "$node_dir/"
+    # rsync -ac --delete kafkausr@"$node":kafka/logs/kafka-authorizer.log "$node_dir/"
+    # rsync -ac --delete kafkausr@"$node":kafka/logs/kafka-request.log "$node_dir/"
+    # rsync -ac --delete kafkausr@"$node":kafka/logs/kafkaServer-gc.log "$node_dir/"
+  }
+
+  omenv=ak-8
+  down_root="$HOME/av_openacr/om_logs"
+  rem_opt=""
+  # rem_opt="--remove-source-files"
+  
+
+  rm -rf "$down_root/$omenv" 
+  mkdir -p "$down_root/$omenv"
+
+  down_kafka_worker "$omenv" dev.kafkaw-08
+  down_kafka_worker "$omenv" dev.kafkaw-16
+  down_kafka_broker "$omenv" dev.kafka-01
+  down_kafka_broker "$omenv" dev.kafka-02
+  down_kafka_broker "$omenv" dev.kafka-03
+  down_kafka_broker "$omenv" dev.kafka-04
+}
+
+dloop() {
+  while true; do
+    down_env
+    sleep 1
+  done
+}
+
+
 
 gitlog1() {
   git log --oneline --decorate --pretty=format:"%h %ad %an | %s%d" --date=format:"%m-%d %H:%M" "$@"

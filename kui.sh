@@ -12,9 +12,13 @@ sudo ~/arnd/bin/atf_snf -dev:data0-8 -kapi:true  -out_file:$tag.pcap  -out_solo_
 
 exit
 
+omcli -omnode:dev.ak-8.kafka-% -dkr_clean_run
+
 omcli -omnode:dev.ak-8.kafka-% -start_clean
 omcli -omnode:dev.ak-8.kafkaw-2 -start_clean
 bin/x2node  -node:dev.kafkaw-08 -cmd:'./kafkawrkr_test start_clean'  -fail_on_error:Y
+
+omcli -omenv:dev.ak-8 -omtest:om_benchmark
 
 omcli -omnode:dev.ak-8.% -status
 

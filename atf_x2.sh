@@ -41,8 +41,9 @@ EOF
 
 # atf_x2 < /tmp/atf_x2_wrk
 # atf_x2 < /tmp/atf_x2_wrk_hang
-atf_x2 -comptest:mytest -timeout_sec:3  -dbgshell < /tmp/atf_x2_wrk_hang
 # atf_x2 -comptest:mytest -timeout_sec:3 -v -dbgshell 
+# set -x
+atf_x2 -comptest:mytest -timeout_sec:3  -dbgshell < /tmp/atf_x2_wrk_hang
 
 exit
 

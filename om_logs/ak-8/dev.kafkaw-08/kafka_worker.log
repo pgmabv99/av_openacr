@@ -1,0 +1,445 @@
+13:57:06.315 [main] INFO log - Logging initialized @11031ms to org.eclipse.jetty.util.log.Slf4jLog
+13:57:06.362 [main] INFO Server - jetty-9.4.42.v20210604; built: 2021-06-04T17:33:38.939Z; git: 5cd5e6d2375eeab146813b0de9f19eda6ab6e6cb; jvm 17.0.13+11-Ubuntu-2ubuntu124.04
+13:57:06.384 [main] INFO ContextHandler - Started o.e.j.s.ServletContextHandler@592e843a{/,null,AVAILABLE}
+13:57:06.398 [main] INFO AbstractConnector - Started ServerConnector@5974109{HTTP/1.1, (http/1.1)}{0.0.0.0:1119}
+13:57:06.398 [main] INFO Server - Started @11116ms
+13:57:06.402 [main] INFO PrometheusMetricsProvider - Started Prometheus stats endpoint at 0.0.0.0/<unresolved>:1119
+13:57:06.428 [main] INFO BenchmarkWorker - Starting benchmark with config: {
+  "httpPort" : 1118,
+  "statsPort" : 1119
+}
+13:57:06.454 [main] INFO Javalin - 
+ _________________________________________
+|        _                  _ _           |
+|       | | __ ___   ____ _| (_)_ __      |
+|    _  | |/ _` \ \ / / _` | | | '_ \     |
+|   | |_| | (_| |\ V / (_| | | | | | |    |
+|    \___/ \__,_| \_/ \__,_|_|_|_| |_|    |
+|_________________________________________|
+|                                         |
+|    https://javalin.io/documentation     |
+|_________________________________________|
+13:57:06.456 [main] INFO Javalin - Starting Javalin ...
+13:57:06.460 [main] INFO Server - jetty-9.4.42.v20210604; built: 2021-06-04T17:33:38.939Z; git: 5cd5e6d2375eeab146813b0de9f19eda6ab6e6cb; jvm 17.0.13+11-Ubuntu-2ubuntu124.04
+13:57:06.471 [main] INFO session - DefaultSessionIdManager workerName=node0
+13:57:06.471 [main] INFO session - No SessionScavenger set, using defaults
+13:57:06.471 [main] INFO session - node0 Scavenging every 600000ms
+13:57:06.472 [main] INFO ContextHandler - Started i.j.e.j.@57a4d5ee{/,null,AVAILABLE}
+13:57:06.473 [main] INFO ContextHandler - Started o.e.j.s.ServletContextHandler@3a45c42a{/,null,AVAILABLE}
+13:57:06.489 [main] INFO AbstractConnector - Started ServerConnector@781e7326{HTTP/1.1, (http/1.1)}{0.0.0.0:1118}
+13:57:06.489 [main] INFO Server - Started @11207ms
+13:57:06.490 [main] INFO EmbeddedServer - Jetty is listening on: [http://localhost:1118]
+13:57:06.490 [main] INFO Javalin - Javalin has started \o/
+13:57:16.508 [qtp178401052-70] INFO WorkerHandler - Stop All
+13:57:16.706 [qtp178401052-48] INFO LocalWorker - Driver: {
+  "name" : "kafka-latency",
+  "driverClass" : "io.openmessaging.benchmark.driver.kafka.KafkaBenchmarkDriver"
+}
+13:57:16.723 [qtp178401052-48] INFO AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [dev.ak-8.kafka-1.ext:1031, dev.ak-8.kafka-2.ext:1039, dev.ak-8.kafka-3.ext:1043, dev.ak-8.kafka-4.ext:1047]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+13:57:16.766 [qtp178401052-48] INFO AppInfoParser - Kafka version: 3.6.1
+13:57:16.767 [qtp178401052-48] INFO AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+13:57:16.767 [qtp178401052-48] INFO AppInfoParser - Kafka startTimeMs: 1749146236765
+13:57:16.775 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:16.777 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:16.778 [qtp178401052-68] INFO WorkerHandler - Received create topics request for topics: {
+  "numberOfTopics" : 1,
+  "numberOfPartitionsPerTopic" : 10
+}
+13:57:16.780 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:16.780 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:16.781 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:16.782 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:16.783 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:16.783 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:16.896 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:16.896 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:16.897 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:16.897 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:16.897 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:16.897 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:16.898 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:16.898 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:16.999 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:16.999 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:16.999 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:16.999 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:17.000 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:17.000 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:17.000 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:17.000 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:17.201 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:17.201 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:17.302 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:17.302 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:17.303 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:17.303 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:17.303 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:17.303 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:17.704 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:17.705 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:17.705 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:17.705 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:17.705 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:17.706 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:17.807 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:17.807 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:18.409 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:18.409 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:18.509 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:18.509 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:18.610 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:18.610 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:18.711 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:18.711 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:19.513 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:19.513 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:19.614 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:19.614 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:19.714 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:19.715 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:19.815 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:19.815 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:20.517 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:20.517 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:20.718 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:20.718 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:20.718 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:20.718 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:20.819 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:20.819 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:21.621 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:21.621 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:21.721 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:21.721 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:21.722 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:21.722 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:21.823 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:21.823 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:22.624 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:22.624 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:22.825 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:22.825 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:22.826 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:22.826 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:22.926 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:22.926 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:23.628 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:23.628 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:23.729 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:23.729 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:23.829 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:23.830 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:24.130 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:24.131 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:24.632 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:24.632 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:24.732 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:24.732 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:24.833 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:24.833 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:25.134 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:25.134 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:25.735 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:25.736 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:25.736 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:25.736 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:25.836 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:25.837 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:26.338 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:26.338 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:26.739 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:26.739 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:26.787 [pool-2-thread-1] INFO KafkaTopicCreator - Created topics 0/1
+13:57:26.840 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:26.840 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:26.840 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:26.840 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:27.241 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:27.241 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:27.742 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:27.743 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:27.843 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:27.843 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:27.944 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:27.944 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:28.445 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:28.445 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:28.846 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:28.846 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:28.846 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:28.846 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:29.047 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:29.047 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:29.548 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:29.549 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:29.850 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:29.850 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:29.950 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:29.950 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:30.151 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:30.151 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:30.552 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:30.552 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:30.853 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:30.853 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:30.953 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:30.953 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:31.254 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:31.254 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:31.455 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:31.455 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:31.856 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:31.856 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:31.957 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:31.957 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:32.257 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:32.258 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:32.358 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:32.358 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:32.759 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:32.759 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:32.960 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:32.960 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:33.461 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:33.461 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:33.461 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:33.461 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:33.862 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:33.862 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:33.863 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:33.863 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:34.364 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:34.364 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:34.565 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:34.565 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:34.966 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:34.966 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:35.067 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:35.067 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:35.367 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:35.367 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:35.568 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:35.568 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:35.969 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:35.969 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:35.969 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:35.969 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:36.370 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:36.370 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:36.571 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:36.571 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:36.787 [pool-2-thread-1] INFO KafkaTopicCreator - Created topics 0/1
+13:57:36.972 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:36.972 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:37.072 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:37.072 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:37.473 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:37.473 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:37.573 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:37.574 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:38.174 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:38.175 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:38.175 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:38.175 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:38.375 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:38.376 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:38.776 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:38.777 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:39.277 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -4 disconnected.
+13:57:39.278 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -4 (dev.ak-8.kafka-4.ext/192.168.108.5:1047) could not be established. Broker may not be available.
+13:57:39.378 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+13:57:39.378 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -2 (dev.ak-8.kafka-2.ext/192.168.108.3:1039) could not be established. Broker may not be available.
+13:57:39.379 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -3 disconnected.
+13:57:39.379 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -3 (dev.ak-8.kafka-3.ext/192.168.108.4:1043) could not be established. Broker may not be available.
+13:57:39.980 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -1 disconnected.
+13:57:39.980 [kafka-admin-client-thread | adminclient-1] WARN NetworkClient - [AdminClient clientId=adminclient-1] Connection to node -1 (dev.ak-8.kafka-1.ext/192.168.108.2:1031) could not be established. Broker may not be available.
+13:57:40.542 [qtp178401052-68] INFO LocalWorker - Created 1 topics in 23763.561363 ms
+13:57:40.615 [qtp178401052-70] INFO WorkerHandler - Received create producers request for topics: [test-topic-0000000-BPJmu_g]
+13:57:40.623 [qtp178401052-70] INFO ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 131072
+	bootstrap.servers = [dev.ak-8.kafka-1.ext:1031, dev.ak-8.kafka-2.ext:1039, dev.ak-8.kafka-3.ext:1043, dev.ak-8.kafka-4.ext:1047]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+
+13:57:40.629 [qtp178401052-70] INFO KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+13:57:40.643 [qtp178401052-70] INFO AppInfoParser - Kafka version: 3.6.1
+13:57:40.643 [qtp178401052-70] INFO AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+13:57:40.643 [qtp178401052-70] INFO AppInfoParser - Kafka startTimeMs: 1749146260642
+13:57:40.644 [qtp178401052-70] INFO LocalWorker - Created 1 producers in 28.035847 ms
+13:57:40.651 [kafka-producer-network-thread | producer-1] INFO Metadata - [Producer clientId=producer-1] Cluster ID: dev.ak-8
+13:57:40.754 [kafka-producer-network-thread | producer-1] WARN NetworkClient - [Producer clientId=producer-1] Error while fetching metadata with correlation id 5 : {test-topic-0000000-BPJmu_g=UNKNOWN_TOPIC_OR_PARTITION}
+13:57:40.858 [kafka-producer-network-thread | producer-1] INFO TransactionManager - [Producer clientId=producer-1] ProducerId set to 1000 with epoch 0
+13:57:44.895 [qtp178401052-68] INFO WorkerHandler - Start load publish-rate: 10000.0 msg/s -- payload-size: 1024
+13:58:45.873 [qtp178401052-68] INFO WorkerHandler - Reset stats
+14:02:40.560 [kafka-admin-client-thread | adminclient-1] INFO NetworkClient - [AdminClient clientId=adminclient-1] Node -2 disconnected.
+14:03:47.850 [qtp178401052-68] INFO WorkerHandler - Stop All
+14:03:48.002 [qtp178401052-68] INFO KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+14:03:48.007 [qtp178401052-68] INFO Metrics - Metrics scheduler closed
+14:03:48.007 [qtp178401052-68] INFO Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+14:03:48.007 [qtp178401052-68] INFO Metrics - Metrics reporters closed
+14:03:48.007 [qtp178401052-68] INFO AppInfoParser - App info kafka.producer for producer-1 unregistered
+14:03:48.008 [qtp178401052-68] INFO KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+14:03:48.008 [qtp178401052-68] INFO Metrics - Metrics scheduler closed
+14:03:48.008 [qtp178401052-68] INFO Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+14:03:48.008 [qtp178401052-68] INFO Metrics - Metrics reporters closed
+14:03:48.008 [qtp178401052-68] INFO AppInfoParser - App info kafka.producer for producer-1 unregistered
+14:03:48.009 [kafka-admin-client-thread | adminclient-1] INFO AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+14:03:48.011 [kafka-admin-client-thread | adminclient-1] INFO Metrics - Metrics scheduler closed
+14:03:48.011 [kafka-admin-client-thread | adminclient-1] INFO Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+14:03:48.011 [kafka-admin-client-thread | adminclient-1] INFO Metrics - Metrics reporters closed
+14:03:48.375 [qtp178401052-70] INFO WorkerHandler - Stop All
+14:03:48.523 [qtp178401052-68] INFO WorkerHandler - Stop All

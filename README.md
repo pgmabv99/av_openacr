@@ -217,7 +217,8 @@ x2rel -product:x2 -build:N -upload -omnode:dev.x2-4.x2-1
 x2rel -product:x2 -build:N -upload -omnode:dev.x2-4.x2-1 -dev
 
 ## private keys 
-
+x2ssh clean
+x2ssh start
 sed -i 's/id_rsa/algox2_av/g'  ~/.ssh/config.d/*
 sed -i 's/dkr/algox2_av/g'  ~/.ssh/config.d/*
 algo_x2: laptop->nj1.sn1.avorovich

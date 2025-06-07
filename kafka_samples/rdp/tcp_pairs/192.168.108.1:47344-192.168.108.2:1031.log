@@ -1,0 +1,5 @@
+-req  iframe:000000001135  ts_ns:3470761656
+kafka2.ProduceRequest  request_api_version:8  correlation_id:0  client_id:redpanda-console  acks:-1  timeout_ms:10000  topic_data.0:"kafka2.TopicProduceData0q  name:av111111  partition_data.0:'kafka2.
+kafka2.ProduceRequest  request_api_version:8  correlation_id:0  client_id:redpanda-console  acks:-1  timeout_ms:10000  topic_data.0:"kafka2.TopicProduceData0q  name:av111111  partition_data.0:'kafka2.
+-rsp  iframe:000000001137
+kafka2.ProduceResponse  request_api_version:8  correlation_id:0  responses.0:'kafka2.TopicProduceResponse0a  name:av111111  partition_responses.0:"kafka2.PartitionProduceResponse0a  index:2  error_cod

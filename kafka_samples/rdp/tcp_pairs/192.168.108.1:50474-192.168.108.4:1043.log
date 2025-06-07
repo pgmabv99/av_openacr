@@ -1,0 +1,5 @@
+-req  iframe:000000000955  ts_ns:2164244840
+kafka2.DescribeAclsRequest  request_api_version:2  correlation_id:0  client_id:redpanda-console  resource_type_filter:1  pattern_type_filter:1  operation:1  permission_type:1
+kafka2.DescribeAclsRequest  request_api_version:2  correlation_id:0  client_id:redpanda-console  resource_type_filter:1  pattern_type_filter:1  operation:1  permission_type:1
+-rsp  iframe:000000000960
+kafka2.DescribeAclsResponse  request_api_version:2  correlation_id:0  throttle_time_ms:0  error_code:0  error_message:""

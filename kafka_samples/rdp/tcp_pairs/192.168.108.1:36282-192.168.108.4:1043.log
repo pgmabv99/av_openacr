@@ -1,0 +1,5 @@
+-req  iframe:000000001462  ts_ns:3297494768
+kafka2.FetchRequest  request_api_version:11  correlation_id:0  client_id:redpanda-console  replica_id:-1  max_wait_ms:1  min_bytes:1  max_bytes:1  isolation_level:0  session_id:80803180  session_epoch
+kafka2.FetchRequest  request_api_version:11  correlation_id:0  client_id:redpanda-console  replica_id:-1  max_wait_ms:1  min_bytes:1  max_bytes:1  isolation_level:0  session_id:80803180  session_epoch
+-rsp  iframe:000000001469
+kafka2.FetchResponse  request_api_version:11  correlation_id:0  throttle_time_ms:0  error_code:0  session_id:0

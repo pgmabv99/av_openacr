@@ -1,0 +1,25 @@
+-req  iframe:000000000063  ts_ns:702247240
+kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:0  client_id:redpanda-console  client_software_name:kgo  client_software_version:v1.18.0
+kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:0  client_id:redpanda-console  client_software_name:kgo  client_software_version:v1.18.0
+-rsp  iframe:000000000065
+kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:0  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:0  min_version:0  max_version:11"  api_keys.1:"kafka2.ApiVersion18a  api_ke
+-req  iframe:000000000067  ts_ns:704363240
+kafka2.MetadataRequest  request_api_version:9  correlation_id:1  client_id:redpanda-console  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+kafka2.MetadataRequest  request_api_version:9  correlation_id:1  client_id:redpanda-console  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+-rsp  iframe:000000000069
+kafka2.MetadataResponse  request_api_version:9  correlation_id:1  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:dev.ak-8.kafka-1.ext  port:1031"  brokers.1:"kafka2.Me
+-req  iframe:000000000071  ts_ns:725438240
+kafka2.DescribeConfigsRequest  request_api_version:3  correlation_id:2  client_id:redpanda-console  resources.0:"kafka2.DescribeConfigsResource32q  resource_type:4  resource_name:1"  include_synonyms:
+kafka2.DescribeConfigsRequest  request_api_version:3  correlation_id:2  client_id:redpanda-console  resources.0:"kafka2.DescribeConfigsResource32q  resource_type:4  resource_name:1"  include_synonyms:
+-rsp  iframe:000000000095
+kafka2.DescribeConfigsResponse  request_api_version:3  correlation_id:2  throttle_time_ms:0  results.0:'kafka2.DescribeConfigsResult32a  error_code:0  error_message:""  resource_type:4  resource_name:
+-req  iframe:000000000107  ts_ns:847943240
+kafka2.DescribeLogDirsRequest  request_api_version:2  correlation_id:3  client_id:redpanda-console
+kafka2.DescribeLogDirsRequest  request_api_version:2  correlation_id:3  client_id:redpanda-console
+-rsp  iframe:000000000125
+kafka2.DescribeLogDirsResponse  request_api_version:2  correlation_id:3  throttle_time_ms:0  error_code:0  results.0:"kafka2.DescribeLogDirsResult35a  error_code:0  log_dir:/mnt/data-1/dev.ak-8  total
+-req  iframe:000000000141  ts_ns:885194240
+kafka2.ListGroupsRequest  request_api_version:4  correlation_id:4  client_id:redpanda-console
+kafka2.ListGroupsRequest  request_api_version:4  correlation_id:4  client_id:redpanda-console
+-rsp  iframe:000000000147
+kafka2.ListGroupsResponse  request_api_version:4  correlation_id:4  throttle_time_ms:0  error_code:0

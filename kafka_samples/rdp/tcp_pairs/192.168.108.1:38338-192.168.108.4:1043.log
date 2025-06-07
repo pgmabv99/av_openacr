@@ -1,0 +1,5 @@
+-req  iframe:000000000886  ts_ns:399009912
+kafka2.CreateTopicsRequest  request_api_version:5  correlation_id:0  client_id:redpanda-console  topics.0:'kafka2.CreatableTopic19q  name:av111111  num_partitions:3  replication_factor:1  configs.0:"k
+kafka2.CreateTopicsRequest  request_api_version:5  correlation_id:0  client_id:redpanda-console  topics.0:'kafka2.CreatableTopic19q  name:av111111  num_partitions:3  replication_factor:1  configs.0:"k
+-rsp  iframe:000000000888
+kafka2.CreateTopicsResponse  request_api_version:5  correlation_id:0  throttle_time_ms:0  topics.0:'kafka2.CreatableTopicResult19a  name:av111111  topic_id:00000000-0000-0000-0000-000000000000  error_

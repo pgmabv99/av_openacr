@@ -1,0 +1,30 @@
+-req  iframe:000000001801  ts_ns:493017224
+kafka2.MetadataRequest  request_api_version:9  correlation_id:0  client_id:redpanda-console  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:av111111"  all
+kafka2.MetadataRequest  request_api_version:9  correlation_id:0  client_id:redpanda-console  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:av111111"  all
+-rsp  iframe:000000001810
+kafka2.MetadataResponse  request_api_version:9  correlation_id:0  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:dev.ak-8.kafka-1.ext  port:1031"  brokers.1:"kafka2.Me
+-req  iframe:000000001804  ts_ns:494259224
+kafka2.ListOffsetsRequest  request_api_version:5  correlation_id:1  client_id:redpanda-console  replica_id:0  isolation_level:0  topics.0:'kafka2.ListOffsetsTopic2q  name:av111111  partitions.0:"kafka
+kafka2.ListOffsetsRequest  request_api_version:5  correlation_id:1  client_id:redpanda-console  replica_id:0  isolation_level:0  topics.0:'kafka2.ListOffsetsTopic2q  name:av111111  partitions.0:"kafka
+-rsp  iframe:000000001819
+kafka2.ListOffsetsResponse  request_api_version:5  correlation_id:1  throttle_time_ms:0  topics.0:'kafka2.ListOffsetsTopicResponse2a  name:av111111  partitions.0:"kafka2.ListOffsetsPartitionResponse2a
+-req  iframe:000000001817  ts_ns:495217224
+kafka2.ListOffsetsRequest  request_api_version:5  correlation_id:2  client_id:redpanda-console  replica_id:0  isolation_level:0  topics.0:'kafka2.ListOffsetsTopic2q  name:av111111  partitions.0:"kafka
+kafka2.ListOffsetsRequest  request_api_version:5  correlation_id:2  client_id:redpanda-console  replica_id:0  isolation_level:0  topics.0:'kafka2.ListOffsetsTopic2q  name:av111111  partitions.0:"kafka
+-rsp  iframe:000000001824
+kafka2.ListOffsetsResponse  request_api_version:5  correlation_id:2  throttle_time_ms:0  topics.0:'kafka2.ListOffsetsTopicResponse2a  name:av111111  partitions.0:"kafka2.ListOffsetsPartitionResponse2a
+-req  iframe:000000001899  ts_ns:2859334928
+kafka2.MetadataRequest  request_api_version:9  correlation_id:3  client_id:redpanda-console  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:av111111"  all
+kafka2.MetadataRequest  request_api_version:9  correlation_id:3  client_id:redpanda-console  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:av111111"  all
+-rsp  iframe:000000001901
+kafka2.MetadataResponse  request_api_version:9  correlation_id:3  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:dev.ak-8.kafka-1.ext  port:1031"  brokers.1:"kafka2.Me
+-req  iframe:000000001902  ts_ns:2861063928
+kafka2.ListOffsetsRequest  request_api_version:5  correlation_id:4  client_id:redpanda-console  replica_id:0  isolation_level:0  topics.0:'kafka2.ListOffsetsTopic2q  name:av111111  partitions.0:"kafka
+kafka2.ListOffsetsRequest  request_api_version:5  correlation_id:4  client_id:redpanda-console  replica_id:0  isolation_level:0  topics.0:'kafka2.ListOffsetsTopic2q  name:av111111  partitions.0:"kafka
+-rsp  iframe:000000001909
+kafka2.ListOffsetsResponse  request_api_version:5  correlation_id:4  throttle_time_ms:0  topics.0:'kafka2.ListOffsetsTopicResponse2a  name:av111111  partitions.0:"kafka2.ListOffsetsPartitionResponse2a
+-req  iframe:000000001905  ts_ns:2861326928
+kafka2.ListOffsetsRequest  request_api_version:5  correlation_id:5  client_id:redpanda-console  replica_id:0  isolation_level:0  topics.0:'kafka2.ListOffsetsTopic2q  name:av111111  partitions.0:"kafka
+kafka2.ListOffsetsRequest  request_api_version:5  correlation_id:5  client_id:redpanda-console  replica_id:0  isolation_level:0  topics.0:'kafka2.ListOffsetsTopic2q  name:av111111  partitions.0:"kafka
+-rsp  iframe:000000001913
+kafka2.ListOffsetsResponse  request_api_version:5  correlation_id:5  throttle_time_ms:0  topics.0:'kafka2.ListOffsetsTopicResponse2a  name:av111111  partitions.0:"kafka2.ListOffsetsPartitionResponse2a

@@ -1,0 +1,5 @@
+-req  iframe:000000001633  ts_ns:2423226848
+kafka2.MetadataRequest  request_api_version:9  correlation_id:0  client_id:redpanda-console  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:av111111"  all
+kafka2.MetadataRequest  request_api_version:9  correlation_id:0  client_id:redpanda-console  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:av111111"  all
+-rsp  iframe:000000001637
+kafka2.MetadataResponse  request_api_version:9  correlation_id:0  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:dev.ak-8.kafka-1.ext  port:1031"  brokers.1:"kafka2.Me

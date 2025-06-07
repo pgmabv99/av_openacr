@@ -1,0 +1,15 @@
+-req  iframe:000000001268  ts_ns:3751184656
+kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:0  client_id:redpanda-console  client_software_name:kgo  client_software_version:v1.18.0
+kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:0  client_id:redpanda-console  client_software_name:kgo  client_software_version:v1.18.0
+-rsp  iframe:000000001270
+kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:0  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:0  min_version:0  max_version:11"  api_keys.1:"kafka2.ApiVersion18a  api_ke
+-req  iframe:000000001272  ts_ns:3752919656
+kafka2.FetchRequest  request_api_version:11  correlation_id:1  client_id:redpanda-console  replica_id:-1  max_wait_ms:5000  min_bytes:1  max_bytes:5000000  isolation_level:0  session_id:0  session_epo
+kafka2.FetchRequest  request_api_version:11  correlation_id:1  client_id:redpanda-console  replica_id:-1  max_wait_ms:5000  min_bytes:1  max_bytes:5000000  isolation_level:0  session_id:0  session_epo
+-rsp  iframe:000000001276
+kafka2.FetchResponse  request_api_version:11  correlation_id:1  throttle_time_ms:0  error_code:0  session_id:241893528  responses.0:"kafka2.FetchableTopicResponse1a  topic:av111111  topic_id:00000000-
+-req  iframe:000000001278  ts_ns:3795347656
+kafka2.FetchRequest  request_api_version:11  correlation_id:2  client_id:redpanda-console  replica_id:-1  max_wait_ms:5000  min_bytes:1  max_bytes:5000000  isolation_level:0  session_id:241893528  ses
+kafka2.FetchRequest  request_api_version:11  correlation_id:2  client_id:redpanda-console  replica_id:-1  max_wait_ms:5000  min_bytes:1  max_bytes:5000000  isolation_level:0  session_id:241893528  ses
+-rsp  iframe:000000001285
+kafka2.FetchResponse  request_api_version:11  correlation_id:2  throttle_time_ms:0  error_code:0  session_id:241893528

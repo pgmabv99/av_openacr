@@ -1,0 +1,10 @@
+-req  iframe:000000001126  ts_ns:3467451656
+kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:0  client_id:redpanda-console  client_software_name:kgo  client_software_version:v1.18.0
+kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:0  client_id:redpanda-console  client_software_name:kgo  client_software_version:v1.18.0
+-rsp  iframe:000000001128
+kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:0  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:0  min_version:0  max_version:11"  api_keys.1:"kafka2.ApiVersion18a  api_ke
+-req  iframe:000000001130  ts_ns:3469074656
+kafka2.InitProducerIdRequest  request_api_version:3  correlation_id:1  client_id:redpanda-console  transaction_timeout_ms:0  producer_id:-1  producer_epoch:-1  enable2_pc:N  keep_prepared_txn:N
+kafka2.InitProducerIdRequest  request_api_version:3  correlation_id:1  client_id:redpanda-console  transaction_timeout_ms:0  producer_id:-1  producer_epoch:-1  enable2_pc:N  keep_prepared_txn:N
+-rsp  iframe:000000001131
+kafka2.InitProducerIdResponse  request_api_version:3  correlation_id:1  throttle_time_ms:0  error_code:0  producer_id:3000  producer_epoch:0  ongoing_txn_producer_id:-1  ongoing_txn_producer_epoch:-1

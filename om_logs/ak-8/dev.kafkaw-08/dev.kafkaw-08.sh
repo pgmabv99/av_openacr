@@ -80,7 +80,7 @@ function start_kafka_worker {
   configure_worker_memory
   configure_benchmark_memory
   rm -f benchmark-worker.log
-until nohup bin/benchmark-worker --port 1118 --stats-port 1119 >~/kafka_worker.log 2>&1 &
+until nohup bin/benchmark-worker --port 1118 --stats-port 1119 >kafka_worker.log  2>&1 &
   sleep 1
   pgrep java >/dev/null; do
   echo "Benchmark worker failed to start. Retrying..."
@@ -92,12 +92,14 @@ echo; echo $(hostname):failed; exit 1
 #
 #
 function stop_kafka_worker {
-  killall java 1>/dev/null 2>/dev/null
+  echo "Stopping kafka_worker..."
+  killall java 1>/dev/null 2>/dev/null || { echo "====Was not running"; }
 }
 #
 #
 function status_kafka_worker {
-  lsof -P -i :1118
+  echo "Checking status kafka_worker..."
+  lsof -P -i :1118 || { echo "====Not running"; }
 }
 #
 #

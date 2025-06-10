@@ -15,6 +15,7 @@ exit
 #to be issued form a separate terminal
 omcli -omnode:dev.ak-8.kafka-% -dkr_clean_run
 
+omcli -omnode:dev.ak-8.% -start_clean
 omcli -omnode:dev.ak-8.kafka-% -start_clean
 omcli -omnode:dev.ak-8.kafkaw-2 -start_clean
 bin/x2node  -node:dev.kafkaw-08 -cmd:'./kafkawrkr_test start_clean'  -fail_on_error:Y

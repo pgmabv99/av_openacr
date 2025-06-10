@@ -2,7 +2,7 @@
 
 omcli -omnode:dev.ak-8.% -stop
 
-tag=wrk_full
+tag=wrk_full2
 ofile=~/av_openacr/sniffer_logs/atf_snf_live_$tag.log
 echo "....starting atf_snf. use ctrl+C to enter commands . stdout is redirected to $ofile"
 echo "....live monitoring   in temp/atf_snf.dat . "

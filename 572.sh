@@ -122,6 +122,8 @@ acr_ed -create -field atf_snf.FMcb.snf                         -arg atf_snf.FSnf
 acr_ed -create -field atf_snf.FMcb.fd_out_file                 -arg i32              -write -comment ""
 acr_ed -create -field atf_snf.FMcb.i_kafka_solo                -arg i32              -write -comment "index of kafka req/rsp pair solo generation"
 acr_ed -create -field atf_snf.FMcb.kafka_solo_err_count        -arg i32              -write -comment "count of solo generation errors"
+acr_ed -create -field atf_snf.FMcb.seq_gap_pos_count           -arg u32              -write -comment "pos sequence gap count"
+acr_ed -create -field atf_snf.FMcb.seq_gap_neg_count           -arg u32              -write -comment "neg sequence gap count"
 
 # debug
 acr_ed -create -field atf_snf.FMcb.mac_print_flg               -arg bool             -write -comment "print MAC info at parse"

@@ -1,1090 +1,528 @@
 logging standalone files in out_solo_dir_full:/home/avorovich/pcap/wrk_full2
 logging tcp_pairs log files tcp_pair_dir:/home/avorovich/pcap/wrk_full2/tcp_pairs
 ====--PcapFileProcess  fname:/home/avorovich/pcap/wrk_full2.pcap
-kafka_req not found kafka_corr_id:859  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:1815  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":195
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:6016  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:7189  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":365
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:10844  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":479
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":524
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:7043  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":576
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:16379  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":648
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":693
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:20466  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:21218  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":837
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":1513
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-kafka_req not found kafka_corr_id:24146  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":908
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":984
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1027
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1074
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1118
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1148
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1192
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:17829  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1234
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1268
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:37981  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1374
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:40215  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":2586
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1457
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:42507  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:43890  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1633
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1679
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1729
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:50529  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:52024  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:55150  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:28144  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1917
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":1977
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":3409
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":2044
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":2106
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":2149
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":3723
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":2213
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:66064  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":2310
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":2379
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":2450
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":2511
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:71900  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:73113  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":4204
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":2656
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":2726
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":2795
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:39620  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":2841
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:81318  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":3038
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:83726  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:84935  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":3278
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:91454  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:92622  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:93530  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:47166  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-kafka_req not found kafka_corr_id:94372  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":3621
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:95669  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:96346  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:96956  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:97524  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:98414  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:99674  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4007
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4055
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4102
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4169
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4216
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:108707  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:109985  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":6076
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4363
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:113946  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4440
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4483
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:121905  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4612
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:125999  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4698
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:130522  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4799
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":7053
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4848
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4921
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":12290  "tcp_pair->frame_count":2101
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":12290  "tcp_pair->frame_count":2101
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":4996
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:137544  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":5091
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":12290  "tcp_pair->frame_count":2160
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":5139
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:72351  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":5207
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:74882  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":8044
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-kafka_req not found kafka_corr_id:154463  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-kafka_req not found kafka_corr_id:131456  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:154348  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:155497  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":5585
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":5660
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":5722
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":5788
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:162880  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":8580
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":5913
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:169033  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":6032
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":6083
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":6166
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:177721  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:178685  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:90522  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":6337
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:91127  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":6415
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":9302
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":6500
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:184304  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":6605
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:188989  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":6796
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":6896
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":10135
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-kafka_req not found kafka_corr_id:100370  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:131456  "kafka_rsp->iframe":29850  "tcp_pair->frame_count":7357
-kafka_req not found kafka_corr_id:131456  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:206418  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":10803
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":10803
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":7511
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":7551
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:212121  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":7657
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":7719
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:223602  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:112452  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":7836
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":7902
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":7972
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:232331  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":8078
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:239248  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":8221
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":12290  "tcp_pair->frame_count":3533
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":8313
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":8389
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:124726  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":8467
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":8553
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:254722  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:255764  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":8700
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":8778
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":8828
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:263359  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":8992
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":13115
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:131456  "kafka_rsp->iframe":29850  "tcp_pair->frame_count":9307
-kafka_req not found kafka_corr_id:131456  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":9398
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":14027
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":9466
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":9521
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:283653  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":9619
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:289976  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":9761
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:294843  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:148124  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":9861
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":9903
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:299456  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":9996
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":10053
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":10106
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":10163
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":10203
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":10245
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":10316
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":10360
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:138100  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":15416
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":10527
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":10617
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":10657
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":10750
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":10844
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":10892
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:364552  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:131456  "kafka_rsp->iframe":29850  "tcp_pair->frame_count":11474
-kafka_req not found kafka_corr_id:131456  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:379089  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:380173  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":11650
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":11728
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":11763
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:387515  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":11874
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:196050  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":11933
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:393138  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":12048
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":12173
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:404980  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":12303
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":12371
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":12442
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":12486
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:208746  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":12518
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":18549
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":12669
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":12750
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":12825
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:440676  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":12869
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":12948
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":13005
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":13060
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:453633  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":13201
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":13217
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:461118  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":13328
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":13398
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:468186  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":13480
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":13633
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:479710  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":13723
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":13764
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":13858
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:138100  "kafka_rsp->iframe":56585  "tcp_pair->frame_count":6015
-kafka_req not found kafka_corr_id:138100  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":13937
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":13981
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14022
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14035
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14100
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14171
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":21249
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14226
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14354
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:256892  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14436
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:514968  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14508
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14616
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14686
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14767
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14818
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14871
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14897
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":14930
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":22416
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":15095
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:544457  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":15244
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":15325
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:275822  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047
-kafka_req not found kafka_corr_id:551634  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":15426
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:557161  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:558218  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":15586
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":23802
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-kafka_req not found kafka_corr_id:567914  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:131456  "kafka_rsp->iframe":29850  "tcp_pair->frame_count":16046
-kafka_req not found kafka_corr_id:131456  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:576045  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":16140
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":16225
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:579914  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":16346
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":16439
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":16454
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":16527
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":16574
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":25219
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":25220
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":16655
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":16704
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:603966  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":16809
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":16843
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:609421  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":16986
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:616261  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:617445  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":17232
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":17286
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:624078  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":2563  "tcp_pair->frame_count":26289
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":17376
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:629797  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:630671  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":17572
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":915  "tcp_pair->frame_count":17614
-kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
-kafka_req not found kafka_corr_id:637481  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+kafka_req not found kafka_corr_id:38  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":5005
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":6691
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":8375
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":10058
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":11741
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":13432
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":15104
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":16790
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":18469
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":20167
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":21854
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":23530
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":25205
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":26896
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+kafka_req not found kafka_corr_id:138100  tcp_pair_key:192.168.108.6:37882-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":28587
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":30271
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":31958
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+kafka_req not found kafka_corr_id:262528  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":33652
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":35326
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":37017
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":38686
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":40364
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+IPv4 frame  iframe:100000
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":42063
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":45446
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
+duplicate rsp kafka_corr_id kafka_corr_id:0  "kafka_rsp->iframe":8217  "tcp_pair->frame_count":48814
+kafka_req not found kafka_corr_id:0  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047
 PcapFileProcess : EOF
 
 =============tcp_pairs req with matching rsp
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:40506-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003507155133  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:45396-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000052131049  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:40506  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:45396  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:34060-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003582305835  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:36590-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000991334767  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:34060  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:36590  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:52170-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000364581577  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42404-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002301259630  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:52170  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42404  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:34062-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003334989723  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42414-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003572499383  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:34062  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42414  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:52176-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002108457496  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:36596-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004174246576  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:52176  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:36596  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:34068-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003761308722  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42428-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001987871847  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:34068  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42428  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:52186-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003241942264  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:36610-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000927438991  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:52186  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:36610  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:34080-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004099029293  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42434-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001166601851  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:34080  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42434  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:52200-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003270693310  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:36620-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000433813563  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:52200  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:36620  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:34094-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001850611151  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:36632-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000338365029  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:34094  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:36632  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:52202-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004179965322  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42438-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000507572945  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:52202  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42438  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:34104-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004019226891  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42440-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001449164695  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:34104  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42440  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:52218-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000386037857  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:36634-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000963190149  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:52218  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:36634  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:52224-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003464732650  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:53518-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000351455034  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:52224  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:53518  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:34110-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003279024398  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:36644-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003068493885  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:34110  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:36644  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48268-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001249820562  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:53534-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003629445381  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48268  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:53534  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48278-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000211206936  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:36654-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004110185603  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48278  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:36654  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48280-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004177951067  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:53542-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001074843678  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48280  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:53542  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:33838-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001865972701  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:36662-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002693197257  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:33838  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:36662  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:34116-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003468038242  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:35350-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001945870994  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:34116  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:35350  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48294-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004111827028  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:35352-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002275008737  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48294  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:35352  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48304-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002426315861  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:35356-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003791208845  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48304  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:35356  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:33848-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001414879538  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:35366-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001749763155  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:33848  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:35366  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:34132-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002175251462  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:53554-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000014246562  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:34132  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:53554  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48316-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001287401354  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:36668-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000537969273  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48316  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:36668  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:33850-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003487580742  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:35376-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002603649533  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:33850  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:35376  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:34140-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003415522948  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:53570-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002903268056  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:34140  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:53570  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48322-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001532846868  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:36680-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001367292419  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48322  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:36680  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:33862-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002052570031  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:35384-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000690114916  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:33862  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:35384  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:34146-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002731777163  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:53584-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001849988655  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:34146  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:53584  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48324-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004216022496  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:36694-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002562101524  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48324  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:36694  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:33864-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002396135775  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:53638-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004281173605  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:33864  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:53638  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42488-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002208733044  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:53600-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003128079682  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42488  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:53600  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48332-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002615554815  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:50924-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001251542525  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48332  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:50924  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:33870-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003841091113  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:53646-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001954079067  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:33870  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:53646  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42494-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001898302183  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:53608-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000010372722  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42494  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:53608  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48336-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003876792555  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:34844-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000458282886  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48336  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:34844  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:53720-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002730299886  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:50926-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002936983953  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:53720  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:50926  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:33886-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002025436452  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:53652-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001089125561  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:33886  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:53652  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42498-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000702373350  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:53620-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002436887155  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42498  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:53620  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48346-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001888470261  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:50930-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000953651025  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48346  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:50930  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42500-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002907103961  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:53656-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003190237186  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42500  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:53656  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:33888-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000758874612  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:53624-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002430691525  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:33888  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:53624  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48362-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001423533816  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:50946-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001019990366  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48362  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:50946  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:33896-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004102637998  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:53660-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000097286448  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:33896  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:53660  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42514-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003269170481  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:44860-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003772470291  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42514  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:44860  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48364-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002844994728  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:50958-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003034213997  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48364  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:50958  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:33906-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001674296944  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:53664-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002828431245  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:33906  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:53664  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42526-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000510019714  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:50966-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002299445903  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42526  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:50966  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:50398-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000885565530  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:44876-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003837027331  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:50398  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:44876  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42532-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000507123014  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:53670-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003036180319  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42532  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:53670  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:56022-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003647170291  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:34854-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000454926664  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:56022  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:34854  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:36386-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003629834793  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:50982-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000345996083  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:36386  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:50982  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:50402-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002809758136  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:44884-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002924448302  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:50402  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:44884  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42546-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000280954063  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:53684-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003798489088  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42546  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:53684  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:56030-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003591807600  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:44892-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002183011230  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:56030  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:44892  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:50406-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001825557961  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:50998-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003100100724  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:50406  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:50998  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42552-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001990609176  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:53700-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000820780527  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42552  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:53700  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:56036-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:004018655482  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:44908-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001560208327  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:56036  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:44908  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:50420-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000253798895  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:51012-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001541868908  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:50420  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:51012  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:42556-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001938043832  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:58210-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003856974508  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:42556  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:58210  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:56050-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000291854589  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:37862-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002240309611  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:56050  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:37862  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:50422-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003684140742  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:44910-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001073828879  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:50422  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:44910  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:49726-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002764482368  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:58224-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001217839843  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:49726  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:58224  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:56052-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000485672244  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:37872-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003178498272  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:56052  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:37872  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:50428-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003902881342  tcp_payload_len_tot:000000000000
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:44924-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000361874630  tcp_payload_len_tot:000000000000
 atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:50428  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:44924  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:49732-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000068247412  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:49732  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:56058-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000871640396  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:56058  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:50444-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001113150234  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:50444  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:56060-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000401277952  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:56060  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:49740-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003830162644  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:49740  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:36400-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000160688475  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:36400  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:56074-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001021713882  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:56074  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:50450-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:000848712492  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:50450  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:49744-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002260025067  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:49744  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:56076-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003160109570  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:56076  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:49752-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:001952997765  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:49752  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:50464-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003577079368  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:50464  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:56086-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:003296105154  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:56086  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:49764-192.168.108.5:1047  frame_count:1  syn_count:1  fin_count:0  rst_count:0  isn:002725214220  tcp_payload_len_tot:000000000000
-atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:49764  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
-atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:58366-192.168.108.5:1047  frame_count:6  syn_count:1  fin_count:0  rst_count:0  isn:000526879348  tcp_payload_len_tot:000000000113
-atf_snf.kafka_stats  client_id_key:kafka-ui-admin-1749579964-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000113
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:58366  frame_count:4  syn_count:1  fin_count:0  rst_count:0  isn:002989802179  tcp_payload_len_tot:000000000594
-atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000594
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:58368-192.168.108.5:1047  frame_count:97  syn_count:1  fin_count:0  rst_count:0  isn:003283533672  tcp_payload_len_tot:000000003253
-atf_snf.frame_err  !!seq_gap_pos_count:1
-atf_snf.kafka_stats  client_id_key:kafka-ui-admin-1749579964-1  kafka_count:58  kafka_req_ack_count:58  kafka_count_in_bh:58  pct_non_ack!!!:0  kafka_len_tot:000000003253
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:58368  frame_count:94  syn_count:1  fin_count:0  rst_count:0  isn:002737052022  tcp_payload_len_tot:000000078083
-atf_snf.frame_err  !!seq_gap_pos_count:1
-atf_snf.kafka_stats  kafka_count:58  kafka_count_in_bh:58  kafka_len_tot:000000078083
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:49768-192.168.108.5:1047  frame_count:7  syn_count:1  fin_count:1  rst_count:0  isn:003887097771  tcp_payload_len_tot:000000000274
-atf_snf.kafka_stats  client_id_key:consumer-sub-000-l0-iGVs-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000274
-
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:49768  frame_count:5  syn_count:1  fin_count:1  rst_count:0  isn:004219565125  tcp_payload_len_tot:000000000529
-atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000529
-==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:49784-192.168.108.5:1047  frame_count:27350  syn_count:1  fin_count:1  rst_count:0  isn:000074606866  tcp_payload_len_tot:000004761571
-atf_snf.frame_err  !!seq_gap_pos_count:380
-atf_snf.kafka_stats  client_id_key:consumer-sub-000-l0-iGVs-1  kafka_count:27212  kafka_req_ack_count:16570  kafka_count_in_bh:27212  pct_non_ack!!!:0.391063  kafka_len_tot:000004761571
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:58232-192.168.108.5:1047  frame_count:6  syn_count:1  fin_count:0  rst_count:0  isn:000393846633  tcp_payload_len_tot:000000000113
+atf_snf.kafka_stats  client_id_key:kafka-ui-admin-1749589721-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000113
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:49784  frame_count:27160  syn_count:1  fin_count:1  rst_count:0  isn:000884683396  tcp_payload_len_tot:000001385198
-atf_snf.frame_err  !!seq_gap_pos_count:381
-atf_snf.kafka_stats  kafka_count:16598  kafka_count_in_bh:16575  kafka_len_tot:000006214844
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:58232  frame_count:4  syn_count:1  fin_count:0  rst_count:0  isn:003784773474  tcp_payload_len_tot:000000000656
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000656
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48938-192.168.108.5:1047  frame_count:6  syn_count:1  fin_count:0  rst_count:0  isn:002935082396  tcp_payload_len_tot:000000000088
-atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000088
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:37880-192.168.108.5:1047  frame_count:6  syn_count:1  fin_count:0  rst_count:0  isn:003593316583  tcp_payload_len_tot:000000000085
+atf_snf.kafka_stats  client_id_key:adminclient-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000085
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48938  frame_count:4  syn_count:1  fin_count:0  rst_count:0  isn:000672416950  tcp_payload_len_tot:000000001006
-atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000001006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:37880  frame_count:4  syn_count:1  fin_count:0  rst_count:0  isn:002600955407  tcp_payload_len_tot:000000000656
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000656
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:48946-192.168.108.5:1047  frame_count:7  syn_count:1  fin_count:0  rst_count:0  isn:000109193780  tcp_payload_len_tot:000000000110
-atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:3  kafka_req_ack_count:3  kafka_count_in_bh:3  pct_non_ack!!!:0  kafka_len_tot:000000000110
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:58236-192.168.108.5:1047  frame_count:36  syn_count:1  fin_count:0  rst_count:0  isn:000420733036  tcp_payload_len_tot:000000001005
+atf_snf.frame_err  !!seq_gap_pos_count:3
+atf_snf.kafka_stats  client_id_key:kafka-ui-admin-1749589721-1  kafka_count:20  kafka_req_ack_count:20  kafka_count_in_bh:20  pct_non_ack!!!:0  kafka_len_tot:000000001005
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:48946  frame_count:5  syn_count:1  fin_count:0  rst_count:0  isn:003796356281  tcp_payload_len_tot:000000001170
-atf_snf.kafka_stats  kafka_count:3  kafka_count_in_bh:3  kafka_len_tot:000000001170
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:58236  frame_count:33  syn_count:1  fin_count:0  rst_count:0  isn:002501034903  tcp_payload_len_tot:000000026254
+atf_snf.frame_err  !!seq_gap_pos_count:3
+atf_snf.kafka_stats  kafka_count:20  kafka_count_in_bh:20  kafka_len_tot:000000026254
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:49786-192.168.108.5:1047  frame_count:9374  syn_count:1  fin_count:1  rst_count:0  isn:003393433655  tcp_payload_len_tot:000000544860
-atf_snf.frame_err  !!seq_gap_pos_count:6
-atf_snf.kafka_stats  client_id_key:consumer-sub-000-l0-iGVs-1  kafka_count:4658  kafka_req_ack_count:1773  kafka_count_in_bh:4658  pct_non_ack!!!:0.619232  kafka_len_tot:000000544860
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:44928-192.168.108.5:1047  frame_count:26942  syn_count:1  fin_count:0  rst_count:0  isn:004088163799  tcp_payload_len_tot:000001572763
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-c78Bo1o-1  kafka_count:13445  kafka_req_ack_count:11943  kafka_count_in_bh:13445  pct_non_ack!!!:0.111706  kafka_len_tot:000001572763
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:49786  frame_count:17774  syn_count:1  fin_count:1  rst_count:0  isn:002129382058  tcp_payload_len_tot:000055973553
-atf_snf.frame_err  !!seq_gap_pos_count:259
-atf_snf.kafka_stats  kafka_count:2037  kafka_count_in_bh:1858  kafka_len_tot:000119037734
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:44928  frame_count:50285  syn_count:1  fin_count:0  rst_count:0  isn:001242369893  tcp_payload_len_tot:000157546169
+atf_snf.frame_err  !!seq_gap_pos_count:15
+atf_snf.kafka_stats  kafka_count:11971  kafka_count_in_bh:11946  kafka_len_tot:000157222492
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:53626-192.168.108.5:1047  frame_count:8478  syn_count:1  fin_count:1  rst_count:0  isn:000765007329  tcp_payload_len_tot:000056603055
-atf_snf.frame_err  !!seq_gap_pos_count:254
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:37882-192.168.108.5:1047  frame_count:23701  syn_count:1  fin_count:0  rst_count:0  isn:002572150165  tcp_payload_len_tot:000157595513
+atf_snf.frame_err  !!seq_gap_pos_count:14
 atf_snf.frame_err  !!seq_gap_neg_count:1
-atf_snf.kafka_stats  client_id_key:producer-1  kafka_count:4807  kafka_req_ack_count:3874  kafka_count_in_bh:4807  pct_non_ack!!!:0.194052  kafka_len_tot:000056632475
+atf_snf.kafka_stats  client_id_key:producer-1  kafka_count:13465  kafka_req_ack_count:12554  kafka_count_in_bh:13465  pct_non_ack!!!:0.0676519  kafka_len_tot:000157592967
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:53626  frame_count:7692  syn_count:1  fin_count:1  rst_count:0  isn:000642272143  tcp_payload_len_tot:000000364713
-atf_snf.frame_err  !!seq_gap_pos_count:152
-atf_snf.kafka_stats  kafka_count:3898  kafka_count_in_bh:3893  kafka_len_tot:000000666204
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:37882  frame_count:21711  syn_count:1  fin_count:0  rst_count:0  isn:000362317757  tcp_payload_len_tot:000001036296
+atf_snf.frame_err  !!seq_gap_pos_count:13
+atf_snf.kafka_stats  kafka_count:12555  kafka_count_in_bh:12555  kafka_len_tot:000001117647
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:33802-192.168.108.5:1047  frame_count:5  syn_count:0  fin_count:0  rst_count:0  isn:000952272138  tcp_payload_len_tot:000000000080
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:59338-192.168.108.5:1047  frame_count:7  syn_count:1  fin_count:0  rst_count:0  isn:001954375246  tcp_payload_len_tot:000000000080
 atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000080
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:33802  frame_count:3  syn_count:0  fin_count:0  rst_count:0  isn:001898726945  tcp_payload_len_tot:000000000660
-atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000660
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:59338  frame_count:6  syn_count:1  fin_count:0  rst_count:0  isn:002199229905  tcp_payload_len_tot:000000002444
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000002444
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:59344-192.168.108.5:1047  frame_count:8  syn_count:1  fin_count:0  rst_count:0  isn:000858802705  tcp_payload_len_tot:000000000110
+atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:3  kafka_req_ack_count:3  kafka_count_in_bh:3  pct_non_ack!!!:0  kafka_len_tot:000000000110
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:59344  frame_count:6  syn_count:1  fin_count:0  rst_count:0  isn:003376091111  tcp_payload_len_tot:000000001125
+atf_snf.kafka_stats  kafka_count:3  kafka_count_in_bh:3  kafka_len_tot:000000001125
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:58512-192.168.108.5:1047  frame_count:1  syn_count:0  fin_count:0  rst_count:0  isn:001784732861  tcp_payload_len_tot:000000000000
+atf_snf.kafka_stats  client_id_key:""  kafka_count:0  kafka_req_ack_count:0  kafka_count_in_bh:0  pct_non_ack!!!:0  kafka_len_tot:000000000000
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:58512  frame_count:1  syn_count:0  fin_count:0  rst_count:0  isn:003354388361  tcp_payload_len_tot:000000000000
+atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 
 =============tcp_pairs rsp without req 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.2-108.6  tcp_pair_key:192.168.108.2:1031-192.168.108.6:57234  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.2-108.7  tcp_pair_key:192.168.108.2:1031-192.168.108.7:40382  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.4-108.6  tcp_pair_key:192.168.108.4:1043-192.168.108.6:46246  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.4-108.7  tcp_pair_key:192.168.108.4:1043-192.168.108.7:49658  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.3-108.6  tcp_pair_key:192.168.108.3:1039-192.168.108.6:49034  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.3-108.7  tcp_pair_key:192.168.108.3:1039-192.168.108.7:60698  frame_count:1  syn_count:0  fin_count:0  rst_count:1  isn:000000000000  tcp_payload_len_tot:000000000006
 atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000000
 
 ==========================================batch stats
 TCP_FILTER.ATTENTION!!!!:N
-  "elapsed(sec)":112.202  iframe_count:98292  kafka_req_count_total:36746  kafka_req_ack_count_total:22286  kafka_solo_err_count:29  "kafka_duration_avg (ns)":1271942  ind_tcp_pair_n:181  max_pkt_len:9014
+  "elapsed(sec)":78.4695  iframe_count:122913  kafka_req_count_total:26939  kafka_req_ack_count_total:24526  kafka_solo_err_count:8  "kafka_duration_avg (ns)":3154498  ind_tcp_pair_n:151  max_pkt_len:9014
 Kafka Non-ACK(BAD - request without response) Ratio Histogram:
-range:00-00%  count_of_tcp_pairs:6
+range:00-00%  count_of_tcp_pairs:5
+range:00-10%  count_of_tcp_pairs:1
 range:10-20%  count_of_tcp_pairs:1
-range:30-40%  count_of_tcp_pairs:1
-range:60-70%  count_of_tcp_pairs:1
 exit to OS

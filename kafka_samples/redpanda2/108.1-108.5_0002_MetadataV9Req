@@ -1,7 +1,0 @@
-comptest kapi.MetadataReqV9Rdp -decode -hex   -req:- 
-comment MetadataReqV9Rdp
-exit_code 0
-00 00 00 20 00 03 00 09 00 00 00 02 00 10 72 65 64 70 61 6e 64 61 2d 63 6f 6e 73 6f 6c 65 00 00 
-00 00 00 00
-# Expected output below 
-# kafka2.MetadataRequest  request_api_version:9  correlation_id:2  client_id:redpanda-console  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N

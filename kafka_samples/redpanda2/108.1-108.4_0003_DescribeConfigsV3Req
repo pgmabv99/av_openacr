@@ -1,7 +1,0 @@
-comptest kapi.DescribeConfigsReqV3Rdp -decode -hex   -req:- 
-comment DescribeConfigsReqV3Rdp
-exit_code 0
-00 00 00 20 00 20 00 03 00 00 00 03 00 10 72 65 64 70 61 6e 64 61 2d 63 6f 6e 73 6f 6c 65 00 00 
-00 00 01 01
-# Expected output below 
-# kafka2.DescribeConfigsRequest  request_api_version:3  correlation_id:3  client_id:redpanda-console  include_synonyms:Y  include_documentation:Y

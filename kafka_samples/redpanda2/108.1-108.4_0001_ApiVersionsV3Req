@@ -1,7 +1,0 @@
-comptest kapi.ApiVersionsReqV3Rdp -decode -hex   -req:- 
-comment ApiVersionsReqV3Rdp
-exit_code 0
-00 00 00 2d 00 12 00 03 00 00 00 01 00 10 72 65 64 70 61 6e 64 61 2d 63 6f 6e 73 6f 6c 65 00 0a 
-52 50 43 6f 6e 73 6f 6c 65 07 76 32 2e 38 2e 32 00
-# Expected output below 
-# kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:redpanda-console  client_software_name:RPConsole  client_software_version:v2.8.2

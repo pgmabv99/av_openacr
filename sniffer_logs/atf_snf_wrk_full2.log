@@ -520,7 +520,7 @@ atf_snf.kafka_stats  kafka_count:0  kafka_count_in_bh:0  kafka_len_tot:000000000
 
 ==========================================batch stats
 TCP_FILTER.ATTENTION!!!!:N
-  "elapsed(sec)":78.4695  iframe_count:122913  kafka_req_count_total:26939  kafka_req_ack_count_total:24526  kafka_solo_err_count:8  "kafka_duration_avg (ns)":3154498  ind_tcp_pair_n:151  max_pkt_len:9014
+  "elapsed(sec)":78.579  iframe_count:122913  kafka_req_count_total:26939  kafka_req_ack_count_total:24526  kafka_solo_err_count:8  "kafka_duration_avg (ns)":3154498  ind_tcp_pair_n:151  max_pkt_len:9014
 Kafka Non-ACK(BAD - request without response) Ratio Histogram:
 range:00-00%  count_of_tcp_pairs:5
 range:00-10%  count_of_tcp_pairs:1

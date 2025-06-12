@@ -10,14 +10,19 @@
                                   |                                 |                                  
                        /<atf_snf.FMcbl mcb                          |                                  
                        |          |                                 |                                  
+                       |          |Lary omnode------>/ atf_snf.FOmnode                                 
+                       |          |Llist zd_omnode-->|              |                                  
+                       |          |                  -              |                                  
+                       |          |                                 |                                  
+                       |          |                                 |                                  
+                       |          |Lary dctrport--------------------|---->/ atf_snf.FDctrport          
+                       |          |Thash ind_uid--------------------|---->|                            
+                       |          |Llist zd_dctrport----------------|---->|                            
+                       |          |                                 |     -                            
+                       |          |                                 |                                  
+                       |          |                                 |                                  
                        |          |Lary intfname--------------------|-->/ atf_snf.FIntfname            
                        |          |Thash ind_intfname---------------|-->|                              
-                       |          |                                 |   |                              
-                       |          |Lary dctrport--------------------|---|---->/ atf_snf.FDctrport      
-                       |          |Thash ind_uid--------------------|---|---->|                        
-                       |          |Llist zd_dctrport----------------|---|---->|                        
-                       |          |                                 |   |     -                        
-                       |          |                                 |   |                              
                        |          |                                 |   |                              
                        |          |Tpool client_id------------------|---|--------->/ atf_snf.FClient_id
                        |          |                                 |   |          |                   
@@ -45,8 +50,8 @@
                                                         |Thash ind_client_id------>|                   
                                                         |Llist zd_kafka_obsolete-->|                   
                                                         |Bheap bh_kafka_corr_id--->|                   
-                                                        |Thash ind_kafka_corr_id-->|                   
                                                         |Ptr p_cur_kafka---------->|                   
+                                                        |Thash ind_kafka_corr_id-->|                   
                                                         |<-------------------------|Upptr p_tcp_pair   
                                                         |                          |                   
                                                         |                          |                   

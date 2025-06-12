@@ -5,8 +5,8 @@ set -e
 trg=atf_snf
 
 #  by hand
-    # dev.targdep  targdep:atf_snf.lib_kafka  comment:""
-    #     dev.targdep  targdep:atf_snf.kafka2  comment:""
+# dev.targdep  targdep:atf_snf.lib_kafka  comment:""
+#     dev.targdep  targdep:atf_snf.kafka2  comment:""
 
 # one time only !!!!!!!!!!!!!!!!!!
 # acr_ed -create -srcfile cpp/atf_snf/parse.cpp -write -comment "parsing frames and kafka req/rsp  "
@@ -70,7 +70,7 @@ acr_ed -create -field atf_snf.FTcp_pair.kafka_len_tot         -arg u32          
 acr_ed -create -field atf_snf.FTcp_pair.kafka_per_frame_count -arg u32              -write -comment "count of kafka req/rsp per frame"
 
 # pointers from above
-# acr_ed -del  -field atf_snf.FDb.zd_tcp_pair                    -write  
+# acr_ed -del  -field atf_snf.FDb.zd_tcp_pair                    -write
 acr_ed -create -field atf_snf.FDb.zd_tcp_pair             -cascdel              -write -comment ""
 acr_ed -create -field atf_snf.FDb.ind_tcp_pair            -cascdel              -write -comment ""
 
@@ -173,7 +173,6 @@ EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_snf.kapi                   arg:bool          reftype:Val      dflt:false        comment:"invoke tcp header and kafka parse code"
     dmmeta.field  field:command.atf_snf.in_file                arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input PCAP file under dir. empty for live NIC capture"
-    dmmeta.field  field:command.atf_snf.in_solo_dir            arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input folder under dir for solo req files. empty for live NIC capture"
     dmmeta.field  field:command.atf_snf.out_solo_dir           arg:algo.cstring  reftype:Val      dflt:'""'  comment:"output folder under dir for solo req files. empty to skip creation of solo files"
     dmmeta.field  field:command.atf_snf.out_file               arg:algo.cstring  reftype:Val      dflt:'""'  comment:"output PCAP file under dir to shadow pkts. empty for no shadow"
     dmmeta.field  field:command.atf_snf.dir                    arg:algo.cstring  reftype:Val      dflt:'"/home/avorovich/pcap/"'  comment:"dir for in and out files"
@@ -181,18 +180,19 @@ acr -merge -write <<EOF
 EOF
 
 
-# include port config file
-acr_ed -del    -ctype atf_snf.FDctrport                          -write || true
-acr_ed -create -finput -target atf_snf   -ssimfile dkrdb.dctrport  -write -comment "inherited from ssimfile"
-acr_ed -del    -field atf_snf.FDb.ind_uid                        -write || true
-acr_ed -create -field atf_snf.FDb.ind_uid  -arg atf_snf.FDctrport -hashfld dkrdb.Dctrport.uid -xref -write -comment ""
-acr_ed -del    -field atf_snf.FDb.zd_dctrport                     -write || true
-acr_ed -create -field atf_snf.FDb.zd_dctrport                    -arg atf_snf.FDctrport -xref -write -comment ""
+# include omenv  ssim file
+acr_ed -del    -ctype atf_snf.FOmnode                         -write || true
+acr_ed -create -finput -target atf_snf -ssimfile omdb.omnode -write -comment "inherited from ssimfile"
+acr_ed -del    -field atf_snf.FDb.zd_omnode                   -write || true
+acr_ed -create -field atf_snf.FDb.zd_omnode                   -arg atf_snf.FOmnode -xref -write -comment ""
 
-# force reading of dkrdb.dctrport
-acr -merge -write <<EOF 
-    dmmeta.floadtuples  field:command.atf_snf.in  comment:""   
+# force reading of ssim files
+acr -merge -write <<EOF
+    dmmeta.floadtuples  field:command.atf_snf.in  comment:""
 EOF
+
+
+
 # -dmmeta.funique  field:dkrdb.Dctrport.dctrport  comment:""
 # +dmmeta.funique  field:dkrdb.Dctrport.uid  comment:""
 

@@ -1,0 +1,12 @@
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:59646-192.168.108.5:1047  frame_count:8  syn_count:1  fin_count:1  rst_count:0  isn:001387227861  tcp_payload_len_tot:000000000085
+atf_snf.kafka_stats  client_id_key:adminclient-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000085
+
+
+atf_snf.info iframe:000000000087  ts_ns:1795805049907564  ack:1
+kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:0  client_id:adminclient-1  client_software_name:apache-kafka-java  client_software_version:3.6.1
+atf_snf.info iframe:000000000089
+kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:0  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:0  min_version:0  max_version:11"  api_keys.1:"kafka2.ApiVersion18a  api_key:1  min_version:0  max_version:17"  api_keys.2:"kafka2.ApiVersion18a  api_key:2  min_version:0  max_version:9"  api_keys.3:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:12"  api_keys.4:"kafka2.ApiVersion18a  api_key:8  min_version:0  max_version:9"  api_keys.5:"kafka2.ApiVersion18a  api_key:9  min_version:0  max_version:9"  api_keys.6:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"  api_keys.7:"kafka2.ApiVersion18a  api_key:11  min_version:0  max_version:9"  api_keys.8:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"  api_keys.9:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"  api_keys.10:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"  api_keys.11:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:5"  api_keys.12:"kafka
+atf_snf.info iframe:000000000099  ts_ns:1795805097311942  ack:1
+kafka2.MetadataRequest  request_api_version:12  correlation_id:1  client_id:adminclient-1  allow_auto_topic_creation:Y  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+atf_snf.info iframe:000000000102
+kafka2.MetadataResponse  request_api_version:12  correlation_id:1  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:4  host:dev.ak-8.kafka-4.ext  port:1047"  cluster_id:dev.ak-8  controller_id:4  cluster_authorized_operations:-2147483648  error_code:0

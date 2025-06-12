@@ -1,0 +1,37 @@
+writing tcp_pairs  files  in dir:/home/avorovich/pcap/wrk_full2/tests
+writing tcp_pairs  files  in dir:/home/avorovich/pcap/wrk_full2/tcp_pairs
+downloading omnode logs  in  dir:/home/avorovich/pcap/wrk_full2/logs
+====--PcapFileProcess  fname:/home/avorovich/pcap/wrk_full2.pcap
+---  iframe:000000000232  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"SYN  02"  seq_rel:"000000000000:           "  seq_gap:"            "  tcp_pay_len:000000
+---  iframe:000000000235  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000001:000000000068  seq_gap:"            "  tcp_pay_len:000067
+---  iframe:000000000239  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000068:000000000112  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000242  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000112:000000000156  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000245  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000156:000000000282  seq_gap:"            "  tcp_pay_len:000126
+---  iframe:000000000249  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000282:000000000326  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000251  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000326:000000000370  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000253  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000370:000000000496  seq_gap:"            "  tcp_pay_len:000126
+---  iframe:000000000258  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000496:000000000540  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000266  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000540:000000000584  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000269  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000584:000000000628  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000274  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000628:000000000672  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000277  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000672:000000000798  seq_gap:"            "  tcp_pay_len:000126
+---  iframe:000000000285  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000798:000000000842  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000287  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000842:000000000968  seq_gap:"            "  tcp_pay_len:000126
+---  iframe:000000000293  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000000968:000000001012  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000295  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001012:000000001110  seq_gap:"            "  tcp_pay_len:000098
+---  iframe:000000000305  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001110:000000001154  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000307  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001154:000000001280  seq_gap:"            "  tcp_pay_len:000126
+---  iframe:000000000313  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001280:000000001324  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000315  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001324:000000001422  seq_gap:"            "  tcp_pay_len:000098
+---  iframe:000000000328  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001422:000000001466  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000330  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001466:000000001592  seq_gap:"            "  tcp_pay_len:000126
+---  iframe:000000000340  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001592:000000001636  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000342  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001636:000000001734  seq_gap:"            "  tcp_pay_len:000098
+---  iframe:000000000352  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001734:000000001778  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000354  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001778:000000001822  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000364  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001822:000000001866  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000367  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001866:000000001964  seq_gap:"            "  tcp_pay_len:000098
+---  iframe:000000000377  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000001964:000000002008  seq_gap:"            "  tcp_pay_len:000044
+---  iframe:000000000380  tcp_pair_key:192.168.108.1:42192-192.168.108.5:1047  direction:1  th_flags:"PUSH ACK  18"  seq_rel:000000002008:000000002054  seq_gap:"            "  tcp_pay_len:000046
+PcapFileProcess : EOF
+exit to OS

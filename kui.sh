@@ -2,7 +2,7 @@
 
 omcli -omnode:dev.ak-8.% -stop
 
-tag=wrk_full2
+tag=wrk_red1
 ofile=~/av_openacr/sniffer_logs/atf_snf_live_$tag.log
 echo "....starting atf_snf. use ctrl+C to enter commands . stdout is redirected to $ofile"
 echo "....live monitoring   in temp/atf_snf.dat . "
@@ -21,6 +21,7 @@ omcli -omnode:dev.ak-8.kafkaw-2 -start_clean
 bin/x2node  -node:dev.kafkaw-08 -cmd:'./kafkawrkr_test start_clean'  -fail_on_error:Y
 
 omcli -omenv:dev.ak-8 -omtest:om_benchmark
+omcli  -omenv:dev.ak-8 -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload -omrun_minutes:1
 
 omcli -omnode:dev.ak-8.% -status
 

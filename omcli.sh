@@ -24,7 +24,6 @@ down
 ai
 omcli -omnode:dev.x2-4.x2% -stop
 x2rel -create  -product:x2
-#          ===============e  -product:x2
 x2rel  -upload -product:x2 -omnode:dev.x2-4.x2%
 omcli -omnode:dev.x2-4.x2% -start_clean
 omcli -omnode:dev.x2-4.x2% -status

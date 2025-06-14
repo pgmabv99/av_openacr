@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -x
-tag=wrk_red1
+tag=wrk_red2
 ofile=~/av_openacr/sniffer_logs/atf_snf_$tag.log
 sudo mkdir -p ~/pcap/$tag
 sudo chmod -R 777 ~/pcap/$tag

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -x
-tag=wrk_full2
+tag=wrk_red2
 ofile=~/av_openacr/sniffer_logs/tcpdump_$tag.log
 frame_count=$(tcpdump -nn -r ~/pcap/$tag.pcap 2>/dev/null | wc -l)
 echo "Total frames in pcap: $frame_count"

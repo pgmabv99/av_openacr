@@ -1,3 +1,0 @@
-logging standalone files in cap_dir:/home/avorovich/pcap/cap
-====--PcapFileProcess  fname:/home/avorovich/pcap/o1_missed_produce.pcap.pcap
-atf_snf.error  Failed to open file  fname:/home/avorovich/pcap/o1_missed_produce.pcap.pcap

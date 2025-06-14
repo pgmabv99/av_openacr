@@ -1,4 +1,0 @@
-logging standalone files in out_solo_dir_full:/home/avorovich/pcap/wrk
-logging tcp_pairs log files tcp_pair_dir:/home/avorovich/pcap/wrk/tcp_pairs
-====--PcapFileProcess  fname:/home/avorovich/pcap/wrk.pcap
-atf_snf.error  Failed to open file  fname:/home/avorovich/pcap/wrk.pcap

@@ -2,11 +2,11 @@
 
 omcli -omnode:dev.ak-8.% -stop
 
-tag=wrk_red1
+tag=wrk_red2
 ofile=~/av_openacr/sniffer_logs/atf_snf_live_$tag.log
 echo "....starting atf_snf. use ctrl+C to enter commands . stdout is redirected to $ofile"
 echo "....live monitoring   in temp/atf_snf.dat . "
-sudo ~/arnd/bin/atf_snf -dev:data0-8T -kapi:true  -out_file:$tag.pcap  -out_solo_dir:$tag > $ofile 2>&1; tail -n 20 $ofile
+sudo ~/arnd/bin/atf_snf -dev:data0-8T -kapi:true  -out_file:$tag.pcap  -out_solo_dir:$tag -v > $ofile 2>&1; tail -n 20 $ofile
 # sudo ~/arnd/bin/atf_snf -dev:data0-8T -kapi:true  -out_file:$tag.pcap   > $ofile 2>&1; tail -n 20 $ofile
 
 exit

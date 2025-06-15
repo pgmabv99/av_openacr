@@ -27,8 +27,8 @@ omcli -omnode:dev.ak-8.% -status
 
 # 
 
-omcli -omnode:dev.ak-8.kafkaui% -start
-omcli -omnode:dev.ak-8.rdpui% -start
+omcli -omnode:dev.ak-8.kafkaui% -start_clean
+omcli -omnode:dev.ak-8.rdpui% -start_clean
 # 
 omcli -omnode:dev.ak-8.kafka-% -kcat_plaintext -kcat_cmd:"-L"
 omcli -omnode:dev.ak-8.kafka-1 -shell

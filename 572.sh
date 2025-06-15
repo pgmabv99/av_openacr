@@ -169,6 +169,7 @@ acr.delete dmmeta.field  field:command.atf_snf.out_solo_dir
 acr.delete dmmeta.field  field:command.atf_snf.out_file
 acr.delete dmmeta.field  field:command.atf_snf.dir
 acr.delete dmmeta.field  field:command.atf_snf.mult_req_per_frame
+acr.delete dmmeta.field  field:command.atf_snf.omenv_logs
 EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_snf.kapi                   arg:bool          reftype:Val      dflt:false        comment:"invoke tcp header and kafka parse code"
@@ -177,7 +178,7 @@ acr -merge -write <<EOF
     dmmeta.field  field:command.atf_snf.out_file               arg:algo.cstring  reftype:Val      dflt:'""'  comment:"output PCAP file under dir to shadow pkts. empty for no shadow"
     dmmeta.field  field:command.atf_snf.dir                    arg:algo.cstring  reftype:Val      dflt:'"/home/avorovich/pcap/"'  comment:"dir for in and out files"
     dmmeta.field  field:command.atf_snf.mult_req_per_frame     arg:bool          reftype:Val      dflt:true        comment:"parse mode: true - multiple req/rsp are expected per frame"
-EOF
+    dmmeta.field  field:command.atf_snf.omenv_logs    arg:algo.cstring           reftype:Val      dflt:'""'        comment:"omenv to get logs from"
 
 
 # include omenv  ssim file

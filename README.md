@@ -149,6 +149,8 @@ git status --short
 
 #for arnd gitlab use ssh private key
 git config --global core.sshCommand "ssh -i /home/avorovich/.ssh/algox2_av"
+git config --global core.sshCommand "ssh -i /home/x2usr/.ssh/algox2_av"
+git config --global core.sshCommand "ssh -i /home/x2usr/.ssh/algox2_gitlab"
 
 cd arnd
 gitconfig-setup

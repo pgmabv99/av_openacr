@@ -20,7 +20,8 @@ omcli -omnode:dev.ak-8.kafka-% -start_clean
 omcli -omnode:dev.ak-8.kafkaw-2 -start_clean
 bin/x2node  -node:dev.kafkaw-08 -cmd:'./kafkawrkr_test start_clean'  -fail_on_error:Y
 
-omcli -omenv:dev.ak-8 -omtest:om_benchmark
+# omcli -omenv:dev.ak-8 -omtest:om_benchmark
+echo " short benchmark with 1 broker"
 omcli  -omenv:dev.ak-8 -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload -omrun_minutes:1
 
 omcli -omnode:dev.ak-8.% -status

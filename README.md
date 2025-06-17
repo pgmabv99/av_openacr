@@ -114,16 +114,23 @@ git log --oneline --decorate --pretty=format:"%h %ad | %s%d [%an]" --date=short`
 We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.md) which can be installed with the bin/gitconfig-setup script. It automatically resolves conflicts in ssim files because it understands that nearby lines are not logically related (by default, git treats files like code, where nearby changes are considered a conflict). acr_dm can even resolve 3-way merges where one branch changes attribute A and another changes attribute B - it's not a conflict because different attributes were changed.
 
 ```
-### gitlab work flow items
+### git work flow items
 ```
 git-rebase-origin 
 normalize_
 atf_comp
 atf_comp -covcapture
-gcli -create mr
 git-add-to-last-commit
 
-
+```
+### gitlab  work flow items
+```
+#creates issue  
+gcli -create  
+#create local branch
+gcli 999 -start  
+#push local branch and create draft MR
+gcli mr -create 
 
 ```
 ### To Keep My Repo Under OpenACR Without Affecting Main Branch

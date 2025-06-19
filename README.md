@@ -125,12 +125,21 @@ git-add-to-last-commit
 ```
 ### gitlab  work flow items
 ```
+# token in github 
+gcli repo -create token:<token> host:https://gitlab.vovaco.com/
+gcli repo -update algornd/arnd
+
+
 #creates issue  
 gcli -create  
 #create local branch
 gcli 999 -start  
 #push local branch and create draft MR
 gcli mr -create 
+#list mr
+gcli mr
+#remove draft status
+gcli mr:9999 -approve
 
 ```
 ### To Keep My Repo Under OpenACR Without Affecting Main Branch

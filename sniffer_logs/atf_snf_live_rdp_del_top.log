@@ -87,43 +87,42 @@ verbose: bash  -c 'chmod 666 /home/avorovich/pcap/rdp_del_top.pcap'
 
 =============tcp_pairs req with matching rsp
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:34624-192.168.108.5:1047  frame_count:32  syn_count:1  fin_count:0  rst_count:0  isn:004250300705  tcp_payload_len_tot:000000000717
-atf_snf.frame_err  !!seq_gap_pos_count:1
-atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:17  kafka_req_ack_count:17  kafka_count_in_bh:17  pct_non_ack!!!:0  kafka_len_tot:000000000717
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:44504-192.168.108.5:1047  frame_count:28  syn_count:1  fin_count:0  rst_count:0  isn:001327824060  tcp_payload_len_tot:000000000632
+atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:15  kafka_req_ack_count:15  kafka_count_in_bh:15  pct_non_ack!!!:0  kafka_len_tot:000000000632
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:34624  frame_count:21  syn_count:1  fin_count:0  rst_count:0  isn:002523257748  tcp_payload_len_tot:000000004236
-atf_snf.kafka_stats  kafka_count:17  kafka_count_in_bh:17  kafka_len_tot:000000004236
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:44504  frame_count:17  syn_count:1  fin_count:0  rst_count:0  isn:003665812647  tcp_payload_len_tot:000000003667
+atf_snf.kafka_stats  kafka_count:15  kafka_count_in_bh:15  kafka_len_tot:000000003667
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:34636-192.168.108.5:1047  frame_count:49  syn_count:1  fin_count:0  rst_count:0  isn:001018135680  tcp_payload_len_tot:000000000892
-atf_snf.frame_err  !!seq_gap_pos_count:1
-atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:24  kafka_req_ack_count:24  kafka_count_in_bh:24  pct_non_ack!!!:0  kafka_len_tot:000000000892
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:44510-192.168.108.5:1047  frame_count:47  syn_count:1  fin_count:0  rst_count:0  isn:004107860783  tcp_payload_len_tot:000000000964
+atf_snf.frame_err  !!seq_gap_neg_count:1
+atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:25  kafka_req_ack_count:25  kafka_count_in_bh:25  pct_non_ack!!!:0  kafka_len_tot:000000000928
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:34636  frame_count:92  syn_count:1  fin_count:0  rst_count:0  isn:002271950903  tcp_payload_len_tot:000000096710
-atf_snf.kafka_stats  kafka_count:24  kafka_count_in_bh:24  kafka_len_tot:000000096710
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:44510  frame_count:92  syn_count:1  fin_count:0  rst_count:0  isn:002794631952  tcp_payload_len_tot:000000096776
+atf_snf.kafka_stats  kafka_count:25  kafka_count_in_bh:25  kafka_len_tot:000000096776
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:34646-192.168.108.5:1047  frame_count:13  syn_count:1  fin_count:1  rst_count:0  isn:003951067798  tcp_payload_len_tot:000000000196
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:44512-192.168.108.5:1047  frame_count:11  syn_count:1  fin_count:0  rst_count:0  isn:001060330553  tcp_payload_len_tot:000000000196
 atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:5  kafka_req_ack_count:5  kafka_count_in_bh:5  pct_non_ack!!!:0  kafka_len_tot:000000000196
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:34646  frame_count:10  syn_count:1  fin_count:1  rst_count:0  isn:003819928301  tcp_payload_len_tot:000000001204
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:44512  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:000102319826  tcp_payload_len_tot:000000001204
 atf_snf.kafka_stats  kafka_count:5  kafka_count_in_bh:5  kafka_len_tot:000000001204
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:34652-192.168.108.5:1047  frame_count:17  syn_count:1  fin_count:1  rst_count:0  isn:001568782808  tcp_payload_len_tot:000000000226
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:44526-192.168.108.5:1047  frame_count:15  syn_count:1  fin_count:0  rst_count:0  isn:001754758951  tcp_payload_len_tot:000000000226
 atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:6  kafka_req_ack_count:6  kafka_count_in_bh:6  pct_non_ack!!!:0  kafka_len_tot:000000000226
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:34652  frame_count:29  syn_count:1  fin_count:1  rst_count:0  isn:001115158201  tcp_payload_len_tot:000000028179
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:44526  frame_count:28  syn_count:1  fin_count:0  rst_count:0  isn:002757831493  tcp_payload_len_tot:000000028179
 atf_snf.kafka_stats  kafka_count:6  kafka_count_in_bh:6  kafka_len_tot:000000028179
 ==  
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:54834-192.168.108.5:1047  frame_count:7  syn_count:1  fin_count:0  rst_count:0  isn:000493862733  tcp_payload_len_tot:000000000115
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:36798-192.168.108.5:1047  frame_count:6  syn_count:1  fin_count:0  rst_count:0  isn:002029948266  tcp_payload_len_tot:000000000115
 atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000115
 
-atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:54834  frame_count:6  syn_count:1  fin_count:0  rst_count:0  isn:000865683610  tcp_payload_len_tot:000000001281
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:36798  frame_count:5  syn_count:1  fin_count:0  rst_count:0  isn:000685914745  tcp_payload_len_tot:000000001281
 atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000001281
 
 =============tcp_pairs rsp without req 
 
 ==========================================batch stats
 TCP_FILTER.ATTENTION!!!!:N
-  "elapsed(sec)":103.122  iframe_count:281  seq_gap_pos_count:2  seq_gap_neg_count:0  kafka_req_count_total:54  kafka_req_ack_count_total:54  kafka_solo_err_count:0  "kafka_duration_avg (ns)":4738799  ind_tcp_pair_n:10  max_pkt_len:1514
+  "elapsed(sec)":43.702  iframe_count:259  seq_gap_pos_count:0  seq_gap_neg_count:1  kafka_req_count_total:53  kafka_req_ack_count_total:53  kafka_solo_err_count:0  "kafka_duration_avg (ns)":4475122  ind_tcp_pair_n:10  max_pkt_len:1514
 Kafka Non-ACK(BAD - request without response) Ratio Histogram:
 range:00-00%  count_of_tcp_pairs:5
 verbose: SysCmdExec.info  cmd:"sudo chmod -R 777 /home/avorovich/pcap/\n"

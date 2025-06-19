@@ -23,15 +23,14 @@ exit 0
 down
 ai
 omcli dev.x2-4.x2% -stop
-x2rel -create  -product:x2
-x2rel  -upload -product:x2 dev.x2-4.x2%
+x2rel -create  -product:x2 -omenv:dev.x2-4
+x2rel  -upload -product:x2 -omnode:dev.x2-4.x2%
 omcli dev.x2-4.x2% -start_clean
 omcli dev.x2-4.x2% -status
 
 # sudo lsof -nP -iTCP -sTCP:LISTEN | grep x2gw
 
-# x2rel -product:x2 dev.x2-4.x2%    -upload -dev
-# x2rel -product:x2 dev.x2-4.kafkaui-1  -upload -dev
+# x2rel -product:x2 -omnode:dev.x2-4.x2%    -upload -dev
 
 
 echo "---------------------clean start ONE node + rdpui"

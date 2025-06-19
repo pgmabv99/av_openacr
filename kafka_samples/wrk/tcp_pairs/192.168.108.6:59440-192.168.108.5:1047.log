@@ -1,8 +1,0 @@
--req  iframe:000000000221  ts_ns:330376624  ack:1
-kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:2  client_id:adminclient-1  client_software_name:apache-kafka-java  client_software_version:3.6.1
--rsp  iframe:000000000223
-kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:2  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:0  min_version:0  max_version:11"  api_keys.1:"kafka2.ApiVersion18a  api_ke
--req  iframe:000000000225  ts_ns:332565624  ack:1
-kafka2.CreateTopicsRequest  request_api_version:7  correlation_id:3  client_id:adminclient-1  topics.0:'kafka2.CreatableTopic19q  name:test-topic-0000000-oWpvdQM  num_partitions:10  replication_factor
--rsp  iframe:000000000240
-kafka2.CreateTopicsResponse  request_api_version:7  correlation_id:3  throttle_time_ms:0  topics.0:'kafka2.CreatableTopicResult19a  name:test-topic-0000000-oWpvdQM  topic_id:d4c8ef7b-8684-4a9f-9752-6f

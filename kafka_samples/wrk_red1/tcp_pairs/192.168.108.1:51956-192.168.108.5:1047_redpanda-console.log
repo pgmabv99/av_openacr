@@ -1,8 +1,0 @@
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:51956-192.168.108.5:1047  frame_count:8  syn_count:1  fin_count:1  rst_count:0  isn:003707705399  tcp_payload_len_tot:000000000036
-atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:1  kafka_req_ack_count:1  kafka_count_in_bh:1  pct_non_ack!!!:0  kafka_len_tot:000000000036
-
-
-atf_snf.info iframe:000000036091  ts_ns:1796103195839046  ack:1
-kafka2.MetadataRequest  request_api_version:9  correlation_id:0  client_id:redpanda-console  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
-atf_snf.info iframe:000000036093
-kafka2.MetadataResponse  request_api_version:9  correlation_id:0  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:4  host:dev.ak-8.kafka-4.ext  port:1047"  cluster_id:dev.ak-8  controller_id:4  cluster_authorized_operations:-2147483648  error_code:0

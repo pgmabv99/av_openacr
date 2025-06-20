@@ -4,15 +4,8 @@
 PATH=bin:$HOME/arnd/bin:$HOME/av_openacr:$PATH
 
 # the rest for interactive shell only
-# hostname
-#lspci -nn | grep -i nvm
 tmp_code=$(find "$HOME/.vscode-server/cli/servers/" -type d -name "Stable*" | sort | tail -n 1)
 export EDITOR="$tmp_code/server/bin/remote-cli/code --wait"
-# export EDITOR="/home/avorovich/.vscode-server/cli/servers/Stable-4949701c880d4bdb949e3c0e6b400288da7f474b/server/bin/remote-cli/code --wait"
-# this does not work
-# git config --global core.editor "$tmp_code/server/bin/remote-cli/code"
-# lspci -nn | grep -i ConnectX-6
-# set +x
 
 
 # source    $HOME/algo/s_setup_home.sh
@@ -33,6 +26,7 @@ alias al='source  ~/arnd/conf/alexei/bash_profile'
 
 # cp common files
 cp ~/av_openacr/homefiles/.gitconfig ~/.gitconfig
+export GIT_SSH_COMMAND='ssh -i ~/.ssh/algox2_av'
 cp ~/av_openacr/homefiles/.gdbinit ~/.gdbinit
 
 abtd(){
@@ -77,60 +71,60 @@ down_rdpui() {
   set +x
 }
 
-# copy all important log files from the omenv
-down_env() {
+# # copy all important log files from the omenv
+# down_env() {
 
-  down_kafka_worker() {
-    local omenv="$1"
-    local node="$2"
-    local node_dir="$down_root/$omenv/$node"
+#   down_kafka_worker() {
+#     local omenv="$1"
+#     local node="$2"
+#     local node_dir="$down_root/$omenv/$node"
 
-    rm -rf "$node_dir"
-    mkdir -p "$node_dir"
+#     rm -rf "$node_dir"
+#     mkdir -p "$node_dir"
 
-    rsync -ac --delete kafkawrkr@"$node":kafka_worker.log "$node_dir/"
-    rsync -ac --delete kafkawrkr@"$node":"$node" "$node_dir/$node.sh"
-  }
+#     rsync -ac --delete kafkawrkr@"$node":kafka_worker.log "$node_dir/"
+#     rsync -ac --delete kafkawrkr@"$node":"$node" "$node_dir/$node.sh"
+#   }
 
-  down_kafka_broker() {
-    local omenv="$1"
-    local node="$2"
-    local node_dir="$down_root/$omenv/$node"
+#   down_kafka_broker() {
+#     local omenv="$1"
+#     local node="$2"
+#     local node_dir="$down_root/$omenv/$node"
 
-    rm -rf "$node_dir"
-    mkdir -p "$node_dir"
+#     rm -rf "$node_dir"
+#     mkdir -p "$node_dir"
 
-    rsync -ac --delete kafkausr@"$node":"$node" "$node_dir/$node.sh"
-    rsync -ac $rem_opt --delete kafkausr@"$node":kafka/logs/server.log "$node_dir/"
-    rsync -ac $rem_opt --delete kafkausr@"$node":kafka/logs/controller.log "$node_dir/"
-    # rsync -ac --delete kafkausr@"$node":kafka/logs/kafka-authorizer.log "$node_dir/"
-    # rsync -ac --delete kafkausr@"$node":kafka/logs/kafka-request.log "$node_dir/"
-    # rsync -ac --delete kafkausr@"$node":kafka/logs/kafkaServer-gc.log "$node_dir/"
-  }
+#     rsync -ac --delete kafkausr@"$node":"$node" "$node_dir/$node.sh"
+#     rsync -ac $rem_opt --delete kafkausr@"$node":kafka/logs/server.log "$node_dir/"
+#     rsync -ac $rem_opt --delete kafkausr@"$node":kafka/logs/controller.log "$node_dir/"
+#     # rsync -ac --delete kafkausr@"$node":kafka/logs/kafka-authorizer.log "$node_dir/"
+#     # rsync -ac --delete kafkausr@"$node":kafka/logs/kafka-request.log "$node_dir/"
+#     # rsync -ac --delete kafkausr@"$node":kafka/logs/kafkaServer-gc.log "$node_dir/"
+#   }
 
-  omenv=ak-8
-  down_root="$HOME/av_openacr/om_logs"
-  rem_opt=""
-  # rem_opt="--remove-source-files"
+#   omenv=ak-8
+#   down_root="$HOME/av_openacr/om_logs"
+#   rem_opt=""
+#   # rem_opt="--remove-source-files"
   
 
-  rm -rf "$down_root/$omenv" 
-  mkdir -p "$down_root/$omenv"
+#   rm -rf "$down_root/$omenv" 
+#   mkdir -p "$down_root/$omenv"
 
-  down_kafka_worker "$omenv" dev.kafkaw-08
-  down_kafka_worker "$omenv" dev.kafkaw-16
-  down_kafka_broker "$omenv" dev.kafka-01
-  down_kafka_broker "$omenv" dev.kafka-02
-  down_kafka_broker "$omenv" dev.kafka-03
-  down_kafka_broker "$omenv" dev.kafka-04
-}
+#   down_kafka_worker "$omenv" dev.kafkaw-08
+#   down_kafka_worker "$omenv" dev.kafkaw-16
+#   down_kafka_broker "$omenv" dev.kafka-01
+#   down_kafka_broker "$omenv" dev.kafka-02
+#   down_kafka_broker "$omenv" dev.kafka-03
+#   down_kafka_broker "$omenv" dev.kafka-04
+# }
 
-dloop() {
-  while true; do
-    down_env
-    sleep 1
-  done
-}
+# dloop() {
+#   while true; do
+#     down_env
+#     sleep 1
+#   done
+# }
 
 
 

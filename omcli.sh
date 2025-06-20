@@ -22,10 +22,12 @@ exit 0
 # prod deployment on all nodes :source from x2-17
 down
 ai
+set -e
 omcli dev.x2-4.x2% -stop
-x2rel -create  -product:x2 -omenv:dev.x2-4
-x2rel  -upload -product:x2 -omnode:dev.x2-4.x2%
+x2rel -create  -product:x2 -omenv:dev.x2-4 -force
+x2rel  -upload -product:x2 -omnode:dev.x2-4.x2%  -force
 omcli dev.x2-4.x2% -start_clean
+omcli dev.x2-4.rdpui-1 -start_clean
 omcli dev.x2-4.x2% -status
 
 # sudo lsof -nP -iTCP -sTCP:LISTEN | grep x2gw
@@ -36,12 +38,15 @@ omcli dev.x2-4.x2% -status
 echo "---------------------clean start ONE node + rdpui"
 omcli dev.x2-4.% -stop
 omcli dev.x2-4.x2-0 -start_clean
-bin/x2node  -node:dev.rdpui-5   -cmd:'./rdpui_only start_clean'    -fail_on_error:Y
-bin/x2node  -node:dev.kafkaui-5 -cmd:'./kafkaui_only start_clean'  -fail_on_error:Y
+omcli dev.x2-4.rdpui-1 -shell_cmd:'./rdpui_only start_clean'  
+omcli dev.x2-4.kafkaui-1 -shell_cmd:'./kafkaui_only start_clean'  
+
 echo "---------------------status"
 omcli dev.x2-4.x2-0  -status
 omcli dev.x2-4.rdpui-1 -status 
 omcli dev.x2-4.kafkaui-1 -status 
+.
+# lsof -P -i :1519
 
 echo "---------------------clean start ALL  node + rdpui"
 omcli dev.x2-4.% -stop

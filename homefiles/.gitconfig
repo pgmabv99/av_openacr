@@ -2,7 +2,7 @@
 	name = alexey vorovich
 	email = alexey.vorovich@gmail.com
 [core]
-	sshCommand = ssh -i /home/avorovich/.ssh/algox2_av
+	# sshCommand = ssh -i /home/avorovich/.ssh/algox2_av
 [alias]
 		up = pull origin master
 		co = checkout

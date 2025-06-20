@@ -26,7 +26,7 @@ alias al='source  ~/arnd/conf/alexei/bash_profile'
 
 # cp common files
 cp ~/av_openacr/homefiles/.gitconfig ~/.gitconfig
-export GIT_SSH_COMMAND='ssh -i ~/.ssh/algox2_av'
+export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/algox2_gitlab"
 cp ~/av_openacr/homefiles/.gdbinit ~/.gdbinit
 
 abtd(){

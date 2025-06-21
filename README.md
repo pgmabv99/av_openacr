@@ -134,6 +134,8 @@ gcli repo -update algornd/arnd
 gcli -create  
 #create local branch
 gcli 999 -start  
+#edit issue
+gcli arnd.999 -e
 #push local branch and create draft MR
 gcli mr -create 
 #list mr
@@ -220,22 +222,7 @@ docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 
 
 
-```
 
-## omcli
-
-omcli -omnode:dev.ak-8.b%  -status 
-omcli -omnode:dev.ak-8.b%   -stop
-omcli -omnode:dev.ak-8.b%  -start 
-omcli -omnode:dev.x2-4.%  -status
-
-## x2node x2rel
-
-x2node -node:dev.x2-17 
-x2rel -product:x2 -build:N -create 
-x2rel -product:x2 -build:N -upload 
-x2rel -product:x2 -build:N -upload -omnode:dev.x2-4.x2-1
-x2rel -product:x2 -build:N -upload -omnode:dev.x2-4.x2-1 -dev
 
 ## private keys 
 x2ssh clean

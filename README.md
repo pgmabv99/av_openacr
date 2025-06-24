@@ -91,6 +91,11 @@ zs       Llist    Zero-terminated singly linked list
 zsl      Llist    Zero-terminated singly linked LIFO list
 ```
 
+## gdb vscode
+
+to allow think time in debugging
+
+sed -i 's/hbtimeout:30/hbtimeout:10000/g' data/x2db/proc.ssim
 ## Git cheat sheet
 
 git push   #to defalt remote

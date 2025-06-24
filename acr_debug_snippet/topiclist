@@ -1,0 +1,22 @@
+
+void x2gw::avdebug_list(){
+    //avtodo
+    prlog("TopicList");
+    ind_beg(_db_zd_topic_curs,topic,_db) {
+        prlog("topic"
+              << Keyval("id", topic.id)
+              << Keyval("name", topic.name)
+              << Keyval("num_partitions", topic.num_partitions)
+              << Keyval("replication_factor", topic.replication_factor)
+              );
+    }ind_end;
+    prlog("StreamList");
+    ind_beg(_db_zd_stream_curs,stream,_db) {
+        prlog("stream"
+              //   << Keyval("id", stream.id)
+              << Keyval("name", stream.name)
+              //   << Keyval("type", stream.type)
+              << Keyval("eof_seq", stream.p_x2stream->eof_seq)
+              );
+    }ind_end;
+}

@@ -29,6 +29,8 @@ cp ~/av_openacr/homefiles/.gitconfig ~/.gitconfig
 export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/algox2_gitlab"
 cp ~/av_openacr/homefiles/.gdbinit ~/.gdbinit
 
+kafkaport=9092
+
 abtd(){
  bin/abt -target:% -cfg:debug
  abt   -cfg:debug % -install
@@ -36,95 +38,6 @@ abtd(){
 #  ls -ltr bin/x2*
 }
 
-
-up() {
-  # return
-  set -x
-  rsync -ac --delete \
-    . x2usr@dev.x2-17:arnd
-  rsync -ac --delete ../av_openacr  x2usr@dev.x2-17:
-  rsync -ac --delete ../.bashrc  x2usr@dev.x2-17:
-  set +x
-    # --exclude=temp/ \
-    # --exclude=build/debug \
-    # --exclude=build/release \
-    # --exclude=build/x2ui \
-    # --exclude=node_modules \
-    # --exclude=ts \
-}
-
-down() {
-  set -x
-  # only active code  files
-  rsync -ac --delete x2usr@dev.x2-17:arnd/  ~/arnd
-  # rsync -ac --delete x2usr@dev.x2-17:arnd/cpp/x2gw/kafka.cpp     ~/arnd/cpp/x2gw/kafka.cpp
-  # rsync -ac --delete x2usr@dev.x2-17:arnd/cpp/lib_kafka/encode.cpp     ~/arnd/cpp/lib_kafka/encode.cpp
-  set +x
-}
-
-down_rdpui() {
-  set -x
-
-  rsync -ac --delete rdpusr@dev.rdpui-5:rdp_console_log     ~/av_openacr/om_logs/rdpui-5.rdp_console.log
-   tail -n 20  /home/avorovich/av_openacr/om_logs/rdpui-5.rdp_console.log > /tmp/tmp.log && mv /tmp/tmp.log /home/avorovich/av_openacr/om_logs/rdpui-5.rdp_console.log
-
-  set +x
-}
-
-# # copy all important log files from the omenv
-# down_env() {
-
-#   down_kafka_worker() {
-#     local omenv="$1"
-#     local node="$2"
-#     local node_dir="$down_root/$omenv/$node"
-
-#     rm -rf "$node_dir"
-#     mkdir -p "$node_dir"
-
-#     rsync -ac --delete kafkawrkr@"$node":kafka_worker.log "$node_dir/"
-#     rsync -ac --delete kafkawrkr@"$node":"$node" "$node_dir/$node.sh"
-#   }
-
-#   down_kafka_broker() {
-#     local omenv="$1"
-#     local node="$2"
-#     local node_dir="$down_root/$omenv/$node"
-
-#     rm -rf "$node_dir"
-#     mkdir -p "$node_dir"
-
-#     rsync -ac --delete kafkausr@"$node":"$node" "$node_dir/$node.sh"
-#     rsync -ac $rem_opt --delete kafkausr@"$node":kafka/logs/server.log "$node_dir/"
-#     rsync -ac $rem_opt --delete kafkausr@"$node":kafka/logs/controller.log "$node_dir/"
-#     # rsync -ac --delete kafkausr@"$node":kafka/logs/kafka-authorizer.log "$node_dir/"
-#     # rsync -ac --delete kafkausr@"$node":kafka/logs/kafka-request.log "$node_dir/"
-#     # rsync -ac --delete kafkausr@"$node":kafka/logs/kafkaServer-gc.log "$node_dir/"
-#   }
-
-#   omenv=ak-8
-#   down_root="$HOME/av_openacr/om_logs"
-#   rem_opt=""
-#   # rem_opt="--remove-source-files"
-  
-
-#   rm -rf "$down_root/$omenv" 
-#   mkdir -p "$down_root/$omenv"
-
-#   down_kafka_worker "$omenv" dev.kafkaw-08
-#   down_kafka_worker "$omenv" dev.kafkaw-16
-#   down_kafka_broker "$omenv" dev.kafka-01
-#   down_kafka_broker "$omenv" dev.kafka-02
-#   down_kafka_broker "$omenv" dev.kafka-03
-#   down_kafka_broker "$omenv" dev.kafka-04
-# }
-
-# dloop() {
-#   while true; do
-#     down_env
-#     sleep 1
-#   done
-# }
 
 
 

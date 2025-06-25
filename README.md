@@ -122,6 +122,7 @@ We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.
 ### git work flow items
 ```
 git-rebase-origin 
+git-rebase-remote algornd/arnd
 normalize_
 atf_comp
 atf_comp -covcapture

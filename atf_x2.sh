@@ -3,11 +3,33 @@
 
 
 
+cat <<'EOF' > /tmp/atf_x2_metadata
+x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -in:$tempdir/data -bindir:$bindir -random_ports"
+x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
+x2.ProcStartMsg  proc:kapi  cmd:"kapi -connect -broker::$kafkaport"
+x2.ProcMsg  proc:kapi  payload:"kafka2.DescribeClusterRequest  request_api_version:0  correlation_id:3  client_id:kafka-ui-admin-1746648345-1  include_cluster_authorized_operations:N  endpoint_type:1  include_fenced_brokers:N"
+x2.ProcEofMsg  proc:kapi
+x2.ProcReadMsg  proc:kapi
+x2.ProcMsg proc:x2  payload:ams.TerminateMsg
+x2.ProcReadMsg  proc:x2
+ams.TerminateMsg
+EOF
+# x2.ProcStartMsg  proc:kcat-md  cmd:"kcat -b 127.0.0.1:$kafkaport -L"
+# x2.ProcReadMsg  proc:kcat-md
+# x2.ProcMsg proc:x2  payload:ams.TerminateMsg
+# x2.ProcReadMsg  proc:x2
+# ams.TerminateMsg
+
+
+
+
+
+
 # cat <<'EOF' > /tmp/atf_x2_metadata
 # x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -in:$tempdir/data -bindir:$bindir -random_ports"
 # x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
-# x2.ProcStartMsg  proc:kcat-md  cmd:"kcat -b 127.0.0.1:$kafkaport -L -t test1 -X allow.auto.create.topics=false"
-# x2.ProcReadMsg  proc:kcat-md
+# x2.ProcMsg  proc:kapi  payload:"kafka2.DescribeClusterRequest  request_api_version:0  correlation_id:3  client_id:kafka-ui-admin-1746648345-1  include_cluster_authorized_operations:N  endpoint_type:1  include_fenced_brokers:N"
+# x2.ProcReadMsg  proc:kapi
 # x2.ProcStartMsg  proc:kcat-md  cmd:"kcat -b 127.0.0.1:$kafkaport -L"
 # x2.ProcReadMsg  proc:kcat-md
 # x2.ProcStartMsg  proc:kcat-md  cmd:"kcat -b 127.0.0.1:$kafkaport -L -t test2 -X allow.auto.create.topics=true"
@@ -64,60 +86,45 @@
 # ams.TerminateMsg
 # EOF
 
-cat <<'EOF' > /tmp/atf_x2_metadata
-x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -in:$tempdir/data -bindir:$bindir -random_ports"
-x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
-x2.ProcStartMsg  proc:kcat-md  cmd:"kcat -b 127.0.0.1:$kafkaport -L"
-x2.ProcReadMsg  proc:kcat-md
-x2.ProcStartMsg  proc:kcat-md  cmd:"kcat -b 127.0.0.1:$kafkaport -L -t test2 -X allow.auto.create.topics=true"
-x2.ProcReadMsg  proc:kcat-md
-x2.ProcMsg proc:x2  payload:ams.TerminateMsg
-x2.ProcReadMsg  proc:x2
-ams.TerminateMsg
-EOF
-
-atf_x2 -comptest:mytest -timeout_sec:3  -dbgshell < /tmp/atf_x2_metadata
+atf_x2 -comptest:mytest -timeout_sec:3  -dbgshell -v < /tmp/atf_x2_metadata
 exit 
 
 
+# cat <<'EOF' > /tmp/atf_x2_wrk
+# x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -in:$tempdir/data -bindir:$bindir -random_ports"
+# x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
+# x2.ProcStartMsg  proc:x2cli cmd:"$bindir/x2cli -conn_timeout:1.0 -conn_backoff:0.1 -conn_reconnect:Y -conn_max_attempts:50 -gw::$x2port"
+# x2.ProcReadMsg  proc:x2cli until:connected
+# x2.ProcMsg  proc:x2cli  payload:"help disk"
+# x2.ProcReadMsg  proc:x2cli until:disk
+# x2.ProcMsg  proc:x2cli  payload:""
+# x2.ProcReadMsg  proc:x2cli until:disk
+# x2.ProcMsg  proc:x2cli  payload:"at % help node"
+# x2.ProcReadMsg  proc:x2cli until:"x2net-0-0   node"
+# x2.ProcEofMsg  proc:x2cli
+# x2.ProcReadMsg  proc:x2cli
+# x2.ProcMsg proc:x2  payload:ams.TerminateMsg
+# x2.ProcReadMsg  proc:x2
+# ams.TerminateMsg
+# EOF
 
-
-
-cat <<'EOF' > /tmp/atf_x2_wrk
-x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -in:$tempdir/data -bindir:$bindir -random_ports"
-x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
-x2.ProcStartMsg  proc:x2cli cmd:"$bindir/x2cli -conn_timeout:1.0 -conn_backoff:0.1 -conn_reconnect:Y -conn_max_attempts:50 -gw::$x2port"
-x2.ProcReadMsg  proc:x2cli until:connected
-x2.ProcMsg  proc:x2cli  payload:"help disk"
-x2.ProcReadMsg  proc:x2cli until:disk
-x2.ProcMsg  proc:x2cli  payload:""
-x2.ProcReadMsg  proc:x2cli until:disk
-x2.ProcMsg  proc:x2cli  payload:"at % help node"
-x2.ProcReadMsg  proc:x2cli until:"x2net-0-0   node"
-x2.ProcEofMsg  proc:x2cli
-x2.ProcReadMsg  proc:x2cli
-x2.ProcMsg proc:x2  payload:ams.TerminateMsg
-x2.ProcReadMsg  proc:x2
-ams.TerminateMsg
-EOF
-
-cat <<'EOF' > /tmp/atf_x2_wrk_hang
-x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -in:$tempdir/data -bindir:$bindir -random_ports"
-x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
-x2.ProcStartMsg  proc:x2cli cmd:"$bindir/x2cli -conn_timeout:1.0 -conn_backoff:0.1 -conn_reconnect:Y -conn_max_attempts:50 -gw::$x2port"
-x2.ProcReadMsg  proc:x2cli until:connected
-x2.ProcMsg  proc:x2cli  payload:"help disk"
-x2.ProcReadMsg  proc:x2cli until:disk
-x2.ProcMsg  proc:x2cli  payload:""
-x2.ProcReadMsg  proc:x2cli until:disk
-x2.ProcMsg  proc:x2cli  payload:"at % help node"
-x2.ProcReadMsg  proc:x2cli until:"kukareku"
-x2.ProcEofMsg  proc:x2cli
-x2.ProcReadMsg  proc:x2cli
-x2.ProcMsg proc:x2  payload:ams.TerminateMsg
-x2.ProcReadMsg  proc:x2
-ams.TerminateMsg
-EOF
+# cat <<'EOF' > /tmp/atf_x2_wrk_hang
+# x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -in:$tempdir/data -bindir:$bindir -random_ports"
+# x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
+# x2.ProcStartMsg  proc:x2cli cmd:"$bindir/x2cli -conn_timeout:1.0 -conn_backoff:0.1 -conn_reconnect:Y -conn_max_attempts:50 -gw::$x2port"
+# x2.ProcReadMsg  proc:x2cli until:connected
+# x2.ProcMsg  proc:x2cli  payload:"help disk"
+# x2.ProcReadMsg  proc:x2cli until:disk
+# x2.ProcMsg  proc:x2cli  payload:""
+# x2.ProcReadMsg  proc:x2cli until:disk
+# x2.ProcMsg  proc:x2cli  payload:"at % help node"
+# x2.ProcReadMsg  proc:x2cli until:"kukareku"
+# x2.ProcEofMsg  proc:x2cli
+# x2.ProcReadMsg  proc:x2cli
+# x2.ProcMsg proc:x2  payload:ams.TerminateMsg
+# x2.ProcReadMsg  proc:x2
+# ams.TerminateMsg
+# EOF
 
 
 # atf_x2 < /tmp/atf_x2_wrk
@@ -129,16 +136,12 @@ EOF
 
 exit
 
-diff --git a/data/atfdb/tmsg.ssim b/data/atfdb/tmsg.ssim
-index 71b232d51..282ab4bfd 100644
---- a/data/atfdb/tmsg.ssim
-+++ b/data/atfdb/tmsg.ssim
-@@ -133,7 +133,7 @@ atfdb.tmsg  tmsg:atf_x2.Cli/100050.in  istuple:N  msg:"x2.ProcReadMsg  proc:x2cl
- atfdb.tmsg  tmsg:atf_x2.Cli/100060.in  istuple:N  msg:'x2.ProcMsg  proc:x2cli  payload:""'
- atfdb.tmsg  tmsg:atf_x2.Cli/100070.in  istuple:N  msg:"x2.ProcReadMsg  proc:x2cli until:disk"
- atfdb.tmsg  tmsg:atf_x2.Cli/100080.in  istuple:N  msg:'x2.ProcMsg  proc:x2cli  payload:"at % help node"'
--atfdb.tmsg  tmsg:atf_x2.Cli/100090.in  istuple:N  msg:'x2.ProcReadMsg  proc:x2cli until:"x2net-0-0   node"'
-+atfdb.tmsg  tmsg:atf_x2.Cli/100090.in  istuple:N  msg:'x2.ProcReadMsg  proc:x2cli until:"kyky"'
- atfdb.tmsg  tmsg:atf_x2.Cli/100100.in  istuple:N  msg:"x2.ProcEofMsg  proc:x2cli"
- atfdb.tmsg  tmsg:atf_x2.Cli/100110.in  istuple:N  msg:"x2.ProcReadMsg  proc:x2cli"
- atfdb.tmsg  tmsg:atf_x2.Cli/100120.in  istuple:N  msg:"x2.ProcMsg proc:x2  payload:ams.TerminateMsg"
+    atf_x2 does "forward" substitution on the commands formed from tmsg, replacing proc.bash.cmd.c = Subst(\_db.R,cmd_Getary(msg)); (line 71) with the vars Set like this Set(\_db.R,tempstr()\<\<"$"\<
+    
+    The result will be a kafkaport replaced with 41609 for example. When the test output comes in, we want to replace :41609 with :kafkaport
+    
+    To do it, create a new internal array atf_x2::FReplvar with two elements, var and val. Set "val" to ":41609 " and "var" to ":$kafkaport " - and all other vars like that On the receipt of any output line in void atf_x2::In_ProcReadMsg(x2::ProcReadMsg &msg) (line 93) do replace loop, before prlog(ou
+t) ind_beg(\_dv_replvar_curs){Replace(out,val,var)}
+    
+    Remember to add trailing " " to the vars - otherwise there will be occasional partial replacements. 41609 has to be replaced as ":41609 "
+    

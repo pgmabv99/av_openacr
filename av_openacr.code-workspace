@@ -85,7 +85,10 @@
 			"cinttypes": "cpp",
 			"typeinfo": "cpp",
 			"variant": "cpp",
-			"fstream": "cpp"
+			"fstream": "cpp",
+			"codecvt": "cpp",
+			"condition_variable": "cpp",
+			"mutex": "cpp"
 		},
 		"search.exclude": {
 			"**/kafka2_gen.h": true,

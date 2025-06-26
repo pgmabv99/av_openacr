@@ -25,8 +25,8 @@ void msg_consume(rd_kafka_message_t *rkmessage, void *opaque) {
 }
 
 int main() {
-    std::string brokers = "192.168.110.11:9092";  // Kafka broker(s) address
-    // std::string brokers = "localhost:9092";  // Kafka broker(s) address
+    // std::string brokers = "192.168.110.11:9092";  // Kafka broker(s) address
+    std::string brokers = "localhost:9092";  // Kafka broker(s) address
     std::string topic = "test-topic";        // Kafka topic name
     std::string group_id = "my_group";       // Consumer group ID
     char errstr[512];                        // Error string buffer
@@ -47,6 +47,14 @@ int main() {
         rd_kafka_conf_destroy(conf);
         return 1;
     }
+
+    if (    rd_kafka_conf_set(conf, "debug", "all", errstr, sizeof(errstr)) != RD_KAFKA_CONF_OK) {
+        std::cerr << "Failed to set debug: " << errstr << std::endl;
+        rd_kafka_conf_destroy(conf);
+        return 1;
+    }
+
+
     // Set bootstrap.servers configuration
     if (rd_kafka_conf_set(conf, "bootstrap.servers", brokers.c_str(), errstr, sizeof(errstr)) != RD_KAFKA_CONF_OK) {
         std::cerr << "Failed to set bootstrap.servers: " << errstr << std::endl;

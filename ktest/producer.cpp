@@ -23,8 +23,8 @@ void dr_msg_cb(rd_kafka_t *rk, const rd_kafka_message_t *rkmessage, void *opaque
 }
 
 int main() {
-    // std::string brokers = "localhost:9092";
-    std::string brokers = "1kcat :9092";
+    std::string brokers = "localhost:9092";
+    // std::string brokers = "1kcat :9092";
     std::string topic = "test-topic";
     char errstr[512];
 
@@ -74,7 +74,7 @@ int main() {
     std::cout << "Producing  to topic: " << topic << " brokers:"<< brokers  << std::endl;
     // Generate messages with incrementing numbers
     uint64_t message_number = 0;
-#define MAX_MESSAGE_NUMBER 10000
+#define MAX_MESSAGE_NUMBER 2
     while (run && message_number < MAX_MESSAGE_NUMBER) {
         // Convert number to ASCII string
         std::string message_tmp = std::to_string(message_number);

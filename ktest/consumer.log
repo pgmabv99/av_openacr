@@ -1,0 +1,928 @@
+%7|1750952771.440|APIVERSION|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1:  Feature ZSTD: Produce (7..7) supported by broker
+%7|1750952771.440|APIVERSION|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1:  Feature ZSTD: Fetch (10..10) supported by broker
+%7|1750952771.440|APIVERSION|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enabling feature ZSTD
+%7|1750952771.440|APIVERSION|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1:  Feature SaslAuthReq: SaslHandshake (1..1) supported by broker
+%7|1750952771.440|APIVERSION|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1:  Feature SaslAuthReq: SaslAuthenticate (0..1) supported by broker
+%7|1750952771.440|APIVERSION|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enabling feature SaslAuthReq
+%7|1750952771.440|FEATURE|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Updated enabled protocol features to ApiVersion,SaslHandshake,BrokerGroupCoordinator,LZ4,OffsetTime,MsgVer2,IdempotentProducer,ZSTD,SaslAuthReq
+%7|1750952771.440|STATE|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Broker changed state APIVERSION_QUERY -> UP
+%7|1750952771.440|BROADCAST|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: Broadcasting state change
+%7|1750952771.440|METADATA|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: Skipping metadata refresh of 1 topic(s): connected: already being requested
+%7|1750952771.440|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 0 (leader epoch -1, current leader epoch 0, v4)
+%7|1750952771.440|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952771.440|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 2)
+%7|1750952771.440|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 187 bytes, CorrId 2, rtt 0.40ms)
+%7|1750952771.440|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 115, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952771.441|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 2 message(s) (40 bytes, 2 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset 1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952771.441|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952771.441|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Received message (len=20):  0 0 0 0 0 0 0 0 0 0
+Received message (len=20):  1 1 1 1 1 1 1 1 1 1
+%7|1750952771.441|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 3)
+%7|1750952771.987|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 3, rtt 546.60ms)
+%7|1750952771.987|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952771.987|FETCHERR|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: test-topic [0]: Fetch failed at offset 2 (leader epoch 0): _PARTITION_EOF
+%7|1750952771.987|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952771.987|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952771.987|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 4)
+%7|1750952772.533|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 4, rtt 546.09ms)
+%7|1750952772.533|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952772.534|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0]: Increasing max fetch bytes to 2097152
+%7|1750952772.534|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 0 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952772.534|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952772.534|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952772.534|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 5)
+%7|1750952773.080|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 5, rtt 546.09ms)
+%7|1750952773.080|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952773.080|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0]: Increasing max fetch bytes to 4194304
+%7|1750952773.080|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 0 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952773.080|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952773.080|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952773.080|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 6)
+%7|1750952773.626|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 6, rtt 546.07ms)
+%7|1750952773.626|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952773.626|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0]: Increasing max fetch bytes to 8388608
+%7|1750952773.626|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 0 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952773.626|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952773.626|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952773.626|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 7)
+%7|1750952774.172|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 7, rtt 546.07ms)
+%7|1750952774.172|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952774.172|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0]: Increasing max fetch bytes to 16777216
+%7|1750952774.172|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 0 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952774.172|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952774.172|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952774.172|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 8)
+%7|1750952774.437|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952774.437|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 9)
+%7|1750952774.437|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 9, rtt 0.15ms)
+%7|1750952774.718|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 8, rtt 546.08ms)
+%7|1750952774.718|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952774.718|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0]: Increasing max fetch bytes to 33554432
+%7|1750952774.718|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 0 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952774.718|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952774.718|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952774.718|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 9)
+%7|1750952775.264|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 9, rtt 546.09ms)
+%7|1750952775.265|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952775.265|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0]: Increasing max fetch bytes to 67108864
+%7|1750952775.265|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 0 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952775.265|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952775.265|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952775.265|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 10)
+%7|1750952775.811|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 10, rtt 546.07ms)
+%7|1750952775.811|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952775.811|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0]: Increasing max fetch bytes to 134217728
+%7|1750952775.811|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 0 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952775.811|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952775.811|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952775.812|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 11)
+%7|1750952776.358|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 11, rtt 546.06ms)
+%7|1750952776.358|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952776.358|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0]: Increasing max fetch bytes to 268435456
+%7|1750952776.358|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 0 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952776.358|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952776.358|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952776.358|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 12)
+%7|1750952776.904|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 12, rtt 546.08ms)
+%7|1750952776.904|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952776.904|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0]: Increasing max fetch bytes to 536870912
+%7|1750952776.904|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 0 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952776.904|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952776.904|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952776.905|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 13)
+%7|1750952777.437|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952777.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 10)
+%7|1750952777.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 10, rtt 0.29ms)
+%7|1750952777.451|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 13, rtt 546.05ms)
+%7|1750952777.451|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952777.451|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0]: Increasing max fetch bytes to 1073741824
+%7|1750952777.451|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 0 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952777.451|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952777.451|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952777.451|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 14)
+%7|1750952777.997|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 14, rtt 546.05ms)
+%7|1750952777.997|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952777.997|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952777.997|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: Broker: Message size too large
+%7|1750952777.997|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952777.997|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 15)
+%7|1750952778.543|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 15, rtt 546.06ms)
+%7|1750952778.543|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952778.543|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952778.543|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952778.543|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952778.544|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 16)
+Consumer error: Broker: Message size too large
+%7|1750952779.090|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 16, rtt 546.07ms)
+%7|1750952779.090|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952779.090|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+Consumer error: Broker: Message size too large
+%7|1750952779.090|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952779.090|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952779.090|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 17)
+%7|1750952779.636|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 17, rtt 546.12ms)
+%7|1750952779.636|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952779.636|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952779.636|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: %7|1750952779.636|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Broker: Message size too large
+%7|1750952779.636|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 18)
+%7|1750952780.182|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 18, rtt 546.08ms)
+%7|1750952780.182|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952780.182|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952780.183|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952780.183|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952780.183|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 19)
+%7|1750952780.437|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952780.437|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 11)
+%7|1750952780.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 11, rtt 0.20ms)
+%7|1750952780.729|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 19, rtt 546.07ms)
+%7|1750952780.729|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952780.729|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952780.729|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952780.729|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952780.729|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 20)
+%7|1750952781.275|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 20, rtt 546.13ms)
+%7|1750952781.275|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952781.275|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952781.275|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: Broker: Message size too large
+%7|1750952781.275|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952781.275|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 21)
+%7|1750952781.821|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 21, rtt 546.03ms)
+%7|1750952781.821|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952781.821|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952781.821|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952781.821|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952781.822|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 22)
+%7|1750952782.368|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 22, rtt 546.13ms)
+%7|1750952782.368|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952782.368|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+Consumer error: Broker: Message size too large
+%7|1750952782.368|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952782.368|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952782.368|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 23)
+%7|1750952782.914|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 23, rtt 546.08ms)
+%7|1750952782.914|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952782.914|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952782.914|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952782.914|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952782.914|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 24)
+%7|1750952783.437|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952783.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 12)
+%7|1750952783.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 12, rtt 0.12ms)
+%7|1750952783.460|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 24, rtt 546.03ms)
+%7|1750952783.460|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952783.460|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952783.460|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: Broker: Message size too large
+%7|1750952783.460|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952783.460|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 25)
+%7|1750952784.007|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 25, rtt 546.05ms)
+%7|1750952784.007|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952784.007|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952784.007|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: %7|1750952784.007|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Broker: Message size too large
+%7|1750952784.007|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 26)
+%7|1750952784.553|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 26, rtt 546.10ms)
+%7|1750952784.553|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952784.553|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+Consumer error: Broker: Message size too large
+%7|1750952784.553|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952784.553|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952784.553|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 27)
+%7|1750952785.099|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 27, rtt 546.06ms)
+%7|1750952785.099|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952785.099|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952785.099|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952785.099|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952785.099|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 28)
+%7|1750952785.645|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 28, rtt 546.05ms)
+%7|1750952785.645|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952785.645|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952785.645|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952785.645|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952785.646|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 29)
+%7|1750952786.194|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 29, rtt 548.86ms)
+%7|1750952786.194|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952786.194|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952786.194|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952786.194|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952786.194|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 30)
+%7|1750952786.437|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952786.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 13)
+%7|1750952786.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 13, rtt 0.50ms)
+%7|1750952786.741|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 30, rtt 546.09ms)
+%7|1750952786.741|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952786.741|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952786.741|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952786.741|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952786.741|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 31)
+%7|1750952787.287|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 31, rtt 546.09ms)
+%7|1750952787.287|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952787.287|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952787.287|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952787.287|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952787.287|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 32)
+%7|1750952787.833|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 32, rtt 546.20ms)
+%7|1750952787.833|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952787.833|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952787.833|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952787.833|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952787.833|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 33)
+%7|1750952788.379|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 33, rtt 546.08ms)
+%7|1750952788.379|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952788.379|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952788.379|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952788.379|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952788.379|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 34)
+%7|1750952788.925|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 34, rtt 546.09ms)
+%7|1750952788.925|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952788.925|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952788.925|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: %7|1750952788.925|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952788.926|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 35)
+Broker: Message size too large
+%7|1750952789.438|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952789.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 14)
+%7|1750952789.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 14, rtt 0.12ms)
+%7|1750952789.472|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 35, rtt 546.03ms)
+%7|1750952789.472|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952789.472|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952789.472|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952789.472|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952789.472|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 36)
+Consumer error: Broker: Message size too large
+%7|1750952790.019|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 36, rtt 546.04ms)
+%7|1750952790.019|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952790.019|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+Consumer error: Broker: Message size too large
+%7|1750952790.019|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952790.019|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952790.019|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 37)
+%7|1750952790.565|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 37, rtt 546.10ms)
+%7|1750952790.565|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952790.565|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952790.565|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952790.565|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952790.565|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 38)
+%7|1750952791.111|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 38, rtt 546.03ms)
+%7|1750952791.111|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952791.111|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952791.111|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952791.111|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952791.111|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 39)
+%7|1750952791.657|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 39, rtt 546.06ms)
+%7|1750952791.657|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952791.658|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952791.658|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952791.658|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952791.658|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 40)
+%7|1750952792.204|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 40, rtt 546.07ms)
+%7|1750952792.204|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952792.204|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952792.204|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952792.204|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: %7|1750952792.204|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 41)
+Broker: Message size too large
+%7|1750952792.438|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952792.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 15)
+%7|1750952792.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 15, rtt 0.11ms)
+%7|1750952792.750|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 41, rtt 546.06ms)
+%7|1750952792.750|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952792.750|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952792.750|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952792.750|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952792.750|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 42)
+%7|1750952793.296|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 42, rtt 546.06ms)
+%7|1750952793.296|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952793.296|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952793.296|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952793.296|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: %7|1750952793.296|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 43)
+Broker: Message size too large
+%7|1750952793.842|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 43, rtt 546.06ms)
+%7|1750952793.842|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952793.843|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952793.843|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952793.843|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952793.843|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 44)
+%7|1750952794.389|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 44, rtt 546.06ms)
+%7|1750952794.389|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952794.389|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952794.389|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952794.389|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952794.389|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 45)
+%7|1750952794.935|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 45, rtt 546.07ms)
+%7|1750952794.935|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952794.935|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952794.935|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952794.935|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952794.935|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 46)
+Consumer error: Broker: Message size too large
+%7|1750952795.438|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952795.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 16)
+%7|1750952795.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 16, rtt 0.16ms)
+%7|1750952795.481|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 46, rtt 546.04ms)
+%7|1750952795.481|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952795.481|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952795.481|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952795.481|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952795.481|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 47)
+Consumer error: Broker: Message size too large
+%7|1750952796.028|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 47, rtt 546.08ms)
+%7|1750952796.028|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952796.028|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+Consumer error: Broker: Message size too large
+%7|1750952796.028|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952796.028|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952796.028|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 48)
+%7|1750952796.574|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 48, rtt 546.07ms)
+%7|1750952796.574|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952796.574|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+Consumer error: Broker: Message size too large
+%7|1750952796.574|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952796.574|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952796.574|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 49)
+%7|1750952797.120|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 49, rtt 546.06ms)
+%7|1750952797.120|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952797.120|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952797.120|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952797.120|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952797.120|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 50)
+%7|1750952797.666|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 50, rtt 546.08ms)
+%7|1750952797.666|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952797.666|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952797.666|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952797.666|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952797.667|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 51)
+%7|1750952798.213|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 51, rtt 546.03ms)
+%7|1750952798.213|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952798.213|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952798.213|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952798.213|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952798.213|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 52)
+%7|1750952798.438|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952798.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 17)
+%7|1750952798.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 17, rtt 0.12ms)
+%7|1750952798.759|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 52, rtt 546.03ms)
+%7|1750952798.759|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952798.759|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952798.760|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952798.760|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952798.760|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 53)
+%7|1750952799.306|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 53, rtt 546.04ms)
+%7|1750952799.306|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952799.306|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952799.306|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952799.306|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952799.306|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 54)
+%7|1750952799.852|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 54, rtt 546.06ms)
+%7|1750952799.852|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952799.852|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952799.853|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952799.853|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952799.853|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 55)
+Consumer error: Broker: Message size too large
+%7|1750952800.399|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 55, rtt 546.03ms)
+%7|1750952800.399|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952800.399|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952800.399|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952800.399|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952800.399|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 56)
+Consumer error: Broker: Message size too large
+%7|1750952800.945|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 56, rtt 546.08ms)
+%7|1750952800.945|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952800.945|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+Consumer error: Broker: Message size too large
+%7|1750952800.945|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952800.945|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952800.945|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 57)
+%7|1750952801.438|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952801.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 18)
+%7|1750952801.440|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 18, rtt 2.27ms)
+%7|1750952801.491|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 57, rtt 546.05ms)
+%7|1750952801.491|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952801.491|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952801.491|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952801.491|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952801.491|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 58)
+%7|1750952802.038|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 58, rtt 546.11ms)
+%7|1750952802.038|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952802.038|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952802.038|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952802.038|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952802.038|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 59)
+%7|1750952802.584|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 59, rtt 546.04ms)
+%7|1750952802.584|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952802.584|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952802.587|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952802.587|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952802.587|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 60)
+%7|1750952803.135|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 60, rtt 547.94ms)
+%7|1750952803.135|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952803.135|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952803.135|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: Broker: Message size too large%7|1750952803.135|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952803.136|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 61)
+
+%7|1750952803.682|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 61, rtt 546.07ms)
+%7|1750952803.682|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952803.682|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952803.682|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: Broker: Message size too large
+%7|1750952803.682|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952803.682|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 62)
+%7|1750952804.228|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 62, rtt 546.12ms)
+%7|1750952804.228|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952804.228|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952804.228|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952804.228|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952804.228|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 63)
+%7|1750952804.438|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952804.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 19)
+%7|1750952804.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 19, rtt 0.11ms)
+%7|1750952804.774|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 63, rtt 546.02ms)
+%7|1750952804.774|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952804.774|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952804.774|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952804.774|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952804.774|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 64)
+%7|1750952805.320|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 64, rtt 545.98ms)
+%7|1750952805.320|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952805.320|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952805.320|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952805.320|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952805.321|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 65)
+%7|1750952805.867|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 65, rtt 546.06ms)
+%7|1750952805.867|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952805.867|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952805.867|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952805.867|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952805.867|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 66)
+%7|1750952806.413|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 66, rtt 546.13ms)
+%7|1750952806.413|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952806.413|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952806.413|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952806.413|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952806.413|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 67)
+%7|1750952806.961|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 67, rtt 548.28ms)
+%7|1750952806.961|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952806.961|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952806.961|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952806.961|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952806.962|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 68)
+%7|1750952807.438|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952807.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 20)
+%7|1750952807.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 20, rtt 0.12ms)
+%7|1750952807.508|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 68, rtt 546.05ms)
+%7|1750952807.508|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952807.508|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952807.508|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952807.508|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952807.508|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 69)
+%7|1750952808.054|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 69, rtt 546.10ms)
+%7|1750952808.054|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952808.054|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952808.054|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952808.054|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952808.054|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 70)
+%7|1750952808.600|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 70, rtt 546.09ms)
+%7|1750952808.600|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952808.600|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952808.600|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952808.600|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: %7|1750952808.600|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 71)
+Broker: Message size too large
+%7|1750952809.146|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 71, rtt 546.08ms)
+%7|1750952809.147|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952809.147|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952809.147|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952809.147|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952809.147|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 72)
+%7|1750952809.693|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 72, rtt 546.04ms)
+%7|1750952809.693|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952809.693|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+Consumer error: Broker: Message size too large
+%7|1750952809.693|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952809.693|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952809.693|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 73)
+%7|1750952810.239|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 73, rtt 546.06ms)
+%7|1750952810.239|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952810.239|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+Consumer error: Broker: Message size too large
+%7|1750952810.239|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952810.239|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952810.240|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 74)
+%7|1750952810.438|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952810.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 21)
+%7|1750952810.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 21, rtt 0.15ms)
+%7|1750952810.786|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 74, rtt 546.06ms)
+%7|1750952810.786|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952810.786|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952810.786|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: Broker: Message size too large
+%7|1750952810.786|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952810.786|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 75)
+%7|1750952811.333|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 75, rtt 547.39ms)
+%7|1750952811.333|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952811.333|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952811.333|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952811.333|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952811.333|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 76)
+%7|1750952811.879|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 76, rtt 546.09ms)
+%7|1750952811.880|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952811.880|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952811.880|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952811.880|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952811.880|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 77)
+%7|1750952812.426|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 77, rtt 546.08ms)
+%7|1750952812.426|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952812.426|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952812.426|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: Broker: Message size too large
+%7|1750952812.426|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952812.426|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 78)
+%7|1750952812.972|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 78, rtt 546.07ms)
+%7|1750952812.972|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952812.972|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952812.972|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952812.972|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952812.972|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 79)
+%7|1750952813.438|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952813.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 22)
+%7|1750952813.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 22, rtt 0.16ms)
+%7|1750952813.518|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 79, rtt 546.05ms)
+%7|1750952813.518|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952813.518|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952813.518|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952813.518|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952813.518|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 80)
+%7|1750952814.064|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 80, rtt 546.08ms)
+%7|1750952814.064|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952814.064|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952814.065|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: Broker: Message size too large%7|1750952814.065|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+
+%7|1750952814.065|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 81)
+%7|1750952814.611|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 81, rtt 546.05ms)
+%7|1750952814.611|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952814.611|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+Consumer error: Broker: Message size too large
+%7|1750952814.611|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952814.611|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952814.611|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 82)
+%7|1750952815.157|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 82, rtt 546.06ms)
+%7|1750952815.157|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952815.157|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952815.157|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952815.157|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952815.157|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 83)
+Consumer error: Broker: Message size too large
+%7|1750952815.703|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 83, rtt 546.09ms)
+%7|1750952815.703|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952815.703|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952815.703|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: Broker: Message size too large%7|1750952815.704|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+
+%7|1750952815.704|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 84)
+%7|1750952816.250|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 84, rtt 546.07ms)
+%7|1750952816.250|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952816.250|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+Consumer error: Broker: Message size too large
+%7|1750952816.250|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952816.250|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952816.250|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 85)
+%7|1750952816.438|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952816.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 23)
+%7|1750952816.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 23, rtt 0.12ms)
+%7|1750952816.796|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 85, rtt 546.07ms)
+%7|1750952816.796|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952816.796|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952816.796|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952816.796|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952816.796|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 86)
+%7|1750952817.342|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 86, rtt 546.10ms)
+%7|1750952817.342|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952817.342|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952817.342|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952817.342|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952817.343|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 87)
+Consumer error: Broker: Message size too large
+%7|1750952817.889|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 87, rtt 546.05ms)
+%7|1750952817.889|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952817.889|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952817.889|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952817.889|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952817.889|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 88)
+Consumer error: Broker: Message size too large
+%7|1750952818.435|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 88, rtt 546.09ms)
+%7|1750952818.435|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952818.435|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952818.435|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: Broker: Message size too large%7|1750952818.435|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+
+%7|1750952818.435|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 89)
+%7|1750952818.981|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 89, rtt 546.10ms)
+%7|1750952818.981|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952818.982|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+Consumer error: Broker: Message size too large
+%7|1750952818.982|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952818.982|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952818.982|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 90)
+%7|1750952819.438|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952819.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 24)
+%7|1750952819.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 24, rtt 0.13ms)
+%7|1750952819.528|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 90, rtt 546.04ms)
+%7|1750952819.528|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952819.528|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952819.528|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952819.528|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952819.528|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 91)
+Consumer error: Broker: Message size too large
+%7|1750952820.074|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 91, rtt 546.05ms)
+%7|1750952820.074|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952820.074|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952820.074|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+Consumer error: Broker: Message size too large%7|1750952820.074|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+
+%7|1750952820.074|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 92)
+%7|1750952820.621|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 92, rtt 546.11ms)
+%7|1750952820.621|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952820.621|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+Consumer error: Broker: Message size too large
+%7|1750952820.621|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952820.621|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952820.621|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 93)
+%7|1750952821.167|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 93, rtt 546.09ms)
+%7|1750952821.167|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952821.167|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952821.167|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952821.167|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: %7|1750952821.167|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 94)
+Broker: Message size too large
+%7|1750952821.714|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 94, rtt 546.59ms)
+%7|1750952821.714|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952821.714|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952821.714|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952821.714|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952821.714|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 95)
+%7|1750952822.260|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 95, rtt 546.08ms)
+%7|1750952822.260|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952822.260|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952822.260|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952822.260|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952822.260|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 96)
+%7|1750952822.438|HEARTBEAT|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Heartbeat for group "my_group" generation id 1
+%7|1750952822.438|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent HeartbeatRequest (v3, 97 bytes @ 0, CorrId 25)
+%7|1750952822.438|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received HeartbeatResponse (v3, 6 bytes, CorrId 25, rtt 0.19ms)
+%7|1750952822.806|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 96, rtt 546.07ms)
+%7|1750952822.806|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952822.806|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952822.806|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952822.806|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952822.806|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 97)
+%7|1750952823.352|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 97, rtt 546.07ms)
+%7|1750952823.353|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952823.353|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952823.353|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952823.353|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large
+%7|1750952823.353|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 98)
+%7|1750952823.899|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 98, rtt 546.10ms)
+%7|1750952823.899|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952823.899|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952823.899|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952823.899|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+Consumer error: Broker: Message size too large%7|1750952823.899|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 99)
+
+^C%7|1750952824.445|RECV|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received FetchResponse (v11, 133 bytes, CorrId 99, rtt 546.03ms)
+%7|1750952824.445|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] MessageSet size 61, error "Success", MaxOffset 2, LSO 2, Ver 4/4
+%7|1750952824.445|CONSUME|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Enqueue 0 message(s) (0 bytes, 1 ops) on test-topic [0] fetch queue (qlen 0, v4, last_offset -1, 0 ctrl msgs, 0 aborted msgsets, uncompressed)
+%7|1750952824.445|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch topic test-topic [0] at offset 2 (leader epoch 0, current leader epoch 0, v4)
+%7|1750952824.445|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Fetch 1/1/1 toppar(s)
+%7|1750952824.445|SEND|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Sent FetchRequest (v11, 106 bytes @ 0, CorrId 100)
+Consumer error: Broker: Message size too large
+Shutting down consumer...
+%7|1750952824.446|CLOSE|my-consumer-1#consumer-1| [thrd:app]: Closing consumer
+%7|1750952824.446|CLOSE|my-consumer-1#consumer-1| [thrd:app]: Waiting for close events
+%7|1750952824.446|CGRPOP|my-consumer-1#consumer-1| [thrd:main]: Group "my_group" received op TERMINATE in state up (join-state steady)
+%7|1750952824.446|CGRPTERM|my-consumer-1#consumer-1| [thrd:main]: Terminating group "my_group" in state up with 1 partition(s)
+%7|1750952824.446|UNSUBSCRIBE|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": unsubscribe from current subscription of size 1 (leave group=true, has joined=true, member-my_group-cbfb6cdb-c207-4704-8ffd-702ddcde934c, join-state steady)
+%7|1750952824.446|SUBSCRIPTION|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": clearing subscribed topics list (1)
+%7|1750952824.446|SUBSCRIPTION|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": effective subscription list changed from 1 to 0 topic(s):
+%7|1750952824.446|GRPLEADER|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": resetting group leader info: unsubscribe
+%7|1750952824.446|REBALANCE|my-consumer-1#consumer-1| [thrd:main]: Group "my_group" initiating rebalance (EAGER) in state up (join-state steady) with 1 assigned partition(s): unsubscribe
+%7|1750952824.446|CGRPJOINSTATE|my-consumer-1#consumer-1| [thrd:main]: Group "my_group" changed join state steady -> wait-unassign-call (state up)
+%7|1750952824.446|CLEARASSIGN|my-consumer-1#consumer-1| [thrd:main]: Clearing current assignment of 1 partition(s)
+%7|1750952824.446|CGRPJOINSTATE|my-consumer-1#consumer-1| [thrd:main]: Group "my_group" changed join state wait-unassign-call -> wait-unassign-to-complete (state up)
+%7|1750952824.446|DUMP|my-consumer-1#consumer-1| [thrd:main]: Assignment dump (started_cnt=1, wait_stop_cnt=0)
+%7|1750952824.446|DUMP_ALL|my-consumer-1#consumer-1| [thrd:main]: List with 0 partition(s):
+%7|1750952824.446|DUMP_PND|my-consumer-1#consumer-1| [thrd:main]: List with 0 partition(s):
+%7|1750952824.446|DUMP_QRY|my-consumer-1#consumer-1| [thrd:main]: List with 0 partition(s):
+%7|1750952824.446|DUMP_REM|my-consumer-1#consumer-1| [thrd:main]: List with 1 partition(s):
+%7|1750952824.446|DUMP_REM|my-consumer-1#consumer-1| [thrd:main]:  test-topic [0] offset STORED
+%7|1750952824.446|BARRIER|my-consumer-1#consumer-1| [thrd:main]: test-topic [0]: rd_kafka_toppar_op_fetch_stop:2245: new version barrier v5
+%7|1750952824.446|CONSUMER|my-consumer-1#consumer-1| [thrd:main]: Stop consuming test-topic [0] (v5)
+%7|1750952824.446|BARRIER|my-consumer-1#consumer-1| [thrd:main]: test-topic [0]: rd_kafka_toppar_op_pause_resume:2305: new version barrier v6
+%7|1750952824.446|RESUME|my-consumer-1#consumer-1| [thrd:main]: Resume test-topic [0] (v6)
+%7|1750952824.446|DESP|my-consumer-1#consumer-1| [thrd:main]: Removing (un)desired topic test-topic [0]
+%7|1750952824.446|REMOVE|my-consumer-1#consumer-1| [thrd:main]: Removing test-topic [0] from assignment (started=true, pending=false, queried=false, stored offset=2)
+%7|1750952824.446|REMOVE|my-consumer-1#consumer-1| [thrd:main]: Served 1 removed partition(s), with 1 offset(s) to commit
+%7|1750952824.446|ASSIGNMENT|my-consumer-1#consumer-1| [thrd:main]: Current assignment of 0 partition(s) with 0 pending adds, 0 offset queries, 1 partitions awaiting stop and 0 offset commits in progress
+%7|1750952824.446|ASSIGNMENT|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": clearing group assignment
+%7|1750952824.446|CLEARASSIGN|my-consumer-1#consumer-1| [thrd:main]: No current assignment to clear
+%7|1750952824.446|DUMP|my-consumer-1#consumer-1| [thrd:main]: Assignment dump (started_cnt=1, wait_stop_cnt=1)
+%7|1750952824.446|DUMP_ALL|my-consumer-1#consumer-1| [thrd:main]: List with 0 partition(s):
+%7|1750952824.446|DUMP_PND|my-consumer-1#consumer-1| [thrd:main]: List with 0 partition(s):
+%7|1750952824.446|DUMP_QRY|my-consumer-1#consumer-1| [thrd:main]: List with 0 partition(s):
+%7|1750952824.446|DUMP_REM|my-consumer-1#consumer-1| [thrd:main]: List with 0 partition(s):
+%7|1750952824.446|ASSIGNMENT|my-consumer-1#consumer-1| [thrd:main]: Current assignment of 0 partition(s) with 0 pending adds, 0 offset queries, 1 partitions awaiting stop and 0 offset commits in progress
+%7|1750952824.446|CGRPTERM|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": waiting for 1 toppar(s), assignment in progress, 0 commit(s) (state up, join-state wait-unassign-to-complete) before terminating
+%7|1750952824.446|CGRPTERM|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": waiting for 1 toppar(s), assignment in progress, 0 commit(s) (state up, join-state wait-unassign-to-complete) before terminating
+%7|1750952824.446|OP|my-consumer-1#consumer-1| [thrd:main]: test-topic [0] received op FETCH_STOP (v5) in fetch-state active (opv4)
+%7|1750952824.446|FETCH|my-consumer-1#consumer-1| [thrd:main]: Stopping fetch for test-topic [0] in state active (v5)
+%7|1750952824.446|PARTSTATE|my-consumer-1#consumer-1| [thrd:main]: Partition test-topic [0] changed fetch state active -> stopping
+%7|1750952824.446|STORETERM|my-consumer-1#consumer-1| [thrd:main]: test-topic [0]: offset store terminating
+%7|1750952824.446|PARTSTATE|my-consumer-1#consumer-1| [thrd:main]: Partition test-topic [0] changed fetch state stopping -> stopped
+%7|1750952824.446|OP|my-consumer-1#consumer-1| [thrd:main]: test-topic [0] received op PAUSE (v6) in fetch-state stopped (opv5)
+%7|1750952824.446|RESUME|my-consumer-1#consumer-1| [thrd:main]: Not resuming test-topic [0]: partition is not paused by library
+%7|1750952824.447|CGRPTERM|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": waiting for 1 toppar(s), assignment in progress, 0 commit(s) (state up, join-state wait-unassign-to-complete) before terminating
+%7|1750952824.447|CGRPOP|my-consumer-1#consumer-1| [thrd:main]: Group "my_group" received op PARTITION_LEAVE in state up (join-state wait-unassign-to-complete) for test-topic [0]
+%7|1750952824.447|PARTDEL|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": delete test-topic [0]
+%7|1750952824.447|CGRPTERM|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": waiting for 0 toppar(s), assignment in progress, 0 commit(s) (state up, join-state wait-unassign-to-complete) before terminating
+%7|1750952824.447|STOPSERVE|my-consumer-1#consumer-1| [thrd:main]: All partitions awaiting stop are now stopped: serving assignment
+%7|1750952824.447|DUMP|my-consumer-1#consumer-1| [thrd:main]: Assignment dump (started_cnt=0, wait_stop_cnt=0)
+%7|1750952824.447|DUMP_ALL|my-consumer-1#consumer-1| [thrd:main]: List with 0 partition(s):
+%7|1750952824.447|DUMP_PND|my-consumer-1#consumer-1| [thrd:main]: List with 0 partition(s):
+%7|1750952824.447|DUMP_QRY|my-consumer-1#consumer-1| [thrd:main]: List with 0 partition(s):
+%7|1750952824.447|DUMP_REM|my-consumer-1#consumer-1| [thrd:main]: List with 0 partition(s):
+%7|1750952824.447|ASSIGNDONE|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": assignment operations done in join-state wait-unassign-to-complete (rebalance rejoin=false)
+%7|1750952824.447|UNASSIGN|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": unassign done in state up (join-state wait-unassign-to-complete)
+%7|1750952824.447|MEMBERID|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": updating member id "member-my_group-cbfb6cdb-c207-4704-8ffd-702ddcde934c" -> ""
+%7|1750952824.447|LEAVE|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": leave (in state up)
+%7|1750952824.447|LEAVE|my-consumer-1#consumer-1| [thrd:main]: 127.0.0.1:9092/1: Leaving group
+%7|1750952824.447|NOREJOIN|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": Not rejoining group without an assignment: Unassignment done: no subscribed topics
+%7|1750952824.447|CGRPJOINSTATE|my-consumer-1#consumer-1| [thrd:main]: Group "my_group" changed join state wait-unassign-to-complete -> init (state up)
+%7|1750952824.447|CGRPTERM|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": waiting for 0 toppar(s), 0 commit(s), wait-leave, (state up, join-state init) before terminating
+%7|1750952824.447|SEND|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Sent LeaveGroupRequest (v1, 91 bytes @ 0, CorrId 26)
+%7|1750952824.447|RECV|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Received LeaveGroupResponse (v1, 6 bytes, CorrId 26, rtt 0.12ms)
+%7|1750952824.447|LEAVEGROUP|my-consumer-1#consumer-1| [thrd:main]: LeaveGroup response received in state up
+%7|1750952824.447|CGRPSTATE|my-consumer-1#consumer-1| [thrd:main]: Group "my_group" changed state up -> term (join-state init)
+%7|1750952824.447|BROADCAST|my-consumer-1#consumer-1| [thrd:main]: Broadcasting state change
+%7|1750952824.447|ASSIGNMENT|my-consumer-1#consumer-1| [thrd:main]: Group "my_group": clearing group assignment
+%7|1750952824.447|COORDCLEAR|my-consumer-1#consumer-1| [thrd:main]: Group "my_group" broker 127.0.0.1:9092/1 is no longer coordinator
+%7|1750952824.447|NODENAME|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Broker nodename changed from "127.0.0.1:9092" to ""
+%7|1750952824.447|NODEID|my-consumer-1#consumer-1| [thrd:main]: GroupCoordinator/1: Broker nodeid changed from 1 to -1
+%7|1750952824.447|CGRPTERM|my-consumer-1#consumer-1| [thrd:main]: Consumer group sub-system terminated (will enqueue reply)
+%7|1750952824.447|CLOSE|my-consumer-1#consumer-1| [thrd:app]: Consumer closed
+%7|1750952824.447|DESTROY|my-consumer-1#consumer-1| [thrd:app]: Terminating instance (destroy flags none (0x0))
+%7|1750952824.447|TERMINATE|my-consumer-1#consumer-1| [thrd:app]: Terminating consumer group handler
+%7|1750952824.447|TERMINATE|my-consumer-1#consumer-1| [thrd:app]: Interrupting timers
+%7|1750952824.447|TERMINATE|my-consumer-1#consumer-1| [thrd:app]: Sending TERMINATE to internal main thread
+%7|1750952824.447|TERMINATE|my-consumer-1#consumer-1| [thrd:app]: Joining internal main thread
+%7|1750952824.447|TERMINATE|my-consumer-1#consumer-1| [thrd:main]: Internal main thread terminating
+%7|1750952824.448|DESTROY|my-consumer-1#consumer-1| [thrd:main]: Destroy internal
+%7|1750952824.448|BROADCAST|my-consumer-1#consumer-1| [thrd:main]: Broadcasting state change
+%7|1750952824.448|DESTROY|my-consumer-1#consumer-1| [thrd:main]: Removing all topics
+%7|1750952824.448|PARTCNT|my-consumer-1#consumer-1| [thrd:main]: Topic test-topic partition count changed from 1 to 0
+%7|1750952824.448|REMOVE|my-consumer-1#consumer-1| [thrd:main]: test-topic [0] no longer reported in metadata
+%7|1750952824.448|BRKMIGR|my-consumer-1#consumer-1| [thrd:main]: test-topic [0] 0x7bdef80049c0 sending final LEAVE for removal by 127.0.0.1:9092/1
+%7|1750952824.448|TOPPARREMOVE|my-consumer-1#consumer-1| [thrd:main]: Removing toppar test-topic [-1] 0x7bdef8004380
+%7|1750952824.448|DESTROY|my-consumer-1#consumer-1| [thrd:main]: test-topic [-1]: 0x7bdef8004380 DESTROY_FINAL
+%7|1750952824.448|DESTROY|my-consumer-1#consumer-1| [thrd:main]: Sending TERMINATE to 127.0.0.1:9092/1
+%7|1750952824.448|DESTROY|my-consumer-1#consumer-1| [thrd:main]: Sending TERMINATE to localhost:9092/bootstrap
+%7|1750952824.448|DESTROY|my-consumer-1#consumer-1| [thrd:main]: Sending TERMINATE to GroupCoordinator
+%7|1750952824.448|TERMINATE|my-consumer-1#consumer-1| [thrd:main]: Purging reply queue
+%7|1750952824.448|TERMINATE|my-consumer-1#consumer-1| [thrd:main]: Decommissioning internal broker
+%7|1750952824.448|TERMINATE|my-consumer-1#consumer-1| [thrd:main]: Join 4 broker thread(s)
+%7|1750952824.448|TERM|my-consumer-1#consumer-1| [thrd::0/internal]: :0/internal: Received TERMINATE op in state INIT: 2 refcnts, 0 toppar(s), 0 active toppar(s), 0 outbufs, 0 waitresps, 0 retrybufs
+%7|1750952824.448|FAIL|my-consumer-1#consumer-1| [thrd::0/internal]: :0/internal: Client is terminating (after 56301ms in state INIT) (_DESTROY)
+%7|1750952824.448|STATE|my-consumer-1#consumer-1| [thrd::0/internal]: :0/internal: Broker changed state INIT -> DOWN
+%7|1750952824.447|FAIL|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Closing connection due to nodename change (after 56293ms in state UP) (_TRANSPORT)
+%7|1750952824.448|STATE|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Broker changed state UP -> DOWN
+%7|1750952824.448|BROADCAST|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: Broadcasting state change
+%7|1750952824.448|BUFQ|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Purging bufq with 0 buffers
+%7|1750952824.448|TERM|my-consumer-1#consumer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Received TERMINATE op in state UP: 2 refcnts, 0 toppar(s), 0 active toppar(s), 0 outbufs, 0 waitresps, 0 retrybufs
+%7|1750952824.448|BROADCAST|my-consumer-1#consumer-1| [thrd::0/internal]: Broadcasting state change
+%7|1750952824.448|BUFQ|my-consumer-1#consumer-1| [thrd::0/internal]: :0/internal: Purging bufq with 0 buffers
+%7|1750952824.448|BUFQ|my-consumer-1#consumer-1| [thrd::0/internal]: :0/internal: Purging bufq with 0 buffers
+%7|1750952824.448|FAIL|my-consumer-1#consumer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Client is terminating (after 56297ms in state UP) (_DESTROY)
+%7|1750952824.448|STATE|my-consumer-1#consumer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Broker changed state UP -> DOWN
+%7|1750952824.448|BUFQ|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Purging bufq with 0 buffers
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Updating 0 buffers on connection reset
+%7|1750952824.449|BRKTERM|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: terminating: broker still has 2 refcnt(s), 0 buffer(s), 0 partition(s)
+%7|1750952824.449|BROADCAST|my-consumer-1#consumer-1| [thrd:localhost:9092/bootstrap]: Broadcasting state change
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Purging bufq with 0 buffers
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Purging bufq with 0 buffers
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Updating 0 buffers on connection reset
+%7|1750952824.449|BRKTERM|my-consumer-1#consumer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: terminating: broker still has 2 refcnt(s), 0 buffer(s), 0 partition(s)
+%7|1750952824.449|METADATA|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: Requesting metadata for 1/1 topics: broker down
+%7|1750952824.449|METADATA|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: 127.0.0.1:9092/1: Request metadata for 1 topic(s): broker down
+%7|1750952824.448|FETCH|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0] in state stopped at offset 0 (leader epoch -1) (0/100000 msgs, 0/65536 kb queued, opv 4) is not fetchable: forced removal
+%7|1750952824.449|FETCHADD|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Removed test-topic [0] from fetch list (0 entries, opv 4): forced removal
+%7|1750952824.449|TOPBRK|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0]: leaving broker (0 messages in xmitq, next broker (none), rktp 0x7bdef80049c0)
+%7|1750952824.449|TOPBRK|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Topic test-topic [0]: no next broker, failing 0 message(s) in partition queue
+%7|1750952824.449|BROADCAST|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: Broadcasting state change
+%7|1750952824.448|BUFQ|my-consumer-1#consumer-1| [thrd::0/internal]: :0/internal: Updating 0 buffers on connection reset
+%7|1750952824.449|BRKTERM|my-consumer-1#consumer-1| [thrd::0/internal]: :0/internal: terminating: broker still has 2 refcnt(s), 0 buffer(s), 0 partition(s)
+%7|1750952824.449|TERMINATE|my-consumer-1#consumer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Handle is terminating in state DOWN: 1 refcnts (0x64a8ae7f0d40), 0 toppar(s), 0 active toppar(s), 0 outbufs, 0 waitresps, 0 retrybufs: failed 0 request(s) in retry+outbuf
+%7|1750952824.449|FAIL|my-consumer-1#consumer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Broker handle is terminating (after 0ms in state DOWN) (_DESTROY)
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Purging bufq with 0 buffers
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Purging bufq with 0 buffers
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Updating 0 buffers on connection reset
+%7|1750952824.449|TERMINATE|my-consumer-1#consumer-1| [thrd::0/internal]: :0/internal: Handle is terminating in state DOWN: 1 refcnts (0x64a8ae7efe60), 0 toppar(s), 0 active toppar(s), 0 outbufs, 0 waitresps, 0 retrybufs: failed 0 request(s) in retry+outbuf
+%7|1750952824.449|FAIL|my-consumer-1#consumer-1| [thrd::0/internal]: :0/internal: Broker handle is terminating (after 0ms in state DOWN) (_DESTROY)
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd::0/internal]: :0/internal: Purging bufq with 0 buffers
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd::0/internal]: :0/internal: Purging bufq with 0 buffers
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd::0/internal]: :0/internal: Updating 0 buffers on connection reset
+%7|1750952824.449|TERMINATE|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Handle is terminating in state DOWN: 2 refcnts (0x64a8ae7eee50), 0 toppar(s), 0 active toppar(s), 0 outbufs, 0 waitresps, 0 retrybufs: failed 0 request(s) in retry+outbuf
+%7|1750952824.449|STATE|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Broker changed state DOWN -> INIT
+%7|1750952824.449|BROADCAST|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: Broadcasting state change
+%7|1750952824.449|TERM|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Received TERMINATE op in state UP: 5 refcnts, 0 toppar(s), 0 active toppar(s), 0 outbufs, 1 waitresps, 0 retrybufs
+%7|1750952824.449|TERM|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Received TERMINATE op in state INIT: 2 refcnts, 0 toppar(s), 0 active toppar(s), 0 outbufs, 0 waitresps, 0 retrybufs
+%7|1750952824.449|FAIL|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Client is terminating (after 0ms in state INIT) (_DESTROY)
+%7|1750952824.449|STATE|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Broker changed state INIT -> DOWN
+%7|1750952824.449|BROADCAST|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: Broadcasting state change
+%7|1750952824.449|FAIL|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Client is terminating (after 53009ms in state UP) (_DESTROY)
+%7|1750952824.449|STATE|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Broker changed state UP -> DOWN
+%7|1750952824.449|BROADCAST|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: Broadcasting state change
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Purging bufq with 1 buffers
+%7|1750952824.449|TOPPARREMOVE|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: Removing toppar test-topic [0] 0x7bdef80049c0
+%7|1750952824.449|DESTROY|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: test-topic [0]: 0x7bdef80049c0 DESTROY_FINAL
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Purging bufq with 0 buffers
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Purging bufq with 0 buffers
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Updating 0 buffers on connection reset
+%7|1750952824.449|BRKTERM|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: terminating: broker still has 2 refcnt(s), 0 buffer(s), 0 partition(s)
+%7|1750952824.450|TERMINATE|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Handle is terminating in state DOWN: 1 refcnts (0x64a8ae7eee50), 0 toppar(s), 0 active toppar(s), 0 outbufs, 0 waitresps, 0 retrybufs: failed 0 request(s) in retry+outbuf
+%7|1750952824.450|FAIL|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Broker handle is terminating (after 0ms in state DOWN) (_DESTROY)
+%7|1750952824.450|BUFQ|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Purging bufq with 0 buffers
+%7|1750952824.450|BUFQ|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Purging bufq with 0 buffers
+%7|1750952824.450|BUFQ|my-consumer-1#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: Updating 0 buffers on connection reset
+%7|1750952824.449|BUFQ|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Purging bufq with 0 buffers
+%7|1750952824.450|BUFQ|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Updating 0 buffers on connection reset
+%7|1750952824.450|BRKTERM|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: terminating: broker still has 3 refcnt(s), 0 buffer(s), 0 partition(s)
+%7|1750952824.450|TERMINATE|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Handle is terminating in state DOWN: 2 refcnts (0x7bdef8001810), 0 toppar(s), 0 active toppar(s), 0 outbufs, 0 waitresps, 0 retrybufs: failed 0 request(s) in retry+outbuf
+%7|1750952824.450|STATE|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Broker changed state DOWN -> INIT
+%7|1750952824.450|BROADCAST|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: Broadcasting state change
+%7|1750952824.450|STATE|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Broker changed state INIT -> TRY_CONNECT
+%7|1750952824.450|BROADCAST|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: Broadcasting state change
+%7|1750952824.450|TERMINATE|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Handle is terminating in state TRY_CONNECT: 1 refcnts (0x7bdef8001810), 0 toppar(s), 0 active toppar(s), 0 outbufs, 0 waitresps, 0 retrybufs: failed 1 request(s) in retry+outbuf
+%7|1750952824.450|FAIL|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Broker handle is terminating (after 0ms in state TRY_CONNECT) (_DESTROY)
+%7|1750952824.450|STATE|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Broker changed state TRY_CONNECT -> DOWN
+%7|1750952824.450|BROADCAST|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: Broadcasting state change
+%7|1750952824.450|BUFQ|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Purging bufq with 0 buffers
+%7|1750952824.450|BUFQ|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Purging bufq with 0 buffers
+%7|1750952824.450|BUFQ|my-consumer-1#consumer-1| [thrd:127.0.0.1:9092/1]: 127.0.0.1:9092/1: Updating 0 buffers on connection reset
+%7|1750952824.450|TERMINATE|my-consumer-1#consumer-1| [thrd:main]: Internal main thread termination done
+%7|1750952824.450|TERMINATE|my-consumer-1#consumer-1| [thrd:app]: Destroying op queues
+%7|1750952824.450|TERMINATE|my-consumer-1#consumer-1| [thrd:app]: Destroying cgrp
+%7|1750952824.450|MEMBERID|my-consumer-1#consumer-1| [thrd:app]: Group "my_group": updating member id "" -> "(not-set)"
+%7|1750952824.450|TERMINATE|my-consumer-1#consumer-1| [thrd:app]: Termination done: freeing resources
+[0 Jun 26 11:47:04] x2usr@dev.x2-17:~/av_openacr/ktest 
+$ 

@@ -1,6 +1,38 @@
 #!/bin/bash
 
 
+cat <<'EOF' > /tmp/atf_x2_metadata
+x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -in:$tempdir/data -bindir:$bindir -random_ports"
+x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
+x2.ProcStartMsg  proc:kapi  cmd:"kapi -connect -broker::$kafkaport"
+x2.ProcMsg  proc:kapi  payload:"kafka2.DescribeClusterRequest  request_api_version:0  correlation_id:3  client_id:kafka-ui-admin-1746648345-1  include_cluster_authorized_operations:N  endpoint_type:1  include_fenced_brokers:N"
+x2.ProcEofMsg  proc:kapi
+x2.ProcReadMsg  proc:kapi
+x2.ProcMsg proc:x2  payload:ams.TerminateMsg
+x2.ProcReadMsg  proc:x2
+ams.TerminateMsg
+EOF
+
+atf_x2 -comptest:mytest -timeout_sec:3  -dbgshell -v < /tmp/atf_x2_metadata
+exit 
+
+#   test 
+
+comptest atf_x2.KafkaDescribeCluster -bindir:$bindir -comptest:$comptest| sed -E -f test/filt.sed
+comment KAFKA DescribeCluster Test
+exit_code 0
+x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -in:$tempdir/data -bindir:$bindir -random_ports"
+x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
+x2.ProcStartMsg  proc:kapi  cmd:"kapi -connect -broker::$kafkaport"
+x2.ProcMsg  proc:kapi  payload:"kafka2.DescribeClusterRequest  request_api_version:0  correlation_id:3  client_id:kafka-ui-admin-1746648345-1  include_cluster_authorized_operations:N  endpoint_type:1  include_fenced_brokers:N"
+x2.ProcEofMsg  proc:kapi
+x2.ProcReadMsg  proc:kapi
+x2.ProcMsg proc:x2  payload:ams.TerminateMsg
+x2.ProcReadMsg  proc:x2
+ams.TerminateMsg
+
+# end of test
+
 
 
 cat <<'EOF' > /tmp/atf_x2_metadata
@@ -46,17 +78,6 @@ EOF
 
 
 
-# cat <<'EOF' > /tmp/atf_x2_metadata
-# x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -in:$tempdir/data -bindir:$bindir -random_ports"
-# x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
-# x2.ProcStartMsg  proc:kapi  cmd:"kapi -connect -broker::$kafkaport"
-# x2.ProcMsg  proc:kapi  payload:"kafka2.DescribeClusterRequest  request_api_version:0  correlation_id:3  client_id:kafka-ui-admin-1746648345-1  include_cluster_authorized_operations:N  endpoint_type:1  include_fenced_brokers:N"
-# x2.ProcEofMsg  proc:kapi
-# x2.ProcReadMsg  proc:kapi
-# x2.ProcMsg proc:x2  payload:ams.TerminateMsg
-# x2.ProcReadMsg  proc:x2
-# ams.TerminateMsg
-# EOF
 
 
 
@@ -124,8 +145,6 @@ EOF
 # ams.TerminateMsg
 # EOF
 
-atf_x2 -comptest:mytest -timeout_sec:3  -dbgshell -v < /tmp/atf_x2_metadata
-exit 
 
 
 # cat <<'EOF' > /tmp/atf_x2_wrk

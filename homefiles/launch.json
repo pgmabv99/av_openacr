@@ -1,0 +1,189 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // av2
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "2-x2gw attach",
+            "type": "cppdbg",
+            "request": "attach",
+            "processId": "${command:pickProcess}",
+            "program": "/home/x2usr/release/bin/x2gw",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Ignore SIGPIPE",
+                    "text": "handle SIGPIPE nostop noprint pass"
+                },
+            ],
+        },
+        {
+            "name": "1-ACR Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            //-============local x2sup
+            "cwd": "/home/x2usr/arnd",
+            "program": "/home/x2usr/arnd/build/Linux-g++.debug-x86_64/x2sup",
+            "args": [
+                "-v",
+                "-v",
+            ],
+            // //-============ installed x2sup
+            // "cwd": "/home/x2usr/release",
+            // "program": "/home/x2usr/release/bin/x2sup",
+            // "args": [
+            //     "-proc:dev-x2-4.x2sup-0-0",
+            //     "-daemon",
+            //     "-v",
+            //     "-v",
+            // ],
+            // "preLaunchTask": "x2sup",
+            // ===========
+            // "cwd": "${workspaceFolder}",
+            // "program": "${workspaceFolder}/build/debug/atf_x2",
+            // "args": [
+            //     "-verbose",
+            //     "-comptest:mycomptest",
+            //     "-bindir:mybindir",
+            //     "-tempdir:mytempdir",
+            // ],
+            // "cwd": "${workspaceFolder}",
+            // -----
+            // "program": "${workspaceFolder}/build/debug/omcli",
+            // "args": [
+            //     "-proc:dev4.x2sup-0",
+            //     "-daemon",
+            //     "-host:dev.x2-4.x2-1.ext",
+            //     "-verbose",
+            // ],
+            // -----
+            // "program": "${workspaceFolder}/build/debug/omcli",
+            // "args": [
+            //     "-omnode:dev.x2-4.x2-%",
+            //     "-start_clean",
+            //     // "-dkr_clean_run",
+            //     "-verbose"
+            //     // "-help"
+            //     // -omnode:dev.x2-4.x2-2 -dkr_clean_run -verbose
+            // ],
+            // ----
+            // "program": "${workspaceFolder}/build/debug/dkr",
+            // "args": [
+            //     "-cmd:''",
+            //     "-clean_run:Y",
+            //     "-node:dev.x2-17",
+            //     // "-verbose"
+            // ],
+            // ------
+            // "program": "${workspaceFolder}/build/debug/x2node",
+            // "args": [
+            //     "-node:'dev.x2-17|dev.x2-19'",
+            //     "-cmd:hostname",
+            //     "-q:N",
+            //     "-fail_on_error:Y"
+            // ],
+            // ------
+            // "program": "${workspaceFolder}/build/debug/x2node",
+            // "args": [
+            //     "-node:dev.kafkaui-5",
+            //     // "-node:'dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.kcat-08|dev.rdpui-5|dev.x2-17|dev.x2-18|dev.x2-19|dev.x2-20'",
+            //     "-cmd:'bash  $HOSTNAME status'",
+            //     "-q:Y",
+            //     "-fail_on_error:N"
+            // ],
+            // ------
+            // "program": "${workspaceFolder}/build/debug/atf_snf",
+            // "args": [
+            //     "-in_file:wrk_full2.pcap",
+            //     "-kapi:true",
+            //     "-out_solo_dir:wrk_full2"
+            // ],
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                },
+                // {
+                //     "description": "Ignore SIGPIPE",
+                //     "text": "handle SIGPIPE nostop noprint pass"
+                // },
+                // {
+                //     "description": "Debug child processes",
+                //     "text": "set follow-fork-mode child",
+                //     "ignoreFailures": true
+                // },
+                // {
+                //     "description": "Enable detach-on-fork",
+                //     "text": "set detach-on-fork off"
+                // }
+            ],
+        },
+        {
+            "name": "(sudo) ACR Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/temp/a.out",
+            // "args": [
+            //     "-kapi:true", "-in_solo_dir:cap2"
+            // ],
+            // "args": [
+            //      "-decode","-msgdir","../pcap/cap2"
+            // ],
+            // "args": [
+            //     "-in_file:o1.pcap",
+            //     "-kapi:true"
+            // ],
+            // "args": [
+            //     "-dev:data0-8",
+            // ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "${workspaceFolder}/.vscode/gdb_sudo.sh",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set gdb to pass SIGINT to the program",
+                    "text": "handle SIGINT pass nostop noprint",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "ACR select debug target"
+        },
+    ],
+    "compounds": [
+        {
+            "name": "compound",
+            "configurations": [
+                "1-ACR Launch",
+                "2-x2gw attach"
+            ]
+        }
+    ]
+}

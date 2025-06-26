@@ -120,13 +120,12 @@ We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.
 
 ```
 ### git work flow items
-```
-git-rebase-origin 
 git-rebase-remote algornd/arnd
 normalize_
 atf_comp
 atf_comp -covcapture
 git-add-to-last-commit
+git push --force algornd/arnd $(git rev-parse --abbrev-ref HEAD)
 
 ```
 ### gitlab  work flow items
@@ -261,3 +260,28 @@ kapi
 
 
 -add errcheck in x2node for failed key
+
+# nullable field in kafka
+metadata
+
+{ "name": "Name", "type": "string", "versions": "0+", "mapKey": true, "entityType": "topicName", "nullableVersions": "12+",
+
+
+describelogsdirs
+
+{ "name": "Name", "type": "string", "versions": "0+", "entityType": "topicName",
+
+
+$ acr  atfdb.comptest | grep Kaf
+atfdb.comptest  comptest:atf_x2.Kafka             timeout:10  memcheck:N  exit_code:0  comment:"KAFKA Smoke test"
+atfdb.comptest  comptest:atf_x2.KafkaAcl          timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA ACL test"
+atfdb.comptest  comptest:atf_x2.KafkaAclMgt       timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA ACL management test"
+atfdb.comptest  comptest:atf_x2.KafkaAuth         timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA Authentication test"
+atfdb.comptest  comptest:atf_x2.KafkaCrc          timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA Smoke test"
+atfdb.comptest  comptest:atf_x2.KafkaCreateTopic  timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA Create Topic Test"
+atfdb.comptest  comptest:atf_x2.KafkaKv           timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA Key-Value test"
+atfdb.comptest  comptest:atf_x2.KafkaMtls         timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA mTLS  test"
+atfdb.comptest  comptest:atf_x2.KafkaTls          timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA TLS test"
+
+
+

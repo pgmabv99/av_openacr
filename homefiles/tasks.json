@@ -1,0 +1,130 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ACR release build",
+            "type": "shell",
+            "options": {
+                "env": {
+                    "PATH": "${env:PATH}:${env:HOME}/arnd/bin"
+                },
+            },
+            "command": "echo $PATH; ai && acr -check % && amc && update-hdr && abt %",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "ACR debug build",
+            "type": "shell",
+            "options": {
+                "env": {
+                    "PATH": "${env:PATH}:${env:HOME}/arnd/bin"
+                },
+            },
+            "command": "abt -cfg:debug %",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "dependsOn": [
+                "ACR release build"
+            ]
+        },
+        {
+            "label": "ACR normalize",
+            "type": "shell",
+            "options": {
+                "env": {
+                    "PATH": "${env:PATH}:${env:HOME}/arnd/bin"
+                },
+            },
+            "command": "normalize",
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+            "dependsOn": [
+                "ACR release build"
+            ]
+        },
+        {
+            "label": "ACR select debug target",
+            "type": "shell",
+            "options": {
+                "env": {
+                    "PATH": "${env:PATH}:${env:HOME}/arnd/bin"
+                },
+            },
+            "command": "pwd; bin/vscode-select-debug-target ${file} ${workspaceFolder}/temp/a.out",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "dependsOn": [
+                "ACR debug build"
+            ]
+        },
+        {
+            "label": "ACR_indent_and_hdr",
+            "type": "shell",
+            "command": "source ~/.bashrc;bin/cpp-indent  ${file}; update-hdr ",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+        },
+        {
+            "label": "ACR_ci run",
+            "type": "shell",
+            "command": "source ~/.bashrc;atf_ci -cijob:%",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+        },
+        {
+            "label": "x2sup",
+            "type": "shell",
+            "command": [
+                "set -x;",
+                "pwd;",
+                "cd ~/arnd;",
+                // "echo 'update proc set hbtimeout=100000' | acr -my x2db.%;",   //prevent sup from killing under debug
+                "cd ~;",
+                "~/$HOSTNAME stop;",
+                "rm -f ~/release/dev-x2-4.x2sup-0-0.log;",
+                "cp ~/arnd/build/Linux-g++.debug-x86_64/x2cli ~/release/bin/ ;",  //cp newly built code into release folder
+                "cp ~/arnd/build/Linux-g++.debug-x86_64/x2cmt ~/release/bin/ ;",
+                "cp ~/arnd/build/Linux-g++.debug-x86_64/x2gf ~/release/bin/ ;",
+                "cp ~/arnd/build/Linux-g++.debug-x86_64/x2gw ~/release/bin/ ;",
+                "cp ~/arnd/build/Linux-g++.debug-x86_64/x2imdb ~/release/bin/ ;",
+                "cp ~/arnd/build/Linux-g++.debug-x86_64/x2mon ~/release/bin/ ;",
+                "cp ~/arnd/build/Linux-g++.debug-x86_64/x2net ~/release/bin/ ;",
+                "cp ~/arnd/build/Linux-g++.debug-x86_64/x2sup ~/release/bin/ ;",
+                "cp ~/arnd/build/Linux-g++.debug-x86_64/x2txn ~/release/bin/ ;",
+
+                "sed -i 's/hbtimeout:30/hbtimeout:10000/g' ~/release/data/x2db/proc.ssim;",
+                "cp ~/arnd/data/kapidb/kapi.ssim   ~/release/data/kapidb/kapi.ssim;",  //cp ssim for gdb
+                "cp ~/arnd/data/dmmeta/dispsigcheck.ssim  ~/release/data/dmmeta/dispsigcheck.ssim;",  //cp ssim for gdb
+
+                "~/$HOSTNAME start_clean_vscode;",                             // standrd setup  minus invoking x2sup
+                "sleep 2;"
+            ],
+            // "command": "set -x; cd ~; echo 'update proc set hbtimeout=100000' | acr -my x2db.% ; ~/$HOSTNAME start_clean_vscode; rm -f ~/arnd/dev4.x2sup-0.log",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+        },
+    ]
+}

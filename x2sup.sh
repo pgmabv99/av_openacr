@@ -20,7 +20,8 @@ kcat -b 127.0.0.1:$kafkaport -L -t test1 -X allow.auto.create.topics=false
 kcat -b 127.0.0.1:$kafkaport -L
 
 
-atf_comp atf_x2.KafkaDescribeCluster  -run -capture -check_untracked:N
+atf_comp atf_x2.KafkaDescribeCluster  -run  -check_untracked:N
+atf_comp atf_x2.KafkaAuth  -run  -check_untracked:N
 atf_comp atf_x2.KafkaDescribeCluster  -capture -check_untracked:N
 x2.ProcMsg  proc:kapi  payload:"kafka2.CreateTopicsRequest  request_api_version:7  topics.0:'kafka2.CreatableTopic19q  name:test7  num_partitions:3  replication_factor:1'"
 x2.ProcMsg  proc:kapi  payload:"kafka2.DescribeClusterRequest  request_api_version:0  correlation_id:3  client_id:kafka-ui-admin-1746648345-1  include_cluster_authorized_operations:N  endpoint_type:1  include_fenced_brokers:N"

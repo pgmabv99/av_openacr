@@ -6,19 +6,57 @@
 cat <<'EOF' > /tmp/atf_x2_metadata
 x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -in:$tempdir/data -bindir:$bindir -random_ports"
 x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
-x2.ProcStartMsg  proc:kapi  cmd:"kapi -connect -broker::$kafkaport"
-x2.ProcMsg  proc:kapi  payload:"kafka2.DescribeClusterRequest  request_api_version:0  correlation_id:3  client_id:kafka-ui-admin-1746648345-1  include_cluster_authorized_operations:N  endpoint_type:1  include_fenced_brokers:N"
-x2.ProcEofMsg  proc:kapi
-x2.ProcReadMsg  proc:kapi
+x2.ProcStartMsg  proc:kcat  cmd:"kcat -b 127.0.0.1:$kafkaport -L"
+x2.ProcReadMsg  proc:kcat
+x2.ProcStartMsg  proc:kcat  cmd:"kcat -b 127.0.0.1:$kafkaport -X security.protocol=SASL_PLAINTEXT -X sasl.mechanism=PLAIN -X sasl.username=root -X sasl.password=secret -L"
+x2.ProcReadMsg  proc:kcat
+x2.ProcStartMsg  proc:kcat  cmd:"kcat -b 127.0.0.1:$kafkaport -X security.protocol=SASL_PLAINTEXT -X sasl.mechanism=PLAIN -X sasl.username=alice -X sasl.password=foo -L"
+x2.ProcReadMsg  proc:kcat
+x2.ProcStartMsg  proc:kcat  cmd:"kcat -b 127.0.0.1:$kafkaport -X security.protocol=SASL_PLAINTEXT -X sasl.mechanism=PLAIN -X sasl.username=bob -X sasl.password=bar -L"
+x2.ProcReadMsg  proc:kcat
+x2.ProcStartMsg  proc:kcat  cmd:"kcat -b 127.0.0.1:$kafkaport -X security.protocol=SASL_PLAINTEXT -X sasl.mechanism=PLAIN -X sasl.username=charlie -X sasl.password=baz -L"
+x2.ProcReadMsg  proc:kcat
+x2.ProcStartMsg  proc:kcat  cmd:"kcat -b 127.0.0.1:$kafkaport -X security.protocol=SASL_PLAINTEXT -X sasl.mechanism=PLAIN -X sasl.username=dave -X sasl.password=qux -L"
+x2.ProcReadMsg  proc:kcat  until:FAIL
+x2.ProcKillMsg  proc:kcat  signal:9
+x2.ProcReadMsg  proc:kcat
+x2.ProcStartMsg  proc:kcat  cmd:"kcat -b 127.0.0.1:$kafkaport -X security.protocol=SASL_PLAINTEXT -X sasl.mechanism=PLAIN -X sasl.username=root -X sasl.password=blah -L"
+x2.ProcReadMsg  proc:kcat  until:FAIL
+x2.ProcKillMsg  proc:kcat  signal:9
+x2.ProcReadMsg  proc:kcat
+x2.ProcStartMsg  proc:kcat  cmd:"kcat -b 127.0.0.1:$kafkaport -X security.protocol=SASL_PLAINTEXT -X sasl.mechanism=PLAIN -X sasl.username=alice -X sasl.password=blah -L"
+x2.ProcReadMsg  proc:kcat  until:FAIL
+x2.ProcKillMsg  proc:kcat  signal:9
+x2.ProcReadMsg  proc:kcat
 x2.ProcMsg proc:x2  payload:ams.TerminateMsg
 x2.ProcReadMsg  proc:x2
 ams.TerminateMsg
 EOF
-# x2.ProcStartMsg  proc:kcat-md  cmd:"kcat -b 127.0.0.1:$kafkaport -L"
-# x2.ProcReadMsg  proc:kcat-md
+# cat <<'EOF' > /tmp/atf_x2_metadata
+# x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -in:$tempdir/data -bindir:$bindir -random_ports -tls -tls_cert:test/crt/x2.crt -tls_key:test/crt/x2.key -tls_ca:test/crt/ca.crt -mtls"
+# x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
+# x2.ProcStartMsg  proc:kcat  cmd:"kcat -b 127.0.0.1:$kafkasport -X security.protocol=SSL -X ssl.ca.location=test/crt/ca.crt -X ssl.certificate.location=test/crt/root.crt -X ssl.key.location=test/crt/root.key -L"
+# x2.ProcReadMsg  proc:kcat
+# x2.ProcKillMsg  proc:kcat  signal:9
+# x2.ProcReadMsg  proc:kcat
 # x2.ProcMsg proc:x2  payload:ams.TerminateMsg
 # x2.ProcReadMsg  proc:x2
 # ams.TerminateMsg
+# EOF
+
+
+
+# cat <<'EOF' > /tmp/atf_x2_metadata
+# x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -in:$tempdir/data -bindir:$bindir -random_ports"
+# x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
+# x2.ProcStartMsg  proc:kapi  cmd:"kapi -connect -broker::$kafkaport"
+# x2.ProcMsg  proc:kapi  payload:"kafka2.DescribeClusterRequest  request_api_version:0  correlation_id:3  client_id:kafka-ui-admin-1746648345-1  include_cluster_authorized_operations:N  endpoint_type:1  include_fenced_brokers:N"
+# x2.ProcEofMsg  proc:kapi
+# x2.ProcReadMsg  proc:kapi
+# x2.ProcMsg proc:x2  payload:ams.TerminateMsg
+# x2.ProcReadMsg  proc:x2
+# ams.TerminateMsg
+# EOF
 
 
 
@@ -136,12 +174,17 @@ exit
 
 exit
 
-    atf_x2 does "forward" substitution on the commands formed from tmsg, replacing proc.bash.cmd.c = Subst(\_db.R,cmd_Getary(msg)); (line 71) with the vars Set like this Set(\_db.R,tempstr()\<\<"$"\<
-    
-    The result will be a kafkaport replaced with 41609 for example. When the test output comes in, we want to replace :41609 with :kafkaport
-    
-    To do it, create a new internal array atf_x2::FReplvar with two elements, var and val. Set "val" to ":41609 " and "var" to ":$kafkaport " - and all other vars like that On the receipt of any output line in void atf_x2::In_ProcReadMsg(x2::ProcReadMsg &msg) (line 93) do replace loop, before prlog(ou
-t) ind_beg(\_dv_replvar_curs){Replace(out,val,var)}
-    
-    Remember to add trailing " " to the vars - otherwise there will be occasional partial replacements. 41609 has to be replaced as ":41609 "
-    
+s/(tsc|signature|timestamp|tend|crc|port):[^ "]+/\1:***/g
+s/^(lib_ws.server_(stopped|started)  server:[^:]*:)[0-9]*/\1***/g
+/(netio|connected|broker|sasl|ssl)/s/([0-9]+\.[0-9]+\.[0-9]+\.[0-9]:)[0-9]+/\1*/g
+/x2\.ProcMsg\s+proc:x2(n[01])?\s+/d
+s/[0-2][0-9]:[0-6][0-9]:[0-6][0-9] (Published|Subscribing)/**:**:** \1/g
+/proc:kcat-sub  payload:"%7/d
+/x2.Msg/s/(from):[^ "]+/\1:***/g
+s/(%3\|)[0-9]+\.[0-9]+/\1***/
+s/after [0-9]+ms/after ***ms/
+/Unexpected NATS error/d
+s/(nats:)( permissions violation:)/\1/
+/x2gf.msgcache/s/n_fetch:[^ "]+/n_fetch:***/
+/SIT VERA/s/("ts":)[0-9]{13}/\1MILLISEC/
+s/(id:)[0-9a-f-]{36}/\1***/

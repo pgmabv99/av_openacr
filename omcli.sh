@@ -42,7 +42,6 @@ omcli dev.x2-4.x2-% -status
 omcli dev.x2-4.rdpui-1 -status 
 
 echo " short benchmark with 1 broker"
-omcli  -omenv:dev.x2-4 -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload -omrun_minutes:1
 omcli         dev.x2-4 -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload -omrun_minutes:1
 
 omenv_logs.sh

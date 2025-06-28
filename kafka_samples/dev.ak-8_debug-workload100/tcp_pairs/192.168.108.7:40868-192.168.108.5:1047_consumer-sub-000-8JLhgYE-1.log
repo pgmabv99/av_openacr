@@ -1,0 +1,696 @@
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:40868-192.168.108.5:1047  frame_count:347  syn_count:1  fin_count:1  rst_count:0  isn:001252637327  tcp_payload_len_tot:000000028402
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-8JLhgYE-1  kafka_count:173  kafka_req_ack_count:173  kafka_count_in_bh:173  pct_non_ack!!!:0  kafka_len_tot:000000028402
+
+
+atf_snf.info iframe:000000000204  ts_ns:768914162664761  ack:1
+kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:15  client_id:consumer-sub-000-8JLhgYE-1  client_software_name:apache-kafka-java  client_software_version:3.6.1
+atf_snf.info iframe:000000000206  ts_ns:768914163854508
+kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:15  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:0  min_version:0  max_version:11"  api_keys.1:"kafka2.ApiVersion18a  api_key:1  min_version:0  max_version:17"  api_keys.2:"kafka2.ApiVersion18a  api_key:2  min_version:0  max_version:9"  api_keys.3:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:12"  api_keys.4:"kafka2.ApiVersion18a  api_key:8  min_version:0  max_version:9"  api_keys.5:"kafka2.ApiVersion18a  api_key:9  min_version:0  max_version:9"  api_keys.6:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"  api_keys.7:"kafka2.ApiVersion18a  api_key:11  min_version:0  max_version:9"  api_keys.8:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"  api_keys.9:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"  api_keys.10:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"  api_keys.11:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:5"  api_keys.12:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"  api_keys.13:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"  api_keys.14:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:4"  api_keys.15:"kafka2.ApiVersion18a  api_key:19  min_version:0  max_version:7"  api_keys.16:"kafka2.ApiVersion18a  api_key:20  min_version:0  max_version:6"  api_keys.17:"kafka2.ApiVersion18a  api_key:21  min_version:0  max_version:2"  api_keys.18:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:5"  api_keys.19:"kafka2.ApiVersion18a  api_key:23  min_version:0  max_version:4"  api_keys.20:"kafka2.ApiVersion18a  api_key:24  min_version:0  max_version:5"  api_keys.21:"kafka2.ApiVersion18a  api_key:25  min_version:0  max_version:4"  api_keys.22:"kafka2.ApiVersion18a  api_key:26  min_version:0  max_version:4"  api_keys.23:"kafka2.ApiVersion18a  api_key:27  min_version:0  max_version:1"  api_keys.24:"kafka2.ApiVersion18a  api_key:28  min_version:0  max_version:4"  api_keys.25:"kafka2.ApiVersion18a  api_key:29  min_version:0  max_version:3"  api_keys.26:"kafka2.ApiVersion18a  api_key:30  min_version:0  max_version:3"  api_keys.27:"kafka2.ApiVersion18a  api_key:31  min_version:0  max_version:3"  api_keys.28:"kafka2.ApiVersion18a  api_key:32  min_version:0  max_version:4"  api_keys.29:"kafka2.ApiVersion18a  api_key:33  min_version:0  max_version:2"  api_keys.30:"kafka2.ApiVersion18a  api_key:34  min_version:0  max_version:2"  api_keys.31:"kafka2.ApiVersion18a  api_key:35  min_version:0  max_version:4"  api_keys.32:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"  api_keys.33:"kafka2.ApiVersion18a  api_key:37  min_version:0  max_version:3"  api_keys.34:"kafka2.ApiVersion18a  api_key:38  min_version:0  max_version:3"  api_keys.35:"kafka2.ApiVersion18a  api_key:39  min_version:0  max_version:2"  api_keys.36:"kafka2.ApiVersion18a  api_key:40  min_version:0  max_version:2"  api_keys.37:"kafka2.ApiVersion18a  api_key:41  min_version:0  max_version:3"  api_keys.38:"kafka2.ApiVersion18a  api_key:42  min_version:0  max_version:2"  api_keys.39:"kafka2.ApiVersion18a  api_key:43  min_version:0  max_version:2"  api_keys.40:"kafka2.ApiVersion18a  api_key:44  min_version:0  max_version:1"  api_keys.41:"kafka2.ApiVersion18a  api_key:45  min_version:0  max_version:0"  api_keys.42:"kafka2.ApiVersion18a  api_key:46  min_version:0  max_version:0"  api_keys.43:"kafka2.ApiVersion18a  api_key:47  min_version:0  max_version:0"  api_keys.44:"kafka2.ApiVersion18a  api_key:48  min_version:0  max_version:1"  api_keys.45:"kafka2.ApiVersion18a  api_key:49  min_version:0  max_version:1"  api_keys.46:"kafka2.ApiVersion18a  api_key:50  min_version:0  max_version:0"  api_keys.47:"kafka2.ApiVersion18a  api_key:51  min_version:0  max_version:0"  api_keys.48:"kafka2.ApiVersion18a  api_key:55  min_version:0  max_version:2"  api_keys.49:"kafka2.ApiVersion18a  api_key:57  min_version:0  max_version:1"  api_keys.50:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:1"  api_keys.51:"kafka2.ApiVersion18a  api_key:61  min_version:0  max_version:0"  api_keys.52:"kafka2.ApiVersion18a  api_key:64  min_version:0  max_version:0"  api_keys.53:"kafka2.ApiVersion18a  api_key:65  min_version:0  max_version:0"  api_keys.54:"kafka2.ApiVersion18a  api_key:66  min_version:0  max_version:1"  api_keys.55:"kafka2.ApiVersion18a  api_key:68  min_version:0  max_version:0"  api_keys.56:"kafka2.ApiVersion18a  api_key:69  min_version:0  max_version:0"  api_keys.57:"kafka2.ApiVersion18a  api_key:74  min_version:0  max_version:0"  api_keys.58:"kafka2.ApiVersion18a  api_key:75  min_version:0  max_version:0"  api_keys.59:"kafka2.ApiVersion18a  api_key:80  min_version:0  max_version:0"  api_keys.60:"kafka2.ApiVersion18a  api_key:81  min_version:0  max_version:0"  throttle_time_ms:0
+atf_snf.info iframe:000000000208  ts_ns:768914165119238  ack:1
+kafka2.JoinGroupRequest  request_api_version:9  correlation_id:16  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 51 59 5f 74 35 77 77 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 51 59 5f 74 35 77 77 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to NotCoordinatorException"
+atf_snf.info iframe:000000000209  ts_ns:768914181643161
+kafka2.JoinGroupResponse  request_api_version:9  correlation_id:16  throttle_time_ms:0  error_code:79  generation_id:-1  leader:""  skip_assignment:N  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000210  ts_ns:768914183844716  ack:1
+kafka2.JoinGroupRequest  request_api_version:9  correlation_id:17  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 51 59 5f 74 35 77 77 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 51 59 5f 74 35 77 77 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to MemberIdRequiredException"
+atf_snf.info iframe:000000000216  ts_ns:768917205478707
+kafka2.JoinGroupResponse  request_api_version:9  correlation_id:17  throttle_time_ms:0  error_code:0  generation_id:1  protocol_type:consumer  protocol_name:range  leader:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  skip_assignment:N  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  members.0:'kafka2.JoinGroupResponseMember11a  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 51 59 5f 74 35 77 77 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'
+atf_snf.info iframe:000000000217  ts_ns:768917221888576  ack:1
+kafka2.SyncGroupRequest  request_api_version:5  correlation_id:18  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  protocol_type:consumer  protocol_name:range  assignments.0:'kafka2.SyncGroupRequestAssignment14q  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  assignment:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 51 59 5f 74 35 77 77 00 00 00 01 00 00 00 00 ff ff ff ff"'
+atf_snf.info iframe:000000000219  ts_ns:768917243572992
+kafka2.SyncGroupResponse  request_api_version:5  correlation_id:18  throttle_time_ms:0  error_code:0  protocol_type:consumer  protocol_name:range  assignment:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 51 59 5f 74 35 77 77 00 00 00 01 00 00 00 00 ff ff ff ff"
+atf_snf.info iframe:000000000220  ts_ns:768917254640608  ack:1
+kafka2.OffsetFetchRequest  request_api_version:8  correlation_id:19  client_id:consumer-sub-000-8JLhgYE-1  group_id:""  groups.0:'kafka2.OffsetFetchRequestGroup9q  group_id:sub-000-8JLhgYE  member_epoch:-1  topics.0:"kafka2.OffsetFetchRequestTopics9q  name:test-topic-0000000-QY_t5ww  partition_indexes.0:0"'  require_stable:Y
+atf_snf.info iframe:000000000221  ts_ns:768917265474496
+kafka2.OffsetFetchResponse  request_api_version:8  correlation_id:19  throttle_time_ms:0  error_code:0  groups.0:'kafka2.OffsetFetchResponseGroup9a  group_id:sub-000-8JLhgYE  topics.0:"kafka2.OffsetFetchResponseTopics9a  name:test-topic-0000000-QY_t5ww  partitions.0:\'kafka2.OffsetFetchResponsePartitions9a  partition_index:0  committed_offset:-1  committed_leader_epoch:-1  metadata:\\"\\"  error_code:0\'"  error_code:0'
+atf_snf.info iframe:000000000232  ts_ns:768917369883104  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:23  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:1  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000233  ts_ns:768917393673504
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:23  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000248  ts_ns:768917984550496  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:26  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:2  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000249  ts_ns:768917987221644
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:26  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000263  ts_ns:768918981785177  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:29  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:3  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000264  ts_ns:768918984338604
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:29  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000278  ts_ns:768919980505254  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:32  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:4  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000279  ts_ns:768919983359532
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:32  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000284  ts_ns:768920208204204  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:33  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000285  ts_ns:768920211717580
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:33  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000000352  ts_ns:768920981278252  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:36  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:5  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000353  ts_ns:768920983649414
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:36  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000367  ts_ns:768921980276608  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:39  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:6  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000368  ts_ns:768921982954598
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:39  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000382  ts_ns:768922980577504  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:42  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:7  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000383  ts_ns:768922983357120
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:42  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000385  ts_ns:768923207642003  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:43  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000386  ts_ns:768923208465529
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:43  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000000400  ts_ns:768923980104793  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:46  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:8  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000401  ts_ns:768923982508825
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:46  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000419  ts_ns:768924979968646  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:49  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:9  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000420  ts_ns:768924982153145
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:49  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000438  ts_ns:768925980832448  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:52  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:10  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000439  ts_ns:768925983070886
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:52  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000441  ts_ns:768926208255968  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:53  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000442  ts_ns:768926208954201
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:53  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000000456  ts_ns:768926980050624  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:56  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:11  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000457  ts_ns:768926982230195
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:56  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000471  ts_ns:768927979682662  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:59  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:12  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000472  ts_ns:768927981926476
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:59  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000486  ts_ns:768928979948537  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:62  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:13  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000487  ts_ns:768928982387276
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:62  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000489  ts_ns:768929208731904  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:63  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000490  ts_ns:768929209455302
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:63  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000000504  ts_ns:768929979998348  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:66  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:14  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000505  ts_ns:768929982547552
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:66  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000519  ts_ns:768930979979276  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:69  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:15  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000520  ts_ns:768930982518758
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:69  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000534  ts_ns:768931979747001  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:72  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:16  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000535  ts_ns:768931981844179
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:72  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000537  ts_ns:768932209883737  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:73  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000538  ts_ns:768932210593670
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:73  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000000552  ts_ns:768932979423110  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:76  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:17  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000553  ts_ns:768932981305977
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:76  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000567  ts_ns:768933980728896  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:79  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:18  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000568  ts_ns:768933982745638
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:79  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000582  ts_ns:768934978935302  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:82  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:19  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000583  ts_ns:768934981077196
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:82  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000585  ts_ns:768935210837254  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:83  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000586  ts_ns:768935211524748
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:83  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000000600  ts_ns:768935979689465  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:86  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:20  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000601  ts_ns:768935981690035
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:86  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000615  ts_ns:768936979264057  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:89  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:21  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000616  ts_ns:768936981543609
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:89  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000630  ts_ns:768937979485260  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:92  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:22  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000631  ts_ns:768937981380908
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:92  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000633  ts_ns:768938211066809  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:93  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000634  ts_ns:768938211797939
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:93  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000000648  ts_ns:768938979587436  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:96  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:23  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000649  ts_ns:768938981899500
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:96  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000663  ts_ns:768939979651328  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:99  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:24  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000664  ts_ns:768939982013337
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:99  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000686  ts_ns:768940979513177  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:102  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:25  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000687  ts_ns:768940981818425
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:102  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000689  ts_ns:768941211576582  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:103  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000690  ts_ns:768941212326854
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:103  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000000704  ts_ns:768941979339513  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:106  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:26  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000705  ts_ns:768941981498112
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:106  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000719  ts_ns:768942978349689  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:109  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:27  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000720  ts_ns:768942980645510
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:109  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000734  ts_ns:768943979489715  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:112  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:28  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000735  ts_ns:768943981470681
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:112  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000737  ts_ns:768944212174790  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:113  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000738  ts_ns:768944212860262
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:113  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000000752  ts_ns:768944979034918  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:116  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:29  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000753  ts_ns:768944980803513
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:116  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000767  ts_ns:768945979001689  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:119  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:30  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000768  ts_ns:768945980835744
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:119  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000782  ts_ns:768946978637036  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:122  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:31  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000783  ts_ns:768946980988953
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:122  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000785  ts_ns:768947212643321  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:123  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000786  ts_ns:768947213437100
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:123  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000000800  ts_ns:768947979053088  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:126  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:32  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000801  ts_ns:768947981010451
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:126  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000837  ts_ns:768948979063142  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:129  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:33  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000838  ts_ns:768948981031462
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:129  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000864  ts_ns:768949978471251  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:132  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:34  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000865  ts_ns:768949980372768
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:132  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000867  ts_ns:768950212986009  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:133  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000868  ts_ns:768950213774508
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:133  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000000882  ts_ns:768950978637241  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:136  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:35  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000883  ts_ns:768950980208268
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:136  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000897  ts_ns:768951978369203  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:139  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:36  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000898  ts_ns:768951980000544
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:139  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000912  ts_ns:768952978863884  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:142  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:37  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000913  ts_ns:768952980752659
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:142  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000915  ts_ns:768953213246009  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:143  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000916  ts_ns:768953213849683
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:143  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000000930  ts_ns:768953978602726  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:146  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:38  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000931  ts_ns:768953980935891
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:146  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000945  ts_ns:768954978467168  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:149  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:39  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000946  ts_ns:768954980634329
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:149  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000960  ts_ns:768955978169785  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:152  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:40  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000961  ts_ns:768955979787475
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:152  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000963  ts_ns:768956214417510  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:153  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000000964  ts_ns:768956214962694
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:153  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000000978  ts_ns:768956978123020  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:156  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:41  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000979  ts_ns:768956979558886
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:156  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000000993  ts_ns:768957977808121  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:159  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:42  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000000994  ts_ns:768957979310259
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:159  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001008  ts_ns:768958979172825  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:162  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:43  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001009  ts_ns:768958980818393
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:162  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001011  ts_ns:768959215302822  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:163  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001012  ts_ns:768959215787347
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:163  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001026  ts_ns:768959978673881  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:166  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:44  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001027  ts_ns:768959980509299
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:166  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001041  ts_ns:768960977981337  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:169  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:45  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001042  ts_ns:768960979793536
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:169  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001056  ts_ns:768961978158278  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:172  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:46  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001057  ts_ns:768961980112921
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:172  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001059  ts_ns:768962215566649  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:173  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001060  ts_ns:768962216222144
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:173  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001074  ts_ns:768962977518809  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:176  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:47  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001075  ts_ns:768962979299718
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:176  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001089  ts_ns:768963979231084  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:179  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:48  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001090  ts_ns:768963980901024
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:179  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001104  ts_ns:768964978471859  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:182  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:49  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001105  ts_ns:768964979987622
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:182  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001107  ts_ns:768965215684492  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:183  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001108  ts_ns:768965216224403
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:183  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001122  ts_ns:768965978480070  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:186  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:50  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001123  ts_ns:768965980351500
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:186  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001137  ts_ns:768966977822688  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:189  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:51  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001138  ts_ns:768966979374112
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:189  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001152  ts_ns:768967978742835  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:192  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:52  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001153  ts_ns:768967980336889
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:192  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001155  ts_ns:768968215882604  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:193  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001156  ts_ns:768968216375961
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:193  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001170  ts_ns:768968977656800  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:196  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:53  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001171  ts_ns:768968979291360
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:196  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001185  ts_ns:768969978295072  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:199  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:54  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001186  ts_ns:768969979879929
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:199  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001200  ts_ns:768970977884518  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:202  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:55  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001201  ts_ns:768970979274681
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:202  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001203  ts_ns:768971215729126  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:203  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001204  ts_ns:768971216253312
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:203  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001218  ts_ns:768971977928211  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:206  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:56  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001219  ts_ns:768971980568217
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:206  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001233  ts_ns:768972977720454  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:209  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:57  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001234  ts_ns:768972979319059
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:209  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001248  ts_ns:768973977425056  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:212  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:58  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001249  ts_ns:768973979243142
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:212  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001251  ts_ns:768974215714278  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:213  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001252  ts_ns:768974216205740
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:213  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001266  ts_ns:768974978117120  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:216  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:59  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001267  ts_ns:768974979691065
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:216  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001281  ts_ns:768975978001196  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:219  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:60  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001282  ts_ns:768975979468396
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:219  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001296  ts_ns:768976977247500  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:222  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:61  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001297  ts_ns:768976978877984
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:222  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001299  ts_ns:768977216373798  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:223  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001300  ts_ns:768977216839411
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:223  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001314  ts_ns:768977977779852  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:226  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:62  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001315  ts_ns:768977979670118
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:226  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001351  ts_ns:768978977813427  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:229  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:63  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001352  ts_ns:768978979492774
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:229  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001366  ts_ns:768979978760441  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:232  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:64  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001367  ts_ns:768979980980307
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:232  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001369  ts_ns:768980216736640  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:233  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001370  ts_ns:768980217221504
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:233  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001384  ts_ns:768980977997382  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:236  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:65  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001385  ts_ns:768980979359308
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:236  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001399  ts_ns:768981977881913  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:239  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:66  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001400  ts_ns:768981979559257
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:239  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001414  ts_ns:768982977558348  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:242  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:67  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001415  ts_ns:768982979152070
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:242  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001417  ts_ns:768983216685766  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:243  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001418  ts_ns:768983217216428
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:243  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001432  ts_ns:768983976752595  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:246  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:68  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001433  ts_ns:768983978279955
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:246  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001449  ts_ns:768984977297363  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:249  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:69  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001450  ts_ns:768984978626758
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:249  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001464  ts_ns:768985977823820  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:252  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:70  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001465  ts_ns:768985979034611
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:252  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001467  ts_ns:768986216688051  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:253  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001468  ts_ns:768986217197369
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:253  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001482  ts_ns:768986977465152  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:256  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:71  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001483  ts_ns:768986979262668
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:256  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001497  ts_ns:768987977004102  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:259  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:72  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001498  ts_ns:768987978432499
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:259  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001512  ts_ns:768988977693107  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:262  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:73  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001513  ts_ns:768988979504563
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:262  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001515  ts_ns:768989217014892  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:263  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001516  ts_ns:768989217467020
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:263  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001530  ts_ns:768989977767590  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:266  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:74  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001531  ts_ns:768989979604505
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:266  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001545  ts_ns:768990977708864  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:269  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:75  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001546  ts_ns:768990979366169
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:269  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001560  ts_ns:768991977511238  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:272  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:76  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001561  ts_ns:768991979373414
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:272  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001563  ts_ns:768992217717408  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:273  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001564  ts_ns:768992218276377
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:273  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001578  ts_ns:768992977428108  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:276  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:77  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001579  ts_ns:768992979117651
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:276  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001593  ts_ns:768993977790022  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:279  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:78  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001594  ts_ns:768993979305830
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:279  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001608  ts_ns:768994977473740  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:282  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:79  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001609  ts_ns:768994979249433
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:282  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001611  ts_ns:768995217569926  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:283  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001612  ts_ns:768995218048076
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:283  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001626  ts_ns:768995977275078  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:286  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:80  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001627  ts_ns:768995978819558
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:286  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001641  ts_ns:768996976996768  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:289  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:81  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001642  ts_ns:768996978656364
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:289  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001656  ts_ns:768997977324608  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:292  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:82  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001657  ts_ns:768997979017657
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:292  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001659  ts_ns:768998217490265  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:293  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001660  ts_ns:768998217952185
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:293  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001674  ts_ns:768998976935840  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:296  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:83  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001675  ts_ns:768998978328940
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:296  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001689  ts_ns:768999977230099  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:299  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:84  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001690  ts_ns:768999978920768
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:299  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001704  ts_ns:769000976915513  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:302  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:85  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001705  ts_ns:769000978289689
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:302  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001707  ts_ns:769001217831200  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:303  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001708  ts_ns:769001218265964
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:303  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001722  ts_ns:769001977672537  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:306  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:86  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001723  ts_ns:769001979651142
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:306  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001737  ts_ns:769002978653907  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:309  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:87  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001738  ts_ns:769002981380819
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:309  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001752  ts_ns:769003977271475  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:312  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:88  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001753  ts_ns:769003978755481
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:312  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001755  ts_ns:769004218158444  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:313  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001756  ts_ns:769004218591257
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:313  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001770  ts_ns:769004976971411  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:316  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:89  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001771  ts_ns:769004978624115
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:316  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001785  ts_ns:769005977085100  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:319  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:90  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001786  ts_ns:769005978395347
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:319  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001800  ts_ns:769006977136460  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:322  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:91  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001801  ts_ns:769006978533849
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:322  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001803  ts_ns:769007218886425  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:323  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001804  ts_ns:769007219313555
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:323  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001818  ts_ns:769007977099974  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:326  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:92  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001819  ts_ns:769007978856972
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:326  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001855  ts_ns:769008977108441  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:329  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:93  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001856  ts_ns:769008978608288
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:329  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001870  ts_ns:769009976747699  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:332  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:94  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001871  ts_ns:769009978249203
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:332  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001873  ts_ns:769010219817164  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:333  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001874  ts_ns:769010220365113
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:333  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001888  ts_ns:769010976949408  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:336  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:95  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001889  ts_ns:769010978246080
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:336  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001903  ts_ns:769011977287750  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:339  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:96  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001904  ts_ns:769011978662598
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:339  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001918  ts_ns:769012977182976  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:342  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:97  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001919  ts_ns:769012978698195
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:342  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001921  ts_ns:769013220092396  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:343  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001922  ts_ns:769013220512441
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:343  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001936  ts_ns:769013976903462  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:346  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:98  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001937  ts_ns:769013978315456
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:346  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001951  ts_ns:769014976498534  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:349  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:99  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001952  ts_ns:769014977697472
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:349  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001966  ts_ns:769015976679731  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:352  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:100  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001967  ts_ns:769015978042163
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:352  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001969  ts_ns:769016220512256  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:353  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000001970  ts_ns:769016220954873
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:353  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000001984  ts_ns:769016976729926  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:356  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:101  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000001985  ts_ns:769016978216140
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:356  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000001999  ts_ns:769017976618496  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:359  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:102  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002000  ts_ns:769017977910937
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:359  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002014  ts_ns:769018976170758  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:362  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:103  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002015  ts_ns:769018977329881
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:362  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002017  ts_ns:769019220699872  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:363  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000002018  ts_ns:769019221109792
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:363  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000002032  ts_ns:769019976836467  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:366  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:104  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002033  ts_ns:769019978080633
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:366  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002047  ts_ns:769020976591020  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:369  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:105  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002048  ts_ns:769020977616448
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:369  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002062  ts_ns:769021976132640  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:372  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:106  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002063  ts_ns:769021977669542
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:372  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002065  ts_ns:769022221854201  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:373  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000002066  ts_ns:769022222250937
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:373  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000002080  ts_ns:769022976849664  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:376  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:107  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002081  ts_ns:769022978114963
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:376  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002095  ts_ns:769023976637222  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:379  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:108  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002096  ts_ns:769023978037945
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:379  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002110  ts_ns:769024976740441  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:382  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:109  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002111  ts_ns:769024978094150
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:382  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002113  ts_ns:769025222634886  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:383  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000002114  ts_ns:769025223109792
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:383  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000002128  ts_ns:769025976573152  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:386  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:110  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002129  ts_ns:769025977912422
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:386  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002143  ts_ns:769026976422662  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:389  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:111  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002144  ts_ns:769026977503776
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:389  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002158  ts_ns:769027976618297  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:392  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:112  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002159  ts_ns:769027977920774
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:392  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002161  ts_ns:769028222188960  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:393  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000002162  ts_ns:769028222612345
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:393  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000002177  ts_ns:769028976285715  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:396  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:113  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002178  ts_ns:769028977506649
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:396  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002192  ts_ns:769029976024915  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:399  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:114  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002193  ts_ns:769029977684345
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:399  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002207  ts_ns:769030976091904  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:402  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:115  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002208  ts_ns:769030977293868
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:402  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002210  ts_ns:769031222651513  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:403  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000002211  ts_ns:769031223007334
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:403  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000002225  ts_ns:769031976468179  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:406  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:116  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002226  ts_ns:769031977665772
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:406  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002240  ts_ns:769032976652537  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:409  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:117  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002241  ts_ns:769032978234515
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:409  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002255  ts_ns:769033976635155  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:412  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:118  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002256  ts_ns:769033978108588
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:412  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002258  ts_ns:769034223479283  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:413  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000002259  ts_ns:769034223898112
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:413  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000002273  ts_ns:769034976822048  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:416  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:119  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002274  ts_ns:769034978157843
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:416  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002288  ts_ns:769035976133907  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:419  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:120  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002289  ts_ns:769035977367334
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:419  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002303  ts_ns:769036976198188  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:422  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:121  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002304  ts_ns:769036977676460
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:422  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002306  ts_ns:769037223037312  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:423  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000002307  ts_ns:769037223535072
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:423  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000002321  ts_ns:769037976597913  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:426  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:122  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002322  ts_ns:769037977894323
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:426  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002358  ts_ns:769038976531795  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:429  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:123  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002359  ts_ns:769038978090899
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:429  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002373  ts_ns:769039976401184  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:432  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:124  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002374  ts_ns:769039977822310
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:432  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002376  ts_ns:769040223200038  ack:1
+kafka2.HeartbeatRequest  request_api_version:4  correlation_id:433  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397
+atf_snf.info iframe:000000002377  ts_ns:769040223687846
+kafka2.HeartbeatResponse  request_api_version:4  correlation_id:433  throttle_time_ms:0  error_code:0
+atf_snf.info iframe:000000002391  ts_ns:769040976590374  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:436  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:125  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002392  ts_ns:769040978020729
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:436  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002406  ts_ns:769041976309107  ack:1
+kafka2.OffsetCommitRequest  request_api_version:8  correlation_id:439  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  generation_id_or_member_epoch:1  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  retention_time_ms:-1  topics.0:"kafka2.OffsetCommitRequestTopic8q  name:test-topic-0000000-QY_t5ww  partitions.0:'kafka2.OffsetCommitRequestPartition8q  partition_index:0  committed_offset:126  committed_leader_epoch:-1  committed_metadata:\"\"'"
+atf_snf.info iframe:000000002407  ts_ns:769041977645337
+kafka2.OffsetCommitResponse  request_api_version:8  correlation_id:439  throttle_time_ms:0  topics.0:'kafka2.OffsetCommitResponseTopic8a  name:test-topic-0000000-QY_t5ww  partitions.0:"kafka2.OffsetCommitResponsePartition8a  partition_index:0  error_code:0"'
+atf_snf.info iframe:000000002421  ts_ns:769042182983014  ack:1
+kafka2.LeaveGroupRequest  request_api_version:5  correlation_id:440  client_id:consumer-sub-000-8JLhgYE-1  group_id:sub-000-8JLhgYE  member_id:""  members.0:'kafka2.MemberIdentity13q  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  reason:"the consumer is being closed"'
+atf_snf.info iframe:000000002422  ts_ns:769042192660064
+kafka2.LeaveGroupResponse  request_api_version:5  correlation_id:440  throttle_time_ms:0  error_code:0  members.0:"kafka2.MemberResponse13a  member_id:consumer-sub-000-8JLhgYE-1-38d6c472-6657-455e-b974-ededffa31397  error_code:0"

@@ -48,11 +48,11 @@ int main() {
         return 1;
     }
 
-    if (    rd_kafka_conf_set(conf, "debug", "all", errstr, sizeof(errstr)) != RD_KAFKA_CONF_OK) {
-        std::cerr << "Failed to set debug: " << errstr << std::endl;
-        rd_kafka_conf_destroy(conf);
-        return 1;
-    }
+    // if (    rd_kafka_conf_set(conf, "debug", "all", errstr, sizeof(errstr)) != RD_KAFKA_CONF_OK) {
+    //     std::cerr << "Failed to set debug: " << errstr << std::endl;
+    //     rd_kafka_conf_destroy(conf);
+    //     return 1;
+    // }
 
 
     // Set bootstrap.servers configuration

@@ -6,7 +6,7 @@ omrun_load=debug-workload100
 omenv=dev.ak-8
 
 omcli $omenv.% -stop
-tag=${omenv}_${omrun_load}
+tag=${omenv}_${omrun_load}_c2
 ofile=~/av_openacr/sniffer_logs/atf_snf_live_$tag.log
 echo "....starting atf_snf. use ctrl+C to enter commands . stdout is redirected to $ofile"
 echo "....live monitoring   in temp/atf_snf.dat . "

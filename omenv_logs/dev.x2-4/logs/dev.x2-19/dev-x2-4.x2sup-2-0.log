@@ -6,44 +6,19 @@ atf.var  mqttport:1536
 atf.var  natsport:1539
 atf.var  respport:1542
 atf.var  x2port:1534
-x2net.mcast  mcast:dev-x2-4.node-2.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.4  ib:Y  joined:N  err:""
 x2mon.info disk:nvme0n1  comment:"added to mon"
-x2net.mcast  mcast:dev-x2-4.node-2.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.4  ib:Y  joined:Y  err:""
-x2net.x2node  node:dev-x2-4.node-0  state:down
-x2net.x2node  node:dev-x2-4.node-1  state:down
-x2net.x2node  node:dev-x2-4.node-3  state:down
-READY_FOR_TEST
-x2net.x2node  node:dev-x2-4.node-1  state:unknown
-x2net.x2node  node:dev-x2-4.node-3  state:unknown
-x2net.x2node  node:dev-x2-4.node-1  state:up
-x2net.x2node  node:dev-x2-4.node-3  state:up
-x2net.x2node  node:dev-x2-4.node-0  state:unknown
-x2net.x2node  node:dev-x2-4.node-0  state:up
-x2sup.start  nproc:8
-atf.var  httpport:1537
-atf.var  kafkaport:1545
-atf.var  mqttport:1536
-x2net-2-0 begin mcast dev-x2-4.node-2.ib-0 topomc dev-x2-4.ib
-atf.var  natsport:1539
-atf.var  respport:1542
-atf.var  x2port:1534
 x2net.mcast  mcast:dev-x2-4.node-2.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.4  ib:Y  joined:N  err:""
 x2net.mcast  mcast:dev-x2-4.node-2.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.4  ib:Y  joined:Y  err:""
 x2net.x2node  node:dev-x2-4.node-0  state:down
 x2net.x2node  node:dev-x2-4.node-1  state:down
 x2net.x2node  node:dev-x2-4.node-3  state:down
-x2mon.info disk:nvme0n1  comment:"added to mon"
-x2net.x2node  node:dev-x2-4.node-3  state:unknown
 READY_FOR_TEST
+x2net.x2node  node:dev-x2-4.node-0  state:unknown
+x2net.x2node  node:dev-x2-4.node-0  state:up
+x2net.x2node  node:dev-x2-4.node-3  state:unknown
 x2net.x2node  node:dev-x2-4.node-3  state:up
 x2net.x2node  node:dev-x2-4.node-1  state:unknown
 x2net.x2node  node:dev-x2-4.node-1  state:up
-x2net.x2node  node:dev-x2-4.node-0  state:unknown
-x2net.x2node  node:dev-x2-4.node-0  state:up
-x2net.x2node  node:dev-x2-4.node-0  state:unknown
-x2net.x2node  node:dev-x2-4.node-0  state:up
-x2net.x2node  node:dev-x2-4.node-0  state:unknown
-x2net.x2node  node:dev-x2-4.node-0  state:up
 x2sup.start  nproc:8
 x2net-2-0 begin mcast dev-x2-4.node-2.ib-0 topomc dev-x2-4.ib
 atf.var  httpport:1537
@@ -52,8 +27,8 @@ atf.var  mqttport:1536
 atf.var  natsport:1539
 atf.var  respport:1542
 atf.var  x2port:1534
-x2net.mcast  mcast:dev-x2-4.node-2.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.4  ib:Y  joined:N  err:""
 x2mon.info disk:nvme0n1  comment:"added to mon"
+x2net.mcast  mcast:dev-x2-4.node-2.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.4  ib:Y  joined:N  err:""
 x2net.mcast  mcast:dev-x2-4.node-2.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.4  ib:Y  joined:Y  err:""
 x2net.x2node  node:dev-x2-4.node-0  state:down
 x2net.x2node  node:dev-x2-4.node-1  state:down
@@ -61,7 +36,7 @@ x2net.x2node  node:dev-x2-4.node-3  state:down
 READY_FOR_TEST
 x2net.x2node  node:dev-x2-4.node-1  state:unknown
 x2net.x2node  node:dev-x2-4.node-1  state:up
-x2net.x2node  node:dev-x2-4.node-3  state:unknown
-x2net.x2node  node:dev-x2-4.node-3  state:up
 x2net.x2node  node:dev-x2-4.node-0  state:unknown
 x2net.x2node  node:dev-x2-4.node-0  state:up
+x2net.x2node  node:dev-x2-4.node-3  state:unknown
+x2net.x2node  node:dev-x2-4.node-3  state:up

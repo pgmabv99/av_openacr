@@ -96,3 +96,31 @@ responses.0:"kafka2.FetchableTopicResponse1a
             log_start_offset:-1
             partition_max_bytes:67108864"'
     rack_id:""
+
+
+
+
+    kafka2.MetadataResponse
+    request_api_version:12
+    correlation_id:1735
+    throttle_time_ms:0
+    brokers.0:"kafka2.MetadataResponseBroker3a  node_id:4  host:192.168.104.5  port:1558"
+    controller_id:1
+    topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:public.anon  topic_id:6ee7a69c-d71b-4837-afc8-48153a34e1f9  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+    topics.1:'kafka2.MetadataResponseTopic3a  error_code:0  name:public.imdb  topic_id:7cc48b67-f0d7-4070-95fc-82f98a95c0ae  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+    topics.2:'kafka2.MetadataResponseTopic3a  error_code:0  name:__consumer_offsets  topic_id:ffaf18d0-d20f-4199-a007-3305f87cdc4d  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+    cluster_authorized_operations:OMITTED
+    error_code:0
+
+
+kafka2.MetadataResponse  
+request_api_version:12  
+correlation_id:1771  
+throttle_time_ms:0  
+brokers.0:"kafka2.MetadataResponseBroker3a  node_id:4  host:192.168.104.5  port:1558"  
+controller_id:1  
+topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:public.anon  topic_id:6ee7a69c-d71b-4837-afc8-48153a34e1f9  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  
+topics.1:'kafka2.MetadataResponseTopic3a  error_code:0  name:public.imdb  topic_id:7cc48b67-f0d7-4070-95fc-82f98a95c0ae  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  
+topics.2:'kafka2.MetadataResponseTopic3a  error_code:0  name:__consumer_offsets  topic_id:ffaf18d0-d20f-4199-a007-3305f87cdc4d  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  
+cluster_authorized_operations:OMITTED  
+error_code:0

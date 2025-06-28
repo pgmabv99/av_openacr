@@ -48,7 +48,7 @@ cd release
 export PATH=bin:$PATH
 function start_x2 {
     echo "Starting x2..."
-    x2sup -proc:dev-x2-4.x2sup-0-0 -daemon
+    x2sup -initfs:x2fs -proc:dev-x2-4.x2sup-0-0 -daemon
 }
 #
 function format_x2 {

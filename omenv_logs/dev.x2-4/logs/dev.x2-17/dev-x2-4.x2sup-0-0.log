@@ -1,274 +1,3 @@
-verbose: x2sup-0-0  openshm  shm_id:x2cmt-0-0.ack-0  flags:write  filename:x2-189722-x2cmt-0-0.ack-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:write,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2cmt-0-0.net-0  flags:write  filename:x2-189722-x2cmt-0-0.net-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2cmt-0-0.sup-0  flags:write  filename:x2-189722-x2cmt-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:write,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2gf-0-0.net-0  flags:write  filename:x2-189722-x2gf-0-0.net-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2gf-0-0.sup-0  flags:write  filename:x2-189722-x2gf-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:write,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2gw-0-0.net-0  flags:write  filename:x2-189722-x2gw-0-0.net-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2gw-0-0.prod-0  flags:write  filename:x2-189722-x2gw-0-0.prod-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2gw-0-0.sup-0  flags:write  filename:x2-189722-x2gw-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:write,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2imdb-0-0.net-0  flags:write  filename:x2-189722-x2imdb-0-0.net-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2imdb-0-0.seq-0  flags:write  filename:x2-189722-x2imdb-0-0.seq-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2imdb-0-0.sup-0  flags:write  filename:x2-189722-x2imdb-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:write,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2mon-0-0.net-0  flags:write  filename:x2-189722-x2mon-0-0.net-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2mon-0-0.sup-0  flags:write  filename:x2-189722-x2mon-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2net-0-0.ack-0  flags:write  filename:x2-189722-x2net-0-0.ack-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:write,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2net-0-0.fetch-0  flags:write  filename:x2-189722-x2net-0-0.fetch-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2net-0-0.net-0  flags:write  filename:x2-189722-x2net-0-0.net-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2net-0-0.prod-0  flags:write  filename:x2-189722-x2net-0-0.prod-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2net-0-0.seq-0  flags:write  filename:x2-189722-x2net-0-0.seq-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2net-0-0.sup-0  flags:write  filename:x2-189722-x2net-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2sup-0-0.net-0  flags:write,read  filename:x2-189722-x2sup-0-0.net-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2sup-0-0.sup-0  flags:write,read  filename:x2-189722-x2sup-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2sup-0-0.terminal-0  flags:write,read  filename:x2-189722-x2sup-0-0.terminal-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2txn-0-0.ack-0  flags:write  filename:x2-189722-x2txn-0-0.ack-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:write,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2txn-0-0.net-0  flags:write  filename:x2-189722-x2txn-0-0.net-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2txn-0-0.seq-0  flags:write  filename:x2-189722-x2txn-0-0.seq-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2txn-0-0.sup-0  flags:write  filename:x2-189722-x2txn-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2cmt-0-0.sup-0  flags:write,read  filename:x2-189722-x2cmt-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2gf-0-0.sup-0  flags:write,read  filename:x2-189722-x2gf-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2gw-0-0.sup-0  flags:write,read  filename:x2-189722-x2gw-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2imdb-0-0.sup-0  flags:write,read  filename:x2-189722-x2imdb-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2mon-0-0.sup-0  flags:write,read  filename:x2-189722-x2mon-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2net-0-0.net-0  flags:write,read  filename:x2-189722-x2net-0-0.net-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2net-0-0.sup-0  flags:write,read  filename:x2-189722-x2net-0-0.sup-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2sup-0-0.terminal-0  flags:write,read  filename:x2-189722-x2sup-0-0.terminal-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2sup-0-0  openshm  shm_id:x2txn-0-0.seq-0  flags:write,read  filename:x2-189722-x2txn-0-0.seq-0.ams  success:Y
-verbose: x2sup-0-0  openshm  shm_id:x2txn-0-0.sup-0  flags:write,read  filename:x2-189722-x2txn-0-0.sup-0.ams  success:Y
-verbose: bin/x2cmt  -proc:dev-x2-4.x2cmt-0-0 -prefix:x2-189722
-verbose: bin/x2gf  -proc:dev-x2-4.x2gf-0-0 -prefix:x2-189722
-verbose: bin/x2gw  -proc:dev-x2-4.x2gw-0-0 -prefix:x2-189722
-verbose: bin/x2imdb  -proc:dev-x2-4.x2imdb-0-0 -prefix:x2-189722
-verbose: bin/x2mon  -proc:dev-x2-4.x2mon-0-0 -prefix:x2-189722
-verbose: bin/x2net  -proc:dev-x2-4.x2net-0-0 -prefix:x2-189722
-verbose: bin/x2txn  -proc:dev-x2-4.x2txn-0-0 -prefix:x2-189722
-x2sup.start  nproc:8
-verbose: x2sup: total shared memory allocated: 46MB
-verbose: x2cmt-0-0  openshm  shm_id:x2cmt-0-0.ack-0  flags:write,read  filename:x2-189722-x2cmt-0-0.ack-0.ams  success:Y
-verbose: x2cmt-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2cmt-0-0.net-0  flags:write,read  filename:x2-189722-x2cmt-0-0.net-0.ams  success:Y
-verbose: x2cmt-0-0  openshm  shm_id:x2cmt-0-0.sup-0  flags:write,read  filename:x2-189722-x2cmt-0-0.sup-0.ams  success:Y
-verbose: x2cmt-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2net-0-0.fetch-0  flags:read  filename:x2-189722-x2net-0-0.fetch-0.ams  success:Y
-verbose: x2cmt-0-0  openshm  shm_id:x2net-0-0.net-0  flags:read  filename:x2-189722-x2net-0-0.net-0.ams  success:Y
-verbose: x2cmt-0-0  openshm  shm_id:x2net-0-0.seq-0  flags:read  filename:x2-189722-x2net-0-0.seq-0.ams  success:Y
-verbose: x2cmt-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2sup-0-0.sup-0  flags:read  filename:x2-189722-x2sup-0-0.sup-0.ams  success:Y
-verbose: x2cmt-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2cmt-0-0  openshm  shm_id:x2txn-0-0.seq-0  flags:read  filename:x2-189722-x2txn-0-0.seq-0.ams  success:Y
-verbose: x2cmt-0-0: default storage: /mnt/data-1/dev-x2-4.x2cmt-0-0
-verbose: x2gf-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2gf-0-0  openshm  shm_id:x2gf-0-0.net-0  flags:write,read  filename:x2-189722-x2gf-0-0.net-0.ams  success:Y
-verbose: x2gf-0-0  openshm  shm_id:x2gf-0-0.sup-0  flags:write,read  filename:x2-189722-x2gf-0-0.sup-0.ams  success:Y
-verbose: x2gf-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2gf-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2gf-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2gf-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2gf-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2gf-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2gf-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2gf-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2gf-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2gf-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2gf-0-0  openshm  shm_id:x2net-0-0.fetch-0  flags:read  filename:x2-189722-x2net-0-0.fetch-0.ams  success:Y
-verbose: x2gf-0-0  openshm  shm_id:x2net-0-0.net-0  flags:read  filename:x2-189722-x2net-0-0.net-0.ams  success:Y
-verbose: x2gf-0-0  openshm  shm_id:x2net-0-0.seq-0  flags:read  filename:x2-189722-x2net-0-0.seq-0.ams  success:Y
-verbose: x2gf-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2gf-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2gf-0-0  openshm  shm_id:x2sup-0-0.sup-0  flags:read  filename:x2-189722-x2sup-0-0.sup-0.ams  success:Y
-verbose: x2imdb-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2imdb-0-0  openshm  shm_id:x2imdb-0-0.net-0  flags:write,read  filename:x2-189722-x2imdb-0-0.net-0.ams  success:Y
-verbose: x2imdb-0-0  openshm  shm_id:x2imdb-0-0.seq-0  flags:write,read  filename:x2-189722-x2imdb-0-0.seq-0.ams  success:Y
-verbose: x2imdb-0-0  openshm  shm_id:x2imdb-0-0.sup-0  flags:write,read  filename:x2-189722-x2imdb-0-0.sup-0.ams  success:Y
-verbose: x2imdb-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2imdb-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2imdb-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2imdb-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2imdb-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2imdb-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2imdb-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2imdb-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2imdb-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2imdb-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2imdb-0-0  openshm  shm_id:x2net-0-0.fetch-0  flags:read  filename:x2-189722-x2net-0-0.fetch-0.ams  success:Y
-verbose: x2imdb-0-0  openshm  shm_id:x2net-0-0.net-0  flags:read  filename:x2-189722-x2net-0-0.net-0.ams  success:Y
-verbose: x2imdb-0-0  openshm  shm_id:x2net-0-0.seq-0  flags:read  filename:x2-189722-x2net-0-0.seq-0.ams  success:Y
-verbose: x2imdb-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2imdb-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2imdb-0-0  openshm  shm_id:x2sup-0-0.sup-0  flags:read  filename:x2-189722-x2sup-0-0.sup-0.ams  success:Y
-verbose: x2imdb-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2mon-0-0.net-0  flags:write,read  filename:x2-189722-x2mon-0-0.net-0.ams  success:Y
-verbose: x2imdb-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2mon-0-0.sup-0  flags:write,read  filename:x2-189722-x2mon-0-0.sup-0.ams  success:Y
-verbose: x2imdb-0-0  openshm  shm_id:x2txn-0-0.seq-0  flags:read  filename:x2-189722-x2txn-0-0.seq-0.ams  success:Y
-verbose: x2mon-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2net-0-0.net-0  flags:read  filename:x2-189722-x2net-0-0.net-0.ams  success:Y
-verbose: x2mon-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2sup-0-0.sup-0  flags:read  filename:x2-189722-x2sup-0-0.sup-0.ams  success:Y
-verbose: x2txn-0-0  openshm  shm_id:x2txn-0-0.ack-0  flags:write,read  filename:x2-189722-x2txn-0-0.ack-0.ams  success:Y
-verbose: x2mon-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2mon-0-0  openshm  shm_id:x2txn-0-0.seq-0  flags:read  filename:x2-189722-x2txn-0-0.seq-0.ams  success:Y
-verbose: x2txn-0-0  openshm  shm_id:x2txn-0-0.net-0  flags:write,read  filename:x2-189722-x2txn-0-0.net-0.ams  success:Y
-verbose: x2txn-0-0  openshm  shm_id:x2txn-0-0.seq-0  flags:write,read  filename:x2-189722-x2txn-0-0.seq-0.ams  success:Y
-verbose: x2txn-0-0  openshm  shm_id:x2txn-0-0.sup-0  flags:write,read  filename:x2-189722-x2txn-0-0.sup-0.ams  success:Y
-verbose: x2txn-0-0  openshm  shm_id:x2cmt-0-0.ack-0  flags:read  filename:x2-189722-x2cmt-0-0.ack-0.ams  success:Y
-verbose: x2txn-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2gw-0-0.prod-0  flags:read  filename:x2-189722-x2gw-0-0.prod-0.ams  success:Y
-verbose: x2txn-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2imdb-0-0.seq-0  flags:read  filename:x2-189722-x2imdb-0-0.seq-0.ams  success:Y
-verbose: x2txn-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2net-0-0.ack-0  flags:read  filename:x2-189722-x2net-0-0.ack-0.ams  success:Y
-verbose: x2txn-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2net-0-0.net-0  flags:read  filename:x2-189722-x2net-0-0.net-0.ams  success:Y
-verbose: x2txn-0-0  openshm  shm_id:x2net-0-0.prod-0  flags:read  filename:x2-189722-x2net-0-0.prod-0.ams  success:Y
-verbose: x2txn-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2txn-0-0  openshm  shm_id:x2sup-0-0.sup-0  flags:read  filename:x2-189722-x2sup-0-0.sup-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2net-0-0.ack-0  flags:write,read  filename:x2-189722-x2net-0-0.ack-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2net-0-0.fetch-0  flags:write,read  filename:x2-189722-x2net-0-0.fetch-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2net-0-0.net-0  flags:write,read  filename:x2-189722-x2net-0-0.net-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2net-0-0.prod-0  flags:write,read  filename:x2-189722-x2net-0-0.prod-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2net-0-0.seq-0  flags:write,read  filename:x2-189722-x2net-0-0.seq-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2net-0-0.sup-0  flags:write,read  filename:x2-189722-x2net-0-0.sup-0.ams  success:Y
-verbose: basename $(readlink -f /sys/class/net/ib0-4/device/infiniband/*)
-verbose: bash  -c $'basename $(readlink -f /sys/class/net/ib0-4/device/infiniband/*)' >&18
-verbose: x2net-0-0  openshm  shm_id:x2cmt-0-0.ack-0  flags:read  filename:x2-189722-x2cmt-0-0.ack-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2cmt-0-0.net-0  flags:read  filename:x2-189722-x2cmt-0-0.net-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2gf-0-0.net-0  flags:read  filename:x2-189722-x2gf-0-0.net-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2gw-0-0.net-0  flags:read  filename:x2-189722-x2gw-0-0.net-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2gw-0-0.prod-0  flags:read  filename:x2-189722-x2gw-0-0.prod-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2imdb-0-0.net-0  flags:read  filename:x2-189722-x2imdb-0-0.net-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2imdb-0-0.seq-0  flags:read  filename:x2-189722-x2imdb-0-0.seq-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2mon-0-0.net-0  flags:read  filename:x2-189722-x2mon-0-0.net-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2sup-0-0.net-0  flags:read  filename:x2-189722-x2sup-0-0.net-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2sup-0-0.sup-0  flags:read  filename:x2-189722-x2sup-0-0.sup-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2txn-0-0.ack-0  flags:read  filename:x2-189722-x2txn-0-0.ack-0.ams  success:Y
-verbose: x2net-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2txn-0-0.net-0  flags:read  filename:x2-189722-x2txn-0-0.net-0.ams  success:Y
-verbose: x2gf-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2net-0-0  openshm  shm_id:x2txn-0-0.seq-0  flags:read  filename:x2-189722-x2txn-0-0.seq-0.ams  success:Y
-verbose: x2gf-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-x2net-0-0 begin mcast dev-x2-4.node-0.ib-0 topomc dev-x2-4.ib
-verbose: x2gf-0-0  openshm  shm_id:x2txn-0-0.seq-0  flags:read  filename:x2-189722-x2txn-0-0.seq-0.ams  success:Y
-verbose: x2gw-0-0  openshm  shm_id:x2gw-0-0.ctl-0  flags:write,read,nonblock  filename:x2-189722-x2gw-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2gw-0-0.net-0  flags:write,read  filename:x2-189722-x2gw-0-0.net-0.ams  success:Y
-verbose: x2gw-0-0  openshm  shm_id:x2gw-0-0.prod-0  flags:write,read  filename:x2-189722-x2gw-0-0.prod-0.ams  success:Y
-verbose: x2gw-0-0  openshm  shm_id:x2gw-0-0.sup-0  flags:write,read  filename:x2-189722-x2gw-0-0.sup-0.ams  success:Y
-verbose: x2gw-0-0  openshm  shm_id:x2cmt-0-0.ack-0  flags:read  filename:x2-189722-x2cmt-0-0.ack-0.ams  success:Y
-verbose: x2gw-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2cmt-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2cmt-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2gf-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2gf-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2imdb-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2imdb-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2imdb-0-0.seq-0  flags:read  filename:x2-189722-x2imdb-0-0.seq-0.ams  success:Y
-verbose: x2gw-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2mon-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2mon-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2net-0-0.ack-0  flags:read  filename:x2-189722-x2net-0-0.ack-0.ams  success:Y
-verbose: x2gw-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2net-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2net-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2net-0-0.net-0  flags:read  filename:x2-189722-x2net-0-0.net-0.ams  success:Y
-verbose: x2gw-0-0  openshm  shm_id:x2net-0-0.seq-0  flags:read  filename:x2-189722-x2net-0-0.seq-0.ams  success:Y
-verbose: x2gw-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2sup-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2sup-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2sup-0-0.sup-0  flags:read  filename:x2-189722-x2sup-0-0.sup-0.ams  success:Y
-verbose: x2gw-0-0  openshm  shm_id:x2txn-0-0.ack-0  flags:read  filename:x2-189722-x2txn-0-0.ack-0.ams  success:Y
-verbose: x2gw-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2txn-0-0.ctl-0  flags:read,nonblock  filename:x2-189722-x2txn-0-0.ctl-0.ams  success:N
-verbose: x2gw-0-0  openshm  shm_id:x2txn-0-0.seq-0  flags:read  filename:x2-189722-x2txn-0-0.seq-0.ams  success:Y
-verbose: starting server for http
-verbose: 
-atf.var  httpport:1511
-verbose: starting server for kafka
-verbose: 
-atf.var  kafkaport:1519
-verbose: starting server for mqtt
-verbose: 
-atf.var  mqttport:1510
-verbose: starting server for nats
-verbose: 
-atf.var  natsport:1513
-verbose: starting server for resp
-verbose: 
-atf.var  respport:1516
-verbose: starting server for x2
-verbose: 
-atf.var  x2port:1508
-verbose: bash  -c $'lsblk --noheadings -r -o NAME,MOUNTPOINT | awk \'$2 != "" {print $1, $2}\'' >&18
-x2net.mcast  mcast:dev-x2-4.node-0.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.2  ib:Y  joined:N  err:""
-x2net.mcast  mcast:dev-x2-4.node-0.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.2  ib:Y  joined:Y  err:""
-x2net.x2node  node:dev-x2-4.node-1  state:down
-x2net.x2node  node:dev-x2-4.node-2  state:down
-x2net.x2node  node:dev-x2-4.node-3  state:down
-x2mon.info disk:nvme3n1  comment:"added to mon"
-READY_FOR_TEST
 x2sup.start  nproc:8
 x2net-0-0 begin mcast dev-x2-4.node-0.ib-0 topomc dev-x2-4.ib
 atf.var  httpport:1511
@@ -277,13 +6,79 @@ atf.var  mqttport:1510
 atf.var  natsport:1513
 atf.var  respport:1516
 atf.var  x2port:1508
+x2mon.info disk:nvme3n1  comment:"added to mon"
 x2net.mcast  mcast:dev-x2-4.node-0.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.2  ib:Y  joined:N  err:""
 x2net.mcast  mcast:dev-x2-4.node-0.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.2  ib:Y  joined:Y  err:""
 x2net.x2node  node:dev-x2-4.node-1  state:down
 x2net.x2node  node:dev-x2-4.node-2  state:down
 x2net.x2node  node:dev-x2-4.node-3  state:down
-x2mon.info disk:nvme3n1  comment:"added to mon"
 READY_FOR_TEST
+x2net.x2node  node:dev-x2-4.node-3  state:unknown
+x2net.x2node  node:dev-x2-4.node-3  state:up
+x2net.x2node  node:dev-x2-4.node-1  state:unknown
+x2net.x2node  node:dev-x2-4.node-1  state:up
+x2net.x2node  node:dev-x2-4.node-2  state:up
+x2sup.start  nproc:8
+x2net-0-0 begin mcast dev-x2-4.node-0.ib-0 topomc dev-x2-4.ib
+atf.var  httpport:1511
+atf.var  kafkaport:1519
+atf.var  mqttport:1510
+atf.var  natsport:1513
+atf.var  respport:1516
+atf.var  x2port:1508
+x2mon.info disk:nvme3n1  comment:"added to mon"
+x2net.mcast  mcast:dev-x2-4.node-0.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.2  ib:Y  joined:N  err:""
+x2net.mcast  mcast:dev-x2-4.node-0.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.2  ib:Y  joined:Y  err:""
+x2net.x2node  node:dev-x2-4.node-1  state:down
+x2net.x2node  node:dev-x2-4.node-2  state:down
+x2net.x2node  node:dev-x2-4.node-3  state:down
+READY_FOR_TEST
+x2net.x2node  node:dev-x2-4.node-3  state:unknown
+x2net.x2node  node:dev-x2-4.node-3  state:up
 x2net.x2node  node:dev-x2-4.node-2  state:up
 x2net.x2node  node:dev-x2-4.node-1  state:up
-x2net.x2node  node:dev-x2-4.node-3  state:up
+x2sup.start  nproc:8
+atf.var  httpport:1511
+atf.var  kafkaport:1519
+atf.var  mqttport:1510
+atf.var  natsport:1513
+atf.var  respport:1516
+atf.var  x2port:1508
+x2net-0-0 begin mcast dev-x2-4.node-0.ib-0 topomc dev-x2-4.ib
+x2mon.info disk:nvme3n1  comment:"added to mon"
+x2net.mcast  mcast:dev-x2-4.node-0.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.2  ib:Y  joined:N  err:""
+x2net.mcast  mcast:dev-x2-4.node-0.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.2  ib:Y  joined:Y  err:""
+x2net.x2node  node:dev-x2-4.node-1  state:down
+x2net.x2node  node:dev-x2-4.node-2  state:down
+x2net.x2node  node:dev-x2-4.node-3  state:down
+READY_FOR_TEST
+x2sup.start  nproc:8
+x2net-0-0 begin mcast dev-x2-4.node-0.ib-0 topomc dev-x2-4.ib
+atf.var  httpport:1511
+atf.var  kafkaport:1519
+atf.var  mqttport:1510
+atf.var  natsport:1513
+atf.var  respport:1516
+atf.var  x2port:1508
+x2mon.info disk:nvme3n1  comment:"added to mon"
+x2net.mcast  mcast:dev-x2-4.node-0.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.2  ib:Y  joined:N  err:""
+x2net.mcast  mcast:dev-x2-4.node-0.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.2  ib:Y  joined:Y  err:""
+x2net.x2node  node:dev-x2-4.node-1  state:down
+x2net.x2node  node:dev-x2-4.node-2  state:down
+x2net.x2node  node:dev-x2-4.node-3  state:down
+READY_FOR_TEST
+x2sup.start  nproc:8
+x2net-0-0 begin mcast dev-x2-4.node-0.ib-0 topomc dev-x2-4.ib
+atf.var  httpport:1511
+atf.var  kafkaport:1519
+atf.var  mqttport:1510
+atf.var  natsport:1513
+atf.var  respport:1516
+atf.var  x2port:1508
+x2mon.info disk:nvme3n1  comment:"added to mon"
+x2net.mcast  mcast:dev-x2-4.node-0.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.2  ib:Y  joined:N  err:""
+x2net.mcast  mcast:dev-x2-4.node-0.ib-0/dev-x2-4.ib  group:233.252.13.1:12345  intf:192.168.214.2  ib:Y  joined:Y  err:""
+x2net.x2node  node:dev-x2-4.node-1  state:down
+x2net.x2node  node:dev-x2-4.node-2  state:down
+x2net.x2node  node:dev-x2-4.node-3  state:down
+READY_FOR_TEST

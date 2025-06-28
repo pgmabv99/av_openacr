@@ -54,15 +54,15 @@ EOF
 function configure_driver {
 DRIVER_FILES=$(ls -1 /opt/benchmark/driver-kafka/*.yaml)
 for FILE in $DRIVER_FILES; do
-  sed -i "s/^  bootstrap.servers=.*$/  bootstrap.servers=dev.x2-4.x2-0.ext-0:1519,dev.x2-4.x2-1.ext-0:1532,dev.x2-4.x2-2.ext-0:1545,dev.x2-4.x2-3.ext-0:1558/g" $FILE
+  sed -i "s/^  bootstrap.servers=.*$/  bootstrap.servers=dev.x2-4.x2-3.ext-0:1558/g" $FILE
 done
 }
 #
 function configure_jms {
 JMS_FILES=$(ls -1 /opt/benchmark/driver-jms/*.yaml)
 for FILE in $JMS_FILES; do
-  sed -i "s/^  bootstrap.servers=.*$/  bootstrap.servers=dev.x2-4.x2-0.ext-0:1519,dev.x2-4.x2-1.ext-0:1532,dev.x2-4.x2-2.ext-0:1545,dev.x2-4.x2-3.ext-0:1558/g" $FILE
-  sed -i "s/localhost:9092/dev.x2-4.x2-0.ext-0:1519,dev.x2-4.x2-1.ext-0:1532,dev.x2-4.x2-2.ext-0:1545,dev.x2-4.x2-3.ext-0:1558/g" $FILE
+  sed -i "s/^  bootstrap.servers=.*$/  bootstrap.servers=dev.x2-4.x2-3.ext-0:1558/g" $FILE
+  sed -i "s/localhost:9092/dev.x2-4.x2-3.ext-0:1558/g" $FILE
 done
 }
 #

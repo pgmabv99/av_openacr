@@ -2,8 +2,8 @@
 # Record X2 oor kafka sessions
 
 omrun_load=debug-workload100
-# omenv=dev.x2-4
-omenv=dev.ak-8
+omenv=dev.x2-4
+# omenv=dev.ak-8
 
 omcli $omenv.% -stop
 tag=${omenv}_${omrun_load}_c2
@@ -18,8 +18,8 @@ exit
 #to be issued form a separate terminal
 echo "---------------------X2or Kafka    clean start ONE node + bench"
 set -x
-omenv=dev.ak-8
-# omenv=dev.x2-4
+# omenv=dev.ak-8
+omenv=dev.x2-4
 omrun_load=debug-workload100
 omcli $omenv.x2-0 -start_clean
 omcli $omenv -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:$omrun_load -omrun_minutes:1

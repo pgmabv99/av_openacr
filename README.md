@@ -283,5 +283,11 @@ atfdb.comptest  comptest:atf_x2.KafkaKv           timeout:10  memcheck:Y  exit_c
 atfdb.comptest  comptest:atf_x2.KafkaMtls         timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA mTLS  test"
 atfdb.comptest  comptest:atf_x2.KafkaTls          timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA TLS test"
 
+// only last node visible to nic on sn5
+omdb.omnode  omnode:dev.x2-4.x2-0  node:dev.x2-17  use:N  comment:"x2 Broker node 1"
+omdb.omnode  omnode:dev.x2-4.x2-1  node:dev.x2-18  use:N  comment:"x2 Broker node 2"
+omdb.omnode  omnode:dev.x2-4.x2-2  node:dev.x2-19  use:N  comment:"x2 Broker node 3"
+omdb.omnode  omnode:dev.x2-4.x2-3  node:dev.x2-20  use:Y  comment:"x2 Broker node 4"
 
-
+// 1 vs N consumer
+omdb.omlattr  omlattr:debug-workload100/consumerPerSubscription  uval:1

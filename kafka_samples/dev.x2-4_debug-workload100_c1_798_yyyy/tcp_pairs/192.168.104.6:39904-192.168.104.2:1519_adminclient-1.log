@@ -1,0 +1,10 @@
+atf_snf.frame_stats  direction:"c->b"  tcp_short:104.6-104.2  tcp_pair_key:192.168.104.6:39904-192.168.104.2:1519  frame_count:5  syn_count:1  fin_count:0  rst_count:0  isn:001110959050  tcp_payload_len_tot:000000000147
+atf_snf.kafka_stats  client_id_key:adminclient-1  kafka_count:2  kafka_req_ack_count:0  kafka_count_in_bh:2  pct_non_ack!!!:0.666667  kafka_len_tot:000000000147
+
+
+atf_snf.info iframe:000000000017  ts_ns:867504216678835  ack:0
+kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:2  client_id:adminclient-1  client_software_name:apache-kafka-java  client_software_version:3.6.1
+atf_snf.err response not found
+atf_snf.info iframe:000000000019  ts_ns:867504219363820  ack:0
+kafka2.CreateTopicsRequest  request_api_version:7  correlation_id:3  client_id:adminclient-1  topics.0:'kafka2.CreatableTopic19q  name:test-topic-0000000-9bV6z3I  num_partitions:1  replication_factor:1  configs.0:"kafka2.CreatableTopicConfig19q  name:min.insync.replicas  value:1"'  timeout_ms:29989  validate_only:N
+atf_snf.err response not found

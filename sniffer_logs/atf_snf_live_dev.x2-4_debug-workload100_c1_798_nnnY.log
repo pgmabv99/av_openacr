@@ -1,0 +1,117 @@
+verbose: SysCmdExec.info  cmd:"rm -rf /home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY"
+verbose: bash  -c 'rm -rf /home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY'
+verbose: SysCmdExec.info  cmd:"mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY"
+verbose: bash  -c 'mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY'
+verbose: SysCmdExec.info  cmd:"mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY/tests"
+verbose: bash  -c 'mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY/tests'
+atf_snf.info tests_dir:/home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY/tests
+verbose: SysCmdExec.info  cmd:"mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY/tcp_pairs"
+verbose: bash  -c 'mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY/tcp_pairs'
+atf_snf.info tcp_pair_dir:/home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY/tcp_pairs
+verbose: SysCmdExec.info  cmd:"mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY/logs"
+verbose: bash  -c 'mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY/logs'
+atf_snf.info omnodes_logs_dir:/home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY/logs
+verbose: SysCmdExec.info  cmd:"sudo chmod -R 777 /home/avorovich/pcap/\n"
+verbose: bash  -c $'sudo chmod -R 777 /home/avorovich/pcap/\n'
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_1/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_0/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_3/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_4/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_5/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_6/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_7/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_8/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_9/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_10/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_11/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_12/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_13/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_14/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_15/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_16/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_17/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_18/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_2/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_19/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_20/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_21/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_22/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_23/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_24/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_25/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_26/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_27/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_28/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_29/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_30/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_31/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_32/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_33/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_34/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_35/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_36/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_37/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_38/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_39/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_40/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_41/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_42/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+atf_snf.info dev:data0-4T  port:1
+verbose: lsof /dev/infiniband/uverbs10
+verbose: bash  -c 'lsof /dev/infiniband/uverbs10' >&5
+atf_snf.info comment:"opened the device"
+atf_snf.info comment:"allocated protected domain"
+atf_snf.info comment:"created CQ ex"
+atf_snf.info comment:"created QP ex"
+atf_snf.info comment:"init QP port"
+atf_snf.info comment:"QO Ready To Receive"
+atf_snf.info comment:"SGE and WR are initialised"
+atf_snf.info intfname:data0-4T  port:1  ib:mlx5_10  pci:0000:c5:01.4  comment:"Flow created successfully, sniffing all traffic"
+  
+ comment:"Enter an option:"
+ comment:"q - query"
+ comment:"x - exit"
+ comment:"r - resume"
+ comment:"tp - toggle poll"
+ comment:"tc - toggle clean"
+ comment:"rc - run clean"
+ comment:"Exiting.. Disable steps/mainloop...."
+atf_snf.info comment:"snf shutdown"
+atf_snf.info comment:"destroying flow"
+atf_snf.info comment:"destroying QP"
+atf_snf.info comment:"destroying CQ"
+atf_snf.info comment:"destroying PD"
+PcapOutFileClose  fname:dev.x2-4_debug-workload100_c1_798_nnnY.pcap
+issue chmod command  cmd:"chmod 666 /home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY.pcap"
+verbose: bash  -c 'chmod 666 /home/avorovich/pcap/dev.x2-4_debug-workload100_c1_798_nnnY.pcap'
+
+=============tcp_pairs req with matching rsp
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:104.6-104.5  tcp_pair_key:192.168.104.6:50360-192.168.104.5:1558  frame_count:6  syn_count:1  fin_count:0  rst_count:0  isn:000918810809  tcp_payload_len_tot:000000000085
+atf_snf.kafka_stats  client_id_key:adminclient-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000085
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:104.5-104.6  tcp_pair_key:192.168.104.5:1558-192.168.104.6:50360  frame_count:4  syn_count:1  fin_count:0  rst_count:0  isn:000443914370  tcp_payload_len_tot:000000000432
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000432
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:104.7-104.5  tcp_pair_key:192.168.104.7:53670-192.168.104.5:1558  frame_count:6  syn_count:1  fin_count:0  rst_count:0  isn:000479783776  tcp_payload_len_tot:000000000085
+atf_snf.kafka_stats  client_id_key:adminclient-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000085
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:104.5-104.7  tcp_pair_key:192.168.104.5:1558-192.168.104.7:53670  frame_count:4  syn_count:1  fin_count:0  rst_count:0  isn:001178713838  tcp_payload_len_tot:000000000432
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000432
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:104.6-104.5  tcp_pair_key:192.168.104.6:50368-192.168.104.5:1558  frame_count:2200  syn_count:1  fin_count:0  rst_count:0  isn:003197318397  tcp_payload_len_tot:000000035189
+atf_snf.kafka_stats  client_id_key:adminclient-1  kafka_count:1099  kafka_req_ack_count:1099  kafka_count_in_bh:1099  pct_non_ack!!!:0  kafka_len_tot:000000035189
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:104.5-104.6  tcp_pair_key:192.168.104.5:1558-192.168.104.6:50368  frame_count:1101  syn_count:1  fin_count:0  rst_count:0  isn:001675127039  tcp_payload_len_tot:000000264809
+atf_snf.kafka_stats  kafka_count:1099  kafka_count_in_bh:1099  kafka_len_tot:000000264809
+
+=============tcp_pairs rsp without req 
+
+==========================================batch stats
+TCP_FILTER.ATTENTION!!!!:N
+  "elapsed(sec)":150.386  iframe_count:3326  seq_gap_pos_count:0  seq_gap_neg_count:0  kafka_req_count_total:1103  kafka_req_ack_count_total:1103  kafka_solo_err_count:0  "kafka_duration_avg (ns)":61416  ind_tcp_pair_n:6  max_pkt_len:307
+Kafka Non-ACK(BAD - request without response) Ratio Histogram:
+range:00-00%  count_of_tcp_pairs:3
+verbose: SysCmdExec.info  cmd:"sudo chmod -R 777 /home/avorovich/pcap/\n"
+verbose: bash  -c $'sudo chmod -R 777 /home/avorovich/pcap/\n'
+exit to OS

@@ -1,0 +1,13 @@
+atf_snf.frame_stats  direction:"c->b"  tcp_short:104.6-104.4  tcp_pair_key:192.168.104.6:39756-192.168.104.4:1545  frame_count:6  syn_count:1  fin_count:0  rst_count:0  isn:000872792392  tcp_payload_len_tot:000000000120
+atf_snf.kafka_stats  client_id_key:producer-1  kafka_count:3  kafka_req_ack_count:0  kafka_count_in_bh:3  pct_non_ack!!!:0.75  kafka_len_tot:000000000120
+
+
+atf_snf.info iframe:000000000034  ts_ns:867504431631481  ack:0
+kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:producer-1  client_software_name:apache-kafka-java  client_software_version:3.6.1
+atf_snf.err response not found
+atf_snf.info iframe:000000000036  ts_ns:867504434877043  ack:0
+kafka2.MetadataRequest  request_api_version:12  correlation_id:2  client_id:producer-1  allow_auto_topic_creation:Y  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+atf_snf.err response not found
+atf_snf.info iframe:000000000037  ts_ns:867504435653881  ack:0
+kafka2.InitProducerIdRequest  request_api_version:4  correlation_id:3  client_id:producer-1  transaction_timeout_ms:2147483647  producer_id:-1  producer_epoch:-1  enable2_pc:N  keep_prepared_txn:N
+atf_snf.err response not found

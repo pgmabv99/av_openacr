@@ -75,7 +75,7 @@ gb(){
   while read branch rest; do
     ahead=$(git rev-list --count "$branch" ^master)
     behind=$(git rev-list --count master ^"$branch")
-    printf "%-16s  - [ahead %d, behind %d] %s \n"  "$branch"  "$ahead" "$behind" "$rest"
+    printf "%-16s  ------ [ahead %d, behind %d] %s \n"  "$branch"  "$ahead" "$behind" "$rest"
   done
   echo "     "
   echo "Current branch: $(git rev-parse --abbrev-ref HEAD)"

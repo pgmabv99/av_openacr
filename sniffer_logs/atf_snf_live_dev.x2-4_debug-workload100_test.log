@@ -1,0 +1,161 @@
+verbose: SysCmdExec.info  cmd:"rm -rf /home/avorovich/pcap/dev.x2-4_debug-workload100_test"
+verbose: bash  -c 'rm -rf /home/avorovich/pcap/dev.x2-4_debug-workload100_test'
+verbose: SysCmdExec.info  cmd:"mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_test"
+verbose: bash  -c 'mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_test'
+verbose: SysCmdExec.info  cmd:"mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_test/tests"
+verbose: bash  -c 'mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_test/tests'
+atf_snf.info tests_dir:/home/avorovich/pcap/dev.x2-4_debug-workload100_test/tests
+verbose: SysCmdExec.info  cmd:"mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_test/tcp_pairs"
+verbose: bash  -c 'mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_test/tcp_pairs'
+atf_snf.info tcp_pair_dir:/home/avorovich/pcap/dev.x2-4_debug-workload100_test/tcp_pairs
+verbose: SysCmdExec.info  cmd:"mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs"
+verbose: bash  -c 'mkdir -p /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs'
+atf_snf.info omnodes_logs_dir:/home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs
+verbose: SysCmdExec.info  cmd:"sudo chmod -R 777 /home/avorovich/pcap/\n"
+verbose: bash  -c $'sudo chmod -R 777 /home/avorovich/pcap/\n'
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_1/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_0/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_3/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_4/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_5/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_6/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_7/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_8/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_9/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_10/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_11/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_12/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_13/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_14/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_15/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_16/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_17/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_18/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_2/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_19/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_20/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_21/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_22/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_23/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_24/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_25/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_26/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_27/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_28/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_29/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_30/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_31/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_32/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_33/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_34/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_35/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_36/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_37/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_38/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_39/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_40/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_41/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_42/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+atf_snf.info dev:data0-4T  port:1
+verbose: lsof /dev/infiniband/uverbs10
+verbose: bash  -c 'lsof /dev/infiniband/uverbs10' >&5
+atf_snf.info comment:"opened the device"
+atf_snf.info comment:"allocated protected domain"
+atf_snf.info comment:"created CQ ex"
+atf_snf.info comment:"created QP ex"
+atf_snf.info comment:"init QP port"
+atf_snf.info comment:"QO Ready To Receive"
+atf_snf.info comment:"SGE and WR are initialised"
+atf_snf.info intfname:data0-4T  port:1  ib:mlx5_10  pci:0000:c5:01.4  comment:"Flow created successfully, sniffing all traffic"
+  
+ comment:"Enter an option:"
+ comment:"q - query"
+ comment:"x - exit"
+ comment:"r - resume"
+ comment:"tp - toggle poll"
+ comment:"tc - toggle clean"
+ comment:"rc - run clean"
+atf_snf.error comment:"Invalid "
+  
+ comment:"Enter an option:"
+ comment:"q - query"
+ comment:"x - exit"
+ comment:"r - resume"
+ comment:"tp - toggle poll"
+ comment:"tc - toggle clean"
+ comment:"rc - run clean"
+ comment:"Exiting.. Disable steps/mainloop...."
+atf_snf.info comment:"snf shutdown"
+atf_snf.info comment:"destroying flow"
+atf_snf.info comment:"destroying QP"
+atf_snf.info comment:"destroying CQ"
+atf_snf.info comment:"destroying PD"
+
+=============tcp_pairs req with matching rsp
+
+=============tcp_pairs rsp without req 
+
+==========================================batch stats
+TCP_FILTER.ATTENTION!!!!:N
+  "elapsed(sec)":14.2426  iframe_count:1  seq_gap_pos_count:0  seq_gap_neg_count:0  kafka_req_count_total:0  kafka_req_ack_count_total:0  kafka_solo_err_count:0  "kafka_duration_avg (ns)":0  ind_tcp_pair_n:0  max_pkt_len:0
+Kafka Non-ACK(BAD - request without response) Ratio Histogram:
+atf_snf.info comment:"get omnode logs"
+verbose: rsync omnode logs omnode:dev.kafkaui-5  omnode_suf_type:kafkaui
+verbose: bash  -c $'rsync -ac kafkausr@dev.kafkaui-5:kafkaui.log /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.kafkaui-5/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:kafkausr  node:dev.kafkaui-5  file:kafkaui.log
+verbose: bash  -c $'rsync -ac kafkausr@dev.kafkaui-5:kafkaui_only /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.kafkaui-5/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:kafkausr  node:dev.kafkaui-5  file:kafkaui_only
+verbose: bash  -c $'rsync -ac kafkausr@dev.kafkaui-5:dev.kafkaui-5 /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.kafkaui-5/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:kafkausr  node:dev.kafkaui-5  file:dev.kafkaui-5
+verbose: rsync omnode logs omnode:dev.kafkaw-04  omnode_suf_type:kafkaw
+verbose: bash  -c $'rsync -ac kafkawrkr@dev.kafkaw-04:kafka_worker.log /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.kafkaw-04/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:kafkawrkr  node:dev.kafkaw-04  file:kafka_worker.log
+verbose: bash  -c $'rsync -ac kafkawrkr@dev.kafkaw-04:dev.kafkaw-04 /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.kafkaw-04/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:kafkawrkr  node:dev.kafkaw-04  file:dev.kafkaw-04
+verbose: rsync omnode logs omnode:dev.kafkaw-12  omnode_suf_type:kafkaw
+verbose: bash  -c $'rsync -ac kafkawrkr@dev.kafkaw-12:kafka_worker.log /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.kafkaw-12/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:kafkawrkr  node:dev.kafkaw-12  file:kafka_worker.log
+verbose: bash  -c $'rsync -ac kafkawrkr@dev.kafkaw-12:dev.kafkaw-12 /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.kafkaw-12/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:kafkawrkr  node:dev.kafkaw-12  file:dev.kafkaw-12
+verbose: rsync omnode logs omnode:dev.rdpui-5  omnode_suf_type:rdpui
+verbose: bash  -c $'rsync -ac rdpusr@dev.rdpui-5:rdp_console.log /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.rdpui-5/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:rdpusr  node:dev.rdpui-5  file:rdp_console.log
+verbose: bash  -c $'rsync -ac rdpusr@dev.rdpui-5:rdp_console_log /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.rdpui-5/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:rdpusr  node:dev.rdpui-5  file:rdp_console_log
+verbose: bash  -c $'rsync -ac rdpusr@dev.rdpui-5:rdpui_only /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.rdpui-5/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:rdpusr  node:dev.rdpui-5  file:rdpui_only
+verbose: bash  -c $'rsync -ac rdpusr@dev.rdpui-5:dev.rdpui-5 /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.rdpui-5/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:rdpusr  node:dev.rdpui-5  file:dev.rdpui-5
+verbose: rsync omnode logs omnode:dev.x2-17  omnode_suf_type:x2
+verbose: bash  -c $'rsync -ac x2usr@dev.x2-17:release/*.log /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.x2-17/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:x2usr  node:dev.x2-17  file:release/*.log
+verbose: bash  -c $'rsync -ac x2usr@dev.x2-17:dev.x2-17 /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.x2-17/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:x2usr  node:dev.x2-17  file:dev.x2-17
+verbose: rsync omnode logs omnode:dev.x2-18  omnode_suf_type:x2
+verbose: bash  -c $'rsync -ac x2usr@dev.x2-18:release/*.log /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.x2-18/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:x2usr  node:dev.x2-18  file:release/*.log
+verbose: bash  -c $'rsync -ac x2usr@dev.x2-18:dev.x2-18 /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.x2-18/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:x2usr  node:dev.x2-18  file:dev.x2-18
+verbose: rsync omnode logs omnode:dev.x2-19  omnode_suf_type:x2
+verbose: bash  -c $'rsync -ac x2usr@dev.x2-19:release/*.log /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.x2-19/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:x2usr  node:dev.x2-19  file:release/*.log
+verbose: bash  -c $'rsync -ac x2usr@dev.x2-19:dev.x2-19 /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.x2-19/ 2>/dev/null'
+  
+ comment:"Enter an option:"
+ comment:"q - query"
+ comment:"x - exit"
+ comment:"r - resume"
+ comment:"tp - toggle poll"
+ comment:"tc - toggle clean"
+ comment:"rc - run clean"
+ comment:"Exiting.. Disable steps/mainloop...."
+atf_snf.err comment:"not found"  ret:5120  user:x2usr  node:dev.x2-19  file:dev.x2-19
+verbose: rsync omnode logs omnode:dev.x2-20  omnode_suf_type:x2
+verbose: bash  -c $'rsync -ac x2usr@dev.x2-20:release/*.log /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.x2-20/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:x2usr  node:dev.x2-20  file:release/*.log
+verbose: bash  -c $'rsync -ac x2usr@dev.x2-20:dev.x2-20 /home/avorovich/pcap/dev.x2-4_debug-workload100_test/logs/dev.x2-20/ 2>/dev/null'
+atf_snf.err comment:"not found"  ret:65280  user:x2usr  node:dev.x2-20  file:dev.x2-20
+verbose: rsync omnode logs omnode:dev.x2w-08  omnode_suf_type:x2w
+verbose: SysCmdExec.info  cmd:"sudo chmod -R 777 /home/avorovich/pcap/\n"
+verbose: bash  -c $'sudo chmod -R 777 /home/avorovich/pcap/\n'
+exit to OS

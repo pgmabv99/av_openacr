@@ -1,0 +1,239 @@
+verbose: SysCmdExec.info  cmd:"rm -rf /home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY"
+verbose: bash  -c 'rm -rf /home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY'
+verbose: SysCmdExec.info  cmd:"mkdir -p /home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY"
+verbose: bash  -c 'mkdir -p /home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY'
+verbose: SysCmdExec.info  cmd:"mkdir -p /home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY/tests"
+verbose: bash  -c 'mkdir -p /home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY/tests'
+atf_snf.info tests_dir:/home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY/tests
+verbose: SysCmdExec.info  cmd:"mkdir -p /home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY/tcp_pairs"
+verbose: bash  -c 'mkdir -p /home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY/tcp_pairs'
+atf_snf.info tcp_pair_dir:/home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY/tcp_pairs
+verbose: SysCmdExec.info  cmd:"mkdir -p /home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY/logs"
+verbose: bash  -c 'mkdir -p /home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY/logs'
+atf_snf.info omnodes_logs_dir:/home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY/logs
+verbose: SysCmdExec.info  cmd:"sudo chmod -R 777 /home/avorovich/pcap/\n"
+verbose: bash  -c $'sudo chmod -R 777 /home/avorovich/pcap/\n'
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_1/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_0/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_3/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_4/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_5/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_6/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_7/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_8/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_9/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_10/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_11/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_12/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_13/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_14/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_15/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_16/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_17/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_18/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_2/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_19/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_20/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_21/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_22/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_23/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_24/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_25/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_26/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_27/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_28/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_29/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_30/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_31/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_32/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_33/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_34/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_35/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_36/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_37/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_38/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_39/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_40/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_41/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+verbose: bash  -c $' PCI_CLAUSE=$(basename $(readlink -f /sys/class/infiniband/mlx5_42/device))\n INTERFACE=$(ls /sys/bus/pci/devices/$PCI_CLAUSE/net/ 2>/dev/null)\n echo $PCI_CLAUSE $INTERFACE\n' >&7
+atf_snf.info dev:data0-8T  port:1
+verbose: lsof /dev/infiniband/uverbs18
+verbose: bash  -c 'lsof /dev/infiniband/uverbs18' >&5
+atf_snf.info comment:"opened the device"
+atf_snf.info comment:"allocated protected domain"
+atf_snf.info comment:"created CQ ex"
+atf_snf.info comment:"created QP ex"
+atf_snf.info comment:"init QP port"
+atf_snf.info comment:"QO Ready To Receive"
+atf_snf.info comment:"SGE and WR are initialised"
+atf_snf.info intfname:data0-8T  port:1  ib:mlx5_18  pci:0000:c5:02.0  comment:"Flow created successfully, sniffing all traffic"
+  
+ comment:"Enter an option:"
+ comment:"q - query"
+ comment:"x - exit"
+ comment:"r - resume"
+ comment:"tp - toggle poll"
+ comment:"tc - toggle clean"
+ comment:"rc - run clean"
+ comment:"Exiting.. Disable steps/mainloop...."
+atf_snf.info comment:"snf shutdown"
+atf_snf.info comment:"destroying flow"
+atf_snf.info comment:"destroying QP"
+atf_snf.info comment:"destroying CQ"
+atf_snf.info comment:"destroying PD"
+PcapOutFileClose  fname:dev.ak-8_debug-workload100_c2_master_nnnY.pcap
+issue chmod command  cmd:"chmod 666 /home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY.pcap"
+verbose: bash  -c 'chmod 666 /home/avorovich/pcap/dev.ak-8_debug-workload100_c2_master_nnnY.pcap'
+
+=============tcp_pairs req with matching rsp
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:57526-192.168.108.5:1047  frame_count:10  syn_count:1  fin_count:1  rst_count:0  isn:003298212410  tcp_payload_len_tot:000000000080
+atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000080
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:57526  frame_count:7  syn_count:1  fin_count:1  rst_count:0  isn:000460634105  tcp_payload_len_tot:000000000569
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000569
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:57540-192.168.108.5:1047  frame_count:10  syn_count:1  fin_count:1  rst_count:0  isn:002143179675  tcp_payload_len_tot:000000000088
+atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000088
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:57540  frame_count:7  syn_count:1  fin_count:1  rst_count:0  isn:000999982214  tcp_payload_len_tot:000000001006
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000001006
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:57550-192.168.108.5:1047  frame_count:15  syn_count:1  fin_count:1  rst_count:0  isn:000994324527  tcp_payload_len_tot:000000000196
+atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:5  kafka_req_ack_count:5  kafka_count_in_bh:5  pct_non_ack!!!:0  kafka_len_tot:000000000196
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:57550  frame_count:10  syn_count:1  fin_count:1  rst_count:0  isn:002409453995  tcp_payload_len_tot:000000001204
+atf_snf.kafka_stats  kafka_count:5  kafka_count_in_bh:5  kafka_len_tot:000000001204
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:57566-192.168.108.5:1047  frame_count:17  syn_count:1  fin_count:1  rst_count:0  isn:000095022024  tcp_payload_len_tot:000000000226
+atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:6  kafka_req_ack_count:6  kafka_count_in_bh:6  pct_non_ack!!!:0  kafka_len_tot:000000000226
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:57566  frame_count:31  syn_count:1  fin_count:1  rst_count:0  isn:004024460753  tcp_payload_len_tot:000000028179
+atf_snf.kafka_stats  kafka_count:6  kafka_count_in_bh:6  kafka_len_tot:000000028179
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:39178-192.168.108.5:1047  frame_count:8  syn_count:1  fin_count:1  rst_count:0  isn:003801748752  tcp_payload_len_tot:000000000085
+atf_snf.kafka_stats  client_id_key:adminclient-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000085
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:39178  frame_count:5  syn_count:1  fin_count:1  rst_count:0  isn:000417362895  tcp_payload_len_tot:000000000565
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000565
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:56486-192.168.108.5:1047  frame_count:8  syn_count:1  fin_count:1  rst_count:0  isn:001766509718  tcp_payload_len_tot:000000000085
+atf_snf.kafka_stats  client_id_key:adminclient-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000085
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:56486  frame_count:5  syn_count:1  fin_count:1  rst_count:0  isn:003584210579  tcp_payload_len_tot:000000000565
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000565
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:39184-192.168.108.5:1047  frame_count:8  syn_count:1  fin_count:1  rst_count:0  isn:002699762566  tcp_payload_len_tot:000000000147
+atf_snf.kafka_stats  client_id_key:adminclient-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000147
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:39184  frame_count:6  syn_count:1  fin_count:1  rst_count:0  isn:003902994191  tcp_payload_len_tot:000000001801
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000001801
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:56490-192.168.108.5:1047  frame_count:10  syn_count:1  fin_count:1  rst_count:0  isn:003270615689  tcp_payload_len_tot:000000000275
+atf_snf.frame_err  !!seq_gap_neg_count:1
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-jjhSbZI-1  kafka_count:3  kafka_req_ack_count:3  kafka_count_in_bh:3  pct_non_ack!!!:0  kafka_len_tot:000000000215
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:56490  frame_count:7  syn_count:1  fin_count:1  rst_count:0  isn:003174289640  tcp_payload_len_tot:000000000687
+atf_snf.kafka_stats  kafka_count:3  kafka_count_in_bh:3  kafka_len_tot:000000000687
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:56492-192.168.108.5:1047  frame_count:9  syn_count:1  fin_count:1  rst_count:0  isn:003762475796  tcp_payload_len_tot:000000000215
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-jjhSbZI-2  kafka_count:3  kafka_req_ack_count:3  kafka_count_in_bh:3  pct_non_ack!!!:0  kafka_len_tot:000000000215
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:56492  frame_count:6  syn_count:1  fin_count:1  rst_count:0  isn:001912298170  tcp_payload_len_tot:000000000687
+atf_snf.kafka_stats  kafka_count:3  kafka_count_in_bh:3  kafka_len_tot:000000000687
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:39188-192.168.108.5:1047  frame_count:9  syn_count:1  fin_count:1  rst_count:0  isn:003373192864  tcp_payload_len_tot:000000000120
+atf_snf.kafka_stats  client_id_key:producer-1  kafka_count:3  kafka_req_ack_count:3  kafka_count_in_bh:3  pct_non_ack!!!:0  kafka_len_tot:000000000120
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:39188  frame_count:6  syn_count:1  fin_count:1  rst_count:0  isn:003780262609  tcp_payload_len_tot:000000000591
+atf_snf.kafka_stats  kafka_count:3  kafka_count_in_bh:3  kafka_len_tot:000000000591
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.6-108.5  tcp_pair_key:192.168.108.6:39204-192.168.108.5:1047  frame_count:260  syn_count:1  fin_count:1  rst_count:0  isn:002527750115  tcp_payload_len_tot:000000030074
+atf_snf.kafka_stats  client_id_key:producer-1  kafka_count:128  kafka_req_ack_count:128  kafka_count_in_bh:128  pct_non_ack!!!:0  kafka_len_tot:000000030074
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.6  tcp_pair_key:192.168.108.5:1047-192.168.108.6:39204  frame_count:131  syn_count:1  fin_count:1  rst_count:0  isn:003825216054  tcp_payload_len_tot:000000010294
+atf_snf.kafka_stats  kafka_count:128  kafka_count_in_bh:128  kafka_len_tot:000000010294
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:56500-192.168.108.5:1047  frame_count:403  syn_count:1  fin_count:1  rst_count:0  isn:002619899101  tcp_payload_len_tot:000000023925
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-jjhSbZI-1  kafka_count:265  kafka_req_ack_count:265  kafka_count_in_bh:265  pct_non_ack!!!:0  kafka_len_tot:000000023925
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:56500  frame_count:772  syn_count:1  fin_count:1  rst_count:0  isn:001876022774  tcp_payload_len_tot:000000034691
+atf_snf.kafka_stats  kafka_count:265  kafka_count_in_bh:265  kafka_len_tot:000000034691
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:56504-192.168.108.5:1047  frame_count:7  syn_count:1  fin_count:1  rst_count:0  isn:002740945290  tcp_payload_len_tot:000000000274
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-jjhSbZI-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000274
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:56504  frame_count:5  syn_count:1  fin_count:1  rst_count:0  isn:000447085969  tcp_payload_len_tot:000000000529
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000529
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:56506-192.168.108.5:1047  frame_count:21  syn_count:1  fin_count:1  rst_count:0  isn:002450613984  tcp_payload_len_tot:000000000575
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-jjhSbZI-2  kafka_count:9  kafka_req_ack_count:9  kafka_count_in_bh:9  pct_non_ack!!!:0  kafka_len_tot:000000000575
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:56506  frame_count:13  syn_count:1  fin_count:1  rst_count:0  isn:000703096499  tcp_payload_len_tot:000000001245
+atf_snf.frame_err  !!seq_gap_neg_count:1
+atf_snf.kafka_stats  kafka_count:9  kafka_count_in_bh:9  kafka_len_tot:000000001105
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:56512-192.168.108.5:1047  frame_count:7  syn_count:1  fin_count:1  rst_count:0  isn:000367168683  tcp_payload_len_tot:000000000274
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-jjhSbZI-2  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000274
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:56512  frame_count:5  syn_count:1  fin_count:1  rst_count:0  isn:003861337837  tcp_payload_len_tot:000000000529
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000529
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:56518-192.168.108.5:1047  frame_count:7  syn_count:1  fin_count:1  rst_count:0  isn:001650376122  tcp_payload_len_tot:000000000321
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-jjhSbZI-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000321
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:56518  frame_count:5  syn_count:1  fin_count:1  rst_count:0  isn:002445567051  tcp_payload_len_tot:000000000529
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000529
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:56522-192.168.108.5:1047  frame_count:7  syn_count:1  fin_count:1  rst_count:0  isn:001172040672  tcp_payload_len_tot:000000000321
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-jjhSbZI-2  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000321
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:56522  frame_count:5  syn_count:1  fin_count:1  rst_count:0  isn:000981460211  tcp_payload_len_tot:000000000529
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000529
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:56526-192.168.108.5:1047  frame_count:7  syn_count:1  fin_count:1  rst_count:0  isn:000067031009  tcp_payload_len_tot:000000000321
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-jjhSbZI-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000321
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:56526  frame_count:5  syn_count:1  fin_count:1  rst_count:0  isn:000319833361  tcp_payload_len_tot:000000000529
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000529
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:56534-192.168.108.5:1047  frame_count:7  syn_count:1  fin_count:1  rst_count:0  isn:003279630109  tcp_payload_len_tot:000000000321
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-jjhSbZI-2  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000321
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:56534  frame_count:5  syn_count:1  fin_count:1  rst_count:0  isn:002743376767  tcp_payload_len_tot:000000000529
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000529
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:56550-192.168.108.5:1047  frame_count:345  syn_count:1  fin_count:1  rst_count:0  isn:004159402095  tcp_payload_len_tot:000000028115
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-jjhSbZI-1  kafka_count:172  kafka_req_ack_count:172  kafka_count_in_bh:172  pct_non_ack!!!:0  kafka_len_tot:000000028115
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:56550  frame_count:177  syn_count:1  fin_count:1  rst_count:0  isn:000095215826  tcp_payload_len_tot:000000008035
+atf_snf.kafka_stats  kafka_count:172  kafka_count_in_bh:172  kafka_len_tot:000000008035
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.7-108.5  tcp_pair_key:192.168.108.7:56566-192.168.108.5:1047  frame_count:94  syn_count:1  fin_count:1  rst_count:0  isn:000472968130  tcp_payload_len_tot:000000006333
+atf_snf.kafka_stats  client_id_key:consumer-sub-000-jjhSbZI-2  kafka_count:46  kafka_req_ack_count:46  kafka_count_in_bh:46  pct_non_ack!!!:0  kafka_len_tot:000000006333
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.7  tcp_pair_key:192.168.108.5:1047-192.168.108.7:56566  frame_count:51  syn_count:1  fin_count:1  rst_count:0  isn:003407385554  tcp_payload_len_tot:000000001770
+atf_snf.kafka_stats  kafka_count:46  kafka_count_in_bh:46  kafka_len_tot:000000001770
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:41808-192.168.108.5:1047  frame_count:6  syn_count:1  fin_count:0  rst_count:0  isn:003152992556  tcp_payload_len_tot:000000000113
+atf_snf.kafka_stats  client_id_key:kafka-ui-admin-1751383736-1  kafka_count:2  kafka_req_ack_count:2  kafka_count_in_bh:2  pct_non_ack!!!:0  kafka_len_tot:000000000113
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:41808  frame_count:4  syn_count:1  fin_count:0  rst_count:0  isn:000034095903  tcp_payload_len_tot:000000000565
+atf_snf.kafka_stats  kafka_count:2  kafka_count_in_bh:2  kafka_len_tot:000000000565
+==  
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:41820-192.168.108.5:1047  frame_count:69  syn_count:1  fin_count:0  rst_count:0  isn:003637173108  tcp_payload_len_tot:000000002636
+atf_snf.kafka_stats  client_id_key:kafka-ui-admin-1751383736-1  kafka_count:40  kafka_req_ack_count:40  kafka_count_in_bh:40  pct_non_ack!!!:0  kafka_len_tot:000000002636
+
+atf_snf.frame_stats  direction:"b->c"  tcp_short:108.5-108.1  tcp_pair_key:192.168.108.5:1047-192.168.108.1:41820  frame_count:87  syn_count:1  fin_count:0  rst_count:0  isn:000245920569  tcp_payload_len_tot:000000079236
+atf_snf.kafka_stats  kafka_count:40  kafka_count_in_bh:40  kafka_len_tot:000000079236
+
+=============tcp_pairs rsp without req 
+
+==========================================batch stats
+TCP_FILTER.ATTENTION!!!!:N
+  "elapsed(sec)":239.695  iframe_count:2712  seq_gap_pos_count:0  seq_gap_neg_count:2  kafka_req_count_total:704  kafka_req_ack_count_total:704  kafka_solo_err_count:0  "kafka_duration_avg (ns)":197141026  ind_tcp_pair_n:46  max_pkt_len:1514
+Kafka Non-ACK(BAD - request without response) Ratio Histogram:
+range:00-00%  count_of_tcp_pairs:23
+verbose: SysCmdExec.info  cmd:"sudo chmod -R 777 /home/avorovich/pcap/\n"
+verbose: bash  -c $'sudo chmod -R 777 /home/avorovich/pcap/\n'
+exit to OS

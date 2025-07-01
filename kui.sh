@@ -31,8 +31,8 @@ atf_snf  -omenv_logs:$omenv -out_solo_dir:$tag
 #to be issued form a separate terminal
 echo "---------------------X2or Kafka    clean start ONE node + bench"
 set -x
-# omenv=dev.ak-8
-omenv=dev.x2-4
+omenv=dev.ak-8
+# omenv=dev.x2-4
 omrun_load=debug-workload100
 omcli $omenv -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:$omrun_load -omrun_minutes:1
 

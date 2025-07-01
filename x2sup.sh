@@ -11,7 +11,7 @@ x2sup -i -v -v > $ofile 2>&1
 exit
 
 x2sup -temp
-
+x2sup -livecheck:N
 
 
 # sample clients

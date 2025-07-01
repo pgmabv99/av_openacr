@@ -1,26 +1,29 @@
-iframe:000000000057  ts_ns:1015662045225913 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:0  client_id:consumer-sub-000-b1RO-Gs-1  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
-  iframe:000000000057
-  ts_ns:1015662045225913
+iframe:000000000041  ts_ns:1026795540365062  c_port:33738 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:0  client_id:consumer-sub-000-jmxboLg-1  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
+  iframe:000000000041
+  ts_ns:1026795540365062
+  c_port:33738
   kafka2.FindCoordinatorRequest
   request_api_version:4
   correlation_id:0
-  client_id:consumer-sub-000-b1RO-Gs-1
+  client_id:consumer-sub-000-jmxboLg-1
   key:""
   key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000069  ts_ns:1015662056221945 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:0  client_id:consumer-sub-000-b1RO-Gs-2  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
-  iframe:000000000069
-  ts_ns:1015662056221945
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000053  ts_ns:1026795550749696  c_port:33740 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:0  client_id:consumer-sub-000-jmxboLg-2  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
+  iframe:000000000053
+  ts_ns:1026795550749696
+  c_port:33740
   kafka2.FindCoordinatorRequest
   request_api_version:4
   correlation_id:0
-  client_id:consumer-sub-000-b1RO-Gs-2
+  client_id:consumer-sub-000-jmxboLg-2
   key:""
   key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000071  ts_ns:1015662060581433 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:0  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:-1  host:""  port:-1  error_code:15  error_message:""'
-  iframe:000000000071
-  ts_ns:1015662060581433
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000055  ts_ns:1026795554625171  c_port:33740 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:0  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:-1  host:""  port:-1  error_code:15  error_message:""'
+  iframe:000000000055
+  ts_ns:1026795554625171
+  c_port:33740
   kafka2.FindCoordinatorResponse
   request_api_version:4
   correlation_id:0
@@ -30,15 +33,16 @@ iframe:000000000071  ts_ns:1015662060581433 kafka2.FindCoordinatorResponse  requ
   host:""
   port:0
   coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
+  key:sub-000-jmxboLg
   node_id:-1
   host:""
   port:-1
   error_code:15
   error_message:""'
-iframe:000000000072  ts_ns:1015662062050201 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:0  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:-1  host:""  port:-1  error_code:15  error_message:""'
-  iframe:000000000072
-  ts_ns:1015662062050201
+iframe:000000000056  ts_ns:1026795554662534  c_port:33738 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:0  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:-1  host:""  port:-1  error_code:15  error_message:""'
+  iframe:000000000056
+  ts_ns:1026795554662534
+  c_port:33738
   kafka2.FindCoordinatorResponse
   request_api_version:4
   correlation_id:0
@@ -48,25 +52,27 @@ iframe:000000000072  ts_ns:1015662062050201 kafka2.FindCoordinatorResponse  requ
   host:""
   port:0
   coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
+  key:sub-000-jmxboLg
   node_id:-1
   host:""
   port:-1
   error_code:15
   error_message:""'
-iframe:000000000092  ts_ns:1015662143579008 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:3  client_id:consumer-sub-000-b1RO-Gs-1  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
-  iframe:000000000092
-  ts_ns:1015662143579008
+iframe:000000000077  ts_ns:1026795638592998  c_port:33748 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:3  client_id:consumer-sub-000-jmxboLg-1  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
+  iframe:000000000077
+  ts_ns:1026795638592998
+  c_port:33748
   kafka2.FindCoordinatorRequest
   request_api_version:4
   correlation_id:3
-  client_id:consumer-sub-000-b1RO-Gs-1
+  client_id:consumer-sub-000-jmxboLg-1
   key:""
   key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000094  ts_ns:1015662147850739 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:3  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
-  iframe:000000000094
-  ts_ns:1015662147850739
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000084  ts_ns:1026795642901465  c_port:33748 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:3  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+  iframe:000000000084
+  ts_ns:1026795642901465
+  c_port:33748
   kafka2.FindCoordinatorResponse
   request_api_version:4
   correlation_id:3
@@ -76,367 +82,574 @@ iframe:000000000094  ts_ns:1015662147850739 kafka2.FindCoordinatorResponse  requ
   host:""
   port:0
   coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
+  key:sub-000-jmxboLg
   node_id:4
   host:dev.ak-8.kafka-4.ext-0
   port:1047
   error_code:0
   error_message:""'
-iframe:000000000113  ts_ns:1015662155589139 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:3  client_id:consumer-sub-000-b1RO-Gs-2  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
-  iframe:000000000113
-  ts_ns:1015662155589139
+iframe:000000000097  ts_ns:1026795649318969  c_port:33778 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:3  client_id:consumer-sub-000-jmxboLg-2  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
+  iframe:000000000097
+  ts_ns:1026795649318969
+  c_port:33778
   kafka2.FindCoordinatorRequest
   request_api_version:4
   correlation_id:3
-  client_id:consumer-sub-000-b1RO-Gs-2
+  client_id:consumer-sub-000-jmxboLg-2
   key:""
   key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000114  ts_ns:1015662157754304 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:3  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000098  ts_ns:1026795651616505  c_port:33778 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:3  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+  iframe:000000000098
+  ts_ns:1026795651616505
+  c_port:33778
+  kafka2.FindCoordinatorResponse
+  request_api_version:4
+  correlation_id:3
+  throttle_time_ms:0
+  error_code:0
+  node_id:0
+  host:""
+  port:0
+  coordinators.0:'kafka2.Coordinator10a
+  key:sub-000-jmxboLg
+  node_id:4
+  host:dev.ak-8.kafka-4.ext-0
+  port:1047
+  error_code:0
+  error_message:""'
+iframe:000000000114  ts_ns:1026795662283648  c_port:33762 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:5  client_id:consumer-sub-000-jmxboLg-1  group_id:sub-000-jmxboLg  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:""
   iframe:000000000114
-  ts_ns:1015662157754304
+  ts_ns:1026795662283648
+  c_port:33762
+  kafka2.JoinGroupRequest
+  request_api_version:9
+  correlation_id:5
+  client_id:consumer-sub-000-jmxboLg-1
+  group_id:sub-000-jmxboLg
+  session_timeout_ms:45000
+  rebalance_timeout_ms:300000
+  member_id:""
+  protocol_type:consumer
+  protocols.0:'kafka2.JoinGroupRequestProtocol11q
+  name:range
+  metadata:"00
+  03
+  00
+  00
+  00
+  01
+  00
+  1a
+  74
+  65
+  73
+  74
+  2d
+  74
+  6f
+  70
+  69
+  63
+  2d
+  30
+  30
+  30
+  30
+  30
+  30
+  30
+  2d
+  58
+  41
+  70
+  48
+  70
+  55
+  34
+  ff
+  ff
+  ff
+  ff
+  00
+  00
+  00
+  00
+  ff
+  ff
+  ff
+  ff
+  ff
+  ff"'
+  protocols.1:'kafka2.JoinGroupRequestProtocol11q
+  name:cooperative-sticky
+  metadata:"00
+  03
+  00
+  00
+  00
+  01
+  00
+  1a
+  74
+  65
+  73
+  74
+  2d
+  74
+  6f
+  70
+  69
+  63
+  2d
+  30
+  30
+  30
+  30
+  30
+  30
+  30
+  2d
+  58
+  41
+  70
+  48
+  70
+  55
+  34
+  00
+  00
+  00
+  04
+  ff
+  ff
+  ff
+  ff
+  00
+  00
+  00
+  00
+  ff
+  ff
+  ff
+  ff
+  ff
+  ff"'
+  reason:""
+iframe:000000000115  ts_ns:1026795662288966  c_port:33780 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:5  client_id:consumer-sub-000-jmxboLg-2  group_id:sub-000-jmxboLg  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:""
+  iframe:000000000115
+  ts_ns:1026795662288966
+  c_port:33780
+  kafka2.JoinGroupRequest
+  request_api_version:9
+  correlation_id:5
+  client_id:consumer-sub-000-jmxboLg-2
+  group_id:sub-000-jmxboLg
+  session_timeout_ms:45000
+  rebalance_timeout_ms:300000
+  member_id:""
+  protocol_type:consumer
+  protocols.0:'kafka2.JoinGroupRequestProtocol11q
+  name:range
+  metadata:"00
+  03
+  00
+  00
+  00
+  01
+  00
+  1a
+  74
+  65
+  73
+  74
+  2d
+  74
+  6f
+  70
+  69
+  63
+  2d
+  30
+  30
+  30
+  30
+  30
+  30
+  30
+  2d
+  58
+  41
+  70
+  48
+  70
+  55
+  34
+  ff
+  ff
+  ff
+  ff
+  00
+  00
+  00
+  00
+  ff
+  ff
+  ff
+  ff
+  ff
+  ff"'
+  protocols.1:'kafka2.JoinGroupRequestProtocol11q
+  name:cooperative-sticky
+  metadata:"00
+  03
+  00
+  00
+  00
+  01
+  00
+  1a
+  74
+  65
+  73
+  74
+  2d
+  74
+  6f
+  70
+  69
+  63
+  2d
+  30
+  30
+  30
+  30
+  30
+  30
+  30
+  2d
+  58
+  41
+  70
+  48
+  70
+  55
+  34
+  00
+  00
+  00
+  04
+  ff
+  ff
+  ff
+  ff
+  00
+  00
+  00
+  00
+  ff
+  ff
+  ff
+  ff
+  ff
+  ff"'
+  reason:""
+iframe:000000000116  ts_ns:1026795667962144  c_port:33762 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:5  throttle_time_ms:0  error_code:16  generation_id:-1  leader:""  skip_assignment:N  member_id:""
+  iframe:000000000116
+  ts_ns:1026795667962144
+  c_port:33762
+  kafka2.JoinGroupResponse
+  request_api_version:9
+  correlation_id:5
+  throttle_time_ms:0
+  error_code:16
+  generation_id:-1
+  leader:""
+  skip_assignment:N
+  member_id:""
+iframe:000000000117  ts_ns:1026795667975641  c_port:33780 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:5  throttle_time_ms:0  error_code:16  generation_id:-1  leader:""  skip_assignment:N  member_id:""
+  iframe:000000000117
+  ts_ns:1026795667975641
+  c_port:33780
+  kafka2.JoinGroupResponse
+  request_api_version:9
+  correlation_id:5
+  throttle_time_ms:0
+  error_code:16
+  generation_id:-1
+  leader:""
+  skip_assignment:N
+  member_id:""
+iframe:000000000122  ts_ns:1026795672754220  c_port:33748 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:8  client_id:consumer-sub-000-jmxboLg-1  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
+  iframe:000000000122
+  ts_ns:1026795672754220
+  c_port:33748
+  kafka2.FindCoordinatorRequest
+  request_api_version:4
+  correlation_id:8
+  client_id:consumer-sub-000-jmxboLg-1
+  key:""
+  key_type:0
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000123  ts_ns:1026795672769734  c_port:33778 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:8  client_id:consumer-sub-000-jmxboLg-2  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
+  iframe:000000000123
+  ts_ns:1026795672769734
+  c_port:33778
+  kafka2.FindCoordinatorRequest
+  request_api_version:4
+  correlation_id:8
+  client_id:consumer-sub-000-jmxboLg-2
+  key:""
+  key_type:0
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000126  ts_ns:1026795675319232  c_port:33778 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:8  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+  iframe:000000000126
+  ts_ns:1026795675319232
+  c_port:33778
   kafka2.FindCoordinatorResponse
   request_api_version:4
-  correlation_id:3
+  correlation_id:8
   throttle_time_ms:0
   error_code:0
   node_id:0
   host:""
   port:0
   coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
+  key:sub-000-jmxboLg
   node_id:4
   host:dev.ak-8.kafka-4.ext-0
   port:1047
   error_code:0
   error_message:""'
-iframe:000000000130  ts_ns:1015662167836921 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:5  client_id:consumer-sub-000-b1RO-Gs-2  group_id:sub-000-b1RO-Gs  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:""
+iframe:000000000127  ts_ns:1026795675329088  c_port:33748 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:8  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+  iframe:000000000127
+  ts_ns:1026795675329088
+  c_port:33748
+  kafka2.FindCoordinatorResponse
+  request_api_version:4
+  correlation_id:8
+  throttle_time_ms:0
+  error_code:0
+  node_id:0
+  host:""
+  port:0
+  coordinators.0:'kafka2.Coordinator10a
+  key:sub-000-jmxboLg
+  node_id:4
+  host:dev.ak-8.kafka-4.ext-0
+  port:1047
+  error_code:0
+  error_message:""'
+iframe:000000000130  ts_ns:1026795733356044  c_port:33748 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:9  client_id:consumer-sub-000-jmxboLg-1  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
   iframe:000000000130
-  ts_ns:1015662167836921
-  kafka2.JoinGroupRequest
-  request_api_version:9
-  correlation_id:5
-  client_id:consumer-sub-000-b1RO-Gs-2
-  group_id:sub-000-b1RO-Gs
-  session_timeout_ms:45000
-  rebalance_timeout_ms:300000
-  member_id:""
-  protocol_type:consumer
-  protocols.0:'kafka2.JoinGroupRequestProtocol11q
-  name:range
-  metadata:"00
-  03
-  00
-  00
-  00
-  01
-  00
-  1a
-  74
-  65
-  73
-  74
-  2d
-  74
-  6f
-  70
-  69
-  63
-  2d
-  30
-  30
-  30
-  30
-  30
-  30
-  30
-  2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
-  ff
-  ff
-  ff
-  ff
-  00
-  00
-  00
-  00
-  ff
-  ff
-  ff
-  ff
-  ff
-  ff"'
-  protocols.1:'kafka2.JoinGroupRequestProtocol11q
-  name:cooperative-sticky
-  metadata:"00
-  03
-  00
-  00
-  00
-  01
-  00
-  1a
-  74
-  65
-  73
-  74
-  2d
-  74
-  6f
-  70
-  69
-  63
-  2d
-  30
-  30
-  30
-  30
-  30
-  30
-  30
-  2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
-  00
-  00
-  00
-  04
-  ff
-  ff
-  ff
-  ff
-  00
-  00
-  00
-  00
-  ff
-  ff
-  ff
-  ff
-  ff
-  ff"'
-  reason:""
-iframe:000000000131  ts_ns:1015662167839673 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:5  client_id:consumer-sub-000-b1RO-Gs-1  group_id:sub-000-b1RO-Gs  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:""
+  ts_ns:1026795733356044
+  c_port:33748
+  kafka2.FindCoordinatorRequest
+  request_api_version:4
+  correlation_id:9
+  client_id:consumer-sub-000-jmxboLg-1
+  key:""
+  key_type:0
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000131  ts_ns:1026795735632172  c_port:33748 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:9  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
   iframe:000000000131
-  ts_ns:1015662167839673
-  kafka2.JoinGroupRequest
-  request_api_version:9
-  correlation_id:5
-  client_id:consumer-sub-000-b1RO-Gs-1
-  group_id:sub-000-b1RO-Gs
-  session_timeout_ms:45000
-  rebalance_timeout_ms:300000
-  member_id:""
-  protocol_type:consumer
-  protocols.0:'kafka2.JoinGroupRequestProtocol11q
-  name:range
-  metadata:"00
-  03
-  00
-  00
-  00
-  01
-  00
-  1a
-  74
-  65
-  73
-  74
-  2d
-  74
-  6f
-  70
-  69
-  63
-  2d
-  30
-  30
-  30
-  30
-  30
-  30
-  30
-  2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
-  ff
-  ff
-  ff
-  ff
-  00
-  00
-  00
-  00
-  ff
-  ff
-  ff
-  ff
-  ff
-  ff"'
-  protocols.1:'kafka2.JoinGroupRequestProtocol11q
-  name:cooperative-sticky
-  metadata:"00
-  03
-  00
-  00
-  00
-  01
-  00
-  1a
-  74
-  65
-  73
-  74
-  2d
-  74
-  6f
-  70
-  69
-  63
-  2d
-  30
-  30
-  30
-  30
-  30
-  30
-  30
-  2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
-  00
-  00
-  00
-  04
-  ff
-  ff
-  ff
-  ff
-  00
-  00
-  00
-  00
-  ff
-  ff
-  ff
-  ff
-  ff
-  ff"'
-  reason:""
-iframe:000000000132  ts_ns:1015662173918137 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:5  throttle_time_ms:0  error_code:16  generation_id:-1  leader:""  skip_assignment:N  member_id:""
-  iframe:000000000132
-  ts_ns:1015662173918137
-  kafka2.JoinGroupResponse
-  request_api_version:9
-  correlation_id:5
+  ts_ns:1026795735632172
+  c_port:33748
+  kafka2.FindCoordinatorResponse
+  request_api_version:4
+  correlation_id:9
   throttle_time_ms:0
-  error_code:16
-  generation_id:-1
-  leader:""
-  skip_assignment:N
-  member_id:""
-iframe:000000000133  ts_ns:1015662173936294 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:5  throttle_time_ms:0  error_code:16  generation_id:-1  leader:""  skip_assignment:N  member_id:""
-  iframe:000000000133
-  ts_ns:1015662173936294
-  kafka2.JoinGroupResponse
-  request_api_version:9
-  correlation_id:5
-  throttle_time_ms:0
-  error_code:16
-  generation_id:-1
-  leader:""
-  skip_assignment:N
-  member_id:""
-iframe:000000000140  ts_ns:1015662178539097 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:8  client_id:consumer-sub-000-b1RO-Gs-1  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
+  error_code:0
+  node_id:0
+  host:""
+  port:0
+  coordinators.0:'kafka2.Coordinator10a
+  key:sub-000-jmxboLg
+  node_id:4
+  host:dev.ak-8.kafka-4.ext-0
+  port:1047
+  error_code:0
+  error_message:""'
+iframe:000000000140  ts_ns:1026795740419596  c_port:33788 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:11  client_id:consumer-sub-000-jmxboLg-1  group_id:sub-000-jmxboLg  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to NotCoordinatorException"
   iframe:000000000140
-  ts_ns:1015662178539097
-  kafka2.FindCoordinatorRequest
-  request_api_version:4
-  correlation_id:8
-  client_id:consumer-sub-000-b1RO-Gs-1
-  key:""
-  key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000141  ts_ns:1015662178539334 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:8  client_id:consumer-sub-000-b1RO-Gs-2  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
+  ts_ns:1026795740419596
+  c_port:33788
+  kafka2.JoinGroupRequest
+  request_api_version:9
+  correlation_id:11
+  client_id:consumer-sub-000-jmxboLg-1
+  group_id:sub-000-jmxboLg
+  session_timeout_ms:45000
+  rebalance_timeout_ms:300000
+  member_id:""
+  protocol_type:consumer
+  protocols.0:'kafka2.JoinGroupRequestProtocol11q
+  name:range
+  metadata:"00
+  03
+  00
+  00
+  00
+  01
+  00
+  1a
+  74
+  65
+  73
+  74
+  2d
+  74
+  6f
+  70
+  69
+  63
+  2d
+  30
+  30
+  30
+  30
+  30
+  30
+  30
+  2d
+  58
+  41
+  70
+  48
+  70
+  55
+  34
+  ff
+  ff
+  ff
+  ff
+  00
+  00
+  00
+  00
+  ff
+  ff
+  ff
+  ff
+  ff
+  ff"'
+  protocols.1:'kafka2.JoinGroupRequestProtocol11q
+  name:cooperative-sticky
+  metadata:"00
+  03
+  00
+  00
+  00
+  01
+  00
+  1a
+  74
+  65
+  73
+  74
+  2d
+  74
+  6f
+  70
+  69
+  63
+  2d
+  30
+  30
+  30
+  30
+  30
+  30
+  30
+  2d
+  58
+  41
+  70
+  48
+  70
+  55
+  34
+  00
+  00
+  00
+  04
+  ff
+  ff
+  ff
+  ff
+  00
+  00
+  00
+  00
+  ff
+  ff
+  ff
+  ff
+  ff
+  ff"'
+  reason:"rebalance
+  failed
+  due
+  to
+  NotCoordinatorException"
+iframe:000000000141  ts_ns:1026795741428057  c_port:33788 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:11  throttle_time_ms:0  error_code:16  generation_id:-1  leader:""  skip_assignment:N  member_id:""
   iframe:000000000141
-  ts_ns:1015662178539334
+  ts_ns:1026795741428057
+  c_port:33788
+  kafka2.JoinGroupResponse
+  request_api_version:9
+  correlation_id:11
+  throttle_time_ms:0
+  error_code:16
+  generation_id:-1
+  leader:""
+  skip_assignment:N
+  member_id:""
+iframe:000000000145  ts_ns:1026795743769798  c_port:33748 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:12  client_id:consumer-sub-000-jmxboLg-1  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
+  iframe:000000000145
+  ts_ns:1026795743769798
+  c_port:33748
   kafka2.FindCoordinatorRequest
   request_api_version:4
-  correlation_id:8
-  client_id:consumer-sub-000-b1RO-Gs-2
+  correlation_id:12
+  client_id:consumer-sub-000-jmxboLg-1
   key:""
   key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000142  ts_ns:1015662180840000 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:8  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
-  iframe:000000000142
-  ts_ns:1015662180840000
-  kafka2.FindCoordinatorResponse
-  request_api_version:4
-  correlation_id:8
-  throttle_time_ms:0
-  error_code:0
-  node_id:0
-  host:""
-  port:0
-  coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
-  node_id:4
-  host:dev.ak-8.kafka-4.ext-0
-  port:1047
-  error_code:0
-  error_message:""'
-iframe:000000000143  ts_ns:1015662180845721 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:8  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
-  iframe:000000000143
-  ts_ns:1015662180845721
-  kafka2.FindCoordinatorResponse
-  request_api_version:4
-  correlation_id:8
-  throttle_time_ms:0
-  error_code:0
-  node_id:0
-  host:""
-  port:0
-  coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
-  node_id:4
-  host:dev.ak-8.kafka-4.ext-0
-  port:1047
-  error_code:0
-  error_message:""'
-iframe:000000000146  ts_ns:1015662238941510 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:9  client_id:consumer-sub-000-b1RO-Gs-1  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000146  ts_ns:1026795745267238  c_port:33778 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:9  client_id:consumer-sub-000-jmxboLg-2  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
   iframe:000000000146
-  ts_ns:1015662238941510
+  ts_ns:1026795745267238
+  c_port:33778
   kafka2.FindCoordinatorRequest
   request_api_version:4
   correlation_id:9
-  client_id:consumer-sub-000-b1RO-Gs-1
+  client_id:consumer-sub-000-jmxboLg-2
   key:""
   key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000147  ts_ns:1015662241932780 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:9  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000147  ts_ns:1026795745829075  c_port:33748 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:12  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
   iframe:000000000147
-  ts_ns:1015662241932780
+  ts_ns:1026795745829075
+  c_port:33748
+  kafka2.FindCoordinatorResponse
+  request_api_version:4
+  correlation_id:12
+  throttle_time_ms:0
+  error_code:0
+  node_id:0
+  host:""
+  port:0
+  coordinators.0:'kafka2.Coordinator10a
+  key:sub-000-jmxboLg
+  node_id:4
+  host:dev.ak-8.kafka-4.ext-0
+  port:1047
+  error_code:0
+  error_message:""'
+iframe:000000000151  ts_ns:1026795747444243  c_port:33778 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:9  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+  iframe:000000000151
+  ts_ns:1026795747444243
+  c_port:33778
   kafka2.FindCoordinatorResponse
   request_api_version:4
   correlation_id:9
@@ -446,20 +659,21 @@ iframe:000000000147  ts_ns:1015662241932780 kafka2.FindCoordinatorResponse  requ
   host:""
   port:0
   coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
+  key:sub-000-jmxboLg
   node_id:4
   host:dev.ak-8.kafka-4.ext-0
   port:1047
   error_code:0
   error_message:""'
-iframe:000000000156  ts_ns:1015662246247206 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:11  client_id:consumer-sub-000-b1RO-Gs-1  group_id:sub-000-b1RO-Gs  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to NotCoordinatorException"
-  iframe:000000000156
-  ts_ns:1015662246247206
+iframe:000000000160  ts_ns:1026795751431468  c_port:33804 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:11  client_id:consumer-sub-000-jmxboLg-2  group_id:sub-000-jmxboLg  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to NotCoordinatorException"
+  iframe:000000000160
+  ts_ns:1026795751431468
+  c_port:33804
   kafka2.JoinGroupRequest
   request_api_version:9
   correlation_id:11
-  client_id:consumer-sub-000-b1RO-Gs-1
-  group_id:sub-000-b1RO-Gs
+  client_id:consumer-sub-000-jmxboLg-2
+  group_id:sub-000-jmxboLg
   session_timeout_ms:45000
   rebalance_timeout_ms:300000
   member_id:""
@@ -493,13 +707,13 @@ iframe:000000000156  ts_ns:1015662246247206 kafka2.JoinGroupRequest  request_api
   30
   30
   2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
+  58
+  41
+  70
+  48
+  70
+  55
+  34
   ff
   ff
   ff
@@ -543,13 +757,13 @@ iframe:000000000156  ts_ns:1015662246247206 kafka2.JoinGroupRequest  request_api
   30
   30
   2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
+  58
+  41
+  70
+  48
+  70
+  55
+  34
   00
   00
   00
@@ -573,198 +787,10 @@ iframe:000000000156  ts_ns:1015662246247206 kafka2.JoinGroupRequest  request_api
   due
   to
   NotCoordinatorException"
-iframe:000000000157  ts_ns:1015662247215046 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:11  throttle_time_ms:0  error_code:16  generation_id:-1  leader:""  skip_assignment:N  member_id:""
-  iframe:000000000157
-  ts_ns:1015662247215046
-  kafka2.JoinGroupResponse
-  request_api_version:9
-  correlation_id:11
-  throttle_time_ms:0
-  error_code:16
-  generation_id:-1
-  leader:""
-  skip_assignment:N
-  member_id:""
-iframe:000000000161  ts_ns:1015662249229900 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:12  client_id:consumer-sub-000-b1RO-Gs-1  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
+iframe:000000000161  ts_ns:1026795752294464  c_port:33804 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:11  throttle_time_ms:0  error_code:16  generation_id:-1  leader:""  skip_assignment:N  member_id:""
   iframe:000000000161
-  ts_ns:1015662249229900
-  kafka2.FindCoordinatorRequest
-  request_api_version:4
-  correlation_id:12
-  client_id:consumer-sub-000-b1RO-Gs-1
-  key:""
-  key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000162  ts_ns:1015662251386963 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:12  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
-  iframe:000000000162
-  ts_ns:1015662251386963
-  kafka2.FindCoordinatorResponse
-  request_api_version:4
-  correlation_id:12
-  throttle_time_ms:0
-  error_code:0
-  node_id:0
-  host:""
-  port:0
-  coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
-  node_id:4
-  host:dev.ak-8.kafka-4.ext-0
-  port:1047
-  error_code:0
-  error_message:""'
-iframe:000000000163  ts_ns:1015662251916332 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:9  client_id:consumer-sub-000-b1RO-Gs-2  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
-  iframe:000000000163
-  ts_ns:1015662251916332
-  kafka2.FindCoordinatorRequest
-  request_api_version:4
-  correlation_id:9
-  client_id:consumer-sub-000-b1RO-Gs-2
-  key:""
-  key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000164  ts_ns:1015662253861030 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:9  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
-  iframe:000000000164
-  ts_ns:1015662253861030
-  kafka2.FindCoordinatorResponse
-  request_api_version:4
-  correlation_id:9
-  throttle_time_ms:0
-  error_code:0
-  node_id:0
-  host:""
-  port:0
-  coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
-  node_id:4
-  host:dev.ak-8.kafka-4.ext-0
-  port:1047
-  error_code:0
-  error_message:""'
-iframe:000000000176  ts_ns:1015662257825465 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:11  client_id:consumer-sub-000-b1RO-Gs-2  group_id:sub-000-b1RO-Gs  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to NotCoordinatorException"
-  iframe:000000000176
-  ts_ns:1015662257825465
-  kafka2.JoinGroupRequest
-  request_api_version:9
-  correlation_id:11
-  client_id:consumer-sub-000-b1RO-Gs-2
-  group_id:sub-000-b1RO-Gs
-  session_timeout_ms:45000
-  rebalance_timeout_ms:300000
-  member_id:""
-  protocol_type:consumer
-  protocols.0:'kafka2.JoinGroupRequestProtocol11q
-  name:range
-  metadata:"00
-  03
-  00
-  00
-  00
-  01
-  00
-  1a
-  74
-  65
-  73
-  74
-  2d
-  74
-  6f
-  70
-  69
-  63
-  2d
-  30
-  30
-  30
-  30
-  30
-  30
-  30
-  2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
-  ff
-  ff
-  ff
-  ff
-  00
-  00
-  00
-  00
-  ff
-  ff
-  ff
-  ff
-  ff
-  ff"'
-  protocols.1:'kafka2.JoinGroupRequestProtocol11q
-  name:cooperative-sticky
-  metadata:"00
-  03
-  00
-  00
-  00
-  01
-  00
-  1a
-  74
-  65
-  73
-  74
-  2d
-  74
-  6f
-  70
-  69
-  63
-  2d
-  30
-  30
-  30
-  30
-  30
-  30
-  30
-  2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
-  00
-  00
-  00
-  04
-  ff
-  ff
-  ff
-  ff
-  00
-  00
-  00
-  00
-  ff
-  ff
-  ff
-  ff
-  ff
-  ff"'
-  reason:"rebalance
-  failed
-  due
-  to
-  NotCoordinatorException"
-iframe:000000000177  ts_ns:1015662258600851 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:11  throttle_time_ms:0  error_code:16  generation_id:-1  leader:""  skip_assignment:N  member_id:""
-  iframe:000000000177
-  ts_ns:1015662258600851
+  ts_ns:1026795752294464
+  c_port:33804
   kafka2.JoinGroupResponse
   request_api_version:9
   correlation_id:11
@@ -774,47 +800,246 @@ iframe:000000000177  ts_ns:1015662258600851 kafka2.JoinGroupResponse  request_ap
   leader:""
   skip_assignment:N
   member_id:""
-iframe:000000000181  ts_ns:1015662260243590 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:12  client_id:consumer-sub-000-b1RO-Gs-2  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
+iframe:000000000165  ts_ns:1026795753916614  c_port:33778 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:12  client_id:consumer-sub-000-jmxboLg-2  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
+  iframe:000000000165
+  ts_ns:1026795753916614
+  c_port:33778
+  kafka2.FindCoordinatorRequest
+  request_api_version:4
+  correlation_id:12
+  client_id:consumer-sub-000-jmxboLg-2
+  key:""
+  key_type:0
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000166  ts_ns:1026795755751353  c_port:33778 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:12  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+  iframe:000000000166
+  ts_ns:1026795755751353
+  c_port:33778
+  kafka2.FindCoordinatorResponse
+  request_api_version:4
+  correlation_id:12
+  throttle_time_ms:0
+  error_code:0
+  node_id:0
+  host:""
+  port:0
+  coordinators.0:'kafka2.Coordinator10a
+  key:sub-000-jmxboLg
+  node_id:4
+  host:dev.ak-8.kafka-4.ext-0
+  port:1047
+  error_code:0
+  error_message:""'
+iframe:000000000171  ts_ns:1026795834729350  c_port:33748 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:13  client_id:consumer-sub-000-jmxboLg-1  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
+  iframe:000000000171
+  ts_ns:1026795834729350
+  c_port:33748
+  kafka2.FindCoordinatorRequest
+  request_api_version:4
+  correlation_id:13
+  client_id:consumer-sub-000-jmxboLg-1
+  key:""
+  key_type:0
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000172  ts_ns:1026795835983251  c_port:33748 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:13  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+  iframe:000000000172
+  ts_ns:1026795835983251
+  c_port:33748
+  kafka2.FindCoordinatorResponse
+  request_api_version:4
+  correlation_id:13
+  throttle_time_ms:0
+  error_code:0
+  node_id:0
+  host:""
+  port:0
+  coordinators.0:'kafka2.Coordinator10a
+  key:sub-000-jmxboLg
+  node_id:4
+  host:dev.ak-8.kafka-4.ext-0
+  port:1047
+  error_code:0
+  error_message:""'
+iframe:000000000181  ts_ns:1026795840110432  c_port:33818 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:15  client_id:consumer-sub-000-jmxboLg-1  group_id:sub-000-jmxboLg  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to NotCoordinatorException"
   iframe:000000000181
-  ts_ns:1015662260243590
-  kafka2.FindCoordinatorRequest
-  request_api_version:4
-  correlation_id:12
-  client_id:consumer-sub-000-b1RO-Gs-2
-  key:""
-  key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000182  ts_ns:1015662261856377 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:12  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+  ts_ns:1026795840110432
+  c_port:33818
+  kafka2.JoinGroupRequest
+  request_api_version:9
+  correlation_id:15
+  client_id:consumer-sub-000-jmxboLg-1
+  group_id:sub-000-jmxboLg
+  session_timeout_ms:45000
+  rebalance_timeout_ms:300000
+  member_id:""
+  protocol_type:consumer
+  protocols.0:'kafka2.JoinGroupRequestProtocol11q
+  name:range
+  metadata:"00
+  03
+  00
+  00
+  00
+  01
+  00
+  1a
+  74
+  65
+  73
+  74
+  2d
+  74
+  6f
+  70
+  69
+  63
+  2d
+  30
+  30
+  30
+  30
+  30
+  30
+  30
+  2d
+  58
+  41
+  70
+  48
+  70
+  55
+  34
+  ff
+  ff
+  ff
+  ff
+  00
+  00
+  00
+  00
+  ff
+  ff
+  ff
+  ff
+  ff
+  ff"'
+  protocols.1:'kafka2.JoinGroupRequestProtocol11q
+  name:cooperative-sticky
+  metadata:"00
+  03
+  00
+  00
+  00
+  01
+  00
+  1a
+  74
+  65
+  73
+  74
+  2d
+  74
+  6f
+  70
+  69
+  63
+  2d
+  30
+  30
+  30
+  30
+  30
+  30
+  30
+  2d
+  58
+  41
+  70
+  48
+  70
+  55
+  34
+  00
+  00
+  00
+  04
+  ff
+  ff
+  ff
+  ff
+  00
+  00
+  00
+  00
+  ff
+  ff
+  ff
+  ff
+  ff
+  ff"'
+  reason:"rebalance
+  failed
+  due
+  to
+  NotCoordinatorException"
+iframe:000000000182  ts_ns:1026795840820377  c_port:33818 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:15  throttle_time_ms:0  error_code:16  generation_id:-1  leader:""  skip_assignment:N  member_id:""
   iframe:000000000182
-  ts_ns:1015662261856377
-  kafka2.FindCoordinatorResponse
-  request_api_version:4
-  correlation_id:12
+  ts_ns:1026795840820377
+  c_port:33818
+  kafka2.JoinGroupResponse
+  request_api_version:9
+  correlation_id:15
   throttle_time_ms:0
-  error_code:0
-  node_id:0
-  host:""
-  port:0
-  coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
-  node_id:4
-  host:dev.ak-8.kafka-4.ext-0
-  port:1047
-  error_code:0
-  error_message:""'
-iframe:000000000187  ts_ns:1015662340041875 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:13  client_id:consumer-sub-000-b1RO-Gs-1  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
+  error_code:16
+  generation_id:-1
+  leader:""
+  skip_assignment:N
+  member_id:""
+iframe:000000000187  ts_ns:1026795842623456  c_port:33748 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:16  client_id:consumer-sub-000-jmxboLg-1  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
   iframe:000000000187
-  ts_ns:1015662340041875
+  ts_ns:1026795842623456
+  c_port:33748
   kafka2.FindCoordinatorRequest
   request_api_version:4
-  correlation_id:13
-  client_id:consumer-sub-000-b1RO-Gs-1
+  correlation_id:16
+  client_id:consumer-sub-000-jmxboLg-1
   key:""
   key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000188  ts_ns:1015662341329657 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:13  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000188  ts_ns:1026795843673894  c_port:33748 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:16  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
   iframe:000000000188
-  ts_ns:1015662341329657
+  ts_ns:1026795843673894
+  c_port:33748
+  kafka2.FindCoordinatorResponse
+  request_api_version:4
+  correlation_id:16
+  throttle_time_ms:0
+  error_code:0
+  node_id:0
+  host:""
+  port:0
+  coordinators.0:'kafka2.Coordinator10a
+  key:sub-000-jmxboLg
+  node_id:4
+  host:dev.ak-8.kafka-4.ext-0
+  port:1047
+  error_code:0
+  error_message:""'
+iframe:000000000189  ts_ns:1026795846488448  c_port:33778 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:13  client_id:consumer-sub-000-jmxboLg-2  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
+  iframe:000000000189
+  ts_ns:1026795846488448
+  c_port:33778
+  kafka2.FindCoordinatorRequest
+  request_api_version:4
+  correlation_id:13
+  client_id:consumer-sub-000-jmxboLg-2
+  key:""
+  key_type:0
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000190  ts_ns:1026795847686368  c_port:33778 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:13  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+  iframe:000000000190
+  ts_ns:1026795847686368
+  c_port:33778
   kafka2.FindCoordinatorResponse
   request_api_version:4
   correlation_id:13
@@ -824,20 +1049,21 @@ iframe:000000000188  ts_ns:1015662341329657 kafka2.FindCoordinatorResponse  requ
   host:""
   port:0
   coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
+  key:sub-000-jmxboLg
   node_id:4
   host:dev.ak-8.kafka-4.ext-0
   port:1047
   error_code:0
   error_message:""'
-iframe:000000000197  ts_ns:1015662345363852 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:15  client_id:consumer-sub-000-b1RO-Gs-1  group_id:sub-000-b1RO-Gs  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to NotCoordinatorException"
-  iframe:000000000197
-  ts_ns:1015662345363852
+iframe:000000000199  ts_ns:1026795851462227  c_port:33832 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:15  client_id:consumer-sub-000-jmxboLg-2  group_id:sub-000-jmxboLg  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to NotCoordinatorException"
+  iframe:000000000199
+  ts_ns:1026795851462227
+  c_port:33832
   kafka2.JoinGroupRequest
   request_api_version:9
   correlation_id:15
-  client_id:consumer-sub-000-b1RO-Gs-1
-  group_id:sub-000-b1RO-Gs
+  client_id:consumer-sub-000-jmxboLg-2
+  group_id:sub-000-jmxboLg
   session_timeout_ms:45000
   rebalance_timeout_ms:300000
   member_id:""
@@ -871,13 +1097,13 @@ iframe:000000000197  ts_ns:1015662345363852 kafka2.JoinGroupRequest  request_api
   30
   30
   2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
+  58
+  41
+  70
+  48
+  70
+  55
+  34
   ff
   ff
   ff
@@ -921,13 +1147,13 @@ iframe:000000000197  ts_ns:1015662345363852 kafka2.JoinGroupRequest  request_api
   30
   30
   2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
+  58
+  41
+  70
+  48
+  70
+  55
+  34
   00
   00
   00
@@ -951,9 +1177,10 @@ iframe:000000000197  ts_ns:1015662345363852 kafka2.JoinGroupRequest  request_api
   due
   to
   NotCoordinatorException"
-iframe:000000000198  ts_ns:1015662346282150 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:15  throttle_time_ms:0  error_code:16  generation_id:-1  leader:""  skip_assignment:N  member_id:""
-  iframe:000000000198
-  ts_ns:1015662346282150
+iframe:000000000200  ts_ns:1026795852262745  c_port:33832 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:15  throttle_time_ms:0  error_code:16  generation_id:-1  leader:""  skip_assignment:N  member_id:""
+  iframe:000000000200
+  ts_ns:1026795852262745
+  c_port:33832
   kafka2.JoinGroupResponse
   request_api_version:9
   correlation_id:15
@@ -963,70 +1190,75 @@ iframe:000000000198  ts_ns:1015662346282150 kafka2.JoinGroupResponse  request_ap
   leader:""
   skip_assignment:N
   member_id:""
-iframe:000000000202  ts_ns:1015662347892729 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:16  client_id:consumer-sub-000-b1RO-Gs-1  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
-  iframe:000000000202
-  ts_ns:1015662347892729
+iframe:000000000204  ts_ns:1026795853986534  c_port:33778 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:16  client_id:consumer-sub-000-jmxboLg-2  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
+  iframe:000000000204
+  ts_ns:1026795853986534
+  c_port:33778
   kafka2.FindCoordinatorRequest
   request_api_version:4
   correlation_id:16
-  client_id:consumer-sub-000-b1RO-Gs-1
+  client_id:consumer-sub-000-jmxboLg-2
   key:""
   key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000203  ts_ns:1015662349068300 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:16  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
-  iframe:000000000203
-  ts_ns:1015662349068300
-  kafka2.FindCoordinatorResponse
-  request_api_version:4
-  correlation_id:16
-  throttle_time_ms:0
-  error_code:0
-  node_id:0
-  host:""
-  port:0
-  coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
-  node_id:4
-  host:dev.ak-8.kafka-4.ext-0
-  port:1047
-  error_code:0
-  error_message:""'
-iframe:000000000205  ts_ns:1015662352656064 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:13  client_id:consumer-sub-000-b1RO-Gs-2  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000205  ts_ns:1026795855138124  c_port:33778 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:16  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
   iframe:000000000205
-  ts_ns:1015662352656064
-  kafka2.FindCoordinatorRequest
-  request_api_version:4
-  correlation_id:13
-  client_id:consumer-sub-000-b1RO-Gs-2
-  key:""
-  key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000206  ts_ns:1015662354032320 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:13  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
-  iframe:000000000206
-  ts_ns:1015662354032320
+  ts_ns:1026795855138124
+  c_port:33778
   kafka2.FindCoordinatorResponse
   request_api_version:4
-  correlation_id:13
+  correlation_id:16
   throttle_time_ms:0
   error_code:0
   node_id:0
   host:""
   port:0
   coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
+  key:sub-000-jmxboLg
   node_id:4
   host:dev.ak-8.kafka-4.ext-0
   port:1047
   error_code:0
   error_message:""'
-iframe:000000000215  ts_ns:1015662358312435 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:15  client_id:consumer-sub-000-b1RO-Gs-2  group_id:sub-000-b1RO-Gs  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to NotCoordinatorException"
-  iframe:000000000215
-  ts_ns:1015662358312435
+iframe:000000000208  ts_ns:1026795935432524  c_port:33748 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:17  client_id:consumer-sub-000-jmxboLg-1  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
+  iframe:000000000208
+  ts_ns:1026795935432524
+  c_port:33748
+  kafka2.FindCoordinatorRequest
+  request_api_version:4
+  correlation_id:17
+  client_id:consumer-sub-000-jmxboLg-1
+  key:""
+  key_type:0
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000209  ts_ns:1026795936568032  c_port:33748 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:17  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+  iframe:000000000209
+  ts_ns:1026795936568032
+  c_port:33748
+  kafka2.FindCoordinatorResponse
+  request_api_version:4
+  correlation_id:17
+  throttle_time_ms:0
+  error_code:0
+  node_id:0
+  host:""
+  port:0
+  coordinators.0:'kafka2.Coordinator10a
+  key:sub-000-jmxboLg
+  node_id:4
+  host:dev.ak-8.kafka-4.ext-0
+  port:1047
+  error_code:0
+  error_message:""'
+iframe:000000000218  ts_ns:1026795940643827  c_port:33836 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:19  client_id:consumer-sub-000-jmxboLg-1  group_id:sub-000-jmxboLg  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to NotCoordinatorException"
+  iframe:000000000218
+  ts_ns:1026795940643827
+  c_port:33836
   kafka2.JoinGroupRequest
   request_api_version:9
-  correlation_id:15
-  client_id:consumer-sub-000-b1RO-Gs-2
-  group_id:sub-000-b1RO-Gs
+  correlation_id:19
+  client_id:consumer-sub-000-jmxboLg-1
+  group_id:sub-000-jmxboLg
   session_timeout_ms:45000
   rebalance_timeout_ms:300000
   member_id:""
@@ -1060,13 +1292,13 @@ iframe:000000000215  ts_ns:1015662358312435 kafka2.JoinGroupRequest  request_api
   30
   30
   2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
+  58
+  41
+  70
+  48
+  70
+  55
+  34
   ff
   ff
   ff
@@ -1110,13 +1342,13 @@ iframe:000000000215  ts_ns:1015662358312435 kafka2.JoinGroupRequest  request_api
   30
   30
   2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
+  58
+  41
+  70
+  48
+  70
+  55
+  34
   00
   00
   00
@@ -1140,59 +1372,21 @@ iframe:000000000215  ts_ns:1015662358312435 kafka2.JoinGroupRequest  request_api
   due
   to
   NotCoordinatorException"
-iframe:000000000216  ts_ns:1015662359021273 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:15  throttle_time_ms:0  error_code:16  generation_id:-1  leader:""  skip_assignment:N  member_id:""
-  iframe:000000000216
-  ts_ns:1015662359021273
-  kafka2.JoinGroupResponse
-  request_api_version:9
-  correlation_id:15
-  throttle_time_ms:0
-  error_code:16
-  generation_id:-1
-  leader:""
-  skip_assignment:N
-  member_id:""
-iframe:000000000220  ts_ns:1015662360831328 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:16  client_id:consumer-sub-000-b1RO-Gs-2  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
+iframe:000000000219  ts_ns:1026795947903244  c_port:33778 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:17  client_id:consumer-sub-000-jmxboLg-2  key:""  key_type:0  coordinator_keys.0:sub-000-jmxboLg
+  iframe:000000000219
+  ts_ns:1026795947903244
+  c_port:33778
+  kafka2.FindCoordinatorRequest
+  request_api_version:4
+  correlation_id:17
+  client_id:consumer-sub-000-jmxboLg-2
+  key:""
+  key_type:0
+  coordinator_keys.0:sub-000-jmxboLg
+iframe:000000000220  ts_ns:1026795948962732  c_port:33778 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:17  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-jmxboLg  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
   iframe:000000000220
-  ts_ns:1015662360831328
-  kafka2.FindCoordinatorRequest
-  request_api_version:4
-  correlation_id:16
-  client_id:consumer-sub-000-b1RO-Gs-2
-  key:""
-  key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000221  ts_ns:1015662362113920 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:16  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
-  iframe:000000000221
-  ts_ns:1015662362113920
-  kafka2.FindCoordinatorResponse
-  request_api_version:4
-  correlation_id:16
-  throttle_time_ms:0
-  error_code:0
-  node_id:0
-  host:""
-  port:0
-  coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
-  node_id:4
-  host:dev.ak-8.kafka-4.ext-0
-  port:1047
-  error_code:0
-  error_message:""'
-iframe:000000000224  ts_ns:1015662440906035 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:17  client_id:consumer-sub-000-b1RO-Gs-1  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
-  iframe:000000000224
-  ts_ns:1015662440906035
-  kafka2.FindCoordinatorRequest
-  request_api_version:4
-  correlation_id:17
-  client_id:consumer-sub-000-b1RO-Gs-1
-  key:""
-  key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000225  ts_ns:1015662442237900 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:17  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
-  iframe:000000000225
-  ts_ns:1015662442237900
+  ts_ns:1026795948962732
+  c_port:33778
   kafka2.FindCoordinatorResponse
   request_api_version:4
   correlation_id:17
@@ -1202,20 +1396,21 @@ iframe:000000000225  ts_ns:1015662442237900 kafka2.FindCoordinatorResponse  requ
   host:""
   port:0
   coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
+  key:sub-000-jmxboLg
   node_id:4
   host:dev.ak-8.kafka-4.ext-0
   port:1047
   error_code:0
   error_message:""'
-iframe:000000000234  ts_ns:1015662446295872 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:19  client_id:consumer-sub-000-b1RO-Gs-1  group_id:sub-000-b1RO-Gs  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to NotCoordinatorException"
-  iframe:000000000234
-  ts_ns:1015662446295872
+iframe:000000000229  ts_ns:1026795952793843  c_port:33844 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:19  client_id:consumer-sub-000-jmxboLg-2  group_id:sub-000-jmxboLg  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to NotCoordinatorException"
+  iframe:000000000229
+  ts_ns:1026795952793843
+  c_port:33844
   kafka2.JoinGroupRequest
   request_api_version:9
   correlation_id:19
-  client_id:consumer-sub-000-b1RO-Gs-1
-  group_id:sub-000-b1RO-Gs
+  client_id:consumer-sub-000-jmxboLg-2
+  group_id:sub-000-jmxboLg
   session_timeout_ms:45000
   rebalance_timeout_ms:300000
   member_id:""
@@ -1249,13 +1444,13 @@ iframe:000000000234  ts_ns:1015662446295872 kafka2.JoinGroupRequest  request_api
   30
   30
   2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
+  58
+  41
+  70
+  48
+  70
+  55
+  34
   ff
   ff
   ff
@@ -1299,13 +1494,13 @@ iframe:000000000234  ts_ns:1015662446295872 kafka2.JoinGroupRequest  request_api
   30
   30
   2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
+  58
+  41
+  70
+  48
+  70
+  55
+  34
   00
   00
   00
@@ -1329,424 +1524,280 @@ iframe:000000000234  ts_ns:1015662446295872 kafka2.JoinGroupRequest  request_api
   due
   to
   NotCoordinatorException"
-iframe:000000000235  ts_ns:1015662453810348 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:17  client_id:consumer-sub-000-b1RO-Gs-2  key:""  key_type:0  coordinator_keys.0:sub-000-b1RO-Gs
-  iframe:000000000235
-  ts_ns:1015662453810348
-  kafka2.FindCoordinatorRequest
-  request_api_version:4
-  correlation_id:17
-  client_id:consumer-sub-000-b1RO-Gs-2
-  key:""
-  key_type:0
-  coordinator_keys.0:sub-000-b1RO-Gs
-iframe:000000000236  ts_ns:1015662455039737 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:17  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:'kafka2.Coordinator10a  key:sub-000-b1RO-Gs  node_id:4  host:dev.ak-8.kafka-4.ext-0  port:1047  error_code:0  error_message:""'
+iframe:000000000230  ts_ns:1026795956482105  c_port:33836 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:19  throttle_time_ms:0  error_code:79  generation_id:-1  leader:""  skip_assignment:N  member_id:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa
+  iframe:000000000230
+  ts_ns:1026795956482105
+  c_port:33836
+  kafka2.JoinGroupResponse
+  request_api_version:9
+  correlation_id:19
+  throttle_time_ms:0
+  error_code:79
+  generation_id:-1
+  leader:""
+  skip_assignment:N
+  member_id:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa
+iframe:000000000231  ts_ns:1026795956788262  c_port:33844 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:19  throttle_time_ms:0  error_code:79  generation_id:-1  leader:""  skip_assignment:N  member_id:consumer-sub-000-jmxboLg-2-b9f6ee6a-52df-4c24-9599-182e56d4091f
+  iframe:000000000231
+  ts_ns:1026795956788262
+  c_port:33844
+  kafka2.JoinGroupResponse
+  request_api_version:9
+  correlation_id:19
+  throttle_time_ms:0
+  error_code:79
+  generation_id:-1
+  leader:""
+  skip_assignment:N
+  member_id:consumer-sub-000-jmxboLg-2-b9f6ee6a-52df-4c24-9599-182e56d4091f
+iframe:000000000232  ts_ns:1026795958637420  c_port:33836 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:20  client_id:consumer-sub-000-jmxboLg-1  group_id:sub-000-jmxboLg  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to MemberIdRequiredException"
+  iframe:000000000232
+  ts_ns:1026795958637420
+  c_port:33836
+  kafka2.JoinGroupRequest
+  request_api_version:9
+  correlation_id:20
+  client_id:consumer-sub-000-jmxboLg-1
+  group_id:sub-000-jmxboLg
+  session_timeout_ms:45000
+  rebalance_timeout_ms:300000
+  member_id:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa
+  protocol_type:consumer
+  protocols.0:'kafka2.JoinGroupRequestProtocol11q
+  name:range
+  metadata:"00
+  03
+  00
+  00
+  00
+  01
+  00
+  1a
+  74
+  65
+  73
+  74
+  2d
+  74
+  6f
+  70
+  69
+  63
+  2d
+  30
+  30
+  30
+  30
+  30
+  30
+  30
+  2d
+  58
+  41
+  70
+  48
+  70
+  55
+  34
+  ff
+  ff
+  ff
+  ff
+  00
+  00
+  00
+  00
+  ff
+  ff
+  ff
+  ff
+  ff
+  ff"'
+  protocols.1:'kafka2.JoinGroupRequestProtocol11q
+  name:cooperative-sticky
+  metadata:"00
+  03
+  00
+  00
+  00
+  01
+  00
+  1a
+  74
+  65
+  73
+  74
+  2d
+  74
+  6f
+  70
+  69
+  63
+  2d
+  30
+  30
+  30
+  30
+  30
+  30
+  30
+  2d
+  58
+  41
+  70
+  48
+  70
+  55
+  34
+  00
+  00
+  00
+  04
+  ff
+  ff
+  ff
+  ff
+  00
+  00
+  00
+  00
+  ff
+  ff
+  ff
+  ff
+  ff
+  ff"'
+  reason:"rebalance
+  failed
+  due
+  to
+  MemberIdRequiredException"
+iframe:000000000233  ts_ns:1026795958661945  c_port:33844 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:20  client_id:consumer-sub-000-jmxboLg-2  group_id:sub-000-jmxboLg  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:consumer-sub-000-jmxboLg-2-b9f6ee6a-52df-4c24-9599-182e56d4091f  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to MemberIdRequiredException"
+  iframe:000000000233
+  ts_ns:1026795958661945
+  c_port:33844
+  kafka2.JoinGroupRequest
+  request_api_version:9
+  correlation_id:20
+  client_id:consumer-sub-000-jmxboLg-2
+  group_id:sub-000-jmxboLg
+  session_timeout_ms:45000
+  rebalance_timeout_ms:300000
+  member_id:consumer-sub-000-jmxboLg-2-b9f6ee6a-52df-4c24-9599-182e56d4091f
+  protocol_type:consumer
+  protocols.0:'kafka2.JoinGroupRequestProtocol11q
+  name:range
+  metadata:"00
+  03
+  00
+  00
+  00
+  01
+  00
+  1a
+  74
+  65
+  73
+  74
+  2d
+  74
+  6f
+  70
+  69
+  63
+  2d
+  30
+  30
+  30
+  30
+  30
+  30
+  30
+  2d
+  58
+  41
+  70
+  48
+  70
+  55
+  34
+  ff
+  ff
+  ff
+  ff
+  00
+  00
+  00
+  00
+  ff
+  ff
+  ff
+  ff
+  ff
+  ff"'
+  protocols.1:'kafka2.JoinGroupRequestProtocol11q
+  name:cooperative-sticky
+  metadata:"00
+  03
+  00
+  00
+  00
+  01
+  00
+  1a
+  74
+  65
+  73
+  74
+  2d
+  74
+  6f
+  70
+  69
+  63
+  2d
+  30
+  30
+  30
+  30
+  30
+  30
+  30
+  2d
+  58
+  41
+  70
+  48
+  70
+  55
+  34
+  00
+  00
+  00
+  04
+  ff
+  ff
+  ff
+  ff
+  00
+  00
+  00
+  00
+  ff
+  ff
+  ff
+  ff
+  ff
+  ff"'
+  reason:"rebalance
+  failed
+  due
+  to
+  MemberIdRequiredException"
+iframe:000000000236  ts_ns:1026801981918208  c_port:33844 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:20  throttle_time_ms:0  error_code:0  generation_id:1  protocol_type:consumer  protocol_name:range  leader:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa  skip_assignment:N  member_id:consumer-sub-000-jmxboLg-2-b9f6ee6a-52df-4c24-9599-182e56d4091f
   iframe:000000000236
-  ts_ns:1015662455039737
-  kafka2.FindCoordinatorResponse
-  request_api_version:4
-  correlation_id:17
-  throttle_time_ms:0
-  error_code:0
-  node_id:0
-  host:""
-  port:0
-  coordinators.0:'kafka2.Coordinator10a
-  key:sub-000-b1RO-Gs
-  node_id:4
-  host:dev.ak-8.kafka-4.ext-0
-  port:1047
-  error_code:0
-  error_message:""'
-iframe:000000000245  ts_ns:1015662458797702 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:19  client_id:consumer-sub-000-b1RO-Gs-2  group_id:sub-000-b1RO-Gs  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to NotCoordinatorException"
-  iframe:000000000245
-  ts_ns:1015662458797702
-  kafka2.JoinGroupRequest
-  request_api_version:9
-  correlation_id:19
-  client_id:consumer-sub-000-b1RO-Gs-2
-  group_id:sub-000-b1RO-Gs
-  session_timeout_ms:45000
-  rebalance_timeout_ms:300000
-  member_id:""
-  protocol_type:consumer
-  protocols.0:'kafka2.JoinGroupRequestProtocol11q
-  name:range
-  metadata:"00
-  03
-  00
-  00
-  00
-  01
-  00
-  1a
-  74
-  65
-  73
-  74
-  2d
-  74
-  6f
-  70
-  69
-  63
-  2d
-  30
-  30
-  30
-  30
-  30
-  30
-  30
-  2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
-  ff
-  ff
-  ff
-  ff
-  00
-  00
-  00
-  00
-  ff
-  ff
-  ff
-  ff
-  ff
-  ff"'
-  protocols.1:'kafka2.JoinGroupRequestProtocol11q
-  name:cooperative-sticky
-  metadata:"00
-  03
-  00
-  00
-  00
-  01
-  00
-  1a
-  74
-  65
-  73
-  74
-  2d
-  74
-  6f
-  70
-  69
-  63
-  2d
-  30
-  30
-  30
-  30
-  30
-  30
-  30
-  2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
-  00
-  00
-  00
-  04
-  ff
-  ff
-  ff
-  ff
-  00
-  00
-  00
-  00
-  ff
-  ff
-  ff
-  ff
-  ff
-  ff"'
-  reason:"rebalance
-  failed
-  due
-  to
-  NotCoordinatorException"
-iframe:000000000246  ts_ns:1015662462698041 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:19  throttle_time_ms:0  error_code:79  generation_id:-1  leader:""  skip_assignment:N  member_id:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2
-  iframe:000000000246
-  ts_ns:1015662462698041
-  kafka2.JoinGroupResponse
-  request_api_version:9
-  correlation_id:19
-  throttle_time_ms:0
-  error_code:79
-  generation_id:-1
-  leader:""
-  skip_assignment:N
-  member_id:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2
-iframe:000000000247  ts_ns:1015662462976646 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:19  throttle_time_ms:0  error_code:79  generation_id:-1  leader:""  skip_assignment:N  member_id:consumer-sub-000-b1RO-Gs-2-bce7545b-1c98-4f8b-874a-e32509fde8ce
-  iframe:000000000247
-  ts_ns:1015662462976646
-  kafka2.JoinGroupResponse
-  request_api_version:9
-  correlation_id:19
-  throttle_time_ms:0
-  error_code:79
-  generation_id:-1
-  leader:""
-  skip_assignment:N
-  member_id:consumer-sub-000-b1RO-Gs-2-bce7545b-1c98-4f8b-874a-e32509fde8ce
-iframe:000000000248  ts_ns:1015662464505715 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:20  client_id:consumer-sub-000-b1RO-Gs-1  group_id:sub-000-b1RO-Gs  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to MemberIdRequiredException"
-  iframe:000000000248
-  ts_ns:1015662464505715
-  kafka2.JoinGroupRequest
-  request_api_version:9
-  correlation_id:20
-  client_id:consumer-sub-000-b1RO-Gs-1
-  group_id:sub-000-b1RO-Gs
-  session_timeout_ms:45000
-  rebalance_timeout_ms:300000
-  member_id:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2
-  protocol_type:consumer
-  protocols.0:'kafka2.JoinGroupRequestProtocol11q
-  name:range
-  metadata:"00
-  03
-  00
-  00
-  00
-  01
-  00
-  1a
-  74
-  65
-  73
-  74
-  2d
-  74
-  6f
-  70
-  69
-  63
-  2d
-  30
-  30
-  30
-  30
-  30
-  30
-  30
-  2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
-  ff
-  ff
-  ff
-  ff
-  00
-  00
-  00
-  00
-  ff
-  ff
-  ff
-  ff
-  ff
-  ff"'
-  protocols.1:'kafka2.JoinGroupRequestProtocol11q
-  name:cooperative-sticky
-  metadata:"00
-  03
-  00
-  00
-  00
-  01
-  00
-  1a
-  74
-  65
-  73
-  74
-  2d
-  74
-  6f
-  70
-  69
-  63
-  2d
-  30
-  30
-  30
-  30
-  30
-  30
-  30
-  2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
-  00
-  00
-  00
-  04
-  ff
-  ff
-  ff
-  ff
-  00
-  00
-  00
-  00
-  ff
-  ff
-  ff
-  ff
-  ff
-  ff"'
-  reason:"rebalance
-  failed
-  due
-  to
-  MemberIdRequiredException"
-iframe:000000000249  ts_ns:1015662464946745 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:20  client_id:consumer-sub-000-b1RO-Gs-2  group_id:sub-000-b1RO-Gs  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:consumer-sub-000-b1RO-Gs-2-bce7545b-1c98-4f8b-874a-e32509fde8ce  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to MemberIdRequiredException"
-  iframe:000000000249
-  ts_ns:1015662464946745
-  kafka2.JoinGroupRequest
-  request_api_version:9
-  correlation_id:20
-  client_id:consumer-sub-000-b1RO-Gs-2
-  group_id:sub-000-b1RO-Gs
-  session_timeout_ms:45000
-  rebalance_timeout_ms:300000
-  member_id:consumer-sub-000-b1RO-Gs-2-bce7545b-1c98-4f8b-874a-e32509fde8ce
-  protocol_type:consumer
-  protocols.0:'kafka2.JoinGroupRequestProtocol11q
-  name:range
-  metadata:"00
-  03
-  00
-  00
-  00
-  01
-  00
-  1a
-  74
-  65
-  73
-  74
-  2d
-  74
-  6f
-  70
-  69
-  63
-  2d
-  30
-  30
-  30
-  30
-  30
-  30
-  30
-  2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
-  ff
-  ff
-  ff
-  ff
-  00
-  00
-  00
-  00
-  ff
-  ff
-  ff
-  ff
-  ff
-  ff"'
-  protocols.1:'kafka2.JoinGroupRequestProtocol11q
-  name:cooperative-sticky
-  metadata:"00
-  03
-  00
-  00
-  00
-  01
-  00
-  1a
-  74
-  65
-  73
-  74
-  2d
-  74
-  6f
-  70
-  69
-  63
-  2d
-  30
-  30
-  30
-  30
-  30
-  30
-  30
-  2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
-  00
-  00
-  00
-  04
-  ff
-  ff
-  ff
-  ff
-  00
-  00
-  00
-  00
-  ff
-  ff
-  ff
-  ff
-  ff
-  ff"'
-  reason:"rebalance
-  failed
-  due
-  to
-  MemberIdRequiredException"
-iframe:000000000252  ts_ns:1015668487858777 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:20  throttle_time_ms:0  error_code:0  generation_id:1  protocol_type:consumer  protocol_name:range  leader:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2  skip_assignment:N  member_id:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2  members.0:'kafka2.JoinGroupResponseMember11a  member_id:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  members.1:'kafka2.JoinGroupResponseMember11a  member_id:consumer-sub-000-b1RO-Gs-2-bce7545b-1c98-4f8b-874a-e32509fde8ce  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'
-  iframe:000000000252
-  ts_ns:1015668487858777
+  ts_ns:1026801981918208
+  c_port:33844
   kafka2.JoinGroupResponse
   request_api_version:9
   correlation_id:20
@@ -1755,11 +1806,26 @@ iframe:000000000252  ts_ns:1015668487858777 kafka2.JoinGroupResponse  request_ap
   generation_id:1
   protocol_type:consumer
   protocol_name:range
-  leader:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2
+  leader:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa
   skip_assignment:N
-  member_id:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2
+  member_id:consumer-sub-000-jmxboLg-2-b9f6ee6a-52df-4c24-9599-182e56d4091f
+iframe:000000000237  ts_ns:1026801982909056  c_port:33836 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:20  throttle_time_ms:0  error_code:0  generation_id:1  protocol_type:consumer  protocol_name:range  leader:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa  skip_assignment:N  member_id:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa  members.0:'kafka2.JoinGroupResponseMember11a  member_id:consumer-sub-000-jmxboLg-2-b9f6ee6a-52df-4c24-9599-182e56d4091f  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  members.1:'kafka2.JoinGroupResponseMember11a  member_id:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'
+  iframe:000000000237
+  ts_ns:1026801982909056
+  c_port:33836
+  kafka2.JoinGroupResponse
+  request_api_version:9
+  correlation_id:20
+  throttle_time_ms:0
+  error_code:0
+  generation_id:1
+  protocol_type:consumer
+  protocol_name:range
+  leader:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa
+  skip_assignment:N
+  member_id:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa
   members.0:'kafka2.JoinGroupResponseMember11a
-  member_id:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2
+  member_id:consumer-sub-000-jmxboLg-2-b9f6ee6a-52df-4c24-9599-182e56d4091f
   metadata:"00
   03
   00
@@ -1787,13 +1853,13 @@ iframe:000000000252  ts_ns:1015668487858777 kafka2.JoinGroupResponse  request_ap
   30
   30
   2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
+  58
+  41
+  70
+  48
+  70
+  55
+  34
   ff
   ff
   ff
@@ -1809,7 +1875,7 @@ iframe:000000000252  ts_ns:1015668487858777 kafka2.JoinGroupResponse  request_ap
   ff
   ff"'
   members.1:'kafka2.JoinGroupResponseMember11a
-  member_id:consumer-sub-000-b1RO-Gs-2-bce7545b-1c98-4f8b-874a-e32509fde8ce
+  member_id:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa
   metadata:"00
   03
   00
@@ -1837,13 +1903,13 @@ iframe:000000000252  ts_ns:1015668487858777 kafka2.JoinGroupResponse  request_ap
   30
   30
   2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
+  58
+  41
+  70
+  48
+  70
+  55
+  34
   ff
   ff
   ff
@@ -1858,46 +1924,46 @@ iframe:000000000252  ts_ns:1015668487858777 kafka2.JoinGroupResponse  request_ap
   ff
   ff
   ff"'
-iframe:000000000253  ts_ns:1015668488299532 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:20  throttle_time_ms:0  error_code:0  generation_id:1  protocol_type:consumer  protocol_name:range  leader:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2  skip_assignment:N  member_id:consumer-sub-000-b1RO-Gs-2-bce7545b-1c98-4f8b-874a-e32509fde8ce
-  iframe:000000000253
-  ts_ns:1015668488299532
-  kafka2.JoinGroupResponse
-  request_api_version:9
-  correlation_id:20
-  throttle_time_ms:0
-  error_code:0
-  generation_id:1
-  protocol_type:consumer
-  protocol_name:range
-  leader:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2
-  skip_assignment:N
-  member_id:consumer-sub-000-b1RO-Gs-2-bce7545b-1c98-4f8b-874a-e32509fde8ce
-iframe:000000000254  ts_ns:1015668490635507 kafka2.SyncGroupRequest  request_api_version:5  correlation_id:21  client_id:consumer-sub-000-b1RO-Gs-2  group_id:sub-000-b1RO-Gs  generation_id:1  member_id:consumer-sub-000-b1RO-Gs-2-bce7545b-1c98-4f8b-874a-e32509fde8ce  protocol_type:consumer  protocol_name:range
-  iframe:000000000254
-  ts_ns:1015668490635507
+iframe:000000000238  ts_ns:1026801984476320  c_port:33844 kafka2.SyncGroupRequest  request_api_version:5  correlation_id:21  client_id:consumer-sub-000-jmxboLg-2  group_id:sub-000-jmxboLg  generation_id:1  member_id:consumer-sub-000-jmxboLg-2-b9f6ee6a-52df-4c24-9599-182e56d4091f  protocol_type:consumer  protocol_name:range
+  iframe:000000000238
+  ts_ns:1026801984476320
+  c_port:33844
   kafka2.SyncGroupRequest
   request_api_version:5
   correlation_id:21
-  client_id:consumer-sub-000-b1RO-Gs-2
-  group_id:sub-000-b1RO-Gs
+  client_id:consumer-sub-000-jmxboLg-2
+  group_id:sub-000-jmxboLg
   generation_id:1
-  member_id:consumer-sub-000-b1RO-Gs-2-bce7545b-1c98-4f8b-874a-e32509fde8ce
+  member_id:consumer-sub-000-jmxboLg-2-b9f6ee6a-52df-4c24-9599-182e56d4091f
   protocol_type:consumer
   protocol_name:range
-iframe:000000000256  ts_ns:1015668504117222 kafka2.SyncGroupRequest  request_api_version:5  correlation_id:21  client_id:consumer-sub-000-b1RO-Gs-1  group_id:sub-000-b1RO-Gs  generation_id:1  member_id:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2  protocol_type:consumer  protocol_name:range  assignments.0:'kafka2.SyncGroupRequestAssignment14q  member_id:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2  assignment:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b 00 00 00 01 00 00 00 00 ff ff ff ff"'  assignments.1:'kafka2.SyncGroupRequestAssignment14q  member_id:consumer-sub-000-b1RO-Gs-2-bce7545b-1c98-4f8b-874a-e32509fde8ce  assignment:"00 03 00 00 00 00 ff ff ff ff"'
-  iframe:000000000256
-  ts_ns:1015668504117222
+iframe:000000000240  ts_ns:1026801998177478  c_port:33836 kafka2.SyncGroupRequest  request_api_version:5  correlation_id:21  client_id:consumer-sub-000-jmxboLg-1  group_id:sub-000-jmxboLg  generation_id:1  member_id:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa  protocol_type:consumer  protocol_name:range  assignments.0:'kafka2.SyncGroupRequestAssignment14q  member_id:consumer-sub-000-jmxboLg-2-b9f6ee6a-52df-4c24-9599-182e56d4091f  assignment:"00 03 00 00 00 00 ff ff ff ff"'  assignments.1:'kafka2.SyncGroupRequestAssignment14q  member_id:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa  assignment:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 00 00 00 01 00 00 00 00 ff ff ff ff"'
+  iframe:000000000240
+  ts_ns:1026801998177478
+  c_port:33836
   kafka2.SyncGroupRequest
   request_api_version:5
   correlation_id:21
-  client_id:consumer-sub-000-b1RO-Gs-1
-  group_id:sub-000-b1RO-Gs
+  client_id:consumer-sub-000-jmxboLg-1
+  group_id:sub-000-jmxboLg
   generation_id:1
-  member_id:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2
+  member_id:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa
   protocol_type:consumer
   protocol_name:range
   assignments.0:'kafka2.SyncGroupRequestAssignment14q
-  member_id:consumer-sub-000-b1RO-Gs-1-4540b23a-b58b-4d74-9290-3c123163f2a2
+  member_id:consumer-sub-000-jmxboLg-2-b9f6ee6a-52df-4c24-9599-182e56d4091f
+  assignment:"00
+  03
+  00
+  00
+  00
+  00
+  ff
+  ff
+  ff
+  ff"'
+  assignments.1:'kafka2.SyncGroupRequestAssignment14q
+  member_id:consumer-sub-000-jmxboLg-1-27145104-103a-4fc0-a1d0-6d21180197fa
   assignment:"00
   03
   00
@@ -1925,13 +1991,13 @@ iframe:000000000256  ts_ns:1015668504117222 kafka2.SyncGroupRequest  request_api
   30
   30
   2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
+  58
+  41
+  70
+  48
+  70
+  55
+  34
   00
   00
   00
@@ -1944,21 +2010,10 @@ iframe:000000000256  ts_ns:1015668504117222 kafka2.SyncGroupRequest  request_api
   ff
   ff
   ff"'
-  assignments.1:'kafka2.SyncGroupRequestAssignment14q
-  member_id:consumer-sub-000-b1RO-Gs-2-bce7545b-1c98-4f8b-874a-e32509fde8ce
-  assignment:"00
-  03
-  00
-  00
-  00
-  00
-  ff
-  ff
-  ff
-  ff"'
-iframe:000000000258  ts_ns:1015668520522835 kafka2.SyncGroupResponse  request_api_version:5  correlation_id:21  throttle_time_ms:0  error_code:0  protocol_type:consumer  protocol_name:range  assignment:"00 03 00 00 00 00 ff ff ff ff"
-  iframe:000000000258
-  ts_ns:1015668520522835
+iframe:000000000242  ts_ns:1026802015719392  c_port:33844 kafka2.SyncGroupResponse  request_api_version:5  correlation_id:21  throttle_time_ms:0  error_code:0  protocol_type:consumer  protocol_name:range  assignment:"00 03 00 00 00 00 ff ff ff ff"
+  iframe:000000000242
+  ts_ns:1026802015719392
+  c_port:33844
   kafka2.SyncGroupResponse
   request_api_version:5
   correlation_id:21
@@ -1976,9 +2031,10 @@ iframe:000000000258  ts_ns:1015668520522835 kafka2.SyncGroupResponse  request_ap
   ff
   ff
   ff"
-iframe:000000000259  ts_ns:1015668520784358 kafka2.SyncGroupResponse  request_api_version:5  correlation_id:21  throttle_time_ms:0  error_code:0  protocol_type:consumer  protocol_name:range  assignment:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 5a 71 56 46 33 73 6b 00 00 00 01 00 00 00 00 ff ff ff ff"
-  iframe:000000000259
-  ts_ns:1015668520784358
+iframe:000000000243  ts_ns:1026802016201075  c_port:33836 kafka2.SyncGroupResponse  request_api_version:5  correlation_id:21  throttle_time_ms:0  error_code:0  protocol_type:consumer  protocol_name:range  assignment:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 58 41 70 48 70 55 34 00 00 00 01 00 00 00 00 ff ff ff ff"
+  iframe:000000000243
+  ts_ns:1026802016201075
+  c_port:33836
   kafka2.SyncGroupResponse
   request_api_version:5
   correlation_id:21
@@ -2013,13 +2069,13 @@ iframe:000000000259  ts_ns:1015668520784358 kafka2.SyncGroupResponse  request_ap
   30
   30
   2d
-  5a
-  71
-  56
-  46
-  33
-  73
-  6b
+  58
+  41
+  70
+  48
+  70
+  55
+  34
   00
   00
   00

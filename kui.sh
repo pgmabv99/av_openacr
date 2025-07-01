@@ -19,6 +19,11 @@ echo "....starting atf_snf. use ctrl+C to enter commands . stdout is redirected 
 echo "....live monitoring   in temp/atf_snf.dat . "
 sudo ~/arnd/bin/atf_snf -dev:${nic} -kapi:true  -out_file:$tag.pcap  -out_solo_dir:$tag  -v > $ofile 2>&1; tail -n 60 $ofile
 
+cd ~/pcap/$tag/tcp_pairs
+pwd
+sort_iframes.sh 
+filter_and_tokenize.sh
+
 exit
 
 # cannot be run as sudo because of rsync

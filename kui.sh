@@ -2,15 +2,16 @@
 # Record X2 oor kafka sessions
 
 omrun_load=debug-workload100
-omenv=dev.x2-4
-nic=data0-4T 
-# omenv=dev.ak-8
-# nic=data0-8T
+# omenv=dev.x2-4
+# nic=data0-4T 
+omenv=dev.ak-8
+nic=data0-8T
 # tag=${omenv}_${omrun_load}_c1_798_yyyy
 # tag=${omenv}_${omrun_load}_c1_798_nnnY
 # tag=${omenv}_${omrun_load}_c2_798_nnnY
 # tag=${omenv}_${omrun_load}_c1_master_nnnY
-tag=${omenv}_${omrun_load}_test
+tag=${omenv}_${omrun_load}_c2_master_nnnY
+# tag=${omenv}_${omrun_load}_test
 ofile=~/av_openacr/sniffer_logs/atf_snf_live_$tag.log
 
 omcli $omenv.% -stop

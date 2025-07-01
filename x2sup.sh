@@ -10,6 +10,7 @@ x2sup -i -v -v > $ofile 2>&1
 
 exit
 
+x2sup -temp
 
 
 

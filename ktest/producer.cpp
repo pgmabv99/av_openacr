@@ -23,7 +23,8 @@ void dr_msg_cb(rd_kafka_t *rk, const rd_kafka_message_t *rkmessage, void *opaque
 }
 
 int main() {
-    std::string brokers = "localhost:9092";
+    std::string brokers = "dev.ak-8.kafka-4.ext-0:1047";
+    // std::string brokers = "localhost:9092";
     // std::string brokers = "1kcat :9092";
     std::string topic = "test-topic";
     char errstr[512];

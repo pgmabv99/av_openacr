@@ -2,14 +2,15 @@
 
 
 ofile=~/av_openacr/x2sup_logs/x2sup.log
+echo "Output file: $ofile"
 
 rm -rf x2data-0-0
-x2fs -path:x2data-0-0/ -create -f 
-echo "Output file: $ofile"
-x2sup -i -v -v > $ofile 2>&1
+x2sup -i -temp   -trace:verbose:kafka2.%,timestamps> $ofile 2>&1
 
 exit
+# x2sup -i -temp -v -v > $ofile 2>&1
 
+# x2fs -path:x2data-0-0/ -create -f 
 x2sup -temp
 x2sup -livecheck:N
 

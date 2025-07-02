@@ -5,6 +5,7 @@
 omcli dev.x2-4.kafkaui-1   -dkr_clean_run
 omcli dev.x2-4.rdpui-1     -dkr_clean_run
 
+omcli dev.ak-8% -start_clean
 # prod deployment on all nodes :source from x2-17
 ai
 set -e

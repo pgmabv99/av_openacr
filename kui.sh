@@ -21,8 +21,8 @@ sudo ~/arnd/bin/atf_snf -dev:${nic} -kapi:true  -out_file:$tag.pcap  -out_solo_d
 
 cd ~/pcap/$tag/tcp_pairs
 pwd
-sort_iframes.sh 
-filter_and_tokenize.sh
+atf_snf_sort.sh
+atf_snf_filter.sh
 
 exit
 

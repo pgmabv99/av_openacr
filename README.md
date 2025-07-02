@@ -238,6 +238,18 @@ algo_x2: laptop->nj1.sn1.avorovich
 algo_x2: laptop->dev.x2-17
 algo_x2:  nj1.sn1.avorovich->dev.x2-17
 algo_x2:  nj1.sn1.avorovich->gitlab
+
+## /etc/hosts
+
+192.168.108.2  dev.ak-8.kafka-1.ext-0
+192.168.108.3  dev.ak-8.kafka-2.ext-0
+192.168.108.4  dev.ak-8.kafka-3.ext-0
+192.168.108.5  dev.ak-8.kafka-4.ext-0
+192.168.108.1  dev.ak-8.kafkaui-1.ext-0
+192.168.108.6  dev.ak-8.kafkaw-1.ext-0
+192.168.108.7  dev.ak-8.kafkaw-2.ext-0
+192.168.108.1  dev.ak-8.rdpui-1.ext-0
+192.168.108.1  dev.ak-8.x2w-1.ext-0
  
 ## regex for  strings
 

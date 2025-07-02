@@ -6,7 +6,7 @@ echo "Output file: $ofile"
 
 rm -rf x2data-0-0
 x2sup -i -temp   -trace:verbose:kafka2.%,timestamps> $ofile 2>&1
-
+# vscode_setup x2sup --  -i -temp -trace:verbose:kafka2.%,timestamps
 exit
 # x2sup -i -temp -v -v > $ofile 2>&1
 

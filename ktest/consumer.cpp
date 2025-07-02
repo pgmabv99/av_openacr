@@ -25,7 +25,7 @@ void msg_consume(rd_kafka_message_t *rkmessage, void *opaque) {
 }
 
 int main() {
-    // std::string brokers = "192.168.110.11:9092";  // Kafka broker(s) address
+    // std::string brokers = "dev.ak-8.kafka-4.ext-0:1047";  // Kafka broker(s) address
     std::string brokers = "localhost:9092";  // Kafka broker(s) address
     std::string topic = "test-topic";        // Kafka topic name
     std::string group_id = "my_group";       // Consumer group ID

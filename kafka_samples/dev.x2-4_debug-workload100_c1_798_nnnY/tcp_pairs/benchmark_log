@@ -1,0 +1,340 @@
+x2node.info node:dev.kafkaw-12  cmd:"ssh -q kafkawrkr@dev.kafkaw-12 'cat benchmark-worker.log '"
+18:22:56.902 [main] INFO log - Logging initialized @19422ms to org.eclipse.jetty.util.log.Slf4jLog
+18:22:57.000 [main] INFO Server - jetty-9.4.42.v20210604; built: 2021-06-04T17:33:38.939Z; git: 5cd5e6d2375eeab146813b0de9f19eda6ab6e6cb; jvm 17.0.13+11-Ubuntu-2ubuntu124.04
+18:22:57.045 [main] INFO ContextHandler - Started o.e.j.s.ServletContextHandler@592e843a{/,null,AVAILABLE}
+18:22:57.072 [main] INFO AbstractConnector - Started ServerConnector@5974109{HTTP/1.1, (http/1.1)}{0.0.0.0:1131}
+18:22:57.072 [main] INFO Server - Started @19595ms
+18:22:57.081 [main] INFO PrometheusMetricsProvider - Started Prometheus stats endpoint at 0.0.0.0/<unresolved>:1131
+18:22:57.137 [main] INFO BenchmarkWorker - Starting benchmark with config: {
+  "httpPort" : 1130,
+  "statsPort" : 1131
+}
+18:22:57.193 [main] INFO Javalin - 
+ _________________________________________
+|        _                  _ _           |
+|       | | __ ___   ____ _| (_)_ __      |
+|    _  | |/ _` \ \ / / _` | | | '_ \     |
+|   | |_| | (_| |\ V / (_| | | | | | |    |
+|    \___/ \__,_| \_/ \__,_|_|_|_| |_|    |
+|_________________________________________|
+|                                         |
+|    https://javalin.io/documentation     |
+|_________________________________________|
+18:22:57.196 [main] INFO Javalin - Starting Javalin ...
+18:22:57.205 [main] INFO Server - jetty-9.4.42.v20210604; built: 2021-06-04T17:33:38.939Z; git: 5cd5e6d2375eeab146813b0de9f19eda6ab6e6cb; jvm 17.0.13+11-Ubuntu-2ubuntu124.04
+18:22:57.225 [main] INFO session - DefaultSessionIdManager workerName=node0
+18:22:57.226 [main] INFO session - No SessionScavenger set, using defaults
+18:22:57.227 [main] INFO session - node0 Scavenging every 600000ms
+18:22:57.229 [main] INFO ContextHandler - Started i.j.e.j.@57a4d5ee{/,null,AVAILABLE}
+18:22:57.230 [main] INFO ContextHandler - Started o.e.j.s.ServletContextHandler@3a45c42a{/,null,AVAILABLE}
+18:22:57.246 [main] INFO AbstractConnector - Started ServerConnector@781e7326{HTTP/1.1, (http/1.1)}{0.0.0.0:1130}
+18:22:57.246 [main] INFO Server - Started @19769ms
+18:22:57.247 [main] INFO EmbeddedServer - Jetty is listening on: [http://localhost:1130]
+18:22:57.247 [main] INFO Javalin - Javalin has started \o/
+18:23:02.946 [qtp178401052-70] INFO WorkerHandler - Stop All
+18:23:03.244 [qtp178401052-48] INFO LocalWorker - Driver: {
+  "name" : "kafka-debug",
+  "driverClass" : "io.openmessaging.benchmark.driver.kafka.KafkaBenchmarkDriver"
+}
+18:23:03.279 [qtp178401052-48] INFO AdminClientConfig - AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [dev.x2-4.x2-0.ext-0:1558]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+18:23:03.370 [qtp178401052-48] INFO AppInfoParser - Kafka version: 3.6.1
+18:23:03.370 [qtp178401052-48] INFO AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+18:23:03.370 [qtp178401052-48] INFO AppInfoParser - Kafka startTimeMs: 1751494983367
+18:23:03.845 [qtp178401052-68] INFO WorkerHandler - Received create consumers request for topics: [TopicSubscription{topic='test-topic-0000000-wZF4uRc', subscription='sub-000-iDHL6Jo'}]
+18:23:03.862 [qtp178401052-68] INFO ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [dev.x2-4.x2-0.ext-0:1558]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-sub-000-iDHL6Jo-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = sub-000-iDHL6Jo
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 10485760
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+18:23:03.924 [qtp178401052-68] INFO AppInfoParser - Kafka version: 3.6.1
+18:23:03.924 [qtp178401052-68] INFO AppInfoParser - Kafka commitId: 5e3c2b738d253ff5
+18:23:03.924 [qtp178401052-68] INFO AppInfoParser - Kafka startTimeMs: 1751494983924
+18:23:03.926 [qtp178401052-68] INFO KafkaConsumer - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Subscribed to topic(s): test-topic-0000000-wZF4uRc
+18:23:03.932 [qtp178401052-68] INFO LocalWorker - Created 1 consumers in 86.198596 ms
+18:23:03.946 [pool-2-thread-1] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Discovered group coordinator 192.168.104.5:1558 (id: 2147483646 rack: null)
+18:23:03.949 [pool-2-thread-1] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] (Re-)joining group
+18:23:03.968 [pool-2-thread-1] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Request joining group due to: need to re-join with the given member-id: consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96
+18:23:03.968 [pool-2-thread-1] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+18:23:03.968 [pool-2-thread-1] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] (Re-)joining group
+18:23:07.245 [pool-2-thread-1] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Successfully joined group with generation Generation{generationId=1, memberId='consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96', protocol='range'}
+18:23:07.257 [pool-2-thread-1] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Finished assignment for group at generation 1: {consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96=Assignment(partitions=[test-topic-0000000-wZF4uRc-0])}
+18:23:07.262 [pool-2-thread-1] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Successfully synced group in generation Generation{generationId=1, memberId='consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96', protocol='range'}
+18:23:07.262 [pool-2-thread-1] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Notifying assignor about the new Assignment(partitions=[test-topic-0000000-wZF4uRc-0])
+18:23:07.265 [pool-2-thread-1] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Adding newly assigned partitions: test-topic-0000000-wZF4uRc-0
+18:23:07.274 [pool-2-thread-1] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Found no committed offset for partition test-topic-0000000-wZF4uRc-0
+18:23:07.286 [pool-2-thread-1] INFO SubscriptionState - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Resetting offset for partition test-topic-0000000-wZF4uRc-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[192.168.104.5:1558 (id: 1 rack: null)], epoch=0}}.
+18:24:10.324 [qtp178401052-70] INFO WorkerHandler - Reset stats
+18:25:12.061 [qtp178401052-70] INFO WorkerHandler - Stop All
+18:25:12.369 [qtp178401052-70] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Revoke previously assigned partitions test-topic-0000000-wZF4uRc-0
+18:25:12.370 [qtp178401052-70] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Member consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96 sending LeaveGroup request to coordinator 192.168.104.5:1558 (id: 2147483646 rack: null) due to the consumer is being closed
+18:25:12.371 [qtp178401052-70] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Resetting generation and member id due to: consumer pro-actively leaving the group
+18:25:12.371 [qtp178401052-70] INFO ConsumerCoordinator - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Request joining group due to: consumer pro-actively leaving the group
+18:25:12.375 [qtp178401052-70] ERROR KafkaConsumer - [Consumer clientId=consumer-sub-000-iDHL6Jo-1, groupId=sub-000-iDHL6Jo] Failed to close fetcher with a timeout(ms)=29995
+org.apache.kafka.common.requests.CorrelationIdMismatchException: Correlation id for response (430) does not match request (427), request header: RequestHeader(apiKey=FETCH, apiVersion=15, clientId=consumer-sub-000-iDHL6Jo-1, correlationId=427, headerVersion=2)
+	at org.apache.kafka.common.requests.AbstractResponse.parseResponse(AbstractResponse.java:106) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.NetworkClient.parseResponse(NetworkClient.java:740) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.NetworkClient.handleCompletedReceives(NetworkClient.java:913) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:580) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:280) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.internals.AbstractFetch.maybeCloseFetchSessions(AbstractFetch.java:756) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.internals.AbstractFetch.close(AbstractFetch.java:777) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.internals.Fetcher.close(Fetcher.java:110) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.lambda$close$3(KafkaConsumer.java:2405) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.common.utils.Utils.swallow(Utils.java:1056) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2405) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2348) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2321) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at io.openmessaging.benchmark.driver.kafka.KafkaBenchmarkConsumer.close(KafkaBenchmarkConsumer.java:97) ~[io.openmessaging.benchmark-driver-kafka-0.0.1-SNAPSHOT.jar:?]
+	at io.openmessaging.benchmark.worker.LocalWorker.stopAll(LocalWorker.java:301) ~[io.openmessaging.benchmark-benchmark-framework-0.0.1-SNAPSHOT.jar:?]
+	at io.openmessaging.benchmark.worker.WorkerHandler.handleStopAll(WorkerHandler.java:132) ~[io.openmessaging.benchmark-benchmark-framework-0.0.1-SNAPSHOT.jar:?]
+	at io.javalin.core.JavalinServlet.service(JavalinServlet.kt:61) ~[io.javalin-javalin-1.3.0.jar:?]
+	at io.javalin.embeddedserver.jetty.EmbeddedJettyServer$start$httpHandler$1.doHandle(EmbeddedJettyServer.kt:42) ~[io.javalin-javalin-1.3.0.jar:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[org.eclipse.jetty-jetty-servlet-9.4.43.v20210629.jar:9.4.43.v20210629]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:59) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633) [org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380) [org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [org.eclipse.jetty-jetty-io-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [org.eclipse.jetty-jetty-io-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [org.eclipse.jetty-jetty-io-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at java.lang.Thread.run(Thread.java:840) [?:?]
+18:25:12.390 [qtp178401052-70] INFO Metrics - Metrics scheduler closed
+18:25:12.391 [qtp178401052-70] INFO Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+18:25:12.391 [qtp178401052-70] INFO Metrics - Metrics reporters closed
+18:25:12.398 [qtp178401052-70] INFO AppInfoParser - App info kafka.consumer for consumer-sub-000-iDHL6Jo-1 unregistered
+18:25:12.399 [qtp178401052-70] WARN ExceptionMapper - Uncaught exception
+java.lang.RuntimeException: org.apache.kafka.common.KafkaException: Failed to close kafka consumer
+	at io.openmessaging.benchmark.worker.LocalWorker.stopAll(LocalWorker.java:310) ~[io.openmessaging.benchmark-benchmark-framework-0.0.1-SNAPSHOT.jar:?]
+	at io.openmessaging.benchmark.worker.WorkerHandler.handleStopAll(WorkerHandler.java:132) ~[io.openmessaging.benchmark-benchmark-framework-0.0.1-SNAPSHOT.jar:?]
+	at io.javalin.core.JavalinServlet.service(JavalinServlet.kt:61) ~[io.javalin-javalin-1.3.0.jar:?]
+	at io.javalin.embeddedserver.jetty.EmbeddedJettyServer$start$httpHandler$1.doHandle(EmbeddedJettyServer.kt:42) ~[io.javalin-javalin-1.3.0.jar:?]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[org.eclipse.jetty-jetty-servlet-9.4.43.v20210629.jar:9.4.43.v20210629]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:59) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388) ~[org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633) [org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380) [org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) [org.eclipse.jetty-jetty-server-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [org.eclipse.jetty-jetty-io-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) [org.eclipse.jetty-jetty-io-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [org.eclipse.jetty-jetty-io-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036) [org.eclipse.jetty-jetty-util-9.4.42.v20210604.jar:9.4.42.v20210604]
+	at java.lang.Thread.run(Thread.java:840) [?:?]
+Caused by: org.apache.kafka.common.KafkaException: Failed to close kafka consumer
+	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2421) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2348) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2321) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at io.openmessaging.benchmark.driver.kafka.KafkaBenchmarkConsumer.close(KafkaBenchmarkConsumer.java:97) ~[io.openmessaging.benchmark-driver-kafka-0.0.1-SNAPSHOT.jar:?]
+	at io.openmessaging.benchmark.worker.LocalWorker.stopAll(LocalWorker.java:301) ~[io.openmessaging.benchmark-benchmark-framework-0.0.1-SNAPSHOT.jar:?]
+	... 28 more
+Caused by: org.apache.kafka.common.requests.CorrelationIdMismatchException: Correlation id for response (430) does not match request (427), request header: RequestHeader(apiKey=FETCH, apiVersion=15, clientId=consumer-sub-000-iDHL6Jo-1, correlationId=427, headerVersion=2)
+	at org.apache.kafka.common.requests.AbstractResponse.parseResponse(AbstractResponse.java:106) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.NetworkClient.parseResponse(NetworkClient.java:740) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.NetworkClient.handleCompletedReceives(NetworkClient.java:913) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:580) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:280) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.internals.AbstractFetch.maybeCloseFetchSessions(AbstractFetch.java:756) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.internals.AbstractFetch.close(AbstractFetch.java:777) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.internals.Fetcher.close(Fetcher.java:110) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.lambda$close$3(KafkaConsumer.java:2405) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.common.utils.Utils.swallow(Utils.java:1056) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2405) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2348) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at org.apache.kafka.clients.consumer.KafkaConsumer.close(KafkaConsumer.java:2321) ~[org.apache.kafka-kafka-clients-3.6.1.jar:?]
+	at io.openmessaging.benchmark.driver.kafka.KafkaBenchmarkConsumer.close(KafkaBenchmarkConsumer.java:97) ~[io.openmessaging.benchmark-driver-kafka-0.0.1-SNAPSHOT.jar:?]
+	at io.openmessaging.benchmark.worker.LocalWorker.stopAll(LocalWorker.java:301) ~[io.openmessaging.benchmark-benchmark-framework-0.0.1-SNAPSHOT.jar:?]
+	... 28 more
+18:25:12.414 [qtp178401052-68] INFO WorkerHandler - Stop All
+18:25:12.615 [kafka-admin-client-thread | adminclient-1] INFO AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+18:25:12.618 [kafka-admin-client-thread | adminclient-1] INFO Metrics - Metrics scheduler closed
+18:25:12.618 [kafka-admin-client-thread | adminclient-1] INFO Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+18:25:12.618 [kafka-admin-client-thread | adminclient-1] INFO Metrics - Metrics reporters closed
+x2node.info  ncmd:1  completed:1  success:1  failure:0

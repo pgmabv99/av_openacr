@@ -10,7 +10,8 @@ nic=data0-4T
 # tag=${omenv}_${omrun_load}_c1_798_nnnY
 # tag=${omenv}_${omrun_load}_c2_798_nnnY
 # tag=${omenv}_${omrun_load}_c1_master_nnnY
-tag=${omenv}_${omrun_load}_c2_798_nnnY
+# tag=${omenv}_${omrun_load}_c2_798_nnnY
+tag=${omenv}_${omrun_load}_c1_798_nnnY
 # tag=${omenv}_${omrun_load}_test
 ofile=~/av_openacr/sniffer_logs/atf_snf_live_$tag.log
 

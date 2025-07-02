@@ -1,0 +1,109 @@
+iframe:000000000042  ts_ns:1121778593111545  c_port:34666 kafka2.FindCoordinatorRequest  request_api_version:4  correlation_id:0  client_id:consumer-sub-000-iDHL6Jo-1  key:""  key_type:0  coordinator_keys.0:sub-000-iDHL6Jo
+  iframe:000000000042
+  ts_ns:1121778593111545
+  c_port:34666
+  kafka2.FindCoordinatorRequest
+  request_api_version:4
+  correlation_id:0
+  client_id:consumer-sub-000-iDHL6Jo-1
+  key:""
+  key_type:0
+  coordinator_keys.0:sub-000-iDHL6Jo
+iframe:000000000043  ts_ns:1121778593181369  c_port:34666 kafka2.FindCoordinatorResponse  request_api_version:4  correlation_id:0  throttle_time_ms:0  error_code:0  node_id:0  host:""  port:0  coordinators.0:"kafka2.Coordinator10a  key:sub-000-iDHL6Jo  node_id:1  host:192.168.104.5  port:1558  error_code:0"
+  iframe:000000000043
+  ts_ns:1121778593181369
+  c_port:34666
+  kafka2.FindCoordinatorResponse
+  request_api_version:4
+  correlation_id:0
+  throttle_time_ms:0
+  error_code:0
+  node_id:0
+  host:""
+  port:0
+  coordinators.0:"kafka2.Coordinator10a  key:sub-000-iDHL6Jo  node_id:1  host:192.168.104.5  port:1558  error_code:0"
+iframe:000000000051  ts_ns:1121778617828851  c_port:34678 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:3  client_id:consumer-sub-000-iDHL6Jo-1  group_id:sub-000-iDHL6Jo  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:""  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:""
+  iframe:000000000051
+  ts_ns:1121778617828851
+  c_port:34678
+  kafka2.JoinGroupRequest
+  request_api_version:9
+  correlation_id:3
+  client_id:consumer-sub-000-iDHL6Jo-1
+  group_id:sub-000-iDHL6Jo
+  session_timeout_ms:45000
+  rebalance_timeout_ms:300000
+  member_id:""
+  protocol_type:consumer
+  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'
+  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'
+  reason:""
+iframe:000000000052  ts_ns:1121778617978579  c_port:34678 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:3  throttle_time_ms:0  error_code:79  generation_id:-1  leader:""  skip_assignment:N  member_id:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96
+  iframe:000000000052
+  ts_ns:1121778617978579
+  c_port:34678
+  kafka2.JoinGroupResponse
+  request_api_version:9
+  correlation_id:3
+  throttle_time_ms:0
+  error_code:79
+  generation_id:-1
+  leader:""
+  skip_assignment:N
+  member_id:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96
+iframe:000000000053  ts_ns:1121778620424467  c_port:34678 kafka2.JoinGroupRequest  request_api_version:9  correlation_id:5  client_id:consumer-sub-000-iDHL6Jo-1  group_id:sub-000-iDHL6Jo  session_timeout_ms:45000  rebalance_timeout_ms:300000  member_id:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96  protocol_type:consumer  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'  reason:"rebalance failed due to MemberIdRequiredException"
+  iframe:000000000053
+  ts_ns:1121778620424467
+  c_port:34678
+  kafka2.JoinGroupRequest
+  request_api_version:9
+  correlation_id:5
+  client_id:consumer-sub-000-iDHL6Jo-1
+  group_id:sub-000-iDHL6Jo
+  session_timeout_ms:45000
+  rebalance_timeout_ms:300000
+  member_id:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96
+  protocol_type:consumer
+  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'
+  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:cooperative-sticky  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 00 00 00 04 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'
+  reason:"rebalance failed due to MemberIdRequiredException"
+iframe:000000000080  ts_ns:1121781895909740  c_port:34678 kafka2.JoinGroupResponse  request_api_version:9  correlation_id:5  throttle_time_ms:0  error_code:0  generation_id:1  protocol_type:consumer  protocol_name:range  leader:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96  skip_assignment:N  member_id:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96  members.0:'kafka2.JoinGroupResponseMember11a  member_id:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'
+  iframe:000000000080
+  ts_ns:1121781895909740
+  c_port:34678
+  kafka2.JoinGroupResponse
+  request_api_version:9
+  correlation_id:5
+  throttle_time_ms:0
+  error_code:0
+  generation_id:1
+  protocol_type:consumer
+  protocol_name:range
+  leader:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96
+  skip_assignment:N
+  member_id:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96
+  members.0:'kafka2.JoinGroupResponseMember11a  member_id:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96  metadata:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"'
+iframe:000000000081  ts_ns:1121781912175539  c_port:34678 kafka2.SyncGroupRequest  request_api_version:5  correlation_id:6  client_id:consumer-sub-000-iDHL6Jo-1  group_id:sub-000-iDHL6Jo  generation_id:1  member_id:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96  protocol_type:consumer  protocol_name:range  assignments.0:'kafka2.SyncGroupRequestAssignment14q  member_id:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96  assignment:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 00 00 00 01 00 00 00 00 ff ff ff ff"'
+  iframe:000000000081
+  ts_ns:1121781912175539
+  c_port:34678
+  kafka2.SyncGroupRequest
+  request_api_version:5
+  correlation_id:6
+  client_id:consumer-sub-000-iDHL6Jo-1
+  group_id:sub-000-iDHL6Jo
+  generation_id:1
+  member_id:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96
+  protocol_type:consumer
+  protocol_name:range
+  assignments.0:'kafka2.SyncGroupRequestAssignment14q  member_id:consumer-sub-000-iDHL6Jo-1-e348f0b1-2e32-47c1-a0ab-a1804088eb96  assignment:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 00 00 00 01 00 00 00 00 ff ff ff ff"'
+iframe:000000000083  ts_ns:1121781912297132  c_port:34678 kafka2.SyncGroupResponse  request_api_version:5  correlation_id:6  throttle_time_ms:0  error_code:0  assignment:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 00 00 00 01 00 00 00 00 ff ff ff ff"
+  iframe:000000000083
+  ts_ns:1121781912297132
+  c_port:34678
+  kafka2.SyncGroupResponse
+  request_api_version:5
+  correlation_id:6
+  throttle_time_ms:0
+  error_code:0
+  assignment:"00 03 00 00 00 01 00 1a 74 65 73 74 2d 74 6f 70 69 63 2d 30 30 30 30 30 30 30 2d 77 5a 46 34 75 52 63 00 00 00 01 00 00 00 00 ff ff ff ff"

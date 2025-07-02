@@ -1,4 +1,0 @@
-{"level":"info","ts":"2025-06-29T21:05:27.254-0400","msg":"started Redpanda Console","version":"v2.8.2","built_at":"1736522762"}
-{"level":"info","ts":"2025-06-29T21:05:27.258-0400","msg":"connecting to Kafka seed brokers, trying to fetch cluster metadata"}
-{"level":"info","ts":"2025-06-29T21:05:27.261-0400","msg":"successfully connected to kafka cluster","advertised_broker_count":1,"topic_count":3,"controller_id":1,"kafka_version":"unknown custom version at least v0.10.2"}
-{"level":"info","ts":"2025-06-29T21:05:27.676-0400","msg":"Server listening on address","address":"[::]:8080","port":8080}

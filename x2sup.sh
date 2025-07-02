@@ -2,10 +2,12 @@
 
 
 ofile=~/av_openacr/x2sup_logs/x2sup.log
+ofile_pretty=~/av_openacr/x2sup_logs/x2sup_pretty.log
 echo "Output file: $ofile"
 
 rm -rf x2data-0-0
 x2sup -i -temp   -trace:verbose:kafka2.%,timestamps> $ofile 2>&1
+x2sup_pretty.sh $ofile $ofile_pretty
 # vscode_setup x2sup --  -i -temp -trace:verbose:kafka2.%,timestamps
 exit
 # x2sup -i -temp -v -v > $ofile 2>&1

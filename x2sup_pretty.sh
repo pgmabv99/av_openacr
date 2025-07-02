@@ -61,9 +61,12 @@ split_line() {
 # Read the input file, filter lines, and process
 while IFS= read -r line; do
     # Check if line contains kafka2.JoinGroup, kafka2.FindCoordinator, or kafka2.SyncGroup
-    if echo "$line" | grep -q -E "kafka2\.(JoinGroup|FindCoordinator|SyncGroup)"; then
+    # if echo "$line" | grep -q -E "kafka2\.(JoinGroup|FindCoordinator|SyncGroup)"; then
+    if true; then
         # Write the original line
-        echo "$line" >> "$output_file"
+        echo " " >> "$output_file"
+        echo "-------------------------------------------------------" >> "$output_file"
+        # echo "$line" >> "$output_file"
         # Split line while preserving quoted strings
         split_line "$line" >> "$output_file"
     fi

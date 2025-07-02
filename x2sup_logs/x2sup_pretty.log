@@ -1,0 +1,1439 @@
+ 
+-------------------------------------------------------
+  x2fs.done
+  path:temp/x2sup
+  fsid:43b166d2-475e-4731-8713-104ece5a31cc
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.041638
+  verbose:
+  bin/x2cmt
+  -proc:dev1.x2cmt-0-0
+  -initdir:temp/x2sup
+  -prefix:x2-284878
+  -trace:$'verbose:kafka2.%,timestamps'
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.042136
+  verbose:
+  bin/x2gf
+  -proc:dev1.x2gf-0-0
+  -initdir:temp/x2sup
+  -prefix:x2-284878
+  -trace:$'verbose:kafka2.%,timestamps'
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.042442
+  verbose:
+  bin/x2gw
+  -proc:dev1.x2gw-0-0
+  -initdir:temp/x2sup
+  -prefix:x2-284878
+  -trace:$'verbose:kafka2.%,timestamps'
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.042905
+  verbose:
+  bin/x2imdb
+  -initdir:temp/x2sup
+  -proc:dev1.x2imdb-0-0
+  -prefix:x2-284878
+  -trace:$'verbose:kafka2.%,timestamps'
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.043399
+  verbose:
+  bin/x2mon
+  -initdir:temp/x2sup
+  -proc:dev1.x2mon-0-0
+  -prefix:x2-284878
+  -trace:$'verbose:kafka2.%,timestamps'
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.043857
+  verbose:
+  bin/x2net
+  -initdir:temp/x2sup
+  -proc:dev1.x2net-0-0
+  -prefix:x2-284878
+  -trace:$'verbose:kafka2.%,timestamps'
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.044331
+  verbose:
+  bin/x2txn
+  -initdir:temp/x2sup
+  -proc:dev1.x2txn-0-0
+  -prefix:x2-284878
+  -trace:$'verbose:kafka2.%,timestamps'
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.044856
+  x2sup.start
+  nproc:8
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.059836
+  atf.var
+  httpport:2080
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.059995
+  atf.var
+  kafkaport:9092
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.060053
+  atf.var
+  mqttport:1883
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.060104
+  atf.var
+  natsport:4222
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.060152
+  atf.var
+  respport:6379
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.060200
+  atf.var
+  x2port:8850
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:13.105751
+  READY_FOR_TEST
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:17.435665
+  verbose:
+  kafka2.ApiVersionsRequest
+  request_api_version:3
+  correlation_id:1
+  client_id:my-producer-1
+  client_software_name:librdkafka
+  client_software_version:2.3.0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:17.435882
+  verbose:
+  kafka2.ApiVersionsResponse
+  request_api_version:3
+  correlation_id:1
+  error_code:0
+  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"
+  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"
+  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"
+  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"
+  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"
+  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"
+  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"
+  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"
+  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"
+  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"
+  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"
+  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"
+  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"
+  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"
+  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"
+  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"
+  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"
+  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"
+  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"
+  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"
+  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"
+  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"
+  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"
+  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"
+  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"
+  throttle_time_ms:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:17.436117
+  verbose:
+  kafka2.MetadataRequest
+  request_api_version:12
+  correlation_id:2
+  client_id:my-producer-1
+  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:test-topic"
+  allow_auto_topic_creation:Y
+  include_cluster_authorized_operations:N
+  include_topic_authorized_operations:N
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:18.434589
+  verbose:
+  kafka2.MetadataRequest
+  request_api_version:12
+  correlation_id:3
+  client_id:my-producer-1
+  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:test-topic"
+  allow_auto_topic_creation:Y
+  include_cluster_authorized_operations:N
+  include_topic_authorized_operations:N
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:18.434723
+  verbose:
+  kafka2.MetadataResponse
+  request_api_version:12
+  correlation_id:3
+  throttle_time_ms:0
+  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"
+  controller_id:1
+  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+  cluster_authorized_operations:OMITTED
+  error_code:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:18.435199
+  verbose:
+  kafka2.ProduceRequest
+  request_api_version:7
+  correlation_id:4
+  client_id:my-producer-1
+  acks:-1
+  timeout_ms:30000
+  topic_data.0:"kafka2.TopicProduceData0q  name:test-topic  partition_data.0:'kafka2.PartitionProduceData0q  index:0  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:3221441373
+  attributes:0
+  last_offset_delta:1
+  base_timestamp:1751488457434
+  max_timestamp:1751488457435
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1
+  records.0:\\'kafka.Record  attributes:0  timestamp_delta:0  offset_delta:0  value:\\\\\" 0 0 0 0 0 0 0 0 0 0\\\\\"\\'
+  records.1:\\'kafka.Record  attributes:0  timestamp_delta:1  offset_delta:1  value:\\\\\" 1 1 1 1 1 1 1 1 1 1\\\\\"\\'\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:18.435415
+  verbose:
+  kafka2.ProduceResponse
+  request_api_version:7
+  correlation_id:4
+  responses.0:'kafka2.TopicProduceResponse0a  name:test-topic  partition_responses.0:"kafka2.PartitionProduceResponse0a  index:0  error_code:0  base_offset:0  log_append_time_ms:-1  log_start_offset:-1"'
+  throttle_time_ms:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.537530
+  verbose:
+  kafka2.ApiVersionsRequest
+  request_api_version:3
+  correlation_id:1
+  client_id:rdkafka
+  client_software_name:librdkafka
+  client_software_version:2.3.0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.537737
+  verbose:
+  kafka2.ApiVersionsResponse
+  request_api_version:3
+  correlation_id:1
+  error_code:0
+  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"
+  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"
+  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"
+  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"
+  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"
+  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"
+  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"
+  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"
+  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"
+  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"
+  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"
+  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"
+  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"
+  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"
+  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"
+  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"
+  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"
+  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"
+  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"
+  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"
+  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"
+  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"
+  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"
+  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"
+  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"
+  throttle_time_ms:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.538038
+  verbose:
+  kafka2.MetadataRequest
+  request_api_version:12
+  correlation_id:2
+  client_id:rdkafka
+  allow_auto_topic_creation:N
+  include_cluster_authorized_operations:N
+  include_topic_authorized_operations:N
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.538251
+  verbose:
+  kafka2.MetadataResponse
+  request_api_version:12
+  correlation_id:2
+  throttle_time_ms:0
+  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"
+  controller_id:1
+  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:public.anon  topic_id:e29d417f-a9f4-4917-9db2-631074bff032  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+  topics.1:'kafka2.MetadataResponseTopic3a  error_code:0  name:public.imdb  topic_id:bbd97de3-9e71-425f-bb2d-19f5db97e4ad  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+  topics.2:'kafka2.MetadataResponseTopic3a  error_code:0  name:__consumer_offsets  topic_id:e3f86217-7ef7-432a-9627-4f419b8240b0  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+  topics.3:'kafka2.MetadataResponseTopic3a  error_code:0  name:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+  cluster_authorized_operations:OMITTED
+  error_code:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.538366
+  verbose:
+  kafka2.FindCoordinatorRequest
+  request_api_version:2
+  correlation_id:3
+  client_id:rdkafka
+  key:my_group
+  key_type:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.538407
+  verbose:
+  kafka2.FindCoordinatorResponse
+  request_api_version:2
+  correlation_id:3
+  throttle_time_ms:0
+  error_code:0
+  node_id:1
+  host:127.0.0.1
+  port:9092
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.538613
+  verbose:
+  kafka2.FindCoordinatorRequest
+  request_api_version:2
+  correlation_id:4
+  client_id:rdkafka
+  key:my_group
+  key_type:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.538643
+  verbose:
+  kafka2.FindCoordinatorResponse
+  request_api_version:2
+  correlation_id:4
+  throttle_time_ms:0
+  error_code:0
+  node_id:1
+  host:127.0.0.1
+  port:9092
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.538998
+  verbose:
+  kafka2.ApiVersionsRequest
+  request_api_version:3
+  correlation_id:1
+  client_id:rdkafka
+  client_software_name:librdkafka
+  client_software_version:2.3.0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.539179
+  verbose:
+  kafka2.ApiVersionsResponse
+  request_api_version:3
+  correlation_id:1
+  error_code:0
+  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"
+  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"
+  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"
+  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"
+  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"
+  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"
+  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"
+  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"
+  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"
+  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"
+  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"
+  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"
+  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"
+  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"
+  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"
+  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"
+  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"
+  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"
+  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"
+  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"
+  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"
+  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"
+  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"
+  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"
+  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"
+  throttle_time_ms:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.539340
+  verbose:
+  kafka2.MetadataRequest
+  request_api_version:12
+  correlation_id:2
+  client_id:rdkafka
+  allow_auto_topic_creation:N
+  include_cluster_authorized_operations:N
+  include_topic_authorized_operations:N
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.539532
+  verbose:
+  kafka2.MetadataResponse
+  request_api_version:12
+  correlation_id:2
+  throttle_time_ms:0
+  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"
+  controller_id:1
+  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:public.anon  topic_id:e29d417f-a9f4-4917-9db2-631074bff032  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+  topics.1:'kafka2.MetadataResponseTopic3a  error_code:0  name:public.imdb  topic_id:bbd97de3-9e71-425f-bb2d-19f5db97e4ad  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+  topics.2:'kafka2.MetadataResponseTopic3a  error_code:0  name:__consumer_offsets  topic_id:e3f86217-7ef7-432a-9627-4f419b8240b0  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+  topics.3:'kafka2.MetadataResponseTopic3a  error_code:0  name:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+  cluster_authorized_operations:OMITTED
+  error_code:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.539681
+  verbose:
+  kafka2.MetadataRequest
+  request_api_version:12
+  correlation_id:5
+  client_id:rdkafka
+  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:test-topic"
+  allow_auto_topic_creation:N
+  include_cluster_authorized_operations:N
+  include_topic_authorized_operations:N
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.539761
+  verbose:
+  kafka2.MetadataResponse
+  request_api_version:12
+  correlation_id:5
+  throttle_time_ms:0
+  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"
+  controller_id:1
+  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+  cluster_authorized_operations:OMITTED
+  error_code:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.540032
+  verbose:
+  kafka2.JoinGroupRequest
+  request_api_version:5
+  correlation_id:3
+  client_id:rdkafka
+  group_id:my_group
+  session_timeout_ms:45000
+  rebalance_timeout_ms:300000
+  member_id:""
+  protocol_type:consumer
+  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 0a 74 65 73 74 2d 74 6f 70 69 63 00 00 00 00 00 00 00 00 ff ff ff ff 00 00"'
+  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:roundrobin  metadata:"00 03 00 00 00 01 00 0a 74 65 73 74 2d 74 6f 70 69 63 00 00 00 00 00 00 00 00 ff ff ff ff 00 00"'
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.540136
+  verbose:
+  kafka2.JoinGroupResponse
+  request_api_version:5
+  correlation_id:3
+  throttle_time_ms:0
+  error_code:79
+  generation_id:-1
+  leader:""
+  skip_assignment:N
+  member_id:member-my_group-5693a135-a999-4363-94d1-52ac2884254d
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:23.540373
+  verbose:
+  kafka2.JoinGroupRequest
+  request_api_version:5
+  correlation_id:4
+  client_id:rdkafka
+  group_id:my_group
+  session_timeout_ms:45000
+  rebalance_timeout_ms:300000
+  member_id:member-my_group-5693a135-a999-4363-94d1-52ac2884254d
+  protocol_type:consumer
+  protocols.0:'kafka2.JoinGroupRequestProtocol11q  name:range  metadata:"00 03 00 00 00 01 00 0a 74 65 73 74 2d 74 6f 70 69 63 00 00 00 00 00 00 00 00 ff ff ff ff 00 00"'
+  protocols.1:'kafka2.JoinGroupRequestProtocol11q  name:roundrobin  metadata:"00 03 00 00 00 01 00 0a 74 65 73 74 2d 74 6f 70 69 63 00 00 00 00 00 00 00 00 ff ff ff ff 00 00"'
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.815836
+  verbose:
+  kafka2.JoinGroupResponse
+  request_api_version:5
+  correlation_id:4
+  throttle_time_ms:0
+  error_code:0
+  generation_id:1
+  protocol_type:consumer
+  protocol_name:range
+  leader:member-my_group-5693a135-a999-4363-94d1-52ac2884254d
+  skip_assignment:N
+  member_id:member-my_group-5693a135-a999-4363-94d1-52ac2884254d
+  members.0:'kafka2.JoinGroupResponseMember11a  member_id:member-my_group-5693a135-a999-4363-94d1-52ac2884254d  metadata:"00 03 00 00 00 01 00 0a 74 65 73 74 2d 74 6f 70 69 63 00 00 00 00 00 00 00 00 ff ff ff ff 00 00"'
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.816240
+  verbose:
+  kafka2.MetadataRequest
+  request_api_version:12
+  correlation_id:5
+  client_id:rdkafka
+  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:test-topic"
+  allow_auto_topic_creation:N
+  include_cluster_authorized_operations:N
+  include_topic_authorized_operations:N
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.816341
+  verbose:
+  kafka2.MetadataResponse
+  request_api_version:12
+  correlation_id:5
+  throttle_time_ms:0
+  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"
+  controller_id:1
+  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'
+  cluster_authorized_operations:OMITTED
+  error_code:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.816653
+  verbose:
+  kafka2.SyncGroupRequest
+  request_api_version:3
+  correlation_id:6
+  client_id:rdkafka
+  group_id:my_group
+  generation_id:1
+  member_id:member-my_group-5693a135-a999-4363-94d1-52ac2884254d
+  assignments.0:'kafka2.SyncGroupRequestAssignment14q  member_id:member-my_group-5693a135-a999-4363-94d1-52ac2884254d  assignment:"00 00 00 00 00 01 00 0a 74 65 73 74 2d 74 6f 70 69 63 00 00 00 01 00 00 00 00 00 00 00 00"'
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.816688
+  verbose:
+  kafka2.SyncGroupResponse
+  request_api_version:3
+  correlation_id:6
+  throttle_time_ms:0
+  error_code:0
+  assignment:"00 00 00 00 00 01 00 0a 74 65 73 74 2d 74 6f 70 69 63 00 00 00 01 00 00 00 00 00 00 00 00"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.817032
+  verbose:
+  kafka2.OffsetFetchRequest
+  request_api_version:7
+  correlation_id:7
+  client_id:rdkafka
+  group_id:my_group
+  topics.0:"kafka2.OffsetFetchRequestTopic9q  name:test-topic  partition_indexes.0:0"
+  require_stable:Y
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.817183
+  verbose:
+  kafka2.OffsetFetchResponse
+  request_api_version:7
+  correlation_id:7
+  throttle_time_ms:0
+  topics.0:'kafka2.OffsetFetchResponseTopic9a  name:test-topic  partitions.0:"kafka2.OffsetFetchResponsePartition9a  partition_index:0  committed_offset:-1  committed_leader_epoch:-1  error_code:0"'
+  error_code:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.817291
+  verbose:
+  kafka2.HeartbeatRequest
+  request_api_version:3
+  correlation_id:8
+  client_id:rdkafka
+  group_id:my_group
+  generation_id:1
+  member_id:member-my_group-5693a135-a999-4363-94d1-52ac2884254d
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.817312
+  verbose:
+  kafka2.HeartbeatResponse
+  request_api_version:3
+  correlation_id:8
+  throttle_time_ms:0
+  error_code:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.917480
+  verbose:
+  kafka2.ListOffsetsRequest
+  request_api_version:7
+  correlation_id:6
+  client_id:rdkafka
+  replica_id:-1
+  isolation_level:1
+  topics.0:'kafka2.ListOffsetsTopic2q  name:test-topic  partitions.0:"kafka2.ListOffsetsPartition2q  partition_index:0  current_leader_epoch:-1  timestamp:-2"'
+  timeout_ms:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.917548
+  verbose:
+  kafka2.ListOffsetsResponse
+  request_api_version:7
+  correlation_id:6
+  throttle_time_ms:0
+  topics.0:'kafka2.ListOffsetsTopicResponse2a  name:test-topic  partitions.0:"kafka2.ListOffsetsPartitionResponse2a  partition_index:0  error_code:0  timestamp:-2  offset:0  leader_epoch:0"'
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.917815
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:7
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:0  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1048576"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.918032
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:7
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:1
+  base_timestamp:1751488458435
+  max_timestamp:1751488458435
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1
+  records.0:\\'kafka.Record  attributes:0  timestamp_delta:0  offset_delta:0  value:\\\\\" 0 0 0 0 0 0 0 0 0 0\\\\\"\\'
+  records.1:\\'kafka.Record  attributes:0  timestamp_delta:0  offset_delta:1  value:\\\\\" 1 1 1 1 1 1 1 1 1 1\\\\\"\\'\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:26.918250
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:8
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1048576"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:27.464244
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:8
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:27.464444
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:9
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1048576"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:28.010438
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:9
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:28.010680
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:10
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:2097152"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:28.556678
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:10
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:28.556894
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:11
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:4194304"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:29.102891
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:11
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:29.103105
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:12
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:8388608"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:29.649106
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:12
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:29.649337
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:13
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:16777216"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:30.195333
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:13
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:30.195550
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:14
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:33554432"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:30.316068
+  verbose:
+  kafka2.HeartbeatRequest
+  request_api_version:3
+  correlation_id:9
+  client_id:rdkafka
+  group_id:my_group
+  generation_id:1
+  member_id:member-my_group-5693a135-a999-4363-94d1-52ac2884254d
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:30.316097
+  verbose:
+  kafka2.HeartbeatResponse
+  request_api_version:3
+  correlation_id:9
+  throttle_time_ms:0
+  error_code:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:30.741547
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:14
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:30.741760
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:15
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:67108864"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:31.287765
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:15
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:31.287979
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:16
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:134217728"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:31.833988
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:16
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:31.834200
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:17
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:268435456"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:32.380198
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:17
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:32.380419
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:18
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:536870912"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:32.926417
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:18
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:32.926632
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:19
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1073741824"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:33.316071
+  verbose:
+  kafka2.HeartbeatRequest
+  request_api_version:3
+  correlation_id:10
+  client_id:rdkafka
+  group_id:my_group
+  generation_id:1
+  member_id:member-my_group-5693a135-a999-4363-94d1-52ac2884254d
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:33.316105
+  verbose:
+  kafka2.HeartbeatResponse
+  request_api_version:3
+  correlation_id:10
+  throttle_time_ms:0
+  error_code:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:33.472632
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:19
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:33.472870
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:20
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1073741824"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:34.018880
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:20
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:34.019135
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:21
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1073741824"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:34.565133
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:21
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:34.565339
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:22
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1073741824"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:35.111337
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:22
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:35.111549
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:23
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1073741824"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:35.657547
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:23
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:35.657789
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:24
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1073741824"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:36.203790
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:24
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:36.204008
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:25
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1073741824"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:36.316066
+  verbose:
+  kafka2.HeartbeatRequest
+  request_api_version:3
+  correlation_id:11
+  client_id:rdkafka
+  group_id:my_group
+  generation_id:1
+  member_id:member-my_group-5693a135-a999-4363-94d1-52ac2884254d
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:36.316091
+  verbose:
+  kafka2.HeartbeatResponse
+  request_api_version:3
+  correlation_id:11
+  throttle_time_ms:0
+  error_code:0
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:36.750010
+  verbose:
+  kafka2.FetchResponse
+  request_api_version:11
+  correlation_id:25
+  throttle_time_ms:0
+  error_code:0
+  session_id:0
+  responses.0:"kafka2.FetchableTopicResponse1a  topic:test-topic  topic_id:037bbfc4-ddbb-48b0-93cb-21618ca8636e  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch
+  base_offset:0
+  partition_leader_epoch:0
+  magic:2
+  crc:0
+  attributes:0
+  last_offset_delta:0
+  base_timestamp:0
+  max_timestamp:0
+  producer_id:-1
+  producer_epoch:-1
+  base_sequence:-1\"'"
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:36.750256
+  verbose:
+  kafka2.FetchRequest
+  request_api_version:11
+  correlation_id:26
+  client_id:rdkafka
+  replica_id:-1
+  max_wait_ms:500
+  min_bytes:1
+  max_bytes:52428800
+  isolation_level:1
+  session_id:0
+  session_epoch:-1
+  topics.0:'kafka2.FetchTopic1q  topic:test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1073741824"'
+  rack_id:""
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:36.750389
+  verbose:
+  kafka2.LeaveGroupRequest
+  request_api_version:1
+  correlation_id:12
+  client_id:rdkafka
+  group_id:my_group
+  member_id:member-my_group-5693a135-a999-4363-94d1-52ac2884254d
+ 
+-------------------------------------------------------
+  2025/07/02T16:34:36.750478
+  verbose:
+  kafka2.LeaveGroupResponse
+  request_api_version:1
+  correlation_id:12
+  throttle_time_ms:0
+  error_code:0

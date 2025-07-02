@@ -1,0 +1,33 @@
+$ consumer 
+Subscribed to topic: test-topic brokers:localhost:9092. Press Ctrl+C to exit.
+%3|1751487894.325|FAIL|rdkafka#consumer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Connect to ipv6#[::1]:9092 failed: Connection refused (after 0ms in state CONNECT)
+%3|1751487894.325|ERROR|rdkafka#consumer-1| [thrd:localhost:9092/bootstrap]: 1/1 brokers are down
+%3|1751487894.325|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: localhost:9092/bootstrap: Connect to ipv6#[::1]:9092 failed: Connection refused (after 0ms in state CONNECT)
+Received message (len=20):  0 0 0 0 0 0 0 0 0 0
+Received message (len=20):  1 1 1 1 1 1 1 1 1 1
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+Consumer error: Broker: Message size too large
+^CConsumer error: Broker: Message size too large
+Shutting down consumer...

@@ -2,7 +2,7 @@
 
 # Define input and output files with default values, allow override via arguments
 input_file="${1:-sorted_iframes.txt}"
-output_file="${2:-split_kafka_output.txt}"
+output_file="${2:-sorted_iframes_pretty.txt}"
 
 # Check if input file exists
 if [ ! -f "$input_file" ]; then

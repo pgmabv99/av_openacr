@@ -1,0 +1,6 @@
+Producing  to topic: test-topic brokers:127.0.0.1:9092
+Enqueued message:  0 0 0 0 0 0 0 0 0 0
+Enqueued message:  1 1 1 1 1 1 1 1 1 1
+Shutting down producer...
+Message delivered:  0 0 0 0 0 0 0 0 0 0
+Message delivered:  1 1 1 1 1 1 1 1 1 1

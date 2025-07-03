@@ -125,7 +125,9 @@ normalize_
 atf_comp  
 atf_comp -covcapture
 git-add-to-last-commit
-git push --force algornd/arnd $(git rev-parse --abbrev-ref HEAD)
+git branch --set-upstream-to=algornd/arnd/$(git branch --show-current)
+git push --force 
+
 
 ```
 ### gitlab  work flow items
@@ -303,3 +305,7 @@ omdb.omnode  omnode:dev.x2-4.x2-3  node:dev.x2-20  use:Y  comment:"x2 Broker nod
 
 // 1 vs N consumer
 omdb.omlattr  omlattr:debug-workload100/consumerPerSubscription  uval:1
+
+
+
+

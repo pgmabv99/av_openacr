@@ -2,6 +2,16 @@
 #include <string>
 #include <csignal>
 #include <librdkafka/rdkafka.h>
+#include <chrono>
+#include <ctime>
+#include <iomanip>
+
+std::string cts() {
+    std::ostringstream oss;
+    std::time_t now = std::time(nullptr);
+    oss << "[" << std::put_time(std::localtime(&now), "%F %T") << "] ";
+    return oss.str();
+}
 
 // Flag for signal handling
 volatile sig_atomic_t run = 1;
@@ -17,7 +27,7 @@ void msg_consume(rd_kafka_message_t *rkmessage, void *opaque)
 {
     if (rkmessage->err)
     {
-        std::cerr << "Consumer error: " << rd_kafka_err2str(rkmessage->err) << std::endl;
+        std::cerr  << cts() << "Consumer error: " << rd_kafka_err2str(rkmessage->err) << std::endl;
         if (rkmessage->err == RD_KAFKA_RESP_ERR__PARTITION_EOF)
         {
             std::cerr << "Reached end of partition" << std::endl;
@@ -25,7 +35,7 @@ void msg_consume(rd_kafka_message_t *rkmessage, void *opaque)
     }
     else
     {
-        std::cout << "Received message (len=" << rkmessage->len << "): "
+        std::cout << cts() << "Received message (len=" << rkmessage->len << "): "
                   << std::string((char *)rkmessage->payload, rkmessage->len) << std::endl;
     }
 }
@@ -130,7 +140,7 @@ int main()
     rd_kafka_t *rk = rd_kafka_new(RD_KAFKA_CONSUMER, conf, errstr, sizeof(errstr));
     if (!rk)
     {
-        std::cerr << "Failed to create consumer: " << errstr << std::endl;
+        std::cerr << cts() << "Failed to create consumer: " << errstr << std::endl;
         rd_kafka_conf_destroy(conf);
         return 1;
     }
@@ -139,7 +149,7 @@ int main()
     // Enable consumer polling
     if (rd_kafka_poll_set_consumer(rk) != RD_KAFKA_RESP_ERR_NO_ERROR)
     {
-        std::cerr << "Failed to set consumer polling: " << rd_kafka_err2str(rd_kafka_last_error()) << std::endl;
+        std::cerr << cts() << "Failed to set consumer polling: " << rd_kafka_err2str(rd_kafka_last_error()) << std::endl;
         rd_kafka_destroy(rk);
         return 1;
     }
@@ -152,13 +162,13 @@ int main()
     rd_kafka_resp_err_t err = rd_kafka_subscribe(rk, topics);
     if (err != RD_KAFKA_RESP_ERR_NO_ERROR)
     {
-        std::cerr << "Failed to subscribe to topics: " << rd_kafka_err2str(err) << std::endl;
+        std::cerr << cts() << "Failed to subscribe to topics: " << rd_kafka_err2str(err) << std::endl;
         rd_kafka_topic_partition_list_destroy(topics);
         rd_kafka_destroy(rk);
         return 1;
     }
 
-    std::cout << "Subscribed to topic: " << topic << " brokers:" << brokers << ". Press Ctrl+C to exit." << std::endl;
+    std::cout << cts() << "Subscribed to topic: " << topic << " brokers:" << brokers << ". Press Ctrl+C to exit." << std::endl;
 
     // Main consumption loop
     while (run)
@@ -171,7 +181,7 @@ int main()
         }
     }
 
-    std::cout << "Shutting down consumer..." << std::endl;
+    std::cout << cts() << "Shutting down consumer..." << std::endl;
 
     // Clean up resources
     rd_kafka_topic_partition_list_destroy(topics);

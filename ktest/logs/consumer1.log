@@ -1,0 +1,55 @@
+[2025-07-03 15:22:00] Subscribed to topic: test-topic brokers:127.0.0.1:9092. Press Ctrl+C to exit.
+%5|1751570569.360|REQTMOUT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out SyncGroupRequest in flight (after 48047ms, timeout #0)
+%4|1751570569.360|REQTMOUT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%3|1751570569.360|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: 127.0.0.1:9092: 1 request(s) timed out: disconnect (after 48550ms in state UP)
+%3|1751570569.360|ERROR|rdkafka#consumer-1| [thrd:app]: rdkafka#consumer-1: GroupCoordinator: 127.0.0.1:9092: 1 request(s) timed out: disconnect (after 48550ms in state UP)
+[2025-07-03 15:22:50] Received message (len=20):  0 0 0 0 0 0 0 0 0 0
+[2025-07-03 15:22:50] Received message (len=20):  1 1 1 1 1 1 1 1 1 1
+[2025-07-03 15:22:57] Consumer error: Broker: Message size too large
+[2025-07-03 15:22:57] Consumer error: Broker: Message size too large
+[2025-07-03 15:22:58] Consumer error: Broker: Message size too large
+[2025-07-03 15:22:58] Consumer error: Broker: Message size too large
+[2025-07-03 15:22:59] Consumer error: Broker: Message size too large
+[2025-07-03 15:22:59] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:00] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:00] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:01] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:02] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:02] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:03] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:03] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:04] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:04] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:05] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:05] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:06] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:06] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:07] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:08] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:08] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:09] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:09] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:10] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:10] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:11] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:11] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:12] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:12] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:13] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:14] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:14] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:15] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:15] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:16] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:16] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:17] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:17] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:18] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:18] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:19] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:20] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:20] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:21] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:21] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:22] Consumer error: Broker: Message size too large
+[2025-07-03 15:23:22] Shutting down consumer...

@@ -46,3 +46,5 @@ echo " short benchmark with 1 broker"
 omcli         dev.x2-4 -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload -omrun_minutes:1
 
 omenv_logs.sh
+
+omcli dev.x2-4.x2-% -collect_logs

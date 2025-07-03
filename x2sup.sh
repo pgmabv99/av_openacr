@@ -5,17 +5,18 @@ ofile=~/av_openacr/x2sup_logs/x2sup.log
 ofile_pretty=~/av_openacr/x2sup_logs/x2sup_pretty.log
 echo "Output file: $ofile"
 
-rm -rf x2data-0-0
-x2sup -i -temp   -v -v > $ofile 2>&1
-# x2sup -i -temp   -trace:verbose:kafka2.%gqroup%,timestamps> $ofile 2>&1
-x2sup_pretty.sh $ofile $ofile_pretty
-# vscode_setup x2sup --  -i -temp -trace:verbose:kafka2.%,timestamps
-exit
-# x2sup -i -temp -v -v > $ofile 2>&1
+x2sup -temp   -trace:'verbose:(kafka2.%|x2gw.%),timestamps' > $ofile 2>&1
+echo "x2sup output written to $ofile"
 
-# x2fs -path:x2data-0-0/ -create -f 
-x2sup -temp
-x2sup -livecheck:N
+
+x2sup_pretty.sh $ofile $ofile_pretty
+
+exit
+
+# x2sup -i -temp   -v -v > $ofile 2>&1
+# x2sup -i -temp   -trace:'verbose:(kafka2.%|x2gw.%group%),timestamps' > $ofile 2>&1
+# vscode_setup x2sup --  -i -temp -trace:verbose:kafka2.%,timestamps
+# x2sup -livecheck:N
 
 
 # sample clients

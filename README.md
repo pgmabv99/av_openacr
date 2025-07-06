@@ -307,5 +307,7 @@ omdb.omnode  omnode:dev.x2-4.x2-3  node:dev.x2-20  use:Y  comment:"x2 Broker nod
 omdb.omlattr  omlattr:debug-workload100/consumerPerSubscription  uval:1
 
 
+dmmeta.field  field:command.omcli.collect_logs_dir  arg:algo.cstring    reftype:Val  dflt:'"test1"'  comment:"subfolder for collected logs  under temp/omenv/"
+
 
 

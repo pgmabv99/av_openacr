@@ -1,0 +1,6 @@
+atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:45058-192.168.108.5:1075  frame_count:4  syn_count:1  fin_count:1  rst_count:0  isn:002411332529  tcp_payload_len_tot:000000000040
+atf_snf.kafka_stats  client_id_key:rdkafka  kafka_count:1  kafka_req_ack_count:0  kafka_count_in_bh:1  pct_non_ack!!!:0.5  kafka_len_tot:000000000040
+
+
+iframe:000000000023  ts_ns:1631817748862918  c_port:45058 kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:rdkafka  client_software_name:librdkafka  client_software_version:2.3.0
+atf_snf.err response not found

@@ -8,13 +8,13 @@
 			"path": "../arnd"
 		},
 		{
-			"path": "../pcap"
-		},
-		{
 			"path": "../.ssh"
 		},
 		{
 			"path": "../../../mnt"
+		},
+		{
+			"path": "../atf_snf_logs"
 		}
 	],
 

@@ -164,23 +164,17 @@ EOF
 acr -merge  -write <<EOF
 acr.delete dmmeta.field  field:command.atf_snf.kapi
 acr.delete dmmeta.field  field:command.atf_snf.in_file
-acr.delete dmmeta.field  field:command.atf_snf.in_solo_dir
-acr.delete dmmeta.field  field:command.atf_snf.out_solo_dir
-acr.delete dmmeta.field  field:command.atf_snf.out_file
 acr.delete dmmeta.field  field:command.atf_snf.dir
 acr.delete dmmeta.field  field:command.atf_snf.mult_req_per_frame
 acr.delete dmmeta.field  field:command.atf_snf.hex_print
-acr.delete dmmeta.field  field:command.atf_snf.omenv_logs
 EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_snf.kapi                   arg:bool          reftype:Val      dflt:false        comment:"invoke tcp header and kafka parse code"
     dmmeta.field  field:command.atf_snf.in_file                arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input PCAP file under dir. empty for live NIC capture"
-    dmmeta.field  field:command.atf_snf.out_solo_dir           arg:algo.cstring  reftype:Val      dflt:'""'  comment:"output folder under dir for solo req files. empty to skip creation of solo files"
-    dmmeta.field  field:command.atf_snf.out_file               arg:algo.cstring  reftype:Val      dflt:'""'  comment:"output PCAP file under dir to shadow pkts. empty for no shadow"
-    dmmeta.field  field:command.atf_snf.dir                    arg:algo.cstring  reftype:Val      dflt:'"/home/avorovich/pcap/"'  comment:"dir for in and out files"
+    dmmeta.field  field:command.atf_snf.dir                    arg:algo.cstring  reftype:Val      dflt:'""'   comment:"dir for in and out files"
     dmmeta.field  field:command.atf_snf.mult_req_per_frame     arg:bool          reftype:Val      dflt:true        comment:"parse mode: true - multiple req/rsp are expected per frame"
     dmmeta.field  field:command.atf_snf.hex_print              arg:bool          reftype:Val      dflt:false       comment:"print hex buffer"
-
+EOF
 
 # include omenv  ssim file
 acr_ed -del    -ctype atf_snf.FOmnode                         -write || true
@@ -188,15 +182,8 @@ acr_ed -create -finput -target atf_snf -ssimfile omdb.omnode -write -comment "in
 acr_ed -del    -field atf_snf.FDb.zd_omnode                   -write || true
 acr_ed -create -field atf_snf.FDb.zd_omnode                   -arg atf_snf.FOmnode -xref -write -comment ""
 
-# force reading of ssim files
-acr -merge -write <<EOF
-    dmmeta.floadtuples  field:command.atf_snf.in  comment:""
-EOF
 
 
-
-# -dmmeta.funique  field:dkrdb.Dctrport.dctrport  comment:""
-# +dmmeta.funique  field:dkrdb.Dctrport.uid  comment:""
 
 amc
 amc_vis atf_snf.%   > ~/av_openacr/${trg}_viz.txt

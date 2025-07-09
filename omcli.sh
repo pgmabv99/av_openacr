@@ -48,3 +48,15 @@ omcli         dev.x2-4 -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_loa
 omenv_logs.sh
 
 omcli dev.x2-4.x2-% -collect_logs
+
+omenv=dev.ak-8
+for i in {1..4}; do
+    echo "Node $i IP:"
+    ip_addr=$(omcli $omenv.kafka-$i -shell_cmd:"getent hosts $omenv.kafka-$i.ext-0" | awk '{print $1}')
+    if [[ -n "$ip_addr" ]]; then
+        iface=$(ip -o addr show | awk -v ip="$ip_addr" '$4 ~ ip"/" {print $2}')
+        echo "IP: $ip_addr, Interface: $iface"
+    else
+        echo "IP not found"
+    fi
+done

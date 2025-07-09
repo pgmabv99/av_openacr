@@ -21,7 +21,7 @@ ofile=~/av_openacr/sniffer_logs/atf_snf_live_$tag.log
 omcli $omenv.% -stop
 echo "....starting atf_snf. use ctrl+C to enter commands . stdout is redirected to $ofile"
 echo "....live monitoring   in temp/atf_snf.dat . "
-sudo ~/arnd/bin/atf_snf -dev:${nic} -kapi:true  -out_file:$tag.pcap  -out_solo_dir:$tag  -v > $ofile 2>&1; tail -n 60 $ofile
+sudo ~/arnd/bin/atf_snf -dev:${nic} -kapi:true  -out_file:$tag.pcap  -out_solo_dir:$tag  -v -hex_print > $ofile 2>&1; tail -n 60 $ofile
 
 # echo "---download node logs"
 # cd ~/pcap/${tag}_omnode_logs/logs

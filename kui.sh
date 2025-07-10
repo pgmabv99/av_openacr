@@ -4,9 +4,9 @@
 omrun_load=debug-workload100
 
 # omenv=dev.x2-4
-# nic=data0-4T 
+# dev=data0-4T 
 omenv=dev.ak-8
-nic=data0-8T
+dev=data0-8T
 
 # tag=${omenv}_${omrun_load}_c1_798_yyyy
 # tag=${omenv}_${omrun_load}_c1_798_nnnY
@@ -23,8 +23,7 @@ mkdir -p $HOME/atf_snf_logs
 # omcli $omenv.% -stop
 echo "....starting atf_snf. use ctrl+C to enter commands . stdout is redirected to $ofile"
 echo "....live monitoring   in temp/atf_snf.dat . "
-# sudo ~/arnd/bin/atf_snf -dev:${nic} -kapi:true  -out_file:$tag.pcap  -out_solo_dir:$HOME$tag -dir:$HOME/atf_snf_logs/$tag -v -hex_print > $ofile 2>&1; tail -n 60 $ofile
-sudo ~/arnd/bin/atf_snf -dev:${nic} -kapi:true   -dir:$HOME/atf_snf_logs/$tag  > $ofile 2>&1; tail -n 60 $ofile
+sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi:true   -dir:$HOME/atf_snf_logs/$tag  > $ofile 2>&1; tail -n 60 $ofile
 
 # echo "---download node logs"
 # cd ~/pcap/${tag}_omnode_logs/logs
@@ -52,13 +51,11 @@ omenv=dev.ak-8
 omrun_load=debug-workload100
 omcli $omenv -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:$omrun_load -omrun_minutes:1
 
-echo "---------------------X2 from VP"
-omcli -force dev.x2-4 -dkr_clean_run -ignore_omnode_use
-x2rel -force -upload -create -omenv:dev.x2-4 -product:'x2|x2w' -start
-omcli -force dev.x2-4 -omtest:om_benchmark -omrun_load:debug-workload100 -omrun_driver:kafka-debug -debug_x2sup
 
-
-echo " kcat for AP"
+echo "-------- kcat for AP"
 echo "Hello, Kafka!" | kcat -P -b dev.ak-8.kafka-4.ext-0:1047 -t my-test-topic
-
 kcat -b dev.ak-8.kafka-4.ext-0:1047  -C -t my-test-topic
+
+echo "simple ak-8 "
+omcli dev.ak-8 -start_clean
+sudo pkill -SIGUSR1 atf_snf

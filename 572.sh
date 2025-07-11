@@ -124,12 +124,14 @@ acr_ed -create -field atf_snf.FMcb.i_kafka_solo                -arg i32         
 acr_ed -create -field atf_snf.FMcb.kafka_solo_err_count        -arg i32              -write -comment "count of solo generation errors"
 acr_ed -create -field atf_snf.FMcb.seq_gap_pos_count           -arg u32              -write -comment "pos sequence gap count"
 acr_ed -create -field atf_snf.FMcb.seq_gap_neg_count           -arg u32              -write -comment "neg sequence gap count"
+acr_ed -create -field atf_snf.FMcb.exper_dir                   -arg algo.Smallstr100   -write -comment "experiment directory"
+acr_ed -create -field atf_snf.FMcb.test_dirs                   -arg algo.Smallstr100   -write -comment "test directories"
+acr_ed -create -field atf_snf.FMcb.tcp_pairs                   -arg algo.Smallstr100   -write -comment "tcp pairs directories"
 
 # debug
 acr_ed -create -field atf_snf.FMcb.mac_print_flg               -arg bool             -write -comment "print MAC info at parse"
 acr_ed -create -field atf_snf.FMcb.swin_print_flg              -arg bool             -write -comment "print sliding window"
 acr_ed -create -field atf_snf.FMcb.tcp_pair_list_print_flg     -arg bool             -write -comment "print tcp pair"
-acr_ed -create -field atf_snf.FMcb.kafka_list_print_flg        -arg bool             -write -comment "print outstanding kafka req/rsp lists"
 acr_ed -create -field atf_snf.FMcb.tcp_filter                  -arg bool             -write -comment "apply tcp filter for debugging "
 acr_ed -create -field atf_snf.FMcb.snf_memqp_print_flg         -arg bool             -write -comment "print memqp print"
 
@@ -170,10 +172,11 @@ acr.delete dmmeta.field  field:command.atf_snf.hex_print
 EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_snf.kapi                   arg:bool          reftype:Val      dflt:false        comment:"invoke tcp header and kafka parse code"
-    dmmeta.field  field:command.atf_snf.in_file                arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input PCAP file under dir. empty for live NIC capture"
+    dmmeta.field  field:command.atf_snf.in_file                arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input PCAP file (full reference) . Empty for live NIC capture"
     dmmeta.field  field:command.atf_snf.dir                    arg:algo.cstring  reftype:Val      dflt:'""'   comment:"dir for in and out files"
     dmmeta.field  field:command.atf_snf.mult_req_per_frame     arg:bool          reftype:Val      dflt:true        comment:"parse mode: true - multiple req/rsp are expected per frame"
     dmmeta.field  field:command.atf_snf.hex_print              arg:bool          reftype:Val      dflt:false       comment:"print hex buffer"
+    dmmeta.field  field:command.atf_snf.live_output            arg:bool          reftype:Val      dflt:false       comment:"live output on snf_mon step"
 EOF
 
 # include omenv  ssim file

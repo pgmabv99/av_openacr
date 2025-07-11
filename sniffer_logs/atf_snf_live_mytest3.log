@@ -1,0 +1,8 @@
+atf_snf.info experiment_dir:atf_snf_logs/mytest3/2025.07.11.18.51
+atf_snf.info tests_dir:atf_snf_logs/mytest3/2025.07.11.18.51/tests
+atf_snf.info tcp_pair_dir:atf_snf_logs/mytest3/2025.07.11.18.51/tcp_pairs
+====--PcapFileProcess  fname:/home/avorovich/av_openacr/atf_snf_logs/mytest3/2025.07.11.14.11/atf_snf.pcap
+PcapFileProcess : EOF
+atf_snf.info comment:"printing session info"
+atf_snf.info fname:atf_snf_logs/mytest3/2025.07.11.18.51/atf_snf.pcap  comment:"closing pcap file"
+exit to OS

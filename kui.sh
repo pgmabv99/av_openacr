@@ -16,14 +16,18 @@ dev=data0-8T
 # tag=${omenv}_${omrun_load}_c1_798_nnnY
 # tag=${omenv}_${omrun_load}_test
 # tag=${omenv}_redpanda_test_fetch_with_hex
-tag=${omenv}_test_remote
+tag=mytest3
 ofile=~/av_openacr/sniffer_logs/atf_snf_live_$tag.log
 mkdir -p $HOME/atf_snf_logs
 
 # omcli $omenv.% -stop
-echo "....starting atf_snf. use ctrl+C to enter commands . stdout is redirected to $ofile"
+cd ~/av_openacr 
+echo "....starting atf_snf in  $(pwd) . "
+echo "....use ctrl+C to enter commands . stdout is redirected to $ofile"
 echo "....live monitoring   in temp/atf_snf.dat . "
-sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi:true   -dir:$HOME/atf_snf_logs/$tag  > $ofile 2>&1; tail -n 60 $ofile
+set -x
+# sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi:true   -dir:$tag -live_output: > $ofile 2>&1; tail -n 60 $ofile
+atf_snf  -kapi:true -in_file:/home/avorovich/av_openacr/atf_snf_logs/mytest3/2025.07.11.14.11/atf_snf.pcap -dir:$tag  > $ofile 2>&1; tail -n 60 $ofile
 
 # echo "---download node logs"
 # cd ~/pcap/${tag}_omnode_logs/logs

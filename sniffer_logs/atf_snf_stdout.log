@@ -1,6 +1,6 @@
-atf_snf.info experiment_dir:atf_snf_logs/mytest3/2025.07.14.12.06
-atf_snf.info tests_dir:atf_snf_logs/mytest3/2025.07.14.12.06/tests
-atf_snf.info tcp_pair_dir:atf_snf_logs/mytest3/2025.07.14.12.06/tcp_pairs
+atf_snf.info experiment_dir:temp/atf_snf_logs/mytest3/2025.07.14.14.01
+atf_snf.info tests_dir:temp/atf_snf_logs/mytest3/2025.07.14.14.01/tests
+atf_snf.info tcp_pair_dir:temp/atf_snf_logs/mytest3/2025.07.14.14.01/tcp_pairs
 atf_snf.info dev:data0-8T  port:1
 atf_snf.info comment:"opened the device"
 atf_snf.info comment:"allocated protected domain"
@@ -25,5 +25,5 @@ atf_snf.info comment:"destroying QP"
 atf_snf.info comment:"destroying CQ"
 atf_snf.info comment:"destroying PD"
 atf_snf.info comment:"printing session info"
-atf_snf.info fname:atf_snf_logs/mytest3/2025.07.14.12.06/atf_snf.pcap  comment:"closing pcap file"
+atf_snf.info fname:temp/atf_snf_logs/mytest3/2025.07.14.14.01/atf_snf.pcap  comment:"closing pcap file"
 exit to OS

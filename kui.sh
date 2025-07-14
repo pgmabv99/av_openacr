@@ -8,33 +8,28 @@ omrun_load=debug-workload100
 omenv=dev.ak-8
 dev=data0-8T
 
-# tag=${omenv}_${omrun_load}_c1_798_yyyy
-# tag=${omenv}_${omrun_load}_c1_798_nnnY
-# tag=${omenv}_${omrun_load}_c2_798_nnnY
-# tag=${omenv}_${omrun_load}_c1_master_nnnY
-# tag=${omenv}_${omrun_load}_c2_798_nnnY
-# tag=${omenv}_${omrun_load}_c1_798_nnnY
-# tag=${omenv}_${omrun_load}_test
-# tag=${omenv}_redpanda_test_fetch_with_hex
-tag=mytest3
-ofile=~/av_openacr/sniffer_logs/atf_snf_live_$tag.log
-mkdir -p $HOME/atf_snf_logs
+ofile=~/av_openacr/sniffer_logs/atf_snf_stdout.log
 
 # omcli $omenv.% -stop
-cd ~/av_openacr 
+# cd ~/av_openacr 
 echo "....starting atf_snf in  $(pwd) . "
 echo "....use ctrl+C to enter commands . stdout is redirected to $ofile"
 echo "....live monitoring   in temp/atf_snf.dat . "
-set -x
-# sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi:true   -dir:$tag -live_output: > $ofile 2>&1; tail -n 60 $ofile
-atf_snf  -kapi:true -in_file:/home/avorovich/av_openacr/atf_snf_logs/mytest3/2025.07.11.14.11/atf_snf.pcap -dir:$tag  > $ofile 2>&1; tail -n 60 $ofile
 
-# echo "---download node logs"
-# cd ~/pcap/${tag}_omnode_logs/logs
-# x2sup_pretty.sh dev.x2-20/dev-x2-4.x2sup-0-0.log  dev.x2-20/dev-x2-4.x2sup-0-0_pretty.log
+# old
+# tag=old
+# cd ~/arnd
+# sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi:true  -out_file:$tag.pcap  -out_solo_dir:$tag  > $ofile 2>&1; tail -n 60 $ofile
+
+tag=mytest3
+sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag  > $ofile 2>&1; tail -n 60 $ofile
+# tag=mytest3_live
+# sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag -live_output: > $ofile 2>&1; tail -n 60 $ofile
+# atf_snf  -kapi -in_file:atf_snf_logs/mytest3/2025.07.11.14.11/atf_snf.pcap -dir:$tag  > $ofile 2>&1; tail -n 60 $ofile
+
 
 # echo "---postprocess atf_snf  files"
-# cd ~/pcap/$tag/tcp_pairs
+# cd atf_snf_logs/mytest3/2025.07.11.14.11/tcp_pairs
 # pwd
 # atf_snf_sort.sh
 # x2sup_pretty.sh
@@ -44,7 +39,7 @@ exit
 # cannot be run as sudo because of rsync
 omenv=dev.x2-4
 tag=test
-vscode_setup atf_snf -- -omenv_logs:$omenv -out_solo_dir:${tag} 
+vscode-set-program atf_snf -- -kapi:true -dir:${tag} 
 
 # 
 #to be issued form a separate terminal

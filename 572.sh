@@ -104,9 +104,13 @@ acr_ed -create -field atf_snf.FTcp_pair.p_cur_kafka    -arg atf_snf.FKafka   -re
 # lists
 acr_ed -create -field atf_snf.FTcp_pair.zd_kafka_obsolete  -arg atf_snf.FKafka   -via atf_snf.FKafka.p_tcp_pair -inscond:false -cascdel -write -comment "temp list of kafka objects to be deleted"
 acr_ed -create -field atf_snf.FTcp_pair.ind_kafka_corr_id  -arg atf_snf.FKafka   -via atf_snf.FKafka.p_tcp_pair -xref -cascdel -write -comment "index of corr_id"
-acr_ed -create -field atf_snf.FTcp_pair.bh_kafka_corr_id   -arg atf_snf.FKafka   -via atf_snf.FKafka.p_tcp_pair -sortfld atf_snf.FKafka.ts_ns -cascdel -write -comment "bheap of kafka on ts_ns"
+# acr_ed -create -field atf_snf.FTcp_pair.bh_kafka_corr_id   -arg atf_snf.FKafka   -via atf_snf.FKafka.p_tcp_pair -sortfld atf_snf.FKafka.ts_ns -cascdel -write -comment "bheap of kafka on ts_ns"
+acr_ed -create -field atf_snf.FTcp_pair.bh_kafka_corr_id   -arg atf_snf.FKafka   -via atf_snf.FKafka.p_tcp_pair -sortfld atf_snf.FKafka.iframe -cascdel -write -comment "bheap of kafka on ts_ns"
 
 
+acr_ed -del  -field atf_snf.FDb.bh_kafka_corr_id_glob -write || true
+acr_ed -create -field atf_snf.FDb.bh_kafka_corr_id_glob -xref  -arg atf_snf.FKafka -sortfld atf_snf.FKafka.ts_ns -write -comment "bheap of kafka on ts_ns from FDB"
+# -
 #-------------main CB
 acr_ed -create -ctype atf_snf.FMcb                              -write -comment "Main CB"
 
@@ -118,15 +122,17 @@ acr_ed -create -field atf_snf.FMcb.max_pkt_len                 -arg u32         
 acr_ed -create -field atf_snf.FMcb.time0                       -arg algo.SchedTime   -write -comment "starting time"
 acr_ed -create -field atf_snf.FMcb.round_trip_dur_tot          -arg u64              -write -comment "total accumulated round-trip duration"
 acr_ed -create -field atf_snf.FMcb.mon_step_n                  -arg u64              -write -comment "number of latest mon step run"
-acr_ed -create -field atf_snf.FMcb.snf                         -arg atf_snf.FSnf     -reftype Ptr  -write -comment "pointer to snf"
-acr_ed -create -field atf_snf.FMcb.fd_out_file                 -arg i32              -write -comment ""
-acr_ed -create -field atf_snf.FMcb.i_kafka_solo                -arg i32              -write -comment "index of kafka req/rsp pair solo generation"
-acr_ed -create -field atf_snf.FMcb.kafka_solo_err_count        -arg i32              -write -comment "count of solo generation errors"
-acr_ed -create -field atf_snf.FMcb.seq_gap_pos_count           -arg u32              -write -comment "pos sequence gap count"
-acr_ed -create -field atf_snf.FMcb.seq_gap_neg_count           -arg u32              -write -comment "neg sequence gap count"
-acr_ed -create -field atf_snf.FMcb.exper_dir                   -arg algo.Smallstr100   -write -comment "experiment directory"
-acr_ed -create -field atf_snf.FMcb.test_dirs                   -arg algo.Smallstr100   -write -comment "test directories"
-acr_ed -create -field atf_snf.FMcb.tcp_pairs                   -arg algo.Smallstr100   -write -comment "tcp pairs directories"
+acr_ed -create -field atf_snf.FMcb.snf                         -arg atf_snf.FSnf        -reftype Ptr   -write -comment "pointer to snf"
+acr_ed -create -field atf_snf.FMcb.fd_out_file                 -arg i32                 -write -comment ""
+acr_ed -create -field atf_snf.FMcb.i_kafka_solo                -arg i32                 -write -comment "index of kafka req/rsp pair solo generation"
+acr_ed -create -field atf_snf.FMcb.kafka_solo_err_count        -arg i32                 -write -comment "count of solo generation errors"
+acr_ed -create -field atf_snf.FMcb.seq_gap_pos_count           -arg u32                 -write -comment "pos sequence gap count"
+acr_ed -create -field atf_snf.FMcb.seq_gap_neg_count           -arg u32                 -write -comment "neg sequence gap count"
+acr_ed -create -field atf_snf.FMcb.exper_dir                   -arg algo.Smallstr100    -write -comment "experiment directory"
+acr_ed -create -field atf_snf.FMcb.test_dirs                   -arg algo.Smallstr100    -write -comment "test directories"
+acr_ed -create -field atf_snf.FMcb.tcp_pairs                   -arg algo.Smallstr100    -write -comment "tcp pairs directories"
+acr_ed -create -field atf_snf.FMcb.fd_tcp_pairs_all_log        -arg i32                 -write -comment "fd for tcp pairs all log"
+acr_ed -create -field atf_snf.FMcb.iframe_written              -arg u32                 -write -comment "last iframe written to  all log"
 
 # debug
 acr_ed -create -field atf_snf.FMcb.mac_print_flg               -arg bool             -write -comment "print MAC info at parse"

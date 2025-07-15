@@ -1,6 +1,6 @@
-atf_snf.info experiment_dir:temp/atf_snf_logs/mytest3/2025.07.14.14.01
-atf_snf.info tests_dir:temp/atf_snf_logs/mytest3/2025.07.14.14.01/tests
-atf_snf.info tcp_pair_dir:temp/atf_snf_logs/mytest3/2025.07.14.14.01/tcp_pairs
+atf_snf.info experiment_dir:temp/atf_snf_logs/iframe_live/2025.07.15.13.14
+atf_snf.info tests_dir:temp/atf_snf_logs/iframe_live/2025.07.15.13.14/tests
+atf_snf.info tcp_pair_dir:temp/atf_snf_logs/iframe_live/2025.07.15.13.14/tcp_pairs
 atf_snf.info dev:data0-8T  port:1
 atf_snf.info comment:"opened the device"
 atf_snf.info comment:"allocated protected domain"
@@ -10,20 +10,3 @@ atf_snf.info comment:"init QP port"
 atf_snf.info comment:"QO Ready To Receive"
 atf_snf.info comment:"SGE and WR are initialised"
 atf_snf.info intfname:data0-8T  port:1  ib:mlx5_18  pci:0000:c5:02.0  comment:"Flow created successfully, sniffing all traffic"
-  
- comment:"Enter an option:"
- comment:"q - query"
- comment:"x - exit"
- comment:"r - resume"
- comment:"tp - toggle poll"
- comment:"tc - toggle clean"
- comment:"rc - run clean"
- comment:"Exiting.. Disable steps/mainloop...."
-atf_snf.info comment:"snf shutdown"
-atf_snf.info comment:"destroying flow"
-atf_snf.info comment:"destroying QP"
-atf_snf.info comment:"destroying CQ"
-atf_snf.info comment:"destroying PD"
-atf_snf.info comment:"printing session info"
-atf_snf.info fname:temp/atf_snf_logs/mytest3/2025.07.14.14.01/atf_snf.pcap  comment:"closing pcap file"
-exit to OS

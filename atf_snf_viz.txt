@@ -40,6 +40,7 @@
                                   |                                                |                   
                                   |                                                |                   
                                   |Tpool kafka------------------------------------>/ atf_snf.FKafka    
+                                  |Bheap bh_kafka_corr_id_glob-------------------->|                   
                                   |                                                |                   
                                   |Tpool tcp_pair------>/ atf_snf.FTcp_pair        |                   
                                   |Llist zd_tcp_pair--->|                          |                   
@@ -48,10 +49,10 @@
                                                         |                          |                   
                                                         |Llist zd_client_id------->|                   
                                                         |Thash ind_client_id------>|                   
-                                                        |Llist zd_kafka_obsolete-->|                   
-                                                        |Bheap bh_kafka_corr_id--->|                   
                                                         |Ptr p_cur_kafka---------->|                   
+                                                        |Bheap bh_kafka_corr_id--->|                   
                                                         |Thash ind_kafka_corr_id-->|                   
+                                                        |Llist zd_kafka_obsolete-->|                   
                                                         |<-------------------------|Upptr p_tcp_pair   
                                                         |                          |                   
                                                         |                          |                   

@@ -26,10 +26,10 @@ echo "....live monitoring   in temp/atf_snf.dat . "
 
 tag=iframe_live
 sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag 
-handh
 # sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag -live_output: > $ofile 2>&1; tail -n 60 $ofile
+
 # tag=iframe_pcap
-# atf_snf  -kapi -in_file:temp/atf_snf_logs/iframe_live/2025.07.14.18.19/atf_snf.pcap -dir:$tag  > $ofile 2>&1; tail -n 60 $ofile
+# atf_snf  -kapi -in_file:temp/atf_snf_logs/iframe_pcap/2025.07.17.14.17/atf_snf.pcap -dir:$tag  > $ofile 2>&1; tail -n 60 $ofile
 
 
 # echo "---postprocess atf_snf  files"

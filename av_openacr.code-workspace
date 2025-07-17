@@ -11,7 +11,7 @@
 			"path": "../.ssh"
 		},
 		{
-			"path": "../../../mnt"
+			"path": "../arnd/temp/atf_snf_logs"
 		}
 	],
 

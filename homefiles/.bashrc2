@@ -20,6 +20,7 @@ alias ci_clean="rm -rf temp/sand*"
 alias ppath='echo $PATH | tr ":" "\n"'
 alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'
 alias gitclean='git checkout -- bin .vscode/launch.json'
+alias x2tree='ps -e --forest -o pid,ppid,cmd | grep x2'
 
 
 alias al='source  ~/arnd/conf/alexei/bash_profile'

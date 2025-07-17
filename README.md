@@ -312,3 +312,5 @@ dmmeta.field  field:command.omcli.collect_logs_dir  arg:algo.cstring    reftype:
 
 
 
+# gcli trace
+

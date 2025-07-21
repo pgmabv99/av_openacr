@@ -120,7 +120,7 @@ We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.
 
 ```
 ### git work flow items
-git-rebase-remote algornd/arnd
+git-rebase-remote algornd/arnd  
 normalize_loop
 acr % -check -write 
 atf_comp  
@@ -128,6 +128,7 @@ atf_comp -covcapture
 git-add-to-last-commit
 git branch --set-upstream-to=algornd/arnd/$(git branch --show-current)
 git push --force 
+git push algornd/arnd HEAD
 
 
 ```
@@ -310,46 +311,4 @@ omdb.omlattr  omlattr:debug-workload100/consumerPerSubscription  uval:1
 
 dmmeta.field  field:command.omcli.collect_logs_dir  arg:algo.cstring    reftype:Val  dflt:'"test1"'  comment:"subfolder for collected logs  under temp/omenv/"
 
-
-
-# gcli trace
-
-pkill x2sup
-
-rm -rf temp/x2sup
-
-x2sup -temp '-trace:verbose:(kafka2.%|x2gw.%),timestamps'
-
-x2fs.done  path:temp/x2sup  fsid:72efab7d-c953-48da-8e9d-64f572486e9f
-
-2025/07/18T16:10:42.874066 verbose: bin/x2cmt  -proc:dev1.x2cmt-0-0 -initdir:temp/x2sup -prefix:x2-1260099 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
-
-2025/07/18T16:10:42.874411 verbose: bin/x2gf  -proc:dev1.x2gf-0-0 -initdir:temp/x2sup -prefix:x2-1260099 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
-
-2025/07/18T16:10:42.874600 verbose: bin/x2gw  -proc:dev1.x2gw-0-0 -initdir:temp/x2sup -prefix:x2-1260099 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
-
-2025/07/18T16:10:42.874796 verbose: bin/x2imdb  -initdir:temp/x2sup -proc:dev1.x2imdb-0-0 -prefix:x2-1260099 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
-
-2025/07/18T16:10:42.875106 verbose: bin/x2mon  -initdir:temp/x2sup -proc:dev1.x2mon-0-0 -prefix:x2-1260099 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
-
-2025/07/18T16:10:42.875420 verbose: bin/x2net  -initdir:temp/x2sup -proc:dev1.x2net-0-0 -prefix:x2-1260099 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
-
-2025/07/18T16:10:42.875731 verbose: bin/x2txn  -initdir:temp/x2sup -proc:dev1.x2txn-0-0 -prefix:x2-1260099 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
-
-2025/07/18T16:10:42.876080 x2sup.start  me:dev1.x2sup-0-0  nproc:8
-
-2025/07/18T16:10:42.929340 READY_FOR_TEST
-
-I see only 2 kind of relevant fields that are counters related to steps
-algo_lib.trace.step_giveup_time
-algo_lib.trace.step_bh_timehook
-
-The counter of expired time hook executution step_bh_timehook is updated in  algo_lib::bh_timehook_Step().
-The other counter I dont quite understand - possibly we count how many times we go into pure sleep or epoll .
- Both counters when added to getters show zero.
-
-My general understanding is that we want to count how many times epoll fired for an   event or for  timeout  + how many expired timeouts.
-So my understaning is not too good. Plus atf_snf is not using iohooks (epoll) - i am pretty sure of that.
-
-??
 

@@ -24,12 +24,12 @@ echo "....live monitoring   in temp/atf_snf.dat . "
 # sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag  > $ofile 2>&1; tail -n 60 $ofile
 # atf_snf  -kapi -in_file:/home/avorovich/arnd/temp/atf_snf_logs/mytest3/2025.07.14.14.31/atf_snf.pcap -dir:$tag  > $ofile 2>&1; tail -n 60 $ofile
 
-tag=iframe_live
-sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag 
-# sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag -live_output: > $ofile 2>&1; tail -n 60 $ofile
+# tag=iframe_live
+# sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag 
+# # sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag -live_output: > $ofile 2>&1; tail -n 60 $ofile
 
-# tag=iframe_pcap
-# atf_snf  -kapi -in_file:temp/atf_snf_logs/iframe_pcap/2025.07.17.14.17/atf_snf.pcap -dir:$tag  > $ofile 2>&1; tail -n 60 $ofile
+tag=iframe_pcap
+atf_snf  -kapi -in_file:/home/avorovich/arnd/temp/atf_snf_logs/iframe_live/2025.07.21.11.42/atf_snf.pcap   -dir:$tag  > $ofile 2>&1; tail -n 60 $ofile
 
 
 # echo "---postprocess atf_snf  files"

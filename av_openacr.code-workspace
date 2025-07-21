@@ -12,6 +12,9 @@
 		},
 		{
 			"path": "../arnd/temp/atf_snf_logs"
+		},
+		{
+			"path": "../arnd/temp"
 		}
 	],
 

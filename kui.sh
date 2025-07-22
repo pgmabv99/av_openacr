@@ -56,9 +56,6 @@ omcli $omenv -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:$omrun_l
 sudo pkill -SIGUSR1 atf_snf
 
 
-echo "-------- kcat for AP"
-echo "Hello, Kafka!" | kcat -P -b dev.ak-8.kafka-4.ext-0:1047 -t my-test-topic
-kcat -b dev.ak-8.kafka-4.ext-0:1047  -C -t my-test-topic
 
 echo "simple ak-8 "
 omcli dev.ak-8 -start_clean

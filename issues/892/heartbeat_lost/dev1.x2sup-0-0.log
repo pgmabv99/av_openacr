@@ -1,0 +1,728 @@
+2025/07/22T12:01:23.547650 verbose: bin/x2cmt  -proc:dev1.x2cmt-0-0 -initdir:temp/x2sup -prefix:x2-31332 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
+2025/07/22T12:01:23.547963 verbose: bin/x2gf  -proc:dev1.x2gf-0-0 -initdir:temp/x2sup -prefix:x2-31332 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
+2025/07/22T12:01:23.548135 verbose: bin/x2gw  -proc:dev1.x2gw-0-0 -initdir:temp/x2sup -prefix:x2-31332 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
+2025/07/22T12:01:23.548323 verbose: bin/x2imdb  -initdir:temp/x2sup -proc:dev1.x2imdb-0-0 -prefix:x2-31332 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
+2025/07/22T12:01:23.548588 verbose: bin/x2mon  -initdir:temp/x2sup -proc:dev1.x2mon-0-0 -prefix:x2-31332 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
+2025/07/22T12:01:23.548860 verbose: bin/x2net  -initdir:temp/x2sup -proc:dev1.x2net-0-0 -prefix:x2-31332 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
+2025/07/22T12:01:23.549160 verbose: bin/x2txn  -initdir:temp/x2sup -proc:dev1.x2txn-0-0 -prefix:x2-31332 -trace:$'verbose:(kafka2.%|x2gw.%),timestamps'
+2025/07/22T12:01:23.549457 x2sup.start  me:dev1.x2sup-0-0  nproc:8
+2025/07/22T12:01:23.558424 atf.var  httpport:2080
+2025/07/22T12:01:23.558498 atf.var  kafkaport:9092
+2025/07/22T12:01:23.558525 atf.var  mqttport:1883
+2025/07/22T12:01:23.558551 atf.var  natsport:4222
+2025/07/22T12:01:23.558574 atf.var  respport:6379
+2025/07/22T12:01:23.558598 atf.var  x2port:8850
+2025/07/22T12:01:23.604306 READY_FOR_TEST
+2025/07/22T12:02:56.694401 verbose: x2gw.new_conn  id:1  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38054  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:56.694503 verbose: x2gw.conn_read  id:1  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38054  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:56.694542 verbose: kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:rdkafka  client_software_name:librdkafka  client_software_version:2.3.0
+2025/07/22T12:02:56.694633 verbose: kafka2.client:rdkafka
+2025/07/22T12:02:56.694640 verbose: kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:1  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"  throttle_time_ms:0
+2025/07/22T12:02:56.694707 verbose: x2gw.conn_outflow  id:1  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38054  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:56.694722 verbose: x2gw.conn_read  id:1  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38054  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:56.694784 verbose: x2gw.conn_read  id:1  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38054  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:56.694826 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:2  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:02:56.694873 verbose: kafka2.client:rdkafka
+2025/07/22T12:02:56.694880 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:2  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:"kafka2.MetadataResponseTopic3a  error_code:3  name:my-test-topic  topic_id:00000000-0000-0000-0000-000000000000  is_internal:N  topic_authorized_operations:OMITTED"  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:02:56.694901 verbose: x2gw.conn_read  id:1  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38054  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:56.694925 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:3  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:02:56.694964 verbose: kafka2.client:rdkafka
+2025/07/22T12:02:56.694970 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:3  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:"kafka2.MetadataResponseTopic3a  error_code:3  name:my-test-topic  topic_id:00000000-0000-0000-0000-000000000000  is_internal:N  topic_authorized_operations:OMITTED"  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:02:56.694986 verbose: x2gw.conn_read  id:1  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38054  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:56.695639 verbose: x2gw.conn_read  id:1  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38054  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:56.695652 verbose: x2gw.conn_eof  id:1  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38054  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:56.695661 verbose: x2gw.conn_outflow  id:1  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38054  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:56.695677 verbose: x2gw.conn_close  id:1  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38054  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:57.698897 verbose: x2gw.new_conn  id:2  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38064  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:57.698931 verbose: x2gw.conn_outflow  id:2  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38064  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:57.698953 verbose: x2gw.conn_read  id:2  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38064  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:57.698976 verbose: kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:rdkafka  client_software_name:librdkafka  client_software_version:2.3.0
+2025/07/22T12:02:57.699057 verbose: kafka2.client:rdkafka
+2025/07/22T12:02:57.699063 verbose: kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:1  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"  throttle_time_ms:0
+2025/07/22T12:02:57.699099 verbose: x2gw.conn_read  id:2  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38064  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:57.699212 verbose: x2gw.conn_read  id:2  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38064  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:57.699232 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:2  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:02:57.699267 verbose: kafka2.client:rdkafka
+2025/07/22T12:02:57.699273 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:2  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:"kafka2.MetadataResponseTopic3a  error_code:3  name:my-test-topic  topic_id:00000000-0000-0000-0000-000000000000  is_internal:N  topic_authorized_operations:OMITTED"  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:02:57.699297 verbose: x2gw.conn_read  id:2  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38064  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:57.699316 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:3  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:02:57.699345 verbose: kafka2.client:rdkafka
+2025/07/22T12:02:57.699354 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:3  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:"kafka2.MetadataResponseTopic3a  error_code:3  name:my-test-topic  topic_id:00000000-0000-0000-0000-000000000000  is_internal:N  topic_authorized_operations:OMITTED"  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:02:57.699368 verbose: x2gw.conn_read  id:2  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38064  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:57.700055 verbose: x2gw.conn_read  id:2  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38064  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:57.700069 verbose: x2gw.conn_eof  id:2  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38064  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:57.700078 verbose: x2gw.conn_outflow  id:2  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38064  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:02:57.700090 verbose: x2gw.conn_close  id:2  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38064  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:46.336128 verbose: x2gw.new_conn  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:46.336193 verbose: x2gw.conn_read  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:46.336218 verbose: kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:rdkafka  client_software_name:librdkafka  client_software_version:2.3.0
+2025/07/22T12:05:46.336312 verbose: kafka2.client:rdkafka
+2025/07/22T12:05:46.336319 verbose: kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:1  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"  throttle_time_ms:0
+2025/07/22T12:05:46.336380 verbose: x2gw.conn_outflow  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:46.336393 verbose: x2gw.conn_read  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:46.336496 verbose: x2gw.conn_read  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:46.336520 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:2  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:Y  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:05:46.336588 verbose: x2gw.conn_read  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.335835 verbose: x2gw.conn_read  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.335869 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:3  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:Y  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:05:47.335916 verbose: kafka2.client:rdkafka
+2025/07/22T12:05:47.335921 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:3  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:05:47.335951 verbose: x2gw.conn_read  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.336157 verbose: x2gw.conn_read  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.336229 verbose: kafka2.ProduceRequest  request_api_version:7  correlation_id:4  client_id:rdkafka  acks:-1  timeout_ms:30000  topic_data.0:"kafka2.TopicProduceData0q  name:my-test-topic  partition_data.0:'kafka2.PartitionProduceData0q  index:0  records:\"kafka.RecordBatch  base_offset:0  partition_leader_epoch:0  magic:2  crc:2511808821  attributes:0  last_offset_delta:0  base_timestamp:1753200346335  max_timestamp:1753200346335  producer_id:-1  producer_epoch:-1  base_sequence:-1  records.0:\\'kafka.Record  attributes:0  timestamp_delta:0  offset_delta:0  value:\\\\\"Hello, Kafka!\\\\\"\\'\"'"
+2025/07/22T12:05:47.336249 verbose: x2gw.conn_read  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.336290 verbose: kafka2.client:rdkafka
+2025/07/22T12:05:47.336295 verbose: kafka2.ProduceResponse  request_api_version:7  correlation_id:4  responses.0:'kafka2.TopicProduceResponse0a  name:my-test-topic  partition_responses.0:"kafka2.PartitionProduceResponse0a  index:0  error_code:0  base_offset:0  log_append_time_ms:-1  log_start_offset:-1"'  throttle_time_ms:0
+2025/07/22T12:05:47.336523 verbose: x2gw.conn_read  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.336543 verbose: x2gw.conn_eof  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.336552 verbose: x2gw.conn_outflow  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.336566 verbose: x2gw.conn_close  id:3  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51970  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.340866 verbose: x2gw.new_conn  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.340896 verbose: x2gw.conn_read  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.340912 verbose: kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:rdkafka  client_software_name:librdkafka  client_software_version:2.3.0
+2025/07/22T12:05:47.340998 verbose: kafka2.client:rdkafka
+2025/07/22T12:05:47.341004 verbose: kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:1  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"  throttle_time_ms:0
+2025/07/22T12:05:47.341035 verbose: x2gw.conn_outflow  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341046 verbose: x2gw.conn_read  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341142 verbose: x2gw.conn_read  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341162 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:2  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:05:47.341211 verbose: kafka2.client:rdkafka
+2025/07/22T12:05:47.341216 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:2  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:05:47.341237 verbose: x2gw.conn_read  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341257 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:3  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:05:47.341296 verbose: kafka2.client:rdkafka
+2025/07/22T12:05:47.341301 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:3  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:05:47.341317 verbose: x2gw.conn_read  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341381 verbose: x2gw.conn_read  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341412 verbose: kafka2.ListOffsetsRequest  request_api_version:7  correlation_id:4  client_id:rdkafka  replica_id:-1  isolation_level:1  topics.0:'kafka2.ListOffsetsTopic2q  name:my-test-topic  partitions.0:"kafka2.ListOffsetsPartition2q  partition_index:0  current_leader_epoch:-1  timestamp:-2"'  timeout_ms:0
+2025/07/22T12:05:47.341434 verbose: kafka2.client:rdkafka
+2025/07/22T12:05:47.341438 verbose: kafka2.ListOffsetsResponse  request_api_version:7  correlation_id:4  throttle_time_ms:0  topics.0:'kafka2.ListOffsetsTopicResponse2a  name:my-test-topic  partitions.0:"kafka2.ListOffsetsPartitionResponse2a  partition_index:0  error_code:0  timestamp:-2  offset:0  leader_epoch:0"'
+2025/07/22T12:05:47.341456 verbose: x2gw.conn_read  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341501 verbose: x2gw.conn_read  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341539 verbose: kafka2.FetchRequest  request_api_version:11  correlation_id:5  client_id:rdkafka  replica_id:-1  max_wait_ms:500  min_bytes:1  max_bytes:52428800  isolation_level:1  session_id:0  session_epoch:-1  topics.0:'kafka2.FetchTopic1q  topic:my-test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:0  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1048576"'  rack_id:""
+2025/07/22T12:05:47.341573 verbose: x2gw.conn_read  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341639 verbose: kafka2.client:rdkafka
+2025/07/22T12:05:47.341645 verbose: kafka2.FetchResponse  request_api_version:11  correlation_id:5  throttle_time_ms:0  error_code:0  session_id:0  responses.0:"kafka2.FetchableTopicResponse1a  topic:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:1  last_stable_offset:1  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch  base_offset:0  partition_leader_epoch:0  magic:2  crc:0  attributes:0  last_offset_delta:0  base_timestamp:1753200347336  max_timestamp:1753200347336  producer_id:-1  producer_epoch:-1  base_sequence:-1  records.0:\\'kafka.Record  attributes:0  timestamp_delta:0  offset_delta:0  value:\\\\\"Hello, Kafka!\\\\\"\\'\"'"
+2025/07/22T12:05:47.341723 verbose: x2gw.conn_read  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341753 verbose: kafka2.FetchRequest  request_api_version:11  correlation_id:6  client_id:rdkafka  replica_id:-1  max_wait_ms:500  min_bytes:1  max_bytes:52428800  isolation_level:1  session_id:0  session_epoch:-1  topics.0:'kafka2.FetchTopic1q  topic:my-test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:1  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1048576"'  rack_id:""
+2025/07/22T12:05:47.341766 verbose: x2gw.conn_read  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341789 verbose: x2gw.conn_read  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341799 verbose: x2gw.conn_eof  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341807 verbose: x2gw.conn_outflow  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:05:47.341820 verbose: x2gw.conn_close  id:4  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:51972  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.360280 verbose: x2gw.new_conn  id:5  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46486  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.360347 verbose: x2gw.conn_read  id:5  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46486  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.360372 verbose: kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:rdkafka  client_software_name:librdkafka  client_software_version:2.3.0
+2025/07/22T12:06:01.360474 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:01.360481 verbose: kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:1  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"  throttle_time_ms:0
+2025/07/22T12:06:01.360539 verbose: x2gw.conn_outflow  id:5  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46486  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.360554 verbose: x2gw.conn_read  id:5  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46486  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.360668 verbose: x2gw.conn_read  id:5  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46486  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.360693 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:2  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:Y  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:06:01.360753 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:01.360758 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:2  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:06:01.360777 verbose: x2gw.conn_read  id:5  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46486  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.366075 verbose: x2gw.conn_read  id:5  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46486  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.366133 verbose: kafka2.ProduceRequest  request_api_version:7  correlation_id:3  client_id:rdkafka  acks:-1  timeout_ms:30000  topic_data.0:"kafka2.TopicProduceData0q  name:my-test-topic  partition_data.0:'kafka2.PartitionProduceData0q  index:0  records:\"kafka.RecordBatch  base_offset:0  partition_leader_epoch:0  magic:2  crc:1379731000  attributes:0  last_offset_delta:0  base_timestamp:1753200361360  max_timestamp:1753200361360  producer_id:-1  producer_epoch:-1  base_sequence:-1  records.0:\\'kafka.Record  attributes:0  timestamp_delta:0  offset_delta:0  value:\\\\\"Hello, Kafka!\\\\\"\\'\"'"
+2025/07/22T12:06:01.366168 verbose: x2gw.conn_read  id:5  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46486  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.366199 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:01.366204 verbose: kafka2.ProduceResponse  request_api_version:7  correlation_id:3  responses.0:'kafka2.TopicProduceResponse0a  name:my-test-topic  partition_responses.0:"kafka2.PartitionProduceResponse0a  index:0  error_code:0  base_offset:0  log_append_time_ms:-1  log_start_offset:-1"'  throttle_time_ms:0
+2025/07/22T12:06:01.366395 verbose: x2gw.conn_outflow  id:5  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46486  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.366410 verbose: x2gw.conn_read  id:5  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46486  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.366419 verbose: x2gw.conn_eof  id:5  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46486  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.366434 verbose: x2gw.conn_close  id:5  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46486  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.370609 verbose: x2gw.new_conn  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.370634 verbose: x2gw.conn_outflow  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.370653 verbose: x2gw.conn_read  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.370668 verbose: kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:rdkafka  client_software_name:librdkafka  client_software_version:2.3.0
+2025/07/22T12:06:01.370748 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:01.370753 verbose: kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:1  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"  throttle_time_ms:0
+2025/07/22T12:06:01.370781 verbose: x2gw.conn_read  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.370875 verbose: x2gw.conn_read  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.370899 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:2  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:06:01.370953 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:01.370960 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:2  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:06:01.370983 verbose: x2gw.conn_read  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.371003 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:3  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:06:01.371041 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:01.371046 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:3  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:06:01.371061 verbose: x2gw.conn_read  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.371126 verbose: x2gw.conn_read  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.371152 verbose: kafka2.ListOffsetsRequest  request_api_version:7  correlation_id:4  client_id:rdkafka  replica_id:-1  isolation_level:1  topics.0:'kafka2.ListOffsetsTopic2q  name:my-test-topic  partitions.0:"kafka2.ListOffsetsPartition2q  partition_index:0  current_leader_epoch:-1  timestamp:-2"'  timeout_ms:0
+2025/07/22T12:06:01.371173 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:01.371178 verbose: kafka2.ListOffsetsResponse  request_api_version:7  correlation_id:4  throttle_time_ms:0  topics.0:'kafka2.ListOffsetsTopicResponse2a  name:my-test-topic  partitions.0:"kafka2.ListOffsetsPartitionResponse2a  partition_index:0  error_code:0  timestamp:-2  offset:0  leader_epoch:0"'
+2025/07/22T12:06:01.371195 verbose: x2gw.conn_read  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.371290 verbose: x2gw.conn_read  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.371325 verbose: kafka2.FetchRequest  request_api_version:11  correlation_id:5  client_id:rdkafka  replica_id:-1  max_wait_ms:500  min_bytes:1  max_bytes:52428800  isolation_level:1  session_id:0  session_epoch:-1  topics.0:'kafka2.FetchTopic1q  topic:my-test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:0  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1048576"'  rack_id:""
+2025/07/22T12:06:01.371353 verbose: x2gw.conn_read  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.371424 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:01.371429 verbose: kafka2.FetchResponse  request_api_version:11  correlation_id:5  throttle_time_ms:0  error_code:0  session_id:0  responses.0:"kafka2.FetchableTopicResponse1a  topic:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:2  last_stable_offset:2  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch  base_offset:0  partition_leader_epoch:0  magic:2  crc:0  attributes:0  last_offset_delta:1  base_timestamp:1753200347336  max_timestamp:1753200361366  producer_id:-1  producer_epoch:-1  base_sequence:-1  records.0:\\'kafka.Record  attributes:0  timestamp_delta:0  offset_delta:0  value:\\\\\"Hello, Kafka!\\\\\"\\'  records.1:\\'kafka.Record  attributes:0  timestamp_delta:14030  offset_delta:1  value:\\\\\"Hello, Kafka!\\\\\"\\'\"'"
+2025/07/22T12:06:01.371555 verbose: x2gw.conn_read  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.371586 verbose: kafka2.FetchRequest  request_api_version:11  correlation_id:6  client_id:rdkafka  replica_id:-1  max_wait_ms:500  min_bytes:1  max_bytes:52428800  isolation_level:1  session_id:0  session_epoch:-1  topics.0:'kafka2.FetchTopic1q  topic:my-test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:2  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1048576"'  rack_id:""
+2025/07/22T12:06:01.371599 verbose: x2gw.conn_read  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.371621 verbose: x2gw.conn_read  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.371631 verbose: x2gw.conn_eof  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.371639 verbose: x2gw.conn_outflow  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:01.371652 verbose: x2gw.conn_close  id:6  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:46488  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.909147 verbose: x2gw.new_conn  id:7  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38846  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.909191 verbose: x2gw.conn_read  id:7  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38846  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.909212 verbose: kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:rdkafka  client_software_name:librdkafka  client_software_version:2.3.0
+2025/07/22T12:06:03.909303 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:03.909310 verbose: kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:1  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"  throttle_time_ms:0
+2025/07/22T12:06:03.909354 verbose: x2gw.conn_outflow  id:7  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38846  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.909367 verbose: x2gw.conn_read  id:7  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38846  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.909621 verbose: x2gw.conn_read  id:7  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38846  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.909646 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:2  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:Y  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:06:03.909693 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:03.909698 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:2  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:06:03.909721 verbose: x2gw.conn_read  id:7  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38846  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.914444 verbose: x2gw.conn_read  id:7  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38846  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.914503 verbose: kafka2.ProduceRequest  request_api_version:7  correlation_id:3  client_id:rdkafka  acks:-1  timeout_ms:30000  topic_data.0:"kafka2.TopicProduceData0q  name:my-test-topic  partition_data.0:'kafka2.PartitionProduceData0q  index:0  records:\"kafka.RecordBatch  base_offset:0  partition_leader_epoch:0  magic:2  crc:1083796322  attributes:0  last_offset_delta:0  base_timestamp:1753200363908  max_timestamp:1753200363908  producer_id:-1  producer_epoch:-1  base_sequence:-1  records.0:\\'kafka.Record  attributes:0  timestamp_delta:0  offset_delta:0  value:\\\\\"Hello, Kafka!\\\\\"\\'\"'"
+2025/07/22T12:06:03.914528 verbose: x2gw.conn_read  id:7  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38846  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.914557 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:03.914562 verbose: kafka2.ProduceResponse  request_api_version:7  correlation_id:3  responses.0:'kafka2.TopicProduceResponse0a  name:my-test-topic  partition_responses.0:"kafka2.PartitionProduceResponse0a  index:0  error_code:0  base_offset:0  log_append_time_ms:-1  log_start_offset:-1"'  throttle_time_ms:0
+2025/07/22T12:06:03.914683 verbose: x2gw.conn_read  id:7  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38846  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.914696 verbose: x2gw.conn_eof  id:7  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38846  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.914706 verbose: x2gw.conn_outflow  id:7  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38846  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.914719 verbose: x2gw.conn_close  id:7  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38846  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.918762 verbose: x2gw.new_conn  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.918786 verbose: x2gw.conn_outflow  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.918802 verbose: x2gw.conn_read  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.918818 verbose: kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:rdkafka  client_software_name:librdkafka  client_software_version:2.3.0
+2025/07/22T12:06:03.918905 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:03.918912 verbose: kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:1  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"  throttle_time_ms:0
+2025/07/22T12:06:03.918950 verbose: x2gw.conn_read  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.919030 verbose: x2gw.conn_read  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.919052 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:2  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:06:03.919094 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:03.919099 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:2  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:06:03.919119 verbose: x2gw.conn_read  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.919139 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:3  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:06:03.919178 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:03.919183 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:3  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:06:03.919199 verbose: x2gw.conn_read  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.919274 verbose: x2gw.conn_read  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.919300 verbose: kafka2.ListOffsetsRequest  request_api_version:7  correlation_id:4  client_id:rdkafka  replica_id:-1  isolation_level:1  topics.0:'kafka2.ListOffsetsTopic2q  name:my-test-topic  partitions.0:"kafka2.ListOffsetsPartition2q  partition_index:0  current_leader_epoch:-1  timestamp:-2"'  timeout_ms:0
+2025/07/22T12:06:03.919322 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:03.919327 verbose: kafka2.ListOffsetsResponse  request_api_version:7  correlation_id:4  throttle_time_ms:0  topics.0:'kafka2.ListOffsetsTopicResponse2a  name:my-test-topic  partitions.0:"kafka2.ListOffsetsPartitionResponse2a  partition_index:0  error_code:0  timestamp:-2  offset:0  leader_epoch:0"'
+2025/07/22T12:06:03.919344 verbose: x2gw.conn_read  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.919409 verbose: x2gw.conn_read  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.919443 verbose: kafka2.FetchRequest  request_api_version:11  correlation_id:5  client_id:rdkafka  replica_id:-1  max_wait_ms:500  min_bytes:1  max_bytes:52428800  isolation_level:1  session_id:0  session_epoch:-1  topics.0:'kafka2.FetchTopic1q  topic:my-test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:0  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1048576"'  rack_id:""
+2025/07/22T12:06:03.919459 verbose: x2gw.conn_read  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.919542 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:03.919549 verbose: kafka2.FetchResponse  request_api_version:11  correlation_id:5  throttle_time_ms:0  error_code:0  session_id:0  responses.0:"kafka2.FetchableTopicResponse1a  topic:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:3  last_stable_offset:3  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch  base_offset:0  partition_leader_epoch:0  magic:2  crc:0  attributes:0  last_offset_delta:2  base_timestamp:1753200347336  max_timestamp:1753200363914  producer_id:-1  producer_epoch:-1  base_sequence:-1  records.0:\\'kafka.Record  attributes:0  timestamp_delta:0  offset_delta:0  value:\\\\\"Hello, Kafka!\\\\\"\\'  records.1:\\'kafka.Record  attributes:0  timestamp_delta:14030  offset_delta:1  value:\\\\\"Hello, Kafka!\\\\\"\\'  records.2:\\'kafka.Record  attributes:0  timestamp_delta:16578  offset_delta:2  value:\\\\\"Hello, Kafka!\\\\\"\\'\"'"
+2025/07/22T12:06:03.919613 verbose: x2gw.conn_read  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.919645 verbose: kafka2.FetchRequest  request_api_version:11  correlation_id:6  client_id:rdkafka  replica_id:-1  max_wait_ms:500  min_bytes:1  max_bytes:52428800  isolation_level:1  session_id:0  session_epoch:-1  topics.0:'kafka2.FetchTopic1q  topic:my-test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:3  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1048576"'  rack_id:""
+2025/07/22T12:06:03.919657 verbose: x2gw.conn_read  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.919702 verbose: x2gw.conn_read  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.919712 verbose: x2gw.conn_eof  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.919722 verbose: x2gw.conn_outflow  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:03.919735 verbose: x2gw.conn_close  id:8  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38848  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.214656 verbose: x2gw.new_conn  id:9  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38862  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.214699 verbose: x2gw.conn_read  id:9  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38862  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.214726 verbose: kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:rdkafka  client_software_name:librdkafka  client_software_version:2.3.0
+2025/07/22T12:06:06.214810 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:06.214816 verbose: kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:1  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"  throttle_time_ms:0
+2025/07/22T12:06:06.214854 verbose: x2gw.conn_outflow  id:9  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38862  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.214866 verbose: x2gw.conn_read  id:9  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38862  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.214977 verbose: x2gw.conn_read  id:9  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38862  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.215000 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:2  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:Y  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:06:06.215051 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:06.215057 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:2  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:06:06.215075 verbose: x2gw.conn_read  id:9  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38862  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.220376 verbose: x2gw.conn_read  id:9  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38862  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.220434 verbose: kafka2.ProduceRequest  request_api_version:7  correlation_id:3  client_id:rdkafka  acks:-1  timeout_ms:30000  topic_data.0:"kafka2.TopicProduceData0q  name:my-test-topic  partition_data.0:'kafka2.PartitionProduceData0q  index:0  records:\"kafka.RecordBatch  base_offset:0  partition_leader_epoch:0  magic:2  crc:3988885572  attributes:0  last_offset_delta:0  base_timestamp:1753200366214  max_timestamp:1753200366214  producer_id:-1  producer_epoch:-1  base_sequence:-1  records.0:\\'kafka.Record  attributes:0  timestamp_delta:0  offset_delta:0  value:\\\\\"Hello, Kafka!\\\\\"\\'\"'"
+2025/07/22T12:06:06.220456 verbose: x2gw.conn_read  id:9  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38862  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.220481 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:06.220485 verbose: kafka2.ProduceResponse  request_api_version:7  correlation_id:3  responses.0:'kafka2.TopicProduceResponse0a  name:my-test-topic  partition_responses.0:"kafka2.PartitionProduceResponse0a  index:0  error_code:0  base_offset:0  log_append_time_ms:-1  log_start_offset:-1"'  throttle_time_ms:0
+2025/07/22T12:06:06.220679 verbose: x2gw.conn_read  id:9  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38862  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.220691 verbose: x2gw.conn_eof  id:9  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38862  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.220700 verbose: x2gw.conn_outflow  id:9  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38862  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.220713 verbose: x2gw.conn_close  id:9  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38862  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.224999 verbose: x2gw.new_conn  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.225031 verbose: x2gw.conn_read  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.225048 verbose: kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:rdkafka  client_software_name:librdkafka  client_software_version:2.3.0
+2025/07/22T12:06:06.225144 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:06.225149 verbose: kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:1  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"  throttle_time_ms:0
+2025/07/22T12:06:06.225186 verbose: x2gw.conn_outflow  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.225200 verbose: x2gw.conn_read  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.225294 verbose: x2gw.conn_read  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.225318 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:2  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:06:06.225366 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:06.225372 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:2  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:06:06.225395 verbose: x2gw.conn_read  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.225417 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:3  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:06:06.225461 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:06.225466 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:3  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:06:06.225483 verbose: x2gw.conn_read  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.225546 verbose: x2gw.conn_read  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.225574 verbose: kafka2.ListOffsetsRequest  request_api_version:7  correlation_id:4  client_id:rdkafka  replica_id:-1  isolation_level:1  topics.0:'kafka2.ListOffsetsTopic2q  name:my-test-topic  partitions.0:"kafka2.ListOffsetsPartition2q  partition_index:0  current_leader_epoch:-1  timestamp:-2"'  timeout_ms:0
+2025/07/22T12:06:06.225603 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:06.225608 verbose: kafka2.ListOffsetsResponse  request_api_version:7  correlation_id:4  throttle_time_ms:0  topics.0:'kafka2.ListOffsetsTopicResponse2a  name:my-test-topic  partitions.0:"kafka2.ListOffsetsPartitionResponse2a  partition_index:0  error_code:0  timestamp:-2  offset:0  leader_epoch:0"'
+2025/07/22T12:06:06.225626 verbose: x2gw.conn_read  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.225687 verbose: x2gw.conn_read  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.225726 verbose: kafka2.FetchRequest  request_api_version:11  correlation_id:5  client_id:rdkafka  replica_id:-1  max_wait_ms:500  min_bytes:1  max_bytes:52428800  isolation_level:1  session_id:0  session_epoch:-1  topics.0:'kafka2.FetchTopic1q  topic:my-test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:0  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1048576"'  rack_id:""
+2025/07/22T12:06:06.225743 verbose: x2gw.conn_read  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.225857 verbose: kafka2.client:rdkafka
+2025/07/22T12:06:06.225865 verbose: kafka2.FetchResponse  request_api_version:11  correlation_id:5  throttle_time_ms:0  error_code:0  session_id:0  responses.0:"kafka2.FetchableTopicResponse1a  topic:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  partitions.0:'kafka2.PartitionData1a  partition_index:0  error_code:0  high_watermark:4  last_stable_offset:4  log_start_offset:-1  preferred_read_replica:-1  records:\"kafka.RecordBatch  base_offset:0  partition_leader_epoch:0  magic:2  crc:0  attributes:0  last_offset_delta:3  base_timestamp:1753200347336  max_timestamp:1753200366220  producer_id:-1  producer_epoch:-1  base_sequence:-1  records.0:\\'kafka.Record  attributes:0  timestamp_delta:0  offset_delta:0  value:\\\\\"Hello, Kafka!\\\\\"\\'  records.1:\\'kafka.Record  attributes:0  timestamp_delta:14030  offset_delta:1  value:\\\\\"Hello, Kafka!\\\\\"\\'  records.2:\\'kafka.Record  attributes:0  timestamp_delta:16578  offset_delta:2  value:\\\\\"Hello, Kafka!\\\\\"\\'  records.3:\\'kafka.Record  attributes:0  timestamp_delta:18884  offset_delta:3  value:\\\\\"Hello, Kafka!\\\\\"\\'\"'"
+2025/07/22T12:06:06.225963 verbose: x2gw.conn_read  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.226001 verbose: kafka2.FetchRequest  request_api_version:11  correlation_id:6  client_id:rdkafka  replica_id:-1  max_wait_ms:500  min_bytes:1  max_bytes:52428800  isolation_level:1  session_id:0  session_epoch:-1  topics.0:'kafka2.FetchTopic1q  topic:my-test-topic  topic_id:00000000-0000-0000-0000-000000000000  partitions.0:"kafka2.FetchPartition1q  partition:0  current_leader_epoch:0  fetch_offset:4  last_fetched_epoch:-1  log_start_offset:-1  partition_max_bytes:1048576"'  rack_id:""
+2025/07/22T12:06:06.226018 verbose: x2gw.conn_read  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.226035 verbose: x2gw.conn_read  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.226046 verbose: x2gw.conn_eof  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.226060 verbose: x2gw.conn_outflow  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:06:06.226075 verbose: x2gw.conn_close  id:10  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:38868  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:07:24.826905 verbose: x2gw.new_conn  id:11  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:50416  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:07:24.826975 verbose: x2gw.conn_read  id:11  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:50416  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:07:24.826999 verbose: kafka2.ApiVersionsRequest  request_api_version:3  correlation_id:1  client_id:rdkafka  client_software_name:librdkafka  client_software_version:2.3.0
+2025/07/22T12:07:24.827088 verbose: kafka2.client:rdkafka
+2025/07/22T12:07:24.827094 verbose: kafka2.ApiVersionsResponse  request_api_version:3  correlation_id:1  error_code:0  api_keys.0:"kafka2.ApiVersion18a  api_key:18  min_version:0  max_version:3"  api_keys.1:"kafka2.ApiVersion18a  api_key:30  min_version:1  max_version:3"  api_keys.2:"kafka2.ApiVersion18a  api_key:19  min_version:2  max_version:7"  api_keys.3:"kafka2.ApiVersion18a  api_key:31  min_version:1  max_version:3"  api_keys.4:"kafka2.ApiVersion18a  api_key:20  min_version:1  max_version:6"  api_keys.5:"kafka2.ApiVersion18a  api_key:29  min_version:1  max_version:3"  api_keys.6:"kafka2.ApiVersion18a  api_key:60  min_version:0  max_version:2"  api_keys.7:"kafka2.ApiVersion18a  api_key:32  min_version:1  max_version:3"  api_keys.8:"kafka2.ApiVersion18a  api_key:15  min_version:0  max_version:6"  api_keys.9:"kafka2.ApiVersion18a  api_key:35  min_version:1  max_version:4"  api_keys.10:"kafka2.ApiVersion18a  api_key:1  min_version:4  max_version:17"  api_keys.11:"kafka2.ApiVersion18a  api_key:10  min_version:0  max_version:6"  api_keys.12:"kafka2.ApiVersion18a  api_key:12  min_version:0  max_version:4"  api_keys.13:"kafka2.ApiVersion18a  api_key:22  min_version:0  max_version:6"  api_keys.14:"kafka2.ApiVersion18a  api_key:11  min_version:2  max_version:9"  api_keys.15:"kafka2.ApiVersion18a  api_key:13  min_version:0  max_version:5"  api_keys.16:"kafka2.ApiVersion18a  api_key:16  min_version:0  max_version:5"  api_keys.17:"kafka2.ApiVersion18a  api_key:2  min_version:1  max_version:10"  api_keys.18:"kafka2.ApiVersion18a  api_key:3  min_version:0  max_version:13"  api_keys.19:"kafka2.ApiVersion18a  api_key:8  min_version:2  max_version:9"  api_keys.20:"kafka2.ApiVersion18a  api_key:9  min_version:1  max_version:9"  api_keys.21:"kafka2.ApiVersion18a  api_key:0  min_version:3  max_version:12"  api_keys.22:"kafka2.ApiVersion18a  api_key:36  min_version:0  max_version:2"  api_keys.23:"kafka2.ApiVersion18a  api_key:17  min_version:0  max_version:1"  api_keys.24:"kafka2.ApiVersion18a  api_key:14  min_version:0  max_version:5"  throttle_time_ms:0
+2025/07/22T12:07:24.827147 verbose: x2gw.conn_outflow  id:11  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:50416  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:07:24.827161 verbose: x2gw.conn_read  id:11  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:50416  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:07:24.827280 verbose: x2gw.conn_read  id:11  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:50416  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:07:24.827304 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:2  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:07:24.827359 verbose: kafka2.client:rdkafka
+2025/07/22T12:07:24.827374 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:2  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:07:24.827395 verbose: x2gw.conn_read  id:11  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:50416  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:07:24.827416 verbose: kafka2.MetadataRequest  request_api_version:12  correlation_id:3  client_id:rdkafka  topics.0:"kafka2.MetadataRequestTopic3q  topic_id:00000000-0000-0000-0000-000000000000  name:my-test-topic"  allow_auto_topic_creation:N  include_cluster_authorized_operations:N  include_topic_authorized_operations:N
+2025/07/22T12:07:24.827454 verbose: kafka2.client:rdkafka
+2025/07/22T12:07:24.827459 verbose: kafka2.MetadataResponse  request_api_version:12  correlation_id:3  throttle_time_ms:0  brokers.0:"kafka2.MetadataResponseBroker3a  node_id:1  host:127.0.0.1  port:9092"  controller_id:1  topics.0:'kafka2.MetadataResponseTopic3a  error_code:0  name:my-test-topic  topic_id:0286b57a-51c8-4a68-a7c6-fa3ea85a1b35  is_internal:N  partitions.0:"kafka2.MetadataResponsePartition3a  error_code:0  partition_index:0  leader_id:1  leader_epoch:0  replica_nodes.0:1  isr_nodes.0:1"  topic_authorized_operations:OMITTED'  cluster_authorized_operations:OMITTED  error_code:0
+2025/07/22T12:07:24.827474 verbose: x2gw.conn_read  id:11  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:50416  in_fd:33  out_fd:34  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:07:24.827817 verbose: x2gw.new_conn  id:12  framing:kafka  local:127.0.0.1:9092  remote:127.0.0.1:50428  in_fd:35  out_fd:36  in_err:Success  out_err:Success  in_ssl:N  out_ssl:N
+2025/07/22T12:07:56.593049 n_write_block_spin:0
+2025/07/22T12:07:56.593085 x2sup-0-0  shm  shm_id:x2cmt-0-0.ack-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2cmt-0-0.ack-0.ams  fd:0  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.593096 x2sup-0-0  shmember  shmember:x2cmt-0-0.ack-0/x2cmt-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.593102 x2sup-0-0  shmember  shmember:x2cmt-0-0.ack-0/x2cmt-0-0,w  off:4992  budget:57344
+2025/07/22T12:07:56.593107 x2sup-0-0  shmember  shmember:x2cmt-0-0.ack-0/x2gw-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.593111 x2sup-0-0  shmember  shmember:x2cmt-0-0.ack-0/x2net-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.593117 x2sup-0-0  shmember  shmember:x2cmt-0-0.ack-0/x2txn-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.593122 x2sup-0-0  shm  shm_id:x2cmt-0-0.ctl-0  roff:494464  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2cmt-0-0.ctl-0.ams  fd:5  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.593130 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2sup-0-0,r  off:494464  budget:0
+2025/07/22T12:07:56.593135 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2cmt-0-0,r  off:493376  budget:0
+2025/07/22T12:07:56.593140 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2cmt-0-0,w  off:493440  budget:18176
+2025/07/22T12:07:56.593145 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2gf-0-0,r  off:493632  budget:0
+2025/07/22T12:07:56.593149 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2mon-0-0,r  off:493696  budget:0
+2025/07/22T12:07:56.593154 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2gw-0-0,r  off:454272  budget:0
+2025/07/22T12:07:56.593159 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2imdb-0-0,r  off:493760  budget:0
+2025/07/22T12:07:56.593163 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2net-0-0,r  off:488384  budget:0
+2025/07/22T12:07:56.593168 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2txn-0-0,r  off:493824  budget:0
+2025/07/22T12:07:56.593182 x2sup-0-0  shm  shm_id:x2cmt-0-0.net-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2cmt-0-0.net-0.ams  fd:6  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593189 x2sup-0-0  shmember  shmember:x2cmt-0-0.net-0/x2cmt-0-0,r  off:161856  budget:0
+2025/07/22T12:07:56.593193 x2sup-0-0  shmember  shmember:x2cmt-0-0.net-0/x2cmt-0-0,w  off:161920  budget:2087232
+2025/07/22T12:07:56.593197 x2sup-0-0  shmember  shmember:x2cmt-0-0.net-0/x2net-0-0,r  off:160192  budget:0
+2025/07/22T12:07:56.593203 x2sup-0-0  shm  shm_id:x2cmt-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2cmt-0-0.sup-0.ams  fd:7  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593209 x2sup-0-0  shmember  shmember:x2cmt-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593213 x2sup-0-0  shmember  shmember:x2cmt-0-0.sup-0/x2cmt-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593217 x2sup-0-0  shmember  shmember:x2cmt-0-0.sup-0/x2cmt-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.593221 x2sup-0-0  shm  shm_id:x2gf-0-0.ctl-0  roff:448448  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2gf-0-0.ctl-0.ams  fd:8  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.593228 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2sup-0-0,r  off:448448  budget:0
+2025/07/22T12:07:56.593232 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2gf-0-0,r  off:447232  budget:0
+2025/07/22T12:07:56.593236 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2gf-0-0,w  off:447296  budget:22080
+2025/07/22T12:07:56.593240 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2gw-0-0,r  off:412032  budget:0
+2025/07/22T12:07:56.593244 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2cmt-0-0,r  off:447808  budget:0
+2025/07/22T12:07:56.593248 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2mon-0-0,r  off:447872  budget:0
+2025/07/22T12:07:56.593252 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2imdb-0-0,r  off:447872  budget:0
+2025/07/22T12:07:56.593256 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2txn-0-0,r  off:447936  budget:0
+2025/07/22T12:07:56.593260 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2net-0-0,r  off:443008  budget:0
+2025/07/22T12:07:56.593265 x2sup-0-0  shm  shm_id:x2gf-0-0.net-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2gf-0-0.net-0.ams  fd:9  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593271 x2sup-0-0  shmember  shmember:x2gf-0-0.net-0/x2gf-0-0,r  off:2496  budget:0
+2025/07/22T12:07:56.593275 x2sup-0-0  shmember  shmember:x2gf-0-0.net-0/x2gf-0-0,w  off:2496  budget:2088960
+2025/07/22T12:07:56.593279 x2sup-0-0  shmember  shmember:x2gf-0-0.net-0/x2net-0-0,r  off:2496  budget:0
+2025/07/22T12:07:56.593284 x2sup-0-0  shm  shm_id:x2gf-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2gf-0-0.sup-0.ams  fd:10  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593290 x2sup-0-0  shmember  shmember:x2gf-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593294 x2sup-0-0  shmember  shmember:x2gf-0-0.sup-0/x2gf-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593298 x2sup-0-0  shmember  shmember:x2gf-0-0.sup-0/x2gf-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.593302 x2sup-0-0  shm  shm_id:x2gw-0-0.ctl-0  roff:518464  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2gw-0-0.ctl-0.ams  fd:11  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.593309 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2sup-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.593313 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2gw-0-0,r  off:517120  budget:0
+2025/07/22T12:07:56.593317 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2gw-0-0,w  off:517184  budget:56320
+2025/07/22T12:07:56.593321 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2gf-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.593325 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2cmt-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.593330 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2imdb-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.593337 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2mon-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.593341 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2txn-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.593345 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2net-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.593349 x2sup-0-0  shm  shm_id:x2gw-0-0.net-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2gw-0-0.net-0.ams  fd:12  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593356 x2sup-0-0  shmember  shmember:x2gw-0-0.net-0/x2gw-0-0,r  off:7040  budget:0
+2025/07/22T12:07:56.593359 x2sup-0-0  shmember  shmember:x2gw-0-0.net-0/x2gw-0-0,w  off:7040  budget:2088960
+2025/07/22T12:07:56.593363 x2sup-0-0  shmember  shmember:x2gw-0-0.net-0/x2net-0-0,r  off:7680  budget:0
+2025/07/22T12:07:56.593368 x2sup-0-0  shm  shm_id:x2gw-0-0.prod-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2gw-0-0.prod-0.ams  fd:13  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593374 x2sup-0-0  shmember  shmember:x2gw-0-0.prod-0/x2gw-0-0,r  off:768  budget:0
+2025/07/22T12:07:56.593378 x2sup-0-0  shmember  shmember:x2gw-0-0.prod-0/x2gw-0-0,w  off:768  budget:2088960
+2025/07/22T12:07:56.593382 x2sup-0-0  shmember  shmember:x2gw-0-0.prod-0/x2txn-0-0,r  off:768  budget:0
+2025/07/22T12:07:56.593386 x2sup-0-0  shmember  shmember:x2gw-0-0.prod-0/x2net-0-0,r  off:768  budget:0
+2025/07/22T12:07:56.593391 x2sup-0-0  shm  shm_id:x2gw-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2gw-0-0.sup-0.ams  fd:14  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593398 x2sup-0-0  shmember  shmember:x2gw-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593402 x2sup-0-0  shmember  shmember:x2gw-0-0.sup-0/x2gw-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593406 x2sup-0-0  shmember  shmember:x2gw-0-0.sup-0/x2gw-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.593410 x2sup-0-0  shm  shm_id:x2imdb-0-0.ctl-0  roff:494528  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2imdb-0-0.ctl-0.ams  fd:15  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.593417 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2sup-0-0,r  off:494528  budget:0
+2025/07/22T12:07:56.593421 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2imdb-0-0,r  off:493184  budget:0
+2025/07/22T12:07:56.593425 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2imdb-0-0,w  off:493248  budget:18496
+2025/07/22T12:07:56.593429 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2gf-0-0,r  off:493824  budget:0
+2025/07/22T12:07:56.593433 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2gw-0-0,r  off:454400  budget:0
+2025/07/22T12:07:56.593437 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2cmt-0-0,r  off:493952  budget:0
+2025/07/22T12:07:56.593441 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2mon-0-0,r  off:494016  budget:0
+2025/07/22T12:07:56.593445 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2txn-0-0,r  off:494080  budget:0
+2025/07/22T12:07:56.593449 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2net-0-0,r  off:488704  budget:0
+2025/07/22T12:07:56.593455 x2sup-0-0  shm  shm_id:x2imdb-0-0.net-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2imdb-0-0.net-0.ams  fd:16  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593462 x2sup-0-0  shmember  shmember:x2imdb-0-0.net-0/x2imdb-0-0,r  off:448  budget:0
+2025/07/22T12:07:56.593466 x2sup-0-0  shmember  shmember:x2imdb-0-0.net-0/x2imdb-0-0,w  off:448  budget:2088960
+2025/07/22T12:07:56.593470 x2sup-0-0  shmember  shmember:x2imdb-0-0.net-0/x2net-0-0,r  off:448  budget:0
+2025/07/22T12:07:56.593475 x2sup-0-0  shm  shm_id:x2imdb-0-0.seq-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2imdb-0-0.seq-0.ams  fd:17  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593481 x2sup-0-0  shmember  shmember:x2imdb-0-0.seq-0/x2imdb-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.593485 x2sup-0-0  shmember  shmember:x2imdb-0-0.seq-0/x2imdb-0-0,w  off:4992  budget:2088960
+2025/07/22T12:07:56.593491 x2sup-0-0  shmember  shmember:x2imdb-0-0.seq-0/x2gw-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.593495 x2sup-0-0  shmember  shmember:x2imdb-0-0.seq-0/x2txn-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.593499 x2sup-0-0  shmember  shmember:x2imdb-0-0.seq-0/x2net-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.593504 x2sup-0-0  shm  shm_id:x2imdb-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2imdb-0-0.sup-0.ams  fd:18  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593510 x2sup-0-0  shmember  shmember:x2imdb-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593514 x2sup-0-0  shmember  shmember:x2imdb-0-0.sup-0/x2imdb-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593519 x2sup-0-0  shmember  shmember:x2imdb-0-0.sup-0/x2imdb-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.593524 x2sup-0-0  shm  shm_id:x2mon-0-0.ctl-0  roff:402368  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2mon-0-0.ctl-0.ams  fd:19  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.593530 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2sup-0-0,r  off:402368  budget:0
+2025/07/22T12:07:56.593534 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2mon-0-0,r  off:401408  budget:0
+2025/07/22T12:07:56.593538 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2mon-0-0,w  off:401344  budget:25856
+2025/07/22T12:07:56.593542 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2gf-0-0,r  off:401856  budget:0
+2025/07/22T12:07:56.593546 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2imdb-0-0,r  off:401920  budget:0
+2025/07/22T12:07:56.593550 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2gw-0-0,r  off:369856  budget:0
+2025/07/22T12:07:56.593554 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2cmt-0-0,r  off:401984  budget:0
+2025/07/22T12:07:56.593558 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2txn-0-0,r  off:402112  budget:0
+2025/07/22T12:07:56.593562 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2net-0-0,r  off:397696  budget:0
+2025/07/22T12:07:56.593567 x2sup-0-0  shm  shm_id:x2mon-0-0.net-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2mon-0-0.net-0.ams  fd:20  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593573 x2sup-0-0  shmember  shmember:x2mon-0-0.net-0/x2mon-0-0,r  off:89728  budget:0
+2025/07/22T12:07:56.593577 x2sup-0-0  shmember  shmember:x2mon-0-0.net-0/x2mon-0-0,w  off:89728  budget:2085056
+2025/07/22T12:07:56.593582 x2sup-0-0  shmember  shmember:x2mon-0-0.net-0/x2net-0-0,r  off:85824  budget:0
+2025/07/22T12:07:56.593587 x2sup-0-0  shm  shm_id:x2mon-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2mon-0-0.sup-0.ams  fd:21  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593593 x2sup-0-0  shmember  shmember:x2mon-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593597 x2sup-0-0  shmember  shmember:x2mon-0-0.sup-0/x2mon-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593601 x2sup-0-0  shmember  shmember:x2mon-0-0.sup-0/x2mon-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.593605 x2sup-0-0  shm  shm_id:x2net-0-0.ack-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2net-0-0.ack-0.ams  fd:23  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.593611 x2sup-0-0  shmember  shmember:x2net-0-0.ack-0/x2net-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.593615 x2sup-0-0  shmember  shmember:x2net-0-0.ack-0/x2net-0-0,w  off:0  budget:57344
+2025/07/22T12:07:56.593619 x2sup-0-0  shmember  shmember:x2net-0-0.ack-0/x2gw-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.593623 x2sup-0-0  shmember  shmember:x2net-0-0.ack-0/x2txn-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.593628 x2sup-0-0  shm  shm_id:x2net-0-0.ctl-0  roff:808256  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2net-0-0.ctl-0.ams  fd:24  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.593634 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2sup-0-0,r  off:808256  budget:0
+2025/07/22T12:07:56.593642 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2net-0-0,r  off:808192  budget:0
+2025/07/22T12:07:56.593647 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2net-0-0,w  off:806080  budget:2176
+2025/07/22T12:07:56.593651 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2gf-0-0,r  off:808256  budget:0
+2025/07/22T12:07:56.593655 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2imdb-0-0,r  off:808256  budget:0
+2025/07/22T12:07:56.593659 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2mon-0-0,r  off:808256  budget:0
+2025/07/22T12:07:56.593663 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2cmt-0-0,r  off:808256  budget:0
+2025/07/22T12:07:56.593667 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2gw-0-0,r  off:750912  budget:0
+2025/07/22T12:07:56.593671 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2txn-0-0,r  off:808256  budget:0
+2025/07/22T12:07:56.593675 x2sup-0-0  shm  shm_id:x2net-0-0.fetch-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2net-0-0.fetch-0.ams  fd:27  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593681 x2sup-0-0  shmember  shmember:x2net-0-0.fetch-0/x2net-0-0,r  off:3200  budget:0
+2025/07/22T12:07:56.593685 x2sup-0-0  shmember  shmember:x2net-0-0.fetch-0/x2net-0-0,w  off:3200  budget:2088960
+2025/07/22T12:07:56.593690 x2sup-0-0  shmember  shmember:x2net-0-0.fetch-0/x2gf-0-0,r  off:3200  budget:0
+2025/07/22T12:07:56.593693 x2sup-0-0  shmember  shmember:x2net-0-0.fetch-0/x2imdb-0-0,r  off:3200  budget:0
+2025/07/22T12:07:56.593697 x2sup-0-0  shmember  shmember:x2net-0-0.fetch-0/x2cmt-0-0,r  off:3200  budget:0
+2025/07/22T12:07:56.593702 x2sup-0-0  shm  shm_id:x2net-0-0.net-0  roff:406336  woff:0  writelimit:0  flags:read  filename:x2-31332-x2net-0-0.net-0.ams  fd:28  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593709 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2sup-0-0,r  off:406336  budget:0
+2025/07/22T12:07:56.593713 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2net-0-0,r  off:396992  budget:0
+2025/07/22T12:07:56.593717 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2net-0-0,w  off:396992  budget:2061056
+2025/07/22T12:07:56.593721 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2gf-0-0,r  off:406016  budget:0
+2025/07/22T12:07:56.593725 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2mon-0-0,r  off:406080  budget:0
+2025/07/22T12:07:56.593729 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2gw-0-0,r  off:369088  budget:0
+2025/07/22T12:07:56.593733 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2imdb-0-0,r  off:406080  budget:0
+2025/07/22T12:07:56.593737 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2cmt-0-0,r  off:406208  budget:0
+2025/07/22T12:07:56.593741 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2txn-0-0,r  off:406208  budget:0
+2025/07/22T12:07:56.593746 x2sup-0-0  shm  shm_id:x2net-0-0.prod-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2net-0-0.prod-0.ams  fd:30  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593752 x2sup-0-0  shmember  shmember:x2net-0-0.prod-0/x2net-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.593756 x2sup-0-0  shmember  shmember:x2net-0-0.prod-0/x2net-0-0,w  off:0  budget:2088960
+2025/07/22T12:07:56.593760 x2sup-0-0  shmember  shmember:x2net-0-0.prod-0/x2txn-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.593765 x2sup-0-0  shm  shm_id:x2net-0-0.seq-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2net-0-0.seq-0.ams  fd:31  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593772 x2sup-0-0  shmember  shmember:x2net-0-0.seq-0/x2net-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.593776 x2sup-0-0  shmember  shmember:x2net-0-0.seq-0/x2net-0-0,w  off:0  budget:2088960
+2025/07/22T12:07:56.593780 x2sup-0-0  shmember  shmember:x2net-0-0.seq-0/x2gf-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.593784 x2sup-0-0  shmember  shmember:x2net-0-0.seq-0/x2gw-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.593788 x2sup-0-0  shmember  shmember:x2net-0-0.seq-0/x2imdb-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.593792 x2sup-0-0  shmember  shmember:x2net-0-0.seq-0/x2cmt-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.593799 x2sup-0-0  shm  shm_id:x2net-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2net-0-0.sup-0.ams  fd:32  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593805 x2sup-0-0  shmember  shmember:x2net-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593809 x2sup-0-0  shmember  shmember:x2net-0-0.sup-0/x2net-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593813 x2sup-0-0  shmember  shmember:x2net-0-0.sup-0/x2net-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.593817 x2sup-0-0  shm  shm_id:x2sup-0-0.ctl-0  roff:586688  woff:586688  writelimit:596800  flags:write,read,nonblock  filename:x2-31332-x2sup-0-0.ctl-0.ams  fd:33  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.593824 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2sup-0-0,r  off:586688  budget:0
+2025/07/22T12:07:56.593830 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2sup-0-0,w  off:586688  budget:11648
+2025/07/22T12:07:56.593834 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2mon-0-0,r  off:586368  budget:0
+2025/07/22T12:07:56.593838 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2gf-0-0,r  off:586368  budget:0
+2025/07/22T12:07:56.593842 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2gw-0-0,r  off:539456  budget:0
+2025/07/22T12:07:56.593846 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2net-0-0,r  off:579968  budget:0
+2025/07/22T12:07:56.593850 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2imdb-0-0,r  off:586432  budget:0
+2025/07/22T12:07:56.593854 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2cmt-0-0,r  off:586496  budget:0
+2025/07/22T12:07:56.593858 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2txn-0-0,r  off:586624  budget:0
+2025/07/22T12:07:56.593863 x2sup-0-0  shm  shm_id:x2sup-0-0.net-0  roff:512  woff:512  writelimit:2089472  flags:write,read  filename:x2-31332-x2sup-0-0.net-0.ams  fd:34  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593869 x2sup-0-0  shmember  shmember:x2sup-0-0.net-0/x2sup-0-0,r  off:512  budget:0
+2025/07/22T12:07:56.593873 x2sup-0-0  shmember  shmember:x2sup-0-0.net-0/x2sup-0-0,w  off:512  budget:2088960
+2025/07/22T12:07:56.593877 x2sup-0-0  shmember  shmember:x2sup-0-0.net-0/x2net-0-0,r  off:512  budget:0
+2025/07/22T12:07:56.593882 x2sup-0-0  shm  shm_id:x2sup-0-0.sup-0  roff:64  woff:64  writelimit:2089024  flags:write,read  filename:x2-31332-x2sup-0-0.sup-0.ams  fd:35  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593888 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593893 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2sup-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.593897 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2mon-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593901 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2gw-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593905 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2gf-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593909 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2imdb-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593912 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2net-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593916 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2cmt-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593920 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2txn-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.593925 x2sup-0-0  shm  shm_id:x2sup-0-0.terminal-0  roff:0  woff:0  writelimit:2088960  flags:write,read  filename:x2-31332-x2sup-0-0.terminal-0.ams  fd:36  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.593937 x2sup-0-0  shmember  shmember:x2sup-0-0.terminal-0/x2sup-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.593941 x2sup-0-0  shmember  shmember:x2sup-0-0.terminal-0/x2sup-0-0,w  off:0  budget:2088960
+2025/07/22T12:07:56.593945 x2sup-0-0  shm  shm_id:x2txn-0-0.ack-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2txn-0-0.ack-0.ams  fd:37  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.593954 x2sup-0-0  shmember  shmember:x2txn-0-0.ack-0/x2txn-0-0,r  off:640  budget:0
+2025/07/22T12:07:56.593958 x2sup-0-0  shmember  shmember:x2txn-0-0.ack-0/x2txn-0-0,w  off:640  budget:57344
+2025/07/22T12:07:56.593962 x2sup-0-0  shmember  shmember:x2txn-0-0.ack-0/x2gw-0-0,r  off:640  budget:0
+2025/07/22T12:07:56.593967 x2sup-0-0  shmember  shmember:x2txn-0-0.ack-0/x2net-0-0,r  off:640  budget:0
+2025/07/22T12:07:56.593972 x2sup-0-0  shm  shm_id:x2txn-0-0.ctl-0  roff:586688  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2txn-0-0.ctl-0.ams  fd:38  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.593979 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2sup-0-0,r  off:586688  budget:0
+2025/07/22T12:07:56.593983 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2txn-0-0,r  off:585280  budget:0
+2025/07/22T12:07:56.593987 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2txn-0-0,w  off:585344  budget:10112
+2025/07/22T12:07:56.593991 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2mon-0-0,r  off:586560  budget:0
+2025/07/22T12:07:56.593995 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2gf-0-0,r  off:586560  budget:0
+2025/07/22T12:07:56.593999 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2imdb-0-0,r  off:586560  budget:0
+2025/07/22T12:07:56.594004 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2net-0-0,r  off:580096  budget:0
+2025/07/22T12:07:56.594008 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2gw-0-0,r  off:538112  budget:0
+2025/07/22T12:07:56.594012 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2cmt-0-0,r  off:586624  budget:0
+2025/07/22T12:07:56.594016 x2sup-0-0  shm  shm_id:x2txn-0-0.net-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2txn-0-0.net-0.ams  fd:39  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594022 x2sup-0-0  shmember  shmember:x2txn-0-0.net-0/x2txn-0-0,r  off:146304  budget:0
+2025/07/22T12:07:56.594026 x2sup-0-0  shmember  shmember:x2txn-0-0.net-0/x2txn-0-0,w  off:146304  budget:2087488
+2025/07/22T12:07:56.594032 x2sup-0-0  shmember  shmember:x2txn-0-0.net-0/x2net-0-0,r  off:144832  budget:0
+2025/07/22T12:07:56.594036 x2sup-0-0  shm  shm_id:x2txn-0-0.seq-0  roff:896  woff:0  writelimit:0  flags:read  filename:x2-31332-x2txn-0-0.seq-0.ams  fd:40  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594043 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2sup-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.594046 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2txn-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.594050 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2txn-0-0,w  off:896  budget:2088960
+2025/07/22T12:07:56.594054 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2mon-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.594058 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2gf-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.594063 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2imdb-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.594068 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2gw-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.594072 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2net-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.594076 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2cmt-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.594080 x2sup-0-0  shm  shm_id:x2txn-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2txn-0-0.sup-0.ams  fd:41  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594086 x2sup-0-0  shmember  shmember:x2txn-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594090 x2sup-0-0  shmember  shmember:x2txn-0-0.sup-0/x2txn-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594094 x2sup-0-0  shmember  shmember:x2txn-0-0.sup-0/x2txn-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.594099 Process x2gw-0-0 does not send hearbeats for more than 30 sec, killing it
+2025/07/22T12:07:56.594113 n_write_block_spin:0
+2025/07/22T12:07:56.594116 x2sup-0-0  shm  shm_id:x2cmt-0-0.ack-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2cmt-0-0.ack-0.ams  fd:0  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.594125 x2sup-0-0  shmember  shmember:x2cmt-0-0.ack-0/x2cmt-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.594130 x2sup-0-0  shmember  shmember:x2cmt-0-0.ack-0/x2cmt-0-0,w  off:4992  budget:57344
+2025/07/22T12:07:56.594134 x2sup-0-0  shmember  shmember:x2cmt-0-0.ack-0/x2gw-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.594138 x2sup-0-0  shmember  shmember:x2cmt-0-0.ack-0/x2net-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.594142 x2sup-0-0  shmember  shmember:x2cmt-0-0.ack-0/x2txn-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.594146 x2sup-0-0  shm  shm_id:x2cmt-0-0.ctl-0  roff:494464  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2cmt-0-0.ctl-0.ams  fd:5  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.594153 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2sup-0-0,r  off:494464  budget:0
+2025/07/22T12:07:56.594157 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2cmt-0-0,r  off:493376  budget:0
+2025/07/22T12:07:56.594162 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2cmt-0-0,w  off:493440  budget:18176
+2025/07/22T12:07:56.594166 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2gf-0-0,r  off:493632  budget:0
+2025/07/22T12:07:56.594170 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2mon-0-0,r  off:493696  budget:0
+2025/07/22T12:07:56.594174 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2gw-0-0,r  off:454272  budget:0
+2025/07/22T12:07:56.594178 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2imdb-0-0,r  off:493760  budget:0
+2025/07/22T12:07:56.594182 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2net-0-0,r  off:488384  budget:0
+2025/07/22T12:07:56.594186 x2sup-0-0  shmember  shmember:x2cmt-0-0.ctl-0/x2txn-0-0,r  off:493824  budget:0
+2025/07/22T12:07:56.594191 x2sup-0-0  shm  shm_id:x2cmt-0-0.net-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2cmt-0-0.net-0.ams  fd:6  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594198 x2sup-0-0  shmember  shmember:x2cmt-0-0.net-0/x2cmt-0-0,r  off:161856  budget:0
+2025/07/22T12:07:56.594202 x2sup-0-0  shmember  shmember:x2cmt-0-0.net-0/x2cmt-0-0,w  off:161920  budget:2087232
+2025/07/22T12:07:56.594206 x2sup-0-0  shmember  shmember:x2cmt-0-0.net-0/x2net-0-0,r  off:160192  budget:0
+2025/07/22T12:07:56.594212 x2sup-0-0  shm  shm_id:x2cmt-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2cmt-0-0.sup-0.ams  fd:7  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594218 x2sup-0-0  shmember  shmember:x2cmt-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594222 x2sup-0-0  shmember  shmember:x2cmt-0-0.sup-0/x2cmt-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594226 x2sup-0-0  shmember  shmember:x2cmt-0-0.sup-0/x2cmt-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.594231 x2sup-0-0  shm  shm_id:x2gf-0-0.ctl-0  roff:448448  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2gf-0-0.ctl-0.ams  fd:8  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.594237 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2sup-0-0,r  off:448448  budget:0
+2025/07/22T12:07:56.594241 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2gf-0-0,r  off:447232  budget:0
+2025/07/22T12:07:56.594245 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2gf-0-0,w  off:447296  budget:22080
+2025/07/22T12:07:56.594249 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2gw-0-0,r  off:412032  budget:0
+2025/07/22T12:07:56.594253 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2cmt-0-0,r  off:447808  budget:0
+2025/07/22T12:07:56.594257 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2mon-0-0,r  off:447872  budget:0
+2025/07/22T12:07:56.594261 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2imdb-0-0,r  off:447872  budget:0
+2025/07/22T12:07:56.594265 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2txn-0-0,r  off:447936  budget:0
+2025/07/22T12:07:56.594269 x2sup-0-0  shmember  shmember:x2gf-0-0.ctl-0/x2net-0-0,r  off:443008  budget:0
+2025/07/22T12:07:56.594274 x2sup-0-0  shm  shm_id:x2gf-0-0.net-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2gf-0-0.net-0.ams  fd:9  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594282 x2sup-0-0  shmember  shmember:x2gf-0-0.net-0/x2gf-0-0,r  off:2496  budget:0
+2025/07/22T12:07:56.594288 x2sup-0-0  shmember  shmember:x2gf-0-0.net-0/x2gf-0-0,w  off:2496  budget:2088960
+2025/07/22T12:07:56.594293 x2sup-0-0  shmember  shmember:x2gf-0-0.net-0/x2net-0-0,r  off:2496  budget:0
+2025/07/22T12:07:56.594297 x2sup-0-0  shm  shm_id:x2gf-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2gf-0-0.sup-0.ams  fd:10  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594304 x2sup-0-0  shmember  shmember:x2gf-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594308 x2sup-0-0  shmember  shmember:x2gf-0-0.sup-0/x2gf-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594312 x2sup-0-0  shmember  shmember:x2gf-0-0.sup-0/x2gf-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.594317 x2sup-0-0  shm  shm_id:x2gw-0-0.ctl-0  roff:518464  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2gw-0-0.ctl-0.ams  fd:11  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.594324 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2sup-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.594329 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2gw-0-0,r  off:517120  budget:0
+2025/07/22T12:07:56.594333 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2gw-0-0,w  off:517184  budget:56320
+2025/07/22T12:07:56.594337 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2gf-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.594342 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2cmt-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.594346 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2imdb-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.594350 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2mon-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.594354 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2txn-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.594358 x2sup-0-0  shmember  shmember:x2gw-0-0.ctl-0/x2net-0-0,r  off:518464  budget:0
+2025/07/22T12:07:56.594363 x2sup-0-0  shm  shm_id:x2gw-0-0.net-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2gw-0-0.net-0.ams  fd:12  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594370 x2sup-0-0  shmember  shmember:x2gw-0-0.net-0/x2gw-0-0,r  off:7040  budget:0
+2025/07/22T12:07:56.594374 x2sup-0-0  shmember  shmember:x2gw-0-0.net-0/x2gw-0-0,w  off:7040  budget:2088960
+2025/07/22T12:07:56.594378 x2sup-0-0  shmember  shmember:x2gw-0-0.net-0/x2net-0-0,r  off:7680  budget:0
+2025/07/22T12:07:56.594384 x2sup-0-0  shm  shm_id:x2gw-0-0.prod-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2gw-0-0.prod-0.ams  fd:13  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594390 x2sup-0-0  shmember  shmember:x2gw-0-0.prod-0/x2gw-0-0,r  off:768  budget:0
+2025/07/22T12:07:56.594394 x2sup-0-0  shmember  shmember:x2gw-0-0.prod-0/x2gw-0-0,w  off:768  budget:2088960
+2025/07/22T12:07:56.594399 x2sup-0-0  shmember  shmember:x2gw-0-0.prod-0/x2txn-0-0,r  off:768  budget:0
+2025/07/22T12:07:56.594403 x2sup-0-0  shmember  shmember:x2gw-0-0.prod-0/x2net-0-0,r  off:768  budget:0
+2025/07/22T12:07:56.594407 x2sup-0-0  shm  shm_id:x2gw-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2gw-0-0.sup-0.ams  fd:14  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594414 x2sup-0-0  shmember  shmember:x2gw-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594418 x2sup-0-0  shmember  shmember:x2gw-0-0.sup-0/x2gw-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594422 x2sup-0-0  shmember  shmember:x2gw-0-0.sup-0/x2gw-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.594427 x2sup-0-0  shm  shm_id:x2imdb-0-0.ctl-0  roff:494528  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2imdb-0-0.ctl-0.ams  fd:15  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.594433 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2sup-0-0,r  off:494528  budget:0
+2025/07/22T12:07:56.594441 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2imdb-0-0,r  off:493184  budget:0
+2025/07/22T12:07:56.594445 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2imdb-0-0,w  off:493248  budget:18496
+2025/07/22T12:07:56.594449 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2gf-0-0,r  off:493824  budget:0
+2025/07/22T12:07:56.594454 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2gw-0-0,r  off:454400  budget:0
+2025/07/22T12:07:56.594458 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2cmt-0-0,r  off:493952  budget:0
+2025/07/22T12:07:56.594463 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2mon-0-0,r  off:494016  budget:0
+2025/07/22T12:07:56.594468 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2txn-0-0,r  off:494080  budget:0
+2025/07/22T12:07:56.594474 x2sup-0-0  shmember  shmember:x2imdb-0-0.ctl-0/x2net-0-0,r  off:488704  budget:0
+2025/07/22T12:07:56.594480 x2sup-0-0  shm  shm_id:x2imdb-0-0.net-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2imdb-0-0.net-0.ams  fd:16  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594487 x2sup-0-0  shmember  shmember:x2imdb-0-0.net-0/x2imdb-0-0,r  off:448  budget:0
+2025/07/22T12:07:56.594493 x2sup-0-0  shmember  shmember:x2imdb-0-0.net-0/x2imdb-0-0,w  off:448  budget:2088960
+2025/07/22T12:07:56.594498 x2sup-0-0  shmember  shmember:x2imdb-0-0.net-0/x2net-0-0,r  off:448  budget:0
+2025/07/22T12:07:56.594503 x2sup-0-0  shm  shm_id:x2imdb-0-0.seq-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2imdb-0-0.seq-0.ams  fd:17  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594510 x2sup-0-0  shmember  shmember:x2imdb-0-0.seq-0/x2imdb-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.594515 x2sup-0-0  shmember  shmember:x2imdb-0-0.seq-0/x2imdb-0-0,w  off:4992  budget:2088960
+2025/07/22T12:07:56.594519 x2sup-0-0  shmember  shmember:x2imdb-0-0.seq-0/x2gw-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.594523 x2sup-0-0  shmember  shmember:x2imdb-0-0.seq-0/x2txn-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.594527 x2sup-0-0  shmember  shmember:x2imdb-0-0.seq-0/x2net-0-0,r  off:4992  budget:0
+2025/07/22T12:07:56.594532 x2sup-0-0  shm  shm_id:x2imdb-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2imdb-0-0.sup-0.ams  fd:18  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594538 x2sup-0-0  shmember  shmember:x2imdb-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594543 x2sup-0-0  shmember  shmember:x2imdb-0-0.sup-0/x2imdb-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594547 x2sup-0-0  shmember  shmember:x2imdb-0-0.sup-0/x2imdb-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.594552 x2sup-0-0  shm  shm_id:x2mon-0-0.ctl-0  roff:402368  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2mon-0-0.ctl-0.ams  fd:19  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.594559 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2sup-0-0,r  off:402368  budget:0
+2025/07/22T12:07:56.594563 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2mon-0-0,r  off:401408  budget:0
+2025/07/22T12:07:56.594567 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2mon-0-0,w  off:401344  budget:25856
+2025/07/22T12:07:56.594572 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2gf-0-0,r  off:401856  budget:0
+2025/07/22T12:07:56.594576 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2imdb-0-0,r  off:401920  budget:0
+2025/07/22T12:07:56.594581 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2gw-0-0,r  off:369856  budget:0
+2025/07/22T12:07:56.594585 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2cmt-0-0,r  off:401984  budget:0
+2025/07/22T12:07:56.594589 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2txn-0-0,r  off:402112  budget:0
+2025/07/22T12:07:56.594593 x2sup-0-0  shmember  shmember:x2mon-0-0.ctl-0/x2net-0-0,r  off:397696  budget:0
+2025/07/22T12:07:56.594598 x2sup-0-0  shm  shm_id:x2mon-0-0.net-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2mon-0-0.net-0.ams  fd:20  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594604 x2sup-0-0  shmember  shmember:x2mon-0-0.net-0/x2mon-0-0,r  off:89728  budget:0
+2025/07/22T12:07:56.594611 x2sup-0-0  shmember  shmember:x2mon-0-0.net-0/x2mon-0-0,w  off:89728  budget:2085056
+2025/07/22T12:07:56.594615 x2sup-0-0  shmember  shmember:x2mon-0-0.net-0/x2net-0-0,r  off:85824  budget:0
+2025/07/22T12:07:56.594620 x2sup-0-0  shm  shm_id:x2mon-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2mon-0-0.sup-0.ams  fd:21  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594627 x2sup-0-0  shmember  shmember:x2mon-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594631 x2sup-0-0  shmember  shmember:x2mon-0-0.sup-0/x2mon-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594635 x2sup-0-0  shmember  shmember:x2mon-0-0.sup-0/x2mon-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.594640 x2sup-0-0  shm  shm_id:x2net-0-0.ack-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2net-0-0.ack-0.ams  fd:23  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.594647 x2sup-0-0  shmember  shmember:x2net-0-0.ack-0/x2net-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.594651 x2sup-0-0  shmember  shmember:x2net-0-0.ack-0/x2net-0-0,w  off:0  budget:57344
+2025/07/22T12:07:56.594655 x2sup-0-0  shmember  shmember:x2net-0-0.ack-0/x2gw-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.594659 x2sup-0-0  shmember  shmember:x2net-0-0.ack-0/x2txn-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.594664 x2sup-0-0  shm  shm_id:x2net-0-0.ctl-0  roff:808256  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2net-0-0.ctl-0.ams  fd:24  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.594670 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2sup-0-0,r  off:808256  budget:0
+2025/07/22T12:07:56.594675 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2net-0-0,r  off:808192  budget:0
+2025/07/22T12:07:56.594679 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2net-0-0,w  off:806080  budget:2176
+2025/07/22T12:07:56.594683 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2gf-0-0,r  off:808256  budget:0
+2025/07/22T12:07:56.594688 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2imdb-0-0,r  off:808256  budget:0
+2025/07/22T12:07:56.594692 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2mon-0-0,r  off:808256  budget:0
+2025/07/22T12:07:56.594696 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2cmt-0-0,r  off:808256  budget:0
+2025/07/22T12:07:56.594700 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2gw-0-0,r  off:750912  budget:0
+2025/07/22T12:07:56.594705 x2sup-0-0  shmember  shmember:x2net-0-0.ctl-0/x2txn-0-0,r  off:808256  budget:0
+2025/07/22T12:07:56.594709 x2sup-0-0  shm  shm_id:x2net-0-0.fetch-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2net-0-0.fetch-0.ams  fd:27  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594716 x2sup-0-0  shmember  shmember:x2net-0-0.fetch-0/x2net-0-0,r  off:3200  budget:0
+2025/07/22T12:07:56.594720 x2sup-0-0  shmember  shmember:x2net-0-0.fetch-0/x2net-0-0,w  off:3200  budget:2088960
+2025/07/22T12:07:56.594724 x2sup-0-0  shmember  shmember:x2net-0-0.fetch-0/x2gf-0-0,r  off:3200  budget:0
+2025/07/22T12:07:56.594728 x2sup-0-0  shmember  shmember:x2net-0-0.fetch-0/x2imdb-0-0,r  off:3200  budget:0
+2025/07/22T12:07:56.594733 x2sup-0-0  shmember  shmember:x2net-0-0.fetch-0/x2cmt-0-0,r  off:3200  budget:0
+2025/07/22T12:07:56.594737 x2sup-0-0  shm  shm_id:x2net-0-0.net-0  roff:406336  woff:0  writelimit:0  flags:read  filename:x2-31332-x2net-0-0.net-0.ams  fd:28  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594745 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2sup-0-0,r  off:406336  budget:0
+2025/07/22T12:07:56.594749 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2net-0-0,r  off:396992  budget:0
+2025/07/22T12:07:56.594753 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2net-0-0,w  off:396992  budget:2061056
+2025/07/22T12:07:56.594757 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2gf-0-0,r  off:406016  budget:0
+2025/07/22T12:07:56.594761 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2mon-0-0,r  off:406080  budget:0
+2025/07/22T12:07:56.594768 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2gw-0-0,r  off:369088  budget:0
+2025/07/22T12:07:56.594772 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2imdb-0-0,r  off:406080  budget:0
+2025/07/22T12:07:56.594777 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2cmt-0-0,r  off:406208  budget:0
+2025/07/22T12:07:56.594781 x2sup-0-0  shmember  shmember:x2net-0-0.net-0/x2txn-0-0,r  off:406208  budget:0
+2025/07/22T12:07:56.594786 x2sup-0-0  shm  shm_id:x2net-0-0.prod-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2net-0-0.prod-0.ams  fd:30  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594792 x2sup-0-0  shmember  shmember:x2net-0-0.prod-0/x2net-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.594796 x2sup-0-0  shmember  shmember:x2net-0-0.prod-0/x2net-0-0,w  off:0  budget:2088960
+2025/07/22T12:07:56.594801 x2sup-0-0  shmember  shmember:x2net-0-0.prod-0/x2txn-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.594806 x2sup-0-0  shm  shm_id:x2net-0-0.seq-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2net-0-0.seq-0.ams  fd:31  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594812 x2sup-0-0  shmember  shmember:x2net-0-0.seq-0/x2net-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.594816 x2sup-0-0  shmember  shmember:x2net-0-0.seq-0/x2net-0-0,w  off:0  budget:2088960
+2025/07/22T12:07:56.594821 x2sup-0-0  shmember  shmember:x2net-0-0.seq-0/x2gf-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.594825 x2sup-0-0  shmember  shmember:x2net-0-0.seq-0/x2gw-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.594829 x2sup-0-0  shmember  shmember:x2net-0-0.seq-0/x2imdb-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.594834 x2sup-0-0  shmember  shmember:x2net-0-0.seq-0/x2cmt-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.594838 x2sup-0-0  shm  shm_id:x2net-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2net-0-0.sup-0.ams  fd:32  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594845 x2sup-0-0  shmember  shmember:x2net-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594849 x2sup-0-0  shmember  shmember:x2net-0-0.sup-0/x2net-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594853 x2sup-0-0  shmember  shmember:x2net-0-0.sup-0/x2net-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.594858 x2sup-0-0  shm  shm_id:x2sup-0-0.ctl-0  roff:586688  woff:586688  writelimit:596800  flags:write,read,nonblock  filename:x2-31332-x2sup-0-0.ctl-0.ams  fd:33  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.594866 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2sup-0-0,r  off:586688  budget:0
+2025/07/22T12:07:56.594870 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2sup-0-0,w  off:586688  budget:11648
+2025/07/22T12:07:56.594874 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2mon-0-0,r  off:586368  budget:0
+2025/07/22T12:07:56.594879 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2gf-0-0,r  off:586368  budget:0
+2025/07/22T12:07:56.594883 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2gw-0-0,r  off:539456  budget:0
+2025/07/22T12:07:56.594887 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2net-0-0,r  off:579968  budget:0
+2025/07/22T12:07:56.594891 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2imdb-0-0,r  off:586432  budget:0
+2025/07/22T12:07:56.594895 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2cmt-0-0,r  off:586496  budget:0
+2025/07/22T12:07:56.594899 x2sup-0-0  shmember  shmember:x2sup-0-0.ctl-0/x2txn-0-0,r  off:586624  budget:0
+2025/07/22T12:07:56.594904 x2sup-0-0  shm  shm_id:x2sup-0-0.net-0  roff:512  woff:512  writelimit:2089472  flags:write,read  filename:x2-31332-x2sup-0-0.net-0.ams  fd:34  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594911 x2sup-0-0  shmember  shmember:x2sup-0-0.net-0/x2sup-0-0,r  off:512  budget:0
+2025/07/22T12:07:56.594915 x2sup-0-0  shmember  shmember:x2sup-0-0.net-0/x2sup-0-0,w  off:512  budget:2088960
+2025/07/22T12:07:56.594921 x2sup-0-0  shmember  shmember:x2sup-0-0.net-0/x2net-0-0,r  off:512  budget:0
+2025/07/22T12:07:56.594930 x2sup-0-0  shm  shm_id:x2sup-0-0.sup-0  roff:64  woff:64  writelimit:2089024  flags:write,read  filename:x2-31332-x2sup-0-0.sup-0.ams  fd:35  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594942 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594946 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2sup-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.594950 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2mon-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594954 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2gw-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594958 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2gf-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594962 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2imdb-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594966 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2net-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594970 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2cmt-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594975 x2sup-0-0  shmember  shmember:x2sup-0-0.sup-0/x2txn-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.594979 x2sup-0-0  shm  shm_id:x2sup-0-0.terminal-0  roff:0  woff:0  writelimit:2088960  flags:write,read  filename:x2-31332-x2sup-0-0.terminal-0.ams  fd:36  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.594987 x2sup-0-0  shmember  shmember:x2sup-0-0.terminal-0/x2sup-0-0,r  off:0  budget:0
+2025/07/22T12:07:56.594991 x2sup-0-0  shmember  shmember:x2sup-0-0.terminal-0/x2sup-0-0,w  off:0  budget:2088960
+2025/07/22T12:07:56.594996 x2sup-0-0  shm  shm_id:x2txn-0-0.ack-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2txn-0-0.ack-0.ams  fd:37  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.595002 x2sup-0-0  shmember  shmember:x2txn-0-0.ack-0/x2txn-0-0,r  off:640  budget:0
+2025/07/22T12:07:56.595007 x2sup-0-0  shmember  shmember:x2txn-0-0.ack-0/x2txn-0-0,w  off:640  budget:57344
+2025/07/22T12:07:56.595011 x2sup-0-0  shmember  shmember:x2txn-0-0.ack-0/x2gw-0-0,r  off:640  budget:0
+2025/07/22T12:07:56.595015 x2sup-0-0  shmember  shmember:x2txn-0-0.ack-0/x2net-0-0,r  off:640  budget:0
+2025/07/22T12:07:56.595020 x2sup-0-0  shm  shm_id:x2txn-0-0.ctl-0  roff:586688  woff:0  writelimit:0  flags:read,nonblock  filename:x2-31332-x2txn-0-0.ctl-0.ams  fd:38  handle:N  size:73728  n_write_block:0  nbits:16
+2025/07/22T12:07:56.595027 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2sup-0-0,r  off:586688  budget:0
+2025/07/22T12:07:56.595031 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2txn-0-0,r  off:585280  budget:0
+2025/07/22T12:07:56.595035 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2txn-0-0,w  off:585344  budget:10112
+2025/07/22T12:07:56.595040 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2mon-0-0,r  off:586560  budget:0
+2025/07/22T12:07:56.595044 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2gf-0-0,r  off:586560  budget:0
+2025/07/22T12:07:56.595048 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2imdb-0-0,r  off:586560  budget:0
+2025/07/22T12:07:56.595052 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2net-0-0,r  off:580096  budget:0
+2025/07/22T12:07:56.595056 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2gw-0-0,r  off:538112  budget:0
+2025/07/22T12:07:56.595060 x2sup-0-0  shmember  shmember:x2txn-0-0.ctl-0/x2cmt-0-0,r  off:586624  budget:0
+2025/07/22T12:07:56.595064 x2sup-0-0  shm  shm_id:x2txn-0-0.net-0  roff:0  woff:0  writelimit:0  flags:read  filename:x2-31332-x2txn-0-0.net-0.ams  fd:39  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.595071 x2sup-0-0  shmember  shmember:x2txn-0-0.net-0/x2txn-0-0,r  off:146304  budget:0
+2025/07/22T12:07:56.595075 x2sup-0-0  shmember  shmember:x2txn-0-0.net-0/x2txn-0-0,w  off:146304  budget:2087488
+2025/07/22T12:07:56.595079 x2sup-0-0  shmember  shmember:x2txn-0-0.net-0/x2net-0-0,r  off:144832  budget:0
+2025/07/22T12:07:56.595083 x2sup-0-0  shm  shm_id:x2txn-0-0.seq-0  roff:896  woff:0  writelimit:0  flags:read  filename:x2-31332-x2txn-0-0.seq-0.ams  fd:40  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.595089 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2sup-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.595097 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2txn-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.595101 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2txn-0-0,w  off:896  budget:2088960
+2025/07/22T12:07:56.595105 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2mon-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.595109 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2gf-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.595113 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2imdb-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.595117 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2gw-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.595121 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2net-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.595125 x2sup-0-0  shmember  shmember:x2txn-0-0.seq-0/x2cmt-0-0,r  off:896  budget:0
+2025/07/22T12:07:56.595130 x2sup-0-0  shm  shm_id:x2txn-0-0.sup-0  roff:64  woff:0  writelimit:0  flags:read  filename:x2-31332-x2txn-0-0.sup-0.ams  fd:41  handle:N  size:2105344  n_write_block:0  nbits:21
+2025/07/22T12:07:56.595136 x2sup-0-0  shmember  shmember:x2txn-0-0.sup-0/x2sup-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.595140 x2sup-0-0  shmember  shmember:x2txn-0-0.sup-0/x2txn-0-0,r  off:64  budget:0
+2025/07/22T12:07:56.595144 x2sup-0-0  shmember  shmember:x2txn-0-0.sup-0/x2txn-0-0,w  off:64  budget:2088960
+2025/07/22T12:07:56.595148 Process x2gw-0-0 does not send hearbeats for more than 30 sec, killing it
+2025/07/22T12:07:56.631649 x2sup.proc  proc:x2gw-0-0  status:Signaled  signal:Quit  core:Y
+2025/07/22T12:07:56.633118 x2sup.proc  proc:x2cmt-0-0  status:Exited  code:0
+2025/07/22T12:07:56.633221 x2sup.proc  proc:x2imdb-0-0  status:Exited  code:0
+2025/07/22T12:07:56.633243 x2sup.proc  proc:x2net-0-0  status:Exited  code:0
+2025/07/22T12:07:56.633260 x2sup.proc  proc:x2mon-0-0  status:Exited  code:0
+2025/07/22T12:07:56.633274 x2sup.proc  proc:x2txn-0-0  status:Exited  code:0
+2025/07/22T12:07:56.633319 x2sup.proc  proc:x2gf-0-0  status:Exited  code:0

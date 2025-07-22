@@ -24,11 +24,7 @@ omcli         dev.x2-4 -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_loa
 
 
 omcli dev.x2-4.% -collect_logs
-gdb -batch \
-  -ex "info threads" \
-  -ex "thread apply all bt full" \
-  ./bin/x2gw core.x2gw.1869.1753145121
- 
+
 
 omenv=dev.ak-8
 for i in {1..4}; do

@@ -4,7 +4,7 @@ set -x
 pkill -f x2sup
 rm -rf temp/x2sup
 mkdir -p temp/x2sup
-x2sup -temp  -trace:'verbose:(kafka2.%|x2gw.%),timestamps' 
+x2sup -temp  -trace:'verbose:(kafka2.%|x2gw.%),timestamps'  -daemon
 exit
 
 # ofile=~/av_openacr/x2sup_logs/x2sup.log

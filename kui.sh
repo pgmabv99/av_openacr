@@ -26,7 +26,6 @@ echo "....live monitoring   in temp/atf_snf.dat . "
 
 # tag=iframe_live
 # sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag 
-# # sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag -live_output: > $ofile 2>&1; tail -n 60 $ofile
 
 # this will create a new directory with new timestamp (and a new pcap file - which is really unndeeded)
 tag=iframe_pcap

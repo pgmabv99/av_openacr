@@ -42,6 +42,11 @@ abtr(){
  bin/abt -target:% -cfg:release
  abt   -cfg:release % -install
 }
+abtp(){
+ echo " release version"
+ bin/abt -target:% -cfg:profile
+ abt   -cfg:profile % -install
+}
 
 
 

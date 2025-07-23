@@ -312,3 +312,6 @@ omdb.omlattr  omlattr:debug-workload100/consumerPerSubscription  uval:1
 dmmeta.field  field:command.omcli.collect_logs_dir  arg:algo.cstring    reftype:Val  dflt:'"test1"'  comment:"subfolder for collected logs  under temp/omenv/"
 
 
+-pcap to dirs call in the same folder
+-kill do not create logs files
+

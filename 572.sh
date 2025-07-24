@@ -113,26 +113,26 @@ acr_ed -create -field atf_snf.FDb.bh_kafka_corr_id_glob -xref  -arg atf_snf.FKaf
 # -
 #-------------main CB
 acr_ed -create -ctype atf_snf.FMcb                              -write -comment "Main CB"
-
 # stats
-acr_ed -create -field atf_snf.FMcb.iframe                      -arg u64              -write -comment "global iframe index including non-tcp. start at 1"
-acr_ed -create -field atf_snf.FMcb.kafka_req_count_total       -arg u64              -write -comment "total kafka req count"
-acr_ed -create -field atf_snf.FMcb.kafka_req_ack_count_total   -arg u64              -write -comment "total kafka req ack count"
-acr_ed -create -field atf_snf.FMcb.max_pkt_len                 -arg u32              -write -comment "maximum packet length"
-acr_ed -create -field atf_snf.FMcb.time0                       -arg algo.SchedTime   -write -comment "starting time"
-acr_ed -create -field atf_snf.FMcb.round_trip_dur_tot          -arg u64              -write -comment "total accumulated round-trip duration"
-acr_ed -create -field atf_snf.FMcb.mon_step_n                  -arg u64              -write -comment "number of latest mon step run"
-acr_ed -create -field atf_snf.FMcb.snf                         -arg atf_snf.FSnf        -reftype Ptr   -write -comment "pointer to snf"
-acr_ed -create -field atf_snf.FMcb.fd_out_file                 -arg i32                 -write -comment ""
-acr_ed -create -field atf_snf.FMcb.i_kafka_solo                -arg i32                 -write -comment "index of kafka req/rsp pair solo generation"
-acr_ed -create -field atf_snf.FMcb.kafka_solo_err_count        -arg i32                 -write -comment "count of solo generation errors"
-acr_ed -create -field atf_snf.FMcb.seq_gap_pos_count           -arg u32                 -write -comment "pos sequence gap count"
-acr_ed -create -field atf_snf.FMcb.seq_gap_neg_count           -arg u32                 -write -comment "neg sequence gap count"
-acr_ed -create -field atf_snf.FMcb.exper_dir                   -arg algo.Smallstr100    -write -comment "experiment directory"
-acr_ed -create -field atf_snf.FMcb.test_dirs                   -arg algo.Smallstr100    -write -comment "test directories"
-acr_ed -create -field atf_snf.FMcb.tcp_pairs                   -arg algo.Smallstr100    -write -comment "tcp pairs directories"
-acr_ed -create -field atf_snf.FMcb.fd_tcp_pairs_all_log        -arg i32                 -write -comment "fd for tcp pairs all log"
-acr_ed -create -field atf_snf.FMcb.iframe_written              -arg u32                 -write -comment "last iframe written to  all log"
+acr_ed -create -field atf_snf.FMcb.iframe                      -arg u64               -write -comment "global iframe index including non-tcp. start at 1"
+acr_ed -create -field atf_snf.FMcb.kafka_req_count_total       -arg u64               -write -comment "total kafka req count"
+acr_ed -create -field atf_snf.FMcb.kafka_req_ack_count_total   -arg u64               -write -comment "total kafka req ack count"
+acr_ed -create -field atf_snf.FMcb.max_pkt_len                 -arg u32               -write -comment "maximum packet length"
+acr_ed -create -field atf_snf.FMcb.time0                       -arg algo.SchedTime    -write -comment "starting time"
+acr_ed -create -field atf_snf.FMcb.round_trip_dur_tot          -arg u64               -write -comment "total accumulated round-trip duration"
+acr_ed -create -field atf_snf.FMcb.mon_step_n                  -arg u64               -write -comment "number of latest mon step run"
+acr_ed -create -field atf_snf.FMcb.snf                         -arg atf_snf.FSnf      -reftype Ptr   -write -comment "pointer to snf"
+acr_ed -create -field atf_snf.FMcb.fd_out_pcap_file            -arg i32               -dflt:-1       -write -comment "" 
+acr_ed -create -field atf_snf.FMcb.i_kafka_solo                -arg i32               -write -comment "index of kafka req/rsp pair solo generation"
+acr_ed -create -field atf_snf.FMcb.kafka_solo_err_count        -arg i32               -write -comment "count of solo generation errors"
+acr_ed -create -field atf_snf.FMcb.seq_gap_pos_count           -arg u32               -write -comment "pos sequence gap count"
+acr_ed -create -field atf_snf.FMcb.seq_gap_neg_count           -arg u32               -write -comment "neg sequence gap count"
+acr_ed -create -field atf_snf.FMcb.exper_dir                   -arg algo.Smallstr100  -write -comment "experiment directory"
+acr_ed -create -field atf_snf.FMcb.test_dirs                   -arg algo.Smallstr100  -write -comment "test directories"
+acr_ed -create -field atf_snf.FMcb.tcp_pairs                   -arg algo.Smallstr100  -write -comment "tcp pairs directories"
+acr_ed -create -field atf_snf.FMcb.fd_tcp_pairs_all_log        -arg i32               -write -comment "fd for tcp pairs all log"
+acr_ed -create -field atf_snf.FMcb.iframe_written              -arg u32               -write -comment "last iframe written to  all log"
+acr_ed -create -field atf_snf.FMcb.session_info_print_flg      -arg bool   -dflt:true  -write -comment "print MAC info at parse"
 
 # debug
 acr_ed -create -field atf_snf.FMcb.mac_print_flg               -arg bool             -write -comment "print MAC info at parse"
@@ -141,7 +141,6 @@ acr_ed -create -field atf_snf.FMcb.tcp_pair_list_print_flg     -arg bool        
 acr_ed -create -field atf_snf.FMcb.tcp_filter                  -arg bool             -write -comment "apply tcp filter for debugging "
 acr_ed -create -field atf_snf.FMcb.snf_memqp_print_flg         -arg bool             -write -comment "print memqp print"
 
-# acr_ed -create -field atf_snf.FMcb.cap_solo                    -arg bool             -write -comment "capture each solo  kafka req/rsp to separate file"
 
 # include into _db
 acr_ed -del    -field atf_snf.FDb.mcb                          -write
@@ -179,7 +178,7 @@ EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_snf.kapi                   arg:bool          reftype:Val      dflt:false        comment:"invoke tcp header and kafka parse code"
     dmmeta.field  field:command.atf_snf.in_file                arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input PCAP file (full reference) . Empty for live NIC capture"
-    dmmeta.field  field:command.atf_snf.dir                    arg:algo.cstring  reftype:Val      dflt:'""'   comment:"dir for in and out files"
+    dmmeta.field  field:command.atf_snf.dir                    arg:algo.cstring  reftype:Val      dflt:'""'   comment:"dir under temp/atf_snf_logs/ to store output files"
     dmmeta.field  field:command.atf_snf.mult_req_per_frame     arg:bool          reftype:Val      dflt:true        comment:"parse mode: true - multiple req/rsp are expected per frame"
     dmmeta.field  field:command.atf_snf.hex_print              arg:bool          reftype:Val      dflt:false       comment:"print hex buffer"
     dmmeta.field  field:command.atf_snf.live_output            arg:bool          reftype:Val      dflt:false       comment:"live output on snf_mon step"

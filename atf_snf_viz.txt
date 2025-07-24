@@ -1,62 +1,40 @@
-                                                                                                       
-                                                                                                       
-    / atf_snf.WcOpcode                                                                                 
-    -                                                                                                  
-                                                                                                       
-                                                                                                       
-                                  / atf_snf.FDb                                                        
-                                  |                                                                    
-                                  |Lary memqp---------------------->/ atf_snf.FMemqp                   
-                                  |                                 |                                  
-                       /<atf_snf.FMcbl mcb                          |                                  
-                       |          |                                 |                                  
-                       |          |Lary omnode------>/ atf_snf.FOmnode                                 
-                       |          |Llist zd_omnode-->|              |                                  
-                       |          |                  -              |                                  
-                       |          |                                 |                                  
-                       |          |                                 |                                  
-                       |          |Lary dctrport--------------------|---->/ atf_snf.FDctrport          
-                       |          |Thash ind_uid--------------------|---->|                            
-                       |          |Llist zd_dctrport----------------|---->|                            
-                       |          |                                 |     -                            
-                       |          |                                 |                                  
-                       |          |                                 |                                  
-                       |          |Lary intfname--------------------|-->/ atf_snf.FIntfname            
-                       |          |Thash ind_intfname---------------|-->|                              
-                       |          |                                 |   |                              
-                       |          |Tpool client_id------------------|---|--------->/ atf_snf.FClient_id
-                       |          |                                 |   |          |                   
-                       |          |Lary snf------>/ atf_snf.FSnf    |   |          |                   
-                       |          |               |Ptrary c_memqp-->|   |          |                   
-                       |          |               |                 -   |          |                   
-                       |          |               |                     |          |                   
-                       |          |               |Ptr p_intfname------>|          |                   
-                       |          |               |                     -          |                   
-                       |          |               |                                |                   
-                       |Ptr snf---|-------------->|                                |                   
-                       -          |               |                                |                   
-                                  |               |                                |                   
-                                  |               -                                |                   
-                                  |                                                |                   
-                                  |                                                |                   
-                                  |Tpool kafka------------------------------------>/ atf_snf.FKafka    
-                                  |Bheap bh_kafka_corr_id_glob-------------------->|                   
-                                  |                                                |                   
-                                  |Tpool tcp_pair------>/ atf_snf.FTcp_pair        |                   
-                                  |Llist zd_tcp_pair--->|                          |                   
-                                  |Thash ind_tcp_pair-->|                          |                   
-                                  -                     |                          |                   
-                                                        |                          |                   
-                                                        |Llist zd_client_id------->|                   
-                                                        |Thash ind_client_id------>|                   
-                                                        |Ptr p_cur_kafka---------->|                   
-                                                        |Bheap bh_kafka_corr_id--->|                   
-                                                        |Thash ind_kafka_corr_id-->|                   
-                                                        |Llist zd_kafka_obsolete-->|                   
-                                                        |<-------------------------|Upptr p_tcp_pair   
-                                                        |                          |                   
-                                                        |                          |                   
-                                                        |<-------------------------|Upptr p_tcp_pair   
-                                                        |                          -                   
-                                                        |                                              
-                                                        -                                              
+/ atf_snf.FDb                                                                                   
+|Tpool tcp_pair--------------->/ atf_snf.FTcp_pair                                              
+|Llist zd_tcp_pair------------>|                                                                
+|Thash ind_tcp_pair----------->|                                                                
+|Tpool kafka-------------------|------------------------->/ atf_snf.FKafka                      
+|                              |<-------------------------|Upptr p_tcp_pair                     
+|                              |Ptr p_cur_kafka---------->|                                     
+|                              |Llist zd_kafka_obsolete-->|                                     
+|                              |Bheap bh_kafka_corr_id--->|                                     
+|Bheap bh_kafka_corr_id_glob---|------------------------->|                                     
+|                              |Thash ind_kafka_corr_id-->|                                     
+|                              |                          -                                     
+|Lary snf----------------------|------------------------->/ atf_snf.FSnf                        
+|Tpool client_id---------------|--------------------------|---------------->/ atf_snf.FClient_id
+|                              |<-------------------------|-----------------|Upptr p_tcp_pair   
+|                              |Llist zd_client_id--------|---------------->|                   
+|                              |Thash ind_client_id-------|---------------->|                   
+|                              -                          |                 |                   
+|                                                         |                 -                   
+|Lary intfname--------------------------------------------|---------------->/ atf_snf.FIntfname 
+|Thash ind_intfname---------------------------------------|---------------->|                   
+|                                                         |Ptr p_intfname-->|                   
+|                                                         |                 -                   
+|Lary dctrport--------------------------------------------|---------------->/ atf_snf.FDctrport 
+|Thash ind_uid--------------------------------------------|---------------->|                   
+|Llist zd_dctrport----------------------------------------|---------------->|                   
+|                                                         |                 -                   
+|Lary memqp-----------------------------------------------|---------------->/ atf_snf.FMemqp    
+|                                                         |Ptrary c_memqp-->|                   
+|                                                         |                 -                   
+|Val mcb---------------------->/ atf_snf.FMcb             |                                     
+|                              |Ptr snf------------------>|                                     
+|                              |                          -                                     
+|                              -                                                                
+|Lary omnode------------------>/ atf_snf.FOmnode                                                
+|Llist zd_omnode-------------->|                                                                
+-                              |                                                                
+                               -                                                                
+/ atf_snf.WcOpcode                                                                              
+-                                                                                               

@@ -259,10 +259,7 @@ algo_x2:  nj1.sn1.avorovich->gitlab
 
 ^(?=.*name_Set)(?=.*MetadataResponseTopic)
 
-## one node x2sup
-rm -rf x2data;
-x2fs -create -path x2data
-x2sup 
+
 
 ## todo
 -duplicate corr_id in rdp ??
@@ -288,16 +285,6 @@ describelogsdirs
 { "name": "Name", "type": "string", "versions": "0+", "entityType": "topicName",
 
 
-$ acr  atfdb.comptest | grep Kaf
-atfdb.comptest  comptest:atf_x2.Kafka             timeout:10  memcheck:N  exit_code:0  comment:"KAFKA Smoke test"
-atfdb.comptest  comptest:atf_x2.KafkaAcl          timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA ACL test"
-atfdb.comptest  comptest:atf_x2.KafkaAclMgt       timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA ACL management test"
-atfdb.comptest  comptest:atf_x2.KafkaAuth         timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA Authentication test"
-atfdb.comptest  comptest:atf_x2.KafkaCrc          timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA Smoke test"
-atfdb.comptest  comptest:atf_x2.KafkaCreateTopic  timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA Create Topic Test"
-atfdb.comptest  comptest:atf_x2.KafkaKv           timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA Key-Value test"
-atfdb.comptest  comptest:atf_x2.KafkaMtls         timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA mTLS  test"
-atfdb.comptest  comptest:atf_x2.KafkaTls          timeout:10  memcheck:Y  exit_code:0  comment:"KAFKA TLS test"
 
 // only last node visible to nic on sn5
 omdb.omnode  omnode:dev.x2-4.x2-0  node:dev.x2-17  use:N  comment:"x2 Broker node 1"
@@ -311,7 +298,11 @@ omdb.omlattr  omlattr:debug-workload100/consumerPerSubscription  uval:1
 
 dmmeta.field  field:command.omcli.collect_logs_dir  arg:algo.cstring    reftype:Val  dflt:'"test1"'  comment:"subfolder for collected logs  under temp/omenv/"
 
-
+actions for atf_snf part3
 -pcap to dirs call in the same folder
 -kill do not create logs files
 
+
+
+#potential broker parms that could be discovered at run time 
+message.max.bytes -NO. static def

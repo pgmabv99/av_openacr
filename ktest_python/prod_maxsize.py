@@ -6,6 +6,7 @@ import logging
 
 producer = KafkaProducer(
     bootstrap_servers='dev.ak-8.kafka-4.ext-0:1047',
+    # max_request_size=10971520,  # 20 MB (bigger than broker's 10 MB)
     max_request_size=20971520,  # 20 MB (bigger than broker's 10 MB)
 )
 

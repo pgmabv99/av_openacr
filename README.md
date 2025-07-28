@@ -304,5 +304,6 @@ actions for atf_snf part3
 
 
 
-#potential broker parms that could be discovered at run time 
-message.max.bytes -NO. static def
+targs.ssim - main file with invocation
+tmsg.ssim -one line per  
+test/atf_comp/atf_x2.Cli -output  

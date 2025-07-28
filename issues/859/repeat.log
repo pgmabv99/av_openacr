@@ -1,0 +1,20 @@
+$ atf_comp atf_x2.Cli% -repeat:2  -maxjobs:2 -report -maxerr:99
+begin.atf_comp  comptest:atf_x2.Cli%  build:N  cfg:release  run:Y  capture:N  edit:N  verbose:N
+diff --git a/test/atf_comp/atf_x2.Cli b/temp/atf_comp/atf_x2.Cli.out
+index 283d9ea90..7d64637cd 100644
+--- a/test/atf_comp/atf_x2.Cli
++++ b/temp/atf_comp/atf_x2.Cli.out
+@@ -3,7 +3,7 @@ x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
+x2.ProcStatusMsg  proc:x2  status:Running
+x2.ProcStartMsg  proc:x2cli  pty:N  cmd:"$bindir/x2cli -conn_timeout:1.0 -conn_backoff:0.1 -conn_reconnect:Y -conn_max_attempts:50 -gw::$x2port -echo"
+x2.ProcReadMsg  proc:x2cli  until:connected
+x2.ProcStatusMsg  proc:x2cli  status:Runningzzzzzzzzzzzzzzstatus:Running
+x2.ProcMsg  proc:x2cli  payload:"x2cli.connected  gw:0.0.0.0:*"
+x2.ProcMsg  proc:x2cli  payload:"help disk"
+x2.ProcMsg  proc:x2cli  payload:""
+atf_comp.comptest  comptest:atf_x2.Cli  success:N  elapsed:0.633302  comment:"Output does not match"
+atf_comp.comptest  comptest:atf_x2.Cli2  i_repeat:1  repeat:2  comment:"Test passed, repeating"
+atf_comp.comptest  comptest:atf_x2.Cli2  success:Y  elapsed:0.635282  comment:""
+atf_comp.comptest  comptest:atf_x2.Cli2  success:Y  elapsed:0.627448  comment:""
+atf_comp.testfailed  comptest:atf_x2.Cli
+report.atf_comp  ntest:325  nselect:2  npass:1  nskip:323  nrun:3  nwrite:0  nerr:1  ninsert:0  success:N

@@ -1,0 +1,16 @@
+diff --git a/test/atf_comp/atf_x2.TwoSup b/temp/atf_comp/atf_x2.TwoSup.out
+index 4817cd5e3..b778efefa 100644
+--- a/test/atf_comp/atf_x2.TwoSup
++++ b/temp/atf_comp/atf_x2.TwoSup.out
+@@ -15,7 +15,7 @@ x2.ProcEofMsg  proc:x2write1
+x2.ProcReadMsg  proc:x2write1  until:""
+x2.ProcStatusMsg  proc:x2write1  status:Running
+x2.ProcMsg  proc:x2write1  payload:"x2write.connected  gw:0.0.0.0:*"
+x2.ProcMsg  proc:x2write1  payload:"x2.AckMsg  from:x2cmt-1-0from:x2cmt-0-0  request_id:x2write-0-0.2  stream_id:3  beg_seq:1  end_seq:2  timestamp:***  n_del:0"
+x2.ProcStatusMsg  proc:x2write1  status:"Exited: 0"
+x2.ProcStartMsg  proc:x2read0  pty:N  cmd:"$bindir/x2read -gw::$x2port -end:eof -pretty:N"
+x2.ProcReadMsg  proc:x2read0  until:DUO
+atf_comp.comptest  comptest:atf_x2.TwoSup  success:N  elapsed:0.653911  comment:"Output does not match"
+atf_comp: too many errors, not starting tests
+atf_comp.testfailed  comptest:atf_x2.Cli
+atf_comp.testfailed  comptest:atf_x2.TwoSup

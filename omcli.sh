@@ -2,7 +2,7 @@
 
 
 
-x2rel  -create  -product:x2 -omenv:dev.x2-4   
+x2rel  -create  -product:x2 -omenv:dev.x2-4 -upload  
 x2rel  -upload  -product:x2 -omnode:dev.x2-4.x2%  
 
 

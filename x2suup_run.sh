@@ -3,11 +3,30 @@ set -x
 
 pkill -f x2sup
 rm -rf temp/x2sup
-mkdir -p temp/x2sup
-x2sup -temp  -trace:'verbose:(kafka2.%|x2gw.%),timestamps'  -daemon
-# valgrind --log-file=temp/valgrind.log x2sup -temp  -trace:'verbose:(kafka2.%|x2gw.%),timestamps'  -daemon
+# mkdir -p temp/x2sup
+x2sup -temp   -random_ports -livecheck:N 
+
+
 exit
 
+pkill x2sup
+rm -rf temp/x2sup22
+x2fs -create -path temp/x2sup22/ -topo:dev2 -f
+x2sup -initdir:temp/x2sup22/  -proc:dev2.x2sup-0-0  -daemon
+
+pkill -f x2sup
+# run_x2sup_with_id() {
+#   local id="$1"
+#   rm -rf "temp/$id"
+#   mkdir -p "temp/$id"
+#   x2sup -initdir:"temp/$id" -daemon -random_ports
+# }
+
+# run_x2sup_with_id "id1"
+# run_x2sup_with_id "id2"
+
+# x2sup -temp  -trace:'verbose:(kafka2.%|x2gw.%),timestamps'  -daemon -random_ports
+# valgrind --log-file=temp/valgrind.log x2sup -temp  -trace:'verbose:(kafka2.%|x2gw.%),timestamps'  -daemon
 # ofile=~/av_openacr/x2sup_logs/x2sup.log
 # ofile_pretty=~/av_openacr/x2sup_logs/x2sup_pretty.log
 # echo "Output file: $ofile"

@@ -4,6 +4,7 @@ set -e
 
 # one time only !!!!!!!!!!!!!!!!!!
 # acr_ed -create -srcfile cpp/x2gw/x2flt_brg.cpp -write -comment "x2flt exit bridge "
+# acr_ed -create -srcfile conf/x2flt/x2flt.cpp  -write -comment "x2flt example "
 
 
 acr_ed -del  -ctype x2gw.X2flt    -write || true

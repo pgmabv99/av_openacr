@@ -3,10 +3,7 @@ set -x
 
 pkill -f x2sup
 rm -rf temp/x2sup
-# mkdir -p temp/x2sup
-x2sup -temp   -random_ports -livecheck:N 
-
-
+x2sup -temp    -livecheck:N 
 exit
 
 pkill x2sup

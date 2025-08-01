@@ -1,0 +1,51 @@
+$ omcli dev.ak-8.tap-4_ext_0 -start
+dev.ak-8.tap-4_ext_0:script
+script:info  node:nj1.sn5.bm omnode:dev.ak-8.tap-4_ext_0 option:stop 
+No PID file found, nothing to stop.
+script:info  node:nj1.sn5.bm omnode:dev.ak-8.tap-4_ext_0 option:start 
+child_pid:2430910 started
+[0 Jul 31 19:59:29] avorovich@nj1.sn5.user-avorovich:~/arnd 
+$ omcli dev.ak-8.kafka-1 -start
+[0 Jul 31 20:04:04] avorovich@nj1.sn5.user-avorovich:~/arnd 
+
+omenv=dev.ak-8
+# omenv=dev.x2-4
+omrun_load=debug-workload100
+omcli $omenv -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:$omrun_load -omrun_minutes:1
+omcli.info omtest:om_benchmark
+
+.......
+
+$ omcli dev.ak-8.tap-4_ext_0 -stop
+dev.ak-8.tap-4_ext_0:script
+script:info  node:nj1.sn5.bm omnode:dev.ak-8.tap-4_ext_0 option:stop 
+child_pid:2433428 is running
+child_pid:2433428 stopped
+[0 Jul 31 20:11:04] avorovich@nj1.sn5.user-avorovich:~/arnd 
+$ omcli dev.ak-8.tap-4_ext_0 -collect_logs
+omcli.info logdir:temp/collect_logs/test1/2025.07.31.20.11  comment:"copying into omenv directory"
+omcli.info omnode:dev.ak-8.tap-4_ext_0  logname:temp/atf_snf_logs/dev.ak-8.tap-4_ext_0  comment:"collecting log"
+omcli.info logdir:temp/collect_logs/test1/2025.07.31.20.11/dev.ak-8.tap-4_ext_0  comment:copied
+[0 Jul 31 20:11:14] avorovich@nj1.sn5.user-avorovich:~/arnd 
+
+
+ ls -ltr temp/collect_logs/test1/2025.07.31.20.11/dev.ak-8.tap-4_ext_0/dev.ak-8.tap-4_ext_0/tcp_pairs
+total 1472
+-rwxrwxrwx 1 avorovich avorovich   7126 Jul 31 20:11 192.168.108.7:50190-192.168.108.5:1047_consumer-sub-000-a1sQY8A-2.log
+-rwxrwxrwx 1 avorovich avorovich   7126 Jul 31 20:11 192.168.108.7:50174-192.168.108.5:1047_consumer-sub-000-a1sQY8A-1.log
+-rwxrwxrwx 1 avorovich avorovich   6090 Jul 31 20:11 192.168.108.7:50160-192.168.108.5:1047_adminclient-1.log
+-rwxrwxrwx 1 avorovich avorovich   6594 Jul 31 20:11 192.168.108.6:38684-192.168.108.5:1047_producer-1.log
+-rwxrwxrwx 1 avorovich avorovich  11064 Jul 31 20:11 192.168.108.6:38680-192.168.108.5:1047_adminclient-1.log
+-rwxrwxrwx 1 avorovich avorovich   6090 Jul 31 20:11 192.168.108.6:38674-192.168.108.5:1047_adminclient-1.log
+-rwxrwxrwx 1 avorovich avorovich 326052 Jul 31 20:11 192.168.108.6:38688-192.168.108.5:1047_producer-1.log
+-rwxrwxrwx 1 avorovich avorovich   6552 Jul 31 20:11 192.168.108.7:50240-192.168.108.5:1047_consumer-sub-000-a1sQY8A-1.log
+-rwxrwxrwx 1 avorovich avorovich   6501 Jul 31 20:11 192.168.108.7:50234-192.168.108.5:1047_consumer-sub-000-a1sQY8A-2.log
+-rwxrwxrwx 1 avorovich avorovich   6501 Jul 31 20:11 192.168.108.7:50222-192.168.108.5:1047_consumer-sub-000-a1sQY8A-1.log
+-rwxrwxrwx 1 avorovich avorovich   8265 Jul 31 20:11 192.168.108.7:50210-192.168.108.5:1047_consumer-sub-000-a1sQY8A-2.log
+-rwxrwxrwx 1 avorovich avorovich 430707 Jul 31 20:11 192.168.108.7:50204-192.168.108.5:1047_consumer-sub-000-a1sQY8A-1.log
+-rwxrwxrwx 1 avorovich avorovich  28114 Jul 31 20:11 192.168.108.7:50248-192.168.108.5:1047_consumer-sub-000-a1sQY8A-2.log
+-rwxrwxrwx 1 avorovich avorovich 136246 Jul 31 20:11 192.168.108.7:50254-192.168.108.5:1047_consumer-sub-000-a1sQY8A-1.log
+-rwxrwxrwx 1 avorovich avorovich   6132 Jul 31 20:11 192.168.108.1:33146-192.168.108.5:1047_kafka-ui-admin-1754006837-1.log
+-rwxrwxrwx 1 avorovich avorovich 477842 Jul 31 20:11 192.168.108.1:33154-192.168.108.5:1047_kafka-ui-admin-1754006837-1.log
+[0 Jul 31 20:17:23] avorovich@nj1.sn5.user-avorovich:~/arnd 
+$ 

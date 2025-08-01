@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+#
+FILE="release/bin/atf_snf"
+# FILE="bin/atf_snf"
+if [ ! -f "$FILE" ]; then
+    echo "Error: $FILE does not exist." >&2
+    exit 1
+fi
+
+function start_sniffer {
+    echo starting
+    sudo $FILE -dev:data0-8T  -kapi  -dir:mytest1 
+}
+
+function stop_sniffer {  
+    echo stopping dev.ak-8.tap-4_ext_0
+    pgrep -f "dev.ak-8.tap-4_ext_0" | grep -v "$$" | xargs -r sudo kill  
+}
+
+function status_sniffer {
+    pgrep -f "dev.ak-8.tap-4_ext_0" | grep -v "$$" | xargs echo
+}
+case $1 in
+     start)
+     stop_sniffer
+     start_sniffer
+     ;;
+     start_clean)
+     stop_sniffer
+     start_sniffer
+     ;;
+     stop)
+     stop_sniffer
+     ;;
+     status)
+     status_sniffer
+     ;;
+     *)
+     ;;
+esac

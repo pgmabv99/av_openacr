@@ -5,6 +5,8 @@
 x2rel  -create  -product:x2 -omenv:dev.x2-4 -upload  
 x2rel  -upload  -product:x2 -omnode:dev.x2-4.x2%  
 
+x2rel  -create  -product:atf_snf -omnode:dev.ak-8.tap-4_ext_0 -upload  
+
 
 echo "---------------------clean start ONE node + rdpui"
 omcli dev.x2-4.x2_0 -shell_cmd:"rm -rf release/dev-x2-4.x2sup-0-0.log"

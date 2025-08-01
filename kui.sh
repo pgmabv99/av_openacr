@@ -13,12 +13,12 @@ echo "....use ctrl+C to enter commands . stdout is redirected to $ofile"
 echo "....live monitoring   in temp/atf_snf.dat . "
 
 # echo "run capture with sudo"
-# tag=common
-# sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag 
+tag=common
+sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag  -timestamp_log:N
 
 echo "convert pcap file to logs"
-tag=common
-atf_snf  -kapi -in_file:/home/avorovich/arnd/temp/atf_snf_logs/common/2025.07.24.11.16/atf_snf.pcap
+# tag=common
+# atf_snf  -kapi -in_file:/home/avorovich/arnd/temp/atf_snf_logs/common/2025.07.24.11.16/atf_snf.pcap
 
 
 

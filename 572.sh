@@ -182,6 +182,7 @@ acr -merge -write <<EOF
     dmmeta.field  field:command.atf_snf.mult_req_per_frame     arg:bool          reftype:Val      dflt:true        comment:"parse mode: true - multiple req/rsp are expected per frame"
     dmmeta.field  field:command.atf_snf.hex_print              arg:bool          reftype:Val      dflt:false       comment:"print hex buffer"
     dmmeta.field  field:command.atf_snf.live_output            arg:bool          reftype:Val      dflt:false       comment:"live output on snf_mon step"
+    dmmeta.field  field:command.atf_snf.timestamp_log          arg:bool          reftype:Val      dflt:true        comment:"add time stamp to log files directory"
 EOF
 
 # include omenv  ssim file

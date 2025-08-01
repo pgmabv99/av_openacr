@@ -128,7 +128,7 @@ atf_comp -covcapture
 git-add-to-last-commit
 git branch --set-upstream-to=algornd/arnd/$(git branch --show-current)
 git push --force 
-git push algornd/arnd HEAD
+git push algornd/arnd HEAD --force
 
 
 ```
@@ -307,3 +307,35 @@ actions for atf_snf part3
 targs.ssim - main file with invocation
 tmsg.ssim -one line per  
 test/atf_comp/atf_x2.Cli -output  
+
+# sync
+x2node -node:nj1.sn5.bm -rsync_put -local /home/avorovich/av_openacr/dev.ak-8.tap-4_ext_0 -remote dev.ak-8.tap-4_ext_0 
+omdb.omnode  omnode:dev.ak-8.tap-1_ext_0  node:dev.kafka-01  use:Y  comment:"kafka broker sniffer for node 1"
+
+
+$ acr omnode:dev.ak-8.%
+omdb.omnode  omnode:dev.ak-8.kafka-1      node:dev.kafka-01   use:Y  comment:"Apache Cluster Broker node 1"
+omdb.omnode  omnode:dev.ak-8.kafka-2      node:dev.kafka-02   use:Y  comment:"Apache Cluster Broker node 2"
+omdb.omnode  omnode:dev.ak-8.kafka-3      node:dev.kafka-03   use:Y  comment:"Apache Cluster Broker node 3"
+omdb.omnode  omnode:dev.ak-8.kafka-4      node:dev.kafka-04   use:Y  comment:"Apache Cluster Broker node 4"
+omdb.omnode  omnode:dev.ak-8.kafkaui-1    node:dev.kafkaui-1  use:Y  comment:"Apache Cluster Provectus UI node"
+omdb.omnode  omnode:dev.ak-8.kafkaw-1     node:dev.kafkaw-08  use:Y  comment:"Apache Cluster Worker 5 node"
+omdb.omnode  omnode:dev.ak-8.kafkaw-2     node:dev.kafkaw-16  use:Y  comment:"Apache Cluster Worker 6 node"
+omdb.omnode  omnode:dev.ak-8.rdpui-1      node:dev.rdpui-1    use:Y  comment:"Apache Cluster Redpanda UI node"
+omdb.omnode  omnode:dev.ak-8.tap-1_ext_0  node:nj1.sn2.bm     use:Y  comment:sniffer
+omdb.omnode  omnode:dev.ak-8.tap-2_ext_0  node:nj1.sn3.bm     use:Y  comment:sniffer
+omdb.omnode  omnode:dev.ak-8.tap-3_ext_0  node:nj1.sn4.bm     use:Y  comment:sniffer
+omdb.omnode  omnode:dev.ak-8.tap-4_ext_0  node:nj1.sn5.bm     use:Y  comment:sniffer
+omdb.omnode  omnode:dev.ak-8.x2w-1        node:dev.x2w-01     use:Y  comment:"x2w for tests"
+
+
+dkrusr@nj1.sv5:~$ pgrep -f "dev.ak-8.tap-4_ext_0" 
+2336548
+dkrusr@nj1.sv5:~$ ps -ef | grep 2336548
+avorovi+ 2336548 2333449  0 11:59 ?        00:00:00 omcli dev.ak-8.tap-4_ext_0 -shell
+avorovi+ 2336549 2336548  0 11:59 ?        00:00:00 bin/x2node -node:nj1.sn5.bm -shell:Y
+dkrusr   2336828 2336556  0 12:00 pts/2    00:00:00 grep --color=auto 2336548
+
+
+1. why omtype is static and requires amc ?
+2. shar

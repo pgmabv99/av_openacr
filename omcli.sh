@@ -5,7 +5,7 @@
 x2rel  -create  -product:x2 -omenv:dev.x2-4 -upload  
 x2rel  -upload  -product:x2 -omnode:dev.x2-4.x2%  
 
-x2rel  -create  -product:atf_snf -omnode:dev.ak-8.tap-4_ext_0 -upload  
+x2rel  -create  -product:tap -omnode:dev.ak-8.tap-4_ext_0 -upload  
 
 
 echo "---------------------clean start ONE node + rdpui"
@@ -44,7 +44,39 @@ done
 #  docker reset
 omcli dev.x2-4.kafkaui-1   -dkr_clean_run
 omcli dev.x2-4.rdpui-1     -dkr_clean_run
+dkr -clean_run -node:dev.kafka-14
 echo "---------------------status"
 sudo lsof -nP -iTCP -sTCP:LISTEN | grep x2gw
 lsof -P -i :1519
 
+#  ----- omplat 
+
+x2rel  -create  -product:tap -omnode:dev.x2-4.tap-1_ext_0  -upload  
+
+omplat=ak
+broker=dev.x2-4.kafka-1
+ui=dev.x2-4.kafkaui-1
+tap=dev.x2-4.tap-1_ext_0
+
+omcli $broker -omplat:$omplat -dkr_clean_run
+omcli $ui -omplat:$omplat -dkr_clean_run
+omcli $tap -omplat:$omplat -stop
+x2rel  -create  -product:tap -omnode:$tap -upload  
+
+
+omcli $tap -omplat:$omplat -start_clean
+omcli $broker -omplat:$omplat -start_clean ;  
+omcli $ui -omplat:$omplat -start_clean
+sleep 10
+
+omcli $broker -omplat:$omplat -stop ;
+omcli $ui -omplat:$omplat -stop
+omcli $tap -omplat:$omplat -stop
+
+omcli dev.x2-4% -omplat:$omplat -collect_logs
+
+
+x2node  -node:dev.kafka-13 -rsync_get:Y -rsync_opts:-aic -local:temp/collect_logs/ak/2025.08.01.17.21/dev.x2-4.kafka-1/ -remote:kafka/logs/*.log  
+
+
+omcli  -selector:dev.x2-4.% -omplat:ak -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload100

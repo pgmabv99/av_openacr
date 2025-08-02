@@ -339,3 +339,25 @@ dkrusr   2336828 2336556  0 12:00 pts/2    00:00:00 grep --color=auto 2336548
 
 1. why omtype is static and requires amc ?
 2. shar
+
+omdb.omnode  omnode:dev.ak-8.kafka-1  node:dev.kafka-01  use:N  comment:"Apache Cluster Broker node 1"
+omdb.omnode  omnode:dev.ak-8.kafka-2  node:dev.kafka-02  use:N  comment:"Apache Cluster Broker node 2"
+omdb.omnode  omnode:dev.ak-8.kafka-3  node:dev.kafka-03  use:N  comment:"Apache Cluster Broker node 3"
+omdb.omnode  omnode:dev.ak-8.kafka-4  node:dev.kafka-04  use:Y  comment:"Apache Cluster Broker node 4"
+omdb.omnode  omnode:dev.ak-8.kafkaui-1  node:dev.kafkaui-1  use:Y  comment:"Apache Cluster Provectus UI node"
+omdb.omnode  omnode:dev.ak-8.kafkaw-1  node:dev.kafkaw-08  use:Y  comment:"Apache Cluster Worker 5 node"
+omdb.omnode  omnode:dev.ak-8.kafkaw-2  node:dev.kafkaw-16  use:Y  comment:"Apache Cluster Worker 6 node"
+omdb.omnode  omnode:dev.ak-8.rdpui-1  node:dev.rdpui-1  use:Y  comment:"Apache Cluster Redpanda UI node"
+omdb.omnode  omnode:dev.ak-8.tap-1_ext_0  node:nj1.sn2.bm  use:N  comment:sniffer
+omdb.omnode  omnode:dev.ak-8.tap-2_ext_0  node:nj1.sn3.bm  use:N  comment:sniffer
+omdb.omnode  omnode:dev.ak-8.tap-3_ext_0  node:nj1.sn4.bm  use:N  comment:sniffer
+omdb.omnode  omnode:dev.ak-8.tap-4_ext_0  node:nj1.sn5.bm  use:Y  comment:sniffer
+omdb.omnode  omnode:dev.ak-8.x2w-1  node:dev.x2w-01  use:Y  comment:"x2w for tests"
+
+
+# questions from 8/1/2025
+
+q1: in the process tree of omcli : why inject  bash and not  call executable directly 
+q2; is -v passed down process tree ? hard to debug 
+q3: omplat vs. use bit vs. selector. alternative  :  separate client  and server selectors. 
+q4: -collect_logs - adding omplat subfolder is misleading just like any other attributes of the !!previous!! omcli run . it should be user assigned

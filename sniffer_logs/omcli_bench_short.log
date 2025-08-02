@@ -1,0 +1,15 @@
+verbose: bin/dkr  -cmd:'' -clean_run:Y -node:$'dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.rdpui-5|nj1.sn2.bm|dev.x2w-08'
+verbose: bin/x2node  -node:$'dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.rdpui-5|nj1.sn2.bm|dev.x2w-08' -cmd:'cat /etc/x2.d/nodename' -q:Y >&5
+verbose: bin/x2node  -node:$'dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.rdpui-5|nj1.sn2.bm|dev.x2w-08' -cmd:'cat /etc/x2.d/nodename' -q:Y >&5
+verbose: bin/x2node  -node:$'dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.rdpui-5|nj1.sn2.bm|dev.x2w-08' -cmd:'cat /etc/x2.d/nodename' -q:Y >&5
+verbose: bin/x2node  -node:dev.kafkaw-04 -rsync_put:Y -local:temp/kafka-debug.yaml.Qlimyu -remote:kafka-debug.yaml -cmd:'' -q:Y
+verbose: bin/x2node  -node:dev.kafkaw-04 -rsync_put:Y -local:temp/debug-workload100.yaml.WLrOS2 -remote:debug-workload100.yaml -cmd:'' -q:Y
+verbose: bin/omcli  -selector:dev.x2-4.tap-1_ext_0 -omplat:ak -start:Y
+verbose: bin/omcli  -selector:$'dev.x2-4.kafkaw-1|dev.x2-4.kafkaw-2' -omplat:ak -start:Y
+verbose: bin/omcli  -selector:$'dev.x2-4.kafka-1|dev.x2-4.kafka-2|dev.x2-4.kafka-3|dev.x2-4.kafka-4' -omplat:ak -stop:Y
+verbose: bin/omcli  -selector:$'dev.x2-4.kafka-1|dev.x2-4.kafka-2|dev.x2-4.kafka-3|dev.x2-4.kafka-4' -omplat:ak -start_clean:Y
+verbose: bin/omcli  -selector:dev.x2-4.x2w-1 -omplat:ak -start:Y
+verbose: bin/omcli  -selector:$'dev.x2-4.kafkaui-1|dev.x2-4.rdpui-1' -omplat:ak -start:Y
+verbose: bin/x2node  -node:dev.kafkaw-04 -cmd:$'$\'find . -maxdepth 1 -name "*.json" | xargs rm 1>/dev/null 2>/dev/null\''
+verbose: bin/x2node  -node:dev.kafkaw-04 -cmd:$'$\'find . -maxdepth 1 -name "*.json"\'' -q:Y >&5
+verbose: bin/x2node  -node:dev.kafkaw-04 -rsync_get:Y -rsync_opts:' --remove-source-files ' -local:test/om/dev.x2-4/. -remote:$'*.json' -cmd:''

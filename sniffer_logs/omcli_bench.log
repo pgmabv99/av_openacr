@@ -1,0 +1,361 @@
+$ omcli  -selector:dev.x2-4.% -omplat:ak -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload100 -v 
+verbose: dev.x2-4.kafka-1|dev.x2-4.kafka-2|dev.x2-4.kafka-3|dev.x2-4.kafka-4|dev.x2-4.kafkaui-1|dev.x2-4.kafkaw-1|dev.x2-4.kafkaw-2|dev.x2-4.rdpui-1|dev.x2-4.tap-1_ext_0|dev.x2-4.x2w-1
+verbose: omcli.info file:temp/omcli/gen/dev.x2-4.kafka-1  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/dev.x2-4.kafka-1'
+verbose: omcli.info file:temp/omcli/gen/dev.x2-4.kafka-2  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/dev.x2-4.kafka-2'
+verbose: omcli.info file:temp/omcli/gen/dev.x2-4.kafka-3  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/dev.x2-4.kafka-3'
+verbose: omcli.info file:temp/omcli/gen/dev.x2-4.kafka-4  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/dev.x2-4.kafka-4'
+verbose: omcli.info file:temp/omcli/gen/dev.x2-4.kafkaui-1  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/dev.x2-4.kafkaui-1'
+verbose: omcli.info file:temp/omcli/gen/dev.x2-4.kafkaw-1  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/dev.x2-4.kafkaw-1'
+verbose: omcli.info file:temp/omcli/gen/dev.x2-4.kafkaw-2  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/dev.x2-4.kafkaw-2'
+verbose: omcli.info file:temp/omcli/gen/dev.x2-4.rdpui-1  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/dev.x2-4.rdpui-1'
+verbose: omcli.info file:temp/omcli/gen/dev.x2-4.tap-1_ext_0  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/dev.x2-4.tap-1_ext_0'
+verbose: omcli.info file:temp/omcli/gen/dev.x2-4.x2w-1  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/dev.x2-4.x2w-1'
+omcli.info omtest:om_benchmark
+verbose: bash  -c $'bin/omcli  -selector:dev.x2-4.% -ignore_omplat:Y -dkr_destroy:Y -ignore_omnode_use:Y'
+dkr.report command:docker_destroy  cmd:"rm $dctr -f"  targets:17
+kafka-13
+
+kafka-14
+
+kafka-15
+
+kafka-16
+
+kafkaui-5
+
+kafkaw-04
+
+kafkaw-12
+
+Error response from daemon: No such container: rdp-13
+
+Error response from daemon: No such container: rdp-14
+
+Error response from daemon: No such container: rdp-15
+
+Error response from daemon: No such container: rdp-16
+
+rdpui-5
+
+Error response from daemon: No such container: x2-17
+
+Error response from daemon: No such container: x2-18
+
+Error response from daemon: No such container: x2-19
+
+Error response from daemon: No such container: x2-20
+
+x2w-08
+
+verbose: bin/dkr  -cmd:'' -clean_run:Y -node:$'dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.rdpui-5|nj1.sn2.bm|dev.x2w-08'
+dkr.report command:generate_dockerbuild  cmd:""  targets:9
+dkr.info image:kafka-13 file:temp/docker/kafka-13/kafka-13.run comment:copying script
+dkr.info image:kafka-13 file:temp/docker/kafka-13/kafka-13.build comment:copying script
+dkr.info image:kafka-13 file:temp/docker/kafka-13/Dockerfile comment:copying Dockerfile
+dkr.info image:kafka-14 file:temp/docker/kafka-14/kafka-14.run comment:copying script
+dkr.info image:kafka-14 file:temp/docker/kafka-14/kafka-14.build comment:copying script
+dkr.info image:kafka-14 file:temp/docker/kafka-14/Dockerfile comment:copying Dockerfile
+dkr.info image:kafka-15 file:temp/docker/kafka-15/kafka-15.run comment:copying script
+dkr.info image:kafka-15 file:temp/docker/kafka-15/kafka-15.build comment:copying script
+dkr.info image:kafka-15 file:temp/docker/kafka-15/Dockerfile comment:copying Dockerfile
+dkr.info image:kafka-16 file:temp/docker/kafka-16/kafka-16.run comment:copying script
+dkr.info image:kafka-16 file:temp/docker/kafka-16/kafka-16.build comment:copying script
+dkr.info image:kafka-16 file:temp/docker/kafka-16/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.run comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.build comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.run comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.build comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.run comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.build comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/Dockerfile comment:copying Dockerfile
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.run comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.build comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/Dockerfile comment:copying Dockerfile
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.run comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.build comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/Dockerfile comment:copying Dockerfile
+dkr.report command:docker_clean_run  cmd:'ps --filter "name=x2w-08"'  targets:9
+0d51160ad1020aa977c9eec33c2759e03886fb2b12379570dbadff0b073aec35
+Error response from daemon: cannot kill container: kafka-13: No such container: kafka-13
+Error response from daemon: No such container: kafka-13
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+0d51160ad102   kafka     "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafka-13
+
+357272028c2ecd2dd7da45cbfec966ccb3da531e942b389f7c4009d696d1dfd3
+Error response from daemon: cannot kill container: kafka-14: No such container: kafka-14
+Error response from daemon: No such container: kafka-14
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+357272028c2e   kafka     "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafka-14
+
+ecc9a4d87e02a914067a565f464982069ea28bc3c8dd44c127e475ecf9f5b7f1
+Error response from daemon: cannot kill container: kafka-15: No such container: kafka-15
+Error response from daemon: No such container: kafka-15
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+ecc9a4d87e02   kafka     "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafka-15
+
+5a30294b878c60b47eef6a06299a406c8e46110f99d74f89d2a616258434ce1a
+Error response from daemon: cannot kill container: kafka-16: No such container: kafka-16
+Error response from daemon: No such container: kafka-16
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+5a30294b878c   kafka     "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafka-16
+
+7b1481fff4c1783a8e707d3e8c01a186b4895e4ffe286abbda5756bbfc1713b7
+Error response from daemon: cannot kill container: kafkaui-5: No such container: kafkaui-5
+Error response from daemon: No such container: kafkaui-5
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS                                                      NAMES
+7b1481fff4c1   kafkaui   "/usr/bin/dumb-init …"   1 second ago   Up Less than a second   192.168.10.11:1561->22/tcp, 192.168.10.11:1562->8080/tcp   kafkaui-5
+
+4fb34004378a3a9a4c6f748f06f1811aa77e32fe738e74daa222a48d879206cd
+Error response from daemon: cannot kill container: kafkaw-04: No such container: kafkaw-04
+Error response from daemon: No such container: kafkaw-04
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+4fb34004378a   kafkaw    "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafkaw-04
+
+6b1f17e9a351506d53df5ef5d82fc19b42d3391b214deac23afb7297369e6abd
+Error response from daemon: cannot kill container: kafkaw-12: No such container: kafkaw-12
+Error response from daemon: No such container: kafkaw-12
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+6b1f17e9a351   kafkaw    "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafkaw-12
+
+9086f86fe9af24e526ba80661a7e560a6ada74ae1f3220c3251c50673bc34063
+Error response from daemon: cannot kill container: rdpui-5: No such container: rdpui-5
+Error response from daemon: No such container: rdpui-5
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS                                                      NAMES
+9086f86fe9af   rdpui     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second   192.168.10.11:1493->22/tcp, 192.168.10.11:1494->8080/tcp   rdpui-5
+
+b58f90f5d37dcd6199d4c111c49990088c89a3874dfa6c3e1e593693ef27edc3
+Error response from daemon: cannot kill container: x2w-08: No such container: x2w-08
+Error response from daemon: No such container: x2w-08
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+b58f90f5d37d   x2w       "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             x2w-08
+
+verbose: bin/x2node  -node:$'dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.rdpui-5|nj1.sn2.bm|dev.x2w-08' -cmd:'cat /etc/x2.d/nodename' -q:Y >&5
+verbose: dev.x2-4.kafka-1:dead
+verbose: dev.x2-4.kafka-2:dead
+verbose: dev.x2-4.kafka-3:dead
+verbose: dev.x2-4.kafka-4:dead
+verbose: dev.x2-4.kafkaui-1:dead
+verbose: dev.x2-4.kafkaw-1:dead
+verbose: dev.x2-4.kafkaw-2:dead
+verbose: dev.x2-4.rdpui-1:alive
+verbose: dev.x2-4.tap-1_ext_0:alive
+verbose: dev.x2-4.x2w-1:dead
+verbose: bin/x2node  -node:$'dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.rdpui-5|nj1.sn2.bm|dev.x2w-08' -cmd:'cat /etc/x2.d/nodename' -q:Y >&5
+verbose: dev.x2-4.kafka-1:dead
+verbose: dev.x2-4.kafka-2:alive
+verbose: dev.x2-4.kafka-3:alive
+verbose: dev.x2-4.kafka-4:alive
+verbose: dev.x2-4.kafkaui-1:alive
+verbose: dev.x2-4.kafkaw-1:alive
+verbose: dev.x2-4.kafkaw-2:alive
+verbose: dev.x2-4.rdpui-1:alive
+verbose: dev.x2-4.tap-1_ext_0:alive
+verbose: dev.x2-4.x2w-1:alive
+verbose: bin/x2node  -node:$'dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.rdpui-5|nj1.sn2.bm|dev.x2w-08' -cmd:'cat /etc/x2.d/nodename' -q:Y >&5
+verbose: dev.x2-4.kafka-1:alive
+verbose: dev.x2-4.kafka-2:alive
+verbose: dev.x2-4.kafka-3:alive
+verbose: dev.x2-4.kafka-4:alive
+verbose: dev.x2-4.kafkaui-1:alive
+verbose: dev.x2-4.kafkaw-1:alive
+verbose: dev.x2-4.kafkaw-2:alive
+verbose: dev.x2-4.rdpui-1:alive
+verbose: dev.x2-4.tap-1_ext_0:alive
+verbose: dev.x2-4.x2w-1:alive
+omcli.info comment:"Uploading Driver Config"
+verbose: bin/x2node  -node:dev.kafkaw-04 -rsync_put:Y -local:temp/kafka-debug.yaml.Qlimyu -remote:kafka-debug.yaml -cmd:'' -q:Y
+<f+++++++++ kafka-debug.yaml.Qlimyu
+omcli.info comment:"Uploading Load Config"
+verbose: bin/x2node  -node:dev.kafkaw-04 -rsync_put:Y -local:temp/debug-workload100.yaml.WLrOS2 -remote:debug-workload100.yaml -cmd:'' -q:Y
+<f+++++++++ debug-workload100.yaml.WLrOS2
+omcli.info comment:"Restarting Tap"
+verbose: bin/omcli  -selector:dev.x2-4.tap-1_ext_0 -omplat:ak -start:Y
+dev.x2-4.tap-1_ext_0:script
+script:info  node:nj1.sn2.bm omnode:dev.x2-4.tap-1_ext_0 option:stop 
+dev.x2-4.tap-1_ext_0:1600236 is running
+dev.x2-4.tap-1_ext_0:1600236 stopped
+script:info  node:nj1.sn2.bm omnode:dev.x2-4.tap-1_ext_0 option:start 
+dev.x2-4.tap-1_ext_0:1602146 started
+omcli.info comment:"Restarting Workers"
+verbose: bin/omcli  -selector:$'dev.x2-4.kafkaw-1|dev.x2-4.kafkaw-2' -omplat:ak -start:Y
+<f+++++++++ dev.x2-4.kafkaw-1
+dev.kafkaw-04:script
+<f+++++++++ dev.x2-4.kafkaw-2
+dev.kafkaw-12:script
+script:info  node:dev.kafkaw-04 omnode:dev.x2-4.kafkaw-1 option:start 
+Stopping kafka_worker...
+====Was not running
+...........
+dev.kafkaw-04:success
+script:info  node:dev.kafkaw-12 omnode:dev.x2-4.kafkaw-2 option:start 
+Stopping kafka_worker...
+====Was not running
+..........
+dev.kafkaw-12:success
+omcli.info comment:"Restarting Brokers"
+verbose: bin/omcli  -selector:$'dev.x2-4.kafka-1|dev.x2-4.kafka-2|dev.x2-4.kafka-3|dev.x2-4.kafka-4' -omplat:ak -stop:Y
+<f+++++++++ dev.x2-4.kafka-1
+dev.kafka-13:script
+<f+++++++++ dev.x2-4.kafka-2
+dev.kafka-14:script
+<f+++++++++ dev.x2-4.kafka-3
+dev.kafka-15:script
+<f+++++++++ dev.x2-4.kafka-4
+dev.kafka-16:script
+script:info  node:dev.kafka-13 omnode:dev.x2-4.kafka-1 option:stop 
+====Was not running
+script:info  node:dev.kafka-14 omnode:dev.x2-4.kafka-2 option:stop 
+====Was not running
+script:info  node:dev.kafka-15 omnode:dev.x2-4.kafka-3 option:stop 
+====Was not running
+script:info  node:dev.kafka-16 omnode:dev.x2-4.kafka-4 option:stop 
+====Was not running
+verbose: bin/omcli  -selector:$'dev.x2-4.kafka-1|dev.x2-4.kafka-2|dev.x2-4.kafka-3|dev.x2-4.kafka-4' -omplat:ak -start_clean:Y
+dev.kafka-13:script
+dev.kafka-14:script
+dev.kafka-15:script
+dev.kafka-16:script
+script:info  node:dev.kafka-13 omnode:dev.x2-4.kafka-1 option:start_clean 
+====Was not running
+Formatting data directory /mnt/data-3/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting metadata directory /mnt/data-1/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting data directory /mnt/data-4/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting data directory /mnt/data-2/dev.x2-4 with metadata.version 3.9-IV0.
+.
+dev.kafka-13:success
+script:info  node:dev.kafka-14 omnode:dev.x2-4.kafka-2 option:start_clean 
+====Was not running
+Formatting data directory /mnt/data-3/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting metadata directory /mnt/data-1/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting data directory /mnt/data-2/dev.x2-4 with metadata.version 3.9-IV0.
+.
+dev.kafka-14:success
+script:info  node:dev.kafka-15 omnode:dev.x2-4.kafka-3 option:start_clean 
+====Was not running
+Formatting data directory /mnt/data-3/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting metadata directory /mnt/data-1/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting data directory /mnt/data-4/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting data directory /mnt/data-2/dev.x2-4 with metadata.version 3.9-IV0.
+.
+dev.kafka-15:success
+script:info  node:dev.kafka-16 omnode:dev.x2-4.kafka-4 option:start_clean 
+====Was not running
+Formatting metadata directory /mnt/data-1/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting data directory /mnt/data-2/dev.x2-4 with metadata.version 3.9-IV0.
+.
+dev.kafka-16:success
+omcli.info comment:"Restarting Kcat"
+verbose: bin/omcli  -selector:dev.x2-4.x2w-1 -omplat:ak -start:Y
+<f+++++++++ dev.x2-4.x2w-1
+dev.x2w-08:script
+omcli.info comment:"Restarting Gui"
+verbose: bin/omcli  -selector:$'dev.x2-4.kafkaui-1|dev.x2-4.rdpui-1' -omplat:ak -start:Y
+<f+++++++++ dev.x2-4.kafkaui-1
+dev.kafkaui-5:script
+<f+++++++++ dev.x2-4.rdpui-1
+dev.rdpui-5:script
+script:info  node:dev.kafkaui-5 omnode:dev.x2-4.kafkaui-1 option:start 
+Stopping kafkaui...
+====Was not running
+Starting kafkaui...
+script:info  node:dev.rdpui-5 omnode:dev.x2-4.rdpui-1 option:start 
+Stopping rdpui...
+====Was not running
+Starting rdpui...
+omcli.info omdriver:kafka-debug  omload:debug-workload100  comment:"running test"
+verbose: bin/x2node  -node:dev.kafkaw-04 -cmd:$'$\'find . -maxdepth 1 -name "*.json" | xargs rm 1>/dev/null 2>/dev/null\''
+x2node.info node:dev.kafkaw-04  cmd:"ssh -q kafkawrkr@dev.kafkaw-04 $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null'"
+x2node.error node:dev.kafkaw-04  status:123  cmd:"ssh -q kafkawrkr@dev.kafkaw-04 $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null'"
+x2node.info  ncmd:1  completed:1  success:0  failure:1
+verbose: bash  -c 'ssh -q kafkawrkr@dev.kafkaw-04 bin/benchmark --drivers kafka-debug.yaml debug-workload100.yaml' >&5
+18:35:01.514 [main] INFO Benchmark - Using default worker file workers.yaml
+18:35:01.523 [main] INFO Benchmark - Reading workers list from workers.yaml
+18:35:01.557 [main] INFO Benchmark - Starting benchmark with config: {
+"drivers" : [ "kafka-debug.yaml" ],
+"workers" : [ "http://dev.x2-4.kafkaw-1.ctrl-0:1080", "http://dev.x2-4.kafkaw-2.ctrl-0:1130" ],
+"workersFile" : "/opt/benchmark/workers.yaml",
+"workloads" : [ "debug-workload100.yaml" ],
+"output" : null
+}
+18:35:01.570 [main] INFO Benchmark - Workloads: {
+"debug-workload100" : {
+"name" : "Debug Workload 1 producer on 1 topic 100b",
+"topics" : 1,
+"partitionsPerTopic" : 1,
+"keyDistributor" : "NO_KEY",
+"messageSize" : 100,
+"useRandomizedPayloads" : true,
+"randomBytesRatio" : 0.5,
+"randomizedPayloadPoolSize" : 1000,
+"payloadFile" : null,
+"subscriptionsPerTopic" : 1,
+"producersPerTopic" : 1,
+"consumerPerSubscription" : 2,
+"producerRate" : 1,
+"consumerBacklogSizeGB" : 0,
+"backlogDrainRatio" : 1.0,
+"testDurationMinutes" : 1,
+"warmupDurationMinutes" : 1
+}
+}
+18:35:01.819 [main] INFO DistributedWorkersEnsemble - Workers list - producers: [http://dev.x2-4.kafkaw-1.ctrl-0:1080]
+18:35:01.819 [main] INFO DistributedWorkersEnsemble - Workers list - consumers: http://dev.x2-4.kafkaw-2.ctrl-0:1130
+18:35:01.822 [main] INFO Benchmark - --------------- WORKLOAD : Debug Workload 1 producer on 1 topic 100b --- DRIVER : kafka-debug---------------
+18:35:18.864 [main] INFO WorkloadGenerator - Created 1 topics in 16647.39506 ms
+18:35:18.930 [main] INFO WorkloadGenerator - Created 2 consumers in 61.803615 ms
+18:35:18.962 [main] INFO WorkloadGenerator - Created 1 producers in 31.748519 ms
+18:35:18.962 [main] INFO WorkloadGenerator - Waiting for consumers to be ready
+18:35:19.014 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 0, Received: 0
+18:35:21.018 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 1, Received: 0
+18:35:23.021 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 1, Received: 0
+18:35:25.023 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 1, Received: 0
+18:35:27.025 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 1, Received: 1
+18:35:27.026 [main] INFO WorkloadGenerator - All consumers are ready
+18:35:27.072 [main] INFO WorkloadGenerator - ----- Starting warm-up traffic (1m) ------
+18:35:37.253 [main] INFO WorkloadGenerator - Pub rate     1.1 msg/s /  0.0 MB/s | Pub err     0.0 err/s | Cons rate     1.2 msg/s /  0.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  3.1 - 50%:  2.9 - 99%:  5.2 - 99.9%:  5.2 - Max:  5.2 | Pub Delay Latency (us) avg: 55.5 - 50%: 57.0 - 99%: 73.0 - 99.9%: 73.0 - Max: 73.0
+18:35:47.415 [main] INFO WorkloadGenerator - Pub rate     1.0 msg/s /  0.0 MB/s | Pub err     0.0 err/s | Cons rate     1.0 msg/s /  0.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  2.9 - 50%:  2.7 - 99%:  4.4 - 99.9%:  4.4 - Max:  4.4 | Pub Delay Latency (us) avg: 57.8 - 50%: 57.0 - 99%: 66.0 - 99.9%: 66.0 - Max: 66.0
+18:35:57.548 [main] INFO WorkloadGenerator - Pub rate     1.0 msg/s /  0.0 MB/s | Pub err     0.0 err/s | Cons rate     1.0 msg/s /  0.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  2.8 - 50%:  2.7 - 99%:  3.8 - 99.9%:  3.8 - Max:  3.8 | Pub Delay Latency (us) avg: 58.2 - 50%: 57.0 - 99%: 64.0 - 99.9%: 64.0 - Max: 64.0
+18:36:07.679 [main] INFO WorkloadGenerator - Pub rate     1.0 msg/s /  0.0 MB/s | Pub err     0.0 err/s | Cons rate     1.0 msg/s /  0.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  3.0 - 50%:  2.7 - 99%:  4.5 - 99.9%:  4.5 - Max:  4.5 | Pub Delay Latency (us) avg: 58.6 - 50%: 58.0 - 99%: 63.0 - 99.9%: 63.0 - Max: 63.0
+18:36:17.811 [main] INFO WorkloadGenerator - Pub rate     1.0 msg/s /  0.0 MB/s | Pub err     0.0 err/s | Cons rate     1.0 msg/s /  0.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  2.4 - 50%:  2.3 - 99%:  3.6 - 99.9%:  3.6 - Max:  3.6 | Pub Delay Latency (us) avg: 62.2 - 50%: 57.0 - 99%: 102.0 - 99.9%: 102.0 - Max: 102.0
+18:36:27.943 [main] INFO WorkloadGenerator - Pub rate     1.0 msg/s /  0.0 MB/s | Pub err     0.0 err/s | Cons rate     1.0 msg/s /  0.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  2.4 - 50%:  2.2 - 99%:  3.4 - 99.9%:  3.4 - Max:  3.4 | Pub Delay Latency (us) avg: 57.5 - 50%: 57.0 - 99%: 59.0 - 99.9%: 59.0 - Max: 59.0
+18:36:28.087 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg:  2.8 - 50%:  2.7 - 95%:  4.3 - 99%:  5.2 - 99.9%:  5.2 - 99.99%:  5.2 - Max:  5.2 | Pub Delay (us)  avg: 58.2 - 50%: 57.0 - 95%: 64.0 - 99%: 102.0 - 99.9%: 102.0 - 99.99%: 102.0 - Max: 102.0
+18:36:28.205 [main] INFO WorkloadGenerator - ----- Starting benchmark traffic (1m)------
+18:36:38.336 [main] INFO WorkloadGenerator - Pub rate     1.1 msg/s /  0.0 MB/s | Pub err     0.0 err/s | Cons rate     1.1 msg/s /  0.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  2.9 - 50%:  3.0 - 99%:  4.6 - 99.9%:  4.6 - Max:  4.6 | Pub Delay Latency (us) avg: 57.5 - 50%: 57.0 - 99%: 62.0 - 99.9%: 62.0 - Max: 62.0
+18:36:48.467 [main] INFO WorkloadGenerator - Pub rate     1.0 msg/s /  0.0 MB/s | Pub err     0.0 err/s | Cons rate     1.0 msg/s /  0.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  2.7 - 50%:  3.0 - 99%:  3.9 - 99.9%:  3.9 - Max:  3.9 | Pub Delay Latency (us) avg: 56.9 - 50%: 56.0 - 99%: 61.0 - 99.9%: 61.0 - Max: 61.0
+18:36:58.598 [main] INFO WorkloadGenerator - Pub rate     1.0 msg/s /  0.0 MB/s | Pub err     0.0 err/s | Cons rate     1.0 msg/s /  0.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  2.5 - 50%:  2.8 - 99%:  3.1 - 99.9%:  3.1 - Max:  3.1 | Pub Delay Latency (us) avg: 57.3 - 50%: 57.0 - 99%: 58.0 - 99.9%: 58.0 - Max: 58.0
+18:37:08.732 [main] INFO WorkloadGenerator - Pub rate     1.0 msg/s /  0.0 MB/s | Pub err     0.0 err/s | Cons rate     1.0 msg/s /  0.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  2.9 - 50%:  2.9 - 99%:  3.6 - 99.9%:  3.6 - Max:  3.6 | Pub Delay Latency (us) avg: 57.1 - 50%: 57.0 - 99%: 58.0 - 99.9%: 58.0 - Max: 58.0
+18:37:18.815 [main] INFO WorkloadGenerator - Pub rate     1.0 msg/s /  0.0 MB/s | Pub err     0.0 err/s | Cons rate     1.0 msg/s /  0.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  2.8 - 50%:  2.9 - 99%:  3.5 - 99.9%:  3.5 - Max:  3.5 | Pub Delay Latency (us) avg: 57.2 - 50%: 57.0 - 99%: 61.0 - 99.9%: 61.0 - Max: 61.0
+18:37:28.907 [main] INFO WorkloadGenerator - Pub rate     1.0 msg/s /  0.0 MB/s | Pub err     0.0 err/s | Cons rate     1.0 msg/s /  0.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  2.7 - 50%:  2.7 - 99%:  3.3 - 99.9%:  3.3 - Max:  3.3 | Pub Delay Latency (us) avg: 56.5 - 50%: 56.0 - 99%: 61.0 - 99.9%: 61.0 - Max: 61.0
+18:37:29.002 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg:  2.8 - 50%:  2.8 - 95%:  3.5 - 99%:  4.6 - 99.9%:  4.6 - 99.99%:  4.6 - Max:  4.6 | Pub Delay (us)  avg: 57.1 - 50%: 57.0 - 95%: 61.0 - 99%: 62.0 - 99.9%: 62.0 - 99.99%: 62.0 - Max: 62.0
+18:37:29.685 [main] INFO Benchmark - Writing test result into debug-workload100-kafka-debug-2025-08-01-18-37-29.json
+omcli.info log:test/om/dev.x2-4/debug-workload100-kafka-debug-2025-08-01-18-37-29.log  comment:"Collecting Logs"
+omcli.info comment:"Adding omrun Record"
+verbose: bin/x2node  -node:dev.kafkaw-04 -cmd:$'$\'find . -maxdepth 1 -name "*.json"\'' -q:Y >&5
+omdb.omrun  omrun:dev.x2-4/debug-001  name:debug-workload100.kafka-debug.2025-08-01-18-37-29
+omcli.info comment:"Collecting Results"
+verbose: bin/x2node  -node:dev.kafkaw-04 -rsync_get:Y -rsync_opts:' --remove-source-files ' -local:test/om/dev.x2-4/. -remote:$'*.json' -cmd:''
+x2node.info node:dev.kafkaw-04  cmd:"rsync  --remove-source-files  kafkawrkr@dev.kafkaw-04:$'*.json' test/om/dev.x2-4/."
+x2node.info  ncmd:1  completed:1  success:1  failure:0
+[0 Aug 01 18:37:33] avorovich@nj1.sn5.user-avorovich:~/arnd 
+$ 

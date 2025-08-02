@@ -361,3 +361,8 @@ q1: in the process tree of omcli : why inject  bash and not  call executable dir
 q2; is -v passed down process tree ? hard to debug 
 q3: omplat vs. use bit vs. selector. alternative  :  separate client  and server selectors. 
 q4: -collect_logs - adding omplat subfolder is misleading just like any other attributes of the !!previous!! omcli run . it should be user assigned
+
+todo
+-add 3 more taps
+-call colect_log from -omtest
+-add bench json to -collect log

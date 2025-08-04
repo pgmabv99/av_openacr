@@ -78,13 +78,13 @@ gco() {
 
 gb(){
   git for-each-ref \
-   --sort=-committerdate \
+   --sort=refname \
    --format="%(refname:short) - %(committername) %(committerdate:short) - %(subject)" \
   refs/heads/ | \
   while read branch rest; do
     ahead=$(git rev-list --count "$branch" ^master)
     behind=$(git rev-list --count master ^"$branch")
-    printf "%-16s  ------ [ahead %d, behind %d] %s \n"  "$branch"  "$ahead" "$behind" "$rest"
+    printf "\033[1;34m%-16s\033[0m   -- [ahead %d, behind %d] %s \n"  "$branch"  "$ahead"  "$behind" "$rest"
   done
   echo "     "
   echo "Current branch: $(git rev-parse --abbrev-ref HEAD)"

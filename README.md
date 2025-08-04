@@ -357,7 +357,7 @@ omdb.omnode  omnode:dev.ak-8.x2w-1  node:dev.x2w-01  use:Y  comment:"x2w for tes
 
 # questions from 8/1/2025
 
-q1: in the process tree of omcli : why inject  bash and not  call executable directly 
+q1: in the process tree of omcli : why inject  bash and not  call executable directly via omcli_exec
 q2; is -v passed down process tree ? hard to debug 
 q3: omplat vs. use bit vs. selector. alternative  :  separate client  and server selectors. 
 q4: -collect_logs - adding omplat subfolder is misleading just like any other attributes of the !!previous!! omcli run . it should be user assigned

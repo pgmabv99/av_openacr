@@ -125,8 +125,7 @@ normalize_loop
 acr % -check -write 
 atf_comp  
 atf_comp -covcapture
-git-add-to-last-commit
-git branch --set-upstream-to=algornd/arnd/$(git branch --show-current)
+git-add-to-last-commi
 git push --force 
 git push algornd/arnd HEAD --force
 

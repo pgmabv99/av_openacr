@@ -1,8 +1,8 @@
 {
 
 	"folders": [
-		{
-			"path": "../av_openacr"
+				{
+			"path": "."
 		},
 		{
 			"path": "../arnd"
@@ -18,7 +18,8 @@
 		},
 		{
 			"path": "../arnd/temp/omcli/gen"
-		}
+		},
+
 	],
 
 	"settings": {

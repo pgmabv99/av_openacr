@@ -80,3 +80,5 @@ x2node  -node:dev.kafka-13 -rsync_get:Y -rsync_opts:-aic -local:temp/collect_log
 
 
 omcli  -selector:dev.x2-4.% -omplat:ak -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload100
+
+omcli dev.x2-4 -omtest:debug_benchmark -omplat:rp

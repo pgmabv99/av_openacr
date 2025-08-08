@@ -94,6 +94,23 @@ ident(){
      bin/cpp-indent  ${file}; update-hdr
 }
 
+mc_tree(){
+mc find x2s3/avorovich/ | sed 's|x2s3/avorovich/||' | \
+awk -F/ '
+{
+  path = ""
+  for (i = 1; i <= NF; i++) {
+    path = (i == 1) ? $i : path "/" $i
+    if (!(path in seen)) {
+      indent = ""
+      for (j = 1; j < i; j++) indent = indent "--"
+      print indent $i
+      seen[path] = 1
+    }
+  }
+}'
+}
+
 # set -x
 # from alexei as of 5/14/25
 

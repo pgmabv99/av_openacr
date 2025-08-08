@@ -366,3 +366,46 @@ todo
 -add 3 more taps
 -call colect_log from -omtest
 -add bench json to -collect log
+
+
+Questions  8/6
+
+-do we need live log from benchmark . to do it we need ssh calling bash calling  tee
+-x2node vs direct call to ssh. VP to do do
+-passing -v to subprocesss
+-do we need so much nesting of omcli
+-3 selectors vs omplat + use bits
+
+
+
+
+// --- omcli.FDb.omtest.LoadStatic
+static void omcli::omtest_LoadStatic() {
+    static struct _t {
+        const char *s;
+        void (*step)(omcli::FOmenv&);
+    } data[] = {
+        { "omdb.omtest  omtest:debug_benchmark  comment:\"special run openmessaging benchmark\"", omcli::omtest_debug_benchmark }
+        ,{ "omdb.omtest  omtest:debug_benchmark_idempotence  comment:\"special run openmessaging benchmark\"", omcli::omtest_debug_benchmark_idempotence }
+        ,{ "omdb.omtest  omtest:docker_restart  comment:\"-clean_run the environment\"", omcli::omtest_docker_restart }
+        ,{ "omdb.omtest  omtest:kcat_plaintext_L  comment:\"run kcat -L to see meta\"", omcli::omtest_kcat_plaintext_L }
+        ,{ "omdb.omtest  omtest:kcat_ssl_L  comment:\"run kcat -L  with ssl to see meta\"", omcli::omtest_kcat_ssl_L }
+        ,{ "omdb.omtest  omtest:om_benchmark  comment:\"run openmessaging benchmark\"", omcli::omtest_om_benchmark }
+
+
+
+ omcli dev.x2-4 -omtest:debug_benchmark -omplat:ak -v
+  |
+ \ /
+ omcli  -selector:dev.x2-4.% -omplat:ak -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload100 -v 
+  |
+ \ /
+ cursor over 
+ verbose: bash  -c $'bin/x2node  -node:dev.kafkaw-04 -cmd:\'bin/benchmark --drivers kafka-debug.yaml debug-workload100.yaml\' -q:Y' >&5
+  |
+ \ /
+verbose: ssh -q kafkawrkr@dev.kafkaw-04 bin/benchmark --drivers kafka-debug.yaml debug-workload100.yaml
+
+
+ cursor over
+ verbose: bash  -c $'ssh kafkawrkr@dev.kafkaw-04 \'bin/benchmark --drivers kafka-debug.yaml debug-workload100.yaml 2>&1 | tee benchmark_stdout.log\'' >&5

@@ -1,9 +1,6 @@
 #!/bin/bash
-# set -x
-host=dev.x2-4.kafka-1.ext-0
-port=1643
-topic=my-test-topic
-
+source ~/av_openacr/ktest_kcat/hosts.sh
+# source ~/av_openacr/venv/bin/activate
 # python3 ~/av_openacr/ktest_python/top_recreate.py $host:$port $topic
 
 echo "produce records"

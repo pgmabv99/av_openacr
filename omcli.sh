@@ -2,10 +2,40 @@
 
 
 omcli dev.x2-4.% -dkr_clean_run
-x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload  
-omcli dev.x2-4.%  -start  -omplat:x2 -debug_x2sup
+x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y -start:Y
+ 
+
+
+# omcli dev.x2-4.%  -start   -debug_x2sup
 omcli dev.x2-4.%  -status   -omplat:x2
 
+omcli -selector:dev.x2-4.x2-0 -kcat_plaintext
+
+
+
+=========== from chat log
+omcli dev.x2-3 -omtest:debug_benchmark -dry_run
+omcli.info omtest:debug_benchmark
+dry_run: bin/omcli  -selector:dev.x2-3.% -ignore_omplat:Y -dkr_destroy:Y -ignore_omnode_use:Y
+dry_run: bin/omcli  -selector:dev.x2-3.% -omplat:x2 -dkr_clean_run:Y
+dry_run: bin/x2rel  -product:$'x2|x2w' -omenv:dev.x2-3 -upload:Y -start:Y -create:Y
+dry_run: bin/omcli  -selector:dev.x2-3.% -omplat:x2 -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload100 -benchmark_dkr_clean_run:N -debug_x2sup:Y
+
+
+==========separate
+omcli dev.x2-4 -dkr_clean_run
+x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y -v
+omcli dev.x2-4.%     -start  -debug_x2sup:Y
+omcli dev.x2-4.%  -status
+sleep 3
+omcli -selector:dev.x2-4.x2-0 -kcat_plaintext
+
+==========Combined
+
+omcli dev.x2-4 -dkr_clean_run
+x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y -start:Y -v
+omcli dev.x2-4.x2%  -status
+sleep 3
 omcli -selector:dev.x2-4.x2-0 -kcat_plaintext
 
 

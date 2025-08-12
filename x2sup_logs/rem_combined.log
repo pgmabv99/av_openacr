@@ -1,0 +1,51 @@
+x2sup.start  me:dev-x2-4.x2sup-0-0  nproc:8
+atf.var  httpport:1550
+atf.var  kafkaport:1558
+atf.var  mqttport:1549
+atf.var  natsport:1552
+atf.var  respport:1555
+atf.var  x2port:1547
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-0-0  ipport:239.73.0.0:10060  intf:192.168.214.5  ib:Y  flags:send,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-0-1  ipport:239.73.0.1:10061  intf:192.168.214.5  ib:Y  flags:send,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-0-2  ipport:239.73.0.2:10062  intf:192.168.214.5  ib:Y  flags:send,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-0-3  ipport:239.73.0.3:10063  intf:192.168.214.5  ib:Y  flags:send,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-1-0  ipport:239.73.1.0:10160  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-1-1  ipport:239.73.1.1:10161  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-1-2  ipport:239.73.1.2:10162  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-1-3  ipport:239.73.1.3:10163  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-2-0  ipport:239.73.2.0:10260  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-2-1  ipport:239.73.2.1:10261  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-2-2  ipport:239.73.2.2:10262  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-2-3  ipport:239.73.2.3:10263  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-3-0  ipport:239.73.3.0:10360  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-3-1  ipport:239.73.3.1:10361  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-3-2  ipport:239.73.3.2:10362  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.append-3-3  ipport:239.73.3.3:10363  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.bcast-255-0  ipport:239.13.255.0:35500  intf:192.168.214.5  ib:Y  flags:send,recv,joined  err:""
+x2net.x2node  node:dev-x2-4.node-1  state:down
+x2net.x2node  node:dev-x2-4.node-2  state:down
+x2net.x2node  node:dev-x2-4.node-3  state:down
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.in-0-0  ipport:239.33.0.0:10020  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-0-0  ipport:239.53.0.0:10040  intf:192.168.214.5  ib:Y  flags:send,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-0-1  ipport:239.53.0.1:10041  intf:192.168.214.5  ib:Y  flags:send,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-0-2  ipport:239.53.0.2:10042  intf:192.168.214.5  ib:Y  flags:send,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-0-3  ipport:239.53.0.3:10043  intf:192.168.214.5  ib:Y  flags:send,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-1-0  ipport:239.53.1.0:10140  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-1-1  ipport:239.53.1.1:10141  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-1-2  ipport:239.53.1.2:10142  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-1-3  ipport:239.53.1.3:10143  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-2-0  ipport:239.53.2.0:10240  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-2-1  ipport:239.53.2.1:10241  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-2-2  ipport:239.53.2.2:10242  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-2-3  ipport:239.53.2.3:10243  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-3-0  ipport:239.53.3.0:10340  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-3-1  ipport:239.53.3.1:10341  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-3-2  ipport:239.53.3.2:10342  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+x2net.intfmc  intfmc:dev-x2-4.node-0.ib-0/dev-x2-4.submit-3-3  ipport:239.53.3.3:10343  intf:192.168.214.5  ib:Y  flags:recv,joined  err:""
+READY_FOR_TEST
+x2net.x2node  node:dev-x2-4.node-1  state:unknown
+x2net.x2node  node:dev-x2-4.node-2  state:unknown
+x2net.x2node  node:dev-x2-4.node-3  state:unknown
+x2net.x2node  node:dev-x2-4.node-2  state:up
+x2net.x2node  node:dev-x2-4.node-1  state:up
+x2net.x2node  node:dev-x2-4.node-3  state:up

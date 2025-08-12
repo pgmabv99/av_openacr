@@ -1,8 +1,14 @@
 #!/bin/bash
 
 
+omcli dev.x2-4.% -dkr_clean_run
+x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload  
+omcli dev.x2-4.%  -start  -omplat:x2 -debug_x2sup
+omcli dev.x2-4.%  -status   -omplat:x2
 
-x2rel  -create  -product:x2 -omenv:dev.x2-4 -upload  
+omcli -selector:dev.x2-4.x2-0 -kcat_plaintext
+
+
 x2rel  -upload  -product:x2 -omnode:dev.x2-4.x2%  
 
 x2rel  -create  -product:tap -omnode:dev.ak-8.tap-4_ext_0 -upload  
@@ -80,5 +86,6 @@ x2node  -node:dev.kafka-13 -rsync_get:Y -rsync_opts:-aic -local:temp/collect_log
 
 
 omcli  -selector:dev.x2-4.% -omplat:ak -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload100
+omcli  -selector:dev.x2-4.% -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload100
 
-omcli dev.x2-4 -omtest:debug_benchmark -omplat:rp
+omcli dev.x2-4 -omtest:debug_benchmark -omplat:x2

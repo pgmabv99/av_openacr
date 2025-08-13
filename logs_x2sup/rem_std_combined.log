@@ -1,0 +1,221 @@
+$ omcli dev.x2-4 -dkr_clean_run
+x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y -start:Y -v
+omcli dev.x2-4.x2%  -status
+sleep 3
+omcli -selector:dev.x2-4.x2-0 -kcat_plaintext
+dkr.report command:generate_dockerbuild  cmd:""  targets:9
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.run comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.build comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.run comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.build comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.run comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.build comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/Dockerfile comment:copying Dockerfile
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.run comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.build comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-17 file:temp/docker/x2-17/x2-17.run comment:copying script
+dkr.info image:x2-17 file:temp/docker/x2-17/x2-17.build comment:copying script
+dkr.info image:x2-17 file:temp/docker/x2-17/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-18 file:temp/docker/x2-18/x2-18.run comment:copying script
+dkr.info image:x2-18 file:temp/docker/x2-18/x2-18.build comment:copying script
+dkr.info image:x2-18 file:temp/docker/x2-18/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-19 file:temp/docker/x2-19/x2-19.run comment:copying script
+dkr.info image:x2-19 file:temp/docker/x2-19/x2-19.build comment:copying script
+dkr.info image:x2-19 file:temp/docker/x2-19/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-20 file:temp/docker/x2-20/x2-20.run comment:copying script
+dkr.info image:x2-20 file:temp/docker/x2-20/x2-20.build comment:copying script
+dkr.info image:x2-20 file:temp/docker/x2-20/Dockerfile comment:copying Dockerfile
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.run comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.build comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/Dockerfile comment:copying Dockerfile
+dkr.report command:docker_clean_run  cmd:'ps --filter "name=x2w-08"'  targets:9
+kafkaui-5
+kafkaui-5
+faffc2301195f892f65c302cba670474cc6a104faafa2013c1e99e3c5cb2ec89
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS                                                      NAMES
+faffc2301195   kafkaui   "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second   192.168.10.11:1561->22/tcp, 192.168.10.11:1562->8080/tcp   kafkaui-5
+
+kafkaw-04
+kafkaw-04
+1499b08a3ff1d7bd2c57cfe1da4af815ec64cfd99dbf186804ace597fe9c8729
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+1499b08a3ff1   kafkaw    "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafkaw-04
+
+kafkaw-12
+kafkaw-12
+bc2825befa5055e433f66199b76f3759cccfadaf9fa38386027de6b9abb546f9
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+bc2825befa50   kafkaw    "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafkaw-12
+
+rdpui-5
+rdpui-5
+718d496d2354fca9759b57991a30ee0bdc48586af3ed5a05bb52b1d307e0e8ec
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS                                                      NAMES
+718d496d2354   rdpui     "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second   192.168.10.11:1493->22/tcp, 192.168.10.11:1494->8080/tcp   rdpui-5
+
+x2-17
+x2-17
+38795daefd0f1b1f2b6dad660e09d4fde2801bc0d078bd402afda465eaf8c5c9
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+38795daefd0f   x2        "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             x2-17
+
+x2-18
+x2-18
+a44a373a6762829aea8bdb8f92c0f4b9f2b76cf7a52bfb24abc95861cb877586
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+a44a373a6762   x2        "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             x2-18
+
+x2-19
+x2-19
+dfd2d554ebd809ab1ec9ab241d471ff204a67610a6bedff73ed9faf02ca9f56e
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+dfd2d554ebd8   x2        "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             x2-19
+
+x2-20
+x2-20
+1e5ef9effa7a51747e00eadf3105420c56d1ed5b09d643b1cc289f3b3af6d3c6
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+1e5ef9effa7a   x2        "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             x2-20
+
+x2w-08
+x2w-08
+70a40dc249d45d9b8b394fa3fd4aaa467cd2026af6795ce3c0541f77c3b4ac1a
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+70a40dc249d4   x2w       "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             x2w-08
+
+verbose: bash  -c bin/ai
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:108  time:00:00:00.029341504  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:0
+verbose: bash  -c bin/ai
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:108  time:00:00:00.030608494  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:0
+verbose: git log --pretty=format:'%ad.%h' --date=short -1
+verbose: bash  -c $'git log --pretty=format:\'%ad.%h\' --date=short -1' >&5
+verbose: set -e
+verbose: rm -rf temp/release/x2.*
+verbose: mkdir -p temp/release/x2.2025-08-13.e212b7f68 temp/release/x2.2025-08-13.e212b7f68/data
+verbose: bin/x2fs  -create:Y -f:Y -path:temp/release/x2.2025-08-13.e212b7f68 -topo:dev-x2-4 -topo_opts:$' omenv:dev.x2-4'
+verbose: mkdir -p temp/release/x2.2025-08-13.e212b7f68/bin
+verbose: acr -report:N prodtarget:x2/% -cmd 'cp -H bin/$ns temp/release/x2.2025-08-13.e212b7f68/bin/' | bash
+verbose: 
+verbose: bash  -c $'set -e\nrm -rf temp/release/x2.*\nmkdir -p temp/release/x2.2025-08-13.e212b7f68 temp/release/x2.2025-08-13.e212b7f68/data\nbin/x2fs  -create:Y -f:Y -path:temp/release/x2.2025-08-13.e212b7f68 -topo:dev-x2-4 -topo_opts:$\' omenv:dev.x2-4\'\nmkdir -p temp/release/x2.2025-08-13.e212b7f68/bin\nacr -report:N prodtarget:x2/% -cmd \'cp -H bin/$ns temp/release/x2.2025-08-13.e212b7f68/bin/\' | bash\n'
+x2fs.done  path:temp/release/x2.2025-08-13.e212b7f68  fsid:3235ffd3-04b4-4b58-b637-cefd28393c8e
+x2rel.info  release:temp/release/x2.2025-08-13.e212b7f68  comment:"release completed"
+verbose: git log --pretty=format:'%ad.%h' --date=short -1
+verbose: bash  -c $'git log --pretty=format:\'%ad.%h\' --date=short -1' >&5
+verbose: set -e
+verbose: rm -rf temp/release/x2w.*
+verbose: mkdir -p temp/release/x2w.2025-08-13.e212b7f68 temp/release/x2w.2025-08-13.e212b7f68/data
+verbose: acr_in "$(acr prodtarget:x2w/% -regxof:ns)" -data | acr -in:temp/release/x2w.2025-08-13.e212b7f68/data -insert -write -print:N -report:N
+verbose: acr -in:temp/release/x2w.2025-08-13.e212b7f68/data x2db.topo:% -del -write -print:N -report:N
+verbose: mkdir -p temp/release/x2w.2025-08-13.e212b7f68/bin
+verbose: acr -report:N prodtarget:x2w/% -cmd 'cp -H bin/$ns temp/release/x2w.2025-08-13.e212b7f68/bin/' | bash
+verbose: 
+verbose: bash  -c $'set -e\nrm -rf temp/release/x2w.*\nmkdir -p temp/release/x2w.2025-08-13.e212b7f68 temp/release/x2w.2025-08-13.e212b7f68/data\nacr_in "$(acr prodtarget:x2w/% -regxof:ns)" -data | acr -in:temp/release/x2w.2025-08-13.e212b7f68/data -insert -write -print:N -report:N\nacr -in:temp/release/x2w.2025-08-13.e212b7f68/data x2db.topo:% -del -write -print:N -report:N\nmkdir -p temp/release/x2w.2025-08-13.e212b7f68/bin\nacr -report:N prodtarget:x2w/% -cmd \'cp -H bin/$ns temp/release/x2w.2025-08-13.e212b7f68/bin/\' | bash\n'
+x2rel.info  release:temp/release/x2w.2025-08-13.e212b7f68  comment:"release completed"
+x2rel.release  product:x2  nodes:"(dev.x2-20|dev.x2-18|dev.x2-19|dev.x2-17)"  filename:x2.2025-08-13.e212b7f68
+verbose: bash  -c $'bin/x2node  -node:$\'(dev.x2-20|dev.x2-18|dev.x2-19|dev.x2-17)\' -cmd:\'mkdir -p reldir/x2.2025-08-13.e212b7f68\''
+x2node.info node:dev.x2-17  cmd:"ssh -q x2usr@dev.x2-17 mkdir -p reldir/x2.2025-08-13.e212b7f68"
+x2node.info node:dev.x2-18  cmd:"ssh -q x2usr@dev.x2-18 mkdir -p reldir/x2.2025-08-13.e212b7f68"
+x2node.info node:dev.x2-19  cmd:"ssh -q x2usr@dev.x2-19 mkdir -p reldir/x2.2025-08-13.e212b7f68"
+x2node.info node:dev.x2-20  cmd:"ssh -q x2usr@dev.x2-20 mkdir -p reldir/x2.2025-08-13.e212b7f68"
+x2node.info  ncmd:4  completed:4  success:4  failure:0
+verbose: bash  -c $'bin/x2node  -node:$\'(dev.x2-20|dev.x2-18|dev.x2-19|dev.x2-17)\' -rsync_put:Y -rsync_opts:\' -ac\' -local:temp/release/x2.2025-08-13.e212b7f68 -remote:reldir -cmd:$\'$\\\'rm -f release; ln -sf reldir/x2.2025-08-13.e212b7f68 release\\\'\''
+x2node.info node:dev.x2-17  cmd:"rsync  -ac temp/release/x2.2025-08-13.e212b7f68 x2usr@dev.x2-17:reldir"
+x2node.info node:dev.x2-17  cmd:"ssh -q x2usr@dev.x2-17 $'rm -f release; ln -sf reldir/x2.2025-08-13.e212b7f68 release'"
+x2node.info node:dev.x2-18  cmd:"rsync  -ac temp/release/x2.2025-08-13.e212b7f68 x2usr@dev.x2-18:reldir"
+x2node.info node:dev.x2-18  cmd:"ssh -q x2usr@dev.x2-18 $'rm -f release; ln -sf reldir/x2.2025-08-13.e212b7f68 release'"
+x2node.info node:dev.x2-19  cmd:"rsync  -ac temp/release/x2.2025-08-13.e212b7f68 x2usr@dev.x2-19:reldir"
+x2node.info node:dev.x2-19  cmd:"ssh -q x2usr@dev.x2-19 $'rm -f release; ln -sf reldir/x2.2025-08-13.e212b7f68 release'"
+x2node.info node:dev.x2-20  cmd:"rsync  -ac temp/release/x2.2025-08-13.e212b7f68 x2usr@dev.x2-20:reldir"
+x2node.info node:dev.x2-20  cmd:"ssh -q x2usr@dev.x2-20 $'rm -f release; ln -sf reldir/x2.2025-08-13.e212b7f68 release'"
+x2node.info  ncmd:8  completed:8  success:8  failure:0
+x2rel.release  product:x2w  nodes:"(dev.x2w-08)"  filename:x2w.2025-08-13.e212b7f68
+verbose: bash  -c $'bin/x2node  -node:$\'(dev.x2w-08)\' -cmd:\'mkdir -p reldir/x2w.2025-08-13.e212b7f68\''
+x2node.info node:dev.x2w-08  cmd:"ssh -q x2w@dev.x2w-08 mkdir -p reldir/x2w.2025-08-13.e212b7f68"
+x2node.info  ncmd:1  completed:1  success:1  failure:0
+verbose: bash  -c $'bin/x2node  -node:$\'(dev.x2w-08)\' -rsync_put:Y -rsync_opts:\' -ac\' -local:temp/release/x2w.2025-08-13.e212b7f68 -remote:reldir -cmd:$\'$\\\'rm -f release; ln -sf reldir/x2w.2025-08-13.e212b7f68 release\\\'\''
+x2node.info node:dev.x2w-08  cmd:"rsync  -ac temp/release/x2w.2025-08-13.e212b7f68 x2w@dev.x2w-08:reldir"
+x2node.info node:dev.x2w-08  cmd:"ssh -q x2w@dev.x2w-08 $'rm -f release; ln -sf reldir/x2w.2025-08-13.e212b7f68 release'"
+x2node.info  ncmd:2  completed:2  success:2  failure:0
+verbose: bash  -c $'bin/omcli  -selector:$\'(dev.x2-4.x2-0|dev.x2-4.x2-1|dev.x2-4.x2-2|dev.x2-4.x2-3|dev.x2-4.x2w-1)\' -start_clean:Y'
+<f+++++++++ dev.x2-4.x2-0
+dev.x2-20:script
+<f+++++++++ dev.x2-4.x2-1
+dev.x2-18:script
+<f+++++++++ dev.x2-4.x2-2
+dev.x2-19:script
+<f+++++++++ dev.x2-4.x2-3
+dev.x2-17:script
+<f+++++++++ dev.x2-4.x2w-1
+dev.x2w-08:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-3-0.log
+READY_FOR_TEST
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-1-0.log
+READY_FOR_TEST
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-2-0.log
+READY_FOR_TEST
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-0-0.log
+READY_FOR_TEST
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:status 
+Checking status x2...
+COMMAND PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    240 x2usr   25u  IPv4 1828786      0t0  TCP 192.168.104.2:1519 (LISTEN)
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:status 
+Checking status x2...
+COMMAND PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    246 x2usr   25u  IPv4 1446327      0t0  TCP 192.168.104.3:1532 (LISTEN)
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:status 
+Checking status x2...
+COMMAND PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    240 x2usr   25u  IPv4 1360053      0t0  TCP 192.168.104.4:1545 (LISTEN)
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:status 
+Checking status x2...
+COMMAND PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    252 x2usr   25u  IPv4 2493956      0t0  TCP 192.168.104.5:1558 (LISTEN)
+Metadata for all topics (from broker -1: dev.x2-4.x2-0.ext-0:1558/bootstrap):
+ 4 brokers:
+  broker 1 at 192.168.104.5:1558 (controller)
+  broker 2 at 192.168.104.3:1532
+  broker 3 at 192.168.104.4:1545
+  broker 4 at 192.168.104.2:1519
+ 3 topics:
+  topic "public.anon" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "public.imdb" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "__consumer_offsets" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+[0 Aug 13 11:04:52] avorovich@nj1.sn5.user-avorovich:~/arnd 

@@ -1,18 +1,6 @@
 #!/bin/bash
 
 
-omcli dev.x2-4.% -dkr_clean_run
-x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y -start:Y
- 
-
-
-# omcli dev.x2-4.%  -start   -debug_x2sup
-omcli dev.x2-4.%  -status   -omplat:x2
-
-omcli -selector:dev.x2-4.x2-0 -kcat_plaintext
-
-
-
 =========== from chat log
 omcli dev.x2-3 -omtest:debug_benchmark -dry_run
 omcli.info omtest:debug_benchmark
@@ -25,7 +13,7 @@ dry_run: bin/omcli  -selector:dev.x2-3.% -omplat:x2 -omtest:om_benchmark -omrun_
 ==========separate
 omcli dev.x2-4 -dkr_clean_run
 x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y -v
-omcli dev.x2-4.%     -start  -debug_x2sup:Y
+omcli dev.x2-4.%     -start_clean  -debug_x2sup:Y
 omcli dev.x2-4.%  -status
 sleep 3
 omcli -selector:dev.x2-4.x2-0 -kcat_plaintext

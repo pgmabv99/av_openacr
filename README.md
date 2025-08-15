@@ -33,6 +33,9 @@ amc atf_snf.%
 amc atf_snf.%TKaf% -proto
 amc algo.% -proto
 
+
+ grep -rE 'kafka_corr_id.*\(' cpp include
+ grep -rE 'kafka_corr_id.{0,20}\(' cpp include
 ```
 
 ## Visuals

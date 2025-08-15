@@ -37,6 +37,13 @@ amc algo.% -proto
  grep -rE 'kafka_corr_id.*\(' cpp include
  grep -rE 'kafka_corr_id.{0,20}\(' cpp include
 ```
+## to add ctype to read ssim in mmemory
+```
+$ git diff HEAD -- data/ | grep '^+[^+]'
++dmmeta.ctype  ctype:omcli.FNodeintf  comment:""
++dmmeta.field  field:omcli.FDb.nodeintf  arg:omcli.FNodeintf  reftype:Lary  dflt:""  comment:""
++dmmeta.field  field:omcli.FNodeintf.base  arg:x2db.Nodeintf  reftype:Base  dflt:""  comment:""
+```
 
 ## Visuals
 

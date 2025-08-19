@@ -44,7 +44,8 @@ $ git diff HEAD -- data/ | grep '^+[^+]'
 +dmmeta.field  field:omcli.FDb.nodeintf  arg:omcli.FNodeintf  reftype:Lary  dflt:""  comment:""
 +dmmeta.field  field:omcli.FNodeintf.base  arg:x2db.Nodeintf  reftype:Base  dflt:""  comment:""
 ```
-
+acr_ed -create -finput -target:omcli ssimfile:x2db.nodeintf
+acr_ed -create -finput -target:omcli  -ssimfile:x2db.nodeintf -write 
 ## Visuals
 
 ```bash

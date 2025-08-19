@@ -1,6 +1,7 @@
 #!/bin/bash
+# dev.x2-4.kafka-4.ext-0:1668
 host=dev.x2-4.kafka-4.ext-0
-port=1558
+port=1664
 # host=dev.x2-4.rdp-1.ext-0 
 # port=1628
 # host=dev.x2-4.kafka-1.ext-0

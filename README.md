@@ -254,17 +254,25 @@ algo_x2: laptop->dev.x2-17
 algo_x2:  nj1.sn1.avorovich->dev.x2-17
 algo_x2:  nj1.sn1.avorovich->gitlab
 
-## /etc/hosts
-
-192.168.108.2  dev.ak-8.kafka-1.ext-0
-192.168.108.3  dev.ak-8.kafka-2.ext-0
-192.168.108.4  dev.ak-8.kafka-3.ext-0
-192.168.108.5  dev.ak-8.kafka-4.ext-0
-192.168.108.1  dev.ak-8.kafkaui-1.ext-0
-192.168.108.6  dev.ak-8.kafkaw-1.ext-0
-192.168.108.7  dev.ak-8.kafkaw-2.ext-0
-192.168.108.1  dev.ak-8.rdpui-1.ext-0
-192.168.108.1  dev.ak-8.x2w-1.ext-0
+## hosts for brokers directly
+sudo bash -c 'cat >> /etc/hosts <<EOF
+192.168.10.21  dev.x2-4.kafka-1.ctrl-0
+192.168.104.2  dev.x2-4.kafka-1.ext-0
+192.168.214.2  dev.x2-4.kafka-1.ib-0
+192.168.204.2  dev.x2-4.kafka-1.int-0
+192.168.10.31  dev.x2-4.kafka-2.ctrl-0
+192.168.104.3  dev.x2-4.kafka-2.ext-0
+192.168.214.3  dev.x2-4.kafka-2.ib-0
+192.168.204.3  dev.x2-4.kafka-2.int-0
+192.168.10.41  dev.x2-4.kafka-3.ctrl-0
+192.168.104.4  dev.x2-4.kafka-3.ext-0
+192.168.214.4  dev.x2-4.kafka-3.ib-0
+192.168.204.4  dev.x2-4.kafka-3.int-0
+192.168.10.51  dev.x2-4.kafka-4.ctrl-0
+192.168.104.5  dev.x2-4.kafka-4.ext-0
+192.168.214.5  dev.x2-4.kafka-4.ib-0
+192.168.204.5  dev.x2-4.kafka-4.int-0
+EOF'
  
 ## regex for  strings
 

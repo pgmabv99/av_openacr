@@ -6,7 +6,7 @@ source ~/av_openacr/ktest_kcat/hosts.sh
 # python3 ~/av_openacr/ktest_python/top_recreate.py $host:$port $topic
 
 source ~/av_openacr/ktest_kcat/hosts.sh
-for i in {0..3}; do
+for i in {0..50}; do
     # sleep 1
     timestamp=$(date +"%Y-%m-%d %H:%M:%S")
     msg="Hello, Kafka!${i} [$timestamp]"

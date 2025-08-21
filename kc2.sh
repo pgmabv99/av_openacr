@@ -21,7 +21,6 @@ echo "produce  few messages"
 kcat_p.sh
 
 echo "start kafka connect (10 sec ??)"
-# omcli  dev.x2-4.kafkacw-1  -start_clean  -omplat:ak
 omcli  dev.x2-4.kafkacw-1  -start_clean  -omplat:ak -omrun_connect:confluent-s3sink.dflt -omrun_worker:kafka-connect.dflt 
 
 echo "show s3 bucket"
@@ -29,9 +28,9 @@ omcli  dev.x2-4.minio-1  -status
 
 echo "get connector status and logs "
 omcli dev.x2-4.kafkacw-1 -shell_cmd:"curl -sS http://dev.x2-4.kafkacw-1.ctrl-0:1683/connectors | jq ."
-omcli dev.x2-4.kafkacw-1 -shell_cmd:"curl -sS http://dev.x2-4.kafkacw-1.ctrl-0:1683/connectors/dev.x2-4.kafkacw-1-1  | jq ."
-omcli dev.x2-4.kafkacw-1 -shell_cmd:"curl -sS http://dev.x2-4.kafkacw-1.ctrl-0:1683/connectors/dev.x2-4.kafkacw-1-1/config | jq ."
+# omcli dev.x2-4.kafkacw-1 -shell_cmd:"curl -sS http://dev.x2-4.kafkacw-1.ctrl-0:1683/connectors/dev.x2-4.kafkacw-1-1  | jq ."
+# omcli dev.x2-4.kafkacw-1 -shell_cmd:"curl -sS http://dev.x2-4.kafkacw-1.ctrl-0:1683/connectors/dev.x2-4.kafkacw-1-1/config | jq ."
 
-omcli dev.x2-4.kafkacw-1 -shell_cmd:"grep Processing /home/kafkausr/kafka/logs/connectDistributed.out"
-omcli dev.x2-4.kafkacw-1 -shell_cmd:"tail -f  /home/kafkausr/kafka/logs/connectDistributed.out"
+# omcli dev.x2-4.kafkacw-1 -shell_cmd:"grep Processing /home/kafkausr/kafka/logs/connectDistributed.out"
+# omcli dev.x2-4.kafkacw-1 -shell_cmd:"tail -f  /home/kafkausr/kafka/logs/connectDistributed.out"
 

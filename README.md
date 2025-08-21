@@ -273,7 +273,8 @@ sudo bash -c 'cat >> /etc/hosts <<EOF
 192.168.214.5  dev.x2-4.kafka-4.ib-0
 192.168.204.5  dev.x2-4.kafka-4.int-0
 EOF'
- 
+
+
 ## regex for  strings
 
 ^(?=.*name_Set)(?=.*MetadataResponseTopic)

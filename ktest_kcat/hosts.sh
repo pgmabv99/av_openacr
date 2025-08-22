@@ -5,4 +5,4 @@ port=1664
 # port=1628
 # host=dev.x2-4.kafka-1.ext-0
 # port=1643
-topic=my-test-topic
+topic=mytesttopic

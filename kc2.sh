@@ -19,12 +19,26 @@ kcat_w.sh
 
 echo "produce  few messages"
 kcat_p.sh
-
 echo "start kafka connect (10 sec ??)"
+# omcli  dev.x2-4.kafkacw-1  -start_clean  -omplat:ak 
 omcli  dev.x2-4.kafkacw-1  -start_clean  -omplat:ak -omrun_connect:confluent-s3sink.dflt -omrun_worker:kafka-connect.dflt 
 
-echo "show s3 bucket"
+exit
+
+echo "show s3 bucket after sleep 5"
+sleep 5
 omcli  dev.x2-4.minio-1  -status 
+# confluent format 
+omcli  dev.x2-4.minio-1  -shell_cmd:"mc cat minio-02/bucket-dev.x2-4.kafkacw-1/topics/my-test-topic/partition=0/my-test-topic+0+0000000000.json"   \
+  | tr -d '"' \
+  | while read line; do echo "$line" | base64 -d; echo; done
+  
+ #confluent format
+omcli  dev.x2-4.minio-1  -shell_cmd:"mc cat minio-02/bucket-dev.x2-4.kafkacw-1/topics/my-test-topic/partition=0/my-test-topic+0+0000000000.json"   
+
+#aiven format 
+omcli  dev.x2-4.minio-1  -shell_cmd:"mc cat minio-02/bucket-dev.x2-4.kafkacw-1/my-test-topic-0000000000-00000000000000000000"  
+
 
 echo "get connector status and logs "
 omcli dev.x2-4.kafkacw-1 -shell_cmd:"curl -sS http://dev.x2-4.kafkacw-1.ctrl-0:1683/connectors | jq ."
@@ -34,3 +48,5 @@ omcli dev.x2-4.kafkacw-1 -shell_cmd:"curl -sS http://dev.x2-4.kafkacw-1.ctrl-0:1
 # omcli dev.x2-4.kafkacw-1 -shell_cmd:"grep Processing /home/kafkausr/kafka/logs/connectDistributed.out"
 # omcli dev.x2-4.kafkacw-1 -shell_cmd:"tail -f  /home/kafkausr/kafka/logs/connectDistributed.out"
 
+
+# omcli  dev.x2-4.kafkacw-1  -start_clean  -omplat:ak -omrun_connect:confluent-s3source.dflt -omrun_worker:kafka-connect.dflt 

@@ -429,3 +429,32 @@ verbose: ssh -q kafkawrkr@dev.kafkaw-04 bin/benchmark --drivers kafka-debug.yaml
 
  cursor over
  verbose: bash  -c $'ssh kafkawrkr@dev.kafkaw-04 \'bin/benchmark --drivers kafka-debug.yaml debug-workload100.yaml 2>&1 | tee benchmark_stdout.log\'' >&5
+
+   
+
+  "format.class": "io.confluent.connect.s3.format.json.JsonFormat",
+                   io.confluent.connect.s3.format.json.JsonFormat  -used by sink
+    "message": "Connector configuration is invalid and contains the following 1 error(s):\nInvalid value class io.confluent.connect.s3.format.json.JsonFormat for configuration format.class: Class must extend: io.confluent.connect.cloud.storage.source.StorageObjectFormat\nYou can also find the above list of errors at the endpoint `/connector-plugins/{connectorType}/config/validat
+
+      "format.class": "io.confluent.connect.s3.source.json.JsonFormat",
+      same as above
+
+
+      from confluent doc
+      
+      format.class
+Class responsible for converting S3 objects to source records.
+
+Type: class
+Valid Values:
+io.confluent.connect.s3.format.avro.AvroFormat
+io.confluent.connect.s3.format.bytearray.ByteArrayFormat
+io.confluent.connect.s3.format.json.JsonFormat
+io.confluent.connect.s3.format.string.StringFormat
+Importance: high
+
+    "format.class": "io.confluent.connect.storage.format.json.JsonFormat",
+    --that gives class not found
+
+    ==== used by sink
+    io.confluent.connect.s3.format.json.JsonFormat

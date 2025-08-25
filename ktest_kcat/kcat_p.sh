@@ -11,7 +11,9 @@ for ((i=1; i<=n; i++)); do
     # sleep 1
     timestamp=$(date +"%Y-%m-%d %H:%M:%S")
     msg="Hello, Kafka!${i} [$timestamp]"
-    # echo "$msg"
-    echo "$msg" | kcat -P -b $host:$port -t $topic
+    echo "$msg"
+    # omcli dev.x2-4.kafka-4 -omplat:ak -kcat_plaintext -kcat_cmd:"-P -t mynewtopic -l <<<\"$msg\""
+    # local msg="Message $i"
+    echo "$msg" | kcat -P -b $host:$port -t $topic -p 0
 done
 echo "produced $n messages to topic $topic"

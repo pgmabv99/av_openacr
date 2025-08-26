@@ -1,5 +1,5 @@
 #!/bin/bash
-
+kc2_clean.sh
 # echo "recreate topic - need to do it before start kafka connect -else  need wait "
 # source ~/av_openacr/ktest_kcat/hosts.sh
 # source ~/av_openacr/venv/bin/activate

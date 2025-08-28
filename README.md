@@ -488,14 +488,5 @@ omdb.omnode  omnode:dev.x2-4.x2-3         node:dev.x2-17       use:Y  comment:"x
 omdb.omnode  omnode:dev.x2-4.x2w-1        node:dev.x2w-08      use:Y  comment:""
 
 
-connect-storage-dev.x2-4.kafkacw-1-offsets
 
-    CONNECT_URL
-    CIDX
-    MAX_NUM
-    CONNECTORS
-    CONNECTOR
-    LAST_PART
-    LAST_CONNECTOR
-    KAFKA_HEAP_OPTS
-    CONNECTOR_DIRECTION
+acr uid:%

@@ -36,29 +36,44 @@ class IcebergManager:
             schema=schema,
             location=f"file://{self.warehouse_path}/{table_identifier.replace('.', '/')}",
         )
+        self.arrow_schema = pa.schema([
+        pa.field("id", pa.int32(), nullable=False),
+        pa.field("name", pa.string(), nullable=True),
+        pa.field("age", pa.int32(), nullable=True)
+    ])
 
     def append_data(self, data):
         if self.table is None:
             raise RuntimeError("Table not created. Call create_catalog_and_table() first.")
-        self.table.append(data)
+        # convert to schema format 
+        data2 = pa.Table.from_pydict(
+            data,
+            schema=self.arrow_schema
+        )
+        # Append data to the Iceberg table
+        self.table.append(data2)
+
+    def read_data(self):
+        if self.table is None:
+            raise RuntimeError("Table not created. Call create_catalog_and_table() first.")
+        # Read all data as a PyArrow Table
+        return self.table.scan().to_arrow()
+
 
 # Example usage:
 if __name__ == "__main__":
     manager = IcebergManager()
     manager.create_catalog_and_table()
 
-    arrow_schema = pa.schema([
-        pa.field("id", pa.int32(), nullable=False),
-        pa.field("name", pa.string(), nullable=True),
-        pa.field("age", pa.int32(), nullable=True)
-    ])
-    data = pa.Table.from_pydict(
-        {
-            "id": [1, 2, 3],
-            "name": ["Alice", "Bob", "Charlie"],
-            "age": [25, 30, 35]
-        },
-        schema=arrow_schema
-    )
-    manager.append_data(data)
+
+    sample1 = {
+        "id": [1, 2, 3],
+        "name": ["Alice", "Bob", "Charlie"],
+        "age": [25, 30, 35]
+    }
+    manager.append_data(sample1)
+    manager.append_data(sample1)
     print("Data appended successfully.")
+    out=manager.read_data()
+    print(out)
+    print("Data read successfully.")

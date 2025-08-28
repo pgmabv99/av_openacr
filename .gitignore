@@ -1,3 +1,4 @@
 *.pyc
 *.pcap
 venv
+ktest_python/iceberg_warehouse

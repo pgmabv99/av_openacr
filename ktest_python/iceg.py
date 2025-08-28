@@ -4,16 +4,19 @@ from pyiceberg.types import StringType, IntegerType, NestedField
 import pyarrow as pa
 import os
 import pathlib
+import shutil
 
 class IcebergManager:
     def __init__(self, warehouse_path="/home/avorovich/av_openacr/ktest_python/iceberg_warehouse", namespace="default", table_name="my_iceberg_table"):
         self.warehouse_path = warehouse_path
         self.namespace = namespace
         self.table_name = table_name
+        self.table_identifier = f"{self.namespace}.{self.table_name}"
         self.catalog = None
         self.table = None
         self.schema = None
         self.arrow_schema = None
+        self.arrow_schema_build()
 
     def arrow_schema_build(self):
         self.arrow_schema = pa.schema([
@@ -22,12 +25,7 @@ class IcebergManager:
             pa.field("age", pa.int32(), nullable=True)
         ])
 
-    def create_catalog_and_table(self):
-        # Ensure the warehouse directory exists and is writable
-        pathlib.Path(self.warehouse_path).mkdir(parents=True, exist_ok=True)
-        if not os.access(self.warehouse_path, os.W_OK):
-            raise RuntimeError(f"No write permission for warehouse path: {self.warehouse_path}")
-
+    def _init_catalog(self):
         # Use a file-based SQLite database with a normalized path
         catalog_db_path = os.path.join(self.warehouse_path, "catalog.db")
         catalog_db_path = os.path.abspath(catalog_db_path)  # Normalize path
@@ -38,6 +36,17 @@ class IcebergManager:
             uri=catalog_db_uri,
             warehouse=f"file://{os.path.abspath(self.warehouse_path)}",
         )
+
+    def create_catalog_and_table(self):
+        # Ensure the warehouse directory exists and is writable. remove if exists for a fresh start.
+        if os.path.exists(self.warehouse_path):
+            shutil.rmtree(self.warehouse_path)
+        pathlib.Path(self.warehouse_path).mkdir(parents=True, exist_ok=True)
+        if not os.access(self.warehouse_path, os.W_OK):
+            raise RuntimeError(f"No write permission for warehouse path: {self.warehouse_path}")
+        
+        self._init_catalog()
+
         try:
             self.catalog.create_namespace(self.namespace)
             print(f"Created namespace '{self.namespace}'")
@@ -51,27 +60,19 @@ class IcebergManager:
             NestedField(field_id=2, name="name", field_type=StringType(), required=False),
             NestedField(field_id=3, name="age", field_type=IntegerType(), required=False),
         )
-        table_identifier = f"{self.namespace}.{self.table_name}"
+ 
         self.table = self.catalog.create_table(
-            identifier=table_identifier,
+            identifier=self.table_identifier,
             schema=self.schema,
-            location=f"file://{os.path.abspath(self.warehouse_path)}/{table_identifier.replace('.', '/')}",
+            location=f"file://{os.path.abspath(self.warehouse_path)}/{self.table_identifier.replace('.', '/')}",
         )
-        self.arrow_schema_build()
-        print(f"Created table '{table_identifier}'")
+     
+        print(f"Created table '{self.table_identifier}'")
 
     def use_existing_catalog_and_table(self):
         if not os.path.exists(self.warehouse_path):
             raise RuntimeError(f"Warehouse path {self.warehouse_path} does not exist.")
-        # Use the same file-based SQLite database as in create_catalog_and_table
-        catalog_db_path = os.path.join(self.warehouse_path, "catalog.db")
-        catalog_db_path = os.path.abspath(catalog_db_path)  # Normalize path
-        catalog_db_uri = f"sqlite:///{catalog_db_path}"
-        self.catalog = SqlCatalog(
-            name="local",
-            uri=catalog_db_uri,
-            warehouse=f"file://{os.path.abspath(self.warehouse_path)}",
-        )
+        self._init_catalog()
         table_identifier = f"{self.namespace}.{self.table_name}"
         try:
             self.table = self.catalog.load_table(identifier=table_identifier)
@@ -80,7 +81,6 @@ class IcebergManager:
             raise RuntimeError(f"Failed to load table '{table_identifier}': {str(e)}")
         # Extract schema from the loaded table
         self.schema = self.table.schema
-        self.arrow_schema_build()
 
     def append_data(self, data):
         if self.table is None:
@@ -125,6 +125,9 @@ class IcebergManager:
 # Example usage:
 if __name__ == "__main__":
     manager = IcebergManager()
-    # manager.test_write()
-    # Uncomment to test reading in a separate run
-    manager.test_read()
+    write_test = True
+    write_test = False
+    if write_test:
+      manager.test_write()
+    else:
+      manager.test_read()

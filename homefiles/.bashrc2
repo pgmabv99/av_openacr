@@ -1,7 +1,11 @@
 #!/bin/bash
 
-# PATH=.:bin:$HOME/arnd/bin:$HOME/av_openacr:$PATH
-PATH=bin:$HOME/arnd/bin:$HOME/av_openacr:$HOME/av_openacr/ktest_cpp:$HOME/av_openacr/ktest_kcat:$PATH
+PATH=bin:$PATH
+PATH=$HOME/arnd/bin:$PATH
+PATH=$HOME/av_openacr:$PATH
+PATH=$HOME/av_openacr/ktest_cpp:$PATH
+PATH=$HOME/av_openacr/ktest_kcat:$PATH
+PATH=$HOME/av_openacr/ktest_kc:$PATH
 
 # the rest for interactive shell only
 tmp_code=$(find "$HOME/.vscode-server/cli/servers/" -type d -name "Stable*" | sort | tail -n 1)

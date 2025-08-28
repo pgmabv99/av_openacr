@@ -141,6 +141,9 @@ git-add-to-last-commi
 git push --force 
 git push algornd/arnd HEAD --force
 
+git branch --set-upstream-to=algornd/arnd/$(git rev-parse --abbrev-ref HEAD)
+
+
 
 ```
 ### gitlab  work flow items
@@ -486,3 +489,13 @@ omdb.omnode  omnode:dev.x2-4.x2w-1        node:dev.x2w-08      use:Y  comment:""
 
 
 connect-storage-dev.x2-4.kafkacw-1-offsets
+
+    CONNECT_URL
+    CIDX
+    MAX_NUM
+    CONNECTORS
+    CONNECTOR
+    LAST_PART
+    LAST_CONNECTOR
+    KAFKA_HEAP_OPTS
+    CONNECTOR_DIRECTION

@@ -1,15 +1,15 @@
 #!/bin/bash
-# mc rb --force iceberg-warehouse
-# mc mb iceberg-warehouse
- mc rb --force minio-02/iceberg-warehouse 
- mc mb minio-02/iceberg-warehouse
 
 #to fix mismatch of users in minio server
 # sudo chown -R minioadmin /minio_dir
+
+#  mc rb --force minio-02/iceberg-warehouse 
+#  mc mb minio-02/iceberg-warehouse
+
+# on the host 
 x2node nj1.sn5.bm
 
 docker rm -f  iceberg-rest
-
 docker run -d --name iceberg-rest \
   -p 1758:8181 \
   -e AWS_ACCESS_KEY_ID=minioadmin \

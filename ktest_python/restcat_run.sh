@@ -1,6 +1,12 @@
 #!/bin/bash
 # mc rb --force iceberg-warehouse
 # mc mb iceberg-warehouse
+ mc rb --force minio-02/iceberg-warehouse 
+ mc mb minio-02/iceberg-warehouse
+
+#to fix mismatch of users in minio server
+# sudo chown -R minioadmin /minio_dir
+x2node nj1.sn5.bm
 
 docker rm -f  iceberg-rest
 
@@ -11,7 +17,7 @@ docker run -d --name iceberg-rest \
   -e AWS_REGION=us-east-1 \
   -e CATALOG_WAREHOUSE=s3://iceberg-warehouse/ \
   -e CATALOG_IO__IMPL=org.apache.iceberg.aws.s3.S3FileIO \
-  -e CATALOG_S3_ENDPOINT=http://dev.x2-4.minio-1.ext-0:1673 \
+  -e CATALOG_S3_ENDPOINT=http://192.168.104.1:1673 \
   -e CATALOG_S3_PATH-STYLE-ACCESS=true \
   apache/iceberg-rest-fixture:latest
 

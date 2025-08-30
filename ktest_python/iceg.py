@@ -1,6 +1,7 @@
 from pyiceberg.catalog import load_catalog
 from pyiceberg.catalog.sql import SqlCatalog
 from pyiceberg.schema import Schema
+from pyiceberg.io.pyarrow import schema_to_pyarrow
 from pyiceberg.types import StringType, IntegerType, NestedField
 import pyarrow as pa
 import os
@@ -19,14 +20,10 @@ class IcebergManager:
         self.table = None
         self.schema = None
         self.arrow_schema = None
-        self.arrow_schema_build()
-
-    def arrow_schema_build(self):
-        self.arrow_schema = pa.schema([
-            pa.field("id", pa.int32(), nullable=False),
-            pa.field("name", pa.string(), nullable=True),
-            pa.field("age", pa.int32(), nullable=True)
-        ])
+        self.uri="http://192.168.10.51:1758"
+        self.s3_endpoint="http://dev.x2-4.minio-1.ext-0:1673"
+        self.s3_access_key_id="minioadmin"
+        self.s3_secret_access_key="minioadmin"
 
     def _init_local_catalog(self):
         # Ensure the warehouse directory exists and is writable
@@ -55,10 +52,10 @@ class IcebergManager:
         self.catalog = load_catalog(
             name="rest",
             **{
-                "uri": "http://192.168.10.51:1758",
-                "s3.endpoint": "http://dev.x2-4.minio-1.ext-0:1673",
-                "s3.access-key-id": "minioadmin",
-                "s3.secret-access-key": "minioadmin",
+                "uri": self.uri,
+                "s3.endpoint": self.s3_endpoint,
+                "s3.access-key-id": self.s3_access_key_id,  
+                "s3.secret-access-key":self.s3_secret_access_key,
                 "warehouse": f"s3://{self.warehouse_bucket}",
                 "py-io-impl": "pyiceberg.io.pyarrow.PyArrowFileIO"
             }
@@ -71,11 +68,18 @@ class IcebergManager:
             self._init_minio_catalog()
         else:
             raise ValueError(f"Unsupported storage_type: {self.storage_type}. Use 'local' or 'minio'.")
+        
+    def get_location(self):
+        table_path = self.table_identifier.replace('.', '/')
+        if self.storage_type == "local":
+            return f"file://{os.path.abspath(self.warehouse_path)}/{table_path}"
+        else:
+            return f"s3://{self.warehouse_bucket}/{table_path}"
 
     def create_catalog_and_table(self):
         if self.storage_type == "local":
             # Remove existing warehouse for a fresh start (local only)
-            if os.path.exists(self.warehouse_path):
+            if os.path.exists(self.warehouse_path) and "iceberg" in self.warehouse_path:
                 shutil.rmtree(self.warehouse_path)
             pathlib.Path(self.warehouse_path).mkdir(parents=True, exist_ok=True)
 
@@ -95,14 +99,10 @@ class IcebergManager:
             NestedField(field_id=2, name="name", field_type=StringType(), required=False),
             NestedField(field_id=3, name="age", field_type=IntegerType(), required=False),
         )
-
-        # Set location based on storage type
-        location = (
-            f"file://{os.path.abspath(self.warehouse_path)}/{self.table_identifier.replace('.', '/')}"
-            if self.storage_type == "local"
-            else f"s3://{self.warehouse_bucket}/{self.table_identifier.replace('.', '/')}"
-        )
-
+        #  Convert to PyArrow schema needed for data appending
+        self.arrow_schema = schema_to_pyarrow(self.schema)
+        
+        location = self.get_location()
         self.table = self.catalog.create_table(
             identifier=self.table_identifier,
             schema=self.schema,
@@ -116,7 +116,7 @@ class IcebergManager:
         self._init_catalog()
         try:
             self.table = self.catalog.load_table(identifier=self.table_identifier)
-            print(f"Loaded table '{self.table_identifier}'")
+            print(f"Loaded table in memory'{self.table_identifier}'")
         except Exception as e:
             raise RuntimeError(f"Failed to load table '{self.table_identifier}': {str(e)}")
         # Extract schema from the loaded table
@@ -141,6 +141,7 @@ class IcebergManager:
         return self.table.scan().to_arrow()
 
     def test_write(self):
+        print("Starting test_write...")
         self.create_catalog_and_table()
         sample1 = {
             "id": [1, 2, 3],
@@ -157,6 +158,7 @@ class IcebergManager:
         print("Data read successfully in test_write.")
 
     def test_read(self):
+        print
         self.use_existing_catalog_and_table()
         out = self.read_data()
         print("Read data in test_read:")
@@ -166,9 +168,10 @@ class IcebergManager:
 # Example usage:
 if __name__ == "__main__":
     storage_type = "local"
-    # storage_type = "minio"
+    storage_type = "minio"
     manager = IcebergManager(storage_type)
     write_test = True
+    # write_test = False
     if write_test:
         manager.test_write()
     else:

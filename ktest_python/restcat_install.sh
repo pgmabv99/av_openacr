@@ -1,65 +1,105 @@
 #!/bin/bash
 set -e
 
-# Configuration variables (replace with your MinIO details)
-MINIO_ENDPOINT="http://dev.x2-4.minio-1.ext-0:1673"  # e.g., http://localhost:9000
+# Configuration variables
+MINIO_ENDPOINT="http://dev.x2-4.minio-1.ext-0:1673"
 MINIO_ACCESS_KEY="minioadmin"
 MINIO_SECRET_KEY="minioadmin"
 BUCKET_NAME="iceberg-warehouse"
-ICEBERG_VERSION="1.6.0"
-REST_PORT="8181"
+ICEBERG_VERSION="1.9.1"  # Set to 1.9.1; revert to 1.6.1 if tag not found
+REST_PORT="1785"
 HOME_DIR="$HOME"
-CONFIG_DIR="$HOME_DIR/iceberg-rest-config"
-JAR_DIR="$HOME_DIR/iceberg/rest-catalog/build/libs"
-CONFIG_FILE="$CONFIG_DIR/iceberg-rest.properties"
+CONFIG_DIR="$HOME_DIR/iceberg-open-api-config"
+JAR_DIR="$HOME_DIR/iceberg/open-api/build/libs"
+CONFIG_FILE="$CONFIG_DIR/iceberg-open-api.properties"
+JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
 
-# Step 1: Install prerequisites
-echo "Installing prerequisites (Java, Git, Gradle)..."
+# Step 1: Remove all Gradle installations
+echo "Removing all Gradle installations..."
+sudo apt remove -y --purge gradle || true
+sudo apt autoremove -y --purge
+sudo rm -rf /usr/local/gradle* /opt/gradle*
+sed -i '/gradle.*\/bin/d' ~/.bashrc
+sed -i '/gradle.*\/bin/d' ~/.bash_profile
+source ~/.bashrc || true
+killall -9 java || true  # Stop any Gradle daemons
+
+# Step 2: Uninstall all Java versions
+echo "Uninstalling all Java versions..."
+sudo apt remove -y --purge 'openjdk*' 'java*' || true
+sudo apt autoremove -y --purge
+sudo update-alternatives --remove-all java || true
+sudo update-alternatives --remove-all javac || true
+sudo rm -rf /usr/lib/jvm/*
+
+# Step 3: Clean up previous Iceberg installations, configs, and Gradle cache
+echo "Cleaning up previous Iceberg, configs, and Gradle cache..."
+rm -rf "$HOME_DIR/iceberg" "$CONFIG_DIR" "$HOME_DIR/.gradle"
+sed -i '/JAVA_HOME/d' "$HOME_DIR/.bashrc"
+
+# Step 4: Set working directory
+echo "Setting working directory to $HOME_DIR..."
+cd "$HOME_DIR" || { echo "Error: Cannot change to $HOME_DIR"; exit 1; }
+
+# Step 5: Install and verify Java 21
+echo "Installing OpenJDK 21..."
 sudo apt update
-sudo apt install -y openjdk-11-jdk git unzip
-
-# Install Gradle
-if ! command -v gradle &> /dev/null; then
-    echo "Installing Gradle..."
-    cd "$HOME_DIR"
-    wget -q https://services.gradle.org/distributions/gradle-7.6-bin.zip
-    unzip -q gradle-7.6-bin.zip
-    export PATH="$PATH:$HOME_DIR/gradle-7.6/bin"
-    echo 'export PATH="$PATH:$HOME_DIR/gradle-7.6/bin"' >> "$HOME_DIR/.bashrc"
-else
-    echo "Gradle already installed."
+sudo apt install -y openjdk-21-jdk
+if ! java -version 2>&1 | grep -q "21"; then
+    echo "Error: Java 21 not installed correctly"
+    exit 1
 fi
-
-# Verify installations
+# Set JAVA_HOME and update PATH
+export JAVA_HOME="$JAVA_HOME"
+export PATH="$JAVA_HOME/bin:$PATH"
+echo "export JAVA_HOME=$JAVA_HOME" >> "$HOME_DIR/.bashrc"
+echo "export PATH=\$JAVA_HOME/bin:\$PATH" >> "$HOME_DIR/.bashrc"
 java -version
-git --version
-gradle --version
 
-# Step 2: Clone and build Apache Iceberg
+# Step 6: Clone and configure Apache Iceberg
 echo "Cloning Apache Iceberg repository..."
-cd "$HOME_DIR"
-if [ ! -d "iceberg" ]; then
-    git clone https://github.com/apache/iceberg.git
-fi
-cd iceberg
+git clone https://github.com/apache/iceberg.git "$HOME_DIR/iceberg"
+cd "$HOME_DIR/iceberg" || { echo "Error: Cannot change to $HOME_DIR/iceberg"; exit 1; }
+echo "Checking out apache-iceberg-$ICEBERG_VERSION..."
+git fetch origin
 git checkout "apache-iceberg-$ICEBERG_VERSION"
 
-echo "Building Iceberg REST catalog..."
-./gradlew clean build -x test -x integrationTest
-
-# Verify JAR exists
-JAR_FILE="$JAR_DIR/iceberg-rest-catalog-$ICEBERG_VERSION.jar"
-if [ ! -f "$JAR_FILE" ]; then
-    echo "Error: JAR file not found at $JAR_FILE"
+# Verify the checked-out version
+CURRENT_TAG=$(git describe --tags)
+if [ "$CURRENT_TAG" != "apache-iceberg-$ICEBERG_VERSION" ]; then
+    echo "Error: Expected tag apache-iceberg-$ICEBERG_VERSION, but got $CURRENT_TAG"
+    echo "Check valid tags at https://github.com/apache/iceberg/tags and update ICEBERG_VERSION"
     exit 1
 fi
 
-# Step 3: Configure REST catalog
+# Ensure gradlew is executable
+echo "Ensuring gradlew is executable..."
+chmod +x "$HOME_DIR/iceberg/gradlew"
+
+# Build Iceberg REST catalog fat JAR using the Gradle wrapper
+echo "Building Iceberg REST catalog with refreshed dependencies..."
+./gradlew :iceberg-open-api:shadowJar -x test -x integrationTest --refresh-dependencies --stacktrace --debug --info > "$HOME_DIR/gradle_build.log" 2>&1
+
+# Step 7: Find the REST server JAR
+echo "Searching for REST server JAR in $JAR_DIR..."
+JAR_FILE=$(find "$JAR_DIR" -name "open-api*.jar" | head -n 1)
+if [ -z "$JAR_FILE" ]; then
+    echo "Error: No REST server JAR found in $JAR_DIR"
+    echo "Attempting to rebuild rest module..."
+    ./gradlew :iceberg-open-api:shadowJar -x test -x integrationTest --refresh-dependencies --stacktrace --debug --info > "$HOME_DIR/gradle_rebuild.log" 2>&1
+    JAR_FILE=$(find "$JAR_DIR" -name "iceberg-open-api*.jar" | head -n 1)
+    if [ -z "$JAR_FILE" ]; then
+        echo "Error: Still no JAR found after rebuild. Check build logs in ~/gradle_build.log and ~/iceberg/iceberg-open-api/build/reports/"
+        exit 1
+    fi
+fi
+echo "Found JAR: $JAR_FILE"
+
+# Step 8: Configure REST catalog
 echo "Creating REST catalog configuration..."
 mkdir -p "$CONFIG_DIR"
 cat << EOF > "$CONFIG_FILE"
-catalog.type=rest
-catalog.impl=org.apache.iceberg.rest.RESTCatalog
+catalog.impl=org.apache.iceberg.hadoop.HadoopCatalog
 catalog.warehouse=s3://$BUCKET_NAME/
 catalog.io-impl=org.apache.iceberg.aws.s3.S3FileIO
 catalog.s3.endpoint=$MINIO_ENDPOINT
@@ -70,7 +110,7 @@ aws.region=us-east-1
 server.port=$REST_PORT
 EOF
 
-# Step 4: Run REST catalog service
+# Step 9: Run REST catalog service
 echo "Starting Iceberg REST catalog service..."
 java -jar "$JAR_FILE" --config "$CONFIG_FILE" &
 REST_PID=$!
@@ -78,7 +118,7 @@ REST_PID=$!
 # Wait a few seconds for the server to start
 sleep 5
 
-# Step 5: Verify REST catalog is running
+# Step 10: Verify REST catalog is running
 echo "Verifying REST catalog service..."
 if curl -s "http://localhost:$REST_PORT/v1/config" | grep -q "defaults"; then
     echo "REST catalog is running successfully on http://localhost:$REST_PORT"

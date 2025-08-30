@@ -6,6 +6,7 @@ PATH=$HOME/av_openacr:$PATH
 PATH=$HOME/av_openacr/ktest_cpp:$PATH
 PATH=$HOME/av_openacr/ktest_kcat:$PATH
 PATH=$HOME/av_openacr/ktest_kc:$PATH
+PATH=$HOME/av_openacr/ktest_python:$PATH
 
 # the rest for interactive shell only
 tmp_code=$(find "$HOME/.vscode-server/cli/servers/" -type d -name "Stable*" | sort | tail -n 1)

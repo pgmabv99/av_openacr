@@ -12,7 +12,7 @@ class IcebergManager:
         self.storage_type = storage_type.lower()  # 'local' or 'minio'
         self.warehouse_path = "/home/avorovich/av_openacr/ktest_python/iceberg_warehouse"
         self.warehouse_bucket = "iceberg-warehouse"
-        self.namespace = "default"
+        self.namespace = "default999"
         self.table_name = "my_iceberg_table"
         self.table_identifier = f"{self.namespace}.{self.table_name}"
         self.catalog = None
@@ -55,7 +55,7 @@ class IcebergManager:
         self.catalog = load_catalog(
             name="rest",
             **{
-                "uri": "http://localhost:8181",
+                "uri": "http://192.168.10.51:1758",
                 "s3.endpoint": "http://dev.x2-4.minio-1.ext-0:1673",
                 "s3.access-key-id": "minioadmin",
                 "s3.secret-access-key": "minioadmin",

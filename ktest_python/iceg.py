@@ -14,13 +14,14 @@ class IcebergManager:
         self.warehouse_path = "/home/avorovich/av_openacr/ktest_python/iceberg_warehouse"
         self.warehouse_bucket = "iceberg-warehouse"
         self.namespace = "default999"
-        self.table_name = "my_iceberg_table"
+        self.table_name = "my_iceberg_table11"
         self.table_identifier = f"{self.namespace}.{self.table_name}"
         self.catalog = None
         self.table = None
         self.schema = None
         self.arrow_schema = None
-        self.uri="http://192.168.10.51:1758"
+        self.uri="http://localhost:8181"
+        # self.uri="http://192.168.10.51:1758"
         self.s3_endpoint="http://dev.x2-4.minio-1.ext-0:1673"
         self.s3_access_key_id="minioadmin"
         self.s3_secret_access_key="minioadmin"
@@ -171,7 +172,7 @@ if __name__ == "__main__":
     storage_type = "minio"
     manager = IcebergManager(storage_type)
     write_test = True
-    # write_test = False
+    write_test = False
     if write_test:
         manager.test_write()
     else:

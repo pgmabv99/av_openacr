@@ -258,7 +258,7 @@ algo_x2:  nj1.sn1.avorovich->dev.x2-17
 algo_x2:  nj1.sn1.avorovich->gitlab
 
 ## hosts for brokers directly
-sudo bash -c 'cat >> /etc/hosts <<EOF
+sudo bash -c 'cat >> catts <<EOF
 192.168.10.21  dev.x2-4.kafka-1.ctrl-0
 192.168.104.2  dev.x2-4.kafka-1.ext-0
 192.168.214.2  dev.x2-4.kafka-1.ib-0

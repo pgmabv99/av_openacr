@@ -1,3 +1,11 @@
+#for rest
+# start minio
+# omcli dev.x2-4.minio-1 -start
+# create bucket
+# start catalog 
+# ./ktest_python/restcat_run.sh
+# run this script
+
 from pyiceberg.catalog import load_catalog
 from pyiceberg.catalog.sql import SqlCatalog
 from pyiceberg.schema import Schema
@@ -20,9 +28,10 @@ class IcebergManager:
         self.table = None
         self.schema = None
         self.arrow_schema = None
-        self.uri="http://localhost:8181"
+        self.uri="http://localhost:1758"
         # self.uri="http://192.168.10.51:1758"
-        self.s3_endpoint="http://dev.x2-4.minio-1.ext-0:1673"
+        # self.s3_endpoint="http://dev.x2-4.minio-1.ext-0:1673"
+        self.s3_endpoint="http://192.168.104.1:1673"
         self.s3_access_key_id="minioadmin"
         self.s3_secret_access_key="minioadmin"
 
@@ -172,7 +181,7 @@ if __name__ == "__main__":
     storage_type = "minio"
     manager = IcebergManager(storage_type)
     write_test = True
-    write_test = False
+    pythwrite_test = False
     if write_test:
         manager.test_write()
     else:

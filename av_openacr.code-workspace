@@ -12,9 +12,6 @@
 		},
 		{
 			"path": "../arnd/temp/omcli/gen"
-		},
-		{
-			"path": "../iceberg"
 		}
 	],
 
@@ -95,6 +92,7 @@
 			"**/kafka2_gen.inl.h": true,
 			"**/kafka2_gen.cpp": true,
 
-		}
+		},
+		"java.compile.nullAnalysis.mode": "automatic"
 	}
 }

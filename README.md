@@ -36,6 +36,22 @@ amc algo.% -proto
 
  grep -rE 'kafka_corr_id.*\(' cpp include
  grep -rE 'kafka_corr_id.{0,20}\(' cpp include
+
+
+ heads up: upgrades in src_func:
+
+you can now check which C++ functions correspond to an acr key:
+$ src_func -acrkey:%omdb.omattr:rdp/enable_leader_balancer -showbody
+void omcli::omattr_rdp_enable_leader_balancer(omcli::FOmnode &omnode){
+    omnode.properties<<omnode.omattruval_yaml<<eol;
+}
+Or
+$ src_func -acrkey:dispatch_msg:x2gw.Shm/%
+void x2gw::Shm_KafkaAclMsg(x2::KafkaAclMsg &msg) 
+void x2gw::Shm_CreateStreamMsg(x2::CreateStreamMsg &msg) 
+void x2gw::Shm_NodeintfStateMsg(x2::NodeintfStateMsg &msg) 
+void x2gw::Shm_EnableMetricsMsg(x2::EnableMetricsMsg &msg) 
+...
 ```
 ## to add ctype to read ssim in mmemory
 ```
@@ -491,30 +507,3 @@ omdb.omnode  omnode:dev.x2-4.x2w-1        node:dev.x2w-08      use:Y  comment:""
 
 acr uid:%
 
-
-$ git cherry-pick 801e0f266cb247f4dd6c0602e4777546b4a4fe74
-Auto-merging data/atfdb/comptest.ssim
-Auto-merging data/atfdb/targs.ssim
-Auto-merging data/dev/gitfile.ssim
-Auto-merging data/dev/targsrc.ssim
-Auto-merging data/dev/tool_opt.ssim
-Auto-merging data/dmmeta/nsinclude.ssim
-CONFLICT (rename/delete): extern/sqlite-3470000/shell.c renamed to extern/sqlite-3500400/shell.c in 801e0f266 (Increase sqlite max attach db limit), but deleted in HEAD.
-CONFLICT (modify/delete): extern/sqlite-3500400/shell.c deleted in HEAD and modified in 801e0f266 (Increase sqlite max attach db limit).  Version 801e0f266 (Increase sqlite max attach db limit) of extern/sqlite-3500400/shell.c left in tree.
-CONFLICT (rename/delete): extern/sqlite-3470000/sqlite3.c renamed to extern/sqlite-3500400/sqlite3.c in 801e0f266 (Increase sqlite max attach db limit), but deleted in HEAD.
-CONFLICT (modify/delete): extern/sqlite-3500400/sqlite3.c deleted in HEAD and modified in 801e0f266 (Increase sqlite max attach db limit).  Version 801e0f266 (Increase sqlite max attach db limit) of extern/sqlite-3500400/sqlite3.c left in tree.
-CONFLICT (rename/delete): extern/sqlite-3470000/sqlite3.h renamed to extern/sqlite-3500400/sqlite3.h in 801e0f266 (Increase sqlite max attach db limit), but deleted in HEAD.
-CONFLICT (modify/delete): extern/sqlite-3500400/sqlite3.h deleted in HEAD and modified in 801e0f266 (Increase sqlite max attach db limit).  Version 801e0f266 (Increase sqlite max attach db limit) of extern/sqlite-3500400/sqlite3.h left in tree.
-CONFLICT (rename/delete): extern/sqlite-3470000/sqlite3ext.h renamed to extern/sqlite-3500400/sqlite3ext.h in 801e0f266 (Increase sqlite max attach db limit), but deleted in HEAD.
-CONFLICT (modify/delete): extern/sqlite-3500400/sqlite3ext.h deleted in HEAD and modified in 801e0f266 (Increase sqlite max attach db limit).  Version 801e0f266 (Increase sqlite max attach db limit) of extern/sqlite-3500400/sqlite3ext.h left in tree.
-Auto-merging include/gen/lib_sqlite_gen.h
-CONFLICT (content): Merge conflict in include/gen/lib_sqlite_gen.h
-Auto-merging txt/lib/lib_sqlite/README.md
-CONFLICT (content): Merge conflict in txt/lib/lib_sqlite/README.md
-error: could not apply 801e0f266... Increase sqlite max attach db limit
-hint: After resolving the conflicts, mark them with
-hint: "git add/rm <pathspec>", then run
-hint: "git cherry-pick --continue".
-hint: You can instead skip this commit with "git cherry-pick --skip".
-hint: To abort and get back to the state before "git cherry-pick",
-hint: run "git cherry-pick --abort".

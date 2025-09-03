@@ -12,6 +12,9 @@
 		},
 		{
 			"path": "../arnd/temp/omcli/gen"
+		},
+		{
+			"path": "../iceberg"
 		}
 	],
 

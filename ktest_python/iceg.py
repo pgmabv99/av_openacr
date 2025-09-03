@@ -28,8 +28,8 @@ class IcebergManager:
         self.table = None
         self.schema = None
         self.arrow_schema = None
-        self.uri="http://localhost:1758"
-        # self.uri="http://192.168.10.51:1758"
+        # self.uri="http://localhost:1758"
+        self.uri="http://192.168.10.51:1758"
         # self.s3_endpoint="http://dev.x2-4.minio-1.ext-0:1673"
         self.s3_endpoint="http://192.168.104.1:1673"
         self.s3_access_key_id="minioadmin"

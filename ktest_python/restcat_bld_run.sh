@@ -8,8 +8,12 @@ rm -rf iceberg
 git clone https://github.com/apache/iceberg.git
 cd iceberg
 
+# build iceberg rest server
 ./gradlew :iceberg-open-api:shadowJar
 
+
+#build all (inluding kafka connect)
+# ./gradlew build -x test -x integrationTest
 
 cd $HOME/iceberg
 export AWS_ACCESS_KEY_ID=minioadmin

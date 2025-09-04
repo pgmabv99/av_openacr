@@ -507,3 +507,7 @@ omdb.omnode  omnode:dev.x2-4.x2w-1        node:dev.x2w-08      use:Y  comment:""
 
 acr uid:%
 
+## icberg 
+https://rmoff.net/2025/07/04/writing-to-apache-iceberg-on-s3-using-kafka-connect-with-glue-catalog/
+
+https://iceberg.apache.org/docs/nightly/kafka-connect/#initial-setup

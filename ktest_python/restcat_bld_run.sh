@@ -15,7 +15,7 @@ cd $HOME/iceberg
 export AWS_ACCESS_KEY_ID=minioadmin
 export AWS_SECRET_ACCESS_KEY=minioadmin
 export AWS_REGION=us-east-1
-export CATALOG_WAREHOUSE=s3://iceberg-warehouse/
+export CATALOG_WAREHOUSE=s3://bucket-dev.x2-4.kafkacw-1/
 export CATALOG_IO__IMPL=org.apache.iceberg.aws.s3.S3FileIO
 export CATALOG_S3_ENDPOINT=http://192.168.104.1:1673
 export CATALOG_S3_PATH_STYLE_ACCESS=true

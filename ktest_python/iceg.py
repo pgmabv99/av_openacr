@@ -20,9 +20,9 @@ class IcebergManager:
     def __init__(self, storage_type="local"):
         self.storage_type = storage_type.lower()  # 'local' or 'minio'
         self.warehouse_path = "/home/avorovich/av_openacr/ktest_python/iceberg_warehouse"
-        self.warehouse_bucket = "iceberg-warehouse"
-        self.namespace = "default999"
-        self.table_name = "my_iceberg_table11"
+        self.warehouse_bucket = "bucket-dev.x2-4.kafkacw-1"
+        self.namespace = "dev"
+        self.table_name = "mytesttable"
         self.table_identifier = f"{self.namespace}.{self.table_name}"
         self.catalog = None
         self.table = None
@@ -104,10 +104,14 @@ class IcebergManager:
             else:
                 raise e
 
+        # self.schema = Schema(
+        #     NestedField(field_id=1, name="id", field_type=IntegerType(), required=True),
+        #     NestedField(field_id=2, name="name", field_type=StringType(), required=False),
+        #     NestedField(field_id=3, name="age", field_type=IntegerType(), required=False),
+        # )
         self.schema = Schema(
-            NestedField(field_id=1, name="id", field_type=IntegerType(), required=True),
-            NestedField(field_id=2, name="name", field_type=StringType(), required=False),
-            NestedField(field_id=3, name="age", field_type=IntegerType(), required=False),
+            NestedField(field_id=1, name="msg", field_type=StringType(), required=True),
+            NestedField(field_id=2, name="timestamp", field_type=StringType(), required=False),
         )
         #  Convert to PyArrow schema needed for data appending
         self.arrow_schema = schema_to_pyarrow(self.schema)
@@ -154,9 +158,8 @@ class IcebergManager:
         print("Starting test_write...")
         self.create_catalog_and_table()
         sample1 = {
-            "id": [1, 2, 3],
-            "name": ["Alice", "Bob", "Charlie"],
-            "age": [25, 30, 35]
+            "msg": ["hi1", "hi2"],
+            "timestamp": ["time1", "time2"]
         }
         self.append_data(sample1)
         self.append_data(sample1)
@@ -181,7 +184,7 @@ if __name__ == "__main__":
     storage_type = "minio"
     manager = IcebergManager(storage_type)
     write_test = True
-    pythwrite_test = False
+    write_test = False
     if write_test:
         manager.test_write()
     else:

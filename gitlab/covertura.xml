@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.8" branch-rate="0.0" lines-covered="16" lines-valid="20" branches-covered="0" branches-valid="0" complexity="0.0" version="0.0" timestamp="1757347949529">
+  <sources>
+    <source>./</source>
+  </sources>
+  <packages>
+    <package name="cpp.acr" line-rate="0.8" branch-rate="0.0" complexity="0.0">
+      <classes>
+        <class name="cpp_acr_check_cpp" filename="cpp/acr/check.cpp" line-rate="0.8" branch-rate="0.0" complexity="0.0">
+          <methods>
+          </methods>
+          <lines>
+            <line number="1" hits="1"/>
+            <line number="2" hits="3"/>
+            <line number="3" hits="0"/>
+            <line number="4" hits="2"/>
+            <line number="5" hits="1"/>
+            <line number="6" hits="0"/>
+            <line number="7" hits="4"/>
+            <line number="8" hits="2"/>
+            <line number="9" hits="1"/>
+            <line number="10" hits="3"/>
+            <line number="11" hits="2"/>
+            <line number="12" hits="1"/>
+            <line number="13" hits="0"/>
+            <line number="14" hits="2"/>
+            <line number="15" hits="1"/>
+            <line number="16" hits="0"/>
+            <line number="17" hits="3"/>
+            <line number="18" hits="2"/>
+            <line number="19" hits="1"/>
+            <line number="20" hits="2"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

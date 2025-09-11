@@ -260,6 +260,8 @@ dkr ps   -node:nj1.sn5.avorovich
 docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 
 
+#build image
+dkr -build -node:dev.kafkacw-02 > ~/av_openacr/logs_dkr/dbld.log
 
 
 
@@ -511,3 +513,19 @@ acr uid:%
 https://rmoff.net/2025/07/04/writing-to-apache-iceberg-on-s3-using-kafka-connect-with-glue-catalog/
 
 https://iceberg.apache.org/docs/nightly/kafka-connect/#initial-setup
+
+
+[qtp1740797075-31] INFO org.apache.iceberg.BaseMetastoreCatalog - Table properties set at catalog level through catalog properties: {}
+[qtp1740797075-31] INFO org.apache.iceberg.BaseMetastoreCatalog - Table properties enforced at catalog level through catalog properties: {}
+[qtp1740797075-31] INFO org.apache.iceberg.BaseMetastoreTableOperations - Successfully committed to table dev.mytesttable in 631 ms
+[qtp1740797075-31] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00000-d9627b18-1c8a-44d7-9311-0ac5030c6317.metadata.json
+[qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00000-d9627b18-1c8a-44d7-9311-0ac5030c6317.metadata.json
+[qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreCatalog - Table loaded by catalog: rest_backend.dev.mytesttable
+[qtp1740797075-37] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00000-d9627b18-1c8a-44d7-9311-0ac5030c6317.metadata.json
+[qtp1740797075-37] INFO org.apache.iceberg.BaseMetastoreCatalog - Table loaded by catalog: rest_backend.dev.mytesttable
+[qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00000-d9627b18-1c8a-44d7-9311-0ac5030c6317.metadata.json
+[qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreCatalog - Table loaded by catalog: rest_backend.dev.mytesttable
+[qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreTableOperations - Successfully committed to table dev.mytesttable in 19 ms
+[qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00001-9fee64cf-32a9-4e5c-9824-6cf3a846df64.metadata.json
+[qtp1740797075-37] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00001-9fee64cf-32a9-4e5c-9824-6cf3a846df64.metadata.json
+[qtp1740797075-37] INFO org.apache.iceberg.BaseMetastoreCatalog - Table loaded by catalog: rest_backend.dev.mytesttable

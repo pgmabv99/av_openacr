@@ -7,6 +7,12 @@ PATH=$HOME/av_openacr/ktest_cpp:$PATH
 PATH=$HOME/av_openacr/ktest_kcat:$PATH
 PATH=$HOME/av_openacr/ktest_kc:$PATH
 PATH=$HOME/av_openacr/ktest_python:$PATH
+PATH=$HOME/av_openacr/spark:$PATH
+
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+export SPARK_HOME=/opt/spark
+export PATH=$SPARK_HOME/bin:$PATH
 
 # the rest for interactive shell only
 tmp_code=$(find "$HOME/.vscode-server/cli/servers/" -type d -name "Stable*" | sort | tail -n 1)

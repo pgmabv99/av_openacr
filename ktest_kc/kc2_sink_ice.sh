@@ -21,7 +21,7 @@ omcli  dev.x2-4.kafkacw-1  -start_clean  -omplat:ak -omrun_connect:apache-iceber
 
 echo "==show s3 bucket immediatly after start"
 omcli  dev.x2-4.minio-1  -status 
-echo "==show s3 bucket after sleep 10"
+echo "==show s3 bucket and iceberg table after sleep 10"
 sleep 10
 omcli  dev.x2-4.minio-1  -status 
 omcli  dev.x2-4.kafkacw-1  -status 

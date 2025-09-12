@@ -1,4 +1,6 @@
 *.pyc
 *.pcap
+*.jar
+*.class
 venv
 ktest_python/iceberg_warehouse/*

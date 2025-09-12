@@ -25,5 +25,3 @@ echo "==show s3 bucket after sleep 10"
 sleep 10
 omcli  dev.x2-4.minio-1  -status 
 omcli  dev.x2-4.kafkacw-1  -status 
-# curl -s http://192.168.10.51:1758/v1/namespaces/dev/tables | jq
-# curl -s http://192.168.10.51:1758/v1/namespaces/dev/tables/mytesttable | jq

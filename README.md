@@ -528,4 +528,4 @@ https://iceberg.apache.org/docs/nightly/kafka-connect/#initial-setup
 [qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreTableOperations - Successfully committed to table dev.mytesttable in 19 ms
 [qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00001-9fee64cf-32a9-4e5c-9824-6cf3a846df64.metadata.json
 [qtp1740797075-37] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00001-9fee64cf-32a9-4e5c-9824-6cf3a846df64.metadata.json
-[qtp1740797075-37] INFO org.apache.iceberg.BaseMetastoreCatalog - Table loaded by catalog: rest_backend.dev.mytesttable
+[qtp1740797075-37] INFO org.apache.iceberg.BaseMetastoreCatalog - Table loaded by catalog: rest_backend.dev.mytesttableFreba

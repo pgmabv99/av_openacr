@@ -17,7 +17,7 @@
 			"path": "../iceberg"
 		},
 		{
-			"path": ".."
+			"path": "../tiered-storage-for-apache-kafka"
 		}
 	],
 

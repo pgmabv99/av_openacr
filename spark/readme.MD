@@ -1,4 +1,4 @@
-Reading iceberg table dev.mytestable created by kafka connect 
+Reading iceberg table dev.mytesttable created by kafka connect 
 
 steps
  - sp_inst.sh to install spark

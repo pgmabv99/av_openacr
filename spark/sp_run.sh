@@ -17,14 +17,14 @@ echo ">>> Packaging into $JAR..."
 jar cf $JAR ${MAIN_CLASS}*.class
 
 echo ">>> Running Spark job..."
-# $SPARK_HOME/bin/spark-submit \
-#   --class $MAIN_CLASS \
-#   --master local[*] \
-#   $JAR
-
-
 $SPARK_HOME/bin/spark-submit \
-  --class HelloSpark \
+  --class $MAIN_CLASS \
   --master local[*] \
-  --conf "spark.driver.extraJavaOptions=-Dlog4j.rootCategory=ERROR,console -Dlog4j.logger.org.apache.spark=ERROR -Dlog4j.logger.org.spark_project=ERROR -Dlog4j.logger.org.apache.hadoop=ERROR" \
   $JAR
+
+
+# $SPARK_HOME/bin/spark-submit \
+#   --class HelloSpark \
+#   --master local[*] \
+#   --conf "spark.driver.extraJavaOptions=-Dlog4j.rootCategory=ERROR,console -Dlog4j.logger.org.apache.spark=ERROR -Dlog4j.logger.org.spark_project=ERROR -Dlog4j.logger.org.apache.hadoop=ERROR" \
+#   $JAR

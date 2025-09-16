@@ -89,6 +89,16 @@ aria2c -x 16 -s 16 -d ~/tmp -o iceberg-spark-runtime-3.4_2.12-${ICEBERG_VERSION}
 sudo mv ~/tmp/iceberg-spark-runtime-3.4_2.12-${ICEBERG_VERSION}.jar ${SPARK_HOME}/jars/
 
 # -------------------------------
+# Download Iceberg AWS Bundle
+# -------------------------------
+echo "Downloading Iceberg AWS bundle..."
+aria2c -x 16 -s 16 -d ~/tmp -o iceberg-aws-bundle-${ICEBERG_VERSION}.jar \
+    ${MAVEN_MIRROR}/org/apache/iceberg/iceberg-aws-bundle/${ICEBERG_VERSION}/iceberg-aws-bundle-${ICEBERG_VERSION}.jar
+
+# Move AWS JAR to Spark
+sudo mv ~/tmp/iceberg-aws-bundle-${ICEBERG_VERSION}.jar ${SPARK_HOME}/jars/
+
+# -------------------------------
 # Permissions & PATH
 # -------------------------------
 sudo chown -R $(whoami):$(whoami) ${SPARK_HOME}

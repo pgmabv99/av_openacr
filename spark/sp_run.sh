@@ -3,6 +3,8 @@
 
 set -e
 
+echo "run spark java program to read iceberg table created by kafka connect"
+
 SPARK_HOME=/opt/spark
 SRC=HelloSpark.java
 MAIN_CLASS=HelloSpark
@@ -18,6 +20,7 @@ jar cf $JAR ${MAIN_CLASS}*.class
 
 echo ">>> Running Spark job..."
 $SPARK_HOME/bin/spark-submit \
+  --conf spark.driver.extraJavaOptions=-Dlog4j.configurationFile=file:./log4j2.properties \
   --class $MAIN_CLASS \
   --master local[*] \
   $JAR

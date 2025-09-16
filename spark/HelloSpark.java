@@ -53,7 +53,6 @@ public class HelloSpark {
 
                 .getOrCreate();
 
-        spark.sparkContext().setLogLevel("ERROR");
         // hello(spark);
         readTable(spark);
 

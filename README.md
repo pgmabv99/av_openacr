@@ -126,13 +126,7 @@ to allow think time in debugging
 sed -i 's/hbtimeout:30/hbtimeout:10000/g' data/x2db/proc.ssim
 ## Git cheat sheet
 
-git push   #to defalt remote
 
-git push ssh://git@gitlab.vovaco.com:1008/algornd/arnd.git HEAD  --force  #non-default 
-git log --oneline HEAD..FETCH_HEAD    dif:  HEAD munus FETCH_HEAD
-
-
-### Separate generated code
 
 ```bash
 git show | nogen
@@ -147,7 +141,7 @@ git log --oneline --decorate --pretty=format:"%h %ad | %s%d [%an]" --date=short`
 We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.md) which can be installed with the bin/gitconfig-setup script. It automatically resolves conflicts in ssim files because it understands that nearby lines are not logically related (by default, git treats files like code, where nearby changes are considered a conflict). acr_dm can even resolve 3-way merges where one branch changes attribute A and another changes attribute B - it's not a conflict because different attributes were changed.
 
 ```
-### git work flow items 
+### acr/gitlab  work flow items 
 ```
 # basic
 gcli nnn -start

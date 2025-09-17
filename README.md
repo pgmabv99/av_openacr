@@ -148,16 +148,18 @@ We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.
 
 ```
 ### git work flow items
+```
 git-rebase-remote algornd/arnd  
 normalize_loop
 acr % -check -write 
 atf_comp  
 atf_comp -covcapture
-git-add-to-last-commi
+git-add-to-last-commit
 git push --force 
 git push algornd/arnd HEAD --force
 
 git branch --set-upstream-to=algornd/arnd/$(git rev-parse --abbrev-ref HEAD)
+```
 
 
 

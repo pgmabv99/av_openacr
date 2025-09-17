@@ -18,6 +18,12 @@
 		},
 		{
 			"path": "../tiered-storage-for-apache-kafka"
+		},
+		{
+			"path": "../iceberg-cpp"
+		},
+		{
+			"path": "../../../path"
 		}
 	],
 

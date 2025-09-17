@@ -3,17 +3,24 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**",
-                "/usr/include/librdkafka" 
-                // "${workspaceFolder}/../spdk/include",
-                // "/home/avorovich/spdk/include"
+                "${workspaceFolder}/**",                   // your workspace files
+                "/home/avorovich/iceberg-cpp/src",        // Iceberg headers
+                "/usr/include",                            // system headers
+                "/usr/include/librdkafka",
+                "/usr/local/include"
             ],
-
             "defines": [],
-            "compilerPath": "/usr/bin/gcc",
+            "compilerPath": "/usr/bin/g++",
             "cStandard": "c17",
             "cppStandard": "gnu++17",
-            "intelliSenseMode": "linux-gcc-x64"
+            "intelliSenseMode": "linux-gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "/home/avorovich/iceberg-cpp/src"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ],
     "version": 4

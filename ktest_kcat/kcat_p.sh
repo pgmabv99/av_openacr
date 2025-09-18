@@ -1,21 +1,24 @@
 #!/bin/bash
-echo "produce records"
+avro_flag=${1:-false}
 source ~/av_openacr/ktest_kcat/hosts.sh
 
-# source ~/av_openacr/venv/bin/activate
-# python3 ~/av_openacr/ktest_python/top_recreate.py $host:$port $topic
 
-source ~/av_openacr/ktest_kcat/hosts.sh
-n=50
-for ((i=1; i<=n; i++)); do
-    # sleep 1
-    timestamp=$(date +"%Y-%m-%d %H:%M:%S")
-    msg="Hello, Kafka!${i}"
-    json_msg="{\"msg\": \"$msg\", \"timestamp\": \"$timestamp\"}"
-    # echo "$msg"
-    echo "$json_msg"
-    # omcli dev.x2-4.kafka-4 -omplat:ak -kcat_plaintext -kcat_cmd:"-P -t mynewtopic -l <<<\"$msg\""
-    # local msg="Message $i"
-    echo "$json_msg" | kcat -P -b $host:$port -t $topic -p 0
-done
-echo "produced $n messages to topic $topic"
+
+if [ "$avro_flag" = "false" ]; then
+    echo "Producing records in json format"
+    n=50
+    for ((i=1; i<=n; i++)); do
+        timestamp=$(date +"%Y-%m-%d %H:%M:%S")
+        msg="Hello, Kafka!${i}"
+        avro_msg="{\"msg\": \"$msg\", \"timestamp\": \"$timestamp\"}"  # Placeholder for Avro serialization
+        echo "$avro_msg"
+        echo "$avro_msg" | kcat -P -b $host:$port -t $topic -p 0
+    done
+    echo "produced $n json  messages to topic $topic"
+    exit 0
+else
+    echo "Producing records in JSON format"
+    source ~/av_openacr/venv/bin/activate
+    python3 ~/av_openacr/pyth/avro_produce.py $host:$port $topic
+    echo "produced $n avro   messages to topic $topic"
+fi

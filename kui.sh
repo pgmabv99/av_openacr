@@ -1,5 +1,5 @@
 #!/bin/bash
-# Record X2 oor kafka sessions
+# Record X2 or kafka sessions
 
 omrun_load=debug-workload100
 
@@ -27,7 +27,8 @@ exit
 
 # 
 
-# run bencmark against kafka and pcap
+# run bencmark against kafka and sniff creating pcap
 omcli dev.x2-4 -omplat:ak -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload100 -omrun_minutes:1
 omcli dev.x2-4 -omplat:ak -collect_logs
+# rerun aginst pcap
 atf_snf  -kapi -in_file:/home/avorovich/av_openacr/pcap/atf_snf.pcap

@@ -1,6 +1,6 @@
 ===========Session stats==============
 TCP_FILTER.ATTENTION!!!!:N
-  elapsed_sec:1.65836  iframe_count:326  seq_gap_pos_count:0  seq_gap_neg_count:0  kafka_req_count_total:23  kafka_req_ack_count_total:23
+  elapsed_sec:1.69094  iframe_count:326  seq_gap_pos_count:0  seq_gap_neg_count:0  kafka_req_count_total:23  kafka_req_ack_count_total:23
   kafka_solo_err_count:0  "kafka_duration_avg (ns)":4231826  ind_tcp_pair_n:183  max_pkt_len:1514
 ===========tcp pairs with kafka req/rsp===============
 

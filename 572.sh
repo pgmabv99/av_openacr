@@ -170,6 +170,8 @@ EOF
 #  set parms for atf_snf
 acr -merge  -write <<EOF
 acr.delete dmmeta.field  field:command.atf_snf.kapi
+acr.delete dmmeta.field  field:command.atf_snf.x2gw
+acr.delete dmmeta.field  field:command.atf_snf.sll2
 acr.delete dmmeta.field  field:command.atf_snf.in_file
 acr.delete dmmeta.field  field:command.atf_snf.dir
 acr.delete dmmeta.field  field:command.atf_snf.mult_req_per_frame
@@ -177,6 +179,8 @@ acr.delete dmmeta.field  field:command.atf_snf.hex_print
 EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_snf.kapi                   arg:bool          reftype:Val      dflt:false        comment:"invoke tcp header and kafka parse code"
+    dmmeta.field  field:command.atf_snf.x2gw                   arg:bool          reftype:Val      dflt:false        comment:"invoke tcp header and x2  parse code"
+    dmmeta.field  field:command.atf_snf.sll2                   arg:bool          reftype:Val      dflt:false        comment:"set true for lochost capture with sll2 header"
     dmmeta.field  field:command.atf_snf.in_file                arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input PCAP file (full reference) . Empty for live NIC capture"
     dmmeta.field  field:command.atf_snf.dir                    arg:algo.cstring  reftype:Val      dflt:'""'   comment:"dir under temp/atf_snf_logs/ to store output files"
     dmmeta.field  field:command.atf_snf.mult_req_per_frame     arg:bool          reftype:Val      dflt:true        comment:"parse mode: true - multiple req/rsp are expected per frame"

@@ -8,6 +8,7 @@ PATH=$HOME/av_openacr/ktest_kcat:$PATH
 PATH=$HOME/av_openacr/ktest_kc:$PATH
 PATH=$HOME/av_openacr/ktest_python:$PATH
 PATH=$HOME/av_openacr/spark:$PATH
+PATH=$HOME/av_openacr/x2:$PATH
 
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH

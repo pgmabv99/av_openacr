@@ -1,5 +1,4 @@
 *.pyc
-*.pcap
 *.jar
 *.class
 venv

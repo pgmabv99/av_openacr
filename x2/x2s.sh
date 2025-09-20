@@ -1,6 +1,25 @@
 #!/bin/bash
 set -x
 
+
+pkill x2sup
+sudo pkill tcpdump
+rm -rf temp/x2tmp
+# x2sup -initdir:temp/x2tmp/  -proc:dev2.x2sup-0-0 -daemon  -temp -livecheck:N
+x2sup -initdir:temp/x2tmp/ -daemon  -temp -livecheck:N
+sleep 1
+lsof -Pan -p $(pidof x2gw) -i
+sudo tcpdump -i any port 8850 -X -nn -s0 -U -w temp/x2tmp/x2gw_8850.pcap  &
+# sudo tcpdump -i any port 8850 -X -nn -s0 > temp/x2tmp/x2gw_8850.log 2>&1 &
+x2w.sh
+tcpdump -r temp/x2tmp/x2gw_8850.pcap
+tcpdump -r temp/x2tmp/x2gw_8850.pcap -nn -v -e
+
+exit 
+
+atf_snf  -kapi -in_file:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap
+atf_snf  -x2gw -sll2 -in_file:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap
+
 # pkill -f x2sup
 # rm -rf temp/x2sup
 # x2sup -temp    -livecheck:N 
@@ -17,10 +36,7 @@ rm -rf temp/x2sup*
 # x2sup -initdir:temp/x2sup33/  -proc:dev2.x2sup-1-0 -daemon
 # exit 
 
-pkill x2sup
-rm -rf temp/x2sup22
-x2sup -initdir:temp/x2sup22/  -proc:dev2.x2sup-0-0 -daemon  -temp 
-exit 
+
 
 pkill -f x2sup
 # run_x2sup_with_id() {

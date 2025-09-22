@@ -11,6 +11,7 @@ acr dmmeta.ns:atf_snf  -ndown 99  -tree -e
 acr dmmeta.ns:atfdb  -ndown 99  -tree -e
 acr dmmeta.ns:atf_snf  -ndown 99  -tree > ~/av_openacr/atf_snf.sh
 acr dmmeta.ns:omcli -ndown 99  -tree > ~/av_openacr/omcli.sh
+acr dmmeta.ns:x2read -ndown 99  -tree  -e 
 
   dmmeta.fcleanup  field:atf_spdk.FCtrlr.ctrlr  comment:""
 

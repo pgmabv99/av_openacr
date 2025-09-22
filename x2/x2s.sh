@@ -11,8 +11,9 @@ sleep 1
 lsof -Pan -p $(pidof x2gw) -i
 sudo tcpdump -i any port 8850 -X -nn -s0 -U -w temp/x2tmp/x2gw_8850.pcap  &
 x2w.sh
+x2read -end:2
 
-tcpdump -r temp/x2tmp/x2gw_8850.pcap
+# tcpdump -r temp/x2tmp/x2gw_8850.pcap
 
 exit 
 

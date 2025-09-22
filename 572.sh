@@ -38,7 +38,7 @@ acr_ed -del  -ctype atf_snf.FKafka    -write || true
 #--------------tcp pair
 # acr_ed -create -ctype atf_snf.FTcp_pair                   -pooltype Tpool       -arg Smallstr50 -indexed -write -comment "tcp pair entry"
 acr_ed -create -ctype atf_snf.FTcp_pair                   -pooltype Tpool       -write -comment "tcp pair entry"
-acr_ed -create -field atf_snf.FTcp_pair.tcp_pair         -arg algo.Smallstr50        -write -comment "initial sequence number (not always from SYN frame)"
+acr_ed -create -field atf_snf.FTcp_pair.tcp_pair         -arg algo.Smallstr50        -write -comment "tcp pair string key host:port-host:port"
 acr_ed -create -field atf_snf.FTcp_pair.isn              -arg u32              -write -comment "initial sequence number (not always from SYN frame)"
 acr_ed -create -field atf_snf.FTcp_pair.seq              -arg u32              -write -comment "current sequence number"
 acr_ed -create -field atf_snf.FTcp_pair.seq_next         -arg u32              -write -comment "running high end of seq+payload. start of next"
@@ -195,6 +195,18 @@ acr_ed -create -finput -target atf_snf -ssimfile omdb.omnode -write -comment "in
 acr_ed -del    -field atf_snf.FDb.zd_omnode                   -write || true
 acr_ed -create -field atf_snf.FDb.zd_omnode                   -arg atf_snf.FOmnode -xref -write -comment ""
 
+# dispatch for x2gw 
+acr -merge  -write <<EOF
+ acr.delete dmmeta.dispatch  dispatch:atf_snf.In 
+ acr.delete   dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.Seqmsg        
+ acr.delete   dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.UGPubMsg            
+EOF
+
+acr -merge -write <<EOF
+  dmmeta.dispatch  dispatch:atf_snf.In  unk:N  read:N  print:N  haslen:N  call:Y  strict:N  dyn:N  kafka:N  comment:""
+    dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.Seqmsg                 comment:""
+    dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.UGPubMsg               comment:""
+EOF
 
 
 

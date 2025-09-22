@@ -1,0 +1,67 @@
+atf_snf.info fname:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap  comment:"using input pcap file"
+atf_snf.info fname:/home/avorovich/arnd/temp/x2tmp  comment:"using experiment directory extracted from pcap file name"
+atf_snf.info tcp_pair_dir:/home/avorovich/arnd/temp/x2tmp/tcp_pairs
+atf_snf.info  fname:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap  comment:"PcapFileProcess start"
+
+X2gwFrameProcess=========================  tcp_pair:127.0.0.1:39686-127.0.0.1:8850  frame_count:3  direction:1  tcp_pay_len:32
+p_pay_hex:" 27 02 00 00| 20 00 00 00| 00 00 00 0c| 01 00 00 00| 00 00 00 00| 2f 70 75 62| 6c 69 63 2f| 61 6e 6f 6e|"
+p_pay_asci:"'... .............../public/anon"
+hdr  type:551  length:32
+
+X2gwFrameProcess=========================  tcp_pair:127.0.0.1:8850-127.0.0.1:39686  frame_count:3  direction:2  tcp_pay_len:36
+p_pay_hex:" 7d 02 00 00| 24 00 00 00| 00 00 00 0c| 01 00 00 00| 00 00 00 00| 04 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00|"
+p_pay_asci:"}...$..............................."
+hdr  type:637  length:36
+
+X2gwFrameProcess=========================  tcp_pair:127.0.0.1:8850-127.0.0.1:39686  frame_count:4  direction:2  tcp_pay_len:20
+p_pay_hex:" 99 02 00 00| 14 00 00 00| 00 00 00 0c| 01 00 00 00| 00 00 00 00|"
+p_pay_asci:....................
+hdr  type:665  length:20
+
+X2gwFrameProcess=========================  tcp_pair:127.0.0.1:39686-127.0.0.1:8850  frame_count:6  direction:1  tcp_pay_len:114
+p_pay_hex:" 28 02 00 00| 72 00 00 00| 00 00 00 00| 00 00 00 0c| 02 00 00 00| 00 00 00 00| 04 00 00 00| 00 00 00 00| 2f 3d e4 cd| 0d ad 67 18| 62 02 00 00| 25 00 00 00| 61 61 61 61| 61 61 61 61| 61 61 61 61| 61 61 61 61| 61 61 61 61| 61 61 61 61| 61 61 61 61| 61 62 02 00| 00 25 00 00| 00 62 62 62| 62 62 62 62| 62 62 62 62| 62 62 62 62| 62 62 62 62| 62 62 62 62| 62 62 62 62| 62 62"
+p_pay_asci:"(...r.........................../=....g.b...%...aaaaaaaaaaaaaaaaaaaaaaaaaaaaab...%...bbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+hdr  type:552  length:114
+UGPubMsg  msg.type:552  msg.length:114  msg.stream_id:4
+x2.UGPubMsg  from:-0-0  request_id:x2write-0-0.2  stream_id:4  timestamp:2025-09-22T14:07:34.311935279  record.0:"x2.Record  data:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa"  record.1:"x2.Record  data:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+
+X2gwFrameProcess=========================  tcp_pair:127.0.0.1:8850-127.0.0.1:39686  frame_count:5  direction:2  tcp_pay_len:60
+p_pay_hex:" 6c 02 00 00| 3c 00 00 00| 00 00 00 0b| 00 00 00 0c| 02 00 00 00| 00 00 00 00| 04 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 02 00 00 00| 00 00 00 00| 5c 13 e5 cd| 0d ad 67 18| 00 00 00 00|"
+p_pay_asci:"l...<...........................................\\.....g....."
+hdr  type:620  length:60
+
+X2gwFrameProcess=========================  tcp_pair:127.0.0.1:39690-127.0.0.1:8850  frame_count:3  direction:1  tcp_pay_len:48
+p_pay_hex:" 27 02 00 00| 20 00 00 00| 00 00 00 14| 01 00 00 00| 00 00 00 00| 2f 70 75 62| 6c 69 63 2f| 61 6e 6f 6e| 29 02 00 00| 10 00 00 00| ff ff ff ff| ff ff ff 7f|"
+p_pay_asci:"'... .............../public/anon)..............."
+hdr  type:551  length:32
+
+X2gwFrameProcess=========================  tcp_pair:127.0.0.1:8850-127.0.0.1:39690  frame_count:3  direction:2  tcp_pay_len:36
+p_pay_hex:" 7d 02 00 00| 24 00 00 00| 00 00 00 14| 01 00 00 00| 00 00 00 00| 04 00 00 00| 00 00 00 00| 02 00 00 00| 00 00 00 00|"
+p_pay_asci:"}...$..............................."
+hdr  type:637  length:36
+
+X2gwFrameProcess=========================  tcp_pair:127.0.0.1:8850-127.0.0.1:39690  frame_count:4  direction:2  tcp_pay_len:20
+p_pay_hex:" 99 02 00 00| 14 00 00 00| 00 00 00 14| 01 00 00 00| 00 00 00 00|"
+p_pay_asci:....................
+hdr  type:665  length:20
+
+X2gwFrameProcess=========================  tcp_pair:127.0.0.1:39690-127.0.0.1:8850  frame_count:6  direction:1  tcp_pay_len:66
+p_pay_hex:" 2b 02 00 00| 09 00 00 00| 01 2a 02 00| 00 30 00 00| 00 00 00 00| 14 02 00 00| 00 00 00 00| 00 04 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 02 00 00| 00 00 00 00| 00 00 00 00| 00 2b 02 00| 00 09 00 00| 00 00"
+p_pay_asci:+........*...0...........................................+........
+hdr  type:555  length:9
+
+X2gwFrameProcess=========================  tcp_pair:127.0.0.1:8850-127.0.0.1:39690  frame_count:5  direction:2  tcp_pay_len:73
+p_pay_hex:" 6e 02 00 00| 49 00 00 00| 04 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 00| 00 00 00 0b| 2f 3d e4 cd| 0d ad 67 18| 62 02 00 00| 25 00 00 00| 61 61 61 61| 61 61 61 61| 61 61 61 61| 61 61 61 61| 61 61 61 61| 61 61 61 61| 61 61 61 61| 61"
+p_pay_asci:"n...I......................./=....g.b...%...aaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+hdr  type:622  length:73
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+X2gwFrameProcess=========================  tcp_pair:127.0.0.1:8850-127.0.0.1:39690  frame_count:6  direction:2  tcp_pay_len:73
+p_pay_hex:" 6e 02 00 00| 49 00 00 00| 04 00 00 00| 00 00 00 00| 01 00 00 00| 00 00 00 00| 00 00 00 0b| 2f 3d e4 cd| 0d ad 67 18| 62 02 00 00| 25 00 00 00| 62 62 62 62| 62 62 62 62| 62 62 62 62| 62 62 62 62| 62 62 62 62| 62 62 62 62| 62 62 62 62| 62"
+p_pay_asci:"n...I......................./=....g.b...%...bbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+hdr  type:622  length:73
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+atf_snf.info  comment:"PcapFileProcess  EOF"
+atf_snf.info comment:"printing session info"
+atf_snf.info fname:/home/avorovich/arnd/temp/x2tmp/tcp_pairs_all.log  comment:"closing tcp pairs all log file"
+exit to OS

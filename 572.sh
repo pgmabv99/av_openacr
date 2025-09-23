@@ -182,7 +182,7 @@ EOF
 #  set parms for atf_snf
 acr -merge  -write <<EOF
 acr.delete dmmeta.field  field:command.atf_snf.kapi
-acr.delete dmmeta.field  field:command.atf_snf.x2gw
+acr.delete dmmeta.field  field:command.atf_snf.x2
 acr.delete dmmeta.field  field:command.atf_snf.sll2
 acr.delete dmmeta.field  field:command.atf_snf.in_file
 acr.delete dmmeta.field  field:command.atf_snf.dir
@@ -190,8 +190,8 @@ acr.delete dmmeta.field  field:command.atf_snf.mult_req_per_frame
 acr.delete dmmeta.field  field:command.atf_snf.hex_print
 EOF
 acr -merge -write <<EOF
-    dmmeta.field  field:command.atf_snf.kapi                   arg:bool          reftype:Val      dflt:false        comment:"invoke tcp header and kafka parse code"
-    dmmeta.field  field:command.atf_snf.x2gw                   arg:bool          reftype:Val      dflt:false        comment:"invoke tcp header and x2  parse code"
+    dmmeta.field  field:command.atf_snf.kapi                   arg:bool          reftype:Val      dflt:false        comment:"parse  tcp header and kafka "
+    dmmeta.field  field:command.atf_snf.x2                     arg:bool          reftype:Val      dflt:false        comment:"parse  tcp header and x2"
     dmmeta.field  field:command.atf_snf.sll2                   arg:bool          reftype:Val      dflt:false        comment:"set true for lochost capture with sll2 header"
     dmmeta.field  field:command.atf_snf.in_file                arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input PCAP file (full reference) . Empty for live NIC capture"
     dmmeta.field  field:command.atf_snf.dir                    arg:algo.cstring  reftype:Val      dflt:'""'   comment:"dir under temp/atf_snf_logs/ to store output files"
@@ -212,12 +212,14 @@ acr -merge  -write <<EOF
  acr.delete dmmeta.dispatch  dispatch:atf_snf.In 
  acr.delete   dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.Seqmsg        
  acr.delete   dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.UGPubMsg            
+ acr.delete   dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.TrafMsg            
 EOF
 
 acr -merge -write <<EOF
   dmmeta.dispatch  dispatch:atf_snf.In  unk:N  read:N  print:N  haslen:N  call:Y  strict:N  dyn:N  kafka:N  comment:""
     dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.Seqmsg                 comment:""
     dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.UGPubMsg               comment:""
+    dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.TrafMsg                comment:""
 EOF
 
 

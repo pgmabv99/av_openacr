@@ -3,25 +3,33 @@ atf_snf.info sll2:Y
 atf_snf.info fname:/home/avorovich/arnd/temp/x2tmp  comment:"using experiment directory extracted from pcap file name"
 atf_snf.info tcp_pair_dir:/home/avorovich/arnd/temp/x2tmp/tcp_pairs
 atf_snf.info  fname:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap  comment:"PcapFileProcess start"
-X2Store  tcp_pair:127.0.0.1:44704-127.0.0.1:8850  direction:1  msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+X2Store  tcp_pair:127.0.0.1:59402-127.0.0.1:8850  direction:1  msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 atf_snf.info  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:1
 X2msgPrintAll=========================
 x2msg  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:1
-X2Store  tcp_pair:127.0.0.1:44704-127.0.0.1:8850  direction:1  msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+X2Store  tcp_pair:127.0.0.1:59402-127.0.0.1:8850  direction:1  msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 atf_snf.info  x2msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb  count:1
 X2msgPrintAll=========================
 x2msg  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:1
 x2msg  x2msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb  count:1
-X2Store  tcp_pair:127.0.0.1:8850-127.0.0.1:44710  direction:2  msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+X2Store  tcp_pair:127.0.0.1:59402-127.0.0.1:8850  direction:1  msg:ccccccccccccccccccccccccccccc
+atf_snf.info  x2msg:ccccccccccccccccccccccccccccc  count:1
+X2msgPrintAll=========================
+x2msg  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:1
+x2msg  x2msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb  count:1
+x2msg  x2msg:ccccccccccccccccccccccccccccc  count:1
+X2Store  tcp_pair:127.0.0.1:8850-127.0.0.1:59414  direction:2  msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 atf_snf.info  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:2
 X2msgPrintAll=========================
 x2msg  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:2
 x2msg  x2msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb  count:1
-X2Store  tcp_pair:127.0.0.1:8850-127.0.0.1:44710  direction:2  msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+x2msg  x2msg:ccccccccccccccccccccccccccccc  count:1
+X2Store  tcp_pair:127.0.0.1:8850-127.0.0.1:59414  direction:2  msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 atf_snf.info  x2msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb  count:2
 X2msgPrintAll=========================
 x2msg  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:2
 x2msg  x2msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb  count:2
+x2msg  x2msg:ccccccccccccccccccccccccccccc  count:1
 atf_snf.info  comment:"PcapFileProcess  EOF"
 atf_snf.info comment:"printing session info"
 atf_snf.info fname:/home/avorovich/arnd/temp/x2tmp/tcp_pairs_all.log  comment:"closing tcp pairs all log file"

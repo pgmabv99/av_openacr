@@ -1,70 +1,36 @@
 #!/bin/bash
 set -x
 
-
+echo "kill previous x2sup and tcpdump"
 pkill x2sup
 sudo pkill tcpdump
 rm -rf temp/x2tmp
-# x2sup -initdir:temp/x2tmp/  -proc:dev2.x2sup-0-0 -daemon  -temp -livecheck:N
+echo "start new x2sup "
 x2sup -initdir:temp/x2tmp/ -daemon  -temp -livecheck:N
 sleep 1
 lsof -Pan -p $(pidof x2gw) -i
+
+echo "start tcpdump  "
 sudo tcpdump -i any port 8850 -X -nn -s0 -U -w temp/x2tmp/x2gw_8850.pcap  &
-x2w.sh
+
+echo "do write and read x2 messages"
+x2write <<EOF
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+ccccccccccccccccccccccccccccc
+EOF
+
 x2read -end:2
 
 # tcpdump -r temp/x2tmp/x2gw_8850.pcap
 
 exit 
+echo "run with x2 " 
+atf_snf  -x2 -sll2 -in_file:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap  > /home/avorovich/av_openacr/logs_x2sup/x2.log      
 
+echo "regresion test with kafka"
 atf_snf  -kapi -in_file:/home/avorovich/av_openacr/pcap/atf_snf.pcap
-atf_snf  -x2gw -sll2 -in_file:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap
 
 
 
-
-
-pkill -f x2sup
-# run_x2sup_with_id() {
-#   local id="$1"
-#   rm -rf "temp/$id"
-#   mkdir -p "temp/$id"
-#   x2sup -initdir:"temp/$id" -daemon -random_ports
-# }
-
-# run_x2sup_with_id "id1"
-# run_x2sup_with_id "id2"
-
-# x2sup -temp  -trace:'verbose:(kafka2.%|x2gw.%),timestamps'  -daemon -random_ports
-# valgrind --log-file=temp/valgrind.log x2sup -temp  -trace:'verbose:(kafka2.%|x2gw.%),timestamps'  -daemon
-# ofile=~/av_openacr/x2sup_logs/x2sup.log
-# ofile_pretty=~/av_openacr/x2sup_logs/x2sup_pretty.log
-# echo "Output file: $ofile"
-# x2sup -temp   -trace:'verbose:(kafka2.%|x2gw.%),timestamps' > $ofile 2>&1
-# x2sup -temp   -trace:'verbose:(kafka2.%|x2gw.%),timestamps' > $ofile 2>&1
-# echo "x2sup output written to $ofile"
-
-
-# x2sup_pretty.sh $ofile $ofile_pretty
-
-
-# x2sup -i -temp   -v -v > $ofile 2>&1
-# x2sup -i -temp   -trace:'verbose:(kafka2.%|x2gw.%group%),timestamps' > $ofile 2>&1
-# vscode_setup x2sup --  -i -temp -trace:verbose:kafka2.%,timestamps
-# x2sup -livecheck:N
-
-
-# sample clients
-kcat -b 127.0.0.1:$kafkaport -L -t test1 -X allow.auto.create.topics=false
-kcat -b 127.0.0.1:$kafkaport -L
-
-
-# sample tests
- echo 'kafka2.MetadataRequest request_api_version:3' | kapi -connect -pretty
- echo 'kafka2.DescribeClusterRequest request_api_version:0' | kapi -connect -pretty
- echo 'kafka2.DescribeConfigsRequest  request_api_version:4  correlation_id:5  client_id:kafka-ui-admin-1746648386-1  resources.0:"kafka2.DescribeConfigsResource32q  resource_type:4  resource_name:1"  include_synonyms:N  include_documentation:N' | \
-  kapi -connect -pretty
-
-atf_comp atf_x2.KafkaDescribeCluster  -run  -check_untracked:N
-atf_comp atf_x2.KafkaDescribeCluster  -capture -check_untracked:N
 

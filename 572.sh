@@ -18,11 +18,11 @@ trg=atf_snf
 # acr_ed -create -target:atf_snf -write
 # acr_compl -install
 # amc
+acr_ed -del  -ctype atf_snf.FMcb         -write || true
+acr_ed -del  -ctype atf_snf.FTcp_pair    -write || true
+acr_ed -del  -ctype atf_snf.FClient_id   -write || true
+acr_ed -del  -ctype atf_snf.FKafka       -write || true
 
-acr_ed -del  -ctype atf_snf.FMcb    -write || true
-acr_ed -del  -ctype atf_snf.FTcp_pair -write || true
-acr_ed -del  -ctype atf_snf.FClient_id    -write || true
-acr_ed -del  -ctype atf_snf.FKafka    -write || true
 
 #  detlete indices from fdb todo
 # acr -merge  -write <<EOF
@@ -110,7 +110,18 @@ acr_ed -create -field atf_snf.FTcp_pair.bh_kafka_corr_id   -arg atf_snf.FKafka  
 
 acr_ed -del  -field atf_snf.FDb.bh_kafka_corr_id_glob -write || true
 acr_ed -create -field atf_snf.FDb.bh_kafka_corr_id_glob -xref  -arg atf_snf.FKafka -sortfld atf_snf.FKafka.ts_ns -write -comment "bheap of kafka on ts_ns from FDB"
+
 # -
+#-------------x2msg object
+acr_ed -del    -ctype atf_snf.FX2msg                                              -write || true
+acr_ed -create -ctype atf_snf.FX2msg                        -pooltype Tpool       -write  -comment "x2 msg"
+acr_ed -create -field atf_snf.FX2msg.x2msg                  -arg algo.Smallstr50  -write  -comment "key todo"
+acr_ed -create -field atf_snf.FX2msg.ts_ns                  -arg u64              -write  -comment "ts of the frame"
+acr_ed -create -field atf_snf.FX2msg.count                  -arg u64              -write  -comment "count by key. todo"
+# pointers from up/down above
+acr_ed -create -field atf_snf.FDb.zd_x2msg                -cascdel              -write -comment ""
+acr_ed -create -field atf_snf.FDb.ind_x2msg               -cascdel              -write -comment ""
+
 #-------------main CB
 acr_ed -create -ctype atf_snf.FMcb                              -write -comment "Main CB"
 # stats
@@ -129,10 +140,11 @@ acr_ed -create -field atf_snf.FMcb.seq_gap_pos_count           -arg u32         
 acr_ed -create -field atf_snf.FMcb.seq_gap_neg_count           -arg u32               -write -comment "neg sequence gap count"
 acr_ed -create -field atf_snf.FMcb.exper_dir                   -arg algo.Smallstr100  -write -comment "experiment directory"
 acr_ed -create -field atf_snf.FMcb.test_dirs                   -arg algo.Smallstr100  -write -comment "test directories"
-acr_ed -create -field atf_snf.FMcb.tcp_pairs                   -arg algo.Smallstr100  -write -comment "tcp pairs directories"
+acr_ed -create -field atf_snf.FMcb.tcp_pairs_dir               -arg algo.Smallstr100  -write -comment "tcp pairs directories"
 acr_ed -create -field atf_snf.FMcb.fd_tcp_pairs_all_log        -arg i32               -write -comment "fd for tcp pairs all log"
 acr_ed -create -field atf_snf.FMcb.iframe_written              -arg u32               -write -comment "last iframe written to  all log"
 acr_ed -create -field atf_snf.FMcb.session_info_print_flg      -arg bool   -dflt:true  -write -comment "print MAC info at parse"
+acr_ed -create -field atf_snf.FMcb.p_cur_tcp_pair              -arg atf_snf.FTcp_pair  -reftype Ptr   -write  -comment "current tcp_pair being processed"
 
 # debug
 acr_ed -create -field atf_snf.FMcb.mac_print_flg               -arg bool             -write -comment "print MAC info at parse"

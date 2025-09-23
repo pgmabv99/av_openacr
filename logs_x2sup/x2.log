@@ -3,34 +3,21 @@ atf_snf.info sll2:Y
 atf_snf.info fname:/home/avorovich/arnd/temp/x2tmp  comment:"using experiment directory extracted from pcap file name"
 atf_snf.info tcp_pair_dir:/home/avorovich/arnd/temp/x2tmp/tcp_pairs
 atf_snf.info  fname:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap  comment:"PcapFileProcess start"
-X2Store  tcp_pair:127.0.0.1:59402-127.0.0.1:8850  direction:1  msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-atf_snf.info  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:1
+In_UGPubMsg
+X2Store  tcp_pair:127.0.0.1:55668-127.0.0.1:8850  direction:1  msg:"o\002\000\000W\000\000\000\000\000\000\000\000\000\000\000\000@\000\021\001\000\000\000\000\000\000\000W\000\000\000\000\000\000\000A\315\307W\005"
+atf_snf.info  x2msg:"o\002\000\000W\000\000\000\000\000\000\000\000\000\000\000\000@\000\021\001\000\000\000\000\000\000\000W\000\000\000\000\000\000\000A\315\307W\005"  count:1
 X2msgPrintAll=========================
-x2msg  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:1
-X2Store  tcp_pair:127.0.0.1:59402-127.0.0.1:8850  direction:1  msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-atf_snf.info  x2msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb  count:1
+x2msg  x2msg:"o\002\000\000W\000\000\000\000\000\000\000\000\000\000\000\000@\000\021\001\000\000\000\000\000\000\000W\000\000\000\000\000\000\000A\315\307W\005"  count:1
+X2Store  tcp_pair:127.0.0.1:55668-127.0.0.1:8850  direction:1  msg:"h\030\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000b\002\000\000\023\000\000\000BBBBBBBBBB"
+atf_snf.info  x2msg:"h\030\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000b\002\000\000\023\000\000\000BBBBBBBBBB"  count:1
 X2msgPrintAll=========================
-x2msg  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:1
-x2msg  x2msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb  count:1
-X2Store  tcp_pair:127.0.0.1:59402-127.0.0.1:8850  direction:1  msg:ccccccccccccccccccccccccccccc
-atf_snf.info  x2msg:ccccccccccccccccccccccccccccc  count:1
+x2msg  x2msg:"o\002\000\000W\000\000\000\000\000\000\000\000\000\000\000\000@\000\021\001\000\000\000\000\000\000\000W\000\000\000\000\000\000\000A\315\307W\005"  count:1
+x2msg  x2msg:"h\030\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000b\002\000\000\023\000\000\000BBBBBBBBBB"  count:1
+In_UGPubMsg
+X2Store  tcp_pair:127.0.0.1:55668-127.0.0.1:8850  direction:1  msg:"o\002\000\000W\000\000\000\000\000\000\000\000\000\000\000\000@\000\021\002\000\000\000\000\000\000\000\256\000\000\000\000\000\000\000\214%\333\230\005"
+atf_snf.info  x2msg:"o\002\000\000W\000\000\000\000\000\000\000\000\000\000\000\000@\000\021\002\000\000\000\000\000\000\000\256\000\000\000\000\000\000\000\214%\333\230\005"  count:1
 X2msgPrintAll=========================
-x2msg  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:1
-x2msg  x2msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb  count:1
-x2msg  x2msg:ccccccccccccccccccccccccccccc  count:1
-X2Store  tcp_pair:127.0.0.1:8850-127.0.0.1:59414  direction:2  msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-atf_snf.info  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:2
-X2msgPrintAll=========================
-x2msg  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:2
-x2msg  x2msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb  count:1
-x2msg  x2msg:ccccccccccccccccccccccccccccc  count:1
-X2Store  tcp_pair:127.0.0.1:8850-127.0.0.1:59414  direction:2  msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-atf_snf.info  x2msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb  count:2
-X2msgPrintAll=========================
-x2msg  x2msg:aaaaaaaaaaaaaaaaaaaaaaaaaaaaa  count:2
-x2msg  x2msg:bbbbbbbbbbbbbbbbbbbbbbbbbbbbb  count:2
-x2msg  x2msg:ccccccccccccccccccccccccccccc  count:1
-atf_snf.info  comment:"PcapFileProcess  EOF"
-atf_snf.info comment:"printing session info"
-atf_snf.info fname:/home/avorovich/arnd/temp/x2tmp/tcp_pairs_all.log  comment:"closing tcp pairs all log file"
-exit to OS
+x2msg  x2msg:"o\002\000\000W\000\000\000\000\000\000\000\000\000\000\000\000@\000\021\001\000\000\000\000\000\000\000W\000\000\000\000\000\000\000A\315\307W\005"  count:1
+x2msg  x2msg:"h\030\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000b\002\000\000\023\000\000\000BBBBBBBBBB"  count:1
+x2msg  x2msg:"o\002\000\000W\000\000\000\000\000\000\000\000\000\000\000\000@\000\021\002\000\000\000\000\000\000\000\256\000\000\000\000\000\000\000\214%\333\230\005"  count:1
+X2Store  tcp_pair:127.0.0.1:55668-127.0.0.1:8850  direction:1  msg:"h\030\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000b\002\000\000\023\000\000\000BBBBBBBBBB"

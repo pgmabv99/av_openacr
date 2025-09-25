@@ -184,6 +184,7 @@ acr -merge  -write <<EOF
 acr.delete dmmeta.field  field:command.atf_snf.kapi
 acr.delete dmmeta.field  field:command.atf_snf.x2
 acr.delete dmmeta.field  field:command.atf_snf.sll2
+acr.delete dmmeta.field  field:command.atf_snf.trafmsg 
 acr.delete dmmeta.field  field:command.atf_snf.in_file
 acr.delete dmmeta.field  field:command.atf_snf.dir
 acr.delete dmmeta.field  field:command.atf_snf.mult_req_per_frame
@@ -192,6 +193,7 @@ EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_snf.kapi                   arg:bool          reftype:Val      dflt:false        comment:"parse  tcp header and kafka "
     dmmeta.field  field:command.atf_snf.x2                     arg:bool          reftype:Val      dflt:false        comment:"parse  tcp header and x2"
+    dmmeta.field  field:command.atf_snf.trafmsg                arg:bool          reftype:Val      dflt:false        comment:"interpret x2 msg in trafmsg mode"
     dmmeta.field  field:command.atf_snf.sll2                   arg:bool          reftype:Val      dflt:false        comment:"set true for lochost capture with sll2 header"
     dmmeta.field  field:command.atf_snf.in_file                arg:algo.cstring  reftype:Val      dflt:'""'  comment:"input PCAP file (full reference) . Empty for live NIC capture"
     dmmeta.field  field:command.atf_snf.dir                    arg:algo.cstring  reftype:Val      dflt:'""'   comment:"dir under temp/atf_snf_logs/ to store output files"

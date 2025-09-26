@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# run x2sup with x2read/x2write/x2traf  and capture traffic on port 8850
 echo "==kill previous x2sup and tcpdump"
 pkill x2sup
 sudo pkill tcpdump
@@ -37,10 +37,14 @@ bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 EOF
 x2read -end:2
 fi
-
-echo "run sniffer with x2 in trafmsg mode to parse pcap" 
-atf_snf  -x2 -sll2 -trafmsg -in_file:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap  > /home/avorovich/av_openacr/logs_x2sup/atf_snf_x2_trafmsg.log      
-
+sleep 1
+if $trafmsg; then
+    echo "run sniffer with x2 in trafmsg mode to parse pcap" 
+    atf_snf  -x2 -sll2 -trafmsg -in_file:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap  > /home/avorovich/av_openacr/logs_x2sup/atf_snf_x2_trafmsg.log      
+else
+    echo "run sniffer with x2 in default mode to parse pcap" 
+    atf_snf  -x2 -sll2           -in_file:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap  > /home/avorovich/av_openacr/logs_x2sup/atf_snf_x2_trafmsg.log 
+fi
 exit 
 # ========================================
 

@@ -115,7 +115,7 @@ acr_ed -create -field atf_snf.FDb.bh_kafka_corr_id_glob -xref  -arg atf_snf.FKaf
 #-------------x2msg object
 acr_ed -del    -ctype atf_snf.FX2msg                                              -write || true
 acr_ed -create -ctype atf_snf.FX2msg                        -pooltype Tpool       -write  -comment "x2 msg"
-acr_ed -create -field atf_snf.FX2msg.x2msg                  -arg algo.Smallstr50  -write  -comment "key todo"
+acr_ed -create -field atf_snf.FX2msg.x2msg                  -arg u64              -write  -comment "trafmsg.seq_x2traf as key"
 acr_ed -create -field atf_snf.FX2msg.ts_ns                  -arg u64              -write  -comment "ts of the frame"
 acr_ed -create -field atf_snf.FX2msg.count                  -arg u64              -write  -comment "count by key. todo"
 # pointers from up/down above

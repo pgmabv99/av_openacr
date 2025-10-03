@@ -1,14 +1,6 @@
 #!/bin/bash
 # run x2sup with x2read/x2write/x2traf  and capture traffic on port 8850
-echo "==kill previous x2sup and tcpdump"
-pkill x2sup
-sudo pkill tcpdump
-rm -rf temp/x2tmp
-
-echo "==start new x2sup "
-x2sup -initdir:temp/x2tmp/ -daemon  -temp -livecheck:N
-sleep 1
-lsof -Pan -p $(pidof x2gw) -i
+x2sup_start.sh
 
 echo "==start tcpdump  "
 sudo tcpdump -i any port 8850 -X -nn -s0 -U -w temp/x2tmp/x2gw_8850.pcap  &
@@ -63,3 +55,8 @@ x2traf  -payload:trafmsg  -msg_size:1000 -msg_rate:100K -text_char:B -traf_id:64
 x2traf  -payload:trafmsg  -msg_size:10 -msg_rate:1      -text_char:B -traf_id:64 | x2write -printacks:N -max_inflight:0 -payload:trafmsg
 
 
+ # Step 1: produce file (overwrites /tmp/traf_input.bin)
+x2traf -payload:trafmsg -msg_size:10 -msg_rate:1k -text_char:B -traf_id:64 > temp/traf_input.bin
+
+# Step 2: consume from file
+x2write -printacks:N -max_inflight:0 -payload:trafmsg  -in_file:temp/traf_input.bin

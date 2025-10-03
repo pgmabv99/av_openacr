@@ -1,6 +1,6 @@
 #!/bin/bash
 # run x2sup with x2read/x2write/x2traf  and capture traffic on port 8850
-x2sup_start.sh
+x22sup_start.sh
 
 echo "==start tcpdump  "
 sudo tcpdump -i any port 8850 -X -nn -s0 -U -w temp/x2tmp/x2gw_8850.pcap  &
@@ -8,7 +8,7 @@ sudo tcpdump -i any port 8850 -X -nn -s0 -U -w temp/x2tmp/x2gw_8850.pcap  &
 echo "==do write and read x2 messages"
 
 trafmsg=false
-trafmsg=true
+# trafmsg=true
 if $trafmsg; then
     # Start read
     x2read -format:trafmsg  | x2traf -payload:trafmsg -read > /home/avorovich/av_openacr/logs_x2sup/x2traf.log  &

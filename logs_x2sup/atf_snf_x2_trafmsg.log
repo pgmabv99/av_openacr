@@ -3,6 +3,882 @@ atf_snf.info sll2:Y
 atf_snf.info fname:/home/avorovich/arnd/temp/x2tmp  comment:"using experiment directory extracted from pcap file name"
 atf_snf.info tcp_pair_dir:/home/avorovich/arnd/temp/x2tmp/tcp_pairs
 atf_snf.info  fname:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap  comment:"PcapFileProcess start"
+In_Seqmsg   times  timestamps.x2write:1969-12-31T19:00:00  ts_snf_write:2025-10-06T11:53:55.445763  "ts_snf_read ":2025-10-06T11:53:55.445858
+In_Seqmsg latency  seq_x2traf:1  "x2write->snf_read":488823:53:55.445858  "snf_write->snf_read":00:00:00.000095
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445753256  ts_snf_write:2025-10-06T11:53:55.445763  "ts_snf_read ":2025-10-06T11:53:55.445866
+In_Seqmsg latency  seq_x2traf:2  "x2write->snf_read":00:00:00.000112744  "snf_write->snf_read":00:00:00.000103
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445753256  ts_snf_write:2025-10-06T11:53:55.445763  "ts_snf_read ":2025-10-06T11:53:55.445872
+In_Seqmsg latency  seq_x2traf:3  "x2write->snf_read":00:00:00.000118744  "snf_write->snf_read":00:00:00.000109
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445753256  ts_snf_write:2025-10-06T11:53:55.445763  "ts_snf_read ":2025-10-06T11:53:55.44588
+In_Seqmsg latency  seq_x2traf:4  "x2write->snf_read":00:00:00.000126744  "snf_write->snf_read":00:00:00.000117
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445753256  ts_snf_write:2025-10-06T11:53:55.445763  "ts_snf_read ":2025-10-06T11:53:55.445889
+In_Seqmsg latency  seq_x2traf:5  "x2write->snf_read":00:00:00.000135744  "snf_write->snf_read":00:00:00.000126
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445753256  ts_snf_write:2025-10-06T11:53:55.445763  "ts_snf_read ":2025-10-06T11:53:55.445896
+In_Seqmsg latency  seq_x2traf:6  "x2write->snf_read":00:00:00.000142744  "snf_write->snf_read":00:00:00.000133
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445753256  ts_snf_write:2025-10-06T11:53:55.445763  "ts_snf_read ":2025-10-06T11:53:55.445905
+In_Seqmsg latency  seq_x2traf:7  "x2write->snf_read":00:00:00.000151744  "snf_write->snf_read":00:00:00.000142
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445753256  ts_snf_write:2025-10-06T11:53:55.445763  "ts_snf_read ":2025-10-06T11:53:55.445913
+In_Seqmsg latency  seq_x2traf:8  "x2write->snf_read":00:00:00.000159744  "snf_write->snf_read":00:00:00.00015
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445753256  ts_snf_write:2025-10-06T11:53:55.445763  "ts_snf_read ":2025-10-06T11:53:55.445919
+In_Seqmsg latency  seq_x2traf:9  "x2write->snf_read":00:00:00.000165744  "snf_write->snf_read":00:00:00.000156
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445753256  ts_snf_write:2025-10-06T11:53:55.445763  "ts_snf_read ":2025-10-06T11:53:55.44593
+In_Seqmsg latency  seq_x2traf:10  "x2write->snf_read":00:00:00.000176744  "snf_write->snf_read":00:00:00.000167
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445753256  ts_snf_write:2025-10-06T11:53:55.445763  "ts_snf_read ":2025-10-06T11:53:55.445938
+In_Seqmsg latency  seq_x2traf:11  "x2write->snf_read":00:00:00.000184744  "snf_write->snf_read":00:00:00.000175
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445753256  ts_snf_write:2025-10-06T11:53:55.445763  "ts_snf_read ":2025-10-06T11:53:55.445948
+In_Seqmsg latency  seq_x2traf:12  "x2write->snf_read":00:00:00.000194744  "snf_write->snf_read":00:00:00.000185
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445753256  ts_snf_write:2025-10-06T11:53:55.445774  "ts_snf_read ":2025-10-06T11:53:55.445954
+In_Seqmsg latency  seq_x2traf:13  "x2write->snf_read":00:00:00.000200744  "snf_write->snf_read":00:00:00.00018
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445768246  ts_snf_write:2025-10-06T11:53:55.445774  "ts_snf_read ":2025-10-06T11:53:55.44596
+In_Seqmsg latency  seq_x2traf:14  "x2write->snf_read":00:00:00.000191754  "snf_write->snf_read":00:00:00.000186
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445768246  ts_snf_write:2025-10-06T11:53:55.445774  "ts_snf_read ":2025-10-06T11:53:55.445967
+In_Seqmsg latency  seq_x2traf:15  "x2write->snf_read":00:00:00.000198754  "snf_write->snf_read":00:00:00.000193
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445768246  ts_snf_write:2025-10-06T11:53:55.445774  "ts_snf_read ":2025-10-06T11:53:55.445977
+In_Seqmsg latency  seq_x2traf:16  "x2write->snf_read":00:00:00.000208754  "snf_write->snf_read":00:00:00.000203
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445768246  ts_snf_write:2025-10-06T11:53:55.445774  "ts_snf_read ":2025-10-06T11:53:55.445986
+In_Seqmsg latency  seq_x2traf:17  "x2write->snf_read":00:00:00.000217754  "snf_write->snf_read":00:00:00.000212
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445768246  ts_snf_write:2025-10-06T11:53:55.445774  "ts_snf_read ":2025-10-06T11:53:55.445997
+In_Seqmsg latency  seq_x2traf:18  "x2write->snf_read":00:00:00.000228754  "snf_write->snf_read":00:00:00.000223
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445768246  ts_snf_write:2025-10-06T11:53:55.445774  "ts_snf_read ":2025-10-06T11:53:55.446003
+In_Seqmsg latency  seq_x2traf:19  "x2write->snf_read":00:00:00.000234754  "snf_write->snf_read":00:00:00.000229
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445768246  ts_snf_write:2025-10-06T11:53:55.445774  "ts_snf_read ":2025-10-06T11:53:55.446014
+In_Seqmsg latency  seq_x2traf:20  "x2write->snf_read":00:00:00.000245754  "snf_write->snf_read":00:00:00.00024
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445768246  ts_snf_write:2025-10-06T11:53:55.445774  "ts_snf_read ":2025-10-06T11:53:55.446025
+In_Seqmsg latency  seq_x2traf:21  "x2write->snf_read":00:00:00.000256754  "snf_write->snf_read":00:00:00.000251
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445768246  ts_snf_write:2025-10-06T11:53:55.445774  "ts_snf_read ":2025-10-06T11:53:55.44603
+In_Seqmsg latency  seq_x2traf:22  "x2write->snf_read":00:00:00.000261754  "snf_write->snf_read":00:00:00.000256
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445768246  ts_snf_write:2025-10-06T11:53:55.445774  "ts_snf_read ":2025-10-06T11:53:55.446035
+In_Seqmsg latency  seq_x2traf:23  "x2write->snf_read":00:00:00.000266754  "snf_write->snf_read":00:00:00.000261
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445768246  ts_snf_write:2025-10-06T11:53:55.445774  "ts_snf_read ":2025-10-06T11:53:55.44604
+In_Seqmsg latency  seq_x2traf:24  "x2write->snf_read":00:00:00.000271754  "snf_write->snf_read":00:00:00.000266
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445768246  ts_snf_write:2025-10-06T11:53:55.445791  "ts_snf_read ":2025-10-06T11:53:55.446045
+In_Seqmsg latency  seq_x2traf:25  "x2write->snf_read":00:00:00.000276754  "snf_write->snf_read":00:00:00.000254
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445783126  ts_snf_write:2025-10-06T11:53:55.445791  "ts_snf_read ":2025-10-06T11:53:55.446054
+In_Seqmsg latency  seq_x2traf:26  "x2write->snf_read":00:00:00.000270874  "snf_write->snf_read":00:00:00.000263
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445783126  ts_snf_write:2025-10-06T11:53:55.445791  "ts_snf_read ":2025-10-06T11:53:55.446058
+In_Seqmsg latency  seq_x2traf:27  "x2write->snf_read":00:00:00.000274874  "snf_write->snf_read":00:00:00.000267
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445783126  ts_snf_write:2025-10-06T11:53:55.445791  "ts_snf_read ":2025-10-06T11:53:55.446063
+In_Seqmsg latency  seq_x2traf:28  "x2write->snf_read":00:00:00.000279874  "snf_write->snf_read":00:00:00.000272
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445783126  ts_snf_write:2025-10-06T11:53:55.445791  "ts_snf_read ":2025-10-06T11:53:55.446067
+In_Seqmsg latency  seq_x2traf:29  "x2write->snf_read":00:00:00.000283874  "snf_write->snf_read":00:00:00.000276
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445783126  ts_snf_write:2025-10-06T11:53:55.445791  "ts_snf_read ":2025-10-06T11:53:55.446072
+In_Seqmsg latency  seq_x2traf:30  "x2write->snf_read":00:00:00.000288874  "snf_write->snf_read":00:00:00.000281
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445783126  ts_snf_write:2025-10-06T11:53:55.445791  "ts_snf_read ":2025-10-06T11:53:55.44608
+In_Seqmsg latency  seq_x2traf:31  "x2write->snf_read":00:00:00.000296874  "snf_write->snf_read":00:00:00.000289
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445783126  ts_snf_write:2025-10-06T11:53:55.445791  "ts_snf_read ":2025-10-06T11:53:55.446085
+In_Seqmsg latency  seq_x2traf:32  "x2write->snf_read":00:00:00.000301874  "snf_write->snf_read":00:00:00.000294
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445783126  ts_snf_write:2025-10-06T11:53:55.445791  "ts_snf_read ":2025-10-06T11:53:55.446089
+In_Seqmsg latency  seq_x2traf:33  "x2write->snf_read":00:00:00.000305874  "snf_write->snf_read":00:00:00.000298
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445783126  ts_snf_write:2025-10-06T11:53:55.445791  "ts_snf_read ":2025-10-06T11:53:55.446095
+In_Seqmsg latency  seq_x2traf:34  "x2write->snf_read":00:00:00.000311874  "snf_write->snf_read":00:00:00.000304
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445783126  ts_snf_write:2025-10-06T11:53:55.445791  "ts_snf_read ":2025-10-06T11:53:55.4461
+In_Seqmsg latency  seq_x2traf:35  "x2write->snf_read":00:00:00.000316874  "snf_write->snf_read":00:00:00.000309
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445783126  ts_snf_write:2025-10-06T11:53:55.445791  "ts_snf_read ":2025-10-06T11:53:55.446108
+In_Seqmsg latency  seq_x2traf:36  "x2write->snf_read":00:00:00.000324874  "snf_write->snf_read":00:00:00.000317
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445783126  ts_snf_write:2025-10-06T11:53:55.445804  "ts_snf_read ":2025-10-06T11:53:55.446114
+In_Seqmsg latency  seq_x2traf:37  "x2write->snf_read":00:00:00.000330874  "snf_write->snf_read":00:00:00.00031
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445794875  ts_snf_write:2025-10-06T11:53:55.445804  "ts_snf_read ":2025-10-06T11:53:55.44612
+In_Seqmsg latency  seq_x2traf:38  "x2write->snf_read":00:00:00.000325125  "snf_write->snf_read":00:00:00.000316
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445794875  ts_snf_write:2025-10-06T11:53:55.445804  "ts_snf_read ":2025-10-06T11:53:55.446128
+In_Seqmsg latency  seq_x2traf:39  "x2write->snf_read":00:00:00.000333125  "snf_write->snf_read":00:00:00.000324
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445794875  ts_snf_write:2025-10-06T11:53:55.445804  "ts_snf_read ":2025-10-06T11:53:55.446134
+In_Seqmsg latency  seq_x2traf:40  "x2write->snf_read":00:00:00.000339125  "snf_write->snf_read":00:00:00.00033
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445794875  ts_snf_write:2025-10-06T11:53:55.445804  "ts_snf_read ":2025-10-06T11:53:55.446147
+In_Seqmsg latency  seq_x2traf:41  "x2write->snf_read":00:00:00.000352125  "snf_write->snf_read":00:00:00.000343
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445794875  ts_snf_write:2025-10-06T11:53:55.445804  "ts_snf_read ":2025-10-06T11:53:55.446153
+In_Seqmsg latency  seq_x2traf:42  "x2write->snf_read":00:00:00.000358125  "snf_write->snf_read":00:00:00.000349
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445794875  ts_snf_write:2025-10-06T11:53:55.445804  "ts_snf_read ":2025-10-06T11:53:55.446165
+In_Seqmsg latency  seq_x2traf:43  "x2write->snf_read":00:00:00.000370125  "snf_write->snf_read":00:00:00.000361
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445794875  ts_snf_write:2025-10-06T11:53:55.445804  "ts_snf_read ":2025-10-06T11:53:55.44617
+In_Seqmsg latency  seq_x2traf:44  "x2write->snf_read":00:00:00.000375125  "snf_write->snf_read":00:00:00.000366
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445794875  ts_snf_write:2025-10-06T11:53:55.445804  "ts_snf_read ":2025-10-06T11:53:55.446178
+In_Seqmsg latency  seq_x2traf:45  "x2write->snf_read":00:00:00.000383125  "snf_write->snf_read":00:00:00.000374
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445794875  ts_snf_write:2025-10-06T11:53:55.445804  "ts_snf_read ":2025-10-06T11:53:55.446186
+In_Seqmsg latency  seq_x2traf:46  "x2write->snf_read":00:00:00.000391125  "snf_write->snf_read":00:00:00.000382
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445794875  ts_snf_write:2025-10-06T11:53:55.445804  "ts_snf_read ":2025-10-06T11:53:55.446195
+In_Seqmsg latency  seq_x2traf:47  "x2write->snf_read":00:00:00.000400125  "snf_write->snf_read":00:00:00.000391
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445794875  ts_snf_write:2025-10-06T11:53:55.445804  "ts_snf_read ":2025-10-06T11:53:55.4462
+In_Seqmsg latency  seq_x2traf:48  "x2write->snf_read":00:00:00.000405125  "snf_write->snf_read":00:00:00.000396
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445794875  ts_snf_write:2025-10-06T11:53:55.448184  "ts_snf_read ":2025-10-06T11:53:55.448227
+In_Seqmsg latency  seq_x2traf:49  "x2write->snf_read":00:00:00.002432125  "snf_write->snf_read":00:00:00.000043
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445810345  ts_snf_write:2025-10-06T11:53:55.448184  "ts_snf_read ":2025-10-06T11:53:55.448266
+In_Seqmsg latency  seq_x2traf:50  "x2write->snf_read":00:00:00.002455655  "snf_write->snf_read":00:00:00.000082
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445810345  ts_snf_write:2025-10-06T11:53:55.448184  "ts_snf_read ":2025-10-06T11:53:55.448286
+In_Seqmsg latency  seq_x2traf:51  "x2write->snf_read":00:00:00.002475655  "snf_write->snf_read":00:00:00.000102
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445810345  ts_snf_write:2025-10-06T11:53:55.448184  "ts_snf_read ":2025-10-06T11:53:55.448293
+In_Seqmsg latency  seq_x2traf:52  "x2write->snf_read":00:00:00.002482655  "snf_write->snf_read":00:00:00.000109
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445810345  ts_snf_write:2025-10-06T11:53:55.448184  "ts_snf_read ":2025-10-06T11:53:55.448297
+In_Seqmsg latency  seq_x2traf:53  "x2write->snf_read":00:00:00.002486655  "snf_write->snf_read":00:00:00.000113
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445810345  ts_snf_write:2025-10-06T11:53:55.448184  "ts_snf_read ":2025-10-06T11:53:55.448303
+In_Seqmsg latency  seq_x2traf:54  "x2write->snf_read":00:00:00.002492655  "snf_write->snf_read":00:00:00.000119
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445810345  ts_snf_write:2025-10-06T11:53:55.448184  "ts_snf_read ":2025-10-06T11:53:55.448308
+In_Seqmsg latency  seq_x2traf:55  "x2write->snf_read":00:00:00.002497655  "snf_write->snf_read":00:00:00.000124
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445810345  ts_snf_write:2025-10-06T11:53:55.448184  "ts_snf_read ":2025-10-06T11:53:55.448318
+In_Seqmsg latency  seq_x2traf:56  "x2write->snf_read":00:00:00.002507655  "snf_write->snf_read":00:00:00.000134
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445810345  ts_snf_write:2025-10-06T11:53:55.448184  "ts_snf_read ":2025-10-06T11:53:55.448323
+In_Seqmsg latency  seq_x2traf:57  "x2write->snf_read":00:00:00.002512655  "snf_write->snf_read":00:00:00.000139
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445810345  ts_snf_write:2025-10-06T11:53:55.448184  "ts_snf_read ":2025-10-06T11:53:55.448328
+In_Seqmsg latency  seq_x2traf:58  "x2write->snf_read":00:00:00.002517655  "snf_write->snf_read":00:00:00.000144
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445810345  ts_snf_write:2025-10-06T11:53:55.448184  "ts_snf_read ":2025-10-06T11:53:55.448333
+In_Seqmsg latency  seq_x2traf:59  "x2write->snf_read":00:00:00.002522655  "snf_write->snf_read":00:00:00.000149
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445810345  ts_snf_write:2025-10-06T11:53:55.448184  "ts_snf_read ":2025-10-06T11:53:55.448338
+In_Seqmsg latency  seq_x2traf:60  "x2write->snf_read":00:00:00.002527655  "snf_write->snf_read":00:00:00.000154
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.445810345  ts_snf_write:2025-10-06T11:53:55.461886  "ts_snf_read ":2025-10-06T11:53:55.461933
+In_Seqmsg latency  seq_x2traf:61  "x2write->snf_read":00:00:00.016122655  "snf_write->snf_read":00:00:00.000047
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.449305573  ts_snf_write:2025-10-06T11:53:55.461886  "ts_snf_read ":2025-10-06T11:53:55.461944
+In_Seqmsg latency  seq_x2traf:62  "x2write->snf_read":00:00:00.012638427  "snf_write->snf_read":00:00:00.000058
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.449305573  ts_snf_write:2025-10-06T11:53:55.461886  "ts_snf_read ":2025-10-06T11:53:55.461948
+In_Seqmsg latency  seq_x2traf:63  "x2write->snf_read":00:00:00.012642427  "snf_write->snf_read":00:00:00.000062
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.449305573  ts_snf_write:2025-10-06T11:53:55.461886  "ts_snf_read ":2025-10-06T11:53:55.461953
+In_Seqmsg latency  seq_x2traf:64  "x2write->snf_read":00:00:00.012647427  "snf_write->snf_read":00:00:00.000067
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.449305573  ts_snf_write:2025-10-06T11:53:55.461886  "ts_snf_read ":2025-10-06T11:53:55.461958
+In_Seqmsg latency  seq_x2traf:65  "x2write->snf_read":00:00:00.012652427  "snf_write->snf_read":00:00:00.000072
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.449305573  ts_snf_write:2025-10-06T11:53:55.461886  "ts_snf_read ":2025-10-06T11:53:55.461966
+In_Seqmsg latency  seq_x2traf:66  "x2write->snf_read":00:00:00.012660427  "snf_write->snf_read":00:00:00.00008
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.449305573  ts_snf_write:2025-10-06T11:53:55.461886  "ts_snf_read ":2025-10-06T11:53:55.461971
+In_Seqmsg latency  seq_x2traf:67  "x2write->snf_read":00:00:00.012665427  "snf_write->snf_read":00:00:00.000085
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.449305573  ts_snf_write:2025-10-06T11:53:55.461886  "ts_snf_read ":2025-10-06T11:53:55.461975
+In_Seqmsg latency  seq_x2traf:68  "x2write->snf_read":00:00:00.012669427  "snf_write->snf_read":00:00:00.000089
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.449305573  ts_snf_write:2025-10-06T11:53:55.461886  "ts_snf_read ":2025-10-06T11:53:55.46198
+In_Seqmsg latency  seq_x2traf:69  "x2write->snf_read":00:00:00.012674427  "snf_write->snf_read":00:00:00.000094
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.449305573  ts_snf_write:2025-10-06T11:53:55.461886  "ts_snf_read ":2025-10-06T11:53:55.461984
+In_Seqmsg latency  seq_x2traf:70  "x2write->snf_read":00:00:00.012678427  "snf_write->snf_read":00:00:00.000098
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.449305573  ts_snf_write:2025-10-06T11:53:55.461886  "ts_snf_read ":2025-10-06T11:53:55.461993
+In_Seqmsg latency  seq_x2traf:71  "x2write->snf_read":00:00:00.012687427  "snf_write->snf_read":00:00:00.000107
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.449305573  ts_snf_write:2025-10-06T11:53:55.461886  "ts_snf_read ":2025-10-06T11:53:55.461997
+In_Seqmsg latency  seq_x2traf:72  "x2write->snf_read":00:00:00.012691427  "snf_write->snf_read":00:00:00.000111
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.449305573  ts_snf_write:2025-10-06T11:53:55.475627  "ts_snf_read ":2025-10-06T11:53:55.475677
+In_Seqmsg latency  seq_x2traf:73  "x2write->snf_read":00:00:00.026371427  "snf_write->snf_read":00:00:00.00005
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.463020474  ts_snf_write:2025-10-06T11:53:55.475627  "ts_snf_read ":2025-10-06T11:53:55.475688
+In_Seqmsg latency  seq_x2traf:74  "x2write->snf_read":00:00:00.012667526  "snf_write->snf_read":00:00:00.000061
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.463020474  ts_snf_write:2025-10-06T11:53:55.475627  "ts_snf_read ":2025-10-06T11:53:55.475692
+In_Seqmsg latency  seq_x2traf:75  "x2write->snf_read":00:00:00.012671526  "snf_write->snf_read":00:00:00.000065
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.463020474  ts_snf_write:2025-10-06T11:53:55.475627  "ts_snf_read ":2025-10-06T11:53:55.475697
+In_Seqmsg latency  seq_x2traf:76  "x2write->snf_read":00:00:00.012676526  "snf_write->snf_read":00:00:00.00007
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.463020474  ts_snf_write:2025-10-06T11:53:55.475627  "ts_snf_read ":2025-10-06T11:53:55.475702
+In_Seqmsg latency  seq_x2traf:77  "x2write->snf_read":00:00:00.012681526  "snf_write->snf_read":00:00:00.000075
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.463020474  ts_snf_write:2025-10-06T11:53:55.475627  "ts_snf_read ":2025-10-06T11:53:55.475711
+In_Seqmsg latency  seq_x2traf:78  "x2write->snf_read":00:00:00.012690526  "snf_write->snf_read":00:00:00.000084
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.463020474  ts_snf_write:2025-10-06T11:53:55.475627  "ts_snf_read ":2025-10-06T11:53:55.475716
+In_Seqmsg latency  seq_x2traf:79  "x2write->snf_read":00:00:00.012695526  "snf_write->snf_read":00:00:00.000089
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.463020474  ts_snf_write:2025-10-06T11:53:55.475627  "ts_snf_read ":2025-10-06T11:53:55.47572
+In_Seqmsg latency  seq_x2traf:80  "x2write->snf_read":00:00:00.012699526  "snf_write->snf_read":00:00:00.000093
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.463020474  ts_snf_write:2025-10-06T11:53:55.475627  "ts_snf_read ":2025-10-06T11:53:55.475725
+In_Seqmsg latency  seq_x2traf:81  "x2write->snf_read":00:00:00.012704526  "snf_write->snf_read":00:00:00.000098
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.463020474  ts_snf_write:2025-10-06T11:53:55.475627  "ts_snf_read ":2025-10-06T11:53:55.47573
+In_Seqmsg latency  seq_x2traf:82  "x2write->snf_read":00:00:00.012709526  "snf_write->snf_read":00:00:00.000103
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.463020474  ts_snf_write:2025-10-06T11:53:55.475627  "ts_snf_read ":2025-10-06T11:53:55.475738
+In_Seqmsg latency  seq_x2traf:83  "x2write->snf_read":00:00:00.012717526  "snf_write->snf_read":00:00:00.000111
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.463020474  ts_snf_write:2025-10-06T11:53:55.475627  "ts_snf_read ":2025-10-06T11:53:55.475743
+In_Seqmsg latency  seq_x2traf:84  "x2write->snf_read":00:00:00.012722526  "snf_write->snf_read":00:00:00.000116
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.463020474  ts_snf_write:2025-10-06T11:53:55.48932  "ts_snf_read ":2025-10-06T11:53:55.489369
+In_Seqmsg latency  seq_x2traf:85  "x2write->snf_read":00:00:00.026348526  "snf_write->snf_read":00:00:00.000049
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.476759015  ts_snf_write:2025-10-06T11:53:55.48932  "ts_snf_read ":2025-10-06T11:53:55.489379
+In_Seqmsg latency  seq_x2traf:86  "x2write->snf_read":00:00:00.012619985  "snf_write->snf_read":00:00:00.000059
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.476759015  ts_snf_write:2025-10-06T11:53:55.48932  "ts_snf_read ":2025-10-06T11:53:55.489384
+In_Seqmsg latency  seq_x2traf:87  "x2write->snf_read":00:00:00.012624985  "snf_write->snf_read":00:00:00.000064
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.476759015  ts_snf_write:2025-10-06T11:53:55.48932  "ts_snf_read ":2025-10-06T11:53:55.48939
+In_Seqmsg latency  seq_x2traf:88  "x2write->snf_read":00:00:00.012630985  "snf_write->snf_read":00:00:00.00007
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.476759015  ts_snf_write:2025-10-06T11:53:55.48932  "ts_snf_read ":2025-10-06T11:53:55.489395
+In_Seqmsg latency  seq_x2traf:89  "x2write->snf_read":00:00:00.012635985  "snf_write->snf_read":00:00:00.000075
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.476759015  ts_snf_write:2025-10-06T11:53:55.48932  "ts_snf_read ":2025-10-06T11:53:55.489404
+In_Seqmsg latency  seq_x2traf:90  "x2write->snf_read":00:00:00.012644985  "snf_write->snf_read":00:00:00.000084
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.476759015  ts_snf_write:2025-10-06T11:53:55.48932  "ts_snf_read ":2025-10-06T11:53:55.489409
+In_Seqmsg latency  seq_x2traf:91  "x2write->snf_read":00:00:00.012649985  "snf_write->snf_read":00:00:00.000089
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.476759015  ts_snf_write:2025-10-06T11:53:55.48932  "ts_snf_read ":2025-10-06T11:53:55.489414
+In_Seqmsg latency  seq_x2traf:92  "x2write->snf_read":00:00:00.012654985  "snf_write->snf_read":00:00:00.000094
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.476759015  ts_snf_write:2025-10-06T11:53:55.48932  "ts_snf_read ":2025-10-06T11:53:55.489419
+In_Seqmsg latency  seq_x2traf:93  "x2write->snf_read":00:00:00.012659985  "snf_write->snf_read":00:00:00.000099
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.476759015  ts_snf_write:2025-10-06T11:53:55.48932  "ts_snf_read ":2025-10-06T11:53:55.489424
+In_Seqmsg latency  seq_x2traf:94  "x2write->snf_read":00:00:00.012664985  "snf_write->snf_read":00:00:00.000104
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.476759015  ts_snf_write:2025-10-06T11:53:55.48932  "ts_snf_read ":2025-10-06T11:53:55.489438
+In_Seqmsg latency  seq_x2traf:95  "x2write->snf_read":00:00:00.012678985  "snf_write->snf_read":00:00:00.000118
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.476759015  ts_snf_write:2025-10-06T11:53:55.48932  "ts_snf_read ":2025-10-06T11:53:55.489443
+In_Seqmsg latency  seq_x2traf:96  "x2write->snf_read":00:00:00.012683985  "snf_write->snf_read":00:00:00.000123
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.476759015  ts_snf_write:2025-10-06T11:53:55.503033  "ts_snf_read ":2025-10-06T11:53:55.503075
+In_Seqmsg latency  seq_x2traf:97  "x2write->snf_read":00:00:00.026315985  "snf_write->snf_read":00:00:00.000042
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.490445157  ts_snf_write:2025-10-06T11:53:55.503033  "ts_snf_read ":2025-10-06T11:53:55.503083
+In_Seqmsg latency  seq_x2traf:98  "x2write->snf_read":00:00:00.012637843  "snf_write->snf_read":00:00:00.00005
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.490445157  ts_snf_write:2025-10-06T11:53:55.503033  "ts_snf_read ":2025-10-06T11:53:55.503089
+In_Seqmsg latency  seq_x2traf:99  "x2write->snf_read":00:00:00.012643843  "snf_write->snf_read":00:00:00.000056
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.490445157  ts_snf_write:2025-10-06T11:53:55.503033  "ts_snf_read ":2025-10-06T11:53:55.503095
+In_Seqmsg latency  seq_x2traf:100  "x2write->snf_read":00:00:00.012649843  "snf_write->snf_read":00:00:00.000062
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.490445157  ts_snf_write:2025-10-06T11:53:55.503033  "ts_snf_read ":2025-10-06T11:53:55.503102
+In_Seqmsg latency  seq_x2traf:101  "x2write->snf_read":00:00:00.012656843  "snf_write->snf_read":00:00:00.000069
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.490445157  ts_snf_write:2025-10-06T11:53:55.503033  "ts_snf_read ":2025-10-06T11:53:55.503108
+In_Seqmsg latency  seq_x2traf:102  "x2write->snf_read":00:00:00.012662843  "snf_write->snf_read":00:00:00.000075
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.490445157  ts_snf_write:2025-10-06T11:53:55.503033  "ts_snf_read ":2025-10-06T11:53:55.503116
+In_Seqmsg latency  seq_x2traf:103  "x2write->snf_read":00:00:00.012670843  "snf_write->snf_read":00:00:00.000083
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.490445157  ts_snf_write:2025-10-06T11:53:55.503033  "ts_snf_read ":2025-10-06T11:53:55.503124
+In_Seqmsg latency  seq_x2traf:104  "x2write->snf_read":00:00:00.012678843  "snf_write->snf_read":00:00:00.000091
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.490445157  ts_snf_write:2025-10-06T11:53:55.503033  "ts_snf_read ":2025-10-06T11:53:55.503131
+In_Seqmsg latency  seq_x2traf:105  "x2write->snf_read":00:00:00.012685843  "snf_write->snf_read":00:00:00.000098
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.490445157  ts_snf_write:2025-10-06T11:53:55.503033  "ts_snf_read ":2025-10-06T11:53:55.50314
+In_Seqmsg latency  seq_x2traf:106  "x2write->snf_read":00:00:00.012694843  "snf_write->snf_read":00:00:00.000107
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.490445157  ts_snf_write:2025-10-06T11:53:55.503033  "ts_snf_read ":2025-10-06T11:53:55.503147
+In_Seqmsg latency  seq_x2traf:107  "x2write->snf_read":00:00:00.012701843  "snf_write->snf_read":00:00:00.000114
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.490445157  ts_snf_write:2025-10-06T11:53:55.503033  "ts_snf_read ":2025-10-06T11:53:55.503152
+In_Seqmsg latency  seq_x2traf:108  "x2write->snf_read":00:00:00.012706843  "snf_write->snf_read":00:00:00.000119
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.490445157  ts_snf_write:2025-10-06T11:53:55.516732  "ts_snf_read ":2025-10-06T11:53:55.516779
+In_Seqmsg latency  seq_x2traf:109  "x2write->snf_read":00:00:00.026333843  "snf_write->snf_read":00:00:00.000047
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.504157108  ts_snf_write:2025-10-06T11:53:55.516732  "ts_snf_read ":2025-10-06T11:53:55.516786
+In_Seqmsg latency  seq_x2traf:110  "x2write->snf_read":00:00:00.012628892  "snf_write->snf_read":00:00:00.000054
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.504157108  ts_snf_write:2025-10-06T11:53:55.516732  "ts_snf_read ":2025-10-06T11:53:55.516793
+In_Seqmsg latency  seq_x2traf:111  "x2write->snf_read":00:00:00.012635892  "snf_write->snf_read":00:00:00.000061
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.504157108  ts_snf_write:2025-10-06T11:53:55.516732  "ts_snf_read ":2025-10-06T11:53:55.516798
+In_Seqmsg latency  seq_x2traf:112  "x2write->snf_read":00:00:00.012640892  "snf_write->snf_read":00:00:00.000066
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.504157108  ts_snf_write:2025-10-06T11:53:55.516732  "ts_snf_read ":2025-10-06T11:53:55.516806
+In_Seqmsg latency  seq_x2traf:113  "x2write->snf_read":00:00:00.012648892  "snf_write->snf_read":00:00:00.000074
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.504157108  ts_snf_write:2025-10-06T11:53:55.516732  "ts_snf_read ":2025-10-06T11:53:55.516814
+In_Seqmsg latency  seq_x2traf:114  "x2write->snf_read":00:00:00.012656892  "snf_write->snf_read":00:00:00.000082
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.504157108  ts_snf_write:2025-10-06T11:53:55.516732  "ts_snf_read ":2025-10-06T11:53:55.516822
+In_Seqmsg latency  seq_x2traf:115  "x2write->snf_read":00:00:00.012664892  "snf_write->snf_read":00:00:00.00009
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.504157108  ts_snf_write:2025-10-06T11:53:55.516732  "ts_snf_read ":2025-10-06T11:53:55.516829
+In_Seqmsg latency  seq_x2traf:116  "x2write->snf_read":00:00:00.012671892  "snf_write->snf_read":00:00:00.000097
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.504157108  ts_snf_write:2025-10-06T11:53:55.516732  "ts_snf_read ":2025-10-06T11:53:55.516834
+In_Seqmsg latency  seq_x2traf:117  "x2write->snf_read":00:00:00.012676892  "snf_write->snf_read":00:00:00.000102
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.504157108  ts_snf_write:2025-10-06T11:53:55.516732  "ts_snf_read ":2025-10-06T11:53:55.516839
+In_Seqmsg latency  seq_x2traf:118  "x2write->snf_read":00:00:00.012681892  "snf_write->snf_read":00:00:00.000107
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.504157108  ts_snf_write:2025-10-06T11:53:55.516732  "ts_snf_read ":2025-10-06T11:53:55.516848
+In_Seqmsg latency  seq_x2traf:119  "x2write->snf_read":00:00:00.012690892  "snf_write->snf_read":00:00:00.000116
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.504157108  ts_snf_write:2025-10-06T11:53:55.516732  "ts_snf_read ":2025-10-06T11:53:55.516852
+In_Seqmsg latency  seq_x2traf:120  "x2write->snf_read":00:00:00.012694892  "snf_write->snf_read":00:00:00.00012
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.504157108  ts_snf_write:2025-10-06T11:53:55.530442  "ts_snf_read ":2025-10-06T11:53:55.530498
+In_Seqmsg latency  seq_x2traf:121  "x2write->snf_read":00:00:00.026340892  "snf_write->snf_read":00:00:00.000056
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.517862229  ts_snf_write:2025-10-06T11:53:55.530442  "ts_snf_read ":2025-10-06T11:53:55.530504
+In_Seqmsg latency  seq_x2traf:122  "x2write->snf_read":00:00:00.012641771  "snf_write->snf_read":00:00:00.000062
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.517862229  ts_snf_write:2025-10-06T11:53:55.530442  "ts_snf_read ":2025-10-06T11:53:55.530511
+In_Seqmsg latency  seq_x2traf:123  "x2write->snf_read":00:00:00.012648771  "snf_write->snf_read":00:00:00.000069
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.517862229  ts_snf_write:2025-10-06T11:53:55.530442  "ts_snf_read ":2025-10-06T11:53:55.530517
+In_Seqmsg latency  seq_x2traf:124  "x2write->snf_read":00:00:00.012654771  "snf_write->snf_read":00:00:00.000075
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.517862229  ts_snf_write:2025-10-06T11:53:55.530442  "ts_snf_read ":2025-10-06T11:53:55.530524
+In_Seqmsg latency  seq_x2traf:125  "x2write->snf_read":00:00:00.012661771  "snf_write->snf_read":00:00:00.000082
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.517862229  ts_snf_write:2025-10-06T11:53:55.530442  "ts_snf_read ":2025-10-06T11:53:55.530532
+In_Seqmsg latency  seq_x2traf:126  "x2write->snf_read":00:00:00.012669771  "snf_write->snf_read":00:00:00.00009
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.517862229  ts_snf_write:2025-10-06T11:53:55.530442  "ts_snf_read ":2025-10-06T11:53:55.53054
+In_Seqmsg latency  seq_x2traf:127  "x2write->snf_read":00:00:00.012677771  "snf_write->snf_read":00:00:00.000098
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.517862229  ts_snf_write:2025-10-06T11:53:55.530442  "ts_snf_read ":2025-10-06T11:53:55.530547
+In_Seqmsg latency  seq_x2traf:128  "x2write->snf_read":00:00:00.012684771  "snf_write->snf_read":00:00:00.000105
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.517862229  ts_snf_write:2025-10-06T11:53:55.530442  "ts_snf_read ":2025-10-06T11:53:55.530552
+In_Seqmsg latency  seq_x2traf:129  "x2write->snf_read":00:00:00.012689771  "snf_write->snf_read":00:00:00.00011
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.517862229  ts_snf_write:2025-10-06T11:53:55.530442  "ts_snf_read ":2025-10-06T11:53:55.530557
+In_Seqmsg latency  seq_x2traf:130  "x2write->snf_read":00:00:00.012694771  "snf_write->snf_read":00:00:00.000115
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.517862229  ts_snf_write:2025-10-06T11:53:55.530442  "ts_snf_read ":2025-10-06T11:53:55.530566
+In_Seqmsg latency  seq_x2traf:131  "x2write->snf_read":00:00:00.012703771  "snf_write->snf_read":00:00:00.000124
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.517862229  ts_snf_write:2025-10-06T11:53:55.530442  "ts_snf_read ":2025-10-06T11:53:55.530571
+In_Seqmsg latency  seq_x2traf:132  "x2write->snf_read":00:00:00.012708771  "snf_write->snf_read":00:00:00.000129
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.517862229  ts_snf_write:2025-10-06T11:53:55.544166  "ts_snf_read ":2025-10-06T11:53:55.544211
+In_Seqmsg latency  seq_x2traf:133  "x2write->snf_read":00:00:00.026348771  "snf_write->snf_read":00:00:00.000045
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.531573991  ts_snf_write:2025-10-06T11:53:55.544166  "ts_snf_read ":2025-10-06T11:53:55.544219
+In_Seqmsg latency  seq_x2traf:134  "x2write->snf_read":00:00:00.012645009  "snf_write->snf_read":00:00:00.000053
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.531573991  ts_snf_write:2025-10-06T11:53:55.544166  "ts_snf_read ":2025-10-06T11:53:55.544225
+In_Seqmsg latency  seq_x2traf:135  "x2write->snf_read":00:00:00.012651009  "snf_write->snf_read":00:00:00.000059
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.531573991  ts_snf_write:2025-10-06T11:53:55.544166  "ts_snf_read ":2025-10-06T11:53:55.544232
+In_Seqmsg latency  seq_x2traf:136  "x2write->snf_read":00:00:00.012658009  "snf_write->snf_read":00:00:00.000066
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.531573991  ts_snf_write:2025-10-06T11:53:55.544166  "ts_snf_read ":2025-10-06T11:53:55.544239
+In_Seqmsg latency  seq_x2traf:137  "x2write->snf_read":00:00:00.012665009  "snf_write->snf_read":00:00:00.000073
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.531573991  ts_snf_write:2025-10-06T11:53:55.544166  "ts_snf_read ":2025-10-06T11:53:55.544246
+In_Seqmsg latency  seq_x2traf:138  "x2write->snf_read":00:00:00.012672009  "snf_write->snf_read":00:00:00.00008
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.531573991  ts_snf_write:2025-10-06T11:53:55.544166  "ts_snf_read ":2025-10-06T11:53:55.544252
+In_Seqmsg latency  seq_x2traf:139  "x2write->snf_read":00:00:00.012678009  "snf_write->snf_read":00:00:00.000086
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.531573991  ts_snf_write:2025-10-06T11:53:55.544166  "ts_snf_read ":2025-10-06T11:53:55.544261
+In_Seqmsg latency  seq_x2traf:140  "x2write->snf_read":00:00:00.012687009  "snf_write->snf_read":00:00:00.000095
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.531573991  ts_snf_write:2025-10-06T11:53:55.544166  "ts_snf_read ":2025-10-06T11:53:55.544271
+In_Seqmsg latency  seq_x2traf:141  "x2write->snf_read":00:00:00.012697009  "snf_write->snf_read":00:00:00.000105
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.531573991  ts_snf_write:2025-10-06T11:53:55.544166  "ts_snf_read ":2025-10-06T11:53:55.544277
+In_Seqmsg latency  seq_x2traf:142  "x2write->snf_read":00:00:00.012703009  "snf_write->snf_read":00:00:00.000111
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.531573991  ts_snf_write:2025-10-06T11:53:55.544166  "ts_snf_read ":2025-10-06T11:53:55.544282
+In_Seqmsg latency  seq_x2traf:143  "x2write->snf_read":00:00:00.012708009  "snf_write->snf_read":00:00:00.000116
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.531573991  ts_snf_write:2025-10-06T11:53:55.544166  "ts_snf_read ":2025-10-06T11:53:55.544287
+In_Seqmsg latency  seq_x2traf:144  "x2write->snf_read":00:00:00.012713009  "snf_write->snf_read":00:00:00.000121
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.531573991  ts_snf_write:2025-10-06T11:53:55.554934  "ts_snf_read ":2025-10-06T11:53:55.554969
+In_Seqmsg latency  seq_x2traf:145  "x2write->snf_read":00:00:00.023395009  "snf_write->snf_read":00:00:00.000035
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.545285622  ts_snf_write:2025-10-06T11:53:55.554934  "ts_snf_read ":2025-10-06T11:53:55.554977
+In_Seqmsg latency  seq_x2traf:146  "x2write->snf_read":00:00:00.009691378  "snf_write->snf_read":00:00:00.000043
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.545285622  ts_snf_write:2025-10-06T11:53:55.554934  "ts_snf_read ":2025-10-06T11:53:55.554982
+In_Seqmsg latency  seq_x2traf:147  "x2write->snf_read":00:00:00.009696378  "snf_write->snf_read":00:00:00.000048
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.545285622  ts_snf_write:2025-10-06T11:53:55.554934  "ts_snf_read ":2025-10-06T11:53:55.554989
+In_Seqmsg latency  seq_x2traf:148  "x2write->snf_read":00:00:00.009703378  "snf_write->snf_read":00:00:00.000055
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.545285622  ts_snf_write:2025-10-06T11:53:55.554934  "ts_snf_read ":2025-10-06T11:53:55.554995
+In_Seqmsg latency  seq_x2traf:149  "x2write->snf_read":00:00:00.009709378  "snf_write->snf_read":00:00:00.000061
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.545285622  ts_snf_write:2025-10-06T11:53:55.554934  "ts_snf_read ":2025-10-06T11:53:55.555002
+In_Seqmsg latency  seq_x2traf:150  "x2write->snf_read":00:00:00.009716378  "snf_write->snf_read":00:00:00.000068
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.545285622  ts_snf_write:2025-10-06T11:53:55.554934  "ts_snf_read ":2025-10-06T11:53:55.555016
+In_Seqmsg latency  seq_x2traf:151  "x2write->snf_read":00:00:00.009730378  "snf_write->snf_read":00:00:00.000082
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.545285622  ts_snf_write:2025-10-06T11:53:55.554934  "ts_snf_read ":2025-10-06T11:53:55.555023
+In_Seqmsg latency  seq_x2traf:152  "x2write->snf_read":00:00:00.009737378  "snf_write->snf_read":00:00:00.000089
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.545285622  ts_snf_write:2025-10-06T11:53:55.567541  "ts_snf_read ":2025-10-06T11:53:55.567585
+In_Seqmsg latency  seq_x2traf:153  "x2write->snf_read":00:00:00.022299378  "snf_write->snf_read":00:00:00.000044
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.55495661  ts_snf_write:2025-10-06T11:53:55.567541  "ts_snf_read ":2025-10-06T11:53:55.567591
+In_Seqmsg latency  seq_x2traf:154  "x2write->snf_read":00:00:00.01263439  "snf_write->snf_read":00:00:00.00005
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.55495661  ts_snf_write:2025-10-06T11:53:55.567541  "ts_snf_read ":2025-10-06T11:53:55.567597
+In_Seqmsg latency  seq_x2traf:155  "x2write->snf_read":00:00:00.01264039  "snf_write->snf_read":00:00:00.000056
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.55495661  ts_snf_write:2025-10-06T11:53:55.567541  "ts_snf_read ":2025-10-06T11:53:55.567603
+In_Seqmsg latency  seq_x2traf:156  "x2write->snf_read":00:00:00.01264639  "snf_write->snf_read":00:00:00.000062
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.55495661  ts_snf_write:2025-10-06T11:53:55.567541  "ts_snf_read ":2025-10-06T11:53:55.567608
+In_Seqmsg latency  seq_x2traf:157  "x2write->snf_read":00:00:00.01265139  "snf_write->snf_read":00:00:00.000067
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.55495661  ts_snf_write:2025-10-06T11:53:55.567541  "ts_snf_read ":2025-10-06T11:53:55.567615
+In_Seqmsg latency  seq_x2traf:158  "x2write->snf_read":00:00:00.01265839  "snf_write->snf_read":00:00:00.000074
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.55495661  ts_snf_write:2025-10-06T11:53:55.567541  "ts_snf_read ":2025-10-06T11:53:55.567623
+In_Seqmsg latency  seq_x2traf:159  "x2write->snf_read":00:00:00.01266639  "snf_write->snf_read":00:00:00.000082
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.55495661  ts_snf_write:2025-10-06T11:53:55.567541  "ts_snf_read ":2025-10-06T11:53:55.567635
+In_Seqmsg latency  seq_x2traf:160  "x2write->snf_read":00:00:00.01267839  "snf_write->snf_read":00:00:00.000094
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.55495661  ts_snf_write:2025-10-06T11:53:55.567541  "ts_snf_read ":2025-10-06T11:53:55.567643
+In_Seqmsg latency  seq_x2traf:161  "x2write->snf_read":00:00:00.01268639  "snf_write->snf_read":00:00:00.000102
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.55495661  ts_snf_write:2025-10-06T11:53:55.567541  "ts_snf_read ":2025-10-06T11:53:55.567652
+In_Seqmsg latency  seq_x2traf:162  "x2write->snf_read":00:00:00.01269539  "snf_write->snf_read":00:00:00.000111
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.55495661  ts_snf_write:2025-10-06T11:53:55.567541  "ts_snf_read ":2025-10-06T11:53:55.567659
+In_Seqmsg latency  seq_x2traf:163  "x2write->snf_read":00:00:00.01270239  "snf_write->snf_read":00:00:00.000118
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.55495661  ts_snf_write:2025-10-06T11:53:55.567541  "ts_snf_read ":2025-10-06T11:53:55.567664
+In_Seqmsg latency  seq_x2traf:164  "x2write->snf_read":00:00:00.01270739  "snf_write->snf_read":00:00:00.000123
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.55495661  ts_snf_write:2025-10-06T11:53:55.58126  "ts_snf_read ":2025-10-06T11:53:55.581314
+In_Seqmsg latency  seq_x2traf:165  "x2write->snf_read":00:00:00.02635739  "snf_write->snf_read":00:00:00.000054
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.568671751  ts_snf_write:2025-10-06T11:53:55.58126  "ts_snf_read ":2025-10-06T11:53:55.581321
+In_Seqmsg latency  seq_x2traf:166  "x2write->snf_read":00:00:00.012649249  "snf_write->snf_read":00:00:00.000061
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.568671751  ts_snf_write:2025-10-06T11:53:55.58126  "ts_snf_read ":2025-10-06T11:53:55.581328
+In_Seqmsg latency  seq_x2traf:167  "x2write->snf_read":00:00:00.012656249  "snf_write->snf_read":00:00:00.000068
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.568671751  ts_snf_write:2025-10-06T11:53:55.58126  "ts_snf_read ":2025-10-06T11:53:55.581334
+In_Seqmsg latency  seq_x2traf:168  "x2write->snf_read":00:00:00.012662249  "snf_write->snf_read":00:00:00.000074
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.568671751  ts_snf_write:2025-10-06T11:53:55.58126  "ts_snf_read ":2025-10-06T11:53:55.581342
+In_Seqmsg latency  seq_x2traf:169  "x2write->snf_read":00:00:00.012670249  "snf_write->snf_read":00:00:00.000082
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.568671751  ts_snf_write:2025-10-06T11:53:55.58126  "ts_snf_read ":2025-10-06T11:53:55.581347
+In_Seqmsg latency  seq_x2traf:170  "x2write->snf_read":00:00:00.012675249  "snf_write->snf_read":00:00:00.000087
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.568671751  ts_snf_write:2025-10-06T11:53:55.58126  "ts_snf_read ":2025-10-06T11:53:55.581353
+In_Seqmsg latency  seq_x2traf:171  "x2write->snf_read":00:00:00.012681249  "snf_write->snf_read":00:00:00.000093
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.568671751  ts_snf_write:2025-10-06T11:53:55.58126  "ts_snf_read ":2025-10-06T11:53:55.581363
+In_Seqmsg latency  seq_x2traf:172  "x2write->snf_read":00:00:00.012691249  "snf_write->snf_read":00:00:00.000103
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.568671751  ts_snf_write:2025-10-06T11:53:55.58126  "ts_snf_read ":2025-10-06T11:53:55.581367
+In_Seqmsg latency  seq_x2traf:173  "x2write->snf_read":00:00:00.012695249  "snf_write->snf_read":00:00:00.000107
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.568671751  ts_snf_write:2025-10-06T11:53:55.58126  "ts_snf_read ":2025-10-06T11:53:55.581372
+In_Seqmsg latency  seq_x2traf:174  "x2write->snf_read":00:00:00.012700249  "snf_write->snf_read":00:00:00.000112
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.568671751  ts_snf_write:2025-10-06T11:53:55.58126  "ts_snf_read ":2025-10-06T11:53:55.581377
+In_Seqmsg latency  seq_x2traf:175  "x2write->snf_read":00:00:00.012705249  "snf_write->snf_read":00:00:00.000117
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.568671751  ts_snf_write:2025-10-06T11:53:55.58126  "ts_snf_read ":2025-10-06T11:53:55.581382
+In_Seqmsg latency  seq_x2traf:176  "x2write->snf_read":00:00:00.012710249  "snf_write->snf_read":00:00:00.000122
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.568671751  ts_snf_write:2025-10-06T11:53:55.59497  "ts_snf_read ":2025-10-06T11:53:55.594993
+In_Seqmsg latency  seq_x2traf:177  "x2write->snf_read":00:00:00.026321249  "snf_write->snf_read":00:00:00.000023
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.582386162  ts_snf_write:2025-10-06T11:53:55.59497  "ts_snf_read ":2025-10-06T11:53:55.595001
+In_Seqmsg latency  seq_x2traf:178  "x2write->snf_read":00:00:00.012614838  "snf_write->snf_read":00:00:00.000031
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.582386162  ts_snf_write:2025-10-06T11:53:55.59497  "ts_snf_read ":2025-10-06T11:53:55.59501
+In_Seqmsg latency  seq_x2traf:179  "x2write->snf_read":00:00:00.012623838  "snf_write->snf_read":00:00:00.00004
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.582386162  ts_snf_write:2025-10-06T11:53:55.59497  "ts_snf_read ":2025-10-06T11:53:55.595017
+In_Seqmsg latency  seq_x2traf:180  "x2write->snf_read":00:00:00.012630838  "snf_write->snf_read":00:00:00.000047
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.582386162  ts_snf_write:2025-10-06T11:53:55.59497  "ts_snf_read ":2025-10-06T11:53:55.595023
+In_Seqmsg latency  seq_x2traf:181  "x2write->snf_read":00:00:00.012636838  "snf_write->snf_read":00:00:00.000053
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.582386162  ts_snf_write:2025-10-06T11:53:55.59497  "ts_snf_read ":2025-10-06T11:53:55.595054
+In_Seqmsg latency  seq_x2traf:182  "x2write->snf_read":00:00:00.012667838  "snf_write->snf_read":00:00:00.000084
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.582386162  ts_snf_write:2025-10-06T11:53:55.59497  "ts_snf_read ":2025-10-06T11:53:55.595061
+In_Seqmsg latency  seq_x2traf:183  "x2write->snf_read":00:00:00.012674838  "snf_write->snf_read":00:00:00.000091
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.582386162  ts_snf_write:2025-10-06T11:53:55.59497  "ts_snf_read ":2025-10-06T11:53:55.595066
+In_Seqmsg latency  seq_x2traf:184  "x2write->snf_read":00:00:00.012679838  "snf_write->snf_read":00:00:00.000096
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.582386162  ts_snf_write:2025-10-06T11:53:55.59497  "ts_snf_read ":2025-10-06T11:53:55.595071
+In_Seqmsg latency  seq_x2traf:185  "x2write->snf_read":00:00:00.012684838  "snf_write->snf_read":00:00:00.000101
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.582386162  ts_snf_write:2025-10-06T11:53:55.59497  "ts_snf_read ":2025-10-06T11:53:55.595076
+In_Seqmsg latency  seq_x2traf:186  "x2write->snf_read":00:00:00.012689838  "snf_write->snf_read":00:00:00.000106
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.582386162  ts_snf_write:2025-10-06T11:53:55.59497  "ts_snf_read ":2025-10-06T11:53:55.595084
+In_Seqmsg latency  seq_x2traf:187  "x2write->snf_read":00:00:00.012697838  "snf_write->snf_read":00:00:00.000114
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.582386162  ts_snf_write:2025-10-06T11:53:55.59497  "ts_snf_read ":2025-10-06T11:53:55.595089
+In_Seqmsg latency  seq_x2traf:188  "x2write->snf_read":00:00:00.012702838  "snf_write->snf_read":00:00:00.000119
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.582386162  ts_snf_write:2025-10-06T11:53:55.608679  "ts_snf_read ":2025-10-06T11:53:55.608726
+In_Seqmsg latency  seq_x2traf:189  "x2write->snf_read":00:00:00.026339838  "snf_write->snf_read":00:00:00.000047
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.596097174  ts_snf_write:2025-10-06T11:53:55.608679  "ts_snf_read ":2025-10-06T11:53:55.608733
+In_Seqmsg latency  seq_x2traf:190  "x2write->snf_read":00:00:00.012635826  "snf_write->snf_read":00:00:00.000054
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.596097174  ts_snf_write:2025-10-06T11:53:55.608679  "ts_snf_read ":2025-10-06T11:53:55.608738
+In_Seqmsg latency  seq_x2traf:191  "x2write->snf_read":00:00:00.012640826  "snf_write->snf_read":00:00:00.000059
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.596097174  ts_snf_write:2025-10-06T11:53:55.608679  "ts_snf_read ":2025-10-06T11:53:55.608745
+In_Seqmsg latency  seq_x2traf:192  "x2write->snf_read":00:00:00.012647826  "snf_write->snf_read":00:00:00.000066
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.596097174  ts_snf_write:2025-10-06T11:53:55.608679  "ts_snf_read ":2025-10-06T11:53:55.608751
+In_Seqmsg latency  seq_x2traf:193  "x2write->snf_read":00:00:00.012653826  "snf_write->snf_read":00:00:00.000072
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.596097174  ts_snf_write:2025-10-06T11:53:55.608679  "ts_snf_read ":2025-10-06T11:53:55.608759
+In_Seqmsg latency  seq_x2traf:194  "x2write->snf_read":00:00:00.012661826  "snf_write->snf_read":00:00:00.00008
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.596097174  ts_snf_write:2025-10-06T11:53:55.608679  "ts_snf_read ":2025-10-06T11:53:55.608763
+In_Seqmsg latency  seq_x2traf:195  "x2write->snf_read":00:00:00.012665826  "snf_write->snf_read":00:00:00.000084
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.596097174  ts_snf_write:2025-10-06T11:53:55.608679  "ts_snf_read ":2025-10-06T11:53:55.608773
+In_Seqmsg latency  seq_x2traf:196  "x2write->snf_read":00:00:00.012675826  "snf_write->snf_read":00:00:00.000094
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.596097174  ts_snf_write:2025-10-06T11:53:55.608679  "ts_snf_read ":2025-10-06T11:53:55.608778
+In_Seqmsg latency  seq_x2traf:197  "x2write->snf_read":00:00:00.012680826  "snf_write->snf_read":00:00:00.000099
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.596097174  ts_snf_write:2025-10-06T11:53:55.608679  "ts_snf_read ":2025-10-06T11:53:55.608783
+In_Seqmsg latency  seq_x2traf:198  "x2write->snf_read":00:00:00.012685826  "snf_write->snf_read":00:00:00.000104
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.596097174  ts_snf_write:2025-10-06T11:53:55.608679  "ts_snf_read ":2025-10-06T11:53:55.608788
+In_Seqmsg latency  seq_x2traf:199  "x2write->snf_read":00:00:00.012690826  "snf_write->snf_read":00:00:00.000109
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.596097174  ts_snf_write:2025-10-06T11:53:55.608679  "ts_snf_read ":2025-10-06T11:53:55.608794
+In_Seqmsg latency  seq_x2traf:200  "x2write->snf_read":00:00:00.012696826  "snf_write->snf_read":00:00:00.000115
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.596097174  ts_snf_write:2025-10-06T11:53:55.622397  "ts_snf_read ":2025-10-06T11:53:55.622419
+In_Seqmsg latency  seq_x2traf:201  "x2write->snf_read":00:00:00.026321826  "snf_write->snf_read":00:00:00.000022
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.609812955  ts_snf_write:2025-10-06T11:53:55.622397  "ts_snf_read ":2025-10-06T11:53:55.622445
+In_Seqmsg latency  seq_x2traf:202  "x2write->snf_read":00:00:00.012632045  "snf_write->snf_read":00:00:00.000048
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.609812955  ts_snf_write:2025-10-06T11:53:55.622397  "ts_snf_read ":2025-10-06T11:53:55.622452
+In_Seqmsg latency  seq_x2traf:203  "x2write->snf_read":00:00:00.012639045  "snf_write->snf_read":00:00:00.000055
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.609812955  ts_snf_write:2025-10-06T11:53:55.622397  "ts_snf_read ":2025-10-06T11:53:55.622456
+In_Seqmsg latency  seq_x2traf:204  "x2write->snf_read":00:00:00.012643045  "snf_write->snf_read":00:00:00.000059
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.609812955  ts_snf_write:2025-10-06T11:53:55.622397  "ts_snf_read ":2025-10-06T11:53:55.622461
+In_Seqmsg latency  seq_x2traf:205  "x2write->snf_read":00:00:00.012648045  "snf_write->snf_read":00:00:00.000064
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.609812955  ts_snf_write:2025-10-06T11:53:55.622397  "ts_snf_read ":2025-10-06T11:53:55.62247
+In_Seqmsg latency  seq_x2traf:206  "x2write->snf_read":00:00:00.012657045  "snf_write->snf_read":00:00:00.000073
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.609812955  ts_snf_write:2025-10-06T11:53:55.622397  "ts_snf_read ":2025-10-06T11:53:55.622475
+In_Seqmsg latency  seq_x2traf:207  "x2write->snf_read":00:00:00.012662045  "snf_write->snf_read":00:00:00.000078
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.609812955  ts_snf_write:2025-10-06T11:53:55.622397  "ts_snf_read ":2025-10-06T11:53:55.622479
+In_Seqmsg latency  seq_x2traf:208  "x2write->snf_read":00:00:00.012666045  "snf_write->snf_read":00:00:00.000082
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.609812955  ts_snf_write:2025-10-06T11:53:55.622397  "ts_snf_read ":2025-10-06T11:53:55.622484
+In_Seqmsg latency  seq_x2traf:209  "x2write->snf_read":00:00:00.012671045  "snf_write->snf_read":00:00:00.000087
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.609812955  ts_snf_write:2025-10-06T11:53:55.622397  "ts_snf_read ":2025-10-06T11:53:55.622488
+In_Seqmsg latency  seq_x2traf:210  "x2write->snf_read":00:00:00.012675045  "snf_write->snf_read":00:00:00.000091
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.609812955  ts_snf_write:2025-10-06T11:53:55.622397  "ts_snf_read ":2025-10-06T11:53:55.6225
+In_Seqmsg latency  seq_x2traf:211  "x2write->snf_read":00:00:00.012687045  "snf_write->snf_read":00:00:00.000103
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.609812955  ts_snf_write:2025-10-06T11:53:55.622397  "ts_snf_read ":2025-10-06T11:53:55.622506
+In_Seqmsg latency  seq_x2traf:212  "x2write->snf_read":00:00:00.012693045  "snf_write->snf_read":00:00:00.000109
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.609812955  ts_snf_write:2025-10-06T11:53:55.636107  "ts_snf_read ":2025-10-06T11:53:55.636156
+In_Seqmsg latency  seq_x2traf:213  "x2write->snf_read":00:00:00.026343045  "snf_write->snf_read":00:00:00.000049
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.623527586  ts_snf_write:2025-10-06T11:53:55.636107  "ts_snf_read ":2025-10-06T11:53:55.636162
+In_Seqmsg latency  seq_x2traf:214  "x2write->snf_read":00:00:00.012634414  "snf_write->snf_read":00:00:00.000055
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.623527586  ts_snf_write:2025-10-06T11:53:55.636107  "ts_snf_read ":2025-10-06T11:53:55.636169
+In_Seqmsg latency  seq_x2traf:215  "x2write->snf_read":00:00:00.012641414  "snf_write->snf_read":00:00:00.000062
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.623527586  ts_snf_write:2025-10-06T11:53:55.636107  "ts_snf_read ":2025-10-06T11:53:55.636176
+In_Seqmsg latency  seq_x2traf:216  "x2write->snf_read":00:00:00.012648414  "snf_write->snf_read":00:00:00.000069
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.623527586  ts_snf_write:2025-10-06T11:53:55.636107  "ts_snf_read ":2025-10-06T11:53:55.636183
+In_Seqmsg latency  seq_x2traf:217  "x2write->snf_read":00:00:00.012655414  "snf_write->snf_read":00:00:00.000076
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.623527586  ts_snf_write:2025-10-06T11:53:55.636107  "ts_snf_read ":2025-10-06T11:53:55.636189
+In_Seqmsg latency  seq_x2traf:218  "x2write->snf_read":00:00:00.012661414  "snf_write->snf_read":00:00:00.000082
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.623527586  ts_snf_write:2025-10-06T11:53:55.636107  "ts_snf_read ":2025-10-06T11:53:55.636194
+In_Seqmsg latency  seq_x2traf:219  "x2write->snf_read":00:00:00.012666414  "snf_write->snf_read":00:00:00.000087
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.623527586  ts_snf_write:2025-10-06T11:53:55.636107  "ts_snf_read ":2025-10-06T11:53:55.636203
+In_Seqmsg latency  seq_x2traf:220  "x2write->snf_read":00:00:00.012675414  "snf_write->snf_read":00:00:00.000096
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.623527586  ts_snf_write:2025-10-06T11:53:55.636107  "ts_snf_read ":2025-10-06T11:53:55.63621
+In_Seqmsg latency  seq_x2traf:221  "x2write->snf_read":00:00:00.012682414  "snf_write->snf_read":00:00:00.000103
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.623527586  ts_snf_write:2025-10-06T11:53:55.636107  "ts_snf_read ":2025-10-06T11:53:55.636217
+In_Seqmsg latency  seq_x2traf:222  "x2write->snf_read":00:00:00.012689414  "snf_write->snf_read":00:00:00.00011
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.623527586  ts_snf_write:2025-10-06T11:53:55.636107  "ts_snf_read ":2025-10-06T11:53:55.636226
+In_Seqmsg latency  seq_x2traf:223  "x2write->snf_read":00:00:00.012698414  "snf_write->snf_read":00:00:00.000119
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.623527586  ts_snf_write:2025-10-06T11:53:55.636107  "ts_snf_read ":2025-10-06T11:53:55.636237
+In_Seqmsg latency  seq_x2traf:224  "x2write->snf_read":00:00:00.012709414  "snf_write->snf_read":00:00:00.00013
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.623527586  ts_snf_write:2025-10-06T11:53:55.649822  "ts_snf_read ":2025-10-06T11:53:55.649864
+In_Seqmsg latency  seq_x2traf:225  "x2write->snf_read":00:00:00.026336414  "snf_write->snf_read":00:00:00.000042
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.637239918  ts_snf_write:2025-10-06T11:53:55.649822  "ts_snf_read ":2025-10-06T11:53:55.649871
+In_Seqmsg latency  seq_x2traf:226  "x2write->snf_read":00:00:00.012631082  "snf_write->snf_read":00:00:00.000049
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.637239918  ts_snf_write:2025-10-06T11:53:55.649822  "ts_snf_read ":2025-10-06T11:53:55.649877
+In_Seqmsg latency  seq_x2traf:227  "x2write->snf_read":00:00:00.012637082  "snf_write->snf_read":00:00:00.000055
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.637239918  ts_snf_write:2025-10-06T11:53:55.649822  "ts_snf_read ":2025-10-06T11:53:55.649883
+In_Seqmsg latency  seq_x2traf:228  "x2write->snf_read":00:00:00.012643082  "snf_write->snf_read":00:00:00.000061
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.637239918  ts_snf_write:2025-10-06T11:53:55.649822  "ts_snf_read ":2025-10-06T11:53:55.649892
+In_Seqmsg latency  seq_x2traf:229  "x2write->snf_read":00:00:00.012652082  "snf_write->snf_read":00:00:00.00007
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.637239918  ts_snf_write:2025-10-06T11:53:55.649822  "ts_snf_read ":2025-10-06T11:53:55.649898
+In_Seqmsg latency  seq_x2traf:230  "x2write->snf_read":00:00:00.012658082  "snf_write->snf_read":00:00:00.000076
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.637239918  ts_snf_write:2025-10-06T11:53:55.649822  "ts_snf_read ":2025-10-06T11:53:55.649905
+In_Seqmsg latency  seq_x2traf:231  "x2write->snf_read":00:00:00.012665082  "snf_write->snf_read":00:00:00.000083
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.637239918  ts_snf_write:2025-10-06T11:53:55.649822  "ts_snf_read ":2025-10-06T11:53:55.649913
+In_Seqmsg latency  seq_x2traf:232  "x2write->snf_read":00:00:00.012673082  "snf_write->snf_read":00:00:00.000091
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.637239918  ts_snf_write:2025-10-06T11:53:55.649822  "ts_snf_read ":2025-10-06T11:53:55.649923
+In_Seqmsg latency  seq_x2traf:233  "x2write->snf_read":00:00:00.012683082  "snf_write->snf_read":00:00:00.000101
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.637239918  ts_snf_write:2025-10-06T11:53:55.649822  "ts_snf_read ":2025-10-06T11:53:55.64993
+In_Seqmsg latency  seq_x2traf:234  "x2write->snf_read":00:00:00.012690082  "snf_write->snf_read":00:00:00.000108
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.637239918  ts_snf_write:2025-10-06T11:53:55.649822  "ts_snf_read ":2025-10-06T11:53:55.649934
+In_Seqmsg latency  seq_x2traf:235  "x2write->snf_read":00:00:00.012694082  "snf_write->snf_read":00:00:00.000112
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.637239918  ts_snf_write:2025-10-06T11:53:55.649822  "ts_snf_read ":2025-10-06T11:53:55.649939
+In_Seqmsg latency  seq_x2traf:236  "x2write->snf_read":00:00:00.012699082  "snf_write->snf_read":00:00:00.000117
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.637239918  ts_snf_write:2025-10-06T11:53:55.664145  "ts_snf_read ":2025-10-06T11:53:55.664189
+In_Seqmsg latency  seq_x2traf:237  "x2write->snf_read":00:00:00.026949082  "snf_write->snf_read":00:00:00.000044
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.650948729  ts_snf_write:2025-10-06T11:53:55.664145  "ts_snf_read ":2025-10-06T11:53:55.664196
+In_Seqmsg latency  seq_x2traf:238  "x2write->snf_read":00:00:00.013247271  "snf_write->snf_read":00:00:00.000051
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.650948729  ts_snf_write:2025-10-06T11:53:55.664145  "ts_snf_read ":2025-10-06T11:53:55.664201
+In_Seqmsg latency  seq_x2traf:239  "x2write->snf_read":00:00:00.013252271  "snf_write->snf_read":00:00:00.000056
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.650948729  ts_snf_write:2025-10-06T11:53:55.664145  "ts_snf_read ":2025-10-06T11:53:55.664207
+In_Seqmsg latency  seq_x2traf:240  "x2write->snf_read":00:00:00.013258271  "snf_write->snf_read":00:00:00.000062
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.650948729  ts_snf_write:2025-10-06T11:53:55.664145  "ts_snf_read ":2025-10-06T11:53:55.664212
+In_Seqmsg latency  seq_x2traf:241  "x2write->snf_read":00:00:00.013263271  "snf_write->snf_read":00:00:00.000067
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.650948729  ts_snf_write:2025-10-06T11:53:55.664145  "ts_snf_read ":2025-10-06T11:53:55.664219
+In_Seqmsg latency  seq_x2traf:242  "x2write->snf_read":00:00:00.013270271  "snf_write->snf_read":00:00:00.000074
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.650948729  ts_snf_write:2025-10-06T11:53:55.664145  "ts_snf_read ":2025-10-06T11:53:55.664225
+In_Seqmsg latency  seq_x2traf:243  "x2write->snf_read":00:00:00.013276271  "snf_write->snf_read":00:00:00.00008
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.650948729  ts_snf_write:2025-10-06T11:53:55.664145  "ts_snf_read ":2025-10-06T11:53:55.664235
+In_Seqmsg latency  seq_x2traf:244  "x2write->snf_read":00:00:00.013286271  "snf_write->snf_read":00:00:00.00009
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.650948729  ts_snf_write:2025-10-06T11:53:55.664145  "ts_snf_read ":2025-10-06T11:53:55.664241
+In_Seqmsg latency  seq_x2traf:245  "x2write->snf_read":00:00:00.013292271  "snf_write->snf_read":00:00:00.000096
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.650948729  ts_snf_write:2025-10-06T11:53:55.664145  "ts_snf_read ":2025-10-06T11:53:55.664246
+In_Seqmsg latency  seq_x2traf:246  "x2write->snf_read":00:00:00.013297271  "snf_write->snf_read":00:00:00.000101
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.650948729  ts_snf_write:2025-10-06T11:53:55.664145  "ts_snf_read ":2025-10-06T11:53:55.664251
+In_Seqmsg latency  seq_x2traf:247  "x2write->snf_read":00:00:00.013302271  "snf_write->snf_read":00:00:00.000106
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.650948729  ts_snf_write:2025-10-06T11:53:55.67674  "ts_snf_read ":2025-10-06T11:53:55.676784
+In_Seqmsg latency  seq_x2traf:248  "x2write->snf_read":00:00:00.025835271  "snf_write->snf_read":00:00:00.000044
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.664164474  ts_snf_write:2025-10-06T11:53:55.67674  "ts_snf_read ":2025-10-06T11:53:55.676792
+In_Seqmsg latency  seq_x2traf:249  "x2write->snf_read":00:00:00.012627526  "snf_write->snf_read":00:00:00.000052
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.664164474  ts_snf_write:2025-10-06T11:53:55.67674  "ts_snf_read ":2025-10-06T11:53:55.676797
+In_Seqmsg latency  seq_x2traf:250  "x2write->snf_read":00:00:00.012632526  "snf_write->snf_read":00:00:00.000057
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.664164474  ts_snf_write:2025-10-06T11:53:55.67674  "ts_snf_read ":2025-10-06T11:53:55.676801
+In_Seqmsg latency  seq_x2traf:251  "x2write->snf_read":00:00:00.012636526  "snf_write->snf_read":00:00:00.000061
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.664164474  ts_snf_write:2025-10-06T11:53:55.67674  "ts_snf_read ":2025-10-06T11:53:55.676807
+In_Seqmsg latency  seq_x2traf:252  "x2write->snf_read":00:00:00.012642526  "snf_write->snf_read":00:00:00.000067
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.664164474  ts_snf_write:2025-10-06T11:53:55.67674  "ts_snf_read ":2025-10-06T11:53:55.676816
+In_Seqmsg latency  seq_x2traf:253  "x2write->snf_read":00:00:00.012651526  "snf_write->snf_read":00:00:00.000076
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.664164474  ts_snf_write:2025-10-06T11:53:55.67674  "ts_snf_read ":2025-10-06T11:53:55.676821
+In_Seqmsg latency  seq_x2traf:254  "x2write->snf_read":00:00:00.012656526  "snf_write->snf_read":00:00:00.000081
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.664164474  ts_snf_write:2025-10-06T11:53:55.67674  "ts_snf_read ":2025-10-06T11:53:55.676826
+In_Seqmsg latency  seq_x2traf:255  "x2write->snf_read":00:00:00.012661526  "snf_write->snf_read":00:00:00.000086
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.664164474  ts_snf_write:2025-10-06T11:53:55.67674  "ts_snf_read ":2025-10-06T11:53:55.676831
+In_Seqmsg latency  seq_x2traf:256  "x2write->snf_read":00:00:00.012666526  "snf_write->snf_read":00:00:00.000091
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.664164474  ts_snf_write:2025-10-06T11:53:55.67674  "ts_snf_read ":2025-10-06T11:53:55.67684
+In_Seqmsg latency  seq_x2traf:257  "x2write->snf_read":00:00:00.012675526  "snf_write->snf_read":00:00:00.0001
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.664164474  ts_snf_write:2025-10-06T11:53:55.67674  "ts_snf_read ":2025-10-06T11:53:55.676849
+In_Seqmsg latency  seq_x2traf:258  "x2write->snf_read":00:00:00.012684526  "snf_write->snf_read":00:00:00.000109
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.664164474  ts_snf_write:2025-10-06T11:53:55.67674  "ts_snf_read ":2025-10-06T11:53:55.676854
+In_Seqmsg latency  seq_x2traf:259  "x2write->snf_read":00:00:00.012689526  "snf_write->snf_read":00:00:00.000114
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.664164474  ts_snf_write:2025-10-06T11:53:55.690457  "ts_snf_read ":2025-10-06T11:53:55.690488
+In_Seqmsg latency  seq_x2traf:260  "x2write->snf_read":00:00:00.026323526  "snf_write->snf_read":00:00:00.000031
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.677870675  ts_snf_write:2025-10-06T11:53:55.690457  "ts_snf_read ":2025-10-06T11:53:55.690496
+In_Seqmsg latency  seq_x2traf:261  "x2write->snf_read":00:00:00.012625325  "snf_write->snf_read":00:00:00.000039
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.677870675  ts_snf_write:2025-10-06T11:53:55.690457  "ts_snf_read ":2025-10-06T11:53:55.6905
+In_Seqmsg latency  seq_x2traf:262  "x2write->snf_read":00:00:00.012629325  "snf_write->snf_read":00:00:00.000043
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.677870675  ts_snf_write:2025-10-06T11:53:55.690457  "ts_snf_read ":2025-10-06T11:53:55.690525
+In_Seqmsg latency  seq_x2traf:263  "x2write->snf_read":00:00:00.012654325  "snf_write->snf_read":00:00:00.000068
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.677870675  ts_snf_write:2025-10-06T11:53:55.690457  "ts_snf_read ":2025-10-06T11:53:55.690533
+In_Seqmsg latency  seq_x2traf:264  "x2write->snf_read":00:00:00.012662325  "snf_write->snf_read":00:00:00.000076
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.677870675  ts_snf_write:2025-10-06T11:53:55.690457  "ts_snf_read ":2025-10-06T11:53:55.690539
+In_Seqmsg latency  seq_x2traf:265  "x2write->snf_read":00:00:00.012668325  "snf_write->snf_read":00:00:00.000082
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.677870675  ts_snf_write:2025-10-06T11:53:55.690457  "ts_snf_read ":2025-10-06T11:53:55.690549
+In_Seqmsg latency  seq_x2traf:266  "x2write->snf_read":00:00:00.012678325  "snf_write->snf_read":00:00:00.000092
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.677870675  ts_snf_write:2025-10-06T11:53:55.690457  "ts_snf_read ":2025-10-06T11:53:55.690557
+In_Seqmsg latency  seq_x2traf:267  "x2write->snf_read":00:00:00.012686325  "snf_write->snf_read":00:00:00.0001
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.677870675  ts_snf_write:2025-10-06T11:53:55.690457  "ts_snf_read ":2025-10-06T11:53:55.690564
+In_Seqmsg latency  seq_x2traf:268  "x2write->snf_read":00:00:00.012693325  "snf_write->snf_read":00:00:00.000107
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.677870675  ts_snf_write:2025-10-06T11:53:55.690457  "ts_snf_read ":2025-10-06T11:53:55.690568
+In_Seqmsg latency  seq_x2traf:269  "x2write->snf_read":00:00:00.012697325  "snf_write->snf_read":00:00:00.000111
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.677870675  ts_snf_write:2025-10-06T11:53:55.690457  "ts_snf_read ":2025-10-06T11:53:55.690573
+In_Seqmsg latency  seq_x2traf:270  "x2write->snf_read":00:00:00.012702325  "snf_write->snf_read":00:00:00.000116
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.677870675  ts_snf_write:2025-10-06T11:53:55.690457  "ts_snf_read ":2025-10-06T11:53:55.690582
+In_Seqmsg latency  seq_x2traf:271  "x2write->snf_read":00:00:00.012711325  "snf_write->snf_read":00:00:00.000125
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.677870675  ts_snf_write:2025-10-06T11:53:55.704177  "ts_snf_read ":2025-10-06T11:53:55.704218
+In_Seqmsg latency  seq_x2traf:272  "x2write->snf_read":00:00:00.026347325  "snf_write->snf_read":00:00:00.000041
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.691587696  ts_snf_write:2025-10-06T11:53:55.704177  "ts_snf_read ":2025-10-06T11:53:55.704225
+In_Seqmsg latency  seq_x2traf:273  "x2write->snf_read":00:00:00.012637304  "snf_write->snf_read":00:00:00.000048
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.691587696  ts_snf_write:2025-10-06T11:53:55.704177  "ts_snf_read ":2025-10-06T11:53:55.70423
+In_Seqmsg latency  seq_x2traf:274  "x2write->snf_read":00:00:00.012642304  "snf_write->snf_read":00:00:00.000053
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.691587696  ts_snf_write:2025-10-06T11:53:55.704177  "ts_snf_read ":2025-10-06T11:53:55.704237
+In_Seqmsg latency  seq_x2traf:275  "x2write->snf_read":00:00:00.012649304  "snf_write->snf_read":00:00:00.00006
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.691587696  ts_snf_write:2025-10-06T11:53:55.704177  "ts_snf_read ":2025-10-06T11:53:55.704243
+In_Seqmsg latency  seq_x2traf:276  "x2write->snf_read":00:00:00.012655304  "snf_write->snf_read":00:00:00.000066
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.691587696  ts_snf_write:2025-10-06T11:53:55.704177  "ts_snf_read ":2025-10-06T11:53:55.70425
+In_Seqmsg latency  seq_x2traf:277  "x2write->snf_read":00:00:00.012662304  "snf_write->snf_read":00:00:00.000073
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.691587696  ts_snf_write:2025-10-06T11:53:55.704177  "ts_snf_read ":2025-10-06T11:53:55.704257
+In_Seqmsg latency  seq_x2traf:278  "x2write->snf_read":00:00:00.012669304  "snf_write->snf_read":00:00:00.00008
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.691587696  ts_snf_write:2025-10-06T11:53:55.704177  "ts_snf_read ":2025-10-06T11:53:55.704268
+In_Seqmsg latency  seq_x2traf:279  "x2write->snf_read":00:00:00.012680304  "snf_write->snf_read":00:00:00.000091
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.691587696  ts_snf_write:2025-10-06T11:53:55.704177  "ts_snf_read ":2025-10-06T11:53:55.704273
+In_Seqmsg latency  seq_x2traf:280  "x2write->snf_read":00:00:00.012685304  "snf_write->snf_read":00:00:00.000096
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.691587696  ts_snf_write:2025-10-06T11:53:55.704177  "ts_snf_read ":2025-10-06T11:53:55.704278
+In_Seqmsg latency  seq_x2traf:281  "x2write->snf_read":00:00:00.012690304  "snf_write->snf_read":00:00:00.000101
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.691587696  ts_snf_write:2025-10-06T11:53:55.704177  "ts_snf_read ":2025-10-06T11:53:55.704284
+In_Seqmsg latency  seq_x2traf:282  "x2write->snf_read":00:00:00.012696304  "snf_write->snf_read":00:00:00.000107
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.691587696  ts_snf_write:2025-10-06T11:53:55.704177  "ts_snf_read ":2025-10-06T11:53:55.70429
+In_Seqmsg latency  seq_x2traf:283  "x2write->snf_read":00:00:00.012702304  "snf_write->snf_read":00:00:00.000113
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.691587696  ts_snf_write:2025-10-06T11:53:55.717875  "ts_snf_read ":2025-10-06T11:53:55.717918
+In_Seqmsg latency  seq_x2traf:284  "x2write->snf_read":00:00:00.026330304  "snf_write->snf_read":00:00:00.000043
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.705298258  ts_snf_write:2025-10-06T11:53:55.717875  "ts_snf_read ":2025-10-06T11:53:55.717926
+In_Seqmsg latency  seq_x2traf:285  "x2write->snf_read":00:00:00.012627742  "snf_write->snf_read":00:00:00.000051
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.705298258  ts_snf_write:2025-10-06T11:53:55.717875  "ts_snf_read ":2025-10-06T11:53:55.717933
+In_Seqmsg latency  seq_x2traf:286  "x2write->snf_read":00:00:00.012634742  "snf_write->snf_read":00:00:00.000058
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.705298258  ts_snf_write:2025-10-06T11:53:55.717875  "ts_snf_read ":2025-10-06T11:53:55.71794
+In_Seqmsg latency  seq_x2traf:287  "x2write->snf_read":00:00:00.012641742  "snf_write->snf_read":00:00:00.000065
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.705298258  ts_snf_write:2025-10-06T11:53:55.717875  "ts_snf_read ":2025-10-06T11:53:55.717947
+In_Seqmsg latency  seq_x2traf:288  "x2write->snf_read":00:00:00.012648742  "snf_write->snf_read":00:00:00.000072
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.705298258  ts_snf_write:2025-10-06T11:53:55.717875  "ts_snf_read ":2025-10-06T11:53:55.717954
+In_Seqmsg latency  seq_x2traf:289  "x2write->snf_read":00:00:00.012655742  "snf_write->snf_read":00:00:00.000079
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.705298258  ts_snf_write:2025-10-06T11:53:55.717875  "ts_snf_read ":2025-10-06T11:53:55.717962
+In_Seqmsg latency  seq_x2traf:290  "x2write->snf_read":00:00:00.012663742  "snf_write->snf_read":00:00:00.000087
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.705298258  ts_snf_write:2025-10-06T11:53:55.717875  "ts_snf_read ":2025-10-06T11:53:55.717969
+In_Seqmsg latency  seq_x2traf:291  "x2write->snf_read":00:00:00.012670742  "snf_write->snf_read":00:00:00.000094
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.705298258  ts_snf_write:2025-10-06T11:53:55.717875  "ts_snf_read ":2025-10-06T11:53:55.717974
+In_Seqmsg latency  seq_x2traf:292  "x2write->snf_read":00:00:00.012675742  "snf_write->snf_read":00:00:00.000099
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.705298258  ts_snf_write:2025-10-06T11:53:55.717875  "ts_snf_read ":2025-10-06T11:53:55.717978
+In_Seqmsg latency  seq_x2traf:293  "x2write->snf_read":00:00:00.012679742  "snf_write->snf_read":00:00:00.000103
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.705298258  ts_snf_write:2025-10-06T11:53:55.717875  "ts_snf_read ":2025-10-06T11:53:55.717987
+In_Seqmsg latency  seq_x2traf:294  "x2write->snf_read":00:00:00.012688742  "snf_write->snf_read":00:00:00.000112
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.705298258  ts_snf_write:2025-10-06T11:53:55.717875  "ts_snf_read ":2025-10-06T11:53:55.717992
+In_Seqmsg latency  seq_x2traf:295  "x2write->snf_read":00:00:00.012693742  "snf_write->snf_read":00:00:00.000117
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.705298258  ts_snf_write:2025-10-06T11:53:55.731587  "ts_snf_read ":2025-10-06T11:53:55.731644
+In_Seqmsg latency  seq_x2traf:296  "x2write->snf_read":00:00:00.026345742  "snf_write->snf_read":00:00:00.000057
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.719006029  ts_snf_write:2025-10-06T11:53:55.731587  "ts_snf_read ":2025-10-06T11:53:55.731651
+In_Seqmsg latency  seq_x2traf:297  "x2write->snf_read":00:00:00.012644971  "snf_write->snf_read":00:00:00.000064
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.719006029  ts_snf_write:2025-10-06T11:53:55.731587  "ts_snf_read ":2025-10-06T11:53:55.731658
+In_Seqmsg latency  seq_x2traf:298  "x2write->snf_read":00:00:00.012651971  "snf_write->snf_read":00:00:00.000071
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.719006029  ts_snf_write:2025-10-06T11:53:55.731587  "ts_snf_read ":2025-10-06T11:53:55.731664
+In_Seqmsg latency  seq_x2traf:299  "x2write->snf_read":00:00:00.012657971  "snf_write->snf_read":00:00:00.000077
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.719006029  ts_snf_write:2025-10-06T11:53:55.731587  "ts_snf_read ":2025-10-06T11:53:55.731671
+In_Seqmsg latency  seq_x2traf:300  "x2write->snf_read":00:00:00.012664971  "snf_write->snf_read":00:00:00.000084
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.719006029  ts_snf_write:2025-10-06T11:53:55.731587  "ts_snf_read ":2025-10-06T11:53:55.731677
+In_Seqmsg latency  seq_x2traf:301  "x2write->snf_read":00:00:00.012670971  "snf_write->snf_read":00:00:00.00009
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.719006029  ts_snf_write:2025-10-06T11:53:55.731587  "ts_snf_read ":2025-10-06T11:53:55.731682
+In_Seqmsg latency  seq_x2traf:302  "x2write->snf_read":00:00:00.012675971  "snf_write->snf_read":00:00:00.000095
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.719006029  ts_snf_write:2025-10-06T11:53:55.731587  "ts_snf_read ":2025-10-06T11:53:55.731692
+In_Seqmsg latency  seq_x2traf:303  "x2write->snf_read":00:00:00.012685971  "snf_write->snf_read":00:00:00.000105
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.719006029  ts_snf_write:2025-10-06T11:53:55.731587  "ts_snf_read ":2025-10-06T11:53:55.731696
+In_Seqmsg latency  seq_x2traf:304  "x2write->snf_read":00:00:00.012689971  "snf_write->snf_read":00:00:00.000109
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.719006029  ts_snf_write:2025-10-06T11:53:55.731587  "ts_snf_read ":2025-10-06T11:53:55.731702
+In_Seqmsg latency  seq_x2traf:305  "x2write->snf_read":00:00:00.012695971  "snf_write->snf_read":00:00:00.000115
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.719006029  ts_snf_write:2025-10-06T11:53:55.731587  "ts_snf_read ":2025-10-06T11:53:55.731707
+In_Seqmsg latency  seq_x2traf:306  "x2write->snf_read":00:00:00.012700971  "snf_write->snf_read":00:00:00.00012
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.719006029  ts_snf_write:2025-10-06T11:53:55.731587  "ts_snf_read ":2025-10-06T11:53:55.731712
+In_Seqmsg latency  seq_x2traf:307  "x2write->snf_read":00:00:00.012705971  "snf_write->snf_read":00:00:00.000125
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.719006029  ts_snf_write:2025-10-06T11:53:55.745308  "ts_snf_read ":2025-10-06T11:53:55.745349
+In_Seqmsg latency  seq_x2traf:308  "x2write->snf_read":00:00:00.026342971  "snf_write->snf_read":00:00:00.000041
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.73271954  ts_snf_write:2025-10-06T11:53:55.745308  "ts_snf_read ":2025-10-06T11:53:55.745357
+In_Seqmsg latency  seq_x2traf:309  "x2write->snf_read":00:00:00.01263746  "snf_write->snf_read":00:00:00.000049
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.73271954  ts_snf_write:2025-10-06T11:53:55.745308  "ts_snf_read ":2025-10-06T11:53:55.745364
+In_Seqmsg latency  seq_x2traf:310  "x2write->snf_read":00:00:00.01264446  "snf_write->snf_read":00:00:00.000056
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.73271954  ts_snf_write:2025-10-06T11:53:55.745308  "ts_snf_read ":2025-10-06T11:53:55.74537
+In_Seqmsg latency  seq_x2traf:311  "x2write->snf_read":00:00:00.01265046  "snf_write->snf_read":00:00:00.000062
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.73271954  ts_snf_write:2025-10-06T11:53:55.745308  "ts_snf_read ":2025-10-06T11:53:55.745378
+In_Seqmsg latency  seq_x2traf:312  "x2write->snf_read":00:00:00.01265846  "snf_write->snf_read":00:00:00.00007
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.73271954  ts_snf_write:2025-10-06T11:53:55.745308  "ts_snf_read ":2025-10-06T11:53:55.745383
+In_Seqmsg latency  seq_x2traf:313  "x2write->snf_read":00:00:00.01266346  "snf_write->snf_read":00:00:00.000075
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.73271954  ts_snf_write:2025-10-06T11:53:55.745308  "ts_snf_read ":2025-10-06T11:53:55.745388
+In_Seqmsg latency  seq_x2traf:314  "x2write->snf_read":00:00:00.01266846  "snf_write->snf_read":00:00:00.00008
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.73271954  ts_snf_write:2025-10-06T11:53:55.745308  "ts_snf_read ":2025-10-06T11:53:55.745398
+In_Seqmsg latency  seq_x2traf:315  "x2write->snf_read":00:00:00.01267846  "snf_write->snf_read":00:00:00.00009
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.73271954  ts_snf_write:2025-10-06T11:53:55.745308  "ts_snf_read ":2025-10-06T11:53:55.745406
+In_Seqmsg latency  seq_x2traf:316  "x2write->snf_read":00:00:00.01268646  "snf_write->snf_read":00:00:00.000098
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.73271954  ts_snf_write:2025-10-06T11:53:55.745308  "ts_snf_read ":2025-10-06T11:53:55.745413
+In_Seqmsg latency  seq_x2traf:317  "x2write->snf_read":00:00:00.01269346  "snf_write->snf_read":00:00:00.000105
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.73271954  ts_snf_write:2025-10-06T11:53:55.745308  "ts_snf_read ":2025-10-06T11:53:55.745418
+In_Seqmsg latency  seq_x2traf:318  "x2write->snf_read":00:00:00.01269846  "snf_write->snf_read":00:00:00.00011
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.73271954  ts_snf_write:2025-10-06T11:53:55.745308  "ts_snf_read ":2025-10-06T11:53:55.745423
+In_Seqmsg latency  seq_x2traf:319  "x2write->snf_read":00:00:00.01270346  "snf_write->snf_read":00:00:00.000115
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.73271954  ts_snf_write:2025-10-06T11:53:55.759021  "ts_snf_read ":2025-10-06T11:53:55.759071
+In_Seqmsg latency  seq_x2traf:320  "x2write->snf_read":00:00:00.02635146  "snf_write->snf_read":00:00:00.00005
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.746432392  ts_snf_write:2025-10-06T11:53:55.759021  "ts_snf_read ":2025-10-06T11:53:55.759079
+In_Seqmsg latency  seq_x2traf:321  "x2write->snf_read":00:00:00.012646608  "snf_write->snf_read":00:00:00.000058
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.746432392  ts_snf_write:2025-10-06T11:53:55.759021  "ts_snf_read ":2025-10-06T11:53:55.759084
+In_Seqmsg latency  seq_x2traf:322  "x2write->snf_read":00:00:00.012651608  "snf_write->snf_read":00:00:00.000063
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.746432392  ts_snf_write:2025-10-06T11:53:55.759021  "ts_snf_read ":2025-10-06T11:53:55.759091
+In_Seqmsg latency  seq_x2traf:323  "x2write->snf_read":00:00:00.012658608  "snf_write->snf_read":00:00:00.00007
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.746432392  ts_snf_write:2025-10-06T11:53:55.759021  "ts_snf_read ":2025-10-06T11:53:55.759096
+In_Seqmsg latency  seq_x2traf:324  "x2write->snf_read":00:00:00.012663608  "snf_write->snf_read":00:00:00.000075
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.746432392  ts_snf_write:2025-10-06T11:53:55.759021  "ts_snf_read ":2025-10-06T11:53:55.759103
+In_Seqmsg latency  seq_x2traf:325  "x2write->snf_read":00:00:00.012670608  "snf_write->snf_read":00:00:00.000082
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.746432392  ts_snf_write:2025-10-06T11:53:55.759021  "ts_snf_read ":2025-10-06T11:53:55.759111
+In_Seqmsg latency  seq_x2traf:326  "x2write->snf_read":00:00:00.012678608  "snf_write->snf_read":00:00:00.00009
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.746432392  ts_snf_write:2025-10-06T11:53:55.759021  "ts_snf_read ":2025-10-06T11:53:55.759123
+In_Seqmsg latency  seq_x2traf:327  "x2write->snf_read":00:00:00.012690608  "snf_write->snf_read":00:00:00.000102
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.746432392  ts_snf_write:2025-10-06T11:53:55.759021  "ts_snf_read ":2025-10-06T11:53:55.759131
+In_Seqmsg latency  seq_x2traf:328  "x2write->snf_read":00:00:00.012698608  "snf_write->snf_read":00:00:00.00011
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.746432392  ts_snf_write:2025-10-06T11:53:55.759021  "ts_snf_read ":2025-10-06T11:53:55.759139
+In_Seqmsg latency  seq_x2traf:329  "x2write->snf_read":00:00:00.012706608  "snf_write->snf_read":00:00:00.000118
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.746432392  ts_snf_write:2025-10-06T11:53:55.759021  "ts_snf_read ":2025-10-06T11:53:55.759146
+In_Seqmsg latency  seq_x2traf:330  "x2write->snf_read":00:00:00.012713608  "snf_write->snf_read":00:00:00.000125
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.746432392  ts_snf_write:2025-10-06T11:53:55.759021  "ts_snf_read ":2025-10-06T11:53:55.75915
+In_Seqmsg latency  seq_x2traf:331  "x2write->snf_read":00:00:00.012717608  "snf_write->snf_read":00:00:00.000129
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.746432392  ts_snf_write:2025-10-06T11:53:55.773354  "ts_snf_read ":2025-10-06T11:53:55.773405
+In_Seqmsg latency  seq_x2traf:332  "x2write->snf_read":00:00:00.026972608  "snf_write->snf_read":00:00:00.000051
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.760141393  ts_snf_write:2025-10-06T11:53:55.773354  "ts_snf_read ":2025-10-06T11:53:55.773412
+In_Seqmsg latency  seq_x2traf:333  "x2write->snf_read":00:00:00.013270607  "snf_write->snf_read":00:00:00.000058
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.760141393  ts_snf_write:2025-10-06T11:53:55.773354  "ts_snf_read ":2025-10-06T11:53:55.773418
+In_Seqmsg latency  seq_x2traf:334  "x2write->snf_read":00:00:00.013276607  "snf_write->snf_read":00:00:00.000064
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.760141393  ts_snf_write:2025-10-06T11:53:55.773354  "ts_snf_read ":2025-10-06T11:53:55.773425
+In_Seqmsg latency  seq_x2traf:335  "x2write->snf_read":00:00:00.013283607  "snf_write->snf_read":00:00:00.000071
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.760141393  ts_snf_write:2025-10-06T11:53:55.773354  "ts_snf_read ":2025-10-06T11:53:55.773432
+In_Seqmsg latency  seq_x2traf:336  "x2write->snf_read":00:00:00.013290607  "snf_write->snf_read":00:00:00.000078
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.760141393  ts_snf_write:2025-10-06T11:53:55.773354  "ts_snf_read ":2025-10-06T11:53:55.773439
+In_Seqmsg latency  seq_x2traf:337  "x2write->snf_read":00:00:00.013297607  "snf_write->snf_read":00:00:00.000085
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.760141393  ts_snf_write:2025-10-06T11:53:55.773354  "ts_snf_read ":2025-10-06T11:53:55.773445
+In_Seqmsg latency  seq_x2traf:338  "x2write->snf_read":00:00:00.013303607  "snf_write->snf_read":00:00:00.000091
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.760141393  ts_snf_write:2025-10-06T11:53:55.773354  "ts_snf_read ":2025-10-06T11:53:55.773453
+In_Seqmsg latency  seq_x2traf:339  "x2write->snf_read":00:00:00.013311607  "snf_write->snf_read":00:00:00.000099
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.760141393  ts_snf_write:2025-10-06T11:53:55.773354  "ts_snf_read ":2025-10-06T11:53:55.773462
+In_Seqmsg latency  seq_x2traf:340  "x2write->snf_read":00:00:00.013320607  "snf_write->snf_read":00:00:00.000108
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.760141393  ts_snf_write:2025-10-06T11:53:55.773354  "ts_snf_read ":2025-10-06T11:53:55.773469
+In_Seqmsg latency  seq_x2traf:341  "x2write->snf_read":00:00:00.013327607  "snf_write->snf_read":00:00:00.000115
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.760141393  ts_snf_write:2025-10-06T11:53:55.773354  "ts_snf_read ":2025-10-06T11:53:55.773474
+In_Seqmsg latency  seq_x2traf:342  "x2write->snf_read":00:00:00.013332607  "snf_write->snf_read":00:00:00.00012
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.760141393  ts_snf_write:2025-10-06T11:53:55.785953  "ts_snf_read ":2025-10-06T11:53:55.785974
+In_Seqmsg latency  seq_x2traf:343  "x2write->snf_read":00:00:00.025832607  "snf_write->snf_read":00:00:00.000021
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.773373338  ts_snf_write:2025-10-06T11:53:55.785953  "ts_snf_read ":2025-10-06T11:53:55.786004
+In_Seqmsg latency  seq_x2traf:344  "x2write->snf_read":00:00:00.012630662  "snf_write->snf_read":00:00:00.000051
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.773373338  ts_snf_write:2025-10-06T11:53:55.785953  "ts_snf_read ":2025-10-06T11:53:55.786015
+In_Seqmsg latency  seq_x2traf:345  "x2write->snf_read":00:00:00.012641662  "snf_write->snf_read":00:00:00.000062
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.773373338  ts_snf_write:2025-10-06T11:53:55.785953  "ts_snf_read ":2025-10-06T11:53:55.78602
+In_Seqmsg latency  seq_x2traf:346  "x2write->snf_read":00:00:00.012646662  "snf_write->snf_read":00:00:00.000067
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.773373338  ts_snf_write:2025-10-06T11:53:55.785953  "ts_snf_read ":2025-10-06T11:53:55.786025
+In_Seqmsg latency  seq_x2traf:347  "x2write->snf_read":00:00:00.012651662  "snf_write->snf_read":00:00:00.000072
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.773373338  ts_snf_write:2025-10-06T11:53:55.785953  "ts_snf_read ":2025-10-06T11:53:55.786034
+In_Seqmsg latency  seq_x2traf:348  "x2write->snf_read":00:00:00.012660662  "snf_write->snf_read":00:00:00.000081
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.773373338  ts_snf_write:2025-10-06T11:53:55.785953  "ts_snf_read ":2025-10-06T11:53:55.786039
+In_Seqmsg latency  seq_x2traf:349  "x2write->snf_read":00:00:00.012665662  "snf_write->snf_read":00:00:00.000086
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.773373338  ts_snf_write:2025-10-06T11:53:55.785953  "ts_snf_read ":2025-10-06T11:53:55.786044
+In_Seqmsg latency  seq_x2traf:350  "x2write->snf_read":00:00:00.012670662  "snf_write->snf_read":00:00:00.000091
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.773373338  ts_snf_write:2025-10-06T11:53:55.785953  "ts_snf_read ":2025-10-06T11:53:55.786049
+In_Seqmsg latency  seq_x2traf:351  "x2write->snf_read":00:00:00.012675662  "snf_write->snf_read":00:00:00.000096
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.773373338  ts_snf_write:2025-10-06T11:53:55.785953  "ts_snf_read ":2025-10-06T11:53:55.786055
+In_Seqmsg latency  seq_x2traf:352  "x2write->snf_read":00:00:00.012681662  "snf_write->snf_read":00:00:00.000102
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.773373338  ts_snf_write:2025-10-06T11:53:55.785953  "ts_snf_read ":2025-10-06T11:53:55.786063
+In_Seqmsg latency  seq_x2traf:353  "x2write->snf_read":00:00:00.012689662  "snf_write->snf_read":00:00:00.00011
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.773373338  ts_snf_write:2025-10-06T11:53:55.785953  "ts_snf_read ":2025-10-06T11:53:55.78607
+In_Seqmsg latency  seq_x2traf:354  "x2write->snf_read":00:00:00.012696662  "snf_write->snf_read":00:00:00.000117
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.773373338  ts_snf_write:2025-10-06T11:53:55.799665  "ts_snf_read ":2025-10-06T11:53:55.799707
+In_Seqmsg latency  seq_x2traf:355  "x2write->snf_read":00:00:00.026333662  "snf_write->snf_read":00:00:00.000042
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.787084429  ts_snf_write:2025-10-06T11:53:55.799665  "ts_snf_read ":2025-10-06T11:53:55.799714
+In_Seqmsg latency  seq_x2traf:356  "x2write->snf_read":00:00:00.012629571  "snf_write->snf_read":00:00:00.000049
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.787084429  ts_snf_write:2025-10-06T11:53:55.799665  "ts_snf_read ":2025-10-06T11:53:55.799719
+In_Seqmsg latency  seq_x2traf:357  "x2write->snf_read":00:00:00.012634571  "snf_write->snf_read":00:00:00.000054
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.787084429  ts_snf_write:2025-10-06T11:53:55.799665  "ts_snf_read ":2025-10-06T11:53:55.799726
+In_Seqmsg latency  seq_x2traf:358  "x2write->snf_read":00:00:00.012641571  "snf_write->snf_read":00:00:00.000061
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.787084429  ts_snf_write:2025-10-06T11:53:55.799665  "ts_snf_read ":2025-10-06T11:53:55.799731
+In_Seqmsg latency  seq_x2traf:359  "x2write->snf_read":00:00:00.012646571  "snf_write->snf_read":00:00:00.000066
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.787084429  ts_snf_write:2025-10-06T11:53:55.799665  "ts_snf_read ":2025-10-06T11:53:55.799738
+In_Seqmsg latency  seq_x2traf:360  "x2write->snf_read":00:00:00.012653571  "snf_write->snf_read":00:00:00.000073
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.787084429  ts_snf_write:2025-10-06T11:53:55.799665  "ts_snf_read ":2025-10-06T11:53:55.799744
+In_Seqmsg latency  seq_x2traf:361  "x2write->snf_read":00:00:00.012659571  "snf_write->snf_read":00:00:00.000079
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.787084429  ts_snf_write:2025-10-06T11:53:55.799665  "ts_snf_read ":2025-10-06T11:53:55.799754
+In_Seqmsg latency  seq_x2traf:362  "x2write->snf_read":00:00:00.012669571  "snf_write->snf_read":00:00:00.000089
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.787084429  ts_snf_write:2025-10-06T11:53:55.799665  "ts_snf_read ":2025-10-06T11:53:55.799762
+In_Seqmsg latency  seq_x2traf:363  "x2write->snf_read":00:00:00.012677571  "snf_write->snf_read":00:00:00.000097
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.787084429  ts_snf_write:2025-10-06T11:53:55.799665  "ts_snf_read ":2025-10-06T11:53:55.799768
+In_Seqmsg latency  seq_x2traf:364  "x2write->snf_read":00:00:00.012683571  "snf_write->snf_read":00:00:00.000103
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.787084429  ts_snf_write:2025-10-06T11:53:55.799665  "ts_snf_read ":2025-10-06T11:53:55.799775
+In_Seqmsg latency  seq_x2traf:365  "x2write->snf_read":00:00:00.012690571  "snf_write->snf_read":00:00:00.00011
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.787084429  ts_snf_write:2025-10-06T11:53:55.799665  "ts_snf_read ":2025-10-06T11:53:55.799784
+In_Seqmsg latency  seq_x2traf:366  "x2write->snf_read":00:00:00.012699571  "snf_write->snf_read":00:00:00.000119
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.787084429  ts_snf_write:2025-10-06T11:53:55.813384  "ts_snf_read ":2025-10-06T11:53:55.813425
+In_Seqmsg latency  seq_x2traf:367  "x2write->snf_read":00:00:00.026340571  "snf_write->snf_read":00:00:00.000041
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.80079659  ts_snf_write:2025-10-06T11:53:55.813384  "ts_snf_read ":2025-10-06T11:53:55.813432
+In_Seqmsg latency  seq_x2traf:368  "x2write->snf_read":00:00:00.01263541  "snf_write->snf_read":00:00:00.000048
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.80079659  ts_snf_write:2025-10-06T11:53:55.813384  "ts_snf_read ":2025-10-06T11:53:55.813437
+In_Seqmsg latency  seq_x2traf:369  "x2write->snf_read":00:00:00.01264041  "snf_write->snf_read":00:00:00.000053
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.80079659  ts_snf_write:2025-10-06T11:53:55.813384  "ts_snf_read ":2025-10-06T11:53:55.813444
+In_Seqmsg latency  seq_x2traf:370  "x2write->snf_read":00:00:00.01264741  "snf_write->snf_read":00:00:00.00006
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.80079659  ts_snf_write:2025-10-06T11:53:55.813384  "ts_snf_read ":2025-10-06T11:53:55.813449
+In_Seqmsg latency  seq_x2traf:371  "x2write->snf_read":00:00:00.01265241  "snf_write->snf_read":00:00:00.000065
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.80079659  ts_snf_write:2025-10-06T11:53:55.813384  "ts_snf_read ":2025-10-06T11:53:55.813457
+In_Seqmsg latency  seq_x2traf:372  "x2write->snf_read":00:00:00.01266041  "snf_write->snf_read":00:00:00.000073
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.80079659  ts_snf_write:2025-10-06T11:53:55.813384  "ts_snf_read ":2025-10-06T11:53:55.813464
+In_Seqmsg latency  seq_x2traf:373  "x2write->snf_read":00:00:00.01266741  "snf_write->snf_read":00:00:00.00008
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.80079659  ts_snf_write:2025-10-06T11:53:55.813384  "ts_snf_read ":2025-10-06T11:53:55.813476
+In_Seqmsg latency  seq_x2traf:374  "x2write->snf_read":00:00:00.01267941  "snf_write->snf_read":00:00:00.000092
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.80079659  ts_snf_write:2025-10-06T11:53:55.813384  "ts_snf_read ":2025-10-06T11:53:55.813484
+In_Seqmsg latency  seq_x2traf:375  "x2write->snf_read":00:00:00.01268741  "snf_write->snf_read":00:00:00.0001
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.80079659  ts_snf_write:2025-10-06T11:53:55.813384  "ts_snf_read ":2025-10-06T11:53:55.813494
+In_Seqmsg latency  seq_x2traf:376  "x2write->snf_read":00:00:00.01269741  "snf_write->snf_read":00:00:00.00011
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.80079659  ts_snf_write:2025-10-06T11:53:55.813384  "ts_snf_read ":2025-10-06T11:53:55.8135
+In_Seqmsg latency  seq_x2traf:377  "x2write->snf_read":00:00:00.01270341  "snf_write->snf_read":00:00:00.000116
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.80079659  ts_snf_write:2025-10-06T11:53:55.813384  "ts_snf_read ":2025-10-06T11:53:55.813506
+In_Seqmsg latency  seq_x2traf:378  "x2write->snf_read":00:00:00.01270941  "snf_write->snf_read":00:00:00.000122
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.80079659  ts_snf_write:2025-10-06T11:53:55.827103  "ts_snf_read ":2025-10-06T11:53:55.827151
+In_Seqmsg latency  seq_x2traf:379  "x2write->snf_read":00:00:00.02635441  "snf_write->snf_read":00:00:00.000048
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.814510092  ts_snf_write:2025-10-06T11:53:55.827103  "ts_snf_read ":2025-10-06T11:53:55.827159
+In_Seqmsg latency  seq_x2traf:380  "x2write->snf_read":00:00:00.012648908  "snf_write->snf_read":00:00:00.000056
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.814510092  ts_snf_write:2025-10-06T11:53:55.827103  "ts_snf_read ":2025-10-06T11:53:55.827166
+In_Seqmsg latency  seq_x2traf:381  "x2write->snf_read":00:00:00.012655908  "snf_write->snf_read":00:00:00.000063
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.814510092  ts_snf_write:2025-10-06T11:53:55.827103  "ts_snf_read ":2025-10-06T11:53:55.827172
+In_Seqmsg latency  seq_x2traf:382  "x2write->snf_read":00:00:00.012661908  "snf_write->snf_read":00:00:00.000069
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.814510092  ts_snf_write:2025-10-06T11:53:55.827103  "ts_snf_read ":2025-10-06T11:53:55.827179
+In_Seqmsg latency  seq_x2traf:383  "x2write->snf_read":00:00:00.012668908  "snf_write->snf_read":00:00:00.000076
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.814510092  ts_snf_write:2025-10-06T11:53:55.827103  "ts_snf_read ":2025-10-06T11:53:55.827191
+In_Seqmsg latency  seq_x2traf:384  "x2write->snf_read":00:00:00.012680908  "snf_write->snf_read":00:00:00.000088
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.814510092  ts_snf_write:2025-10-06T11:53:55.827103  "ts_snf_read ":2025-10-06T11:53:55.8272
+In_Seqmsg latency  seq_x2traf:385  "x2write->snf_read":00:00:00.012689908  "snf_write->snf_read":00:00:00.000097
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.814510092  ts_snf_write:2025-10-06T11:53:55.827103  "ts_snf_read ":2025-10-06T11:53:55.827205
+In_Seqmsg latency  seq_x2traf:386  "x2write->snf_read":00:00:00.012694908  "snf_write->snf_read":00:00:00.000102
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.814510092  ts_snf_write:2025-10-06T11:53:55.827103  "ts_snf_read ":2025-10-06T11:53:55.82721
+In_Seqmsg latency  seq_x2traf:387  "x2write->snf_read":00:00:00.012699908  "snf_write->snf_read":00:00:00.000107
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.814510092  ts_snf_write:2025-10-06T11:53:55.827103  "ts_snf_read ":2025-10-06T11:53:55.827215
+In_Seqmsg latency  seq_x2traf:388  "x2write->snf_read":00:00:00.012704908  "snf_write->snf_read":00:00:00.000112
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.814510092  ts_snf_write:2025-10-06T11:53:55.827103  "ts_snf_read ":2025-10-06T11:53:55.827231
+In_Seqmsg latency  seq_x2traf:389  "x2write->snf_read":00:00:00.012720908  "snf_write->snf_read":00:00:00.000128
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.814510092  ts_snf_write:2025-10-06T11:53:55.827103  "ts_snf_read ":2025-10-06T11:53:55.827237
+In_Seqmsg latency  seq_x2traf:390  "x2write->snf_read":00:00:00.012726908  "snf_write->snf_read":00:00:00.000134
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.814510092  ts_snf_write:2025-10-06T11:53:55.840807  "ts_snf_read ":2025-10-06T11:53:55.840851
+In_Seqmsg latency  seq_x2traf:391  "x2write->snf_read":00:00:00.026340908  "snf_write->snf_read":00:00:00.000044
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.828234073  ts_snf_write:2025-10-06T11:53:55.840807  "ts_snf_read ":2025-10-06T11:53:55.840858
+In_Seqmsg latency  seq_x2traf:392  "x2write->snf_read":00:00:00.012623927  "snf_write->snf_read":00:00:00.000051
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.828234073  ts_snf_write:2025-10-06T11:53:55.840807  "ts_snf_read ":2025-10-06T11:53:55.840862
+In_Seqmsg latency  seq_x2traf:393  "x2write->snf_read":00:00:00.012627927  "snf_write->snf_read":00:00:00.000055
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.828234073  ts_snf_write:2025-10-06T11:53:55.840807  "ts_snf_read ":2025-10-06T11:53:55.840869
+In_Seqmsg latency  seq_x2traf:394  "x2write->snf_read":00:00:00.012634927  "snf_write->snf_read":00:00:00.000062
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.828234073  ts_snf_write:2025-10-06T11:53:55.840807  "ts_snf_read ":2025-10-06T11:53:55.840879
+In_Seqmsg latency  seq_x2traf:395  "x2write->snf_read":00:00:00.012644927  "snf_write->snf_read":00:00:00.000072
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.828234073  ts_snf_write:2025-10-06T11:53:55.840807  "ts_snf_read ":2025-10-06T11:53:55.840886
+In_Seqmsg latency  seq_x2traf:396  "x2write->snf_read":00:00:00.012651927  "snf_write->snf_read":00:00:00.000079
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.828234073  ts_snf_write:2025-10-06T11:53:55.840807  "ts_snf_read ":2025-10-06T11:53:55.840891
+In_Seqmsg latency  seq_x2traf:397  "x2write->snf_read":00:00:00.012656927  "snf_write->snf_read":00:00:00.000084
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.828234073  ts_snf_write:2025-10-06T11:53:55.840807  "ts_snf_read ":2025-10-06T11:53:55.840902
+In_Seqmsg latency  seq_x2traf:398  "x2write->snf_read":00:00:00.012667927  "snf_write->snf_read":00:00:00.000095
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.828234073  ts_snf_write:2025-10-06T11:53:55.840807  "ts_snf_read ":2025-10-06T11:53:55.840909
+In_Seqmsg latency  seq_x2traf:399  "x2write->snf_read":00:00:00.012674927  "snf_write->snf_read":00:00:00.000102
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.828234073  ts_snf_write:2025-10-06T11:53:55.840807  "ts_snf_read ":2025-10-06T11:53:55.840917
+In_Seqmsg latency  seq_x2traf:400  "x2write->snf_read":00:00:00.012682927  "snf_write->snf_read":00:00:00.00011
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.828234073  ts_snf_write:2025-10-06T11:53:55.840807  "ts_snf_read ":2025-10-06T11:53:55.840925
+In_Seqmsg latency  seq_x2traf:401  "x2write->snf_read":00:00:00.012690927  "snf_write->snf_read":00:00:00.000118
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.828234073  ts_snf_write:2025-10-06T11:53:55.840807  "ts_snf_read ":2025-10-06T11:53:55.840932
+In_Seqmsg latency  seq_x2traf:402  "x2write->snf_read":00:00:00.012697927  "snf_write->snf_read":00:00:00.000125
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.828234073  ts_snf_write:2025-10-06T11:53:55.85453  "ts_snf_read ":2025-10-06T11:53:55.85455
+In_Seqmsg latency  seq_x2traf:403  "x2write->snf_read":00:00:00.026315927  "snf_write->snf_read":00:00:00.00002
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.841937614  ts_snf_write:2025-10-06T11:53:55.85453  "ts_snf_read ":2025-10-06T11:53:55.85458
+In_Seqmsg latency  seq_x2traf:404  "x2write->snf_read":00:00:00.012642386  "snf_write->snf_read":00:00:00.00005
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.841937614  ts_snf_write:2025-10-06T11:53:55.85453  "ts_snf_read ":2025-10-06T11:53:55.854585
+In_Seqmsg latency  seq_x2traf:405  "x2write->snf_read":00:00:00.012647386  "snf_write->snf_read":00:00:00.000055
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.841937614  ts_snf_write:2025-10-06T11:53:55.85453  "ts_snf_read ":2025-10-06T11:53:55.854589
+In_Seqmsg latency  seq_x2traf:406  "x2write->snf_read":00:00:00.012651386  "snf_write->snf_read":00:00:00.000059
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.841937614  ts_snf_write:2025-10-06T11:53:55.85453  "ts_snf_read ":2025-10-06T11:53:55.854595
+In_Seqmsg latency  seq_x2traf:407  "x2write->snf_read":00:00:00.012657386  "snf_write->snf_read":00:00:00.000065
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.841937614  ts_snf_write:2025-10-06T11:53:55.85453  "ts_snf_read ":2025-10-06T11:53:55.854603
+In_Seqmsg latency  seq_x2traf:408  "x2write->snf_read":00:00:00.012665386  "snf_write->snf_read":00:00:00.000073
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.841937614  ts_snf_write:2025-10-06T11:53:55.85453  "ts_snf_read ":2025-10-06T11:53:55.854608
+In_Seqmsg latency  seq_x2traf:409  "x2write->snf_read":00:00:00.012670386  "snf_write->snf_read":00:00:00.000078
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.841937614  ts_snf_write:2025-10-06T11:53:55.85453  "ts_snf_read ":2025-10-06T11:53:55.854616
+In_Seqmsg latency  seq_x2traf:410  "x2write->snf_read":00:00:00.012678386  "snf_write->snf_read":00:00:00.000086
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.841937614  ts_snf_write:2025-10-06T11:53:55.85453  "ts_snf_read ":2025-10-06T11:53:55.854622
+In_Seqmsg latency  seq_x2traf:411  "x2write->snf_read":00:00:00.012684386  "snf_write->snf_read":00:00:00.000092
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.841937614  ts_snf_write:2025-10-06T11:53:55.85453  "ts_snf_read ":2025-10-06T11:53:55.854629
+In_Seqmsg latency  seq_x2traf:412  "x2write->snf_read":00:00:00.012691386  "snf_write->snf_read":00:00:00.000099
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.841937614  ts_snf_write:2025-10-06T11:53:55.85453  "ts_snf_read ":2025-10-06T11:53:55.854635
+In_Seqmsg latency  seq_x2traf:413  "x2write->snf_read":00:00:00.012697386  "snf_write->snf_read":00:00:00.000105
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.841937614  ts_snf_write:2025-10-06T11:53:55.85453  "ts_snf_read ":2025-10-06T11:53:55.85464
+In_Seqmsg latency  seq_x2traf:414  "x2write->snf_read":00:00:00.012702386  "snf_write->snf_read":00:00:00.00011
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.841937614  ts_snf_write:2025-10-06T11:53:55.86825  "ts_snf_read ":2025-10-06T11:53:55.868298
+In_Seqmsg latency  seq_x2traf:415  "x2write->snf_read":00:00:00.026360386  "snf_write->snf_read":00:00:00.000048
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.855656706  ts_snf_write:2025-10-06T11:53:55.86825  "ts_snf_read ":2025-10-06T11:53:55.868305
+In_Seqmsg latency  seq_x2traf:416  "x2write->snf_read":00:00:00.012648294  "snf_write->snf_read":00:00:00.000055
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.855656706  ts_snf_write:2025-10-06T11:53:55.86825  "ts_snf_read ":2025-10-06T11:53:55.868311
+In_Seqmsg latency  seq_x2traf:417  "x2write->snf_read":00:00:00.012654294  "snf_write->snf_read":00:00:00.000061
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.855656706  ts_snf_write:2025-10-06T11:53:55.86825  "ts_snf_read ":2025-10-06T11:53:55.868317
+In_Seqmsg latency  seq_x2traf:418  "x2write->snf_read":00:00:00.012660294  "snf_write->snf_read":00:00:00.000067
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.855656706  ts_snf_write:2025-10-06T11:53:55.86825  "ts_snf_read ":2025-10-06T11:53:55.868326
+In_Seqmsg latency  seq_x2traf:419  "x2write->snf_read":00:00:00.012669294  "snf_write->snf_read":00:00:00.000076
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.855656706  ts_snf_write:2025-10-06T11:53:55.86825  "ts_snf_read ":2025-10-06T11:53:55.868333
+In_Seqmsg latency  seq_x2traf:420  "x2write->snf_read":00:00:00.012676294  "snf_write->snf_read":00:00:00.000083
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.855656706  ts_snf_write:2025-10-06T11:53:55.86825  "ts_snf_read ":2025-10-06T11:53:55.868339
+In_Seqmsg latency  seq_x2traf:421  "x2write->snf_read":00:00:00.012682294  "snf_write->snf_read":00:00:00.000089
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.855656706  ts_snf_write:2025-10-06T11:53:55.86825  "ts_snf_read ":2025-10-06T11:53:55.868348
+In_Seqmsg latency  seq_x2traf:422  "x2write->snf_read":00:00:00.012691294  "snf_write->snf_read":00:00:00.000098
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.855656706  ts_snf_write:2025-10-06T11:53:55.86825  "ts_snf_read ":2025-10-06T11:53:55.868357
+In_Seqmsg latency  seq_x2traf:423  "x2write->snf_read":00:00:00.012700294  "snf_write->snf_read":00:00:00.000107
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.855656706  ts_snf_write:2025-10-06T11:53:55.86825  "ts_snf_read ":2025-10-06T11:53:55.868364
+In_Seqmsg latency  seq_x2traf:424  "x2write->snf_read":00:00:00.012707294  "snf_write->snf_read":00:00:00.000114
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.855656706  ts_snf_write:2025-10-06T11:53:55.86825  "ts_snf_read ":2025-10-06T11:53:55.868369
+In_Seqmsg latency  seq_x2traf:425  "x2write->snf_read":00:00:00.012712294  "snf_write->snf_read":00:00:00.000119
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.855656706  ts_snf_write:2025-10-06T11:53:55.86825  "ts_snf_read ":2025-10-06T11:53:55.868374
+In_Seqmsg latency  seq_x2traf:426  "x2write->snf_read":00:00:00.012717294  "snf_write->snf_read":00:00:00.000124
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.855656706  ts_snf_write:2025-10-06T11:53:55.882565  "ts_snf_read ":2025-10-06T11:53:55.882618
+In_Seqmsg latency  seq_x2traf:427  "x2write->snf_read":00:00:00.026961294  "snf_write->snf_read":00:00:00.000053
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.869369977  ts_snf_write:2025-10-06T11:53:55.882565  "ts_snf_read ":2025-10-06T11:53:55.882625
+In_Seqmsg latency  seq_x2traf:428  "x2write->snf_read":00:00:00.013255023  "snf_write->snf_read":00:00:00.00006
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.869369977  ts_snf_write:2025-10-06T11:53:55.882565  "ts_snf_read ":2025-10-06T11:53:55.88263
+In_Seqmsg latency  seq_x2traf:429  "x2write->snf_read":00:00:00.013260023  "snf_write->snf_read":00:00:00.000065
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.869369977  ts_snf_write:2025-10-06T11:53:55.882565  "ts_snf_read ":2025-10-06T11:53:55.882635
+In_Seqmsg latency  seq_x2traf:430  "x2write->snf_read":00:00:00.013265023  "snf_write->snf_read":00:00:00.00007
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.869369977  ts_snf_write:2025-10-06T11:53:55.882565  "ts_snf_read ":2025-10-06T11:53:55.882642
+In_Seqmsg latency  seq_x2traf:431  "x2write->snf_read":00:00:00.013272023  "snf_write->snf_read":00:00:00.000077
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.869369977  ts_snf_write:2025-10-06T11:53:55.882565  "ts_snf_read ":2025-10-06T11:53:55.882649
+In_Seqmsg latency  seq_x2traf:432  "x2write->snf_read":00:00:00.013279023  "snf_write->snf_read":00:00:00.000084
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.869369977  ts_snf_write:2025-10-06T11:53:55.882565  "ts_snf_read ":2025-10-06T11:53:55.882657
+In_Seqmsg latency  seq_x2traf:433  "x2write->snf_read":00:00:00.013287023  "snf_write->snf_read":00:00:00.000092
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.869369977  ts_snf_write:2025-10-06T11:53:55.882565  "ts_snf_read ":2025-10-06T11:53:55.882668
+In_Seqmsg latency  seq_x2traf:434  "x2write->snf_read":00:00:00.013298023  "snf_write->snf_read":00:00:00.000103
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.869369977  ts_snf_write:2025-10-06T11:53:55.882565  "ts_snf_read ":2025-10-06T11:53:55.882677
+In_Seqmsg latency  seq_x2traf:435  "x2write->snf_read":00:00:00.013307023  "snf_write->snf_read":00:00:00.000112
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.869369977  ts_snf_write:2025-10-06T11:53:55.882565  "ts_snf_read ":2025-10-06T11:53:55.882686
+In_Seqmsg latency  seq_x2traf:436  "x2write->snf_read":00:00:00.013316023  "snf_write->snf_read":00:00:00.000121
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.869369977  ts_snf_write:2025-10-06T11:53:55.882565  "ts_snf_read ":2025-10-06T11:53:55.882692
+In_Seqmsg latency  seq_x2traf:437  "x2write->snf_read":00:00:00.013322023  "snf_write->snf_read":00:00:00.000127
+In_Seqmsg   times  timestamps.x2write:2025-10-06T11:53:55.869369977  ts_snf_write:2025-10-06T11:53:55.883774  "ts_snf_read ":2025-10-06T11:53:55.883805
+In_Seqmsg latency  seq_x2traf:438  "x2write->snf_read":00:00:00.014435023  "snf_write->snf_read":00:00:00.000031
 atf_snf.info  comment:"PcapFileProcess  EOF"
 atf_snf.info comment:"printing session info"
 exit to OS

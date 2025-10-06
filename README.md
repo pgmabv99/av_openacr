@@ -12,6 +12,7 @@ acr dmmeta.ns:atfdb  -ndown 99  -tree -e
 acr dmmeta.ns:atf_snf  -ndown 99  -tree > ~/av_openacr/atf_snf.sh
 acr dmmeta.ns:omcli -ndown 99  -tree > ~/av_openacr/omcli.sh
 acr dmmeta.ns:x2read -ndown 99  -tree  -e 
+acr dmmeta.ns:x2traf  -ndown 99  -tree  -e 
 
   dmmeta.fcleanup  field:atf_spdk.FCtrlr.ctrlr  comment:""
 
@@ -541,3 +542,20 @@ https://iceberg.apache.org/docs/nightly/kafka-connect/#initial-setup
 sudo usermod -aG docker $USER
 newgrp docker
 
+
+
+dmmeta.ctypelen  ctype:x2.TrafMsg  len:68  alignment:1  padbytes:0  plaindata:N
+
+
+//
+algo::aryptr<char> x2traf::in_GetMsg(x2traf::FFdin& fdin) {   //gen
+    algo::aryptr<char> ret;
+    if (!fdin.in_msgvalid) {
+        in_ScanMsg(fdin);                                     //human
+        if (!fdin.in_msgvalid) {
+            bool readable = in_Refill(fdin);                  //gen 
+            if (readable) {
+                in_ScanMsg(fdin);                             //human        
+           }
+        }
+    }

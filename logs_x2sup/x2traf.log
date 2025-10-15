@@ -1,435 +1,500 @@
-seq:1  e2e_lat_ns:488823:53:55.445881115  seq_x2traf:1
-seq:2  e2e_lat_ns:00:00:00.000137829  seq_x2traf:2
-seq:3  e2e_lat_ns:00:00:00.000147379  seq_x2traf:3
-seq:4  e2e_lat_ns:00:00:00.000148649  seq_x2traf:4
-seq:5  e2e_lat_ns:00:00:00.000149129  seq_x2traf:5
-seq:6  e2e_lat_ns:00:00:00.000150809  seq_x2traf:6
-seq:7  e2e_lat_ns:00:00:00.000174469  seq_x2traf:7
-seq:8  e2e_lat_ns:00:00:00.000175959  seq_x2traf:8
-seq:9  e2e_lat_ns:00:00:00.000179649  seq_x2traf:9
-seq:10  e2e_lat_ns:00:00:00.000185799  seq_x2traf:10
-seq:11  e2e_lat_ns:00:00:00.000189179  seq_x2traf:11
-seq:12  e2e_lat_ns:00:00:00.000213598  seq_x2traf:12
-seq:13  e2e_lat_ns:00:00:00.000214778  seq_x2traf:13
-seq:14  e2e_lat_ns:00:00:00.000207798  seq_x2traf:14
-seq:15  e2e_lat_ns:00:00:00.000208948  seq_x2traf:15
-seq:16  e2e_lat_ns:00:00:00.000213348  seq_x2traf:16
-seq:17  e2e_lat_ns:00:00:00.000374697  seq_x2traf:17
-seq:18  e2e_lat_ns:00:00:00.000382407  seq_x2traf:18
-seq:19  e2e_lat_ns:00:00:00.000384227  seq_x2traf:19
-seq:20  e2e_lat_ns:00:00:00.000384887  seq_x2traf:20
-seq:21  e2e_lat_ns:00:00:00.000385627  seq_x2traf:21
-seq:22  e2e_lat_ns:00:00:00.000386207  seq_x2traf:22
-seq:23  e2e_lat_ns:00:00:00.000387077  seq_x2traf:23
-seq:24  e2e_lat_ns:00:00:00.000388107  seq_x2traf:24
-seq:25  e2e_lat_ns:00:00:00.000389347  seq_x2traf:25
-seq:26  e2e_lat_ns:00:00:00.000375347  seq_x2traf:26
-seq:27  e2e_lat_ns:00:00:00.000377167  seq_x2traf:27
-seq:28  e2e_lat_ns:00:00:00.000378057  seq_x2traf:28
-seq:29  e2e_lat_ns:00:00:00.000379207  seq_x2traf:29
-seq:30  e2e_lat_ns:00:00:00.000380147  seq_x2traf:30
-seq:31  e2e_lat_ns:00:00:00.000381287  seq_x2traf:31
-seq:32  e2e_lat_ns:00:00:00.000382197  seq_x2traf:32
-seq:33  e2e_lat_ns:00:00:00.000383387  seq_x2traf:33
-seq:34  e2e_lat_ns:00:00:00.000384287  seq_x2traf:34
-seq:35  e2e_lat_ns:00:00:00.000385987  seq_x2traf:35
-seq:36  e2e_lat_ns:00:00:00.000386797  seq_x2traf:36
-seq:37  e2e_lat_ns:00:00:00.000387817  seq_x2traf:37
-seq:38  e2e_lat_ns:00:00:00.000391178  seq_x2traf:38
-seq:39  e2e_lat_ns:00:00:00.000393318  seq_x2traf:39
-seq:40  e2e_lat_ns:00:00:00.000399978  seq_x2traf:40
-seq:41  e2e_lat_ns:00:00:00.000402008  seq_x2traf:41
-seq:42  e2e_lat_ns:00:00:00.000402918  seq_x2traf:42
-seq:43  e2e_lat_ns:00:00:00.000404718  seq_x2traf:43
-seq:44  e2e_lat_ns:00:00:00.000405608  seq_x2traf:44
-seq:45  e2e_lat_ns:00:00:00.000422488  seq_x2traf:45
-seq:46  e2e_lat_ns:00:00:00.000423588  seq_x2traf:46
-seq:47  e2e_lat_ns:00:00:00.000425348  seq_x2traf:47
-seq:48  e2e_lat_ns:00:00:00.000426248  seq_x2traf:48
-seq:49  e2e_lat_ns:00:00:00.002455875  seq_x2traf:49
-seq:50  e2e_lat_ns:00:00:00.002468854  seq_x2traf:50
-seq:51  e2e_lat_ns:00:00:00.003012891  seq_x2traf:51
-seq:52  e2e_lat_ns:00:00:00.003023331  seq_x2traf:52
-seq:53  e2e_lat_ns:00:00:00.003024621  seq_x2traf:53
-seq:54  e2e_lat_ns:00:00:00.003025751  seq_x2traf:54
-seq:55  e2e_lat_ns:00:00:00.003026631  seq_x2traf:55
-seq:56  e2e_lat_ns:00:00:00.003027801  seq_x2traf:56
-seq:57  e2e_lat_ns:00:00:00.003028681  seq_x2traf:57
-seq:58  e2e_lat_ns:00:00:00.003029691  seq_x2traf:58
-seq:59  e2e_lat_ns:00:00:00.003030481  seq_x2traf:59
-seq:60  e2e_lat_ns:00:00:00.003031481  seq_x2traf:60
-seq:61  e2e_lat_ns:00:00:00.016716482  seq_x2traf:61
-seq:62  e2e_lat_ns:00:00:00.013228854  seq_x2traf:62
-seq:63  e2e_lat_ns:00:00:00.013229984  seq_x2traf:63
-seq:64  e2e_lat_ns:00:00:00.013230464  seq_x2traf:64
-seq:65  e2e_lat_ns:00:00:00.013231144  seq_x2traf:65
-seq:66  e2e_lat_ns:00:00:00.013231604  seq_x2traf:66
-seq:67  e2e_lat_ns:00:00:00.013232184  seq_x2traf:67
-seq:68  e2e_lat_ns:00:00:00.013232634  seq_x2traf:68
-seq:69  e2e_lat_ns:00:00:00.013233224  seq_x2traf:69
-seq:70  e2e_lat_ns:00:00:00.013233674  seq_x2traf:70
-seq:71  e2e_lat_ns:00:00:00.013234254  seq_x2traf:71
-seq:72  e2e_lat_ns:00:00:00.013234834  seq_x2traf:72
-seq:73  e2e_lat_ns:00:00:00.026794556  seq_x2traf:73
-seq:74  e2e_lat_ns:00:00:00.013090945  seq_x2traf:74
-seq:75  e2e_lat_ns:00:00:00.013092125  seq_x2traf:75
-seq:76  e2e_lat_ns:00:00:00.013093195  seq_x2traf:76
-seq:77  e2e_lat_ns:00:00:00.013094055  seq_x2traf:77
-seq:78  e2e_lat_ns:00:00:00.013095055  seq_x2traf:78
-seq:79  e2e_lat_ns:00:00:00.013095845  seq_x2traf:79
-seq:80  e2e_lat_ns:00:00:00.013096865  seq_x2traf:80
-seq:81  e2e_lat_ns:00:00:00.013097645  seq_x2traf:81
-seq:82  e2e_lat_ns:00:00:00.013098655  seq_x2traf:82
-seq:83  e2e_lat_ns:00:00:00.013099445  seq_x2traf:83
-seq:84  e2e_lat_ns:00:00:00.013100455  seq_x2traf:84
-seq:85  e2e_lat_ns:00:00:00.026414929  seq_x2traf:85
-seq:86  e2e_lat_ns:00:00:00.012680298  seq_x2traf:86
-seq:87  e2e_lat_ns:00:00:00.012681818  seq_x2traf:87
-seq:88  e2e_lat_ns:00:00:00.012682398  seq_x2traf:88
-seq:89  e2e_lat_ns:00:00:00.012683228  seq_x2traf:89
-seq:90  e2e_lat_ns:00:00:00.012683698  seq_x2traf:90
-seq:91  e2e_lat_ns:00:00:00.012684288  seq_x2traf:91
-seq:92  e2e_lat_ns:00:00:00.012684748  seq_x2traf:92
-seq:93  e2e_lat_ns:00:00:00.012685328  seq_x2traf:93
-seq:94  e2e_lat_ns:00:00:00.012685788  seq_x2traf:94
-seq:95  e2e_lat_ns:00:00:00.012700098  seq_x2traf:95
-seq:96  e2e_lat_ns:00:00:00.012701028  seq_x2traf:96
-seq:97  e2e_lat_ns:00:00:00.02634255  seq_x2traf:97
-seq:98  e2e_lat_ns:00:00:00.012663338  seq_x2traf:98
-seq:99  e2e_lat_ns:00:00:00.012675828  seq_x2traf:99
-seq:100  e2e_lat_ns:00:00:00.012676948  seq_x2traf:100
-seq:101  e2e_lat_ns:00:00:00.012677538  seq_x2traf:101
-seq:102  e2e_lat_ns:00:00:00.012678248  seq_x2traf:102
-seq:103  e2e_lat_ns:00:00:00.012679768  seq_x2traf:103
-seq:104  e2e_lat_ns:00:00:00.012687248  seq_x2traf:104
-seq:105  e2e_lat_ns:00:00:00.012690508  seq_x2traf:105
-seq:106  e2e_lat_ns:00:00:00.012746987  seq_x2traf:106
-seq:107  e2e_lat_ns:00:00:00.012757597  seq_x2traf:107
-seq:108  e2e_lat_ns:00:00:00.012759237  seq_x2traf:108
-seq:109  e2e_lat_ns:00:00:00.026358139  seq_x2traf:109
-seq:110  e2e_lat_ns:00:00:00.012649878  seq_x2traf:110
-seq:111  e2e_lat_ns:00:00:00.012661328  seq_x2traf:111
-seq:112  e2e_lat_ns:00:00:00.012662328  seq_x2traf:112
-seq:113  e2e_lat_ns:00:00:00.012662808  seq_x2traf:113
-seq:114  e2e_lat_ns:00:00:00.012664478  seq_x2traf:114
-seq:115  e2e_lat_ns:00:00:00.012734468  seq_x2traf:115
-seq:116  e2e_lat_ns:00:00:00.012737028  seq_x2traf:116
-seq:117  e2e_lat_ns:00:00:00.012737768  seq_x2traf:117
-seq:118  e2e_lat_ns:00:00:00.012738248  seq_x2traf:118
-seq:119  e2e_lat_ns:00:00:00.012738868  seq_x2traf:119
-seq:120  e2e_lat_ns:00:00:00.012739338  seq_x2traf:120
-seq:121  e2e_lat_ns:00:00:00.02636506  seq_x2traf:121
-seq:122  e2e_lat_ns:00:00:00.012664359  seq_x2traf:122
-seq:123  e2e_lat_ns:00:00:00.012674139  seq_x2traf:123
-seq:124  e2e_lat_ns:00:00:00.012675169  seq_x2traf:124
-seq:125  e2e_lat_ns:00:00:00.012675659  seq_x2traf:125
-seq:126  e2e_lat_ns:00:00:00.012677279  seq_x2traf:126
-seq:127  e2e_lat_ns:00:00:00.012747438  seq_x2traf:127
-seq:128  e2e_lat_ns:00:00:00.012749908  seq_x2traf:128
-seq:129  e2e_lat_ns:00:00:00.012750608  seq_x2traf:129
-seq:130  e2e_lat_ns:00:00:00.012751088  seq_x2traf:130
-seq:131  e2e_lat_ns:00:00:00.012751678  seq_x2traf:131
-seq:132  e2e_lat_ns:00:00:00.012752138  seq_x2traf:132
-seq:133  e2e_lat_ns:00:00:00.02637623  seq_x2traf:133
-seq:134  e2e_lat_ns:00:00:00.012668458  seq_x2traf:134
-seq:135  e2e_lat_ns:00:00:00.012677188  seq_x2traf:135
-seq:136  e2e_lat_ns:00:00:00.012678058  seq_x2traf:136
-seq:137  e2e_lat_ns:00:00:00.012678538  seq_x2traf:137
-seq:138  e2e_lat_ns:00:00:00.012687638  seq_x2traf:138
-seq:139  e2e_lat_ns:00:00:00.012688188  seq_x2traf:139
-seq:140  e2e_lat_ns:00:00:00.012692288  seq_x2traf:140
-seq:141  e2e_lat_ns:00:00:00.012731677  seq_x2traf:141
-seq:142  e2e_lat_ns:00:00:00.012740827  seq_x2traf:142
-seq:143  e2e_lat_ns:00:00:00.012742617  seq_x2traf:143
-seq:144  e2e_lat_ns:00:00:00.012743127  seq_x2traf:144
-seq:145  e2e_lat_ns:00:00:00.023425218  seq_x2traf:145
-seq:146  e2e_lat_ns:00:00:00.009718067  seq_x2traf:146
-seq:147  e2e_lat_ns:00:00:00.009736887  seq_x2traf:147
-seq:148  e2e_lat_ns:00:00:00.009737967  seq_x2traf:148
-seq:149  e2e_lat_ns:00:00:00.009738477  seq_x2traf:149
-seq:150  e2e_lat_ns:00:00:00.009739127  seq_x2traf:150
-seq:151  e2e_lat_ns:00:00:00.009748487  seq_x2traf:151
-seq:152  e2e_lat_ns:00:00:00.009749677  seq_x2traf:152
-seq:153  e2e_lat_ns:00:00:00.022326476  seq_x2traf:153
-seq:154  e2e_lat_ns:00:00:00.012658988  seq_x2traf:154
-seq:155  e2e_lat_ns:00:00:00.012676428  seq_x2traf:155
-seq:156  e2e_lat_ns:00:00:00.012677108  seq_x2traf:156
-seq:157  e2e_lat_ns:00:00:00.012678108  seq_x2traf:157
-seq:158  e2e_lat_ns:00:00:00.012678688  seq_x2traf:158
-seq:159  e2e_lat_ns:00:00:00.012688038  seq_x2traf:159
-seq:160  e2e_lat_ns:00:00:00.012688588  seq_x2traf:160
-seq:161  e2e_lat_ns:00:00:00.012691298  seq_x2traf:161
-seq:162  e2e_lat_ns:00:00:00.012785677  seq_x2traf:162
-seq:163  e2e_lat_ns:00:00:00.012787997  seq_x2traf:163
-seq:164  e2e_lat_ns:00:00:00.012788807  seq_x2traf:164
-seq:165  e2e_lat_ns:00:00:00.026381929  seq_x2traf:165
-seq:166  e2e_lat_ns:00:00:00.012725778  seq_x2traf:166
-seq:167  e2e_lat_ns:00:00:00.012734108  seq_x2traf:167
-seq:168  e2e_lat_ns:00:00:00.012734708  seq_x2traf:168
-seq:169  e2e_lat_ns:00:00:00.012735358  seq_x2traf:169
-seq:170  e2e_lat_ns:00:00:00.012735828  seq_x2traf:170
-seq:171  e2e_lat_ns:00:00:00.012736408  seq_x2traf:171
-seq:172  e2e_lat_ns:00:00:00.012736868  seq_x2traf:172
-seq:173  e2e_lat_ns:00:00:00.012737438  seq_x2traf:173
-seq:174  e2e_lat_ns:00:00:00.012737898  seq_x2traf:174
-seq:175  e2e_lat_ns:00:00:00.012738478  seq_x2traf:175
-seq:176  e2e_lat_ns:00:00:00.012738938  seq_x2traf:176
-seq:177  e2e_lat_ns:00:00:00.026364129  seq_x2traf:177
-seq:178  e2e_lat_ns:00:00:00.012653698  seq_x2traf:178
-seq:179  e2e_lat_ns:00:00:00.012663218  seq_x2traf:179
-seq:180  e2e_lat_ns:00:00:00.012664018  seq_x2traf:180
-seq:181  e2e_lat_ns:00:00:00.012664608  seq_x2traf:181
-seq:182  e2e_lat_ns:00:00:00.012744388  seq_x2traf:182
-seq:183  e2e_lat_ns:00:00:00.012746658  seq_x2traf:183
-seq:184  e2e_lat_ns:00:00:00.012747188  seq_x2traf:184
-seq:185  e2e_lat_ns:00:00:00.012747798  seq_x2traf:185
-seq:186  e2e_lat_ns:00:00:00.012748268  seq_x2traf:186
-seq:187  e2e_lat_ns:00:00:00.012748858  seq_x2traf:187
-seq:188  e2e_lat_ns:00:00:00.012749318  seq_x2traf:188
-seq:189  e2e_lat_ns:00:00:00.02636664  seq_x2traf:189
-seq:190  e2e_lat_ns:00:00:00.012712158  seq_x2traf:190
-seq:191  e2e_lat_ns:00:00:00.012719757  seq_x2traf:191
-seq:192  e2e_lat_ns:00:00:00.012720507  seq_x2traf:192
-seq:193  e2e_lat_ns:00:00:00.012720967  seq_x2traf:193
-seq:194  e2e_lat_ns:00:00:00.012721557  seq_x2traf:194
-seq:195  e2e_lat_ns:00:00:00.012722017  seq_x2traf:195
-seq:196  e2e_lat_ns:00:00:00.012722597  seq_x2traf:196
-seq:197  e2e_lat_ns:00:00:00.012723067  seq_x2traf:197
-seq:198  e2e_lat_ns:00:00:00.012723647  seq_x2traf:198
-seq:199  e2e_lat_ns:00:00:00.012724107  seq_x2traf:199
-seq:200  e2e_lat_ns:00:00:00.012724687  seq_x2traf:200
-seq:201  e2e_lat_ns:00:00:00.026335489  seq_x2traf:201
-seq:202  e2e_lat_ns:00:00:00.012683578  seq_x2traf:202
-seq:203  e2e_lat_ns:00:00:00.012685308  seq_x2traf:203
-seq:204  e2e_lat_ns:00:00:00.012686548  seq_x2traf:204
-seq:205  e2e_lat_ns:00:00:00.012687028  seq_x2traf:205
-seq:206  e2e_lat_ns:00:00:00.012687608  seq_x2traf:206
-seq:207  e2e_lat_ns:00:00:00.012688058  seq_x2traf:207
-seq:208  e2e_lat_ns:00:00:00.012688638  seq_x2traf:208
-seq:209  e2e_lat_ns:00:00:00.012689098  seq_x2traf:209
-seq:210  e2e_lat_ns:00:00:00.012690298  seq_x2traf:210
-seq:211  e2e_lat_ns:00:00:00.012692198  seq_x2traf:211
-seq:212  e2e_lat_ns:00:00:00.012738638  seq_x2traf:212
-seq:213  e2e_lat_ns:00:00:00.02636966  seq_x2traf:213
-seq:214  e2e_lat_ns:00:00:00.012677488  seq_x2traf:214
-seq:215  e2e_lat_ns:00:00:00.012686478  seq_x2traf:215
-seq:216  e2e_lat_ns:00:00:00.012687778  seq_x2traf:216
-seq:217  e2e_lat_ns:00:00:00.012688408  seq_x2traf:217
-seq:218  e2e_lat_ns:00:00:00.012689158  seq_x2traf:218
-seq:219  e2e_lat_ns:00:00:00.012689758  seq_x2traf:219
-seq:220  e2e_lat_ns:00:00:00.012690498  seq_x2traf:220
-seq:221  e2e_lat_ns:00:00:00.012708448  seq_x2traf:221
-seq:222  e2e_lat_ns:00:00:00.012709698  seq_x2traf:222
-seq:223  e2e_lat_ns:00:00:00.012719778  seq_x2traf:223
-seq:224  e2e_lat_ns:00:00:00.012720948  seq_x2traf:224
-seq:225  e2e_lat_ns:00:00:00.02636317  seq_x2traf:225
-seq:226  e2e_lat_ns:00:00:00.012654468  seq_x2traf:226
-seq:227  e2e_lat_ns:00:00:00.012664708  seq_x2traf:227
-seq:228  e2e_lat_ns:00:00:00.012665388  seq_x2traf:228
-seq:229  e2e_lat_ns:00:00:00.012666578  seq_x2traf:229
-seq:230  e2e_lat_ns:00:00:00.012674148  seq_x2traf:230
-seq:231  e2e_lat_ns:00:00:00.012675298  seq_x2traf:231
-seq:232  e2e_lat_ns:00:00:00.012678068  seq_x2traf:232
-seq:233  e2e_lat_ns:00:00:00.012759127  seq_x2traf:233
-seq:234  e2e_lat_ns:00:00:00.012761217  seq_x2traf:234
-seq:235  e2e_lat_ns:00:00:00.012761747  seq_x2traf:235
-seq:236  e2e_lat_ns:00:00:00.012762357  seq_x2traf:236
-seq:237  e2e_lat_ns:00:00:00.026978875  seq_x2traf:237
-seq:238  e2e_lat_ns:00:00:00.013326594  seq_x2traf:238
-seq:239  e2e_lat_ns:00:00:00.013344514  seq_x2traf:239
-seq:240  e2e_lat_ns:00:00:00.013345174  seq_x2traf:240
-seq:241  e2e_lat_ns:00:00:00.013345834  seq_x2traf:241
-seq:242  e2e_lat_ns:00:00:00.013346304  seq_x2traf:242
-seq:243  e2e_lat_ns:00:00:00.013346894  seq_x2traf:243
-seq:244  e2e_lat_ns:00:00:00.013347354  seq_x2traf:244
-seq:245  e2e_lat_ns:00:00:00.013347954  seq_x2traf:245
-seq:246  e2e_lat_ns:00:00:00.013348414  seq_x2traf:246
-seq:247  e2e_lat_ns:00:00:00.013349004  seq_x2traf:247
-seq:248  e2e_lat_ns:00:00:00.027509492  seq_x2traf:248
-seq:249  e2e_lat_ns:00:00:00.014297307  seq_x2traf:249
-seq:250  e2e_lat_ns:00:00:00.014298257  seq_x2traf:250
-seq:251  e2e_lat_ns:00:00:00.014298757  seq_x2traf:251
-seq:252  e2e_lat_ns:00:00:00.014299357  seq_x2traf:252
-seq:253  e2e_lat_ns:00:00:00.014299827  seq_x2traf:253
-seq:254  e2e_lat_ns:00:00:00.014300417  seq_x2traf:254
-seq:255  e2e_lat_ns:00:00:00.014300877  seq_x2traf:255
-seq:256  e2e_lat_ns:00:00:00.014301457  seq_x2traf:256
-seq:257  e2e_lat_ns:00:00:00.014301927  seq_x2traf:257
-seq:258  e2e_lat_ns:00:00:00.014302517  seq_x2traf:258
-seq:259  e2e_lat_ns:00:00:00.014302977  seq_x2traf:259
-seq:260  e2e_lat_ns:00:00:00.026353689  seq_x2traf:260
-seq:261  e2e_lat_ns:00:00:00.012651858  seq_x2traf:261
-seq:262  e2e_lat_ns:00:00:00.012653648  seq_x2traf:262
-seq:263  e2e_lat_ns:00:00:00.012672428  seq_x2traf:263
-seq:264  e2e_lat_ns:00:00:00.012682278  seq_x2traf:264
-seq:265  e2e_lat_ns:00:00:00.012682848  seq_x2traf:265
-seq:266  e2e_lat_ns:00:00:00.012684658  seq_x2traf:266
-seq:267  e2e_lat_ns:00:00:00.012753327  seq_x2traf:267
-seq:268  e2e_lat_ns:00:00:00.012755177  seq_x2traf:268
-seq:269  e2e_lat_ns:00:00:00.012755917  seq_x2traf:269
-seq:270  e2e_lat_ns:00:00:00.012756407  seq_x2traf:270
-seq:271  e2e_lat_ns:00:00:00.012757007  seq_x2traf:271
-seq:272  e2e_lat_ns:00:00:00.02637636  seq_x2traf:272
-seq:273  e2e_lat_ns:00:00:00.012711678  seq_x2traf:273
-seq:274  e2e_lat_ns:00:00:00.012720078  seq_x2traf:274
-seq:275  e2e_lat_ns:00:00:00.012720668  seq_x2traf:275
-seq:276  e2e_lat_ns:00:00:00.012721288  seq_x2traf:276
-seq:277  e2e_lat_ns:00:00:00.012721748  seq_x2traf:277
-seq:278  e2e_lat_ns:00:00:00.012722338  seq_x2traf:278
-seq:279  e2e_lat_ns:00:00:00.012722788  seq_x2traf:279
-seq:280  e2e_lat_ns:00:00:00.012723378  seq_x2traf:280
-seq:281  e2e_lat_ns:00:00:00.012723828  seq_x2traf:281
-seq:282  e2e_lat_ns:00:00:00.012724418  seq_x2traf:282
-seq:283  e2e_lat_ns:00:00:00.012724868  seq_x2traf:283
-seq:284  e2e_lat_ns:00:00:00.02635687  seq_x2traf:284
-seq:285  e2e_lat_ns:00:00:00.012650408  seq_x2traf:285
-seq:286  e2e_lat_ns:00:00:00.012660278  seq_x2traf:286
-seq:287  e2e_lat_ns:00:00:00.012661288  seq_x2traf:287
-seq:288  e2e_lat_ns:00:00:00.012661778  seq_x2traf:288
-seq:289  e2e_lat_ns:00:00:00.012663488  seq_x2traf:289
-seq:290  e2e_lat_ns:00:00:00.013655561  seq_x2traf:290
-seq:291  e2e_lat_ns:00:00:00.013658201  seq_x2traf:291
-seq:292  e2e_lat_ns:00:00:00.013658961  seq_x2traf:292
-seq:293  e2e_lat_ns:00:00:00.013659421  seq_x2traf:293
-seq:294  e2e_lat_ns:00:00:00.013660001  seq_x2traf:294
-seq:295  e2e_lat_ns:00:00:00.013660461  seq_x2traf:295
-seq:296  e2e_lat_ns:00:00:00.026369459  seq_x2traf:296
-seq:297  e2e_lat_ns:00:00:00.012720988  seq_x2traf:297
-seq:298  e2e_lat_ns:00:00:00.012764988  seq_x2traf:298
-seq:299  e2e_lat_ns:00:00:00.012803347  seq_x2traf:299
-seq:300  e2e_lat_ns:00:00:00.012841297  seq_x2traf:300
-seq:301  e2e_lat_ns:00:00:00.012883777  seq_x2traf:301
-seq:302  e2e_lat_ns:00:00:00.012928077  seq_x2traf:302
-seq:303  e2e_lat_ns:00:00:00.012971226  seq_x2traf:303
-seq:304  e2e_lat_ns:00:00:00.012971906  seq_x2traf:304
-seq:305  e2e_lat_ns:00:00:00.012972606  seq_x2traf:305
-seq:306  e2e_lat_ns:00:00:00.012973076  seq_x2traf:306
-seq:307  e2e_lat_ns:00:00:00.012973666  seq_x2traf:307
-seq:308  e2e_lat_ns:00:00:00.02636899  seq_x2traf:308
-seq:309  e2e_lat_ns:00:00:00.012674968  seq_x2traf:309
-seq:310  e2e_lat_ns:00:00:00.012681628  seq_x2traf:310
-seq:311  e2e_lat_ns:00:00:00.012682218  seq_x2traf:311
-seq:312  e2e_lat_ns:00:00:00.012682978  seq_x2traf:312
-seq:313  e2e_lat_ns:00:00:00.012683438  seq_x2traf:313
-seq:314  e2e_lat_ns:00:00:00.012684048  seq_x2traf:314
-seq:315  e2e_lat_ns:00:00:00.012685548  seq_x2traf:315
-seq:316  e2e_lat_ns:00:00:00.012747038  seq_x2traf:316
-seq:317  e2e_lat_ns:00:00:00.012748988  seq_x2traf:317
-seq:318  e2e_lat_ns:00:00:00.012749488  seq_x2traf:318
-seq:319  e2e_lat_ns:00:00:00.012750068  seq_x2traf:319
-seq:320  e2e_lat_ns:00:00:00.02638094  seq_x2traf:320
-seq:321  e2e_lat_ns:00:00:00.012671558  seq_x2traf:321
-seq:322  e2e_lat_ns:00:00:00.012689338  seq_x2traf:322
-seq:323  e2e_lat_ns:00:00:00.012689928  seq_x2traf:323
-seq:324  e2e_lat_ns:00:00:00.012690858  seq_x2traf:324
-seq:325  e2e_lat_ns:00:00:00.012691338  seq_x2traf:325
-seq:326  e2e_lat_ns:00:00:00.012702038  seq_x2traf:326
-seq:327  e2e_lat_ns:00:00:00.012702588  seq_x2traf:327
-seq:328  e2e_lat_ns:00:00:00.012704548  seq_x2traf:328
-seq:329  e2e_lat_ns:00:00:00.012788207  seq_x2traf:329
-seq:330  e2e_lat_ns:00:00:00.012790267  seq_x2traf:330
-seq:331  e2e_lat_ns:00:00:00.012791017  seq_x2traf:331
-seq:332  e2e_lat_ns:00:00:00.026998615  seq_x2traf:332
-seq:333  e2e_lat_ns:00:00:00.013293144  seq_x2traf:333
-seq:334  e2e_lat_ns:00:00:00.013302714  seq_x2traf:334
-seq:335  e2e_lat_ns:00:00:00.013303284  seq_x2traf:335
-seq:336  e2e_lat_ns:00:00:00.013304064  seq_x2traf:336
-seq:337  e2e_lat_ns:00:00:00.013306424  seq_x2traf:337
-seq:338  e2e_lat_ns:00:00:00.013312984  seq_x2traf:338
-seq:339  e2e_lat_ns:00:00:00.013316744  seq_x2traf:339
-seq:340  e2e_lat_ns:00:00:00.013398004  seq_x2traf:340
-seq:341  e2e_lat_ns:00:00:00.013400224  seq_x2traf:341
-seq:342  e2e_lat_ns:00:00:00.013400764  seq_x2traf:342
-seq:343  e2e_lat_ns:00:00:00.025846943  seq_x2traf:343
-seq:344  e2e_lat_ns:00:00:00.012697637  seq_x2traf:344
-seq:345  e2e_lat_ns:00:00:00.012700327  seq_x2traf:345
-seq:346  e2e_lat_ns:00:00:00.012700937  seq_x2traf:346
-seq:347  e2e_lat_ns:00:00:00.012701537  seq_x2traf:347
-seq:348  e2e_lat_ns:00:00:00.012701997  seq_x2traf:348
-seq:349  e2e_lat_ns:00:00:00.012702587  seq_x2traf:349
-seq:350  e2e_lat_ns:00:00:00.012703037  seq_x2traf:350
-seq:351  e2e_lat_ns:00:00:00.012703627  seq_x2traf:351
-seq:352  e2e_lat_ns:00:00:00.012704077  seq_x2traf:352
-seq:353  e2e_lat_ns:00:00:00.012704657  seq_x2traf:353
-seq:354  e2e_lat_ns:00:00:00.012717427  seq_x2traf:354
-seq:355  e2e_lat_ns:00:00:00.026361529  seq_x2traf:355
-seq:356  e2e_lat_ns:00:00:00.012670178  seq_x2traf:356
-seq:357  e2e_lat_ns:00:00:00.012676458  seq_x2traf:357
-seq:358  e2e_lat_ns:00:00:00.012677698  seq_x2traf:358
-seq:359  e2e_lat_ns:00:00:00.012678178  seq_x2traf:359
-seq:360  e2e_lat_ns:00:00:00.012678878  seq_x2traf:360
-seq:361  e2e_lat_ns:00:00:00.012679338  seq_x2traf:361
-seq:362  e2e_lat_ns:00:00:00.012680528  seq_x2traf:362
-seq:363  e2e_lat_ns:00:00:00.012689518  seq_x2traf:363
-seq:364  e2e_lat_ns:00:00:00.012691398  seq_x2traf:364
-seq:365  e2e_lat_ns:00:00:00.012699028  seq_x2traf:365
-seq:366  e2e_lat_ns:00:00:00.012765578  seq_x2traf:366
-seq:367  e2e_lat_ns:00:00:00.026369009  seq_x2traf:367
-seq:368  e2e_lat_ns:00:00:00.012660818  seq_x2traf:368
-seq:369  e2e_lat_ns:00:00:00.012678128  seq_x2traf:369
-seq:370  e2e_lat_ns:00:00:00.012679248  seq_x2traf:370
-seq:371  e2e_lat_ns:00:00:00.012679878  seq_x2traf:371
-seq:372  e2e_lat_ns:00:00:00.012680508  seq_x2traf:372
-seq:373  e2e_lat_ns:00:00:00.012689078  seq_x2traf:373
-seq:374  e2e_lat_ns:00:00:00.012690688  seq_x2traf:374
-seq:375  e2e_lat_ns:00:00:00.012692868  seq_x2traf:375
-seq:376  e2e_lat_ns:00:00:00.012775738  seq_x2traf:376
-seq:377  e2e_lat_ns:00:00:00.012777928  seq_x2traf:377
-seq:378  e2e_lat_ns:00:00:00.012778488  seq_x2traf:378
-seq:379  e2e_lat_ns:00:00:00.02638053  seq_x2traf:379
-seq:380  e2e_lat_ns:00:00:00.012670688  seq_x2traf:380
-seq:381  e2e_lat_ns:00:00:00.012679108  seq_x2traf:381
-seq:382  e2e_lat_ns:00:00:00.012680508  seq_x2traf:382
-seq:383  e2e_lat_ns:00:00:00.012681118  seq_x2traf:383
-seq:384  e2e_lat_ns:00:00:00.012714318  seq_x2traf:384
-seq:385  e2e_lat_ns:00:00:00.012716718  seq_x2traf:385
-seq:386  e2e_lat_ns:00:00:00.012717227  seq_x2traf:386
-seq:387  e2e_lat_ns:00:00:00.012717837  seq_x2traf:387
-seq:388  e2e_lat_ns:00:00:00.012718297  seq_x2traf:388
-seq:389  e2e_lat_ns:00:00:00.012769347  seq_x2traf:389
-seq:390  e2e_lat_ns:00:00:00.012770297  seq_x2traf:390
-seq:391  e2e_lat_ns:00:00:00.026368779  seq_x2traf:391
-seq:392  e2e_lat_ns:00:00:00.012662808  seq_x2traf:392
-seq:393  e2e_lat_ns:00:00:00.012671038  seq_x2traf:393
-seq:394  e2e_lat_ns:00:00:00.012671608  seq_x2traf:394
-seq:395  e2e_lat_ns:00:00:00.012672388  seq_x2traf:395
-seq:396  e2e_lat_ns:00:00:00.012672858  seq_x2traf:396
-seq:397  e2e_lat_ns:00:00:00.012673458  seq_x2traf:397
-seq:398  e2e_lat_ns:00:00:00.012674938  seq_x2traf:398
-seq:399  e2e_lat_ns:00:00:00.012684258  seq_x2traf:399
-seq:400  e2e_lat_ns:00:00:00.012686768  seq_x2traf:400
-seq:401  e2e_lat_ns:00:00:00.012757897  seq_x2traf:401
-seq:402  e2e_lat_ns:00:00:00.012760607  seq_x2traf:402
-seq:403  e2e_lat_ns:00:00:00.026393629  seq_x2traf:403
-seq:404  e2e_lat_ns:00:00:00.013028076  seq_x2traf:404
-seq:405  e2e_lat_ns:00:00:00.013031326  seq_x2traf:405
-seq:406  e2e_lat_ns:00:00:00.013031906  seq_x2traf:406
-seq:407  e2e_lat_ns:00:00:00.013032546  seq_x2traf:407
-seq:408  e2e_lat_ns:00:00:00.013033116  seq_x2traf:408
-seq:409  e2e_lat_ns:00:00:00.013033826  seq_x2traf:409
-seq:410  e2e_lat_ns:00:00:00.013038756  seq_x2traf:410
-seq:411  e2e_lat_ns:00:00:00.013039416  seq_x2traf:411
-seq:412  e2e_lat_ns:00:00:00.013039876  seq_x2traf:412
-seq:413  e2e_lat_ns:00:00:00.013040466  seq_x2traf:413
-seq:414  e2e_lat_ns:00:00:00.013041066  seq_x2traf:414
-seq:415  e2e_lat_ns:00:00:00.02638956  seq_x2traf:415
-seq:416  e2e_lat_ns:00:00:00.012674928  seq_x2traf:416
-seq:417  e2e_lat_ns:00:00:00.012683488  seq_x2traf:417
-seq:418  e2e_lat_ns:00:00:00.012684828  seq_x2traf:418
-seq:419  e2e_lat_ns:00:00:00.012685308  seq_x2traf:419
-seq:420  e2e_lat_ns:00:00:00.012692858  seq_x2traf:420
-seq:421  e2e_lat_ns:00:00:00.012693428  seq_x2traf:421
-seq:422  e2e_lat_ns:00:00:00.012696218  seq_x2traf:422
-seq:423  e2e_lat_ns:00:00:00.012768497  seq_x2traf:423
-seq:424  e2e_lat_ns:00:00:00.012770357  seq_x2traf:424
-seq:425  e2e_lat_ns:00:00:00.012771007  seq_x2traf:425
-seq:426  e2e_lat_ns:00:00:00.012771487  seq_x2traf:426
-seq:427  e2e_lat_ns:00:00:00.026989875  seq_x2traf:427
-seq:428  e2e_lat_ns:00:00:00.013281014  seq_x2traf:428
-seq:429  e2e_lat_ns:00:00:00.013296304  seq_x2traf:429
-seq:430  e2e_lat_ns:00:00:00.013297354  seq_x2traf:430
-seq:431  e2e_lat_ns:00:00:00.013297854  seq_x2traf:431
-seq:432  e2e_lat_ns:00:00:00.013298484  seq_x2traf:432
-seq:433  e2e_lat_ns:00:00:00.013307734  seq_x2traf:433
-seq:434  e2e_lat_ns:00:00:00.013309384  seq_x2traf:434
-seq:435  e2e_lat_ns:00:00:00.013311614  seq_x2traf:435
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:1  bytes_total:86  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:2  bytes_total:172  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:3  bytes_total:258  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:4  bytes_total:344  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:5  bytes_total:430  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:6  bytes_total:516  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:7  bytes_total:602  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:8  bytes_total:688  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:9  bytes_total:774  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:10  bytes_total:860  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:11  bytes_total:946  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:12  bytes_total:1032  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:13  bytes_total:1118  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:14  bytes_total:1204  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:15  bytes_total:1290  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:16  bytes_total:1376  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:17  bytes_total:1462  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:18  bytes_total:1548  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:19  bytes_total:1634  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:20  bytes_total:1720  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:21  bytes_total:1806  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:22  bytes_total:1892  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:23  bytes_total:1978  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:24  bytes_total:2064  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:25  bytes_total:2150  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:26  bytes_total:2236  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:27  bytes_total:2322  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:28  bytes_total:2408  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:29  bytes_total:2494  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:30  bytes_total:2580  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:31  bytes_total:2666  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:32  bytes_total:2752  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:33  bytes_total:2838  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:34  bytes_total:2924  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:35  bytes_total:3010  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:36  bytes_total:3096  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:37  bytes_total:3182  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:38  bytes_total:3268  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:39  bytes_total:3354  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:40  bytes_total:3440  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:41  bytes_total:3526  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:42  bytes_total:3612  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:43  bytes_total:3698  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:44  bytes_total:3784  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:45  bytes_total:3870  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:46  bytes_total:3956  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:47  bytes_total:4042  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:48  bytes_total:4128  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:49  bytes_total:4214  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:50  bytes_total:4300  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:51  bytes_total:4386  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:52  bytes_total:4472  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:53  bytes_total:4558  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:54  bytes_total:4644  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:55  bytes_total:4730  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:56  bytes_total:4816  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:57  bytes_total:4902  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:58  bytes_total:4988  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:59  bytes_total:5074  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:60  bytes_total:5160  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:61  bytes_total:5246  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:62  bytes_total:5332  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:63  bytes_total:5418  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:64  bytes_total:5504  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:65  bytes_total:5590  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:66  bytes_total:5676  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:67  bytes_total:5762  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:68  bytes_total:5848  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:69  bytes_total:5934  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:70  bytes_total:6020  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:71  bytes_total:6106  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:72  bytes_total:6192  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:73  bytes_total:6278  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:74  bytes_total:6364  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:75  bytes_total:6450  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:76  bytes_total:6536  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:77  bytes_total:6622  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:78  bytes_total:6708  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:79  bytes_total:6794  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:80  bytes_total:6880  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:81  bytes_total:6966  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:82  bytes_total:7052  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:83  bytes_total:7138  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:84  bytes_total:7224  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:85  bytes_total:7310  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:86  bytes_total:7396  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:87  bytes_total:7482  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:88  bytes_total:7568  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:89  bytes_total:7654  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:90  bytes_total:7740  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:91  bytes_total:7826  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:92  bytes_total:7912  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:93  bytes_total:7998  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:94  bytes_total:8084  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:95  bytes_total:8170  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:96  bytes_total:8256  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:97  bytes_total:8342  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:98  bytes_total:8428  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:99  bytes_total:8514  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:100  bytes_total:8600  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:101  bytes_total:8686  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:102  bytes_total:8772  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:103  bytes_total:8858  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:104  bytes_total:8944  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:105  bytes_total:9030  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:106  bytes_total:9116  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:107  bytes_total:9202  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:108  bytes_total:9288  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:109  bytes_total:9374  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:110  bytes_total:9460  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:111  bytes_total:9546  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:112  bytes_total:9632  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:113  bytes_total:9718  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:114  bytes_total:9804  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:115  bytes_total:9890  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:116  bytes_total:9976  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:117  bytes_total:10062  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:118  bytes_total:10148  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:119  bytes_total:10234  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:120  bytes_total:10320  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:121  bytes_total:10406  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:122  bytes_total:10492  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:123  bytes_total:10578  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:124  bytes_total:10664  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:125  bytes_total:10750  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:126  bytes_total:10836  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:127  bytes_total:10922  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:128  bytes_total:11008  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:129  bytes_total:11094  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:130  bytes_total:11180  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:131  bytes_total:11266  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:132  bytes_total:11352  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:133  bytes_total:11438  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:134  bytes_total:11524  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:135  bytes_total:11610  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:136  bytes_total:11696  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:137  bytes_total:11782  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:138  bytes_total:11868  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:139  bytes_total:11954  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:140  bytes_total:12040  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:141  bytes_total:12126  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:142  bytes_total:12212  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:143  bytes_total:12298  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:144  bytes_total:12384  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:145  bytes_total:12470  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:146  bytes_total:12556  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:147  bytes_total:12642  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:148  bytes_total:12728  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:149  bytes_total:12814  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:150  bytes_total:12900  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:151  bytes_total:12986  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:152  bytes_total:13072  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:153  bytes_total:13158  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:154  bytes_total:13244  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:155  bytes_total:13330  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:156  bytes_total:13416  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:157  bytes_total:13502  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:158  bytes_total:13588  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:159  bytes_total:13674  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:160  bytes_total:13760  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:161  bytes_total:13846  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:162  bytes_total:13932  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:163  bytes_total:14018  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:164  bytes_total:14104  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:165  bytes_total:14190  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:166  bytes_total:14276  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:167  bytes_total:14362  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:168  bytes_total:14448  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:169  bytes_total:14534  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:170  bytes_total:14620  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:171  bytes_total:14706  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:172  bytes_total:14792  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:173  bytes_total:14878  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:174  bytes_total:14964  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:175  bytes_total:15050  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:176  bytes_total:15136  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:177  bytes_total:15222  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:178  bytes_total:15308  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:179  bytes_total:15394  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:180  bytes_total:15480  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:181  bytes_total:15566  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:182  bytes_total:15652  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:183  bytes_total:15738  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:184  bytes_total:15824  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:185  bytes_total:15910  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:186  bytes_total:15996  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:187  bytes_total:16082  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:188  bytes_total:16168  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:189  bytes_total:16254  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:190  bytes_total:16340  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:191  bytes_total:16426  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:192  bytes_total:16512  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:193  bytes_total:16598  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:194  bytes_total:16684  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:195  bytes_total:16770  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:196  bytes_total:16856  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:197  bytes_total:16942  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:198  bytes_total:17028  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:199  bytes_total:17114  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:200  bytes_total:17200  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:201  bytes_total:17286  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:202  bytes_total:17372  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:203  bytes_total:17458  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:204  bytes_total:17544  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:205  bytes_total:17630  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:206  bytes_total:17716  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:207  bytes_total:17802  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:208  bytes_total:17888  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:209  bytes_total:17974  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:210  bytes_total:18060  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:211  bytes_total:18146  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:212  bytes_total:18232  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:213  bytes_total:18318  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:214  bytes_total:18404  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:215  bytes_total:18490  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:216  bytes_total:18576  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:217  bytes_total:18662  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:218  bytes_total:18748  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:219  bytes_total:18834  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:220  bytes_total:18920  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:221  bytes_total:19006  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:222  bytes_total:19092  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:223  bytes_total:19178  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:224  bytes_total:19264  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:225  bytes_total:19350  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:226  bytes_total:19436  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:227  bytes_total:19522  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:228  bytes_total:19608  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:229  bytes_total:19694  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:230  bytes_total:19780  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:231  bytes_total:19866  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:232  bytes_total:19952  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:233  bytes_total:20038  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:234  bytes_total:20124  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:235  bytes_total:20210  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:236  bytes_total:20296  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:237  bytes_total:20382  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:238  bytes_total:20468  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:239  bytes_total:20554  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:240  bytes_total:20640  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:241  bytes_total:20726  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:242  bytes_total:20812  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:243  bytes_total:20898  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:244  bytes_total:20984  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:245  bytes_total:21070  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:246  bytes_total:21156  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:247  bytes_total:21242  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:248  bytes_total:21328  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:249  bytes_total:21414  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:250  bytes_total:21500  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:251  bytes_total:21586  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:252  bytes_total:21672  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:253  bytes_total:21758  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:254  bytes_total:21844  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:255  bytes_total:21930  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:256  bytes_total:22016  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:257  bytes_total:22102  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:258  bytes_total:22188  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:259  bytes_total:22274  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:260  bytes_total:22360  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:261  bytes_total:22446  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:262  bytes_total:22532  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:263  bytes_total:22618  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:264  bytes_total:22704  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:265  bytes_total:22790  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:266  bytes_total:22876  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:267  bytes_total:22962  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:268  bytes_total:23048  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:269  bytes_total:23134  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:270  bytes_total:23220  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:271  bytes_total:23306  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:272  bytes_total:23392  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:273  bytes_total:23478  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:274  bytes_total:23564  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:275  bytes_total:23650  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:276  bytes_total:23736  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:277  bytes_total:23822  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:278  bytes_total:23908  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:279  bytes_total:23994  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:280  bytes_total:24080  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:281  bytes_total:24166  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:282  bytes_total:24252  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:283  bytes_total:24338  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:284  bytes_total:24424  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:285  bytes_total:24510  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:286  bytes_total:24596  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:287  bytes_total:24682  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:288  bytes_total:24768  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:289  bytes_total:24854  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:290  bytes_total:24940  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:291  bytes_total:25026  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:292  bytes_total:25112  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:293  bytes_total:25198  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:294  bytes_total:25284  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:295  bytes_total:25370  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:296  bytes_total:25456  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:297  bytes_total:25542  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:298  bytes_total:25628  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:299  bytes_total:25714  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:300  bytes_total:25800  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:301  bytes_total:25886  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:302  bytes_total:25972  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:303  bytes_total:26058  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:304  bytes_total:26144  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:305  bytes_total:26230  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:306  bytes_total:26316  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:307  bytes_total:26402  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:308  bytes_total:26488  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:309  bytes_total:26574  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:310  bytes_total:26660  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:311  bytes_total:26746  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:312  bytes_total:26832  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:313  bytes_total:26918  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:314  bytes_total:27004  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:315  bytes_total:27090  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:316  bytes_total:27176  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:317  bytes_total:27262  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:318  bytes_total:27348  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:319  bytes_total:27434  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:320  bytes_total:27520  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:321  bytes_total:27606  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:322  bytes_total:27692  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:323  bytes_total:27778  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:324  bytes_total:27864  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:325  bytes_total:27950  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:326  bytes_total:28036  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:327  bytes_total:28122  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:328  bytes_total:28208  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:329  bytes_total:28294  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:330  bytes_total:28380  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:331  bytes_total:28466  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:332  bytes_total:28552  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:333  bytes_total:28638  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:334  bytes_total:28724  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:335  bytes_total:28810  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:336  bytes_total:28896  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:337  bytes_total:28982  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:338  bytes_total:29068  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:339  bytes_total:29154  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:340  bytes_total:29240  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:341  bytes_total:29326  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:342  bytes_total:29412  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:343  bytes_total:29498  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:344  bytes_total:29584  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:345  bytes_total:29670  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:346  bytes_total:29756  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:347  bytes_total:29842  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:348  bytes_total:29928  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:349  bytes_total:30014  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:350  bytes_total:30100  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:351  bytes_total:30186  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:352  bytes_total:30272  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:353  bytes_total:30358  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:354  bytes_total:30444  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:355  bytes_total:30530  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:356  bytes_total:30616  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:357  bytes_total:30702  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:358  bytes_total:30788  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:359  bytes_total:30874  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:360  bytes_total:30960  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:361  bytes_total:31046  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:362  bytes_total:31132  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:363  bytes_total:31218  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:364  bytes_total:31304  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:365  bytes_total:31390  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:366  bytes_total:31476  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:367  bytes_total:31562  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:368  bytes_total:31648  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:369  bytes_total:31734  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:370  bytes_total:31820  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:371  bytes_total:31906  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:372  bytes_total:31992  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:373  bytes_total:32078  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:374  bytes_total:32164  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:375  bytes_total:32250  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:376  bytes_total:32336  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:377  bytes_total:32422  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:378  bytes_total:32508  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:379  bytes_total:32594  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:380  bytes_total:32680  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:381  bytes_total:32766  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:382  bytes_total:32852  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:383  bytes_total:32938  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:384  bytes_total:33024  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:385  bytes_total:33110  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:386  bytes_total:33196  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:387  bytes_total:33282  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:388  bytes_total:33368  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:389  bytes_total:33454  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:390  bytes_total:33540  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:391  bytes_total:33626  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:392  bytes_total:33712  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:393  bytes_total:33798  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:394  bytes_total:33884  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:395  bytes_total:33970  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:396  bytes_total:34056  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:397  bytes_total:34142  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:398  bytes_total:34228  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:399  bytes_total:34314  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:400  bytes_total:34400  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:401  bytes_total:34486  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:402  bytes_total:34572  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:403  bytes_total:34658  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:404  bytes_total:34744  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:405  bytes_total:34830  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:406  bytes_total:34916  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:407  bytes_total:35002  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:408  bytes_total:35088  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:409  bytes_total:35174  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:410  bytes_total:35260  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:411  bytes_total:35346  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:412  bytes_total:35432  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:413  bytes_total:35518  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:414  bytes_total:35604  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:415  bytes_total:35690  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:416  bytes_total:35776  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:417  bytes_total:35862  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:418  bytes_total:35948  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:419  bytes_total:36034  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:420  bytes_total:36120  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:421  bytes_total:36206  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:422  bytes_total:36292  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:423  bytes_total:36378  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:424  bytes_total:36464  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:425  bytes_total:36550  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:426  bytes_total:36636  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:427  bytes_total:36722  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:428  bytes_total:36808  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:429  bytes_total:36894  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:430  bytes_total:36980  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:431  bytes_total:37066  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:432  bytes_total:37152  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:433  bytes_total:37238  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:434  bytes_total:37324  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:435  bytes_total:37410  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:436  bytes_total:37496  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:437  bytes_total:37582  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:438  bytes_total:37668  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:439  bytes_total:37754  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:440  bytes_total:37840  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:441  bytes_total:37926  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:442  bytes_total:38012  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:443  bytes_total:38098  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:444  bytes_total:38184  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:445  bytes_total:38270  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:446  bytes_total:38356  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:447  bytes_total:38442  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:448  bytes_total:38528  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:449  bytes_total:38614  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:450  bytes_total:38700  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:451  bytes_total:38786  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:452  bytes_total:38872  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:453  bytes_total:38958  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:454  bytes_total:39044  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:455  bytes_total:39130  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:456  bytes_total:39216  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:457  bytes_total:39302  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:458  bytes_total:39388  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:459  bytes_total:39474  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:460  bytes_total:39560  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:461  bytes_total:39646  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:462  bytes_total:39732  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:463  bytes_total:39818  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:464  bytes_total:39904  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:465  bytes_total:39990  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:466  bytes_total:40076  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:467  bytes_total:40162  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:468  bytes_total:40248  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:469  bytes_total:40334  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:470  bytes_total:40420  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:471  bytes_total:40506  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:472  bytes_total:40592  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:473  bytes_total:40678  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:474  bytes_total:40764  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:475  bytes_total:40850  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:476  bytes_total:40936  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:477  bytes_total:41022  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:478  bytes_total:41108  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:479  bytes_total:41194  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:480  bytes_total:41280  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:481  bytes_total:41366  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:482  bytes_total:41452  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:483  bytes_total:41538  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:484  bytes_total:41624  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:485  bytes_total:41710  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:486  bytes_total:41796  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:487  bytes_total:41882  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:488  bytes_total:41968  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:489  bytes_total:42054  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:490  bytes_total:42140  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:491  bytes_total:42226  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:492  bytes_total:42312  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:493  bytes_total:42398  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:494  bytes_total:42484  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:495  bytes_total:42570  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:496  bytes_total:42656  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:497  bytes_total:42742  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:498  bytes_total:42828  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:499  bytes_total:42914  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"
+x2.TrafMsg  stream_id:4  src:x2traf-64-0  seq_x2traf:500  bytes_total:43000  timestamps:"x2.Traftime  x2traf:1969-12-31T19:00:00  x2write:1969-12-31T19:00:00  x2txn:1969-12-31T19:00:00  x2read:1969-12-31T19:00:00"

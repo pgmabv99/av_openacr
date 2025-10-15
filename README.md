@@ -99,6 +99,14 @@ git restore --source=HEAD~1 --staged --worktree -- test/atf_comp/
 git restore --source=HEAD~1 --staged --worktree -- data/atfdb
 git restore --source=HEAD~1 --staged --worktree -- data/dev/gitfile.ssim
 
+## stepper atf_x2
+to debug: 
+
+$ atf_comp atf_x2.PubEachGw -v
+
+take the command line, insert " | stepper" in the middle, enjoy interactive debugging
+
+atf_comp atf_x2.PubEachGw -report:N -printinput | stepper | atf_x2 -bindir:build/release -comptest:atf_x2.PubEachGw -timeout:10000 -topo:dev4
 
 ## To See Prefixes
 

@@ -11,9 +11,10 @@ dry_run: bin/omcli  -selector:dev.x2-3.% -omplat:x2 -omtest:om_benchmark -omrun_
 
 
 ==========separate
+rm -rf temp/release 
 omcli dev.x2-4 -dkr_clean_run
 x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y -v
-omcli dev.x2-4.x2-%     -start_clean  -debug_x2sup:Y
+omcli dev.x2-4.x2-%     -start_clean  
 omcli dev.x2-4.x2-%  -status
 sleep 3
 omcli dev.x2-4.x2w%     -start_clean  

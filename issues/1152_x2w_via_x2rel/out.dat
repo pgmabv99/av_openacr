@@ -1,0 +1,3 @@
+verbose: readlines /tmp/x2port.dat
+verbose: acr.runquery  acr.FQuery  queryop:select  query::%  new_val:""  ssimfile:%.%  comment:"command-line query"  n_regx_match:0  n_visit_field:0  n_visit_ctype:0  n_mod_rec:0
+report.acr  n_select:0  n_insert:0  n_delete:0  n_ignore:3  n_update:0  n_file_mod:0

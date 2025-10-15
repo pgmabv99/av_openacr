@@ -11,14 +11,17 @@ trafmsg=false
 trafmsg=true
 if $trafmsg; then
     # Start read
-    x2read -format:trafmsg  | x2traf -payload:trafmsg -read > /home/avorovich/av_openacr/logs_x2sup/x2traf.log  &
-    # x2read -format:trafmsg  | x2traf -payload:trafmsg -read_print > /home/avorovich/av_openacr/logs_x2sup/x2traf.log  &
+    # With timestamps
+    # x2read -format:trafmsg  | x2traf -payload:trafmsg -read > /home/avorovich/av_openacr/logs_x2sup/x2traf.log  &
+    x2read -format:trafmsg  | x2traf -payload:trafmsg -read_print > /home/avorovich/av_openacr/logs_x2sup/x2traf.log  &
     sleep 1
     # Start write
-    x2traf -payload:trafmsg -msg_size:10 -msg_rate:1k -traf_id:64 |
+    # x2traf -payload:trafmsg -msg_size:10 -msg_rate:1k -traf_id:64 -max_msgs:500 |
+    x2traf -payload:trafmsg -msg_size:10 -msg_rate:1k -traf_id:64 -tstamp:N -max_msgs:500 |
     x2write -printacks:N -max_inflight:0 -payload:trafmsg &
     # Wait to allow to run
-    sleep .5
+    sleep 1
+    # sleep .1
     # Kill all 
     pkill -f x2traf
     pkill -f x2write
@@ -66,5 +69,7 @@ x2write -printacks:N -max_inflight:0 -payload:trafmsg  -in_file:temp/traf_input.
 x2read -format:trafmsg > temp/xread_out.txt
 x2traf -payload:trafmsg -read_print -in_file:temp/xread_out.txt
 x2traf -payload:trafmsg -msg_size:10 -msg_rate:1 -traf_id:64
+#from chat
+x2traf -tstamp:N -msg_rate:1  -payload:trafmsg -msg_size:10 | x2traf -read_print -payload:trafmsg
 
 

@@ -1,0 +1,7 @@
+      # - ts/gen/*.js
+      # - ts/x2ui/.next/
+      # - ts/x2ui/public/
+      # - ts/x2ui/*.mjs
+      # - ts/x2ui/*.json
+      # - ts/x2ui/node_modules/
+      # - ts/gen/node_modules/

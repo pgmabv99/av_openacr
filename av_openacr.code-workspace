@@ -15,6 +15,9 @@
 		},
 		{
 			"path": "../arnd/temp/x2tmp"
+		},
+		{
+			"path": "../leveldb"
 		}
 	],
 

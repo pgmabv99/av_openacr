@@ -9,15 +9,6 @@
 		},
 		{
 			"path": "../.ssh"
-		},
-		{
-			"path": "../arnd/temp/omcli/gen"
-		},
-		{
-			"path": "../arnd/temp/x2tmp"
-		},
-		{
-			"path": "../leveldb"
 		}
 	],
 

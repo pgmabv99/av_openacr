@@ -34,7 +34,8 @@ alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'
 
 alias gitclean='git checkout -- bin .vscode/launch.json'
 alias x2tree='ps -e --forest -o pid,ppid,cmd | grep x2'
-alias gr='git-rebase-remote algornd/arnd'
+# alias gr='git-rebase-remote algornd/arnd'
+alias gr='git-rebase-remote origin'
 
 
 alias al='source  ~/arnd/conf/alexei/bash_profile'

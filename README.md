@@ -157,8 +157,20 @@ We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.
 gcli nnn -start
 git-add-to-last-commit             ->> amend one and only commit
 git-rebase-remote algornd/arnd     ->> rebase
+git clean -f -d -x build           ->> remove all
+
 normalize_loop                     ->> before pushing up
 gcli mr -create                    ->> push changes and create/recreate mr
+
+
+Gli Cheat sheet:
+```
+gli -createissue     create or update issue from latest git commit
+gli -start <id>      create git branch from gitlab issue
+gli -push            create or update MR based on latest git commit
+gli                  show CI status and any errors
+gli -retry           resubmit failing CI jobs
+```
 
 #other
 acr % -check -write 

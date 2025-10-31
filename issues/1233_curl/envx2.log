@@ -1,0 +1,2014 @@
+# Running tests: prep_envx2,smokex2_ib,smokex2_eth,
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:117  time:00:00:00.081323734  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:117
+[1;37matf_ci.begin[0;0m  citest:prep_envx2  sandbox:N
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:117  time:00:00:00.081448743  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:117
+atf_ci.citest  citest:prep_envx2  runtime:00:00:00.576229894  [1;33msuccess:Y[0;0m  comment:"Prep step, MUST BE DONE FIRST"
+[1;37matf_ci.begin[0;0m  citest:smokex2_ib  sandbox:N
+Using env:dev.x2-4
+atf_ci.smokex2  mcasttype:ib  comment:"building release"
+x2fs.done  path:temp/release/x2.2025-10-31.434bb30cd  fsid:68453567-3dc3-4dea-ba47-920edab83c5f
+x2rel.info  release:temp/release/x2.2025-10-31.434bb30cd  comment:"release completed"
+x2rel.info  release:temp/release/x2ui.2025-10-31.434bb30cd  comment:"release completed"
+x2fs.done  path:temp/release/x2w.2025-10-31.434bb30cd  fsid:f4153b33-5a7a-4695-a3e3-fe43dc8450f4
+x2rel.info  release:temp/release/x2w.2025-10-31.434bb30cd  comment:"release completed"
+TESTING:dev.x2-4
+omcli.info omtest:x2ssh_start
+x2admin.info admsvc:script  admact:update  ansible:x2admin/ansible/script_update.yml
+
+PLAY [Show script content] *****************************************************
+
+PLAY [Show log content] ********************************************************
+
+PLAY [Verify script content] ***************************************************
+
+PLAY [Update script] ***********************************************************
+
+TASK [Generate local script content] *******************************************
+changed: [dev.x2-17 -> localhost]
+changed: [nj1.sn2.bm -> localhost]
+changed: [dev.kafkaw-04 -> localhost]
+changed: [dev.kafkaw-12 -> localhost]
+changed: [dev.kafkacw-02 -> localhost]
+changed: [dev.rdpui-5 -> localhost]
+changed: [dev.kafkaui-5 -> localhost]
+changed: [dev.x2w-08 -> localhost]
+changed: [dev.minio-02 -> localhost]
+changed: [dev.x2-20 -> localhost]
+changed: [dev.x2-19 -> localhost]
+changed: [dev.x2-18 -> localhost]
+changed: [nj1.sn5.bm -> localhost]
+
+TASK [Ensure script directory exists] ******************************************
+changed: [dev.kafkaw-04]
+changed: [dev.kafkaw-12]
+changed: [dev.x2-19]
+changed: [dev.x2-18]
+changed: [dev.x2-20]
+changed: [dev.x2-17]
+ok: [nj1.sn5.bm]
+changed: [dev.kafkaui-5]
+changed: [dev.minio-02]
+changed: [dev.kafkacw-02]
+changed: [dev.rdpui-5]
+ok: [nj1.sn2.bm]
+changed: [dev.x2w-08]
+
+TASK [Copy script to temporary location] ***************************************
+changed: [dev.kafkaw-04]
+changed: [dev.kafkaw-12]
+changed: [dev.x2-19]
+changed: [dev.x2-18]
+changed: [dev.x2-20]
+changed: [dev.x2-17]
+changed: [dev.x2w-08]
+changed: [dev.kafkacw-02]
+changed: [dev.kafkaui-5]
+changed: [dev.minio-02]
+changed: [dev.rdpui-5]
+changed: [nj1.sn2.bm]
+changed: [nj1.sn5.bm]
+
+TASK [Move script to final location] *******************************************
+changed: [dev.kafkaw-04]
+changed: [dev.kafkaw-12]
+changed: [dev.kafkaui-5]
+changed: [dev.kafkacw-02]
+changed: [dev.minio-02]
+changed: [dev.rdpui-5]
+changed: [dev.x2-19]
+changed: [dev.x2-18]
+changed: [dev.x2-17]
+changed: [dev.x2w-08]
+changed: [dev.x2-20]
+changed: [nj1.sn2.bm]
+changed: [nj1.sn5.bm]
+
+TASK [Create symlink for script] ***********************************************
+ok: [dev.kafkaw-12]
+ok: [dev.kafkaw-04]
+ok: [dev.kafkacw-02]
+ok: [dev.kafkaui-5]
+ok: [dev.minio-02]
+ok: [dev.x2-19]
+ok: [dev.x2-18]
+ok: [dev.rdpui-5]
+ok: [dev.x2-17]
+ok: [dev.x2w-08]
+ok: [dev.x2-20]
+ok: [nj1.sn5.bm]
+ok: [nj1.sn2.bm]
+
+TASK [Append line to host-specific log file] ***********************************
+changed: [dev.kafkaw-04]
+changed: [dev.kafkaw-12]
+changed: [dev.x2-19]
+changed: [dev.x2-17]
+changed: [dev.x2-18]
+changed: [dev.x2-20]
+changed: [nj1.sn2.bm]
+changed: [dev.kafkaui-5]
+changed: [nj1.sn5.bm]
+changed: [dev.minio-02]
+changed: [dev.rdpui-5]
+changed: [dev.x2w-08]
+changed: [dev.kafkacw-02]
+
+TASK [Clean up temporary files] ************************************************
+ok: [dev.kafkacw-02 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkacw-02.remote)
+ok: [dev.kafkaui-5 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkaui-5.remote)
+ok: [dev.kafkaw-04 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkaw-04.remote)
+ok: [dev.kafkaw-12 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkaw-12.remote)
+ok: [dev.minio-02 -> localhost] => (item=/home/avorovich/arnd/temp/dev.minio-02.remote)
+ok: [dev.rdpui-5 -> localhost] => (item=/home/avorovich/arnd/temp/dev.rdpui-5.remote)
+ok: [dev.x2-18 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-18.remote)
+ok: [dev.x2-19 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-19.remote)
+ok: [dev.x2-20 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-20.remote)
+ok: [dev.x2-17 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-17.remote)
+ok: [dev.x2w-08 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2w-08.remote)
+ok: [nj1.sn2.bm -> localhost] => (item=/home/avorovich/arnd/temp/nj1.sn2.bm.remote)
+ok: [nj1.sn5.bm -> localhost] => (item=/home/avorovich/arnd/temp/nj1.sn5.bm.remote)
+changed: [dev.kafkacw-02 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkacw-02.node)
+changed: [dev.kafkaui-5 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkaui-5.node)
+changed: [dev.kafkaw-12 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkaw-12.node)
+changed: [dev.kafkaw-04 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkaw-04.node)
+changed: [dev.minio-02 -> localhost] => (item=/home/avorovich/arnd/temp/dev.minio-02.node)
+changed: [dev.rdpui-5 -> localhost] => (item=/home/avorovich/arnd/temp/dev.rdpui-5.node)
+changed: [dev.x2-18 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-18.node)
+changed: [dev.x2-19 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-19.node)
+changed: [dev.x2-17 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-17.node)
+changed: [dev.x2w-08 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2w-08.node)
+changed: [nj1.sn2.bm -> localhost] => (item=/home/avorovich/arnd/temp/nj1.sn2.bm.node)
+changed: [dev.x2-20 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-20.node)
+changed: [nj1.sn5.bm -> localhost] => (item=/home/avorovich/arnd/temp/nj1.sn5.bm.node)
+
+PLAY RECAP *********************************************************************
+dev.kafkacw-02             : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.kafkaui-5              : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.kafkaw-04              : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.kafkaw-12              : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.minio-02               : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.rdpui-5                : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.x2-17                  : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.x2-18                  : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.x2-19                  : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.x2-20                  : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.x2w-08                 : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+nj1.sn2.bm                 : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+nj1.sn5.bm                 : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+x2ssh start
+omcli.info omtest:docker_restart
+dkr.report command:generate_dockerbuild  cmd:""  targets:11
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.run comment:copying script
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.build comment:copying script
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.run comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.build comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.run comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.build comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.run comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.build comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/Dockerfile comment:copying Dockerfile
+dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.run comment:copying script
+dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.build comment:copying script
+dkr.info image:minio-02 file:temp/docker/minio-02/Dockerfile comment:copying Dockerfile
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.run comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.build comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-17 file:temp/docker/x2-17/x2-17.run comment:copying script
+dkr.info image:x2-17 file:temp/docker/x2-17/x2-17.build comment:copying script
+dkr.info image:x2-17 file:temp/docker/x2-17/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-18 file:temp/docker/x2-18/x2-18.run comment:copying script
+dkr.info image:x2-18 file:temp/docker/x2-18/x2-18.build comment:copying script
+dkr.info image:x2-18 file:temp/docker/x2-18/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-19 file:temp/docker/x2-19/x2-19.run comment:copying script
+dkr.info image:x2-19 file:temp/docker/x2-19/x2-19.build comment:copying script
+dkr.info image:x2-19 file:temp/docker/x2-19/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-20 file:temp/docker/x2-20/x2-20.run comment:copying script
+dkr.info image:x2-20 file:temp/docker/x2-20/x2-20.build comment:copying script
+dkr.info image:x2-20 file:temp/docker/x2-20/Dockerfile comment:copying Dockerfile
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.run comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.build comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/Dockerfile comment:copying Dockerfile
+dkr.report command:docker_clean_run  cmd:'ps --filter "name=x2w-08"'  targets:11
+kafkacw-02
+kafkacw-02
+b740b1edda29ddd0c979825a950a612ba8a98e3e76092146e069a5656118dd5e
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+b740b1edda29   kafkacw   "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafkacw-02
+
+kafkaui-5
+kafkaui-5
+cfe3dc1a6a43e472274437355c5ff1df9f506c1bdfac9df7c307b91cd65ccbe4
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS                                                      NAMES
+cfe3dc1a6a43   kafkaui   "/usr/bin/dumb-init …"   1 second ago   Up Less than a second   192.168.10.11:1561->22/tcp, 192.168.10.11:1562->8080/tcp   kafkaui-5
+
+kafkaw-04
+kafkaw-04
+5168b7a468cfa157f0f1c993994a8449eb8f98cb7d20eb0c9769017b2f81faff
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+5168b7a468cf   kafkaw    "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafkaw-04
+
+kafkaw-12
+kafkaw-12
+4a7bab81e75919db19d12ad927b2624d60a3a2ce53271831b32843b4165f0e35
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+4a7bab81e759   kafkaw    "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafkaw-12
+
+minio-02
+minio-02
+45bfd99119f4438d910ed24936ba1b6e3234d318435e84448f753f30c354249d
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+45bfd99119f4   minio     "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             minio-02
+
+rdpui-5
+rdpui-5
+70c329ac9943aaed64688e64098897e8fdd6cebede43ee5e1c9d96bbe0c6ccb3
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS                                                      NAMES
+70c329ac9943   rdpui     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second   192.168.10.11:1493->22/tcp, 192.168.10.11:1494->8080/tcp   rdpui-5
+
+x2-17
+x2-17
+4a211d922d9d446a9cc5ad89f8b5addeb34cdf323efb9dea87f281400a3c0267
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+4a211d922d9d   x2        "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             x2-17
+
+x2-18
+x2-18
+7fa67e20c18d4314705fe651b5969927971435464aa13a7f9a59b842eec5a26b
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+7fa67e20c18d   x2        "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             x2-18
+
+x2-19
+x2-19
+942fbad4219d8e488e4108b581c6573b0bbd9af05d31aa334e15e6e9164da44c
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+942fbad4219d   x2        "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             x2-19
+
+x2-20
+x2-20
+8d71fc22a7d2b375c2e6f7d16d51646137535cb034adabf83a62c1d84fa230f4
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+8d71fc22a7d2   x2        "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             x2-20
+
+x2w-08
+x2w-08
+b47d64407a82692785438ab7d4e7c56cbf523f870e1eff97d3bc2280148dd954
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+b47d64407a82   x2w       "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             x2w-08
+
+omcli.info omtest:x2rel_start
+x2rel.release  product:x2  nodes:"(dev.x2-20|dev.x2-18|dev.x2-19|dev.x2-17)"  filename:x2.2025-10-31.434bb30cd
+x2node.info node:dev.x2-17  cmd:"ssh -q x2usr@dev.x2-17 mkdir -p reldir/x2.2025-10-31.434bb30cd"
+x2node.info node:dev.x2-18  cmd:"ssh -q x2usr@dev.x2-18 mkdir -p reldir/x2.2025-10-31.434bb30cd"
+x2node.info node:dev.x2-19  cmd:"ssh -q x2usr@dev.x2-19 mkdir -p reldir/x2.2025-10-31.434bb30cd"
+x2node.info node:dev.x2-20  cmd:"ssh -q x2usr@dev.x2-20 mkdir -p reldir/x2.2025-10-31.434bb30cd"
+x2node.info  ncmd:4  completed:4  success:4  failure:0
+x2rel.release  product:x2w  nodes:"(dev.x2w-08)"  filename:x2w.2025-10-31.434bb30cd
+x2node.info node:dev.x2w-08  cmd:"ssh -q x2w@dev.x2w-08 mkdir -p reldir/x2w.2025-10-31.434bb30cd"
+x2node.info  ncmd:1  completed:1  success:1  failure:0
+<f+++++++++ dev.x2-4.x2-0
+dev.x2-20:script
+<f+++++++++ dev.x2-4.x2-1
+dev.x2-18:script
+<f+++++++++ dev.x2-4.x2-2
+dev.x2-19:script
+<f+++++++++ dev.x2-4.x2-3
+dev.x2-17:script
+<f+++++++++ dev.x2-4.x2w-1
+dev.x2w-08:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-3-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-1-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-2-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-0-0.log
+.READY_FOR_TEST
+omcli.info omtest:kcat_plaintext_L
+Metadata for all topics (from broker -1: dev.x2-4.x2-0.ext-0:1558/bootstrap):
+ 4 brokers:
+  broker 1 at 192.168.104.5:1558 (controller)
+  broker 2 at 192.168.104.3:1532
+  broker 3 at 192.168.104.4:1545
+  broker 4 at 192.168.104.2:1519
+ 3 topics:
+  topic "public.anon" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "public.imdb" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "__consumer_offsets" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+Metadata for all topics (from broker -1: dev.x2-4.x2-1.ext-0:1532/bootstrap):
+ 4 brokers:
+  broker 1 at 192.168.104.5:1558 (controller)
+  broker 2 at 192.168.104.3:1532
+  broker 3 at 192.168.104.4:1545
+  broker 4 at 192.168.104.2:1519
+ 3 topics:
+  topic "public.anon" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "public.imdb" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "__consumer_offsets" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+Metadata for all topics (from broker -1: dev.x2-4.x2-2.ext-0:1545/bootstrap):
+ 4 brokers:
+  broker 1 at 192.168.104.5:1558 (controller)
+  broker 2 at 192.168.104.3:1532
+  broker 3 at 192.168.104.4:1545
+  broker 4 at 192.168.104.2:1519
+ 3 topics:
+  topic "public.anon" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "public.imdb" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "__consumer_offsets" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+Metadata for all topics (from broker -1: dev.x2-4.x2-3.ext-0:1519/bootstrap):
+ 4 brokers:
+  broker 1 at 192.168.104.5:1558 (controller)
+  broker 2 at 192.168.104.3:1532
+  broker 3 at 192.168.104.4:1545
+  broker 4 at 192.168.104.2:1519
+ 3 topics:
+  topic "public.anon" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "public.imdb" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "__consumer_offsets" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+omcli.info omtest:x2ui_login
+omcli.info omtest:x2_api_jq_all
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+omcli.info omtest:x2_cli_stream
+x2cli.connected  gw:192.168.104.5:1547
+x2gw-0-0 from       name                       id  part  appender   eof_seq  size     readreq  members  ncmt  lag  cmt1  cmt2  cmt3
+x2gw-0-0 x2txn-0-0  /sys/cmd                   1   0     -0-0       1507     172.7KB  1        29       4     3    1503  1503  1503
+x2gw-0-0 x2txn-0-0  /sys/terminal              2   1     -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/req                   3   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-0-0  /public/anon               4   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-0-0  /public/test-0             6   0     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-0-0  /public/test-1             7   1     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-0-0  /public/test-2             8   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-0-0  /public/test-3             9   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-0-1        29  0     x2txn-0-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-0-2        30  0     x2txn-0-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-0-3        31  0     x2txn-0-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-1-0        32  0     x2txn-1-0  0        0.0B     1        2        0     0    0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-1-2        33  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-1-3        34  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-2-0        35  0     x2txn-2-0  0        0.0B     1        2        0     0    0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-2-1        36  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-2-3        37  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-3-0        38  0     x2txn-3-0  0        0.0B     1        2        0     0    0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-3-1        39  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-3-2        40  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/part-0-0          41  0     x2txn-0-0  4        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/part-0-1          42  1     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/part-0-2          43  2     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/part-0-3          44  3     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-1-0  /public/anon2              5   4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /public/test-4             10  4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /public/test-5             11  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /public/test-6             12  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /public/test-7             13  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /public/imdb               22  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /private/tomato            23  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /private/potato            24  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /sys/txn/part-1-0          45  4     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-1-0  /sys/txn/part-1-1          46  5     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-1-0  /sys/txn/part-1-2          47  6     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-1-0  /sys/txn/part-1-3          48  7     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-2-0  /public/test-8             14  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-2-0  /public/test-9             15  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-2-0  /public/test-10            16  10    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-2-0  /public/test-11            17  11    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-2-0  /kafka/__consumer_offsets  25  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-2-0  /public/large              26  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-2-0  /sys/resp                  27  10    -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-0-0 x2txn-2-0  /sys/txn/part-2-0          49  8     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-2-0  /sys/txn/part-2-1          50  9     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-2-0  /sys/txn/part-2-2          51  10    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-2-0  /sys/txn/part-2-3          52  11    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-3-0  /public/test-12            18  12    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-3-0  /public/test-13            19  13    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-3-0  /public/test-14            20  14    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-3-0  /public/test-15            21  15    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-3-0  /sys/txn/part-3-0          53  12    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-3-0  /sys/txn/part-3-1          54  13    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-3-0  /sys/txn/part-3-2          55  14    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-3-0  /sys/txn/part-3-3          56  15    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2cli.connected  gw:192.168.104.3:1521
+x2gw-1-0 from       name                       id  part  appender   eof_seq  size     readreq  members  ncmt  lag  cmt1  cmt2  cmt3
+x2gw-1-0 x2txn-0-0  /sys/cmd                   1   0     -0-0       1511     172.9KB  1        29       4     3    1507  1507  1507
+x2gw-1-0 x2txn-0-0  /sys/terminal              2   1     -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/req                   3   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-0-0  /public/anon               4   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-0-0  /public/test-0             6   0     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-0-0  /public/test-1             7   1     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-0-0  /public/test-2             8   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-0-0  /public/test-3             9   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-0-1        29  0     x2txn-0-0  4        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-0-2        30  0     x2txn-0-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-0-3        31  0     x2txn-0-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-1-0        32  0     x2txn-1-0  4        0.0B     1        2        0     0    0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-1-2        33  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-1-3        34  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-2-0        35  0     x2txn-2-0  0        0.0B     1        2        0     0    0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-2-1        36  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-2-3        37  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-3-0        38  0     x2txn-3-0  0        0.0B     1        2        0     0    0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-3-1        39  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-3-2        40  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/part-0-0          41  0     x2txn-0-0  8        408.0B   0        5        2          4     4     0
+x2gw-1-0 x2txn-0-0  /sys/txn/part-0-1          42  1     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/part-0-2          43  2     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/part-0-3          44  3     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-1-0  /public/anon2              5   4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /public/test-4             10  4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /public/test-5             11  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /public/test-6             12  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /public/test-7             13  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /public/imdb               22  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /private/tomato            23  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /private/potato            24  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /sys/txn/part-1-0          45  4     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-1-0  /sys/txn/part-1-1          46  5     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-1-0  /sys/txn/part-1-2          47  6     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-1-0  /sys/txn/part-1-3          48  7     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-2-0  /public/test-8             14  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-2-0  /public/test-9             15  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-2-0  /public/test-10            16  10    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-2-0  /public/test-11            17  11    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-2-0  /kafka/__consumer_offsets  25  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-2-0  /public/large              26  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-2-0  /sys/resp                  27  10    -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-1-0 x2txn-2-0  /sys/txn/part-2-0          49  8     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-2-0  /sys/txn/part-2-1          50  9     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-2-0  /sys/txn/part-2-2          51  10    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-2-0  /sys/txn/part-2-3          52  11    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-3-0  /public/test-12            18  12    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-3-0  /public/test-13            19  13    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-3-0  /public/test-14            20  14    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-3-0  /public/test-15            21  15    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-3-0  /sys/txn/part-3-0          53  12    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-3-0  /sys/txn/part-3-1          54  13    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-3-0  /sys/txn/part-3-2          55  14    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-3-0  /sys/txn/part-3-3          56  15    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2cli.connected  gw:192.168.104.4:1534
+x2gw-2-0 from       name                       id  part  appender   eof_seq  size     readreq  members  ncmt  lag  cmt1  cmt2  cmt3
+x2gw-2-0 x2txn-0-0  /sys/cmd                   1   0     -0-0       1515     173.2KB  1        29       4     3    1511  1511  1511
+x2gw-2-0 x2txn-0-0  /sys/terminal              2   1     -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/req                   3   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-0-0  /public/anon               4   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-0-0  /public/test-0             6   0     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-0-0  /public/test-1             7   1     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-0-0  /public/test-2             8   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-0-0  /public/test-3             9   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-0-1        29  0     x2txn-0-0  4        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-0-2        30  0     x2txn-0-0  4        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-0-3        31  0     x2txn-0-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-1-0        32  0     x2txn-1-0  4        0.0B     1        2        0     0    0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-1-2        33  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-1-3        34  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-2-0        35  0     x2txn-2-0  4        0.0B     1        2        0     0    0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-2-1        36  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-2-3        37  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-3-0        38  0     x2txn-3-0  0        0.0B     1        2        0     0    0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-3-1        39  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-3-2        40  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/part-0-0          41  0     x2txn-0-0  12       816.0B   0        5        2          8     8     0
+x2gw-2-0 x2txn-0-0  /sys/txn/part-0-1          42  1     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/part-0-2          43  2     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/part-0-3          44  3     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-1-0  /public/anon2              5   4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /public/test-4             10  4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /public/test-5             11  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /public/test-6             12  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /public/test-7             13  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /public/imdb               22  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /private/tomato            23  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /private/potato            24  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /sys/txn/part-1-0          45  4     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-1-0  /sys/txn/part-1-1          46  5     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-1-0  /sys/txn/part-1-2          47  6     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-1-0  /sys/txn/part-1-3          48  7     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-2-0  /public/test-8             14  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-2-0  /public/test-9             15  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-2-0  /public/test-10            16  10    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-2-0  /public/test-11            17  11    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-2-0  /kafka/__consumer_offsets  25  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-2-0  /public/large              26  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-2-0  /sys/resp                  27  10    -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-2-0 x2txn-2-0  /sys/txn/part-2-0          49  8     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-2-0  /sys/txn/part-2-1          50  9     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-2-0  /sys/txn/part-2-2          51  10    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-2-0  /sys/txn/part-2-3          52  11    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-3-0  /public/test-12            18  12    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-3-0  /public/test-13            19  13    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-3-0  /public/test-14            20  14    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-3-0  /public/test-15            21  15    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-3-0  /sys/txn/part-3-0          53  12    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-3-0  /sys/txn/part-3-1          54  13    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-3-0  /sys/txn/part-3-2          55  14    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-3-0  /sys/txn/part-3-3          56  15    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2cli.connected  gw:192.168.104.2:1508
+x2gw-3-0 from       name                       id  part  appender   eof_seq  size     readreq  members  ncmt  lag  cmt1  cmt2  cmt3
+x2gw-3-0 x2txn-0-0  /sys/cmd                   1   0     -0-0       1518     173.5KB  1        29       4     2    1515  1515  1515
+x2gw-3-0 x2txn-0-0  /sys/terminal              2   1     -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/req                   3   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-0-0  /public/anon               4   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-0-0  /public/test-0             6   0     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-0-0  /public/test-1             7   1     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-0-0  /public/test-2             8   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-0-0  /public/test-3             9   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-0-1        29  0     x2txn-0-0  4        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-0-2        30  0     x2txn-0-0  4        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-0-3        31  0     x2txn-0-0  3        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-1-0        32  0     x2txn-1-0  4        0.0B     1        2        0     0    0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-1-2        33  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-1-3        34  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-2-0        35  0     x2txn-2-0  4        0.0B     1        2        0     0    0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-2-1        36  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-2-3        37  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-3-0        38  0     x2txn-3-0  3        0.0B     1        2        0     0    0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-3-1        39  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-3-2        40  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/part-0-0          41  0     x2txn-0-0  15       1.2KB    0        5        2          12    12    0
+x2gw-3-0 x2txn-0-0  /sys/txn/part-0-1          42  1     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/part-0-2          43  2     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/part-0-3          44  3     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-1-0  /public/anon2              5   4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /public/test-4             10  4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /public/test-5             11  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /public/test-6             12  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /public/test-7             13  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /public/imdb               22  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /private/tomato            23  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /private/potato            24  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /sys/txn/part-1-0          45  4     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-1-0  /sys/txn/part-1-1          46  5     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-1-0  /sys/txn/part-1-2          47  6     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-1-0  /sys/txn/part-1-3          48  7     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-2-0  /public/test-8             14  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-2-0  /public/test-9             15  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-2-0  /public/test-10            16  10    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-2-0  /public/test-11            17  11    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-2-0  /kafka/__consumer_offsets  25  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-2-0  /public/large              26  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-2-0  /sys/resp                  27  10    -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-3-0 x2txn-2-0  /sys/txn/part-2-0          49  8     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-2-0  /sys/txn/part-2-1          50  9     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-2-0  /sys/txn/part-2-2          51  10    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-2-0  /sys/txn/part-2-3          52  11    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-3-0  /public/test-12            18  12    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-3-0  /public/test-13            19  13    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-3-0  /public/test-14            20  14    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-3-0  /public/test-15            21  15    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-3-0  /sys/txn/part-3-0          53  12    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-3-0  /sys/txn/part-3-1          54  13    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-3-0  /sys/txn/part-3-2          55  14    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-3-0  /sys/txn/part-3-3          56  15    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+omcli.info omtest:x2_kapi_cluster
+kapi.connected  broker:192.168.104.5:1558
+kafka2.DescribeClusterResponse
+    request_api_version: 2
+    correlation_id: 1
+    throttle_time_ms: 0
+    error_code: 0
+    endpoint_type: 1
+    cluster_id: 68453567-3dc3-4dea-ba47-920edab83c5f
+    controller_id: 1
+    brokers.0: 
+        broker_id: 1
+        host: 192.168.104.5
+        port: 1558
+        is_fenced: N
+    brokers.1: 
+        broker_id: 2
+        host: 192.168.104.3
+        port: 1532
+        is_fenced: N
+    brokers.2: 
+        broker_id: 3
+        host: 192.168.104.4
+        port: 1545
+        is_fenced: N
+    brokers.3: 
+        broker_id: 4
+        host: 192.168.104.2
+        port: 1519
+        is_fenced: N
+    cluster_authorized_operations: OMITTED
+
+kapi.connected  broker:192.168.104.3:1532
+kafka2.DescribeClusterResponse
+    request_api_version: 2
+    correlation_id: 1
+    throttle_time_ms: 0
+    error_code: 0
+    endpoint_type: 1
+    cluster_id: 68453567-3dc3-4dea-ba47-920edab83c5f
+    controller_id: 1
+    brokers.0: 
+        broker_id: 1
+        host: 192.168.104.5
+        port: 1558
+        is_fenced: N
+    brokers.1: 
+        broker_id: 2
+        host: 192.168.104.3
+        port: 1532
+        is_fenced: N
+    brokers.2: 
+        broker_id: 3
+        host: 192.168.104.4
+        port: 1545
+        is_fenced: N
+    brokers.3: 
+        broker_id: 4
+        host: 192.168.104.2
+        port: 1519
+        is_fenced: N
+    cluster_authorized_operations: OMITTED
+
+kapi.connected  broker:192.168.104.4:1545
+kafka2.DescribeClusterResponse
+    request_api_version: 2
+    correlation_id: 1
+    throttle_time_ms: 0
+    error_code: 0
+    endpoint_type: 1
+    cluster_id: 68453567-3dc3-4dea-ba47-920edab83c5f
+    controller_id: 1
+    brokers.0: 
+        broker_id: 1
+        host: 192.168.104.5
+        port: 1558
+        is_fenced: N
+    brokers.1: 
+        broker_id: 2
+        host: 192.168.104.3
+        port: 1532
+        is_fenced: N
+    brokers.2: 
+        broker_id: 3
+        host: 192.168.104.4
+        port: 1545
+        is_fenced: N
+    brokers.3: 
+        broker_id: 4
+        host: 192.168.104.2
+        port: 1519
+        is_fenced: N
+    cluster_authorized_operations: OMITTED
+
+kapi.connected  broker:192.168.104.2:1519
+kafka2.DescribeClusterResponse
+    request_api_version: 2
+    correlation_id: 1
+    throttle_time_ms: 0
+    error_code: 0
+    endpoint_type: 1
+    cluster_id: 68453567-3dc3-4dea-ba47-920edab83c5f
+    controller_id: 1
+    brokers.0: 
+        broker_id: 1
+        host: 192.168.104.5
+        port: 1558
+        is_fenced: N
+    brokers.1: 
+        broker_id: 2
+        host: 192.168.104.3
+        port: 1532
+        is_fenced: N
+    brokers.2: 
+        broker_id: 3
+        host: 192.168.104.4
+        port: 1545
+        is_fenced: N
+    brokers.3: 
+        broker_id: 4
+        host: 192.168.104.2
+        port: 1519
+        is_fenced: N
+    cluster_authorized_operations: OMITTED
+
+omcli.info omtest:x2_kcat_100b_1
+dev.x2-20:script
+dev.x2-18:script
+dev.x2-19:script
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-3-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-1-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-2-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-0-0.log
+.READY_FOR_TEST
+<f+++++++++ x2test
+omcli.info omenv:dev.x2-4  string_len:100  string_cnt:1  comment:success
+omcli.info omtest:x2_kcat_100b_100
+dev.x2-20:script
+dev.x2-18:script
+dev.x2-19:script
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-3-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-1-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-2-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-0-0.log
+.READY_FOR_TEST
+<fcst...... x2test
+omcli.info omenv:dev.x2-4  string_len:100  string_cnt:100  comment:success
+omcli.info omtest:x2_omcli_options
+dev.x2-20:script
+dev.x2-18:script
+dev.x2-19:script
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-3-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-1-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-2-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-0-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:status 
+Checking status x2...
+COMMAND PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    469 x2usr    6u  IPv4 2349624      0t0  TCP 192.168.104.2:1519 (LISTEN)
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:status 
+Checking status x2...
+COMMAND PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    475 x2usr    6u  IPv4 2326456      0t0  TCP 192.168.104.3:1532 (LISTEN)
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:status 
+Checking status x2...
+COMMAND PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    469 x2usr    6u  IPv4 2292771      0t0  TCP 192.168.104.4:1545 (LISTEN)
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:status 
+Checking status x2...
+COMMAND PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    481 x2usr    6u  IPv4 3048757      0t0  TCP 192.168.104.5:1558 (LISTEN)
+dev.x2-20:script
+dev.x2-18:script
+dev.x2-19:script
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:stop 
+Stopping x2...
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:stop 
+Stopping x2...
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:stop 
+Stopping x2...
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:stop 
+Stopping x2...
+omcli.info omtest:x2_nodeintf_state_test
+omcli.info omenv:dev.x2-4  intfname:ib0-4  comment:selected
+x2node.info node:dev.x2-17  cmd:"ssh -q x2usr@dev.x2-17 'sudo ip link set ib0-4 up'"
+x2node.info node:dev.x2-18  cmd:"ssh -q x2usr@dev.x2-18 'sudo ip link set ib0-4 up'"
+x2node.info node:dev.x2-19  cmd:"ssh -q x2usr@dev.x2-19 'sudo ip link set ib0-4 up'"
+x2node.info node:dev.x2-20  cmd:"ssh -q x2usr@dev.x2-20 'sudo ip link set ib0-4 up'"
+x2node.info  ncmd:4  completed:4  success:4  failure:0
+dev.x2-20:script
+dev.x2-18:script
+dev.x2-19:script
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-3-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-1-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-2-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-0-0.log
+.READY_FOR_TEST
+x2node.info node:dev.x2-17  cmd:"ssh -q x2usr@dev.x2-17 'sudo ip link set ib0-4 down'"
+x2node.info node:dev.x2-18  cmd:"ssh -q x2usr@dev.x2-18 'sudo ip link set ib0-4 down'"
+x2node.info node:dev.x2-19  cmd:"ssh -q x2usr@dev.x2-19 'sudo ip link set ib0-4 down'"
+x2node.info node:dev.x2-20  cmd:"ssh -q x2usr@dev.x2-20 'sudo ip link set ib0-4 down'"
+x2node.info  ncmd:4  completed:4  success:4  failure:0
+x2node.info node:dev.x2-17  cmd:"ssh -q x2usr@dev.x2-17 'sudo ip link set ib0-4 up'"
+x2node.info node:dev.x2-18  cmd:"ssh -q x2usr@dev.x2-18 'sudo ip link set ib0-4 up'"
+x2node.info node:dev.x2-19  cmd:"ssh -q x2usr@dev.x2-19 'sudo ip link set ib0-4 up'"
+x2node.info node:dev.x2-20  cmd:"ssh -q x2usr@dev.x2-20 'sudo ip link set ib0-4 up'"
+x2node.info  ncmd:4  completed:4  success:4  failure:0
+omcli.info omtest:x2_x2traf_2K_1MB_msg
+x2.Seqmsg  stream_id:26  seq:1999  src:x2txn-2-0  timestamp:2025-10-31T11:28:31.537773354  msglen:1000044  payload:\
+x2txn-2-0  eof_seq:2000
+x2write.connected  gw:192.168.104.5:1547
+x2read.connected  gw:192.168.104.2:1508
+x2cli.connected  gw:192.168.104.5:1547
+atf_ci.citest  citest:smokex2_ib  runtime:00:01:16.847677117  [1;33msuccess:Y[0;0m  comment:"Run X2 in CI environment"
+[1;37matf_ci.begin[0;0m  citest:smokex2_eth  sandbox:N
+Using env:dev.x2-4
+atf_ci.smokex2  mcasttype:eth  comment:"building release"
+x2fs.done  path:temp/release/x2.2025-10-31.434bb30cd  fsid:b84bd077-9abe-4606-96d9-f96e358626f7
+x2rel.info  release:temp/release/x2.2025-10-31.434bb30cd  comment:"release completed"
+x2rel.info  release:temp/release/x2ui.2025-10-31.434bb30cd  comment:"release completed"
+x2fs.done  path:temp/release/x2w.2025-10-31.434bb30cd  fsid:b2d5d9b6-2dc0-45e3-a2aa-6603ca444609
+x2rel.info  release:temp/release/x2w.2025-10-31.434bb30cd  comment:"release completed"
+TESTING:dev.x2-4
+omcli.info omtest:x2ssh_start
+x2admin.info admsvc:script  admact:update  ansible:x2admin/ansible/script_update.yml
+
+PLAY [Show script content] *****************************************************
+
+PLAY [Show log content] ********************************************************
+
+PLAY [Verify script content] ***************************************************
+
+PLAY [Update script] ***********************************************************
+
+TASK [Generate local script content] *******************************************
+changed: [dev.x2-17 -> localhost]
+changed: [nj1.sn2.bm -> localhost]
+changed: [dev.kafkaw-04 -> localhost]
+changed: [dev.kafkaw-12 -> localhost]
+changed: [dev.kafkacw-02 -> localhost]
+changed: [dev.minio-02 -> localhost]
+changed: [dev.x2w-08 -> localhost]
+changed: [dev.rdpui-5 -> localhost]
+changed: [dev.kafkaui-5 -> localhost]
+changed: [dev.x2-19 -> localhost]
+changed: [dev.x2-20 -> localhost]
+changed: [nj1.sn5.bm -> localhost]
+changed: [dev.x2-18 -> localhost]
+
+TASK [Ensure script directory exists] ******************************************
+changed: [dev.kafkaw-04]
+changed: [dev.kafkaw-12]
+changed: [dev.x2-17]
+changed: [dev.kafkaui-5]
+changed: [dev.x2-19]
+changed: [dev.kafkacw-02]
+changed: [dev.x2-18]
+changed: [dev.minio-02]
+ok: [nj1.sn2.bm]
+changed: [dev.x2-20]
+changed: [dev.rdpui-5]
+changed: [dev.x2w-08]
+ok: [nj1.sn5.bm]
+
+TASK [Copy script to temporary location] ***************************************
+changed: [dev.kafkaw-12]
+changed: [dev.kafkaw-04]
+changed: [dev.x2-18]
+changed: [dev.x2-19]
+changed: [dev.x2-20]
+changed: [dev.x2-17]
+changed: [dev.minio-02]
+changed: [dev.x2w-08]
+changed: [dev.kafkacw-02]
+changed: [dev.kafkaui-5]
+changed: [dev.rdpui-5]
+changed: [nj1.sn5.bm]
+changed: [nj1.sn2.bm]
+
+TASK [Move script to final location] *******************************************
+changed: [dev.kafkaw-04]
+changed: [dev.kafkaw-12]
+changed: [dev.kafkacw-02]
+changed: [dev.kafkaui-5]
+changed: [dev.minio-02]
+changed: [dev.x2-18]
+changed: [dev.rdpui-5]
+changed: [dev.x2-17]
+changed: [dev.x2-20]
+changed: [dev.x2-19]
+changed: [dev.x2w-08]
+changed: [nj1.sn2.bm]
+changed: [nj1.sn5.bm]
+
+TASK [Create symlink for script] ***********************************************
+ok: [dev.kafkaw-04]
+ok: [dev.kafkaw-12]
+ok: [dev.kafkacw-02]
+ok: [dev.kafkaui-5]
+ok: [dev.x2-17]
+ok: [dev.x2-18]
+ok: [dev.minio-02]
+ok: [dev.x2-19]
+ok: [dev.rdpui-5]
+ok: [dev.x2-20]
+ok: [dev.x2w-08]
+ok: [nj1.sn2.bm]
+ok: [nj1.sn5.bm]
+
+TASK [Append line to host-specific log file] ***********************************
+changed: [dev.kafkaw-04]
+changed: [dev.kafkaw-12]
+changed: [dev.x2-18]
+changed: [dev.kafkacw-02]
+changed: [dev.x2-19]
+changed: [dev.x2-20]
+changed: [dev.x2-17]
+changed: [dev.minio-02]
+changed: [dev.rdpui-5]
+changed: [dev.kafkaui-5]
+changed: [dev.x2w-08]
+changed: [nj1.sn2.bm]
+changed: [nj1.sn5.bm]
+
+TASK [Clean up temporary files] ************************************************
+ok: [dev.kafkacw-02 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkacw-02.remote)
+ok: [dev.kafkaui-5 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkaui-5.remote)
+ok: [dev.kafkaw-04 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkaw-04.remote)
+ok: [dev.kafkaw-12 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkaw-12.remote)
+ok: [dev.minio-02 -> localhost] => (item=/home/avorovich/arnd/temp/dev.minio-02.remote)
+ok: [dev.x2-17 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-17.remote)
+ok: [dev.rdpui-5 -> localhost] => (item=/home/avorovich/arnd/temp/dev.rdpui-5.remote)
+ok: [dev.x2-19 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-19.remote)
+ok: [dev.x2-20 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-20.remote)
+ok: [dev.x2-18 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-18.remote)
+ok: [dev.x2w-08 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2w-08.remote)
+ok: [nj1.sn2.bm -> localhost] => (item=/home/avorovich/arnd/temp/nj1.sn2.bm.remote)
+ok: [nj1.sn5.bm -> localhost] => (item=/home/avorovich/arnd/temp/nj1.sn5.bm.remote)
+changed: [dev.kafkacw-02 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkacw-02.node)
+changed: [dev.kafkaui-5 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkaui-5.node)
+changed: [dev.kafkaw-12 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkaw-12.node)
+changed: [dev.kafkaw-04 -> localhost] => (item=/home/avorovich/arnd/temp/dev.kafkaw-04.node)
+changed: [dev.minio-02 -> localhost] => (item=/home/avorovich/arnd/temp/dev.minio-02.node)
+changed: [dev.x2-17 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-17.node)
+changed: [dev.rdpui-5 -> localhost] => (item=/home/avorovich/arnd/temp/dev.rdpui-5.node)
+changed: [dev.x2-20 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-20.node)
+changed: [dev.x2-19 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-19.node)
+changed: [dev.x2-18 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2-18.node)
+changed: [nj1.sn2.bm -> localhost] => (item=/home/avorovich/arnd/temp/nj1.sn2.bm.node)
+changed: [dev.x2w-08 -> localhost] => (item=/home/avorovich/arnd/temp/dev.x2w-08.node)
+changed: [nj1.sn5.bm -> localhost] => (item=/home/avorovich/arnd/temp/nj1.sn5.bm.node)
+
+PLAY RECAP *********************************************************************
+dev.kafkacw-02             : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.kafkaui-5              : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.kafkaw-04              : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.kafkaw-12              : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.minio-02               : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.rdpui-5                : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.x2-17                  : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.x2-18                  : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.x2-19                  : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.x2-20                  : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+dev.x2w-08                 : ok=7    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+nj1.sn2.bm                 : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+nj1.sn5.bm                 : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+x2ssh start
+omcli.info omtest:docker_restart
+dkr.report command:generate_dockerbuild  cmd:""  targets:11
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.run comment:copying script
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.build comment:copying script
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.run comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.build comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.run comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.build comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.run comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.build comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/Dockerfile comment:copying Dockerfile
+dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.run comment:copying script
+dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.build comment:copying script
+dkr.info image:minio-02 file:temp/docker/minio-02/Dockerfile comment:copying Dockerfile
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.run comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.build comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-17 file:temp/docker/x2-17/x2-17.run comment:copying script
+dkr.info image:x2-17 file:temp/docker/x2-17/x2-17.build comment:copying script
+dkr.info image:x2-17 file:temp/docker/x2-17/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-18 file:temp/docker/x2-18/x2-18.run comment:copying script
+dkr.info image:x2-18 file:temp/docker/x2-18/x2-18.build comment:copying script
+dkr.info image:x2-18 file:temp/docker/x2-18/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-19 file:temp/docker/x2-19/x2-19.run comment:copying script
+dkr.info image:x2-19 file:temp/docker/x2-19/x2-19.build comment:copying script
+dkr.info image:x2-19 file:temp/docker/x2-19/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-20 file:temp/docker/x2-20/x2-20.run comment:copying script
+dkr.info image:x2-20 file:temp/docker/x2-20/x2-20.build comment:copying script
+dkr.info image:x2-20 file:temp/docker/x2-20/Dockerfile comment:copying Dockerfile
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.run comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.build comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/Dockerfile comment:copying Dockerfile
+dkr.report command:docker_clean_run  cmd:'ps --filter "name=x2w-08"'  targets:11
+kafkacw-02
+kafkacw-02
+58b8996a6f18ca369c365c4a6a6abf7f9cd0dc728d3e46a651193a58e655003f
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+58b8996a6f18   kafkacw   "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafkacw-02
+
+kafkaui-5
+kafkaui-5
+2ab698beb90983859071e4606c98e1f91d7134726f55e4031950868125c46d22
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS                                                      NAMES
+2ab698beb909   kafkaui   "/usr/bin/dumb-init …"   1 second ago   Up Less than a second   192.168.10.11:1561->22/tcp, 192.168.10.11:1562->8080/tcp   kafkaui-5
+
+kafkaw-04
+kafkaw-04
+f836ca7698ce0e9e92120d924b36398e98acb22aaf3df178b401967ad54292c5
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+f836ca7698ce   kafkaw    "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafkaw-04
+
+kafkaw-12
+kafkaw-12
+463aeea1e229884a6f52df482cf36186b5072464e19107557642278bd37af18b
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+463aeea1e229   kafkaw    "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafkaw-12
+
+minio-02
+minio-02
+85781fbf1917091221428d8a2b150991330e3f51b38c377e139ba9728df6c917
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+85781fbf1917   minio     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             minio-02
+
+rdpui-5
+rdpui-5
+454d5ee82da0601e509c603162bef4f915eca1dcad237d4b4353bba8774c44d7
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS                                                      NAMES
+454d5ee82da0   rdpui     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second   192.168.10.11:1493->22/tcp, 192.168.10.11:1494->8080/tcp   rdpui-5
+
+x2-17
+x2-17
+f9d0636b6ae5ce71e51822a5895adf4fc8eab1a546509beb54153d58d0561b74
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+f9d0636b6ae5   x2        "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             x2-17
+
+x2-18
+x2-18
+5def6bf4e44cf5e0dd20dee70c8a2c28b77a2ad38651311bb06c11c1d6f030fe
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+5def6bf4e44c   x2        "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             x2-18
+
+x2-19
+x2-19
+7f47c2e2e1c93fa02dba8bbbd321680b5d52714af6d1f3a0a5a3271c7faf4549
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+7f47c2e2e1c9   x2        "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             x2-19
+
+x2-20
+x2-20
+a1edd1490d76d722986e4d3caa25ce2b27a92c23fe59548aadf9078549d40de5
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+a1edd1490d76   x2        "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             x2-20
+
+x2w-08
+x2w-08
+4ea785b1648a639cfaf1616b06a416175a37e331888707918e04d767318dc20f
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+4ea785b1648a   x2w       "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             x2w-08
+
+omcli.info omtest:x2rel_start
+x2rel.release  product:x2  nodes:"(dev.x2-20|dev.x2-18|dev.x2-19|dev.x2-17)"  filename:x2.2025-10-31.434bb30cd
+x2node.info node:dev.x2-17  cmd:"ssh -q x2usr@dev.x2-17 mkdir -p reldir/x2.2025-10-31.434bb30cd"
+x2node.info node:dev.x2-18  cmd:"ssh -q x2usr@dev.x2-18 mkdir -p reldir/x2.2025-10-31.434bb30cd"
+x2node.info node:dev.x2-19  cmd:"ssh -q x2usr@dev.x2-19 mkdir -p reldir/x2.2025-10-31.434bb30cd"
+x2node.info node:dev.x2-20  cmd:"ssh -q x2usr@dev.x2-20 mkdir -p reldir/x2.2025-10-31.434bb30cd"
+x2node.info  ncmd:4  completed:4  success:4  failure:0
+x2rel.release  product:x2w  nodes:"(dev.x2w-08)"  filename:x2w.2025-10-31.434bb30cd
+x2node.info node:dev.x2w-08  cmd:"ssh -q x2w@dev.x2w-08 mkdir -p reldir/x2w.2025-10-31.434bb30cd"
+x2node.info  ncmd:1  completed:1  success:1  failure:0
+<f+++++++++ dev.x2-4.x2-0
+dev.x2-20:script
+<f+++++++++ dev.x2-4.x2-1
+dev.x2-18:script
+<f+++++++++ dev.x2-4.x2-2
+dev.x2-19:script
+<f+++++++++ dev.x2-4.x2-3
+dev.x2-17:script
+<f+++++++++ dev.x2-4.x2w-1
+dev.x2w-08:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-3-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-1-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-2-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-0-0.log
+.READY_FOR_TEST
+omcli.info omtest:kcat_plaintext_L
+Metadata for all topics (from broker -1: dev.x2-4.x2-0.ext-0:1558/bootstrap):
+ 4 brokers:
+  broker 1 at 192.168.104.5:1558 (controller)
+  broker 2 at 192.168.104.3:1532
+  broker 3 at 192.168.104.4:1545
+  broker 4 at 192.168.104.2:1519
+ 3 topics:
+  topic "public.anon" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "public.imdb" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "__consumer_offsets" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+Metadata for all topics (from broker -1: dev.x2-4.x2-1.ext-0:1532/bootstrap):
+ 4 brokers:
+  broker 1 at 192.168.104.5:1558 (controller)
+  broker 2 at 192.168.104.3:1532
+  broker 3 at 192.168.104.4:1545
+  broker 4 at 192.168.104.2:1519
+ 3 topics:
+  topic "public.anon" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "public.imdb" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "__consumer_offsets" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+Metadata for all topics (from broker -1: dev.x2-4.x2-2.ext-0:1545/bootstrap):
+ 4 brokers:
+  broker 1 at 192.168.104.5:1558 (controller)
+  broker 2 at 192.168.104.3:1532
+  broker 3 at 192.168.104.4:1545
+  broker 4 at 192.168.104.2:1519
+ 3 topics:
+  topic "public.anon" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "public.imdb" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "__consumer_offsets" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+Metadata for all topics (from broker -1: dev.x2-4.x2-3.ext-0:1519/bootstrap):
+ 4 brokers:
+  broker 1 at 192.168.104.5:1558 (controller)
+  broker 2 at 192.168.104.3:1532
+  broker 3 at 192.168.104.4:1545
+  broker 4 at 192.168.104.2:1519
+ 3 topics:
+  topic "public.anon" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "public.imdb" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+  topic "__consumer_offsets" with 1 partitions:
+    partition 0, leader 1, replicas: 1, isrs: 1
+omcli.info omtest:x2ui_login
+omcli.info omtest:x2_api_jq_all
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+curl !!!!!!!!!!!!!!! cmd: junkjunk| jq
+bash: line 1: junkjunk: command not found
+omcli.info omtest:x2_cli_stream
+x2cli.connected  gw:192.168.104.5:1547
+x2gw-0-0 from       name                       id  part  appender   eof_seq  size     readreq  members  ncmt  lag  cmt1  cmt2  cmt3
+x2gw-0-0 x2txn-0-0  /sys/cmd                   1   0     -0-0       1507     172.8KB  1        29       4     3    1503  1503  1503
+x2gw-0-0 x2txn-0-0  /sys/terminal              2   1     -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/req                   3   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-0-0  /public/anon               4   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-0-0  /public/test-0             6   0     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-0-0  /public/test-1             7   1     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-0-0  /public/test-2             8   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-0-0  /public/test-3             9   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-0-1        29  0     x2txn-0-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-0-2        30  0     x2txn-0-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-0-3        31  0     x2txn-0-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-1-0        32  0     x2txn-1-0  0        0.0B     1        2        0     0    0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-1-2        33  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-1-3        34  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-2-0        35  0     x2txn-2-0  0        0.0B     1        2        0     0    0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-2-1        36  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-2-3        37  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-3-0        38  0     x2txn-3-0  0        0.0B     1        2        0     0    0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-3-1        39  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/submit-3-2        40  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/part-0-0          41  0     x2txn-0-0  4        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/part-0-1          42  1     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/part-0-2          43  2     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-0-0  /sys/txn/part-0-3          44  3     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-1-0  /public/anon2              5   4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /public/test-4             10  4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /public/test-5             11  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /public/test-6             12  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /public/test-7             13  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /public/imdb               22  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /private/tomato            23  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /private/potato            24  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-1-0  /sys/txn/part-1-0          45  4     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-1-0  /sys/txn/part-1-1          46  5     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-1-0  /sys/txn/part-1-2          47  6     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-1-0  /sys/txn/part-1-3          48  7     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-2-0  /public/test-8             14  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-2-0  /public/test-9             15  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-2-0  /public/test-10            16  10    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-2-0  /public/test-11            17  11    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-2-0  /kafka/__consumer_offsets  25  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-2-0  /public/large              26  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-2-0  /sys/resp                  27  10    -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-0-0 x2txn-2-0  /sys/txn/part-2-0          49  8     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-2-0  /sys/txn/part-2-1          50  9     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-2-0  /sys/txn/part-2-2          51  10    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-2-0  /sys/txn/part-2-3          52  11    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-3-0  /public/test-12            18  12    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-3-0  /public/test-13            19  13    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-3-0  /public/test-14            20  14    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-3-0  /public/test-15            21  15    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-0-0 x2txn-3-0  /sys/txn/part-3-0          53  12    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-3-0  /sys/txn/part-3-1          54  13    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-3-0  /sys/txn/part-3-2          55  14    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-0-0 x2txn-3-0  /sys/txn/part-3-3          56  15    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2cli.connected  gw:192.168.104.3:1521
+x2gw-1-0 from       name                       id  part  appender   eof_seq  size     readreq  members  ncmt  lag  cmt1  cmt2  cmt3
+x2gw-1-0 x2txn-0-0  /sys/cmd                   1   0     -0-0       1510     173.1KB  1        29       4     2    1507  1507  1507
+x2gw-1-0 x2txn-0-0  /sys/terminal              2   1     -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/req                   3   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-0-0  /public/anon               4   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-0-0  /public/test-0             6   0     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-0-0  /public/test-1             7   1     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-0-0  /public/test-2             8   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-0-0  /public/test-3             9   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-0-1        29  0     x2txn-0-0  3        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-0-2        30  0     x2txn-0-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-0-3        31  0     x2txn-0-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-1-0        32  0     x2txn-1-0  3        0.0B     1        2        0     0    0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-1-2        33  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-1-3        34  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-2-0        35  0     x2txn-2-0  0        0.0B     1        2        0     0    0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-2-1        36  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-2-3        37  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-3-0        38  0     x2txn-3-0  0        0.0B     1        2        0     0    0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-3-1        39  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/submit-3-2        40  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/part-0-0          41  0     x2txn-0-0  7        408.0B   0        5        2          4     4     0
+x2gw-1-0 x2txn-0-0  /sys/txn/part-0-1          42  1     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/part-0-2          43  2     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-0-0  /sys/txn/part-0-3          44  3     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-1-0  /public/anon2              5   4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /public/test-4             10  4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /public/test-5             11  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /public/test-6             12  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /public/test-7             13  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /public/imdb               22  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /private/tomato            23  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /private/potato            24  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-1-0  /sys/txn/part-1-0          45  4     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-1-0  /sys/txn/part-1-1          46  5     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-1-0  /sys/txn/part-1-2          47  6     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-1-0  /sys/txn/part-1-3          48  7     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-2-0  /public/test-8             14  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-2-0  /public/test-9             15  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-2-0  /public/test-10            16  10    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-2-0  /public/test-11            17  11    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-2-0  /kafka/__consumer_offsets  25  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-2-0  /public/large              26  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-2-0  /sys/resp                  27  10    -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-1-0 x2txn-2-0  /sys/txn/part-2-0          49  8     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-2-0  /sys/txn/part-2-1          50  9     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-2-0  /sys/txn/part-2-2          51  10    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-2-0  /sys/txn/part-2-3          52  11    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-3-0  /public/test-12            18  12    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-3-0  /public/test-13            19  13    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-3-0  /public/test-14            20  14    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-3-0  /public/test-15            21  15    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-1-0 x2txn-3-0  /sys/txn/part-3-0          53  12    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-3-0  /sys/txn/part-3-1          54  13    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-3-0  /sys/txn/part-3-2          55  14    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-1-0 x2txn-3-0  /sys/txn/part-3-3          56  15    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2cli.connected  gw:192.168.104.4:1534
+x2gw-2-0 from       name                       id  part  appender   eof_seq  size     readreq  members  ncmt  lag  cmt1  cmt2  cmt3
+x2gw-2-0 x2txn-0-0  /sys/cmd                   1   0     -0-0       1515     173.3KB  1        29       4     3    1511  1511  1511
+x2gw-2-0 x2txn-0-0  /sys/terminal              2   1     -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/req                   3   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-0-0  /public/anon               4   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-0-0  /public/test-0             6   0     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-0-0  /public/test-1             7   1     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-0-0  /public/test-2             8   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-0-0  /public/test-3             9   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-0-1        29  0     x2txn-0-0  4        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-0-2        30  0     x2txn-0-0  4        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-0-3        31  0     x2txn-0-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-1-0        32  0     x2txn-1-0  4        0.0B     1        2        0     0    0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-1-2        33  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-1-3        34  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-2-0        35  0     x2txn-2-0  4        0.0B     1        2        0     0    0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-2-1        36  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-2-3        37  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-3-0        38  0     x2txn-3-0  0        0.0B     1        2        0     0    0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-3-1        39  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/submit-3-2        40  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/part-0-0          41  0     x2txn-0-0  12       816.0B   0        5        2          8     8     0
+x2gw-2-0 x2txn-0-0  /sys/txn/part-0-1          42  1     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/part-0-2          43  2     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-0-0  /sys/txn/part-0-3          44  3     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-1-0  /public/anon2              5   4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /public/test-4             10  4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /public/test-5             11  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /public/test-6             12  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /public/test-7             13  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /public/imdb               22  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /private/tomato            23  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /private/potato            24  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-1-0  /sys/txn/part-1-0          45  4     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-1-0  /sys/txn/part-1-1          46  5     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-1-0  /sys/txn/part-1-2          47  6     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-1-0  /sys/txn/part-1-3          48  7     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-2-0  /public/test-8             14  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-2-0  /public/test-9             15  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-2-0  /public/test-10            16  10    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-2-0  /public/test-11            17  11    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-2-0  /kafka/__consumer_offsets  25  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-2-0  /public/large              26  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-2-0  /sys/resp                  27  10    -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-2-0 x2txn-2-0  /sys/txn/part-2-0          49  8     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-2-0  /sys/txn/part-2-1          50  9     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-2-0  /sys/txn/part-2-2          51  10    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-2-0  /sys/txn/part-2-3          52  11    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-3-0  /public/test-12            18  12    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-3-0  /public/test-13            19  13    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-3-0  /public/test-14            20  14    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-3-0  /public/test-15            21  15    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-2-0 x2txn-3-0  /sys/txn/part-3-0          53  12    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-3-0  /sys/txn/part-3-1          54  13    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-3-0  /sys/txn/part-3-2          55  14    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-2-0 x2txn-3-0  /sys/txn/part-3-3          56  15    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2cli.connected  gw:192.168.104.2:1508
+x2gw-3-0 from       name                       id  part  appender   eof_seq  size     readreq  members  ncmt  lag  cmt1  cmt2  cmt3
+x2gw-3-0 x2txn-0-0  /sys/cmd                   1   0     -0-0       1519     173.6KB  1        29       4     3    1515  1515  1515
+x2gw-3-0 x2txn-0-0  /sys/terminal              2   1     -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/req                   3   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-0-0  /public/anon               4   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-0-0  /public/test-0             6   0     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-0-0  /public/test-1             7   1     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-0-0  /public/test-2             8   2     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-0-0  /public/test-3             9   3     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-0-1        29  0     x2txn-0-0  4        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-0-2        30  0     x2txn-0-0  4        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-0-3        31  0     x2txn-0-0  4        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-1-0        32  0     x2txn-1-0  4        0.0B     1        2        0     0    0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-1-2        33  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-1-3        34  0     x2txn-1-0  0        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-2-0        35  0     x2txn-2-0  4        0.0B     1        2        0     0    0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-2-1        36  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-2-3        37  0     x2txn-2-0  0        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-3-0        38  0     x2txn-3-0  4        0.0B     1        2        0     0    0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-3-1        39  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/submit-3-2        40  0     x2txn-3-0  0        0.0B     0        2        0          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/part-0-0          41  0     x2txn-0-0  16       1.2KB    0        5        2          12    12    0
+x2gw-3-0 x2txn-0-0  /sys/txn/part-0-1          42  1     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/part-0-2          43  2     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-0-0  /sys/txn/part-0-3          44  3     x2txn-0-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-1-0  /public/anon2              5   4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /public/test-4             10  4     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /public/test-5             11  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /public/test-6             12  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /public/test-7             13  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /public/imdb               22  5     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /private/tomato            23  6     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /private/potato            24  7     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-1-0  /sys/txn/part-1-0          45  4     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-1-0  /sys/txn/part-1-1          46  5     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-1-0  /sys/txn/part-1-2          47  6     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-1-0  /sys/txn/part-1-3          48  7     x2txn-1-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-2-0  /public/test-8             14  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-2-0  /public/test-9             15  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-2-0  /public/test-10            16  10    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-2-0  /public/test-11            17  11    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-2-0  /kafka/__consumer_offsets  25  8     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-2-0  /public/large              26  9     -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-2-0  /sys/resp                  27  10    -0-0       0        0.0B     0        4        2          0     0     0
+x2gw-3-0 x2txn-2-0  /sys/txn/part-2-0          49  8     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-2-0  /sys/txn/part-2-1          50  9     x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-2-0  /sys/txn/part-2-2          51  10    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-2-0  /sys/txn/part-2-3          52  11    x2txn-2-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-3-0  /public/test-12            18  12    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-3-0  /public/test-13            19  13    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-3-0  /public/test-14            20  14    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-3-0  /public/test-15            21  15    -0-0       0        0.0B     0        0        2          0     0     0
+x2gw-3-0 x2txn-3-0  /sys/txn/part-3-0          53  12    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-3-0  /sys/txn/part-3-1          54  13    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-3-0  /sys/txn/part-3-2          55  14    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+x2gw-3-0 x2txn-3-0  /sys/txn/part-3-3          56  15    x2txn-3-0  0        0.0B     0        5        2          0     0     0
+omcli.info omtest:x2_kapi_cluster
+kapi.connected  broker:192.168.104.5:1558
+kafka2.DescribeClusterResponse
+    request_api_version: 2
+    correlation_id: 1
+    throttle_time_ms: 0
+    error_code: 0
+    endpoint_type: 1
+    cluster_id: b84bd077-9abe-4606-96d9-f96e358626f7
+    controller_id: 1
+    brokers.0: 
+        broker_id: 1
+        host: 192.168.104.5
+        port: 1558
+        is_fenced: N
+    brokers.1: 
+        broker_id: 2
+        host: 192.168.104.3
+        port: 1532
+        is_fenced: N
+    brokers.2: 
+        broker_id: 3
+        host: 192.168.104.4
+        port: 1545
+        is_fenced: N
+    brokers.3: 
+        broker_id: 4
+        host: 192.168.104.2
+        port: 1519
+        is_fenced: N
+    cluster_authorized_operations: OMITTED
+
+kapi.connected  broker:192.168.104.3:1532
+kafka2.DescribeClusterResponse
+    request_api_version: 2
+    correlation_id: 1
+    throttle_time_ms: 0
+    error_code: 0
+    endpoint_type: 1
+    cluster_id: b84bd077-9abe-4606-96d9-f96e358626f7
+    controller_id: 1
+    brokers.0: 
+        broker_id: 1
+        host: 192.168.104.5
+        port: 1558
+        is_fenced: N
+    brokers.1: 
+        broker_id: 2
+        host: 192.168.104.3
+        port: 1532
+        is_fenced: N
+    brokers.2: 
+        broker_id: 3
+        host: 192.168.104.4
+        port: 1545
+        is_fenced: N
+    brokers.3: 
+        broker_id: 4
+        host: 192.168.104.2
+        port: 1519
+        is_fenced: N
+    cluster_authorized_operations: OMITTED
+
+kapi.connected  broker:192.168.104.4:1545
+kafka2.DescribeClusterResponse
+    request_api_version: 2
+    correlation_id: 1
+    throttle_time_ms: 0
+    error_code: 0
+    endpoint_type: 1
+    cluster_id: b84bd077-9abe-4606-96d9-f96e358626f7
+    controller_id: 1
+    brokers.0: 
+        broker_id: 1
+        host: 192.168.104.5
+        port: 1558
+        is_fenced: N
+    brokers.1: 
+        broker_id: 2
+        host: 192.168.104.3
+        port: 1532
+        is_fenced: N
+    brokers.2: 
+        broker_id: 3
+        host: 192.168.104.4
+        port: 1545
+        is_fenced: N
+    brokers.3: 
+        broker_id: 4
+        host: 192.168.104.2
+        port: 1519
+        is_fenced: N
+    cluster_authorized_operations: OMITTED
+
+kapi.connected  broker:192.168.104.2:1519
+kafka2.DescribeClusterResponse
+    request_api_version: 2
+    correlation_id: 1
+    throttle_time_ms: 0
+    error_code: 0
+    endpoint_type: 1
+    cluster_id: b84bd077-9abe-4606-96d9-f96e358626f7
+    controller_id: 1
+    brokers.0: 
+        broker_id: 1
+        host: 192.168.104.5
+        port: 1558
+        is_fenced: N
+    brokers.1: 
+        broker_id: 2
+        host: 192.168.104.3
+        port: 1532
+        is_fenced: N
+    brokers.2: 
+        broker_id: 3
+        host: 192.168.104.4
+        port: 1545
+        is_fenced: N
+    brokers.3: 
+        broker_id: 4
+        host: 192.168.104.2
+        port: 1519
+        is_fenced: N
+    cluster_authorized_operations: OMITTED
+
+omcli.info omtest:x2_kcat_100b_1
+dev.x2-20:script
+dev.x2-18:script
+dev.x2-19:script
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-3-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-1-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-2-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-0-0.log
+.READY_FOR_TEST
+<f+++++++++ x2test
+omcli.info omenv:dev.x2-4  string_len:100  string_cnt:1  comment:success
+omcli.info omtest:x2_kcat_100b_100
+dev.x2-20:script
+dev.x2-18:script
+dev.x2-19:script
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-3-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-1-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-2-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-0-0.log
+.READY_FOR_TEST
+<fcst...... x2test
+omcli.info omenv:dev.x2-4  string_len:100  string_cnt:100  comment:success
+omcli.info omtest:x2_omcli_options
+dev.x2-20:script
+dev.x2-18:script
+dev.x2-19:script
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-3-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-1-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-2-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:start_clean 
+Stopping x2...
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-0-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:status 
+Checking status x2...
+COMMAND PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    469 x2usr    6u  IPv4 2349728      0t0  TCP 192.168.104.2:1519 (LISTEN)
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:status 
+Checking status x2...
+COMMAND PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    475 x2usr    6u  IPv4 2344649      0t0  TCP 192.168.104.3:1532 (LISTEN)
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:status 
+Checking status x2...
+COMMAND PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    469 x2usr    6u  IPv4 2274883      0t0  TCP 192.168.104.4:1545 (LISTEN)
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:status 
+Checking status x2...
+COMMAND PID  USER   FD   TYPE  DEVICE SIZE/OFF NODE NAME
+x2gw    468 x2usr    6u  IPv4 3077606      0t0  TCP 192.168.104.5:1558 (LISTEN)
+dev.x2-20:script
+dev.x2-18:script
+dev.x2-19:script
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:stop 
+Stopping x2...
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:stop 
+Stopping x2...
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:stop 
+Stopping x2...
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:stop 
+Stopping x2...
+omcli.info omtest:x2_nodeintf_state_test
+omcli.info omenv:dev.x2-4  intfname:ib0-4  comment:selected
+x2node.info node:dev.x2-17  cmd:"ssh -q x2usr@dev.x2-17 'sudo ip link set ib0-4 up'"
+x2node.info node:dev.x2-18  cmd:"ssh -q x2usr@dev.x2-18 'sudo ip link set ib0-4 up'"
+x2node.info node:dev.x2-19  cmd:"ssh -q x2usr@dev.x2-19 'sudo ip link set ib0-4 up'"
+x2node.info node:dev.x2-20  cmd:"ssh -q x2usr@dev.x2-20 'sudo ip link set ib0-4 up'"
+x2node.info  ncmd:4  completed:4  success:4  failure:0
+dev.x2-20:script
+dev.x2-18:script
+dev.x2-19:script
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-3-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-1-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-2-0.log
+.READY_FOR_TEST
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./dev-x2-4.x2sup-0-0.log
+.READY_FOR_TEST
+x2node.info node:dev.x2-17  cmd:"ssh -q x2usr@dev.x2-17 'sudo ip link set ib0-4 down'"
+x2node.info node:dev.x2-18  cmd:"ssh -q x2usr@dev.x2-18 'sudo ip link set ib0-4 down'"
+x2node.info node:dev.x2-19  cmd:"ssh -q x2usr@dev.x2-19 'sudo ip link set ib0-4 down'"
+x2node.info node:dev.x2-20  cmd:"ssh -q x2usr@dev.x2-20 'sudo ip link set ib0-4 down'"
+x2node.info  ncmd:4  completed:4  success:4  failure:0
+x2node.info node:dev.x2-17  cmd:"ssh -q x2usr@dev.x2-17 'sudo ip link set ib0-4 up'"
+x2node.info node:dev.x2-18  cmd:"ssh -q x2usr@dev.x2-18 'sudo ip link set ib0-4 up'"
+x2node.info node:dev.x2-19  cmd:"ssh -q x2usr@dev.x2-19 'sudo ip link set ib0-4 up'"
+x2node.info node:dev.x2-20  cmd:"ssh -q x2usr@dev.x2-20 'sudo ip link set ib0-4 up'"
+x2node.info  ncmd:4  completed:4  success:4  failure:0
+omcli.info omtest:x2_x2traf_2K_1MB_msg
+x2.Seqmsg  stream_id:26  seq:1999  src:x2txn-2-0  timestamp:2025-10-31T11:29:55.492732724  msglen:1000044  payload:\
+x2txn-2-0  eof_seq:2000
+x2write.connected  gw:192.168.104.5:1547
+x2read.connected  gw:192.168.104.2:1508
+x2cli.connected  gw:192.168.104.5:1547
+atf_ci.citest  citest:smokex2_eth  runtime:00:01:23.962298984  [1;33msuccess:Y[0;0m  comment:"Run X2 in CI environment"
+report.atf_ci  n_citest:55  n_run:3  n_pass:3  [1;33msuccess:Y[0;0m  comment:"The coast is clear. Proceed with caution :-)"

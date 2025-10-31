@@ -2,7 +2,7 @@ git clean -f -d -x
 ai
 abt_ts -build
 
-atf_ci -cijob:coverage -v -v -v > /home/avorovich/av_openacr/issues/1231_coverge_tracking/a2.log  2>&1
+atf_ci -cijob:coverage -v -v -v > /home/avorovich/av_openacr/issues/1231_coverge_tracking/maxjobs1a.log  2>&1
 
 
 

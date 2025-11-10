@@ -76,8 +76,8 @@ sudo mkdir -p /var/lib/clickhouse/user_files
 sudo cp /tmp/clickhouse*.json /var/lib/clickhouse/user_files/
 sudo sh -c 'chown clickhouse:clickhouse /var/lib/clickhouse/user_files/clickhouse*.json'
 
-DROP TABLE IF EXISTS minio_json;
-CREATE TABLE minio_json
+DROP TABLE IF EXISTS user_files;
+CREATE TABLE user_files
 (
     data String
 )
@@ -88,4 +88,4 @@ SELECT
     JSONExtractString(data, 'name') AS name,
     JSONExtractString(data, 'role') AS role,
     arrayJoin(JSONExtractArrayRaw(data, 'projects')) AS project
-FROM minio_json;
+FROM user_files;

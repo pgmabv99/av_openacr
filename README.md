@@ -247,8 +247,7 @@ chmod 600 ~/.ssh/algox2_av
 
 #Start the SSH agent if it's not already running
 eval "$(ssh-agent -s)"
-
-#Add the SSH key
+add the SSH key
 ssh-add ~/.ssh/algox2_av
 
 #Confirm the key was added
@@ -288,6 +287,8 @@ docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 #build image
 dkr -build -node:dev.kafkacw-02 > ~/av_openacr/logs_dkr/dbld.log
 
+docker ps --format "table {{.Names}}\t{{.Image}}\t{{.CreatedAt}}\t{{.Status}}"
+docker ps --format "table {{.Names}}\t{{.Image}}\t{{.CreatedAt}}\t{{.Status}}" | sort
 
 
 ## private keys 

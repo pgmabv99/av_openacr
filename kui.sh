@@ -19,6 +19,7 @@ sudo ~/arnd/bin/atf_snf -dev:${dev} -kapi  -dir:$tag  -timestamp_log:N
 echo "convert pcap file to logs"
 # tag=common
 # atf_snf  -kapi -in_file:/home/avorovich/arnd/temp/atf_snf_logs/common/2025.07.24.11.16/atf_snf.pcap
+# atf_snf  -kapi -in_file:/home/avorovich/arnd/temp/collect_logs/x2/2025.11.04.15.44/dev.x2-4.tap-1_ext_0/atf_snf.pcap
 
 
 

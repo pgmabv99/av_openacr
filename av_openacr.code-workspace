@@ -9,6 +9,18 @@
 		},
 		{
 			"path": "../.ssh"
+		},
+		{
+			"path": "../arnd/temp/collect_logs"
+		},
+		{
+			"path": "../../../etc/clickhouse-server"
+		},
+		{
+			"path": "../../../etc/clickhouse-client"
+		},
+		{
+			"path": "../../../var/log/clickhouse-server"
 		}
 	],
 

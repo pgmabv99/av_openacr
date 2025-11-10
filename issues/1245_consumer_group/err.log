@@ -1,0 +1,41 @@
+/opt/kafka/current/bin/kafka-console-consumer.sh \
+  --bootstrap-server $server \
+  --topic test-topic \
+  --group test-consumer-group \
+  --from-beginning \
+  --property print.timestamp=true
+CreateTime:1762364198224        message1
+CreateTime:1762364198224        message2
+CreateTime:1762364211221        message1
+CreateTime:1762364211221        message2
+[2025-11-05 12:42:03,267] ERROR Error processing message, terminating consumer process:  (org.apache.kafka.tools.consumer.ConsoleConsumer)
+org.apache.kafka.common.requests.CorrelationIdMismatchException: Correlation id for response (710) does not match request (707), request header: RequestHeader(apiKey=FETCH, apiVersion=12, clientId=console-consumer, correlationId=707, headerVersion=2)
+        at org.apache.kafka.common.requests.AbstractResponse.parseResponse(AbstractResponse.java:106)
+        at org.apache.kafka.clients.NetworkClient.parseResponse(NetworkClient.java:776)
+        at org.apache.kafka.clients.NetworkClient.handleCompletedReceives(NetworkClient.java:949)
+        at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:605)
+        at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+        at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.pollNoWakeup(ConsumerNetworkClient.java:323)
+        at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.commitOffsetsAsync(ConsumerCoordinator.java:1054)
+        at org.apache.kafka.clients.consumer.internals.ConsumerCoordina
+
+
+ x2node  -node:nj1.sn5.bm -root
+root@nj1.sv5:~# docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                                                                                                    NAMES
+756bb2618156   x2        "/usr/bin/dumb-init …"   23 minutes ago   Up 23 minutes                                                                                                                            x2-04
+9372ca1ce421   x2        "/usr/bin/dumb-init …"   48 minutes ago   Up 48 minutes                                                                                                                            x2-20
+a94b24a8f45f   kafka     "/usr/bin/dumb-init …"   48 minutes ago   Up 48 minutes                                                                                                                            kafka-16
+ea89b70ea9c0   rdp       "/usr/bin/dumb-init …"   2 hours ago      Up 2 hours                                                                                                                               rdp-12
+f3680dd44e27   x2        "/usr/bin/dumb-init …"   4 hours ago      Up 4 hours                                                                                                                               x2-16
+fb106210d3a8   x2        "/usr/bin/dumb-init …"   4 hours ago      Up 4 hours                                                                                                                               x2-12
+277059587a3c   x2        "/usr/bin/dumb-init …"   6 days ago       Up 3 days                                                                                                                                x2-08
+c3df123d3c9b   user      "/usr/bin/dumb-init …"   4 weeks ago      Up 3 days       192.168.10.51:1024->1024/tcp, 192.168.10.51:4024->3000/tcp, 192.168.10.51:4025->3001/tcp, 192.168.10.51:1029->4321/tcp   user-apolov
+9528cbdd7377   user      "/usr/bin/dumb-init …"   4 weeks ago      Up 3 days       192.168.10.51:1012->1012/tcp, 192.168.10.51:4012->3000/tcp, 192.168.10.51:4013->3001/tcp, 192.168.10.51:1028->4321/tcp   user-alebedev
+b6d3b95fc79d   user      "/usr/bin/dumb-init …"   4 weeks ago      Up 3 days       192.168.10.51:1000->1000/tcp, 192.168.10.51:4000->3000/tcp, 192.168.10.51:4001->3001/tcp, 192.168.10.51:1027->4321/tcp   user-vparizhs
+3555a81674bb   user      "/usr/bin/dumb-init …"   4 weeks ago      Up 3 days                                                                                                                                user-avorovich
+83892d627be8   x2        "/usr/bin/dumb-init …"   5 weeks ago      Up 3 days                                                                                                                                x2-24
+04f4ae6fb3c8   kafka     "/usr/bin/dumb-init …"   8 weeks ago      Up 3 days                                                                                                                                kafka-04
+58027985af16   rdp       "/usr/bin/dumb-init …"   3 months ago     Up 3 days                                                                                                                                rdp-4
+eefe1fa1abfe   rdp       "/usr/bin/dumb-init …"   4 months ago     Up 3 days                                                                                                                                rdp-5
+root@nj1.sv5:~# 

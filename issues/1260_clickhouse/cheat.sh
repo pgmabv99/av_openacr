@@ -41,17 +41,14 @@ echo '{
   "projects": ["project55", "project66"]
 }' > /tmp/clickhouse2.json
 
-# copy to clickhouse internal folder
-sudo mkdir -p /var/lib/clickhouse/user_files
-sudo cp /tmp/clickhouse*.json /var/lib/clickhouse/user_files/
-sudo sh -c 'chown clickhouse:clickhouse /var/lib/clickhouse/user_files/clickhouse*.json'
 
+
+#  query minio
 # copy to minio
 mc find x2s3/avorovich --name "clickhouse*.json" --exec "mc rm {} --force"
 mc cp /tmp/clickhouse*.json x2s3/avorovich/
 
 
-#  query minio
 DROP TABLE IF EXISTS minio_json;
 CREATE TABLE minio_json (data String)
 ENGINE = S3(
@@ -73,7 +70,12 @@ FROM minio_json;
 
 
 # -------------------------------
-# query  lfiles in internal folder
+# query  files in internal folder
+# copy to clickhouse internal folder
+sudo mkdir -p /var/lib/clickhouse/user_files
+sudo cp /tmp/clickhouse*.json /var/lib/clickhouse/user_files/
+sudo sh -c 'chown clickhouse:clickhouse /var/lib/clickhouse/user_files/clickhouse*.json'
+
 DROP TABLE IF EXISTS minio_json;
 CREATE TABLE minio_json
 (

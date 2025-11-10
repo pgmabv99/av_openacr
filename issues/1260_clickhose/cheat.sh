@@ -1,15 +1,18 @@
+
 #   -remove old clickhouse installation
 
 sudo apt-get remove --purge clickhouse-server clickhouse-client
 sudo rm -rf /etc/clickhouse-server /var/lib/clickhouse /var/log/clickhouse-server
 
-
+# install
 https://clickhouse.com/docs/install/debian_ubuntu
 
+
+# start/stop
 sudo clickhouse stop
 sudo clickhouse start
 
-
+#client 
 clickhouse-client --multiquery <<EOF
 CREATE DATABASE IF NOT EXISTS testdb;
 CREATE TABLE IF NOT EXISTS testdb.test_table (id UInt32, name String) ENGINE = MergeTree() ORDER BY id;
@@ -21,7 +24,7 @@ EOF
 
 omcli dev.x2-4.minio-1 -start
 
-
+# create sample json files
 echo '{
   "name": "Alexey",
   "role": "developer",
@@ -38,17 +41,14 @@ echo '{
   "projects": ["project55", "project66"]
 }' > /tmp/clickhouse2.json
 
-# / to clickhouse internal folder
+# copy to clickhouse internal folder
 sudo mkdir -p /var/lib/clickhouse/user_files
 sudo cp /tmp/clickhouse*.json /var/lib/clickhouse/user_files/
 sudo sh -c 'chown clickhouse:clickhouse /var/lib/clickhouse/user_files/clickhouse*.json'
 
-# /to minio
+# copy to minio
 mc find x2s3/avorovich --name "clickhouse*.json" --exec "mc rm {} --force"
 mc cp /tmp/clickhouse*.json x2s3/avorovich/
-
-
-
 
 
 #  query minio
@@ -73,7 +73,7 @@ FROM minio_json;
 
 
 # -------------------------------
-# query  local files 
+# query  lfiles in internal folder
 DROP TABLE IF EXISTS minio_json;
 CREATE TABLE minio_json
 (

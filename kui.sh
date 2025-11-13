@@ -3,10 +3,10 @@
 
 omrun_load=debug-workload100
 
-# omenv=dev.x2-4
-# dev=data0-4T 
-omenv=dev.ak-8
-dev=data0-8T
+omenv=dev.x2-4
+dev=data0-4T 
+# omenv=dev.ak-8
+# dev=data0-8T
 
 echo "....starting atf_snf in  $(pwd) . "
 echo "....use ctrl+C to enter commands . stdout is redirected to $ofile"

@@ -1,35 +1,68 @@
+#setup 
+omplat=ak
+# omplat=x2
 
-echo "kafka single node" 
-server=dev.x2-4.kafka-4.ext-0:1664
+tap_omnnode=dev.x2-4.tap-1_ext_0  # device:nj1.sv2  omnode:kafka-1 node:dev.kafka-13
+# tap_omnnode=dev.x2-4.tap-4_ext_0  # device:nj1.sv5 omnode:kafka-4 node:dev.kafka-16
 
-echo "x2 single node"
-server=192.168.104.5:1664
-tap_omnnode=dev.x2-4.tap-4_ext_0 
-# tap_omnnode=dev.x2-4.tap-1_ext_0
+if [ "$omplat" = "ak" ]; then
+  server="dev.x2-4.kafka-1.ext-0:1643"
+elif [ "$omplat" = "x2" ]; then
+  server="192.168.104.5:1558"
+else
+  echo "unknown omplat:$omplat - no action"
+fi
+echo "setup  omplat:$omplat server:$server" 
 
+# -----------------------------------------
+# clean all
 omcli dev.x2-4 -dkr_clean_run -omplat:ak
 omcli dev.x2-4 -dkr_clean_run -omplat:x2
 
-omcli dev.x2-4.kafka-% -omplat:ak -status
-omcli dev.x2-4.x2-% -omplat:x2 -status
 
-echo "start kafka brokers"
-omcli dev.x2-4.kafka-% -omplat:ak -start_clean
 
-echo "install and start x2"
-x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y
-omcli dev.x2-4.x2-% -omplat:x2 -start_clean
+#  start brokers
+if [ "$omplat" = "ak" ]; then
+  echo "start kafka brokers"
+  omcli dev.x2-4.kafka-% -omplat:ak -start_clean
+elif [ "$omplat" = "x2" ]; then
+  echo "install and start x2"
+  x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y
+  omcli dev.x2-4.x2-% -omplat:x2 -start_clean
+else
+  echo "unknown omplat:$omplat - no action"
+fi
+
+omcli dev.x2-4.kafka-% -omplat:$omplat -status
+omcli dev.x2-4.x2-% -omplat:$omplat -status
+
+
+echo "install and start tap remotely"
+x2rel  -create  -product:"tap" -omenv:dev.x2-4 -upload:Y  -create:Y 
+omcli $tap_omnnode -ignore_omnode_use -start
+
+echo "run tap locally"
+sudo ~/arnd/bin/atf_snf -dev:data0-4T  -kapi  -dir:local -timestamp_log:N
 
 echo "start kafkaui"
-omcli dev.x2-4.kafkaui-1  -omplat:x2 -start_clean
+omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
 
+#  workloads 
 
+# build all messages into a variable and send once
+while :; do
+  nrec=222
+  msgs=""
+  for i in $(seq 1 "$nrec"); do
+    msgs+=$'message1\nmessage2\n'
+  done
+  printf '%s' "$msgs" | /opt/kafka/current/bin/kafka-console-producer.sh --bootstrap-server "$server" --topic test-topic
+  echo "produce $nrec messages to test-topic"
+  sleep 1
+done
 
-echo -e "message1\nmessage2" | \
-/opt/kafka/current/bin/kafka-console-producer.sh \
-    --bootstrap-server $server \
-    --topic test-topic
 sleep 2
+echo "consume  "
 /opt/kafka/current/bin/kafka-console-consumer.sh \
   --bootstrap-server $server \
   --topic test-topic \
@@ -39,20 +72,21 @@ sleep 2
 
 # omcli dev.x2-4 -omtest:om_benchmark -omplat:ak -omrun_minutes:1
 
-echo "install and start tap"
-x2rel  -create  -product:"tap" -omenv:dev.x2-4 -upload:Y  -create:Y 
-omcli $tap_omnnode -ignore_omnode_use -start
-
+echo
 sleep 2
 /opt/kafka/current/bin/kafka-consumer-groups.sh \
     --bootstrap-server $server \
     --group test-consumer-group \
     --describe
 sleep 2
+
+echo "collect tap logs"
 omcli $tap_omnnode -ignore_omnode_use -stop
 sleep 4
 omcli $tap_omnnode -ignore_omnode_use -collect_logs
 
+
+echo "stop kafka brokers locally "
 /opt/kafka/current/bin/kafka-server-start.sh /opt/kafka/current/config/server.properties
 
 $ acr omnode:dev.x2-4%
@@ -159,3 +193,24 @@ x2w-06            x2w             2025-11-05 09:19:41 -0500 EST   Up 5 hours
 x2w-07            x2w             2025-11-05 13:49:18 -0500 EST   Up About a minute
 x2w-08            x2w             2025-11-05 12:33:34 -0500 EST   Up About an hour
 root@nj1.sv1:~# 
+
+x2sup-0-0: deleting vars file, initdir .
+x2sup.start  me:dev-x2-4.x2sup-0-0  nproc:8
+atf.var  http00port:1550
+atf.var  httpport:1550
+atf.var  kafka00port:1558
+atf.var  kafkaport:1558
+atf.var  mqtt00port:1549
+atf.var  mqttport:1549
+atf.var  nats00port:1552
+atf.var  natsport:1552
+atf.var  resp00port:1555
+atf.var  respport:1555
+atf.var  x200port:1547
+atf.var  x2port:1547
+x2txn-0-0: partition not found x2.PubMsg  from:x2mon-0-0  request_id:x2mon-0-0.1  stream_id:1  timestamp:2025-11-11T15:55:04.068086028  record.0:'x2.NodeintfStateMsg  state:up  speed:100000  nodeintf:dev-x2-4.node-0.ext-0  model:"Mellanox ConnectX-6 VPI"  link:ETH'
+x2txn-0-0: partition not found x2.PubMsg  from:x2mon-0-0  request_id:x2mon-0-0.2  stream_id:1  timestamp:2025-11-11T15:55:04.068089223  record.0:'x2.NodeintfStateMsg  state:up  speed:100000  nodeintf:dev-x2-4.node-0.int-0  model:"Mellanox ConnectX-6 VPI"  link:ETH'
+x2txn-0-0: partition not found x2.PubMsg  from:x2mon-0-0  request_id:x2mon-0-0.3  stream_id:1  timestamp:2025-11-11T15:55:04.068090087  record.0:'x2.NodeintfStateMsg  state:up  speed:200000  nodeintf:dev-x2-4.node-0.ib-0  model:"Mellanox ConnectX-6 VPI"  link:IB'
+x2net-0-0: x2net.x2node  node:dev-x2-4.node-1  state:down
+x2net-0-0: x2net.x2node  node:dev-x2-4.node-2  state:down
+x2net-0-0: x2net.x2node  node:dev-x2-4.node-3  state:down

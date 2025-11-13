@@ -1,0 +1,17 @@
+/ atf_lat.FDb                                                                                                                    
+|Lary omenv----------------------------------------->/ atf_lat.FOmenv                                                            
+|Ptr p_omenv---------------------------------------->|                                                                           
+|Thash ind_omenv------------------------------------>|                                                                           
+|Tpool tcp_pair_hist------>/ atf_lat.FTcp_pair_hist  |                                                                           
+|Llist zd_tcp_pair_hist--->|                         |                                                                           
+|Thash ind_tcp_pair_hist-->|                         |                                                                           
+|                          -                         |                                                                           
+|Val mcb---------------------------------------------|------------------------------------>/ atf_lat.FMcb                        
+|Lary omnode-----------------------------------------|----------------->/ atf_lat.FOmnode  |                                     
+-                                                    |                  |                  |                                     
+                                                     |Ptrary c_omnode-->|                  |                                     
+                                                     -                  |                  |                                     
+                                                                        -                  |                                     
+                                                                                           |Val progress------>/ atf_lat.Progress
+                                                                                           -                   |                 
+                                                                                                               -                 

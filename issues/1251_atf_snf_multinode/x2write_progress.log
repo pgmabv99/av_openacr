@@ -1,0 +1,26 @@
+$ x2traf -payload:trafmsg -msg_size:10 -msg_rate:10 -traf_id:64 -tstamp:N -max_msgs:500 | x2write -printacks:N -progress -max_inflight:0 -payload:trafmsg 
+x2write.progress  time:2025-11-13T09:48:07.28669211  write_bytes:1220  mbit_sec:0.00992912  delay_usec:99003.3  inflight:1  write_msgs:11  msgs_per_batch:1.22222
+x2write.progress  time:2025-11-13T09:48:08.269309237  write_bytes:2480  mbit_sec:0.0102583  delay_usec:99119.9  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:09.251926571  write_bytes:3740  mbit_sec:0.0102583  delay_usec:99129.4  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:10.23569327  write_bytes:4874  mbit_sec:0.0092217  delay_usec:99147.5  inflight:1  write_msgs:9  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:11.219030972  write_bytes:6134  mbit_sec:0.0102508  delay_usec:99008.8  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:12.202267921  write_bytes:7394  mbit_sec:0.0102519  delay_usec:99032.1  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:13.187937553  write_bytes:8654  mbit_sec:0.0102266  delay_usec:98999.7  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:14.170947745  write_bytes:9914  mbit_sec:0.0102542  delay_usec:99062.4  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:15.153565043  write_bytes:11174  mbit_sec:0.0102583  delay_usec:99098.2  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:16.137327385  write_bytes:12308  mbit_sec:0.00922174  delay_usec:99163.1  inflight:1  write_msgs:9  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:17.120795957  write_bytes:13568  mbit_sec:0.0102494  delay_usec:99000.2  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:18.103566913  write_bytes:14828  mbit_sec:0.0102567  delay_usec:99028.1  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:22.46823333  write_bytes:16088  mbit_sec:0.00230945  delay_usec:437218  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:23.450850969  write_bytes:17348  mbit_sec:0.0102583  delay_usec:99133.6  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:24.615317722  write_bytes:18568  mbit_sec:0.00838152  delay_usec:116131  inflight:1  write_msgs:10  msgs_per_batch:1.11111
+x2write.progress  time:2025-11-13T09:48:25.597935101  write_bytes:19828  mbit_sec:0.0102583  delay_usec:99131.2  inflight:0  write_msgs:9  msgs_per_batch:0.9
+x2write.progress  time:2025-11-13T09:48:26.581993516  write_bytes:20962  mbit_sec:0.00921896  delay_usec:99121.4  inflight:1  write_msgs:10  msgs_per_batch:1.11111
+x2write.progress  time:2025-11-13T09:48:27.565352917  write_bytes:22222  mbit_sec:0.0102506  delay_usec:99022.8  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:28.547969793  write_bytes:23402  mbit_sec:0.009607  delay_usec:99233.6  inflight:1  write_msgs:10  msgs_per_batch:1.25
+x2write.progress  time:2025-11-13T09:48:29.530587334  write_bytes:24662  mbit_sec:0.0102583  delay_usec:99021.5  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:30.513204695  write_bytes:25922  mbit_sec:0.0102583  delay_usec:99125.4  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:31.497362443  write_bytes:27056  mbit_sec:0.00921803  delay_usec:99152.1  inflight:1  write_msgs:9  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:32.48085032  write_bytes:28316  mbit_sec:0.0102492  delay_usec:99032.5  inflight:1  write_msgs:10  msgs_per_batch:1
+x2write.progress  time:2025-11-13T09:48:33.464325724  write_bytes:29576  mbit_sec:0.0102494  delay_usec:99014.9  inflight:1  write_msgs:10  msgs_per_batch:1
+^C

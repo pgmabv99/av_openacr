@@ -96,6 +96,16 @@
 			"**/kafka2_gen.cpp": true,
 
 		},
-		"java.compile.nullAnalysis.mode": "automatic"
+		"java.compile.nullAnalysis.mode": "automatic",
+		"favorites.resources": [
+			{
+				"filePath": "/home/avorovich/av_openacr/issues/1251_atf_snf_multinode",
+				"group": "Default"
+			},
+			{
+				"filePath": "/home/avorovich/arnd/cpp/atf_lat",
+				"group": "Default"
+			}
+		]
 	}
 }

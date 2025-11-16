@@ -2,25 +2,31 @@
 set -x
 set -e
 
-
-
 acr_ed -del  -ctype atf_lat.FMcb         -write || true
 acr_ed -del  -ctype atf_lat.FTcp_pair_hist    -write || true
 acr_ed -del  -ctype atf_lat.Progress    -write || true
 
+acr_ed -del  -ctype omdb.TcpPairHistRec     -write || true
+acr_ed -del  -ssimfile:omdb.tcp_pair_hist_rec   -write || true
+
+#-------------Tcp_pair_hist_rec 
+acr_ed -create  -ssimfile:omdb.om_tcp_pair_rec   -write -comment "tcp pair history record"
+acr_ed -create -field  omdb.OmTcpPairRec.time                          -arg algo.UnTime    -write -comment "Report time"
+acr_ed -create -field  omdb.OmTcpPairRec.frame_count                   -arg i32              -write -comment "number of frames for this pair"
+acr_ed -create -field  omdb.OmTcpPairRec.snapshot_id                   -arg i32              -write -comment "snap"
+acr_ed -create -field  omdb.OmTcpPairRec.client_id_key                 -arg algo.Smallstr50  -write -comment "kafka client id"
+acr_ed -create -field  omdb.OmTcpPairRec.host                          -arg algo.Smallstr50  -write -comment "capture host"
+
 #-------------Progress
-acr_ed -create -ctype atf_lat.Progress                                -write -comment " "
-acr_ed -create -field  atf_lat.Progress.time                   -arg algo.UnTime              -write -comment "Report time"
-# TCP stats
+acr_ed -create -ctype  atf_lat.Progress                                -write -comment " "
+acr_ed -create -field  atf_lat.Progress.time                           -arg algo.UnTime      -write -comment "Report time"
 acr_ed -create -field  atf_lat.Progress.frame_count                    -arg i32              -write -comment "number of frames for this pair"
-acr_ed -create -field  atf_lat.Progress.tcp_payload_len_tot            -arg u32              -write -comment "total of tcp payload length per pair"
-# Kafka stats
-acr_ed -create -field  atf_lat.Progress.kafka_count                    -arg u32              -write -comment "kafka req or rsp count"
-acr_ed -create -field  atf_lat.Progress.kafka_req_ack_count            -arg u32              -write -comment "kafka req ack count"
-acr_ed -create -field  atf_lat.Progress.kafka_len_tot                  -arg u32              -write -comment "total of kafka req/rsp length per pair"
+acr_ed -create -field  atf_lat.Progress.host                           -arg algo.Smallstr50  -write -comment "host of the tap"
+acr_ed -create -field  atf_lat.Progress.client_id_key                  -arg algo.Smallstr50  -write -comment "kafka client id for the pair"
+acr_ed -create -field  atf_lat.Progress.snapshot_id                     -arg i32              -write -comment ""
 
 #--------------tcp pair
-acr_ed -create -ctype atf_lat.FTcp_pair_hist                          -pooltype Tpool       -write -comment "tcp pair entry"
+acr_ed -create -ctype  atf_lat.FTcp_pair_hist                          -pooltype Tpool       -write -comment "tcp pair entry"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.tcp_pair_hist            -arg algo.Smallstr50   -write -comment "tcp pair string key host:port-host:port"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.progress                 -arg atf_lat.Progress  -write -comment "current progress stats"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.last_progress            -arg atf_lat.Progress  -write -comment "last progress stats"

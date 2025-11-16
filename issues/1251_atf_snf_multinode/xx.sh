@@ -70,7 +70,9 @@ echo "consume  "
   --from-beginning \
   --property print.timestamp=true
 
-# omcli dev.x2-4 -omtest:om_benchmark -omplat:ak -omrun_minutes:1
+omcli dev.x2-4 -omtest:om_benchmark -omplat:ak -omrun_minutes:1
+omcli dev.x2-4 -omtest:om_benchmark -omplat:ak -omrun_minutes:1 -omrun_driver:kafka-debug-idempotence -omrun_load:debug-simple
+
 
 echo
 sleep 2
@@ -81,6 +83,7 @@ sleep 2
 sleep 2
 
 echo "collect tap logs"
+omcli $tap_omnnode -ignore_omnode_use -status
 omcli $tap_omnnode -ignore_omnode_use -stop
 sleep 4
 omcli $tap_omnnode -ignore_omnode_use -collect_logs
@@ -122,3 +125,6 @@ omdb.omnode  omnode:dev.x2-4.x2w-1        node:dev.x2w-08      use:Y  comment:""
 omdb.omnode  omnode:dev.x2-7.rdp-4        node:dev.rdp-04      use:Y  comment:"Apache Cluster Broker node 1"
 report.acr  n_select:26  n_insert:0  n_delete:0  n_ignore:0  n_update:0  n_file_mod:0
 
+
+
+bin/x2node  -node:$'dev.x2-4.tap-1_ext_0|dev.x2-4.tap-4_ext_0' -cmd:$'$\'cat temp/atf_snf_logs/dev.x2-4.tap-*/tcp_pairs_hist_42.log 2>/dev/null || true\'' -q:Y 

@@ -12,8 +12,8 @@ PATH=$HOME/av_openacr/x2:$PATH
 
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
-export SPARK_HOME=/opt/spark
-export PATH=$SPARK_HOME/bin:$PATH
+# export SPARK_HOME=/opt/spark
+# export PATH=$SPARK_HOME/bin:$PATH
 
 # the rest for interactive shell only
 tmp_code=$(find "$HOME/.vscode-server/cli/servers/" -type d -name "Stable*" | sort | tail -n 1)
@@ -34,7 +34,6 @@ alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'
 
 alias gitclean='git checkout -- bin .vscode/launch.json'
 alias x2tree='ps -e --forest -o pid,ppid,cmd | grep x2'
-# alias gr='git-rebase-remote algornd/arnd'
 alias gr='git-rebase-remote origin'
 
 
@@ -109,32 +108,6 @@ ident(){
      bin/cpp-indent  ${file}; update-hdr
 }
 
-mc_tree() {
-
-  mc find x2s3/avorovich/ | sed 's|x2s3/avorovich/||' | \
-  awk -F/ '
-    BEGIN {
-      BLUE="\033[1;34m"
-      RESET="\033[0m"
-    }
-    {
-      path = ""
-      for (i = 1; i <= NF; i++) {
-        path = (i == 1) ? $i : path "/" $i
-        if (!(path in seen)) {
-          indent = ""
-          for (j = 1; j < i; j++) indent = indent "  "
-          # If it is a directory
-          if (i < NF) {
-            printf "%s%s\n", indent, $i
-          } else {
-            printf "%s%s%s\n", indent, BLUE, $i RESET
-          }
-          seen[path] = 1
-        }
-      }
-    }'
-}
 
 # set -x
 # from alexei as of 5/14/25
@@ -166,7 +139,7 @@ function beginwork() {
     cd "$1"
     $(acr_compl -install)
 }
-# beginwork
+beginwork
 # export section
 export PS1
 export LS_OPTIONS

@@ -1,0 +1,37 @@
+atf_snf.info fname:/home/avorovich/arnd/temp/atf_snf_logs/local/atf_snf.pcap  comment:"using input pcap file"
+atf_snf.info sll2:N
+atf_snf.info fname:/home/avorovich/arnd/temp/atf_snf_logs/local  comment:"using experiment directory extracted from pcap file name"
+atf_snf.info tcp_pair_dir:/home/avorovich/arnd/temp/atf_snf_logs/local/tcp_pairs
+atf_snf.info  fname:/home/avorovich/arnd/temp/atf_snf_logs/local/atf_snf.pcap  comment:"PcapFileProcess start"
+KafkaExtract  api_key:3  api_key_str:kafka2.MetadataRequest
+KafkaExtract MetadataResponse topic  name:test-topic  topic_id:00000000-0000-0000-0000-000000000000
+KafkaExtract  api_key:3  api_key_str:kafka2.MetadataRequest
+KafkaExtract MetadataResponse topic  name:test-topic  topic_id:68cfbc92-ca10-4bdf-9a73-2501939664af
+KafkaExtract  api_key:0  api_key_str:kafka2.ProduceRequest
+KafkaExtract ProduceResponse partition_response  topic_name:test-topic  index:1  base_offset:0  log_start_offset:0
+KafkaExtract  api_key:3  api_key_str:kafka2.MetadataRequest
+KafkaExtract MetadataResponse topic  name:test-topic  topic_id:68cfbc92-ca10-4bdf-9a73-2501939664af
+KafkaExtract  api_key:0  api_key_str:kafka2.ProduceRequest
+KafkaExtract ProduceResponse partition_response  topic_name:test-topic  index:1  base_offset:4  log_start_offset:0
+KafkaExtract  api_key:3  api_key_str:kafka2.MetadataRequest
+KafkaExtract  api_key:3  api_key_str:kafka2.MetadataRequest
+KafkaExtract MetadataResponse topic  name:test-topic  topic_id:68cfbc92-ca10-4bdf-9a73-2501939664af
+KafkaExtract  api_key:1  api_key_str:kafka2.FetchRequest
+KafkaExtract FetchResponse matching topic id  topic_name:test-topic  topic_id:68cfbc92-ca10-4bdf-9a73-2501939664af  topic_rsp_id:68cfbc92-ca10-4bdf-9a73-2501939664af
+KafkaExtract FetchResponse topic:test-topic  topicid:68cfbc92-ca10-4bdf-9a73-2501939664af  partition_index:1  base_offset:0  offset_delta:0
+KafkaExtract FetchResponse topic:test-topic  topicid:68cfbc92-ca10-4bdf-9a73-2501939664af  partition_index:1  base_offset:0  offset_delta:1
+KafkaExtract FetchResponse topic:test-topic  topicid:68cfbc92-ca10-4bdf-9a73-2501939664af  partition_index:1  base_offset:0  offset_delta:2
+KafkaExtract FetchResponse topic:test-topic  topicid:68cfbc92-ca10-4bdf-9a73-2501939664af  partition_index:1  base_offset:0  offset_delta:3
+KafkaExtract  api_key:1  api_key_str:kafka2.FetchRequest
+KafkaExtract  api_key:1  api_key_str:kafka2.FetchRequest
+KafkaExtract  api_key:1  api_key_str:kafka2.FetchRequest
+KafkaExtract  api_key:1  api_key_str:kafka2.FetchRequest
+KafkaExtract  api_key:1  api_key_str:kafka2.FetchRequest
+KafkaExtract  api_key:1  api_key_str:kafka2.FetchRequest
+KafkaExtract  api_key:1  api_key_str:kafka2.FetchRequest
+KafkaExtract  api_key:1  api_key_str:kafka2.FetchRequest
+KafkaExtract  api_key:1  api_key_str:kafka2.FetchRequest
+atf_snf.info  comment:"PcapFileProcess  EOF"
+atf_snf.info comment:"printing session info"
+atf_snf.info fname:/home/avorovich/arnd/temp/atf_snf_logs/local/tcp_pairs_all.log  comment:"closing tcp pairs all log file"
+exit to OS

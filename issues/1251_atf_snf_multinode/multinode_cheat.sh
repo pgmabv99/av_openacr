@@ -1,4 +1,4 @@
-#setup 
+#setup ================================
 omplat=ak
 # omplat=x2
 
@@ -14,12 +14,10 @@ else
 fi
 echo "setup  omplat:$omplat server:$server" 
 
-# -----------------------------------------
-# clean all
+# =====================================
+# clean all and start
 omcli dev.x2-4 -dkr_clean_run -omplat:ak
 omcli dev.x2-4 -dkr_clean_run -omplat:x2
-
-
 
 #  start brokers
 if [ "$omplat" = "ak" ]; then
@@ -33,25 +31,27 @@ else
   echo "unknown omplat:$omplat - no action"
 fi
 
-omcli dev.x2-4.kafka-% -omplat:$omplat -status
-omcli dev.x2-4.x2-% -omplat:$omplat -status
+echo "start kafkaui"
+omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
 
 
+#
 echo "install and start tap remotely"
 x2rel  -create  -product:"tap" -omenv:dev.x2-4 -upload:Y  -create:Y 
 omcli $tap_omnnode -ignore_omnode_use -start
 
 echo "run tap locally"
 sudo ~/arnd/bin/atf_snf -dev:data0-4T  -kapi  -dir:local -timestamp_log:N
+atf_snf -dev:data0-4T  -kapi  -dir:local  \
+        -in_file:/home/avorovich/arnd/temp/atf_snf_logs/local/atf_snf.pcap
 
-echo "start kafkaui"
-omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
 
-#  workloads 
+
+#  workloads --------------------------------------------------------------
 
 # build all messages into a variable and send once
 while :; do
-  nrec=222
+  nrec=2
   msgs=""
   for i in $(seq 1 "$nrec"); do
     msgs+=$'message1\nmessage2\n'
@@ -70,11 +70,7 @@ echo "consume  "
   --from-beginning \
   --property print.timestamp=true
 
-# omcli dev.x2-4 -omtest:om_benchmark -omplat:ak -omrun_minutes:1
-x2rel  -create  -product:"tap" -omenv:dev.x2-4 -upload:Y  -create:Y 
-omcli dev.x2-4 -omtest:om_benchmark -omplat:ak -omrun_minutes:1 -omrun_driver:kafka-debug-idempotence -omrun_load:debug-simple
-
-
+  
 echo
 sleep 2
 /opt/kafka/current/bin/kafka-consumer-groups.sh \
@@ -82,6 +78,12 @@ sleep 2
     --group test-consumer-group \
     --describe
 sleep 2
+
+
+# omcli dev.x2-4 -omtest:om_benchmark -omplat:ak -omrun_minutes:1
+x2rel  -create  -product:"tap" -omenv:dev.x2-4 -upload:Y  -create:Y 
+omcli dev.x2-4 -omtest:om_benchmark -omplat:ak -omrun_minutes:1 -omrun_driver:kafka-debug-idempotence -omrun_load:debug-simple
+
 
 echo "collect tap logs"
 omcli $tap_omnnode -ignore_omnode_use -status

@@ -111,6 +111,27 @@ acr_ed -create -field atf_snf.FTcp_pair.bh_kafka_corr_id   -arg atf_snf.FKafka  
 acr_ed -del  -field atf_snf.FDb.bh_kafka_corr_id_glob -write || true
 acr_ed -create -field atf_snf.FDb.bh_kafka_corr_id_glob -xref  -arg atf_snf.FKafka -sortfld atf_snf.FKafka.ts_ns -write -comment "bheap of kafka on ts_ns from FDB"
 
+#--------
+#-------------extract objects
+acr_ed -del    -ctype atf_snf.FTopic                                              -write || true
+acr_ed -create -ctype atf_snf.FTopic                           -pooltype Tpool                  -write  -comment "Topic"
+acr_ed -create -field atf_snf.FTopic.topic                     -arg algo.Smallstr100            -write  -comment "topic name"
+acr_ed -create -field atf_snf.FTopic.topic_id                  -arg algo.Uuid                   -write  -comment "topic id"
+# pointers from up/down above
+acr_ed -create -field atf_snf.FDb.zd_topic                -cascdel              -write -comment ""
+acr_ed -create -field atf_snf.FDb.ind_topic               -cascdel              -write -comment ""
+amc
+
+acr_ed -del    -ctype atf_snf.FToppart                                              -write || true
+acr_ed -create -ctype atf_snf.FToppart                           -pooltype Tpool                      -write  -comment "Topic/partition"
+acr_ed -create -field atf_snf.FToppart.toppart                       -arg algo.Smallstr100            -write  -comment "topic name/partion id"
+acr_ed -create -field atf_snf.FToppart.offset_produce                -arg i64                         -write  -comment "latest produce offset"
+acr_ed -create -field atf_snf.FToppart.offset_fetch                  -arg i64                         -write  -comment "latest fetch offset"
+# pointers from up/down above
+acr_ed -create -field atf_snf.FDb.zd_toppart                -cascdel              -write -comment ""
+acr_ed -create -field atf_snf.FDb.ind_toppart               -cascdel              -write -comment ""
+amc
+
 # -
 #-------------x2msg object
 acr_ed -del    -ctype atf_snf.FX2msg                                              -write || true

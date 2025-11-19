@@ -108,6 +108,10 @@
 			{
 				"filePath": "/home/avorovich/arnd/cpp/atf_lat",
 				"group": "Default"
+			},
+			{
+				"filePath": "/home/avorovich/av_openacr/issues/1295_atf_snf-atf_lat-capture-offset",
+				"group": "Default"
 			}
 		]
 	}

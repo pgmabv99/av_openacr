@@ -128,7 +128,7 @@ acr_ed -create -field atf_snf.FToppart.toppart                       -arg algo.S
 acr_ed -create -field atf_snf.FToppart.offset_produce                -arg i64                         -write  -comment "latest produce offset"
 acr_ed -create -field atf_snf.FToppart.offset_fetch                  -arg i64                         -write  -comment "latest fetch offset"
 # pointers from up/down above
-acr_ed -create -field atf_snf.FDb.zd_toppart                -cascdel              -write -comment ""
+acr_ed -create -f12ield atf_snf.FDb.zd_toppart                -cascdel              -write -comment ""
 acr_ed -create -field atf_snf.FDb.ind_toppart               -cascdel              -write -comment ""
 amc
 

@@ -2,6 +2,7 @@
 
 PATH=bin:$PATH
 PATH=$HOME/arnd/bin:$PATH
+PATH=$HOME/av_openacr/mnode:$PATH
 PATH=$HOME/av_openacr:$PATH
 PATH=$HOME/av_openacr/ktest_cpp:$PATH
 PATH=$HOME/av_openacr/ktest_kcat:$PATH

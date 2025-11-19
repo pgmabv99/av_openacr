@@ -1,18 +1,4 @@
-#setup ================================
-omplat=ak
-# omplat=x2
-
-tap_omnnode=dev.x2-4.tap-1_ext_0  # device:nj1.sv2  omnode:kafka-1 node:dev.kafka-13
-# tap_omnnode=dev.x2-4.tap-4_ext_0  # device:nj1.sv5 omnode:kafka-4 node:dev.kafka-16
-
-if [ "$omplat" = "ak" ]; then
-  server="dev.x2-4.kafka-1.ext-0:1643"
-elif [ "$omplat" = "x2" ]; then
-  server="192.168.104.5:1558"
-else
-  echo "unknown omplat:$omplat - no action"
-fi
-echo "setup  omplat:$omplat server:$server" 
+#!/bin/bash
 
 # =====================================
 # clean all and start
@@ -40,44 +26,10 @@ echo "install and start tap remotely"
 x2rel  -create  -product:"tap" -omenv:dev.x2-4 -upload:Y  -create:Y 
 omcli $tap_omnnode -ignore_omnode_use -start
 
-echo "run tap locally"
-sudo ~/arnd/bin/atf_snf -dev:data0-4T  -kapi  -dir:local -timestamp_log:N
-atf_snf -dev:data0-4T  -kapi  -dir:local  \
-        -in_file:/home/avorovich/arnd/temp/atf_snf_logs/local/atf_snf.pcap
 
 
 
-#  workloads --------------------------------------------------------------
 
-# build all messages into a variable and send once
-while :; do
-  nrec=2
-  msgs=""
-  for i in $(seq 1 "$nrec"); do
-    msgs+=$'message1\nmessage2\n'
-  done
-  printf '%s' "$msgs" | /opt/kafka/current/bin/kafka-console-producer.sh --bootstrap-server "$server" --topic test-topic
-  echo "produce $nrec messages to test-topic"
-  sleep 1
-done
-
-sleep 2
-echo "consume  "
-/opt/kafka/current/bin/kafka-console-consumer.sh \
-  --bootstrap-server $server \
-  --topic test-topic \
-  --group test-consumer-group \
-  --from-beginning \
-  --property print.timestamp=true
-
-  
-echo
-sleep 2
-/opt/kafka/current/bin/kafka-consumer-groups.sh \
-    --bootstrap-server $server \
-    --group test-consumer-group \
-    --describe
-sleep 2
 
 
 # omcli dev.x2-4 -omtest:om_benchmark -omplat:ak -omrun_minutes:1

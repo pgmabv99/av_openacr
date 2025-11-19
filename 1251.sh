@@ -2,23 +2,28 @@
 set -x
 set -e
 
-acr_ed -del  -ctype atf_lat.FMcb         -write || true
-acr_ed -del  -ctype atf_lat.FTcp_pair_hist    -write || true
-acr_ed -del  -ctype atf_lat.Progress    -write || true
 
-acr_ed -del  -ctype omdb.OmTcpPairRec     -write || true
-acr_ed -del  -ssimfile:omdb.tcp_pair_hist_rec   -write || true
+#-------------OmToppart  
+acr_ed -del  -ssimfile:omdb.om_toppart   -write || true
+acr_ed -create  -ssimfile:omdb.om_toppart   -write -comment "topic/partition stats records for transfer"
+acr_ed -create -field omdb.OmToppart.snapshot_id                   -arg u32              -write -comment "snap"
+acr_ed -create -field omdb.OmToppart.time                          -arg algo.UnTime    -write -comment "Report time"
+acr_ed -create -field omdb.OmToppart.offset_produce                -arg i64                         -write  -comment "latest produce offset"
+acr_ed -create -field omdb.OmToppart.offset_fetch                  -arg i64                         -write  -comment "latest fetch offset"
+acr_ed -create -field omdb.OmToppart.host                          -arg algo.Smallstr50  -write -comment "capture host"
 
-#-------------Tcp_pair_hist_rec 
-acr_ed -create  -ssimfile:omdb.om_tcp_pair_rec   -write -comment "tcp pair history record"
-acr_ed -create -field  omdb.OmTcpPairRec.snapshot_id                   -arg u32              -write -comment "snap"
-acr_ed -create -field  omdb.OmTcpPairRec.time                          -arg algo.UnTime    -write -comment "Report time"
-acr_ed -create -field  omdb.OmTcpPairRec.frame_count                   -arg u32              -write -comment "number of frames for this pair"
-acr_ed -create -field  omdb.OmTcpPairRec.kafka_count               -arg u32              -write -comment "number of kafka req  for this pair"
-acr_ed -create -field  omdb.OmTcpPairRec.host                          -arg algo.Smallstr50  -write -comment "capture host"
-acr_ed -create -field  omdb.OmTcpPairRec.client_id_key                 -arg algo.Smallstr50  -write -comment "kafka client id"
+#-------------OmTcpPair 
+acr_ed -del     -ssimfile:omdb.om_tcp_pair  -write || true
+acr_ed -create  -ssimfile:omdb.om_tcp_pair   -write -comment "tcp pair  record for transfer latency"
+acr_ed -create -field  omdb.OmTcpPair.snapshot_id                   -arg u32              -write -comment "snap"
+acr_ed -create -field  omdb.OmTcpPair.time                          -arg algo.UnTime      -write -comment "Report time"
+acr_ed -create -field  omdb.OmTcpPair.frame_count                   -arg u32              -write -comment "number of frames for this pair"
+acr_ed -create -field  omdb.OmTcpPair.kafka_count                   -arg u32              -write -comment "number of kafka req  for this pair"
+acr_ed -create -field  omdb.OmTcpPair.client_id_key                 -arg algo.Smallstr50  -write -comment "kafka client id"
+acr_ed -create -field  omdb.OmTcpPair.host                          -arg algo.Smallstr50  -write -comment "capture host"
 
 #-------------Progress
+acr_ed -del  -ctype atf_lat.Progress    -write || true
 acr_ed -create -ctype  atf_lat.Progress                                -write -comment " "
 acr_ed -create -field  atf_lat.Progress.time                           -arg algo.UnTime      -write -comment "Report time"
 acr_ed -create -field  atf_lat.Progress.frame_count                    -arg u32              -write -comment "number of frames for this pair"
@@ -27,7 +32,8 @@ acr_ed -create -field  atf_lat.Progress.host                           -arg algo
 acr_ed -create -field  atf_lat.Progress.client_id_key                  -arg algo.Smallstr50  -write -comment "kafka client id for the pair"
 acr_ed -create -field  atf_lat.Progress.snapshot_id                     -arg u32              -write -comment ""
 
-#--------------tcp pair
+#--------------FTcp_pair_hist
+acr_ed -del    -ctype atf_lat.FTcp_pair_hist    -write || tru
 acr_ed -create -ctype  atf_lat.FTcp_pair_hist                          -pooltype Tpool       -write -comment "tcp pair entry"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.tcp_pair_hist            -arg algo.Smallstr50   -write -comment "tcp pair string key host:port-host:port"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.progress                 -arg atf_lat.Progress  -write -comment "current progress stats"
@@ -38,6 +44,7 @@ acr_ed -create -field  atf_lat.FDb.zd_tcp_pair_hist                     -cascdel
 acr_ed -create -field  atf_lat.FDb.ind_tcp_pair_hist                    -cascdel              -write -comment ""
 
 #-------------main CB
+acr_ed -del    -ctype atf_lat.FMcb         -write || true
 acr_ed -create -ctype atf_lat.FMcb                                     -write -comment "Main CB"
 acr_ed -create -field  atf_lat.FMcb.step_count                         -arg u32   -write -comment "step count for atf_lat"
 acr_ed -create -field  atf_lat.FMcb.fd_out_file                        -arg i32               -dflt:-1       -write -comment "" 

@@ -122,13 +122,16 @@ acr_ed -create -field atf_snf.FDb.zd_topic                -cascdel              
 acr_ed -create -field atf_snf.FDb.ind_topic               -cascdel              -write -comment ""
 amc
 
+set -e
 acr_ed -del    -ctype atf_snf.FToppart                                              -write || true
 acr_ed -create -ctype atf_snf.FToppart                           -pooltype Tpool                      -write  -comment "Topic/partition"
 acr_ed -create -field atf_snf.FToppart.toppart                       -arg algo.Smallstr100            -write  -comment "topic name/partion id"
 acr_ed -create -field atf_snf.FToppart.offset_produce                -arg i64                         -write  -comment "latest produce offset"
-acr_ed -create -field atf_snf.FToppart.offset_fetch                  -arg i64                         -write  -comment "latest fetch offset"
+acr_ed -create -field atf_snf.FToppart.offset_fetch_fst              -arg i64                         -write  -comment "latest fetch offset. first in batch"
+acr_ed -create -field atf_snf.FToppart.offset_fetch_lst              -arg i64                         -write  -comment "latest fetch offset. last in batch"
+acr_ed -create -field atf_snf.FToppart.high_watermark                -arg i64                         -write  -comment "high watermark"
 # pointers from up/down above
-acr_ed -create -f12ield atf_snf.FDb.zd_toppart                -cascdel              -write -comment ""
+acr_ed -create -field atf_snf.FDb.bh_toppart                -cascdel              -write -comment ""
 acr_ed -create -field atf_snf.FDb.ind_toppart               -cascdel              -write -comment ""
 amc
 

@@ -280,8 +280,12 @@ dkr -help
 #passtru cat /etc/hostname
 #from sn1 : ps 
 dkr ps   -node:nj1.sn5.avorovich 
+dkr clean_run     -dctr:nj1.sn5.avorovich 
 
 docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
+
+// get container sizes
+dkr -ps_size  -nodedkr:nj1.sn6.bm
 
 
 #build image
@@ -289,6 +293,7 @@ dkr -build -node:dev.kafkacw-02 > ~/av_openacr/logs_dkr/dbld.log
 
 docker ps --format "table {{.Names}}\t{{.Image}}\t{{.CreatedAt}}\t{{.Status}}"
 docker ps --format "table {{.Names}}\t{{.Image}}\t{{.CreatedAt}}\t{{.Status}}" | sort
+docker restart user-avorovich
 
 
 ## private keys 

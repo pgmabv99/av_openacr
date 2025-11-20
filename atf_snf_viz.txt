@@ -30,7 +30,7 @@
 |                                                                               |Ptr p_intfname-->|                  
 |                                                                               |                 -                  
 |Tpool toppart---------------->/ atf_snf.FToppart                               |                                    
-|Llist zd_toppart------------->|                                                |                                    
+|Bheap bh_toppart------------->|                                                |                                    
 |Thash ind_toppart------------>|                                                |                                    
 |                              -                                                |                                    
 |Tpool topic------------------>/ atf_snf.FTopic                                 |                                    

@@ -1,10 +1,9 @@
 #!/bin/bash
-sou
+source
 # =====================================
 # clean all and start
 omcli dev.x2-4 -dkr_clean_run -omplat:ak
 omcli dev.x2-4 -dkr_clean_run -omplat:x2
-omcli dev.x2-4.kafkaw-% -dkr_clean_run  
 
 #  start brokers
 if [ "$omplat" = "ak" ]; then
@@ -18,19 +17,10 @@ else
   echo "unknown omplat:$omplat - no action"
 fi
 
-
-
+exit 
+# =====================================
 echo "start kafkaui"
 omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
-
-
-echo "collect tap logs"
-omcli $tap_omnnode -ignore_omnode_use -status
-omcli $tap_omnnode -ignore_omnode_use -stop
-sleep 4
-omcli $tap_omnnode -ignore_omnode_use -collect_logs
-atf_lat -omenv:dev.x2-4  
-
 
 echo "stop kafka brokers locally "
 /opt/kafka/current/bin/kafka-server-start.sh /opt/kafka/current/config/server.properties

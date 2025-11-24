@@ -1,21 +1,19 @@
-/ atf_lat.FDb                                                                                                     
-|Lary omenv------------------------------------------------------------------>/ atf_lat.FOmenv                    
-|Ptr p_omenv----------------------------------------------------------------->|                                   
-|Thash ind_omenv------------------------------------------------------------->|                                   
-|Tpool tcp_pair_hist------------------------------->/ atf_lat.FTcp_pair_hist  |                                   
-|Llist zd_tcp_pair_hist---------------------------->|                         |                                   
-|Thash ind_tcp_pair_hist--------------------------->|                         |                                   
-|Tpool toppart_hist------->/ atf_lat.FToppart_hist  |                         |                                   
-|Bheap bh_toppart_hist---->|                        |                         |                                   
-|Thash ind_toppart_hist--->|                        |                         |                                   
-|                          -                        |                         |                                   
-|Lary omnode----------------------------------------|-------------------------|----------------->/ atf_lat.FOmnode
-|                                                   |                         |Ptrary c_omnode-->|                
-|                                                   |                         -                  |                
-|                                                   |                                            -                
-|Val mcb--------------------------------------------|------------------------>/ atf_lat.FMcb                      
--                                                   |                         |                                   
-                                                    |                         -                                   
-                                                    |Val progress------------>/ atf_lat.Progress                  
-                                                    -                         |                                   
-                                                                              -                                   
+/ atf_lat.FDb                                                                            
+|Lary omenv----------------------------------------->/ atf_lat.FOmenv                    
+|Ptr p_omenv---------------------------------------->|                                   
+|Thash ind_omenv------------------------------------>|                                   
+|Tpool tcp_pair_hist------>/ atf_lat.FTcp_pair_hist  |                                   
+|Llist zd_tcp_pair_hist--->|                         |                                   
+|Thash ind_tcp_pair_hist-->|                         |                                   
+|                          -                         |                                   
+|Tpool toppart_hist------->/ atf_lat.FToppart_hist   |                                   
+|Bheap bh_toppart_hist---->|                         |                                   
+|Thash ind_toppart_hist--->|                         |                                   
+|                          -                         |                                   
+|Lary omnode-----------------------------------------|----------------->/ atf_lat.FOmnode
+|                                                    |Ptrary c_omnode-->|                
+|                                                    -                  |                
+|                                                                       -                
+|Val mcb------------------>/ atf_lat.FMcb                                                
+-                          |                                                             
+                           -                                                             

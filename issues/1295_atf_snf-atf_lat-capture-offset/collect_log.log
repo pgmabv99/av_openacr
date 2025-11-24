@@ -1,0 +1,21 @@
+$ omcli dev.x2-4.tap% -collect_logs -v
+verbose: dev.x2-4.tap-1_ext_0|dev.x2-4.tap-4_ext_0
+verbose: date +"%Y.%m.%d.%H.%M"
+verbose: bash  -c $'date +"%Y.%m.%d.%H.%M"' >&5
+verbose: bash  -c 'rm -rf temp/collect_logs/x2/2025.11.24.13.45'
+verbose: bash  -c 'mkdir -p temp/collect_logs/x2/2025.11.24.13.45'
+omcli.info logdir:temp/collect_logs/x2/2025.11.24.13.45  comment:"copying into omenv directory"
+omcli.info omnode:dev.x2-4.tap-1_ext_0  logname:temp/atf_snf_logs/dev.x2-4.tap-1_ext_0/*  comment:"collecting log"
+verbose: bash  -c $'bin/x2node  -node:nj1.sn2.bm -rsync_get:Y -rsync_opts:-aic -local:temp/collect_logs/x2/2025.11.24.13.45/dev.x2-4.tap-1_ext_0/ -remote:$\'temp/atf_snf_logs/dev.x2-4.tap-1_ext_0/*\' -cmd:\'\' -q:Y -fail_on_error:Y 2>&1 >/dev/null'
+omcli.info logdir:temp/collect_logs/x2/2025.11.24.13.45/dev.x2-4.tap-1_ext_0  comment:copied
+omcli.info omnode:dev.x2-4.tap-1_ext_0  logname:dev.x2-4.tap-1_ext_0.log  comment:"collecting log"
+verbose: bash  -c $'bin/x2node  -node:nj1.sn2.bm -rsync_get:Y -rsync_opts:-aic -local:temp/collect_logs/x2/2025.11.24.13.45/dev.x2-4.tap-1_ext_0/ -remote:dev.x2-4.tap-1_ext_0.log -cmd:\'\' -q:Y -fail_on_error:Y 2>&1 >/dev/null'
+omcli.info logdir:temp/collect_logs/x2/2025.11.24.13.45/dev.x2-4.tap-1_ext_0  comment:copied
+omcli.info omnode:dev.x2-4.tap-4_ext_0  logname:temp/atf_snf_logs/dev.x2-4.tap-4_ext_0/*  comment:"collecting log"
+verbose: bash  -c $'bin/x2node  -node:nj1.sn5.bm -rsync_get:Y -rsync_opts:-aic -local:temp/collect_logs/x2/2025.11.24.13.45/dev.x2-4.tap-4_ext_0/ -remote:$\'temp/atf_snf_logs/dev.x2-4.tap-4_ext_0/*\' -cmd:\'\' -q:Y -fail_on_error:Y 2>&1 >/dev/null'
+omcli.info logdir:temp/collect_logs/x2/2025.11.24.13.45/dev.x2-4.tap-4_ext_0  comment:copied
+omcli.info omnode:dev.x2-4.tap-4_ext_0  logname:dev.x2-4.tap-4_ext_0.log  comment:"collecting log"
+verbose: bash  -c $'bin/x2node  -node:nj1.sn5.bm -rsync_get:Y -rsync_opts:-aic -local:temp/collect_logs/x2/2025.11.24.13.45/dev.x2-4.tap-4_ext_0/ -remote:dev.x2-4.tap-4_ext_0.log -cmd:\'\' -q:Y -fail_on_error:Y 2>&1 >/dev/null'
+omcli.info logdir:temp/collect_logs/x2/2025.11.24.13.45/dev.x2-4.tap-4_ext_0  comment:copied
+[0 Nov 24 13:45:06] avorovich@nj1.sn5.user-avorovich:~/arnd 
+$ 

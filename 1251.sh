@@ -54,10 +54,10 @@ amc
 acr_ed -del    -ctype atf_lat.FMcb         -write || true
 acr_ed -create -ctype atf_lat.FMcb                                     -write -comment "Main CB"
 acr_ed -create -field  atf_lat.FMcb.step_count                         -arg u32   -write -comment "step count for atf_lat"
-acr_ed -create -field  atf_lat.FMcb.fd_out_file                        -arg i32               -dflt:-1       -write -comment "" 
 acr_ed -create -field  atf_lat.FMcb.dashboard_ready                    -arg bool              -dflt:false       -write -comment "" 
-acr_ed -create -field  atf_lat.FMcb.remote_time_cur                       -arg algo.UnTime       -dflt:0       -write -comment "remote time from cur  step" 
+acr_ed -create -field  atf_lat.FMcb.remote_time_cur                    -arg algo.UnTime       -dflt:0       -write -comment "remote time from cur  step" 
 acr_ed -create -field  atf_lat.FMcb.remote_time_last                   -arg algo.UnTime       -dflt:0       -write -comment "remote time from last step" 
+acr_ed -create -field  atf_lat.FMcb.atf_lat_dir                        -arg algo.Smallstr50   -dflt:0       -write -comment "directory for library files and dashboard" 
 
 
 # include into _db
@@ -69,12 +69,18 @@ acr_ed -create -field  atf_lat.FDb.mcb                                  -arg atf
 #  set parms for atf_lat
 
 acr -merge  -write <<EOF
+acr.delete dmmeta.field  field:command.atf_lat.in_file
 acr.delete dmmeta.field  field:command.atf_lat.out_file
 acr.delete dmmeta.field  field:command.atf_lat.skip_old
+acr.delete dmmeta.field  field:command.atf_lat.omenv
+acr.delete dmmeta.field  field:command.atf_lat.omplat
 EOF
 acr -merge -write <<EOF
+    dmmeta.field  field:command.atf_lat.in_file                   arg:algo.cstring         reftype:Val      dflt:'""'         comment:"read local saved ssim file instead of remote  "
     dmmeta.field  field:command.atf_lat.out_file                  arg:algo.cstring         reftype:Val      dflt:'""'         comment:"ssim file to save locally  "
-    dmmeta.field  field:command.atf_lat.skip_old                  arg:bool                 reftype:Val      dflt:false         comment:"skip snapshots before current local one "
+    dmmeta.field  field:command.atf_lat.skip_old                  arg:bool                 reftype:Val      dflt:false        comment:"skip snapshots before current local one "
+    dmmeta.field  field:command.atf_lat.omenv                     arg:omdb.Omenv           reftype:Pkey     dflt:'""'         comment:"omcli env with the sniffers"
+    dmmeta.field  field:command.atf_lat.omplat                    arg:omdb.Omplat          reftype:Pkey     dflt:'""'         comment:"Overwrites default omenv platform"
 EOF
 
 

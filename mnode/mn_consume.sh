@@ -17,4 +17,8 @@ sleep 2
     --bootstrap-server $server \
     --group test-consumer-group \
     --describe
+/opt/kafka/current/bin/kafka-consumer-groups.sh \
+    --bootstrap-server $server \
+    --group sub-000-7Ga9TFo \
+    --describe
 sleep 2

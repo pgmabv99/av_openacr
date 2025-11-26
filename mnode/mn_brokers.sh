@@ -1,5 +1,5 @@
 #!/bin/bash
-source
+source mn_set.sh
 # =====================================
 # clean all and start
 omcli dev.x2-4 -dkr_clean_run -omplat:ak
@@ -9,6 +9,8 @@ omcli dev.x2-4 -dkr_clean_run -omplat:x2
 if [ "$omplat" = "ak" ]; then
   echo "start kafka brokers"
   omcli dev.x2-4.kafka-% -omplat:ak -start_clean
+  # omcli dev.x2-4.kafka-% -omplat:ak -status 
+
 elif [ "$omplat" = "x2" ]; then
   echo "install and start x2"
   x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y
@@ -17,11 +19,12 @@ else
   echo "unknown omplat:$omplat - no action"
 fi
 
-exit 
 # =====================================
 echo "start kafkaui"
 omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
+omcli dev.x2-4.rdpui-1  -omplat:$omplat -start_clean
 
+exit 
 echo "stop kafka brokers locally "
 /opt/kafka/current/bin/kafka-server-start.sh /opt/kafka/current/config/server.properties
 

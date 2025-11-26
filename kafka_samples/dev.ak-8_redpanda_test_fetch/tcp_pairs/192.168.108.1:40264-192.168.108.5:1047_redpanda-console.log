@@ -1,6 +1,0 @@
-atf_snf.frame_stats  direction:"c->b"  tcp_short:108.1-108.5  tcp_pair_key:192.168.108.1:40264-192.168.108.5:1047  frame_count:6  syn_count:1  fin_count:1  rst_count:0  isn:000512637333  tcp_payload_len_tot:000000000141
-atf_snf.kafka_stats  client_id_key:redpanda-console  kafka_count:1  kafka_req_ack_count:1  kafka_count_in_bh:1  pct_non_ack!!!:0  kafka_len_tot:000000000141
-
-
-iframe:000000000345  ts_ns:1633440129277632  c_port:40264 kafka2.ProduceRequest  request_api_version:8  correlation_id:0  client_id:redpanda-console  acks:-1  timeout_ms:10000  topic_data.0:'kafka2.TopicProduceData0q  name:ap1  partition_data.0:"kafka2.PartitionProduceData0q  index:2  records:\'kafka.RecordBatch  base_offset:0  partition_leader_epoch:-1  magic:2  crc:1575691752  attributes:0  last_offset_delta:0  base_timestamp:1752006649180  max_timestamp:1752006649180  producer_id:0  producer_epoch:0  base_sequence:0  records.0:\\"kafka.Record  attributes:0  timestamp_delta:0  offset_delta:0  key:key1  value:Hellllo001\\"\'"'
-iframe:000000000347  ts_ns:1633440162587577  c_port:40264 kafka2.ProduceResponse  request_api_version:8  correlation_id:0  responses.0:'kafka2.TopicProduceResponse0a  name:ap1  partition_responses.0:"kafka2.PartitionProduceResponse0a  index:2  error_code:0  base_offset:0  log_append_time_ms:-1  log_start_offset:0"'  throttle_time_ms:0

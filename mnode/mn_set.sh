@@ -1,7 +1,7 @@
 
 #!/bin/bash
 omplat=ak
-# omplat=x2
+omplat=x2
 
 tap_omnnode=dev.x2-4.tap-1_ext_0  # device:nj1.sv2  omnode:kafka-1 node:dev.kafka-13
 # tap_omnnode=dev.x2-4.tap-4_ext_0  # device:nj1.sv5 omnode:kafka-4 node:dev.kafka-16

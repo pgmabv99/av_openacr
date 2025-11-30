@@ -3,11 +3,21 @@ source mn_set.sh
 # echo "run tap locally"
 # sudo ~/arnd/bin/atf_snf -dev:data0-4T  -kapi  -dir:local -timestamp_log:N
 
-echo " run locally from pcap"
-atf_snf -dev:data0-4T  -kapi  -dir:local  \
-        -in_file:/home/avorovich/arnd/temp/atf_snf_logs/local/atf_snf.pcap
+# echo " run locally from pcap"
+# atf_snf -dev:data0-4T  -kapi  -dir:local  \
+#         -in_file:/home/avorovich/arnd/temp/atf_snf_logs/local/atf_snf.pcap
 
-#
+# #
+echo "====================starting tap"
+omcli dev.x2-4.tap% -start_clean
+exit
+
+omcli dev.x2-4.tap% -status
+omcli dev.x2-4.tap% -stop
+sleep 2
+omcli dev.x2-4.tap% -collect_logs
+
+
 
 exit
 

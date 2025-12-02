@@ -1,7 +1,6 @@
 #!/bin/bash
 source mn_set.sh
 # =====================================
-
 echo "====================starting brokers"
 if [ "$omplat" = "ak" ]; then
   echo "start kafka brokers"
@@ -11,7 +10,7 @@ if [ "$omplat" = "ak" ]; then
 elif [ "$omplat" = "x2" ]; then
   echo "install and start x2"
   x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y
-  omcli dev.x2-4.x2-% -omplat:x2 -start_clean
+  omcli dev.x2-4.x2-% -omplat:x2 -start_clean -debug_x2sup 
 else
   echo "unknown omplat:$omplat - no action"
 fi
@@ -19,9 +18,7 @@ omcli dev.x2-4.rdpui-1  -omplat:$omplat -start_clean
 
 exit 
 # =====================================
-omcli dev.x2-4.x2-% -omplat:x2 -stop
-sleep 2
-omcli dev.x2-4.x2-% -omplat:x2 -collect_logs
+
 
 echo "start kafkaui"
 omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean

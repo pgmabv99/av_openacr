@@ -8,7 +8,9 @@ source mn_set.sh
 #         -in_file:/home/avorovich/arnd/temp/atf_snf_logs/local/atf_snf.pcap
 
 # #
+source mn_set.sh
 echo "====================starting tap"
+x2rel  -create  -product:"tap" -omenv:dev.x2-4 -upload:Y  -create:Y
 omcli dev.x2-4.tap% -start_clean
 exit
 
@@ -16,6 +18,7 @@ omcli dev.x2-4.tap% -status
 omcli dev.x2-4.tap% -stop
 sleep 2
 omcli dev.x2-4.tap% -collect_logs
+omcli dev.x2-4.x2% -collect_logs
 
 
 

@@ -105,10 +105,14 @@ gb(){
   echo "Current branch: $(git rev-parse --abbrev-ref HEAD)"
 }
 
-ident(){
-     bin/cpp-indent  ${file}; update-hdr
+git_merge(){
+  git checkout --ours -- cpp/gen
+  git add cpp/gen
+  git checkout --ours -- include/gen
+  git add include/gen
+  git checkout --ours -- ts/gen
+  git add ts/gen
 }
-
 
 # set -x
 # from alexei as of 5/14/25

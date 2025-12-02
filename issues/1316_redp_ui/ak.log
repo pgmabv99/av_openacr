@@ -1,0 +1,27 @@
+./dev.x2-4.tap-3_ext_0/tcp_pairs_all.log:iframe:000000000104  ts_ns:1486551368004774  c_port:56720 kafka2.DescribeGroupsRequest  request_api_version:5  correlation_id:3  client_id:redpanda-console  groups.0:test-consumer-group  include_authorized_operations:N
+./dev.x2-4.tap-3_ext_0/tcp_pairs_all.log:iframe:000000000121  ts_ns:1486555576745228  c_port:56720 kafka2.DescribeGroupsRequest  request_api_version:5  correlation_id:6  client_id:redpanda-console  groups.0:test-consumer-group  include_authorized_operations:N
+./dev.x2-4.tap-3_ext_0/tcp_pairs/192.168.104.1:56720-192.168.104.4:1657_redpanda-console.log:iframe:000000000104  ts_ns:1486551368004774  c_port:56720 kafka2.DescribeGroupsRequest  request_api_version:5  correlation_id:3  client_id:redpanda-console  groups.0:test-consumer-group  include_authorized_operations:N
+./dev.x2-4.tap-3_ext_0/tcp_pairs/192.168.104.1:56720-192.168.104.4:1657_redpanda-console.log:iframe:000000000121  ts_ns:1486555576745228  c_port:56720 kafka2.DescribeGroupsRequest  request_api_version:5  correlation_id:6  client_id:redpanda-console  groups.0:test-consumer-group  include_authorized_operations:N
+grep: ./dev.x2-4.tap-2_ext_0/atf_snf.pcap: binary file matches
+
+
+iframe:000000000122
+ts_ns:1486555577117881
+c_port:56720
+kafka2.DescribeGroupsResponse
+request_api_version:5
+correlation_id:6
+throttle_time_ms:0
+groups.0:kafka2.DescribedGroup15a
+error_code:0
+group_id:test-consumer-group
+group_state:Stable
+protocol_type:consumer
+protocol_data:range
+members.0:kafka2.DescribedGroupMember15a
+member_id:console-consumer-53b6fa02-7d76-488c-a1b4-37fee62d9576
+client_id:console-consumer
+client_host:/192.168.104.5
+member_metadata:"00 03 00 00 00 01 00 0a 74 65 73 74 2d 74 6f 70 69 63 ff ff ff ff 00 00 00 00 ff ff ff ff ff ff"
+member_assignment:"00 03 00 00 00 01 00 0a 74 65 73 74 2d 74 6f 70 69 63 00 00 00 03 00 00 00 00 00 00 00 01 00 00 00 02 ff ff ff ff"
+authorized_operations:OMITTED

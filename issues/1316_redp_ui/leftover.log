@@ -1,0 +1,54 @@
+x2node.info node:dev.x2w-08  cmd:"ssh -q x2w@dev.x2w-08 mkdir -p reldir/x2w.2025-12-01.4bdf240aa"
+x2node.info  ncmd:1  completed:1  success:1  failure:0
+<f+++++++++ dev.x2-4.x2-0
+dev.x2-20:script
+<f+++++++++ dev.x2-4.x2-1
+dev.x2-18:script
+<f+++++++++ dev.x2-4.x2-2
+dev.x2-19:script
+<f+++++++++ dev.x2-4.x2-3
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:dev.x2-4.x2-3 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+daemonizing
+Log file:./dev-x2-4.x2sup-3-0.log
+..READY_FOR_TEST
+script:info  node:dev.x2-18 omnode:dev.x2-4.x2-1 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+daemonizing
+Log file:./dev-x2-4.x2sup-1-0.log
+..READY_FOR_TEST
+script:info  node:dev.x2-19 omnode:dev.x2-4.x2-2 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+daemonizing
+Log file:./dev-x2-4.x2sup-2-0.log
+..READY_FOR_TEST
+script:info  node:dev.x2-20 omnode:dev.x2-4.x2-0 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+daemonizing
+Log file:./dev-x2-4.x2sup-0-0.log
+..READY_FOR_TEST
+<f+++++++++ dev.x2-4.rdpui-1
+dev.rdpui-5:script
+script:info  node:dev.rdpui-5 omnode:dev.x2-4.rdpui-1 option:start_clean 
+Stopping rdpui...
+====Was not running
+Starting rdpui...
+setup  omplat:x2 server:192.168.104.5:1558 topic:test-topic tap_omnnode:dev.x2-4.tap-1_ext_0
+====================starting produce
+Error while executing topic command : Topic with this name already exists.
+[2025-12-01 13:35:55,073] ERROR org.apache.kafka.common.errors.TopicExistsException: Topic with this name already exists.
+ (org.apache.kafka.tools.TopicCommand)
+produce 20 messages to test-topic on 192.168.104.5:1558

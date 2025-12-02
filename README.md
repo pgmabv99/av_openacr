@@ -134,6 +134,7 @@ zsl      Llist    Zero-terminated singly linked LIFO list
 to allow think time in debugging
 
 sed -i 's/hbtimeout:30/hbtimeout:10000/g' data/x2db/proc.ssim
+
 ## Git cheat sheet
 
 
@@ -143,6 +144,14 @@ git show | nogen
 git show HEAD~1 | nogen
 git show HEAD~3..HEAD |nogen
 ```
+### git adding new omnodes
+
+```
+-add to omnode.ssim
+omcli -generate
+git add omcli/gen; update-gitfile
+```
+
 ### git log
 
 ```

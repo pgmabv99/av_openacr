@@ -10,8 +10,8 @@ echo "====================starting produce"
 # sleep 1
 /opt/kafka/current/bin/kafka-topics.sh --bootstrap-server "$server" --create --topic ${topic} --partitions 3 --replication-factor 1
 # build all messages into a variable and send once
-for ((ii=0; ii<2; ii++)); do
-  nrec=10
+for ((ii=0; ii<1; ii++)); do
+  nrec=20
   msgs=""
   for i in $(seq 1 "$nrec"); do
     msgs+="message${i}"$'\n'

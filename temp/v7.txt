@@ -1,0 +1,41 @@
+      // TODO: reconstruct topics/patritions for version 7
+        FCgrp *gw_group(NULL);
+        bool stable =
+            !req.require_stable ||
+            ((gw_group = ind_cgrp_Find(req.group_id)) && gw_group->state == kafka_GroupState_Stable);
+        algo::ByteAry req_keys;
+        ind_beg(kafka2::OffsetFetchRequest_topics_curs,req_topic,req) {
+            kafka2::OffsetFetchResponseTopic9a &rsp_topic = topics_Alloc(rsp);
+            rsp_topic.name = req_topic.name;
+            ind_beg(kafka2::OffsetFetchRequestTopic9q_partition_indexes_curs,req_partition,req_topic) {
+                kafka2::OffsetFetchResponsePartition9a &rsp_partition = partitions_Alloc(rsp_topic);
+                rsp_partition.partition_index = req_partition;
+                if (err) {
+                    rsp_partition.error_code = err;
+                } else {
+                    kafka::OffsetCommitKey key;
+                    key.group = req.group_id;
+                    key.topic = req_topic.name;
+                    key.partition = req_partition;
+                    algo::ByteAry buf;
+                    lib_kafka::EncodeOffsetCommitKey(buf,key);
+                    lib_x2::Key_FmtAppend(req_keys,ToStrPtr(ary_Getary(buf)));
+                    if (!stable) {
+                        err = kafka_Error_REBALANCE_IN_PROGRESS;
+                    }
+                }
+            }ind_end;
+        }ind_end;
+        if (ary_N(req_keys)) {
+            x2gw::FProduce &produce = ProduceAlloc(*consumer_offsets_stream->p_x2stream, algo::CurrUnTime());
+            lib_x2::QueryKeyMsg_FmtByteAry(produce.data, produce.request_id, consumer_offsets_stream->stream_id, lib_x2::_db.c_sysresp->stream_id, ams::ProcId(), algo::memptr());
+            ary_Addary(produce.data, req_keys);
+            ams::MsgHeader *out = (ams::MsgHeader*)produce.data.ary_elems;
+            out->length = produce.data.ary_n;
+            produce.waitdata=true;// don't delete after ack
+            h_data_Set2(produce,produce,x2gw::OffsetFetch);
+            produce.p_prodgrp = _db.cur_prodgrp;
+            zd_produce_Insert(*_db.cur_prodgrp,produce); // manual xref
+            ProduceXref(produce);
+        }
+    }

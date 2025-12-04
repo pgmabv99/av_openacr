@@ -9,19 +9,27 @@ if [ "$omplat" = "ak" ]; then
 
 elif [ "$omplat" = "x2" ]; then
   echo "install and start x2"
-  x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y
+  x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y 
   omcli dev.x2-4.x2-% -omplat:x2 -start_clean -debug_x2sup 
+  # omcli dev.x2-4.x2-0 -omplat:x2 -start_clean -debug_x2sup 
+  # omcli dev.x2-4.x2-1 -omplat:x2 -start_clean -debug_x2sup 
+  # omcli dev.x2-4.x2-2 -omplat:x2 -start_clean -debug_x2sup 
+  # omcli dev.x2-4.x2-3 -omplat:x2 -start_clean -debug_x2sup 
 else
   echo "unknown omplat:$omplat - no action"
 fi
-omcli dev.x2-4.rdpui-1  -omplat:$omplat -start_clean
+
+# echo "start rdpui"
+# omcli dev.x2-4.rdpui-1  -omplat:$omplat -start_clean
+
+echo "start kafkaui"
+omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
 
 exit 
 # =====================================
 
 
-echo "start kafkaui"
-omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
+
 
 echo "stop kafka brokers locally "
 /opt/kafka/current/bin/kafka-server-start.sh /opt/kafka/current/config/server.properties

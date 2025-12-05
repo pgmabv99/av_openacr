@@ -2,6 +2,7 @@
 source mn_set.sh
 # echo "run tap locally"
 # sudo ~/arnd/bin/atf_snf -dev:data0-4T  -kapi  -dir:local -timestamp_log:N
+# sudo ~/release/bin/atf_snf -dev:data0-4T  -kapi  -dir:local -timestamp_log:N
 
 # echo " run locally from pcap"
 # atf_snf -dev:data0-4T  -kapi  -dir:local  \

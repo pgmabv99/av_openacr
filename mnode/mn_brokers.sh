@@ -11,10 +11,6 @@ elif [ "$omplat" = "x2" ]; then
   echo "install and start x2"
   x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y 
   omcli dev.x2-4.x2-% -omplat:x2 -start_clean -debug_x2sup 
-  # omcli dev.x2-4.x2-0 -omplat:x2 -start_clean -debug_x2sup 
-  # omcli dev.x2-4.x2-1 -omplat:x2 -start_clean -debug_x2sup 
-  # omcli dev.x2-4.x2-2 -omplat:x2 -start_clean -debug_x2sup 
-  # omcli dev.x2-4.x2-3 -omplat:x2 -start_clean -debug_x2sup 
 else
   echo "unknown omplat:$omplat - no action"
 fi
@@ -22,8 +18,8 @@ fi
 # echo "start rdpui"
 # omcli dev.x2-4.rdpui-1  -omplat:$omplat -start_clean
 
-echo "start kafkaui"
-omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
+# echo "start kafkaui"
+# omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
 
 exit 
 # =====================================

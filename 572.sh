@@ -68,6 +68,8 @@ acr_ed -create -field atf_snf.FTcp_pair.kafka_count           -arg u32          
 acr_ed -create -field atf_snf.FTcp_pair.kafka_req_ack_count   -arg u32              -write -comment "kafka req ack count"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_len_tot         -arg u32              -write -comment "total of kafka req/rsp length per pair"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_per_frame_count -arg u32              -write -comment "count of kafka req/rsp per frame"
+acr_ed -create -field atf_snf.FTcp_pair.kafka_lat_tot_per_step -arg u64              -write -comment "sum of  latencies  per step"
+acr_ed -create -field atf_snf.FTcp_pair.kafka_count_per_step  -arg u64              -write -comment "count of kafa req per step"
 
 # pointers from above
 # acr_ed -del  -field atf_snf.FDb.zd_tcp_pair                    -write

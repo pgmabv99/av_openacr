@@ -18,6 +18,9 @@
 		},
 		{
 			"path": "../arnd/temp/atf_lat"
+		},
+		{
+			"path": "../arnd/temp/x2tmp"
 		}
 	],
 

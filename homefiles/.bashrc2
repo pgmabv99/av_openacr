@@ -33,7 +33,7 @@ alias ci_clean="rm -rf temp/sand*"
 alias ppath='echo $PATH | tr ":" "\n"'
 alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'
 
-alias gitclean='git checkout -- bin .vscode/launch.json'
+alias gitclean_bin='git checkout -- bin .vscode/launch.json'
 alias x2tree='ps -e --forest -o pid,ppid,cmd | grep x2'
 alias gr='git-rebase-remote origin'
 
@@ -64,7 +64,13 @@ abt2(){
 
 
 
+#  clean generated
+gitclean_gen() {
+  git checkout -- cpp/gen
+  git checkout -- include/gen
+  git checkout -- ts/gen
 
+}
 gitlog1() {
   git log --oneline --decorate --pretty=format:"%h %ad %an | %s%d" --date=format:"%m-%d %H:%M" "$@"
 
@@ -105,6 +111,7 @@ gb(){
   echo "Current branch: $(git rev-parse --abbrev-ref HEAD)"
 }
 
+# resolve conflivts in generated files by keeping current branch version
 git_merge(){
   git checkout --ours -- cpp/gen
   git add cpp/gen

@@ -1,39 +1,4 @@
 #!/bin/bash
-sou
-# =====================================
-# clean all and start
-omcli dev.x2-4 -dkr_clean_run -omplat:ak
-omcli dev.x2-4 -dkr_clean_run -omplat:x2
-omcli dev.x2-4.kafkaw-% -dkr_clean_run  
-
-#  start brokers
-if [ "$omplat" = "ak" ]; then
-  echo "start kafka brokers"
-  omcli dev.x2-4.kafka-% -omplat:ak -start_clean
-elif [ "$omplat" = "x2" ]; then
-  echo "install and start x2"
-  x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y
-  omcli dev.x2-4.x2-% -omplat:x2 -start_clean
-else
-  echo "unknown omplat:$omplat - no action"
-fi
-
-
-
-echo "start kafkaui"
-omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
-
-
-echo "collect tap logs"
-omcli $tap_omnnode -ignore_omnode_use -status
-omcli $tap_omnnode -ignore_omnode_use -stop
-sleep 4
-omcli $tap_omnnode -ignore_omnode_use -collect_logs
-atf_lat -omenv:dev.x2-4  
-
-
-echo "stop kafka brokers locally "
-/opt/kafka/current/bin/kafka-server-start.sh /opt/kafka/current/config/server.properties
 
 
 #  x2write example

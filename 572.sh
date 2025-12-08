@@ -110,8 +110,8 @@ acr_ed -create -field atf_snf.FTcp_pair.ind_kafka_corr_id  -arg atf_snf.FKafka  
 acr_ed -create -field atf_snf.FTcp_pair.bh_kafka_corr_id   -arg atf_snf.FKafka   -via atf_snf.FKafka.p_tcp_pair -sortfld atf_snf.FKafka.iframe -cascdel -write -comment "bheap of kafka on ts_ns"
 
 # pointers
-acr_ed -del  -field atf_snf.FDb.bh_kafka_corr_id_glob -write || true
-acr_ed -create -field atf_snf.FDb.bh_kafka_corr_id_glob -xref  -arg atf_snf.FKafka -sortfld atf_snf.FKafka.ts_ns -write -comment "bheap of kafka on ts_ns from FDB"
+acr_ed -del  -field atf_snf.FDb.bh_ts_ns -write || true
+acr_ed -create -field atf_snf.FDb.bh_ts_ns -xref  -arg atf_snf.FKafka -sortfld atf_snf.FKafka.ts_ns -write -comment "bheap of kafka on ts_ns from FDB"
 
 #--------
 #-------------extract objects
@@ -128,6 +128,7 @@ set -e
 acr_ed -del    -ctype atf_snf.FToppart                                              -write || true
 acr_ed -create -ctype atf_snf.FToppart                           -pooltype Tpool                      -write  -comment "Topic/partition"
 acr_ed -create -field atf_snf.FToppart.toppart                       -arg algo.Smallstr100            -write  -comment "topic id/partion id"
+acr_ed -create -field atf_snf.FToppart.type                          -arg u32                         -write  -comment "=1 fetch  offset, 2= produce offsets"
 acr_ed -create -field atf_snf.FToppart.topic_name                    -arg algo.Smallstr100            -write  -comment "topic name"
 acr_ed -create -field atf_snf.FToppart.offset_produce                -arg i64                         -write  -comment "latest produce offset"
 acr_ed -create -field atf_snf.FToppart.offset_fetch_fst              -arg i64                         -write  -comment "latest fetch offset. first in batch"

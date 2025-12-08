@@ -1,5 +1,9 @@
 
 #!/bin/bash
+
+# cfg=debug
+cfg=release
+
 omplat=ak
 # omplat=x2
 # omplat=local

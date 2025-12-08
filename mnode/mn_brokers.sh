@@ -9,7 +9,7 @@ if [ "$omplat" = "ak" ]; then
 
 elif [ "$omplat" = "x2" ]; then
   echo "install and start x2"
-  x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y 
+  x2rel  -create  -product:"x2|x2w" -omenv:dev.x2-4 -upload:Y  -create:Y -cfg:$cfg
   omcli dev.x2-4.x2-% -omplat:x2 -start_clean -debug_x2sup 
 else
   echo "unknown omplat:$omplat - no action"
@@ -18,8 +18,8 @@ fi
 # echo "start rdpui"
 # omcli dev.x2-4.rdpui-1  -omplat:$omplat -start_clean
 
-# echo "start kafkaui"
-# omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
+echo "start kafkaui"
+omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
 
 exit 
 # =====================================

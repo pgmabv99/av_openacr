@@ -5,6 +5,7 @@
 |Tpool tcp_pair_hist------>/ atf_lat.FTcp_pair_hist  |                                   
 |Llist zd_tcp_pair_hist--->|                         |                                   
 |Thash ind_tcp_pair_hist-->|                         |                                   
+|Bheap bh_sortfld--------->|                         |                                   
 |                          -                         |                                   
 |Tpool toppart_hist------->/ atf_lat.FToppart_hist   |                                   
 |Bheap bh_toppart_hist---->|                         |                                   

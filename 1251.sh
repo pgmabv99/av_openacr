@@ -7,6 +7,7 @@ set -e
 acr_ed -del  -ssimfile:omdb.om_toppart   -write || true
 acr_ed -create  -ssimfile:omdb.om_toppart   -write -comment "topic/partition stats records for transfer"
 acr_ed -create -field omdb.OmToppart.snapshot_id                   -arg u32              -write -comment "snap"
+acr_ed -create -field omdb.OmToppart.type                          -arg u32              -write -comment "=1 fetch   offset, 2= produce offsets"
 acr_ed -create -field omdb.OmToppart.time                          -arg algo.UnTime                 -write -comment "Report time"
 acr_ed -create -field omdb.OmToppart.offset_produce                -arg i64                         -write  -comment "latest produce offset"
 acr_ed -create -field omdb.OmToppart.offset_fetch_fst              -arg i64                         -write  -comment "latest fetch offset.fitst in batch"
@@ -32,7 +33,6 @@ acr_ed -create -field  omdb.OmTcpPair.host                          -arg algo.Sm
 acr_ed -del    -ctype atf_lat.FTcp_pair_hist    -write || tru
 acr_ed -create -ctype  atf_lat.FTcp_pair_hist                          -pooltype Tpool       -write -comment "tcp pair entry"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.tcp_pair_hist            -arg algo.Smallstr50   -write -comment "tcp pair string key host:port-host:port"
-# acr_ed -create -field  atf_lat.FTcp_pair_hist.client_id                -arg algo.Smallstr50   -write -comment "kafka client id"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.progress                 -arg omdb.OmTcpPair  -write -comment "current progress stats"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.last_progress            -arg omdb.OmTcpPair  -write -comment "last progress stats"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.kafka_lat_cur_step       -arg u64              -write -comment "latency for curent step"
@@ -41,11 +41,11 @@ acr_ed -create -field  atf_lat.FTcp_pair_hist.kafka_lat_max            -arg u64 
 
 # pointers from above
 acr_ed -create -field  atf_lat.FDb.zd_tcp_pair_hist                     -cascdel              -write -comment ""
-# acr_ed -create -field  atf_lat.FDb.cd_client_id      -arg  atf_lat.FTcp_pair_hist.client_id                      -cascdel              -write -comment ""
 acr_ed -create -field  atf_lat.FDb.ind_tcp_pair_hist                    -cascdel              -write -comment ""
 
-# acr_ed -create -field  atf_lat.FDb.bh_tcp_pair_hist   -sortfld  omdb.OmTcpPair.client_id_key              -cascdel              -write -comment ""
-# acr_ed -create -field  atf_lat.FDb.bh_tcp_pair_hist   -sortfld  atf_lat.progress.client_id_key              -cascdel              -write -comment ""
+acr_ed -create -field  atf_lat.FTcp_pair_hist.sortfld                   -arg  algo.cstring    -write -comment "sort field for arbitrary  sorting"
+acr_ed -create -field  atf_lat.FDb.bh_sortfld -xref                     -arg  atf_lat.FTcp_pair_hist     -sortfld  atf_lat.FTcp_pair_hist.sortfld     -write -comment "bheap on sort field"   
+
 amc
 
 #--------------FToppart_hist

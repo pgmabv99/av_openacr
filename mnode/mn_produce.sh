@@ -8,12 +8,12 @@ echo "====================starting produce"
 # skip delete as  x2 crashes 11/26
 # /opt/kafka/current/bin/kafka-topics.sh --bootstrap-server "$server" --delete --topic ${topic} || true
 # sleep 1
-/opt/kafka/current/bin/kafka-topics.sh --bootstrap-server "$server" --create --topic ${topic} --partitions 3 --replication-factor 1
+/opt/kafka/current/bin/kafka-topics.sh --bootstrap-server "$server" --create --topic ${topic} --partitions 1 --replication-factor 1
 
 
 # produce loop 
-nbatch=9999
-nrec=20
+nbatch=10
+nrec=1000
 
 # multiple producer instance 
 # for ((ii=0; ii<nbatch; ii++)); do
@@ -26,14 +26,15 @@ nrec=20
 #   sleep 1
 # done
 
-
 # one producer instance
+nbatch=2
+nrec=10
 {
-  for ((ii=0; ii<nbatch; ii++)); do
-    for ((i=1; i<=nrec; i++)); do
-      echo "batch${ii}_message${i}"
+  for ((ibatch=0; ibatch<nbatch; ibatch++)); do
+    for ((irec=1; irec<=nrec; irec++)); do
+      echo "batch${ibatch}_message${irec}"
     done
-    echo "---- batch ${ii} done ----" >&2
+    echo "---- batch ${ibatch} message${nrec} done ----" >&2
     sleep 1
   done
 } | /opt/kafka/current/bin/kafka-console-producer.sh \

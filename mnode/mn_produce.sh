@@ -9,11 +9,16 @@ echo "====================starting produce"
 # /opt/kafka/current/bin/kafka-topics.sh --bootstrap-server "$server" --delete --topic ${topic} || true
 # sleep 1
 /opt/kafka/current/bin/kafka-topics.sh --bootstrap-server "$server" --create --topic ${topic} --partitions 1 --replication-factor 1
+sleep 1
+/opt/kafka/current/bin/kafka-topics.sh --bootstrap-server "$server" --describe --topic "$topic"
+
+sleep 2
 
 
 # produce loop 
 nbatch=10
-nrec=1000
+nrec=100
+
 
 # multiple producer instance 
 # for ((ii=0; ii<nbatch; ii++)); do
@@ -27,8 +32,6 @@ nrec=1000
 # done
 
 # one producer instance
-nbatch=2
-nrec=10
 {
   for ((ibatch=0; ibatch<nbatch; ibatch++)); do
     for ((irec=1; irec<=nrec; irec++)); do

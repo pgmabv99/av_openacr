@@ -22,3 +22,4 @@ else
 fi
 topic=test-topic
 echo "setup  omplat:$omplat server:$server topic:$topic tap_omnnode:$tap_omnnode"
+ps -aux | grep java | grep kafka | grep -v grep || true

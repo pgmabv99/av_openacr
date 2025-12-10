@@ -16,6 +16,14 @@ acr_ed -create -field omdb.OmToppart.high_watermark                -arg i64     
 acr_ed -create -field omdb.OmToppart.host                          -arg algo.Smallstr50             -write -comment "capture host"
 acr_ed -create -field omdb.OmToppart.topic_name                    -arg algo.Smallstr100             -write -comment "topic name"
 
+#-------------OmTopNameId
+acr_ed -del  -ssimfile:omdb.om_top_name_id    -write || true
+acr_ed -create  -ssimfile:omdb.om_top_name_id    -write -comment "map of topic id to name"
+acr_ed -create -field omdb.OmTopNameId.topic_id                      -arg algo.Smallstr100               -write -comment ""
+acr_ed -create -field omdb.OmTopNameId.topic                         -arg algo.Smallstr100               -write -comment ""
+acr_ed -create -field omdb.OmTopNameId.time                           -arg algo.UnTime                   -write -comment ""
+acr_ed -create -field omdb.OmTopNameId.snapshot_id                   -arg u32                           -write -comment "snap"
+
 #-------------OmTcpPair 
 acr_ed -del     -ssimfile:omdb.om_tcp_pair  -write || true
 acr_ed -create  -ssimfile:omdb.om_tcp_pair   -write -comment "tcp pair  record for transfer latency"
@@ -58,6 +66,21 @@ acr_ed -create -field  atf_lat.FToppart_hist.om_toppart                -arg omdb
 # pointers from above
 acr_ed -create -field  atf_lat.FDb.bh_toppart_hist                     -cascdel              -write -comment ""
 acr_ed -create -field  atf_lat.FDb.ind_toppart_hist                    -cascdel              -write -comment ""
+amc
+
+#--------------FTopNameIdHist
+set -e
+acr_ed -del    -ctype atf_lat.FTopNameIdHist    -write || true
+acr_ed -create -ctype  atf_lat.FTopNameIdHist                         -pooltype Tpool       -write -comment "FToppart history"
+acr_ed -create -field  atf_lat.FTopNameIdHist.topic_id                -arg algo.Smallstr100        -write -comment ""
+acr_ed -create -field  atf_lat.FTopNameIdHist.topic                   -arg algo.Smallstr100 -write -comment ""
+acr_ed -create -field  atf_lat.FTopNameIdHist.time                    -arg algo.UnTime      -write -comment "snap"
+acr_ed -create -field  atf_lat.FTopNameIdHist.snapshot_id             -arg u32              -write -comment "snap"
+# pointers from above
+acr_ed -del    -field  atf_lat.FDb.bh_top_name_id_hist                -write || true
+acr_ed -del    -field  atf_lat.FDb.ind_top_name_id_hist               -write || true
+acr_ed -create -field  atf_lat.FDb.bh_top_name_id_hist  -xref  -arg  atf_lat.FTopNameIdHist   -hashfld   atf_lat.FTopNameIdHist.topic_id             -cascdel              -write -comment ""
+acr_ed -create -field  atf_lat.FDb.ind_top_name_id_hist -xref  -arg  atf_lat.FTopNameIdHist   -sortfld   atf_lat.FTopNameIdHist.topic_id             -cascdel              -write -comment ""
 amc
 
 #-------------main CB

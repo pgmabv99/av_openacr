@@ -16,11 +16,9 @@ sleep 2
 
 
 # produce loop 
-nbatch=10
-nrec=100
-
-
 # multiple producer instance 
+# nbatch=10
+# nrec=100
 # for ((ii=0; ii<nbatch; ii++)); do
 #   msgs=""
 #   for i in $(seq 1 "$nrec"); do
@@ -32,6 +30,9 @@ nrec=100
 # done
 
 # one producer instance
+nbatch=10
+nrec=100
+
 {
   for ((ibatch=0; ibatch<nbatch; ibatch++)); do
     for ((irec=1; irec<=nrec; irec++)); do
@@ -44,3 +45,6 @@ nrec=100
         --bootstrap-server "$server" \
         --topic "$topic"
 
+exit
+
+/opt/kafka/current/bin/kafka-metadata-shell.sh --bootstrap-server dev.x2-4.kafka-1.ext-0:1643 --describe

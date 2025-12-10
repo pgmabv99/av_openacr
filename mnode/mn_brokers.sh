@@ -5,6 +5,10 @@ echo "====================starting brokers"
 if [ "$omplat" = "ak" ]; then
   echo "start kafka brokers"
   omcli dev.x2-4.kafka-% -omplat:ak -start_clean  
+  # omcli dev.x2-4.kafka-1 -omplat:ak -start_clean  
+  # omcli dev.x2-4.kafka-2 -omplat:ak -start_clean  
+  # omcli dev.x2-4.kafka-3 -omplat:ak -start_clean  
+  # omcli dev.x2-4.kafka-4 -omplat:ak -start_clean  
   # omcli dev.x2-4.kafka-% -omplat:ak -status 
 
 elif [ "$omplat" = "x2" ]; then
@@ -18,8 +22,8 @@ fi
 # echo "start rdpui"
 # omcli dev.x2-4.rdpui-1  -omplat:$omplat -start_clean
 
-echo "start kafkaui"
-omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
+# echo "start kafkaui"
+# omcli dev.x2-4.kafkaui-1  -omplat:$omplat -start_clean
 
 exit 
 # =====================================

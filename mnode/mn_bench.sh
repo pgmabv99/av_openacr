@@ -1,5 +1,6 @@
 #!/bin/bash
 source mn_set.sh
+pkill java || true
 #
 set -e
 # omcli dev.x2-4 -omtest:om_benchmark -omplat:ak -omrun_minutes:1

@@ -33,11 +33,17 @@ bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 EOF
 x2read -end:2
 fi
-sleep 1
+# Allow some time to flush pcap
+sleep .001
+
+
+# sleep 1
+#
 if $trafmsg; then
     echo "run sniffer with x2 in trafmsg mode to parse pcap" 
     atf_snf  -x2 -sll2 -trafmsg -in_file:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap  > /home/avorovich/av_openacr/logs_x2sup/atf_snf_x2_trafmsg.log      
-    tail -100 /home/avorovich/av_openacr/logs_x2sup/x2traf.log
+    # tail -100 /home/avorovich/av_openacr/logs_x2sup/x2traf.log
+    grep "GUAckMsg" /home/avorovich/av_openacr/logs_x2sup/atf_snf_x2_trafmsg.log | tail -20
 else
     echo "run sniffer with x2 in default mode to parse pcap" 
     atf_snf  -x2 -sll2           -in_file:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap  > /home/avorovich/av_openacr/logs_x2sup/atf_snf_x2_trafmsg.log 

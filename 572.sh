@@ -146,8 +146,9 @@ amc
 acr_ed -del    -ctype atf_snf.FX2msg                                              -write || true
 acr_ed -create -ctype atf_snf.FX2msg                        -pooltype Tpool       -write  -comment "x2 msg"
 acr_ed -create -field atf_snf.FX2msg.x2msg                  -arg u64              -write  -comment "trafmsg.seq_x2traf as key"
-acr_ed -create -field atf_snf.FX2msg.ts_snf_write           -arg algo.UnTime      -write  -comment "ts of the write UGPubMsg "
-acr_ed -create -field atf_snf.FX2msg.ts_snf_read            -arg algo.UnTime      -write  -comment "ts of the read  Seqmsg"
+acr_ed -create -field atf_snf.FX2msg.ts_snf_w               -arg algo.UnTime      -write  -comment "ts of the write UGPubMsg "
+acr_ed -create -field atf_snf.FX2msg.ts_snf_wa              -arg algo.UnTime      -write  -comment "ts of the write ack UGUAckMsg "
+acr_ed -create -field atf_snf.FX2msg.ts_snf_r               -arg algo.UnTime      -write  -comment "ts of the read  Seqmsg"
 acr_ed -create -field atf_snf.FX2msg.count                  -arg u64              -write  -comment "count by seq_x2traf"
 # pointers from up/down above
 acr_ed -create -field atf_snf.FDb.zd_x2msg                -cascdel              -write -comment ""
@@ -245,12 +246,14 @@ acr -merge  -write <<EOF
  acr.delete dmmeta.dispatch  dispatch:atf_snf.In 
  acr.delete   dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.Seqmsg        
  acr.delete   dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.UGPubMsg            
+ acr.delete   dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.GUAckMsg           
 EOF
 
 acr -merge -write <<EOF
   dmmeta.dispatch  dispatch:atf_snf.In  unk:N  read:N  print:N  haslen:N  call:Y  strict:N  dyn:N  kafka:N  comment:""
     dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.Seqmsg                 comment:""
     dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.UGPubMsg               comment:""
+    dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.GUAckMsg               comment:""
 EOF
 
 

@@ -93,3 +93,34 @@ x2db.gwport  gwport:dev-x2-4.x2gw-3-0/resps-0   port:1517  intf:192.168.104.2  c
 x2db.gwport  gwport:dev-x2-4.x2gw-3-0/x2-0      port:1508  intf:192.168.104.2  comment:""
 x2db.gwport  gwport:dev-x2-4.x2gw-3-0/x2s-0     port:1509  intf:192.168.104.2  comment:""
 
+
+
+struct TrafMsg { // x2.TrafMsg: Sequenced x2traf message
+    u32                    type;          //   623
+    u32                    length;        //   ssizeof(parent) + (0)
+    x2::StreamId           stream_id;     //
+    ams::ProcId            src;           // Source process
+    u64                    seq_x2traf;    //   0  total number of packets sent
+    u64                    bytes_total;   //   0  Total number of bytes sent
+    x2::Traftime           timestamps;    // Timestamps on several points
+    // ams::MsgHeader      payload[];                                              optional field
+    // func:x2.TrafMsg..Ctor
+    inline               TrafMsg() __attribute__((nothrow));
+    // func:x2.TrafMsg..FieldwiseCtor
+    explicit inline               TrafMsg(x2::StreamId in_stream_id, ams::ProcId in_src, u64 in_seq_x2traf, u64 in_bytes_total, x2::Traftime in_timestamps) __attribute__((nothrow));
+};
+
+
+struct Seqmsg { // x2.Seqmsg: Sequenced stream message
+    u32                    type;        //   622
+    u32                    length;      //   ssizeof(parent) + (0)
+    x2::StreamId           stream_id;   //
+    u64                    seq;         //   0
+    ams::ProcId            src;         // Source process
+    algo::UnTime           timestamp;   // When message was created
+    // ams::MsgHeader      payload[];                                    optional field
+    // func:x2.Seqmsg..Ctor
+    inline               Seqmsg() __attribute__((nothrow));
+    // func:x2.Seqmsg..FieldwiseCtor
+    explicit inline               Seqmsg(x2::StreamId in_stream_id, u64 in_seq, ams::ProcId in_src, algo::UnTime in_timestamp) __attribute__((nothrow));
+};

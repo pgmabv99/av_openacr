@@ -16,3 +16,80 @@ acr -e field:atf_snf.FDb% -t
         dmmeta.cascdel  field:atf_snf.FDb.bh_top_name_id  comment:""
         dmmeta.sortfld  field:atf_snf.FDb.bh_top_name_id  sortfld:atf_snf.FTopNameId.topic
         dmmeta.xref  field:atf_snf.FDb.bh_top_name_id  acr.rowid:2       inscond:true  via:""
+
+
+
+$ acr omnode:dev.x2-4.kafka-% -t | grep ext-0
+    omdb.omhost  omhost:dev.x2-4.kafka-1.ext-0   ip:192.168.104.2  comment:""
+    omdb.omhost  omhost:dev.x2-4.kafka-2.ext-0   ip:192.168.104.3  comment:""
+    omdb.omhost  omhost:dev.x2-4.kafka-3.ext-0   ip:192.168.104.4  comment:""
+    omdb.omhost  omhost:dev.x2-4.kafka-4.ext-0   ip:192.168.104.5  comment:""
+[0 Dec 11 09:19:50] avorovich@nj1.sn5.user-avorovich:~/arnd 
+$ acr omnode:dev.x2-4.x2-% -t | grep ext-0
+    omdb.omhost  omhost:dev.x2-4.x2-0.ext-0   ip:192.168.104.5  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-1.ext-0   ip:192.168.104.3  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-2.ext-0   ip:192.168.104.4  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-3.ext-0   ip:192.168.104.2  comment:""
+[0 Dec 11 09:20:03] avorovich@nj1.sn5.user-avorovich:~/arnd 
+
+$ x2-port-vars | grep x2 | grep -v s
+x200ip=192.168.104.5
+x200port=1547
+x210ip=192.168.104.3
+x210port=1521
+x220ip=192.168.104.4
+x220port=1534
+x230ip=192.168.104.2
+x230port=1508
+
+
+x2db.gwport  gwport:dev-x2-4.x2gw-0-0/http-0    port:1550  intf:192.168.104.5  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-0-0/https-0   port:1554  intf:192.168.104.5  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-0-0/kafka-0   port:1558  intf:192.168.104.5  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-0-0/kafkas-0  port:1559  intf:192.168.104.5  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-0-0/mqtt-0    port:1549  intf:192.168.104.5  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-0-0/mqtts-0   port:1557  intf:192.168.104.5  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-0-0/nats-0    port:1552  intf:192.168.104.5  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-0-0/natss-0   port:1553  intf:192.168.104.5  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-0-0/resp-0    port:1555  intf:192.168.104.5  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-0-0/resps-0   port:1556  intf:192.168.104.5  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-0-0/x2-0      port:1547  intf:192.168.104.5  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-0-0/x2s-0     port:1548  intf:192.168.104.5  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-1-0/http-0    port:1524  intf:192.168.104.3  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-1-0/https-0   port:1528  intf:192.168.104.3  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-1-0/kafka-0   port:1532  intf:192.168.104.3  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-1-0/kafkas-0  port:1533  intf:192.168.104.3  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-1-0/mqtt-0    port:1523  intf:192.168.104.3  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-1-0/mqtts-0   port:1531  intf:192.168.104.3  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-1-0/nats-0    port:1526  intf:192.168.104.3  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-1-0/natss-0   port:1527  intf:192.168.104.3  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-1-0/resp-0    port:1529  intf:192.168.104.3  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-1-0/resps-0   port:1530  intf:192.168.104.3  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-1-0/x2-0      port:1521  intf:192.168.104.3  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-1-0/x2s-0     port:1522  intf:192.168.104.3  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-2-0/http-0    port:1537  intf:192.168.104.4  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-2-0/https-0   port:1541  intf:192.168.104.4  comment:""
+
+x2db.gwport  gwport:dev-x2-4.x2gw-2-0/kafka-0   port:1545  intf:192.168.104.4  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-2-0/kafkas-0  port:1546  intf:192.168.104.4  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-2-0/mqtt-0    port:1536  intf:192.168.104.4  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-2-0/mqtts-0   port:1544  intf:192.168.104.4  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-2-0/nats-0    port:1539  intf:192.168.104.4  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-2-0/natss-0   port:1540  intf:192.168.104.4  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-2-0/resp-0    port:1542  intf:192.168.104.4  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-2-0/resps-0   port:1543  intf:192.168.104.4  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-2-0/x2-0      port:1534  intf:192.168.104.4  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-2-0/x2s-0     port:1535  intf:192.168.104.4  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-3-0/http-0    port:1511  intf:192.168.104.2  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-3-0/https-0   port:1515  intf:192.168.104.2  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-3-0/kafka-0   port:1519  intf:192.168.104.2  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-3-0/kafkas-0  port:1520  intf:192.168.104.2  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-3-0/mqtt-0    port:1510  intf:192.168.104.2  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-3-0/mqtts-0   port:1518  intf:192.168.104.2  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-3-0/nats-0    port:1513  intf:192.168.104.2  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-3-0/natss-0   port:1514  intf:192.168.104.2  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-3-0/resp-0    port:1516  intf:192.168.104.2  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-3-0/resps-0   port:1517  intf:192.168.104.2  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-3-0/x2-0      port:1508  intf:192.168.104.2  comment:""
+x2db.gwport  gwport:dev-x2-4.x2gw-3-0/x2s-0     port:1509  intf:192.168.104.2  comment:""
+

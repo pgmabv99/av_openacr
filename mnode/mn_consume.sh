@@ -9,7 +9,9 @@ set -x
   --topic test-topic \
   --group test-consumer-group \
   --from-beginning \
-  --property print.timestamp=true
+  --property print.timestamp=true \
+  --property print.offset=true \
+  --timeout-ms 5000
   
 exit
 # =================

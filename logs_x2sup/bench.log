@@ -1,2 +1,0 @@
-KF:15:13:02.178 [main] INFO WorkloadGenerator - Pub rate  9999.5 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9999.5 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.1 - 99%:  2.3 - 99.9%:  3.2 - Max:  4.7
-x2:15:03:37.010 [main] INFO WorkloadGenerator - Pub rate  9998.8 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate     0.0 msg/s /  0.0 MB/s | Backlog: 3623.9 K | Pub Latency (ms) avg:  1.1 - 50%:  1.1 - 99%:  2.3 - 99.9%:  2.6 - Max:  2.8 

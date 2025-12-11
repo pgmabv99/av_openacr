@@ -30,11 +30,9 @@ sleep 2
 # done
 
 # one producer instance
-nbatch=10
-nrec=100
 
 {
-  for ((ibatch=0; ibatch<nbatch; ibatch++)); do
+  for ((ibatch=1; ibatch<=nbatch; ibatch++)); do
     for ((irec=1; irec<=nrec; irec++)); do
       echo "batch${ibatch}_message${irec}"
     done

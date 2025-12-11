@@ -33,5 +33,6 @@ set -x
 echo " grep for produce/fetch responses in current log dir $(pwd) "
 grep "KafkaStorePayLoad" -rnI .
 grep "!seq_gap" -rnI .
+grep "atf_snf.error" -rnI .
 set +x 
 cd ~/arnd

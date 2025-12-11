@@ -1,0 +1,612 @@
+setup  omplat:ak server:dev.x2-4.kafka-1.ext-0:1643 topic:test-topic tap_omnnode:dev.x2-4.tap-1_ext_0
+setup  omplat:ak server:dev.x2-4.kafka-1.ext-0:1643 topic:test-topic tap_omnnode:dev.x2-4.tap-1_ext_0
+dkr.report command:generate_dockerbuild  cmd:""  targets:11
+dkr.info image:kafka-13 file:temp/docker/kafka-13/kafka-13.run comment:copying script
+dkr.info image:kafka-13 file:temp/docker/kafka-13/kafka-13.build comment:copying script
+dkr.info image:kafka-13 file:temp/docker/kafka-13/Dockerfile comment:copying Dockerfile
+temp/docker/kafka-13/kafka-13.run
+dkr.info image:kafka-14 file:temp/docker/kafka-14/kafka-14.run comment:copying script
+dkr.info image:kafka-14 file:temp/docker/kafka-14/kafka-14.build comment:copying script
+dkr.info image:kafka-14 file:temp/docker/kafka-14/Dockerfile comment:copying Dockerfile
+temp/docker/kafka-14/kafka-14.run
+dkr.info image:kafka-15 file:temp/docker/kafka-15/kafka-15.run comment:copying script
+dkr.info image:kafka-15 file:temp/docker/kafka-15/kafka-15.build comment:copying script
+dkr.info image:kafka-15 file:temp/docker/kafka-15/Dockerfile comment:copying Dockerfile
+temp/docker/kafka-15/kafka-15.run
+dkr.info image:kafka-16 file:temp/docker/kafka-16/kafka-16.run comment:copying script
+dkr.info image:kafka-16 file:temp/docker/kafka-16/kafka-16.build comment:copying script
+dkr.info image:kafka-16 file:temp/docker/kafka-16/Dockerfile comment:copying Dockerfile
+temp/docker/kafka-16/kafka-16.run
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.run comment:copying script
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.build comment:copying script
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/Dockerfile comment:copying Dockerfile
+temp/docker/kafkacw-02/kafkacw-02.run
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.run comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.build comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/Dockerfile comment:copying Dockerfile
+temp/docker/kafkaui-5/kafkaui-5.run
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.run comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.build comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/Dockerfile comment:copying Dockerfile
+temp/docker/kafkaw-04/kafkaw-04.run
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.run comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.build comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/Dockerfile comment:copying Dockerfile
+temp/docker/kafkaw-12/kafkaw-12.run
+dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.run comment:copying script
+dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.build comment:copying script
+dkr.info image:minio-02 file:temp/docker/minio-02/Dockerfile comment:copying Dockerfile
+temp/docker/minio-02/minio-02.run
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.run comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.build comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/Dockerfile comment:copying Dockerfile
+temp/docker/rdpui-5/rdpui-5.run
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.run comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.build comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/Dockerfile comment:copying Dockerfile
+temp/docker/x2w-08/x2w-08.run
+dkr.report command:docker_clean_run  cmd:'ps --filter "name=x2w-08"'  targets:11
+61981187d9309fa6e9605aab337320a493b9a93f5abe3c62536454221a48740e
+Error response from daemon: cannot kill container: kafka-13: No such container: kafka-13
+Error response from daemon: No such container: kafka-13
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+61981187d930   kafka     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafka-13
+
+81f7f918687018263a45b2835062fef8830f9b8bf44f9ab5bba61cd03f7f5f73
+Error response from daemon: cannot kill container: kafka-14: No such container: kafka-14
+Error response from daemon: No such container: kafka-14
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+81f7f9186870   kafka     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafka-14
+
+262ee43524ce718f9b697164a22146fdb72d30d8c1478e16ce62c0c9f6e80b73
+Error response from daemon: cannot kill container: kafka-15: No such container: kafka-15
+Error response from daemon: No such container: kafka-15
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+262ee43524ce   kafka     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafka-15
+
+7e9c82c132cd9fb7bbce84f7a019a3f0b78659025e578320a8f6e2dbd1a7b72f
+Error response from daemon: cannot kill container: kafka-16: No such container: kafka-16
+Error response from daemon: No such container: kafka-16
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+7e9c82c132cd   kafka     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafka-16
+
+kafkacw-02
+kafkacw-02
+0445b49ae9ee08f3734eed3e2e306c64c6f8265245ff13c61aa262ab0dccc666
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+0445b49ae9ee   kafkacw   "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafkacw-02
+
+kafkaui-5
+kafkaui-5
+6160716a7b5970a15bbc40be6600c69729a3f6f6c6dcfae65108d5497f524ece
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS                                                      NAMES
+6160716a7b59   kafkaui   "/usr/bin/dumb-init …"   1 second ago   Up Less than a second   192.168.10.11:1561->22/tcp, 192.168.10.11:1562->8080/tcp   kafkaui-5
+
+kafkaw-04
+kafkaw-04
+44278daaa3fcc232f3877e793125c4ed2c6531dbd0055f971b2198fd3eb6e389
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+44278daaa3fc   kafkaw    "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafkaw-04
+
+kafkaw-12
+kafkaw-12
+e8c81e02f1646edf62eea98c000f44c00673df612e5300ba1b91178d2be865d3
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+e8c81e02f164   kafkaw    "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafkaw-12
+
+minio-02
+minio-02
+2992d0b7eed3782fa512a135b7ace5d1a6a56666a476afbc1130c8a8cd8d53ef
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+2992d0b7eed3   minio     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             minio-02
+
+rdpui-5
+rdpui-5
+c9f49732442a59cd604d03c2039947dafd9f9457ad8b5984362e16d8637be36a
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS                                                      NAMES
+c9f49732442a   rdpui     "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second   192.168.10.11:1493->22/tcp, 192.168.10.11:1494->8080/tcp   rdpui-5
+
+x2w-08
+x2w-08
+bb2c079f5af1dcb4f7e89818711b39f7759ada81f70d17c7466c7af04fb9055f
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+bb2c079f5af1   x2w       "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             x2w-08
+
+dkr.report command:generate_dockerbuild  cmd:""  targets:11
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.run comment:copying script
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.build comment:copying script
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/Dockerfile comment:copying Dockerfile
+temp/docker/kafkacw-02/kafkacw-02.run
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.run comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.build comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/Dockerfile comment:copying Dockerfile
+temp/docker/kafkaui-5/kafkaui-5.run
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.run comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.build comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/Dockerfile comment:copying Dockerfile
+temp/docker/kafkaw-04/kafkaw-04.run
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.run comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.build comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/Dockerfile comment:copying Dockerfile
+temp/docker/kafkaw-12/kafkaw-12.run
+dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.run comment:copying script
+dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.build comment:copying script
+dkr.info image:minio-02 file:temp/docker/minio-02/Dockerfile comment:copying Dockerfile
+temp/docker/minio-02/minio-02.run
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.run comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.build comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/Dockerfile comment:copying Dockerfile
+temp/docker/rdpui-5/rdpui-5.run
+dkr.info image:x2-17 file:temp/docker/x2-17/x2-17.run comment:copying script
+dkr.info image:x2-17 file:temp/docker/x2-17/x2-17.build comment:copying script
+dkr.info image:x2-17 file:temp/docker/x2-17/Dockerfile comment:copying Dockerfile
+temp/docker/x2-17/x2-17.run
+dkr.info image:x2-18 file:temp/docker/x2-18/x2-18.run comment:copying script
+dkr.info image:x2-18 file:temp/docker/x2-18/x2-18.build comment:copying script
+dkr.info image:x2-18 file:temp/docker/x2-18/Dockerfile comment:copying Dockerfile
+temp/docker/x2-18/x2-18.run
+dkr.info image:x2-19 file:temp/docker/x2-19/x2-19.run comment:copying script
+dkr.info image:x2-19 file:temp/docker/x2-19/x2-19.build comment:copying script
+dkr.info image:x2-19 file:temp/docker/x2-19/Dockerfile comment:copying Dockerfile
+temp/docker/x2-19/x2-19.run
+dkr.info image:x2-20 file:temp/docker/x2-20/x2-20.run comment:copying script
+dkr.info image:x2-20 file:temp/docker/x2-20/x2-20.build comment:copying script
+dkr.info image:x2-20 file:temp/docker/x2-20/Dockerfile comment:copying Dockerfile
+temp/docker/x2-20/x2-20.run
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.run comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.build comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/Dockerfile comment:copying Dockerfile
+temp/docker/x2w-08/x2w-08.run
+dkr.report command:docker_clean_run  cmd:'ps --filter "name=x2w-08"'  targets:11
+kafkacw-02
+kafkacw-02
+0c264bc5f7a43a6834b8d56468c609a928eb9a5ea3d5ce37a58e2ffb007cde62
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+0c264bc5f7a4   kafkacw   "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafkacw-02
+
+kafkaui-5
+kafkaui-5
+765fb4455f166a56dca7acf3110ae9c7e59ad97acee3b40d47416d0a196325be
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS                                                      NAMES
+765fb4455f16   kafkaui   "/usr/bin/dumb-init …"   1 second ago   Up Less than a second   192.168.10.11:1561->22/tcp, 192.168.10.11:1562->8080/tcp   kafkaui-5
+
+kafkaw-04
+kafkaw-04
+15a8a52a6aa683ffb00f980dbcd3473cec5edec106745d934181e02bbe3fda83
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+15a8a52a6aa6   kafkaw    "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafkaw-04
+
+kafkaw-12
+kafkaw-12
+47b504f29844c9305f73d53c8ea63f1d6d049c8fec68f449382ba0e7e8be4caa
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+47b504f29844   kafkaw    "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafkaw-12
+
+minio-02
+minio-02
+8ccc62abae1cf012c9522ba432b5337c7f13b697d9cb0cb45f783da575e5cced
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+8ccc62abae1c   minio     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             minio-02
+
+rdpui-5
+rdpui-5
+98c4541af341dc54344721a04b48eee77b4f450cbfc8c7cf320bc8848d09cce5
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS                                                      NAMES
+98c4541af341   rdpui     "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second   192.168.10.11:1493->22/tcp, 192.168.10.11:1494->8080/tcp   rdpui-5
+
+x2-17
+x2-17
+d585b0b43e6649acea708aa802e4cd2b507a9ced86aa29518b03c4651ce6cd8a
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+d585b0b43e66   x2        "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             x2-17
+
+x2-18
+x2-18
+1894944fef8ac7826d446153316dc100606d41c57e8b6351b2fa2aceadfb6d5b
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+1894944fef8a   x2        "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             x2-18
+
+x2-19
+x2-19
+2c138aeccd89e99662d4a65a161d94dae6111fda184a322a1adff245d83b116c
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+2c138aeccd89   x2        "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             x2-19
+
+x2-20
+x2-20
+1bc01fb027b4d5b6afe56b3a987c2616cf93192abeaaf0743a03d77b34bc7885
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+1bc01fb027b4   x2        "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             x2-20
+
+x2w-08
+x2w-08
+9a6e93267c6797a666b054b721af04c82f852c3b1e4992934b5be0546263d58a
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+9a6e93267c67   x2w       "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             x2w-08
+
+omcli.info omtest:om_benchmark
+dkr.report command:docker_destroy  cmd:"rm $dctr -f"  targets:19
+kafka-13
+
+kafka-14
+
+kafka-15
+
+kafka-16
+
+kafkacw-02
+
+kafkaui-5
+
+kafkaw-04
+
+kafkaw-12
+
+minio-02
+
+Error response from daemon: No such container: rdp-13
+
+Error response from daemon: No such container: rdp-14
+
+Error response from daemon: No such container: rdp-15
+
+Error response from daemon: No such container: rdp-16
+
+rdpui-5
+
+x2-17
+
+x2-18
+
+x2-19
+
+x2-20
+
+x2w-08
+
+dkr.report command:generate_dockerbuild  cmd:""  targets:11
+dkr.info image:kafka-13 file:temp/docker/kafka-13/kafka-13.run comment:copying script
+dkr.info image:kafka-13 file:temp/docker/kafka-13/kafka-13.build comment:copying script
+dkr.info image:kafka-13 file:temp/docker/kafka-13/Dockerfile comment:copying Dockerfile
+temp/docker/kafka-13/kafka-13.run
+dkr.info image:kafka-14 file:temp/docker/kafka-14/kafka-14.run comment:copying script
+dkr.info image:kafka-14 file:temp/docker/kafka-14/kafka-14.build comment:copying script
+dkr.info image:kafka-14 file:temp/docker/kafka-14/Dockerfile comment:copying Dockerfile
+temp/docker/kafka-14/kafka-14.run
+dkr.info image:kafka-15 file:temp/docker/kafka-15/kafka-15.run comment:copying script
+dkr.info image:kafka-15 file:temp/docker/kafka-15/kafka-15.build comment:copying script
+dkr.info image:kafka-15 file:temp/docker/kafka-15/Dockerfile comment:copying Dockerfile
+temp/docker/kafka-15/kafka-15.run
+dkr.info image:kafka-16 file:temp/docker/kafka-16/kafka-16.run comment:copying script
+dkr.info image:kafka-16 file:temp/docker/kafka-16/kafka-16.build comment:copying script
+dkr.info image:kafka-16 file:temp/docker/kafka-16/Dockerfile comment:copying Dockerfile
+temp/docker/kafka-16/kafka-16.run
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.run comment:copying script
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.build comment:copying script
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/Dockerfile comment:copying Dockerfile
+temp/docker/kafkacw-02/kafkacw-02.run
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.run comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.build comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/Dockerfile comment:copying Dockerfile
+temp/docker/kafkaui-5/kafkaui-5.run
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.run comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.build comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/Dockerfile comment:copying Dockerfile
+temp/docker/kafkaw-04/kafkaw-04.run
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.run comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.build comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/Dockerfile comment:copying Dockerfile
+temp/docker/kafkaw-12/kafkaw-12.run
+dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.run comment:copying script
+dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.build comment:copying script
+dkr.info image:minio-02 file:temp/docker/minio-02/Dockerfile comment:copying Dockerfile
+temp/docker/minio-02/minio-02.run
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.run comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.build comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/Dockerfile comment:copying Dockerfile
+temp/docker/rdpui-5/rdpui-5.run
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.run comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.build comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/Dockerfile comment:copying Dockerfile
+temp/docker/x2w-08/x2w-08.run
+dkr.report command:docker_clean_run  cmd:'ps --filter "name=x2w-08"'  targets:11
+4384c7024b3eb5741f5477e4c1283a1c6ad863b40c2139079616de7fc17bc6ad
+Error response from daemon: cannot kill container: kafka-13: No such container: kafka-13
+Error response from daemon: No such container: kafka-13
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+4384c7024b3e   kafka     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafka-13
+
+5909202ec3603bb81f077e1cb99511cc879903c3c23ede22c04166028643bf3c
+Error response from daemon: cannot kill container: kafka-14: No such container: kafka-14
+Error response from daemon: No such container: kafka-14
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+5909202ec360   kafka     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafka-14
+
+96a5eede4dbaae8a0e5eb93849b41a055e3c2cb6a9d3e0f83f18947f356fe807
+Error response from daemon: cannot kill container: kafka-15: No such container: kafka-15
+Error response from daemon: No such container: kafka-15
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+96a5eede4dba   kafka     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafka-15
+
+d394a4f8def7e13d59ee162cb9bb2ddd52fcafe19b2c6c796470cdfba5e6ad8f
+Error response from daemon: cannot kill container: kafka-16: No such container: kafka-16
+Error response from daemon: No such container: kafka-16
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+d394a4f8def7   kafka     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafka-16
+
+96f95d6be39b15ce195f2c2a54e6b92546b41e5e84a740239b880e765fdf9d07
+Error response from daemon: cannot kill container: kafkacw-02: No such container: kafkacw-02
+Error response from daemon: No such container: kafkacw-02
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+96f95d6be39b   kafkacw   "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             kafkacw-02
+
+6799e1ac4301c1cb060a0942e731c828a7c13f2c7720bd7d38890af7dde8c24e
+Error response from daemon: cannot kill container: kafkaui-5: No such container: kafkaui-5
+Error response from daemon: No such container: kafkaui-5
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS                                                      NAMES
+6799e1ac4301   kafkaui   "/usr/bin/dumb-init …"   1 second ago   Up Less than a second   192.168.10.11:1561->22/tcp, 192.168.10.11:1562->8080/tcp   kafkaui-5
+
+893e2e35879e463bcf8546fe26204a8b964a40060574a2e43a9f04c714309721
+Error response from daemon: cannot kill container: kafkaw-04: No such container: kafkaw-04
+Error response from daemon: No such container: kafkaw-04
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+893e2e35879e   kafkaw    "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafkaw-04
+
+c6c910b7584673ea966ebdfa576ad489715e6603b788f45dfe848ae0659611b3
+Error response from daemon: cannot kill container: kafkaw-12: No such container: kafkaw-12
+Error response from daemon: No such container: kafkaw-12
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+c6c910b75846   kafkaw    "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             kafkaw-12
+
+1ad3d75ddc7e7fc3f93e16395764dac56caef5f25faf38f4b6deb9491ed95d22
+Error response from daemon: cannot kill container: minio-02: No such container: minio-02
+Error response from daemon: No such container: minio-02
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED                  STATUS                  PORTS     NAMES
+1ad3d75ddc7e   minio     "/usr/bin/dumb-init …"   Less than a second ago   Up Less than a second             minio-02
+
+a9de5ce18596717fe09128176d8b2c0ecd22538b97f23e078c2ac9897b0b4621
+Error response from daemon: cannot kill container: rdpui-5: No such container: rdpui-5
+Error response from daemon: No such container: rdpui-5
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS                                                      NAMES
+a9de5ce18596   rdpui     "/usr/bin/dumb-init …"   1 second ago   Up Less than a second   192.168.10.11:1493->22/tcp, 192.168.10.11:1494->8080/tcp   rdpui-5
+
+16a78908f15bf19bdf35e734abc36bd908389fe51f7d81d05459184fca2afd83
+Error response from daemon: cannot kill container: x2w-08: No such container: x2w-08
+Error response from daemon: No such container: x2w-08
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS                  PORTS     NAMES
+16a78908f15b   x2w       "/usr/bin/dumb-init …"   1 second ago   Up Less than a second             x2w-08
+
+omcli.info comment:"Uploading Driver Config"
+<f+++++++++ kafka-debug-idempotence.yaml.DZvN9y
+omcli.info comment:"Uploading Load Config"
+<f+++++++++ debug-simple.yaml.6cYaFp
+omcli.info comment:"Restarting Tap"
+dev.x2-4.tap-1_ext_0:script
+dev.x2-4.tap-2_ext_0:script
+dev.x2-4.tap-3_ext_0:script
+dev.x2-4.tap-4_ext_0:script
+script:info  node:nj1.sn2.bm omnode:dev.x2-4.tap-1_ext_0 option:stop 
+No PID file found, nothing to stop.
+script:info  node:nj1.sn2.bm omnode:dev.x2-4.tap-1_ext_0 option:start 
+atf_snf started pid:3282084
+script:info  node:nj1.sn3.bm omnode:dev.x2-4.tap-2_ext_0 option:stop 
+No PID file found, nothing to stop.
+script:info  node:nj1.sn3.bm omnode:dev.x2-4.tap-2_ext_0 option:start 
+atf_snf started pid:917293
+script:info  node:nj1.sn4.bm omnode:dev.x2-4.tap-3_ext_0 option:stop 
+No PID file found, nothing to stop.
+script:info  node:nj1.sn4.bm omnode:dev.x2-4.tap-3_ext_0 option:start 
+atf_snf started pid:826091
+script:info  node:nj1.sn5.bm omnode:dev.x2-4.tap-4_ext_0 option:stop 
+No PID file found, nothing to stop.
+script:info  node:nj1.sn5.bm omnode:dev.x2-4.tap-4_ext_0 option:start 
+atf_snf started pid:1927928
+omcli.info comment:"Restarting Workers"
+<f+++++++++ dev.x2-4.kafkaw-1
+dev.kafkaw-04:script
+<f+++++++++ dev.x2-4.kafkaw-2
+dev.kafkaw-12:script
+script:info  node:dev.kafkaw-04 omnode:dev.x2-4.kafkaw-1 option:start 
+Stopping kafka_worker...
+====Was not running
+..........
+dev.kafkaw-04:success
+script:info  node:dev.kafkaw-12 omnode:dev.x2-4.kafkaw-2 option:start 
+Stopping kafka_worker...
+====Was not running
+...........
+dev.kafkaw-12:success
+omcli.info comment:"Restarting Brokers"
+<f+++++++++ dev.x2-4.kafka-1
+dev.kafka-13:script
+<f+++++++++ dev.x2-4.kafka-2
+dev.kafka-14:script
+<f+++++++++ dev.x2-4.kafka-3
+dev.kafka-15:script
+<f+++++++++ dev.x2-4.kafka-4
+dev.kafka-16:script
+script:info  node:dev.kafka-13 omnode:dev.x2-4.kafka-1 option:stop 
+====Was not running
+script:info  node:dev.kafka-14 omnode:dev.x2-4.kafka-2 option:stop 
+====Was not running
+script:info  node:dev.kafka-15 omnode:dev.x2-4.kafka-3 option:stop 
+====Was not running
+script:info  node:dev.kafka-16 omnode:dev.x2-4.kafka-4 option:stop 
+====Was not running
+dev.kafka-13:script
+dev.kafka-14:script
+dev.kafka-15:script
+dev.kafka-16:script
+script:info  node:dev.kafka-13 omnode:dev.x2-4.kafka-1 option:start_clean 
+====Was not running
+Formatting data directory /mnt/data-3/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting metadata directory /mnt/data-1/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting data directory /mnt/data-4/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting data directory /mnt/data-2/dev.x2-4 with metadata.version 3.9-IV0.
+.
+dev.kafka-13:success
+script:info  node:dev.kafka-14 omnode:dev.x2-4.kafka-2 option:start_clean 
+====Was not running
+Formatting data directory /mnt/data-3/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting metadata directory /mnt/data-1/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting data directory /mnt/data-2/dev.x2-4 with metadata.version 3.9-IV0.
+.
+dev.kafka-14:success
+script:info  node:dev.kafka-15 omnode:dev.x2-4.kafka-3 option:start_clean 
+====Was not running
+Formatting data directory /mnt/data-3/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting metadata directory /mnt/data-1/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting data directory /mnt/data-4/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting data directory /mnt/data-2/dev.x2-4 with metadata.version 3.9-IV0.
+.
+dev.kafka-15:success
+script:info  node:dev.kafka-16 omnode:dev.x2-4.kafka-4 option:start_clean 
+====Was not running
+Formatting metadata directory /mnt/data-1/dev.x2-4 with metadata.version 3.9-IV0.
+Formatting data directory /mnt/data-2/dev.x2-4 with metadata.version 3.9-IV0.
+.
+dev.kafka-16:success
+omcli.info comment:"Restarting Kcat"
+<f+++++++++ dev.x2-4.x2w-1
+dev.x2w-08:script
+omcli.info comment:"Restarting Gui"
+<f+++++++++ dev.x2-4.kafkaui-1
+dev.kafkaui-5:script
+<f+++++++++ dev.x2-4.rdpui-1
+dev.rdpui-5:script
+script:info  node:dev.kafkaui-5 omnode:dev.x2-4.kafkaui-1 option:start 
+Stopping kafkaui...
+====Was not running
+Starting kafkaui...
+script:info  node:dev.rdpui-5 omnode:dev.x2-4.rdpui-1 option:start 
+Stopping rdpui...
+====Was not running
+Starting rdpui...
+omcli.info omdriver:kafka-debug-idempotence  omload:debug-simple  comment:"running test"
+x2node.info node:dev.kafkaw-04  cmd:"ssh -q kafkawrkr@dev.kafkaw-04 $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null'"
+x2node.error node:dev.kafkaw-04  status:123  cmd:"ssh -q kafkawrkr@dev.kafkaw-04 $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null'"
+x2node.info  ncmd:1  completed:1  success:0  failure:1
+18:08:34.110 [main] INFO Benchmark - Using default worker file workers.yaml
+18:08:34.119 [main] INFO Benchmark - Reading workers list from workers.yaml
+18:08:34.153 [main] INFO Benchmark - Starting benchmark with config: {
+"drivers" : [ "kafka-debug-idempotence.yaml" ],
+"workers" : [ "http://dev.x2-4.kafkaw-1.ctrl-0:1080", "http://dev.x2-4.kafkaw-2.ctrl-0:1130" ],
+"workersFile" : "/opt/benchmark/workers.yaml",
+"workloads" : [ "debug-simple.yaml" ],
+"output" : null
+}
+18:08:34.165 [main] INFO Benchmark - Workloads: {
+"debug-simple" : {
+"name" : "Debug Simple 1 producer on 1 topic",
+"topics" : 1,
+"partitionsPerTopic" : 10,
+"keyDistributor" : "NO_KEY",
+"messageSize" : 1024,
+"useRandomizedPayloads" : false,
+"randomBytesRatio" : 0.0,
+"randomizedPayloadPoolSize" : 0,
+"payloadFile" : "payload/payload-1Kb.data",
+"subscriptionsPerTopic" : 1,
+"producersPerTopic" : 1,
+"consumerPerSubscription" : 1,
+"producerRate" : 10000,
+"consumerBacklogSizeGB" : 0,
+"backlogDrainRatio" : 1.0,
+"testDurationMinutes" : 3,
+"warmupDurationMinutes" : 1
+}
+}
+18:08:34.413 [main] INFO DistributedWorkersEnsemble - Workers list - producers: [http://dev.x2-4.kafkaw-1.ctrl-0:1080]
+18:08:34.413 [main] INFO DistributedWorkersEnsemble - Workers list - consumers: http://dev.x2-4.kafkaw-2.ctrl-0:1130
+18:08:34.416 [main] INFO Benchmark - --------------- WORKLOAD : Debug Simple 1 producer on 1 topic --- DRIVER : kafka-debug-idempotence---------------
+18:08:53.869 [main] INFO WorkloadGenerator - Created 1 topics in 19062.296664 ms
+18:08:53.927 [main] INFO WorkloadGenerator - Created 1 consumers in 54.136483 ms
+18:08:53.963 [main] INFO WorkloadGenerator - Created 1 producers in 35.481038 ms
+18:08:53.963 [main] INFO WorkloadGenerator - Waiting for consumers to be ready
+18:08:53.993 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 0, Received: 0
+18:08:55.996 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 1, Received: 0
+18:08:57.999 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 1, Received: 1
+18:08:57.999 [main] INFO WorkloadGenerator - All consumers are ready
+18:08:58.026 [main] INFO WorkloadGenerator - ----- Starting warm-up traffic (1m) ------
+18:09:08.209 [main] INFO WorkloadGenerator - Pub rate  9850.0 msg/s /  9.6 MB/s | Pub err     0.0 err/s | Cons rate  9850.1 msg/s /  9.6 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.2 - 50%:  1.0 - 99%:  4.1 - 99.9%: 19.3 - Max: 22.6 | Pub Delay Latency (us) avg: 53.4 - 50%: 53.0 - 99%: 54.0 - 99.9%: 58.0 - Max: 1508.0
+18:09:18.326 [main] INFO WorkloadGenerator - Pub rate 10061.6 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10061.6 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.9 - 50%:  0.9 - 99%:  1.8 - 99.9%:  3.2 - Max:  5.7 | Pub Delay Latency (us) avg: 53.2 - 50%: 53.0 - 99%: 54.0 - 99.9%: 57.0 - Max: 519.0
+18:09:28.432 [main] INFO WorkloadGenerator - Pub rate 10000.4 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10001.7 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.9 - 50%:  0.8 - 99%:  1.7 - 99.9%:  3.6 - Max:  6.1 | Pub Delay Latency (us) avg: 53.1 - 50%: 53.0 - 99%: 54.0 - 99.9%: 58.0 - Max: 292.0
+18:09:38.538 [main] INFO WorkloadGenerator - Pub rate 10000.7 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10000.6 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.6 - 99.9%:  3.1 - Max:  5.4 | Pub Delay Latency (us) avg: 53.2 - 50%: 53.0 - 99%: 54.0 - 99.9%: 57.0 - Max: 940.0
+18:09:48.644 [main] INFO WorkloadGenerator - Pub rate  9998.4 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9997.2 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.6 - 99.9%:  3.8 - Max:  6.4 | Pub Delay Latency (us) avg: 53.3 - 50%: 53.0 - 99%: 54.0 - 99.9%: 58.0 - Max: 1165.0
+18:09:58.750 [main] INFO WorkloadGenerator - Pub rate 10002.4 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10002.4 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  3.4 - Max:  5.0 | Pub Delay Latency (us) avg: 53.1 - 50%: 53.0 - 99%: 54.0 - 99.9%: 55.0 - Max: 188.0
+18:09:58.865 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg:  0.9 - 50%:  0.9 - 95%:  1.6 - 99%:  2.1 - 99.9%:  7.4 - 99.99%: 20.2 - Max: 22.6 | Pub Delay (us)  avg: 53.2 - 50%: 53.0 - 95%: 54.0 - 99%: 54.0 - 99.9%: 57.0 - 99.99%: 435.0 - Max: 1508.0
+18:09:59.031 [main] INFO WorkloadGenerator - ----- Starting benchmark traffic (3m)------
+18:10:09.137 [main] INFO WorkloadGenerator - Pub rate 10278.1 msg/s / 10.0 MB/s | Pub err     0.0 err/s | Cons rate 10278.1 msg/s / 10.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  2.8 - Max:  5.4 | Pub Delay Latency (us) avg: 53.1 - 50%: 53.0 - 99%: 54.0 - 99.9%: 55.0 - Max: 64.0
+18:10:19.242 [main] INFO WorkloadGenerator - Pub rate 10000.8 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10000.8 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  2.2 - Max:  4.3 | Pub Delay Latency (us) avg: 53.1 - 50%: 53.0 - 99%: 54.0 - 99.9%: 55.0 - Max: 456.0
+18:10:29.347 [main] INFO WorkloadGenerator - Pub rate 10000.8 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10000.8 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.6 - 99.9%:  3.2 - Max:  5.0 | Pub Delay Latency (us) avg: 53.2 - 50%: 53.0 - 99%: 54.0 - 99.9%: 57.0 - Max: 557.0
+18:10:39.453 [main] INFO WorkloadGenerator - Pub rate  9998.6 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9998.6 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  3.2 - Max:  5.0 | Pub Delay Latency (us) avg: 53.2 - 50%: 53.0 - 99%: 54.0 - 99.9%: 58.0 - Max: 490.0
+18:10:49.512 [main] INFO WorkloadGenerator - Pub rate 10038.1 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10038.1 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  3.1 - Max:  4.5 | Pub Delay Latency (us) avg: 53.2 - 50%: 53.0 - 99%: 54.0 - 99.9%: 58.0 - Max: 1070.0
+18:10:59.572 [main] INFO WorkloadGenerator - Pub rate  9999.8 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10000.9 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  2.5 - Max:  5.1 | Pub Delay Latency (us) avg: 53.2 - 50%: 53.0 - 99%: 54.0 - 99.9%: 56.0 - Max: 899.0
+18:11:09.632 [main] INFO WorkloadGenerator - Pub rate 10000.8 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9999.9 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  2.4 - Max:  4.5 | Pub Delay Latency (us) avg: 53.1 - 50%: 53.0 - 99%: 54.0 - 99.9%: 55.0 - Max: 171.0
+18:11:19.692 [main] INFO WorkloadGenerator - Pub rate  9999.6 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9998.1 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  2.6 - Max:  6.0 | Pub Delay Latency (us) avg: 53.1 - 50%: 53.0 - 99%: 54.0 - 99.9%: 55.0 - Max: 497.0
+18:11:29.753 [main] INFO WorkloadGenerator - Pub rate  9998.2 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9999.5 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.6 - 99.9%:  3.9 - Max:  7.3 | Pub Delay Latency (us) avg: 53.3 - 50%: 53.0 - 99%: 54.0 - 99.9%: 58.0 - Max: 1023.0
+18:11:39.807 [main] INFO WorkloadGenerator - Pub rate 10005.8 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10005.8 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  3.2 - Max:  5.2 | Pub Delay Latency (us) avg: 53.2 - 50%: 53.0 - 99%: 54.0 - 99.9%: 55.0 - Max: 1137.0
+18:11:49.860 [main] INFO WorkloadGenerator - Pub rate 10001.1 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10001.1 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  2.3 - Max:  4.5 | Pub Delay Latency (us) avg: 53.2 - 50%: 53.0 - 99%: 54.0 - 99.9%: 55.0 - Max: 893.0
+18:11:59.914 [main] INFO WorkloadGenerator - Pub rate 10000.1 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9998.9 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  3.1 - Max:  5.4 | Pub Delay Latency (us) avg: 53.1 - 50%: 53.0 - 99%: 54.0 - 99.9%: 55.0 - Max: 117.0
+18:12:09.973 [main] INFO WorkloadGenerator - Pub rate  9994.3 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9995.5 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  3.2 - Max:  5.1 | Pub Delay Latency (us) avg: 53.3 - 50%: 53.0 - 99%: 54.0 - 99.9%: 60.0 - Max: 762.0
+18:12:20.025 [main] INFO WorkloadGenerator - Pub rate 10005.6 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10006.8 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  3.2 - Max:  5.0 | Pub Delay Latency (us) avg: 53.3 - 50%: 53.0 - 99%: 54.0 - 99.9%: 59.0 - Max: 1222.0
+18:12:30.078 [main] INFO WorkloadGenerator - Pub rate  9999.9 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9998.7 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  2.6 - Max:  4.7 | Pub Delay Latency (us) avg: 53.3 - 50%: 53.0 - 99%: 54.0 - 99.9%: 56.0 - Max: 707.0
+18:12:40.130 [main] INFO WorkloadGenerator - Pub rate  9997.9 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9999.2 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  2.6 - Max:  4.7 | Pub Delay Latency (us) avg: 53.3 - 50%: 53.0 - 99%: 54.0 - 99.9%: 55.0 - Max: 1314.0
+18:12:50.184 [main] INFO WorkloadGenerator - Pub rate 10001.0 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9999.7 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.5 - 99.9%:  2.3 - Max:  4.2 | Pub Delay Latency (us) avg: 53.2 - 50%: 53.0 - 99%: 54.0 - 99.9%: 56.0 - Max: 577.0
+18:13:00.240 [main] INFO WorkloadGenerator - Pub rate 10001.0 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10002.2 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:  1.6 - 99.9%:  4.0 - Max:  7.9 | Pub Delay Latency (us) avg: 53.2 - 50%: 53.0 - 99%: 54.0 - 99.9%: 55.0 - Max: 807.0
+18:13:00.292 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 95%:  1.4 - 99%:  1.5 - 99.9%:  3.0 - 99.99%:  4.7 - Max:  7.9 | Pub Delay (us)  avg: 53.2 - 50%: 53.0 - 95%: 54.0 - 99%: 54.0 - 99.9%: 56.0 - 99.99%: 312.0 - Max: 1314.0
+18:13:00.807 [main] INFO Benchmark - Writing test result into debug-simple-kafka-debug-idempotence-2025-12-10-18-13-00.json
+omcli.info log:test/om/dev.x2-4/debug-simple-kafka-debug-idempotence-2025-12-10-18-13-00.log  comment:"Collecting Logs"
+omcli.info comment:"Adding omrun Record"
+omdb.omrun  omrun:dev.x2-4/debug-001  name:debug-simple.kafka-debug-idempotence.2025-12-10-18-13-00
+omcli.info comment:"Stopping Tap"
+dev.x2-4.tap-1_ext_0:script
+dev.x2-4.tap-2_ext_0:script
+dev.x2-4.tap-3_ext_0:script
+dev.x2-4.tap-4_ext_0:script
+script:info  node:nj1.sn2.bm omnode:dev.x2-4.tap-1_ext_0 option:stop 
+atf_snf pid:3282084 is running
+atf_snf pid:3282084 stopped
+script:info  node:nj1.sn3.bm omnode:dev.x2-4.tap-2_ext_0 option:stop 
+atf_snf pid:917293 is not running
+script:info  node:nj1.sn4.bm omnode:dev.x2-4.tap-3_ext_0 option:stop 
+atf_snf pid:826091 is running
+atf_snf pid:826091 stopped
+script:info  node:nj1.sn5.bm omnode:dev.x2-4.tap-4_ext_0 option:stop 
+atf_snf pid:1927928 is not running
+omcli.info comment:"Collecting Results"
+x2node.info node:dev.kafkaw-04  cmd:"rsync  --remove-source-files  kafkawrkr@dev.kafkaw-04:$'*.json' test/om/dev.x2-4/."
+x2node.info  ncmd:1  completed:1  success:1  failure:0

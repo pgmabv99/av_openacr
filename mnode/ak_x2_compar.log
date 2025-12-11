@@ -1,0 +1,18 @@
+
+Kafka
+
+benchmark
+Pub Latency (ms) avg:  0.8 - 50%:  0.8 - 99%:
+
+atf_snf
+producer-1                   nj1.sv2   104.6-104.2  0.146093       0.146093           0                 5537         264          2025-12-10T18:13:06.057924521
+producer-1                   nj1.sv4   104.6-104.4  0.166859       0.166859           0                 7497         268          2025-12-10T18:13:06.700394581
+
+
+acr -e field:atf_snf.FDb% -t
+
+      dmmeta.field  field:atf_snf.FDb.top_name_id     acr.rowid:9       arg:atf_snf.FTopNameId  reftype:Tpool  dflt:""  comment:""
+      dmmeta.field  field:atf_snf.FDb.bh_top_name_id  acr.rowid:10      arg:atf_snf.FTopNameId  reftype:Bheap  dflt:""  comment:""
+        dmmeta.cascdel  field:atf_snf.FDb.bh_top_name_id  comment:""
+        dmmeta.sortfld  field:atf_snf.FDb.bh_top_name_id  sortfld:atf_snf.FTopNameId.topic
+        dmmeta.xref  field:atf_snf.FDb.bh_top_name_id  acr.rowid:2       inscond:true  via:""

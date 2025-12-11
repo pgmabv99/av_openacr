@@ -21,4 +21,6 @@ else
   echo "unknown omplat:$omplat - no action"
 fi
 topic=test-topic
-echo "setup  omplat:$omplat server:$server topic:$topic tap_omnnode:$tap_omnnode"
+nbatch=10
+nrec=1
+echo "setup  omplat:$omplat server:$server topic:$topic tap_omnnode:$tap_omnnode nbatch:$nbatch nrec:$nrec" 

@@ -120,10 +120,10 @@ acr_ed -create -ctype atf_snf.FTopNameId                           -pooltype Tpo
 acr_ed -create -field atf_snf.FTopNameId.topic                     -arg algo.Smallstr100            -write  -comment "topic name"
 acr_ed -create -field atf_snf.FTopNameId.topic_id                  -arg algo.Smallstr100            -write  -comment "topic id"
 # pointers from up/down above
-acr_ed -del    -field atf_snf.FDb.zd_topic                         -write || true""
-acr_ed -del    -field atf_snf.FDb.ind_topic                    -write || true""
-acr_ed -create -field atf_snf.FDb.bh_top_name_id   -xref  -arg  atf_snf.FTopNameId   -hashfld   atf_snf.FTopNameId.topic_id             -cascdel              -write -comment ""
-acr_ed -create -field atf_snf.FDb.ind_top_name_id  -xref  -arg  atf_snf.FTopNameId   -sortfld   atf_snf.FTopNameId.topic_id             -cascdel              -write -comment ""
+acr_ed -del    -field atf_snf.FDb.bh_top_name_id                         -write || true""
+acr_ed -create -field atf_snf.FDb.bh_top_name_id   -xref  -arg  atf_snf.FTopNameId   -sortfld   atf_snf.FTopNameId.topic_id             -cascdel              -write -comment ""
+acr_ed -del    -field atf_snf.FDb.ind_top_name_id                  -write || true""
+acr_ed -create -field atf_snf.FDb.ind_top_name_id  -xref  -arg  atf_snf.FTopNameId   -hashfld   atf_snf.FTopNameId.topic_id             -cascdel              -write -comment ""
 amc
 
 set -e

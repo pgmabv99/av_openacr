@@ -145,24 +145,6 @@ acr_ed -create -field atf_snf.FDb.ind_toppart               -cascdel            
 amc
 
 # -
-#-------------x2msg object(obsolete)
-set -e
-acr_ed -del    -ctype atf_snf.FX2msg                                              -write || true
-acr_ed -create -ctype atf_snf.FX2msg                        -pooltype Tpool       -write  -comment "x2 msg"
-acr_ed -create -field atf_snf.FX2msg.x2msg                  -arg u64              -write  -comment "trafmsg.seq_x2traf as key"
-acr_ed -create -field atf_snf.FX2msg.ts_x2write                -arg algo.UnTime      -write  -comment "ts of the x2write"
-acr_ed -create -field atf_snf.FX2msg.ts_snf_w               -arg algo.UnTime      -write  -comment "ts of the snf write UGPubMsg "
-acr_ed -create -field atf_snf.FX2msg.ts_snf_wa              -arg algo.UnTime      -write  -comment "ts of the snf write ack UGUAckMsg "
-acr_ed -create -field atf_snf.FX2msg.ts_snf_r               -arg algo.UnTime      -write  -comment "ts of the snf read  Seqmsg"
-acr_ed -create -field atf_snf.FX2msg.lat_snf_w_to_snf_wa    -arg algo.UnDiff     -write  -comment "latency from snf write to snf write ack"
-acr_ed -create -field atf_snf.FX2msg.lat_snf_w_to_snf_r     -arg algo.UnDiff     -write  -comment "latency from snf write to snf read"
-acr_ed -create -field atf_snf.FX2msg.lat_x2write_to_snf_wa  -arg algo.UnDiff     -write  -comment "latency from x2write to snf write ack"
-acr_ed -create -field atf_snf.FX2msg.lat_x2write_to_snf_r   -arg algo.UnDiff     -write  -comment "latency from x2write to snf read"
-acr_ed -create -field atf_snf.FX2msg.count                  -arg u64              -write  -comment "count by seq_x2traf"
-# pointers from up/down above
-acr_ed -create -field atf_snf.FDb.zd_x2msg                -cascdel              -write -comment ""
-acr_ed -create -field atf_snf.FDb.ind_x2msg               -cascdel              -write -comment ""
-# -
 
 #-------------x2req object. 
 set -e

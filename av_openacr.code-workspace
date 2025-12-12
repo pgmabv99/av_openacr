@@ -14,13 +14,13 @@
 			"path": "../arnd/temp/collect_logs"
 		},
 		{
-			"path": "../arnd/temp/atf_snf_logs/local"
-		},
-		{
 			"path": "../arnd/temp/atf_lat"
 		},
 		{
 			"path": "../arnd/temp/x2tmp"
+		},
+		{
+			"path": "../arnd/temp/atf_snf_logs"
 		}
 	],
 

@@ -124,3 +124,54 @@ struct Seqmsg { // x2.Seqmsg: Sequenced stream message
     // func:x2.Seqmsg..FieldwiseCtor
     explicit inline               Seqmsg(x2::StreamId in_stream_id, u64 in_seq, ams::ProcId in_src, algo::UnTime in_timestamp) __attribute__((nothrow));
 };
+
+
+
+seq:490  lat_x2write_to_x2read:00:00:00.403704662
+seq:491  lat_x2write_to_x2read:00:00:00.402566321
+seq:492  lat_x2write_to_x2read:00:00:00.40145597
+seq:493  lat_x2write_to_x2read:00:00:00.400314459
+seq:494  lat_x2write_to_x2read:00:00:00.399214668
+seq:495  lat_x2write_to_x2read:00:00:00.402431423
+seq:496  lat_x2write_to_x2read:00:00:00.401297632
+seq:497  lat_x2write_to_x2read:00:00:00.40016563
+seq:498  lat_x2write_to_x2read:00:00:00.39902408
+seq:499  lat_x2write_to_x2read:00:00:00.397882749
+seq:500  lat_x2write_to_x2read:00:00:00.396757409
+
+x2msg:490  lat_x2write_to_snf_r:00:00:00.403698249
+x2msg:491  lat_x2write_to_snf_r:00:00:00.402563678
+x2msg:492  lat_x2write_to_snf_r:00:00:00.401429398
+x2msg:493  lat_x2write_to_snf_r:00:00:00.400293467
+x2msg:494  lat_x2write_to_snf_r:00:00:00.399197986
+x2msg:495  lat_x2write_to_snf_r:00:00:00.402422426
+x2msg:496  lat_x2write_to_snf_r:00:00:00.401285245
+x2msg:497  lat_x2write_to_snf_r:00:00:00.400151824
+x2msg:498  lat_x2write_to_snf_r:00:00:00.399014774
+x2msg:499  lat_x2write_to_snf_r:00:00:00.397878103
+x2msg:500  lat_x2write_to_snf_r:00:00:00.396740203
+
+
+seq	lat_x2write_to_x2read	lat_x2write_to_snf_r	diff_ms
+490	00:00:00.403704662	    00:00:00.403698249	0.006413
+491	00:00:00.402566321	    00:00:00.402563678	0.002643
+492	00:00:00.401455970	    00:00:00.401429398	0.026572
+493	00:00:00.400314459	    00:00:00.400293467	0.020992
+494	00:00:00.399214668	    00:00:00.399197986	0.016682
+495	00:00:00.402431423	    00:00:00.402422426	0.008997
+496	00:00:00.401297632	    00:00:00.401285245	0.012387
+497	00:00:00.400165630	    00:00:00.400151824	0.013806
+498	00:00:00.399024080	    00:00:00.399014774	0.009306
+499	00:00:00.397882749	    00:00:00.397878103	0.004646
+500	00:00:00.396757409	    00:00:00.396740203	0.017206
+If you want this in microseconds, sorted by diff, or plotted, I can do that too — just tell me. 
+
+
+
+
+
+// --- u64..Init
+// Set all fields to initial values.
+inline void u64_Init(u64& parent) {
+    parent.cnt_req_value = bool(false);
+}

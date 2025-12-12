@@ -71,6 +71,9 @@ acr_ed -create -field atf_snf.FTcp_pair.kafka_per_frame_count -arg u32          
 acr_ed -create -field atf_snf.FTcp_pair.kafka_lat_tot_per_step -arg u64              -write -comment "sum of  latencies  per step"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_count_per_step  -arg u64              -write -comment "count of kafa req per step"
 
+#x2 stats
+acr_ed -create -field atf_snf.FTcp_pair.x2msg_count           -arg u32              -write -comment "x2 msg . only read.In_Seqmsg"
+
 # pointers from above
 # acr_ed -del  -field atf_snf.FDb.zd_tcp_pair                    -write
 acr_ed -create -field atf_snf.FDb.zd_tcp_pair             -cascdel              -write -comment ""
@@ -142,19 +145,48 @@ acr_ed -create -field atf_snf.FDb.ind_toppart               -cascdel            
 amc
 
 # -
-#-------------x2msg object
+#-------------x2msg object(obsolete)
+set -e
 acr_ed -del    -ctype atf_snf.FX2msg                                              -write || true
 acr_ed -create -ctype atf_snf.FX2msg                        -pooltype Tpool       -write  -comment "x2 msg"
 acr_ed -create -field atf_snf.FX2msg.x2msg                  -arg u64              -write  -comment "trafmsg.seq_x2traf as key"
-acr_ed -create -field atf_snf.FX2msg.ts_snf_w               -arg algo.UnTime      -write  -comment "ts of the write UGPubMsg "
-acr_ed -create -field atf_snf.FX2msg.ts_snf_wa              -arg algo.UnTime      -write  -comment "ts of the write ack UGUAckMsg "
-acr_ed -create -field atf_snf.FX2msg.ts_snf_r               -arg algo.UnTime      -write  -comment "ts of the read  Seqmsg"
+acr_ed -create -field atf_snf.FX2msg.ts_x2write                -arg algo.UnTime      -write  -comment "ts of the x2write"
+acr_ed -create -field atf_snf.FX2msg.ts_snf_w               -arg algo.UnTime      -write  -comment "ts of the snf write UGPubMsg "
+acr_ed -create -field atf_snf.FX2msg.ts_snf_wa              -arg algo.UnTime      -write  -comment "ts of the snf write ack UGUAckMsg "
+acr_ed -create -field atf_snf.FX2msg.ts_snf_r               -arg algo.UnTime      -write  -comment "ts of the snf read  Seqmsg"
+acr_ed -create -field atf_snf.FX2msg.lat_snf_w_to_snf_wa    -arg algo.UnDiff     -write  -comment "latency from snf write to snf write ack"
+acr_ed -create -field atf_snf.FX2msg.lat_snf_w_to_snf_r     -arg algo.UnDiff     -write  -comment "latency from snf write to snf read"
+acr_ed -create -field atf_snf.FX2msg.lat_x2write_to_snf_wa  -arg algo.UnDiff     -write  -comment "latency from x2write to snf write ack"
+acr_ed -create -field atf_snf.FX2msg.lat_x2write_to_snf_r   -arg algo.UnDiff     -write  -comment "latency from x2write to snf read"
 acr_ed -create -field atf_snf.FX2msg.count                  -arg u64              -write  -comment "count by seq_x2traf"
 # pointers from up/down above
 acr_ed -create -field atf_snf.FDb.zd_x2msg                -cascdel              -write -comment ""
 acr_ed -create -field atf_snf.FDb.ind_x2msg               -cascdel              -write -comment ""
+# -
+
+#-------------x2req object. 
+set -e
+acr_ed -del    -ctype atf_snf.FX2req                                              -write || true
+acr_ed -create -ctype atf_snf.FX2req                        -pooltype Tpool       -write  -comment "x2 req.Created on UGPubMsg , destroyed on GUAckMsg"
+acr_ed -create -field atf_snf.FX2req.key                    -arg algo.Smallstr100 -write  -comment "tcp_pair_key/stream_id/request_id "
+acr_ed -create -field atf_snf.FX2req.ts_snf_w               -arg algo.UnTime      -write  -comment "ts of the snf write UGPubMsg "
+# pointers from up/down above
+acr_ed -create -field atf_snf.FDb.zd_x2req                  -cascdel              -write -comment " for debugging"
+acr_ed -create -field atf_snf.FDb.ind_x2req                 -cascdel              -write -comment ""
+
+#-------------x2seq object. Oner per seq (creat over loop seq_beg to seq_end)
+set -e
+acr_ed -del    -ctype atf_snf.FX2seq                                              -write || true
+acr_ed -create -ctype atf_snf.FX2seq                        -pooltype Tpool       -write  -comment "x2 seq.Created on GUAckMsg , destroyed on In_Seqmsg"
+acr_ed -create -field atf_snf.FX2seq.key                    -arg algo.Smallstr100 -write  -comment "stream_id/seq"
+acr_ed -create -field atf_snf.FX2seq.ts_snf_w               -arg algo.UnTime      -write  -comment "ts of the snf write UGPubMsg "
+# pointers from up/down above
+acr_ed -create -field atf_snf.FDb.zd_x2seq                  -cascdel              -write -comment " for debugging"
+acr_ed -create -field atf_snf.FDb.ind_x2seq                 -cascdel              -write -comment ""
 
 #-------------main CB
+set -e
+acr_ed -del    -ctype atf_snf.FMcb                              -write  || true
 acr_ed -create -ctype atf_snf.FMcb                              -write -comment "Main CB"
 # stats
 acr_ed -create -field atf_snf.FMcb.iframe                      -arg u64               -write -comment "global iframe index including non-tcp. start at 1"
@@ -185,6 +217,16 @@ acr_ed -create -field atf_snf.FMcb.tcp_pair_list_print_flg     -arg bool        
 acr_ed -create -field atf_snf.FMcb.tcp_filter                  -arg bool             -write -comment "apply tcp filter for debugging "
 acr_ed -create -field atf_snf.FMcb.snf_memqp_print_flg         -arg bool             -write -comment "print memqp print"
 
+#X2 stats. reinit per step
+acr_ed -create -field atf_snf.FMcb.tot_lat_req                 -arg algo.UnDiff     -write  -comment "latency of req from UGPubMsg to GUAckMsg. sum for the step duration"
+acr_ed -create -field atf_snf.FMcb.max_lat_req                 -arg algo.UnDiff     -write  -comment "max latency"
+acr_ed -create -field atf_snf.FMcb.min_lat_req                 -arg algo.UnDiff     -write  -comment "min latency"
+acr_ed -create -field atf_snf.FMcb.x2_cnt_req                  -arg u64             -write  -comment "count of req per step"
+
+acr_ed -create -field atf_snf.FMcb.tot_lat_seq                 -arg algo.UnDiff     -write  -comment "latency of seq from UGPubMsg  to In_Seqmsg. sum for the step duration"
+acr_ed -create -field atf_snf.FMcb.max_lat_seq                 -arg algo.UnDiff     -write  -comment "max latency"
+acr_ed -create -field atf_snf.FMcb.min_lat_seq                 -arg algo.UnDiff     -write  -comment "min latency"
+acr_ed -create -field atf_snf.FMcb.x2_cnt_seq                     -arg i32             -write  -comment "count of seq per step"
 
 # include into _db
 acr_ed -del    -field atf_snf.FDb.mcb                          -write

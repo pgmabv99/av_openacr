@@ -175,3 +175,102 @@ If you want this in microseconds, sorted by diff, or plotted, I can do that too 
 inline void u64_Init(u64& parent) {
     parent.cnt_req_value = bool(false);
 }
+
+omdb.omnode  omnode:dev.x2-4.x2-3         node:dev.x2-17       use:Y  comment:"x2 Broker node 4"
+
+
+omdb.omnode  omnode:dev.x2-4.kafka-1      node:dev.kafka-13    use:Y  comment:"kafka Broker node 1"
+omdb.omnode  omnode:dev.x2-4.kafka-2      node:dev.kafka-14    use:N  comment:"kafka Broker node 2"
+omdb.omnode  omnode:dev.x2-4.kafka-3      node:dev.kafka-15    use:N  comment:"kafka Broker node 3"
+omdb.omnode  omnode:dev.x2-4.kafka-4      node:dev.kafka-16    use:N  comment:"kafka Broker node 4"
+omdb.omnode  omnode:dev.x2-4.kafkacw-1    node:dev.kafkacw-02  use:Y  comment:"s3 sink for tests"
+omdb.omnode  omnode:dev.x2-4.kafkaui-1    node:dev.kafkaui-5   use:Y  comment:"Provectus UI node"
+omdb.omnode  omnode:dev.x2-4.kafkaw-1     node:dev.kafkaw-04   use:Y  comment:""
+omdb.omnode  omnode:dev.x2-4.kafkaw-2     node:dev.kafkaw-12   use:Y  comment:""
+omdb.omnode  omnode:dev.x2-4.minio-1      node:dev.minio-02    use:Y  comment:"Apache Cluster s3"
+omdb.omnode  omnode:dev.x2-4.rdp-1        node:dev.rdp-13      use:Y  comment:"rdp Broker node 1"
+omdb.omnode  omnode:dev.x2-4.rdp-2        node:dev.rdp-14      use:Y  comment:"rdp Broker node 2"
+omdb.omnode  omnode:dev.x2-4.rdp-3        node:dev.rdp-15      use:Y  comment:"rdp Broker node 3"
+omdb.omnode  omnode:dev.x2-4.rdp-4        node:dev.rdp-16      use:Y  comment:"rdp Broker node 4"
+omdb.omnode  omnode:dev.x2-4.rdpui-1      node:dev.rdpui-5     use:Y  comment:"Redpanda UI node"
+omdb.omnode  omnode:dev.x2-4.tap-1_ext_0  node:nj1.sn2.bm      use:Y  comment:sniffer
+omdb.omnode  omnode:dev.x2-4.tap-2_ext_0  node:nj1.sn3.bm      use:N  comment:sniffer
+omdb.omnode  omnode:dev.x2-4.tap-3_ext_0  node:nj1.sn4.bm      use:N  comment:sniffer
+omdb.omnode  omnode:dev.x2-4.tap-4_ext_0  node:nj1.sn5.bm      use:N  comment:sniffer
+omdb.omnode  omnode:dev.x2-4.x2-0         node:dev.x2-20       use:Y  comment:"x2 Broker node 1"
+omdb.omnode  omnode:dev.x2-4.x2-1         node:dev.x2-18       use:Y  comment:"x2 Broker node 2"
+omdb.omnode  omnode:dev.x2-4.x2-2         node:dev.x2-19       use:Y  comment:"x2 Broker node 3"
+omdb.omnode  omnode:dev.x2-4.x2-3         node:dev.x2-17       use:Y  comment:"x2 Broker node 4"
+omdb.omnode  omnode:dev.x2-4.x2w-1        node:dev.x2w-08      use:Y  comment:""
+
+
+
+omdb.omenvtype  omenvtype:dev  comment:"multiple devs env share no resources and run in parallel"
+  omdb.omenv  omenv:dev.x2-4  owner:avorovich  comment:avorovich
+    omdb.omnode  omnode:dev.x2-4.x2-0  node:dev.x2-20  use:Y  comment:"x2 Broker node 1"
+    omdb.omnode  omnode:dev.x2-4.x2-1  node:dev.x2-18  use:Y  comment:"x2 Broker node 2"
+    omdb.omnode  omnode:dev.x2-4.x2-2  node:dev.x2-19  use:Y  comment:"x2 Broker node 3"
+    omdb.omnode  omnode:dev.x2-4.x2-3  node:dev.x2-17  use:Y  comment:"x2 Broker node 4"
+    omdb.omhost  omhost:dev.x2-4.x2-0.ctrl-0  ip:192.168.10.51  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-0.ext-0   ip:192.168.104.5  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-0.ib-0    ip:192.168.214.5  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-0.int-0   ip:192.168.204.5  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-1.ctrl-0  ip:192.168.10.31  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-1.ext-0   ip:192.168.104.3  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-1.ib-0    ip:192.168.214.3  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-1.int-0   ip:192.168.204.3  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-2.ctrl-0  ip:192.168.10.41  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-2.ext-0   ip:192.168.104.4  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-2.ib-0    ip:192.168.214.4  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-2.int-0   ip:192.168.204.4  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-3.ctrl-0  ip:192.168.10.21  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-3.ext-0   ip:192.168.104.2  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-3.ib-0    ip:192.168.214.2  comment:""
+    omdb.omhost  omhost:dev.x2-4.x2-3.int-0   ip:192.168.204.2  comment:""
+
+
+
+    omdb.omnode  omnode:dev.x2-4.x2-3  node:dev.x2-17  use:Y  comment:"x2 Broker node 4"
+x230ip=192.168.104.2
+x230port=1508
+
+x2cli -gw:192.168.104.2:1508 
+
+calibration.info  mon_step_n:4  "delta_local(sec)":1.09839  "delta_ts_snf_w(sec)":894127  ts_local_last:2025-12-12T19:04:00.01025998  ts_local_crnt:2025-12-12T19:04:01.108648303  ts_snf_w_last:1969-12-31T19:00:00  ts_snf_w_crnt:1970-01-11T03:22:07.151250956
+calibration.info  mon_step_n:5  "delta_local(sec)":1.0918  "delta_ts_snf_w(sec)":1.08899  ts_local_last:2025-12-12T19:04:01.108648303  ts_local_crnt:2025-12-12T19:04:02.200445354  ts_snf_w_last:1970-01-11T03:22:07.151250956  ts_snf_w_crnt:1970-01-11T03:22:08.24023744
+calibration.info  mon_step_n:6  "delta_local(sec)":1.09179  "delta_ts_snf_w(sec)":1.09179  ts_local_last:2025-12-12T19:04:02.200445354  ts_local_crnt:2025-12-12T19:04:03.292231287  ts_snf_w_last:1970-01-11T03:22:08.24023744  ts_snf_w_crnt:1970-01-11T03:22:09.332022643
+calibration.info  mon_step_n:7  "delta_local(sec)":1.09178  "delta_ts_snf_w(sec)":1.09182  ts_local_last:2025-12-12T19:04:03.292231287  ts_local_crnt:2025-12-12T19:04:04.384013288  ts_snf_w_last:1970-01-11T03:22:09.332022643  ts_snf_w_crnt:1970-01-11T03:22:10.423840268
+calibration.info  mon_step_n:8  "delta_local(sec)":1.09179  "delta_ts_snf_w(sec)":1.09182  ts_local_last:2025-12-12T19:04:04.384013288  ts_local_crnt:2025-12-12T19:04:05.475803046  ts_snf_w_last:1970-01-11T03:22:10.423840268  ts_snf_w_crnt:1970-01-11T03:22:11.51565863
+calibration.info  mon_step_n:9  "delta_local(sec)":1.09178  "delta_ts_snf_w(sec)":1.09176  ts_local_last:2025-12-12T19:04:05.475803046  ts_local_crnt:2025-12-12T19:04:06.567580601  ts_snf_w_last:1970-01-11T03:22:11.51565863  ts_snf_w_crnt:1970-01-11T03:22:12.607417843
+calibration.info  mon_step_n:10  "delta_local(sec)":1.09179  "delta_ts_snf_w(sec)":1.0918  ts_local_last:2025-12-12T19:04:06.567580601  ts_local_crnt:2025-12-12T19:04:07.659365931  ts_snf_w_last:1970-01-11T03:22:12.607417843  ts_snf_w_crnt:1970-01-11T03:22:13.699213721
+calibration.info  mon_step_n:11  "delta_local(sec)":1.09179  "delta_ts_snf_w(sec)":1.09181  ts_local_last:2025-12-12T19:04:07.659365931  ts_local_crnt:2025-12-12T19:04:08.751157812  ts_snf_w_last:1970-01-11T03:22:13.699213721  ts_snf_w_crnt:1970-01-11T03:22:14.791025504
+calibration.info  mon_step_n:12  "delta_local(sec)":1.09178  "delta_ts_snf_w(sec)":1.09175  ts_local_last:2025-12-12T19:04:08.751157812  ts_local_crnt:2025-12-12T19:04:09.842942304  ts_snf_w_last:1970-01-11T03:22:14.791025504  ts_snf_w_crnt:1970-01-11T03:22:15.882780243
+calibration.info  mon_step_n:13  "delta_local(sec)":1.09179  "delta_ts_snf_w(sec)":1.09179  ts_local_last:2025-12-12T19:04:09.842942304  ts_local_crnt:2025-12-12T19:04:10.934727671  ts_snf_w_last:1970-01-11T03:22:15.882780243  ts_snf_w_crnt:1970-01-11T03:22:16.974566105
++
+
+
+==start remote  x2write/x2read/x2traf !!!!!!!!!!!!!!!!!!!!!!!!
+x2node.info node:dev.x2w-08  cmd:"ssh -q x2w@dev.x2w-08 $'cd release;~/release/bin/x2traf -msg_size:1k -max_msgs:10 -msg_rate:1 -tstamp:N | ~/release/bin/x2write  -gw:192.168.104.2:1508 -progress -printacks:N'"
+x2write.progress  id:x2write-0-0  time:2025-12-12T19:49:34.752688189  write_bytes:2096  mbit_sec:0.0153585  delay_usec:154.088  inflight:0  write_msgs:2  tot_write_msgs:2  msgs_per_batch:1
+x2write.progress  id:x2write-0-0  time:2025-12-12T19:49:35.844467105  write_bytes:3144  mbit_sec:0.00767921  delay_usec:178.49  inflight:0  write_msgs:1  tot_write_msgs:3  msgs_per_batch:1
+x2write.progress  id:x2write-0-0  time:2025-12-12T19:49:36.936246035  write_bytes:4192  mbit_sec:0.00767921  delay_usec:167.584  inflight:0  write_msgs:1  tot_write_msgs:4  msgs_per_batch:1
+x2write.progress  id:x2write-0-0  time:2025-12-12T19:49:38.028024974  write_bytes:5240  mbit_sec:0.00767921  delay_usec:137.878  inflight:0  write_msgs:1  tot_write_msgs:5  msgs_per_batch:1
+x2write.progress  id:x2write-0-0  time:2025-12-12T19:49:39.119803791  write_bytes:6288  mbit_sec:0.00767921  delay_usec:152.852  inflight:0  write_msgs:1  tot_write_msgs:6  msgs_per_batch:1
+x2write.progress  id:x2write-0-0  time:2025-12-12T19:49:40.2115831  write_bytes:7336  mbit_sec:0.00767921  delay_usec:155.594  inflight:0  write_msgs:1  tot_write_msgs:7  msgs_per_batch:1
+x2write.progress  id:x2write-0-0  time:2025-12-12T19:49:41.303361928  write_bytes:8384  mbit_sec:0.00767921  delay_usec:174.037  inflight:0  write_msgs:1  tot_write_msgs:8  msgs_per_batch:1
+x2write.progress  id:x2write-0-0  time:2025-12-12T19:49:42.395141046  write_bytes:9432  mbit_sec:0.00767921  delay_usec:142.266  inflight:0  write_msgs:1  tot_write_msgs:9  msgs_per_batch:1
+x2write.progress  id:x2write-0-0  time:2025-12-12T19:49:43.486032827  write_bytes:10480  mbit_sec:0.00768546  delay_usec:145.395  inflight:0  write_msgs:1  tot_write_msgs:10  msgs_per_batch:1
+x2node.info  ncmd:1  completed:1  success:1  failure:0
+END x2write/x2read/x2traf !!!!!!!!!!!!!!!!!!!!!!!! 
+
+
+x2msg.info  x2_cnt_req:2  x2_cnt_seq:0  avg_lat_req:00:00:00.000137334  avg_lat_seq:00:00:00  "avg_lat_req(usec)":137.334  "avg_lat_seq(usec)":0
+x2msg.info  x2_cnt_req:3  x2_cnt_seq:0  avg_lat_req:00:00:00.000142056  avg_lat_seq:00:00:00  "avg_lat_req(usec)":142.057  "avg_lat_seq(usec)":0
+x2msg.info  x2_cnt_req:4  x2_cnt_seq:0  avg_lat_req:00:00:00.00014124  avg_lat_seq:00:00:00  "avg_lat_req(usec)":141.24  "avg_lat_seq(usec)":0
+x2msg.info  x2_cnt_req:5  x2_cnt_seq:0  avg_lat_req:00:00:00.000137717  avg_lat_seq:00:00:00  "avg_lat_req(usec)":137.718  "avg_lat_seq(usec)":0
+x2msg.info  x2_cnt_req:6  x2_cnt_seq:0  avg_lat_req:00:00:00.000136293  avg_lat_seq:00:00:00  "avg_lat_req(usec)":136.293  "avg_lat_seq(usec)":0
+x2msg.info  x2_cnt_req:7  x2_cnt_seq:0  avg_lat_req:00:00:00.000135629  avg_lat_seq:00:00:00  "avg_lat_req(usec)":135.63  "avg_lat_seq(usec)":0
+x2msg.info  x2_cnt_req:8  x2_cnt_seq:0  avg_lat_req:00:00:00.000136082  avg_lat_seq:00:00:00  "avg_lat_req(usec)":136.082  "avg_lat_seq(usec)":0
+x2msg.info  x2_cnt_req:9  x2_cnt_seq:0  avg_lat_req:00:00:00.000134623  avg_lat_seq:00:00:00  "avg_lat_req(usec)":134.624  "avg_lat_seq(usec)":0
+x2msg.info  x2_cnt_req:10  x2_cnt_seq:0  avg_lat_req:00:00:00.000134253  avg_lat_seq:00:00:00  "avg_lat_req(usec)":134.253  "avg_lat_seq(usec)":0
+x2msg.info  x2_cnt_req:10  x2_cnt_seq:0  avg_lat_req:00:00:00.000134253  avg_lat_seq:00:00:00  "avg_lat_req(usec)":134.253  "avg_lat_seq(usec)":0

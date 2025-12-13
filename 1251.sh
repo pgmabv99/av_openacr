@@ -36,6 +36,21 @@ acr_ed -create -field  omdb.OmTcpPair.kafka_count_per_step          -arg u64    
 acr_ed -create -field  omdb.OmTcpPair.client_id_key                 -arg algo.Smallstr50  -write -comment "kafka client id"
 acr_ed -create -field  omdb.OmTcpPair.host                          -arg algo.Smallstr50  -write -comment "capture host"
 
+#-------------OmTapHost (used for x2metrics for now)
+acr_ed -del     -ssimfile:omdb.om_tap_host  -write || true
+acr_ed -create  -ssimfile:omdb.om_tap_host   -write -comment "tap host record for x2 metrics"
+acr_ed -create -field  omdb.OmTapHost.snapshot_id                   -arg u32              -write -comment "snap"
+acr_ed -create -field  omdb.OmTapHost.time                          -arg algo.UnTime      -write -comment "Report time"
+acr_ed -create -field  omdb.OmTapHost.host                          -arg algo.Smallstr50  -write -comment "capture host"
+acr_ed -create -field  omdb.OmTapHost.tot_lat_req                   -arg algo.UnDiff      -write -comment "latency of req from UGPubMsg to GUAckMsg. sum for the step duration"
+acr_ed -create -field  omdb.OmTapHost.max_lat_req                   -arg algo.UnDiff      -write -comment "max latency"
+acr_ed -create -field  omdb.OmTapHost.min_lat_req                   -arg algo.UnDiff      -write -comment "min latency"
+acr_ed -create -field  omdb.OmTapHost.x2_cnt_req                    -arg u64              -write -comment "count of req per step"
+acr_ed -create -field  omdb.OmTapHost.tot_lat_seq                   -arg algo.UnDiff      -write -comment "latency of seq from UGPubMsg to In_Seqmsg. sum for the step duration"
+acr_ed -create -field  omdb.OmTapHost.max_lat_seq                   -arg algo.UnDiff      -write -comment "max latency"
+acr_ed -create -field  omdb.OmTapHost.min_lat_seq                   -arg algo.UnDiff      -write -comment "min latency"
+acr_ed -create -field  omdb.OmTapHost.x2_cnt_seq                    -arg i32              -write -comment "count of seq per step"
+
 
 #--------------FTcp_pair_hist
 acr_ed -del    -ctype atf_lat.FTcp_pair_hist    -write || tru

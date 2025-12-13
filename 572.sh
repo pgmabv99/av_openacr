@@ -199,20 +199,33 @@ acr_ed -create -field atf_snf.FMcb.tcp_pair_list_print_flg     -arg bool        
 acr_ed -create -field atf_snf.FMcb.tcp_filter                  -arg bool             -write -comment "apply tcp filter for debugging "
 acr_ed -create -field atf_snf.FMcb.snf_memqp_print_flg         -arg bool             -write -comment "print memqp print"
 
-#X2 stats. reinit per step
-acr_ed -create -field atf_snf.FMcb.tot_lat_req                 -arg algo.UnDiff     -write  -comment "latency of req from UGPubMsg to GUAckMsg. sum for the step duration"
-acr_ed -create -field atf_snf.FMcb.max_lat_req                 -arg algo.UnDiff     -write  -comment "max latency"
-acr_ed -create -field atf_snf.FMcb.min_lat_req                 -arg algo.UnDiff     -write  -comment "min latency"
-acr_ed -create -field atf_snf.FMcb.x2_cnt_req                  -arg u64             -write  -comment "count of req per step"
+# #X2 stats. reinit per step
+# acr_ed -create -field atf_snf.FMcb.tot_lat_req                 -arg algo.UnDiff     -write  -comment "latency of req from UGPubMsg to GUAckMsg. sum for the step duration"
+# acr_ed -create -field atf_snf.FMcb.max_lat_req                 -arg algo.UnDiff     -write  -comment "max latency"
+# acr_ed -create -field atf_snf.FMcb.min_lat_req                 -arg algo.UnDiff     -write  -comment "min latency"
+# acr_ed -create -field atf_snf.FMcb.x2_cnt_req                  -arg u64             -write  -comment "count of req per step"
 
-acr_ed -create -field atf_snf.FMcb.tot_lat_seq                 -arg algo.UnDiff     -write  -comment "latency of seq from UGPubMsg  to In_Seqmsg. sum for the step duration"
-acr_ed -create -field atf_snf.FMcb.max_lat_seq                 -arg algo.UnDiff     -write  -comment "max latency"
-acr_ed -create -field atf_snf.FMcb.min_lat_seq                 -arg algo.UnDiff     -write  -comment "min latency"
-acr_ed -create -field atf_snf.FMcb.x2_cnt_seq                     -arg i32             -write  -comment "count of seq per step"
+# acr_ed -create -field atf_snf.FMcb.tot_lat_seq                 -arg algo.UnDiff     -write  -comment "latency of seq from UGPubMsg  to In_Seqmsg. sum for the step duration"
+# acr_ed -create -field atf_snf.FMcb.max_lat_seq                 -arg algo.UnDiff     -write  -comment "max latency"
+# acr_ed -create -field atf_snf.FMcb.min_lat_seq                 -arg algo.UnDiff     -write  -comment "min latency"
+# acr_ed -create -field atf_snf.FMcb.x2_cnt_seq                     -arg i32             -write  -comment "count of seq per step"
 
-# include into _db
+
+#X2 calibration 
+acr_ed -create -field atf_snf.FMcb.ts_snf_w_last                 -arg algo.UnTime      -write  -comment "ts of the snf write UGPubMsg (last)"
+acr_ed -create -field atf_snf.FMcb.ts_snf_w_crnt                 -arg algo.UnTime      -write  -comment "ts of the snf write UGPubMsg (current)"
+acr_ed -create -field atf_snf.FMcb.ts_local_last                 -arg algo.UnTime      -write  -comment "ts local time (last)"
+acr_ed -create -field atf_snf.FMcb.ts_local_crnt                 -arg algo.UnTime      -write  -comment "ts local time (current)"
+
+# include  atf_snf.FMcb into _db
 acr_ed -del    -field atf_snf.FDb.mcb                          -write
 acr_ed -create -field atf_snf.FDb.mcb                          -arg atf_snf.FMcb        -write -comment ""
+
+# include omdb.OmTapHostinto _db
+acr_ed -del    -field atf_snf.FDb.om_tap_host                           -write
+acr_ed -create -field atf_snf.FDb.om_tap_host                           -arg omdb.OmTapHost       -write -comment ""
+
+
 
 #----------FDb  steps
 acr_ed -del    -field atf_snf.FDb.snf_poll                     -write || true

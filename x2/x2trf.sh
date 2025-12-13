@@ -8,7 +8,8 @@ sudo tcpdump -i any port 8850 -X -nn -s0 -U -w temp/x2tmp/x2gw_8850.pcap  &
 
 echo"==start x2write/x2read/x2traf  "
 x2read    > /home/avorovich/av_openacr/logs_x2sup/x2read.log  &
-x2traf -msg_size:10 -max_msgs:1000 -msg_rate:1K -tstamp:N | x2write  -progress -printacks:N
+# x2traf -msg_size:10 -max_msgs:1000 -msg_rate:1K -tstamp:N | x2write  -progress -printacks:N
+x2traf -msg_size:1K -max_msgs:10 -msg_rate:1 -tstamp:N | x2write  -progress -printacks:N
 
 # Allow some time to flush pcap
 sleep .001

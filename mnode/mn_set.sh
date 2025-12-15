@@ -1,8 +1,7 @@
 
 #!/bin/bash
 
-# cfg=debug
-cfg=release
+
 
 # omplat=ak
 omplat=x2
@@ -21,6 +20,10 @@ elif [ "$omplat" = "local" ]; then
 else
   echo "unknown omplat:$omplat - no action"
 fi
+
+# cfg=debug
+cfg=release
+
 topic=test-topic
 nbatch=10
 nrec=1

@@ -2,7 +2,7 @@
 pkill javaa || true
 ps -aux | grep java | grep kafka | grep -v grep || true
 
-mn_clean.sh
+source mn_clean.sh
 mn_tap.sh
 mn_brokers.sh
 sleep 8

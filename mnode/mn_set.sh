@@ -1,8 +1,11 @@
 
 #!/bin/bash
 
+# type of cleint tools
+client=x2
+# client=ak
 
-
+# omplat type of server: ak, x2, local(x2)
 # omplat=ak
 omplat=x2
 # omplat=local

@@ -2,9 +2,9 @@
 source  mn_set.sh
 local=false
 local=true
-msg_rate=1
+msg_rate=5
 msg_size=1k
-max_msgs=20
+max_msgs=100
 gw=192.168.104.2:1508
 if [ "$local" = "true" ]; then
   echo "==start local x2write/x2read/x2traf !!!!!!!!!!!!!!!!!!!!!!!! "

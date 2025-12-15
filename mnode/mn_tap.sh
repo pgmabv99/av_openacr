@@ -10,10 +10,15 @@ source mn_set.sh
 
 # #
 source mn_set.sh
-echo "====================starting tap"
+echo "====================upload and and start tap"
 x2rel  -create  -product:"tap" -omenv:dev.x2-4 -upload:Y  -create:Y
-omcli dev.x2-4.tap% -start_clean
 
+tap_x2=""
+#  if client=x2 set tap_x2
+if [ "$client" = "x2" ]; then
+  tap_x2="-tap_x2"
+fi
+omcli dev.x2-4.tap% -start_clean $tap_x2
 exit
 
 omcli dev.x2-4.tap% -status

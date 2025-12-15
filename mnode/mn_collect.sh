@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "====================collect logs"
+echo "=====================================stop and collect logs"
 
 
 source mn_set.sh

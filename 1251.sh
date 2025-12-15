@@ -98,6 +98,19 @@ acr_ed -create -field  atf_lat.FDb.bh_top_name_id_hist  -xref  -arg  atf_lat.FTo
 acr_ed -create -field  atf_lat.FDb.ind_top_name_id_hist -xref  -arg  atf_lat.FTopNameIdHist   -sortfld   atf_lat.FTopNameIdHist.topic_id             -cascdel              -write -comment ""
 amc
 
+#--------------FTapHostHist
+set -e
+acr_ed -del    -ctype atf_lat.FTapHostHist    -write || true
+acr_ed -create -ctype  atf_lat.FTapHostHist                         -pooltype Tpool       -write -comment "FTap host history"
+acr_ed -create -field  atf_lat.FTapHostHist.tap_host                -arg algo.Smallstr50    -write -comment "tap host"
+acr_ed -create -field  atf_lat.FTapHostHist.om_tap_host             -arg omdb.OmTapHost    -write -comment "tap host stats"
+# pointers from above
+acr_ed -del    -field  atf_lat.FDb.bh_tap_host_hist                -write || true
+acr_ed -del    -field  atf_lat.FDb.ind_tap_host_hist               -write || true
+acr_ed -create -field  atf_lat.FDb.bh_tap_host_hist  -xref  -arg  atf_lat.FTapHostHist   -hashfld   atf_lat.FTapHostHist.tap_host             -cascdel              -write -comment ""
+acr_ed -create -field  atf_lat.FDb.ind_tap_host_hist -xref  -arg  atf_lat.FTapHostHist   -sortfld   atf_lat.FTapHostHist.tap_host             -cascdel              -write -comment ""
+amc
+
 #-------------main CB
 acr_ed -del    -ctype atf_lat.FMcb         -write || true
 acr_ed -create -ctype atf_lat.FMcb                                     -write -comment "Main CB"

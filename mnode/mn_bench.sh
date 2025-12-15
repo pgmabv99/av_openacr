@@ -1,7 +1,6 @@
 #!/bin/bash
 source mn_set.sh
-pkill java || true
-#
+
 set -e
 # # omcli dev.x2-4 -omtest:om_benchmark -omplat:ak -omrun_minutes:1
 # x2rel  -create  -product:"tap" -omenv:dev.x2-4 -upload:Y  -create:Y 

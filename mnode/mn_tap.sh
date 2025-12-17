@@ -11,22 +11,21 @@ source mn_set.sh
 # #
 source mn_set.sh
 echo "====================upload and and start tap"
-x2rel  -create  -product:"tap" -omenv:dev.x2-4 -upload:Y  -create:Y
+x2rel  -create  -product:"tap" -omenv:nj1-4 -upload:Y  -create:Y
 
 tap_x2=""
 #  if client=x2 set tap_x2
 if [ "$client" = "x2" ]; then
   tap_x2="-tap_x2"
 fi
-omcli dev.x2-4.tap% -start_clean $tap_x2
+omcli nj1-4.tap% -start_clean $tap_x2
 exit
 
-omcli dev.x2-4.tap% -status
-omcli dev.x2-4.tap% -stop
+omcli nj1-4.tap% -status
+omcli nj1-4.tap% -stop
 sleep 2
-omcli dev.x2-4.tap% -collect_logs
-omcli dev.x2-4.x2% -collect_logs
-
+omcli nj1-4.tap% -collect_logs
+omcli nj1-4.x2% -collect_logs
 
 
 exit

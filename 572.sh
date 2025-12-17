@@ -152,7 +152,7 @@ set -e
 acr_ed -del    -ctype atf_snf.FX2req                                              -write || true
 acr_ed -create -ctype atf_snf.FX2req                        -pooltype Tpool       -write  -comment "x2 req.Created on UGPubMsg , destroyed on GUAckMsg"
 acr_ed -create -field atf_snf.FX2req.key                    -arg algo.Smallstr100 -write  -comment "tcp_pair_key/stream_id/request_id "
-acr_ed -create -field atf_snf.FX2req.ts_snf_w               -arg algo.UnTime      -write  -comment "ts of the snf write UGPubMsg "
+acr_ed -create -field atf_snf.FX2req.ts_snf_w               -arg u64              -write  -comment "ts of the snf write UGPubMsg "
 # pointers from up/down above
 acr_ed -create -field atf_snf.FDb.zd_x2req                  -cascdel              -write -comment " for debugging"
 acr_ed -create -field atf_snf.FDb.ind_x2req                 -cascdel              -write -comment ""
@@ -162,7 +162,7 @@ set -e
 acr_ed -del    -ctype atf_snf.FX2seq                                              -write || true
 acr_ed -create -ctype atf_snf.FX2seq                        -pooltype Tpool       -write  -comment "x2 seq.Created on GUAckMsg , destroyed on In_Seqmsg"
 acr_ed -create -field atf_snf.FX2seq.key                    -arg algo.Smallstr100 -write  -comment "stream_id/seq"
-acr_ed -create -field atf_snf.FX2seq.ts_snf_w               -arg algo.UnTime      -write  -comment "ts of the snf write UGPubMsg "
+acr_ed -create -field atf_snf.FX2seq.ts_snf_w               -arg u64              -write  -comment "ts of the snf write UGPubMsg "
 # pointers from up/down above
 acr_ed -create -field atf_snf.FDb.zd_x2seq                  -cascdel              -write -comment " for debugging"
 acr_ed -create -field atf_snf.FDb.ind_x2seq                 -cascdel              -write -comment ""
@@ -202,8 +202,8 @@ acr_ed -create -field atf_snf.FMcb.snf_memqp_print_flg         -arg bool        
 
 
 #X2 calibration 
-acr_ed -create -field atf_snf.FMcb.ts_snf_w_last                 -arg algo.UnTime      -write  -comment "ts of the snf write UGPubMsg (last)"
-acr_ed -create -field atf_snf.FMcb.ts_snf_w_crnt                 -arg algo.UnTime      -write  -comment "ts of the snf write UGPubMsg (current)"
+acr_ed -create -field atf_snf.FMcb.ts_snf_w_last                 -arg u64      -write  -comment "ts of the snf write UGPubMsg (last)"
+acr_ed -create -field atf_snf.FMcb.ts_snf_w_crnt                 -arg u64      -write  -comment "ts of the snf write UGPubMsg (current)"
 acr_ed -create -field atf_snf.FMcb.ts_local_last                 -arg algo.UnTime      -write  -comment "ts local time (last)"
 acr_ed -create -field atf_snf.FMcb.ts_local_crnt                 -arg algo.UnTime      -write  -comment "ts local time (current)"
 

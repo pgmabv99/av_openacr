@@ -19,7 +19,6 @@ trg=atf_snf
 # acr_compl -install
 # amc
 acr_ed -del  -ctype atf_snf.FMcb         -write || true
-acr_ed -del  -ctype atf_snf.FTcp_pair    -write || true
 acr_ed -del  -ctype atf_snf.FClient_id   -write || true
 acr_ed -del  -ctype atf_snf.FKafka       -write || true
 
@@ -36,7 +35,8 @@ acr_ed -del  -ctype atf_snf.FKafka       -write || true
 
 
 #--------------tcp pair
-# acr_ed -create -ctype atf_snf.FTcp_pair                   -pooltype Tpool       -arg Smallstr50 -indexed -write -comment "tcp pair entry"
+set -e
+acr_ed -del  -ctype atf_snf.FTcp_pair    -write || true
 acr_ed -create -ctype atf_snf.FTcp_pair                   -pooltype Tpool       -write -comment "tcp pair entry"
 acr_ed -create -field atf_snf.FTcp_pair.tcp_pair         -arg algo.Smallstr50        -write -comment "tcp pair string key host:port-host:port"
 acr_ed -create -field atf_snf.FTcp_pair.isn              -arg u32              -write -comment "initial sequence number (not always from SYN frame)"
@@ -69,13 +69,14 @@ acr_ed -create -field atf_snf.FTcp_pair.kafka_req_ack_count   -arg u32          
 acr_ed -create -field atf_snf.FTcp_pair.kafka_len_tot         -arg u32              -write -comment "total of kafka req/rsp length per pair"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_per_frame_count -arg u32              -write -comment "count of kafka req/rsp per frame"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_lat_tot_per_step -arg u64              -write -comment "sum of  latencies  per step"
+acr_ed -create -field atf_snf.FTcp_pair.kafka_lat_max_per_step -arg u64              -write -comment "maxof  latencies  per step"
+acr_ed -create -field atf_snf.FTcp_pair.kafka_lat_min_per_step -arg u64              -write -comment "min of  latencies  per step"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_count_per_step  -arg u64              -write -comment "count of kafa req per step"
 
 #x2 stats
 acr_ed -create -field atf_snf.FTcp_pair.x2msg_count           -arg u32              -write -comment "x2 msg . only read.In_Seqmsg"
 
 # pointers from above
-# acr_ed -del  -field atf_snf.FDb.zd_tcp_pair                    -write
 acr_ed -create -field atf_snf.FDb.zd_tcp_pair             -cascdel              -write -comment ""
 acr_ed -create -field atf_snf.FDb.ind_tcp_pair            -cascdel              -write -comment ""
 
@@ -189,7 +190,6 @@ acr_ed -create -field atf_snf.FMcb.test_dirs                   -arg algo.Smallst
 acr_ed -create -field atf_snf.FMcb.tcp_pairs_dir               -arg algo.Smallstr100  -write -comment "tcp pairs directories"
 acr_ed -create -field atf_snf.FMcb.fd_tcp_pairs_all_log        -arg i32               -write -comment "fd for tcp pairs all log"
 acr_ed -create -field atf_snf.FMcb.iframe_written              -arg u32               -write -comment "last iframe written to  all log"
-acr_ed -create -field atf_snf.FMcb.session_info_print_flg      -arg bool   -dflt:true  -write -comment "print MAC info at parse"
 acr_ed -create -field atf_snf.FMcb.p_cur_tcp_pair              -arg atf_snf.FTcp_pair  -reftype Ptr   -write  -comment "current tcp_pair being processed"
 
 # debug

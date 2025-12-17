@@ -7,13 +7,17 @@
 |Thash ind_tcp_pair_hist----->|                         |                                   
 |Bheap bh_sortfld------------>|                         |                                   
 |                             -                         |                                   
+|Tpool top_name_id_hist------>/ atf_lat.FTopNameIdHist  |                                   
+|Bheap bh_top_name_id_hist--->|                         |                                   
+|Thash ind_top_name_id_hist-->|                         |                                   
+|                             -                         |                                   
 |Tpool toppart_hist---------->/ atf_lat.FToppart_hist   |                                   
 |Bheap bh_toppart_hist------->|                         |                                   
 |Thash ind_toppart_hist------>|                         |                                   
 |                             -                         |                                   
-|Tpool top_name_id_hist------>/ atf_lat.FTopNameIdHist  |                                   
-|Bheap bh_top_name_id_hist--->|                         |                                   
-|Thash ind_top_name_id_hist-->|                         |                                   
+|Tpool tap_host_hist--------->/ atf_lat.FTapHostHist    |                                   
+|Bheap bh_tap_host_hist------>|                         |                                   
+|Thash ind_tap_host_hist----->|                         |                                   
 |                             -                         |                                   
 |Lary omnode--------------------------------------------|----------------->/ atf_lat.FOmnode
 |                                                       |Ptrary c_omnode-->|                

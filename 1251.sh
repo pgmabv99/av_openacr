@@ -32,6 +32,8 @@ acr_ed -create -field  omdb.OmTcpPair.time                          -arg algo.Un
 acr_ed -create -field  omdb.OmTcpPair.frame_count                   -arg u32              -write -comment "number of frames for this pair"
 acr_ed -create -field  omdb.OmTcpPair.kafka_count                   -arg u32              -write -comment "number of kafka req  for this pair"
 acr_ed -create -field  omdb.OmTcpPair.kafka_lat_tot_per_step        -arg u64              -write -comment "sum of  latencies  per step"
+acr_ed -create -field  omdb.OmTcpPair.kafka_lat_max_per_step        -arg u64              -write -comment "max of  latencies  per step"
+acr_ed -create -field  omdb.OmTcpPair.kafka_lat_min_per_step        -arg u64              -write -comment "min of  latencies  per step"
 acr_ed -create -field  omdb.OmTcpPair.kafka_count_per_step          -arg u64              -write -comment "count of kafa req per step"
 acr_ed -create -field  omdb.OmTcpPair.client_id_key                 -arg algo.Smallstr50  -write -comment "kafka client id"
 acr_ed -create -field  omdb.OmTcpPair.host                          -arg algo.Smallstr50  -write -comment "capture host"
@@ -56,11 +58,9 @@ acr_ed -create -field  omdb.OmTapHost.x2_cnt_seq                    -arg i32    
 acr_ed -del    -ctype atf_lat.FTcp_pair_hist    -write || tru
 acr_ed -create -ctype  atf_lat.FTcp_pair_hist                          -pooltype Tpool       -write -comment "tcp pair entry"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.tcp_pair_hist            -arg algo.Smallstr50   -write -comment "tcp pair string key host:port-host:port"
+acr_ed -create -field  atf_lat.FTcp_pair_hist.lst_nonzero_avg_lat      -arg u64              -write -comment "last non zero avg lat string for debugging"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.progress                 -arg omdb.OmTcpPair  -write -comment "current progress stats"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.last_progress            -arg omdb.OmTcpPair  -write -comment "last progress stats"
-acr_ed -create -field  atf_lat.FTcp_pair_hist.kafka_lat_cur_step       -arg u64              -write -comment "latency for curent step"
-acr_ed -create -field  atf_lat.FTcp_pair_hist.kafka_lat_last_nonzero   -arg u64              -write -comment "last non zero latency"
-acr_ed -create -field  atf_lat.FTcp_pair_hist.kafka_lat_max            -arg u64              -write -comment "latency max"
 
 # pointers from above
 acr_ed -create -field  atf_lat.FDb.zd_tcp_pair_hist                     -cascdel              -write -comment ""
@@ -70,8 +70,8 @@ acr_ed -create -field  atf_lat.FTcp_pair_hist.sortfld                   -arg  al
 acr_ed -create -field  atf_lat.FDb.bh_sortfld -xref                     -arg  atf_lat.FTcp_pair_hist     -sortfld  atf_lat.FTcp_pair_hist.sortfld     -write -comment "bheap on sort field"   
 
 amc
-
 #--------------FToppart_hist
+
 set -e
 acr_ed -del    -ctype atf_lat.FToppart_hist    -write || true
 acr_ed -create -ctype  atf_lat.FToppart_hist                         -pooltype Tpool       -write -comment "FToppart history"

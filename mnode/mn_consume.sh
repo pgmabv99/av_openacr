@@ -11,7 +11,7 @@ set -x
   --from-beginning \
   --property print.timestamp=true \
   --property print.offset=true \
-  --timeout-ms 5000
+  --timeout-ms 5000 || true
   
 exit
 # =================

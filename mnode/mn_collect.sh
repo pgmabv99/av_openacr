@@ -45,3 +45,5 @@ echo "  "
 # grep calibration  x2-4.tap_all.log
 set +x 
 cd ~/arnd
+
+atf_lat -omenv:dev.x2-4 

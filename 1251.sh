@@ -35,6 +35,7 @@ acr_ed -create -field  omdb.OmTcpPair.kafka_lat_tot_per_step        -arg u64    
 acr_ed -create -field  omdb.OmTcpPair.kafka_lat_max_per_step        -arg u64              -write -comment "max of  latencies  per step"
 acr_ed -create -field  omdb.OmTcpPair.kafka_lat_min_per_step        -arg u64              -write -comment "min of  latencies  per step"
 acr_ed -create -field  omdb.OmTcpPair.kafka_count_per_step          -arg u64              -write -comment "count of kafa req per step"
+acr_ed -create -field  omdb.OmTcpPair.kafka_prod_msg_count_per_step  -arg u64              -write -comment "produce msg count per step. across all paritions"
 acr_ed -create -field  omdb.OmTcpPair.client_id_key                 -arg algo.Smallstr50  -write -comment "kafka client id"
 acr_ed -create -field  omdb.OmTcpPair.host                          -arg algo.Smallstr50  -write -comment "capture host"
 

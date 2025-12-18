@@ -6,8 +6,8 @@
 client=ak
 
 # omplat=ak
-# omplat=x2
-omplat=rp
+omplat=x2
+# omplat=rp
 # omplat=local
 
 tap_omnnode=nj1-4.tap-1_ext_0  # device:nj1.sv2  omnode:kafka-1 node:dev.kafka-13

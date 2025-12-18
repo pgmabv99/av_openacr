@@ -45,4 +45,4 @@ sleep 2
 
 exit
 
-/opt/kafka/current/bin/kafka-metadata-shell.sh --bootstrap-server dev.x2-4.kafka-1.ext-0:1643 --describe
+/opt/kafka/current/bin/kafka-metadata-shell.sh --bootstrap-server nj1-4.kafka-1.ext-0:1643 --describe

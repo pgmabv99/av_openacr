@@ -64,7 +64,7 @@ acr_ed -create -field atf_snf.FTcp_pair.swin_offset           -arg u64          
 acr_ed -create -field atf_snf.FTcp_pair.kafka_req_corr_id     -arg u32              -write -comment "latest kafka req corr_id. used to prescreen rsp"
 
 # Kafka stats
-acr_ed -create -field atf_snf.FTcp_pair.kafka_count           -arg u32              -write -comment "kafka req or rsp count"
+acr_ed -create -field atf_snf.FTcp_pair.kafka_count           -arg u32              -write -comment "kafka req or rsp count. cum per tcp pair"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_req_ack_count   -arg u32              -write -comment "kafka req ack count"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_len_tot         -arg u32              -write -comment "total of kafka req/rsp length per pair"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_per_frame_count -arg u32              -write -comment "count of kafka req/rsp per frame"
@@ -72,6 +72,7 @@ acr_ed -create -field atf_snf.FTcp_pair.kafka_lat_tot_per_step -arg u64         
 acr_ed -create -field atf_snf.FTcp_pair.kafka_lat_max_per_step -arg u64              -write -comment "maxof  latencies  per step"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_lat_min_per_step -arg u64              -write -comment "min of  latencies  per step"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_count_per_step  -arg u64              -write -comment "count of kafa req per step"
+acr_ed -create -field atf_snf.FTcp_pair.kafka_prod_msg_count_per_step  -arg u64              -write -comment "produce msg count per step. across all paritions"
 
 #x2 stats
 acr_ed -create -field atf_snf.FTcp_pair.x2msg_count           -arg u32              -write -comment "x2 msg . only read.In_Seqmsg"
@@ -137,6 +138,7 @@ acr_ed -create -field atf_snf.FToppart.toppart                       -arg algo.S
 acr_ed -create -field atf_snf.FToppart.type                          -arg u32                         -write  -comment "=1 fetch  offset, 2= produce offsets"
 acr_ed -create -field atf_snf.FToppart.topic_name                    -arg algo.Smallstr100            -write  -comment "topic name"
 acr_ed -create -field atf_snf.FToppart.offset_produce                -arg i64                         -write  -comment "latest produce offset"
+acr_ed -create -field atf_snf.FToppart.offset_produce_last           -arg i64                         -write  -comment "last   produce offset"
 acr_ed -create -field atf_snf.FToppart.offset_fetch_fst              -arg i64                         -write  -comment "latest fetch offset. first in batch"
 acr_ed -create -field atf_snf.FToppart.offset_fetch_lst              -arg i64                         -write  -comment "latest fetch offset. last in batch"
 acr_ed -create -field atf_snf.FToppart.high_watermark                -arg i64                         -write  -comment "high watermark"

@@ -15,20 +15,7 @@ sleep 1
 sleep 2
 
 
-# produce loop 
-# multiple producer instance 
-# nbatch=10
-# nrec=100
-# for ((ii=0; ii<nbatch; ii++)); do
-#   msgs=""
-#   for i in $(seq 1 "$nrec"); do
-#     msgs+="batch${ii}_message${i}"$'\n'
-#   done
-#   printf '%s' "$msgs" | /opt/kafka/current/bin/kafka-console-producer.sh --bootstrap-server "$server" --topic ${topic}
-#   echo "produce batch ${ii} $nrec messages to ${topic} on $server"
-#   sleep 1
-# done
-
+echo "producing 
 # one producer instance
 
 {

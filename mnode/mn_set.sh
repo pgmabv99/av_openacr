@@ -10,7 +10,6 @@ omplat=x2
 # omplat=rp
 # omplat=local
 
-tap_omnnode=nj1-4.tap-1_ext_0  # device:nj1.sv2  omnode:kafka-1 node:dev.kafka-13
 # tap_omnnode=nj1-4.tap-4_ext_0  # device:nj1.sv5 omnode:kafka-4 node:dev.kafka-16
 #  omdb.omhost  omhost:nj1-4.x2-0.ext-0   ip:192.168.104.5  comment:""
 
@@ -30,4 +29,4 @@ cfg=release
 topic=test-topic
 nbatch=10
 nrec=20
-echo "setup  omplat:$omplat server:$server topic:$topic tap_omnnode:$tap_omnnode nbatch:$nbatch nrec:$nrec" 
+echo "setup  omplat:$omplat   " 

@@ -59,7 +59,8 @@ acr_ed -create -field  omdb.OmTapHost.x2_cnt_seq                    -arg i32    
 acr_ed -del    -ctype atf_lat.FTcp_pair_hist    -write || tru
 acr_ed -create -ctype  atf_lat.FTcp_pair_hist                          -pooltype Tpool       -write -comment "tcp pair entry"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.tcp_pair_hist            -arg algo.Smallstr50   -write -comment "tcp pair string key host:port-host:port"
-acr_ed -create -field  atf_lat.FTcp_pair_hist.lst_nonzero_avg_lat      -arg u64              -write -comment "last non zero avg lat string for debugging"
+acr_ed -create -field  atf_lat.FTcp_pair_hist.kafka_lat_tot_cum        -arg u64              -write -comment "cum latency for all steps"
+acr_ed -create -field  atf_lat.FTcp_pair_hist.step_count_cum           -arg u64              -write -comment "count with non nzero latency  "
 acr_ed -create -field  atf_lat.FTcp_pair_hist.progress                 -arg omdb.OmTcpPair  -write -comment "current progress stats"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.last_progress            -arg omdb.OmTcpPair  -write -comment "last progress stats"
 

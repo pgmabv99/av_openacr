@@ -3,7 +3,6 @@
 
 source mn_set.sh
 
-
 echo "====================starting produce"
 # skip delete as  x2 crashes 11/26
 # /opt/kafka/current/bin/kafka-topics.sh --bootstrap-server "$server" --delete --topic ${topic} || true
@@ -15,9 +14,11 @@ sleep 1
 sleep 2
 
 
-echo "producing 
+echo "producing "
 # one producer instance
-
+echo $server
+echo $topic
+echo "nbatch:$nbatch nrec:$nrec"
 {
   for ((ibatch=1; ibatch<=nbatch; ibatch++)); do
     for ((irec=1; irec<=nrec; irec++)); do
@@ -29,7 +30,6 @@ echo "producing
 } | /opt/kafka/current/bin/kafka-console-producer.sh \
         --bootstrap-server "$server" \
         --topic "$topic"
-
 exit
 
 /opt/kafka/current/bin/kafka-metadata-shell.sh --bootstrap-server nj1-4.kafka-1.ext-0:1643 --describe

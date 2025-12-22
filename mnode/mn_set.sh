@@ -5,8 +5,8 @@
 # client=x2
 client=ak
 
-# omplat=ak
-omplat=x2
+omplat=ak
+# omplat=x2
 # omplat=rp
 # omplat=local
 
@@ -28,5 +28,5 @@ cfg=release
 
 topic=test-topic
 nbatch=10
-nrec=20
+nrec=2000
 echo "setup  omplat:$omplat   " 

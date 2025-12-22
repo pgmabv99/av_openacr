@@ -25,6 +25,7 @@ acr_ed -create -field omdb.OmTopNameId.time                           -arg algo.
 acr_ed -create -field omdb.OmTopNameId.snapshot_id                   -arg u32                           -write -comment "snap"
 
 #-------------OmTcpPair 
+set -e
 acr_ed -del     -ssimfile:omdb.om_tcp_pair  -write || true
 acr_ed -create  -ssimfile:omdb.om_tcp_pair   -write -comment "tcp pair  record for transfer latency"
 acr_ed -create -field  omdb.OmTcpPair.snapshot_id                   -arg u32              -write -comment "snap"
@@ -34,10 +35,13 @@ acr_ed -create -field  omdb.OmTcpPair.kafka_count                   -arg u32    
 acr_ed -create -field  omdb.OmTcpPair.kafka_lat_tot_per_step        -arg u64              -write -comment "sum of  latencies  per step"
 acr_ed -create -field  omdb.OmTcpPair.kafka_lat_max_per_step        -arg u64              -write -comment "max of  latencies  per step"
 acr_ed -create -field  omdb.OmTcpPair.kafka_lat_min_per_step        -arg u64              -write -comment "min of  latencies  per step"
-acr_ed -create -field  omdb.OmTcpPair.kafka_count_per_step          -arg u64              -write -comment "count of kafa req per step"
-acr_ed -create -field  omdb.OmTcpPair.kafka_prod_msg_count_per_step  -arg u64              -write -comment "produce msg count per step. across all paritions"
+acr_ed -create -field  omdb.OmTcpPair.kafka_count_per_step          -arg u64              -write -comment "count of kafka req per step"
+acr_ed -create -field  omdb.OmTcpPair.kafka_prod_msg_count_per_step  -arg u64              -write -comment "produce msg count per step. across all partitions"
+acr_ed -create -field  omdb.OmTcpPair.kafka_fetch_msg_lat_tot_per_step  -arg u64              -write -comment "fetch msg total fetch latency. host_time - max_timestamp"
+acr_ed -create -field  omdb.OmTcpPair.kafka_fetch_msg_count_per_step  -arg u64              -write -comment "fetch msg count per step. across all partitions"
 acr_ed -create -field  omdb.OmTcpPair.client_id_key                 -arg algo.Smallstr50  -write -comment "kafka client id"
 acr_ed -create -field  omdb.OmTcpPair.host                          -arg algo.Smallstr50  -write -comment "capture host"
+amc
 
 #-------------OmTapHost (used for x2metrics for now)
 acr_ed -del     -ssimfile:omdb.om_tap_host  -write || true

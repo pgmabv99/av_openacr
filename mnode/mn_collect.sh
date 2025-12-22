@@ -32,7 +32,7 @@ grep kafka-ui tcp_pairs_all_all.log  > tcp_pairs_all_all_kafkaui.log
 find . -type f -name "nj1-4.tap*.log" | sort | while read -r f; do
     printf "\n===== FILE: %s =====\n" "$f"
     cat "$f"
-done > nj1-4.tap_all.log
+done > tap_all.log
 
 set -x
 echo " grep for produce/fetch responses in current log dir $(pwd) "
@@ -40,10 +40,12 @@ grep "KafkaStorePayLoad" -rnI .
 grep "!seq_gap" -rnI .
 grep "atf_snf.error" -rnI .
 echo "  "
-grep x2msg.info nj1-4.tap_all.log
+grep x2msg.info tap_all.log
+grep mono tap_all.log
 echo "  "nj1-4
-# grep calibration  nj1-4.tap_all.log
+# grep calibration tap_all.log
 set +x 
 cd ~/arnd
 
-# atf_lat -omenv:nj1-4
+# atf
+# less "$(ls -dt /home/avorovich/arnd/temp/collect_logs/ak/*/ | head -n 1)/tap_all.log"

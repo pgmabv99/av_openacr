@@ -2,10 +2,12 @@
 source mn_set.sh
 if [ "$omplat" = "ak" ]; then
   echo "start kafka brokers"
+  omcli nj1-4.kafka-% -omplat:ak -dkr_clean_run
   omcli nj1-4.kafka-% -omplat:ak -start_clean  
 
 elif [ "$omplat" = "x2" ]; then
 
+  omcli nj1-4.kafka-% -omplat:x2 -dkr_clean_run
   echo "install  x2"
   x2rel  -create  -product:"x2|x2w" -omenv:nj1-4 -upload:Y  -create:Y    
   echo " start x2"

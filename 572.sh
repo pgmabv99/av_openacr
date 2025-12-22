@@ -73,6 +73,8 @@ acr_ed -create -field atf_snf.FTcp_pair.kafka_lat_max_per_step -arg u64         
 acr_ed -create -field atf_snf.FTcp_pair.kafka_lat_min_per_step -arg u64              -write -comment "min of  latencies  per step"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_count_per_step  -arg u64              -write -comment "count of kafa req per step"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_prod_msg_count_per_step  -arg u64              -write -comment "produce msg count per step. across all paritions"
+acr_ed -create -field atf_snf.FTcp_pair.kafka_fetch_msg_lat_tot_per_step  -arg u64              -write -comment "fetch msg total fetch latency. host_time - max_timestamp"
+acr_ed -create -field atf_snf.FTcp_pair.kafka_fetch_msg_count_per_step  -arg u64              -write -comment "fetch msg count per step. across all partitions"
 
 #x2 stats
 acr_ed -create -field atf_snf.FTcp_pair.x2msg_count           -arg u32              -write -comment "x2 msg . only read.In_Seqmsg"

@@ -1,0 +1,4 @@
+atf_snf.frame_stats  direction:"c->b"  tcp_short:104.5-104.1  tcp_pair_key:192.168.104.5:1664-192.168.104.1:1188  frame_count:9  syn_count:1  fin_count:0  rst_count:0  isn:002238857104  tcp_payload_len_tot:000000006596
+atf_snf.kafka_stats  client_id_key:""  kafka_count:10  kafka_req_ack_count:0  kafka_count_in_bh:2  pct_non_ack!!!:0.909091  kafka_len_tot:000000000726
+
+

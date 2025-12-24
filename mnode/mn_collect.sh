@@ -42,7 +42,7 @@ grep "atf_snf.error" -rnI .
 echo "  "
 grep x2msg.info tap_all.log
 grep mono tap_all.log
-echo "  "nj1-4
+grep seq_gap_ tap_all.log
 # grep calibration tap_all.log
 set +x 
 cd ~/arnd

@@ -1,0 +1,29 @@
+==========================
+atf_snf.info  host:nj1.sv3
+atf_snf.info  experiment_dir:temp/atf_snf_logs/nj1-4.tap-2_ext_0  comment:"creating experiment directory"
+atf_snf.info  directory file list at start
+total 0
+atf_snf.info  tcp_pair_dir:temp/atf_snf_logs/nj1-4.tap-2_ext_0/tcp_pairs
+atf_snf.info  fname:temp/atf_snf_logs/nj1-4.tap-2_ext_0/atf_snf.pcap  comment:"creating pcap file"
+atf_snf.info  sll2:N
+atf_snf.info  comment:"Parsing kafka req/rsp enabled"
+atf_snf.info dev:data0-4T  port:1
+atf_snf.info comment:"opened the device"
+atf_snf.info comment:"allocated protected domain"
+atf_snf.info comment:"created CQ ex"
+atf_snf.info comment:"created QP ex"
+atf_snf.info comment:"init QP port"
+atf_snf.info comment:"QO Ready To Receive"
+atf_snf.info comment:"SGE and WR are initialised"
+atf_snf.info intfname:data0-4T  port:1  ib:mlx5_10  pci:0000:c5:01.4  comment:"Flow created successfully, sniffing all traffic"
+atf_snf.info comment:"Received SIGTERM, shutting down gracefully..."
+atf_snf.info comment:"snf shutdown"
+atf_snf.info comment:"destroying flow"
+atf_snf.info comment:"destroying QP"
+atf_snf.info comment:"destroying CQ"
+atf_snf.info comment:"destroying PD"
+atf_snf.info comment:GlobalTcpPairDump
+atf_snf.session_stats  current_time:2025-12-24T10:38:16.556691971  elapsed_sec:169.971  iframe_count:11623  tcp_pair_count:178  seq_gap_pos_count:0  seq_gap_neg_count:0  max_pkt_len:9014  "kafka_req_duration_avg (ns)":2910995  kafka_req_count_total:2426  kafka_req_ack_count_total:2426  "kafka_req_duration_total (ns)":7062075803
+atf_snf.info fname:temp/atf_snf_logs/nj1-4.tap-2_ext_0/atf_snf.pcap  comment:"closing pcap file"
+atf_snf.info fname:temp/atf_snf_logs/nj1-4.tap-2_ext_0/tcp_pairs_all.log  comment:"closing tcp pairs all log file"
+exit to OS-101

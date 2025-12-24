@@ -1,0 +1,28 @@
+==========================
+atf_snf.info  host:nj1.sv5
+atf_snf.info  experiment_dir:temp/atf_snf_logs/nj1-4.tap-4_ext_0  comment:"creating experiment directory"
+atf_snf.info  directory file list at start
+total 0
+atf_snf.info  tcp_pair_dir:temp/atf_snf_logs/nj1-4.tap-4_ext_0/tcp_pairs
+atf_snf.info  fname:temp/atf_snf_logs/nj1-4.tap-4_ext_0/atf_snf.pcap  comment:"creating pcap file"
+atf_snf.info  sll2:N
+atf_snf.info  comment:"Parsing kafka req/rsp enabled"
+atf_snf.info dev:data0-4T  port:1
+atf_snf.info comment:"opened the device"
+atf_snf.info comment:"allocated protected domain"
+atf_snf.info comment:"created CQ ex"
+atf_snf.info comment:"created QP ex"
+atf_snf.info comment:"init QP port"
+atf_snf.info comment:"QO Ready To Receive"
+atf_snf.info comment:"SGE and WR are initialised"
+atf_snf.info intfname:data0-4T  port:1  ib:mlx5_10  pci:0000:c5:01.4  comment:"Flow created successfully, sniffing all traffic"
+atf_snf.err TCP seq gap  tcp_pair:192.168.104.7:53456-192.168.104.5:1664  frame_count:7  seq_gap:-60  seq:003989827386  seq_next:003989827446  tcp_pay_len:000060
+atf_snf.err  comment:"kafka request not found for response"  kafka_corr_id:1179651  "kafka_rsp->iframe":234  tcp_pair_key_req:192.168.104.5:1664-192.168.104.1:1188
+duplicate req kafka_corr_id kafka_corr_id:0  "kafka_req->iframe":4  "tcp_pair->frame_count":4
+duplicate req kafka_corr_id kafka_corr_id:0  "kafka_req->iframe":4  "tcp_pair->frame_count":4
+duplicate req kafka_corr_id kafka_corr_id:0  "kafka_req->iframe":4  "tcp_pair->frame_count":4
+duplicate req kafka_corr_id kafka_corr_id:0  "kafka_req->iframe":4  "tcp_pair->frame_count":4
+duplicate req kafka_corr_id kafka_corr_id:0  "kafka_req->iframe":4  "tcp_pair->frame_count":4
+duplicate req kafka_corr_id kafka_corr_id:0  "kafka_req->iframe":4  "tcp_pair->frame_count":4
+duplicate req kafka_corr_id kafka_corr_id:0  "kafka_req->iframe":4  "tcp_pair->frame_count":4
+duplicate req kafka_corr_id kafka_corr_id:0  "kafka_req->iframe":4  "tcp_pair->frame_count":4

@@ -1,0 +1,918 @@
+[2025-12-24 10:35:32,024] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+[2025-12-24 10:35:32,176] INFO Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation (org.apache.zookeeper.common.X509Util)
+[2025-12-24 10:35:32,300] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2025-12-24 10:35:32,302] INFO [ControllerServer id=2] Starting controller (kafka.server.ControllerServer)
+[2025-12-24 10:35:32,320] INFO [StandardAuthorizer 2] set super.users=User:CN=nj1-4,User:ANONYMOUS,User:CN=nj1-4.x2w-1,User:CN=nj1-4.kafkaui-1, default result=DENIED (org.apache.kafka.metadata.authorizer.StandardAuthorizerData)
+[2025-12-24 10:35:32,607] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+[2025-12-24 10:35:32,634] INFO [SocketServer listenerType=CONTROLLER, nodeId=2] Created data-plane acceptor and processors for endpoint : ListenerName(CONTROLLER) (kafka.network.SocketServer)
+[2025-12-24 10:35:32,639] INFO authorizerStart completed for endpoint CONTROLLER. Endpoint is now READY. (org.apache.kafka.server.network.EndpointReadyFutures)
+[2025-12-24 10:35:32,640] INFO [SharedServer id=2] Starting SharedServer (kafka.server.SharedServer)
+[2025-12-24 10:35:32,679] INFO [LogLoader partition=__cluster_metadata-0, dir=/mnt/data-1/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:35:32,679] INFO [LogLoader partition=__cluster_metadata-0, dir=/mnt/data-1/nj1-4] Reloading from producer snapshot and rebuilding producer state from offset 0 (kafka.log.UnifiedLog$)
+[2025-12-24 10:35:32,679] INFO [LogLoader partition=__cluster_metadata-0, dir=/mnt/data-1/nj1-4] Producer state recovery took 0ms for snapshot load and 0ms for segment recovery from offset 0 (kafka.log.UnifiedLog$)
+[2025-12-24 10:35:32,704] INFO Initialized snapshots with IDs SortedSet() from /mnt/data-1/nj1-4/__cluster_metadata-0 (kafka.raft.KafkaMetadataLog$)
+[2025-12-24 10:35:32,712] INFO [raft-expiration-reaper]: Starting (kafka.raft.TimingWheelExpirationService$ExpiredOperationReaper)
+[2025-12-24 10:35:32,722] INFO [RaftManager id=2] Reading KRaft snapshot and log as part of the initialization (org.apache.kafka.raft.KafkaRaftClient)
+[2025-12-24 10:35:32,723] INFO [RaftManager id=2] Starting voters are VoterSet(voters={1=VoterNode(voterKey=ReplicaKey(id=1, directoryId=Optional.empty), listeners=Endpoints(endpoints={ListenerName(CONTROLLER)=nj1-4.kafka-1.int-0/192.168.204.2:1645}), supportedKRaftVersion=SupportedVersionRange[min_version:0, max_version:0]), 2=VoterNode(voterKey=ReplicaKey(id=2, directoryId=Optional.empty), listeners=Endpoints(endpoints={ListenerName(CONTROLLER)=nj1-4.kafka-2.int-0/192.168.204.3:1652}), supportedKRaftVersion=SupportedVersionRange[min_version:0, max_version:0]), 3=VoterNode(voterKey=ReplicaKey(id=3, directoryId=Optional.empty), listeners=Endpoints(endpoints={ListenerName(CONTROLLER)=nj1-4.kafka-3.int-0/192.168.204.4:1659}), supportedKRaftVersion=SupportedVersionRange[min_version:0, max_version:0]), 4=VoterNode(voterKey=ReplicaKey(id=4, directoryId=Optional.empty), listeners=Endpoints(endpoints={ListenerName(CONTROLLER)=nj1-4.kafka-4.int-0/192.168.204.5:1666}), supportedKRaftVersion=SupportedVersionRange[min_version:0, max_version:0])}) (org.apache.kafka.raft.KafkaRaftClient)
+[2025-12-24 10:35:32,724] INFO [RaftManager id=2] Starting request manager with static voters: [nj1-4.kafka-1.int-0:1645 (id: 1 rack: null), nj1-4.kafka-2.int-0:1652 (id: 2 rack: null), nj1-4.kafka-3.int-0:1659 (id: 3 rack: null), nj1-4.kafka-4.int-0:1666 (id: 4 rack: null)] (org.apache.kafka.raft.KafkaRaftClient)
+[2025-12-24 10:35:32,728] INFO [RaftManager id=2] Attempting durable transition to Unattached(epoch=0, votedKey=null, voters=[1, 2, 3, 4], electionTimeoutMs=28844, highWatermark=Optional.empty) from null (org.apache.kafka.raft.QuorumState)
+[2025-12-24 10:35:32,817] INFO [RaftManager id=2] Completed transition to Unattached(epoch=0, votedKey=null, voters=[1, 2, 3, 4], electionTimeoutMs=28844, highWatermark=Optional.empty) from null (org.apache.kafka.raft.QuorumState)
+[2025-12-24 10:35:32,819] INFO [kafka-2-raft-outbound-request-thread]: Starting (org.apache.kafka.raft.KafkaNetworkChannel$SendThread)
+[2025-12-24 10:35:32,819] INFO [kafka-2-raft-io-thread]: Starting (org.apache.kafka.raft.KafkaRaftClientDriver)
+[2025-12-24 10:35:32,829] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:32,830] INFO [ControllerServer id=2] Waiting for controller quorum voters future (kafka.server.ControllerServer)
+[2025-12-24 10:35:32,830] INFO [ControllerServer id=2] Finished waiting for controller quorum voters future (kafka.server.ControllerServer)
+[2025-12-24 10:35:32,830] INFO [RaftManager id=2] Registered the listener org.apache.kafka.image.loader.MetadataLoader@109824897 (org.apache.kafka.raft.KafkaRaftClient)
+[2025-12-24 10:35:32,851] INFO [RaftManager id=2] Registered the listener org.apache.kafka.controller.QuorumController$QuorumMetaLogListener@929117646 (org.apache.kafka.raft.KafkaRaftClient)
+[2025-12-24 10:35:32,854] INFO [controller-2-ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-12-24 10:35:32,855] INFO [controller-2-ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-12-24 10:35:32,855] INFO [controller-2-ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-12-24 10:35:32,856] INFO [controller-2-ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-12-24 10:35:32,870] INFO [ExpirationReaper-2-AlterAcls]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-12-24 10:35:32,880] INFO [ControllerServer id=2] Waiting for the controller metadata publishers to be installed (kafka.server.ControllerServer)
+[2025-12-24 10:35:32,880] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:32,880] INFO [ControllerServer id=2] Finished waiting for the controller metadata publishers to be installed (kafka.server.ControllerServer)
+[2025-12-24 10:35:32,880] INFO [SocketServer listenerType=CONTROLLER, nodeId=2] Enabling request processing. (kafka.network.SocketServer)
+[2025-12-24 10:35:32,882] INFO Awaiting socket connections on nj1-4.kafka-2.int-0:1652. (kafka.network.DataPlaneAcceptor)
+[2025-12-24 10:35:32,894] INFO [controller-2-to-controller-registration-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+[2025-12-24 10:35:32,895] INFO [ControllerServer id=2] Waiting for all of the authorizer futures to be completed (kafka.server.ControllerServer)
+[2025-12-24 10:35:32,895] INFO [ControllerServer id=2] Finished waiting for all of the authorizer futures to be completed (kafka.server.ControllerServer)
+[2025-12-24 10:35:32,895] INFO [ControllerServer id=2] Waiting for all of the SocketServer Acceptors to be started (kafka.server.ControllerServer)
+[2025-12-24 10:35:32,895] INFO [ControllerServer id=2] Finished waiting for all of the SocketServer Acceptors to be started (kafka.server.ControllerServer)
+[2025-12-24 10:35:32,895] INFO [ControllerRegistrationManager id=2 incarnation=x8cjNRm6RH-WqwJa1yzaxA] initialized channel manager. (kafka.server.ControllerRegistrationManager)
+[2025-12-24 10:35:32,895] INFO [ControllerRegistrationManager id=2 incarnation=x8cjNRm6RH-WqwJa1yzaxA] maybeSendControllerRegistration: cannot register yet because the metadata.version is still 3.0-IV1, which does not support KIP-919 controller registration. (kafka.server.ControllerRegistrationManager)
+[2025-12-24 10:35:32,896] INFO [BrokerServer id=2] Transition from SHUTDOWN to STARTING (kafka.server.BrokerServer)
+[2025-12-24 10:35:32,896] INFO [BrokerServer id=2] Starting broker (kafka.server.BrokerServer)
+[2025-12-24 10:35:32,901] INFO [broker-2-ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-12-24 10:35:32,901] INFO [broker-2-ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-12-24 10:35:32,901] INFO [broker-2-ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-12-24 10:35:32,901] INFO [broker-2-ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2025-12-24 10:35:32,915] INFO [BrokerServer id=2] Waiting for controller quorum voters future (kafka.server.BrokerServer)
+[2025-12-24 10:35:32,915] INFO [BrokerServer id=2] Finished waiting for controller quorum voters future (kafka.server.BrokerServer)
+[2025-12-24 10:35:32,916] INFO [broker-2-to-controller-forwarding-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+[2025-12-24 10:35:32,922] INFO [client-metrics-reaper]: Starting (org.apache.kafka.server.util.timer.SystemTimerReaper$Reaper)
+[2025-12-24 10:35:32,942] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+[2025-12-24 10:35:32,947] INFO [SocketServer listenerType=BROKER, nodeId=2] Created data-plane acceptor and processors for endpoint : ListenerName(PLAINTEXT) (kafka.network.SocketServer)
+[2025-12-24 10:35:32,948] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+[2025-12-24 10:35:32,980] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:33,035] INFO [SocketServer listenerType=BROKER, nodeId=2] Created data-plane acceptor and processors for endpoint : ListenerName(SSL) (kafka.network.SocketServer)
+[2025-12-24 10:35:33,036] INFO Updated connection-accept-rate max connection creation rate to 2147483647 (kafka.network.ConnectionQuotas)
+[2025-12-24 10:35:33,040] INFO [SocketServer listenerType=BROKER, nodeId=2] Created data-plane acceptor and processors for endpoint : ListenerName(INTERNAL) (kafka.network.SocketServer)
+[2025-12-24 10:35:33,043] INFO [broker-2-to-controller-alter-partition-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+[2025-12-24 10:35:33,048] INFO [broker-2-to-controller-directory-assignments-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+[2025-12-24 10:35:33,058] INFO [ExpirationReaper-2-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-12-24 10:35:33,059] INFO [ExpirationReaper-2-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-12-24 10:35:33,059] INFO [ExpirationReaper-2-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-12-24 10:35:33,060] INFO [ExpirationReaper-2-ElectLeader]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-12-24 10:35:33,060] INFO [ExpirationReaper-2-RemoteFetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-12-24 10:35:33,073] INFO [ExpirationReaper-2-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-12-24 10:35:33,073] INFO [ExpirationReaper-2-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-12-24 10:35:33,082] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:33,108] INFO Unable to read the broker epoch in /mnt/data-1/nj1-4. (kafka.log.LogManager)
+[2025-12-24 10:35:33,109] INFO [broker-2-to-controller-heartbeat-channel-manager]: Starting (kafka.server.NodeToControllerRequestThread)
+[2025-12-24 10:35:33,109] INFO [StandardAuthorizer 2] set super.users=User:CN=nj1-4,User:ANONYMOUS,User:CN=nj1-4.x2w-1,User:CN=nj1-4.kafkaui-1, default result=DENIED (org.apache.kafka.metadata.authorizer.StandardAuthorizerData)
+[2025-12-24 10:35:33,112] INFO [BrokerLifecycleManager id=2] Incarnation LwX1xeykSEeKX8yKTrNARw of broker 2 in cluster nj1-4 is now STARTING. (kafka.server.BrokerLifecycleManager)
+[2025-12-24 10:35:33,130] INFO [ExpirationReaper-2-AlterAcls]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2025-12-24 10:35:33,147] INFO [BrokerServer id=2] Waiting for the broker metadata publishers to be installed (kafka.server.BrokerServer)
+[2025-12-24 10:35:33,147] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:33,147] INFO [BrokerServer id=2] Finished waiting for the broker metadata publishers to be installed (kafka.server.BrokerServer)
+[2025-12-24 10:35:33,147] INFO [BrokerServer id=2] Waiting for the controller to acknowledge that we are caught up (kafka.server.BrokerServer)
+[2025-12-24 10:35:33,247] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:33,347] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:33,447] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:33,547] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:33,648] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:33,748] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:33,848] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:33,948] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:34,048] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:34,149] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:34,249] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:34,349] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:34,449] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:34,549] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:34,649] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:34,750] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:34,850] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:34,950] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:35,050] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:35,150] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:35,250] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:35,351] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:35,451] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:35,551] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:35,651] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:35,751] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:35,851] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:35,951] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:36,052] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:36,152] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:36,252] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:36,352] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:36,452] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:36,552] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:36,652] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:36,753] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:36,853] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:36,953] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:37,053] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:37,153] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:37,253] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:37,354] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:37,454] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:37,554] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:37,617] INFO [BrokerLifecycleManager id=2] Unable to register the broker because the RPC got timed out before it could be sent. (kafka.server.BrokerLifecycleManager)
+[2025-12-24 10:35:37,654] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:37,754] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:37,854] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:37,954] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:38,055] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:38,155] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:38,255] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:38,355] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:38,455] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:38,555] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:38,656] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:38,756] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:38,856] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:38,956] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:39,056] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:39,156] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:39,256] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:39,356] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:39,457] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:39,557] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:39,657] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:39,757] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:39,857] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:39,957] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:40,057] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:40,157] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:40,258] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:40,358] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:40,458] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:40,558] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:40,658] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:40,758] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:40,858] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:40,959] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:41,059] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:41,159] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:41,259] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:41,359] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:41,459] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:41,559] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:41,659] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:41,760] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:41,860] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:41,960] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:42,060] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:42,160] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:42,224] INFO [BrokerLifecycleManager id=2] Unable to register the broker because the RPC got timed out before it could be sent. (kafka.server.BrokerLifecycleManager)
+[2025-12-24 10:35:42,260] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:42,360] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:42,460] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:42,561] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:42,661] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:42,761] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:42,861] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:42,961] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:43,061] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:43,161] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:43,261] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:43,362] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:43,462] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:43,562] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:43,662] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:43,762] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:43,862] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:43,962] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:44,062] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:44,163] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:44,263] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:44,363] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:44,463] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:44,563] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:44,663] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:44,763] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:44,863] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:44,964] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:45,064] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:45,164] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:45,264] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:45,364] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:45,464] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:45,564] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:45,664] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:45,765] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:45,865] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:45,965] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:46,065] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:46,165] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:46,265] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:46,365] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:46,465] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:46,566] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:46,666] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:46,766] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:46,866] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:46,930] INFO [BrokerLifecycleManager id=2] Unable to register the broker because the RPC got timed out before it could be sent. (kafka.server.BrokerLifecycleManager)
+[2025-12-24 10:35:46,966] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:47,066] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:47,166] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:47,266] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:47,367] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:47,467] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:47,567] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:47,667] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:47,767] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:47,867] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:47,967] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:48,067] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:48,168] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:48,268] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:48,368] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:48,468] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:48,568] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:48,668] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:48,768] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:48,868] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:48,968] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:49,068] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:49,169] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:49,269] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:49,369] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:49,469] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:49,569] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:49,669] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:49,769] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:49,869] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:49,969] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:50,070] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:50,170] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:50,270] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:50,370] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:50,470] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:50,570] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:50,670] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:50,770] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:50,871] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:50,971] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:51,071] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:51,171] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:51,271] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:51,371] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:51,471] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:51,571] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:51,671] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:51,771] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:51,836] INFO [BrokerLifecycleManager id=2] Unable to register the broker because the RPC got timed out before it could be sent. (kafka.server.BrokerLifecycleManager)
+[2025-12-24 10:35:51,872] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:51,972] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:52,072] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:52,172] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:52,272] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:52,372] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:52,472] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:52,572] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:52,672] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:52,773] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:52,873] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:52,973] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:53,073] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:53,173] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:53,273] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:53,373] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:53,473] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:53,573] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:53,673] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:53,774] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:53,874] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:53,974] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:54,074] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:54,174] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:54,274] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:54,374] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:54,474] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:54,574] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:54,675] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:54,775] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:54,875] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:54,975] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:55,075] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:55,175] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:55,275] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:55,375] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:55,475] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:55,576] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:55,676] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:55,776] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:55,876] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:55,976] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:56,076] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:56,176] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:56,276] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:56,376] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:56,477] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:56,577] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:56,677] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:56,777] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:56,877] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:56,977] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:57,077] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:57,143] INFO [BrokerLifecycleManager id=2] Unable to register the broker because the RPC got timed out before it could be sent. (kafka.server.BrokerLifecycleManager)
+[2025-12-24 10:35:57,177] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:57,277] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:57,378] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:57,478] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:57,578] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:57,678] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:57,778] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:57,878] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:57,978] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:58,078] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:58,178] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:58,279] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:58,379] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:58,479] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:58,579] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:58,679] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:58,779] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:58,879] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:58,979] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:59,079] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:59,179] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:59,280] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:59,380] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:59,480] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:59,580] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:59,680] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:59,780] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:59,880] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:35:59,980] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,080] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,180] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,280] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,381] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,481] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,581] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,677] INFO [RaftManager id=2] Attempting durable transition to Unattached(epoch=1, votedKey=null, voters=[1, 2, 3, 4], electionTimeoutMs=895, highWatermark=Optional.empty) from Unattached(epoch=0, votedKey=null, voters=[1, 2, 3, 4], electionTimeoutMs=28844, highWatermark=Optional.empty) (org.apache.kafka.raft.QuorumState)
+[2025-12-24 10:36:00,678] INFO [RaftManager id=2] Completed transition to Unattached(epoch=1, votedKey=null, voters=[1, 2, 3, 4], electionTimeoutMs=895, highWatermark=Optional.empty) from Unattached(epoch=0, votedKey=null, voters=[1, 2, 3, 4], electionTimeoutMs=28844, highWatermark=Optional.empty) (org.apache.kafka.raft.QuorumState)
+[2025-12-24 10:36:00,680] INFO [RaftManager id=2] Attempting durable transition to Unattached(epoch=1, votedKey=ReplicaKey(id=1, directoryId=Optional[LacWu8gT-XpXuHvfoSxLxA]), voters=[1, 2, 3, 4], electionTimeoutMs=29975, highWatermark=Optional.empty) from Unattached(epoch=1, votedKey=null, voters=[1, 2, 3, 4], electionTimeoutMs=895, highWatermark=Optional.empty) (org.apache.kafka.raft.QuorumState)
+[2025-12-24 10:36:00,680] INFO [RaftManager id=2] Completed transition to Unattached(epoch=1, votedKey=ReplicaKey(id=1, directoryId=Optional[LacWu8gT-XpXuHvfoSxLxA]), voters=[1, 2, 3, 4], electionTimeoutMs=29975, highWatermark=Optional.empty) from Unattached(epoch=1, votedKey=null, voters=[1, 2, 3, 4], electionTimeoutMs=895, highWatermark=Optional.empty) (org.apache.kafka.raft.QuorumState)
+[2025-12-24 10:36:00,681] INFO [RaftManager id=2] Vote request VoteRequestData(clusterId='nj1-4', voterId=2, topics=[TopicData(topicName='__cluster_metadata', partitions=[PartitionData(partitionIndex=0, candidateEpoch=1, candidateId=1, candidateDirectoryId=LacWu8gT-XpXuHvfoSxLxA, voterDirectoryId=AAAAAAAAAAAAAAAAAAAAAA, lastOffsetEpoch=0, lastOffset=0)])]) with epoch 1 is granted (org.apache.kafka.raft.KafkaRaftClient)
+[2025-12-24 10:36:00,681] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,719] INFO [RaftManager id=2] Attempting durable transition to FollowerState(fetchTimeoutMs=10000, epoch=1, leader=1, leaderEndpoints=Endpoints(endpoints={ListenerName(CONTROLLER)=nj1-4.kafka-1.int-0/<unresolved>:1645}), voters=[1, 2, 3, 4], highWatermark=Optional.empty, fetchingSnapshot=Optional.empty) from Unattached(epoch=1, votedKey=ReplicaKey(id=1, directoryId=Optional[LacWu8gT-XpXuHvfoSxLxA]), voters=[1, 2, 3, 4], electionTimeoutMs=29975, highWatermark=Optional.empty) (org.apache.kafka.raft.QuorumState)
+[2025-12-24 10:36:00,719] INFO [RaftManager id=2] Completed transition to FollowerState(fetchTimeoutMs=10000, epoch=1, leader=1, leaderEndpoints=Endpoints(endpoints={ListenerName(CONTROLLER)=nj1-4.kafka-1.int-0/<unresolved>:1645}), voters=[1, 2, 3, 4], highWatermark=Optional.empty, fetchingSnapshot=Optional.empty) from Unattached(epoch=1, votedKey=ReplicaKey(id=1, directoryId=Optional[LacWu8gT-XpXuHvfoSxLxA]), voters=[1, 2, 3, 4], electionTimeoutMs=29975, highWatermark=Optional.empty) (org.apache.kafka.raft.QuorumState)
+[2025-12-24 10:36:00,736] INFO [controller-2-to-controller-registration-channel-manager]: Recorded new KRaft controller, from now on will use node nj1-4.kafka-1.int-0:1645 (id: 1 rack: null) (kafka.server.NodeToControllerRequestThread)
+[2025-12-24 10:36:00,748] INFO [broker-2-to-controller-heartbeat-channel-manager]: Recorded new KRaft controller, from now on will use node nj1-4.kafka-1.int-0:1645 (id: 1 rack: null) (kafka.server.NodeToControllerRequestThread)
+[2025-12-24 10:36:00,753] INFO [broker-2-to-controller-forwarding-channel-manager]: Recorded new KRaft controller, from now on will use node nj1-4.kafka-1.int-0:1645 (id: 1 rack: null) (kafka.server.NodeToControllerRequestThread)
+[2025-12-24 10:36:00,756] INFO [NodeToControllerChannelManager id=2 name=heartbeat] Client requested disconnect from node 1 (org.apache.kafka.clients.NetworkClient)
+[2025-12-24 10:36:00,757] INFO [broker-2-to-controller-heartbeat-channel-manager]: Recorded new KRaft controller, from now on will use node nj1-4.kafka-1.int-0:1645 (id: 1 rack: null) (kafka.server.NodeToControllerRequestThread)
+[2025-12-24 10:36:00,781] INFO [MetadataLoader id=2] initializeNewPublishers: the loader is still catching up because we still don't know the high water mark yet. (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,781] INFO [broker-2-to-controller-alter-partition-channel-manager]: Recorded new KRaft controller, from now on will use node nj1-4.kafka-1.int-0:1645 (id: 1 rack: null) (kafka.server.NodeToControllerRequestThread)
+[2025-12-24 10:36:00,784] INFO [broker-2-to-controller-directory-assignments-channel-manager]: Recorded new KRaft controller, from now on will use node nj1-4.kafka-1.int-0:1645 (id: 1 rack: null) (kafka.server.NodeToControllerRequestThread)
+[2025-12-24 10:36:00,806] INFO [broker-2-to-controller-heartbeat-channel-manager]: Recorded new KRaft controller, from now on will use node nj1-4.kafka-1.int-0:1645 (id: 1 rack: null) (kafka.server.NodeToControllerRequestThread)
+[2025-12-24 10:36:00,818] INFO [RaftManager id=2] High watermark set to Optional[LogOffsetMetadata(offset=1, metadata=Optional.empty)] for the first time for epoch 1 (org.apache.kafka.raft.FollowerState)
+[2025-12-24 10:36:00,819] INFO [RaftManager id=2] Setting the next offset of org.apache.kafka.image.loader.MetadataLoader@109824897 to 0 since there are no snapshots (org.apache.kafka.raft.KafkaRaftClient)
+[2025-12-24 10:36:00,820] INFO [RaftManager id=2] Setting the next offset of org.apache.kafka.controller.QuorumController$QuorumMetaLogListener@929117646 to 0 since there are no snapshots (org.apache.kafka.raft.KafkaRaftClient)
+[2025-12-24 10:36:00,821] INFO [MetadataLoader id=2] maybePublishMetadata(LOG_DELTA): The loader is still catching up because we have not loaded a controller record as of offset 0 and high water mark is 1 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,848] INFO [BrokerLifecycleManager id=2] Successfully registered broker 2 with broker epoch 5 (kafka.server.BrokerLifecycleManager)
+[2025-12-24 10:36:00,849] INFO [MetadataLoader id=2] maybePublishMetadata(LOG_DELTA): The loader finished catching up to the current high water mark of 5 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,851] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing SnapshotGenerator with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,851] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing KRaftMetadataCachePublisher with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,851] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing FeaturesPublisher with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,851] INFO [ControllerServer id=2] Loaded new metadata Features(metadataVersion=3.9-IV0, finalizedFeatures={metadata.version=21}, finalizedFeaturesEpoch=4). (org.apache.kafka.metadata.publisher.FeaturesPublisher)
+[2025-12-24 10:36:00,851] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing ControllerRegistrationsPublisher with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,851] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing ControllerRegistrationManager with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,851] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing DynamicConfigPublisher controller id=2 with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,852] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing DynamicClientQuotaPublisher controller id=2 with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,853] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing ScramPublisher controller id=2 with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,853] INFO [ControllerRegistrationManager id=2 incarnation=x8cjNRm6RH-WqwJa1yzaxA] sendControllerRegistration: attempting to send ControllerRegistrationRequestData(controllerId=2, incarnationId=x8cjNRm6RH-WqwJa1yzaxA, zkMigrationReady=false, listeners=[Listener(name='CONTROLLER', host='nj1-4.kafka-2.int-0', port=1652, securityProtocol=0)], features=[Feature(name='kraft.version', minSupportedVersion=0, maxSupportedVersion=1), Feature(name='metadata.version', minSupportedVersion=1, maxSupportedVersion=21)]) (kafka.server.ControllerRegistrationManager)
+[2025-12-24 10:36:00,853] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing DelegationTokenPublisher controller id=2 with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,854] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing ControllerMetadataMetricsPublisher with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,854] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing AclPublisher controller id=2 with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,855] INFO [AclPublisher controller id=2] Loading authorizer snapshot at offset 4 (kafka.server.metadata.AclPublisher)
+[2025-12-24 10:36:00,855] INFO [StandardAuthorizer 2] Initialized with 0 acl(s). (org.apache.kafka.metadata.authorizer.StandardAuthorizerData)
+[2025-12-24 10:36:00,855] INFO [StandardAuthorizer 2] Completed initial ACL load process. (org.apache.kafka.metadata.authorizer.StandardAuthorizerData)
+[2025-12-24 10:36:00,855] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing MetadataVersionPublisher(id=2) with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,855] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing BrokerMetadataPublisher with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,855] INFO [BrokerMetadataPublisher id=2] Publishing initial metadata at offset OffsetAndEpoch(offset=4, epoch=1) with metadata.version 3.9-IV0. (kafka.server.metadata.BrokerMetadataPublisher)
+[2025-12-24 10:36:00,856] INFO Loading logs from log dirs ArrayBuffer(/mnt/data-1/nj1-4, /mnt/data-2/nj1-4, /mnt/data-3/nj1-4) (kafka.log.LogManager)
+[2025-12-24 10:36:00,858] INFO No logs found to be loaded in /mnt/data-1/nj1-4 (kafka.log.LogManager)
+[2025-12-24 10:36:00,860] INFO No logs found to be loaded in /mnt/data-2/nj1-4 (kafka.log.LogManager)
+[2025-12-24 10:36:00,860] INFO No logs found to be loaded in /mnt/data-3/nj1-4 (kafka.log.LogManager)
+[2025-12-24 10:36:00,863] INFO Loaded 0 logs in 6ms (kafka.log.LogManager)
+[2025-12-24 10:36:00,863] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2025-12-24 10:36:00,864] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2025-12-24 10:36:00,892] INFO [ControllerRegistrationManager id=2 incarnation=x8cjNRm6RH-WqwJa1yzaxA] RegistrationResponseHandler: controller acknowledged ControllerRegistrationRequest. (kafka.server.ControllerRegistrationManager)
+[2025-12-24 10:36:00,916] INFO [kafka-log-cleaner-thread-0]: Starting (kafka.log.LogCleaner$CleanerThread)
+[2025-12-24 10:36:00,918] INFO [LogDirFailureHandler]: Starting (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2025-12-24 10:36:00,918] INFO [AddPartitionsToTxnSenderThread-2]: Starting (kafka.server.AddPartitionsToTxnManager)
+[2025-12-24 10:36:00,918] INFO [GroupCoordinator 2]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:00,920] INFO [GroupCoordinator 2]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:00,920] INFO [TransactionCoordinator id=2] Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2025-12-24 10:36:00,921] INFO [TxnMarkerSenderThread-2]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2025-12-24 10:36:00,921] INFO [TransactionCoordinator id=2] Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2025-12-24 10:36:00,925] INFO [AclPublisher broker id=2] Loading authorizer snapshot at offset 4 (kafka.server.metadata.AclPublisher)
+[2025-12-24 10:36:00,925] INFO [StandardAuthorizer 2] Initialized with 0 acl(s). (org.apache.kafka.metadata.authorizer.StandardAuthorizerData)
+[2025-12-24 10:36:00,925] INFO [StandardAuthorizer 2] Completed initial ACL load process. (org.apache.kafka.metadata.authorizer.StandardAuthorizerData)
+[2025-12-24 10:36:00,925] INFO [MetadataLoader id=2] InitializeNewPublishers: initializing BrokerRegistrationTracker(id=2) with a snapshot at offset 4 (org.apache.kafka.image.loader.MetadataLoader)
+[2025-12-24 10:36:00,941] INFO [ControllerRegistrationManager id=2 incarnation=x8cjNRm6RH-WqwJa1yzaxA] Our registration has been persisted to the metadata log. (kafka.server.ControllerRegistrationManager)
+[2025-12-24 10:36:00,953] INFO [BrokerLifecycleManager id=2] The broker has caught up. Transitioning from STARTING to RECOVERY. (kafka.server.BrokerLifecycleManager)
+[2025-12-24 10:36:00,953] INFO [BrokerServer id=2] Finished waiting for the controller to acknowledge that we are caught up (kafka.server.BrokerServer)
+[2025-12-24 10:36:00,953] INFO [BrokerServer id=2] Waiting for the initial broker metadata update to be published (kafka.server.BrokerServer)
+[2025-12-24 10:36:00,953] INFO [BrokerServer id=2] Finished waiting for the initial broker metadata update to be published (kafka.server.BrokerServer)
+[2025-12-24 10:36:00,954] INFO KafkaConfig values: 
+	advertised.listeners = PLAINTEXT://nj1-4.kafka-2.ext-0:1650,SSL://nj1-4.kafka-2.ext-0:1651,INTERNAL://nj1-4.kafka-2.int-0:1655
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = org.apache.kafka.metadata.authorizer.StandardAuthorizer
+	auto.create.topics.enable = true
+	auto.include.jmx.reporter = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.heartbeat.interval.ms = 2000
+	broker.id = 2
+	broker.id.generation.enable = true
+	broker.rack = null
+	broker.session.timeout.ms = 9000
+	client.quota.callback.class = null
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = producer
+	compression.zstd.level = 3
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.listener.names = CONTROLLER
+	controller.quorum.append.linger.ms = 25
+	controller.quorum.bootstrap.servers = []
+	controller.quorum.election.backoff.max.ms = 1000
+	controller.quorum.election.timeout.ms = 20000
+	controller.quorum.fetch.timeout.ms = 10000
+	controller.quorum.request.timeout.ms = 2000
+	controller.quorum.retry.backoff.ms = 20
+	controller.quorum.voters = [1@nj1-4.kafka-1.int-0:1645, 2@nj1-4.kafka-2.int-0:1652, 3@nj1-4.kafka-3.int-0:1659, 4@nj1-4.kafka-4.int-0:1666]
+	controller.quota.window.num = 11
+	controller.quota.window.size.seconds = 1
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delegation.token.secret.key = null
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	early.start.listeners = null
+	eligible.leader.replicas.enable = false
+	fetch.max.bytes = 57671680
+	fetch.purgatory.purge.interval.requests = 1000
+	group.consumer.assignors = [org.apache.kafka.coordinator.group.assignor.UniformAssignor, org.apache.kafka.coordinator.group.assignor.RangeAssignor]
+	group.consumer.heartbeat.interval.ms = 5000
+	group.consumer.max.heartbeat.interval.ms = 15000
+	group.consumer.max.session.timeout.ms = 60000
+	group.consumer.max.size = 2147483647
+	group.consumer.migration.policy = disabled
+	group.consumer.min.heartbeat.interval.ms = 5000
+	group.consumer.min.session.timeout.ms = 45000
+	group.consumer.session.timeout.ms = 45000
+	group.coordinator.append.linger.ms = 10
+	group.coordinator.new.enable = false
+	group.coordinator.rebalance.protocols = [classic]
+	group.coordinator.threads = 1
+	group.initial.rebalance.delay.ms = 3000
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	group.share.delivery.count.limit = 5
+	group.share.enable = false
+	group.share.heartbeat.interval.ms = 5000
+	group.share.max.groups = 10
+	group.share.max.heartbeat.interval.ms = 15000
+	group.share.max.record.lock.duration.ms = 60000
+	group.share.max.session.timeout.ms = 60000
+	group.share.max.size = 200
+	group.share.min.heartbeat.interval.ms = 5000
+	group.share.min.record.lock.duration.ms = 15000
+	group.share.min.session.timeout.ms = 45000
+	group.share.partition.max.record.locks = 200
+	group.share.record.lock.duration.ms = 30000
+	group.share.session.timeout.ms = 45000
+	initial.broker.registration.timeout.ms = 60000
+	inter.broker.listener.name = INTERNAL
+	inter.broker.protocol.version = 3.9-IV0
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = CONTROLLER:PLAINTEXT,INTERNAL:PLAINTEXT,PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = PLAINTEXT://nj1-4.kafka-2.ext-0:1650,SSL://nj1-4.kafka-2.ext-0:1651,INTERNAL://nj1-4.kafka-2.int-0:1655,CONTROLLER://nj1-4.kafka-2.int-0:1652
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dir.failure.timeout.ms = 30000
+	log.dirs = /mnt/data-1/nj1-4,/mnt/data-2/nj1-4,/mnt/data-3/nj1-4
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.initial.task.delay.ms = 30000
+	log.local.retention.bytes = -2
+	log.local.retention.ms = -2
+	log.message.downconversion.enable = true
+	log.message.format.version = 3.0-IV1
+	log.message.timestamp.after.max.ms = 9223372036854775807
+	log.message.timestamp.before.max.ms = 9223372036854775807
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = LogAppendTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connection.creation.rate = 2147483647
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	max.request.partition.size.limit = 2000
+	message.max.bytes = 10485760
+	metadata.log.dir = null
+	metadata.log.max.record.bytes.between.snapshots = 20971520
+	metadata.log.max.snapshot.interval.ms = 3600000
+	metadata.log.segment.bytes = 1073741824
+	metadata.log.segment.min.bytes = 8388608
+	metadata.log.segment.ms = 604800000
+	metadata.max.idle.interval.ms = 500
+	metadata.max.retention.bytes = 104857600
+	metadata.max.retention.ms = 604800000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	node.id = 2
+	num.io.threads = 8
+	num.network.threads = 8
+	num.partitions = 3
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 8
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	principal.builder.class = class org.apache.kafka.common.security.authenticator.DefaultKafkaPrincipalBuilder
+	process.roles = [broker, controller]
+	producer.id.expiration.check.interval.ms = 600000
+	producer.id.expiration.ms = 86400000
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	remote.fetch.max.wait.ms = 500
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.copier.thread.pool.size = -1
+	remote.log.manager.copy.max.bytes.per.second = 9223372036854775807
+	remote.log.manager.copy.quota.window.num = 11
+	remote.log.manager.copy.quota.window.size.seconds = 1
+	remote.log.manager.expiration.thread.pool.size = -1
+	remote.log.manager.fetch.max.bytes.per.second = 9223372036854775807
+	remote.log.manager.fetch.quota.window.num = 11
+	remote.log.manager.fetch.quota.window.size.seconds = 1
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.custom.metadata.max.bytes = 128
+	remote.log.metadata.manager.class.name = org.apache.kafka.server.log.remote.metadata.storage.TopicBasedRemoteLogMetadataManager
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = rlmm.config.
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = rsm.config.
+	remote.log.storage.system.enable = false
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 10485760
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 30000
+	replica.selector.class = null
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism.controller.protocol = GSSAPI
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	sasl.server.callback.handler.class = null
+	sasl.server.max.receive.size = 524288
+	security.inter.broker.protocol = PLAINTEXT
+	security.providers = null
+	server.max.startup.time.ms = 9223372036854775807
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	socket.listen.backlog.size = 50
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.allow.dn.changes = false
+	ssl.allow.san.changes = false
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = DEFAULT
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	telemetry.max.bytes = 1048576
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+	transaction.max.timeout.ms = 900000
+	transaction.partition.verification.enable = true
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	unclean.leader.election.interval.ms = 300000
+	unstable.api.versions.enable = false
+	unstable.feature.versions.enable = false
+	zookeeper.clientCnxnSocket = null
+	zookeeper.connect = null
+	zookeeper.connection.timeout.ms = null
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.metadata.migration.enable = false
+	zookeeper.metadata.migration.min.batch.size = 200
+	zookeeper.session.timeout.ms = 18000
+	zookeeper.set.acl = false
+	zookeeper.ssl.cipher.suites = null
+	zookeeper.ssl.client.enable = false
+	zookeeper.ssl.crl.enable = false
+	zookeeper.ssl.enabled.protocols = null
+	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+	zookeeper.ssl.keystore.location = null
+	zookeeper.ssl.keystore.password = null
+	zookeeper.ssl.keystore.type = null
+	zookeeper.ssl.ocsp.enable = false
+	zookeeper.ssl.protocol = TLSv1.2
+	zookeeper.ssl.truststore.location = null
+	zookeeper.ssl.truststore.password = null
+	zookeeper.ssl.truststore.type = null
+ (kafka.server.KafkaConfig)
+[2025-12-24 10:36:00,958] INFO [BrokerServer id=2] Waiting for the broker to be unfenced (kafka.server.BrokerServer)
+[2025-12-24 10:36:00,989] INFO [BrokerLifecycleManager id=2] The broker has been unfenced. Transitioning from RECOVERY to RUNNING. (kafka.server.BrokerLifecycleManager)
+[2025-12-24 10:36:00,989] INFO [BrokerServer id=2] Finished waiting for the broker to be unfenced (kafka.server.BrokerServer)
+[2025-12-24 10:36:00,989] INFO authorizerStart completed for endpoint PLAINTEXT. Endpoint is now READY. (org.apache.kafka.server.network.EndpointReadyFutures)
+[2025-12-24 10:36:00,989] INFO authorizerStart completed for endpoint INTERNAL. Endpoint is now READY. (org.apache.kafka.server.network.EndpointReadyFutures)
+[2025-12-24 10:36:00,989] INFO authorizerStart completed for endpoint SSL. Endpoint is now READY. (org.apache.kafka.server.network.EndpointReadyFutures)
+[2025-12-24 10:36:00,990] INFO [SocketServer listenerType=BROKER, nodeId=2] Enabling request processing. (kafka.network.SocketServer)
+[2025-12-24 10:36:00,990] INFO Awaiting socket connections on nj1-4.kafka-2.ext-0:1650. (kafka.network.DataPlaneAcceptor)
+[2025-12-24 10:36:00,991] INFO Awaiting socket connections on nj1-4.kafka-2.int-0:1655. (kafka.network.DataPlaneAcceptor)
+[2025-12-24 10:36:00,992] INFO Awaiting socket connections on nj1-4.kafka-2.ext-0:1651. (kafka.network.DataPlaneAcceptor)
+[2025-12-24 10:36:00,993] INFO [BrokerServer id=2] Waiting for all of the authorizer futures to be completed (kafka.server.BrokerServer)
+[2025-12-24 10:36:00,993] INFO [BrokerServer id=2] Finished waiting for all of the authorizer futures to be completed (kafka.server.BrokerServer)
+[2025-12-24 10:36:00,993] INFO [BrokerServer id=2] Waiting for all of the SocketServer Acceptors to be started (kafka.server.BrokerServer)
+[2025-12-24 10:36:00,993] INFO [BrokerServer id=2] Finished waiting for all of the SocketServer Acceptors to be started (kafka.server.BrokerServer)
+[2025-12-24 10:36:00,993] INFO [BrokerServer id=2] Transition from STARTING to STARTED (kafka.server.BrokerServer)
+[2025-12-24 10:36:00,993] INFO Kafka version: 3.9.0 (org.apache.kafka.common.utils.AppInfoParser)
+[2025-12-24 10:36:00,993] INFO Kafka commitId: a60e31147e6b01ee (org.apache.kafka.common.utils.AppInfoParser)
+[2025-12-24 10:36:00,993] INFO Kafka startTimeMs: 1766590560993 (org.apache.kafka.common.utils.AppInfoParser)
+[2025-12-24 10:36:00,994] INFO [KafkaRaftServer nodeId=2] Kafka Server started (kafka.server.KafkaRaftServer)
+[2025-12-24 10:36:01,460] INFO Sent auto-creation request for Set(test-topic-0000000-GUO87Ks) to the active controller. (kafka.server.DefaultAutoTopicCreationManager)
+[2025-12-24 10:36:01,486] INFO [ReplicaFetcherManager on broker 2] Removed fetcher for partitions Set(test-topic-0000000-GUO87Ks-9, test-topic-0000000-GUO87Ks-1, test-topic-0000000-GUO87Ks-4) (kafka.server.ReplicaFetcherManager)
+[2025-12-24 10:36:01,501] INFO [LogLoader partition=test-topic-0000000-GUO87Ks-9, dir=/mnt/data-1/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,502] INFO Created log for partition test-topic-0000000-GUO87Ks-9 in /mnt/data-1/nj1-4/test-topic-0000000-GUO87Ks-9 with properties {min.insync.replicas=2} (kafka.log.LogManager)
+[2025-12-24 10:36:01,503] INFO [Partition test-topic-0000000-GUO87Ks-9 broker=2] No checkpointed highwatermark is found for partition test-topic-0000000-GUO87Ks-9 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,503] INFO [Partition test-topic-0000000-GUO87Ks-9 broker=2] Log loaded for partition test-topic-0000000-GUO87Ks-9 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,509] INFO [LogLoader partition=test-topic-0000000-GUO87Ks-1, dir=/mnt/data-2/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,510] INFO Created log for partition test-topic-0000000-GUO87Ks-1 in /mnt/data-2/nj1-4/test-topic-0000000-GUO87Ks-1 with properties {min.insync.replicas=2} (kafka.log.LogManager)
+[2025-12-24 10:36:01,510] INFO [Partition test-topic-0000000-GUO87Ks-1 broker=2] No checkpointed highwatermark is found for partition test-topic-0000000-GUO87Ks-1 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,510] INFO [Partition test-topic-0000000-GUO87Ks-1 broker=2] Log loaded for partition test-topic-0000000-GUO87Ks-1 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,512] INFO [LogLoader partition=test-topic-0000000-GUO87Ks-4, dir=/mnt/data-3/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,512] INFO Created log for partition test-topic-0000000-GUO87Ks-4 in /mnt/data-3/nj1-4/test-topic-0000000-GUO87Ks-4 with properties {min.insync.replicas=2} (kafka.log.LogManager)
+[2025-12-24 10:36:01,513] INFO [Partition test-topic-0000000-GUO87Ks-4 broker=2] No checkpointed highwatermark is found for partition test-topic-0000000-GUO87Ks-4 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,513] INFO [Partition test-topic-0000000-GUO87Ks-4 broker=2] Log loaded for partition test-topic-0000000-GUO87Ks-4 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,517] INFO [LogLoader partition=test-topic-0000000-GUO87Ks-8, dir=/mnt/data-1/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,517] INFO Created log for partition test-topic-0000000-GUO87Ks-8 in /mnt/data-1/nj1-4/test-topic-0000000-GUO87Ks-8 with properties {min.insync.replicas=2} (kafka.log.LogManager)
+[2025-12-24 10:36:01,517] INFO [Partition test-topic-0000000-GUO87Ks-8 broker=2] No checkpointed highwatermark is found for partition test-topic-0000000-GUO87Ks-8 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,517] INFO [Partition test-topic-0000000-GUO87Ks-8 broker=2] Log loaded for partition test-topic-0000000-GUO87Ks-8 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,519] INFO [LogLoader partition=test-topic-0000000-GUO87Ks-0, dir=/mnt/data-2/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,519] INFO Created log for partition test-topic-0000000-GUO87Ks-0 in /mnt/data-2/nj1-4/test-topic-0000000-GUO87Ks-0 with properties {min.insync.replicas=2} (kafka.log.LogManager)
+[2025-12-24 10:36:01,519] INFO [Partition test-topic-0000000-GUO87Ks-0 broker=2] No checkpointed highwatermark is found for partition test-topic-0000000-GUO87Ks-0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,520] INFO [Partition test-topic-0000000-GUO87Ks-0 broker=2] Log loaded for partition test-topic-0000000-GUO87Ks-0 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,521] INFO [LogLoader partition=test-topic-0000000-GUO87Ks-3, dir=/mnt/data-3/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,522] INFO Created log for partition test-topic-0000000-GUO87Ks-3 in /mnt/data-3/nj1-4/test-topic-0000000-GUO87Ks-3 with properties {min.insync.replicas=2} (kafka.log.LogManager)
+[2025-12-24 10:36:01,522] INFO [Partition test-topic-0000000-GUO87Ks-3 broker=2] No checkpointed highwatermark is found for partition test-topic-0000000-GUO87Ks-3 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,522] INFO [Partition test-topic-0000000-GUO87Ks-3 broker=2] Log loaded for partition test-topic-0000000-GUO87Ks-3 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,524] INFO [LogLoader partition=test-topic-0000000-GUO87Ks-6, dir=/mnt/data-1/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,524] INFO Created log for partition test-topic-0000000-GUO87Ks-6 in /mnt/data-1/nj1-4/test-topic-0000000-GUO87Ks-6 with properties {min.insync.replicas=2} (kafka.log.LogManager)
+[2025-12-24 10:36:01,524] INFO [Partition test-topic-0000000-GUO87Ks-6 broker=2] No checkpointed highwatermark is found for partition test-topic-0000000-GUO87Ks-6 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,524] INFO [Partition test-topic-0000000-GUO87Ks-6 broker=2] Log loaded for partition test-topic-0000000-GUO87Ks-6 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,526] INFO [LogLoader partition=test-topic-0000000-GUO87Ks-7, dir=/mnt/data-2/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,526] INFO Created log for partition test-topic-0000000-GUO87Ks-7 in /mnt/data-2/nj1-4/test-topic-0000000-GUO87Ks-7 with properties {min.insync.replicas=2} (kafka.log.LogManager)
+[2025-12-24 10:36:01,526] INFO [Partition test-topic-0000000-GUO87Ks-7 broker=2] No checkpointed highwatermark is found for partition test-topic-0000000-GUO87Ks-7 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,526] INFO [Partition test-topic-0000000-GUO87Ks-7 broker=2] Log loaded for partition test-topic-0000000-GUO87Ks-7 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,526] INFO [ReplicaFetcherManager on broker 2] Removed fetcher for partitions Set(test-topic-0000000-GUO87Ks-8, test-topic-0000000-GUO87Ks-6, test-topic-0000000-GUO87Ks-7, test-topic-0000000-GUO87Ks-0, test-topic-0000000-GUO87Ks-3) (kafka.server.ReplicaFetcherManager)
+[2025-12-24 10:36:01,538] INFO [ReplicaFetcherThread-2-1]: Starting (kafka.server.ReplicaFetcherThread)
+[2025-12-24 10:36:01,539] INFO [ReplicaFetcherManager on broker 2] Added fetcher to broker 1 for partitions HashMap(test-topic-0000000-GUO87Ks-8 -> InitialFetchState(Some(ezaC-NtKRJWcgNO9S17a1Q),BrokerEndPoint(id=1, host=nj1-4.kafka-1.int-0:1648),0,0), test-topic-0000000-GUO87Ks-0 -> InitialFetchState(Some(ezaC-NtKRJWcgNO9S17a1Q),BrokerEndPoint(id=1, host=nj1-4.kafka-1.int-0:1648),0,0)) (kafka.server.ReplicaFetcherManager)
+[2025-12-24 10:36:01,541] INFO [ReplicaFetcherManager on broker 2] Added fetcher to broker 1 for partitions HashMap(test-topic-0000000-GUO87Ks-7 -> InitialFetchState(Some(ezaC-NtKRJWcgNO9S17a1Q),BrokerEndPoint(id=1, host=nj1-4.kafka-1.int-0:1648),0,0)) (kafka.server.ReplicaFetcherManager)
+[2025-12-24 10:36:01,541] INFO [ReplicaFetcherThread-3-1]: Starting (kafka.server.ReplicaFetcherThread)
+[2025-12-24 10:36:01,541] INFO [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=2] Truncating partition test-topic-0000000-GUO87Ks-8 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+[2025-12-24 10:36:01,542] INFO [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=3] Truncating partition test-topic-0000000-GUO87Ks-7 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+[2025-12-24 10:36:01,542] INFO [UnifiedLog partition=test-topic-0000000-GUO87Ks-7, dir=/mnt/data-2/nj1-4] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+[2025-12-24 10:36:01,542] INFO [UnifiedLog partition=test-topic-0000000-GUO87Ks-8, dir=/mnt/data-1/nj1-4] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+[2025-12-24 10:36:01,543] INFO [ReplicaFetcher replicaId=2, leaderId=1, fetcherId=2] Truncating partition test-topic-0000000-GUO87Ks-0 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+[2025-12-24 10:36:01,543] INFO [UnifiedLog partition=test-topic-0000000-GUO87Ks-0, dir=/mnt/data-2/nj1-4] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+[2025-12-24 10:36:01,554] INFO [ReplicaFetcherThread-4-3]: Starting (kafka.server.ReplicaFetcherThread)
+[2025-12-24 10:36:01,554] INFO [ReplicaFetcherManager on broker 2] Added fetcher to broker 3 for partitions HashMap(test-topic-0000000-GUO87Ks-6 -> InitialFetchState(Some(ezaC-NtKRJWcgNO9S17a1Q),BrokerEndPoint(id=3, host=nj1-4.kafka-3.int-0:1662),0,0)) (kafka.server.ReplicaFetcherManager)
+[2025-12-24 10:36:01,555] INFO [ReplicaFetcher replicaId=2, leaderId=3, fetcherId=4] Truncating partition test-topic-0000000-GUO87Ks-6 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+[2025-12-24 10:36:01,555] INFO [UnifiedLog partition=test-topic-0000000-GUO87Ks-6, dir=/mnt/data-1/nj1-4] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+[2025-12-24 10:36:01,556] INFO [ReplicaFetcherThread-7-4]: Starting (kafka.server.ReplicaFetcherThread)
+[2025-12-24 10:36:01,556] INFO [ReplicaFetcherManager on broker 2] Added fetcher to broker 4 for partitions HashMap(test-topic-0000000-GUO87Ks-3 -> InitialFetchState(Some(ezaC-NtKRJWcgNO9S17a1Q),BrokerEndPoint(id=4, host=nj1-4.kafka-4.int-0:1669),0,0)) (kafka.server.ReplicaFetcherManager)
+[2025-12-24 10:36:01,556] INFO [ReplicaFetcher replicaId=2, leaderId=4, fetcherId=7] Truncating partition test-topic-0000000-GUO87Ks-3 with TruncationState(offset=0, completed=true) due to local high watermark 0 (kafka.server.ReplicaFetcherThread)
+[2025-12-24 10:36:01,556] INFO [UnifiedLog partition=test-topic-0000000-GUO87Ks-3, dir=/mnt/data-3/nj1-4] Truncating to 0 has no effect as the largest offset in the log is -1 (kafka.log.UnifiedLog)
+[2025-12-24 10:36:01,563] INFO [DynamicConfigPublisher broker id=2] Updating topic test-topic-0000000-GUO87Ks with new configuration : min.insync.replicas -> 2 (kafka.server.metadata.DynamicConfigPublisher)
+[2025-12-24 10:36:01,660] INFO [AssignmentsManager id=2] maybeSendAssignments: sending 8 assignments; invalidated 0 assignments prior to sending. (org.apache.kafka.server.AssignmentsManager)
+[2025-12-24 10:36:01,699] INFO [ReplicaFetcherManager on broker 2] Removed fetcher for partitions Set(__consumer_offsets-47, __consumer_offsets-16, __consumer_offsets-12, __consumer_offsets-42, __consumer_offsets-23, __consumer_offsets-28, __consumer_offsets-25, __consumer_offsets-7, __consumer_offsets-8, __consumer_offsets-36, __consumer_offsets-2, __consumer_offsets-34) (kafka.server.ReplicaFetcherManager)
+[2025-12-24 10:36:01,702] INFO [LogLoader partition=__consumer_offsets-47, dir=/mnt/data-3/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,702] INFO Created log for partition __consumer_offsets-47 in /mnt/data-3/nj1-4/__consumer_offsets-47 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2025-12-24 10:36:01,702] INFO [Partition __consumer_offsets-47 broker=2] No checkpointed highwatermark is found for partition __consumer_offsets-47 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,702] INFO [Partition __consumer_offsets-47 broker=2] Log loaded for partition __consumer_offsets-47 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,705] INFO [LogLoader partition=__consumer_offsets-16, dir=/mnt/data-1/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,705] INFO Created log for partition __consumer_offsets-16 in /mnt/data-1/nj1-4/__consumer_offsets-16 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2025-12-24 10:36:01,705] INFO [Partition __consumer_offsets-16 broker=2] No checkpointed highwatermark is found for partition __consumer_offsets-16 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,705] INFO [Partition __consumer_offsets-16 broker=2] Log loaded for partition __consumer_offsets-16 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,707] INFO [LogLoader partition=__consumer_offsets-12, dir=/mnt/data-2/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,708] INFO Created log for partition __consumer_offsets-12 in /mnt/data-2/nj1-4/__consumer_offsets-12 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2025-12-24 10:36:01,708] INFO [Partition __consumer_offsets-12 broker=2] No checkpointed highwatermark is found for partition __consumer_offsets-12 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,708] INFO [Partition __consumer_offsets-12 broker=2] Log loaded for partition __consumer_offsets-12 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,710] INFO [LogLoader partition=__consumer_offsets-42, dir=/mnt/data-3/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,710] INFO Created log for partition __consumer_offsets-42 in /mnt/data-3/nj1-4/__consumer_offsets-42 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2025-12-24 10:36:01,710] INFO [Partition __consumer_offsets-42 broker=2] No checkpointed highwatermark is found for partition __consumer_offsets-42 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,710] INFO [Partition __consumer_offsets-42 broker=2] Log loaded for partition __consumer_offsets-42 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,712] INFO [LogLoader partition=__consumer_offsets-23, dir=/mnt/data-1/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,713] INFO Created log for partition __consumer_offsets-23 in /mnt/data-1/nj1-4/__consumer_offsets-23 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2025-12-24 10:36:01,713] INFO [Partition __consumer_offsets-23 broker=2] No checkpointed highwatermark is found for partition __consumer_offsets-23 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,713] INFO [Partition __consumer_offsets-23 broker=2] Log loaded for partition __consumer_offsets-23 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,715] INFO [LogLoader partition=__consumer_offsets-28, dir=/mnt/data-2/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,715] INFO Created log for partition __consumer_offsets-28 in /mnt/data-2/nj1-4/__consumer_offsets-28 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2025-12-24 10:36:01,715] INFO [Partition __consumer_offsets-28 broker=2] No checkpointed highwatermark is found for partition __consumer_offsets-28 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,715] INFO [Partition __consumer_offsets-28 broker=2] Log loaded for partition __consumer_offsets-28 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,717] INFO [LogLoader partition=__consumer_offsets-25, dir=/mnt/data-3/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,717] INFO Created log for partition __consumer_offsets-25 in /mnt/data-3/nj1-4/__consumer_offsets-25 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2025-12-24 10:36:01,717] INFO [Partition __consumer_offsets-25 broker=2] No checkpointed highwatermark is found for partition __consumer_offsets-25 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,717] INFO [Partition __consumer_offsets-25 broker=2] Log loaded for partition __consumer_offsets-25 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,719] INFO [LogLoader partition=__consumer_offsets-7, dir=/mnt/data-1/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,720] INFO Created log for partition __consumer_offsets-7 in /mnt/data-1/nj1-4/__consumer_offsets-7 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2025-12-24 10:36:01,720] INFO [Partition __consumer_offsets-7 broker=2] No checkpointed highwatermark is found for partition __consumer_offsets-7 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,720] INFO [Partition __consumer_offsets-7 broker=2] Log loaded for partition __consumer_offsets-7 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,722] INFO [LogLoader partition=__consumer_offsets-8, dir=/mnt/data-2/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,722] INFO Created log for partition __consumer_offsets-8 in /mnt/data-2/nj1-4/__consumer_offsets-8 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2025-12-24 10:36:01,722] INFO [Partition __consumer_offsets-8 broker=2] No checkpointed highwatermark is found for partition __consumer_offsets-8 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,722] INFO [Partition __consumer_offsets-8 broker=2] Log loaded for partition __consumer_offsets-8 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,728] INFO [LogLoader partition=__consumer_offsets-36, dir=/mnt/data-3/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,728] INFO Created log for partition __consumer_offsets-36 in /mnt/data-3/nj1-4/__consumer_offsets-36 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2025-12-24 10:36:01,728] INFO [Partition __consumer_offsets-36 broker=2] No checkpointed highwatermark is found for partition __consumer_offsets-36 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,728] INFO [Partition __consumer_offsets-36 broker=2] Log loaded for partition __consumer_offsets-36 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,730] INFO [LogLoader partition=__consumer_offsets-2, dir=/mnt/data-1/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,731] INFO Created log for partition __consumer_offsets-2 in /mnt/data-1/nj1-4/__consumer_offsets-2 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2025-12-24 10:36:01,731] INFO [Partition __consumer_offsets-2 broker=2] No checkpointed highwatermark is found for partition __consumer_offsets-2 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,731] INFO [Partition __consumer_offsets-2 broker=2] Log loaded for partition __consumer_offsets-2 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,733] INFO [LogLoader partition=__consumer_offsets-34, dir=/mnt/data-2/nj1-4] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2025-12-24 10:36:01,733] INFO Created log for partition __consumer_offsets-34 in /mnt/data-2/nj1-4/__consumer_offsets-34 with properties {cleanup.policy=compact, compression.type="producer", segment.bytes=104857600} (kafka.log.LogManager)
+[2025-12-24 10:36:01,733] INFO [Partition __consumer_offsets-34 broker=2] No checkpointed highwatermark is found for partition __consumer_offsets-34 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,733] INFO [Partition __consumer_offsets-34 broker=2] Log loaded for partition __consumer_offsets-34 with initial high watermark 0 (kafka.cluster.Partition)
+[2025-12-24 10:36:01,737] INFO [GroupCoordinator 2]: Elected as the group coordinator for partition 47 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:01,737] INFO [GroupMetadataManager brokerId=2] Scheduling loading of offsets and group metadata from __consumer_offsets-47 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,738] INFO [GroupCoordinator 2]: Elected as the group coordinator for partition 16 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:01,738] INFO [GroupMetadataManager brokerId=2] Scheduling loading of offsets and group metadata from __consumer_offsets-16 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,738] INFO [GroupCoordinator 2]: Elected as the group coordinator for partition 12 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:01,738] INFO [GroupMetadataManager brokerId=2] Scheduling loading of offsets and group metadata from __consumer_offsets-12 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,738] INFO [GroupCoordinator 2]: Elected as the group coordinator for partition 28 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:01,738] INFO [GroupMetadataManager brokerId=2] Scheduling loading of offsets and group metadata from __consumer_offsets-28 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,738] INFO [GroupCoordinator 2]: Elected as the group coordinator for partition 25 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:01,738] INFO [GroupMetadataManager brokerId=2] Scheduling loading of offsets and group metadata from __consumer_offsets-25 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,738] INFO [GroupCoordinator 2]: Elected as the group coordinator for partition 42 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:01,738] INFO [GroupMetadataManager brokerId=2] Scheduling loading of offsets and group metadata from __consumer_offsets-42 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,738] INFO [GroupCoordinator 2]: Elected as the group coordinator for partition 7 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:01,738] INFO [GroupMetadataManager brokerId=2] Scheduling loading of offsets and group metadata from __consumer_offsets-7 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,738] INFO [GroupCoordinator 2]: Elected as the group coordinator for partition 23 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:01,738] INFO [GroupMetadataManager brokerId=2] Scheduling loading of offsets and group metadata from __consumer_offsets-23 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,738] INFO [GroupCoordinator 2]: Elected as the group coordinator for partition 8 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:01,738] INFO [GroupMetadataManager brokerId=2] Scheduling loading of offsets and group metadata from __consumer_offsets-8 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,738] INFO [GroupCoordinator 2]: Elected as the group coordinator for partition 36 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:01,738] INFO [GroupMetadataManager brokerId=2] Scheduling loading of offsets and group metadata from __consumer_offsets-36 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,738] INFO [GroupCoordinator 2]: Elected as the group coordinator for partition 2 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:01,738] INFO [GroupMetadataManager brokerId=2] Scheduling loading of offsets and group metadata from __consumer_offsets-2 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,738] INFO [GroupCoordinator 2]: Elected as the group coordinator for partition 34 in epoch 0 (kafka.coordinator.group.GroupCoordinator)
+[2025-12-24 10:36:01,738] INFO [GroupMetadataManager brokerId=2] Scheduling loading of offsets and group metadata from __consumer_offsets-34 for epoch 0 (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,738] INFO [DynamicConfigPublisher broker id=2] Updating topic __consumer_offsets with new configuration : compression.type -> producer,cleanup.policy -> compact,segment.bytes -> 104857600 (kafka.server.metadata.DynamicConfigPublisher)
+[2025-12-24 10:36:01,741] INFO [GroupMetadataManager brokerId=2] Finished loading offsets and group metadata from __consumer_offsets-47 in 3 milliseconds for epoch 0, of which 1 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,741] INFO [GroupMetadataManager brokerId=2] Finished loading offsets and group metadata from __consumer_offsets-16 in 3 milliseconds for epoch 0, of which 3 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,741] INFO [GroupMetadataManager brokerId=2] Finished loading offsets and group metadata from __consumer_offsets-12 in 3 milliseconds for epoch 0, of which 3 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,741] INFO [GroupMetadataManager brokerId=2] Finished loading offsets and group metadata from __consumer_offsets-28 in 3 milliseconds for epoch 0, of which 3 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,742] INFO [GroupMetadataManager brokerId=2] Finished loading offsets and group metadata from __consumer_offsets-25 in 4 milliseconds for epoch 0, of which 4 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,742] INFO [GroupMetadataManager brokerId=2] Finished loading offsets and group metadata from __consumer_offsets-42 in 4 milliseconds for epoch 0, of which 4 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,742] INFO [GroupMetadataManager brokerId=2] Finished loading offsets and group metadata from __consumer_offsets-7 in 4 milliseconds for epoch 0, of which 4 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,742] INFO [GroupMetadataManager brokerId=2] Finished loading offsets and group metadata from __consumer_offsets-23 in 4 milliseconds for epoch 0, of which 4 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,742] INFO [GroupMetadataManager brokerId=2] Finished loading offsets and group metadata from __consumer_offsets-8 in 4 milliseconds for epoch 0, of which 4 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,742] INFO [GroupMetadataManager brokerId=2] Finished loading offsets and group metadata from __consumer_offsets-36 in 4 milliseconds for epoch 0, of which 4 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,742] INFO [GroupMetadataManager brokerId=2] Finished loading offsets and group metadata from __consumer_offsets-2 in 4 milliseconds for epoch 0, of which 4 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,742] INFO [GroupMetadataManager brokerId=2] Finished loading offsets and group metadata from __consumer_offsets-34 in 4 milliseconds for epoch 0, of which 4 milliseconds was spent in the scheduler. (kafka.coordinator.group.GroupMetadataManager)
+[2025-12-24 10:36:01,826] INFO [ReplicaFetcherManager on broker 2] Removed fetcher for partitions Set(test-topic-0000000-GUO87Ks-9, test-topic-0000000-GUO87Ks-1, test-topic-0000000-GUO87Ks-4) (kafka.server.ReplicaFetcherManager)
+[2025-12-24 10:36:01,835] INFO [AssignmentsManager id=2] maybeSendAssignments: sending 17 assignments; invalidated 0 assignments prior to sending. (org.apache.kafka.server.AssignmentsManager)
+[2025-12-24 10:36:02,326] INFO [ReplicaFetcherManager on broker 2] Removed fetcher for partitions Set(__consumer_offsets-47, __consumer_offsets-16, __consumer_offsets-12, __consumer_offsets-42, __consumer_offsets-23, __consumer_offsets-28, __consumer_offsets-25, __consumer_offsets-7, __consumer_offsets-8, __consumer_offsets-36, __consumer_offsets-2, __consumer_offsets-34) (kafka.server.ReplicaFetcherManager)

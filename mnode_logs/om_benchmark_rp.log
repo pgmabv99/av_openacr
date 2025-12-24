@@ -1,61 +1,61 @@
 omcli.info omtest:om_benchmark
-dkr.report command:docker_destroy  cmd:"sudo kubectl delete pod -n nj1-4 x2w-08--nj1-sv1"  targets:19
-x2node.error node:nj1.sn2.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn2.bm sudo kubectl delete pod -n nj1-4 kafka-13--nj1-sv2"
-Error from server (NotFound): pods "kafka-13--nj1-sv2" not found
+dkr.report command:docker_destroy  cmd:"sudo kubectl delete pod -n x2w-08--nj1-sv1"  targets:19
+x2node.error node:nj1.sn2.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn2.bm sudo kubectl delete pod -n kafka-13--nj1-sv2"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn3.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn3.bm sudo kubectl delete pod -n nj1-4 kafka-14--nj1-sv3"
-Error from server (NotFound): pods "kafka-14--nj1-sv3" not found
+x2node.error node:nj1.sn3.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn3.bm sudo kubectl delete pod -n kafka-14--nj1-sv3"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn4.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn4.bm sudo kubectl delete pod -n nj1-4 kafka-15--nj1-sv4"
-Error from server (NotFound): pods "kafka-15--nj1-sv4" not found
+x2node.error node:nj1.sn4.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn4.bm sudo kubectl delete pod -n kafka-15--nj1-sv4"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn5.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn5.bm sudo kubectl delete pod -n nj1-4 kafka-16--nj1-sv5"
-Error from server (NotFound): pods "kafka-16--nj1-sv5" not found
+x2node.error node:nj1.sn5.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn5.bm sudo kubectl delete pod -n kafka-16--nj1-sv5"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n nj1-4 kafkacw-02--nj1-sv1"
-Error from server (NotFound): pods "kafkacw-02--nj1-sv1" not found
+x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n kafkacw-02--nj1-sv1"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n nj1-4 kafkaui-5--nj1-sv1"
-Error from server (NotFound): pods "kafkaui-5--nj1-sv1" not found
+x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n kafkaui-5--nj1-sv1"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn6.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn6.bm sudo kubectl delete pod -n nj1-4 kafkaw-04--nj1-sv6"
-Error from server (NotFound): pods "kafkaw-04--nj1-sv6" not found
+x2node.error node:nj1.sn6.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn6.bm sudo kubectl delete pod -n kafkaw-04--nj1-sv6"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn7.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn7.bm sudo kubectl delete pod -n nj1-4 kafkaw-12--nj1-sv7"
-Error from server (NotFound): pods "kafkaw-12--nj1-sv7" not found
+x2node.error node:nj1.sn7.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn7.bm sudo kubectl delete pod -n kafkaw-12--nj1-sv7"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n nj1-4 minio-02--nj1-sv1"
-Error from server (NotFound): pods "minio-02--nj1-sv1" not found
+x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n minio-02--nj1-sv1"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn2.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn2.bm sudo kubectl delete pod -n nj1-4 rdp-13--nj1-sv2"
-Error from server (NotFound): pods "rdp-13--nj1-sv2" not found
+x2node.error node:nj1.sn2.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn2.bm sudo kubectl delete pod -n rdp-13--nj1-sv2"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn3.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn3.bm sudo kubectl delete pod -n nj1-4 rdp-14--nj1-sv3"
-Error from server (NotFound): pods "rdp-14--nj1-sv3" not found
+x2node.error node:nj1.sn3.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn3.bm sudo kubectl delete pod -n rdp-14--nj1-sv3"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn4.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn4.bm sudo kubectl delete pod -n nj1-4 rdp-15--nj1-sv4"
-Error from server (NotFound): pods "rdp-15--nj1-sv4" not found
+x2node.error node:nj1.sn4.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn4.bm sudo kubectl delete pod -n rdp-15--nj1-sv4"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn5.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn5.bm sudo kubectl delete pod -n nj1-4 rdp-16--nj1-sv5"
-Error from server (NotFound): pods "rdp-16--nj1-sv5" not found
+x2node.error node:nj1.sn5.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn5.bm sudo kubectl delete pod -n rdp-16--nj1-sv5"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n nj1-4 rdpui-5--nj1-sv1"
-Error from server (NotFound): pods "rdpui-5--nj1-sv1" not found
+x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n rdpui-5--nj1-sv1"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn2.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn2.bm sudo kubectl delete pod -n nj1-4 x2-17--nj1-sv2"
-Error from server (NotFound): pods "x2-17--nj1-sv2" not found
+x2node.error node:nj1.sn2.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn2.bm sudo kubectl delete pod -n x2-17--nj1-sv2"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn3.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn3.bm sudo kubectl delete pod -n nj1-4 x2-18--nj1-sv3"
-Error from server (NotFound): pods "x2-18--nj1-sv3" not found
+x2node.error node:nj1.sn3.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn3.bm sudo kubectl delete pod -n x2-18--nj1-sv3"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn4.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn4.bm sudo kubectl delete pod -n nj1-4 x2-19--nj1-sv4"
-Error from server (NotFound): pods "x2-19--nj1-sv4" not found
+x2node.error node:nj1.sn4.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn4.bm sudo kubectl delete pod -n x2-19--nj1-sv4"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn5.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn5.bm sudo kubectl delete pod -n nj1-4 x2-20--nj1-sv5"
-Error from server (NotFound): pods "x2-20--nj1-sv5" not found
+x2node.error node:nj1.sn5.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn5.bm sudo kubectl delete pod -n x2-20--nj1-sv5"
+error: resource(s) were provided, but no name was specified
 
-x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n nj1-4 x2w-08--nj1-sv1"
-Error from server (NotFound): pods "x2w-08--nj1-sv1" not found
+x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n x2w-08--nj1-sv1"
+error: resource(s) were provided, but no name was specified
 
 dkr.report command:generate_dockerbuild  cmd:""  targets:11
 dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.run comment:copying script
@@ -91,194 +91,188 @@ dkr.info image:rdpui-5 file:temp/docker/rdpui-5/Dockerfile comment:copying Docke
 dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.run comment:copying script
 dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.build comment:copying script
 dkr.info image:x2w-08 file:temp/docker/x2w-08/Dockerfile comment:copying Dockerfile
-dkr.report command:docker_clean_run  cmd:"sudo sudo kubectl get pods -n nj1-4 -o wide"  targets:11
+dkr.report command:docker_clean_run  cmd:"sudo kubectl get pods -n nj1-4 -o wide"  targets:11
 pod/kafkacw-02--nj1-sv1 created
-Error response from daemon: cannot kill container: kafkacw-02: No such container: kafkacw-02
-Error response from daemon: No such container: kafkacw-02
 error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
-kafkacw-02--nj1-sv1   0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          2s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          2s    192.168.10.71   nj1.sv7   <none>           <none>
-minio-02--nj1-sv1     0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-rdp-13--nj1-sv2       0/1     Pending             0          1s    <none>          nj1.sv2   <none>           <none>
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          1s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          1s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          1s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          1s    192.168.10.11   nj1.sv1   <none>           <none>
+rdp-13--nj1-sv2       0/1     ContainerCreating   0          1s    192.168.10.21   nj1.sv2   <none>           <none>
 rdp-14--nj1-sv3       0/1     ContainerCreating   0          1s    192.168.10.31   nj1.sv3   <none>           <none>
-rdp-15--nj1-sv4       0/1     ContainerCreating   0          2s    192.168.10.41   nj1.sv4   <none>           <none>
+rdp-15--nj1-sv4       0/1     ContainerCreating   0          1s    192.168.10.41   nj1.sv4   <none>           <none>
 
 pod/kafkaui-5--nj1-sv1 created
-Error response from daemon: cannot kill container: kafkaui-5: No such container: kafkaui-5
-Error response from daemon: No such container: kafkaui-5
 error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
-kafkacw-02--nj1-sv1   0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          2s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          2s    192.168.10.71   nj1.sv7   <none>           <none>
-minio-02--nj1-sv1     0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-rdp-13--nj1-sv2       0/1     Pending             0          1s    <none>          nj1.sv2   <none>           <none>
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          1s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          1s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          1s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          1s    192.168.10.11   nj1.sv1   <none>           <none>
+rdp-13--nj1-sv2       0/1     ContainerCreating   0          1s    192.168.10.21   nj1.sv2   <none>           <none>
 rdp-14--nj1-sv3       0/1     ContainerCreating   0          1s    192.168.10.31   nj1.sv3   <none>           <none>
-rdp-15--nj1-sv4       0/1     ContainerCreating   0          2s    192.168.10.41   nj1.sv4   <none>           <none>
+rdp-15--nj1-sv4       0/1     ContainerCreating   0          1s    192.168.10.41   nj1.sv4   <none>           <none>
 
 pod/kafkaw-04--nj1-sv6 created
-Error response from daemon: cannot kill container: kafkaw-04: No such container: kafkaw-04
-Error response from daemon: No such container: kafkaw-04
 error: resource(s) were provided, but no name was specified
 
-NAME                 READY   STATUS    RESTARTS   AGE   IP       NODE      NOMINATED NODE   READINESS GATES
-kafkaw-04--nj1-sv6   0/1     Pending   0          1s    <none>   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7   0/1     Pending   0          1s    <none>   nj1.sv7   <none>           <none>
-rdp-14--nj1-sv3      0/1     Pending   0          0s    <none>   nj1.sv3   <none>           <none>
-rdp-15--nj1-sv4      0/1     Pending   0          1s    <none>   nj1.sv4   <none>           <none>
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+rdp-13--nj1-sv2       0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+rdp-14--nj1-sv3       0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
+rdp-15--nj1-sv4       0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
 
 pod/kafkaw-12--nj1-sv7 created
-Error response from daemon: cannot kill container: kafkaw-12: No such container: kafkaw-12
-Error response from daemon: No such container: kafkaw-12
 error: resource(s) were provided, but no name was specified
 
-NAME                 READY   STATUS    RESTARTS   AGE   IP       NODE      NOMINATED NODE   READINESS GATES
-kafkaw-04--nj1-sv6   0/1     Pending   0          1s    <none>   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7   0/1     Pending   0          1s    <none>   nj1.sv7   <none>           <none>
-rdp-14--nj1-sv3      0/1     Pending   0          0s    <none>   nj1.sv3   <none>           <none>
-rdp-15--nj1-sv4      0/1     Pending   0          1s    <none>   nj1.sv4   <none>           <none>
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+rdp-13--nj1-sv2       0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+rdp-14--nj1-sv3       0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
+rdp-15--nj1-sv4       0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
 
 pod/minio-02--nj1-sv1 created
-Error response from daemon: cannot kill container: minio-02: No such container: minio-02
-Error response from daemon: No such container: minio-02
 error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
-kafkacw-02--nj1-sv1   0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          2s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          2s    192.168.10.71   nj1.sv7   <none>           <none>
-minio-02--nj1-sv1     0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-rdp-13--nj1-sv2       0/1     Pending             0          1s    <none>          nj1.sv2   <none>           <none>
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          1s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          1s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          1s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          1s    192.168.10.11   nj1.sv1   <none>           <none>
+rdp-13--nj1-sv2       0/1     ContainerCreating   0          1s    192.168.10.21   nj1.sv2   <none>           <none>
 rdp-14--nj1-sv3       0/1     ContainerCreating   0          1s    192.168.10.31   nj1.sv3   <none>           <none>
-rdp-15--nj1-sv4       0/1     ContainerCreating   0          2s    192.168.10.41   nj1.sv4   <none>           <none>
+rdp-15--nj1-sv4       0/1     ContainerCreating   0          1s    192.168.10.41   nj1.sv4   <none>           <none>
 
 pod/rdp-13--nj1-sv2 created
-Error response from daemon: cannot kill container: rdp-13: No such container: rdp-13
-Error response from daemon: No such container: rdp-13
 error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
-kafkacw-02--nj1-sv1   0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          2s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          2s    192.168.10.71   nj1.sv7   <none>           <none>
-minio-02--nj1-sv1     0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-rdp-13--nj1-sv2       0/1     Pending             0          1s    <none>          nj1.sv2   <none>           <none>
-rdp-14--nj1-sv3       0/1     ContainerCreating   0          1s    192.168.10.31   nj1.sv3   <none>           <none>
-rdp-15--nj1-sv4       0/1     ContainerCreating   0          2s    192.168.10.41   nj1.sv4   <none>           <none>
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+rdp-13--nj1-sv2       0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+rdp-14--nj1-sv3       0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
+rdp-15--nj1-sv4       0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
 
 pod/rdp-14--nj1-sv3 created
-Error response from daemon: cannot kill container: rdp-14: No such container: rdp-14
-Error response from daemon: No such container: rdp-14
 error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
-kafkacw-02--nj1-sv1   0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          2s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          2s    192.168.10.71   nj1.sv7   <none>           <none>
-minio-02--nj1-sv1     0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-rdp-13--nj1-sv2       0/1     Pending             0          1s    <none>          nj1.sv2   <none>           <none>
-rdp-14--nj1-sv3       0/1     ContainerCreating   0          1s    192.168.10.31   nj1.sv3   <none>           <none>
-rdp-15--nj1-sv4       0/1     ContainerCreating   0          2s    192.168.10.41   nj1.sv4   <none>           <none>
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+rdp-13--nj1-sv2       0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+rdp-14--nj1-sv3       0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
+rdp-15--nj1-sv4       0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
 
 pod/rdp-15--nj1-sv4 created
-Error response from daemon: cannot kill container: rdp-15: No such container: rdp-15
-Error response from daemon: No such container: rdp-15
 error: resource(s) were provided, but no name was specified
 
-NAME                 READY   STATUS    RESTARTS   AGE   IP       NODE      NOMINATED NODE   READINESS GATES
-kafkaw-04--nj1-sv6   0/1     Pending   0          1s    <none>   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7   0/1     Pending   0          1s    <none>   nj1.sv7   <none>           <none>
-rdp-14--nj1-sv3      0/1     Pending   0          0s    <none>   nj1.sv3   <none>           <none>
-rdp-15--nj1-sv4      0/1     Pending   0          1s    <none>   nj1.sv4   <none>           <none>
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+rdp-13--nj1-sv2       0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+rdp-14--nj1-sv3       0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
+rdp-15--nj1-sv4       0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
 
 pod/rdp-16--nj1-sv5 created
-Error response from daemon: cannot kill container: rdp-16: No such container: rdp-16
-Error response from daemon: No such container: rdp-16
 error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
-kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          8s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          8s    <none>          nj1.sv1   <none>           <none>
-kafkaw-04--nj1-sv6    1/1     Running             0          9s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    1/1     Running             0          9s    192.168.10.71   nj1.sv7   <none>           <none>
-minio-02--nj1-sv1     1/1     Running             0          8s    192.168.10.11   nj1.sv1   <none>           <none>
-rdp-13--nj1-sv2       1/1     Running             0          8s    192.168.10.21   nj1.sv2   <none>           <none>
-rdp-14--nj1-sv3       1/1     Running             0          8s    192.168.10.31   nj1.sv3   <none>           <none>
-rdp-15--nj1-sv4       1/1     Running             0          9s    192.168.10.41   nj1.sv4   <none>           <none>
-rdp-16--nj1-sv5       0/1     Pending             0          1s    <none>          nj1.sv5   <none>           <none>
-rdpui-5--nj1-sv1      0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-x2w-08--nj1-sv1       0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
+kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.20     nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+rdp-13--nj1-sv2       1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
+rdp-14--nj1-sv3       1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
+rdp-15--nj1-sv4       1/1     Running             0          6s    192.168.10.41   nj1.sv4   <none>           <none>
+rdp-16--nj1-sv5       0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 
 pod/rdpui-5--nj1-sv1 created
-Error response from daemon: cannot kill container: rdpui-5: No such container: rdpui-5
-Error response from daemon: No such container: rdpui-5
 error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
-kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          8s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          8s    <none>          nj1.sv1   <none>           <none>
-kafkaw-04--nj1-sv6    1/1     Running             0          9s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    1/1     Running             0          9s    192.168.10.71   nj1.sv7   <none>           <none>
-minio-02--nj1-sv1     1/1     Running             0          8s    192.168.10.11   nj1.sv1   <none>           <none>
-rdp-13--nj1-sv2       1/1     Running             0          8s    192.168.10.21   nj1.sv2   <none>           <none>
-rdp-14--nj1-sv3       1/1     Running             0          8s    192.168.10.31   nj1.sv3   <none>           <none>
-rdp-15--nj1-sv4       1/1     Running             0          9s    192.168.10.41   nj1.sv4   <none>           <none>
-rdp-16--nj1-sv5       0/1     ContainerCreating   0          1s    192.168.10.51   nj1.sv5   <none>           <none>
-rdpui-5--nj1-sv1      0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-x2w-08--nj1-sv1       0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
+kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.20     nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+rdp-13--nj1-sv2       1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
+rdp-14--nj1-sv3       1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
+rdp-15--nj1-sv4       1/1     Running             0          6s    192.168.10.41   nj1.sv4   <none>           <none>
+rdp-16--nj1-sv5       0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 
 pod/x2w-08--nj1-sv1 created
-Error response from daemon: cannot kill container: x2w-08: No such container: x2w-08
-Error response from daemon: No such container: x2w-08
 error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
-kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          8s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          8s    <none>          nj1.sv1   <none>           <none>
-kafkaw-04--nj1-sv6    1/1     Running             0          9s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    1/1     Running             0          9s    192.168.10.71   nj1.sv7   <none>           <none>
-minio-02--nj1-sv1     1/1     Running             0          8s    192.168.10.11   nj1.sv1   <none>           <none>
-rdp-13--nj1-sv2       1/1     Running             0          8s    192.168.10.21   nj1.sv2   <none>           <none>
-rdp-14--nj1-sv3       1/1     Running             0          8s    192.168.10.31   nj1.sv3   <none>           <none>
-rdp-15--nj1-sv4       1/1     Running             0          9s    192.168.10.41   nj1.sv4   <none>           <none>
-rdp-16--nj1-sv5       0/1     ContainerCreating   0          1s    192.168.10.51   nj1.sv5   <none>           <none>
-rdpui-5--nj1-sv1      0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
-x2w-08--nj1-sv1       0/1     Pending             0          1s    <none>          nj1.sv1   <none>           <none>
+kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.20     nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+rdp-13--nj1-sv2       1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
+rdp-14--nj1-sv3       1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
+rdp-15--nj1-sv4       1/1     Running             0          6s    192.168.10.41   nj1.sv4   <none>           <none>
+rdp-16--nj1-sv5       0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 
 omcli.info comment:"Uploading Driver Config"
-<f+++++++++ kafka-latency.yaml.jjf8g6
+<f+++++++++ kafka-latency.yaml.KTvUrw
 omcli.info comment:"Uploading Load Config"
-<f+++++++++ simple-workload.yaml.YBnIQX
+<f+++++++++ max-rate-80-topics-1-partition-100b.yaml.Ap9DoA
 omcli.info comment:"Restarting Tap"
 nj1-4.tap-1_ext_0:script
 nj1-4.tap-2_ext_0:script
 nj1-4.tap-3_ext_0:script
 nj1-4.tap-4_ext_0:script
 script:info  node:nj1.sn2.bm omnode:nj1-4.tap-1_ext_0 option:stop 
-No PID file found, nothing to stop.
+atf_snf pid:390481 is running
+atf_snf pid:390481 stopped
 script:info  node:nj1.sn2.bm omnode:nj1-4.tap-1_ext_0 option:start 
-atf_snf started pid:3051215
+atf_snf started pid:391543
 script:info  node:nj1.sn3.bm omnode:nj1-4.tap-2_ext_0 option:stop 
-No PID file found, nothing to stop.
+atf_snf pid:397134 is running
+atf_snf pid:397134 stopped
 script:info  node:nj1.sn3.bm omnode:nj1-4.tap-2_ext_0 option:start 
-atf_snf started pid:574484
+atf_snf started pid:398284
 script:info  node:nj1.sn4.bm omnode:nj1-4.tap-3_ext_0 option:stop 
-No PID file found, nothing to stop.
+atf_snf pid:383399 is running
+atf_snf pid:383399 stopped
 script:info  node:nj1.sn4.bm omnode:nj1-4.tap-3_ext_0 option:start 
-atf_snf started pid:409943
+atf_snf started pid:384457
 script:info  node:nj1.sn5.bm omnode:nj1-4.tap-4_ext_0 option:stop 
-No PID file found, nothing to stop.
+atf_snf pid:394144 is running
+atf_snf pid:394144 stopped
 script:info  node:nj1.sn5.bm omnode:nj1-4.tap-4_ext_0 option:start 
-atf_snf started pid:2722502
+atf_snf started pid:395687
 omcli.info comment:"Restarting Workers"
 <f+++++++++ nj1-4.kafkaw-1
 dev.kafkaw-04:script
@@ -287,12 +281,12 @@ dev.kafkaw-12:script
 script:info  node:dev.kafkaw-04 omnode:nj1-4.kafkaw-1 option:start 
 Stopping kafka_worker...
 ====Was not running
-..........
+...........
 dev.kafkaw-04:success
 script:info  node:dev.kafkaw-12 omnode:nj1-4.kafkaw-2 option:start 
 Stopping kafka_worker...
 ====Was not running
-...........
+..........
 dev.kafkaw-12:success
 omcli.info comment:"Restarting Brokers"
 <f+++++++++ nj1-4.rdp-1
@@ -359,87 +353,56 @@ script:info  node:dev.rdpui-5 omnode:nj1-4.rdpui-1 option:start
 Stopping rdpui...
 ====Was not running
 Starting rdpui...
-omcli.info omdriver:kafka-latency  omload:simple-workload  comment:"running test"
+omcli.info omdriver:kafka-latency  omload:max-rate-80-topics-1-partition-100b  comment:"running test"
 x2node.info node:dev.kafkaw-04  cmd:"ssh -q kafkawrkr@dev.kafkaw-04 $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null'"
 x2node.error node:dev.kafkaw-04  status:123  cmd:"ssh -q kafkawrkr@dev.kafkaw-04 $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null'"
 x2node.info  ncmd:1  completed:1  success:0  failure:1
-14:44:58.570 [main] INFO Benchmark - Using default worker file workers.yaml
-14:44:58.579 [main] INFO Benchmark - Reading workers list from workers.yaml
-14:44:58.616 [main] INFO Benchmark - Starting benchmark with config: {
+14:11:02.774 [main] INFO Benchmark - Using default worker file workers.yaml
+14:11:02.782 [main] INFO Benchmark - Reading workers list from workers.yaml
+14:11:02.819 [main] INFO Benchmark - Starting benchmark with config: {
 "drivers" : [ "kafka-latency.yaml" ],
 "workers" : [ "http://nj1-4.kafkaw-1.ctrl-0:1080", "http://nj1-4.kafkaw-2.ctrl-0:1130" ],
 "workersFile" : "/opt/benchmark/workers.yaml",
-"workloads" : [ "simple-workload.yaml" ],
+"workloads" : [ "max-rate-80-topics-1-partition-100b.yaml" ],
 "output" : null
 }
-14:44:58.628 [main] INFO Benchmark - Workloads: {
-"simple-workload" : {
-"name" : "Simple Workload 1 producer on 1 topic",
-"topics" : 1,
-"partitionsPerTopic" : 10,
+14:11:02.832 [main] INFO Benchmark - Workloads: {
+"max-rate-80-topics-1-partition-100b" : {
+"name" : "max-rate-80-topics-1-partition-100b",
+"topics" : 80,
+"partitionsPerTopic" : 1,
 "keyDistributor" : "NO_KEY",
-"messageSize" : 1024,
-"useRandomizedPayloads" : false,
-"randomBytesRatio" : 0.0,
-"randomizedPayloadPoolSize" : 0,
-"payloadFile" : "payload/payload-1Kb.data",
+"messageSize" : 100,
+"useRandomizedPayloads" : true,
+"randomBytesRatio" : 0.5,
+"randomizedPayloadPoolSize" : 1000,
+"payloadFile" : null,
 "subscriptionsPerTopic" : 1,
 "producersPerTopic" : 1,
 "consumerPerSubscription" : 1,
-"producerRate" : 10000,
+"producerRate" : 10000000,
 "consumerBacklogSizeGB" : 0,
 "backlogDrainRatio" : 1.0,
 "testDurationMinutes" : 1,
 "warmupDurationMinutes" : 1
 }
 }
-14:44:58.871 [main] INFO DistributedWorkersEnsemble - Workers list - producers: [http://nj1-4.kafkaw-1.ctrl-0:1080]
-14:44:58.871 [main] INFO DistributedWorkersEnsemble - Workers list - consumers: http://nj1-4.kafkaw-2.ctrl-0:1130
-14:44:58.874 [main] INFO Benchmark - --------------- WORKLOAD : Simple Workload 1 producer on 1 topic --- DRIVER : kafka-latency---------------
-14:45:07.357 [main] INFO WorkloadGenerator - Created 1 topics in 8102.221445 ms
-14:45:07.413 [main] INFO WorkloadGenerator - Created 1 consumers in 52.158484 ms
-14:45:07.448 [main] INFO WorkloadGenerator - Created 1 producers in 34.569998 ms
-14:45:07.448 [main] INFO WorkloadGenerator - Waiting for consumers to be ready
-14:45:07.474 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 0, Received: 0
-14:45:09.477 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 1, Received: 1
-14:45:09.477 [main] INFO WorkloadGenerator - All consumers are ready
-14:45:09.505 [main] INFO WorkloadGenerator - ----- Starting warm-up traffic (1m) ------
-14:45:19.687 [main] INFO WorkloadGenerator - Pub rate  9847.9 msg/s /  9.6 MB/s | Pub err     0.0 err/s | Cons rate  9848.0 msg/s /  9.6 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.1 - 99%:  2.2 - 99.9%:  3.0 - Max:  5.3 | Pub Delay Latency (us) avg: 53.6 - 50%: 53.0 - 99%: 55.0 - 99.9%: 62.0 - Max: 1284.0
-14:45:29.781 [main] INFO WorkloadGenerator - Pub rate 10085.9 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10085.9 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.0 - 99%:  2.0 - 99.9%:  2.6 - Max:  4.0 | Pub Delay Latency (us) avg: 53.4 - 50%: 53.0 - 99%: 55.0 - 99.9%: 60.0 - Max: 903.0
-14:45:39.843 [main] INFO WorkloadGenerator - Pub rate 10015.3 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10015.3 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.0 - 99%:  2.0 - 99.9%:  2.7 - Max:  3.8 | Pub Delay Latency (us) avg: 53.4 - 50%: 53.0 - 99%: 55.0 - 99.9%: 56.0 - Max: 551.0
-14:45:49.904 [main] INFO WorkloadGenerator - Pub rate 10001.2 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10001.2 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.0 - 99%:  2.0 - 99.9%:  2.5 - Max:  4.2 | Pub Delay Latency (us) avg: 53.4 - 50%: 53.0 - 99%: 55.0 - 99.9%: 56.0 - Max: 477.0
-14:45:59.962 [main] INFO WorkloadGenerator - Pub rate 10003.1 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10003.1 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.0 - 99%:  2.0 - 99.9%:  2.4 - Max:  3.7 | Pub Delay Latency (us) avg: 53.4 - 50%: 53.0 - 99%: 55.0 - 99.9%: 57.0 - Max: 792.0
-14:46:10.018 [main] INFO WorkloadGenerator - Pub rate  9998.3 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9998.3 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.0 - 99%:  2.0 - 99.9%:  2.5 - Max:  4.1 | Pub Delay Latency (us) avg: 53.3 - 50%: 53.0 - 99%: 55.0 - 99.9%: 58.0 - Max: 499.0
-14:46:10.077 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg:  1.1 - 50%:  1.1 - 95%:  1.8 - 99%:  2.1 - 99.9%:  2.6 - 99.99%:  3.6 - Max:  5.3 | Pub Delay (us)  avg: 53.4 - 50%: 53.0 - 95%: 54.0 - 99%: 55.0 - 99.9%: 58.0 - 99.99%: 359.0 - Max: 1284.0
-14:46:10.197 [main] INFO WorkloadGenerator - ----- Starting benchmark traffic (1m)------
-14:46:20.252 [main] INFO WorkloadGenerator - Pub rate 10179.4 msg/s /  9.9 MB/s | Pub err     0.0 err/s | Cons rate 10179.4 msg/s /  9.9 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.0 - 99%:  2.0 - 99.9%:  2.4 - Max:  4.9 | Pub Delay Latency (us) avg: 53.4 - 50%: 53.0 - 99%: 55.0 - 99.9%: 58.0 - Max: 801.0
-14:46:30.308 [main] INFO WorkloadGenerator - Pub rate  9999.6 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9999.6 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.0 - 99%:  2.0 - 99.9%:  2.4 - Max:  3.5 | Pub Delay Latency (us) avg: 53.3 - 50%: 53.0 - 99%: 55.0 - 99.9%: 56.0 - Max: 158.0
-14:46:40.363 [main] INFO WorkloadGenerator - Pub rate 10002.5 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10002.1 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.0 - 99%:  2.0 - 99.9%:  2.4 - Max:  3.3 | Pub Delay Latency (us) avg: 53.4 - 50%: 53.0 - 99%: 55.0 - 99.9%: 57.0 - Max: 507.0
-14:46:50.419 [main] INFO WorkloadGenerator - Pub rate  9998.3 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9998.7 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.0 - 99%:  2.0 - 99.9%:  2.5 - Max:  4.4 | Pub Delay Latency (us) avg: 53.3 - 50%: 53.0 - 99%: 55.0 - 99.9%: 56.0 - Max: 763.0
-14:47:00.474 [main] INFO WorkloadGenerator - Pub rate 10001.3 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10001.3 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.0 - 99%:  2.0 - 99.9%:  2.4 - Max:  5.0 | Pub Delay Latency (us) avg: 53.3 - 50%: 53.0 - 99%: 55.0 - 99.9%: 56.0 - Max: 667.0
-14:47:10.530 [main] INFO WorkloadGenerator - Pub rate  9997.6 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9999.5 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.0 - 99%:  2.0 - 99.9%:  2.6 - Max:  3.9 | Pub Delay Latency (us) avg: 53.3 - 50%: 53.0 - 99%: 55.0 - 99.9%: 57.0 - Max: 1351.0
-14:47:10.585 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg:  1.1 - 50%:  1.0 - 95%:  1.8 - 99%:  2.0 - 99.9%:  2.4 - 99.99%:  3.5 - Max:  5.0 | Pub Delay (us)  avg: 53.3 - 50%: 53.0 - 95%: 54.0 - 99%: 55.0 - 99.9%: 56.0 - 99.99%: 191.0 - Max: 1351.0
-14:47:11.598 [main] INFO Benchmark - Writing test result into simple-workload-kafka-latency-2025-12-17-14-47-11.json
-omcli.info log:test/om/nj1-4/simple-workload-kafka-latency-2025-12-17-14-47-11.log  comment:"Collecting Logs"
-omcli.info comment:"Adding omrun Record"
-omdb.omrun  omrun:nj1-4/simple-001  name:simple-workload.kafka-latency.2025-12-17-14-47-11
-omcli.info comment:"Stopping Tap"
-nj1-4.tap-1_ext_0:script
-nj1-4.tap-2_ext_0:script
-nj1-4.tap-3_ext_0:script
-nj1-4.tap-4_ext_0:script
-script:info  node:nj1.sn2.bm omnode:nj1-4.tap-1_ext_0 option:stop 
-atf_snf pid:3051215 is running
-atf_snf pid:3051215 stopped
-script:info  node:nj1.sn3.bm omnode:nj1-4.tap-2_ext_0 option:stop 
-atf_snf pid:574484 is running
-atf_snf pid:574484 stopped
-script:info  node:nj1.sn4.bm omnode:nj1-4.tap-3_ext_0 option:stop 
-atf_snf pid:409943 is running
-atf_snf pid:409943 stopped
-script:info  node:nj1.sn5.bm omnode:nj1-4.tap-4_ext_0 option:stop 
-atf_snf pid:2722502 is running
-atf_snf pid:2722502 stopped
-omcli.info comment:"Collecting Results"
-x2node.info node:dev.kafkaw-04  cmd:"rsync  --remove-source-files  kafkawrkr@dev.kafkaw-04:$'*.json' test/om/nj1-4/."
-x2node.info  ncmd:1  completed:1  success:1  failure:0
+14:11:03.072 [main] INFO DistributedWorkersEnsemble - Workers list - producers: [http://nj1-4.kafkaw-1.ctrl-0:1080]
+14:11:03.072 [main] INFO DistributedWorkersEnsemble - Workers list - consumers: http://nj1-4.kafkaw-2.ctrl-0:1130
+14:11:03.075 [main] INFO Benchmark - --------------- WORKLOAD : max-rate-80-topics-1-partition-100b --- DRIVER : kafka-latency---------------
+14:11:13.831 [main] INFO WorkloadGenerator - Created 80 topics in 10375.44432 ms
+14:11:14.137 [main] INFO WorkloadGenerator - Created 80 consumers in 298.601444 ms
+14:11:14.365 [main] INFO WorkloadGenerator - Created 80 producers in 227.344435 ms
+14:11:14.365 [main] INFO WorkloadGenerator - Waiting for consumers to be ready
+14:11:14.790 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 56, Received: 30
+14:11:16.793 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 56, Received: 46
+14:11:18.797 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 80, Received: 80
+14:11:18.797 [main] INFO WorkloadGenerator - All consumers are ready
+14:11:18.852 [main] INFO WorkloadGenerator - ----- Starting warm-up traffic (1m) ------
+14:11:32.347 [main] INFO WorkloadGenerator - Pub rate 1286310.7 msg/s / 122.7 MB/s | Pub err     0.0 err/s | Cons rate 1237639.8 msg/s / 118.0 MB/s | Backlog: 653.0 K | Pub Latency (ms) avg: 1833.4 - 50%: 749.5 - 99%: 10986.9 - 99.9%: 11631.7 - Max: 11724.8 | Pub Delay Latency (us) avg: 1100632.3 - 50%: 704811.0 - 99%: 3770815.0 - 99.9%: 9237759.0 - Max: 9260799.0
+14:11:42.931 [main] INFO WorkloadGenerator - Pub rate 1183550.1 msg/s / 112.9 MB/s | Pub err     0.0 err/s | Cons rate 1230020.4 msg/s / 117.3 MB/s | Backlog: 158.7 K | Pub Latency (ms) avg: 13471.7 - 50%: 13753.8 - 99%: 21170.7 - 99.9%: 21493.6 - Max: 21595.8 | Pub Delay Latency (us) avg: 2437540.0 - 50%: 584107.0 - 99%: 18044159.0 - 99.9%: 18321023.0 - Max: 18391295.0
+14:11:55.668 [main] INFO WorkloadGenerator - Pub rate 1337910.6 msg/s / 127.6 MB/s | Pub err     0.0 err/s | Cons rate 1337069.3 msg/s / 127.5 MB/s | Backlog: 169.3 K | Pub Latency (ms) avg: 17801.9 - 50%: 17596.7 - 99%: 29356.3 - 99.9%: 30373.6 - Max: 34128.1 | Pub Delay Latency (us) avg: 9102630.7 - 50%: 9686463.0 - 99%: 26631167.0 - 99.9%: 26651007.0 - Max: 29979519.0
+14:12:10.669 [main] INFO WorkloadGenerator - Pub rate 957025.8 msg/s / 91.3 MB/s | Pub err     0.0 err/s | Cons rate 952300.0 msg/s / 90.8 MB/s | Backlog: 240.4 K | Pub Latency (ms) avg: 13894.1 - 50%: 11973.4 - 99%: 35901.2 - 99.9%: 39145.2 - Max: 44644.4 | Pub Delay Latency (us) avg: 23180148.6 - 50%: 26625279.0 - 99%: 35952895.0 - 99.9%: 43307263.0 - Max: 43323647.0
+14:12:21.226 [main] INFO WorkloadGenerator - Pub rate 1608598.9 msg/s / 153.4 MB/s | Pub err     0.0 err/s | Cons rate 1626513.8 msg/s / 155.1 MB/s | Backlog: 51.1 K | Pub Latency (ms) avg: 17208.4 - 50%: 16691.9 - 99%: 40187.1 - 99.9%: 45370.6 - Max: 45497.9 | Pub Delay Latency (us) avg: 32492793.9 - 50%: 34959359.0 - 99%: 51221247.0 - 99.9%: 51588607.0 - Max: 51928575.0
+14:12:27.908 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 12768.2 - 50%: 12572.5 - 95%: 27875.5 - 99%: 36497.7 - 99.9%: 44909.8 - 99.99%: 45401.3 - Max: 45497.9 | Pub Delay (us)  avg: 14386690.2 - 50%: 9691199.0 - 95%: 36963839.0 - 99%: 44226303.0 - 99.9%: 51500543.0 - 99.99%: 51699455.0 - Max: 52300799.0
+14:12:28.133 [main] INFO WorkloadGenerator - ----- Starting benchmark traffic (1m)------

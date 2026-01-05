@@ -1,63 +1,6 @@
 omcli.info omtest:om_benchmark
-dkr.report command:docker_destroy  cmd:"sudo kubectl delete pod -n x2w-08--nj1-sv1"  targets:19
-x2node.error node:nj1.sn2.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn2.bm sudo kubectl delete pod -n kafka-13--nj1-sv2"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn3.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn3.bm sudo kubectl delete pod -n kafka-14--nj1-sv3"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn4.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn4.bm sudo kubectl delete pod -n kafka-15--nj1-sv4"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn5.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn5.bm sudo kubectl delete pod -n kafka-16--nj1-sv5"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n kafkacw-02--nj1-sv1"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n kafkaui-5--nj1-sv1"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn6.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn6.bm sudo kubectl delete pod -n kafkaw-04--nj1-sv6"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn7.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn7.bm sudo kubectl delete pod -n kafkaw-12--nj1-sv7"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n minio-02--nj1-sv1"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn2.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn2.bm sudo kubectl delete pod -n rdp-13--nj1-sv2"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn3.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn3.bm sudo kubectl delete pod -n rdp-14--nj1-sv3"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn4.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn4.bm sudo kubectl delete pod -n rdp-15--nj1-sv4"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn5.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn5.bm sudo kubectl delete pod -n rdp-16--nj1-sv5"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n rdpui-5--nj1-sv1"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn2.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn2.bm sudo kubectl delete pod -n x2-17--nj1-sv2"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn3.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn3.bm sudo kubectl delete pod -n x2-18--nj1-sv3"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn4.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn4.bm sudo kubectl delete pod -n x2-19--nj1-sv4"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn5.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn5.bm sudo kubectl delete pod -n x2-20--nj1-sv5"
-error: resource(s) were provided, but no name was specified
-
-x2node.error node:nj1.sn1.bm  status:1  cmd:"ssh -q dkrusr@nj1.sn1.bm sudo kubectl delete pod -n x2w-08--nj1-sv1"
-error: resource(s) were provided, but no name was specified
-
-dkr.report command:generate_dockerbuild  cmd:""  targets:11
+dkr.report command:docker_destroy  cmd:""  targets:19
+dkr.report command:docker_generate  cmd:""  targets:11
 dkr.info image:kafka-13 file:temp/docker/kafka-13/kafka-13.run comment:copying script
 dkr.info image:kafka-13 file:temp/docker/kafka-13/kafka-13.build comment:copying script
 dkr.info image:kafka-13 file:temp/docker/kafka-13/Dockerfile comment:copying Dockerfile
@@ -93,7 +36,6 @@ dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.build comment:copying scrip
 dkr.info image:x2w-08 file:temp/docker/x2w-08/Dockerfile comment:copying Dockerfile
 dkr.report command:docker_clean_run  cmd:"sudo kubectl get pods -n nj1-4 -o wide"  targets:11
 pod/kafka-13--nj1-sv2 created
-error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
@@ -106,7 +48,6 @@ kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
 pod/kafka-14--nj1-sv3 created
-error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
@@ -119,7 +60,6 @@ kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
 pod/kafka-15--nj1-sv4 created
-error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
@@ -132,7 +72,6 @@ kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
 pod/kafka-16--nj1-sv5 created
-error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
@@ -145,7 +84,6 @@ kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
 pod/kafkacw-02--nj1-sv1 created
-error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
@@ -158,7 +96,6 @@ kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
 pod/kafkaui-5--nj1-sv1 created
-error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
@@ -171,7 +108,6 @@ kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
 pod/kafkaw-04--nj1-sv6 created
-error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
@@ -184,7 +120,6 @@ kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
 pod/kafkaw-12--nj1-sv7 created
-error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
@@ -197,7 +132,6 @@ kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
 pod/minio-02--nj1-sv1 created
-error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
@@ -205,7 +139,7 @@ kafka-14--nj1-sv3     1/1     Running             0          6s    192.168.10.31
 kafka-15--nj1-sv4     1/1     Running             0          6s    192.168.10.41   nj1.sv4   <none>           <none>
 kafka-16--nj1-sv5     1/1     Running             0          6s    192.168.10.51   nj1.sv5   <none>           <none>
 kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.148    nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.247    nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
@@ -213,7 +147,6 @@ rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>       
 x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 
 pod/rdpui-5--nj1-sv1 created
-error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
@@ -221,7 +154,7 @@ kafka-14--nj1-sv3     1/1     Running             0          6s    192.168.10.31
 kafka-15--nj1-sv4     1/1     Running             0          6s    192.168.10.41   nj1.sv4   <none>           <none>
 kafka-16--nj1-sv5     1/1     Running             0          6s    192.168.10.51   nj1.sv5   <none>           <none>
 kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.148    nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.247    nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
@@ -229,7 +162,6 @@ rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>       
 x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 
 pod/x2w-08--nj1-sv1 created
-error: resource(s) were provided, but no name was specified
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
@@ -237,42 +169,60 @@ kafka-14--nj1-sv3     1/1     Running             0          6s    192.168.10.31
 kafka-15--nj1-sv4     1/1     Running             0          6s    192.168.10.41   nj1.sv4   <none>           <none>
 kafka-16--nj1-sv5     1/1     Running             0          6s    192.168.10.51   nj1.sv5   <none>           <none>
 kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.148    nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.247    nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 
+x2rel.info  release:temp/release/tap.2025-12-29.40152e0f6  comment:"release completed"
+x2rel.release  product:tap  nodes:"(dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkacw-02|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.minio-02|dev.rdpui-5|dev.x2w-08)"  filename:tap.2025-12-29.40152e0f6
+x2node.info node:dev.kafka-13  cmd:"echo 'mkdir -p reldir/tap.2025-12-29.40152e0f6' | ssh  kafkausr@dev.kafka-13 bash"
+x2node.info node:dev.kafka-14  cmd:"echo 'mkdir -p reldir/tap.2025-12-29.40152e0f6' | ssh  kafkausr@dev.kafka-14 bash"
+x2node.info node:dev.kafka-15  cmd:"echo 'mkdir -p reldir/tap.2025-12-29.40152e0f6' | ssh  kafkausr@dev.kafka-15 bash"
+x2node.info node:dev.kafka-16  cmd:"echo 'mkdir -p reldir/tap.2025-12-29.40152e0f6' | ssh  kafkausr@dev.kafka-16 bash"
+x2node.info node:dev.kafkacw-02  cmd:"echo 'mkdir -p reldir/tap.2025-12-29.40152e0f6' | ssh  kafkausr@dev.kafkacw-02 bash"
+x2node.info node:dev.kafkaui-5  cmd:"echo 'mkdir -p reldir/tap.2025-12-29.40152e0f6' | ssh  kafkausr@dev.kafkaui-5 bash"
+x2node.info node:dev.kafkaw-04  cmd:"echo 'mkdir -p reldir/tap.2025-12-29.40152e0f6' | ssh  kafkawrkr@dev.kafkaw-04 bash"
+x2node.info node:dev.kafkaw-12  cmd:"echo 'mkdir -p reldir/tap.2025-12-29.40152e0f6' | ssh  kafkawrkr@dev.kafkaw-12 bash"
+x2node.info node:dev.minio-02  cmd:"echo 'mkdir -p reldir/tap.2025-12-29.40152e0f6' | ssh  minioadmin@dev.minio-02 bash"
+x2node.info node:dev.rdpui-5  cmd:"echo 'mkdir -p reldir/tap.2025-12-29.40152e0f6' | ssh  rdpusr@dev.rdpui-5 bash"
+x2node.info node:dev.x2w-08  cmd:"echo 'mkdir -p reldir/tap.2025-12-29.40152e0f6' | ssh  x2w@dev.x2w-08 bash"
+x2node.info  ncmd:11  completed:11  success:11  failure:0
 omcli.info comment:"Uploading Driver Config"
-<f+++++++++ kafka-latency.yaml.noM2gQ
+<f+++++++++ kafka-latency.yaml.WMvNHO
 omcli.info comment:"Uploading Load Config"
-<f+++++++++ simple-workload.yaml.bg5JY9
-omcli.info comment:"Restarting Tap"
-nj1-4.tap-1_ext_0:script
-nj1-4.tap-2_ext_0:script
-nj1-4.tap-3_ext_0:script
-nj1-4.tap-4_ext_0:script
-script:info  node:nj1.sn2.bm omnode:nj1-4.tap-1_ext_0 option:stop 
-atf_snf pid:1122984 is running
-atf_snf pid:1122984 stopped
-script:info  node:nj1.sn2.bm omnode:nj1-4.tap-1_ext_0 option:start 
-atf_snf started pid:1124059
-script:info  node:nj1.sn3.bm omnode:nj1-4.tap-2_ext_0 option:stop 
-atf_snf pid:1134687 is running
-atf_snf pid:1134687 stopped
-script:info  node:nj1.sn3.bm omnode:nj1-4.tap-2_ext_0 option:start 
-atf_snf started pid:1135861
-script:info  node:nj1.sn4.bm omnode:nj1-4.tap-3_ext_0 option:stop 
-atf_snf pid:1106604 is running
-atf_snf pid:1106604 stopped
-script:info  node:nj1.sn4.bm omnode:nj1-4.tap-3_ext_0 option:start 
-atf_snf started pid:1107680
-script:info  node:nj1.sn5.bm omnode:nj1-4.tap-4_ext_0 option:stop 
-atf_snf pid:1194980 is running
-atf_snf pid:1194980 stopped
-script:info  node:nj1.sn5.bm omnode:nj1-4.tap-4_ext_0 option:start 
-atf_snf started pid:1196448
+<f+++++++++ max-rate-80-topics-1-partition-100b.yaml.STWA5V
+omcli.info comment:"Starting Taps"
+<f+++++++++ nj1-4.kafka-1
+dev.kafka-13:script
+<f+++++++++ nj1-4.kafka-2
+dev.kafka-14:script
+<f+++++++++ nj1-4.kafka-3
+dev.kafka-15:script
+<f+++++++++ nj1-4.kafka-4
+dev.kafka-16:script
+script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:start_tap 
+script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:stop 
+No PID file found, nothing to stop.
+script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:start 
+atf_snf started pid:311
+script:info  node:dev.kafka-14 omnode:nj1-4.kafka-2 option:start_tap 
+script:info  node:dev.kafka-14 omnode:nj1-4.kafka-2 option:stop 
+No PID file found, nothing to stop.
+script:info  node:dev.kafka-14 omnode:nj1-4.kafka-2 option:start 
+atf_snf started pid:314
+script:info  node:dev.kafka-15 omnode:nj1-4.kafka-3 option:start_tap 
+script:info  node:dev.kafka-15 omnode:nj1-4.kafka-3 option:stop 
+No PID file found, nothing to stop.
+script:info  node:dev.kafka-15 omnode:nj1-4.kafka-3 option:start 
+atf_snf started pid:311
+script:info  node:dev.kafka-16 omnode:nj1-4.kafka-4 option:start_tap 
+script:info  node:dev.kafka-16 omnode:nj1-4.kafka-4 option:stop 
+No PID file found, nothing to stop.
+script:info  node:dev.kafka-16 omnode:nj1-4.kafka-4 option:start 
+atf_snf started pid:317
 omcli.info comment:"Restarting Workers"
 <f+++++++++ nj1-4.kafkaw-1
 dev.kafkaw-04:script
@@ -281,7 +231,7 @@ dev.kafkaw-12:script
 script:info  node:dev.kafkaw-04 omnode:nj1-4.kafkaw-1 option:start 
 Stopping kafka_worker...
 ====Was not running
-...........
+..........
 dev.kafkaw-04:success
 script:info  node:dev.kafkaw-12 omnode:nj1-4.kafkaw-2 option:start 
 Stopping kafka_worker...
@@ -289,13 +239,9 @@ Stopping kafka_worker...
 ..........
 dev.kafkaw-12:success
 omcli.info comment:"Restarting Brokers"
-<f+++++++++ nj1-4.kafka-1
 dev.kafka-13:script
-<f+++++++++ nj1-4.kafka-2
 dev.kafka-14:script
-<f+++++++++ nj1-4.kafka-3
 dev.kafka-15:script
-<f+++++++++ nj1-4.kafka-4
 dev.kafka-16:script
 script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:stop 
 ====Was not running
@@ -354,87 +300,86 @@ script:info  node:dev.rdpui-5 omnode:nj1-4.rdpui-1 option:start
 Stopping rdpui...
 ====Was not running
 Starting rdpui...
-omcli.info omdriver:kafka-latency  omload:simple-workload  comment:"running test"
-x2node.info node:dev.kafkaw-04  cmd:"ssh -q kafkawrkr@dev.kafkaw-04 $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null'"
-x2node.error node:dev.kafkaw-04  status:123  cmd:"ssh -q kafkawrkr@dev.kafkaw-04 $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null'"
+omcli.info omdriver:kafka-latency  omload:max-rate-80-topics-1-partition-100b  comment:"running test"
+x2node.info node:dev.kafkaw-04  cmd:"echo $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null' | ssh  kafkawrkr@dev.kafkaw-04 bash"
+x2node.error node:dev.kafkaw-04  status:123  cmd:"echo $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null' | ssh  kafkawrkr@dev.kafkaw-04 bash"
 x2node.info  ncmd:1  completed:1  success:0  failure:1
-10:35:35.959 [main] INFO Benchmark - Using default worker file workers.yaml
-10:35:35.968 [main] INFO Benchmark - Reading workers list from workers.yaml
-10:35:36.005 [main] INFO Benchmark - Starting benchmark with config: {
+17:10:04.199 [main] INFO Benchmark - Using default worker file workers.yaml
+17:10:04.208 [main] INFO Benchmark - Reading workers list from workers.yaml
+17:10:04.245 [main] INFO Benchmark - Starting benchmark with config: {
 "drivers" : [ "kafka-latency.yaml" ],
 "workers" : [ "http://nj1-4.kafkaw-1.ctrl-0:1080", "http://nj1-4.kafkaw-2.ctrl-0:1130" ],
 "workersFile" : "/opt/benchmark/workers.yaml",
-"workloads" : [ "simple-workload.yaml" ],
+"workloads" : [ "max-rate-80-topics-1-partition-100b.yaml" ],
 "output" : null
 }
-10:35:36.017 [main] INFO Benchmark - Workloads: {
-"simple-workload" : {
-"name" : "Simple Workload 1 producer on 1 topic",
-"topics" : 1,
-"partitionsPerTopic" : 10,
+17:10:04.258 [main] INFO Benchmark - Workloads: {
+"max-rate-80-topics-1-partition-100b" : {
+"name" : "max-rate-80-topics-1-partition-100b",
+"topics" : 80,
+"partitionsPerTopic" : 1,
 "keyDistributor" : "NO_KEY",
-"messageSize" : 1024,
-"useRandomizedPayloads" : false,
-"randomBytesRatio" : 0.0,
-"randomizedPayloadPoolSize" : 0,
-"payloadFile" : "payload/payload-1Kb.data",
+"messageSize" : 100,
+"useRandomizedPayloads" : true,
+"randomBytesRatio" : 0.5,
+"randomizedPayloadPoolSize" : 1000,
+"payloadFile" : null,
 "subscriptionsPerTopic" : 1,
 "producersPerTopic" : 1,
 "consumerPerSubscription" : 1,
-"producerRate" : 10000,
+"producerRate" : 10000000,
 "consumerBacklogSizeGB" : 0,
 "backlogDrainRatio" : 1.0,
 "testDurationMinutes" : 1,
 "warmupDurationMinutes" : 1
 }
 }
-10:35:36.265 [main] INFO DistributedWorkersEnsemble - Workers list - producers: [http://nj1-4.kafkaw-1.ctrl-0:1080]
-10:35:36.265 [main] INFO DistributedWorkersEnsemble - Workers list - consumers: http://nj1-4.kafkaw-2.ctrl-0:1130
-10:35:36.268 [main] INFO Benchmark - --------------- WORKLOAD : Simple Workload 1 producer on 1 topic --- DRIVER : kafka-latency---------------
-10:36:01.343 [main] INFO WorkloadGenerator - Created 1 topics in 24692.974733 ms
-10:36:01.408 [main] INFO WorkloadGenerator - Created 1 consumers in 60.693196 ms
-10:36:01.443 [main] INFO WorkloadGenerator - Created 1 producers in 35.368785 ms
-10:36:01.443 [main] INFO WorkloadGenerator - Waiting for consumers to be ready
-10:36:01.677 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 0, Received: 0
-10:36:03.679 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 1, Received: 0
-10:36:05.682 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 1, Received: 1
-10:36:05.682 [main] INFO WorkloadGenerator - All consumers are ready
-10:36:05.711 [main] INFO WorkloadGenerator - ----- Starting warm-up traffic (1m) ------
-10:36:15.885 [main] INFO WorkloadGenerator - Pub rate  9856.9 msg/s /  9.6 MB/s | Pub err     0.0 err/s | Cons rate  9857.0 msg/s /  9.6 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  2.7 - 50%:  1.6 - 99%: 19.5 - 99.9%: 35.7 - Max: 40.4 | Pub Delay Latency (us) avg: 53.8 - 50%: 53.0 - 99%: 56.0 - 99.9%: 64.0 - Max: 1490.0
-10:36:25.997 [main] INFO WorkloadGenerator - Pub rate 10057.1 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10057.1 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.3 - 50%:  1.2 - 99%:  2.4 - 99.9%:  3.7 - Max:  6.2 | Pub Delay Latency (us) avg: 53.4 - 50%: 53.0 - 99%: 55.0 - 99.9%: 61.0 - Max: 1188.0
-10:36:36.101 [main] INFO WorkloadGenerator - Pub rate 10000.0 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10000.0 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.2 - 50%:  1.1 - 99%:  2.3 - 99.9%:  3.5 - Max:  5.7 | Pub Delay Latency (us) avg: 53.4 - 50%: 53.0 - 99%: 55.0 - 99.9%: 60.0 - Max: 1329.0
-10:36:46.206 [main] INFO WorkloadGenerator - Pub rate 10000.1 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10001.5 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.2 - 50%:  1.1 - 99%:  2.3 - 99.9%:  4.0 - Max:  6.7 | Pub Delay Latency (us) avg: 53.5 - 50%: 53.0 - 99%: 55.0 - 99.9%: 57.0 - Max: 1288.0
-10:36:56.309 [main] INFO WorkloadGenerator - Pub rate 10000.9 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9999.5 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.1 - 99%:  2.2 - 99.9%:  2.4 - Max:  2.6 | Pub Delay Latency (us) avg: 53.6 - 50%: 53.0 - 99%: 55.0 - 99.9%: 58.0 - Max: 1166.0
-10:37:06.413 [main] INFO WorkloadGenerator - Pub rate  9999.0 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9999.0 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.1 - 99%:  2.2 - 99.9%:  4.0 - Max:  6.7 | Pub Delay Latency (us) avg: 53.4 - 50%: 53.0 - 99%: 55.0 - 99.9%: 57.0 - Max: 504.0
-10:37:06.528 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg:  1.4 - 50%:  1.2 - 95%:  2.2 - 99%:  9.3 - 99.9%: 24.5 - 99.99%: 37.4 - Max: 40.4 | Pub Delay (us)  avg: 53.5 - 50%: 53.0 - 95%: 54.0 - 99%: 55.0 - 99.9%: 59.0 - 99.99%: 720.0 - Max: 1490.0
-10:37:06.610 [main] INFO WorkloadGenerator - ----- Starting benchmark traffic (1m)------
-10:37:16.715 [main] INFO WorkloadGenerator - Pub rate 10196.0 msg/s / 10.0 MB/s | Pub err     0.0 err/s | Cons rate 10196.0 msg/s / 10.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.1 - 99%:  2.2 - 99.9%:  3.9 - Max:  6.8 | Pub Delay Latency (us) avg: 53.4 - 50%: 53.0 - 99%: 55.0 - 99.9%: 57.0 - Max: 1331.0
-10:37:26.820 [main] INFO WorkloadGenerator - Pub rate  9999.0 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9999.0 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.1 - 99%:  2.1 - 99.9%:  2.4 - Max:  4.5 | Pub Delay Latency (us) avg: 53.3 - 50%: 53.0 - 99%: 55.0 - 99.9%: 59.0 - Max: 617.0
-10:37:36.925 [main] INFO WorkloadGenerator - Pub rate 10000.3 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10001.8 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.1 - 99%:  2.1 - 99.9%:  3.5 - Max:  7.0 | Pub Delay Latency (us) avg: 53.6 - 50%: 53.0 - 99%: 55.0 - 99.9%: 59.0 - Max: 1564.0
-10:37:47.031 [main] INFO WorkloadGenerator - Pub rate  9999.7 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate  9998.2 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.1 - 99%:  2.2 - 99.9%:  3.3 - Max:  6.1 | Pub Delay Latency (us) avg: 53.4 - 50%: 53.0 - 99%: 55.0 - 99.9%: 56.0 - Max: 1603.0
-10:37:57.089 [main] INFO WorkloadGenerator - Pub rate 10039.2 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10039.2 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.1 - 99%:  2.1 - 99.9%:  2.5 - Max:  7.5 | Pub Delay Latency (us) avg: 53.3 - 50%: 53.0 - 99%: 55.0 - 99.9%: 56.0 - Max: 131.0
-10:38:07.147 [main] INFO WorkloadGenerator - Pub rate 10000.3 msg/s /  9.8 MB/s | Pub err     0.0 err/s | Cons rate 10000.7 msg/s /  9.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg:  1.1 - 50%:  1.1 - 99%:  2.2 - 99.9%:  3.5 - Max:  6.2 | Pub Delay Latency (us) avg: 53.6 - 50%: 53.0 - 99%: 55.0 - 99.9%: 58.0 - Max: 1794.0
-10:38:07.203 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg:  1.1 - 50%:  1.1 - 95%:  1.9 - 99%:  2.2 - 99.9%:  3.0 - 99.99%:  5.9 - Max:  7.5 | Pub Delay (us)  avg: 53.4 - 50%: 53.0 - 95%: 54.0 - 99%: 55.0 - 99.9%: 58.0 - 99.99%: 550.0 - Max: 1794.0
-10:38:07.720 [main] INFO Benchmark - Writing test result into simple-workload-kafka-latency-2025-12-24-10-38-07.json
-omcli.info log:test/om/nj1-4/ak/simple-workload-kafka-latency-2025-12-24-10-38-07.log  comment:"Collecting Logs"
+17:10:04.505 [main] INFO DistributedWorkersEnsemble - Workers list - producers: [http://nj1-4.kafkaw-1.ctrl-0:1080]
+17:10:04.505 [main] INFO DistributedWorkersEnsemble - Workers list - consumers: http://nj1-4.kafkaw-2.ctrl-0:1130
+17:10:04.508 [main] INFO Benchmark - --------------- WORKLOAD : max-rate-80-topics-1-partition-100b --- DRIVER : kafka-latency---------------
+17:10:22.723 [main] INFO WorkloadGenerator - Created 80 topics in 17829.15798 ms
+17:10:23.017 [main] INFO WorkloadGenerator - Created 80 consumers in 286.554667 ms
+17:10:23.245 [main] INFO WorkloadGenerator - Created 80 producers in 227.777023 ms
+17:10:23.246 [main] INFO WorkloadGenerator - Waiting for consumers to be ready
+17:10:23.418 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 62, Received: 0
+17:10:25.421 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 80, Received: 0
+17:10:27.423 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 80, Received: 80
+17:10:27.423 [main] INFO WorkloadGenerator - All consumers are ready
+17:10:27.488 [main] INFO WorkloadGenerator - ----- Starting warm-up traffic (1m) ------
+17:10:38.532 [main] INFO WorkloadGenerator - Pub rate 2195376.1 msg/s / 209.4 MB/s | Pub err     0.0 err/s | Cons rate 2198454.9 msg/s / 209.7 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 1518.6 - 50%: 678.2 - 99%: 6538.2 - 99.9%: 8360.1 - Max: 8954.9 | Pub Delay Latency (us) avg: 940757.3 - 50%: 664275.0 - 99%: 4412767.0 - 99.9%: 4563807.0 - Max: 6172031.0
+17:10:51.101 [main] INFO WorkloadGenerator - Pub rate 1097575.3 msg/s / 104.7 MB/s | Pub err     0.0 err/s | Cons rate 1107712.7 msg/s / 105.6 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 8982.7 - 50%: 8736.1 - 99%: 15102.7 - 99.9%: 19538.2 - Max: 20826.9 | Pub Delay Latency (us) avg: 3752943.3 - 50%: 4212735.0 - 99%: 12452223.0 - 99.9%: 12590975.0 - Max: 12615743.0
+17:11:06.319 [main] INFO WorkloadGenerator - Pub rate 947533.7 msg/s / 90.4 MB/s | Pub err     0.0 err/s | Cons rate 931493.9 msg/s / 88.8 MB/s | Backlog: 83.8 K | Pub Latency (ms) avg: 14474.4 - 50%: 14983.7 - 99%: 29349.6 - 99.9%: 34531.3 - Max: 36304.9 | Pub Delay Latency (us) avg: 9623080.1 - 50%: 11334143.0 - 99%: 19203327.0 - 99.9%: 25405439.0 - Max: 31060351.0
+17:11:16.819 [main] INFO WorkloadGenerator - Pub rate 1672448.7 msg/s / 159.5 MB/s | Pub err     0.0 err/s | Cons rate 1662614.6 msg/s / 158.6 MB/s | Backlog: 186.6 K | Pub Latency (ms) avg: 18338.9 - 50%: 16403.3 - 99%: 39453.4 - 99.9%: 39847.4 - Max: 39933.7 | Pub Delay Latency (us) avg: 19022660.8 - 50%: 19138687.0 - 99%: 38681855.0 - 99.9%: 38842111.0 - Max: 38903807.0
+17:11:28.928 [main] INFO WorkloadGenerator - Pub rate 1963794.3 msg/s / 187.3 MB/s | Pub err     0.0 err/s | Cons rate 1869318.1 msg/s / 178.3 MB/s | Backlog: 1328.1 K | Pub Latency (ms) avg: 15386.2 - 50%: 12785.9 - 99%: 40492.8 - 99.9%: 47836.4 - Max: 47850.5 | Pub Delay Latency (us) avg: 33295777.6 - 50%: 32429055.0 - 99%: 48721919.0 - 99.9%: 50463743.0 - Max: 50479871.0
+17:11:33.332 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 11145.6 - 50%: 9353.2 - 95%: 30399.1 - 99%: 37620.7 - 99.9%: 47548.2 - 99.99%: 47840.5 - Max: 47850.5 | Pub Delay (us)  avg: 15061350.3 - 50%: 12422207.0 - 95%: 40169215.0 - 99%: 48720895.0 - 99.9%: 50586111.0 - 99.99%: 50587647.0 - Max: 50619903.0
+17:11:33.741 [main] INFO WorkloadGenerator - ----- Starting benchmark traffic (1m)------
+17:11:44.227 [main] INFO WorkloadGenerator - Pub rate 2096575.2 msg/s / 199.9 MB/s | Pub err     0.0 err/s | Cons rate 2214445.0 msg/s / 211.2 MB/s | Backlog: 94.5 K | Pub Latency (ms) avg: 8041.4 - 50%: 8444.0 - 99%: 35873.0 - 99.9%: 48763.1 - Max: 48799.5 | Pub Delay Latency (us) avg: 52094206.2 - 50%: 50587391.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+17:11:58.831 [main] INFO WorkloadGenerator - Pub rate 784555.6 msg/s / 74.8 MB/s | Pub err     0.0 err/s | Cons rate 794747.8 msg/s / 75.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 15453.1 - 50%: 17177.3 - 99%: 43192.1 - 99.9%: 50383.1 - Max: 51511.3 | Pub Delay Latency (us) avg: 54503469.4 - 50%: 54260223.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+17:12:14.816 [main] INFO WorkloadGenerator - Pub rate 981850.7 msg/s / 93.6 MB/s | Pub err     0.0 err/s | Cons rate 971962.6 msg/s / 92.7 MB/s | Backlog: 103.7 K | Pub Latency (ms) avg: 19919.1 - 50%: 18454.4 - 99%: 38815.2 - 99.9%: 44013.6 - Max: 50239.0 | Pub Delay Latency (us) avg: 57952267.4 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+17:12:31.930 [main] INFO WorkloadGenerator - Pub rate 1318963.0 msg/s / 125.8 MB/s | Pub err     0.0 err/s | Cons rate 1327062.8 msg/s / 126.6 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 17368.2 - 50%: 16417.7 - 99%: 40875.3 - 99.9%: 41923.8 - Max: 43132.4 | Pub Delay Latency (us) avg: 59890448.2 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+17:12:47.896 [main] INFO WorkloadGenerator - Pub rate 1361823.7 msg/s / 129.9 MB/s | Pub err     0.0 err/s | Cons rate 1345621.8 msg/s / 128.3 MB/s | Backlog: 224.6 K | Pub Latency (ms) avg: 15867.8 - 50%: 15957.6 - 99%: 40405.8 - 99.9%: 48088.3 - Max: 48364.3 | Pub Delay Latency (us) avg: 60000128.0 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+17:12:48.333 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 15711.8 - 50%: 15950.0 - 95%: 32541.8 - 99%: 40619.3 - 99.9%: 48100.9 - 99.99%: 50386.4 - Max: 51511.3 | Pub Delay (us)  avg: 57620252.2 - 50%: 60000255.0 - 95%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - 99.99%: 60000255.0 - Max: 60000255.0
+17:12:54.541 [main] INFO Benchmark - Writing test result into max-rate-80-topics-1-partition-100b-kafka-latency-2026-01-05-17-12-54.json
+omcli.info log:test/om/nj1-4/ak/max-rate-80-topics-1-partition-100b-kafka-latency-2026-01-05-17-12-54.log  comment:"Collecting Logs"
 omcli.info comment:"Adding omrun Record"
-nj1-4/ak/simple-001
-omdb.omrun  omrun:nj1-4/ak/simple-001  name:simple-workload.kafka-latency.2025-12-24-10-38-07
+omdb.omrun  omrun:nj1-4/ak/max-001  name:max-rate-80-topics-1-partition-100b.kafka-latency.2026-01-05-17-12-54
 omcli.info comment:"Stopping Tap"
-nj1-4.tap-1_ext_0:script
-nj1-4.tap-2_ext_0:script
-nj1-4.tap-3_ext_0:script
-nj1-4.tap-4_ext_0:script
-script:info  node:nj1.sn2.bm omnode:nj1-4.tap-1_ext_0 option:stop 
-atf_snf pid:1124059 is running
-atf_snf pid:1124059 stopped
-script:info  node:nj1.sn3.bm omnode:nj1-4.tap-2_ext_0 option:stop 
-atf_snf pid:1135861 is running
-atf_snf pid:1135861 stopped
-script:info  node:nj1.sn4.bm omnode:nj1-4.tap-3_ext_0 option:stop 
-atf_snf pid:1107680 is not running
-script:info  node:nj1.sn5.bm omnode:nj1-4.tap-4_ext_0 option:stop 
-atf_snf pid:1196448 is not running
+script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:stop_tap 
+script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:stop 
+atf_snf pid:311 is running
+atf_snf pid:311 stopped
+script:info  node:dev.kafka-14 omnode:nj1-4.kafka-2 option:stop_tap 
+script:info  node:dev.kafka-14 omnode:nj1-4.kafka-2 option:stop 
+atf_snf pid:314 is running
+atf_snf pid:314 stopped
+script:info  node:dev.kafka-15 omnode:nj1-4.kafka-3 option:stop_tap 
+script:info  node:dev.kafka-15 omnode:nj1-4.kafka-3 option:stop 
+atf_snf pid:311 is running
+atf_snf pid:311 stopped
+script:info  node:dev.kafka-16 omnode:nj1-4.kafka-4 option:stop_tap 
+script:info  node:dev.kafka-16 omnode:nj1-4.kafka-4 option:stop 
+atf_snf pid:317 is running
+atf_snf pid:317 stopped
 omcli.info comment:"Collecting Results"
 x2node.info node:dev.kafkaw-04  cmd:"rsync  --remove-source-files  kafkawrkr@dev.kafkaw-04:$'*.json' test/om/nj1-4/ak/."
 x2node.info  ncmd:1  completed:1  success:1  failure:0

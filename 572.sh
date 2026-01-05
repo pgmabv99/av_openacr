@@ -179,6 +179,7 @@ acr_ed -create -ctype atf_snf.FMcb                              -write -comment 
 acr_ed -create -field atf_snf.FMcb.iframe                      -arg u64               -write -comment "global iframe index including non-tcp. start at 1"
 acr_ed -create -field atf_snf.FMcb.kafka_req_count_total       -arg u64               -write -comment "total kafka req count"
 acr_ed -create -field atf_snf.FMcb.kafka_req_ack_count_total   -arg u64               -write -comment "total kafka req ack count"
+acr_ed -create -field atf_snf.FMcb.kafka_rsp_wo_req            -arg u64               -write -comment "total kafka rsp without req count"
 acr_ed -create -field atf_snf.FMcb.max_pkt_len                 -arg u32               -write -comment "maximum packet length"
 acr_ed -create -field atf_snf.FMcb.time0                       -arg algo.SchedTime    -write -comment "starting time"
 acr_ed -create -field atf_snf.FMcb.round_trip_dur_tot          -arg u64               -write -comment "total accumulated round-trip duration"
@@ -202,6 +203,7 @@ acr_ed -create -field atf_snf.FMcb.swin_print_flg              -arg bool        
 acr_ed -create -field atf_snf.FMcb.tcp_pair_list_print_flg     -arg bool             -write -comment "print tcp pair"
 acr_ed -create -field atf_snf.FMcb.tcp_filter                  -arg bool             -write -comment "apply tcp filter for debugging "
 acr_ed -create -field atf_snf.FMcb.snf_memqp_print_flg         -arg bool             -write -comment "print memqp print"
+# acr_ed -create -field atf_snf.FMcb.snf_memqp_ping_pong         -arg bool             -write -comment "if true use ping pong 2 pools. if false use single pool/standlone WQ"
 
 
 
@@ -211,10 +213,34 @@ acr_ed -create -field atf_snf.FMcb.ts_snf_w_crnt                 -arg u64      -
 acr_ed -create -field atf_snf.FMcb.ts_local_last                 -arg algo.UnTime      -write  -comment "ts local time (last)"
 acr_ed -create -field atf_snf.FMcb.ts_local_crnt                 -arg algo.UnTime      -write  -comment "ts local time (current)"
 
+acr_ed -create -field atf_snf.FMcb.poll_count                     -arg u64               -write -comment "count of snf poll calls"
+acr_ed -create -field atf_snf.FMcb.poll_hit_count                 -arg u64               -write -comment "count of snf poll at last hit"
+acr_ed -create -field atf_snf.FMcb.poll_hit_delta_max              -arg u64               -write -comment ""
+acr_ed -create -field atf_snf.FMcb.poll_hit_delta_min              -arg u64               -write -comment ""
+acr_ed -create -field atf_snf.FMcb.poll_hit_delta_cum              -arg u64               -write -comment "for avg calc"
+acr_ed -create -field atf_snf.FMcb.poll_hit_delta1_count           -arg u64               -write -comment "count of delta=1"
+
+acr_ed -create -field atf_snf.FMcb.delta_last                      -arg u64               -write -comment "count of delta=1"
+acr_ed -create -field atf_snf.FMcb.delta1_run_cur_len              -arg u64               -write -comment "length of cureent delta1 run"
+acr_ed -create -field atf_snf.FMcb.delta1_run_count                -arg u64               -write -comment "count of delta1 runs"
+acr_ed -create -field atf_snf.FMcb.delta1_run_len_total            -arg u64               -write -comment "total length  delta1 runs"
+acr_ed -create -field atf_snf.FMcb.delta1_run_len_max              -arg u64               -write -comment "max length  of delta1 runs"
+acr_ed -create -field atf_snf.FMcb.delta1_hist5                    -arg u32               -write -comment "histogram bin for delta1 runs len <5"
+acr_ed -create -field atf_snf.FMcb.delta1_hist50                    -arg u32               -write -comment "histogram bin for delta1 runs len <50"
+acr_ed -create -field atf_snf.FMcb.delta1_hist500                 -arg u32               -write -comment "histogram bin for delta1 runs len <500"
+acr_ed -create -field atf_snf.FMcb.delta1_hist5000                 -arg u32               -write -comment "histogram bin for delta1 runs len <5000"
+acr_ed -create -field atf_snf.FMcb.delta1_histmax                  -arg u32               -write -comment "histogram bin for delta1 runs len <max"
+
+
+
+acr_ed -create -field atf_snf.FMcb.kapi_parse_dur_total            -arg u64               -write -comment "total duration spent in kapi parse"
+
+
+
 # include  atf_snf.FMcb into _db
 acr_ed -del    -field atf_snf.FDb.mcb                          -write
 acr_ed -create -field atf_snf.FDb.mcb                          -arg atf_snf.FMcb        -write -comment ""
-
+# -------------------
 # include omdb.OmTapHostinto _db
 acr_ed -del    -field atf_snf.FDb.om_tap_host                           -write
 acr_ed -create -field atf_snf.FDb.om_tap_host                           -arg omdb.OmTapHost       -write -comment ""

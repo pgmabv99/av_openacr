@@ -3,19 +3,19 @@ echo "=====================================stop and collect logs"
 
 
 source mn_set.sh
-echo "====================stopping  brokers"
+echo "====================stopping  brokers and taps"
 if [ "$omplat" = "ak" ]; then
-  echo "stop kafka brokers"
-#   omcli nj1-4.kafka-% -omplat:$omplat  -stop
+  echo "stop kafka brokers"mn_c
+  # omcli nj1-4.kafka-% -omplat:$omplat  -stop
+  omcli nj1-4.kafka-% -omplat:$omplat  -stop_tap
 elif [ "$omplat" = "x2" ]; then
   echo "stop x2"
-#   omcli nj1-4.x2% -omplat:$omplat  -stop
+  omcli nj1-4.x2% -omplat:$omplat  -stop
+  omcli nj1-4.x2% -omplat:$omplat  -stop_tap
 else
   echo "unknown omplat:$omplat - no action"
 fi
 
-echo "====================stopping tap"
-omcli nj1-4.tap% -omplat:$omplat  -stop
 sleep 2
 omcli nj1-4.% -omplat:$omplat  -collect_logs
 
@@ -29,7 +29,7 @@ find . -type f -name "tcp_pairs_all.log" | sort | while read -r f; do
 done > tcp_pairs_all_all.log
 grep kafka-ui tcp_pairs_all_all.log  > tcp_pairs_all_all_kafkaui.log 
 
-find . -type f -name "nj1-4.tap*.log" | sort | while read -r f; do
+find . -type f -name "atf_snf_stdout.log" | sort | while read -r f; do
     printf "\n===== FILE: %s =====\n" "$f"
     cat "$f"
 done > tap_all.log
@@ -41,8 +41,10 @@ grep "!seq_gap" -rnI .
 grep "atf_snf.error" -rnI .
 echo "  "
 grep x2msg.info tap_all.log
-grep mono tap_all.log
-grep seq_gap_ tap_all.log
+grep mono tap_all.log_db.mcb.delta1_run_cur_len
+grep atf_snf.session_stats tap_all.log
+grep q50% tap_all.log
+grep atf_snf.session_stats tap_all.log > atf_snf_session_stats.log
 # grep calibration tap_all.log
 set +x 
 cd ~/arnd

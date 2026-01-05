@@ -141,6 +141,7 @@ acr.delete dmmeta.field  field:command.atf_lat.out_file
 acr.delete dmmeta.field  field:command.atf_lat.skip_old
 acr.delete dmmeta.field  field:command.atf_lat.omenv
 acr.delete dmmeta.field  field:command.atf_lat.omplat
+acr.delete dmmeta.field  field:command.atf_lat.step_count_start
 EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_lat.in_file                   arg:algo.cstring         reftype:Val      dflt:'""'         comment:"read local saved ssim file instead of remote  "
@@ -148,6 +149,7 @@ acr -merge -write <<EOF
     dmmeta.field  field:command.atf_lat.skip_old                  arg:bool                 reftype:Val      dflt:false        comment:"skip snapshots before current local one "
     dmmeta.field  field:command.atf_lat.omenv                     arg:omdb.Omenv           reftype:Pkey     dflt:'""'         comment:"omcli env with the sniffers"
     dmmeta.field  field:command.atf_lat.omplat                    arg:omdb.Omplat          reftype:Pkey     dflt:'""'         comment:"Overwrites default omenv platform"
+    dmmeta.field  field:command.atf_lat.step_count_start          arg:u32                  reftype:Val      dflt:0            comment:"starting step to skip prologue"
 EOF
 
 

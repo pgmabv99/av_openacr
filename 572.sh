@@ -10,6 +10,7 @@ trg=atf_snf
 
 # one time only !!!!!!!!!!!!!!!!!!
 # acr_ed -create -srcfile cpp/atf_snf/parse.cpp -write -comment "parsing frames and kafka req/rsp  "
+# acr_ed -del    -srcfile cpp/atf_snf/req_rsp.cpp -write 
 # acr_ed -create -srcfile cpp/atf_snf/req_rsp.cpp -write -comment "parsing kafka req/rsp payload "
 # acr_ed -create -srcfile cpp/atf_snf/utils.cpp -write -comment "utility"
 

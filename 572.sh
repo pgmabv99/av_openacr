@@ -60,7 +60,7 @@ acr_ed -create -field atf_snf.FTcp_pair.seq_gap_neg_count     -arg u32          
 acr_ed -create -field atf_snf.FTcp_pair.tcp_payload_len_tot   -arg u32              -write -comment "total of tcp payload length per pair"
 
 # Kafka detection sliding window
-acr_ed -create -field atf_snf.FTcp_pair.swin_buf              -arg u8               -reftype Tary -write -comment "p to sliding window buffer"
+acr_ed -create -field atf_snf.FTcp_pair.swin_buf              -arg algo.ByteAry     -write -comment "p to sliding window buffer"
 acr_ed -create -field atf_snf.FTcp_pair.swin_offset           -arg u64              -write -comment "sliding window offset"
 acr_ed -create -field atf_snf.FTcp_pair.kafka_req_corr_id     -arg u32              -write -comment "latest kafka req corr_id. used to prescreen rsp"
 
@@ -106,7 +106,8 @@ acr_ed -create -field atf_snf.FKafka.ts_ns             -arg u64              -wr
 acr_ed -create -field atf_snf.FKafka.round_trip_dur    -arg u64              -write  -comment "duration dif between rsp and req"
 acr_ed -create -field atf_snf.FKafka.ts_order          -arg bool             -write  -comment "true if req is before rsp"
 acr_ed -create -field atf_snf.FKafka.mon_step_n        -arg u64              -write  -comment "number of mon step at creation time"
-acr_ed -create -field atf_snf.FKafka.kafka_buf         -arg u8               -reftype Tary -write -comment "ptr to kafka   buffer  on each pair"
+# acr_ed -create -field atf_snf.FKafka.kafka_buf         -arg u8               -reftype Tary -write -comment "ptr to kafka   buffer  on each pair"
+acr_ed -create -field atf_snf.FKafka.kafka_buf         -arg algo.ByteAry      -write -comment "ptr to kafka   buffer  on each pair"
 acr_ed -create -field atf_snf.FKafka.kafka_rsp         -arg atf_snf.FKafka   -reftype Ptr   -write  -comment "ptr from kafka req to  kafka rsp obj "
 # pointers from up/down
 acr_ed -create -field atf_snf.FKafka.p_tcp_pair        -arg atf_snf.FTcp_pair   -reftype Upptr -write  -comment "tcp pair pointer"

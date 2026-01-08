@@ -125,6 +125,7 @@ acr_ed -create -field  atf_lat.FMcb.dashboard_ready                    -arg bool
 acr_ed -create -field  atf_lat.FMcb.remote_time_cur                    -arg algo.UnTime       -dflt:0       -write -comment "remote time from cur  step" 
 acr_ed -create -field  atf_lat.FMcb.remote_time_last                   -arg algo.UnTime       -dflt:0       -write -comment "remote time from last step" 
 acr_ed -create -field  atf_lat.FMcb.atf_lat_dir                        -arg algo.Smallstr50   -dflt:0       -write -comment "directory for library files and dashboard" 
+acr_ed -create -field  atf_lat.FMcb.buf                                -arg algo.ByteAry                     -write -comment "test buffer" 
 
 
 # include into _db

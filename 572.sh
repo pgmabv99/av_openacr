@@ -205,7 +205,9 @@ acr_ed -create -field atf_snf.FMcb.swin_print_flg              -arg bool        
 acr_ed -create -field atf_snf.FMcb.tcp_pair_list_print_flg     -arg bool             -write -comment "print tcp pair"
 acr_ed -create -field atf_snf.FMcb.tcp_filter                  -arg bool             -write -comment "apply tcp filter for debugging "
 acr_ed -create -field atf_snf.FMcb.snf_memqp_print_flg         -arg bool             -write -comment "print memqp print"
-# acr_ed -create -field atf_snf.FMcb.snf_memqp_ping_pong         -arg bool             -write -comment "if true use ping pong 2 pools. if false use single pool/standlone WQ"
+acr_ed -create -field atf_snf.FMcb.swin_remainder_print_flg    -arg bool             -write -comment "print sliding window remainder info"
+acr_ed -create -field atf_snf.FMcb.remainder_found             -arg bool             -write -comment "remainder of frame found"
+acr_ed -create -field atf_snf.FMcb.post_remainder_count        -arg u32             -write -comment  "count for printing after remainder found"
 
 
 

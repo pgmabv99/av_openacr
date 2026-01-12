@@ -1,0 +1,22 @@
+==========================
+atf_snf.info  host:nj1.sv5
+atf_snf.info  experiment_dir:temp/atf_snf_logs/regr_ak  comment:"creating experiment directory"
+atf_snf.info  directory file list at start
+total 0
+atf_snf.info  tcp_pair_dir:temp/atf_snf_logs/regr_ak/tcp_pairs
+atf_snf.info  fname:temp/atf_snf_logs/regr_ak/atf_snf.pcap  comment:"creating pcap file"
+atf_snf.info  sll2:N
+atf_snf.info  comment:"Parsing kafka req/rsp enabled"
+atf_snf.info  fname:/home/avorovich/av_openacr/regression/ak.pcap  comment:"PcapFileProcess start"
+atf_snf.info  comment:"PcapFileProcess  EOF"
+atf_snf.info comment:GlobalTcpPairDump
+atf_snf.session_stats0---------------  current_time:2026-01-12T14:04:10.350077753  "elapsed(sec)":29.5338
+atf_snf.session_tcp_stats------------  iframe_count:11392  tcp_pair_count:176  seq_gap_pos_count:0  seq_gap_neg_count:3  max_pkt_len:9014
+atf_snf.session_kafka_stats----------  kafka_req_count_total:2320  kafka_req_ack_count_total:2319  kafka_rsp_wo_req:0  "kafka_req_duration_avg(usec)":3711  "kapi_parse_dur(ns)":0
+atf_snf.session_poll_stats-----------  poll_count:0  poll_hit_delta_max:0  poll_hit_delta_min:0  poll_hit_delta_avg:0
+atf_snf.session_poll_delta1_stats----  poll_hit_delta1_count:0  delta1_run_count:0  delta1_run_len_avg:0  delta1_run_len_max:0
+atf_snf.session_poll_queue_delay(%)--  q5%:-nan  q50%:-nan  q500%:-nan  q5000:0  q5000+:0
+atf_snf.session_poll_queue_delay(abs)  q5:0  q50:0  q500:0  q5000:0  q5000+:0
+atf_snf.info fname:temp/atf_snf_logs/regr_ak/atf_snf.pcap  comment:"closing pcap file"
+atf_snf.info fname:temp/atf_snf_logs/regr_ak/tcp_pairs_all.log  comment:"closing tcp pairs all log file"
+exit to OS-101

@@ -1,0 +1,22 @@
+==========================
+atf_snf.info  host:nj1.sv5
+atf_snf.info  experiment_dir:temp/atf_snf_logs/regr_x2  comment:"creating experiment directory"
+atf_snf.info  directory file list at start
+total 0
+atf_snf.info  tcp_pair_dir:temp/atf_snf_logs/regr_x2/tcp_pairs
+atf_snf.info  fname:temp/atf_snf_logs/regr_x2/atf_snf.pcap  comment:"creating pcap file"
+atf_snf.info  sll2:Y
+atf_snf.info  comment:"Parsing x2 req/rsp enabled"
+atf_snf.info  fname:/home/avorovich/av_openacr/regression/x2.pcap  comment:"PcapFileProcess start"
+atf_snf.info  comment:"PcapFileProcess  EOF"
+atf_snf.info comment:GlobalTcpPairDump
+atf_snf.session_stats0---------------  current_time:2026-01-12T13:54:52.465874201  "elapsed(sec)":0.243176
+atf_snf.session_tcp_stats------------  iframe_count:91  tcp_pair_count:6  seq_gap_pos_count:0  seq_gap_neg_count:0  max_pkt_len:1120
+atf_snf.session_x2_stats-------------  x2_cnt_req:10  x2_cnt_seq:10
+atf_snf.session_poll_stats-----------  poll_count:0  poll_hit_delta_max:0  poll_hit_delta_min:0  poll_hit_delta_avg:0
+atf_snf.session_poll_delta1_stats----  poll_hit_delta1_count:0  delta1_run_count:0  delta1_run_len_avg:0  delta1_run_len_max:0
+atf_snf.session_poll_queue_delay(%)--  q5%:-nan  q50%:-nan  q500%:-nan  q5000:0  q5000+:0
+atf_snf.session_poll_queue_delay(abs)  q5:0  q50:0  q500:0  q5000:0  q5000+:0
+atf_snf.info fname:temp/atf_snf_logs/regr_x2/atf_snf.pcap  comment:"closing pcap file"
+atf_snf.info fname:temp/atf_snf_logs/regr_x2/tcp_pairs_all.log  comment:"closing tcp pairs all log file"
+exit to OS-101

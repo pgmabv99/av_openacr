@@ -42,9 +42,9 @@ grep "atf_snf.error" -rnI .
 echo "  "
 grep x2msg.info tap_all.log
 grep mono tap_all.log_db.mcb.delta1_run_cur_len
-grep atf_snf.session_stats tap_all.log
+grep atf_snf.session_ tap_all.log
 grep q50% tap_all.log
-grep atf_snf.session_stats tap_all.log > atf_snf_session_stats.log
+grep atf_snf.session_ tap_all.log > atf_snf_session_stats.log
 # grep calibration tap_all.log
 set +x 
 cd ~/arnd

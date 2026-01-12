@@ -1,9 +1,0 @@
-atf_snf.info experiment_dir:temp/atf_snf_logs/iframe_pcap/2025.07.23.16.59
-atf_snf.info tests_dir:temp/atf_snf_logs/iframe_pcap/2025.07.23.16.59/tests
-atf_snf.info tcp_pair_dir:temp/atf_snf_logs/iframe_pcap/2025.07.23.16.59/tcp_pairs
-====--PcapFileProcess  fname:/home/avorovich/arnd/temp/atf_snf_logs/iframe_live/2025.07.23.16.56/atf_snf.pcap
-atf_snf.info  fname:/home/avorovich/arnd/temp/atf_snf_logs/iframe_live/2025.07.23.16.56/atf_snf.pcap  comment:"PcapFileProcess start"
-atf_snf.info  comment:"PcapFileProcess  EOF"
-atf_snf.info comment:"printing session info"
-atf_snf.info fname:temp/atf_snf_logs/iframe_pcap/2025.07.23.16.59/tcp_pairs_all.log  comment:"closing tcp pairs all log file"
-exit to OS

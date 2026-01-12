@@ -34,8 +34,7 @@ exit
 
 # tcpdump -r temp/x2tmp/x2gw_8850.pcap
 
-echo "regresion test with kafka"
-atf_snf  -kapi -in_file:/home/avorovich/av_openacr/pcap/atf_snf.pcap
+
 
 
 1st terminal: 

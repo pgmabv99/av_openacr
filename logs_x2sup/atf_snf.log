@@ -1,5 +1,5 @@
 ==========================
-atf_snf.info  host:nj1.sn5.user-avorovich
+atf_snf.info  host:nj1.sv5
 verbose: SysCmdExec.info  cmd:"mkdir -p  temp/atf_snf_logs"
 verbose: bash  -c 'mkdir -p  temp/atf_snf_logs'
 verbose: SysCmdExec.info  cmd:"rm -rf temp/atf_snf_logs/x2sup"
@@ -11,62 +11,59 @@ atf_snf.info  directory file list at start
 verbose: SysCmdExec.info  cmd:"ls  -ltr temp/atf_snf_logs/x2sup"
 verbose: bash  -c 'ls  -ltr temp/atf_snf_logs/x2sup'
 total 0
-verbose: SysCmdExec.info  cmd:"rm -rf temp/atf_snf_logs/x2sup/tcp_pairs"
-verbose: bash  -c 'rm -rf temp/atf_snf_logs/x2sup/tcp_pairs'
-verbose: SysCmdExec.info  cmd:"mkdir -p temp/atf_snf_logs/x2sup/tcp_pairs"
-verbose: bash  -c 'mkdir -p temp/atf_snf_logs/x2sup/tcp_pairs'
-atf_snf.info  tcp_pair_dir:temp/atf_snf_logs/x2sup/tcp_pairs
-atf_snf.info  fname:temp/atf_snf_logs/x2sup/atf_snf.pcap  comment:"creating pcap file"
 verbose: SysCmdExec.info  cmd:"sudo chmod -R 777 temp/atf_snf_logs"
 verbose: bash  -c 'sudo chmod -R 777 temp/atf_snf_logs'
 atf_snf.info  sll2:Y
 atf_snf.info  comment:"Parsing x2 req/rsp enabled"
 atf_snf.info  fname:/home/avorovich/arnd/temp/x2tmp/x2gw_8850.pcap  comment:"PcapFileProcess start"
-verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.2
-verbose: In_GUAckMsg found x2req for ack  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.2  lat_req:00:00:00.004426
+verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.2  ts_snf_w:1768231097818910000
+verbose: In_GUAckMsg found x2req   rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.2  lat_req:1935000
 verbose: In_GUAckMsg stored x2seq  seq_key:8/0
-verbose: In_Seqmsg found x2seq for seq  seq_key:8/0  lat_seq:00:00:00.549823
-verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.3
-verbose: In_GUAckMsg found x2req for ack  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.3  lat_req:00:00:00.002528
+verbose: In_Seqmsg found x2seq  seq_key:8/0  ts_snf_w:1768231097818910000  "tcp_pair->ts_ns":1768231098371838000  lat_seq:552928000
+verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.3  ts_snf_w:1768231098845160000
+verbose: In_GUAckMsg found x2req   rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.3  lat_req:4895000
 verbose: In_GUAckMsg stored x2seq  seq_key:8/1
-verbose: In_Seqmsg found x2seq for seq  seq_key:8/1  lat_seq:00:00:00.071739
-verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.4
-verbose: In_GUAckMsg found x2req for ack  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.4  lat_req:00:00:00.002434
+verbose: In_Seqmsg found x2seq  seq_key:8/1  ts_snf_w:1768231098845160000  "tcp_pair->ts_ns":1768231098923156000  lat_seq:77996000
+verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.4  ts_snf_w:1768231099936940000
+verbose: In_GUAckMsg found x2req   rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.4  lat_req:5268000
 verbose: In_GUAckMsg stored x2seq  seq_key:8/2
-verbose: In_Seqmsg found x2seq for seq  seq_key:8/2  lat_seq:00:00:00.076852
-verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.5
-verbose: In_GUAckMsg found x2req for ack  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.5  lat_req:00:00:00.004693
+verbose: In_Seqmsg found x2seq  seq_key:8/2  ts_snf_w:1768231099936940000  "tcp_pair->ts_ns":1768231100015608000  lat_seq:78668000
+verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.5  ts_snf_w:1768231101028751000
+verbose: In_GUAckMsg found x2req   rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.5  lat_req:5446000
 verbose: In_GUAckMsg stored x2seq  seq_key:8/3
-verbose: In_Seqmsg found x2seq for seq  seq_key:8/3  lat_seq:00:00:00.082836
-verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.6
-verbose: In_GUAckMsg found x2req for ack  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.6  lat_req:00:00:00.00328
+verbose: In_Seqmsg found x2seq  seq_key:8/3  ts_snf_w:1768231101028751000  "tcp_pair->ts_ns":1768231101106729000  lat_seq:77978000
+verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.6  ts_snf_w:1768231102120511000
+verbose: In_GUAckMsg found x2req   rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.6  lat_req:3401000
 verbose: In_GUAckMsg stored x2seq  seq_key:8/4
-verbose: In_Seqmsg found x2seq for seq  seq_key:8/4  lat_seq:00:00:00.08783
-verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.7
-verbose: In_GUAckMsg found x2req for ack  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.7  lat_req:00:00:00.003872
+verbose: In_Seqmsg found x2seq  seq_key:8/4  ts_snf_w:1768231102120511000  "tcp_pair->ts_ns":1768231102196947000  lat_seq:76436000
+verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.7  ts_snf_w:1768231103212326000
+verbose: In_GUAckMsg found x2req   rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.7  lat_req:5145000
 verbose: In_GUAckMsg stored x2seq  seq_key:8/5
-verbose: In_Seqmsg found x2seq for seq  seq_key:8/5  lat_seq:00:00:00.093957
-verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.8
-verbose: In_GUAckMsg found x2req for ack  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.8  lat_req:00:00:00.004566
+verbose: In_Seqmsg found x2seq  seq_key:8/5  ts_snf_w:1768231103212326000  "tcp_pair->ts_ns":1768231103290769000  lat_seq:78443000
+verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.8  ts_snf_w:1768231104304139000
+verbose: In_GUAckMsg found x2req   rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.8  lat_req:3688000
 verbose: In_GUAckMsg stored x2seq  seq_key:8/6
-verbose: In_Seqmsg found x2seq for seq  seq_key:8/6  lat_seq:00:00:00.099205
-verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.9
-verbose: In_GUAckMsg found x2req for ack  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.9  lat_req:00:00:00.004321
+verbose: In_Seqmsg found x2seq  seq_key:8/6  ts_snf_w:1768231104304139000  "tcp_pair->ts_ns":1768231104381829000  lat_seq:77690000
+verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.9  ts_snf_w:1768231105395953000
+verbose: In_GUAckMsg found x2req   rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.9  lat_req:4604000
 verbose: In_GUAckMsg stored x2seq  seq_key:8/7
-verbose: In_Seqmsg found x2seq for seq  seq_key:8/7  lat_seq:00:00:00.103284
-verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.10
-verbose: In_GUAckMsg found x2req for ack  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.10  lat_req:00:00:00.003587
+verbose: In_Seqmsg found x2seq  seq_key:8/7  ts_snf_w:1768231105395953000  "tcp_pair->ts_ns":1768231105473831000  lat_seq:77878000
+verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.10  ts_snf_w:1768231106487746000
+verbose: In_GUAckMsg found x2req   rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.10  lat_req:5451000
 verbose: In_GUAckMsg stored x2seq  seq_key:8/8
-verbose: In_Seqmsg found x2seq for seq  seq_key:8/8  lat_seq:00:00:00.109075
-verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.11
-verbose: In_GUAckMsg found x2req for ack  rec_key:127.0.0.1:59186-127.0.0.1:8850/8/x2write-0-0.11  lat_req:00:00:00.003379
+verbose: In_Seqmsg found x2seq  seq_key:8/8  ts_snf_w:1768231106487746000  "tcp_pair->ts_ns":1768231106565801000  lat_seq:78055000
+verbose: In_UGPubMsg stored x2req  rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.11  ts_snf_w:1768231107579660000
+verbose: In_GUAckMsg found x2req   rec_key:127.0.0.1:45336-127.0.0.1:8850/8/x2write-0-0.11  lat_req:4125000
 verbose: In_GUAckMsg stored x2seq  seq_key:8/9
-verbose: In_Seqmsg found x2seq for seq  seq_key:8/9  lat_seq:00:00:00.11432
+verbose: In_Seqmsg found x2seq  seq_key:8/9  ts_snf_w:1768231107579660000  "tcp_pair->ts_ns":1768231107657211000  lat_seq:77551000
 atf_snf.info  comment:"PcapFileProcess  EOF"
-atf_snf.info comment:"printing session info"
-atf_snf.info  x2_cnt_req:10  x2_cnt_seq:10  avg_lat_req:00:00:00.0037086  avg_lat_seq:00:00:00.1388921  "avg_lat_req_secs(usec)":3708.6  "avg_lat_seq_secs(usec)":138892
-atf_snf.info fname:temp/atf_snf_logs/x2sup/atf_snf.pcap  comment:"closing pcap file"
-atf_snf.info fname:temp/atf_snf_logs/x2sup/tcp_pairs_all.log  comment:"closing tcp pairs all log file"
+atf_snf.session_stats0  current_time:2026-01-12T10:18:28.632139849  "elapsed(sec)":0.0196628
+atf_snf.session_stats1  iframe_count:1  tcp_pair_count:4  seq_gap_pos_count:0  seq_gap_neg_count:0  max_pkt_len:1120
+atf_snf.session_stats2  kafka_req_count_total:0  kafka_req_ack_count_total:0  kafka_rsp_wo_req:0  "kafka_req_duration_avg (usec))":0  "kapi_parse_dur(ns)":0
+atf_snf.session_stats3  poll_count:0  poll_hit_delta_max:0  poll_hit_delta_min:0  poll_hit_delta_avg:0
+atf_snf.session_stats4  poll_hit_delta1_count:0  delta1_run_count:0  delta1_run_len_avg:0  delta1_run_len_max:0
+atf_snf.session_stats5_polling_queue_delay_distribution(%)  q5%:-nan  q50%:-nan  q500%:-nan  q5000:0  q5000+:0
+atf_snf.session_stats5_polling_queue_delay_distribution(abs)  q5:0  q50:0  q500:0  q5000:0  q5000+:0
 verbose: SysCmdExec.info  cmd:"sudo chmod -R 777 temp/atf_snf_logs"
 verbose: bash  -c 'sudo chmod -R 777 temp/atf_snf_logs'
-exit to OS-99
+exit to OS-101

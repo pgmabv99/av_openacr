@@ -288,13 +288,13 @@ dkr -help
 
 #passtru cat /etc/hostname
 #from sn1 : ps 
-dkr ps   -node:nj1.sn5.avorovich 
+dkr ps            -dctr:nj1.sn5.avorovich 
 dkr clean_run     -dctr:nj1.sn5.avorovich 
 
 docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 
 // get container sizes
-dkr -ps_size  -nodedkr:nj1.sn6.bm
+dkr -ps_size  -dctr:nj1.sn6.bm
 
 
 #build image
@@ -305,7 +305,7 @@ docker ps --format "table {{.Names}}\t{{.Image}}\t{{.CreatedAt}}\t{{.Status}}" |
 docker restart user-avorovich
 
 
-#show my containers
+#show my in omenv
 
 dkr -ps_ns -k8ns:nj1-4
 
@@ -600,3 +600,9 @@ algo::aryptr<char> x2traf::in_GetMsg(x2traf::FFdin& fdin) {   //gen
            }
         }
     }
+
+
+zoom
+
+-what is x2cat()
+-which nodescan wtite to pub/anon

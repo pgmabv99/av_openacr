@@ -92,7 +92,7 @@ kafka-15--nj1-sv4     0/1     ContainerCreating   0          0s    192.168.10.41
 kafka-16--nj1-sv5     0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
 kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
-kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-04--nj1-sv6    1/1     Running             0          0s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
 pod/kafkaui-5--nj1-sv1 created
@@ -104,7 +104,7 @@ kafka-15--nj1-sv4     0/1     ContainerCreating   0          0s    192.168.10.41
 kafka-16--nj1-sv5     0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
 kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
-kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-04--nj1-sv6    1/1     Running             0          0s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
 pod/kafkaw-04--nj1-sv6 created
@@ -139,7 +139,7 @@ kafka-14--nj1-sv3     1/1     Running             0          6s    192.168.10.31
 kafka-15--nj1-sv4     1/1     Running             0          6s    192.168.10.41   nj1.sv4   <none>           <none>
 kafka-16--nj1-sv5     1/1     Running             0          6s    192.168.10.51   nj1.sv5   <none>           <none>
 kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.69     nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.167    nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
@@ -154,7 +154,7 @@ kafka-14--nj1-sv3     1/1     Running             0          6s    192.168.10.31
 kafka-15--nj1-sv4     1/1     Running             0          6s    192.168.10.41   nj1.sv4   <none>           <none>
 kafka-16--nj1-sv5     1/1     Running             0          6s    192.168.10.51   nj1.sv5   <none>           <none>
 kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.69     nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.167    nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
@@ -169,31 +169,31 @@ kafka-14--nj1-sv3     1/1     Running             0          6s    192.168.10.31
 kafka-15--nj1-sv4     1/1     Running             0          6s    192.168.10.41   nj1.sv4   <none>           <none>
 kafka-16--nj1-sv5     1/1     Running             0          6s    192.168.10.51   nj1.sv5   <none>           <none>
 kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.69     nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.167    nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 
-x2rel.info  release:temp/release/tap.2026-01-09.a36ea091d  comment:"release completed"
-x2rel.release  product:tap  nodes:"(dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkacw-02|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.minio-02|dev.rdpui-5|dev.x2w-08)"  filename:tap.2026-01-09.a36ea091d
-x2node.info node:dev.kafka-13  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.a36ea091d' | ssh  kafkausr@dev.kafka-13 bash"
-x2node.info node:dev.kafka-14  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.a36ea091d' | ssh  kafkausr@dev.kafka-14 bash"
-x2node.info node:dev.kafka-15  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.a36ea091d' | ssh  kafkausr@dev.kafka-15 bash"
-x2node.info node:dev.kafka-16  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.a36ea091d' | ssh  kafkausr@dev.kafka-16 bash"
-x2node.info node:dev.kafkacw-02  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.a36ea091d' | ssh  kafkausr@dev.kafkacw-02 bash"
-x2node.info node:dev.kafkaui-5  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.a36ea091d' | ssh  kafkausr@dev.kafkaui-5 bash"
-x2node.info node:dev.kafkaw-04  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.a36ea091d' | ssh  kafkawrkr@dev.kafkaw-04 bash"
-x2node.info node:dev.kafkaw-12  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.a36ea091d' | ssh  kafkawrkr@dev.kafkaw-12 bash"
-x2node.info node:dev.minio-02  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.a36ea091d' | ssh  minioadmin@dev.minio-02 bash"
-x2node.info node:dev.rdpui-5  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.a36ea091d' | ssh  rdpusr@dev.rdpui-5 bash"
-x2node.info node:dev.x2w-08  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.a36ea091d' | ssh  x2w@dev.x2w-08 bash"
+x2rel.info  release:temp/release/tap.2026-01-09.2043d5f44  comment:"release completed"
+x2rel.release  product:tap  nodes:"(dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkacw-02|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.minio-02|dev.rdpui-5|dev.x2w-08)"  filename:tap.2026-01-09.2043d5f44
+x2node.info node:dev.kafka-13  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.2043d5f44' | ssh  kafkausr@dev.kafka-13 bash"
+x2node.info node:dev.kafka-14  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.2043d5f44' | ssh  kafkausr@dev.kafka-14 bash"
+x2node.info node:dev.kafka-15  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.2043d5f44' | ssh  kafkausr@dev.kafka-15 bash"
+x2node.info node:dev.kafka-16  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.2043d5f44' | ssh  kafkausr@dev.kafka-16 bash"
+x2node.info node:dev.kafkacw-02  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.2043d5f44' | ssh  kafkausr@dev.kafkacw-02 bash"
+x2node.info node:dev.kafkaui-5  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.2043d5f44' | ssh  kafkausr@dev.kafkaui-5 bash"
+x2node.info node:dev.kafkaw-04  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.2043d5f44' | ssh  kafkawrkr@dev.kafkaw-04 bash"
+x2node.info node:dev.kafkaw-12  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.2043d5f44' | ssh  kafkawrkr@dev.kafkaw-12 bash"
+x2node.info node:dev.minio-02  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.2043d5f44' | ssh  minioadmin@dev.minio-02 bash"
+x2node.info node:dev.rdpui-5  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.2043d5f44' | ssh  rdpusr@dev.rdpui-5 bash"
+x2node.info node:dev.x2w-08  cmd:"echo 'mkdir -p reldir/tap.2026-01-09.2043d5f44' | ssh  x2w@dev.x2w-08 bash"
 x2node.info  ncmd:11  completed:11  success:11  failure:0
 omcli.info comment:"Uploading Driver Config"
-<f+++++++++ kafka-latency.yaml.Ze3cd0
+<f+++++++++ kafka-latency.yaml.5mLRyI
 omcli.info comment:"Uploading Load Config"
-<f+++++++++ max-rate-80-topics-1-partition-100b.yaml.0WSmR5
+<f+++++++++ max-rate-80-topics-1-partition-100b.yaml.lZB7Ay
 omcli.info comment:"Starting Taps"
 <f+++++++++ nj1-4.kafka-1
 dev.kafka-13:script
@@ -304,16 +304,16 @@ omcli.info omdriver:kafka-latency  omload:max-rate-80-topics-1-partition-100b  c
 x2node.info node:dev.kafkaw-04  cmd:"echo $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null' | ssh  kafkawrkr@dev.kafkaw-04 bash"
 x2node.error node:dev.kafkaw-04  status:123  cmd:"echo $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null' | ssh  kafkawrkr@dev.kafkaw-04 bash"
 x2node.info  ncmd:1  completed:1  success:0  failure:1
-19:15:38.741 [main] INFO Benchmark - Using default worker file workers.yaml
-19:15:38.750 [main] INFO Benchmark - Reading workers list from workers.yaml
-19:15:38.787 [main] INFO Benchmark - Starting benchmark with config: {
+12:34:51.526 [main] INFO Benchmark - Using default worker file workers.yaml
+12:34:51.534 [main] INFO Benchmark - Reading workers list from workers.yaml
+12:34:51.571 [main] INFO Benchmark - Starting benchmark with config: {
 "drivers" : [ "kafka-latency.yaml" ],
 "workers" : [ "http://nj1-4.kafkaw-1.ctrl-0:1080", "http://nj1-4.kafkaw-2.ctrl-0:1130" ],
 "workersFile" : "/opt/benchmark/workers.yaml",
 "workloads" : [ "max-rate-80-topics-1-partition-100b.yaml" ],
 "output" : null
 }
-19:15:38.800 [main] INFO Benchmark - Workloads: {
+12:34:51.584 [main] INFO Benchmark - Workloads: {
 "max-rate-80-topics-1-partition-100b" : {
 "name" : "max-rate-80-topics-1-partition-100b",
 "topics" : 80,
@@ -334,34 +334,35 @@ x2node.info  ncmd:1  completed:1  success:0  failure:1
 "warmupDurationMinutes" : 1
 }
 }
-19:15:39.044 [main] INFO DistributedWorkersEnsemble - Workers list - producers: [http://nj1-4.kafkaw-1.ctrl-0:1080]
-19:15:39.045 [main] INFO DistributedWorkersEnsemble - Workers list - consumers: http://nj1-4.kafkaw-2.ctrl-0:1130
-19:15:39.047 [main] INFO Benchmark - --------------- WORKLOAD : max-rate-80-topics-1-partition-100b --- DRIVER : kafka-latency---------------
-19:15:57.274 [main] INFO WorkloadGenerator - Created 80 topics in 17843.030149 ms
-19:15:57.560 [main] INFO WorkloadGenerator - Created 80 consumers in 278.536021 ms
-19:15:57.792 [main] INFO WorkloadGenerator - Created 80 producers in 231.306184 ms
-19:15:57.792 [main] INFO WorkloadGenerator - Waiting for consumers to be ready
-19:15:57.995 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 78, Received: 0
-19:15:59.998 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 80, Received: 0
-19:16:02.001 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 80, Received: 80
-19:16:02.001 [main] INFO WorkloadGenerator - All consumers are ready
-19:16:02.070 [main] INFO WorkloadGenerator - ----- Starting warm-up traffic (1m) ------
-19:16:13.771 [main] INFO WorkloadGenerator - Pub rate 2084491.9 msg/s / 198.8 MB/s | Pub err     0.0 err/s | Cons rate 2089569.4 msg/s / 199.3 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 1254.5 - 50%: 666.6 - 99%: 5977.3 - 99.9%: 9471.6 - Max: 9969.0 | Pub Delay Latency (us) avg: 824228.8 - 50%: 424525.0 - 99%: 3540287.0 - 99.9%: 7053599.0 - Max: 7064031.0
-19:16:28.627 [main] INFO WorkloadGenerator - Pub rate 1168365.6 msg/s / 111.4 MB/s | Pub err     0.0 err/s | Cons rate 1178305.0 msg/s / 112.4 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 6878.8 - 50%: 6316.3 - 99%: 19217.2 - 99.9%: 23489.9 - Max: 25088.6 | Pub Delay Latency (us) avg: 5492428.1 - 50%: 6982111.0 - 99%: 14809215.0 - 99.9%: 14813375.0 - Max: 20169471.0
-19:16:51.296 [main] INFO WorkloadGenerator - Pub rate 867255.2 msg/s / 82.7 MB/s | Pub err     0.0 err/s | Cons rate 808622.3 msg/s / 77.1 MB/s | Backlog: 1121.4 K | Pub Latency (ms) avg: 16233.6 - 50%: 16148.4 - 99%: 32210.3 - 99.9%: 33976.8 - Max: 36181.8 | Pub Delay Latency (us) avg: 10893722.5 - 50%: 8647103.0 - 99%: 27621375.0 - 99.9%: 33081727.0 - Max: 33091583.0
-19:17:07.149 [main] INFO WorkloadGenerator - Pub rate 2156668.3 msg/s / 205.7 MB/s | Pub err     0.0 err/s | Cons rate 2230905.8 msg/s / 212.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 13423.3 - 50%: 14473.9 - 99%: 32544.9 - 99.9%: 39090.2 - Max: 43230.2 | Pub Delay Latency (us) avg: 29229235.0 - 50%: 27875839.0 - 99%: 46902015.0 - 99.9%: 53036543.0 - Max: 53050367.0
-19:17:08.010 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 9932.4 - 50%: 8365.7 - 95%: 26826.0 - 99%: 30987.9 - 99.9%: 38293.8 - 99.99%: 43109.9 - Max: 43230.2 | Pub Delay (us)  avg: 14888839.3 - 50%: 8655103.0 - 95%: 40154879.0 - 99%: 46874623.0 - 99.9%: 53216511.0 - 99.99%: 53275647.0 - Max: 53292287.0
-19:17:08.364 [main] INFO WorkloadGenerator - ----- Starting benchmark traffic (1m)------
-19:17:20.996 [main] INFO WorkloadGenerator - Pub rate 2320932.9 msg/s / 221.3 MB/s | Pub err     0.0 err/s | Cons rate 2316763.1 msg/s / 220.9 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 11600.3 - 50%: 9623.7 - 99%: 31103.7 - 99.9%: 37167.9 - Max: 37186.3 | Pub Delay Latency (us) avg: 49481498.8 - 50%: 47349247.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
-19:17:35.832 [main] INFO WorkloadGenerator - Pub rate 1134864.3 msg/s / 108.2 MB/s | Pub err     0.0 err/s | Cons rate 1138221.6 msg/s / 108.5 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 8071.8 - 50%: 6092.5 - 99%: 29451.5 - 99.9%: 36942.6 - Max: 42744.1 | Pub Delay Latency (us) avg: 58045224.5 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
-19:17:46.424 [main] INFO WorkloadGenerator - Pub rate 1414279.2 msg/s / 134.9 MB/s | Pub err     0.0 err/s | Cons rate 1425127.1 msg/s / 135.9 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 16405.1 - 50%: 17161.3 - 99%: 35980.3 - 99.9%: 38167.3 - Max: 42751.0 | Pub Delay Latency (us) avg: 59188566.8 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
-19:18:01.563 [main] INFO WorkloadGenerator - Pub rate 1094174.1 msg/s / 104.3 MB/s | Pub err     0.0 err/s | Cons rate 1022009.7 msg/s / 97.5 MB/s | Backlog: 924.3 K | Pub Latency (ms) avg: 18534.0 - 50%: 19063.2 - 99%: 34005.0 - 99.9%: 36972.3 - Max: 37017.1 | Pub Delay Latency (us) avg: 60000128.0 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
-19:18:15.455 [main] INFO WorkloadGenerator - Pub rate 1383629.1 msg/s / 132.0 MB/s | Pub err     0.0 err/s | Cons rate 1457367.6 msg/s / 139.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 12973.6 - 50%: 12751.9 - 99%: 32381.3 - 99.9%: 39502.6 - Max: 39512.3 | Pub Delay Latency (us) avg: 60000128.0 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
-19:18:15.835 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 13348.6 - 50%: 12975.7 - 95%: 28185.9 - 99%: 34815.0 - 99.9%: 38899.2 - 99.99%: 42219.0 - Max: 42751.0 | Pub Delay (us)  avg: 57175326.4 - 50%: 60000255.0 - 95%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - 99.99%: 60000255.0 - Max: 60000255.0
-19:18:30.942 [main] INFO Benchmark - Writing test result into max-rate-80-topics-1-partition-100b-kafka-latency-2026-01-12-19-18-30.json
-omcli.info log:test/om/nj1-4/ak/max-rate-80-topics-1-partition-100b-kafka-latency-2026-01-12-19-18-30.log  comment:"Collecting Logs"
+12:34:51.828 [main] INFO DistributedWorkersEnsemble - Workers list - producers: [http://nj1-4.kafkaw-1.ctrl-0:1080]
+12:34:51.829 [main] INFO DistributedWorkersEnsemble - Workers list - consumers: http://nj1-4.kafkaw-2.ctrl-0:1130
+12:34:51.831 [main] INFO Benchmark - --------------- WORKLOAD : max-rate-80-topics-1-partition-100b --- DRIVER : kafka-latency---------------
+12:35:10.459 [main] INFO WorkloadGenerator - Created 80 topics in 18241.778858 ms
+12:35:10.751 [main] INFO WorkloadGenerator - Created 80 consumers in 285.015914 ms
+12:35:10.986 [main] INFO WorkloadGenerator - Created 80 producers in 234.451701 ms
+12:35:10.986 [main] INFO WorkloadGenerator - Waiting for consumers to be ready
+12:35:11.153 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 56, Received: 0
+12:35:13.156 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 80, Received: 0
+12:35:15.159 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 80, Received: 80
+12:35:15.159 [main] INFO WorkloadGenerator - All consumers are ready
+12:35:15.223 [main] INFO WorkloadGenerator - ----- Starting warm-up traffic (1m) ------
+12:35:27.734 [main] INFO WorkloadGenerator - Pub rate 1786686.8 msg/s / 170.4 MB/s | Pub err     0.0 err/s | Cons rate 1790150.2 msg/s / 170.7 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 2073.3 - 50%: 939.9 - 99%: 8066.9 - 99.9%: 8769.6 - Max: 8860.3 | Pub Delay Latency (us) avg: 962368.7 - 50%: 663407.0 - 99%: 6189759.0 - 99.9%: 6193023.0 - Max: 6221471.0
+12:35:39.583 [main] INFO WorkloadGenerator - Pub rate 1183832.1 msg/s / 112.9 MB/s | Pub err     0.0 err/s | Cons rate 1181946.8 msg/s / 112.7 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 10359.0 - 50%: 9749.2 - 99%: 19131.9 - 99.9%: 21474.0 - Max: 22656.3 | Pub Delay Latency (us) avg: 3798743.8 - 50%: 1860151.0 - 99%: 13941183.0 - 99.9%: 14089983.0 - Max: 18700287.0
+12:35:55.275 [main] INFO WorkloadGenerator - Pub rate 712127.8 msg/s / 67.9 MB/s | Pub err     0.0 err/s | Cons rate 720317.4 msg/s / 68.7 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 16633.4 - 50%: 17349.9 - 99%: 30718.6 - 99.9%: 35151.4 - Max: 37062.4 | Pub Delay Latency (us) avg: 9290914.4 - 50%: 7815359.0 - 99%: 21037439.0 - 99.9%: 27085567.0 - Max: 32747775.0
+12:36:10.472 [main] INFO WorkloadGenerator - Pub rate 747699.7 msg/s / 71.3 MB/s | Pub err     0.0 err/s | Cons rate 702036.0 msg/s / 67.0 MB/s | Backlog: 545.1 K | Pub Latency (ms) avg: 23772.0 - 50%: 24155.5 - 99%: 39759.1 - 99.9%: 45269.5 - Max: 45360.9 | Pub Delay Latency (us) avg: 15654390.2 - 50%: 14023743.0 - 99%: 35753727.0 - 99.9%: 42074111.0 - Max: 42274047.0
+12:36:20.649 [main] INFO WorkloadGenerator - Pub rate 1039796.3 msg/s / 99.2 MB/s | Pub err     0.0 err/s | Cons rate 1115299.2 msg/s / 106.4 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 25664.7 - 50%: 28887.4 - 99%: 44145.7 - 99.9%: 46389.0 - Max: 46445.3 | Pub Delay Latency (us) avg: 25227020.7 - 50%: 21225215.0 - 99%: 48499711.0 - 99.9%: 48816383.0 - Max: 54951167.0
+12:36:20.948 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 13190.2 - 50%: 13111.2 - 95%: 32001.7 - 99%: 38194.9 - 99.9%: 45168.6 - 99.99%: 46404.6 - Max: 46445.3 | Pub Delay (us)  avg: 8837291.6 - 50%: 6170495.0 - 95%: 27245183.0 - 99%: 35888895.0 - 99.9%: 48791551.0 - 99.99%: 54936319.0 - Max: 54951167.0
+12:36:21.119 [main] INFO WorkloadGenerator - ----- Starting benchmark traffic (1m)------
+12:36:35.195 [main] INFO WorkloadGenerator - Pub rate 793857.9 msg/s / 75.7 MB/s | Pub err     0.0 err/s | Cons rate 786867.0 msg/s / 75.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 25661.7 - 50%: 24110.8 - 99%: 46333.2 - 99.9%: 47903.0 - Max: 51975.4 | Pub Delay Latency (us) avg: 36508351.1 - 50%: 35743999.0 - 99%: 57576959.0 - 99.9%: 60000255.0 - Max: 60000255.0
+12:36:51.516 [main] INFO WorkloadGenerator - Pub rate 1200018.3 msg/s / 114.4 MB/s | Pub err     0.0 err/s | Cons rate 1181839.8 msg/s / 112.7 MB/s | Backlog: 171.2 K | Pub Latency (ms) avg: 21076.9 - 50%: 22096.3 - 99%: 46311.2 - 99.9%: 54006.8 - Max: 54080.3 | Pub Delay Latency (us) avg: 52120342.6 - 50%: 57193471.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+12:37:02.111 [main] INFO WorkloadGenerator - Pub rate 1327001.1 msg/s / 126.6 MB/s | Pub err     0.0 err/s | Cons rate 1353503.9 msg/s / 129.1 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 20542.2 - 50%: 18052.5 - 99%: 42892.8 - 99.9%: 53408.3 - Max: 54828.5 | Pub Delay Latency (us) avg: 58417158.2 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+12:37:17.254 [main] INFO WorkloadGenerator - Pub rate 857005.4 msg/s / 81.7 MB/s | Pub err     0.0 err/s | Cons rate 859560.6 msg/s / 82.0 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 21591.2 - 50%: 23567.5 - 99%: 47798.0 - 99.9%: 57284.1 - Max: 57575.4 | Pub Delay Latency (us) avg: 59914538.6 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+12:37:32.382 [main] INFO WorkloadGenerator - Pub rate 849707.4 msg/s / 81.0 MB/s | Pub err     0.0 err/s | Cons rate 846581.8 msg/s / 80.7 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 23460.5 - 50%: 24804.6 - 99%: 49303.6 - 99.9%: 59679.2 - Max: 60000.3 | Pub Delay Latency (us) avg: 59988812.8 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+12:37:32.655 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 22225.3 - 50%: 23549.6 - 95%: 39348.7 - 99%: 47652.6 - 99.9%: 55086.1 - 99.99%: 60000.3 - Max: 60000.3 | Pub Delay (us)  avg: 53706644.3 - 50%: 60000255.0 - 95%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - 99.99%: 60000255.0 - Max: 60000255.0
+12:37:37.376 [main] INFO Benchmark - Writing test result into max-rate-80-topics-1-partition-100b-kafka-latency-2026-01-13-12-37-37.json
+omcli.info log:test/om/nj1-4/ak/max-rate-80-topics-1-partition-100b-kafka-latency-2026-01-13-12-37-37.log  comment:"Collecting Logs"
 omcli.info comment:"Adding omrun Record"
-omdb.omrun  omrun:nj1-4/ak/max-001  name:max-rate-80-topics-1-partition-100b.kafka-latency.2026-01-12-19-18-30
+omdb.omrun  omrun:nj1-4/ak/max-001  name:max-rate-80-topics-1-partition-100b.kafka-latency.2026-01-13-12-37-37
 omcli.info comment:"Stopping Tap"
 script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:stop_tap 
 script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:stop 

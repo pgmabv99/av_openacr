@@ -289,7 +289,8 @@ dkr -help
 #passtru cat /etc/hostname
 #from sn1 : ps 
 dkr ps            -dctr:nj1.sn5.avorovich 
-dkr clean_run     -dctr:nj1.sn5.avorovich 
+dkr -clean_run     -dctr:nj1.sn5.avorovich 
+dkr -clean_run     -dctr:nj1.sn5.user-avorovich 
 
 docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 

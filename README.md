@@ -305,6 +305,10 @@ docker ps --format "table {{.Names}}\t{{.Image}}\t{{.CreatedAt}}\t{{.Status}}" |
 docker restart user-avorovich
 
 
+#show my containers
+
+dkr -ps_ns -k8ns:nj1-4
+
 ## private keys 
 x2ssh clean
 x2ssh start

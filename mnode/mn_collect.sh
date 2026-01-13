@@ -52,4 +52,4 @@ cd ~/arnd
 # atf
 # less "$(ls -dt /home/avorovich/arnd/temp/collect_logs/ak/*/ | head -n 1)/tap_all.log"
 
-# atf_lat -omenv:nj1-4 -omplat:ak -step_count_start:45
+# atf_lat -omenv:nj1-4 -omplat:ak -step_count_start:45 -client_id:producer-1

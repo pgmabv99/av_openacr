@@ -18,15 +18,32 @@ if [ "$init" = "true" ]; then
 fi
 
 
-# -
+# types for external pointers
+
+#  set parms for atf_rdk
+# acr -merge  -write <<EOF
+# acr.delete dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_t 
+# acr.delete dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_topic_t
+# EOF
+
+# acr -merge -write <<EOF
+# dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_t          comment:""
+# dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_topic_t          comment:""
+# EOF
+
+
 
 #-------------main CB
 set -e
-acr_ed -del    -ctype atf_rdk.FMcb                              -write  || true
-acr_ed -create -ctype atf_rdk.FMcb                              -write -comment "Main CB"
-acr_ed -create -field atf_rdk.FMcb.kafka_req_count              -arg u64               -write -comment "count of produce enqueued messages"
-acr_ed -create -field atf_rdk.FMcb.kafka_ack_count              -arg u64               -write -comment "count of produce acked  messages"
-acr_ed -create -field atf_rdk.FMcb.stop                          -arg bool               -write -comment "stop  flag for producer"
+acr_ed -del    -ctype atf_rdk.FMcb                            -write  || true
+acr_ed -create -ctype atf_rdk.FMcb                            -write -comment "Main CB"
+acr_ed -create -field atf_rdk.FMcb.msg_req_count              -arg u64               -write -comment "count of produce enqueued messages"
+acr_ed -create -field atf_rdk.FMcb.msg_ack_count              -arg u64               -write -comment "count of produce acked  messages"
+acr_ed -create -field atf_rdk.FMcb.msg_lat_total              -arg u64               -write -comment "total latency of produce acked messages"
+acr_ed -create -field atf_rdk.FMcb.stop                       -arg bool              -write -comment "stop  flag for producer"
+# acr_ed -create -field atf_rdk.FMcb.rd_kafka_p                 -arg atf_rdk.rd_kafka_t        -reftype Ptr -write -comment "stop  flag for producer"
+# acr_ed -create -field atf_rdk.FMcb.rd_kafka_topic_p           -arg atf_rdk.rd_kafka_topic_t  -reftype Ptr -write -comment "stop  flag for producer"
+
 
 
 # include  atf_rdk.FMcb into _db

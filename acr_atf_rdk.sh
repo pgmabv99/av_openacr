@@ -20,18 +20,27 @@ fi
 
 # types for external pointers
 
-#  set parms for atf_rdk
+
+
+# acr_ed -del    -ctype atf_rdk.rd_kafka_t                      -write  || true
+# acr_ed -create -ctype atf_rdk.rd_kafka_t                      -write -comment "rd_kafka_t type (external)"
+# acr_ed -del    -ctype atf_rdk.rd_kafka_topic_t                -write  || true
+# acr_ed -create -ctype atf_rdk.rd_kafka_topic_t                -write -comment "rd_kafka_topic_t type (external)"
+
+# #  set parms for atf_rdk
 # acr -merge  -write <<EOF
 # acr.delete dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_t 
 # acr.delete dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_topic_t
+# acr_delete dmmeta.cextern  ctype:rd_kafka_t
+# acr_delete dmmeta.cextern  ctype:rd_kafka_topic_t
 # EOF
 
 # acr -merge -write <<EOF
 # dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_t          comment:""
 # dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_topic_t          comment:""
+# dmmeta.cextern  ctype:atf_rdk.rd_kafka_t   initmemset:N  isstruct:Y  plaindata:N
+# dmmeta.cextern  ctype:atf_rdk.rd_kafka_topic_t   initmemset:N  isstruct:Y  plaindata:N
 # EOF
-
-
 
 #-------------main CB
 set -e
@@ -41,8 +50,11 @@ acr_ed -create -field atf_rdk.FMcb.msg_req_count              -arg u64          
 acr_ed -create -field atf_rdk.FMcb.msg_ack_count              -arg u64               -write -comment "count of produce acked  messages"
 acr_ed -create -field atf_rdk.FMcb.msg_lat_total              -arg u64               -write -comment "total latency of produce acked messages"
 acr_ed -create -field atf_rdk.FMcb.stop                       -arg bool              -write -comment "stop  flag for producer"
-# acr_ed -create -field atf_rdk.FMcb.rd_kafka_p                 -arg atf_rdk.rd_kafka_t        -reftype Ptr -write -comment "stop  flag for producer"
-# acr_ed -create -field atf_rdk.FMcb.rd_kafka_topic_p           -arg atf_rdk.rd_kafka_topic_t  -reftype Ptr -write -comment "stop  flag for producer"
+acr_ed -create -field atf_rdk.FMcb.rk                  -arg u8       -reftype Ptr -write -comment " rd_kafka_t pointer"
+acr_ed -create -field atf_rdk.FMcb.rkt                 -arg u8       -reftype Ptr -write -comment " rd_kafka_topic_t pointer"
+
+# acr_ed -create -field atf_rdk.FMcb.rd_kafka_p                 -arg atf_rdk.rd_kafka_t        -reftype Ptr -write -comment "''
+# acr_ed -create -field atf_rdk.FMcb.rd_kafka_topic_p           -arg atf_rdk.rd_kafka_topic_t  -reftype Ptr -write -comment ""
 
 
 

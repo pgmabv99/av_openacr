@@ -18,12 +18,13 @@ else
   echo "unknown omplat:$omplat - no action"
 fi
 
+
+exit 
+# =====================================
 # echo "start rdpui"
 # omcli nj1-4.rdpui-1  -omplat:$omplat -start_clean
 
 # echo "start kafkaui"
-# omcli nj1-4.kafkaui-1  -omplat:$omplat -start_clean
-
-exit 
-# =====================================
+  omcli nj1-4.kafkaui-% -omplat:ak -dkr_clean_run
+  omcli nj1-4.kafkaui-1  -omplat:ak -start_clean
 

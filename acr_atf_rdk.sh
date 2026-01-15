@@ -1,0 +1,56 @@
+#!/bin/bash
+set -x
+set -e
+
+
+#  by hand
+# dev.targdep  targdep:atf_rdk.lib_kafka  comment:""
+#     dev.targdep  targdep:atf_rdk.kafka2  comment:""
+
+
+init=false
+# one time only !!!!!!!!!!!!!!!!!!
+if [ "$init" = "true" ]; then
+  acr_ed -del -target:atf_rdk -write || true
+  acr_ed -create -target:atf_rdk -write -comment "atf_rdk target"
+  acr_ed -create -srcfile cpp/atf_rdk/atf_rdk.cpp -write -comment "rdkafka testing tool"
+  acr_compl -install
+fi
+
+
+# -
+
+#-------------main CB
+set -e
+acr_ed -del    -ctype atf_rdk.FMcb                              -write  || true
+acr_ed -create -ctype atf_rdk.FMcb                              -write -comment "Main CB"
+acr_ed -create -field atf_rdk.FMcb.kafka_req_count              -arg u64               -write -comment "count of produce enqueued messages"
+acr_ed -create -field atf_rdk.FMcb.kafka_ack_count              -arg u64               -write -comment "count of produce acked  messages"
+acr_ed -create -field atf_rdk.FMcb.stop                          -arg bool               -write -comment "stop  flag for producer"
+
+
+# include  atf_rdk.FMcb into _db
+acr_ed -del    -field atf_rdk.FDb.mcb                          -write
+acr_ed -create -field atf_rdk.FDb.mcb                          -arg atf_rdk.FMcb        -write -comment ""
+# -------------------
+
+
+#  set parms for atf_rdk
+acr -merge  -write <<EOF
+acr.delete dmmeta.field  field:command.atf_rdk.broker
+acr.delete dmmeta.field  field:command.atf_rdk.topic
+acr.delete dmmeta.field  field:command.atf_rdk.max_msg 
+EOF
+acr -merge -write <<EOF
+    dmmeta.field  field:command.atf_rdk.broker              arg:algo.cstring  reftype:Val      dflt:'"nj1-4.kafka-1.ext-0:1643"'  comment:"broker url"
+    dmmeta.field  field:command.atf_rdk.topic               arg:algo.cstring  reftype:Val      dflt:'"rdk_test"'  comment:"topic to use"
+    dmmeta.field  field:command.atf_rdk.max_msg             arg:u64           reftype:Val      dflt:5             comment:"number of messages to produce"
+EOF
+
+
+amc
+amc_vis atf_rdk.%   > ~/av_openacr/atf_snf_viz.txt
+
+# ai
+
+echo "done!!!!!!!!!!!!"

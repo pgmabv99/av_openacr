@@ -5,7 +5,6 @@ ps -aux | grep java | grep kafka | grep -v grep || true
 set -e
 source mn_set.sh
 mn_clean.sh
-mn_tap.sh  
 mn_brokers.sh
 if [ "$client" = "x2" ]; then
     mn_x2write_read.sh

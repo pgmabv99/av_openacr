@@ -2,7 +2,6 @@
 set -x
 set -e
 
-trg=atf_snf
 
 #  by hand
 # dev.targdep  targdep:atf_snf.lib_kafka  comment:""
@@ -10,29 +9,19 @@ trg=atf_snf
 
 # one time only !!!!!!!!!!!!!!!!!!
 # acr_ed -create -srcfile cpp/atf_snf/parse.cpp -write -comment "parsing frames and kafka req/rsp  "
-# acr_ed -del    -srcfile cpp/atf_snf/req_rsp.cpp -write 
-# acr_ed -create -srcfile cpp/atf_snf/req_rsp.cpp -write -comment "parsing kafka req/rsp payload "
 # acr_ed -create -srcfile cpp/atf_snf/utils.cpp -write -comment "utility"
 
 
 # acr_ed -del -target:atf_snf -write
 # acr_ed -create -target:atf_snf -write
 # acr_compl -install
-# amc
-acr_ed -del  -ctype atf_snf.FMcb         -write || true
-acr_ed -del  -ctype atf_snf.FClient_id   -write || true
-acr_ed -del  -ctype atf_snf.FKafka       -write || true
+
 
 
 #  detlete indices from fdb todo
 # acr -merge  -write <<EOF
 # acr.delete dmmeta.field  field:atf_snf.FDb.ind%
 # EOF
-
-# acr_ed -del  -ctype atf_snf.FTcp_pair -write
-# acr_ed -del  -ctype atf_snf.FClient_id   -write
-# acr_ed -del  -ctype atf_snf.FCorr_id    -write
-# acr_ed -del  -ctype atf_snf.FMcb   -write
 
 
 #--------------tcp pair
@@ -85,6 +74,7 @@ acr_ed -create -field atf_snf.FDb.zd_tcp_pair             -cascdel              
 acr_ed -create -field atf_snf.FDb.ind_tcp_pair            -cascdel              -write -comment ""
 
 #-------------kafka client_id entry
+acr_ed -del  -ctype atf_snf.FClient_id        -write || true
 acr_ed -create -ctype atf_snf.FClient_id          -pooltype Tpool       -write  -comment "Kafka client entry"
 acr_ed -create -field  atf_snf.FClient_id.client_id_key -arg algo.Smallstr50 -write  -comment ""
 acr_ed -create -field  atf_snf.FClient_id.p_tcp_pair    -arg atf_snf.FTcp_pair -reftype Upptr -write
@@ -93,6 +83,8 @@ acr_ed -create -field  atf_snf.FTcp_pair.zd_client_id   -arg atf_snf.FClient_id 
 acr_ed -create -field  atf_snf.FTcp_pair.ind_client_id  -arg atf_snf.FClient_id -via atf_snf.FClient_id.p_tcp_pair -xref -cascdel -write -comment "index of client_id"
 
 #-------------kafka req/rsp object
+
+acr_ed -del  -ctype atf_snf.FKafka       -write || true
 acr_ed -create -ctype atf_snf.FKafka                   -pooltype Tpool       -write  -comment "Kafka req/rsp object"
 acr_ed -create -field atf_snf.FKafka.kafka_corr_id     -arg u32              -write  -comment "correlation_id from hdr"
 acr_ed -create -field atf_snf.FKafka.api_version       -arg u32              -write  -comment "req api_version"
@@ -318,7 +310,7 @@ EOF
 
 
 amc
-amc_vis atf_snf.%   > ~/av_openacr/${trg}_viz.txt
+amc_vis atf_snf.%   > ~/av_openacr/atf_snf_viz.txt
 
 # ai
 

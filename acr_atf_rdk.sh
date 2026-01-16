@@ -22,24 +22,24 @@ fi
 
 
 
-# acr_ed -del    -ctype atf_rdk.rd_kafka_t                      -write  || true
-# acr_ed -create -ctype atf_rdk.rd_kafka_t                      -write -comment "rd_kafka_t type (external)"
-# acr_ed -del    -ctype atf_rdk.rd_kafka_topic_t                -write  || true
-# acr_ed -create -ctype atf_rdk.rd_kafka_topic_t                -write -comment "rd_kafka_topic_t type (external)"
+# acr_ed -del    -ctype atf_rdk.rd_kafka_t                     -write  || true
+# acr_ed -create -ctype atf_rdk.rd_kafka_t                     -write -comment "rd_kafka_ttype (external)"
+# acr_ed -del    -ctype atf_rdk.rd_kafka_topic_t               -write  || true
+# acr_ed -create -ctype atf_rdk.rd_kafka_topic_t               -write -comment "rd_kafka_topic_ttype (external)"
 
 # #  set parms for atf_rdk
 # acr -merge  -write <<EOF
-# acr.delete dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_t 
-# acr.delete dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_topic_t
-# acr_delete dmmeta.cextern  ctype:rd_kafka_t
-# acr_delete dmmeta.cextern  ctype:rd_kafka_topic_t
+# acr.delete dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_t
+# acr.delete dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_topic_s
+# acr_delete dmmeta.cextern  ctype:rd_kafka_s
+# acr_delete dmmeta.cextern  ctype:rd_kafka_topic_s
 # EOF
 
 # acr -merge -write <<EOF
-# dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_t          comment:""
-# dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_topic_t          comment:""
-# dmmeta.cextern  ctype:atf_rdk.rd_kafka_t   initmemset:N  isstruct:Y  plaindata:N
-# dmmeta.cextern  ctype:atf_rdk.rd_kafka_topic_t   initmemset:N  isstruct:Y  plaindata:N
+# dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_t         comment:""
+# dmmeta.fwddecl  fwddecl:atf_rdk.rd_kafka_topic_t         comment:""
+# dmmeta.cextern  ctype:atf_rdk.rd_kafka_t  initmemset:N  isstruct:Y  plaindata:N
+# dmmeta.cextern  ctype:atf_rdk.rd_kafka_topic_t  initmemset:N  isstruct:Y  plaindata:N
 # EOF
 
 #-------------main CB
@@ -53,8 +53,8 @@ acr_ed -create -field atf_rdk.FMcb.stop                       -arg bool         
 acr_ed -create -field atf_rdk.FMcb.rk                  -arg u8       -reftype Ptr -write -comment " rd_kafka_t pointer"
 acr_ed -create -field atf_rdk.FMcb.rkt                 -arg u8       -reftype Ptr -write -comment " rd_kafka_topic_t pointer"
 
-# acr_ed -create -field atf_rdk.FMcb.rd_kafka_p                 -arg atf_rdk.rd_kafka_t        -reftype Ptr -write -comment "''
-# acr_ed -create -field atf_rdk.FMcb.rd_kafka_topic_p           -arg atf_rdk.rd_kafka_topic_t  -reftype Ptr -write -comment ""
+# acr_ed -create -field atf_rdk.FMcb.rk               -arg atf_rdk.rd_kafka_t       -reftype Ptr -write -comment ""
+# acr_ed -create -field atf_rdk.FMcb.rkt              -arg atf_rdk.rd_kafka_topic_t -reftype Ptr -write -comment ""
 
 
 

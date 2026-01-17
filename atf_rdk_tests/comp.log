@@ -1,0 +1,21 @@
+$ atf_rdk  -max_msg:3000 -broker:localhost:9092
+atf_rdk.info  comment:"Producing to topic: "  broker:localhost:9092  topic:rdk_test  max_msg:3000
+atf_rdk.info  comment:"Exiting produce loop"
+atf_rdk.info  comment:"Flushing remaining messages..."
+atf_rdk.info  comment:"Cleaning up resources..."
+atf_rdk.summary  broker:localhost:9092  msg_enq:3000  msg_ack:3000  lat_avg_us:143867
+
+
+$ atf_rdk  -max_msg:3000
+atf_rdk.info  comment:"Producing to topic: "  broker:192.168.104.5:1558  topic:rdk_test  max_msg:3000
+atf_rdk.info  comment:"Exiting produce loop"
+atf_rdk.info  comment:"Flushing remaining messages..."
+atf_rdk.info  comment:"Cleaning up resources..."
+atf_rdk.summary  broker:192.168.104.5:1558  msg_enq:3000  msg_ack:3000  lat_avg_us:937513
+
+ atf_rdk  -max_msg:3000 
+atf_rdk.info  comment:"Producing to topic: "  broker:nj1-4.kafka-1.ext-0:1643  topic:rdk_test  max_msg:3000
+atf_rdk.info  comment:"Exiting produce loop"
+atf_rdk.info  comment:"Flushing remaining messages..."
+atf_rdk.info  comment:"Cleaning up resources..."
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:3000  msg_ack:3000  lat_avg_us:4482

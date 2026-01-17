@@ -43,6 +43,20 @@ fi
 # EOF
 
 #-------------main CB
+
+#-------------kafka req/rsp object
+
+acr_ed -del  -ctype atf_rdk.FMsg      -write || true
+acr_ed -create -ctype atf_rdk.FMsg                   -pooltype Tpool       -write  -comment "message object"
+acr_ed -create -field atf_rdk.FMsg.msg                    -arg algo.Smallstr50               -write -comment "message payload"
+acr_ed -create -field atf_rdk.FMsg.time0                  -arg u64                  -write -comment "time enqueued"
+
+# pointers from above
+acr_ed -del    -field atf_rdk.FDb.zd_msg          -write || true
+acr_ed -del    -field atf_rdk.FDb.ind_msg         -write || true
+acr_ed -create -field atf_rdk.FDb.zd_msg            -cascdel              -write -comment ""
+acr_ed -create -field atf_rdk.FDb.ind_msg           -cascdel              -write -comment ""
+
 set -e
 acr_ed -del    -ctype atf_rdk.FMcb                            -write  || true
 acr_ed -create -ctype atf_rdk.FMcb                            -write -comment "Main CB"
@@ -53,7 +67,7 @@ acr_ed -create -field atf_rdk.FMcb.stop                       -arg bool         
 acr_ed -create -field atf_rdk.FMcb.rk                  -arg u8       -reftype Ptr -write -comment " rd_kafka_t pointer"
 acr_ed -create -field atf_rdk.FMcb.rkt                 -arg u8       -reftype Ptr -write -comment " rd_kafka_topic_t pointer"
 
-# acr_ed -create -field atf_rdk.FMcb.rk               -arg atf_rdk.rd_kafka_t       -reftype Ptr -write -comment ""
+# 
 # acr_ed -create -field atf_rdk.FMcb.rkt              -arg atf_rdk.rd_kafka_topic_t -reftype Ptr -write -comment ""
 
 

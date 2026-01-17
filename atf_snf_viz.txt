@@ -1,10 +1,8 @@
-/ atf_rdk.FDb                                             
-|Val mcb------->/ atf_rdk.FMcb                            
--               |                                         
-                |               / atf_rdk.rd_kafka_t      
-                |Ptr rk-------->|                         
-                |               -                         
-                |               / atf_rdk.rd_kafka_topic_t
-                |Ptr rkt------->|                         
-                -               |                         
-                                -                         
+/ atf_rdk.FDb                  
+|Tpool msg------>/ atf_rdk.FMsg
+|Llist zd_msg--->|             
+|Thash ind_msg-->|             
+|                -             
+|Val mcb-------->/ atf_rdk.FMcb
+-                |             
+                 -             

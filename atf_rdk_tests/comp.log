@@ -19,3 +19,51 @@ atf_rdk.info  comment:"Exiting produce loop"
 atf_rdk.info  comment:"Flushing remaining messages..."
 atf_rdk.info  comment:"Cleaning up resources..."
 atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:3000  msg_ack:3000  lat_avg_us:4482
+
+
+
+
+$ atf_rdk 
+atf_rdk.summary  broker:localhost:9092  msg_enq:100  msg_ack:100  lat_avg_us:1012379
+atf_rdk.summary  broker:localhost:9092  msg_enq:100  msg_ack:100  lat_avg_us:22871
+atf_rdk.summary  broker:localhost:9092  msg_enq:100  msg_ack:100  lat_avg_us:20411
+atf_rdk.summary  broker:localhost:9092  msg_enq:100  msg_ack:100  lat_avg_us:17372
+atf_rdk.summary  broker:localhost:9092  msg_enq:100  msg_ack:100  lat_avg_us:17470
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:100  msg_ack:100  lat_avg_us:1031509
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:100  msg_ack:100  lat_avg_us:9943
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:100  msg_ack:100  lat_avg_us:8236
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:100  msg_ack:100  lat_avg_us:7675
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:100  msg_ack:100  lat_avg_us:7845
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  lat_avg_us:999664
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  lat_avg_us:2914
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  lat_avg_us:2745
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  lat_avg_us:2882
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  lat_avg_us:2849
+
+
+$ atf_rdk 
+atf_rdk.summary  broker:localhost:9092  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:1016231
+atf_rdk.summary  broker:localhost:9092  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:17681
+atf_rdk.summary  broker:localhost:9092  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:17064
+atf_rdk.summary  broker:localhost:9092  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:21053
+atf_rdk.summary  broker:localhost:9092  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:26669
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:1029758
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:9098
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:6439
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:6261
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:6763
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:999676
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:2741
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:2895
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:3043
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  msg_rate_per_sec:1000000  lat_avg_us:3019
+[0 Jan 19 13:54:15] avorovich@nj1.sv5:~/arnd 
+
+
+
+
+
+///notes
+dmmeta.field  field:x2.MemberId.proc_id    acr.rowid:0       arg:ams.ProcId     reftype:Val  dflt:""  comment:"Process ID"
+dmmeta.field  field:x2.MemberId.stream_id  acr.rowid:1       arg:x2.StreamId    reftype:Val  dflt:""  comment:"Stream ID"
+dmmeta.field  field:x2.MemberId.role       acr.rowid:2       arg:x2.MemberRole  reftype:Val  dflt:""  comment:""

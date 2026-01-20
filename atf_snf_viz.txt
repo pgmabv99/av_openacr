@@ -1,8 +1,12 @@
-/ atf_rdk.FDb                  
-|Tpool msg------>/ atf_rdk.FMsg
-|Llist zd_msg--->|             
-|Thash ind_msg-->|             
-|                -             
-|Val mcb-------->/ atf_rdk.FMcb
--                |             
-                 -             
+/ atf_rdk.FDb                      
+|Tpool msg-------->/ atf_rdk.FMsg  
+|Llist zd_msg----->|               
+|Thash ind_msg---->|               
+|                  -               
+|Tpool topic------>/ atf_rdk.FTopic
+|Llist zd_topic--->|               
+|Thash ind_topic-->|               
+|                  -               
+|Val mcb---------->/ atf_rdk.FMcb  
+-                  |               
+                   -               

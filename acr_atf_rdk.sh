@@ -44,7 +44,7 @@ fi
 
 #-------------main CB
 
-#-------------kafka req/rsp object
+#-------------rdkafka msg object
 
 acr_ed -del  -ctype atf_rdk.FMsg      -write || true
 acr_ed -create -ctype atf_rdk.FMsg                   -pooltype Tpool       -write  -comment "message object"
@@ -57,12 +57,27 @@ acr_ed -del    -field atf_rdk.FDb.ind_msg         -write || true
 acr_ed -create -field atf_rdk.FDb.zd_msg            -cascdel              -write -comment ""
 acr_ed -create -field atf_rdk.FDb.ind_msg           -cascdel              -write -comment ""
 
+#-------------rdkafka topic object
+
+acr_ed -del  -ctype atf_rdk.FTopic      -write || true
+acr_ed -create -ctype atf_rdk.FTopic                     -pooltype Tpool       -write  -comment "topic object"
+acr_ed -create -field atf_rdk.FTopic.topic               -arg algo.Smallstr50               -write -comment "topic name"
+acr_ed -create -field atf_rdk.FTopic.rkt                 -arg u8       -reftype Ptr -write -comment " rd_kafka_topic_t pointer"
+
+# pointers from above
+acr_ed -del    -field atf_rdk.FDb.zd_topic       -write || true
+acr_ed -del    -field atf_rdk.FDb.ind_topic         -write || true
+acr_ed -create -field atf_rdk.FDb.zd_topic            -cascdel              -write -comment ""
+acr_ed -create -field atf_rdk.FDb.ind_topic           -cascdel              -write -comment ""
+
 set -e
 acr_ed -del    -ctype atf_rdk.FMcb                            -write  || true
 acr_ed -create -ctype atf_rdk.FMcb                            -write -comment "Main CB"
 acr_ed -create -field atf_rdk.FMcb.msg_req_count              -arg u64               -write -comment "count of produce enqueued messages"
 acr_ed -create -field atf_rdk.FMcb.msg_ack_count              -arg u64               -write -comment "count of produce acked  messages"
 acr_ed -create -field atf_rdk.FMcb.msg_lat_total              -arg u64               -write -comment "total latency of produce acked messages"
+acr_ed -create -field atf_rdk.FMcb.max_msg_all_topics         -arg u64               -write -comment "max messages to produce across all topics"
+acr_ed -create -field atf_rdk.FMcb.err_onflush_count            -arg u64               -write -comment "error count on flush"
 acr_ed -create -field atf_rdk.FMcb.stop                       -arg bool              -write -comment "stop  flag for producer"
 acr_ed -create -field atf_rdk.FMcb.rk                  -arg u8       -reftype Ptr -write -comment " rd_kafka_t pointer"
 acr_ed -create -field atf_rdk.FMcb.rkt                 -arg u8       -reftype Ptr -write -comment " rd_kafka_topic_t pointer"
@@ -83,11 +98,17 @@ acr -merge  -write <<EOF
 acr.delete dmmeta.field  field:command.atf_rdk.broker
 acr.delete dmmeta.field  field:command.atf_rdk.topic
 acr.delete dmmeta.field  field:command.atf_rdk.max_msg 
+acr.delete dmmeta.field  field:command.atf_rdk.max_topics 
+acr.delete dmmeta.field  field:command.atf_rdk.msg_rate 
+acr.delete dmmeta.field  field:command.atf_rdk.msg_max_size 
 EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_rdk.broker              arg:algo.cstring  reftype:Val      dflt:'"nj1-4.kafka-1.ext-0:1643"'  comment:"broker url"
     dmmeta.field  field:command.atf_rdk.topic               arg:algo.cstring  reftype:Val      dflt:'"rdk_test"'  comment:"topic to use"
-    dmmeta.field  field:command.atf_rdk.max_msg             arg:u64           reftype:Val      dflt:5             comment:"number of messages to produce"
+    dmmeta.field  field:command.atf_rdk.max_msgs             arg:u64           reftype:Val      dflt:10            comment:"number of messages to produce"
+    dmmeta.field  field:command.atf_rdk.max_topics            arg:u64           reftype:Val      dflt:10             comment:"number of topics to produce"
+    dmmeta.field  field:command.atf_rdk.msg_rate            arg:u64         reftype:Val      dflt:10             comment:"message rate per sec"
+    dmmeta.field  field:command.atf_rdk.msg_max_size            arg:u64         reftype:Val      dflt:10             comment:"maximum message size"
 EOF
 
 

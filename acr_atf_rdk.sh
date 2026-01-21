@@ -81,6 +81,7 @@ acr_ed -create -field atf_rdk.FMcb.err_onflush_count            -arg u64        
 acr_ed -create -field atf_rdk.FMcb.stop                       -arg bool              -write -comment "stop  flag for producer"
 acr_ed -create -field atf_rdk.FMcb.rk                  -arg u8       -reftype Ptr -write -comment " rd_kafka_t pointer"
 acr_ed -create -field atf_rdk.FMcb.rkt                 -arg u8       -reftype Ptr -write -comment " rd_kafka_topic_t pointer"
+acr_ed -create -field atf_rdk.FMcb.time0                       -arg algo.SchedTime    -write -comment "starting time for each session"
 
 # 
 # acr_ed -create -field atf_rdk.FMcb.rkt              -arg atf_rdk.rd_kafka_topic_t -reftype Ptr -write -comment ""
@@ -101,16 +102,17 @@ acr.delete dmmeta.field  field:command.atf_rdk.max_msg
 acr.delete dmmeta.field  field:command.atf_rdk.max_topics 
 acr.delete dmmeta.field  field:command.atf_rdk.msg_rate 
 acr.delete dmmeta.field  field:command.atf_rdk.msg_max_size 
+acr.delete dmmeta.field  field:command.atf_rdk.mcompare 
 EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_rdk.broker              arg:algo.cstring  reftype:Val      dflt:'"nj1-4.kafka-1.ext-0:1643"'  comment:"broker url"
     dmmeta.field  field:command.atf_rdk.topic               arg:algo.cstring  reftype:Val      dflt:'"rdk_test"'  comment:"topic to use"
     dmmeta.field  field:command.atf_rdk.max_msgs             arg:u64           reftype:Val      dflt:10            comment:"number of messages to produce"
     dmmeta.field  field:command.atf_rdk.max_topics            arg:u64           reftype:Val      dflt:10             comment:"number of topics to produce"
-    dmmeta.field  field:command.atf_rdk.msg_rate            arg:u64         reftype:Val      dflt:10             comment:"message rate per sec"
+    dmmeta.field  field:command.atf_rdk.msg_rate            arg:u64         reftype:Val      dflt:1000000             comment:"message rate per sec"
     dmmeta.field  field:command.atf_rdk.msg_max_size            arg:u64         reftype:Val      dflt:10             comment:"maximum message size"
+    dmmeta.field  field:command.atf_rdk.compare             arg:bool          reftype:Val      dflt:false         comment:"compare several backends in one run"
 EOF
-
 
 amc
 amc_vis atf_rdk.%   > ~/av_openacr/atf_snf_viz.txt

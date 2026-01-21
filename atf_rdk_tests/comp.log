@@ -61,9 +61,42 @@ atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  msg_rat
 
 
 
+verbose: atf_rdk.info  comment:"Start producing to multiple topics: "  broker:nj1-4.x2-3.ext-0:1519  max_topics:10  max_msg_all_topics:100
+verbose: atf_rdk.info  comment:"Exiting produce loop"
+verbose: atf_rdk.info  comment:"Flushing remaining messages"  outq_start:2
+verbose: atf_rdk.info  comment:"Flush completed"  iterations:1  outq_final:0
+verbose: atf_rdk.info  comment:"Cleaning up resources..."
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  msg_rate_per_sec:10  lat_avg_us:100112
+
+
+verbose: atf_rdk.info  comment:"Start producing to multiple topics: "  broker:nj1-4.x2-3.ext-0:1519  max_topics:10  max_msg_all_topics:100
+verbose: atf_rdk.info  comment:"Exiting produce loop"
+verbose: atf_rdk.info  comment:"Flushing remaining messages"  outq_start:2
+verbose: atf_rdk.info  comment:"Flush completed"  iterations:1  outq_final:0
+verbose: atf_rdk.info  comment:"Cleaning up resources..."
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  msg_rate_per_sec:10  lat_avg_us:100105
+
+
+
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:100  msg_ack:100  msg_rate_per_sec:10  lat_avg_us:100104
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:100  msg_ack:100  msg_rate_per_sec:10  lat_avg_us:100105
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  msg_enq:100  msg_ack:100  msg_rate_per_sec:10  lat_avg_us:100105
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  msg_rate_per_sec:10  lat_avg_us:100096
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  msg_rate_per_sec:10  lat_avg_us:100102
+atf_rdk.summary  broker:nj1-4.x2-3.ext-0:1519  msg_enq:100  msg_ack:100  msg_rate_per_sec:10  lat_avg_us:100102
 
 
 ///notes
 dmmeta.field  field:x2.MemberId.proc_id    acr.rowid:0       arg:ams.ProcId     reftype:Val  dflt:""  comment:"Process ID"
 dmmeta.field  field:x2.MemberId.stream_id  acr.rowid:1       arg:x2.StreamId    reftype:Val  dflt:""  comment:"Stream ID"
 dmmeta.field  field:x2.MemberId.role       acr.rowid:2       arg:x2.MemberRole  reftype:Val  dflt:""  comment:""
+
+
+
+$ atf_rdk -compare 
+atf_rdk.info  comment:"compare multipe backends in one run"
+atf_rdk.info  comment:"override cmdline parameters for test!!!!!!!!!!\n"
+atf_rdk.summary  "elapsed(sec)":257.763  broker:nj1-4.kafka-1.ext-0:1643  max_topics:50  msg_enq:5000000  msg_ack:5000000  msg_rate_per_sec:1000000  lat_avg_us:3935
+
+
+atf_rdk.summary  "elapsed(sec)":254.631  broker:localhost:54005  max_topics:50  msg_enq:5000000  msg_ack:5000000  msg_rate_per_sec:1000000  lat_avg_us:3763

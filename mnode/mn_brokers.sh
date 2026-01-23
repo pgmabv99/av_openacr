@@ -1,6 +1,8 @@
 #!/bin/bash
 source mn_set.sh
 
+mn_clean.sh
+
 start_ak_brokers() {
   echo "===========start kafka brokers"
   omcli nj1-4.kafka-% -omplat:ak -dkr_clean_run

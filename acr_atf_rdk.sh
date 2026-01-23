@@ -78,6 +78,7 @@ acr_ed -create -field atf_rdk.FMcb.msg_ack_count              -arg u64          
 acr_ed -create -field atf_rdk.FMcb.msg_lat_total              -arg u64               -write -comment "total latency of produce acked messages"
 acr_ed -create -field atf_rdk.FMcb.max_msg_all_topics         -arg u64               -write -comment "max messages to produce across all topics"
 acr_ed -create -field atf_rdk.FMcb.err_onflush_count            -arg u64               -write -comment "error count on flush"
+acr_ed -create -field atf_rdk.FMcb.err_onproduce_count          -arg u64               -write -comment "error count on produce"
 acr_ed -create -field atf_rdk.FMcb.stop                       -arg bool              -write -comment "stop  flag for producer"
 acr_ed -create -field atf_rdk.FMcb.rk                  -arg u8       -reftype Ptr -write -comment " rd_kafka_t pointer"
 acr_ed -create -field atf_rdk.FMcb.rkt                 -arg u8       -reftype Ptr -write -comment " rd_kafka_topic_t pointer"

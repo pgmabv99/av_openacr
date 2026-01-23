@@ -100,3 +100,327 @@ atf_rdk.summary  "elapsed(sec)":257.763  broker:nj1-4.kafka-1.ext-0:1643  max_to
 
 
 atf_rdk.summary  "elapsed(sec)":254.631  broker:localhost:54005  max_topics:50  msg_enq:5000000  msg_ack:5000000  msg_rate_per_sec:1000000  lat_avg_us:3763
+
+
+
+=== fail 43
+Auto-creating topic  name:rdk_test39  produce.data.ary_n:3690
+Auto-creating stream  name:/kafka/rdk_test40-0  produce.data.ary_n:3722
+Auto-creating topic  name:rdk_test40  produce.data.ary_n:3783
+Auto-creating stream  name:/kafka/rdk_test41-0  produce.data.ary_n:3815
+Auto-creating topic  name:rdk_test41  produce.data.ary_n:3876
+Auto-creating stream  name:/kafka/rdk_test42-0  produce.data.ary_n:3908
+Auto-creating topic  name:rdk_test42  produce.data.ary_n:3969
+
+
+=good 40
+ting topic  name:rdk_test37  produce.data.ary_n:3504
+Auto-creating stream  name:/kafka/rdk_test38-0  produce.data.ary_n:3536
+Auto-creating topic  name:rdk_test38  produce.data.ary_n:3597
+Auto-creating stream  name:/kafka/rdk_test39-0  produce.data.ary_n:3629
+Auto-creating topic  name:rdk_test39  produce.data.ary_n:3690
+
+
+ve$ atf_rdk -compare -v
+atf_rdk.info  comment:"compare multipe backends in one run"
+atf_rdk.info  comment:"override cmdline parameters for test!!!!!!!!!!\n"
+verbose: atf_rdk.info  comment:"Start producing to multiple topics: "  broker:nj1-4.kafka-1.ext-0:1643  max_topics:1000  max_msg_all_topics:1000000
+verbose: atf_rdk.info  "elapsed(sec)":5.44444  comment:Progress  msg_ack_count:100000  msg_req_count:100093  delta:93  lat_avg_us:5700
+verbose: atf_rdk.info  "elapsed(sec)":10.8229  comment:Progress  msg_ack_count:200000  msg_req_count:200094  delta:94  lat_avg_us:5524
+verbose: atf_rdk.info  "elapsed(sec)":16.1906  comment:Progress  msg_ack_count:300000  msg_req_count:300094  delta:94  lat_avg_us:5458
+verbose: atf_rdk.info  "elapsed(sec)":21.5642  comment:Progress  msg_ack_count:400000  msg_req_count:400089  delta:89  lat_avg_us:5424
+verbose: atf_rdk.info  "elapsed(sec)":26.8512  comment:Progress  msg_ack_count:500000  msg_req_count:500093  delta:93  lat_avg_us:5404
+verbose: atf_rdk.info  "elapsed(sec)":32.0451  comment:Progress  msg_ack_count:600000  msg_req_count:600093  delta:93  lat_avg_us:5389
+verbose: atf_rdk.info  "elapsed(sec)":37.3453  comment:Progress  msg_ack_count:700000  msg_req_count:700092  delta:92  lat_avg_us:5378
+verbose: atf_rdk.info  "elapsed(sec)":42.6245  comment:Progress  msg_ack_count:800000  msg_req_count:800092  delta:92  lat_avg_us:5370
+verbose: atf_rdk.info  "elapsed(sec)":47.8957  comment:Progress  msg_ack_count:900000  msg_req_count:900101  delta:101  lat_avg_us:5363
+verbose: atf_rdk.info  comment:"Exiting produce loop"
+verbose: atf_rdk.info  comment:"Flushing remaining messages"  outq_start:95
+verbose: atf_rdk.info  "elapsed(sec)":53.0932  comment:Progress  msg_ack_count:1000000  msg_req_count:1000000  delta:0  lat_avg_us:5358
+verbose: atf_rdk.info  comment:"Flush completed"  iterations:1  outq_final:0
+verbose: atf_rdk.info  comment:"Cleaning up resources..."
+atf_rdk.summary  "elapsed(sec)":53.1035  broker:nj1-4.kafka-1.ext-0:1643  max_topics:1000  msg_enq:1000000  msg_ack:1000000  msg_rate_per_sec:1000000  lat_avg_us:5358
+
+
+verbose: atf_rdk.info  comment:"Start producing to multiple topics: "  broker:localhost:54005  max_topics:1000  max_msg_all_topics:1000000
+verbose: atf_rdk.info  "elapsed(sec)":5.12073  comment:Progress  msg_ack_count:100000  msg_req_count:100092  delta:92  lat_avg_us:5117
+verbose: atf_rdk.info  "elapsed(sec)":10.2112  comment:Progress  msg_ack_count:200000  msg_req_count:200092  delta:92  lat_avg_us:5115
+verbose: atf_rdk.info  "elapsed(sec)":15.3074  comment:Progress  msg_ack_count:300000  msg_req_count:300092  delta:92  lat_avg_us:5117
+verbose: atf_rdk.info  "elapsed(sec)":20.3992  comment:Progress  msg_ack_count:400000  msg_req_count:400092  delta:92  lat_avg_us:5118
+verbose: atf_rdk.info  "elapsed(sec)":25.4892  comment:Progress  msg_ack_count:500000  msg_req_count:500092  delta:92  lat_avg_us:5117
+verbose: atf_rdk.info  "elapsed(sec)":30.5794  comment:Progress  msg_ack_count:600000  msg_req_count:600092  delta:92  lat_avg_us:5116
+verbose: atf_rdk.info  "elapsed(sec)":35.6687  comment:Progress  msg_ack_count:700000  msg_req_count:700092  delta:92  lat_avg_us:5116
+verbose: atf_rdk.info  "elapsed(sec)":40.7595  comment:Progress  msg_ack_count:800000  msg_req_count:800092  delta:92  lat_avg_us:5115
+verbose: atf_rdk.info  "elapsed(sec)":45.8495  comment:Progress  msg_ack_count:900000  msg_req_count:900092  delta:92  lat_avg_us:5115
+verbose: atf_rdk.info  comment:"Exiting produce loop"
+verbose: atf_rdk.info  comment:"Flushing remaining messages"  outq_start:93
+verbose: atf_rdk.info  "elapsed(sec)":50.9376  comment:Progress  msg_ack_count:1000000  msg_req_count:1000000  delta:0  lat_avg_us:5115
+verbose: atf_rdk.info  comment:"Flush completed"  iterations:1  outq_final:0
+verbose: atf_rdk.info  comment:"Cleaning up resources..."
+atf_rdk.summary  "elapsed(sec)":50.9416  broker:localhost:54005  max_topics:1000  msg_enq:1000000  msg_ack:1000000  msg_rate_per_sec:1000000  lat_avg_us:5115
+
+
+
+ atf_rdk -compare -v 
+atf_rdk.info  comment:"compare multipe backends in one run"
+atf_rdk.info  comment:"override cmdline parameters for test!!!!!!!!!!\n"
+verbose: atf_rdk.info  comment:"Start producing to multiple topics: "  broker:nj1-4.kafka-1.ext-0:1643  max_topics:50000  max_msg_all_topics:5000000
+atf_rdk.err  comment:"Message delivery failed: "  error:"Broker: Unknown topic or partition"
+atf_rdk.err  comment:"Message delivery failed: "  error:"Broker: Unknown topic or partition"
+atf_rdk.err  comment:"Message delivery failed: "  error:"Broker: Unknown topic or partition"
+atf_rdk.err  comment:"Message delivery failed: "  error:"Broker: Unknown topic or partition"
+atf_rdk.err  comment:"Message delivery failed: "  error:"Broker: Unknown topic or partition"
+atf_rdk.err  comment:"furher missing messages will be suppressed"
+atf_rdk.err  comment:"Failed to produce message: "  message:aaaaa101083  error:"Local: Unknown topic"
+atf_rdk.err  comment:"Failed to produce message: "  message:aaaaa101087  error:"Local: Unknown topic"
+atf_rdk.err  comment:"Failed to produce message: "  message:aaaaa101090  error:"Local: Unknown topic"
+atf_rdk.err  comment:"Failed to produce message: "  message:aaaaa101098  error:"Local: Unknown topic"
+atf_rdk.err  comment:"Failed to produce message: "  message:aaaaa101102  error:"Local: Unknown topic"
+atf_rdk.err  comment:"error producing messages, further errors will be suppressed"
+verbose: atf_rdk.info  "elapsed(sec)":142.709  comment:Progress  msg_ack_count:100000  msg_req_count:347411  delta:247411  lat_avg_us:54220
+verbose: atf_rdk.info  "elapsed(sec)":191.108  comment:Progress  msg_ack_count:200000  msg_req_count:447420  delta:247420  lat_avg_us:29938
+verbose: atf_rdk.info  "elapsed(sec)":227.582  comment:Progress  msg_ack_count:300000  msg_req_count:547353  delta:247353  lat_avg_us:21859
+verbose: atf_rdk.info  "elapsed(sec)":259.989  comment:Progress  msg_ack_count:400000  msg_req_count:647519  delta:247519  lat_avg_us:18330
+verbose: atf_rdk.info  "elapsed(sec)":286.711  comment:Progress  msg_ack_count:500000  msg_req_count:747354  delta:247354  lat_avg_us:16556
+verbose: atf_rdk.info  comment:"Exiting produce loop"
+verbose: atf_rdk.info  comment:"Flushing remaining messages"  outq_start:0
+verbose: atf_rdk.info  comment:"Flush completed"  iterations:1  outq_final:0
+verbose: atf_rdk.info  comment:"Cleaning up resources..."
+atf_rdk.summary  "elapsed(sec)":324.999  broker:nj1-4.kafka-1.ext-0:1643  max_topics:50000  msg_enq:749467  msg_ack:502147  msg_rate_per_sec:1000000  lat_avg_us:16510
+
+
+%5|1769121547.367|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 60127ms, timeout #0)
+%5|1769121547.367|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 60127ms, timeout #1)
+%5|1769121547.367|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 60127ms, timeout #2)
+%5|1769121547.367|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 60126ms, timeout #3)
+%5|1769121547.367|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 60126ms, timeout #4)
+%4|1769121547.367|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out 259 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%3|1769121547.367|FAIL|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: 259 request(s) timed out: disconnect (after 81483ms in state UP)
+%6|1769121553.427|FAIL|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 127.0.0.1:54005/1: Disconnected (after 3056ms in state UP)
+%3|1769121553.427|ERROR|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 2/2 brokers are down
+%6|1769121562.970|FAIL|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 127.0.0.1:54005/1: Disconnected (after 6459ms in state UP, 1 identical error(s) suppressed)
+verbose: atf_rdk.info  comment:"Start producing to multiple topics: "  broker:localhost:54005  max_topics:50000  max_msg_all_topics:5000000
+%3|1769121599.585|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: localhost:54005/bootstrap: 259 request(s) timed out: disconnect (after 81483ms in state UP)
+%3|1769121599.585|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: 127.0.0.1:54005/1: Disconnected (after 3056ms in state UP)
+%3|1769121599.585|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: 127.0.0.1:54005/1: Disconnected (after 6459ms in state UP, 1 identical error(s) suppressed)
+%6|1769121600.722|FAIL|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 127.0.0.1:54005/1: Disconnected (after 9045ms in state UP, 4 identical error(s) suppressed)
+%3|1769121600.722|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: 127.0.0.1:54005/1: Disconnected (after 9045ms in state UP, 4 identical error(s) suppressed)
+atf_rdk.err  comment:"Failed to produce message: "  message:aaaaa102852  error:"Local: Queue full"
+atf_rdk.err  comment:"Failed to produce message: "  message:aaaaa102853  error:"Local: Queue full"
+atf_rdk.err  comment:"Failed to produce message: "  message:aaaaa102854  error:"Local: Queue full"
+atf_rdk.err  comment:"Failed to produce message: "  message:aaaaa102855  error:"Local: Queue full"
+atf_rdk.err  comment:"Failed to produce message: "  message:aaaaa102856  error:"Local: Queue full"
+atf_rdk.err  comment:"error producing messages, further errors will be suppressed"
+%3|1769121607.638|FAIL|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 127.0.0.1:54005/1: Send failed: Broken pipe (after 3338ms in state UP)
+%3|1769121607.638|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: 127.0.0.1:54005/1: Send failed: Broken pipe (after 3338ms in state UP)
+%5|1769121616.979|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 60448ms, timeout #0)
+%5|1769121616.979|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 60448ms, timeout #1)
+%5|1769121616.979|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 60448ms, timeout #2)
+%5|1769121616.979|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 60448ms, timeout #3)
+%5|1769121616.979|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 60448ms, timeout #4)
+%4|1769121616.984|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out 13507 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%3|1769121616.984|FAIL|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: 13507 request(s) timed out: disconnect (after 63555ms in state UP)
+%3|1769121616.984|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: localhost:54005/bootstrap: 13507 request(s) timed out: disconnect (after 63555ms in state UP)
+%6|1769121620.013|FAIL|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 127.0.0.1:54005/1: Disconnected (after 9044ms in state UP)
+%3|1769121620.013|ERROR|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 2/2 brokers are down
+%3|1769121620.013|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: 127.0.0.1:54005/1: Disconnected (after 9044ms in state UP)
+%6|1769121623.105|FAIL|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Disconnected (after 3088ms in state UP)
+%3|1769121623.105|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: localhost:54005/bootstrap: Disconnected (after 3088ms in state UP)
+%3|1769121627.178|ERROR|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 2/2 brokers are down
+%6|1769121636.719|FAIL|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 127.0.0.1:54005/1: Disconnected (after 3788ms in state UP, 2 identical error(s) suppressed)
+%3|1769121636.719|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: 127.0.0.1:54005/1: Disconnected (after 3788ms in state UP, 2 identical error(s) suppressed)
+%6|1769121671.482|FAIL|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 127.0.0.1:54005/1: Disconnected (after 3923ms in state UP, 5 identical error(s) suppressed)
+%3|1769121671.482|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: 127.0.0.1:54005/1: Disconnected (after 3923ms in state UP, 5 identical error(s) suppressed)
+%5|1769121687.404|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 54466ms, timeout #0)
+%5|1769121687.404|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 54466ms, timeout #1)
+%5|1769121687.404|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 54466ms, timeout #2)
+%5|1769121687.404|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 54466ms, timeout #3)
+%5|1769121687.404|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out MetadataRequest in flight (after 54466ms, timeout #4)
+%4|1769121687.407|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out 7585 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests
+%3|1769121687.407|FAIL|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: 7585 request(s) timed out: disconnect (after 57508ms in state UP)
+%3|1769121687.407|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: localhost:54005/bootstrap: 7585 request(s) timed out: disconnect (after 57508ms in state UP)
+%3|1769121690.430|ERROR|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 2/2 brokers are down
+%6|1769121693.563|FAIL|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Disconnected (after 3120ms in state UP)
+%3|1769121693.563|ERROR|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: 2/2 brokers are down
+%3|1769121693.563|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: localhost:54005/bootstrap: Disconnected (after 3120ms in state UP)
+%6|1769121701.200|FAIL|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Disconnected (after 3137ms in state UP, 1 identical error(s) suppressed)
+%3|1769121701.200|ERROR|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: 2/2 brokers are down
+%3|1769121701.200|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: localhost:54005/bootstrap: Disconnected (after 3137ms in state UP, 1 identical error(s) suppressed)
+%4|1769121708.587|FAIL|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 127.0.0.1:54005/1: Disconnected (after 3188ms in state UP, 4 identical error(s) suppressed)
+%3|1769121708.587|ERROR|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 2/2 brokers are down
+%3|1769121708.587|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: 127.0.0.1:54005/1: Disconnected (after 3188ms in state UP, 4 identical error(s) suppressed)
+%4|1769121713.781|REQTMOUT|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Timed out 0 in-flight, 4552 retry-queued, 0 out-queue, 0 partially-sent requests
+%3|1769121718.014|ERROR|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: 2/2 brokers are down
+atf_rdk.err  comment:"Message delivery failed: "  error:"Broker: Unknown topic or partition"
+atf_rdk.err  comment:"Message delivery failed: "  error:"Broker: Unknown topic or partition"
+atf_rdk.err  comment:"Message delivery failed: "  error:"Broker: Unknown topic or partition"
+atf_rdk.err  comment:"Message delivery failed: "  error:"Broker: Unknown topic or partition"
+atf_rdk.err  comment:"Message delivery failed: "  error:"Broker: Unknown topic or partition"
+atf_rdk.err  comment:"furher missing messages will be suppressed"
+%3|1769121724.158|FAIL|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Send failed: Broken pipe (after 3022ms in state UP)
+%3|1769121724.158|ERROR|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: 2/2 brokers are down
+%3|1769121724.158|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: localhost:54005/bootstrap: Send failed: Broken pipe (after 3022ms in state UP)
+%3|1769121727.815|ERROR|atf_rdk#producer-2| [thrd:127.0.0.1:54005/1]: 2/2 brokers are down
+%6|1769121730.881|FAIL|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Disconnected (after 3058ms in state UP)
+%3|1769121730.881|ERROR|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: 2/2 brokers are down
+%3|1769121730.881|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: localhost:54005/bootstrap: Disconnected (after 3058ms in state UP)
+%6|1769121740.859|FAIL|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: localhost:54005/bootstrap: Disconnected (after 6956ms in state UP, 1 identical error(s) suppressed)
+%3|1769121740.859|ERROR|atf_rdk#producer-2| [thrd:localhost:54005/bootstrap]: 2/2 brokers are down
+%3|1769121740.859|ERROR|atf_rdk#producer-2| [thrd:app]: atf_rdk#producer-2: localhost:54005/bootstrap: Disconnected (after 6956ms in state UP, 1 identical error(s) suppressed)
+^Cverbose: atf_rdk.info  comment:"Exiting produce loop"
+verbose: atf_rdk.info  comment:"Flushing remaining messages"  outq_start:100000
+atf_rdk.info  comment:"Flush interrupted by stop signal"  iflush:1
+verbose: atf_rdk.info  comment:"Cleaning up resources..."
+%4|1769121745.426|TERMINATE|atf_rdk#producer-2| [thrd:app]: Producer terminating with 100000 messages (999088 bytes) still in queue or transit: use flush() to wait for outstanding message delivery
+atf_rdk.summary  "elapsed(sec)":276.264  broker:localhost:54005  max_topics:50000  msg_enq:108840  msg_ack:8556  msg_rate_per_sec:1000000  lat_avg_us:7230837
+
+max_topics:50000  max_msg_all_topics:500000
+
+warn: x2gw-0-0: discarding x2gw.produce  request_id:x2gw-0-0.391362  origin_request_id:-0-0.1  stream_id:4  data:35  sent:N  tstamp:2026-01-23T11:12:34.218850025, session 4
+warn: x2gw-0-0: discarding x2gw.produce  request_id:x2gw-0-0.427712  origin_request_id:-0-0.1  stream_id:26  data:15  sent:Y  tstamp:2026-01-23T11:13:05.796872894, session 14
+warn: x2gw-0-0: discarding x2gw.produce  request_id:x2gw-0-0.427713  origin_request_id:-0-0.1  stream_id:26  data:18  sent:N  tstamp:2026-01-23T11:13:05.796874274, session 14
+warn: x2gw-0-0: discarding x2gw.produce  request_id:x2gw-0-0.427714  origin_request_id:-0-0.1  stream_id:26  data:19  sent:N  tstamp:2026-01-23T11:13:05.796874734, session 14
+warn: x2gw-0-0: discarding x2gw.produce  request_id:x2gw-0-0.427835  origin_request_id:-0-0.1  stream_id:73  data:15  sent:Y  tstamp:2026-01-23T11:13:11.835327569, session 16
+warn: x2gw-0-0: discarding x2gw.produce  request_id:x2gw-0-0.427836  origin_request_id:-0-0.1  stream_id:73  data:18  sent:N  tstamp:2026-01-23T11:13:11.835327829, session 16
+warn: x2gw-0-0: discarding x2gw.produce  request_id:x2gw-0-0.427837  origin_request_id:-0-0.1  stream_id:73  data:19  sent:N  tstamp:2026-01-23T11:13:11.835327999, session 16
+algo.fatal_error
+out: out of memory
+ dev.gitinfo  comment:unversioned
+  algo_lib.retaddr:bin/x2gw.0x56bb3e4a0670  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e4a0e1e  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e453d2b  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e48b873  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e46f8a8  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e46fba3  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e48b1b7  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e469b21  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e58ad0a  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e58b38f  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e48a482  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e469619  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e48a420  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e4bd643  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e4b5a75  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e45181e  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:bin/x2gw.0x56bb3e44ef6d  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:/lib/x86_64-linux-gnu/libc.so.6.0x7784cf2b91ca  symaddr:0x00000000  symbol:""
+  algo_lib.retaddr:/lib/x86_64-linux-gnu/libc.so.6.0x7784cf2b928b  symaddr:0x7784cf2b9200  symbol:__libc_start_main
+  algo_lib.retaddr:bin/x2gw.0x56bb3e450485  symaddr:0x00000000  symbol:""
+algo_lib.crash_trace  comment:'Current values of trace counters are shown below'
+  algo_lib.trace  step_bh_timehook:381  step_bh_timehook_cycles:1270960  step_giveup_time:344296619  step_giveup_time_cycles:56722390185  alloc__db_malloc:978247  del__db_malloc:978135
+  lib_ams.trace  step_cd_hb:2802  step_cd_hb_cycles:946940  step_cd_poll_read:344296618  step_cd_poll_read_cycles:66814613489  step_bh_shmember_read:25205826  step_bh_shmember_read_cycles:3485605841  alloc__db_shm:44  alloc__db_proc:8
+  lib_ams.trace  alloc__db_shmember:155  alloc__db_shmtype:14
+  lib_x2.trace  n_seqmsg_ignore:18110399  step_bh_readreq:358684  step_bh_readreq_cycles:66724601  step_cd_member_hb:562  step_cd_member_hb_cycles:118620  step_zs_member_quickhb:564  step_zs_member_quickhb_cycles:331360  step_cd_pub_check:1248
+  lib_x2.trace  step_cd_pub_check_cycles:313180  dispatch_Shm_MemberHbMsg:50501764  dispatch_Shm_MemberHbMsg_cycles:30346225600  dispatch_Shm_Seqmsg:19861800  dispatch_Shm_Seqmsg_cycles:11108422440  dispatch_Shm_Unkmsg:61  dispatch_Syscmd_BeginAppendMsg:1  dispatch_Syscmd_BeginAppendMsg_cycles:6980
+  lib_x2.trace  dispatch_Syscmd_BsinitMsg:3  dispatch_Syscmd_BsinitMsg_cycles:324260  dispatch_Syscmd_EmbedMsg:13492  dispatch_Syscmd_EmbedMsg_cycles:5987140  dispatch_Syscmd_FsMsg:1  dispatch_Syscmd_FsMsg_cycles:91020  dispatch_Syscmd_SetMcgrpMsg:1  dispatch_Syscmd_SetMcgrpMsg_cycles:5660
+  lib_x2.trace  dispatch_Syscmd_SsimMsg:741  dispatch_Syscmd_SsimMsg_cycles:2522540  dispatch_Syscmd_Unkmsg:5  alloc__db_topo:1  alloc__db_pub:624  del__db_pub:624  alloc__db_x2node:1  alloc__db_shm:44
+  lib_x2.trace  alloc__db_core:8  alloc__db_shmember:111  alloc__db_member:26549  alloc__db_proc:8  alloc__db_shmtype:14  alloc__db_readreq:3  alloc__db_cmd:32  alloc__db_metric:134
+  lib_x2.trace  alloc__db_mcgrp:1  alloc__db_storage:1  alloc__db_stream:13493  alloc__db_nodeintf:1  alloc__db_intfmc:1  alloc__db_mctype:4  alloc__db_metric_type:2  alloc__db_metric_name:30
+  x2gw.trace  step_zd_conn_del:4  step_zd_conn_del_cycles:7989440  step_cd_accept:38  step_cd_accept_cycles:6262000  step_cd_conn_read:162975  step_cd_conn_read_cycles:314931279  step_cd_conn_eof:17  step_cd_conn_eof_cycles:7160
+  x2gw.trace  step_cd_conn_outflow:54062  step_cd_conn_outflow_cycles:24236740  step_cd_produce_send:257500493  step_cd_produce_send_cycles:8089811989  dispatch_Shm_DataMsg:359444  dispatch_Shm_DataMsg_cycles:85643140  dispatch_Shm_OnAppendMsg:283475  dispatch_Shm_OnAppendMsg_cycles:191953200
+  x2gw.trace  dispatch_Shm_StartupMsg:2  dispatch_Shm_StartupMsg_cycles:18520  dispatch_Shm_Unkmsg:70363625  dispatch_Syscmd_BrokerMsg:1  dispatch_Syscmd_BrokerMsg_cycles:7840  dispatch_Syscmd_CreateStreamMsg:13493  dispatch_Syscmd_CreateStreamMsg_cycles:22456100  dispatch_Syscmd_CreateTopicMsg:47457
+  x2gw.trace  dispatch_Syscmd_CreateTopicMsg_cycles:44674760  dispatch_Syscmd_PartitionLeaderMsg:5262861  dispatch_Syscmd_PartitionLeaderMsg_cycles:228568604620  dispatch_Syscmd_Unkmsg:14244  conn_out_n_write_byte:15065610  conn_out_n_write_msg:57836  conn_in_n_read_byte:10686742  conn_in_n_read_msg:57841
+  x2gw.trace  alloc__db_stream:13493  alloc__db_session:19  del__db_session:17  alloc__db_produce:427832  del__db_produce:427832  alloc__db_gwproto:12  alloc__db_conn:19  del__db_conn:17
+  x2gw.trace  alloc__db_session_conn:19  del__db_session_conn:17  alloc__db_user:5  alloc__db_role:2  alloc__db_userrole:7  alloc__db_userpass:4  alloc__db_cmdreq:1  alloc__db_cmdout:1
+  x2gw.trace  alloc__db_connstat:3  alloc__db_acl:13  alloc__db_topic:47457  del__db_topic:33973  alloc__db_gwport:12  alloc__db_proc:8  alloc__db_prodgrp:57839  del__db_prodgrp:57838
+  x2gw.trace  alloc__db_principal:7
+
+x2sup.proc  proc:x2gw-0-0  status:Exited  code:1
+x2sup.proc  proc:x2cmt-0-0  status:Exited  code:0
+x2sup.proc  proc:x2gf-0-0  status:Exited  code:0
+x2sup.proc  proc:x2imdb-0-0  status:Exited  code:0
+x2sup.proc  proc:x2mon-0-0  status:Exited  code:0
+x2sup.proc  proc:x2net-0-0  status:Exited  code:0
+x2sup.proc  proc:x2txn-0-0  status:Exited  code:0
+
+
+at 50k
+
+from        pid     MHz      io_Mb/s  n_fd  vm       ram      locked
+x2cmt-0-0   836395  12.9547  99.4831  37    148.6MB  61.9MB
+x2gf-0-0    836396  13.1761  96.5878  30    3.8GB    3.8GB
+x2mon-0-0   836399  7.6616   95.1055  31    61.1MB   51.4MB
+x2sup-0-0   836393  10.5657  95.1035  55    91.8MB   85.5MB
+x2txn-0-0   836401  10.4534  96.5821  34    966.1MB  952.6MB
+x2imdb-0-0  836398  14.9423  96.5868  27    65.3MB   56.1MB
+x2net-0-0   836400  6.17897  116.913  43    80.1MB   64.5MB
+timed out: at x2gw-0-0 status
+
+
+
+
+
+
+
+
+
+
+
+
+
+Every 0.5s:                                                                                                                                                          
+from        pid     MHz      io_Mb/s  n_fd  vm       ram     locked
+x2cmt-0-0   839712  1.18617  423.33   37    150.0MB  52.2MB
+x2gf-0-0    839713  13.2151  93.2828  30    8.5GB    8.5GB
+x2mon-0-0   839716  8.03299  51.8743  31    52.7MB   44.6MB
+x2sup-0-0   839710  11.474   52.1943  55    83.4MB   77.1MB
+x2txn-0-0   839718  11.2858  52.0284  34    2.1GB    2.1GB
+x2imdb-0-0  839715  15.9034  52.0627  27    56.9MB   47.7MB
+x2net-0-0   839717  6.32665  454.256  43    71.7MB   59.8MB
+timed out: at x2gw-0-0 status
+------
+Memory metrics:
+from        table                       elems  alloc     alloc/t
+x2cmt-0-0   x2cmt-0-0.algo_lib-malloc   83     900       2
+x2gf-0-0    x2gf-0-0.algo_lib-malloc    76     110       2
+x2gw-0-0    x2gw-0-0.algo_lib-malloc    113    572605    33
+x2mon-0-0   x2mon-0-0.algo_lib-malloc   77     111       2
+x2sup-0-0   x2sup-0-0.algo_lib-malloc   75     109       2
+x2txn-0-0   x2txn-0-0.algo_lib-malloc   76     31839076  16
+x2imdb-0-0  x2imdb-0-0.algo_lib-malloc  75     109       2
+x2net-0-0   x2net-0-0.algo_lib-malloc   77     111       2
+
+
+2026-01-23 13:55:53.756
+=== Status ===
+from        pid     MHz      io_Mb/s  n_fd  vm       ram     locked
+x2cmt-0-0   842597  12.6828  86.249   37    144.5MB  57.1MB
+x2gf-0-0    842598  12.7898  83.9009  30    5.4GB    5.4GB
+x2mon-0-0   842601  7.41664  83.9009  31    59.0MB   49.8MB
+x2sup-0-0   842595  10.3746  83.8958  55    89.7MB   83.4MB
+x2txn-0-0   842603  10.1233  83.8973  34    1.3GB    1.3GB
+x2imdb-0-0  842600  14.4563  83.9014  27    63.2MB   54.0MB
+x2net-0-0   842602  5.00447  100.302  43    78.0MB   64.5MB
+timed out: at x2gw-0-0 status
+
+=== Memory metrics ===
+from        table                       elems  alloc     alloc/t
+x2cmt-0-0   x2cmt-0-0.algo_lib-malloc   82     1537      2
+x2gf-0-0    x2gf-0-0.algo_lib-malloc    76     748       2
+x2gw-0-0    x2gw-0-0.algo_lib-malloc    112    649303    33
+x2mon-0-0   x2mon-0-0.algo_lib-malloc   77     749       2
+x2sup-0-0   x2sup-0-0.algo_lib-malloc   75     747       2
+x2txn-0-0   x2txn-0-0.algo_lib-malloc   76     19635718  16
+x2imdb-0-0  x2imdb-0-0.algo_lib-malloc  75     747       2
+x2net-0-0   x2net-0-0.algo_lib-malloc   77     749       2
+
+
+
+dev.targdep  targdep:atf_rdk.algo_lib  comment:""
+dev.targdep  targdep:atf_rdk.lib_ams     comment:""
+dev.targdep  targdep:atf_rdk.lib_netio   comment:""
+dev.targdep  targdep:atf_rdk.lib_prot  comment:""
+dev.targdep  targdep:atf_rdk.lib_x2prot  comment:""
+
+
+dev.targdep  targdep:x2write.algo_lib  comment:""
+dev.targdep  targdep:x2write.lib_ams  comment:""
+dev.targdep  targdep:x2write.lib_netio  comment:""
+dev.targdep  targdep:x2write.lib_prot  comment:""
+dev.targdep  targdep:x2write.lib_x2prot  comment:""
+
+
+dev.targdep  targdep:atf_rdk.lib_ams     comment:""
+dev.targdep  targdep:atf_rdk.lib_netio   comment:""
+dev.targdep  targdep:atf_rdk.lib_prot    comment:""
+dev.targdep  targdep:atf_rdk.lib_x2prot  comment:""

@@ -65,3 +65,8 @@ END=$(date +%s%3N)
 DURATION=$((END-START))
 echo "Memory metrics runtime: ${DURATION} ms"
 '
+
+
+exit
+
+echo metric %read% | x2cli

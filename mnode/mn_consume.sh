@@ -6,7 +6,7 @@ echo "====================starting consume"
 set -x
 /opt/kafka/current/bin/kafka-console-consumer.sh \
   --bootstrap-server $server \
-  --topic test-topic \
+  --topic $topic \
   --group test-consumer-group \
   --from-beginning \
   --property print.timestamp=true \

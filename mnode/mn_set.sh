@@ -8,9 +8,9 @@ client=ak
 
 # omplat=ak
 # omplat=x2
-omplat=x2/ak
+# omplat=x2/ak
 # omplat=rp
-# omplat=local
+omplat=local
 
 
 if [ "$omplat" = "ak" ]; then
@@ -19,7 +19,7 @@ elif [ "$omplat" = "x2" ]; then
   # server="192.168.104.5:1558"
   server="192.168.104.2:1519"
 elif [ "$omplat" = "local" ]; then
-  server=localhost:9092
+  server=localhost:54005 
 elif [ "$omplat" = "x2/ak" ]; then
    echo "double omplat$omplat - no server assigned"
 else
@@ -29,7 +29,7 @@ fi
 # cfg=debug
 cfg=release
 
-topic=test-topic
+topic=test-topic0
 nbatch=10
 nrec=2000
 echo "setup  omplat:$omplat   " 

@@ -71,22 +71,27 @@ acr_ed -create -field atf_rdk.FDb.zd_topic            -cascdel              -wri
 acr_ed -create -field atf_rdk.FDb.ind_topic           -cascdel              -write -comment ""
 
 set -e
-acr_ed -del    -ctype atf_rdk.FMcb                            -write  || true
-acr_ed -create -ctype atf_rdk.FMcb                            -write -comment "Main CB"
-acr_ed -create -field atf_rdk.FMcb.msg_req_count              -arg u64               -write -comment "count of produce enqueued messages"
-acr_ed -create -field atf_rdk.FMcb.msg_ack_count              -arg u64               -write -comment "count of produce acked  messages"
-acr_ed -create -field atf_rdk.FMcb.msg_lat_total              -arg u64               -write -comment "total latency of produce acked messages"
-acr_ed -create -field atf_rdk.FMcb.max_msg_all_topics         -arg u64               -write -comment "max messages to produce across all topics"
-acr_ed -create -field atf_rdk.FMcb.err_onflush_count            -arg u64               -write -comment "error count on flush"
-acr_ed -create -field atf_rdk.FMcb.err_onproduce_count          -arg u64               -write -comment "error count on produce"
-acr_ed -create -field atf_rdk.FMcb.stop                       -arg bool              -write -comment "stop  flag for producer"
-acr_ed -create -field atf_rdk.FMcb.rk                  -arg u8       -reftype Ptr -write -comment " rd_kafka_t pointer"
-acr_ed -create -field atf_rdk.FMcb.rkt                 -arg u8       -reftype Ptr -write -comment " rd_kafka_topic_t pointer"
-acr_ed -create -field atf_rdk.FMcb.time0                       -arg algo.SchedTime    -write -comment "starting time for each session"
-
-# 
-# acr_ed -create -field atf_rdk.FMcb.rkt              -arg atf_rdk.rd_kafka_topic_t -reftype Ptr -write -comment ""
-
+acr_ed -del    -ctype atf_rdk.FMcb                               -write  || true
+acr_ed -create -ctype atf_rdk.FMcb                               -write -comment "Main CB"
+acr_ed -create -field atf_rdk.FMcb.msg_buf                       -arg algo.ByteAry      -write -comment "msg buffer"
+acr_ed -create -field atf_rdk.FMcb.msg_req_count                 -arg u64               -write -comment "count of produce enqueued messages"
+acr_ed -create -field atf_rdk.FMcb.msg_ack_count                 -arg u64               -write -comment "count of produce acked  messages"
+acr_ed -create -field atf_rdk.FMcb.msg_ack_count_last            -arg u64               -write -comment "count of produce acked  messages, last check"
+acr_ed -create -field atf_rdk.FMcb.msg_lat_total                 -arg u64               -write -comment "total latency of produce acked messages"
+acr_ed -create -field atf_rdk.FMcb.msg_lat_total_last            -arg u64               -write -comment "total latency of produce acked messages, last check"
+acr_ed -create -field atf_rdk.FMcb.max_msg_all_topics            -arg u64               -write -comment "max messages to produce across all topics"
+acr_ed -create -field atf_rdk.FMcb.imsg                          -arg u64               -write -comment "index of current mproduced message"
+acr_ed -create -field atf_rdk.FMcb.err_ondelivery_count          -arg u64               -write -comment "error count on delivery"
+acr_ed -create -field atf_rdk.FMcb.err_onproduce_count           -arg u64               -write -comment "error count on produce"
+acr_ed -create -field atf_rdk.FMcb.itopic_10p                    -arg u64               -write -comment "count of 10% topics"
+acr_ed -create -field atf_rdk.FMcb.stop                          -arg bool              -write -comment "stop  flag for producer"
+acr_ed -create -field atf_rdk.FMcb.rk                            -arg u8                -reftype Ptr -write -comment " rd_kafka_t pointer"
+acr_ed -create -field atf_rdk.FMcb.rkt                           -arg u8                -reftype Ptr -write -comment " rd_kafka_topic_t pointer"
+acr_ed -create -field atf_rdk.FMcb.time0                         -arg algo.SchedTime    -write -comment "starting time for each session"
+acr_ed -create -field atf_rdk.FMcb.sleep_us                     -arg u64               -write -comment "sleep us between messages"
+acr_ed -create -field atf_rdk.FMcb.logs_dir                    -arg algo.Smallstr50              -write -comment "subfolder for rdk logs"
+acr_ed -create -field atf_rdk.FMcb.rd_stats_json                 -arg algo.cstring             -write -comment "save json from rd_stat callback"
+acr_ed -create -field atf_rdk.FMcb.rd_stats_file                -arg algo.Smallstr50            -write -comment "file name for rd_stats json"
 
 
 # include  atf_rdk.FMcb into _db
@@ -104,16 +109,43 @@ acr.delete dmmeta.field  field:command.atf_rdk.max_topics
 acr.delete dmmeta.field  field:command.atf_rdk.msg_rate 
 acr.delete dmmeta.field  field:command.atf_rdk.msg_max_size 
 acr.delete dmmeta.field  field:command.atf_rdk.mcompare 
+acr.delete dmmeta.field  field:command.atf_rdk.progress
+acr.delete dmmeta.field  field:command.atf_rdk.rd_stats
+acr.delete dmmeta.field  field:command.atf_rdk.run_id
 EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_rdk.broker              arg:algo.cstring  reftype:Val      dflt:'"nj1-4.kafka-1.ext-0:1643"'  comment:"broker url"
-    dmmeta.field  field:command.atf_rdk.topic               arg:algo.cstring  reftype:Val      dflt:'"rdk_test"'  comment:"topic to use"
+    dmmeta.field  field:command.atf_rdk.topic               arg:algo.cstring  reftype:Val      dflt:'"test-topic"'  comment:"topic name prefix"
     dmmeta.field  field:command.atf_rdk.max_msgs             arg:u64           reftype:Val      dflt:10            comment:"number of messages to produce"
     dmmeta.field  field:command.atf_rdk.max_topics            arg:u64           reftype:Val      dflt:10             comment:"number of topics to produce"
     dmmeta.field  field:command.atf_rdk.msg_rate            arg:u64         reftype:Val      dflt:1000000             comment:"message rate per sec"
     dmmeta.field  field:command.atf_rdk.msg_max_size            arg:u64         reftype:Val      dflt:10             comment:"maximum message size"
     dmmeta.field  field:command.atf_rdk.compare             arg:bool          reftype:Val      dflt:false         comment:"compare several backends in one run"
+    dmmeta.field  field:command.atf_rdk.progress             arg:bool          reftype:Val      dflt:true         comment:"print progress report"
+    dmmeta.field  field:command.atf_rdk.rd_stats             arg:bool          reftype:Val      dflt:false         comment:"save  rdkafka stats in json file"
+    dmmeta.field  field:command.atf_rdk.run_id              arg:algo.cstring         reftype:Val      dflt:'"run1"'       comment:"run id for parallel runs"
 EOF
+
+
+
+#----------FDb  steps
+acr_ed -del    -field atf_rdk.FDb.rdk_poll                     -write || true
+acr_ed -create -field atf_rdk.FDb.rdk_poll                     -arg bool             -write -comment "step field for rdk polling loop"
+acr -merge -write <<EOF
+    dmmeta.fstep  fstep:atf_rdk.FDb.rdk_poll steptype:Inline  comment:"should be without delay"
+EOF
+
+acr_ed -del    -field atf_rdk.FDb.rdk_mon                     -write || true
+acr_ed -create -field atf_rdk.FDb.rdk_mon                     -arg bool             -write -comment "step field for rdk monitoring loop"
+acr -merge -write <<EOF
+    dmmeta.fstep  fstep:atf_rdk.FDb.rdk_mon steptype:InlineRecur comment:"monitor"
+    dmmeta.fdelay  fstep:atf_rdk.FDb.rdk_mon   delay:1.000000000  scale:N  comment:""
+EOF
+
+#time hook
+acr_ed -del    -field atf_rdk.FDb.th_msg                         -write || true
+acr_ed -create -field atf_rdk.FDb.th_msg                          -arg algo_lib.FTimehook  -reftype Val      -write -comment ""
+# arg:algo_lib.FTimehook  reftype:Val  dflt:""
 
 amc
 amc_vis atf_rdk.%   > ~/av_openacr/atf_snf_viz.txt

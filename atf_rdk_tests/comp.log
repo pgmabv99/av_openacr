@@ -405,22 +405,78 @@ x2imdb-0-0  x2imdb-0-0.algo_lib-malloc  75     747       2
 x2net-0-0   x2net-0-0.algo_lib-malloc   77     749       2
 
 
+occasional er on startup
 
-dev.targdep  targdep:atf_rdk.algo_lib  comment:""
-dev.targdep  targdep:atf_rdk.lib_ams     comment:""
-dev.targdep  targdep:atf_rdk.lib_netio   comment:""
-dev.targdep  targdep:atf_rdk.lib_prot  comment:""
-dev.targdep  targdep:atf_rdk.lib_x2prot  comment:""
-
-
-dev.targdep  targdep:x2write.algo_lib  comment:""
-dev.targdep  targdep:x2write.lib_ams  comment:""
-dev.targdep  targdep:x2write.lib_netio  comment:""
-dev.targdep  targdep:x2write.lib_prot  comment:""
-dev.targdep  targdep:x2write.lib_x2prot  comment:""
+x2sup-0-0: deleting vars file, initdir temp/x2tmp/
+x2sup.start  me:dev1p.x2sup-0-0  nproc:8
+x2sup-0-0: startup: ready stage 1. not all gateways issued BrokerReady messages (0 / 1)
+x2sup-0-0: startup: ready stage 1. not all gateways issued BrokerReady messages (0 / 1)
+x2sup-0-0: startup: ready stage 1. not all gateways issued BrokerReady messages (0 / 1)
+x2sup-0-0: startup: ready stage 1. not all gateways issued BrokerReady messages (0 / 1)
+x2sup-0-0: startup: ready stage 1. not all gateways issued BrokerReady messages (0 / 1)
+x2sup-0-0: startup: ready stage 1. not all gateways issued BrokerReady messages (0 / 1)
+x2sup-0-0: startup: ready stage 1. not all gateways issued BrokerReady messages (0 / 1)
 
 
-dev.targdep  targdep:atf_rdk.lib_ams     comment:""
-dev.targdep  targdep:atf_rdk.lib_netio   comment:""
-dev.targdep  targdep:atf_rdk.lib_prot    comment:""
-dev.targdep  targdep:atf_rdk.lib_x2prot  comment:""
+after local buffer increase
+
+
+ atf_rdk -compare -v 
+atf_rdk.info  comment:"compare multipe backends in one run"
+atf_rdk.info  comment:"override cmdline parameters for test!!!!!!!!!!\n"
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test0
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test1000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test2000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test3000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test4000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test5000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test6000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test7000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test8000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test9000
+verbose: atf_rdk.info  comment:"All topics created"
+verbose: atf_rdk.info  comment:"Start producing to multiple topics: "  broker:nj1-4.kafka-1.ext-0:1643  max_topics:10000  max_msg_all_topics:1000000
+verbose: atf_rdk.info  comment:"Exiting produce loop"
+verbose: atf_rdk.info  comment:"Flushing remaining messages"  outq_start:4306
+verbose: atf_rdk.info  comment:"Flush completed"  iterations:1  outq_final:0
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test0
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test1000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test2000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test3000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test4000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test5000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test6000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test7000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test8000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test9000
+verbose: natf_rdk.info  comment:"Cleaning up resources..."
+atf_rdk.summary  broker:nj1-4.kafka-1.ext-0:1643  "elapsed(sec)":53.9334  max_topics:10000  msg_enq:1000000  msg_ack:1000000  msg_rate_per_sec:1000000  lat_avg_us:253240
+
+
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test0
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test1000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test2000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test3000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test4000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test5000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test6000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test7000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test8000
+verbose: atf_rdk.info  comment:"Creating topic"  topic:rdk_test9000
+verbose: atf_rdk.info  comment:"All topics created"
+verbose: atf_rdk.info  comment:"Start producing to multiple topics: "  broker:localhost:54005  max_topics:10000  max_msg_all_topics:1000000
+verbose: atf_rdk.info  comment:"Exiting produce loop"
+verbose: atf_rdk.info  comment:"Flushing remaining messages"  outq_start:23912
+verbose: atf_rdk.info  comment:"Flush completed"  iterations:1  outq_final:0
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test0
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test1000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test2000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test3000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test4000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test5000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test6000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test7000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test8000
+verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test9000
+verbose: natf_rdk.info  comment:"Cleaning up resources..."
+atf_rdk.summary  broker:localhost:54005  "elapsed(sec)":54.6755  max_topics:10000  msg_enq:1000000  msg_ack:1000000  msg_rate_per_sec:1000000  lat_avg_us:1328751

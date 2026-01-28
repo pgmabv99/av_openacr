@@ -36,3 +36,13 @@ report.acr  n_select:26  n_insert:0  n_delete:0  n_ignore:0  n_update:0  n_file_
 
 
 bin/x2node  -node:$'dev.x2-4.tap-1_ext_0|dev.x2-4.tap-4_ext_0' -cmd:$'$\'cat temp/atf_snf_logs/dev.x2-4.tap-*/tcp_pairs_hist_42.log 2>/dev/null || true\'' -q:Y 
+
+
+x22sup_start.sh
+sleep 2
+atf_rdk -compare -progress:N  -run_id:run1 &
+atf_rdk -compare -progress:N  -run_id:run2 &
+atf_rdk -compare -progress:N  -run_id:run3 &
+wait
+sleep 2
+mn_consume.sh > temp/atf_rdk_consume.log 

@@ -1,4 +1,4 @@
-#!/bin/bash
+ai#!/bin/bash
 
 PATH=bin:$PATH
 PATH=$HOME/arnd/bin:$PATH
@@ -65,9 +65,13 @@ abt2(){
 
 #  clean generated
 gitclean_gen() {
-  git checkout -- cpp/gen
-  git checkout -- include/gen
-  git checkout -- ts/gen
+  git checkout --ours cpp/gen include/gen ts/gen
+  git add cpp/gen
+  git add include/gen
+  git add ts/gen
+  git commit 
+  git rebase --continue
+
 
 }
 gitlog1() {

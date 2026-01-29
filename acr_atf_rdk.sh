@@ -112,29 +112,27 @@ acr.delete dmmeta.field  field:command.atf_rdk.mcompare
 acr.delete dmmeta.field  field:command.atf_rdk.progress
 acr.delete dmmeta.field  field:command.atf_rdk.rd_stats
 acr.delete dmmeta.field  field:command.atf_rdk.run_id
+acr.delete dmmeta.field  field:command.atf_rdk.use_stdin
 EOF
 acr -merge -write <<EOF
-    dmmeta.field  field:command.atf_rdk.broker              arg:algo.cstring  reftype:Val      dflt:'"nj1-4.kafka-1.ext-0:1643"'  comment:"broker url"
-    dmmeta.field  field:command.atf_rdk.topic               arg:algo.cstring  reftype:Val      dflt:'"test-topic"'  comment:"topic name prefix"
-    dmmeta.field  field:command.atf_rdk.max_msgs             arg:u64           reftype:Val      dflt:10            comment:"number of messages to produce"
-    dmmeta.field  field:command.atf_rdk.max_topics            arg:u64           reftype:Val      dflt:10             comment:"number of topics to produce"
-    dmmeta.field  field:command.atf_rdk.msg_rate            arg:u64         reftype:Val      dflt:1000000             comment:"message rate per sec"
-    dmmeta.field  field:command.atf_rdk.msg_max_size            arg:u64         reftype:Val      dflt:10             comment:"maximum message size"
-    dmmeta.field  field:command.atf_rdk.compare             arg:bool          reftype:Val      dflt:false         comment:"compare several backends in one run"
-    dmmeta.field  field:command.atf_rdk.progress             arg:bool          reftype:Val      dflt:true         comment:"print progress report"
-    dmmeta.field  field:command.atf_rdk.rd_stats             arg:bool          reftype:Val      dflt:false         comment:"save  rdkafka stats in json file"
-    dmmeta.field  field:command.atf_rdk.run_id              arg:algo.cstring         reftype:Val      dflt:'"run1"'       comment:"run id for parallel runs"
+    dmmeta.field  field:command.atf_rdk.broker       arg:algo.cstring  reftype:Val  dflt:'"localhost:54005"'  comment:"broker url"
+    dmmeta.field  field:command.atf_rdk.topic        arg:algo.cstring  reftype:Val  dflt:'"test-topic"'               comment:"topic name prefix"
+    dmmeta.field  field:command.atf_rdk.max_msgs     arg:u64           reftype:Val  dflt:10                          comment:"number of messages to produce"
+    dmmeta.field  field:command.atf_rdk.max_topics   arg:u64           reftype:Val  dflt:10                          comment:"number of topics to produce"
+    dmmeta.field  field:command.atf_rdk.msg_rate     arg:u64           reftype:Val  dflt:1000000                     comment:"message rate per sec"
+    dmmeta.field  field:command.atf_rdk.msg_max_size arg:u64           reftype:Val  dflt:10                          comment:"maximum message size"
+    dmmeta.field  field:command.atf_rdk.compare      arg:bool          reftype:Val  dflt:false                       comment:"compare several backends in one run"
+    dmmeta.field  field:command.atf_rdk.progress     arg:bool          reftype:Val  dflt:true                        comment:"print progress report"
+    dmmeta.field  field:command.atf_rdk.rd_stats     arg:bool          reftype:Val  dflt:false                       comment:"save  rdkafka stats in json file"
+    dmmeta.field  field:command.atf_rdk.use_stdin    arg:bool          reftype:Val  dflt:false                       comment:"use stdin for message input.  If false, generate messages"
+    dmmeta.field  field:command.atf_rdk.run_id       arg:algo.cstring  reftype:Val  dflt:'"run1"'                    comment:"run id for parallel runs"
 EOF
 
 
 
-#----------FDb  steps
-acr_ed -del    -field atf_rdk.FDb.rdk_poll                     -write || true
-acr_ed -create -field atf_rdk.FDb.rdk_poll                     -arg bool             -write -comment "step field for rdk polling loop"
-acr -merge -write <<EOF
-    dmmeta.fstep  fstep:atf_rdk.FDb.rdk_poll steptype:Inline  comment:"should be without delay"
-EOF
+#----------FDb  steps/hooks
 
+# monitor step
 acr_ed -del    -field atf_rdk.FDb.rdk_mon                     -write || true
 acr_ed -create -field atf_rdk.FDb.rdk_mon                     -arg bool             -write -comment "step field for rdk monitoring loop"
 acr -merge -write <<EOF
@@ -142,11 +140,16 @@ acr -merge -write <<EOF
     dmmeta.fdelay  fstep:atf_rdk.FDb.rdk_mon   delay:1.000000000  scale:N  comment:""
 EOF
 
-#time hook
+# time hook
 acr_ed -del    -field atf_rdk.FDb.th_msg                         -write || true
 acr_ed -create -field atf_rdk.FDb.th_msg                          -arg algo_lib.FTimehook  -reftype Val      -write -comment ""
-# arg:algo_lib.FTimehook  reftype:Val  dflt:""
 
+# terminal input hook
+acr_ed -del    -field atf_rdk.FDb.terminal                        -write || true
+acr_ed -create -field atf_rdk.FDb.terminal -arg algo_lib.FIohook -write -comment "terminal input hook/ fd"
+
+
+# ------------
 amc
 amc_vis atf_rdk.%   > ~/av_openacr/atf_snf_viz.txt
 

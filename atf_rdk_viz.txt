@@ -1,0 +1,8 @@
+/ atf_rdk.FDb                      
+|Tpool topic------>/ atf_rdk.FTopic
+|Llist zd_topic--->|               
+|Thash ind_topic-->|               
+|                  -               
+|Val mcb---------->/ atf_rdk.FMcb  
+-                  |               
+                   -               

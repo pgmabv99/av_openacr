@@ -6,9 +6,9 @@
 # client=rdk
 client=ak
 
-# omplat=ak
+omplat=ak
 # omplat=x2
-omplat=x2/ak
+# omplat=x2/ak
 # omplat=rp
 # omplat=local
 
@@ -25,6 +25,7 @@ elif [ "$omplat" = "x2/ak" ]; then
 else
   echo "unknown omplat:$omplat - no server assigned"
 fi
+broker=$server
 
 # cfg=debug
 cfg=release

@@ -1,7 +1,7 @@
 #!/bin/bash
 source mn_set.sh
 
-mn_clean.sh
+
 
 start_ak_brokers() {
   echo "===========start kafka brokers"
@@ -27,14 +27,19 @@ start_ak_ui() {
 }
 
 if [ "$omplat" = "ak" ]; then
+  mn_clean.sh
   start_ak_brokers
   start_ak_ui
 elif [ "$omplat" = "x2" ]; then
+  mn_clean.sh
   start_x2_brokers
   start_ak_ui
 elif [ "$omplat" = "x2/ak" ]; then
+  mn_clean.sh
   start_x2_brokers
   start_ak_brokers
+elif [ "$omplat" = "local" ]; then
+  x22sup_start.sh 
 else
   echo "unknown omplat:$omplat - no action"
 fi

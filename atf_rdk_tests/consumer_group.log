@@ -1,0 +1,80 @@
+======================kafka backend consumer group describe output:
+
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                     HOST            CLIENT-ID
+test_group_id   test-topic0     1          7               7               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic0     0          9               9               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic1     1          12              12              0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic1     0          4               4               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic2     1          2               2               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic2     0          6               6               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic3     1          5               5               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic7     0          13              13              0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic8     1          8               8               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic8     0          5               5               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic9     1          1               1               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic9     0          18              18              0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic3     0          12              12              0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic4     1          9               9               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic4     0          6               6               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic5     1          2               2               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic5     0          17              17              0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic6     1          8               8               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic6     0          8               8               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic7     1          5               5               0               atf_rdk_c1-cfe4743f-4530-4e26-8836-33ef22559452 /192.168.104.5  atf_rdk_c1
+test_group_id   test-topic1     2          4               4               0               atf_rdk_c2-c3fefc72-8c01-424d-81a0-cf59f6fb6c31 /192.168.104.5  atf_rdk_c2
+test_group_id   test-topic2     2          12              12              0               atf_rdk_c2-c3fefc72-8c01-424d-81a0-cf59f6fb6c31 /192.168.104.5  atf_rdk_c2
+test_group_id   test-topic3     2          3               3               0               atf_rdk_c2-c3fefc72-8c01-424d-81a0-cf59f6fb6c31 /192.168.104.5  atf_rdk_c2
+test_group_id   test-topic4     2          5               5               0               atf_rdk_c2-c3fefc72-8c01-424d-81a0-cf59f6fb6c31 /192.168.104.5  atf_rdk_c2
+test_group_id   test-topic0     2          4               4               0               atf_rdk_c2-c3fefc72-8c01-424d-81a0-cf59f6fb6c31 /192.168.104.5  atf_rdk_c2
+test_group_id   test-topic9     2          1               1               0               atf_rdk_c2-c3fefc72-8c01-424d-81a0-cf59f6fb6c31 /192.168.104.5  atf_rdk_c2
+test_group_id   test-topic5     2          1               1               0               atf_rdk_c2-c3fefc72-8c01-424d-81a0-cf59f6fb6c31 /192.168.104.5  atf_rdk_c2
+test_group_id   test-topic6     2          4               4               0               atf_rdk_c2-c3fefc72-8c01-424d-81a0-cf59f6fb6c31 /192.168.104.5  atf_rdk_c2
+test_group_id   test-topic7     2          2               2               0               atf_rdk_c2-c3fefc72-8c01-424d-81a0-cf59f6fb6c31 /192.168.104.5  atf_rdk_c2
+test_group_id   test-topic8     2          7               7               0               atf_rdk_c2-c3fefc72-8c01-424d-81a0-cf59f6fb6c31 /192.168.104.5  atf_rdk_c2
+
+
+====
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                     HOST            CLIENT-ID
+test_group_id   test-topic0     1          2               2               0               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic0     0          -               0               -               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic1     1          1               1               0               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic1     0          -               0               -               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic2     1          1               1               0               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic2     0          -               0               -               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic3     1          -               0               -               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic7     0          1               1               0               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic8     1          -               0               -               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic8     0          1               1               0               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic9     1          1               1               0               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic9     0          -               0               -               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic3     0          1               1               0               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic4     1          -               0               -               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic4     0          -               0               -               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic5     1          -               0               -               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic5     0          2               2               0               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic6     1          -               0               -               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic6     0          1               1               0               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic7     1          1               1               0               atf_rdk_c1-bb4a52b9-9a37-4fc7-bd87-603bb57f05d4 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic1     2          1               1               0               atf_rdk_c2-00cb9965-54d4-4ed5-aa2f-5dafdbcdba21 127.0.0.1       atf_rdk_c2
+test_group_id   test-topic2     2          1               1               0               atf_rdk_c2-00cb9965-54d4-4ed5-aa2f-5dafdbcdba21 127.0.0.1       atf_rdk_c2
+test_group_id   test-topic3     2          1               1               0               atf_rdk_c2-00cb9965-54d4-4ed5-aa2f-5dafdbcdba21 127.0.0.1       atf_rdk_c2
+test_group_id   test-topic4     2          2               2               0               atf_rdk_c2-00cb9965-54d4-4ed5-aa2f-5dafdbcdba21 127.0.0.1       atf_rdk_c2
+test_group_id   test-topic0     2          -               0               -               atf_rdk_c2-00cb9965-54d4-4ed5-aa2f-5dafdbcdba21 127.0.0.1       atf_rdk_c2
+test_group_id   test-topic9     2          1               1               0               atf_rdk_c2-00cb9965-54d4-4ed5-aa2f-5dafdbcdba21 127.0.0.1       atf_rdk_c2
+test_group_id   test-topic5     2          -               0               -               atf_rdk_c2-00cb9965-54d4-4ed5-aa2f-5dafdbcdba21 127.0.0.1       atf_rdk_c2
+test_group_id   test-topic6     2          1               1               0               atf_rdk_c2-00cb9965-54d4-4ed5-aa2f-5dafdbcdba21 127.0.0.1       atf_rdk_c2
+test_group_id   test-topic7     2          -               0               -               atf_rdk_c2-00cb9965-54d4-4ed5-aa2f-5dafdbcdba21 127.0.0.1       atf_rdk_c2
+test_group_id   test-topic8     2          1               1               0               atf_rdk_c2-00cb9965-54d4-4ed5-aa2f-5dafdbcdba21 127.0.0.1       atf_rdk_c2
+
+================x2 backend consumer group describe output:
+GROUP           TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                     HOST            CLIENT-ID
+test_group_id   test-topic0     0          20              20              0               atf_rdk_c1-aac3c9fa-0af4-4e95-8e6f-1c6688b00aab 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic1     0          20              20              0               atf_rdk_c1-aac3c9fa-0af4-4e95-8e6f-1c6688b00aab 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic2     0          20              20              0               atf_rdk_c1-aac3c9fa-0af4-4e95-8e6f-1c6688b00aab 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic7     0          20              20              0               atf_rdk_c1-aac3c9fa-0af4-4e95-8e6f-1c6688b00aab 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic8     0          20              20              0               atf_rdk_c1-aac3c9fa-0af4-4e95-8e6f-1c6688b00aab 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic9     0          20              20              0               atf_rdk_c1-aac3c9fa-0af4-4e95-8e6f-1c6688b00aab 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic3     0          20              20              0               atf_rdk_c1-aac3c9fa-0af4-4e95-8e6f-1c6688b00aab 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic4     0          20              20              0               atf_rdk_c1-aac3c9fa-0af4-4e95-8e6f-1c6688b00aab 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic5     0          20              20              0               atf_rdk_c1-aac3c9fa-0af4-4e95-8e6f-1c6688b00aab 127.0.0.1       atf_rdk_c1
+test_group_id   test-topic6     0          20              20              0               atf_rdk_c1-aac3c9fa-0af4-4e95-8e6f-1c6688b00aab 127.0.0.1       atf_rdk_c1

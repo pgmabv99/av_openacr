@@ -1,9 +1,23 @@
 #!/bin/bash
 
-
 function mysleep() {
     echo "sleeping $1 seconds..."
     sleep "$1"
+}
+
+function start_consumer() {
+    local run_id=$1
+    local log_file="temp/atf_rdk_logs/${run_id}.log"
+    atf_rdk -n_c:1 -run_id:"$run_id" -broker:"$broker" -max_topics:"$max_topics" -v -v > "$log_file" 2>&1 &
+    local pid=$!
+    # echo "started consumer run_id=$run_id pid=$pid log=$log_file"
+    echo "$pid"
+}
+
+function stop_consumer() {
+    local pid=$1
+    kill "$pid"
+    echo "killed consumer pid=$pid"
 }
 
 source mn_set.sh
@@ -11,39 +25,34 @@ source mn_set.sh
 pkill atf_rdk
 run_init=true
 # run_init=false
-max_topics=4
-
+max_topics=10
+max_msgs=2
 
 if [ "$run_init" = true ]; then
     echo "starting brokers."
     mn_brokers.sh
-    mysleep 5
+    mysleep 8
 
-    # mn_topic_crt.sh
+    mn_topic_crt.sh "$broker" "$max_topics"
+    mysleep 5
     echo "produce init data..."
-    atf_rdk -n_p:1   -broker:$broker -max_topics:$max_topics
+    atf_rdk -n_p:1 -broker:"$broker" -max_topics:"$max_topics" -max_msgs:"$max_msgs"
 fi
 
-atf_rdk -n_c:1 -run_id:c1 -broker:$broker -max_topics:$max_topics > temp/atf_rdk_logs/c_run_1.log 2>&1 &
-pid1=$!
-echo "started consumer pid=$pid1"
-
+pid1=$(start_consumer c1)
+echo "started c1 pid=$pid1"
 mysleep 1
+pid2=$(start_consumer c2)
+echo "started c2 pid=$pid2"
 
-atf_rdk -n_c:1 -run_id:c2 -broker:$broker -max_topics:$max_topics > temp/atf_rdk_logs/c_run_2.log 2>&1 &
-pid2=$!
-echo "started consumer pid=$pid2"
+mysleep 8
+/opt/kafka/current/bin/kafka-consumer-groups.sh --bootstrap-server "$broker" --describe --group test_group_id
+echo
 
 mysleep 10
-/opt/kafka/current/bin/kafka-consumer-groups.sh   --bootstrap-server  $broker   --describe   --group test_group_id
-echo 
+# stop_consumer "$pid1"
+stop_consumer "$pid2"
 
-# kill $pid1
-# echo "killed consumer pid=$pid1"
-kill $pid2
-echo "killed consumer pid=$pid2"
-
-mysleep 6 
-/opt/kafka/current/bin/kafka-consumer-groups.sh   --bootstrap-server  $broker   --describe   --group test_group_id
-echo 
-
+mysleep 5
+/opt/kafka/current/bin/kafka-consumer-groups.sh --bootstrap-server "$broker" --describe --group test_group_id
+echo

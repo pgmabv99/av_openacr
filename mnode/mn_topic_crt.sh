@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-BROKER="nj1-4.x2-3.ext-0:1519"
-PREFIX="test_topic"
-NUM_TOPICS=10
-PARTITIONS=20
+BROKER="${1:-localhost:54005}"
+NUM_TOPICS="${2:-10}"
+PREFIX="test-topic"
+PARTITIONS=3
 REPLICATION=1
 
 KAFKA_TOPICS=/opt/kafka/current/bin/kafka-topics.sh

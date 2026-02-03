@@ -6,7 +6,7 @@ sudo pkill tcpdump
 rm -rf temp/x2tmp
 rm core.*
 trace=on
-trace=off
+# trace=off
 echo "==start new x2sup "
 # x2sup -initdir:temp/x2tmp/   -temp -livecheck:N -trace:'verbose:kafka2.%,timestamps'
 # x2sup -initdir:temp/x2tmp/ -daemon  -temp  -livecheck:N  -trace:'verbose:kafka2.%,x2net.%,timestamps'

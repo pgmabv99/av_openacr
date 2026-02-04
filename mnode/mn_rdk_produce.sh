@@ -25,7 +25,7 @@ source mn_set.sh
 pkill atf_rdk
 run_init=true
 # run_init=false
-max_topics=10
+max_topics=5
 max_msgs=2
 
 if [ "$run_init" = true ]; then

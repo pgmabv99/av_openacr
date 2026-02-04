@@ -9,27 +9,31 @@ REPLICATION=1
 
 KAFKA_TOPICS=/opt/kafka/current/bin/kafka-topics.sh
 
-echo "=== Creating ${NUM_TOPICS} topics ==="
+echo "=== Creating ${NUM_TOPICS} topics in parallel ==="
 
+# Launch all create commands in background
 for i in $(seq 0 $((NUM_TOPICS-1))); do
     topic="${PREFIX}${i}"
-    echo "Creating $topic"
+    # echo "Submitting creation of $topic ..."
     $KAFKA_TOPICS \
         --bootstrap-server "$BROKER" \
         --create \
         --topic "$topic" \
         --partitions "$PARTITIONS" \
-        --replication-factor "$REPLICATION"
+        --replication-factor "$REPLICATION" \
+     &
 done
 
+echo "→ All create commands started. Waiting for completion..."
+wait
+
+echo "All creations finished."
 echo
+
+# You can keep verification sequential (usually fast)
 echo "=== Verifying topics ==="
 
-for i in $(seq 0 $((NUM_TOPICS-1))); do
-    $KAFKA_TOPICS \
-        --bootstrap-server "$BROKER" \
-        --describe \
-        --topic "${PREFIX}${i}"
-done
+created=$($KAFKA_TOPICS --bootstrap-server "$BROKER" --list 2>/dev/null | grep -c "^${PREFIX}[0-9]\+$")
+echo "Created: $created / $NUM_TOPICS"
 
 echo "Done."

@@ -74,6 +74,7 @@ void atf_rdk::msg_consume(rd_kafka_message_t *rkmessage, void *opaque){
     }
 }
 
+
 // Initialize consumer
 void atf_rdk::consume_init() {
     // Initialize consumer

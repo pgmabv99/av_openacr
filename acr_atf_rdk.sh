@@ -46,18 +46,18 @@ fi
 
 #-------------main CB
 
-#-------------rdkafka msg object
+# -------------rdkafka wrk object
 
-# acr_ed -del  -ctype atf_rdk.FMsg      -write || true
-# acr_ed -create -ctype atf_rdk.FMsg                   -pooltype Tpool       -write  -comment "message object"
-# acr_ed -create -field atf_rdk.FMsg.msg                    -arg algo.Smallstr50               -write -comment "message payload"
-# acr_ed -create -field atf_rdk.FMsg.time0                  -arg u64                  -write -comment "time enqueued"
+acr_ed -del  -ctype atf_rdk.FWrk      -write || true
+acr_ed -create -ctype atf_rdk.FWrk                   -pooltype Tpool       -write  -comment "worjker  object"
+acr_ed -create -field atf_rdk.FWrk.wrk                   -arg algo.Smallstr50               -write -comment "wrk id"
+acr_ed -create -field atf_rdk.FWrk.pid                   -arg i32                -write -comment "process id"
 
 # pointers from above
-# acr_ed -del    -field atf_rdk.FDb.zd_msg          -write || true
-# acr_ed -del    -field atf_rdk.FDb.ind_msg         -write || true
-# acr_ed -create -field atf_rdk.FDb.zd_msg            -cascdel              -write -comment ""
-# acr_ed -create -field atf_rdk.FDb.ind_msg           -cascdel              -write -comment ""
+acr_ed -del    -field atf_rdk.FDb.zd_wrk         -write || true
+acr_ed -del    -field atf_rdk.FDb.ind_wrk         -write || true
+acr_ed -create -field atf_rdk.FDb.zd_wrk            -cascdel              -write -comment ""
+acr_ed -create -field atf_rdk.FDb.ind_wrk           -cascdel              -write -comment ""
 
 #-------------rdkafka topic object
 
@@ -125,6 +125,7 @@ acr.delete dmmeta.field  field:command.atf_rdk.use_stdin
 acr.delete dmmeta.field  field:command.atf_rdk.n_c
 acr.delete dmmeta.field  field:command.atf_rdk.n_p
 acr.delete dmmeta.field  field:command.atf_rdk.msg_consume_poll_rate
+acr.delete dmmeta.field  field:command.atf_rdk.test
 EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_rdk.broker       arg:algo.cstring  reftype:Val  dflt:'"localhost:54005"'  comment:"broker url"
@@ -136,11 +137,13 @@ acr -merge -write <<EOF
     dmmeta.field  field:command.atf_rdk.progress     arg:bool          reftype:Val  dflt:true                        comment:"print progress report"
     dmmeta.field  field:command.atf_rdk.rd_stats     arg:bool          reftype:Val  dflt:false                       comment:"save  rdkafka stats in json file"
     dmmeta.field  field:command.atf_rdk.use_stdin    arg:bool          reftype:Val  dflt:false                       comment:"use stdin for message input.  If false, generate messages"
-    dmmeta.field  field:command.atf_rdk.run_id       arg:algo.cstring  reftype:Val  dflt:'"run1"'                    comment:"run id for parallel runs"
+    dmmeta.field  field:command.atf_rdk.run_id       arg:algo.cstring  reftype:Val  dflt:'""'                    comment:"run id for parallel runs"
     dmmeta.field  field:command.atf_rdk.n_c           arg:u64          reftype:Val  dflt:0                            comment:"number of consumer runners (0=disable consume)"
     dmmeta.field  field:command.atf_rdk.n_p           arg:u64          reftype:Val  dflt:0                            comment:"number of producer runners (0=disable produce)"
 
     dmmeta.field  field:command.atf_rdk.msg_consume_poll_rate     arg:u64           reftype:Val  dflt:1000                         comment:"poll rate for consume loop per sec"
+    
+    dmmeta.field  field:command.atf_rdk.test       arg:algo.cstring  reftype:Val  dflt:'""'                           comment:"test to run. overrides other command line parms, for testing purposes"
     
 EOF
 

@@ -21,6 +21,9 @@
 		},
 		{
 			"path": "../arnd/temp/atf_snf_logs"
+		},
+		{
+			"path": "../arnd/temp/atf_rdk_logs"
 		}
 	],
 

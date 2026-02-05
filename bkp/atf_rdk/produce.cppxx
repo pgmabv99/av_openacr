@@ -37,7 +37,6 @@ void atf_rdk::msg_produce_delivery_callback(rd_kafka_t *rk, const rd_kafka_messa
     cstring  rkmessage_str(rkmessage_p);
     // null term , but may be missing for some
     const char *topic = rkmessage->rkt ? rd_kafka_topic_name(rkmessage->rkt) : "<no-topic>";
-    // auto msg= atf_rdk::ind_msg_Find(rkmessage_str);
 
     if (rkmessage->err) {
         //
@@ -201,6 +200,7 @@ void atf_rdk::produce_run() {
     prlog("atf_rdk.info"
           << Keyval("comment", "Start producing to multiple topics")
           << Keyval("broker", _db.cmdline.broker)
+          << Keyval("run_id", _db.cmdline.run_id)
           << Keyval("max_topics", _db.cmdline.max_topics)
           );
     if (!_db.cmdline.use_stdin){

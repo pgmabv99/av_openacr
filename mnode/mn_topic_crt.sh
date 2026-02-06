@@ -14,7 +14,7 @@ echo "=== Creating ${NUM_TOPICS} topics in parallel ==="
 # Launch all create commands in background
 for i in $(seq 0 $((NUM_TOPICS-1))); do
     topic="${PREFIX}${i}"
-    # echo "Submitting creation of $topic ..."
+        echo "Submitting creation of $topic ..."
     $KAFKA_TOPICS \
         --bootstrap-server "$BROKER" \
         --create \

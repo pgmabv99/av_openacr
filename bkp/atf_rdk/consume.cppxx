@@ -88,11 +88,11 @@ void atf_rdk::consume_init() {
     }
 
     // Configure consumer
-    vrfy_(rdk_kafka_conf_set_wrap(conf, "client.id", tempstr()<<"atf_rdk_"<<_db.cmdline.run_id)==0);
+    vrfy_(rdk_kafka_conf_set_wrap(conf, "client.id", tempstr()<<"atf_rdk_"<<_db.cmdline.wrk_id)==0);
     vrfy_(rdk_kafka_conf_set_wrap(conf, "bootstrap.servers", _db.cmdline.broker)==0);
     vrfy_(rdk_kafka_conf_set_wrap(conf, "group.id", "test_group_id")==0);
     // // prevent immediate rebalance. possible later ??
-    // vrfy_(rdk_kafka_conf_set_wrap(conf, "group.instance.id", _db.cmdline.run_id)==0);
+    // vrfy_(rdk_kafka_conf_set_wrap(conf, "group.instance.id", _db.cmdline.wrk_id)==0);
     vrfy_(rdk_kafka_conf_set_wrap(conf, "auto.offset.reset", "earliest")==0);
     vrfy_(rdk_kafka_conf_set_wrap(conf, "enable.auto.commit", "false")==0);
 
@@ -221,7 +221,7 @@ void atf_rdk::consume_run() {
     prlog("atf_rdk.info"
           << Keyval("comment", "Start consuming from multiple topics")
           << Keyval("broker", _db.cmdline.broker)
-          << Keyval("run_id", _db.cmdline.run_id)
+          << Keyval("wrk_id", _db.cmdline.wrk_id)
           << Keyval("max_topics", _db.cmdline.max_topics)
           );
     // Initialize consumer

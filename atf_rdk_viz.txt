@@ -3,6 +3,10 @@
 |Llist zd_msg----->|               
 |Thash ind_msg---->|               
 |                  -               
+|Tpool wrk-------->/ atf_rdk.FWrk  
+|Llist zd_wrk----->|               
+|Thash ind_wrk---->|               
+|                  -               
 |Tpool topic------>/ atf_rdk.FTopic
 |Llist zd_topic--->|               
 |Thash ind_topic-->|               

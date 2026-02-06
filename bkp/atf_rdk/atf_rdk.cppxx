@@ -29,9 +29,12 @@ void atf_rdk::Main() {
     signal(SIGTERM, signal_handler);
     dir_init();
 
-    if(_db.cmdline.test != ""){
+    if(_db.cmdline.mode == "custom"){
         // this mode will start multiple processes as needed
         env_check();
+        vrfy(_db.cmdline.wrk_id=="", tempstr()
+             << Keyval("comment", "custom mode does not support wrk_id parameter. it is the top level process")
+             );
         if(_db.cmdline.test == "c"){
             test_custom();
         } else if (_db.cmdline.test == "r"){
@@ -39,15 +42,21 @@ void atf_rdk::Main() {
         } else {
             prlog("atf_rdk.err" << Keyval("comment", "Unknown test specified") << Keyval("test", _db.cmdline.test));
         }
-    }  else if (_db.cmdline.n_c == 1  && _db.cmdline.n_p == 0){
+    }  else if (_db.cmdline.mode == "c"  ) {
         //same process consume via mainloop
+        vrfy(_db.cmdline.n_c==0 && _db.cmdline.n_p==0, tempstr()
+             << Keyval("comment", "single consumer mode does not allow n_c/n_p parameters")
+             );
         consume_run();
-    } else if( _db.cmdline.n_p == 1 && _db.cmdline.n_c == 0){
+    } else if( _db.cmdline.mode == "p" ){
         // same process produce via mainloop
+        vrfy(_db.cmdline.n_c==0 && _db.cmdline.n_p==0, tempstr()
+             << Keyval("comment", "single producer mode does not allow n_c/n_p parameters")
+             );
         produce_run();
     } else {
         prlog("atf_rdk.err"
-              << Keyval("comment", "multiple consumer/producer runners not implemented yet")
+              << Keyval("comment", "valid modes are p/c/custom")
               );
     }
 
@@ -111,58 +120,100 @@ void atf_rdk::env_check(){
 // wrap sleep with  log for UX experience
 void atf_rdk::env_sleep(int sec, strptr note){
     prlog("atf_rdk.info"
-          << Keyval("comment", "Sleeping")
+          << Keyval("comment", note)
           << Keyval("sec", sec)
-          << Keyval("note", note)
           );
     sleep(sec);
 }
 
-//run kafka describe group
-void atf_rdk::kafka_describe_group(){
+//run kafka describe group and count partition distrubtuion among workers
+void atf_rdk::kafka_validate_group_partitions(){
+    //initialize partition count
+    ind_beg(_db_zd_wrk_curs, wrk, _db)  if (wrk.mode=="c") {
+        wrk.partition_count=0;
+    } ind_end;
+
+    // run kafka describe group
     algo_lib::Replscope R;
     Set(R,"$broker",_db.cmdline.broker);
-    cstring cmd;
-    cmd=Subst(R,"/opt/kafka/current/bin/kafka-consumer-groups.sh --bootstrap-server $broker --describe --group test_group_id");
-    SysCmd(cmd);
+    command::bash_proc       bash_proc;
+    bash_proc.cmd.c=Subst(R,"/opt/kafka/current/bin/kafka-consumer-groups.sh --bootstrap-server $broker --describe --group test_group_id");
+    algo_lib::FFildes read;
+    ind_beg(algo::FileLine_curs,line_in,bash_StartRead(bash_proc,read)) if (line_in!=""){
+        verblog(line_in);
+        // parse output line looking for partition assignment for each worker
+        ind_beg(_db_zd_wrk_curs, wrk, _db) if (wrk.mode=="c"){
+            tempstr client_id;
+            client_id << "atf_rdk_" << wrk.wrk ;
+            if(FindStr(line_in, client_id) != -1){
+                wrk.partition_count++;
+                break;
+            }
+        } ind_end;
+    }ind_end;
+
+    ind_beg(_db_zd_wrk_curs, wrk, _db)  if (wrk.mode=="c") {
+        verblog("atf_rdk.info"
+                << Keyval("comment", "Worker partition assignment")
+                << Keyval("wrk_id", wrk.wrk)
+                << Keyval("partition_count", wrk.partition_count)
+                );
+    } ind_end;
 }
 
-// Test rebalance callback
+// Test rebalance of 2 consumers in the same group
 void atf_rdk::test_rebalance() {
-    prlog("atf_rdk.info" << Keyval("comment", "test rebalance callback"));
+    prlog("atf_rdk.info" << Keyval("comment", "test rebalance "));
 
-    prlog("atf_rdk.info" << Keyval("comment", "starting producer"));
-    auto wrk_prod = wrk_start("p_0", 1, 0);
-    prc_wait(wrk_prod->pid);
-    wrk_prod->pid =0 ;
+    bool test_ok = true;
+    auto wrk_prod = wrk_start(0, "p");
+    wrk_wait_to_end(wrk_prod);
 
-    prlog("atf_rdk.info" << Keyval("comment", "starting consumer0"));
-    auto wrk_cons0 = wrk_start("c_0", 0, 1);
-    env_sleep(1, "waiting after starting consumer0");
+    // start first consumer
+    auto wrk_cons0 = wrk_start(0, "c");
+    env_sleep(1, "Waiting after starting consumer0");
 
-    prlog("atf_rdk.info" << Keyval("comment", "starting consumer1"));
-    auto wrk_cons1 = wrk_start("c_1", 0, 1);
-    env_sleep(5, "waiting before describe group");
-    kafka_describe_group();
+    // add another consumer to the group
+    auto wrk_cons1 = wrk_start(1, "c");
 
-    // fake wait ??
-    prc_wait(wrk_cons0->pid);
-    wrk_cons0->pid =0 ;
-    (void)wrk_cons1;
+    env_sleep(3, "Waiting before describe group. Expect partitions to be shared between consumers");
+    kafka_validate_group_partitions();
+    prlog("atf_rdk.info"
+          << Keyval("comment", "partition distribution for  2 consumers after rebalance")
+          << Keyval("consumer0", wrk_cons0->partition_count )
+          << Keyval("consumer1", wrk_cons1->partition_count )
+          );
+    if( (wrk_cons0->partition_count ==0) || (wrk_cons1->partition_count ==0) ){
+        test_ok = false;
+    }
+
+    // terminate   consumer
+    wrk_end(*wrk_cons1);
+    env_sleep(3, "Waiting before describe group. Expect partitions to be moved to consumer0");
+    kafka_validate_group_partitions();
+    prlog("atf_rdk.info"
+          << Keyval("comment", "partition distribution for  2 consumers after rebalance")
+          << Keyval("consumer0", wrk_cons0->partition_count )
+          << Keyval("consumer1", wrk_cons1->partition_count )
+          );
+    if (wrk_cons1->partition_count !=0) {
+        test_ok = false;
+    }
+
+    wrk_end_all();
+    vrfy(test_ok, tempstr()
+         << Keyval("comment", "Rebalance test failed")
+         );
+    prlog("atf_rdk.info" << Keyval("comment", "Rebalance test passed"));
 
     return ;
 }
 
 // Start asynchronous bash process
-pid_t atf_rdk::prc_start_async(command::bash_proc &bash_proc, strptr run_id){
-    prlog("atf_rdk.info"
-          << Keyval("comment", "Starting async worker process")
-          << Keyval("run_id", run_id)
-          << Keyval("cmdline", bash_proc.cmd.c)
-          );
+pid_t atf_rdk::prc_start_async(command::bash_proc &bash_proc, strptr wrk_id){
 
     tempstr logfile;
-    logfile=DirFileJoin( _db.mcb.logs_dir,tempstr()<<run_id << ".log");
+    logfile=DirFileJoin( _db.mcb.logs_dir,tempstr()<<wrk_id << ".log");
 
     // background and capture pid
     bash_proc.cmd.c << " >" << logfile << " 2>&1 ";
@@ -173,39 +224,40 @@ pid_t atf_rdk::prc_start_async(command::bash_proc &bash_proc, strptr run_id){
     algo_lib::FFildes read;
     ind_beg(algo::FileLine_curs,line_in,bash_StartRead(bash_proc,read)) if (line_in!=""){
         pid = ParseI64(line_in,0);
-        prlog("atf_rdk.info"
-              << Keyval("comment", "Started worker process")
-              << Keyval("pid", pid)
-              );
+        verblog("atf_rdk.info"
+                << Keyval("comment", "Started worker process")
+                << Keyval("wrk_id", wrk_id)
+                << Keyval("cmdline", bash_proc.cmd.c)
+                << Keyval("pid", pid)
+                );
+        vrfy(pid!=0, tempstr()
+             << Keyval("comment", "Failed to parse pid from bash command output")
+             << Keyval("cmdline", bash_proc.cmd.c)
+             << Keyval("line_in", line_in)
+             );
         break;
     }ind_end;
     return pid;
 };
 
-// wait for process to finish
-void atf_rdk::prc_wait(pid_t pid){
-    while (kill(pid, 0) == 0) {
-        sleep(1);
-        prlog("atf_rdk.info"
-              << Keyval("comment", "Worker still running")
-              << Keyval("pid", pid)
-              );
-    }
-    prlog("atf_rdk.info"
-          << Keyval("comment", "Worker   finished")
-          << Keyval("pid", pid)
-          );
-};
 
-// Start worker process for produce
-atf_rdk::FWrk*  atf_rdk::wrk_start(strptr run_id, u64 n_p, u64 n_c) {
+// Start worker process
+atf_rdk::FWrk*  atf_rdk::wrk_start(int wrk_id_int, strptr mode) {
+    vrfy(mode=="p" || mode=="c", tempstr()
+         << Keyval("comment", "Invalid mode for worker")
+         << Keyval("mode", mode)
+         );
+    tempstr wrk_id;
+    wrk_id << mode << "_" << wrk_id_int;
     prlog("atf_rdk.info"
           << Keyval("comment", "Starting worker")
-          << Keyval("run_id", run_id)
+          << Keyval("wrk_id", wrk_id)
+          << Keyval("mode", mode)
           );
 
     atf_rdk::FWrk* wrk=&wrk_Alloc();
-    wrk->wrk = run_id;
+    wrk->wrk = wrk_id;
+    wrk->mode = mode;
     vrfy_(wrk_XrefMaybe(*wrk));
 
     // build command string and inherit cmdline parameters
@@ -219,42 +271,65 @@ atf_rdk::FWrk*  atf_rdk::wrk_start(strptr run_id, u64 n_p, u64 n_c) {
     atf_rdk_cmd.progress =_db.cmdline.progress;
     atf_rdk_cmd.rd_stats =_db.cmdline.rd_stats;
     // override some
-    atf_rdk_cmd.n_p =n_p;
-    atf_rdk_cmd.n_c =n_c;
-    atf_rdk_cmd.run_id =run_id;
+    atf_rdk_cmd.mode = mode;
+    atf_rdk_cmd.wrk_id = wrk_id;
 
     command::bash_proc       bash_proc;
     bash_proc.cmd.c << atf_rdk_ToCmdline(atf_rdk_cmd);
 
-    wrk->pid = prc_start_async(bash_proc, run_id);
+    wrk->pid = prc_start_async(bash_proc, wrk_id);
     return  wrk;
 }
 
-// ensure all worker processes are terminated
+// wait for process to finish
+void atf_rdk::wrk_wait_to_end( atf_rdk::FWrk* wrk){
+    while (kill(wrk->pid, 0) == 0) {
+        sleep(1);
+        prlog("atf_rdk.info"
+              << Keyval("comment", "Worker still running")
+              << Keyval("wrk_id", wrk->wrk)
+              << Keyval("pid", wrk->pid)
+              );
+    }
+    prlog("atf_rdk.info"
+          << Keyval("comment", "Worker   finished")
+          << Keyval("wrk_id", wrk->wrk)
+          << Keyval("pid", wrk->pid)
+          );
+    wrk->pid =0 ;
+};
+
+// kill worker process
+void atf_rdk::wrk_end( atf_rdk::FWrk &wrk){
+    verblog("atf_rdk.info"
+            << Keyval("comment", "Killing worker process")
+            << Keyval("wrk_id", wrk.wrk)
+            << Keyval("pid", wrk.pid)
+            );
+    kill(wrk.pid, SIGTERM);
+}
+
+// kill all worker processes
 void atf_rdk::wrk_end_all(){
     prlog("atf_rdk.info"
           << Keyval("comment", "terminating all worker processes")
           );
     ind_beg(_db_zd_wrk_curs, wrk, _db) {
         if(wrk.pid != 0){
-            prlog("atf_rdk.info"
-                  << Keyval("comment", "Killing worker process")
-                  << Keyval("pid", wrk.pid)
-                  << Keyval("wrk", wrk.wrk)
-                  );
-            kill(wrk.pid, SIGTERM);
+            wrk_end(wrk);
         }
     } ind_end;
 }
 
-
 // montor  step for MainLoop
 void atf_rdk::rdk_mon_Step() {
     if(_db.cmdline.progress){
-        if(_db.cmdline.n_p ==1 ){
+        if(_db.cmdline.mode == "p"  ) {
             produce_progress();
-        } else if (_db.cmdline.n_c == 1  ) {
+        } else if (_db.cmdline.mode == "c"  ) {
             consume_progress();
+        } else {
+            // do nothing for custom mode. todo add multi worker progress
         }
     }
 }
@@ -301,7 +376,7 @@ void atf_rdk::dir_init(){
     _db.mcb.logs_dir = "temp/atf_rdk_logs";
     auto rc=SysCmd(tempstr()<<"mkdir -p  " << _db.mcb.logs_dir);
     vrfy(rc==0, "Failed to create logs directory");
-    if(_db.cmdline.run_id  ==""){
+    if(_db.cmdline.wrk_id  ==""){
         // Clean directory by removing all files
         // only for top level root
         SysCmd(tempstr()<<"rm -f " << _db.mcb.logs_dir << "/*");
@@ -332,11 +407,9 @@ void atf_rdk::mcb_init() {
 // Signal handler for graceful shutdown
 void atf_rdk::signal_handler(int sig) {
     (void)sig;
-    if(_db.cmdline.run_id != ""){
-        // main loop mode
-        _db.mcb.stop = true;
-    } else {
-        _db.mcb.stop = true;
+    if(_db.cmdline.mode == "custom" ){
+        //todo into main loop
         wrk_end_all();
     }
+    _db.mcb.stop = true;
 }

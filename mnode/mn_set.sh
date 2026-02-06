@@ -7,10 +7,10 @@
 client=ak
 
 omplat=ak
-# omplat=x2
-# omplat=x2/ak
+omplat=x2
+omplat=x2/ak
 # omplat=rp
-omplat=local
+# omplat=local
 
 
 if [ "$omplat" = "ak" ]; then

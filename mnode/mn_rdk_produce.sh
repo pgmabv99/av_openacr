@@ -6,11 +6,11 @@ function mysleep() {
 }
 
 function start_consumer() {
-    local run_id=$1
-    local log_file="temp/atf_rdk_logs/${run_id}.log"
-    atf_rdk -n_c:1 -run_id:"$run_id" -broker:"$broker" -max_topics:"$max_topics" -v -v > "$log_file" 2>&1 &
+    local wrk_id=$1
+    local log_file="temp/atf_rdk_logs/${wrk_id}.log"
+    atf_rdk -mode:c -wrk_id:"$wrk_id" -broker:"$broker" -max_topics:"$max_topics" -v -v > "$log_file" 2>&1 &
     local pid=$!
-    # echo "started consumer run_id=$run_id pid=$pid log=$log_file"
+    # echo "started consumer wrk_id=$wrk_id pid=$pid log=$log_file"
     echo "$pid"
 }
 
@@ -25,8 +25,8 @@ source mn_set.sh
 pkill atf_rdk
 run_init=true
 # run_init=false
-max_topics=5
-max_msgs=2
+max_topics=10
+max_msgs=1000
 
 if [ "$run_init" = true ]; then
     echo "starting brokers."
@@ -36,8 +36,9 @@ if [ "$run_init" = true ]; then
     mn_topic_crt.sh "$broker" "$max_topics"
     mysleep 5
     echo "produce init data..."
-    atf_rdk -n_p:1 -broker:"$broker" -max_topics:"$max_topics" -max_msgs:"$max_msgs"
+    atf_rdk -mode:p -broker:"$broker" -max_topics:"$max_topics" -max_msgs:"$max_msgs"
 fi
+exit
 
 pid1=$(start_consumer c1)
 echo "started c1 pid=$pid1"

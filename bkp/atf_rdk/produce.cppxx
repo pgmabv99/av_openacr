@@ -65,7 +65,7 @@ void atf_rdk::msg_produce_delivery_callback(rd_kafka_t *rk, const rd_kafka_messa
         auto time0x_str = GetTokenChar(line_it,'/');
         i64 time0x = ParseI64(time0x_str,0);    // when the message was created
 
-        // auto run_id_str = GetTokenChar(line_it,'/');
+        // auto wrk_id_str = GetTokenChar(line_it,'/');
         i64 latency = time_now - time0x;
         verblog2("atf_rdk.info"
                  << Keyval("comment", "Delivered")
@@ -200,7 +200,7 @@ void atf_rdk::produce_run() {
     prlog("atf_rdk.info"
           << Keyval("comment", "Start producing to multiple topics")
           << Keyval("broker", _db.cmdline.broker)
-          << Keyval("run_id", _db.cmdline.run_id)
+          << Keyval("wrk_id", _db.cmdline.wrk_id)
           << Keyval("max_topics", _db.cmdline.max_topics)
           );
     if (!_db.cmdline.use_stdin){
@@ -420,7 +420,7 @@ algo::memptr  atf_rdk::msg_bld(strptr msg_pay) {
     tempstr msg;
     msg
         << algo::CurrUnTime().value
-        <<"/"<< _db.cmdline.run_id
+        <<"/"<< _db.cmdline.wrk_id
         <<"/" << _db.mcb.imsg
         <<"/"<< msg_pay
         ;

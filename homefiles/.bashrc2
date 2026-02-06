@@ -1,4 +1,4 @@
-ai#!/bin/bash
+#!/bin/bash
 
 PATH=bin:$PATH
 PATH=$HOME/arnd/bin:$PATH

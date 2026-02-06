@@ -44,20 +44,21 @@ fi
 # dmmeta.cextern  ctype:atf_rdk.rd_kafka_topic_t  initmemset:N  isstruct:Y  plaindata:N
 # EOF
 
-#-------------main CB
 
 # -------------rdkafka wrk object
 
-acr_ed -del  -ctype atf_rdk.FWrk      -write || true
-acr_ed -create -ctype atf_rdk.FWrk                   -pooltype Tpool       -write  -comment "worjker  object"
-acr_ed -create -field atf_rdk.FWrk.wrk                   -arg algo.Smallstr50               -write -comment "wrk id"
-acr_ed -create -field atf_rdk.FWrk.pid                   -arg i32                -write -comment "process id"
+acr_ed -del    -ctype atf_rdk.FWrk                         -write || true
+acr_ed -create -ctype atf_rdk.FWrk                         -pooltype Tpool  -write -comment "worjker  object"
+acr_ed -create -field atf_rdk.FWrk.wrk                     -arg algo.Smallstr50 -write -comment "wrk id"
+acr_ed -create -field atf_rdk.FWrk.mode                    -arg algo.Smallstr50 -write -comment "wrk mode"
+acr_ed -create -field atf_rdk.FWrk.pid                     -arg i32             -write -comment "process id"
+acr_ed -create -field atf_rdk.FWrk.partition_count         -arg i32             -write -comment "partition count for consumer in the group"
 
 # pointers from above
-acr_ed -del    -field atf_rdk.FDb.zd_wrk         -write || true
-acr_ed -del    -field atf_rdk.FDb.ind_wrk         -write || true
-acr_ed -create -field atf_rdk.FDb.zd_wrk            -cascdel              -write -comment ""
-acr_ed -create -field atf_rdk.FDb.ind_wrk           -cascdel              -write -comment ""
+acr_ed -del    -field atf_rdk.FDb.zd_wrk                   -write || true
+acr_ed -del    -field atf_rdk.FDb.ind_wrk                  -write || true
+acr_ed -create -field atf_rdk.FDb.zd_wrk                   -cascdel -write -comment ""
+acr_ed -create -field atf_rdk.FDb.ind_wrk                  -cascdel -write -comment ""
 
 #-------------rdkafka topic object
 
@@ -72,15 +73,30 @@ acr_ed -del    -field atf_rdk.FDb.ind_topic         -write || true
 acr_ed -create -field atf_rdk.FDb.zd_topic            -cascdel              -write -comment ""
 acr_ed -create -field atf_rdk.FDb.ind_topic           -cascdel              -write -comment ""
 
+#-------------)
+set -e
+acr_ed -del     -ssimfile:omdb.om_rdk_stat -write || true
+acr_ed -create  -ssimfile:omdb.om_rdk_stat   -write -comment "stats used in both atf_rdk root and workers"
+acr_ed -create -field  omdb.OmRdkStat.produce_req_count                   -arg u64               -write -comment "count of produce enqueued messages"
+acr_ed -create -field  omdb.OmRdkStat.produce_ack_count                   -arg u64               -write -comment "count of produce acked  messages"
+acr_ed -create -field  omdb.OmRdkStat.produce_lat_total                    -arg u64               -write -comment "produce latency total"
+acr_ed -create -field  omdb.OmRdkStat.consume_count                   -arg u64               -write -comment "count of consumed messages"
+acr_ed -create -field  omdb.OmRdkStat.consume_poll_count                   -arg u64               -write -comment "count of consumer poll calls"
+acr_ed -create -field  omdb.OmRdkStat.consume_lat_total                    -arg u64               -write -comment "consume latency total"
+
+
+#  mcb
 set -e
 acr_ed -del    -ctype atf_rdk.FMcb                               -write  || true
 acr_ed -create -ctype atf_rdk.FMcb                               -write -comment "Main CB"
 acr_ed -create -field atf_rdk.FMcb.msg_buf                       -arg algo.ByteAry      -write -comment "msg buffer"
-acr_ed -create -field atf_rdk.FMcb.msg_req_count                 -arg u64               -write -comment "count of produce enqueued messages"
-acr_ed -create -field atf_rdk.FMcb.msg_ack_count                 -arg u64               -write -comment "count of produce acked  messages"
-acr_ed -create -field atf_rdk.FMcb.msg_ack_count_last            -arg u64               -write -comment "count of produce acked  messages, last  monitor check"
-acr_ed -create -field atf_rdk.FMcb.msg_lat_total                 -arg u64               -write -comment "total latency of produce acked messages"
-acr_ed -create -field atf_rdk.FMcb.msg_lat_total_last            -arg u64               -write -comment "total latency of produce acked messages, last check"
+
+
+acr_ed -create -field atf_rdk.FMcb.st                 -arg omdb.OmRdkStat              -write -comment "current stats"
+acr_ed -create -field atf_rdk.FMcb.st_last            -arg omdb.OmRdkStat              -write -comment "last step  stats"
+
+
+
 acr_ed -create -field atf_rdk.FMcb.max_msg_all_topics            -arg u64               -write -comment "max messages to produce across all topics"
 acr_ed -create -field atf_rdk.FMcb.imsg                          -arg u64               -write -comment "index of current mproduced message"
 acr_ed -create -field atf_rdk.FMcb.err_ondelivery_count          -arg u64               -write -comment "error count on delivery"
@@ -92,12 +108,6 @@ acr_ed -create -field atf_rdk.FMcb.sleep_us                     -arg u64        
 acr_ed -create -field atf_rdk.FMcb.logs_dir                    -arg algo.Smallstr50              -write -comment "subfolder for rdk logs"
 acr_ed -create -field atf_rdk.FMcb.rd_stats_json                 -arg algo.cstring             -write -comment "save json from rd_stat callback"
 acr_ed -create -field atf_rdk.FMcb.rd_stats_file                -arg algo.Smallstr50            -write -comment "file name for rd_stats json"
-# consume stats
-acr_ed -create -field atf_rdk.FMcb.msg_consume_count           -arg u64           -write -comment "count of consumed messages"
-acr_ed -create -field atf_rdk.FMcb.msg_consume_count_last      -arg u64           -write -comment "count of poll calls for consume, last monitor check"
-acr_ed -create -field atf_rdk.FMcb.poll_consume_count          -arg u64           -write -comment "count of poll calls for consume, last monitor check"
-acr_ed -create -field atf_rdk.FMcb.msg_consume_lat_total       -arg u64           -write -comment "total latency of produce acked messages"
-acr_ed -create -field atf_rdk.FMcb.msg_consume_lat_total_last  -arg u64           -write -comment "total latency of produce acked messages, last monitor check"
 
 # pointers to rdkafka objects
 acr_ed -create -field atf_rdk.FMcb.rk                            -arg u8                -reftype Ptr -write -comment " rd_kafka_t pointer"
@@ -120,7 +130,7 @@ acr.delete dmmeta.field  field:command.atf_rdk.msg_rate
 acr.delete dmmeta.field  field:command.atf_rdk.msg_max_size 
 acr.delete dmmeta.field  field:command.atf_rdk.progress
 acr.delete dmmeta.field  field:command.atf_rdk.rd_stats
-acr.delete dmmeta.field  field:command.atf_rdk.run_id
+acr.delete dmmeta.field  field:command.atf_rdk.wrk_id
 acr.delete dmmeta.field  field:command.atf_rdk.use_stdin
 acr.delete dmmeta.field  field:command.atf_rdk.n_c
 acr.delete dmmeta.field  field:command.atf_rdk.n_p
@@ -136,14 +146,15 @@ acr -merge -write <<EOF
     dmmeta.field  field:command.atf_rdk.msg_max_size arg:u64           reftype:Val  dflt:10                          comment:"maximum message size"
     dmmeta.field  field:command.atf_rdk.progress     arg:bool          reftype:Val  dflt:true                        comment:"print progress report"
     dmmeta.field  field:command.atf_rdk.rd_stats     arg:bool          reftype:Val  dflt:false                       comment:"save  rdkafka stats in json file"
-    dmmeta.field  field:command.atf_rdk.use_stdin    arg:bool          reftype:Val  dflt:false                       comment:"use stdin for message input.  If false, generate messages"
-    dmmeta.field  field:command.atf_rdk.run_id       arg:algo.cstring  reftype:Val  dflt:'""'                    comment:"run id for parallel runs"
+    dmmeta.field  field:command.atf_rdk.use_stdin    arg:bool          reftype:Val  dflt:false                       comment:"use stdin for message input for  pub only.  If false, generate messages"
+    dmmeta.field  field:command.atf_rdk.wrk_id       arg:algo.cstring  reftype:Val  dflt:'""'                    comment:"wrk id for parallel runs"
     dmmeta.field  field:command.atf_rdk.n_c           arg:u64          reftype:Val  dflt:0                            comment:"number of consumer runners (0=disable consume)"
     dmmeta.field  field:command.atf_rdk.n_p           arg:u64          reftype:Val  dflt:0                            comment:"number of producer runners (0=disable produce)"
 
     dmmeta.field  field:command.atf_rdk.msg_consume_poll_rate     arg:u64           reftype:Val  dflt:1000                         comment:"poll rate for consume loop per sec"
     
-    dmmeta.field  field:command.atf_rdk.test       arg:algo.cstring  reftype:Val  dflt:'""'                           comment:"test to run. overrides other command line parms, for testing purposes"
+    dmmeta.field  field:command.atf_rdk.mode       arg:algo.cstring  reftype:Val  dflt:'"p"'                           comment:"mode p/c/custom (p=produce, c=consume, custom=both with worker processes)"
+    dmmeta.field  field:command.atf_rdk.test       arg:algo.cstring  reftype:Val  dflt:'""'                            comment:"test to run. overrides other command line parms, for testing purposes"
     
 EOF
 

@@ -1,0 +1,199 @@
+omcli.info omtest:om_benchmark
+dkr.report command:docker_destroy  cmd:""  targets:20
+dkr.report command:docker_generate  cmd:""  targets:12
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.run comment:copying script
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.build comment:copying script
+dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.run comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.build comment:copying script
+dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.run comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.build comment:copying script
+dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/Dockerfile comment:copying Dockerfile
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.run comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.build comment:copying script
+dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/Dockerfile comment:copying Dockerfile
+dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.run comment:copying script
+dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.build comment:copying script
+dkr.info image:minio-02 file:temp/docker/minio-02/Dockerfile comment:copying Dockerfile
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.run comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.build comment:copying script
+dkr.info image:rdpui-5 file:temp/docker/rdpui-5/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-17 file:temp/docker/x2-17/x2-17.run comment:copying script
+dkr.info image:x2-17 file:temp/docker/x2-17/x2-17.build comment:copying script
+dkr.info image:x2-17 file:temp/docker/x2-17/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-18 file:temp/docker/x2-18/x2-18.run comment:copying script
+dkr.info image:x2-18 file:temp/docker/x2-18/x2-18.build comment:copying script
+dkr.info image:x2-18 file:temp/docker/x2-18/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-19 file:temp/docker/x2-19/x2-19.run comment:copying script
+dkr.info image:x2-19 file:temp/docker/x2-19/x2-19.build comment:copying script
+dkr.info image:x2-19 file:temp/docker/x2-19/Dockerfile comment:copying Dockerfile
+dkr.info image:x2-20 file:temp/docker/x2-20/x2-20.run comment:copying script
+dkr.info image:x2-20 file:temp/docker/x2-20/x2-20.build comment:copying script
+dkr.info image:x2-20 file:temp/docker/x2-20/Dockerfile comment:copying Dockerfile
+dkr.info image:x2ui-6 file:temp/docker/x2ui-6/x2ui-6.run comment:copying script
+dkr.info image:x2ui-6 file:temp/docker/x2ui-6/x2ui-6.build comment:copying script
+dkr.info image:x2ui-6 file:temp/docker/x2ui-6/Dockerfile comment:copying Dockerfile
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.run comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.build comment:copying script
+dkr.info image:x2w-08 file:temp/docker/x2w-08/Dockerfile comment:copying Dockerfile
+dkr.report command:docker_clean_run  cmd:"sudo kubectl get pods -n nj1-4 -o wide"  targets:12
+pod/kafkacw-02--nj1-sv1 created
+
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+x2-18--nj1-sv3        0/1     Pending             0          0s    <none>          nj1.sv3   <none>           <none>
+
+pod/kafkaui-5--nj1-sv1 created
+
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+x2-18--nj1-sv3        0/1     Pending             0          0s    <none>          nj1.sv3   <none>           <none>
+
+pod/kafkaw-04--nj1-sv6 created
+
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+x2-18--nj1-sv3        0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
+
+pod/kafkaw-12--nj1-sv7 created
+
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+
+pod/minio-02--nj1-sv1 created
+
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+x2-18--nj1-sv3        0/1     Pending             0          0s    <none>          nj1.sv3   <none>           <none>
+
+pod/rdpui-5--nj1-sv1 created
+
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+x2-18--nj1-sv3        0/1     Pending             0          0s    <none>          nj1.sv3   <none>           <none>
+
+pod/x2-17--nj1-sv2 created
+
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+
+pod/x2-18--nj1-sv3 created
+
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+x2-18--nj1-sv3        0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
+
+pod/x2-19--nj1-sv4 created
+
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.172    nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    1/1     Running             0          7s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      1/1     Running             0          6s    10.244.0.173    nj1.sv1   <none>           <none>
+x2-17--nj1-sv2        1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
+x2-18--nj1-sv3        1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
+x2-19--nj1-sv4        0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
+x2-20--nj1-sv5        0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
+x2ui-6--nj1-sv1       0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+
+pod/x2-20--nj1-sv5 created
+
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.172    nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    1/1     Running             0          7s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      1/1     Running             0          6s    10.244.0.173    nj1.sv1   <none>           <none>
+x2-17--nj1-sv2        1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
+x2-18--nj1-sv3        1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
+x2-19--nj1-sv4        0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
+x2-20--nj1-sv5        0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
+x2ui-6--nj1-sv1       0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+
+pod/x2ui-6--nj1-sv1 created
+
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.172    nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    1/1     Running             0          7s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      1/1     Running             0          6s    10.244.0.173    nj1.sv1   <none>           <none>
+x2-17--nj1-sv2        1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
+x2-18--nj1-sv3        1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
+x2-19--nj1-sv4        0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
+x2-20--nj1-sv5        0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
+x2ui-6--nj1-sv1       0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+
+pod/x2w-08--nj1-sv1 created
+
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.172    nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    1/1     Running             0          7s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      1/1     Running             0          6s    10.244.0.173    nj1.sv1   <none>           <none>
+x2-17--nj1-sv2        1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
+x2-18--nj1-sv3        1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
+x2-19--nj1-sv4        0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
+x2-20--nj1-sv5        0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
+x2ui-6--nj1-sv1       0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+
+omcli.error  try_cnt

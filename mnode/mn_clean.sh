@@ -1,8 +1,6 @@
 
 #!/bin/bash 
-source mn_set.sh
 # =====================================
-echo "clean mnode omplat:$omplat  broker:$broker "
 pkill java || true
 omcli nj1-4 -dkr_destroy -force -ignore_omplat -ignore_omnode_use
 

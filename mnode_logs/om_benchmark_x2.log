@@ -1,6 +1,35 @@
+verbose: nj1-4.kafkacw-1|nj1-4.kafkaui-1|nj1-4.kafkaw-1|nj1-4.kafkaw-2|nj1-4.minio-1|nj1-4.rdpui-1|nj1-4.x2-0|nj1-4.x2-1|nj1-4.x2-2|nj1-4.x2-3|nj1-4.x2ui-1|nj1-4.x2w-1|nj1-4.x2w-2
+verbose: omcli.info file:temp/omcli/gen/nj1-4.kafkacw-1  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafkacw-1'
+verbose: omcli.info file:temp/omcli/gen/nj1-4.kafkaui-1  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafkaui-1'
+verbose: omcli.info file:temp/omcli/gen/nj1-4.kafkaw-1  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafkaw-1'
+verbose: omcli.info file:temp/omcli/gen/nj1-4.kafkaw-2  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafkaw-2'
+verbose: omcli.info file:temp/omcli/gen/nj1-4.minio-1  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.minio-1'
+verbose: omcli.info file:temp/omcli/gen/nj1-4.rdpui-1  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.rdpui-1'
+verbose: omcli.info file:temp/omcli/gen/nj1-4.x2-0  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2-0'
+verbose: omcli.info file:temp/omcli/gen/nj1-4.x2-1  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2-1'
+verbose: omcli.info file:temp/omcli/gen/nj1-4.x2-2  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2-2'
+verbose: omcli.info file:temp/omcli/gen/nj1-4.x2-3  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2-3'
+verbose: omcli.info file:temp/omcli/gen/nj1-4.x2ui-1  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2ui-1'
+verbose: omcli.info file:temp/omcli/gen/nj1-4.x2w-1  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2w-1'
+verbose: omcli.info file:temp/omcli/gen/nj1-4.x2w-2  comment:"generated config"
+verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2w-2'
 omcli.info omtest:om_benchmark
-dkr.report command:docker_destroy  cmd:""  targets:20
-dkr.report command:docker_generate  cmd:""  targets:12
+verbose: bash  -c $'bin/omcli  -selector:nj1-4.% -ignore_omplat:Y -dkr_destroy:Y -ignore_omnode_use:Y'
+dkr.report command:docker_destroy  cmd:""  targets:21
+verbose: bin/dkr  -cmd:'' -clean_run:Y -k8ns:nj1-4 -node:$'dev.kafkacw-02|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.minio-02|dev.rdpui-5|dev.x2-20|dev.x2-18|dev.x2-19|dev.x2-17|dev.x2ui-6|dev.x2w-08|dev.x2w-12'
+dkr.report command:docker_generate  cmd:""  targets:13
 dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.run comment:copying script
 dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.build comment:copying script
 dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/Dockerfile comment:copying Dockerfile
@@ -37,18 +66,21 @@ dkr.info image:x2ui-6 file:temp/docker/x2ui-6/Dockerfile comment:copying Dockerf
 dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.run comment:copying script
 dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.build comment:copying script
 dkr.info image:x2w-08 file:temp/docker/x2w-08/Dockerfile comment:copying Dockerfile
-dkr.report command:docker_clean_run  cmd:"sudo kubectl get pods -n nj1-4 -o wide"  targets:12
+dkr.info image:x2w-12 file:temp/docker/x2w-12/x2w-12.run comment:copying script
+dkr.info image:x2w-12 file:temp/docker/x2w-12/x2w-12.build comment:copying script
+dkr.info image:x2w-12 file:temp/docker/x2w-12/Dockerfile comment:copying Dockerfile
+dkr.report command:docker_clean_run  cmd:"sudo kubectl get pods -n nj1-4 -o wide"  targets:13
 pod/kafkacw-02--nj1-sv1 created
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
-x2-18--nj1-sv3        0/1     Pending             0          0s    <none>          nj1.sv3   <none>           <none>
+x2-18--nj1-sv3        0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
 
 pod/kafkaui-5--nj1-sv1 created
 
@@ -56,11 +88,11 @@ NAME                  READY   STATUS              RESTARTS   AGE   IP           
 kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
-x2-18--nj1-sv3        0/1     Pending             0          0s    <none>          nj1.sv3   <none>           <none>
+x2-18--nj1-sv3        0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
 
 pod/kafkaw-04--nj1-sv6 created
 
@@ -68,7 +100,7 @@ NAME                  READY   STATUS              RESTARTS   AGE   IP           
 kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
@@ -80,10 +112,11 @@ NAME                  READY   STATUS              RESTARTS   AGE   IP           
 kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+x2-18--nj1-sv3        0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
 
 pod/minio-02--nj1-sv1 created
 
@@ -91,11 +124,11 @@ NAME                  READY   STATUS              RESTARTS   AGE   IP           
 kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
-x2-18--nj1-sv3        0/1     Pending             0          0s    <none>          nj1.sv3   <none>           <none>
+x2-18--nj1-sv3        0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
 
 pod/rdpui-5--nj1-sv1 created
 
@@ -103,11 +136,11 @@ NAME                  READY   STATUS              RESTARTS   AGE   IP           
 kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
-x2-18--nj1-sv3        0/1     Pending             0          0s    <none>          nj1.sv3   <none>           <none>
+x2-18--nj1-sv3        0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
 
 pod/x2-17--nj1-sv2 created
 
@@ -115,10 +148,11 @@ NAME                  READY   STATUS              RESTARTS   AGE   IP           
 kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
+x2-18--nj1-sv3        0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
 
 pod/x2-18--nj1-sv3 created
 
@@ -126,7 +160,7 @@ NAME                  READY   STATUS              RESTARTS   AGE   IP           
 kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
+kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
 rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
 x2-17--nj1-sv2        0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
@@ -136,64 +170,414 @@ pod/x2-19--nj1-sv4 created
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.172    nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.175    nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    1/1     Running             0          7s    192.168.10.71   nj1.sv7   <none>           <none>
+kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-rdpui-5--nj1-sv1      1/1     Running             0          6s    10.244.0.173    nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      1/1     Running             0          6s    10.244.0.176    nj1.sv1   <none>           <none>
 x2-17--nj1-sv2        1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
 x2-18--nj1-sv3        1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
 x2-19--nj1-sv4        0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
 x2-20--nj1-sv5        0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
 x2ui-6--nj1-sv1       0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
-x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+x2w-08--nj1-sv6       0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+x2w-12--nj1-sv7       0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
 pod/x2-20--nj1-sv5 created
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.172    nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.175    nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    1/1     Running             0          7s    192.168.10.71   nj1.sv7   <none>           <none>
+kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-rdpui-5--nj1-sv1      1/1     Running             0          6s    10.244.0.173    nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      1/1     Running             0          6s    10.244.0.176    nj1.sv1   <none>           <none>
 x2-17--nj1-sv2        1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
 x2-18--nj1-sv3        1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
 x2-19--nj1-sv4        0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
 x2-20--nj1-sv5        0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
 x2ui-6--nj1-sv1       0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
-x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+x2w-08--nj1-sv6       0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+x2w-12--nj1-sv7       0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
 pod/x2ui-6--nj1-sv1 created
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.172    nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.175    nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    1/1     Running             0          7s    192.168.10.71   nj1.sv7   <none>           <none>
+kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-rdpui-5--nj1-sv1      1/1     Running             0          6s    10.244.0.173    nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      1/1     Running             0          6s    10.244.0.176    nj1.sv1   <none>           <none>
 x2-17--nj1-sv2        1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
 x2-18--nj1-sv3        1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
 x2-19--nj1-sv4        0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
 x2-20--nj1-sv5        0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
 x2ui-6--nj1-sv1       0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
-x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+x2w-08--nj1-sv6       0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+x2w-12--nj1-sv7       0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
-pod/x2w-08--nj1-sv1 created
+pod/x2w-08--nj1-sv6 created
 
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.172    nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.175    nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
-kafkaw-12--nj1-sv7    1/1     Running             0          7s    192.168.10.71   nj1.sv7   <none>           <none>
+kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
 minio-02--nj1-sv1     1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-rdpui-5--nj1-sv1      1/1     Running             0          6s    10.244.0.173    nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      1/1     Running             0          6s    10.244.0.176    nj1.sv1   <none>           <none>
 x2-17--nj1-sv2        1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
 x2-18--nj1-sv3        1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
 x2-19--nj1-sv4        0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
 x2-20--nj1-sv5        0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
 x2ui-6--nj1-sv1       0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
-x2w-08--nj1-sv1       0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
+x2w-08--nj1-sv6       0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+x2w-12--nj1-sv7       0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
-omcli.error  try_cnt
+pod/x2w-12--nj1-sv7 created
+
+NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
+kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.175    nj1.sv1   <none>           <none>
+kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
+kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
+minio-02--nj1-sv1     1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      1/1     Running             0          6s    10.244.0.176    nj1.sv1   <none>           <none>
+x2-17--nj1-sv2        1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
+x2-18--nj1-sv3        1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
+x2-19--nj1-sv4        0/1     ContainerCreating   0          0s    192.168.10.41   nj1.sv4   <none>           <none>
+x2-20--nj1-sv5        0/1     ContainerCreating   0          0s    192.168.10.51   nj1.sv5   <none>           <none>
+x2ui-6--nj1-sv1       0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+x2w-08--nj1-sv6       0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
+x2w-12--nj1-sv7       0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
+
+verbose: bin/x2node  -node:$'dev.kafkacw-02|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.minio-02|dev.rdpui-5|dev.x2-20|dev.x2-18|dev.x2-19|dev.x2-17|dev.x2ui-6|dev.x2w-08|dev.x2w-12' -cmd:'cat /etc/x2.d/nodename' -q:Y >&5
+verbose: nj1-4.kafkacw-1:alive
+verbose: nj1-4.kafkaui-1:alive
+verbose: nj1-4.kafkaw-1:alive
+verbose: nj1-4.kafkaw-2:alive
+verbose: nj1-4.minio-1:alive
+verbose: nj1-4.rdpui-1:alive
+verbose: nj1-4.x2-0:dead
+verbose: nj1-4.x2-1:alive
+verbose: nj1-4.x2-2:dead
+verbose: nj1-4.x2-3:alive
+verbose: nj1-4.x2ui-1:dead
+verbose: nj1-4.x2w-1:dead
+verbose: nj1-4.x2w-2:dead
+verbose: bin/x2node  -node:$'dev.kafkacw-02|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.minio-02|dev.rdpui-5|dev.x2-20|dev.x2-18|dev.x2-19|dev.x2-17|dev.x2ui-6|dev.x2w-08|dev.x2w-12' -cmd:'cat /etc/x2.d/nodename' -q:Y >&5
+verbose: nj1-4.kafkacw-1:alive
+verbose: nj1-4.kafkaui-1:alive
+verbose: nj1-4.kafkaw-1:alive
+verbose: nj1-4.kafkaw-2:alive
+verbose: nj1-4.minio-1:alive
+verbose: nj1-4.rdpui-1:alive
+verbose: nj1-4.x2-0:alive
+verbose: nj1-4.x2-1:alive
+verbose: nj1-4.x2-2:alive
+verbose: nj1-4.x2-3:alive
+verbose: nj1-4.x2ui-1:alive
+verbose: nj1-4.x2w-1:alive
+verbose: nj1-4.x2w-2:alive
+verbose: bash  -c $'bin/x2rel  -omenv:nj1-4 -upload:Y -create:Y'
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:122  time:00:00:00.082879825  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:122
+abt_ts: build core
+abt_ts: build website
+
+> algox2-ts@0.1.0 x2ui:build /home/avorovich/arnd
+> pnpm --filter gen build && pnpm --filter x2ui build
+
+
+> gen@0.1.0 build /home/avorovich/arnd/ts/gen
+> tsc
+
+
+> x2ui@0.1.0 build /home/avorovich/arnd/ts/x2ui
+> next build
+
+▲ Next.js 16.1.0 (Turbopack)
+- Experiments (use with caution):
+  · cpus: 64
+  · optimizePackageImports
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 3.7s
+  Running TypeScript ...
+  Collecting page data using 64 workers ...
+  Generating static pages using 64 workers (0/23) ...
+  Generating static pages using 64 workers (5/23) 
+  Generating static pages using 64 workers (11/23) 
+  Generating static pages using 64 workers (17/23) 
+✓ Generating static pages using 64 workers (23/23) in 433.8ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ○ /_not-found
+├ ƒ /admin
+├ ƒ /api/admin/clusters
+├ ƒ /api/admin/create-cluster
+├ ƒ /api/admin/create-user
+├ ƒ /api/admin/delete-cluster
+├ ƒ /api/admin/delete-user
+├ ƒ /api/admin/update-cluster
+├ ƒ /api/admin/update-user
+├ ƒ /api/admin/users
+├ ƒ /api/config
+├ ƒ /api/dashboard
+├ ƒ /api/health
+├ ƒ /api/live
+├ ƒ /api/login
+├ ƒ /api/logout
+├ ƒ /api/proxy
+├ ƒ /api/proxy-stats
+├ ƒ /api/root-login
+├ ƒ /api/start-websocket
+├ ƒ /api/websocket
+├ ƒ /login
+├ ƒ /performance/brokers
+├ ƒ /performance/cluster
+├ ƒ /performance/console
+├ ƒ /performance/dashboard
+├ ƒ /performance/metrics
+├ ƒ /performance/monitor
+├ ƒ /performance/network/connections
+├ ƒ /performance/network/fetches
+├ ƒ /performance/network/gateways
+├ ƒ /platform/connectors
+├ ƒ /platform/schema
+├ ƒ /platform/security
+├ ƒ /platform/security/acls
+├ ƒ /platform/security/users
+└ ƒ /platform/stream
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:none
+report.abt  n_target:122  time:00:00:00.072342538  hitrate:""  pch_hitrate:""  n_warn:0  n_err:0  n_install:122
+x2fs.done  path:temp/release/x2.2026-02-05.5f1aaa0c9  fsid:80664e9f-b644-40f3-9d3b-783391c06684
+x2rel.info  release:temp/release/x2.2026-02-05.5f1aaa0c9  comment:"release completed"
+x2fs.done  path:temp/release/x2ui.2026-02-05.5f1aaa0c9  fsid:0d1c864c-eb80-4bb3-bafc-acddee7b49e6
+acr.insert  x2uidb.cluster  cluster:nj1-4  wantconnect:Y  description:"default cluster"  comment:""
+
+acr.insert  x2uidb.clusterport  clusterport:nj1-4/http://192.168.104.2:1511/api/v1        comment:""
+acr.insert  x2uidb.clusterport  clusterport:nj1-4/http://192.168.104.3:1524/api/v1        comment:""
+acr.insert  x2uidb.clusterport  clusterport:nj1-4/http://192.168.104.4:1537/api/v1        comment:""
+acr.insert  x2uidb.clusterport  clusterport:nj1-4/http://192.168.104.5:1550/api/v1        comment:""
+acr.insert  x2uidb.clusterport  clusterport:nj1-4/ws://192.168.104.2:1511/.well-known/x2  comment:""
+acr.insert  x2uidb.clusterport  clusterport:nj1-4/ws://192.168.104.3:1524/.well-known/x2  comment:""
+acr.insert  x2uidb.clusterport  clusterport:nj1-4/ws://192.168.104.4:1537/.well-known/x2  comment:""
+acr.insert  x2uidb.clusterport  clusterport:nj1-4/ws://192.168.104.5:1550/.well-known/x2  comment:""
+
+acr.insert  x2uidb.user  username:admin  name:"default user"  password:""  active:Y  comment:""
+
+acr.insert  x2uidb.usercluster  usercluster:admin.nj1-4  comment:""
+report.acr  n_select:11  n_insert:11  n_delete:0  n_ignore:0  n_update:0  n_file_mod:1
+x2rel.info  release:temp/release/x2ui.2026-02-05.5f1aaa0c9  comment:"release completed"
+x2fs.done  path:temp/release/x2w.2026-02-05.5f1aaa0c9  fsid:a67f8954-0754-453e-8839-9a47302b7c9e
+x2rel.info  release:temp/release/x2w.2026-02-05.5f1aaa0c9  comment:"release completed"
+x2rel.release  product:x2  nodes:"(dev.x2-20|dev.x2-18|dev.x2-19|dev.x2-17)"  filename:x2.2026-02-05.5f1aaa0c9
+x2node.info node:dev.x2-17  cmd:"echo 'mkdir -p reldir/x2.2026-02-05.5f1aaa0c9' | ssh  x2usr@dev.x2-17 bash"
+x2node.info node:dev.x2-18  cmd:"echo 'mkdir -p reldir/x2.2026-02-05.5f1aaa0c9' | ssh  x2usr@dev.x2-18 bash"
+x2node.info node:dev.x2-19  cmd:"echo 'mkdir -p reldir/x2.2026-02-05.5f1aaa0c9' | ssh  x2usr@dev.x2-19 bash"
+x2node.info node:dev.x2-20  cmd:"echo 'mkdir -p reldir/x2.2026-02-05.5f1aaa0c9' | ssh  x2usr@dev.x2-20 bash"
+x2node.info  ncmd:4  completed:4  success:4  failure:0
+x2rel.release  product:x2ui  nodes:"(dev.x2ui-6)"  filename:x2ui.2026-02-05.5f1aaa0c9
+x2node.info node:dev.x2ui-6  cmd:"echo 'mkdir -p reldir/x2ui.2026-02-05.5f1aaa0c9' | ssh  x2usr@dev.x2ui-6 bash"
+x2node.info  ncmd:1  completed:1  success:1  failure:0
+x2rel.release  product:x2w  nodes:"(dev.x2w-08|dev.x2w-12)"  filename:x2w.2026-02-05.5f1aaa0c9
+x2node.info node:dev.x2w-08  cmd:"echo 'mkdir -p reldir/x2w.2026-02-05.5f1aaa0c9' | ssh  x2w@dev.x2w-08 bash"
+x2node.info node:dev.x2w-12  cmd:"echo 'mkdir -p reldir/x2w.2026-02-05.5f1aaa0c9' | ssh  x2w@dev.x2w-12 bash"
+x2node.info  ncmd:2  completed:2  success:2  failure:0
+omcli.info comment:"Uploading Driver Config"
+verbose: bin/x2node  -node:dev.kafkaw-04 -rsync_put:Y -local:temp/omcli/kafka-latency.yaml.Py55W9 -remote:kafka-latency.yaml -cmd:'' -q:Y
+<f+++++++++ kafka-latency.yaml.Py55W9
+omcli.info comment:"Uploading Load Config"
+verbose: bin/x2node  -node:dev.kafkaw-04 -rsync_put:Y -local:temp/omcli/max-rate-80-topics-1-partition-100b.yaml.kZpw3o -remote:max-rate-80-topics-1-partition-100b.yaml -cmd:'' -q:Y
+<f+++++++++ max-rate-80-topics-1-partition-100b.yaml.kZpw3o
+omcli.info comment:"Starting Taps"
+verbose: bin/omcli  -selector:$'nj1-4.kafka-1|nj1-4.kafka-2|nj1-4.kafka-3|nj1-4.kafka-4|nj1-4.rdp-1|nj1-4.rdp-2|nj1-4.rdp-3|nj1-4.rdp-4|nj1-4.x2-0|nj1-4.x2-1|nj1-4.x2-2|nj1-4.x2-3' -omplat:x2 -start_tap:Y
+<f+++++++++ nj1-4.x2-0
+dev.x2-20:script
+<f+++++++++ nj1-4.x2-1
+dev.x2-18:script
+<f+++++++++ nj1-4.x2-2
+dev.x2-19:script
+<f+++++++++ nj1-4.x2-3
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:nj1-4.x2-3 option:start_tap 
+script:info  node:dev.x2-17 omnode:nj1-4.x2-3 option:stop 
+No PID file found, nothing to stop.
+script:info  node:dev.x2-17 omnode:nj1-4.x2-3 option:start 
+atf_snf started pid:247
+script:info  node:dev.x2-18 omnode:nj1-4.x2-1 option:start_tap 
+script:info  node:dev.x2-18 omnode:nj1-4.x2-1 option:stop 
+No PID file found, nothing to stop.
+script:info  node:dev.x2-18 omnode:nj1-4.x2-1 option:start 
+atf_snf started pid:253
+script:info  node:dev.x2-19 omnode:nj1-4.x2-2 option:start_tap 
+script:info  node:dev.x2-19 omnode:nj1-4.x2-2 option:stop 
+No PID file found, nothing to stop.
+script:info  node:dev.x2-19 omnode:nj1-4.x2-2 option:start 
+atf_snf started pid:233
+script:info  node:dev.x2-20 omnode:nj1-4.x2-0 option:start_tap 
+script:info  node:dev.x2-20 omnode:nj1-4.x2-0 option:stop 
+No PID file found, nothing to stop.
+script:info  node:dev.x2-20 omnode:nj1-4.x2-0 option:start 
+atf_snf started pid:245
+omcli.info comment:"Restarting Workers"
+verbose: bin/omcli  -selector:$'nj1-4.kafkaw-1|nj1-4.kafkaw-2' -omplat:x2 -start:Y
+<f+++++++++ nj1-4.kafkaw-1
+dev.kafkaw-04:script
+<f+++++++++ nj1-4.kafkaw-2
+dev.kafkaw-12:script
+script:info  node:dev.kafkaw-04 omnode:nj1-4.kafkaw-1 option:start 
+Stopping kafka_worker...
+====Was not running
+..........
+dev.kafkaw-04:success
+script:info  node:dev.kafkaw-12 omnode:nj1-4.kafkaw-2 option:start 
+Stopping kafka_worker...
+====Was not running
+..........
+dev.kafkaw-12:success
+omcli.info comment:"Restarting Brokers"
+verbose: bin/omcli  -selector:$'nj1-4.kafka-1|nj1-4.kafka-2|nj1-4.kafka-3|nj1-4.kafka-4|nj1-4.rdp-1|nj1-4.rdp-2|nj1-4.rdp-3|nj1-4.rdp-4|nj1-4.x2-0|nj1-4.x2-1|nj1-4.x2-2|nj1-4.x2-3' -omplat:x2 -stop:Y
+dev.x2-20:script
+dev.x2-18:script
+dev.x2-19:script
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:nj1-4.x2-3 option:stop 
+Stopping x2...
+====Was not running
+script:info  node:dev.x2-18 omnode:nj1-4.x2-1 option:stop 
+Stopping x2...
+====Was not running
+script:info  node:dev.x2-19 omnode:nj1-4.x2-2 option:stop 
+Stopping x2...
+====Was not running
+script:info  node:dev.x2-20 omnode:nj1-4.x2-0 option:stop 
+Stopping x2...
+====Was not running
+verbose: bin/omcli  -selector:$'nj1-4.kafka-1|nj1-4.kafka-2|nj1-4.kafka-3|nj1-4.kafka-4|nj1-4.rdp-1|nj1-4.rdp-2|nj1-4.rdp-3|nj1-4.rdp-4|nj1-4.x2-0|nj1-4.x2-1|nj1-4.x2-2|nj1-4.x2-3' -omplat:x2 -start_clean:Y
+dev.x2-20:script
+dev.x2-18:script
+dev.x2-19:script
+dev.x2-17:script
+script:info  node:dev.x2-17 omnode:nj1-4.x2-3 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./nj1-4.x2sup-3-0.log
+.....READY_FOR_TEST
+script:info  node:dev.x2-18 omnode:nj1-4.x2-1 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./nj1-4.x2sup-1-0.log
+.....READY_FOR_TEST
+script:info  node:dev.x2-19 omnode:nj1-4.x2-2 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./nj1-4.x2sup-2-0.log
+.....READY_FOR_TEST
+script:info  node:dev.x2-20 omnode:nj1-4.x2-0 option:start_clean 
+Stopping x2...
+====Was not running
+Formatting x2...
+Starting x2...
+Log file:./nj1-4.x2sup-0-0.log
+.....READY_FOR_TEST
+omcli.info comment:"Restarting Kcat"
+verbose: bin/omcli  -selector:$'nj1-4.x2w-1|nj1-4.x2w-2' -omplat:x2 -start:Y
+<f+++++++++ nj1-4.x2w-1
+dev.x2w-08:script
+<f+++++++++ nj1-4.x2w-2
+dev.x2w-12:script
+omcli.info comment:"Restarting Gui"
+verbose: bin/omcli  -selector:$'nj1-4.kafkaui-1|nj1-4.rdpui-1|nj1-4.x2ui-1' -omplat:x2 -start:Y
+<f+++++++++ nj1-4.kafkaui-1
+dev.kafkaui-5:script
+<f+++++++++ nj1-4.rdpui-1
+dev.rdpui-5:script
+<f+++++++++ nj1-4.x2ui-1
+dev.x2ui-6:script
+script:info  node:dev.kafkaui-5 omnode:nj1-4.kafkaui-1 option:start 
+Stopping kafkaui...
+====Was not running
+Starting kafkaui...
+script:info  node:dev.rdpui-5 omnode:nj1-4.rdpui-1 option:start 
+Stopping rdpui...
+====Was not running
+Starting rdpui...
+script:info  node:dev.x2ui-6 omnode:nj1-4.x2ui-1 option:start
+omcli.info omdriver:kafka-latency  omload:max-rate-80-topics-1-partition-100b  comment:"running test"
+verbose: bin/x2node  -node:dev.kafkaw-04 -cmd:$'find . -maxdepth 1 -name "*.json" | xargs rm 1>/dev/null 2>/dev/null'
+x2node.info node:dev.kafkaw-04  cmd:"echo $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null' | ssh  kafkawrkr@dev.kafkaw-04 bash"
+x2node.error node:dev.kafkaw-04  status:123  cmd:"echo $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null' | ssh  kafkawrkr@dev.kafkaw-04 bash"
+x2node.info  ncmd:1  completed:1  success:0  failure:1
+verbose: bash  -c 'ssh -q kafkawrkr@dev.kafkaw-04 bin/benchmark --drivers kafka-latency.yaml max-rate-80-topics-1-partition-100b.yaml' >&5
+15:28:47.359 [main] INFO Benchmark - Using default worker file workers.yaml
+15:28:47.368 [main] INFO Benchmark - Reading workers list from workers.yaml
+15:28:47.405 [main] INFO Benchmark - Starting benchmark with config: {
+"drivers" : [ "kafka-latency.yaml" ],
+"workers" : [ "http://nj1-4.kafkaw-1.ctrl-0:1080", "http://nj1-4.kafkaw-2.ctrl-0:1130" ],
+"workersFile" : "/opt/benchmark/workers.yaml",
+"workloads" : [ "max-rate-80-topics-1-partition-100b.yaml" ],
+"output" : null
+}
+15:28:47.418 [main] INFO Benchmark - Workloads: {
+"max-rate-80-topics-1-partition-100b" : {
+"name" : "max-rate-80-topics-1-partition-100b",
+"topics" : 80,
+"partitionsPerTopic" : 1,
+"keyDistributor" : "NO_KEY",
+"messageSize" : 100,
+"useRandomizedPayloads" : true,
+"randomBytesRatio" : 0.5,
+"randomizedPayloadPoolSize" : 1000,
+"payloadFile" : null,
+"subscriptionsPerTopic" : 1,
+"producersPerTopic" : 1,
+"consumerPerSubscription" : 1,
+"producerRate" : 10000000,
+"consumerBacklogSizeGB" : 0,
+"backlogDrainRatio" : 1.0,
+"testDurationMinutes" : 1,
+"warmupDurationMinutes" : 1
+}
+}
+15:28:47.662 [main] INFO DistributedWorkersEnsemble - Workers list - producers: [http://nj1-4.kafkaw-1.ctrl-0:1080]
+15:28:47.662 [main] INFO DistributedWorkersEnsemble - Workers list - consumers: http://nj1-4.kafkaw-2.ctrl-0:1130
+15:28:47.665 [main] INFO Benchmark - --------------- WORKLOAD : max-rate-80-topics-1-partition-100b --- DRIVER : kafka-latency---------------
+15:28:48.260 [main] INFO WorkloadGenerator - Created 80 topics in 213.037083 ms
+15:28:48.550 [main] INFO WorkloadGenerator - Created 80 consumers in 282.573594 ms
+15:28:48.795 [main] INFO WorkloadGenerator - Created 80 producers in 244.77984 ms
+15:28:48.796 [main] INFO WorkloadGenerator - Waiting for consumers to be ready
+15:28:48.976 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 80, Received: 0
+15:28:50.979 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 80, Received: 0
+15:28:52.983 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 80, Received: 80
+15:28:52.983 [main] INFO WorkloadGenerator - All consumers are ready
+15:28:53.046 [main] INFO WorkloadGenerator - ----- Starting warm-up traffic (1m) ------
+15:29:07.996 [main] INFO WorkloadGenerator - Pub rate 231280.8 msg/s / 22.1 MB/s | Pub err     0.0 err/s | Cons rate 233146.0 msg/s / 22.2 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 4619.1 - 50%: 4636.5 - 99%: 13791.4 - 99.9%: 13977.4 - Max: 13986.6 | Pub Delay Latency (us) avg: 580396.2 - 50%: 701043.0 - 99%: 708611.0 - 99.9%: 709127.0 - Max: 716359.0
+15:29:18.151 [main] INFO WorkloadGenerator - Pub rate 502944.9 msg/s / 48.0 MB/s | Pub err     0.0 err/s | Cons rate 489502.7 msg/s / 46.7 MB/s | Backlog: 109.3 K | Pub Latency (ms) avg: 16381.6 - 50%: 16340.2 - 99%: 23297.4 - 99.9%: 23769.5 - Max: 23862.4 | Pub Delay Latency (us) avg: 1898622.4 - 50%: 689303.0 - 99%: 11944191.0 - 99.9%: 12069311.0 - Max: 12090623.0
+15:29:28.302 [main] INFO WorkloadGenerator - Pub rate 509936.9 msg/s / 48.6 MB/s | Pub err     0.0 err/s | Cons rate 502669.1 msg/s / 47.9 MB/s | Backlog: 183.1 K | Pub Latency (ms) avg: 18599.1 - 50%: 15132.0 - 99%: 32264.6 - 99.9%: 33489.2 - Max: 34112.8 | Pub Delay Latency (us) avg: 9328467.3 - 50%: 11919679.0 - 99%: 27312511.0 - 99.9%: 30317567.0 - Max: 31431295.0
+15:29:38.427 [main] INFO WorkloadGenerator - Pub rate 492880.0 msg/s / 47.0 MB/s | Pub err     0.0 err/s | Cons rate 467014.7 msg/s / 44.5 MB/s | Backlog: 445.0 K | Pub Latency (ms) avg: 19657.8 - 50%: 11942.7 - 99%: 43480.8 - 99.9%: 44033.5 - Max: 44162.0 | Pub Delay Latency (us) avg: 18006091.8 - 50%: 23481855.0 - 99%: 38915327.0 - 99.9%: 40887807.0 - Max: 41099263.0
+15:29:48.546 [main] INFO WorkloadGenerator - Pub rate 572269.5 msg/s / 54.6 MB/s | Pub err     0.0 err/s | Cons rate 197303.5 msg/s / 18.8 MB/s | Backlog: 4239.4 K | Pub Latency (ms) avg: 18203.1 - 50%: 11060.5 - 99%: 53672.7 - 99.9%: 54019.1 - Max: 54081.0 | Pub Delay Latency (us) avg: 28778130.2 - 50%: 34154751.0 - 99%: 45743359.0 - 99.9%: 50406143.0 - Max: 50678783.0
+15:29:58.668 [main] INFO WorkloadGenerator - Pub rate 394373.7 msg/s / 37.6 MB/s | Pub err     0.0 err/s | Cons rate 797563.1 msg/s / 76.1 MB/s | Backlog: 158.6 K | Pub Latency (ms) avg: 27899.0 - 50%: 13690.4 - 99%: 60000.3 - 99.9%: 60000.3 - Max: 60000.3 | Pub Delay Latency (us) avg: 29505354.5 - 50%: 43467775.0 - 99%: 56552447.0 - 99.9%: 58748159.0 - Max: 59819263.0
+15:29:59.010 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 17888.7 - 50%: 13185.6 - 95%: 53744.4 - 99%: 59891.2 - 99.9%: 60000.3 - 99.99%: 60000.3 - Max: 60000.3 | Pub Delay (us)  avg: 15286171.5 - 50%: 4891839.0 - 95%: 44959487.0 - 99%: 47310591.0 - 99.9%: 56958463.0 - 99.99%: 59800831.0 - Max: 59819263.0
+15:29:59.224 [main] INFO WorkloadGenerator - ----- Starting benchmark traffic (1m)------
+15:30:09.318 [main] INFO WorkloadGenerator - Pub rate 507762.2 msg/s / 48.4 MB/s | Pub err     0.0 err/s | Cons rate 507950.9 msg/s / 48.4 MB/s | Backlog: 156.7 K | Pub Latency (ms) avg: 20228.7 - 50%: 13119.0 - 99%: 60000.3 - 99.9%: 60000.3 - Max: 60000.3 | Pub Delay Latency (us) avg: 44972483.7 - 50%: 52170495.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+15:30:19.437 [main] INFO WorkloadGenerator - Pub rate 436415.2 msg/s / 41.6 MB/s | Pub err     0.0 err/s | Cons rate 370964.7 msg/s / 35.4 MB/s | Backlog: 819.0 K | Pub Latency (ms) avg: 26959.5 - 50%: 13127.5 - 99%: 60000.3 - 99.9%: 60000.3 - Max: 60000.3 | Pub Delay Latency (us) avg: 41760297.0 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+15:30:29.555 [main] INFO WorkloadGenerator - Pub rate 474974.3 msg/s / 45.3 MB/s | Pub err     0.0 err/s | Cons rate 345035.0 msg/s / 32.9 MB/s | Backlog: 2133.9 K | Pub Latency (ms) avg: 22695.1 - 50%: 10808.4 - 99%: 60000.3 - 99.9%: 60000.3 - Max: 60000.3 | Pub Delay Latency (us) avg: 45640784.5 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+15:30:39.683 [main] INFO WorkloadGenerator - Pub rate 482436.7 msg/s / 46.0 MB/s | Pub err     0.0 err/s | Cons rate 684480.8 msg/s / 65.3 MB/s | Backlog: 87.7 K | Pub Latency (ms) avg: 30123.3 - 50%: 14351.5 - 99%: 60000.3 - 99.9%: 60000.3 - Max: 60000.3 | Pub Delay Latency (us) avg: 38855780.7 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+15:30:49.805 [main] INFO WorkloadGenerator - Pub rate 530281.8 msg/s / 50.6 MB/s | Pub err     0.0 err/s | Cons rate 530083.3 msg/s / 50.6 MB/s | Backlog: 89.7 K | Pub Latency (ms) avg: 25400.3 - 50%: 12702.5 - 99%: 60000.3 - 99.9%: 60000.3 - Max: 60000.3 | Pub Delay Latency (us) avg: 43708725.3 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+15:31:01.824 [main] INFO WorkloadGenerator - Pub rate 357773.2 msg/s / 34.1 MB/s | Pub err 16404.9 err/s | Cons rate 297153.1 msg/s / 28.3 MB/s | Backlog: 818.3 K | Pub Latency (ms) avg: 19366.2 - 50%: 10785.5 - 99%: 60000.3 - 99.9%: 60000.3 - Max: 60000.3 | Pub Delay Latency (us) avg: 49827811.0 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
+15:31:02.027 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 24159.9 - 50%: 12923.5 - 95%: 60000.3 - 99%: 60000.3 - 99.9%: 60000.3 - 99.99%: 60000.3 - Max: 60000.3 | Pub Delay (us)  avg: 44098098.1 - 50%: 60000255.0 - 95%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - 99.99%: 60000255.0 - Max: 60000255.0

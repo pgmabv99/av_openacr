@@ -480,3 +480,34 @@ verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test8000
 verbose: atf_rdk.info  comment:"Deleting topic"  topic:rdk_test9000
 verbose: natf_rdk.info  comment:"Cleaning up resources..."
 atf_rdk.summary  broker:localhost:54005  "elapsed(sec)":54.6755  max_topics:10000  msg_enq:1000000  msg_ack:1000000  msg_rate_per_sec:1000000  lat_avg_us:1328751
+
+
+
+feb 6
+
+[0 Feb 06 13:48:15] avorovich@nj1.sv5:~/arnd 
+$ atf_rdk -mode:custom -test:c -max_msgs:1000000
+atf_rdk.info  comment:"Logs directory cleaned"  logs_dir:temp/atf_rdk_logs
+atf_rdk.info  comment:"custom test -compare multipe backends in one run"
+atf_rdk.info  comment:"override cmdline parameters for test!!!!!!!!!!\n"
+atf_rdk.info  comment:"Start producing to multiple topics"  broker:nj1-4.kafka-1.ext-0:1643  wrk_id:""  max_topics:10
+atf_rdk.info  comment:"Start producing to multiple topics"  max_msgs:1000000  max_msg_all_topics:10000000
+atf_rdk.produce_summary  broker:nj1-4.kafka-1.ext-0:1643  "elapsed(sec)":13.1996  max_topics:10  produce_req_count:10000000  produce_ack_count:10000000  msg_rate_per_sec:1000000  lat_avg_us:3191
+
+
+atf_rdk.info  comment:"Start producing to multiple topics"  broker:nj1-4.x2-3.ext-0:1519  wrk_id:""  max_topics:10
+atf_rdk.info  comment:"Start producing to multiple topics"  max_msgs:1000000  max_msg_all_topics:10000000
+atf_rdk.err  comment:"Failed to produce message"  msg:1770403728021529730//2584907/aaaaa  imsg:2584907  topic:test-topic7  error:"Local: Queue full"
+atf_rdk.err  comment:"Failed to produce message"  msg:1770403728021545179//2584908/aaaaa  imsg:2584908  topic:test-topic8  error:"Local: Queue full"
+atf_rdk.err  comment:"Failed to produce message"  msg:1770403728021547909//2584909/aaaaa  imsg:2584909  topic:test-topic9  error:"Local: Queue full"
+atf_rdk.err  comment:"Failed to produce message"  msg:1770403728021550419//2584910/aaaaa  imsg:2584910  topic:test-topic0  error:"Local: Queue full"
+atf_rdk.err  comment:"Failed to produce message"  msg:1770403728021552929//2584911/aaaaa  imsg:2584911  topic:test-topic1  error:"Local: Queue full"
+atf_rdk.err  comment:"error producing messages, further errors will be suppressed"
+atf_rdk.produce_summary  broker:nj1-4.x2-3.ext-0:1519  "elapsed(sec)":16.6804  max_topics:10  produce_req_count:5023857  produce_ack_count:5023857  msg_rate_per_sec:1000000  lat_avg_us:2668024
+
+
+ak bench
+6:00:59.448 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 19209.8 - 50%: 18367.0 - 95%: 34627.8 - 99%: 41025.3 - 99.9%: 45612.3 - 99.99%: 49716.7 - Max: 51469.3 | Pub Delay (us)  avg: 53845172.5 - 50%: 60000255.0 - 95%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - 99.99%: 60000255.0 - Max: 60000255.0
+
+x2 bench
+15:31:02.027 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 24159.9 - 50%: 12923.5 - 95%: 60000.3 - 99%: 60000.3 - 99.9%: 60000.3 - 99.99%: 60000.3 - Max: 60000.3 | Pub Delay (us)  avg: 44098098.1 - 50%: 60000255.0 - 95%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - 99.99%: 60000255.0 - Max: 60000255.0

@@ -483,7 +483,7 @@ atf_rdk.summary  broker:localhost:54005  "elapsed(sec)":54.6755  max_topics:1000
 
 
 
-feb 6
+feb 6  perfromance ...............
 
 [0 Feb 06 13:48:15] avorovich@nj1.sv5:~/arnd 
 $ atf_rdk -mode:custom -test:c -max_msgs:1000000
@@ -511,3 +511,174 @@ ak bench
 
 x2 bench
 15:31:02.027 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 24159.9 - 50%: 12923.5 - 95%: 60000.3 - 99%: 60000.3 - 99.9%: 60000.3 - 99.99%: 60000.3 - Max: 60000.3 | Pub Delay (us)  avg: 44098098.1 - 50%: 60000255.0 - 95%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - 99.99%: 60000255.0 - Max: 60000255.0
+
+
+
+feb 9 - crash
+
+repeated runs 
+atf_rdk -mode:t -test:s -n_p:2 -n_c:4 -step_empty_consume_max:8 -max_msgs:1000
+
+verbose: kafka2.SyncGroupResponse  request_api_version:3  correlation_id:72  throttle_time_ms:0  error_code:0  assignment:"00 00 00 00 00 0a 00 0b 74 65 73 74 2d 74 6f 70 69 63 30 00 00 00 01 00 00 00 00 00 0b 74 65 73 74 2d 74 6f 70 69 63 31 00 00 00 01 00 00 00 00 00 0b 74 65 73 74 2d 74 6f 70 69 63 32 00 00 00 01 00 00 00 00 00 0b 74 65 73 74 2d 74 6f 70 69 63 33 00 00 00 01 00 00 00 00 00 0b 74 65 73 74 2d 74 6f 70 69 63 34 00 00 00 01 00 00 00 00 00 0b 74 65 73 74 2d 74 6f 70 69 63 35 00 00 00 01 00 00 00 00 00 0b 74 65 73 74 2d 74 6f 70 69 63 36 00 00 00 01 00 00 00 00 00 0b 74 65 73 74 2d 74 6f 70 69 63 37 00 00 00 01 00 00 00 00 00 0b 74 65 73 74 2d 74 6f 70 69 63 38 00 00 00 01 00 00 00 00 00 0b 74 65 73 74 2d 74 6f 70 69 63 39 00 00 00 01 00 00 00 00 00 00 00 00"
+verbose: kafka2.LeaveGroupRequest  request_api_version:1  correlation_id:90  client_id:atf_rdk_c_2  group_id:test_group_id  member_id:atf_rdk_c_2-208ff47c-5bf2-43df-9412-8562e10cfefe
+verbose: kafka2.LeaveGroupResponse  request_api_version:1  correlation_id:90  throttle_time_ms:0  error_code:0
+verbose: kafka2.LeaveGroupRequest  request_api_version:1  correlation_id:69  client_id:atf_rdk_c_1  group_id:test_group_id  member_id:atf_rdk_c_1-b5d3cb84-eb42-4f73-bcc8-9f9a00b131bf
+verbose: kafka2.LeaveGroupResponse  request_api_version:1  correlation_id:69  throttle_time_ms:0  error_code:0
+verbose: kafka2.OffsetFetchRequest  request_api_version:7  correlation_id:73  client_id:atf_rdk_c_0  group_id:test_group_id  topics.0:"kafka2.OffsetFetchRequestTopic9q  name:test-topic0  partition_indexes.0:0"  topics.1:"kafka2.OffsetFetchRequestTopic9q  name:test-topic1  partition_indexes.0:0"  topics.2:"kafka2.OffsetFetchRequestTopic9q  name:test-topic2  partition_indexes.0:0"  topics.3:"kafka2.OffsetFetchRequestTopic9q  name:test-topic3  partition_indexes.0:0"  topics.4:"kafka2.OffsetFetchRequestTopic9q  name:test-topic4  partition_indexes.0:0"  topics.5:"kafka2.OffsetFetchRequestTopic9q  name:test-topic5  partition_indexes.0:0"  topics.6:"kafka2.OffsetFetchRequestTopic9q  name:test-topic6  partition_indexes.0:0"  topics.7:"kafka2.OffsetFetchRequestTopic9q  name:test-topic7  partition_indexes.0:0"  topics.8:"kafka2.OffsetFetchRequestTopic9q  name:test-topic8  partition_indexes.0:0"  topics.9:"kafka2.OffsetFetchRequestTopic9q  name:test-topic9  partition_indexes.0:0"  require_stable:Y
+x2sup.proc  proc:x2gw-0-0  status:Signaled  signal:"Segmentation fault"  core:Y
+
+ feb 9 good run 
+
+$ atf_rdk -mode:t -test:s -n_p:4 -n_c:4 -step_empty_consume_max:10 -max_msgs:1000
+atf_rdk.info  comment:"Logs directory cleaned"  logs_dir:temp/atf_rdk_logs
+atf_rdk.info  comment:"Starting worker"  wrk_id:p_0  mode:p
+atf_rdk.info  comment:"Starting worker"  wrk_id:p_1  mode:p
+atf_rdk.info  comment:"Starting worker"  wrk_id:p_2  mode:p
+atf_rdk.info  comment:"Starting worker"  wrk_id:p_3  mode:p
+atf_rdk.info  comment:"Starting worker"  wrk_id:c_0  mode:c
+atf_rdk.info  comment:"Starting worker"  wrk_id:c_1  mode:c
+atf_rdk.info  comment:"Starting worker"  wrk_id:c_2  mode:c
+atf_rdk.info  comment:"Starting worker"  wrk_id:c_3  mode:c
+atf_rdk.aggregated_progress  "elapsed(sec)":0.0198878  p_up:4  c_up:4  p_lst:0,1,2,3,  c_lst:0,1,2,3,  p_ack_cnt:0  p_req_cnt:0  c_cnt:0
+atf_rdk.aggregated_progress  "elapsed(sec)":1.01991  p_up:0  c_up:4  p_lst:" , , , ,"  c_lst:0,1,2,3,  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:0
+atf_rdk.aggregated_progress  "elapsed(sec)":2.01994  p_up:0  c_up:4  p_lst:" , , , ,"  c_lst:0,1,2,3,  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:0
+atf_rdk.aggregated_progress  "elapsed(sec)":3.01992  p_up:0  c_up:4  p_lst:" , , , ,"  c_lst:0,1,2,3,  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:0
+atf_rdk.aggregated_progress  "elapsed(sec)":4.01993  p_up:0  c_up:4  p_lst:" , , , ,"  c_lst:0,1,2,3,  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:0
+atf_rdk.aggregated_progress  "elapsed(sec)":5.01994  p_up:0  c_up:4  p_lst:" , , , ,"  c_lst:0,1,2,3,  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:14722
+atf_rdk.aggregated_progress  "elapsed(sec)":6.01993  p_up:0  c_up:4  p_lst:" , , , ,"  c_lst:0,1,2,3,  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:30726
+atf_rdk.aggregated_progress  "elapsed(sec)":7.01995  p_up:0  c_up:4  p_lst:" , , , ,"  c_lst:0,1,2,3,  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:40000
+atf_rdk.aggregated_progress  "elapsed(sec)":8.01995  p_up:0  c_up:4  p_lst:" , , , ,"  c_lst:0,1,2,3,  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:40000
+atf_rdk.aggregated_progress  "elapsed(sec)":9.01999  p_up:0  c_up:4  p_lst:" , , , ,"  c_lst:0,1,2,3,  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:40000
+atf_rdk.aggregated_progress  "elapsed(sec)":10.02  p_up:0  c_up:1  p_lst:" , , , ,"  c_lst:"0, , , ,"  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:40000
+atf_rdk.aggregated_progress  "elapsed(sec)":11.02  p_up:0  c_up:1  p_lst:" , , , ,"  c_lst:"0, , , ,"  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:40000
+atf_rdk.aggregated_progress  "elapsed(sec)":12.02  p_up:0  c_up:1  p_lst:" , , , ,"  c_lst:"0, , , ,"  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:40000
+atf_rdk.aggregated_progress  "elapsed(sec)":13.02  p_up:0  c_up:1  p_lst:" , , , ,"  c_lst:"0, , , ,"  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:40000
+atf_rdk.aggregated_progress  "elapsed(sec)":14.02  p_up:0  c_up:1  p_lst:" , , , ,"  c_lst:"0, , , ,"  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:40000
+atf_rdk.aggregated_progress  "elapsed(sec)":15.02  p_up:0  c_up:1  p_lst:" , , , ,"  c_lst:"0, , , ,"  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:40000
+atf_rdk.aggregated_progress  "elapsed(sec)":16.02  p_up:0  c_up:1  p_lst:" , , , ,"  c_lst:"0, , , ,"  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:40000
+atf_rdk.aggregated_progress  "elapsed(sec)":17.02  p_up:0  c_up:0  p_lst:" , , , ,"  c_lst:" , , , ,"  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:40000
+atf_rdk.info  comment:"requesting exit from MainLoop "  stop:N  p_up:0  c_up:0
+atf_rdk.info  comment:"terminating all worker processes"
+atf_rdk.aggregated_summary  broker:localhost:54005  "elapsed(sec)":17.9359  p_ack_cnt:40000  p_req_cnt:40000  c_cnt:40000
+[0 Feb 09 19:42:25] avorovich@nj1.sv5:~/arnd 
+$ 
+
+===============================
+
+=========================bad run. consumed more than produced, commit failed with rebalance error, consumer got stuck and had to
+
+$ atf_rdk -mode:t -test:s -n_p:2 -n_c:4  -step_empty_consume_max:5 -max_msgs:10000 -broker:nj1-4.kafka-1.ext-0:1643
+atf_rdk.info  comment:"Logs directory cleaned"  logs_dir:temp/atf_rdk_logs
+atf_rdk.info  comment:"Starting worker"  wrk_id:p_0  mode:p
+atf_rdk.info  comment:"Starting worker"  wrk_id:p_1  mode:p
+atf_rdk.info  comment:"Starting worker"  wrk_id:c_0  mode:c
+atf_rdk.info  sec:1  comment:"Staggered start of consumers"
+atf_rdk.info  comment:"Starting worker"  wrk_id:c_1  mode:c
+atf_rdk.info  sec:1  comment:"Staggered start of consumers"
+atf_rdk.info  comment:"Starting worker"  wrk_id:c_2  mode:c
+atf_rdk.info  sec:1  comment:"Staggered start of consumers"
+atf_rdk.info  comment:"Starting worker"  wrk_id:c_3  mode:c
+atf_rdk.info  sec:1  comment:"Staggered start of consumers"
+atf_rdk.aggregated_progress  "elapsed(sec)":3.67885  p_up:0  c_up:4  p_lst:" , ,"  c_lst:0,1,2,3,  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:3025
+atf_rdk.aggregated_progress  "elapsed(sec)":4.67889  p_up:0  c_up:4  p_lst:" , ,"  c_lst:0,1,2,3,  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:24058
+atf_rdk.aggregated_progress  "elapsed(sec)":5.67886  p_up:0  c_up:4  p_lst:" , ,"  c_lst:0,1,2,3,  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:46321
+atf_rdk.aggregated_progress  "elapsed(sec)":6.67888  p_up:0  c_up:4  p_lst:" , ,"  c_lst:0,1,2,3,  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:68963
+atf_rdk.aggregated_progress  "elapsed(sec)":7.67889  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:90837
+atf_rdk.aggregated_progress  "elapsed(sec)":8.67889  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:113835
+atf_rdk.aggregated_progress  "elapsed(sec)":9.67887  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:137091
+atf_rdk.aggregated_progress  "elapsed(sec)":10.6789  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:160008
+atf_rdk.aggregated_progress  "elapsed(sec)":11.6789  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:182190
+atf_rdk.aggregated_progress  "elapsed(sec)":12.6789  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:196471
+atf_rdk.aggregated_progress  "elapsed(sec)":13.6789  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:200000
+atf_rdk.aggregated_progress  "elapsed(sec)":14.6789  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:200000
+atf_rdk.aggregated_progress  "elapsed(sec)":15.6789  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:200000
+atf_rdk.aggregated_progress  "elapsed(sec)":16.679  p_up:0  c_up:2  p_lst:" , ,"  c_lst:"0, ,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:200000
+atf_rdk.aggregated_progress  "elapsed(sec)":17.6789  p_up:0  c_up:1  p_lst:" , ,"  c_lst:"0, , , ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:200000
+atf_rdk.aggregated_progress  "elapsed(sec)":18.6789  p_up:0  c_up:0  p_lst:" , ,"  c_lst:" , , , ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:200000
+atf_rdk.info  comment:"requesting exit from MainLoop "  stop:N  p_up:0  c_up:0
+atf_rdk.info  comment:"terminating all worker processes"
+atf_rdk.aggregated_summary  broker:nj1-4.kafka-1.ext-0:1643  "elapsed(sec)":19.5949  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:200000
+[0 Feb 09 20:22:34] avorovich@nj1.sv5:~/arnd 
+$ x22sup_start.sh 
+==kill previous x2sup and tcpdump
+rm: cannot remove 'core.*': No such file or directory
+==start new x2sup 
+tracing is OFF
+x2fs.done  path:temp/x2tmp/  fsid:0fbd2e7f-2bc7-4988-80b3-12408bbed7ac
+Log file:temp/x2tmp/dev1p.x2sup-0-0.log
+=== Creating 10 topics in parallel ===
+Submitting creation of test-topic0 ...
+Submitting creation of test-topic1 ...
+Submitting creation of test-topic2 ...
+Submitting creation of test-topic3 ...
+Submitting creation of test-topic4 ...
+Submitting creation of test-topic5 ...
+Submitting creation of test-topic6 ...
+Submitting creation of test-topic7 ...
+Submitting creation of test-topic8 ...
+Submitting creation of test-topic9 ...
+→ All create commands started. Waiting for completion...
+Created topic test-topic1.
+Created topic test-topic3.
+Created topic test-topic7.
+Created topic test-topic8.
+Created topic test-topic4.
+Created topic test-topic2.
+Created topic test-topic9.
+Created topic test-topic5.
+Created topic test-topic0.
+Created topic test-topic6.
+All creations finished.
+
+=== Verifying topics ===
+Created: 10 / 10
+Done.
+[0 Feb 09 20:22:57] avorovich@nj1.sv5:~/arnd 
+$ atf_rdk -mode:t -test:s -n_p:2 -n_c:4  -step_empty_consume_max:5 -max_msgs:10000 
+atf_rdk.info  comment:"Logs directory cleaned"  logs_dir:temp/atf_rdk_logs
+atf_rdk.info  comment:"Starting worker"  wrk_id:p_0  mode:p
+atf_rdk.info  comment:"Starting worker"  wrk_id:p_1  mode:p
+atf_rdk.info  comment:"Starting worker"  wrk_id:c_0  mode:c
+atf_rdk.info  sec:1  comment:"Staggered start of consumers"
+atf_rdk.info  comment:"Starting worker"  wrk_id:c_1  mode:c
+atf_rdk.info  sec:1  comment:"Staggered start of consumers"
+atf_rdk.info  comment:"Starting worker"  wrk_id:c_2  mode:c
+atf_rdk.info  sec:1  comment:"Staggered start of consumers"
+atf_rdk.info  comment:"Starting worker"  wrk_id:c_3  mode:c
+atf_rdk.info  sec:1  comment:"Staggered start of consumers"
+atf_rdk.aggregated_progress  "elapsed(sec)":3.67971  p_up:0  c_up:4  p_lst:" , ,"  c_lst:0,1,2,3,  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:0
+atf_rdk.aggregated_progress  "elapsed(sec)":4.67969  p_up:0  c_up:4  p_lst:" , ,"  c_lst:0,1,2,3,  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:22139
+atf_rdk.aggregated_progress  "elapsed(sec)":5.67972  p_up:0  c_up:4  p_lst:" , ,"  c_lst:0,1,2,3,  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:56529
+atf_rdk.aggregated_progress  "elapsed(sec)":6.67974  p_up:0  c_up:4  p_lst:" , ,"  c_lst:0,1,2,3,  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:92064
+atf_rdk.aggregated_progress  "elapsed(sec)":7.67972  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:130778
+atf_rdk.aggregated_progress  "elapsed(sec)":8.67976  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:159375
+atf_rdk.aggregated_progress  "elapsed(sec)":9.67973  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:190040
+atf_rdk.aggregated_progress  "elapsed(sec)":10.6798  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:218875
+atf_rdk.aggregated_progress  "elapsed(sec)":11.6797  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:232134
+atf_rdk.aggregated_progress  "elapsed(sec)":12.6798  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:232134
+atf_rdk.aggregated_progress  "elapsed(sec)":13.6798  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:232134
+atf_rdk.aggregated_progress  "elapsed(sec)":14.6798  p_up:0  c_up:3  p_lst:" , ,"  c_lst:"0,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:232134
+atf_rdk.aggregated_progress  "elapsed(sec)":15.6798  p_up:0  c_up:2  p_lst:" , ,"  c_lst:" ,1,2, ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:232134
+atf_rdk.aggregated_progress  "elapsed(sec)":16.6798  p_up:0  c_up:0  p_lst:" , ,"  c_lst:" , , , ,"  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:232134
+atf_rdk.info  comment:"requesting exit from MainLoop "  stop:N  p_up:0  c_up:0
+atf_rdk.info  comment:"terminating all worker processes"
+atf_rdk.aggregated_summary  broker:localhost:54005  "elapsed(sec)":17.5957  p_ack_cnt:200000  p_req_cnt:200000  c_cnt:232134
+[0 Feb 09 20:23:26] avorovich@nj1.sv5:~/arnd 
+$ 
+
+
+
+atf_rdk.info  comment:"Start consuming from multiple topics"  broker:localhost:54005  wrk_id:c_1  max_topics:10
+atf_rdk.info  comment:"Consume Progress"  "elapsed(sec)":0.00118763  consume_count:0  consume_count_delta:0  consume_poll_count:0  "lat_avg_sec(running)":0
+atf_rdk.info  comment:"Consume Progress"  "elapsed(sec)":1.00196  consume_count:0  consume_count_delta:0  consume_poll_count:1032  "lat_avg_sec(running)":0
+atf_rdk.info  comment:"Consume Progress"  "elapsed(sec)":2.00249  consume_count:0  consume_count_delta:0  consume_poll_count:2065  "lat_avg_sec(running)":0
+atf_rdk.info  comment:"Consume Progress"  "elapsed(sec)":3.0025  consume_count:7147  consume_count_delta:7147  consume_poll_count:9395  "lat_avg_sec(running)":3
+atf_rdk.info  comment:"Consume Progress"  "elapsed(sec)":4.00254  consume_count:18806  consume_count_delta:11659  consume_poll_count:21054  "lat_avg_sec(running)":4
+atf_rdk.info  comment:"Consume Progress"  "elapsed(sec)":5.00256  consume_count:29982  consume_count_delta:11176  consume_poll_count:32230  "lat_avg_sec(running)":5
+atf_rdk.err  comment:"Commit failed"  error:"Broker: Group rebalance in progress"
+atf_rdk.err  comment:"Commit failed"  error:"Broker: Group rebalance in progress"
+atf_rdk.err  comment:"Commit failed"  error:"Broker: Group rebalance in progress"
+atf_rdk.err  comment:"Commit failed"  error:"Broker: Group rebalance in progress"
+atf_rdk.err  comment:"Commit failed"  error:"Broker: Group rebalance in progress"
+atf_rdk.err  comment:"Commit failed"  error:"Broker: Group rebalance in progress"
+atf_rdk.err  comment:"Commit failed"  error:"Broker: Group rebalance in progress"

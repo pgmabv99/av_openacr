@@ -8,23 +8,23 @@ set -u   # exit on undefined variables
 
 # === Configuration ========================================
 
-BROKER="localhost:54005"
+# BROKER="localhost:54005"
 # BROKER="nj1-4.x2-3.ext-0:1519"
-# BROKER="nj1-4.kafka-1.ext-0:1643"
+BROKER="nj1-4.kafka-1.ext-0:1643"
 TOPIC="perf-test-topic"
 # NUM_RECORDS=1000000          # 1 million messages
-NUM_RECORDS=100       # 1 million messages
-RECORD_SIZE=100              # bytes per message (~ realistic small payload)
+NUM_RECORDS=100000       # 1 million messages
+RECORD_SIZE=100            # bytes per message (~ realistic small payload)
 THROUGHPUT=-1                # -1 = no limit → as fast as possible
 
 # Common good settings for decent throughput + reasonable latency
 PRODUCER_PROPS=(
   "acks=1"                   # fastest; use "all" if you want stronger durability
-  "compression.type=lz4"     # good compression/performance balance
   "batch.size=327680"        # 320 KiB – helps a lot
   "linger.ms=5"              # small delay → lower latency, still good batching
   "buffer.memory=134217728"  # 128 MiB send buffer
 )
+#   "compression.type=lz4"     # good compression/performance balance
 
 # === Script body ==========================================
 

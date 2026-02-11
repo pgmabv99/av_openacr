@@ -18,6 +18,6 @@ else
     echo "tracing is OFF"
     x2sup -initdir:temp/x2tmp/ -daemon  -temp   -livecheck:N   -proc:dev1p.x2sup-0-0
 fi
-mn_topic_crt.sh  
+# mn_topic_crt.sh  
 # sleep 1
 # lsof -Pan -p $(pidof x2gw) -i

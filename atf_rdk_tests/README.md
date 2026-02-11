@@ -15,7 +15,7 @@ atf_rdk points
 
   ===========
 
-$ atf_rdk -mode:t -test:r
+$ atf_rdk -mode:test -test:rebalance
 atf_rdk.info  comment:"Logs directory cleaned"  logs_dir:temp/atf_rdk_logs
 atf_rdk.info  comment:"Test rebalance"
 atf_rdk.info  comment:"Starting worker"  wrk_id:p_0  mode:p
@@ -42,7 +42,7 @@ atf_rdk.info  comment:"Rebalance test passed"
 =====================================================
 
 [0 Feb 09 21:05:00] avorovich@nj1.sv5:~/arnd 
-$ atf_rdk -mode:t -test:s -n_p:2 -n_c:4  -step_empty_consume_max:5 -max_msgs:10000 
+$ atf_rdk -mode:test -test:stress -n_p:2 -n_c:4  -step_empty_consume_max:5 -max_msgs:10000 
 atf_rdk.info  comment:"Logs directory cleaned"  logs_dir:temp/atf_rdk_logs
 atf_rdk.info  comment:"Starting worker"  wrk_id:p_0  mode:p
 atf_rdk.info  comment:"Starting worker"  wrk_id:p_1  mode:p

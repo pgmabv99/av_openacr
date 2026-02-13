@@ -66,9 +66,13 @@ use omcli
 
 ### prep kafka and minio (create topic publish some messages and create bucket and copy a delta log file to minio)
 
+Note: Edit the script to set the correct kafka broker and minio endpoint urls and run it
+
 https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_prep.sh
 
 ### run kdi (uncomment the minio vs local)
+
+Note: Edit the script to set the correct kafka broker and minio endpoint urls and run it
 
 https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_start.sh
 

@@ -1,5 +1,6 @@
 # Kafka Delta Ingest (KDI)
 
+Reads kafka messages and writes to delta lake tables demo.   
 
 ### install cargo 
 
@@ -22,7 +23,7 @@ sudo make install
 sudo ldconfig
 ```
 
-### remove calls to unused error function form source , hugh ??
+### remove calls to unused error function from source to fix compile errors , hugh ??
 ```
 diff --git a/src/dead_letters.rs b/src/dead_letters.rs
 index 9feb0f5..35ba68b 100644
@@ -63,28 +64,29 @@ $ cargo build --features s3
 
 use omcli
 
-### prep kafka and minio (create topic publish some messages and create bucket)
+### prep kafka and minio (create topic publish some messages and create bucket and copy a delta log file to minio)
 
 https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_prep.sh
 
-### run kdi 
+### run kdi (uncomment the minio vs local)
 
 https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_start.sh
 
 
 
-to allow rust redirection of stdout 
+NOTE :to allow rust output redirection of stdout 
 
 ```
 export RUST_LOG=info
 export RUST_LOG_STYLE=never   # disables colored logs which sometimes force TTY output
 kdi_start.sh > /home/avorovich/av_openacr/kdi/kdi_start.log 2>&1
 ```
+
 ### sample log
 
+https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_start.log
 
-
-### help
+### kdi help
 
 ```
 Starts a stream that consumes from a Kafka topic and writes to a Delta table

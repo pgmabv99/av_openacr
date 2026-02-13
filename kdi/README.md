@@ -4,12 +4,6 @@
 curl https://sh.rustup.rs -sSf | sh
 ```
 
-$ find /usr -name "rdkafka.pc" 2>/dev/null
-/usr/lib/x86_64-linux-gnu/pkgconfig/rdkafka.pc
-
-
-$ pkg-config --modversion rdkafka
-2.3.0
 
 
 ##  build later rdkafka 2.12  (our homes have 2.3)
@@ -64,9 +58,11 @@ $ cargo build --features s3
 
 ## prep kafka
 
+https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_prep.sh
 
 ## run kdi 
 
+https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_start.sh
 
 ## misc
 

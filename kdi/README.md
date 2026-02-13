@@ -55,8 +55,11 @@ $ cargo build --features s3
    Compiling kafka-delta-ingest v0.4.0 (/home/avorovich/kafka-delta-ingest)
     Finished `dev` profile [unoptimized + debuginfo] target(s) in 8.37s
 ```
+##  start kafka server 
 
-## prep kafka
+use omcli
+
+## prep kafka (create topic and publish some messages)
 
 https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_prep.sh
 
@@ -64,6 +67,18 @@ https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_prep.sh
 
 https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_start.sh
 
+to clean up before rerunning, run  
+```
+/bin/clean-example-data.sh
+```
+
+to allow rust redirection of stf
+
+```
+export RUST_LOG=info
+export RUST_LOG_STYLE=never   # disables colored logs which sometimes force TTY output
+kdi_start.sh > /home/avorovich/av_openacr/kdi/kdi_start.log 2>&1
+```
 ## misc
 
 mc alias set minio-02 http://nj1-4.minio-1.ext-0:1673 minioadmin minioadmin --api S3v4 --path auto

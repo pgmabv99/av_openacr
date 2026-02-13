@@ -2,7 +2,7 @@
 
 Reads kafka messages and writes to delta lake tables demo.   
 
-### install cargo 
+### Install cargo 
 
 ```
 curl https://sh.rustup.rs -sSf | sh
@@ -10,7 +10,7 @@ curl https://sh.rustup.rs -sSf | sh
 
 
 
-###  build latest rdkafka 2.12  (our homes have 2.3)
+###  Build latest rdkafka 2.12  (our homes have 2.3)
 ```
 sudo apt install build-essential cmake -y
 
@@ -23,7 +23,7 @@ sudo make install
 sudo ldconfig
 ```
 
-### remove calls to unused error function from source to fix compile errors , hugh ??
+### Remove calls to unused error function from source to fix compile errors , hugh ??
 ```
 diff --git a/src/dead_letters.rs b/src/dead_letters.rs
 index 9feb0f5..35ba68b 100644
@@ -53,27 +53,30 @@ index 5ba1fab..20d80c5 100644
  use std::convert::TryFrom;
 ```
 
-### build kdi
+### Build kdi
 
 ```
 $ cargo build --features s3
    Compiling kafka-delta-ingest v0.4.0 (/home/avorovich/kafka-delta-ingest)
     Finished `dev` profile [unoptimized + debuginfo] target(s) in 8.37s
 ```
-### start kafka server and minio
+### Start kafka server and minio
 
 use omcli
 
-### prep kafka and minio (create topic publish some messages and create bucket and copy a delta log file to minio)
+### Prep kafka and minio (create topic publish some messages and create bucket and copy a delta log file to minio)
 
 Note: Edit the script to set the correct kafka broker and minio endpoint urls and run it
 
 https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_prep.sh
 
-### run kdi 
+### Run kdi 
 
-Note: Edit the script to set the correct kafka broker and minio endpoint urls and run it
-uncomment the minio section to test ingest to minio, otherwise it will ingest to a local delta table
+Note: 
+
+-Edit the script to set the correct kafka broker and minio endpoint urls and run it.
+
+-Uncomment the minio section to test ingest to minio, otherwise it will ingest to a local delta table
 
 https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_start.sh
 
@@ -87,11 +90,11 @@ export RUST_LOG_STYLE=never   # disables colored logs which sometimes force TTY 
 kdi_start.sh > /home/avorovich/av_openacr/kdi/kdi_start.log 2>&1
 ```
 
-### sample log
+### Sample log
 
 https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_start.log
 
-### kdi help
+### KDI help
 
 ```
 Starts a stream that consumes from a Kafka topic and writes to a Delta table

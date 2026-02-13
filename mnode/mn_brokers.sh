@@ -27,9 +27,16 @@ start_ak_ui() {
   omcli nj1-4.kafkaui-1  -omplat:$omplat -start_clean
 }
 
+start_minio() {
+  echo "===========start minio"
+  omcli nj1-4.minio-1 -dkr_clean_run
+  omcli nj1-4.minio-1  -start_clean
+}
+
 if [ "$omplat" = "ak" ]; then
   mn_clean.sh
   start_ak_brokers
+  start_minio
   # start_ak_ui
 elif [ "$omplat" = "x2" ]; then
   mn_clean.sh

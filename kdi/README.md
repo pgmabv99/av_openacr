@@ -2,6 +2,11 @@
 
 Reads kafka messages and writes to delta lake tables demo.   
 
+### Clone the repo
+```
+git clone https://github.com/delta-io/kafka-delta-ingest.git
+```
+
 ### Install cargo 
 
 ```

@@ -70,9 +70,10 @@ Note: Edit the script to set the correct kafka broker and minio endpoint urls an
 
 https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_prep.sh
 
-### run kdi (uncomment the minio vs local)
+### run kdi 
 
 Note: Edit the script to set the correct kafka broker and minio endpoint urls and run it
+uncomment the minio section to test ingest to minio, otherwise it will ingest to a local delta table
 
 https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_start.sh
 

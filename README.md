@@ -100,6 +100,7 @@ git restore --source=HEAD~1 --staged --worktree -- data/atfdb
 git restore --source=HEAD~1 --staged --worktree -- data/dev/gitfile.ssim
 
 ## stepper atf_x2
+
 to debug: 
 
 $ atf_comp atf_x2.PubEachGw -v
@@ -135,17 +136,11 @@ to allow think time in debugging
 
 sed -i 's/hbtimeout:30/hbtimeout:10000/g' data/x2db/proc.ssim
 
-## Git cheat sheet
+to search for core
 
+sudo find / -name "core*" 2>/dev/null
 
-
-```bash
-git show | nogen
-git show HEAD~1 | nogen
-git show HEAD~3..HEAD |nogen
-```
-### git adding new omnodes
-
+##  add new omnodes to git
 ```
 -add to omnode.ssim
 omcli -generate
@@ -161,8 +156,8 @@ We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.
 
 ```
 ### acr/gitlab  work flow items 
-```
-# basic
+
+# gcli/gli
 gcli nnn -start
 git-add-to-last-commit             ->> amend one and only commit
 git-rebase-remote origin           ->> rebase
@@ -191,30 +186,13 @@ git push --force
 git push algornd/arnd HEAD --force
 
 git branch --set-upstream-to=algornd/arnd/$(git rev-parse --abbrev-ref HEAD)
-```
 
+# gitlab  work flow items
 
-
-```
-### gitlab  work flow items
-```
-# token in github 
+# token in github
+``` 
 gcli repo -create token:<token> host:https://gitlab.vovaco.com/
 gcli repo -update algornd/arnd
-
-
-#creates issue  
-gcli -create  
-#create local branch
-gcli 999 -start  
-#edit issue
-gcli arnd.999 -e
-#push local branch and create draft MR
-gcli mr -create 
-#list mr
-gcli mr
-#remove draft status
-gcli mr:9999 -approve
 
 ```
 ### To Keep My Repo Under OpenACR Without Affecting Main Branch
@@ -266,23 +244,22 @@ ssh-add -l
 
 465c66d7 (HEAD -> algornd/arnd.604, origin/algornd/arnd.604) Issue algornd/arnd#604 atf_snf should detect if the device is in usegco 
 
-# acr docker cheat sheet
-```
-#log to host of sn5 from sn1
-x2ipmi -device:nj1.sv5 -sol
-to exit
-~.
+# containers/host logins
 #from sn1: login from sn1 to sn5 container
 x2node  -node:nj1.sn5.avorovich 
 x2node  -node:nj1.sn5.kafka-4 
 
-
-#from sn1: login  to host 
 x2node  -node:nj1.sn5.bm -root
 x2node  -node:nj1.sn1.bm -root
+x2node  -node:nj1.sn2.bm -root
 
 #from sn1 : docker rm and docker start new container
 dkr -help
+
+
+native  k8s
+
+kubectl describe pod x2-17--nj1-sv2 -n nj1-4
 
 
 
@@ -296,7 +273,10 @@ docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 
 // get container sizes
 dkr -ps_size  -dctr:nj1.sn6.bm
-
+//  list of pods in ns
+dkr -ps_ns -k8ns:nj1-4
+//inspect
+dkr -inspect -node:dev.x2-17
 
 #build image
 dkr -build -node:dev.kafkacw-02 > ~/av_openacr/logs_dkr/dbld.log
@@ -305,10 +285,6 @@ docker ps --format "table {{.Names}}\t{{.Image}}\t{{.CreatedAt}}\t{{.Status}}"
 docker ps --format "table {{.Names}}\t{{.Image}}\t{{.CreatedAt}}\t{{.Status}}" | sort
 docker restart user-avorovich
 
-
-#show my in omenv
-
-dkr -ps_ns -k8ns:nj1-4
 
 ## private keys 
 x2ssh clean
@@ -319,26 +295,6 @@ algo_x2: laptop->nj1.sn1.avorovich
 algo_x2: laptop->dev.x2-17
 algo_x2:  nj1.sn1.avorovich->dev.x2-17
 algo_x2:  nj1.sn1.avorovich->gitlab
-
-## hosts for brokers directly
-sudo bash -c 'cat >> catts <<EOF
-192.168.10.21  dev.x2-4.kafka-1.ctrl-0
-192.168.104.2  dev.x2-4.kafka-1.ext-0
-192.168.214.2  dev.x2-4.kafka-1.ib-0
-192.168.204.2  dev.x2-4.kafka-1.int-0
-192.168.10.31  dev.x2-4.kafka-2.ctrl-0
-192.168.104.3  dev.x2-4.kafka-2.ext-0
-192.168.214.3  dev.x2-4.kafka-2.ib-0
-192.168.204.3  dev.x2-4.kafka-2.int-0
-192.168.10.41  dev.x2-4.kafka-3.ctrl-0
-192.168.104.4  dev.x2-4.kafka-3.ext-0
-192.168.214.4  dev.x2-4.kafka-3.ib-0
-192.168.204.4  dev.x2-4.kafka-3.int-0
-192.168.10.51  dev.x2-4.kafka-4.ctrl-0
-192.168.104.5  dev.x2-4.kafka-4.ext-0
-192.168.214.5  dev.x2-4.kafka-4.ib-0
-192.168.204.5  dev.x2-4.kafka-4.int-0
-EOF'
 
 
 ## regex for  strings
@@ -360,23 +316,6 @@ kapi
 
 -add errcheck in x2node for failed key
 
-# nullable field in kafka
-metadata
-
-{ "name": "Name", "type": "string", "versions": "0+", "mapKey": true, "entityType": "topicName", "nullableVersions": "12+",
-
-
-describelogsdirs
-
-{ "name": "Name", "type": "string", "versions": "0+", "entityType": "topicName",
-
-
-
-// only last node visible to nic on sn5
-omdb.omnode  omnode:dev.x2-4.x2-0  node:dev.x2-17  use:N  comment:"x2 Broker node 1"
-omdb.omnode  omnode:dev.x2-4.x2-1  node:dev.x2-18  use:N  comment:"x2 Broker node 2"
-omdb.omnode  omnode:dev.x2-4.x2-2  node:dev.x2-19  use:N  comment:"x2 Broker node 3"
-omdb.omnode  omnode:dev.x2-4.x2-3  node:dev.x2-20  use:Y  comment:"x2 Broker node 4"
 
 // 1 vs N consumer
 omdb.omlattr  omlattr:debug-workload100/consumerPerSubscription  uval:1
@@ -399,46 +338,8 @@ x2node -node:nj1.sn5.bm -rsync_put -local /home/avorovich/av_openacr/dev.ak-8.ta
 omdb.omnode  omnode:dev.ak-8.tap-1_ext_0  node:dev.kafka-01  use:Y  comment:"kafka broker sniffer for node 1"
 
 
-$ acr omnode:dev.ak-8.%
-omdb.omnode  omnode:dev.ak-8.kafka-1      node:dev.kafka-01   use:Y  comment:"Apache Cluster Broker node 1"
-omdb.omnode  omnode:dev.ak-8.kafka-2      node:dev.kafka-02   use:Y  comment:"Apache Cluster Broker node 2"
-omdb.omnode  omnode:dev.ak-8.kafka-3      node:dev.kafka-03   use:Y  comment:"Apache Cluster Broker node 3"
-omdb.omnode  omnode:dev.ak-8.kafka-4      node:dev.kafka-04   use:Y  comment:"Apache Cluster Broker node 4"
-omdb.omnode  omnode:dev.ak-8.kafkaui-1    node:dev.kafkaui-1  use:Y  comment:"Apache Cluster Provectus UI node"
-omdb.omnode  omnode:dev.ak-8.kafkaw-1     node:dev.kafkaw-08  use:Y  comment:"Apache Cluster Worker 5 node"
-omdb.omnode  omnode:dev.ak-8.kafkaw-2     node:dev.kafkaw-16  use:Y  comment:"Apache Cluster Worker 6 node"
-omdb.omnode  omnode:dev.ak-8.rdpui-1      node:dev.rdpui-1    use:Y  comment:"Apache Cluster Redpanda UI node"
-omdb.omnode  omnode:dev.ak-8.tap-1_ext_0  node:nj1.sn2.bm     use:Y  comment:sniffer
-omdb.omnode  omnode:dev.ak-8.tap-2_ext_0  node:nj1.sn3.bm     use:Y  comment:sniffer
-omdb.omnode  omnode:dev.ak-8.tap-3_ext_0  node:nj1.sn4.bm     use:Y  comment:sniffer
-omdb.omnode  omnode:dev.ak-8.tap-4_ext_0  node:nj1.sn5.bm     use:Y  comment:sniffer
-omdb.omnode  omnode:dev.ak-8.x2w-1        node:dev.x2w-01     use:Y  comment:"x2w for tests"
 
 
-dkrusr@nj1.sv5:~$ pgrep -f "dev.ak-8.tap-4_ext_0" 
-2336548
-dkrusr@nj1.sv5:~$ ps -ef | grep 2336548
-avorovi+ 2336548 2333449  0 11:59 ?        00:00:00 omcli dev.ak-8.tap-4_ext_0 -shell
-avorovi+ 2336549 2336548  0 11:59 ?        00:00:00 bin/x2node -node:nj1.sn5.bm -shell:Y
-dkrusr   2336828 2336556  0 12:00 pts/2    00:00:00 grep --color=auto 2336548
-
-
-1. why omtype is static and requires amc ?
-2. shar
-
-omdb.omnode  omnode:dev.ak-8.kafka-1  node:dev.kafka-01  use:N  comment:"Apache Cluster Broker node 1"
-omdb.omnode  omnode:dev.ak-8.kafka-2  node:dev.kafka-02  use:N  comment:"Apache Cluster Broker node 2"
-omdb.omnode  omnode:dev.ak-8.kafka-3  node:dev.kafka-03  use:N  comment:"Apache Cluster Broker node 3"
-omdb.omnode  omnode:dev.ak-8.kafka-4  node:dev.kafka-04  use:Y  comment:"Apache Cluster Broker node 4"
-omdb.omnode  omnode:dev.ak-8.kafkaui-1  node:dev.kafkaui-1  use:Y  comment:"Apache Cluster Provectus UI node"
-omdb.omnode  omnode:dev.ak-8.kafkaw-1  node:dev.kafkaw-08  use:Y  comment:"Apache Cluster Worker 5 node"
-omdb.omnode  omnode:dev.ak-8.kafkaw-2  node:dev.kafkaw-16  use:Y  comment:"Apache Cluster Worker 6 node"
-omdb.omnode  omnode:dev.ak-8.rdpui-1  node:dev.rdpui-1  use:Y  comment:"Apache Cluster Redpanda UI node"
-omdb.omnode  omnode:dev.ak-8.tap-1_ext_0  node:nj1.sn2.bm  use:N  comment:sniffer
-omdb.omnode  omnode:dev.ak-8.tap-2_ext_0  node:nj1.sn3.bm  use:N  comment:sniffer
-omdb.omnode  omnode:dev.ak-8.tap-3_ext_0  node:nj1.sn4.bm  use:N  comment:sniffer
-omdb.omnode  omnode:dev.ak-8.tap-4_ext_0  node:nj1.sn5.bm  use:Y  comment:sniffer
-omdb.omnode  omnode:dev.ak-8.x2w-1  node:dev.x2w-01  use:Y  comment:"x2w for tests"
 
 
 # questions from 8/1/2025

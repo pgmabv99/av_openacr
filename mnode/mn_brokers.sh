@@ -1,11 +1,12 @@
 #!/bin/bash
 source mn_set.sh
-
+cfg=${1:-release}
 
 
 start_ak_brokers() {
   echo "===========start kafka brokers"
   omcli nj1-4.kafka-% -omplat:ak -dkr_clean_run
+  x2rel -create -product:"x2|x2w" -omenv:nj1-4 -upload:Y -create:Y    
   omcli nj1-4.kafka-% -omplat:ak -start_tap
   omcli nj1-4.kafka-% -omplat:ak -start_clean 
 }
@@ -14,7 +15,7 @@ start_x2_brokers() {
   echo "===========start x2"
   omcli nj1-4.x2-% -omplat:x2 -dkr_clean_run
   echo "install x2"
-  x2rel -create -product:"x2|x2w" -omenv:nj1-4 -upload:Y -create:Y    
+  x2rel -create -product:"x2|x2w" -omenv:nj1-4 -upload:Y -create:Y   -cfg:$cfg 
   echo "start x2"
   omcli nj1-4.x2-% -omplat:x2 -start_tap
   omcli nj1-4.x2-% -omplat:x2 -start_clean -debug_x2sup 
@@ -29,11 +30,11 @@ start_ak_ui() {
 if [ "$omplat" = "ak" ]; then
   mn_clean.sh
   start_ak_brokers
-  start_ak_ui
+  # start_ak_ui
 elif [ "$omplat" = "x2" ]; then
   mn_clean.sh
   start_x2_brokers
-  start_ak_ui
+  # start_ak_ui
 elif [ "$omplat" = "x2/ak" ]; then
   mn_clean.sh
   start_x2_brokers
@@ -44,7 +45,8 @@ else
   echo "unknown omplat:$omplat - no action"
 fi
 
-
+# omcli nj1-4.kafkaw-1 -omplat:ak -dkr_clean_run
+# omcli nj1-4.x2w-1 -omplat:ak -dkr_clean_run
 exit 
 # =====================================
 # echo "start rdpui"

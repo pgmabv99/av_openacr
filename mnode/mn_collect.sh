@@ -16,8 +16,8 @@ else
   echo "unknown omplat:$omplat - no action"
 fi
 
-sleep 2
 omcli nj1-4.% -omplat:$omplat  -collect_logs
+sleep 2
 
 source mn_set.sh
 cd ~/arnd/temp/collect_logs/$omplat

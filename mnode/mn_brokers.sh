@@ -33,18 +33,19 @@ start_minio() {
   omcli nj1-4.minio-1  -start_clean
 }
 
+# clean and start common servicea
+if [ "$omplat" != "local" ]; then
+  mn_clean.sh
+  start_minio
+  # start_ak_ui
+fi
+
+# start brokers
 if [ "$omplat" = "ak" ]; then
-  mn_clean.sh
   start_ak_brokers
-  start_minio
-  # start_ak_ui
 elif [ "$omplat" = "x2" ]; then
-  mn_clean.sh
   start_x2_brokers
-  start_minio
-  # start_ak_ui
 elif [ "$omplat" = "x2/ak" ]; then
-  mn_clean.sh
   start_x2_brokers
   start_ak_brokers
 elif [ "$omplat" = "local" ]; then
@@ -53,10 +54,4 @@ else
   echo "unknown omplat:$omplat - no action"
 fi
 
-# omcli nj1-4.kafkaw-1 -omplat:ak -dkr_clean_run
-# omcli nj1-4.x2w-1 -omplat:ak -dkr_clean_run
-exit 
-# =====================================
-# echo "start rdpui"
-# omcli nj1-4.rdpui-1  -omplat:$omplat -start_clean
 

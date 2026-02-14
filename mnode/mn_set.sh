@@ -7,7 +7,7 @@
 client=ak
 
 omplat=ak
-omplat=x2
+# omplat=x2
 # omplat=x2/akmn
 # omplat=rp
 # omplat=local

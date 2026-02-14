@@ -29,6 +29,7 @@ echo "produce to topic $topic"
 EOF
 kcat -b $broker -t $topic -C -o beginning -e | wc -l
 
+rm -rf checkpoints/*
 spark_server=spark://spark-main.algox2.com/:7077
 
 spark-submit \
@@ -36,3 +37,6 @@ spark-submit \
     --deploy-mode client \
     --packages org.apache.spark:spark-sql-kafka-0-10_2.13:4.1.1 \
     spark_kafka.py 2> /dev/null
+
+    # spark_kafka.py 
+    # --packages org.apache.spark:spark-sql-kafka-0-10_2.13:4.1.1,io.delta:delta-spark_2.13:4.0.1 \

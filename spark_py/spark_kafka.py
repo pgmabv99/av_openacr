@@ -11,10 +11,10 @@ print(f"==Kafka topic: {KAFKA_TOPIC}")
 print("==Creating Spark session...")
 spark = SparkSession.builder \
     .appName("KafkaConsole") \
-    .master("local[*]") \
     .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
     .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
     .getOrCreate()
+    # .master("local[*]") \
 
 spark.sparkContext.setLogLevel("ERROR")
 print(f"==Spark version created: {spark.version}")   
@@ -30,7 +30,7 @@ df.printSchema()
 df_cast = df.selectExpr("CAST(value AS STRING)")
 
 mode="terminal"
-# mode="disk"
+mode="disk"
 # mode="catalog"
 if mode == "terminal":
     print("==Starting streaming query to console...")

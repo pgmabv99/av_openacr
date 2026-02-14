@@ -8,7 +8,6 @@ PATH=$HOME/av_openacr/ktest_cpp:$PATH
 PATH=$HOME/av_openacr/ktest_kcat:$PATH
 PATH=$HOME/av_openacr/ktest_kc:$PATH
 PATH=$HOME/av_openacr/ktest_python:$PATH
-PATH=$HOME/av_openacr/spark:$PATH
 PATH=$HOME/av_openacr/x2:$PATH
 PATH=$HOME/av_openacr/spark_py:$PATH
 PATH=$HOME/av_openacr/kdi:$PATH
@@ -21,8 +20,6 @@ export SPARK_HOME=/opt/spark
 export PATH=$SPARK_HOME/bin:$PATH
 
 
-# export SPARK_HOME=/opt/spark
-# export PATH=$SPARK_HOME/bin:$PATH
 
 # the rest for interactive shell only
 tmp_code=$(find "$HOME/.vscode-server/cli/servers/" -type d -name "Stable*" | sort | tail -n 1)

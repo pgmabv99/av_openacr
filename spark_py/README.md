@@ -122,3 +122,11 @@ java.lang.NoClassDefFoundError: org/apache/spark/sql/execution/streaming/Streami
 
 ..for catalog option
 Caused by: java.lang.ClassNotFoundException: org.apache.spark.sql.delta.catalog.DeltaCatalog
+
+
+https://repos.spark-packages.org/io/delta/delta-spark_2.13/4.1.1/delta-spark_2.13-4.1.1.jar
+                ::::::::::::::::::::::::::::::::::::::::::::::
+                :: UNRESOLVED DEPENDENCIES ::
+                ::::::::::::::::::::::::::::::::::::::::::::::
+                :: io.delta#delta-spark_2.13;4.1.1: not found
+                ::::::::::::::::::::::::::::::::::::::::::::::

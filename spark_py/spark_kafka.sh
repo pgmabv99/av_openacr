@@ -7,6 +7,7 @@ set -x
 spark_server=spark://spark-main.algox2.com/:7077
 
 broker=nj1-4.kafka-1.ext-0:1643
+broker=nj1-4.x2-3.ext-0:1519
 topic=test-topic
 echo "recreate topic $topic"
 /opt/kafka/current/bin/kafka-topics.sh --bootstrap-server $broker --topic $topic --delete --if-exists

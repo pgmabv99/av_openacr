@@ -1,6 +1,7 @@
 from pyspark.sql import SparkSession
 
 KAFKA_BROKER = "nj1-4.kafka-1.ext-0:1643"
+KAFKA_BROKER = "nj1-4.x2-3.ext-0:1519"
 KAFKA_TOPIC = "test-topic"
 CHECKPOINT_PATH = "./checkpoints/test_topic_delta"
 DELTA_PATH = "test_topic_delta"
@@ -30,7 +31,7 @@ df_cast = df.selectExpr("CAST(value AS STRING)")
 
 mode="terminal"
 # mode="disk"
-mode="catalog"
+# mode="catalog"
 if mode == "terminal":
     print("==Starting streaming query to console...")
     df_stream = df_cast.writeStream \

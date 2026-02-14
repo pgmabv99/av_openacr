@@ -41,6 +41,7 @@ if [ "$omplat" = "ak" ]; then
 elif [ "$omplat" = "x2" ]; then
   mn_clean.sh
   start_x2_brokers
+  start_minio
   # start_ak_ui
 elif [ "$omplat" = "x2/ak" ]; then
   mn_clean.sh

@@ -35,3 +35,5 @@ total 8
 -rw-r--r-- 1 avorovich avorovich  834 Feb 14 16:57 part-00000-6bf00a06-fb02-4c6c-8eb6-d78b176738cf-c000.snappy.parquet
 drwxr-xr-x 3 avorovich avorovich 4096 Feb 14 16:57 _delta_log
 ```
+
+NOTE CTRL/C will print long stack trace, but query should stop gracefully.

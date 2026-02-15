@@ -2,20 +2,9 @@
 
 Reads kafka messages and writes to delta lake tables demo.   
 
-### Clone the repo
-```
-git clone https://github.com/delta-io/kafka-delta-ingest.git
-```
-
-### Install cargo 
-
-```
-curl https://sh.rustup.rs -sSf | sh
-```
 
 
-
-###  Build latest rdkafka 2.12  (our homes have 2.3)
+###  Build latest rdkafka 2.12  (our homes have 2.3). needed by rust
 ```
 sudo apt install build-essential cmake -y
 
@@ -26,6 +15,18 @@ git checkout v2.12.1
 make
 sudo make install
 sudo ldconfig
+```
+
+### Install cargo 
+
+```
+curl https://sh.rustup.rs -sSf | sh
+```
+
+### Clone the repo
+```
+git clone https://github.com/delta-io/kafka-delta-ingest.git
+cd kafka-delta-ingest
 ```
 
 ### Remove calls to unused error function from source to fix compile errors , hugh ??

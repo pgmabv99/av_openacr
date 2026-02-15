@@ -25,7 +25,7 @@ rootLogger.level = error
 ```
 spark_kafka.sh nj1-4.x2-3.ext-0:1519
 ```
-
+This will start a read loop of reading kafka topic writting to delta table.
 
 files will be created in the current directory, e.g.
 ```

@@ -3,10 +3,13 @@
 echo " kill existing kdi processes"
 pkill -f kafka-delta-ingest
 
-export KAFKA_BROKERS=nj1-4.kafka-1.ext-0:1643
-export KAFKA_BROKERS=nj1-4.x2-3.ext-0:1519
+KAFKA_BROKERS="${1:-nj1-4.kafka-1.ext-0:1643}"
+AWS_ENDPOINT_URL="${2:-http://nj1-4.minio-1.ext-0:1673}"
+export KAFKA_BROKERS
+export AWS_ENDPOINT_URL
+# export KAFKA_BROKERS=nj1-4.x2-3.ext-0:1519
 
-export AWS_ENDPOINT_URL=http://nj1-4.minio-1.ext-0:1673
+
 export AWS_ACCESS_KEY_ID=minioadmin
 export AWS_SECRET_ACCESS_KEY=minioadmin
 export AWS_ALLOW_HTTP=true

@@ -1,7 +1,8 @@
 #!/bin/bash
-KAFKA_BROKERS=nj1-4.kafka-1.ext-0:1643
-KAFKA_BROKERS=nj1-4.x2-3.ext-0:1519
-AWS_ENDPOINT_URL=http://nj1-4.minio-1.ext-0:1673
+KAFKA_BROKERS="${1:-nj1-4.kafka-1.ext-0:1643}"
+AWS_ENDPOINT_URL="${2:-http://nj1-4.minio-1.ext-0:1673}"
+# KAFKA_BROKERS=nj1-4.x2-3.ext-0:1519
+
 TOPIC=web_requests
 FILE=tests/json/web_requests-100.json   
 /opt/kafka/current/bin/kafka-topics.sh --bootstrap-server $KAFKA_BROKERS --topic $TOPIC --delete --if-exists

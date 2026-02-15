@@ -71,19 +71,17 @@ use omcli
 
 ### Prep kafka and minio (create topic publish some messages and create bucket and copy a delta log file to minio)
 
-Note: Edit the script to set the correct kafka broker and minio endpoint urls and run it
 
-https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_prep.sh
+
+kdi_prep.sh nj1-4.x2-3.ext-0:1519 http://nj1-4.minio-1.ext-0:1673
 
 ### Run kdi 
 
 Note: 
 
--Edit the script to set the correct kafka broker and minio endpoint urls and run it.
+-comment minio flag to chage to local file system
 
--Uncomment the minio section to test ingest to minio, otherwise it will ingest to a local delta table
-
-https://github.com/pgmabv99/av_openacr/blob/main/kdi/kdi_start.sh
+kdi_start.sh nj1-4.x2-3.ext-0:1519 http://nj1-4.minio-1.ext-0:1673
 
 
 
@@ -92,7 +90,7 @@ NOTE :to allow rust output redirection of stdout
 ```
 export RUST_LOG=info
 export RUST_LOG_STYLE=never   # disables colored logs which sometimes force TTY output
-kdi_start.sh > /home/avorovich/av_openacr/kdi/kdi_start.log 2>&1
+kdi_start.sh nj1-4.x2-3.ext-0:1519 http://nj1-4.minio-1.ext-0:1673 > kdi_start.log 2>&1
 ```
 
 ### Sample log

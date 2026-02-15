@@ -79,7 +79,7 @@ kdi_prep.sh nj1-4.x2-3.ext-0:1519 http://nj1-4.minio-1.ext-0:1673
 
 Note: 
 
--comment minio flag to chage to local file system
+-comment minio flag to change to local file system
 
 ```
 kdi_start.sh nj1-4.x2-3.ext-0:1519 http://nj1-4.minio-1.ext-0:1673

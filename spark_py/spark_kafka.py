@@ -1,12 +1,16 @@
 from pyspark.sql import SparkSession
+import sys
+import argparse
 
-KAFKA_BROKER = "nj1-4.kafka-1.ext-0:1643"
-KAFKA_BROKER = "nj1-4.x2-3.ext-0:1519"
+parser = argparse.ArgumentParser(description="Kafka to Delta streaming")
+parser.add_argument("--broker", default="nj1-4.kafka-1.ext-0:1643", help="Kafka broker address")
+args = parser.parse_args()
+
+KAFKA_BROKER = args.broker
 KAFKA_TOPIC = "test-topic"
 CHECKPOINT_PATH = "./checkpoints/test_topic_delta"
 DELTA_PATH = "test_topic_delta"
-print(f"==Kafka broker: {KAFKA_BROKER}")
-print(f"==Kafka topic: {KAFKA_TOPIC}")
+print(f"==Kafka broker: {KAFKA_BROKER} | Kafka topic: {KAFKA_TOPIC} | Checkpoint path: {CHECKPOINT_PATH} | Delta path: {DELTA_PATH}")
 
 print("==Creating Spark session...")
 spark = SparkSession.builder \
@@ -14,7 +18,6 @@ spark = SparkSession.builder \
     .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
     .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog") \
     .getOrCreate()
-    # .master("local[*]") \
 
 spark.sparkContext.setLogLevel("ERROR")
 print(f"==Spark version created: {spark.version}")   
@@ -65,8 +68,10 @@ elif mode == "catalog":
 else:
     print(f"==Unknown mode: {mode}. No streaming query started.")
 
-print("==Streaming started. Press Ctrl+C to stop.")
+print("==Streaming started. Press Ctrl+C to stop.Long traceback will be printed on Ctrl+C, but query should stop gracefully.")
 df_stream.awaitTermination()
+
+# todo 
 # df_stream.awaitTermination(timeout=10)
 
 

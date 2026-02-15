@@ -20,16 +20,14 @@ change to
 
 rootLogger.level = error
 ```
-### change to point to brokers
-
-Change *.sh and .*py files to point to your kafka brokers.
 
 ### run 
 ```
-spark_py/spark_kafka.sh
+spark_kafka.sh nj1-4.x2-3.ext-0:1519
 ```
 
-see files 
+
+files will be created in the current directory, e.g.
 ```
 (venv) [0 Feb 14 16:59:39] avorovich@nj1.sv5:~/av_openacr/spark_py/test_topic_delta 
 $ ls -ltr

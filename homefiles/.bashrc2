@@ -50,6 +50,8 @@ cp ~/av_openacr/homefiles/.gitconfig ~/.gitconfig
 export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/algox2_gitlab"
 cp ~/av_openacr/homefiles/.gdbinit ~/.gdbinit
 
+git config core.editor "code --wait"
+
 kafkaport=9092
 
 abtd(){

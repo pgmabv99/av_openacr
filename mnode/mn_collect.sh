@@ -5,8 +5,8 @@ echo "=====================================stop and collect logs"
 source mn_set.sh
 echo "====================stopping  brokers and taps"
 if [ "$omplat" = "ak" ]; then
-  echo "stop kafka brokers"mn_c
-  # omcli nj1-4.kafka-% -omplat:$omplat  -stop
+  echo "stop kafka brokers"
+  omcli nj1-4.kafka-% -omplat:$omplat  -stop
   omcli nj1-4.kafka-% -omplat:$omplat  -stop_tap
 elif [ "$omplat" = "x2" ]; then
   echo "stop x2"
@@ -19,6 +19,7 @@ fi
 omcli nj1-4.% -omplat:$omplat  -collect_logs
 sleep 2
 
+# post process /grep logs
 source mn_set.sh
 cd ~/arnd/temp/collect_logs/$omplat
 cd "$(ls -dt */ | head -1)"
@@ -43,7 +44,8 @@ echo "  "
 grep x2msg.info tap_all.log
 grep mono tap_all.log_db.mcb.delta1_run_cur_len
 grep atf_snf.session_ tap_all.log
-grep q50% tap_all.log
+# grep q50% tap_all.log
+grep kafka_stats tap_all.log
 grep atf_snf.session_ tap_all.log > atf_snf_session_stats.log
 # grep calibration tap_all.log
 set +x 

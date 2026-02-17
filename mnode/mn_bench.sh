@@ -1,9 +1,12 @@
-#!/bin/bash
-omplat=${1:?Error: omplat parameter required}
+# #!/bin/bash
+# omplat=${1:?Error: omplat parameter required}
+
+trap 'echo "ERROR line $LINENO: $BASH_COMMAND"' ERR
+source mn_set.sh
 set -e
 mn_clean.sh
 logname=/home/avorovich/av_openacr/mnode_logs/om_benchmark_$omplat.log
-# echo "run om_benchmark - omplat:$omplat  log:$logname"
+echo "run om_benchmark - omplat:$omplat  log:$logname"
 omcli nj1-4.x2w-% -omplat:x2 -dkr_clean_run
 omcli nj1-4.x2ui-%  -omplat:x2 -dkr_clean_run
 x2rel -create -product:"x2w|x2ui" -omenv:nj1-4 -upload:Y -create:Y    

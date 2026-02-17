@@ -194,8 +194,7 @@ acr_ed -create -field atf_snf.FMcb.p_cur_tcp_pair              -arg atf_snf.FTcp
 # debug
 acr_ed -create -field atf_snf.FMcb.mac_print_flg               -arg bool             -write -comment "print MAC info at parse"
 acr_ed -create -field atf_snf.FMcb.swin_print_flg              -arg bool             -write -comment "print sliding window"
-acr_ed -create -field atf_snf.FMcb.tcp_pair_list_print_flg     -arg bool             -write -comment "print tcp pair"
-acr_ed -create -field atf_snf.FMcb.tcp_filter                  -arg bool             -write -comment "apply tcp filter for debugging "
+acr_ed -create -field atf_snf.FMcb.frame_print_flg             -arg bool             -write -comment "print frame info at parse"
 acr_ed -create -field atf_snf.FMcb.snf_memqp_print_flg         -arg bool             -write -comment "print memqp print"
 acr_ed -create -field atf_snf.FMcb.swin_remainder_print_flg    -arg bool             -write -comment "print sliding window remainder info"
 acr_ed -create -field atf_snf.FMcb.remainder_found             -arg bool             -write -comment "remainder of frame found"

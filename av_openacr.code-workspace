@@ -24,9 +24,6 @@
 		},
 		{
 			"path": "../arnd/temp/atf_rdk_logs"
-		},
-		{
-			"path": "../kafka-delta-ingest"
 		}
 	],
 

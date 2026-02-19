@@ -3,3 +3,4 @@
 *.class
 venv
 ktest_python/iceberg_warehouse/*
+temp/

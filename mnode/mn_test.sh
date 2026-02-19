@@ -29,7 +29,7 @@ mn_collect.sh
 
 exit
 
-atf_snf -kapi -in_file:/home/avorovich/av_openacr/atf_rdk_tests/atf_snf_missing_req.pcap  -dir:mis_req --timestamp_log:N    > /home/avorovich/av_openacr/atf_rdk_tests/atf_snf.log 2>&1
+atf_snf -kapi -kafka_buf_dump -in_file:/home/avorovich/av_openacr/temp/atf_snf_mis_req.pcap  -dir:mis_req --timestamp_log:N    > /home/avorovich/av_openacr/temp/atf_snf.log 2>&1
 
 
 

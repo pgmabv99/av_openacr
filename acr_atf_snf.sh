@@ -180,8 +180,6 @@ acr_ed -create -field atf_snf.FMcb.round_trip_dur_tot          -arg u64         
 acr_ed -create -field atf_snf.FMcb.mon_step_n                  -arg u64               -write -comment "number of latest mon step run"
 acr_ed -create -field atf_snf.FMcb.snf                         -arg atf_snf.FSnf      -reftype Ptr   -write -comment "pointer to snf"
 acr_ed -create -field atf_snf.FMcb.fd_out_pcap_file            -arg i32               -dflt:-1       -write -comment "" 
-acr_ed -create -field atf_snf.FMcb.i_kafka_solo                -arg i32               -write -comment "index of kafka req/rsp pair solo generation"
-acr_ed -create -field atf_snf.FMcb.kafka_solo_err_count        -arg i32               -write -comment "count of solo generation errors"
 acr_ed -create -field atf_snf.FMcb.seq_gap_pos_count           -arg u32               -write -comment "pos sequence gap count"
 acr_ed -create -field atf_snf.FMcb.seq_gap_neg_count           -arg u32               -write -comment "neg sequence gap count"
 acr_ed -create -field atf_snf.FMcb.exper_dir                   -arg algo.Smallstr100  -write -comment "experiment directory"
@@ -199,6 +197,8 @@ acr_ed -create -field atf_snf.FMcb.snf_memqp_print_flg         -arg bool        
 acr_ed -create -field atf_snf.FMcb.swin_remainder_print_flg    -arg bool             -write -comment "print sliding window remainder info"
 acr_ed -create -field atf_snf.FMcb.remainder_found             -arg bool             -write -comment "remainder of frame found"
 acr_ed -create -field atf_snf.FMcb.post_remainder_count        -arg u32             -write -comment  "count for printing after remainder found"
+acr_ed -create -field atf_snf.FMcb.decode_err_count             -arg u32             -write -comment  "count failed ccalled to kafka2 decode"
+acr_ed -create -field atf_snf.FMcb.false_candidate_count        -arg u32             -write -comment  "count failed candidate tests in swin."
 
 
 

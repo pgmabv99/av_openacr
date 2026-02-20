@@ -195,7 +195,7 @@ gcli repo -create token:<token> host:https://gitlab.vovaco.com/
 gcli repo -update algornd/arnd
 
 ```
-### To Keep My Repo Under OpenACR Without Affecting Main Branch
+## To Keep My Repo Under OpenACR Without Affecting Main Branch
 
 Add to this `.git\info\exclude`:
 
@@ -245,7 +245,7 @@ ssh-add -l
 465c66d7 (HEAD -> algornd/arnd.604, origin/algornd/arnd.604) Issue algornd/arnd#604 atf_snf should detect if the device is in usegco 
 
 # containers/host logins
-#from sn1: login from sn1 to sn5 container
+from sn1: login from sn1 to sn5 container
 x2node  -node:nj1.sn5.avorovich 
 x2node  -node:nj1.sn5.kafka-4 
 
@@ -253,8 +253,6 @@ x2node  -node:nj1.sn5.bm -root
 x2node  -node:nj1.sn1.bm -root
 x2node  -node:nj1.sn2.bm -root
 
-#from sn1 : docker rm and docker start new container
-dkr -help
 
 
 native  k8s
@@ -262,9 +260,6 @@ native  k8s
 kubectl describe pod x2-17--nj1-sv2 -n nj1-4
 
 
-
-#passtru cat /etc/hostname
-#from sn1 : ps 
 dkr ps            -dctr:nj1.sn5.avorovich 
 dkr -clean_run     -dctr:nj1.sn5.avorovich 
 dkr -clean_run     -dctr:nj1.sn5.user-avorovich 
@@ -278,7 +273,7 @@ dkr -ps_ns -k8ns:nj1-4
 //inspect
 dkr -inspect -node:dev.x2-17
 
-#build image
+//build image
 dkr -build -node:dev.kafkacw-02 > ~/av_openacr/logs_dkr/dbld.log
 
 docker ps --format "table {{.Names}}\t{{.Image}}\t{{.CreatedAt}}\t{{.Status}}"
@@ -286,7 +281,7 @@ docker ps --format "table {{.Names}}\t{{.Image}}\t{{.CreatedAt}}\t{{.Status}}" |
 docker restart user-avorovich
 
 
-## private keys 
+# private keys 
 x2ssh clean
 x2ssh start
 sed -i 's/id_rsa/algox2_av/g'  ~/.ssh/config.d/*
@@ -297,41 +292,11 @@ algo_x2:  nj1.sn1.avorovich->dev.x2-17
 algo_x2:  nj1.sn1.avorovich->gitlab
 
 
-## regex for  strings
+# regex for  strings
 
 ^(?=.*name_Set)(?=.*MetadataResponseTopic)
 
 
-
-## todo
--duplicate corr_id in rdp ??
-
-x2sup -v -v
-atf_x2
-x2gw
-netcat
-acr 
-kapi
-
-
--add errcheck in x2node for failed key
-
-
-// 1 vs N consumer
-omdb.omlattr  omlattr:debug-workload100/consumerPerSubscription  uval:1
-
-
-dmmeta.field  field:command.omcli.collect_logs_dir  arg:algo.cstring    reftype:Val  dflt:'"test1"'  comment:"subfolder for collected logs  under temp/omenv/"
-
-actions for atf_snf part3
--pcap to dirs call in the same folder
--kill do not create logs files
-
-
-
-targs.ssim - main file with invocation
-tmsg.ssim -one line per  
-test/atf_comp/atf_x2.Cli -output  
 
 # sync
 x2node -node:nj1.sn5.bm -rsync_put -local /home/avorovich/av_openacr/dev.ak-8.tap-4_ext_0 -remote dev.ak-8.tap-4_ext_0 
@@ -340,171 +305,103 @@ omdb.omnode  omnode:dev.ak-8.tap-1_ext_0  node:dev.kafka-01  use:Y  comment:"kaf
 
 
 
+# ACR  ports /jhosts in nj1-4
+```
+omdb.omenv  omenv:nj1-4  omenvtype:dev  owner:avorovich  comment:""
+    omdb.omnode  omnode:nj1-4.kafka-1    node:dev.kafka-13    use:Y  comment:"kafka Broker node 1"
+    omdb.omnode  omnode:nj1-4.kafka-2    node:dev.kafka-14    use:Y  comment:"kafka Broker node 2"
+    omdb.omnode  omnode:nj1-4.kafka-3    node:dev.kafka-15    use:Y  comment:"kafka Broker node 3"
+    omdb.omnode  omnode:nj1-4.kafka-4    node:dev.kafka-16    use:Y  comment:"kafka Broker node 4"
+    omdb.omnode  omnode:nj1-4.kafkacw-1  node:dev.kafkacw-02  use:Y  comment:"s3 sink for tests"
+    omdb.omnode  omnode:nj1-4.kafkaui-1  node:dev.kafkaui-5   use:Y  comment:"Provectus UI node"
+    omdb.omnode  omnode:nj1-4.kafkaw-1   node:dev.kafkaw-04   use:Y  comment:""
+    omdb.omnode  omnode:nj1-4.kafkaw-2   node:dev.kafkaw-12   use:Y  comment:""
+    omdb.omnode  omnode:nj1-4.minio-1    node:dev.minio-02    use:Y  comment:"Apache Cluster s3"
+    omdb.omnode  omnode:nj1-4.rdp-1      node:dev.rdp-13      use:Y  comment:"rdp Broker node 1"
+    omdb.omnode  omnode:nj1-4.rdp-2      node:dev.rdp-14      use:Y  comment:"rdp Broker node 2"
+    omdb.omnode  omnode:nj1-4.rdp-3      node:dev.rdp-15      use:Y  comment:"rdp Broker node 3"
+    omdb.omnode  omnode:nj1-4.rdp-4      node:dev.rdp-16      use:Y  comment:"rdp Broker node 4"
+    omdb.omnode  omnode:nj1-4.rdpui-1    node:dev.rdpui-5     use:Y  comment:"Redpanda UI node"
+    omdb.omnode  omnode:nj1-4.x2-0       node:dev.x2-20       use:Y  comment:"x2 Broker node 1"
+    omdb.omnode  omnode:nj1-4.x2-1       node:dev.x2-18       use:Y  comment:"x2 Broker node 2"
+    omdb.omnode  omnode:nj1-4.x2-2       node:dev.x2-19       use:Y  comment:"x2 Broker node 3"
+    omdb.omnode  omnode:nj1-4.x2-3       node:dev.x2-17       use:Y  comment:"x2 Broker node 4"
+    omdb.omnode  omnode:nj1-4.x2ui-1     node:dev.x2ui-6      use:Y  comment:"X2 Cluster native UI node"
+    omdb.omnode  omnode:nj1-4.x2w-1      node:dev.x2w-08      use:Y  comment:""
+    omdb.omnode  omnode:nj1-4.x2w-2      node:dev.x2w-12      use:Y  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-1.ctrl-0    ip:192.168.10.21  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-1.ext-0     ip:192.168.104.2  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-1.ib-0      ip:192.168.214.2  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-1.int-0     ip:192.168.204.2  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-2.ctrl-0    ip:192.168.10.31  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-2.ext-0     ip:192.168.104.3  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-2.ib-0      ip:192.168.214.3  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-2.int-0     ip:192.168.204.3  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-3.ctrl-0    ip:192.168.10.41  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-3.ext-0     ip:192.168.104.4  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-3.ib-0      ip:192.168.214.4  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-3.int-0     ip:192.168.204.4  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-4.ctrl-0    ip:192.168.10.51  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-4.ext-0     ip:192.168.104.5  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-4.ib-0      ip:192.168.214.5  comment:""
+    omdb.omhost  omhost:nj1-4.kafka-4.int-0     ip:192.168.204.5  comment:""
+    omdb.omhost  omhost:nj1-4.kafkacw-1.ctrl-0  ip:192.168.10.11  comment:""
+    omdb.omhost  omhost:nj1-4.kafkacw-1.ext-0   ip:192.168.104.1  comment:""
+    omdb.omhost  omhost:nj1-4.kafkaui-1.ctrl-0  ip:192.168.10.11  comment:""
+    omdb.omhost  omhost:nj1-4.kafkaui-1.ext-0   ip:192.168.104.1  comment:""
+    omdb.omhost  omhost:nj1-4.kafkaw-1.ctrl-0   ip:192.168.10.61  comment:""
+    omdb.omhost  omhost:nj1-4.kafkaw-1.ext-0    ip:192.168.104.6  comment:""
+    omdb.omhost  omhost:nj1-4.kafkaw-2.ctrl-0   ip:192.168.10.71  comment:""
+    omdb.omhost  omhost:nj1-4.kafkaw-2.ext-0    ip:192.168.104.7  comment:""
+    omdb.omhost  omhost:nj1-4.minio-1.ctrl-0    ip:192.168.10.11  comment:""
+    omdb.omhost  omhost:nj1-4.minio-1.ext-0     ip:192.168.104.1  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-1.ctrl-0    ip:192.168.10.21  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-1.ext-0     ip:192.168.104.2  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-1.ib-0      ip:192.168.214.2  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-1.int-0     ip:192.168.204.2  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-2.ctrl-0    ip:192.168.10.31  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-2.ext-0     ip:192.168.104.3  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-2.ib-0      ip:192.168.214.3  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-2.int-0     ip:192.168.204.3  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-3.ctrl-0    ip:192.168.10.41  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-3.ext-0     ip:192.168.104.4  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-3.ib-0      ip:192.168.214.4  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-3.int-0     ip:192.168.204.4  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-4.ctrl-0    ip:192.168.10.51  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-4.ext-0     ip:192.168.104.5  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-4.ib-0      ip:192.168.214.5  comment:""
+    omdb.omhost  omhost:nj1-4.rdp-4.int-0     ip:192.168.204.5  comment:""
+    omdb.omhost  omhost:nj1-4.rdpui-1.ctrl-0  ip:192.168.10.11  comment:""
+    omdb.omhost  omhost:nj1-4.rdpui-1.ext-0   ip:192.168.104.1  comment:""
+    omdb.omhost  omhost:nj1-4.x2-0.ctrl-0     ip:192.168.10.51  comment:""
+    omdb.omhost  omhost:nj1-4.x2-0.ext-0      ip:192.168.104.5  comment:""
+    omdb.omhost  omhost:nj1-4.x2-0.ib-0       ip:192.168.214.5  comment:""
+    omdb.omhost  omhost:nj1-4.x2-0.int-0      ip:192.168.204.5  comment:""
+    omdb.omhost  omhost:nj1-4.x2-1.ctrl-0     ip:192.168.10.31  comment:""
+    omdb.omhost  omhost:nj1-4.x2-1.ext-0      ip:192.168.104.3  comment:""
+    omdb.omhost  omhost:nj1-4.x2-1.ib-0       ip:192.168.214.3  comment:""
+    omdb.omhost  omhost:nj1-4.x2-1.int-0      ip:192.168.204.3  comment:""
+    omdb.omhost  omhost:nj1-4.x2-2.ctrl-0    ip:192.168.10.41  comment:""
+    omdb.omhost  omhost:nj1-4.x2-2.ext-0     ip:192.168.104.4  comment:""
+    omdb.omhost  omhost:nj1-4.x2-2.ib-0      ip:192.168.214.4  comment:""
+    omdb.omhost  omhost:nj1-4.x2-2.int-0     ip:192.168.204.4  comment:""
+    omdb.omhost  omhost:nj1-4.x2-3.ctrl-0    ip:192.168.10.21  comment:""
+    omdb.omhost  omhost:nj1-4.x2-3.ext-0     ip:192.168.104.2  comment:""
+    omdb.omhost  omhost:nj1-4.x2-3.ib-0      ip:192.168.214.2  comment:""
+    omdb.omhost  omhost:nj1-4.x2-3.int-0     ip:192.168.204.2  comment:""
+    omdb.omhost  omhost:nj1-4.x2ui-1.ctrl-0  ip:192.168.10.11  comment:""
+    omdb.omhost  omhost:nj1-4.x2ui-1.ext-0   ip:192.168.104.1  comment:""
+    omdb.omhost  omhost:nj1-4.x2w-1.ctrl-0   ip:192.168.10.61  comment:""
+    omdb.omhost  omhost:nj1-4.x2w-1.ext-0    ip:192.168.104.6  comment:""
+    omdb.omhost  omhost:nj1-4.x2w-2.ctrl-0   ip:192.168.10.71  comment:""
+    omdb.omhost  omhost:nj1-4.x2w-2.ext-0    ip:192.168.104.7  comment:""
+    ```
 
 
-# questions from 8/1/2025
-
-q1: in the process tree of omcli : why inject  bash and not  call executable directly via omcli_exec
-q2; is -v passed down process tree ? hard to debug 
-q3: omplat vs. use bit vs. selector. alternative  :  separate client  and server selectors. 
-q4: -collect_logs - adding omplat subfolder is misleading just like any other attributes of the !!previous!! omcli run . it should be user assigned
-
-todo
--add 3 more taps
--call colect_log from -omtest
--add bench json to -collect log
-
-
-Questions  8/6
-
--do we need live log from benchmark . to do it we need ssh calling bash calling  tee
--x2node vs direct call to ssh. VP to do do
--passing -v to subprocesss
--do we need so much nesting of omcli
--3 selectors vs omplat + use bits
-
-
-
-
-// --- omcli.FDb.omtest.LoadStatic
-static void omcli::omtest_LoadStatic() {
-    static struct _t {
-        const char *s;
-        void (*step)(omcli::FOmenv&);
-    } data[] = {
-        { "omdb.omtest  omtest:debug_benchmark  comment:\"special run openmessaging benchmark\"", omcli::omtest_debug_benchmark }
-        ,{ "omdb.omtest  omtest:debug_benchmark_idempotence  comment:\"special run openmessaging benchmark\"", omcli::omtest_debug_benchmark_idempotence }
-        ,{ "omdb.omtest  omtest:docker_restart  comment:\"-clean_run the environment\"", omcli::omtest_docker_restart }
-        ,{ "omdb.omtest  omtest:kcat_plaintext_L  comment:\"run kcat -L to see meta\"", omcli::omtest_kcat_plaintext_L }
-        ,{ "omdb.omtest  omtest:kcat_ssl_L  comment:\"run kcat -L  with ssl to see meta\"", omcli::omtest_kcat_ssl_L }
-        ,{ "omdb.omtest  omtest:om_benchmark  comment:\"run openmessaging benchmark\"", omcli::omtest_om_benchmark }
-
-
-
- omcli dev.x2-4 -omtest:debug_benchmark -omplat:ak -v
-  |
- \ /
- omcli  -selector:dev.x2-4.% -omplat:ak -omtest:om_benchmark -omrun_driver:kafka-debug -omrun_load:debug-workload100 -v 
-  |
- \ /
- cursor over 
- verbose: bash  -c $'bin/x2node  -node:dev.kafkaw-04 -cmd:\'bin/benchmark --drivers kafka-debug.yaml debug-workload100.yaml\' -q:Y' >&5
-  |
- \ /
-verbose: ssh -q kafkawrkr@dev.kafkaw-04 bin/benchmark --drivers kafka-debug.yaml debug-workload100.yaml
-
-
- cursor over
- verbose: bash  -c $'ssh kafkawrkr@dev.kafkaw-04 \'bin/benchmark --drivers kafka-debug.yaml debug-workload100.yaml 2>&1 | tee benchmark_stdout.log\'' >&5
-
-   
-
-  "format.class": "io.confluent.connect.s3.format.json.JsonFormat",
-                   io.confluent.connect.s3.format.json.JsonFormat  -used by sink
-    "message": "Connector configuration is invalid and contains the following 1 error(s):\nInvalid value class io.confluent.connect.s3.format.json.JsonFormat for configuration format.class: Class must extend: io.confluent.connect.cloud.storage.source.StorageObjectFormat\nYou can also find the above list of errors at the endpoint `/connector-plugins/{connectorType}/config/validat
-
-      "format.class": "io.confluent.connect.s3.source.json.JsonFormat",
-      same as above
-
-
-      from confluent doc
-      
-      format.class
-Class responsible for converting S3 objects to source records.
-
-Type: class
-Valid Values:
-io.confluent.connect.s3.format.avro.AvroFormat
-io.confluent.connect.s3.format.bytearray.ByteArrayFormat
-io.confluent.connect.s3.format.json.JsonFormat
-io.confluent.connect.s3.format.string.StringFormat
-Importance: high
-
-    "format.class": "io.confluent.connect.storage.format.json.JsonFormat",
-    --that gives class not found
-
-    ==== used by sink
-    io.confluent.connect.s3.format.json.JsonFormat
-
-
-
-    $ acr omnode:dev.x2-4%
-omdb.omnode  omnode:dev.x2-4.kafka-1      node:dev.kafka-13    use:Y  comment:"kafka Broker node 1"
-omdb.omnode  omnode:dev.x2-4.kafka-2      node:dev.kafka-14    use:Y  comment:"kafka Broker node 2"
-omdb.omnode  omnode:dev.x2-4.kafka-3      node:dev.kafka-15    use:Y  comment:"kafka Broker node 3"
-omdb.omnode  omnode:dev.x2-4.kafka-4      node:dev.kafka-16    use:Y  comment:"kafka Broker node 4"
-omdb.omnode  omnode:dev.x2-4.kafkacw-1    node:dev.kafkacw-02  use:Y  comment:"s3 sink for tests"
-omdb.omnode  omnode:dev.x2-4.kafkaui-1    node:dev.kafkaui-5   use:Y  comment:"Provectus UI node"
-omdb.omnode  omnode:dev.x2-4.kafkaw-1     node:dev.kafkaw-04   use:Y  comment:""
-omdb.omnode  omnode:dev.x2-4.kafkaw-2     node:dev.kafkaw-12   use:Y  comment:""
-omdb.omnode  omnode:dev.x2-4.minio-1      node:dev.minio-02    use:Y  comment:"Apache Cluster s3"
-omdb.omnode  omnode:dev.x2-4.rdp-1        node:dev.rdp-13      use:Y  comment:"rdp Broker node 1"
-omdb.omnode  omnode:dev.x2-4.rdp-2        node:dev.rdp-14      use:Y  comment:"rdp Broker node 2"
-omdb.omnode  omnode:dev.x2-4.rdp-3        node:dev.rdp-15      use:Y  comment:"rdp Broker node 3"
-omdb.omnode  omnode:dev.x2-4.rdp-4        node:dev.rdp-16      use:Y  comment:"rdp Broker node 4"
-omdb.omnode  omnode:dev.x2-4.rdpui-1      node:dev.rdpui-5     use:Y  comment:"Redpanda UI node"
-omdb.omnode  omnode:dev.x2-4.tap-1_ext_0  node:nj1.sn2.bm      use:Y  comment:sniffer
-omdb.omnode  omnode:dev.x2-4.tap-4_ext_0  node:nj1.sn5.bm      use:Y  comment:sniffer
-omdb.omnode  omnode:dev.x2-4.x2-0         node:dev.x2-20       use:Y  comment:"x2 Broker node 1"
-omdb.omnode  omnode:dev.x2-4.x2-1         node:dev.x2-18       use:Y  comment:"x2 Broker node 2"
-omdb.omnode  omnode:dev.x2-4.x2-2         node:dev.x2-19       use:Y  comment:"x2 Broker node 3"
-omdb.omnode  omnode:dev.x2-4.x2-3         node:dev.x2-17       use:Y  comment:"x2 Broker node 4"
-omdb.omnode  omnode:dev.x2-4.x2w-1        node:dev.x2w-08      use:Y  comment:""
-
-
-
-acr uid:%
-
-## icberg 
-https://rmoff.net/2025/07/04/writing-to-apache-iceberg-on-s3-using-kafka-connect-with-glue-catalog/
-
-https://iceberg.apache.org/docs/nightly/kafka-connect/#initial-setup
-
-
-[qtp1740797075-31] INFO org.apache.iceberg.BaseMetastoreCatalog - Table properties set at catalog level through catalog properties: {}
-[qtp1740797075-31] INFO org.apache.iceberg.BaseMetastoreCatalog - Table properties enforced at catalog level through catalog properties: {}
-[qtp1740797075-31] INFO org.apache.iceberg.BaseMetastoreTableOperations - Successfully committed to table dev.mytesttable in 631 ms
-[qtp1740797075-31] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00000-d9627b18-1c8a-44d7-9311-0ac5030c6317.metadata.json
-[qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00000-d9627b18-1c8a-44d7-9311-0ac5030c6317.metadata.json
-[qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreCatalog - Table loaded by catalog: rest_backend.dev.mytesttable
-[qtp1740797075-37] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00000-d9627b18-1c8a-44d7-9311-0ac5030c6317.metadata.json
-[qtp1740797075-37] INFO org.apache.iceberg.BaseMetastoreCatalog - Table loaded by catalog: rest_backend.dev.mytesttable
-[qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00000-d9627b18-1c8a-44d7-9311-0ac5030c6317.metadata.json
-[qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreCatalog - Table loaded by catalog: rest_backend.dev.mytesttable
-[qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreTableOperations - Successfully committed to table dev.mytesttable in 19 ms
-[qtp1740797075-33] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00001-9fee64cf-32a9-4e5c-9824-6cf3a846df64.metadata.json
-[qtp1740797075-37] INFO org.apache.iceberg.BaseMetastoreTableOperations - Refreshing table metadata from new version: s3://bucket-dev.x2-4.kafkacw-1/dev/mytesttable/metadata/00001-9fee64cf-32a9-4e5c-9824-6cf3a846df64.metadata.json
-[qtp1740797075-37] INFO org.apache.iceberg.BaseMetastoreCatalog - Table loaded by catalog: rest_backend.dev.mytesttableFreba
-
-
-
-## install on nj1.sn5.bm
-
--java 17
--mvn
-sudo usermod -aG docker $USER
-newgrp docker
-
-
-
-dmmeta.ctypelen  ctype:x2.TrafMsg  len:68  alignment:1  padbytes:0  plaindata:N
-
-
-//
-algo::aryptr<char> x2traf::in_GetMsg(x2traf::FFdin& fdin) {   //gen
-    algo::aryptr<char> ret;
-    if (!fdin.in_msgvalid) {
-        in_ScanMsg(fdin);                                     //human
-        if (!fdin.in_msgvalid) {
-            bool readable = in_Refill(fdin);                  //gen 
-            if (readable) {
-                in_ScanMsg(fdin);                             //human        
-           }
-        }
-    }
-
-
-zoom
-
--what is x2cat()
--which nodescan wtite to pub/anon
+    ```
+    $ acr omnode:nj1-4.% -t -ndown:5 | grep 192.168.104.1
+    omdb.omhost  omhost:nj1-4.kafkacw-1.ext-0   ip:192.168.104.1  comment:""
+    omdb.omhost  omhost:nj1-4.kafkaui-1.ext-0   ip:192.168.104.1  comment:""
+    omdb.omhost  omhost:nj1-4.minio-1.ext-0     ip:192.168.104.1  comment:""
+    omdb.omhost  omhost:nj1-4.rdpui-1.ext-0   ip:192.168.104.1  comment:""
+    omdb.omhost  omhost:nj1-4.x2ui-1.ext-0   ip:192.168.104.1  comment:""

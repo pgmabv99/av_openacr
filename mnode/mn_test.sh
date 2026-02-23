@@ -1,5 +1,5 @@
 #!/bin/bash
-
+## test by hand produce 
 # pkill javaa || true
 # ps -aux | grep java | grep kafka | grep -v grep || true
 
@@ -20,21 +20,26 @@
 # mn_collect.sh
 
 
-// === This is a simple test script to run Kafka producer performance test against x2 lost req ?? ===
+# // === This is a simple test script to run Kafka producer performance test against x2 lost req ?? ===
+# mn_brokers.sh
+# sleep 5
+# mn_perf.sh
+# sleep 2
+# mn_collect.sh
+
+# exit
+
+# atf_snf -kapi -kafka_buf_dump \
+#     -in_file:/home/avorovich/av_openacr/temp/atf_snf_80.pcap -dir:80 --timestamp_log:N  \
+#    > /home/avorovich/av_openacr/temp/atf_snf.log 2>&1
+
+
+echo "====================starting kafka connector test"
+source mn_set.sh
 mn_brokers.sh
-sleep 5
-mn_perf.sh
-sleep 2
-mn_collect.sh
+mn_produce.sh
 
-exit
-
-atf_snf -kapi -kafka_buf_dump \
-    -in_file:/home/avorovich/av_openacr/temp/atf_snf_80.pcap -dir:80 --timestamp_log:N  \
-   > /home/avorovich/av_openacr/temp/atf_snf.log 2>&1
-
-
-
-
-
+omcli nj1-4.kafkacw-1 -dkr_clean_run
+# omcli  nj1-4.kafkacw-1  -start_clean  -omplat:$omplat -omrun_connect:confluent-s3sink.dflt -omrun_worker:kafka-connect.dflt 
+omcli  nj1-4.kafkacw-1  -start_clean  -omplat:$omplat -omrun_connect:confluent-s3sink.dflt -omrun_worker:kafka-connect.dflt 
 

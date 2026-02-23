@@ -16,7 +16,7 @@ else
   echo "unknown omplat:$omplat - no action"
 fi
 
-omcli nj1-4.% -omplat:$omplat  -collect_logs
+omcli nj1-4.% -omplat:$omplat  -collect_logs 
 sleep 2
 
 # post process /grep logs
@@ -24,34 +24,43 @@ source mn_set.sh
 cd ~/arnd/temp/collect_logs/$omplat
 cd "$(ls -dt */ | head -1)"
 pwd
-find . -type f -name "tcp_pairs_all.log" | sort | while read -r f; do
+
+
+collect_and_process_logs_atf_snf() {
+  find . -type f -name "tcp_pairs_all.log" | sort | while read -r f; do
     printf "\n===== FILE: %s =====\n" "$f"
     cat "$f"
-done > tcp_pairs_all_all.log
-grep kafka-ui tcp_pairs_all_all.log  > tcp_pairs_all_all_kafkaui.log 
+  done > tcp_pairs_all_all.log
+  grep kafka-ui tcp_pairs_all_all.log  > tcp_pairs_all_all_kafkaui.log 
 
-find . -type f -name "atf_snf_stdout.log" | sort | while read -r f; do
+  find . -type f -name "atf_snf_stdout.log" | sort | while read -r f; do
     printf "\n===== FILE: %s =====\n" "$f"
     cat "$f"
-done > tap_all.log
+  done > tap_all.log
 
-set -x
-echo " grep for produce/fetch responses in current log dir $(pwd) "
-grep "KafkaStorePayLoad" -rnI .
-grep "!seq_gap" -rnI .
-grep "atf_snf.error" -rnI .
-echo "  "
-grep x2msg.info tap_all.log
-grep atf_snf.session_ tap_all.log
-# grep q50% tap_all.log
-grep tcp_stats tap_all.log
-grep kafka_stats tap_all.log
-grep atf_snf.session_ tap_all.log > atf_snf_session_stats.log
-# grep calibration tap_all.log
-set +x 
-cd ~/arnd
-
+  set -x
+  echo " grep for produce/fetch responses in current log dir $(pwd) "
+  grep "KafkaStorePayLoad" -rnI .
+  grep "!seq_gap" -rnI .
+  grep "atf_snf.error" -rnI .
+  echo "  "
+  grep x2msg.info tap_all.log
+  grep atf_snf.session_ tap_all.log
+  grep tcp_stats tap_all.log
+  grep kafka_stats tap_all.log
+  grep atf_snf.session_ tap_all.log > atf_snf_session_stats.log
 # atf
 # less "$(ls -dt /home/avorovich/arnd/temp/collect_logs/ak/*/ | head -n 1)/tap_all.log"
 
 # atf_lat -omenv:nj1-4 -omplat:ak -step_count_start:45 -client_id:producer-1
+}
+
+
+collect_and_process_logs_kafkacw() {
+    grep -R 'Processing' | grep -v 'Processing 0 records'
+}
+
+# collect_and_process_logs_atf_snf
+collect_and_process_logs_kafkacw
+set +x 
+cd ~/arnd

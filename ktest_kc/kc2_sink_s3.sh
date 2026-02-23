@@ -9,12 +9,12 @@ kc2_clean.sh
 echo "produce  few messages"
 kcat_p.sh
 echo "start kafka connect (10 sec ??)"
-omcli  dev.x2-4.kafkacw-1  -start_clean  -omplat:ak 
-# omcli  dev.x2-4.kafkacw-1  -start_clean  -omplat:ak -omrun_connect:confluent-s3sink.dflt -omrun_worker:kafka-connect.dflt 
+omcli  nj1-4.kafkacw-1  -start_clean  -omplat:ak 
+# omcli  nj1-4.kafkacw-1  -start_clean  -omplat:ak -omrun_connect:confluent-s3sink.dflt -omrun_worker:kafka-connect.dflt 
 
 
 echo "==show s3 bucket immediatly after start"
-omcli  dev.x2-4.minio-1  -status 
+omcli  nj1-4.minio-1  -status 
 echo "==show s3 bucket after sleep 10"
 sleep 10
-omcli  dev.x2-4.minio-1  -status 
+omcli  nj1-4.minio-1  -status 

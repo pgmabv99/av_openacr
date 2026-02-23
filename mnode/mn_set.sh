@@ -32,5 +32,5 @@ cfg=release
 
 topic=test-topic0
 nbatch=10
-nrec=2000
+nrec=20
 echo "setup  omplat:$omplat   " 

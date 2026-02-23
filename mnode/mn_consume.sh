@@ -1,4 +1,4 @@
-#!/bin/bash
+mn_#!/bin/bash
 
 source mn_set.sh
 

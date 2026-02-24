@@ -14,22 +14,45 @@ sleep 1
 sleep 2
 
 
-echo "producing "
-# one producer instance
-echo $server
-echo $topic
+# echo "producing "
+# # one producer instance
+# echo $server
+# echo $topic
+# echo "nbatch:$nbatch nrec:$nrec"
+# {
+#   for ((ibatch=1; ibatch<=nbatch; ibatch++)); do
+#     for ((irec=1; irec<=nrec; irec++)); do
+#       echo "batch${ibatch}_message${irec}"
+#     done
+#     echo "---- batch ${ibatch} message${nrec} done ----" >&2
+#     sleep 1
+#   done
+# } | /opt/kafka/current/bin/kafka-console-producer.sh \
+#         --bootstrap-server "$server" \
+#         --topic "$topic"
+# exit
+
+echo "producing JSON messages"
+echo "$server"
+echo "$topic"
 echo "nbatch:$nbatch nrec:$nrec"
+
 {
   for ((ibatch=1; ibatch<=nbatch; ibatch++)); do
     for ((irec=1; irec<=nrec; irec++)); do
-      echo "batch${ibatch}_message${irec}"
+      # simple JSON per message
+      printf '{"batch":%d,"message":%d,"text":"batch%d_message%d"}\n' "$ibatch" "$irec" "$ibatch" "$irec"
     done
-    echo "---- batch ${ibatch} message${nrec} done ----" >&2
+    echo "---- batch ${ibatch} messages done ----" >&2
     sleep 1
   done
 } | /opt/kafka/current/bin/kafka-console-producer.sh \
         --bootstrap-server "$server" \
-        --topic "$topic"
+        --topic "$topic" \
+        --property "parse.key=false" \
+        --property "key.separator=:" \
+        --property "value.serializer=org.apache.kafka.common.serialization.StringSerializer"
+
 exit
 
 /opt/kafka/current/bin/kafka-metadata-shell.sh --bootstrap-server nj1-4.kafka-1.ext-0:1643 --describe

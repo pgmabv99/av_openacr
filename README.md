@@ -147,6 +147,7 @@ omcli -generate
 git add omcli/gen; update-gitfile
 ```
 
+##  git  and gli workflow
 ### git log
 
 ```
@@ -157,7 +158,7 @@ We have a merge driver called acr_dm ("acr diff merge" -- txt/exe/acr_dm/README.
 ```
 ### acr/gitlab  work flow items 
 
-# gcli/gli
+### gcli/gli
 gcli nnn -start
 git-add-to-last-commit             ->> amend one and only commit
 git-rebase-remote origin           ->> rebase
@@ -178,7 +179,7 @@ gli -retry           resubmit failing CI jobs
 
 ```
 
-#other
+### other
 acr % -check -write 
 atf_comp  
 atf_comp -covcapture
@@ -187,15 +188,15 @@ git push algornd/arnd HEAD --force
 
 git branch --set-upstream-to=algornd/arnd/$(git rev-parse --abbrev-ref HEAD)
 
-# gitlab  work flow items
 
-# token in github
+
+###  token in github
 ``` 
 gcli repo -create token:<token> host:https://gitlab.vovaco.com/
 gcli repo -update algornd/arnd
 
 ```
-## To Keep My Repo Under OpenACR Without Affecting Main Branch
+### To Keep My Repo Under OpenACR Without Affecting Main Branch
 
 Add to this `.git\info\exclude`:
 
@@ -204,7 +205,7 @@ av_openacr
 .gitmodules
 ```
 
-## git rebase
+### git rebase
 
 when conflict in in gen files
 amc
@@ -214,9 +215,10 @@ git add */gen
 in master 
 abt amc
 git status --short
-## git login cheat sheet
 
-#for arnd gitlab use ssh private key
+### git login cheat sheet
+
+//for arnd gitlab use ssh private key
 git config --global core.sshCommand "ssh -i /home/avorovich/.ssh/algox2_av"
 git config --global core.sshCommand "ssh -i /home/x2usr/.ssh/algox2_av"
 git config --global core.sshCommand "ssh -i /home/x2usr/.ssh/algox2_gitlab"
@@ -225,24 +227,49 @@ cd arnd
 gitconfig-setup
 ai
 
-#for av_openacl github use token (gdrive) 
+//for av_openacl github use token (gdrive) 
 git clone https://pgmabv99:<avtoken4>@github.com/pgmabv99/algo_util.git
 
 
 or 
 chmod 600 ~/.ssh/algox2_av
 
-#Start the SSH agent if it's not already running
+//Start the SSH agent if it's not already running
 eval "$(ssh-agent -s)"
 add the SSH key
 ssh-add ~/.ssh/algox2_av
 
-#Confirm the key was added
+//Confirm the key was added
 ssh-add -l
 
-## git cherry pick
+### git rebase conflics with delayeed master merge
+
+local hash 
+
+```
+commit bf342bbffdf7444201539043686f5fa5adda2edf
+Author: alexey vorovich <alexey.vorovich@gmail.com>
+Date:   Thu Feb 19 19:44:43 2026 -0500
+
+    atf_snf : call HeaderMsgs_KafkaDecode at run time option
+    
+    -refactor kafka2 decode wrapper  and call from DetectStore.
 
 465c66d7 (HEAD -> algornd/arnd.604, origin/algornd/arnd.604) Issue algornd/arnd#604 atf_snf should detect if the device is in usegco 
+```
+
+merge into master hash
+commit 5acb9b69842477644bac47a54167cb0544ebff7a
+Author: Alexey Vorovich <avorovich@algox2.com>
+Date:   Mon Feb 23 07:25:43 2026 -0500
+
+    * atf_snf : call HeaderMsgs_KafkaDecode at run time option
+    
+    -refactor kafka2 decode wrapper  and call from DetectStore.
+
+```
+```
+
 
 # containers/host logins
 from sn1: login from sn1 to sn5 container

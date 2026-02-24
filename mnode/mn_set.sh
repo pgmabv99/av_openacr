@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-# type of cleint tools
+# type of client tools
 # client=x2
 # client=rdk
 client=ak
@@ -25,12 +25,13 @@ elif [ "$omplat" = "x2/ak" ]; then
 else
   echo "unknown omplat:$omplat - no server assigned"
 fi
+
 broker=$server
 
 # cfg=debug
 cfg=release
 
 topic=test-topic0
-nbatch=10
+nbatch=15
 nrec=20
 echo "setup  omplat:$omplat   " 

@@ -275,6 +275,8 @@ acr.delete dmmeta.field  field:command.atf_snf.dir
 acr.delete dmmeta.field  field:command.atf_snf.hex_print
 acr.delete dmmeta.field  field:command.atf_snf.timestamp_log
 acr.delete dmmeta.field  field:command.atf_snf.kafka_buf_dump 
+acr.delete dmmeta.field  field:command.atf_snf.omenv
+acr.delete dmmeta.field  field:command.atf_snf.omplat
 EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_snf.kapi                   arg:bool          reftype:Val      dflt:false        comment:"parse  tcp header and kafka "
@@ -285,13 +287,15 @@ acr -merge -write <<EOF
     dmmeta.field  field:command.atf_snf.hex_print              arg:bool          reftype:Val      dflt:false       comment:"print kafka req/rsp in hex"
     dmmeta.field  field:command.atf_snf.timestamp_log          arg:bool          reftype:Val      dflt:true        comment:"add time stamp to log files directory"
     dmmeta.field  field:command.atf_snf.kafka_buf_dump         arg:bool          reftype:Val      dflt:false       comment:"collect/dump kafka req/rsp. may cause frame loss if high rate"
+    dmmeta.field  field:command.atf_snf.omenv                  arg:algo.cstring  reftype:Val      dflt:'"nj1-4"'   comment:"omenv "
+    dmmeta.field  field:command.atf_snf.omplat                 arg:algo.cstring  reftype:Val      dflt:'"x2"'      comment:"omplat"
 EOF
 
-# include omenv  ssim file
-acr_ed -del    -ctype atf_snf.FOmnode                         -write || true
-acr_ed -create -finput -target atf_snf -ssimfile omdb.omnode -write -comment "inherited from ssimfile"
-acr_ed -del    -field atf_snf.FDb.zd_omnode                   -write || true
-acr_ed -create -field atf_snf.FDb.zd_omnode                   -arg atf_snf.FOmnode -xref -write -comment ""
+# # include omenv  ssim file
+# acr_ed -del    -ctype atf_snf.FOmnode                         -write || true
+# acr_ed -create -finput -target atf_snf -ssimfile omdb.omnode -write -comment "inherited from ssimfile"
+# acr_ed -del    -field atf_snf.FDb.zd_omnode                   -write || true
+# acr_ed -create -field atf_snf.FDb.zd_omnode                   -arg atf_snf.FOmnode -xref -write -comment ""
 
 # dispatch for x2gw 
 acr -merge  -write <<EOF
@@ -308,6 +312,31 @@ acr -merge -write <<EOF
     dmmeta.dispatch_msg  dispatch_msg:atf_snf.In/x2.GUAckMsg               comment:""
 EOF
 
+
+# include files for omenv and omnode
+# acr_ed -del    -ctype atf_snf.FOmenv                        -write || true
+# acr_ed -del    -field atf_snf.FDb.p_omenv                        -write || true
+# acr_ed -del    -field atf_snf.FDb.ind_omenv                        -write || true
+# acr_ed -del    -field atf_snf.FDb.zdomenv                        -write || true
+# acr -merge -write <<EOF
+#     dmmeta.ctype  ctype:atf_snf.FOmenv  comment:""
+#         dmmeta.field  field:atf_snf.FDb.omenv        arg:atf_snf.FOmenv  reftype:Lary  dflt:""  comment:""
+#             dmmeta.finput  field:atf_snf.FDb.omenv  extrn:N  update:N  strict:Y  comment:""
+
+#         dmmeta.field  field:atf_snf.FDb.p_omenv       arg:atf_snf.FOmenv  reftype:Ptr   dflt:""  comment:""
+
+#         dmmeta.field  field:atf_snf.FDb.ind_omenv    arg:atf_snf.FOmenv  reftype:Thash  dflt:""  comment:""
+#             dmmeta.thash  field:atf_snf.FDb.ind_omenv  hashfld:omdb.Omenv.omenv  unique:Y  comment:""
+#             dmmeta.xref   field:atf_snf.FDb.ind_omenv  inscond:true  via:""
+
+#         dmmeta.field  field:atf_snf.FDb.zd_omenv     arg:atf_snf.FOmenv  reftype:Llist  dflt:""  comment:""
+#             dmmeta.llist  field:atf_snf.FDb.zd_omenv  havetail:Y  havecount:Y  comment:""
+#             dmmeta.xref   field:atf_snf.FDb.zd_omenv  inscond:true  via:""
+
+#         dmmeta.field  field:atf_snf.FOmenv.base       arg:omdb.Omenv  reftype:Base  dflt:""  comment:""
+# EOF
+
+acr_ed -create -finput -ssimfile:omdb.omenv -indexed -target:atf_snf -write -comment "include Omenv from ssimfile"
 
 
 amc

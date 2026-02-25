@@ -40,8 +40,8 @@ mn_brokers.sh
 mn_produce.sh
 
 omcli nj1-4.kafkacw-1 -dkr_clean_run
-# omcli  nj1-4.kafkacw-1  -start_clean  -omplat:$omplat 
+omcli  nj1-4.kafkacw-1  -start_clean  -omplat:$omplat 
 # omcli  nj1-4.kafkacw-1  -start_clean  -omplat:$omplat -omrun_connect:confluent-s3sink.dflt -omrun_worker:kafka-connect.dflt 
-omcli  nj1-4.kafkacw-1  -start_clean  -omplat:$omplat -omrun_connect:apache-iceberg-sink.dflt -omrun_worker:kafka-connect.dflt 
+# omcli  nj1-4.kafkacw-1  -start_clean  -omplat:$omplat -omrun_connect:apache-iceberg-sink.dflt -omrun_worker:kafka-connect.dflt 
 
-  
+mn_collect.sh

@@ -432,3 +432,40 @@ omdb.omenv  omenv:nj1-4  omenvtype:dev  owner:avorovich  comment:""
     omdb.omhost  omhost:nj1-4.minio-1.ext-0     ip:192.168.104.1  comment:""
     omdb.omhost  omhost:nj1-4.rdpui-1.ext-0   ip:192.168.104.1  comment:""
     omdb.omhost  omhost:nj1-4.x2ui-1.ext-0   ip:192.168.104.1  comment:""
+
+```
+# OMENV SSIM
+
+
+  dmmeta.ctype  ctype:atf_snf.FOmenv  comment:"include Omenv from ssimfile"
+    dmmeta.field  field:atf_snf.FDb.omenv  acr.rowid:31      arg:atf_snf.FOmenv  reftype:Lary  dflt:""  comment:""
+      dmmeta.finput  field:atf_snf.FDb.omenv  extrn:N  update:N  strict:Y  comment:""
+
+    dmmeta.field  field:atf_snf.FDb.ind_omenv  acr.rowid:32      arg:atf_snf.FOmenv  reftype:Thash  dflt:""  comment:""
+      dmmeta.thash  field:atf_snf.FDb.ind_omenv  hashfld:omdb.Omenv.omenv  unique:Y  comment:""
+      dmmeta.xref  field:atf_snf.FDb.ind_omenv  acr.rowid:17      inscond:true  via:""
+
+    dmmeta.field  field:atf_snf.FOmenv.base  acr.rowid:0       arg:omdb.Omenv  reftype:Base  dflt:""  comment:""
+    dmmeta.ctypelen  ctype:atf_snf.FOmenv  len:320  alignment:8  padbytes:0  plaindata:N
+
+============
+
+  dmmeta.ctype  ctype:atf_lat.FOmenv  comment:""
+    dmmeta.field  field:atf_lat.FDb.omenv  acr.rowid:2       arg:atf_lat.FOmenv  reftype:Lary  dflt:""  comment:""
+      dmmeta.finput  field:atf_lat.FDb.omenv  extrn:N  update:N  strict:Y  comment:""
+
+    dmmeta.field  field:atf_lat.FDb.p_omenv    acr.rowid:3       arg:atf_lat.FOmenv  reftype:Ptr    dflt:""  comment:""
+    dmmeta.field  field:atf_lat.FDb.ind_omenv  acr.rowid:5       arg:atf_lat.FOmenv  reftype:Thash  dflt:""  comment:""
+      dmmeta.thash  field:atf_lat.FDb.ind_omenv  hashfld:omdb.Omenv.omenv  unique:Y  comment:""
+      dmmeta.xref  field:atf_lat.FDb.ind_omenv  acr.rowid:0       inscond:true  via:""
+
+    dmmeta.field  field:atf_lat.FOmenv.base  acr.rowid:0       arg:omdb.Omenv  reftype:Base  dflt:""  comment:""
+    dmmeta.ctypelen  ctype:atf_lat.FOmenv  len:336  alignment:8  padbytes:0  plaindata:N
+
+  dmmeta.ctype  ctype:atf_lat.FOmnode  comment:""
+    dmmeta.field  field:atf_lat.FDb.omnode  acr.rowid:6       arg:atf_lat.FOmnode  reftype:Lary  dflt:""  comment:""
+      dmmeta.finput  field:atf_lat.FDb.omnode  extrn:N  update:N  strict:Y  comment:""
+
+    dmmeta.field  field:atf_lat.FOmenv.c_omnode  acr.rowid:1       arg:atf_lat.FOmnode  reftype:Ptrary  dflt:""  comment:""
+      dmmeta.ptrary  field:atf_lat.FOmenv.c_omnode  unique:Y  heaplike:N
+      dmmeta.xref  field:atf_lat.FOmenv.c_omnode  acr.rowid:1       inscond:true  via:atf_lat.FDb.ind_omenv/omdb.Omnode.omenv

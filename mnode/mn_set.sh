@@ -7,7 +7,7 @@
 client=ak
 
 omplat=ak
-omplat=x2
+# omplat=x2
 # omplat=x2/akmn
 # omplat=rp
 # omplat=local
@@ -32,6 +32,6 @@ broker=$server
 cfg=release
 
 topic=test-topic0
-nbatch=15
-nrec=20
+nbatch=5
+nrec=5
 echo "setup  omplat:$omplat   " 

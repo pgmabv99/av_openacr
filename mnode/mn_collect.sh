@@ -3,18 +3,18 @@ echo "=====================================stop and collect logs"
 
 
 source mn_set.sh
-# echo "====================stopping  brokers and taps"
-# if [ "$omplat" = "ak" ]; then
-#   echo "stop kafka brokers"
-#   omcli nj1-4.kafka-% -omplat:$omplat  -stop
-#   omcli nj1-4.kafka-% -omplat:$omplat  -stop_tap
-# elif [ "$omplat" = "x2" ]; then
-#   echo "stop x2"
-#   omcli nj1-4.x2% -omplat:$omplat  -stop
-#   omcli nj1-4.x2% -omplat:$omplat  -stop_tap
-# else
-#   echo "unknown omplat:$omplat - no action"
-# fi
+echo "====================stopping  brokers and taps"
+if [ "$omplat" = "ak" ]; then
+  echo "stop kafka brokers"
+  omcli nj1-4.kafka-% -omplat:$omplat  -stop
+  omcli nj1-4.kafka-% -omplat:$omplat  -stop_tap
+elif [ "$omplat" = "x2" ]; then
+  echo "stop x2"
+  omcli nj1-4.x2% -omplat:$omplat  -stop
+  omcli nj1-4.x2% -omplat:$omplat  -stop_tap
+else
+  echo "unknown omplat:$omplat - no action"
+fi
 
 omcli nj1-4.% -omplat:$omplat  -collect_logs 
 sleep 2

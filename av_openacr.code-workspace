@@ -1,36 +1,50 @@
 {
-
 	"folders": [
 		{
+			"name": "av_openacr",
 			"path": "."
 		},
 		{
+			"name": "arnd",
 			"path": "../arnd"
 		},
 		{
+			"name": ".ssh",
 			"path": "../.ssh"
 		},
 		{
+			"name": "collect_logs",
 			"path": "../arnd/temp/collect_logs"
 		},
 		{
+			"name": "atf_lat",
 			"path": "../arnd/temp/atf_lat"
 		},
 		{
+			"name": "x2tmp",
 			"path": "../arnd/temp/x2tmp"
 		},
 		{
+			"name": "atf_snf_logs",
 			"path": "../arnd/temp/atf_snf_logs"
 		},
 		{
+			"name": "atf_rdk_logs",
 			"path": "../arnd/temp/atf_rdk_logs"
 		}
 	],
-
 	"settings": {
-		// "terminal.integrated.env.linux": {
-		// 	"PATH": "${env:PATH}:arnd/bin"
-		// },
+		"terminal.integrated.profiles.linux": {
+			"bash": {
+				"path": "bash",
+				"args": [
+					"-l"
+				], // ← login shell: sources .bashrc fresh each time
+				"cwd": "/home/avorovich/arnd"
+			}
+		},
+		//   "terminal.integrated.defaultProfile.linux": "bash",
+		  "terminal.integrated.cwd": "${workspaceFolder:arnd}",
 		"files.associations": {
 			"array": "cpp",
 			"atomic": "cpp",
@@ -103,22 +117,6 @@
 			"**/kafka2_gen.h": true,
 			"**/kafka2_gen.inl.h": true,
 			"**/kafka2_gen.cpp": true,
-
 		},
-		"java.compile.nullAnalysis.mode": "automatic",
-		"favorites.resources": [
-			{
-				"filePath": "/home/avorovich/av_openacr/issues/1251_atf_snf_multinode",
-				"group": "Default"
-			},
-			{
-				"filePath": "/home/avorovich/arnd/cpp/atf_lat",
-				"group": "Default"
-			},
-			{
-				"filePath": "/home/avorovich/av_openacr/issues/1295_atf_snf-atf_lat-capture-offset",
-				"group": "Default"
-			}
-		]
 	}
 }

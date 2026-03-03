@@ -1,313 +1,45 @@
-verbose: nj1-4.kafka-1|nj1-4.kafka-2|nj1-4.kafka-3|nj1-4.kafka-4|nj1-4.kafkacw-1|nj1-4.kafkaui-1|nj1-4.kafkaw-1|nj1-4.kafkaw-2|nj1-4.minio-1|nj1-4.rdpui-1|nj1-4.x2w-1|nj1-4.x2w-2
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafka-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafka-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafka-2  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafka-2'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafka-3  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafka-3'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafka-4  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafka-4'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafkacw-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafkacw-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafkaui-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafkaui-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafkaw-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafkaw-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafkaw-2  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafkaw-2'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.minio-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.minio-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.rdpui-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.rdpui-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.x2w-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2w-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.x2w-2  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2w-2'
 omcli.info omtest:om_benchmark
-verbose: bash  -c $'bin/omcli  -selector:nj1-4.% -ignore_omplat:Y -dkr_destroy:Y -ignore_omnode_use:Y -verbose'
-verbose: nj1-4.kafka-1|nj1-4.kafka-2|nj1-4.kafka-3|nj1-4.kafka-4|nj1-4.kafkacw-1|nj1-4.kafkaui-1|nj1-4.kafkaw-1|nj1-4.kafkaw-2|nj1-4.minio-1|nj1-4.rdp-1|nj1-4.rdp-2|nj1-4.rdp-3|nj1-4.rdp-4|nj1-4.rdpui-1|nj1-4.x2-0|nj1-4.x2-1|nj1-4.x2-2|nj1-4.x2-3|nj1-4.x2ui-1|nj1-4.x2w-1|nj1-4.x2w-2
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafka-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafka-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafka-2  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafka-2'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafka-3  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafka-3'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafka-4  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafka-4'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafkacw-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafkacw-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafkaui-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafkaui-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafkaw-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafkaw-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.kafkaw-2  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.kafkaw-2'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.minio-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.minio-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.rdp-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.rdp-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.rdp-2  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.rdp-2'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.rdp-3  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.rdp-3'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.rdp-4  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.rdp-4'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.rdpui-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.rdpui-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.x2-0  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2-0'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.x2-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.x2-2  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2-2'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.x2-3  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2-3'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.x2ui-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2ui-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.x2w-1  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2w-1'
-verbose: omcli.info file:temp/omcli/gen/nj1-4.x2w-2  comment:"generated config"
-verbose: bash  -c $'chmod u+x temp/omcli/gen/nj1-4.x2w-2'
-verbose: bin/dkr  -cmd:'' -destroy:Y -node:$'dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkacw-02|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.minio-02|dev.rdp-13|dev.rdp-14|dev.rdp-15|dev.rdp-16|dev.rdpui-5|dev.x2-20|dev.x2-18|dev.x2-19|dev.x2-17|dev.x2ui-6|dev.x2w-08|dev.x2w-12'
 dkr.report command:docker_destroy  cmd:""  targets:21
-verbose: bin/dkr  -cmd:'' -clean_run:Y -k8ns:nj1-4 -node:$'dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkacw-02|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.minio-02|dev.rdpui-5|dev.x2w-08|dev.x2w-12'
-verbose: dkr.info dctr:kafka-13  script:docker/gen/kafka-13  dkrcmdarg:docker_generate/dev.kafka-13  comment:"generating k8s or docker scripts"
-verbose: bash  -c $'mkdir -p temp/kafka && touch temp/kafka/kafka.build'
-verbose: dkr.info dctr:kafka-14  script:docker/gen/kafka-14  dkrcmdarg:docker_generate/dev.kafka-14  comment:"generating k8s or docker scripts"
-verbose: bash  -c $'mkdir -p temp/kafka && touch temp/kafka/kafka.build'
-verbose: dkr.info dctr:kafka-15  script:docker/gen/kafka-15  dkrcmdarg:docker_generate/dev.kafka-15  comment:"generating k8s or docker scripts"
-verbose: bash  -c $'mkdir -p temp/kafka && touch temp/kafka/kafka.build'
-verbose: dkr.info dctr:kafka-16  script:docker/gen/kafka-16  dkrcmdarg:docker_generate/dev.kafka-16  comment:"generating k8s or docker scripts"
-verbose: bash  -c $'mkdir -p temp/kafka && touch temp/kafka/kafka.build'
-verbose: dkr.info dctr:kafkacw-02  script:docker/gen/kafkacw-02  dkrcmdarg:docker_generate/dev.kafkacw-02  comment:"generating k8s or docker scripts"
-verbose: bash  -c $'mkdir -p temp/kafkacw && touch temp/kafkacw/kafkacw.build'
-verbose: dkr.info dctr:kafkaui-5  script:docker/gen/kafkaui-5  dkrcmdarg:docker_generate/dev.kafkaui-5  comment:"generating k8s or docker scripts"
-verbose: bash  -c $'mkdir -p temp/kafkaui && touch temp/kafkaui/kafkaui.build'
-verbose: dkr.info dctr:kafkaw-04  script:docker/gen/kafkaw-04  dkrcmdarg:docker_generate/dev.kafkaw-04  comment:"generating k8s or docker scripts"
-verbose: bash  -c $'mkdir -p temp/kafkaw && touch temp/kafkaw/kafkaw.build'
-verbose: dkr.info dctr:kafkaw-12  script:docker/gen/kafkaw-12  dkrcmdarg:docker_generate/dev.kafkaw-12  comment:"generating k8s or docker scripts"
-verbose: bash  -c $'mkdir -p temp/kafkaw && touch temp/kafkaw/kafkaw.build'
-verbose: dkr.info dctr:minio-02  script:docker/gen/minio-02  dkrcmdarg:docker_generate/dev.minio-02  comment:"generating k8s or docker scripts"
-verbose: bash  -c $'mkdir -p temp/minio && touch temp/minio/minio.build'
-verbose: dkr.info dctr:rdpui-5  script:docker/gen/rdpui-5  dkrcmdarg:docker_generate/dev.rdpui-5  comment:"generating k8s or docker scripts"
-verbose: bash  -c $'mkdir -p temp/rdpui && touch temp/rdpui/rdpui.build'
-verbose: dkr.info dctr:x2w-08  script:docker/gen/x2w-08  dkrcmdarg:docker_generate/dev.x2w-08  comment:"generating k8s or docker scripts"
-verbose: bash  -c $'mkdir -p temp/x2w && touch temp/x2w/x2w.build'
-verbose: dkr.info dctr:x2w-12  script:docker/gen/x2w-12  dkrcmdarg:docker_generate/dev.x2w-12  comment:"generating k8s or docker scripts"
-verbose: bash  -c $'mkdir -p temp/x2w && touch temp/x2w/x2w.build'
-verbose: dkr.info command:docker_generate 
-verbose: dkr.info command:docker_generate 
-verbose: dkr.info command:docker_generate 
-verbose: dkr.info command:docker_generate 
-verbose: dkr.info command:docker_generate 
-verbose: dkr.info command:docker_generate 
-verbose: dkr.info command:docker_generate 
-verbose: dkr.info command:docker_generate 
-verbose: dkr.info command:docker_generate 
-verbose: dkr.info command:docker_generate 
-verbose: dkr.info command:docker_generate 
-verbose: dkr.info command:docker_generate 
 dkr.report command:docker_generate  cmd:""  targets:12
-verbose: bash  -c docker/gen/kafka-13
 dkr.info image:kafka-13 file:temp/docker/kafka-13/kafka-13.run comment:copying script
 dkr.info image:kafka-13 file:temp/docker/kafka-13/kafka-13.build comment:copying script
 dkr.info image:kafka-13 file:temp/docker/kafka-13/Dockerfile comment:copying Dockerfile
-verbose: bin/x2node  -node:nj1.sn2.bm -root:Y -cmd:$'kubectl get pod -A -o custom-columns="NS:.metadata.namespace,POD:.metadata.name,ID:.status.containerStatuses[0].containerID" | sed \'s|containerd://||g\'' -q:Y >&6
-verbose: NS             POD                               ID
-verbose: alebedev       user-alebedev-ct0.wsl1            80cc040d378f2461fdacd0c738158006f24b59710e3205009fad14ad307d46cd
-verbose: alebedev       user-alebedev-nj1.sv1             c517cbfbb7be558b9cf4a126c01acec0cfca3f8757a427333a05c4f4354b4933
-verbose: alebedev       user-alebedev-nyc0.wsl1           e5ba88d7cc70041f256ae396ef65b20efffed07803a87bb75b7d22dcd6a4fac7
-verbose: alexjedi       user-alexjedi-nj1.sv1             2d8556cfab9b6d81cafb28727360c3beafc128734292e876ba8f0ad05e6695c4
-verbose: apolov         user-apolov-ct0.wsl1              28f6f551748a550a634d0d00a3854e208653321b6e9bdd4fd7db99af1b75abae
-verbose: apolov         user-apolov-nj1.sv1               5ab46a7d94f69348200d68e5d3ca91cca1b308bf2d820d9567324672b979f91e
-verbose: apolov         user-apolov-nyc0.wsl1             239471196124e670517eaa3e62b09d030290bd243d1ead22f903e8947e6882b2
-verbose: avorovich      user-avorovich-nj1.sv1            ba97f2d5cc97e98775edccd418b86b53f544fd66f3b32e2dc00c7fcd3b694d2d
-verbose: avorovich      user-avorovich-nj1.sv5            352ea0d17f3e9a127eebcbc1cb641a4e516f1acc158854d8cd0146d69c79bab0
-verbose: default        spark-master-6db79465d6-tjvdz     <none>
-verbose: default        spark-worker-9f5f9d95-n6xg2       <none>
-verbose: gitlab         gitlab-docs-ct0.wsl1              b648dd00658e92ece4856e63e8df2e6d3e4e08b1ca62e44e754cb281f5316dbf
-verbose: gitlab         gitlab-images-ct0.wsl1            19ba4831193e51050a67799afb958bf8cf173083e4b4c0d76b3676932b69a8f5
-verbose: gitlab         gitlab-main-nj1.sv1               5c41d2d998b90bf496cb03c65a13b9822a6badad874f6c42dd1c524f56ad779f
-verbose: gitlab         gitlab-runner-1-nyc0.wsl1         9b437aa7b85101db0eb7520339e6bf237080faf0e2321a1ada9b9c32b7862268
-verbose: gitlab         gitlab-runner-2-ct0.wsl1          b77b0a217fc98fb30d1c72b0c8038bcfe76d17c912f889f54a3fbed3ffaccc43
-verbose: gitlab         gitlab-runner-3-ct0.wsl1          79f2bc74185577c234ad6970c013cbea5a6b4ad2ae107ce1e39523bc360b2f5e
-verbose: gitlab         gitlab-runner-4-ct0.wsl1          acede306c8c6c851576650209a0dc562b5f3a0b62db9ad6ecdac031dfdb397f9
-verbose: gitlab         gitlab-runner-5-nj1.sv1           5397e0c39f4c5b32961ee255aa6a9543882135a53ca6254e174559d3eb0a95d2
-verbose: gitlab         gitlab-runner-6-nj1.sv1           5ccb9f3926e68d1fa62024ab7de149eadc625fe8cacdb852a4166549f9f28a70
-verbose: gitlab         gitlab-runner-docs-ct0.wsl1       801bf234f5977375b06d51e09e89b9f6b4124b584aa484905eeef9275f679df4
-verbose: grafana        grafana-main-nj1.sv1              022a36b2270cd9125ab4339a5ff12c3242a55ca7b6b2f2555659e776cced32d6
-verbose: kube-flannel   kube-flannel-ds-7prv6             1506d2fbbecd16920f90bb3398a7f34173be09bc341531b07c447f861ccccd8b
-verbose: kube-flannel   kube-flannel-ds-d2hnn             7fb58e65f6c14faca155f576fda8aefaf85f67ce4a6fd324f60a0b67b0e170c3
-verbose: kube-flannel   kube-flannel-ds-hx2lj             ddd470019692ddb00b9e480493eb4335d9dad99c19d4c86d4042aabebc6df5ba
-verbose: kube-flannel   kube-flannel-ds-j2lql             adbe1a87ea6ffce7434b2999b7e0351f50366ff6884916aa0f5de684f5f6c6dc
-verbose: kube-flannel   kube-flannel-ds-l6x8d             e99e1424f7f55a1afae3d51579d806db3fec203645ab28b4249e2abea019ee07
-verbose: kube-flannel   kube-flannel-ds-mh8v2             a444e4b39f0910221bb08ecbab6e545565c72c863a849d0defc174c9c460f387
-verbose: kube-flannel   kube-flannel-ds-n7qs5             fe252bd15dc48205fa15d754a9cd0f6b225b4ba556cc3827c53afcd2d73f7cf5
-verbose: kube-flannel   kube-flannel-ds-rrqkq             18d31f88723788352c8c720c9256de28c6baccb7886f618f566d0af0aff1410f
-verbose: kube-flannel   kube-flannel-ds-x4g2b             0288298bbda871cb52f1955adbcbe187555aac48e65c65d29178af38ec0ce53a
-verbose: kube-system    coredns-7c65d6cfc9-bbccn          4509a3fc3260b11b0d0cfe8e6a877092f6036f2ecb7cc42480b0f053bdb1e4ac
-verbose: kube-system    coredns-7c65d6cfc9-q49d4          445ae5c80cc3bebe8f9fef1b99d47138bad5a6363b9057c87879a9d1bbfa5d65
-verbose: kube-system    etcd-nj1.sv1                      c78d421abf1856f2a4d9a14b2ca5a18c8280c6bc0335bc320012d2c9e2f2508a
-verbose: kube-system    etcd-nj1.sv6                      a827e0009f130fc02841f082729cd66c5b6bf016f0dc59782b6995c55bca23f7
-verbose: kube-system    etcd-nj1.sv7                      e6fd93c46ee2eaf2f493d929f94c9cbfbbca2cf24176ca09ed0843ad753cc315
-verbose: kube-system    kube-apiserver-nj1.sv1            e94919a609410b63f5130560e5dcfdaea550035e3c66cd35925cf05620d84188
-verbose: kube-system    kube-apiserver-nj1.sv6            75e9ebf778bef98d70c55d28f07b8143010c928b59e1cf993dd61e6c7a507e98
-verbose: kube-system    kube-apiserver-nj1.sv7            85699f79535e79582a0886f75d28bb3d72c00e1c4a4949ff96f9691f60f30d62
-verbose: kube-system    kube-controller-manager-nj1.sv1   59bd122cb8ca1c76b6c5853f5fb19eca4e018cb54b06d6a3423b7a7d1f23cc44
-verbose: kube-system    kube-controller-manager-nj1.sv6   04e62163e4f15d686066d5e32fd152f50e0a1d6c93f656316661b08e70ac9b7b
-verbose: kube-system    kube-controller-manager-nj1.sv7   6551548284f22f5fa74931148f696856028f8df6797bb3a3420b03ba3de58562
-verbose: kube-system    kube-proxy-4p8s2                  4ff698444e33582f5f14798162ffef2236bbbe590d156fed6ac9574d1d145cf6
-verbose: kube-system    kube-proxy-5bnvk                  710c8bbfc8c0583c2da5c59b214a76c0156a7bd8fb9ea254776d9e2e44cb5109
-verbose: kube-system    kube-proxy-66nv8                  2e49f42c780b5072b057c4bad2188cf1e4decfb4d51576d0bad9c4885f31949d
-verbose: kube-system    kube-proxy-b4lz8                  32adc25325b58c46a580ea3f7d964b31e536681cb6bf8585c73f81ef2612057a
-verbose: kube-system    kube-proxy-b8gzv                  43c152862fa45f976e4030b8179d591b5780a31775928f439a1bcc6e915bdf4d
-verbose: kube-system    kube-proxy-k59ww                  0c2be3a8b939c5979738ec7933d4a3b177cfa98cfce2ab77b3faa96f920f3685
-verbose: kube-system    kube-proxy-kfl76                  1de6b4d66f6405593c113f0faebbe009f7791fb9ec6112a411f4ae1b93c11553
-verbose: kube-system    kube-proxy-krl5s                  e54f3dfed624c3373be4f43cff7d20a445b3a79fe407614faf9774bbee084e6e
-verbose: kube-system    kube-proxy-qn6jm                  ec8383103e5bcace726a564477e626df91f1dbaaf917b71895f6770295823af3
-verbose: kube-system    kube-scheduler-nj1.sv1            e4223b14eb6d95bb607e1bc74beadd951c578a5cf09fbdc487d63a4f42955289
-verbose: kube-system    kube-scheduler-nj1.sv6            42922fdf705b4a456524afde3695d429f02fbea6f4e492e618f2fa6aa45b4958
-verbose: kube-system    kube-scheduler-nj1.sv7            e410da06c0b845b15fa87467f6f11594b99f3f0a273cf06587aa64eab50683f6
-verbose: kube-system    metrics-server-f45f8cf88-w222g    1d1e64fb7eb67c17b733ee55932de6a1d648ce7b65ede65e9f500837f913b6c8
-verbose: minio          minio-main-nj1.sv1                a4b83efbda9ba5f11415dd230044df0ba3aa4ca2a3631a7f12d6ffec4c0d1138
-verbose: nginx          x2svc-1-ct0.wsl1                  b41025b1dc416be1b8ea65c121187b76afc688b94a545703d08eb9d984ad912a
-verbose: nginx          x2svc-1-nj1.sv1                   671db64076375b5d2b06cea065a733bfcbe58c57d60454c9aa71c29fb9d3f871
-verbose: nginx          x2svc-1-nyc0.wsl1                 4c806a164041e8420e86293467e80c7f447a7194fc36fe586923ad71d0348c2c
-verbose: nj1-2          kafkaui-6--nj1-sv1                16318b89c42af497226232975482cbe2f0d68410b4f124594a19a12a3aef44df
-verbose: nj1-2          kafkaw-02--nj1-sv6                495984f308458150e0e017d2a7fa2f7d75c0ed8806afd204bcd367733de35a59
-verbose: nj1-2          kafkaw-10--nj1-sv7                a9726f82c9db84cd2fb83a54d19ad4e0309a15ab62b2b95f6635151bef31c374
-verbose: nj1-2          rdpui-4--nj1-sv1                  26ac13b6b199335a370875d60498f21895ddd0574d7619c0bbb0e2d002bc8cba
-verbose: nj1-2          x2-05--nj1-sv2                    98cec05eb9f33c17722863ef72eeb7f5a43cc15ee8ac27fe10915c7946d83365
-verbose: nj1-2          x2-06--nj1-sv3                    5da50b6d1c1972eb20249a3be56e530a1590f855630e96ee2693b39ef9ee64db
-verbose: nj1-2          x2-07--nj1-sv4                    59ea23eadb9dcc5ba8b25001c0ffcc3312e45548133a791f9a7f874f3954d04c
-verbose: nj1-2          x2-08--nj1-sv5                    7a3c46e050f918939afb0a12cc7d2439762d062eeab7cfaa0c3d5ad496434c22
-verbose: nj1-2          x2ui-2--nj1-sv1                   a67d2aa03b206594a6bbdbb4b75cb53bc3d77eeb63a618f3206dc931e9fe04c5
-verbose: nj1-2          x2w-05--nj1-sv6                   80e3e9a67b29f25f0d4623175c1b8e78a5bfcd4bc2239dea07673b5aaed366fb
-verbose: nj1-2          x2w-10--nj1-sv7                   d6807f6eb19380b2728df2c07653fcc27695950490be2db2891410be9040b432
-verbose: nj1-3          kafkacw-01--nj1-sv1               177f61335713bbb69b7109c9b6b988879f93a0c202a40c1defb1a2d272aca4c7
-verbose: nj1-3          kafkaui-4--nj1-sv1                f8bb0ecc247610242ce9d5792ccf963afb02fa1b5e4210069f8aac57d90922a8
-verbose: nj1-3          kafkaw-03--nj1-sv6                6b491f45030b5b9d1254b88cf7c3b044258cffa225173674ffb0f27ec1edbb2d
-verbose: nj1-3          kafkaw-11--nj1-sv7                ce5b0b0ea9cf76f766324d088b93101b93c449a20fdeec363307e7253567f1c8
-verbose: nj1-3          minio-01--nj1-sv1                 65147c6e1d3f70bd2c5bc21aa13ddbeb7a57c88ce0f6c8d68334463a20df0b95
-verbose: nj1-3          rdpui-3--nj1-sv1                  aafac8323b91e289fd23428c836607910c85b815745d0b57d24d8b43163b4d10
-verbose: nj1-3          x2-09--nj1-sv2                    adeabc67b3c33c2ade8492acb03b0192ba641627da47d65d6fcd0375e6eab15d
-verbose: nj1-3          x2-10--nj1-sv3                    243c0ac469698830e9f6e149112fe2b06047162ed1b2ac2ff7ad692186709fec
-verbose: nj1-3          x2-11--nj1-sv4                    1574b19efd63a79cba524881b667361c7dde853da8adb8eec76dea07114cb6f9
-verbose: nj1-3          x2-12--nj1-sv5                    43c7440ded0ddecb840967be9324cd7e9f1a082ab7413054e40e9abc240679c7
-verbose: nj1-3          x2ui-3--nj1-sv1                   f5ea6aaa5aea53e7cea6489f25800cdc92a24973f95e5699a25118d1d6b7b8b3
-verbose: nj1-3          x2w-07--nj1-sv6                   c82e50ce26dffe978b565d312fb70a091fb731118a29f5c09c19ca79fc865c5b
-verbose: nj1-3          x2w-11--nj1-sv7                   5302a50f655b78b444e2650b84e0656b6554e2438a9bc0f28903aa2436ae9c49
-verbose: nj1-7          kafkaui-7--nj1-sv1                3e6dd10b979083a82e146b930fd75da34ca9ba66d87342b39d8ad77d03e4c931
-verbose: nj1-7          kafkaw-07--nj1-sv6                70c2d1cb0d84b9deace62ab047e87500a1bb67ece6636f439d087873f640aa62
-verbose: nj1-7          kafkaw-15--nj1-sv7                ffe04ab9fd3c199604c5b065412b64d27a4d5a75a700dd73d40507fe96423ccd
-verbose: nj1-7          rdpui-6--nj1-sv1                  58ad045d3f6b1a9d500450c342ef432b74f40cb018262546d3d4c60a330cb2be
-verbose: nj1-7          x2-21--nj1-sv2                    27ef2e7def9deaecb7b3911379f23bb0bd64e7d59fb804a802295eb7d33f982b
-verbose: nj1-7          x2-22--nj1-sv3                    6f7bc4ec248c316224febeed4f26650101f25e48d813d1b6e496d016f6ca25b6
-verbose: nj1-7          x2-23--nj1-sv4                    53833bdf8464aad29ea80557b273cde2a33965d8d92b6873e7d9dfe8d84da85a
-verbose: nj1-7          x2-24--nj1-sv5                    8e9edccaac3c4835c6fcddd7d6271378e05e4ea902c69f550947a0a6411a7ced
-verbose: nj1-7          x2ui-5--nj1-sv1                   d3916cad79e5e172c2d87daf849b08d1336f99fc0bd7e3b8afbae4f3065c5c7c
-verbose: nj1-7          x2w-04--nj1-sv6                   57c62636853be3cf0de9c98af7004840c04baa9e5c4516676c655553903046b4
-verbose: nj1-7          x2w-15--nj1-sv7                   f5d1cf5800899c7762fc988d167202e503dfe4c15e1ffb22105159dc613fdb8f
-verbose: plantuml       plantuml-01-nyc0.wsl1             3186337f1142243ae18a3c78889ed3c8337ca6463ada8a11548d2e0bee9ef3ab
-verbose: plantuml       plantuml-02-ct0.wsl1              839f3a2832b2fc11c19e3fdc792416c80251bd8fbe04638608eb9a5f5ee5e3c5
-verbose: shared-1       easyca-01-nj1.sv1                 bd32d47c1a6c28e6364fa79566f8d432fd966d38ab684d09106e4351fb516342
-verbose: shared         user-shared-nj1.sv1               7081a88d678a615bbea1de293702c8cc9bb26e40d88b322909051d2fb71ba20d
-verbose: spark          spark-main-nj1.sv1                e7670028f2b8c55da7267c9ba0d703e8b61d61cd1bdbd4e5c31e13b87082487c
-verbose: vault          vault-1-ct0.wsl1                  5af1d5ccd4617d31f5f5821b585d893c5f4c697ca654e3c4f52a0030db8c918f
-verbose: vault          vault-1-nj1.sv1                   fec65f9ff36299bb8b5038ecde6cde776476a139cafb154162eb8d909504db59
-verbose: vault          vault-1-nyc0.wsl1                 997cfdc6b7d238336e7c8dcda1d4221e661d322dded28e0b066afcee027e64cf
-verbose: vms            vms-bench-nj1.sv1                 4943b8df5d2c110663656e3551edabe5411441a6a96f856b7c74ad4b16c2d912
-verbose: vms            vms-infra-nj1.sv1                 b4c89c09456eaede8d3bfbacb408b98ef5b5df675cd910cc4ff94d283004f11b
-verbose: vparizhs       user-vparizhs-ct0.wsl1            f52471cb599bd7fcab807dbb6133c49fadc549323e9d0b8a711c90b673622ae5
-verbose: vparizhs       user-vparizhs-nj1.sv1             b0c86fe549e2bcb0f48bf48d21b8c9b8677f5804e9ff854e27caa8f46219d539
-verbose: vparizhs       user-vparizhs-nj1.sv7             f1f95aa0c37038209933a5ab649088268b8da4a25bdf510e1ebb6a757a89d816
-verbose: vparizhs       user-vparizhs-nyc0.wsl1           91f0aa664a2d42d236ac5877d71b38fef1e22fc37b29935adb5ed24b5acaecc0
-verbose: wiki           wiki-algornd-nyc0.wsl1            4494cb7813117c688410f71020f4594daeafb911d08c9879d99df2288ac5127d
-verbose: bash  -c docker/gen/kafka-14
 dkr.info image:kafka-14 file:temp/docker/kafka-14/kafka-14.run comment:copying script
 dkr.info image:kafka-14 file:temp/docker/kafka-14/kafka-14.build comment:copying script
 dkr.info image:kafka-14 file:temp/docker/kafka-14/Dockerfile comment:copying Dockerfile
-verbose: bash  -c docker/gen/kafka-15
 dkr.info image:kafka-15 file:temp/docker/kafka-15/kafka-15.run comment:copying script
 dkr.info image:kafka-15 file:temp/docker/kafka-15/kafka-15.build comment:copying script
 dkr.info image:kafka-15 file:temp/docker/kafka-15/Dockerfile comment:copying Dockerfile
-verbose: bash  -c docker/gen/kafka-16
 dkr.info image:kafka-16 file:temp/docker/kafka-16/kafka-16.run comment:copying script
 dkr.info image:kafka-16 file:temp/docker/kafka-16/kafka-16.build comment:copying script
 dkr.info image:kafka-16 file:temp/docker/kafka-16/Dockerfile comment:copying Dockerfile
-verbose: bash  -c docker/gen/kafkacw-02
 dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.run comment:copying script
 dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/kafkacw-02.build comment:copying script
 dkr.info image:kafkacw-02 file:temp/docker/kafkacw-02/Dockerfile comment:copying Dockerfile
-verbose: bash  -c docker/gen/kafkaui-5
 dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.run comment:copying script
 dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/kafkaui-5.build comment:copying script
 dkr.info image:kafkaui-5 file:temp/docker/kafkaui-5/Dockerfile comment:copying Dockerfile
-verbose: bash  -c docker/gen/kafkaw-04
 dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.run comment:copying script
 dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/kafkaw-04.build comment:copying script
 dkr.info image:kafkaw-04 file:temp/docker/kafkaw-04/Dockerfile comment:copying Dockerfile
-verbose: bash  -c docker/gen/kafkaw-12
 dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.run comment:copying script
 dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/kafkaw-12.build comment:copying script
 dkr.info image:kafkaw-12 file:temp/docker/kafkaw-12/Dockerfile comment:copying Dockerfile
-verbose: bash  -c docker/gen/minio-02
 dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.run comment:copying script
 dkr.info image:minio-02 file:temp/docker/minio-02/minio-02.build comment:copying script
 dkr.info image:minio-02 file:temp/docker/minio-02/Dockerfile comment:copying Dockerfile
-verbose: bash  -c docker/gen/rdpui-5
 dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.run comment:copying script
 dkr.info image:rdpui-5 file:temp/docker/rdpui-5/rdpui-5.build comment:copying script
 dkr.info image:rdpui-5 file:temp/docker/rdpui-5/Dockerfile comment:copying Dockerfile
-verbose: bash  -c docker/gen/x2w-08
 dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.run comment:copying script
 dkr.info image:x2w-08 file:temp/docker/x2w-08/x2w-08.build comment:copying script
 dkr.info image:x2w-08 file:temp/docker/x2w-08/Dockerfile comment:copying Dockerfile
-verbose: bash  -c docker/gen/x2w-12
 dkr.info image:x2w-12 file:temp/docker/x2w-12/x2w-12.run comment:copying script
 dkr.info image:x2w-12 file:temp/docker/x2w-12/x2w-12.build comment:copying script
 dkr.info image:x2w-12 file:temp/docker/x2w-12/Dockerfile comment:copying Dockerfile
-verbose: dkr.info command:docker_clean_run dctr:$dctr  nodedkr:nj1.sn2.bm  cmd:"sudo kubectl get pods -n nj1-4 -o wide"
-verbose: dkr.info command:docker_clean_run dctr:$dctr  nodedkr:nj1.sn3.bm  cmd:"sudo kubectl get pods -n nj1-4 -o wide"
-verbose: dkr.info command:docker_clean_run dctr:$dctr  nodedkr:nj1.sn4.bm  cmd:"sudo kubectl get pods -n nj1-4 -o wide"
-verbose: dkr.info command:docker_clean_run dctr:$dctr  nodedkr:nj1.sn5.bm  cmd:"sudo kubectl get pods -n nj1-4 -o wide"
-verbose: dkr.info command:docker_clean_run dctr:$dctr  nodedkr:nj1.sn1.bm  cmd:"sudo kubectl get pods -n nj1-4 -o wide"
-verbose: dkr.info command:docker_clean_run dctr:$dctr  nodedkr:nj1.sn1.bm  cmd:"sudo kubectl get pods -n nj1-4 -o wide"
-verbose: dkr.info command:docker_clean_run dctr:$dctr  nodedkr:nj1.sn6.bm  cmd:"sudo kubectl get pods -n nj1-4 -o wide"
-verbose: dkr.info command:docker_clean_run dctr:$dctr  nodedkr:nj1.sn7.bm  cmd:"sudo kubectl get pods -n nj1-4 -o wide"
-verbose: dkr.info command:docker_clean_run dctr:$dctr  nodedkr:nj1.sn1.bm  cmd:"sudo kubectl get pods -n nj1-4 -o wide"
-verbose: dkr.info command:docker_clean_run dctr:$dctr  nodedkr:nj1.sn1.bm  cmd:"sudo kubectl get pods -n nj1-4 -o wide"
-verbose: dkr.info command:docker_clean_run dctr:$dctr  nodedkr:nj1.sn6.bm  cmd:"sudo kubectl get pods -n nj1-4 -o wide"
-verbose: dkr.info command:docker_clean_run dctr:$dctr  nodedkr:nj1.sn7.bm  cmd:"sudo kubectl get pods -n nj1-4 -o wide"
 dkr.report command:docker_clean_run  cmd:"sudo kubectl get pods -n nj1-4 -o wide"  targets:12
-verbose: bin/x2node  -node:nj1.sn2.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafka-13\nchmod g+w /srv/script/kafka-13\ntouch  /srv/script/kafka-13/kafka-13.start\nchmod ugo+wx  /srv/script/kafka-13/kafka-13.start\nln -sfr /srv/script/kafka-13/kafka-13.start /srv/script/kafka-13/start\ntee >/srv/script/kafka-13/kafka-13.start << \'EOFSCRIPT\'\n#\n# Script docker/kafka/kafka.start for kafka-13\n#\n# Replaced run.port22:1642\n#!/bin/bash\n# set up kafkausr if not present\n# set softlinks to kafka\nset -e\nUSR="kafkausr"\nUD="1101"\n\nid "$USR" &>/dev/null || usradd -u "$UD" -m -s /bin/bash "$USR"\nhome=$(getent passwd "$USR" | cut -d: -f6)\nln -sfn /opt/kafka/current "$home/kafka"\nln -sfn /opt/kafka/prometheus/current.jar "$home/jmx_prometheus_javaagent.jar"\nls -l "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -h "$USR:$USR" "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -R "$USR:$USR" "/opt/kafka"\n\n# mount dirs based on the labels\nfor i in {1..4}; do\n  dir="/mnt/data-${i}"\n  sudo mkdir -p "$dir"\n  if sudo mount -t xfs -o defaults,noatime,nodiscard -L "kafka-data-${i}" "$dir"; then\n    # Only chown if mount succeeded\n    sudo chown kafkausr:kafkausr "$dir"\n  else\n    echo "❌ Mount failed for $dir. Cleaning up..."\n    sudo umount "$dir" 2>/dev/null || true\n    sudo rmdir "$dir"\n  fi\ndone\n\n# Rsyslog\nsed -i \'s/#Port 22/Port 1642/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\necho \'kafkausr soft nofile 999999\' | sudo tee -a /etc/security/limits.conf\necho \'kafkausr hard nofile 999999\' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafka/kafka.run for kafka-13\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafka-13--nj1-sv2\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafka-13--nj1-sv2\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafka-13--nj1-sv2\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv2\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.21\n      hostnames:\n      - nj1.sv2\n  hostname: kafka-13--nj1-sv2\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafka-13\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafka-13\n      image: docker.io/library/kafka\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1642\n#          hostPort: 1642\n#          hostIP: 192.168.10.21\n#        - name: port9092\n#          containerPort: 1643\n#          hostPort: 1643\n#          hostIP: 192.168.10.21\n#        - name: port9093\n#          containerPort: 1644\n#          hostPort: 1644\n#          hostIP: 192.168.10.21\n#        - name: port9094\n#          containerPort: 1645\n#          hostPort: 1645\n#          hostIP: 192.168.10.21\n#        - name: port9095\n#          containerPort: 1646\n#          hostPort: 1646\n#          hostIP: 192.168.10.21\n#        - name: port9096\n#          containerPort: 1647\n#          hostPort: 1647\n#          hostIP: 192.168.10.21\n#        - name: port9097\n#          containerPort: 1648\n#          hostPort: 1648\n#          hostIP: 192.168.10.21\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafka-13--nj1-sv2"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafka-13--nj1-sv2\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
-verbose: bin/x2node  -node:nj1.sn3.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafka-14\nchmod g+w /srv/script/kafka-14\ntouch  /srv/script/kafka-14/kafka-14.start\nchmod ugo+wx  /srv/script/kafka-14/kafka-14.start\nln -sfr /srv/script/kafka-14/kafka-14.start /srv/script/kafka-14/start\ntee >/srv/script/kafka-14/kafka-14.start << \'EOFSCRIPT\'\n#\n# Script docker/kafka/kafka.start for kafka-14\n#\n# Replaced run.port22:1649\n#!/bin/bash\n# set up kafkausr if not present\n# set softlinks to kafka\nset -e\nUSR="kafkausr"\nUD="1101"\n\nid "$USR" &>/dev/null || usradd -u "$UD" -m -s /bin/bash "$USR"\nhome=$(getent passwd "$USR" | cut -d: -f6)\nln -sfn /opt/kafka/current "$home/kafka"\nln -sfn /opt/kafka/prometheus/current.jar "$home/jmx_prometheus_javaagent.jar"\nls -l "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -h "$USR:$USR" "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -R "$USR:$USR" "/opt/kafka"\n\n# mount dirs based on the labels\nfor i in {1..4}; do\n  dir="/mnt/data-${i}"\n  sudo mkdir -p "$dir"\n  if sudo mount -t xfs -o defaults,noatime,nodiscard -L "kafka-data-${i}" "$dir"; then\n    # Only chown if mount succeeded\n    sudo chown kafkausr:kafkausr "$dir"\n  else\n    echo "❌ Mount failed for $dir. Cleaning up..."\n    sudo umount "$dir" 2>/dev/null || true\n    sudo rmdir "$dir"\n  fi\ndone\n\n# Rsyslog\nsed -i \'s/#Port 22/Port 1649/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\necho \'kafkausr soft nofile 999999\' | sudo tee -a /etc/security/limits.conf\necho \'kafkausr hard nofile 999999\' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafka/kafka.run for kafka-14\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafka-14--nj1-sv3\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafka-14--nj1-sv3\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafka-14--nj1-sv3\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv3\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.31\n      hostnames:\n      - nj1.sv3\n  hostname: kafka-14--nj1-sv3\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafka-14\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafka-14\n      image: docker.io/library/kafka\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1649\n#          hostPort: 1649\n#          hostIP: 192.168.10.31\n#        - name: port9092\n#          containerPort: 1650\n#          hostPort: 1650\n#          hostIP: 192.168.10.31\n#        - name: port9093\n#          containerPort: 1651\n#          hostPort: 1651\n#          hostIP: 192.168.10.31\n#        - name: port9094\n#          containerPort: 1652\n#          hostPort: 1652\n#          hostIP: 192.168.10.31\n#        - name: port9095\n#          containerPort: 1653\n#          hostPort: 1653\n#          hostIP: 192.168.10.31\n#        - name: port9096\n#          containerPort: 1654\n#          hostPort: 1654\n#          hostIP: 192.168.10.31\n#        - name: port9097\n#          containerPort: 1655\n#          hostPort: 1655\n#          hostIP: 192.168.10.31\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafka-14--nj1-sv3"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafka-14--nj1-sv3\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
-verbose: bin/x2node  -node:nj1.sn4.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafka-15\nchmod g+w /srv/script/kafka-15\ntouch  /srv/script/kafka-15/kafka-15.start\nchmod ugo+wx  /srv/script/kafka-15/kafka-15.start\nln -sfr /srv/script/kafka-15/kafka-15.start /srv/script/kafka-15/start\ntee >/srv/script/kafka-15/kafka-15.start << \'EOFSCRIPT\'\n#\n# Script docker/kafka/kafka.start for kafka-15\n#\n# Replaced run.port22:1656\n#!/bin/bash\n# set up kafkausr if not present\n# set softlinks to kafka\nset -e\nUSR="kafkausr"\nUD="1101"\n\nid "$USR" &>/dev/null || usradd -u "$UD" -m -s /bin/bash "$USR"\nhome=$(getent passwd "$USR" | cut -d: -f6)\nln -sfn /opt/kafka/current "$home/kafka"\nln -sfn /opt/kafka/prometheus/current.jar "$home/jmx_prometheus_javaagent.jar"\nls -l "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -h "$USR:$USR" "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -R "$USR:$USR" "/opt/kafka"\n\n# mount dirs based on the labels\nfor i in {1..4}; do\n  dir="/mnt/data-${i}"\n  sudo mkdir -p "$dir"\n  if sudo mount -t xfs -o defaults,noatime,nodiscard -L "kafka-data-${i}" "$dir"; then\n    # Only chown if mount succeeded\n    sudo chown kafkausr:kafkausr "$dir"\n  else\n    echo "❌ Mount failed for $dir. Cleaning up..."\n    sudo umount "$dir" 2>/dev/null || true\n    sudo rmdir "$dir"\n  fi\ndone\n\n# Rsyslog\nsed -i \'s/#Port 22/Port 1656/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\necho \'kafkausr soft nofile 999999\' | sudo tee -a /etc/security/limits.conf\necho \'kafkausr hard nofile 999999\' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafka/kafka.run for kafka-15\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafka-15--nj1-sv4\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafka-15--nj1-sv4\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafka-15--nj1-sv4\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv4\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.41\n      hostnames:\n      - nj1.sv4\n  hostname: kafka-15--nj1-sv4\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafka-15\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafka-15\n      image: docker.io/library/kafka\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1656\n#          hostPort: 1656\n#          hostIP: 192.168.10.41\n#        - name: port9092\n#          containerPort: 1657\n#          hostPort: 1657\n#          hostIP: 192.168.10.41\n#        - name: port9093\n#          containerPort: 1658\n#          hostPort: 1658\n#          hostIP: 192.168.10.41\n#        - name: port9094\n#          containerPort: 1659\n#          hostPort: 1659\n#          hostIP: 192.168.10.41\n#        - name: port9095\n#          containerPort: 1660\n#          hostPort: 1660\n#          hostIP: 192.168.10.41\n#        - name: port9096\n#          containerPort: 1661\n#          hostPort: 1661\n#          hostIP: 192.168.10.41\n#        - name: port9097\n#          containerPort: 1662\n#          hostPort: 1662\n#          hostIP: 192.168.10.41\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafka-15--nj1-sv4"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafka-15--nj1-sv4\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
-verbose: bin/x2node  -node:nj1.sn5.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafka-16\nchmod g+w /srv/script/kafka-16\ntouch  /srv/script/kafka-16/kafka-16.start\nchmod ugo+wx  /srv/script/kafka-16/kafka-16.start\nln -sfr /srv/script/kafka-16/kafka-16.start /srv/script/kafka-16/start\ntee >/srv/script/kafka-16/kafka-16.start << \'EOFSCRIPT\'\n#\n# Script docker/kafka/kafka.start for kafka-16\n#\n# Replaced run.port22:1663\n#!/bin/bash\n# set up kafkausr if not present\n# set softlinks to kafka\nset -e\nUSR="kafkausr"\nUD="1101"\n\nid "$USR" &>/dev/null || usradd -u "$UD" -m -s /bin/bash "$USR"\nhome=$(getent passwd "$USR" | cut -d: -f6)\nln -sfn /opt/kafka/current "$home/kafka"\nln -sfn /opt/kafka/prometheus/current.jar "$home/jmx_prometheus_javaagent.jar"\nls -l "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -h "$USR:$USR" "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -R "$USR:$USR" "/opt/kafka"\n\n# mount dirs based on the labels\nfor i in {1..4}; do\n  dir="/mnt/data-${i}"\n  sudo mkdir -p "$dir"\n  if sudo mount -t xfs -o defaults,noatime,nodiscard -L "kafka-data-${i}" "$dir"; then\n    # Only chown if mount succeeded\n    sudo chown kafkausr:kafkausr "$dir"\n  else\n    echo "❌ Mount failed for $dir. Cleaning up..."\n    sudo umount "$dir" 2>/dev/null || true\n    sudo rmdir "$dir"\n  fi\ndone\n\n# Rsyslog\nsed -i \'s/#Port 22/Port 1663/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\necho \'kafkausr soft nofile 999999\' | sudo tee -a /etc/security/limits.conf\necho \'kafkausr hard nofile 999999\' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafka/kafka.run for kafka-16\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafka-16--nj1-sv5\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafka-16--nj1-sv5\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafka-16--nj1-sv5\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv5\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.51\n      hostnames:\n      - nj1.sv5\n  hostname: kafka-16--nj1-sv5\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafka-16\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafka-16\n      image: docker.io/library/kafka\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1663\n#          hostPort: 1663\n#          hostIP: 192.168.10.51\n#        - name: port9092\n#          containerPort: 1664\n#          hostPort: 1664\n#          hostIP: 192.168.10.51\n#        - name: port9093\n#          containerPort: 1665\n#          hostPort: 1665\n#          hostIP: 192.168.10.51\n#        - name: port9094\n#          containerPort: 1666\n#          hostPort: 1666\n#          hostIP: 192.168.10.51\n#        - name: port9095\n#          containerPort: 1667\n#          hostPort: 1667\n#          hostIP: 192.168.10.51\n#        - name: port9096\n#          containerPort: 1668\n#          hostPort: 1668\n#          hostIP: 192.168.10.51\n#        - name: port9097\n#          containerPort: 1669\n#          hostPort: 1669\n#          hostIP: 192.168.10.51\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafka-16--nj1-sv5"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafka-16--nj1-sv5\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafkacw-02\nchmod g+w /srv/script/kafkacw-02\ntouch  /srv/script/kafkacw-02/kafkacw-02.start\nchmod ugo+wx  /srv/script/kafkacw-02/kafkacw-02.start\nln -sfr /srv/script/kafkacw-02/kafkacw-02.start /srv/script/kafkacw-02/start\ntee >/srv/script/kafkacw-02/kafkacw-02.start << \'EOFSCRIPT\'\n#\n# Script docker/kafkacw/kafkacw.start for kafkacw-02\n#\n# Replaced run.port22:1682\n#!/bin/bash\n# Rsyslog\n set -e\nsed -i \'s/#Port 22/Port 1682/\' /etc/ssh/sshd_config\nservice ssh restart\n\nUSR="kafkausr"\nUD="1101"\n\nid "$USR" &>/dev/null || usradd -u "$UD" -m -s /bin/bash "$USR"\nhome=$(getent passwd "$USR" | cut -d: -f6)\nln -sfn /opt/kafka/current "$home/kafka"\nln -sfn /opt/kafka/prometheus/current.jar "$home/jmx_prometheus_javaagent.jar"\nls -l "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -h "$USR:$USR" "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\n\nln -sfn /opt/kafka/plugins "$home/kafka/plugins"\nchown -h "$USR:$USR" "$home/kafka/plugins"\n\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\necho \'kafkausr soft nofile 999999\' | sudo tee -a /etc/security/limits.conf\necho \'kafkausr hard nofile 999999\' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafkacw/kafkacw.run for kafkacw-02\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafkacw-02--nj1-sv1\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafkacw-02--nj1-sv1\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafkacw-02--nj1-sv1\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv1\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.11\n      hostnames:\n      - nj1.sv1\n  hostname: kafkacw-02--nj1-sv1\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafkacw-02\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafkacw-02\n      image: docker.io/library/kafkacw\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1682\n#          hostPort: 1682\n#          hostIP: 192.168.10.11\n#        - name: port8083\n#          containerPort: 8083\n#          hostPort: 1683\n#          hostIP: 192.168.10.11\n#        - name: port8181\n#          containerPort: 8181\n#          hostPort: 1690\n#          hostIP: 192.168.10.11\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafkacw-02--nj1-sv1"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafkacw-02--nj1-sv1\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafkaui-5\nchmod g+w /srv/script/kafkaui-5\ntouch  /srv/script/kafkaui-5/kafkaui-5.start\nchmod ugo+wx  /srv/script/kafkaui-5/kafkaui-5.start\nln -sfr /srv/script/kafkaui-5/kafkaui-5.start /srv/script/kafkaui-5/start\ntee >/srv/script/kafkaui-5/kafkaui-5.start << \'EOFSCRIPT\'\n#\n# Script docker/kafkaui/kafkaui.start for kafkaui-5\n#\n#!/bin/bash\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\nservice ssh restart\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafkaui/kafkaui.run for kafkaui-5\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafkaui-5--nj1-sv1\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafkaui-5--nj1-sv1\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafkaui-5--nj1-sv1\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv1\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.11\n      hostnames:\n      - nj1.sv1\n  hostname: kafkaui-5--nj1-sv1\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafkaui-5\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafkaui-5\n      image: docker.io/library/kafkaui\n      imagePullPolicy: IfNotPresent\n      ports:\n        - name: port22\n          containerPort: 22\n          hostPort: 1561\n          hostIP: 192.168.10.11\n        - name: port8080\n          containerPort: 8080\n          hostPort: 1562\n          hostIP: 192.168.10.11\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafkaui-5--nj1-sv1"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafkaui-5--nj1-sv1\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
-verbose: bin/x2node  -node:nj1.sn6.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafkaw-04\nchmod g+w /srv/script/kafkaw-04\ntouch  /srv/script/kafkaw-04/kafkaw-04.start\nchmod ugo+wx  /srv/script/kafkaw-04/kafkaw-04.start\nln -sfr /srv/script/kafkaw-04/kafkaw-04.start /srv/script/kafkaw-04/start\ntee >/srv/script/kafkaw-04/kafkaw-04.start << \'EOFSCRIPT\'\n#\n# Script docker/kafkaw/kafkaw.start for kafkaw-04\n#\n# Replaced run.port22:1079\n#!/bin/bash\n# Rsyslog\nsed -i \'s/#Port 22/Port 1079/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafkaw/kafkaw.run for kafkaw-04\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafkaw-04--nj1-sv6\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafkaw-04--nj1-sv6\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafkaw-04--nj1-sv6\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv6\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.61\n      hostnames:\n      - nj1.sv6\n  hostname: kafkaw-04--nj1-sv6\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafkaw-04\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafkaw-04\n      image: docker.io/library/kafkaw\n      imagePullPolicy: IfNotPresent\n#      ports:\n#        - name: port22\n#          containerPort: 1079\n#          hostPort: 1079\n#          hostIP: 192.168.10.61\n#        - name: port8080\n#          containerPort: 1080\n#          hostPort: 1080\n#          hostIP: 192.168.10.61\n#        - name: port8081\n#          containerPort: 1081\n#          hostPort: 1081\n#          hostIP: 192.168.10.61\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafkaw-04--nj1-sv6"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafkaw-04--nj1-sv6\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
-verbose: bin/x2node  -node:nj1.sn7.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafkaw-12\nchmod g+w /srv/script/kafkaw-12\ntouch  /srv/script/kafkaw-12/kafkaw-12.start\nchmod ugo+wx  /srv/script/kafkaw-12/kafkaw-12.start\nln -sfr /srv/script/kafkaw-12/kafkaw-12.start /srv/script/kafkaw-12/start\ntee >/srv/script/kafkaw-12/kafkaw-12.start << \'EOFSCRIPT\'\n#\n# Script docker/kafkaw/kafkaw.start for kafkaw-12\n#\n# Replaced run.port22:1129\n#!/bin/bash\n# Rsyslog\nsed -i \'s/#Port 22/Port 1129/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafkaw/kafkaw.run for kafkaw-12\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafkaw-12--nj1-sv7\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafkaw-12--nj1-sv7\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafkaw-12--nj1-sv7\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv7\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.71\n      hostnames:\n      - nj1.sv7\n  hostname: kafkaw-12--nj1-sv7\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafkaw-12\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafkaw-12\n      image: docker.io/library/kafkaw\n      imagePullPolicy: IfNotPresent\n#      ports:\n#        - name: port22\n#          containerPort: 1129\n#          hostPort: 1129\n#          hostIP: 192.168.10.71\n#        - name: port8080\n#          containerPort: 1130\n#          hostPort: 1130\n#          hostIP: 192.168.10.71\n#        - name: port8081\n#          containerPort: 1131\n#          hostPort: 1131\n#          hostIP: 192.168.10.71\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafkaw-12--nj1-sv7"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafkaw-12--nj1-sv7\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
-verbose: bin/x2node  -node:nj1.sn6.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
-verbose: bin/x2node  -node:nj1.sn7.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
-verbose: bin/x2node  -node:nj1.sn2.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
-verbose: bin/x2node  -node:nj1.sn4.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
-verbose: bin/x2node  -node:nj1.sn3.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
-verbose: bin/x2node  -node:nj1.sn5.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/minio-02\nchmod g+w /srv/script/minio-02\ntouch  /srv/script/minio-02/minio-02.start\nchmod ugo+wx  /srv/script/minio-02/minio-02.start\nln -sfr /srv/script/minio-02/minio-02.start /srv/script/minio-02/start\ntee >/srv/script/minio-02/minio-02.start << \'EOFSCRIPT\'\n#\n# Script docker/minio/minio.start for minio-02\n#\n# Replaced run.port22:1672\nsed -i \'s/#Port 22/Port 1672/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\nsleep infinity\n\n\nEOFSCRIPT\n#\n# Script docker/minio/minio.run for minio-02\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/minio-02--nj1-sv1\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/minio-02--nj1-sv1\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: minio-02--nj1-sv1\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv1\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.11\n      hostnames:\n      - nj1.sv1\n  hostname: minio-02--nj1-sv1\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/minio-02\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: data\n     hostPath:\n       path: /data/minio_dir/minio-02\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: minio-02\n      image: docker.io/library/minio\n      imagePullPolicy: IfNotPresent\n#      ports:\n#        - name: port22\n#          containerPort: 1672\n#          hostPort: 1672\n#          hostIP: 192.168.10.11\n#        - name: port9000\n#          containerPort: 1673\n#          hostPort: 1673\n#          hostIP: 192.168.10.11\n#        - name: port9001\n#          containerPort: 1674\n#          hostPort: 1674\n#          hostIP: 192.168.10.11\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: data\n         mountPath: /minio_dir\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="minio-02--nj1-sv1"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS minio-02--nj1-sv1\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/rdpui-5\nchmod g+w /srv/script/rdpui-5\ntouch  /srv/script/rdpui-5/rdpui-5.start\nchmod ugo+wx  /srv/script/rdpui-5/rdpui-5.start\nln -sfr /srv/script/rdpui-5/rdpui-5.start /srv/script/rdpui-5/start\ntee >/srv/script/rdpui-5/rdpui-5.start << \'EOFSCRIPT\'\n#\n# Script docker/rdpui/rdpui.start for rdpui-5\n#\n#!/bin/bash\nuseradd rdpusr -u 1082 -U -m -s /bin/bash\n# "unlock" user\n# idiotic alpine locks the user w/o password!!!\nusermod -p \'$1$sCG/p.qT$IWdZx.M9.wCgoWvh5coq/0\' rdpusr\nln -s /app/console /home/rdpusr/rdpui\n# generate keys for ssh\n$(which ssh-keygen) -A\n# idiotic alpine locks the user w/o password!!!\nusermod -p \'$1$sCG/p.qT$IWdZx.M9.wCgoWvh5coq/0\' x2admin\n$(which sshd)\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/rdpui/rdpui.run for rdpui-5\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/rdpui-5--nj1-sv1\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/rdpui-5--nj1-sv1\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: rdpui-5--nj1-sv1\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv1\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.11\n      hostnames:\n      - nj1.sv1\n  hostname: rdpui-5--nj1-sv1\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/rdpui-5\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: rdpui-5\n      image: docker.io/library/rdpui\n      imagePullPolicy: IfNotPresent\n      ports:\n        - name: port22\n          containerPort: 22\n          hostPort: 1493\n          hostIP: 192.168.10.11\n        - name: port8080\n          containerPort: 8080\n          hostPort: 1494\n          hostIP: 192.168.10.11\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="rdpui-5--nj1-sv1"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS rdpui-5--nj1-sv1\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
-verbose: bin/x2node  -node:nj1.sn6.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/x2w-08\nchmod g+w /srv/script/x2w-08\ntouch  /srv/script/x2w-08/x2w-08.start\nchmod ugo+wx  /srv/script/x2w-08/x2w-08.start\nln -sfr /srv/script/x2w-08/x2w-08.start /srv/script/x2w-08/start\ntee >/srv/script/x2w-08/x2w-08.start << \'EOFSCRIPT\'\n#\n# Script docker/x2w/x2w.start for x2w-08\n#\n# Replaced run.port22:1560\nsed -i \'s/#Port 22/Port 1560/\' /etc/ssh/sshd_config\nsed -i \'s/#MaxStartups 10:30:100/MaxStartups 1000/\' /etc/ssh/sshd_config\nservice ssh restart\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/x2w/x2w.run for x2w-08\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/x2w-08--nj1-sv6\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/x2w-08--nj1-sv6\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: x2w-08--nj1-sv6\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv6\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.61\n      hostnames:\n      - nj1.sv6\n  hostname: x2w-08--nj1-sv6\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/x2w-08\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: ssmtp\n     hostPath:\n       path: /etc/ssmtp\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: x2w-08\n      image: docker.io/library/x2w\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1560\n#          hostPort: 1560\n#          hostIP: 192.168.10.61\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: ssmtp\n         mountPath: /etc/ssmtp\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="x2w-08--nj1-sv6"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS x2w-08--nj1-sv6\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
-verbose: bin/x2node  -node:nj1.sn7.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/x2w-12\nchmod g+w /srv/script/x2w-12\ntouch  /srv/script/x2w-12/x2w-12.start\nchmod ugo+wx  /srv/script/x2w-12/x2w-12.start\nln -sfr /srv/script/x2w-12/x2w-12.start /srv/script/x2w-12/start\ntee >/srv/script/x2w-12/x2w-12.start << \'EOFSCRIPT\'\n#\n# Script docker/x2w/x2w.start for x2w-12\n#\n# Replaced run.port22:1826\nsed -i \'s/#Port 22/Port 1826/\' /etc/ssh/sshd_config\nsed -i \'s/#MaxStartups 10:30:100/MaxStartups 1000/\' /etc/ssh/sshd_config\nservice ssh restart\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/x2w/x2w.run for x2w-12\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/x2w-12--nj1-sv7\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/x2w-12--nj1-sv7\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: x2w-12--nj1-sv7\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv7\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.71\n      hostnames:\n      - nj1.sv7\n  hostname: x2w-12--nj1-sv7\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/x2w-12\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: ssmtp\n     hostPath:\n       path: /etc/ssmtp\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: x2w-12\n      image: docker.io/library/x2w\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1826\n#          hostPort: 1826\n#          hostIP: 192.168.10.71\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: ssmtp\n         mountPath: /etc/ssmtp\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="x2w-12--nj1-sv7"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS x2w-12--nj1-sv7\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
-verbose: bin/x2node  -node:nj1.sn6.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
-verbose: bin/x2node  -node:nj1.sn7.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
-verbose: bin/x2node  -node:nj1.sn2.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafka-13\nchmod g+w /srv/script/kafka-13\ntouch  /srv/script/kafka-13/kafka-13.start\nchmod ugo+wx  /srv/script/kafka-13/kafka-13.start\nln -sfr /srv/script/kafka-13/kafka-13.start /srv/script/kafka-13/start\ntee >/srv/script/kafka-13/kafka-13.start << \'EOFSCRIPT\'\n#\n# Script docker/kafka/kafka.start for kafka-13\n#\n# Replaced run.port22:1642\n#!/bin/bash\n# set up kafkausr if not present\n# set softlinks to kafka\nset -e\nUSR="kafkausr"\nUD="1101"\n\nid "$USR" &>/dev/null || usradd -u "$UD" -m -s /bin/bash "$USR"\nhome=$(getent passwd "$USR" | cut -d: -f6)\nln -sfn /opt/kafka/current "$home/kafka"\nln -sfn /opt/kafka/prometheus/current.jar "$home/jmx_prometheus_javaagent.jar"\nls -l "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -h "$USR:$USR" "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -R "$USR:$USR" "/opt/kafka"\n\n# mount dirs based on the labels\nfor i in {1..4}; do\n  dir="/mnt/data-${i}"\n  sudo mkdir -p "$dir"\n  if sudo mount -t xfs -o defaults,noatime,nodiscard -L "kafka-data-${i}" "$dir"; then\n    # Only chown if mount succeeded\n    sudo chown kafkausr:kafkausr "$dir"\n  else\n    echo "❌ Mount failed for $dir. Cleaning up..."\n    sudo umount "$dir" 2>/dev/null || true\n    sudo rmdir "$dir"\n  fi\ndone\n\n# Rsyslog\nsed -i \'s/#Port 22/Port 1642/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\necho \'kafkausr soft nofile 999999\' | sudo tee -a /etc/security/limits.conf\necho \'kafkausr hard nofile 999999\' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafka/kafka.run for kafka-13\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafka-13--nj1-sv2\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafka-13--nj1-sv2\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafka-13--nj1-sv2\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv2\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.21\n      hostnames:\n      - nj1.sv2\n  hostname: kafka-13--nj1-sv2\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafka-13\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafka-13\n      image: docker.io/library/kafka\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1642\n#          hostPort: 1642\n#          hostIP: 192.168.10.21\n#        - name: port9092\n#          containerPort: 1643\n#          hostPort: 1643\n#          hostIP: 192.168.10.21\n#        - name: port9093\n#          containerPort: 1644\n#          hostPort: 1644\n#          hostIP: 192.168.10.21\n#        - name: port9094\n#          containerPort: 1645\n#          hostPort: 1645\n#          hostIP: 192.168.10.21\n#        - name: port9095\n#          containerPort: 1646\n#          hostPort: 1646\n#          hostIP: 192.168.10.21\n#        - name: port9096\n#          containerPort: 1647\n#          hostPort: 1647\n#          hostIP: 192.168.10.21\n#        - name: port9097\n#          containerPort: 1648\n#          hostPort: 1648\n#          hostIP: 192.168.10.21\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafka-13--nj1-sv2"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafka-13--nj1-sv2\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
 pod/kafka-13--nj1-sv2 created
 
-verbose: bin/x2node  -node:nj1.sn2.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
 kafka-14--nj1-sv3     0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
@@ -318,10 +50,8 @@ kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>       
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
-verbose: bin/x2node  -node:nj1.sn3.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafka-14\nchmod g+w /srv/script/kafka-14\ntouch  /srv/script/kafka-14/kafka-14.start\nchmod ugo+wx  /srv/script/kafka-14/kafka-14.start\nln -sfr /srv/script/kafka-14/kafka-14.start /srv/script/kafka-14/start\ntee >/srv/script/kafka-14/kafka-14.start << \'EOFSCRIPT\'\n#\n# Script docker/kafka/kafka.start for kafka-14\n#\n# Replaced run.port22:1649\n#!/bin/bash\n# set up kafkausr if not present\n# set softlinks to kafka\nset -e\nUSR="kafkausr"\nUD="1101"\n\nid "$USR" &>/dev/null || usradd -u "$UD" -m -s /bin/bash "$USR"\nhome=$(getent passwd "$USR" | cut -d: -f6)\nln -sfn /opt/kafka/current "$home/kafka"\nln -sfn /opt/kafka/prometheus/current.jar "$home/jmx_prometheus_javaagent.jar"\nls -l "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -h "$USR:$USR" "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -R "$USR:$USR" "/opt/kafka"\n\n# mount dirs based on the labels\nfor i in {1..4}; do\n  dir="/mnt/data-${i}"\n  sudo mkdir -p "$dir"\n  if sudo mount -t xfs -o defaults,noatime,nodiscard -L "kafka-data-${i}" "$dir"; then\n    # Only chown if mount succeeded\n    sudo chown kafkausr:kafkausr "$dir"\n  else\n    echo "❌ Mount failed for $dir. Cleaning up..."\n    sudo umount "$dir" 2>/dev/null || true\n    sudo rmdir "$dir"\n  fi\ndone\n\n# Rsyslog\nsed -i \'s/#Port 22/Port 1649/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\necho \'kafkausr soft nofile 999999\' | sudo tee -a /etc/security/limits.conf\necho \'kafkausr hard nofile 999999\' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafka/kafka.run for kafka-14\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafka-14--nj1-sv3\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafka-14--nj1-sv3\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafka-14--nj1-sv3\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv3\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.31\n      hostnames:\n      - nj1.sv3\n  hostname: kafka-14--nj1-sv3\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafka-14\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafka-14\n      image: docker.io/library/kafka\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1649\n#          hostPort: 1649\n#          hostIP: 192.168.10.31\n#        - name: port9092\n#          containerPort: 1650\n#          hostPort: 1650\n#          hostIP: 192.168.10.31\n#        - name: port9093\n#          containerPort: 1651\n#          hostPort: 1651\n#          hostIP: 192.168.10.31\n#        - name: port9094\n#          containerPort: 1652\n#          hostPort: 1652\n#          hostIP: 192.168.10.31\n#        - name: port9095\n#          containerPort: 1653\n#          hostPort: 1653\n#          hostIP: 192.168.10.31\n#        - name: port9096\n#          containerPort: 1654\n#          hostPort: 1654\n#          hostIP: 192.168.10.31\n#        - name: port9097\n#          containerPort: 1655\n#          hostPort: 1655\n#          hostIP: 192.168.10.31\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafka-14--nj1-sv3"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafka-14--nj1-sv3\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
 pod/kafka-14--nj1-sv3 created
 
-verbose: bin/x2node  -node:nj1.sn3.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
 kafka-14--nj1-sv3     0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
@@ -332,10 +62,8 @@ kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>       
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
-verbose: bin/x2node  -node:nj1.sn4.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafka-15\nchmod g+w /srv/script/kafka-15\ntouch  /srv/script/kafka-15/kafka-15.start\nchmod ugo+wx  /srv/script/kafka-15/kafka-15.start\nln -sfr /srv/script/kafka-15/kafka-15.start /srv/script/kafka-15/start\ntee >/srv/script/kafka-15/kafka-15.start << \'EOFSCRIPT\'\n#\n# Script docker/kafka/kafka.start for kafka-15\n#\n# Replaced run.port22:1656\n#!/bin/bash\n# set up kafkausr if not present\n# set softlinks to kafka\nset -e\nUSR="kafkausr"\nUD="1101"\n\nid "$USR" &>/dev/null || usradd -u "$UD" -m -s /bin/bash "$USR"\nhome=$(getent passwd "$USR" | cut -d: -f6)\nln -sfn /opt/kafka/current "$home/kafka"\nln -sfn /opt/kafka/prometheus/current.jar "$home/jmx_prometheus_javaagent.jar"\nls -l "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -h "$USR:$USR" "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -R "$USR:$USR" "/opt/kafka"\n\n# mount dirs based on the labels\nfor i in {1..4}; do\n  dir="/mnt/data-${i}"\n  sudo mkdir -p "$dir"\n  if sudo mount -t xfs -o defaults,noatime,nodiscard -L "kafka-data-${i}" "$dir"; then\n    # Only chown if mount succeeded\n    sudo chown kafkausr:kafkausr "$dir"\n  else\n    echo "❌ Mount failed for $dir. Cleaning up..."\n    sudo umount "$dir" 2>/dev/null || true\n    sudo rmdir "$dir"\n  fi\ndone\n\n# Rsyslog\nsed -i \'s/#Port 22/Port 1656/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\necho \'kafkausr soft nofile 999999\' | sudo tee -a /etc/security/limits.conf\necho \'kafkausr hard nofile 999999\' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafka/kafka.run for kafka-15\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafka-15--nj1-sv4\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafka-15--nj1-sv4\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafka-15--nj1-sv4\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv4\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.41\n      hostnames:\n      - nj1.sv4\n  hostname: kafka-15--nj1-sv4\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafka-15\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafka-15\n      image: docker.io/library/kafka\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1656\n#          hostPort: 1656\n#          hostIP: 192.168.10.41\n#        - name: port9092\n#          containerPort: 1657\n#          hostPort: 1657\n#          hostIP: 192.168.10.41\n#        - name: port9093\n#          containerPort: 1658\n#          hostPort: 1658\n#          hostIP: 192.168.10.41\n#        - name: port9094\n#          containerPort: 1659\n#          hostPort: 1659\n#          hostIP: 192.168.10.41\n#        - name: port9095\n#          containerPort: 1660\n#          hostPort: 1660\n#          hostIP: 192.168.10.41\n#        - name: port9096\n#          containerPort: 1661\n#          hostPort: 1661\n#          hostIP: 192.168.10.41\n#        - name: port9097\n#          containerPort: 1662\n#          hostPort: 1662\n#          hostIP: 192.168.10.41\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafka-15--nj1-sv4"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafka-15--nj1-sv4\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
 pod/kafka-15--nj1-sv4 created
 
-verbose: bin/x2node  -node:nj1.sn4.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
 kafka-14--nj1-sv3     0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
@@ -346,10 +74,8 @@ kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>       
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
-verbose: bin/x2node  -node:nj1.sn5.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafka-16\nchmod g+w /srv/script/kafka-16\ntouch  /srv/script/kafka-16/kafka-16.start\nchmod ugo+wx  /srv/script/kafka-16/kafka-16.start\nln -sfr /srv/script/kafka-16/kafka-16.start /srv/script/kafka-16/start\ntee >/srv/script/kafka-16/kafka-16.start << \'EOFSCRIPT\'\n#\n# Script docker/kafka/kafka.start for kafka-16\n#\n# Replaced run.port22:1663\n#!/bin/bash\n# set up kafkausr if not present\n# set softlinks to kafka\nset -e\nUSR="kafkausr"\nUD="1101"\n\nid "$USR" &>/dev/null || usradd -u "$UD" -m -s /bin/bash "$USR"\nhome=$(getent passwd "$USR" | cut -d: -f6)\nln -sfn /opt/kafka/current "$home/kafka"\nln -sfn /opt/kafka/prometheus/current.jar "$home/jmx_prometheus_javaagent.jar"\nls -l "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -h "$USR:$USR" "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -R "$USR:$USR" "/opt/kafka"\n\n# mount dirs based on the labels\nfor i in {1..4}; do\n  dir="/mnt/data-${i}"\n  sudo mkdir -p "$dir"\n  if sudo mount -t xfs -o defaults,noatime,nodiscard -L "kafka-data-${i}" "$dir"; then\n    # Only chown if mount succeeded\n    sudo chown kafkausr:kafkausr "$dir"\n  else\n    echo "❌ Mount failed for $dir. Cleaning up..."\n    sudo umount "$dir" 2>/dev/null || true\n    sudo rmdir "$dir"\n  fi\ndone\n\n# Rsyslog\nsed -i \'s/#Port 22/Port 1663/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\necho \'kafkausr soft nofile 999999\' | sudo tee -a /etc/security/limits.conf\necho \'kafkausr hard nofile 999999\' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafka/kafka.run for kafka-16\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafka-16--nj1-sv5\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafka-16--nj1-sv5\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafka-16--nj1-sv5\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv5\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.51\n      hostnames:\n      - nj1.sv5\n  hostname: kafka-16--nj1-sv5\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafka-16\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafka-16\n      image: docker.io/library/kafka\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1663\n#          hostPort: 1663\n#          hostIP: 192.168.10.51\n#        - name: port9092\n#          containerPort: 1664\n#          hostPort: 1664\n#          hostIP: 192.168.10.51\n#        - name: port9093\n#          containerPort: 1665\n#          hostPort: 1665\n#          hostIP: 192.168.10.51\n#        - name: port9094\n#          containerPort: 1666\n#          hostPort: 1666\n#          hostIP: 192.168.10.51\n#        - name: port9095\n#          containerPort: 1667\n#          hostPort: 1667\n#          hostIP: 192.168.10.51\n#        - name: port9096\n#          containerPort: 1668\n#          hostPort: 1668\n#          hostIP: 192.168.10.51\n#        - name: port9097\n#          containerPort: 1669\n#          hostPort: 1669\n#          hostIP: 192.168.10.51\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafka-16--nj1-sv5"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafka-16--nj1-sv5\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
 pod/kafka-16--nj1-sv5 created
 
-verbose: bin/x2node  -node:nj1.sn5.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
 kafka-14--nj1-sv3     0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
@@ -360,10 +86,8 @@ kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>       
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafkacw-02\nchmod g+w /srv/script/kafkacw-02\ntouch  /srv/script/kafkacw-02/kafkacw-02.start\nchmod ugo+wx  /srv/script/kafkacw-02/kafkacw-02.start\nln -sfr /srv/script/kafkacw-02/kafkacw-02.start /srv/script/kafkacw-02/start\ntee >/srv/script/kafkacw-02/kafkacw-02.start << \'EOFSCRIPT\'\n#\n# Script docker/kafkacw/kafkacw.start for kafkacw-02\n#\n# Replaced run.port22:1682\n#!/bin/bash\n# Rsyslog\n set -e\nsed -i \'s/#Port 22/Port 1682/\' /etc/ssh/sshd_config\nservice ssh restart\n\nUSR="kafkausr"\nUD="1101"\n\nid "$USR" &>/dev/null || usradd -u "$UD" -m -s /bin/bash "$USR"\nhome=$(getent passwd "$USR" | cut -d: -f6)\nln -sfn /opt/kafka/current "$home/kafka"\nln -sfn /opt/kafka/prometheus/current.jar "$home/jmx_prometheus_javaagent.jar"\nls -l "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\nchown -h "$USR:$USR" "$home/kafka" "$home/jmx_prometheus_javaagent.jar"\n\nln -sfn /opt/kafka/plugins "$home/kafka/plugins"\nchown -h "$USR:$USR" "$home/kafka/plugins"\n\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\necho \'kafkausr soft nofile 999999\' | sudo tee -a /etc/security/limits.conf\necho \'kafkausr hard nofile 999999\' | sudo tee -a /etc/security/limits.conf\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafkacw/kafkacw.run for kafkacw-02\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafkacw-02--nj1-sv1\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafkacw-02--nj1-sv1\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafkacw-02--nj1-sv1\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv1\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.11\n      hostnames:\n      - nj1.sv1\n  hostname: kafkacw-02--nj1-sv1\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafkacw-02\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafkacw-02\n      image: docker.io/library/kafkacw\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1682\n#          hostPort: 1682\n#          hostIP: 192.168.10.11\n#        - name: port8083\n#          containerPort: 8083\n#          hostPort: 1683\n#          hostIP: 192.168.10.11\n#        - name: port8181\n#          containerPort: 8181\n#          hostPort: 1690\n#          hostIP: 192.168.10.11\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafkacw-02--nj1-sv1"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafkacw-02--nj1-sv1\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
 pod/kafkacw-02--nj1-sv1 created
 
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
 kafka-14--nj1-sv3     0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
@@ -374,10 +98,8 @@ kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>       
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafkaui-5\nchmod g+w /srv/script/kafkaui-5\ntouch  /srv/script/kafkaui-5/kafkaui-5.start\nchmod ugo+wx  /srv/script/kafkaui-5/kafkaui-5.start\nln -sfr /srv/script/kafkaui-5/kafkaui-5.start /srv/script/kafkaui-5/start\ntee >/srv/script/kafkaui-5/kafkaui-5.start << \'EOFSCRIPT\'\n#\n# Script docker/kafkaui/kafkaui.start for kafkaui-5\n#\n#!/bin/bash\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\nservice ssh restart\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafkaui/kafkaui.run for kafkaui-5\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafkaui-5--nj1-sv1\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafkaui-5--nj1-sv1\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafkaui-5--nj1-sv1\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv1\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.11\n      hostnames:\n      - nj1.sv1\n  hostname: kafkaui-5--nj1-sv1\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafkaui-5\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafkaui-5\n      image: docker.io/library/kafkaui\n      imagePullPolicy: IfNotPresent\n      ports:\n        - name: port22\n          containerPort: 22\n          hostPort: 1561\n          hostIP: 192.168.10.11\n        - name: port8080\n          containerPort: 8080\n          hostPort: 1562\n          hostIP: 192.168.10.11\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafkaui-5--nj1-sv1"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafkaui-5--nj1-sv1\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
 pod/kafkaui-5--nj1-sv1 created
 
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
 kafka-14--nj1-sv3     0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
@@ -388,10 +110,8 @@ kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>       
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
-verbose: bin/x2node  -node:nj1.sn6.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafkaw-04\nchmod g+w /srv/script/kafkaw-04\ntouch  /srv/script/kafkaw-04/kafkaw-04.start\nchmod ugo+wx  /srv/script/kafkaw-04/kafkaw-04.start\nln -sfr /srv/script/kafkaw-04/kafkaw-04.start /srv/script/kafkaw-04/start\ntee >/srv/script/kafkaw-04/kafkaw-04.start << \'EOFSCRIPT\'\n#\n# Script docker/kafkaw/kafkaw.start for kafkaw-04\n#\n# Replaced run.port22:1079\n#!/bin/bash\n# Rsyslog\nsed -i \'s/#Port 22/Port 1079/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafkaw/kafkaw.run for kafkaw-04\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafkaw-04--nj1-sv6\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafkaw-04--nj1-sv6\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafkaw-04--nj1-sv6\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv6\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.61\n      hostnames:\n      - nj1.sv6\n  hostname: kafkaw-04--nj1-sv6\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafkaw-04\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafkaw-04\n      image: docker.io/library/kafkaw\n      imagePullPolicy: IfNotPresent\n#      ports:\n#        - name: port22\n#          containerPort: 1079\n#          hostPort: 1079\n#          hostIP: 192.168.10.61\n#        - name: port8080\n#          containerPort: 1080\n#          hostPort: 1080\n#          hostIP: 192.168.10.61\n#        - name: port8081\n#          containerPort: 1081\n#          hostPort: 1081\n#          hostIP: 192.168.10.61\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafkaw-04--nj1-sv6"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafkaw-04--nj1-sv6\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
 pod/kafkaw-04--nj1-sv6 created
 
-verbose: bin/x2node  -node:nj1.sn6.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
 kafka-14--nj1-sv3     0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
@@ -402,10 +122,8 @@ kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>       
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
-verbose: bin/x2node  -node:nj1.sn7.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/kafkaw-12\nchmod g+w /srv/script/kafkaw-12\ntouch  /srv/script/kafkaw-12/kafkaw-12.start\nchmod ugo+wx  /srv/script/kafkaw-12/kafkaw-12.start\nln -sfr /srv/script/kafkaw-12/kafkaw-12.start /srv/script/kafkaw-12/start\ntee >/srv/script/kafkaw-12/kafkaw-12.start << \'EOFSCRIPT\'\n#\n# Script docker/kafkaw/kafkaw.start for kafkaw-12\n#\n# Replaced run.port22:1129\n#!/bin/bash\n# Rsyslog\nsed -i \'s/#Port 22/Port 1129/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/kafkaw/kafkaw.run for kafkaw-12\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/kafkaw-12--nj1-sv7\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/kafkaw-12--nj1-sv7\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: kafkaw-12--nj1-sv7\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv7\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.71\n      hostnames:\n      - nj1.sv7\n  hostname: kafkaw-12--nj1-sv7\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/kafkaw-12\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: kafkaw-12\n      image: docker.io/library/kafkaw\n      imagePullPolicy: IfNotPresent\n#      ports:\n#        - name: port22\n#          containerPort: 1129\n#          hostPort: 1129\n#          hostIP: 192.168.10.71\n#        - name: port8080\n#          containerPort: 1130\n#          hostPort: 1130\n#          hostIP: 192.168.10.71\n#        - name: port8081\n#          containerPort: 1131\n#          hostPort: 1131\n#          hostIP: 192.168.10.71\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="kafkaw-12--nj1-sv7"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS kafkaw-12--nj1-sv7\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
 pod/kafkaw-12--nj1-sv7 created
 
-verbose: bin/x2node  -node:nj1.sn7.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     0/1     ContainerCreating   0          0s    192.168.10.21   nj1.sv2   <none>           <none>
 kafka-14--nj1-sv3     0/1     ContainerCreating   0          0s    192.168.10.31   nj1.sv3   <none>           <none>
@@ -416,352 +134,68 @@ kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          0s    <none>       
 kafkaw-04--nj1-sv6    0/1     ContainerCreating   0          0s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    0/1     ContainerCreating   0          0s    192.168.10.71   nj1.sv7   <none>           <none>
 
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/minio-02\nchmod g+w /srv/script/minio-02\ntouch  /srv/script/minio-02/minio-02.start\nchmod ugo+wx  /srv/script/minio-02/minio-02.start\nln -sfr /srv/script/minio-02/minio-02.start /srv/script/minio-02/start\ntee >/srv/script/minio-02/minio-02.start << \'EOFSCRIPT\'\n#\n# Script docker/minio/minio.start for minio-02\n#\n# Replaced run.port22:1672\nsed -i \'s/#Port 22/Port 1672/\' /etc/ssh/sshd_config\nservice ssh restart\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\nsleep infinity\n\n\nEOFSCRIPT\n#\n# Script docker/minio/minio.run for minio-02\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/minio-02--nj1-sv1\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/minio-02--nj1-sv1\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: minio-02--nj1-sv1\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv1\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.11\n      hostnames:\n      - nj1.sv1\n  hostname: minio-02--nj1-sv1\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/minio-02\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: data\n     hostPath:\n       path: /data/minio_dir/minio-02\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: minio-02\n      image: docker.io/library/minio\n      imagePullPolicy: IfNotPresent\n#      ports:\n#        - name: port22\n#          containerPort: 1672\n#          hostPort: 1672\n#          hostIP: 192.168.10.11\n#        - name: port9000\n#          containerPort: 1673\n#          hostPort: 1673\n#          hostIP: 192.168.10.11\n#        - name: port9001\n#          containerPort: 1674\n#          hostPort: 1674\n#          hostIP: 192.168.10.11\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: data\n         mountPath: /minio_dir\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="minio-02--nj1-sv1"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS minio-02--nj1-sv1\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
 pod/minio-02--nj1-sv1 created
 
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
 kafka-14--nj1-sv3     1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
 kafka-15--nj1-sv4     1/1     Running             0          6s    192.168.10.41   nj1.sv4   <none>           <none>
 kafka-16--nj1-sv5     1/1     Running             0          6s    192.168.10.51   nj1.sv5   <none>           <none>
-kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.215    nj1.sv1   <none>           <none>
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          6s    <none>          nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
-minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
-rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          1s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          1s    <none>          nj1.sv1   <none>           <none>
 x2w-08--nj1-sv6       0/1     ContainerCreating   0          1s    192.168.10.61   nj1.sv6   <none>           <none>
 x2w-12--nj1-sv7       0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
 
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/rdpui-5\nchmod g+w /srv/script/rdpui-5\ntouch  /srv/script/rdpui-5/rdpui-5.start\nchmod ugo+wx  /srv/script/rdpui-5/rdpui-5.start\nln -sfr /srv/script/rdpui-5/rdpui-5.start /srv/script/rdpui-5/start\ntee >/srv/script/rdpui-5/rdpui-5.start << \'EOFSCRIPT\'\n#\n# Script docker/rdpui/rdpui.start for rdpui-5\n#\n#!/bin/bash\nuseradd rdpusr -u 1082 -U -m -s /bin/bash\n# "unlock" user\n# idiotic alpine locks the user w/o password!!!\nusermod -p \'$1$sCG/p.qT$IWdZx.M9.wCgoWvh5coq/0\' rdpusr\nln -s /app/console /home/rdpusr/rdpui\n# generate keys for ssh\n$(which ssh-keygen) -A\n# idiotic alpine locks the user w/o password!!!\nusermod -p \'$1$sCG/p.qT$IWdZx.M9.wCgoWvh5coq/0\' x2admin\n$(which sshd)\nsed -i \'/imklog/s/^/#/\' /etc/rsyslog.conf\nrsyslogd\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/rdpui/rdpui.run for rdpui-5\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/rdpui-5--nj1-sv1\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/rdpui-5--nj1-sv1\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: rdpui-5--nj1-sv1\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv1\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.11\n      hostnames:\n      - nj1.sv1\n  hostname: rdpui-5--nj1-sv1\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/rdpui-5\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: rdpui-5\n      image: docker.io/library/rdpui\n      imagePullPolicy: IfNotPresent\n      ports:\n        - name: port22\n          containerPort: 22\n          hostPort: 1493\n          hostIP: 192.168.10.11\n        - name: port8080\n          containerPort: 8080\n          hostPort: 1494\n          hostIP: 192.168.10.11\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="rdpui-5--nj1-sv1"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS rdpui-5--nj1-sv1\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
 pod/rdpui-5--nj1-sv1 created
 
-verbose: bin/x2node  -node:nj1.sn1.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
 kafka-14--nj1-sv3     1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
 kafka-15--nj1-sv4     1/1     Running             0          6s    192.168.10.41   nj1.sv4   <none>           <none>
 kafka-16--nj1-sv5     1/1     Running             0          6s    192.168.10.51   nj1.sv5   <none>           <none>
-kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.215    nj1.sv1   <none>           <none>
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          6s    <none>          nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
-minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
-rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          1s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          1s    <none>          nj1.sv1   <none>           <none>
 x2w-08--nj1-sv6       0/1     ContainerCreating   0          1s    192.168.10.61   nj1.sv6   <none>           <none>
 x2w-12--nj1-sv7       0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
 
-verbose: bin/x2node  -node:nj1.sn6.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/x2w-08\nchmod g+w /srv/script/x2w-08\ntouch  /srv/script/x2w-08/x2w-08.start\nchmod ugo+wx  /srv/script/x2w-08/x2w-08.start\nln -sfr /srv/script/x2w-08/x2w-08.start /srv/script/x2w-08/start\ntee >/srv/script/x2w-08/x2w-08.start << \'EOFSCRIPT\'\n#\n# Script docker/x2w/x2w.start for x2w-08\n#\n# Replaced run.port22:1560\nsed -i \'s/#Port 22/Port 1560/\' /etc/ssh/sshd_config\nsed -i \'s/#MaxStartups 10:30:100/MaxStartups 1000/\' /etc/ssh/sshd_config\nservice ssh restart\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/x2w/x2w.run for x2w-08\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/x2w-08--nj1-sv6\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/x2w-08--nj1-sv6\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: x2w-08--nj1-sv6\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv6\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.61\n      hostnames:\n      - nj1.sv6\n  hostname: x2w-08--nj1-sv6\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/x2w-08\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: ssmtp\n     hostPath:\n       path: /etc/ssmtp\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: x2w-08\n      image: docker.io/library/x2w\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1560\n#          hostPort: 1560\n#          hostIP: 192.168.10.61\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: ssmtp\n         mountPath: /etc/ssmtp\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="x2w-08--nj1-sv6"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS x2w-08--nj1-sv6\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
 pod/x2w-08--nj1-sv6 created
 
-verbose: bin/x2node  -node:nj1.sn6.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
 kafka-14--nj1-sv3     1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
 kafka-15--nj1-sv4     1/1     Running             0          6s    192.168.10.41   nj1.sv4   <none>           <none>
 kafka-16--nj1-sv5     1/1     Running             0          6s    192.168.10.51   nj1.sv5   <none>           <none>
-kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.215    nj1.sv1   <none>           <none>
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          6s    <none>          nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
-minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
-rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          1s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          1s    <none>          nj1.sv1   <none>           <none>
 x2w-08--nj1-sv6       0/1     ContainerCreating   0          1s    192.168.10.61   nj1.sv6   <none>           <none>
 x2w-12--nj1-sv7       0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
 
-verbose: bin/x2node  -node:nj1.sn7.bm -cmd:$'#!/bin/bash\n# Generated by dkr\nmkdir -p /srv/script/x2w-12\nchmod g+w /srv/script/x2w-12\ntouch  /srv/script/x2w-12/x2w-12.start\nchmod ugo+wx  /srv/script/x2w-12/x2w-12.start\nln -sfr /srv/script/x2w-12/x2w-12.start /srv/script/x2w-12/start\ntee >/srv/script/x2w-12/x2w-12.start << \'EOFSCRIPT\'\n#\n# Script docker/x2w/x2w.start for x2w-12\n#\n# Replaced run.port22:1826\nsed -i \'s/#Port 22/Port 1826/\' /etc/ssh/sshd_config\nsed -i \'s/#MaxStartups 10:30:100/MaxStartups 1000/\' /etc/ssh/sshd_config\nservice ssh restart\nsleep infinity\n\nEOFSCRIPT\n#\n# Script docker/x2w/x2w.run for x2w-12\n#\nmkdir -p $HOME/k8manifest\nMANIFEST=$HOME/k8manifest/x2w-12--nj1-sv7\nsudo mkdir -p /etc/kubernetes/manifests\nMANIFEST_KUBELET=/etc/kubernetes/manifests/x2w-12--nj1-sv7\ncat > "$MANIFEST" <<\'EOF\'\napiVersion: v1\nkind: Pod\nmetadata:\n  name: x2w-12--nj1-sv7\n  namespace: nj1-4\nspec:\n  nodeName: nj1.sv7\n  dnsPolicy: None\n  dnsConfig:\n    nameservers:\n      - 1.1.1.1\n      - 8.8.8.8\n  hostAliases:\n    - ip: 192.168.10.71\n      hostnames:\n      - nj1.sv7\n  hostname: x2w-12--nj1-sv7\n  hostNetwork: true\n  restartPolicy: Always\n  volumes:\n   - name: dctr\n     hostPath:\n       path: /srv/script/x2w-12\n   - name: localtime\n     hostPath:\n       path: /etc/localtime\n   - name: timezone\n     hostPath:\n       path: /etc/timezone\n   - name: ssmtp\n     hostPath:\n       path: /etc/ssmtp\n   - name: shm\n     emptyDir:\n       medium: Memory\n       sizeLimit: 1Gi\n  containers:\n    - name: x2w-12\n      image: docker.io/library/x2w\n      imagePullPolicy: IfNotPresent\n      securityContext:\n        privileged: true\n#      ports:\n#        - name: port22\n#          containerPort: 1826\n#          hostPort: 1826\n#          hostIP: 192.168.10.71\n      volumeMounts:\n       - name: dctr\n         mountPath: /etc/x2.d/script\n       - name: localtime\n         mountPath: /etc/localtime\n         readOnly: true\n       - name: timezone\n         mountPath: /etc/timezone\n         readOnly: true\n       - name: ssmtp\n         mountPath: /etc/ssmtp\n         readOnly: true\n       - name: shm\n         mountPath: /dev/shm\n      tty: true\n      stdin: true\nEOF\nK8NS=$(sudo kubectl get pod -A | awk \'$2=="x2w-12--nj1-sv7"{print $1; exit}\')\n[ -n "$K8NS" ] && sudo kubectl delete pod -n $K8NS x2w-12--nj1-sv7\nsleep 5\nsudo kubectl apply -f $MANIFEST\n\n' -q:Y
 pod/x2w-12--nj1-sv7 created
 
-verbose: bin/x2node  -node:nj1.sn7.bm -cmd:'sudo kubectl get pods -n nj1-4 -o wide' -q:Y
 NAME                  READY   STATUS              RESTARTS   AGE   IP              NODE      NOMINATED NODE   READINESS GATES
 kafka-13--nj1-sv2     1/1     Running             0          6s    192.168.10.21   nj1.sv2   <none>           <none>
 kafka-14--nj1-sv3     1/1     Running             0          6s    192.168.10.31   nj1.sv3   <none>           <none>
 kafka-15--nj1-sv4     1/1     Running             0          6s    192.168.10.41   nj1.sv4   <none>           <none>
 kafka-16--nj1-sv5     1/1     Running             0          6s    192.168.10.51   nj1.sv5   <none>           <none>
-kafkacw-02--nj1-sv1   1/1     Running             0          6s    192.168.10.11   nj1.sv1   <none>           <none>
-kafkaui-5--nj1-sv1    1/1     Running             0          6s    10.244.0.215    nj1.sv1   <none>           <none>
+kafkacw-02--nj1-sv1   0/1     ContainerCreating   0          6s    192.168.10.11   nj1.sv1   <none>           <none>
+kafkaui-5--nj1-sv1    0/1     ContainerCreating   0          6s    <none>          nj1.sv1   <none>           <none>
 kafkaw-04--nj1-sv6    1/1     Running             0          6s    192.168.10.61   nj1.sv6   <none>           <none>
 kafkaw-12--nj1-sv7    1/1     Running             0          6s    192.168.10.71   nj1.sv7   <none>           <none>
-minio-02--nj1-sv1     0/1     ContainerCreating   0          0s    192.168.10.11   nj1.sv1   <none>           <none>
-rdpui-5--nj1-sv1      0/1     ContainerCreating   0          0s    <none>          nj1.sv1   <none>           <none>
+minio-02--nj1-sv1     0/1     ContainerCreating   0          1s    192.168.10.11   nj1.sv1   <none>           <none>
+rdpui-5--nj1-sv1      0/1     ContainerCreating   0          1s    <none>          nj1.sv1   <none>           <none>
 x2w-08--nj1-sv6       0/1     ContainerCreating   0          1s    192.168.10.61   nj1.sv6   <none>           <none>
 x2w-12--nj1-sv7       0/1     ContainerCreating   0          1s    192.168.10.71   nj1.sv7   <none>           <none>
 
-verbose: bin/x2node  -node:$'dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkacw-02|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.minio-02|dev.rdpui-5|dev.x2w-08|dev.x2w-12' -cmd:'cat /etc/x2.d/nodename' -q:Y >&5
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkausr@dev.kafka-13 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkausr@dev.kafka-14 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkausr@dev.kafka-15 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkausr@dev.kafka-16 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkausr@dev.kafkacw-02 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkausr@dev.kafkaui-5 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkawrkr@dev.kafkaw-04 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkawrkr@dev.kafkaw-12 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  minioadmin@dev.minio-02 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  rdpusr@dev.rdpui-5 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  x2w@dev.x2w-08 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  x2w@dev.x2w-12 bash
-verbose: nj1-4.kafka-1:alive
-verbose: nj1-4.kafka-2:alive
-verbose: nj1-4.kafka-3:alive
-verbose: nj1-4.kafka-4:alive
-verbose: nj1-4.kafkacw-1:alive
-verbose: nj1-4.kafkaui-1:alive
-verbose: nj1-4.kafkaw-1:alive
-verbose: nj1-4.kafkaw-2:alive
-verbose: nj1-4.minio-1:dead
-verbose: nj1-4.rdpui-1:dead
-verbose: nj1-4.x2w-1:dead
-verbose: nj1-4.x2w-2:dead
-verbose: bin/x2node  -node:$'dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkacw-02|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.minio-02|dev.rdpui-5|dev.x2w-08|dev.x2w-12' -cmd:'cat /etc/x2.d/nodename' -q:Y >&5
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkausr@dev.kafka-13 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkausr@dev.kafka-14 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkausr@dev.kafka-15 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkausr@dev.kafka-16 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkausr@dev.kafkacw-02 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkausr@dev.kafkaui-5 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkawrkr@dev.kafkaw-04 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  kafkawrkr@dev.kafkaw-12 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  minioadmin@dev.minio-02 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  rdpusr@dev.rdpui-5 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  x2w@dev.x2w-08 bash
-verbose: echo 'cat /etc/x2.d/nodename' | ssh  x2w@dev.x2w-12 bash
-verbose: nj1-4.kafka-1:alive
-verbose: nj1-4.kafka-2:alive
-verbose: nj1-4.kafka-3:alive
-verbose: nj1-4.kafka-4:alive
-verbose: nj1-4.kafkacw-1:alive
-verbose: nj1-4.kafkaui-1:alive
-verbose: nj1-4.kafkaw-1:alive
-verbose: nj1-4.kafkaw-2:alive
-verbose: nj1-4.minio-1:alive
-verbose: nj1-4.rdpui-1:alive
-verbose: nj1-4.x2w-1:alive
-verbose: nj1-4.x2w-2:alive
-verbose: bin/x2rel  -product:tap -node:$'dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkacw-02|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.minio-02|dev.rdpui-5|dev.x2w-08|dev.x2w-12' -upload:Y -create:Y -build:N
-x2rel.info  release:temp/release/tap.2026-02-18.797e50f90  comment:"release completed"
-x2rel.release  product:tap  nodes:"(dev.kafka-13|dev.kafka-14|dev.kafka-15|dev.kafka-16|dev.kafkacw-02|dev.kafkaui-5|dev.kafkaw-04|dev.kafkaw-12|dev.minio-02|dev.rdpui-5|dev.x2w-08|dev.x2w-12)"  filename:tap.2026-02-18.797e50f90
-x2node.info node:dev.kafka-13  cmd:"echo 'mkdir -p reldir/tap.2026-02-18.797e50f90' | ssh  kafkausr@dev.kafka-13 bash"
-x2node.info node:dev.kafka-14  cmd:"echo 'mkdir -p reldir/tap.2026-02-18.797e50f90' | ssh  kafkausr@dev.kafka-14 bash"
-x2node.info node:dev.kafka-15  cmd:"echo 'mkdir -p reldir/tap.2026-02-18.797e50f90' | ssh  kafkausr@dev.kafka-15 bash"
-x2node.info node:dev.kafka-16  cmd:"echo 'mkdir -p reldir/tap.2026-02-18.797e50f90' | ssh  kafkausr@dev.kafka-16 bash"
-x2node.info node:dev.kafkacw-02  cmd:"echo 'mkdir -p reldir/tap.2026-02-18.797e50f90' | ssh  kafkausr@dev.kafkacw-02 bash"
-x2node.info node:dev.kafkaui-5  cmd:"echo 'mkdir -p reldir/tap.2026-02-18.797e50f90' | ssh  kafkausr@dev.kafkaui-5 bash"
-x2node.info node:dev.kafkaw-04  cmd:"echo 'mkdir -p reldir/tap.2026-02-18.797e50f90' | ssh  kafkawrkr@dev.kafkaw-04 bash"
-x2node.info node:dev.kafkaw-12  cmd:"echo 'mkdir -p reldir/tap.2026-02-18.797e50f90' | ssh  kafkawrkr@dev.kafkaw-12 bash"
-x2node.info node:dev.minio-02  cmd:"echo 'mkdir -p reldir/tap.2026-02-18.797e50f90' | ssh  minioadmin@dev.minio-02 bash"
-x2node.info node:dev.rdpui-5  cmd:"echo 'mkdir -p reldir/tap.2026-02-18.797e50f90' | ssh  rdpusr@dev.rdpui-5 bash"
-x2node.info node:dev.x2w-08  cmd:"echo 'mkdir -p reldir/tap.2026-02-18.797e50f90' | ssh  x2w@dev.x2w-08 bash"
-x2node.info node:dev.x2w-12  cmd:"echo 'mkdir -p reldir/tap.2026-02-18.797e50f90' | ssh  x2w@dev.x2w-12 bash"
-x2node.info  ncmd:12  completed:12  success:12  failure:0
-omcli.info comment:"Uploading Driver Config"
-verbose: bin/x2node  -node:dev.kafkaw-04 -rsync_put:Y -local:temp/omcli/kafka-latency.yaml.r9RooS -remote:kafka-latency.yaml -cmd:'' -q:Y
-<f+++++++++ kafka-latency.yaml.r9RooS
-omcli.info comment:"Uploading Load Config"
-verbose: bin/x2node  -node:dev.kafkaw-04 -rsync_put:Y -local:temp/omcli/max-rate-80-topics-1-partition-100b.yaml.4ynoxP -remote:max-rate-80-topics-1-partition-100b.yaml -cmd:'' -q:Y
-<f+++++++++ max-rate-80-topics-1-partition-100b.yaml.4ynoxP
-omcli.info comment:"Starting Taps"
-verbose: bin/omcli  -selector:$'nj1-4.kafka-1|nj1-4.kafka-2|nj1-4.kafka-3|nj1-4.kafka-4|nj1-4.rdp-1|nj1-4.rdp-2|nj1-4.rdp-3|nj1-4.rdp-4|nj1-4.x2-0|nj1-4.x2-1|nj1-4.x2-2|nj1-4.x2-3' -omplat:ak -start_tap:Y
-<f+++++++++ nj1-4.kafka-1
-dev.kafka-13:script
-<f+++++++++ nj1-4.kafka-2
-dev.kafka-14:script
-<f+++++++++ nj1-4.kafka-3
-dev.kafka-15:script
-<f+++++++++ nj1-4.kafka-4
-dev.kafka-16:script
-script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:start_tap 
-script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:stop 
-No PID file found, nothing to stop.
-script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:start 
-fs.suid_dumpable = 1
-atf_snf started pid:313
-script:info  node:dev.kafka-14 omnode:nj1-4.kafka-2 option:start_tap 
-script:info  node:dev.kafka-14 omnode:nj1-4.kafka-2 option:stop 
-No PID file found, nothing to stop.
-script:info  node:dev.kafka-14 omnode:nj1-4.kafka-2 option:start 
-fs.suid_dumpable = 1
-atf_snf started pid:316
-script:info  node:dev.kafka-15 omnode:nj1-4.kafka-3 option:start_tap 
-script:info  node:dev.kafka-15 omnode:nj1-4.kafka-3 option:stop 
-No PID file found, nothing to stop.
-script:info  node:dev.kafka-15 omnode:nj1-4.kafka-3 option:start 
-fs.suid_dumpable = 1
-atf_snf started pid:312
-script:info  node:dev.kafka-16 omnode:nj1-4.kafka-4 option:start_tap 
-script:info  node:dev.kafka-16 omnode:nj1-4.kafka-4 option:stop 
-No PID file found, nothing to stop.
-script:info  node:dev.kafka-16 omnode:nj1-4.kafka-4 option:start 
-fs.suid_dumpable = 1
-atf_snf started pid:319
-omcli.info comment:"Restarting Workers"
-verbose: bin/omcli  -selector:$'nj1-4.kafkaw-1|nj1-4.kafkaw-2' -omplat:ak -start:Y
-<f+++++++++ nj1-4.kafkaw-1
-dev.kafkaw-04:script
-<f+++++++++ nj1-4.kafkaw-2
-dev.kafkaw-12:script
-script:info  node:dev.kafkaw-04 omnode:nj1-4.kafkaw-1 option:start 
-Stopping kafka_worker...
-====Was not running
-..........
-dev.kafkaw-04:success
-script:info  node:dev.kafkaw-12 omnode:nj1-4.kafkaw-2 option:start 
-Stopping kafka_worker...
-====Was not running
-..........
-dev.kafkaw-12:success
-omcli.info comment:"Restarting Brokers"
-verbose: bin/omcli  -selector:$'nj1-4.kafka-1|nj1-4.kafka-2|nj1-4.kafka-3|nj1-4.kafka-4|nj1-4.rdp-1|nj1-4.rdp-2|nj1-4.rdp-3|nj1-4.rdp-4|nj1-4.x2-0|nj1-4.x2-1|nj1-4.x2-2|nj1-4.x2-3' -omplat:ak -stop:Y
-dev.kafka-13:script
-dev.kafka-14:script
-dev.kafka-15:script
-dev.kafka-16:script
-script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:stop 
-====Was not running
-script:info  node:dev.kafka-14 omnode:nj1-4.kafka-2 option:stop 
-====Was not running
-script:info  node:dev.kafka-15 omnode:nj1-4.kafka-3 option:stop 
-====Was not running
-script:info  node:dev.kafka-16 omnode:nj1-4.kafka-4 option:stop 
-====Was not running
-verbose: bin/omcli  -selector:$'nj1-4.kafka-1|nj1-4.kafka-2|nj1-4.kafka-3|nj1-4.kafka-4|nj1-4.rdp-1|nj1-4.rdp-2|nj1-4.rdp-3|nj1-4.rdp-4|nj1-4.x2-0|nj1-4.x2-1|nj1-4.x2-2|nj1-4.x2-3' -omplat:ak -start_clean:Y
-dev.kafka-13:script
-dev.kafka-14:script
-dev.kafka-15:script
-dev.kafka-16:script
-script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:start_clean 
-====Was not running
-Formatting data directory /mnt/data-4/nj1-4 with metadata.version 3.9-IV0.
-Formatting data directory /mnt/data-2/nj1-4 with metadata.version 3.9-IV0.
-Formatting metadata directory /mnt/data-1/nj1-4 with metadata.version 3.9-IV0.
-Formatting data directory /mnt/data-3/nj1-4 with metadata.version 3.9-IV0.
-.
-dev.kafka-13:success
-script:info  node:dev.kafka-14 omnode:nj1-4.kafka-2 option:start_clean 
-====Was not running
-Formatting data directory /mnt/data-2/nj1-4 with metadata.version 3.9-IV0.
-Formatting metadata directory /mnt/data-1/nj1-4 with metadata.version 3.9-IV0.
-Formatting data directory /mnt/data-3/nj1-4 with metadata.version 3.9-IV0.
-.
-dev.kafka-14:success
-script:info  node:dev.kafka-15 omnode:nj1-4.kafka-3 option:start_clean 
-====Was not running
-Formatting data directory /mnt/data-4/nj1-4 with metadata.version 3.9-IV0.
-Formatting data directory /mnt/data-2/nj1-4 with metadata.version 3.9-IV0.
-Formatting metadata directory /mnt/data-1/nj1-4 with metadata.version 3.9-IV0.
-Formatting data directory /mnt/data-3/nj1-4 with metadata.version 3.9-IV0.
-.
-dev.kafka-15:success
-script:info  node:dev.kafka-16 omnode:nj1-4.kafka-4 option:start_clean 
-====Was not running
-Formatting data directory /mnt/data-2/nj1-4 with metadata.version 3.9-IV0.
-Formatting metadata directory /mnt/data-1/nj1-4 with metadata.version 3.9-IV0.
-.
-dev.kafka-16:success
-omcli.info comment:"Restarting Kcat"
-verbose: bin/omcli  -selector:$'nj1-4.x2w-1|nj1-4.x2w-2' -omplat:ak -start:Y
-<f+++++++++ nj1-4.x2w-1
-dev.x2w-08:script
-<f+++++++++ nj1-4.x2w-2
-dev.x2w-12:script
-omcli.info comment:"Restarting Gui"
-verbose: bin/omcli  -selector:$'nj1-4.kafkaui-1|nj1-4.rdpui-1|nj1-4.x2ui-1' -omplat:ak -start:Y
-<f+++++++++ nj1-4.kafkaui-1
-dev.kafkaui-5:script
-<f+++++++++ nj1-4.rdpui-1
-dev.rdpui-5:script
-script:info  node:dev.kafkaui-5 omnode:nj1-4.kafkaui-1 option:start 
-Stopping kafkaui...
-====Was not running
-Starting kafkaui...
-script:info  node:dev.rdpui-5 omnode:nj1-4.rdpui-1 option:start 
-Stopping rdpui...
-====Was not running
-Starting rdpui...
-omcli.info omdriver:kafka-latency  omload:max-rate-80-topics-1-partition-100b  comment:"running test"
-verbose: bin/x2node  -node:dev.kafkaw-04 -cmd:$'find . -maxdepth 1 -name "*.json" | xargs rm 1>/dev/null 2>/dev/null'
-x2node.info node:dev.kafkaw-04  cmd:"echo $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null' | ssh  kafkawrkr@dev.kafkaw-04 bash"
-x2node.error node:dev.kafkaw-04  status:123  cmd:"echo $'find . -maxdepth 1 -name \"*.json\" | xargs rm 1>/dev/null 2>/dev/null' | ssh  kafkawrkr@dev.kafkaw-04 bash"
-x2node.info  ncmd:1  completed:1  success:0  failure:1
-verbose: bash  -c 'ssh -q kafkawrkr@dev.kafkaw-04 bin/benchmark --drivers kafka-latency.yaml max-rate-80-topics-1-partition-100b.yaml' >&5
-17:25:21.375 [main] INFO Benchmark - Using default worker file workers.yaml
-17:25:21.384 [main] INFO Benchmark - Reading workers list from workers.yaml
-17:25:21.421 [main] INFO Benchmark - Starting benchmark with config: {
-"drivers" : [ "kafka-latency.yaml" ],
-"workers" : [ "http://nj1-4.kafkaw-1.ctrl-0:1080", "http://nj1-4.kafkaw-2.ctrl-0:1130" ],
-"workersFile" : "/opt/benchmark/workers.yaml",
-"workloads" : [ "max-rate-80-topics-1-partition-100b.yaml" ],
-"output" : null
-}
-17:25:21.433 [main] INFO Benchmark - Workloads: {
-"max-rate-80-topics-1-partition-100b" : {
-"name" : "max-rate-80-topics-1-partition-100b",
-"topics" : 80,
-"partitionsPerTopic" : 1,
-"keyDistributor" : "NO_KEY",
-"messageSize" : 100,
-"useRandomizedPayloads" : true,
-"randomBytesRatio" : 0.5,
-"randomizedPayloadPoolSize" : 1000,
-"payloadFile" : null,
-"subscriptionsPerTopic" : 1,
-"producersPerTopic" : 1,
-"consumerPerSubscription" : 1,
-"producerRate" : 10000000,
-"consumerBacklogSizeGB" : 0,
-"backlogDrainRatio" : 1.0,
-"testDurationMinutes" : 1,
-"warmupDurationMinutes" : 1
-}
-}
-17:25:21.677 [main] INFO DistributedWorkersEnsemble - Workers list - producers: [http://nj1-4.kafkaw-1.ctrl-0:1080]
-17:25:21.678 [main] INFO DistributedWorkersEnsemble - Workers list - consumers: http://nj1-4.kafkaw-2.ctrl-0:1130
-17:25:21.680 [main] INFO Benchmark - --------------- WORKLOAD : max-rate-80-topics-1-partition-100b --- DRIVER : kafka-latency---------------
-17:25:44.202 [main] INFO WorkloadGenerator - Created 80 topics in 22139.313676 ms
-17:25:44.493 [main] INFO WorkloadGenerator - Created 80 consumers in 283.424724 ms
-17:25:44.722 [main] INFO WorkloadGenerator - Created 80 producers in 229.298691 ms
-17:25:44.722 [main] INFO WorkloadGenerator - Waiting for consumers to be ready
-17:25:44.920 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 78, Received: 0
-17:25:46.923 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 80, Received: 0
-17:25:48.926 [main] INFO WorkloadGenerator - Waiting for topics to be ready -- Sent: 80, Received: 80
-17:25:48.926 [main] INFO WorkloadGenerator - All consumers are ready
-17:25:48.995 [main] INFO WorkloadGenerator - ----- Starting warm-up traffic (1m) ------
-17:26:04.136 [main] INFO WorkloadGenerator - Pub rate 1374825.1 msg/s / 131.1 MB/s | Pub err     0.0 err/s | Cons rate 1305464.0 msg/s / 124.5 MB/s | Backlog: 1041.0 K | Pub Latency (ms) avg: 2448.9 - 50%: 1220.8 - 99%: 11659.2 - 99.9%: 13221.2 - Max: 13618.1 | Pub Delay Latency (us) avg: 1063296.6 - 50%: 516151.0 - 99%: 5744095.0 - 99.9%: 5792319.0 - Max: 10775743.0
-17:26:15.131 [main] INFO WorkloadGenerator - Pub rate 910712.6 msg/s / 86.9 MB/s | Pub err     0.0 err/s | Cons rate 1016204.6 msg/s / 96.9 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 13001.6 - 50%: 13439.2 - 99%: 23163.1 - 99.9%: 23469.3 - Max: 23573.5 | Pub Delay Latency (us) avg: 3702113.0 - 50%: 540407.0 - 99%: 12489855.0 - 99.9%: 20099199.0 - Max: 20107135.0
-17:26:27.067 [main] INFO WorkloadGenerator - Pub rate 1733388.0 msg/s / 165.3 MB/s | Pub err     0.0 err/s | Cons rate 1728044.4 msg/s / 164.8 MB/s | Backlog:  0.0 K | Pub Latency (ms) avg: 17721.2 - 50%: 18270.2 - 99%: 31086.3 - 99.9%: 32039.8 - Max: 34892.5 | Pub Delay Latency (us) avg: 10393747.0 - 50%: 10793727.0 - 99%: 28666367.0 - 99.9%: 31298559.0 - Max: 31318143.0
-17:26:49.400 [main] INFO WorkloadGenerator - Pub rate 678890.5 msg/s / 64.7 MB/s | Pub err     0.0 err/s | Cons rate 636844.0 msg/s / 60.7 MB/s | Backlog: 876.7 K | Pub Latency (ms) avg: 10394.3 - 50%: 9471.6 - 99%: 32476.3 - 99.9%: 38035.2 - Max: 38187.3 | Pub Delay Latency (us) avg: 26769639.5 - 50%: 28651903.0 - 99%: 38795519.0 - 99.9%: 38857983.0 - Max: 38937855.0
-17:26:49.711 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 11087.4 - 50%: 9936.4 - 95%: 26489.7 - 99%: 30753.5 - 99.9%: 36701.4 - 99.99%: 42862.3 - Max: 42884.6 | Pub Delay (us)  avg: 12079096.0 - 50%: 5751263.0 - 95%: 35934207.0 - 99%: 38802687.0 - 99.9%: 45199103.0 - 99.99%: 45552383.0 - Max: 50876159.0
-17:26:50.131 [main] INFO WorkloadGenerator - ----- Starting benchmark traffic (1m)------
-17:27:06.705 [main] INFO WorkloadGenerator - Pub rate 1273287.0 msg/s / 121.4 MB/s | Pub err     0.0 err/s | Cons rate 1324134.9 msg/s / 126.3 MB/s | Backlog: 35.0 K | Pub Latency (ms) avg: 18422.4 - 50%: 17739.1 - 99%: 37562.1 - 99.9%: 44111.1 - Max: 44153.6 | Pub Delay Latency (us) avg: 39481383.4 - 50%: 38782975.0 - 99%: 59943679.0 - 99.9%: 60000255.0 - Max: 60000255.0
-17:27:21.730 [main] INFO WorkloadGenerator - Pub rate 1095592.3 msg/s / 104.5 MB/s | Pub err     0.0 err/s | Cons rate 995844.5 msg/s / 95.0 MB/s | Backlog: 1533.8 K | Pub Latency (ms) avg: 20272.3 - 50%: 20320.8 - 99%: 42470.7 - 99.9%: 45519.1 - Max: 48882.9 | Pub Delay Latency (us) avg: 50156116.7 - 50%: 51478783.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
-17:27:32.408 [main] INFO WorkloadGenerator - Pub rate 1780036.6 msg/s / 169.8 MB/s | Pub err     0.0 err/s | Cons rate 1916453.1 msg/s / 182.8 MB/s | Backlog: 80.2 K | Pub Latency (ms) avg: 19716.6 - 50%: 21354.1 - 99%: 39873.3 - 99.9%: 49228.8 - Max: 49902.6 | Pub Delay Latency (us) avg: 58526285.3 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
-17:27:47.467 [main] INFO WorkloadGenerator - Pub rate 913323.6 msg/s / 87.1 MB/s | Pub err     0.0 err/s | Cons rate 905841.6 msg/s / 86.4 MB/s | Backlog: 192.9 K | Pub Latency (ms) avg: 14755.3 - 50%: 15733.1 - 99%: 38845.7 - 99.9%: 45207.0 - Max: 45253.4 | Pub Delay Latency (us) avg: 59964222.9 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
-17:28:03.808 [main] INFO WorkloadGenerator - Pub rate 1325866.2 msg/s / 126.4 MB/s | Pub err     0.0 err/s | Cons rate 1332789.9 msg/s / 127.1 MB/s | Backlog: 79.4 K | Pub Latency (ms) avg: 15517.8 - 50%: 16848.9 - 99%: 32275.5 - 99.9%: 37781.2 - Max: 38692.6 | Pub Delay Latency (us) avg: 60000128.0 - 50%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - Max: 60000255.0
-17:28:04.238 [main] INFO WorkloadGenerator - ----- Aggregated Pub Latency (ms) avg: 17723.2 - 50%: 17340.7 - 95%: 32933.8 - 99%: 40256.8 - 99.9%: 46535.2 - 99.99%: 49367.3 - Max: 49902.6 | Pub Delay (us)  avg: 54569905.0 - 50%: 60000255.0 - 95%: 60000255.0 - 99%: 60000255.0 - 99.9%: 60000255.0 - 99.99%: 60000255.0 - Max: 60000255.0
-17:28:09.405 [main] INFO Benchmark - Writing test result into max-rate-80-topics-1-partition-100b-kafka-latency-2026-02-18-17-28-09.json
-omcli.info log:test/om/nj1-4/ak/max-rate-80-topics-1-partition-100b-kafka-latency-2026-02-18-17-28-09.log  comment:"Collecting Logs"
-omcli.info comment:"Adding omrun Record"
-verbose: bin/x2node  -node:dev.kafkaw-04 -cmd:$'find . -maxdepth 1 -name "*.json"' -q:Y >&5
-omdb.omrun  omrun:nj1-4/ak/max-001  name:max-rate-80-topics-1-partition-100b.kafka-latency.2026-02-18-17-28-09
-omcli.info comment:"Stopping Tap"
-verbose: bin/omcli  -selector:$'nj1-4.kafka-1|nj1-4.kafka-2|nj1-4.kafka-3|nj1-4.kafka-4|nj1-4.rdp-1|nj1-4.rdp-2|nj1-4.rdp-3|nj1-4.rdp-4|nj1-4.x2-0|nj1-4.x2-1|nj1-4.x2-2|nj1-4.x2-3' -omplat:ak -stop_tap:Y
-script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:stop_tap 
-script:info  node:dev.kafka-13 omnode:nj1-4.kafka-1 option:stop 
-atf_snf pid:313 is running
-atf_snf pid:313 stopped
-script:info  node:dev.kafka-14 omnode:nj1-4.kafka-2 option:stop_tap 
-script:info  node:dev.kafka-14 omnode:nj1-4.kafka-2 option:stop 
-atf_snf pid:316 is running
-atf_snf pid:316 stopped
-script:info  node:dev.kafka-15 omnode:nj1-4.kafka-3 option:stop_tap 
-script:info  node:dev.kafka-15 omnode:nj1-4.kafka-3 option:stop 
-atf_snf pid:312 is running
-atf_snf pid:312 stopped
-script:info  node:dev.kafka-16 omnode:nj1-4.kafka-4 option:stop_tap 
-script:info  node:dev.kafka-16 omnode:nj1-4.kafka-4 option:stop 
-atf_snf pid:319 is running
-atf_snf pid:319 stopped
-omcli.info comment:"Collecting Results"
-verbose: bin/x2node  -node:dev.kafkaw-04 -rsync_get:Y -rsync_opts:' --remove-source-files ' -local:test/om/nj1-4/ak/. -remote:$'*.json' -cmd:''
-x2node.info node:dev.kafkaw-04  cmd:"rsync  --remove-source-files  kafkawrkr@dev.kafkaw-04:$'*.json' test/om/nj1-4/ak/."
-x2node.info  ncmd:1  completed:1  success:1  failure:0
+omcli.error  try_cnt

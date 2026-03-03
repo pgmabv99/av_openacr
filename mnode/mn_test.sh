@@ -21,17 +21,15 @@
 
 
 # // === This is a simple test script to run Kafka producer performance test against x2 lost req ?? ===
-# mn_brokers.sh
-# sleep 5
-# mn_perf.sh
-# sleep 2
-# mn_collect.sh
+source mn_set.sh
+mn_brokers.sh
+sleep 5
+mn_perf.sh
+sleep 2
+mn_collect.sh
 
-# exit
+exit
 
-# atf_snf -kapi -kafka_buf_dump \
-#     -in_file:/home/avorovich/av_openacr/temp/atf_snf_80.pcap -dir:80 --timestamp_log:N  \
-#    > /home/avorovich/av_openacr/temp/atf_snf.log 2>&1
 
 
 echo "====================starting kafka connector test"
@@ -45,3 +43,10 @@ omcli  nj1-4.kafkacw-1  -start_clean  -omplat:$omplat
 # omcli  nj1-4.kafkacw-1  -start_clean  -omplat:$omplat -omrun_connect:apache-iceberg-sink.dflt -omrun_worker:kafka-connect.dflt 
 
 mn_collect.sh
+
+exit
+test=branch_smallb
+test=master_smallb
+atf_snf -kapi -kafka_buf_dump \
+    -in_file:/home/avorovich/av_openacr/temp/atf_snf_$test.pcap -dir:$test --timestamp_log:N  \
+   > /home/avorovich/av_openacr/temp/atf_snf_$test.log 2>&1

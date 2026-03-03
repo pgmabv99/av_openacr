@@ -64,6 +64,13 @@ $ git diff HEAD -- data/ | grep '^+[^+]'
 ```
 acr_ed -create -finput -target:omcli ssimfile:x2db.nodeintf
 acr_ed -create -finput -target:omcli  -ssimfile:x2db.nodeintf -write 
+this should eb called
+LoadTuplesMaybe(algo::strptr root, bool recursive)
+!!!!!
+acr -merge -write <<EOF 
+dmmeta.floadtuples  field:command.atf_snf.in  comment:""
+EOF
+
 ## Visuals
 
 ```bash
@@ -308,7 +315,7 @@ docker ps --format "table {{.Names}}\t{{.Image}}\t{{.CreatedAt}}\t{{.Status}}" |
 docker restart user-avorovich
 
 
-# private keys 
+# private keys  and ssh clean
 x2ssh clean
 x2ssh start
 sed -i 's/id_rsa/algox2_av/g'  ~/.ssh/config.d/*
@@ -434,38 +441,56 @@ omdb.omenv  omenv:nj1-4  omenvtype:dev  owner:avorovich  comment:""
     omdb.omhost  omhost:nj1-4.x2ui-1.ext-0   ip:192.168.104.1  comment:""
 
 ```
-# OMENV SSIM
 
 
-  dmmeta.ctype  ctype:atf_snf.FOmenv  comment:"include Omenv from ssimfile"
-    dmmeta.field  field:atf_snf.FDb.omenv  acr.rowid:31      arg:atf_snf.FOmenv  reftype:Lary  dflt:""  comment:""
-      dmmeta.finput  field:atf_snf.FDb.omenv  extrn:N  update:N  strict:Y  comment:""
+# ACR  strings cheat
 
-    dmmeta.field  field:atf_snf.FDb.ind_omenv  acr.rowid:32      arg:atf_snf.FOmenv  reftype:Thash  dflt:""  comment:""
-      dmmeta.thash  field:atf_snf.FDb.ind_omenv  hashfld:omdb.Omenv.omenv  unique:Y  comment:""
-      dmmeta.xref  field:atf_snf.FDb.ind_omenv  acr.rowid:17      inscond:true  via:""
+```
+        tempstr broker_ports("-broker_ports:");
+        ind_beg(algo::Sep_curs,token,omnode.p_omenv->bootstrap,','){
+            tempstr broker_port(Trimmed(Pathcomp(token,":LR")));
+            prlog("omcli_info"
+                  << Keyval("omnode",omnode.omnode)
+                  << Keyval("broker_port",broker_port)
+                  );
+            broker_ports<<broker_port<<",";
+        }ind_end;
+```
 
-    dmmeta.field  field:atf_snf.FOmenv.base  acr.rowid:0       arg:omdb.Omenv  reftype:Base  dflt:""  comment:""
-    dmmeta.ctypelen  ctype:atf_snf.FOmenv  len:320  alignment:8  padbytes:0  plaindata:N
 
-============
+# notes on tap
 
-  dmmeta.ctype  ctype:atf_lat.FOmenv  comment:""
-    dmmeta.field  field:atf_lat.FDb.omenv  acr.rowid:2       arg:atf_lat.FOmenv  reftype:Lary  dflt:""  comment:""
-      dmmeta.finput  field:atf_lat.FDb.omenv  extrn:N  update:N  strict:Y  comment:""
+-master produce pcap master_smallb is read by branch fiel locally
+-remote run rbanch produces pos/neg gaps
 
-    dmmeta.field  field:atf_lat.FDb.p_omenv    acr.rowid:3       arg:atf_lat.FOmenv  reftype:Ptr    dflt:""  comment:""
-    dmmeta.field  field:atf_lat.FDb.ind_omenv  acr.rowid:5       arg:atf_lat.FOmenv  reftype:Thash  dflt:""  comment:""
-      dmmeta.thash  field:atf_lat.FDb.ind_omenv  hashfld:omdb.Omenv.omenv  unique:Y  comment:""
-      dmmeta.xref  field:atf_lat.FDb.ind_omenv  acr.rowid:0       inscond:true  via:""
+# atf_comp java tree
 
-    dmmeta.field  field:atf_lat.FOmenv.base  acr.rowid:0       arg:omdb.Omenv  reftype:Base  dflt:""  comment:""
-    dmmeta.ctypelen  ctype:atf_lat.FOmenv  len:336  alignment:8  padbytes:0  plaindata:N
+-under tree of atf_comp processes
 
-  dmmeta.ctype  ctype:atf_lat.FOmnode  comment:""
-    dmmeta.field  field:atf_lat.FDb.omnode  acr.rowid:6       arg:atf_lat.FOmnode  reftype:Lary  dflt:""  comment:""
-      dmmeta.finput  field:atf_lat.FDb.omnode  extrn:N  update:N  strict:Y  comment:""
+    avorovi+ 1308881 1297274  0 19:06 pts/6    00:00:00      |   |   \_ atf_comp atf_exp.KafkaPubPart10x8KB
+310660 1297274      |   |   \_ atf_comp atf_exp.KafkaPubPart10x8KB
+    1310671 1310660      |   |       \_ bash
+    1310674 1310671      |   |           \_ build/release/atf_exp -bindir:build/release -comptest:atf_exp.KafkaPubPart10x8KB -timeout:60
+    1310675 1310674      |   |               \_ build/release/x2sup -i -initdir:temp/atf_comp/atf_exp.KafkaPubPart10x8KB -bindir:build/release...
+    1310690 1310675      |   |               |   \_ .. 
+    1311207 1310674      |   |               \_ bash -c /opt/kafka/current/bin/kafka-console-consumer.sh  --bootstrap-server ............
+    1311208 1311207      |   |               |   \_ /usr/lib/jvm/java-17-openjdk-amd64/bin/java -Xmx512M -server -XX:+UseG1GC -XX:MaxGCPauseMillis=20 ...........
+    1311209 1311207      |   |               |   \_ wc -l
 
-    dmmeta.field  field:atf_lat.FOmenv.c_omnode  acr.rowid:1       arg:atf_lat.FOmnode  reftype:Ptrary  dflt:""  comment:""
-      dmmeta.ptrary  field:atf_lat.FOmenv.c_omnode  unique:Y  heaplike:N
-      dmmeta.xref  field:atf_lat.FOmenv.c_omnode  acr.rowid:1       inscond:true  via:atf_lat.FDb.ind_omenv/omdb.Omnode.omenv
+-under pid =1
+    1311208       1 /usr/lib/jvm/java-17-openjdk-amd64/bin/java -Xmx512M -server -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35 -XX:+ExplicitGCInvokesConcurrent -XX:MaxInlineLevel=15 -Djava.awt.headless=true -Dcom.sun.management.jmxremote=true -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dkafka.logs.dir=/opt/kafka/current/bin/../log
+
+# gitlab debugs
+
+$ x2node -node:dev.gitlab-runner-7
+gitlab-runner@gitlab-runner-7:~$ ls
+builds  cache  jmx_prometheus_javaagent.jar  kafka
+gitlab-runner@gitlab-runner-7:~$ cd builds/R7CQekreq/0/algornd/arnd
+gitlab-runner@gitlab-runner-7:~/builds/R7CQekreq/0/algornd/arnd$ source ./conf/alexei/
+bash_profile     gnome-customize  minttyrc         
+gitlab-runner@gitlab-runner-7:~/builds/R7CQekreq/0/algornd/arnd$ source ./conf/alexei/bash_profile 
+bash: bin/acr_compl: No such file or directory
+[0 Mar 02 15:16:18] gitlab-runner@gitlab-runner-7:~/builds/R7CQekreq/0/algornd/arnd 
+$ ai
+abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:gcache
+report.abt  n_target:123  time:00:00:00.081780348  hitrate:0%  pch_hitrate:0%  n_warn:0  n_err:0  n_install:123

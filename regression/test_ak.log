@@ -1,5 +1,5 @@
 ==========================
-atf_snf.info  host:nj1.sv5
+atf_snf.info  host:nj1.sv5  current_time:2026-02-27T14:50:51.731705568  broker_ports:""
 atf_snf.info  experiment_dir:temp/atf_snf_logs/regr_ak  comment:"creating experiment directory"
 atf_snf.info  directory file list at start
 total 0
@@ -8,14 +8,22 @@ atf_snf.info  fname:temp/atf_snf_logs/regr_ak/atf_snf.pcap  comment:"creating pc
 atf_snf.info  sll2:N
 atf_snf.info  comment:"Parsing kafka req/rsp enabled"
 atf_snf.info  fname:/home/avorovich/av_openacr/regression/ak.pcap  comment:"PcapFileProcess start"
-skip frame : seq_gap < 0  "tcp_pair->seq_gap":-60
-skip frame : seq_gap < 0  "tcp_pair->seq_gap":-830
-skip frame : seq_gap < 0  "tcp_pair->seq_gap":-2546
+atf_snf.err  frame:28  comment:"both ports non-ephemeral??"  tcp_pair_key:192.168.104.1:1079-192.168.104.2:1643
+atf_snf.err  frame:29  comment:"both ports non-ephemeral??"  tcp_pair_key:192.168.104.2:1643-192.168.104.1:1079
+atf_snf.info  frame:209  comment:"neg seq_gap. frame skipped.  check if gap != tcp_pay_len_last for err"  tcp_pair:192.168.104.7:42210-192.168.104.2:1643  "tcp_pair->seq_gap":-60  "tcp_pair->tcp_pay_len":60  "tcp_pair->tcp_pay_len_last":60
+atf_snf.info  frame:306  comment:"neg seq_gap. frame skipped.  check if gap != tcp_pay_len_last for err"  tcp_pair:192.168.104.6:34324-192.168.104.2:1643  "tcp_pair->seq_gap":-830  "tcp_pair->tcp_pay_len":830  "tcp_pair->tcp_pay_len_last":830
+atf_snf.info  frame:2114  comment:"neg seq_gap. frame skipped.  check if gap != tcp_pay_len_last for err"  tcp_pair:192.168.104.6:34324-192.168.104.2:1643  "tcp_pair->seq_gap":-2546  "tcp_pair->tcp_pay_len":2546  "tcp_pair->tcp_pay_len_last":2546
 atf_snf.info  comment:"PcapFileProcess  EOF"
+atf_snf.info  comment:"Dump individual tcp pair"
+atf_snf.info  comment:"Dump global log with tcp pair info"
+atf_snf.info  comment:"Dump tcp_pairs_all log with kafka req/rsp in time order"
 atf_snf.info comment:GlobalTcpPairDump
-atf_snf.session_stats0---------------  current_time:2026-02-18T11:39:09.315129844  "elapsed(sec)":29.445
-atf_snf.session_tcp_stats------------  iframe_count:11392  tcp_pair_count:176  seq_gap_pos_count:0  seq_gap_neg_count:3  max_pkt_len:9014
-atf_snf.session_kafka_stats----------  kafka_req_count_total:2320  kafka_req_ack_count_total:2319  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":3711  "frame_parse((usec)":0
+atf_snf.info  comment:"Dump individual tcp pair"
+atf_snf.info  comment:"Dump global log with tcp pair info"
+atf_snf.info  comment:"Dump tcp_pairs_all log with kafka req/rsp in time order"
+atf_snf.session_stats0---------------  current_time:2026-02-27T14:51:25.782358306  "elapsed(sec)":31.188
+atf_snf.session_tcp_stats------------  iframe_count:11392  tcp_pair_count:176  seq_gap_pos_count:0  seq_gap_neg_count:3  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
+atf_snf.session_kafka_stats----------  kafka_req_count_total:2320  kafka_req_ack_count_total:2319  kafka_req_wo_rsp:1  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":3711  "frame_parse((usec)":0
 atf_snf.session_poll_stats-----------  poll_count:0  poll_hit_delta_max:0  poll_hit_delta_min:0  poll_hit_delta_avg:0
 atf_snf.session_poll_delta1_stats----  poll_hit_delta1_count:0  delta1_run_count:0  delta1_run_len_avg:0  delta1_run_len_max:0
 atf_snf.session_poll_queue_delay(%)--  q5%:-nan  q50%:-nan  q500%:-nan  q5000:0  q5000+:0

@@ -1,25 +1,34 @@
 #!/bin/bash
 
-PATH=bin:$PATH
-PATH=$HOME/arnd/bin:$PATH
-PATH=$HOME/av_openacr/mnode:$PATH
-PATH=$HOME/av_openacr:$PATH
-PATH=$HOME/av_openacr/ktest_cpp:$PATH
-PATH=$HOME/av_openacr/ktest_kcat:$PATH
-PATH=$HOME/av_openacr/ktest_kc:$PATH
-PATH=$HOME/av_openacr/ktest_python:$PATH
-PATH=$HOME/av_openacr/x2:$PATH
-PATH=$HOME/av_openacr/spark_py:$PATH
-PATH=$HOME/av_openacr/kdi:$PATH
+
+
+#  PATH 
+add_to_path() {
+  case ":$PATH:" in
+    *":$1:"*) ;;
+    *) PATH="$1:$PATH" ;;
+  esac
+}
 
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
-export PATH=$JAVA_HOME/bin:$PATH
-export PATH=/opt/kafka/current/bin:$PATH
-
 export SPARK_HOME=/opt/spark
-export PATH=$SPARK_HOME/bin:$PATH
 
 
+add_to_path $HOME/bin
+add_to_path $HOME/arnd/bin
+add_to_path $HOME/av_openacr/mnode
+add_to_path $HOME/av_openacr
+add_to_path $HOME/av_openacr/ktest_cpp
+add_to_path $HOME/av_openacr/ktest_kcat
+add_to_path $HOME/av_openacr/ktest_kc
+add_to_path $HOME/av_openacr/ktest_python
+add_to_path $HOME/av_openacr/x2
+add_to_path $HOME/av_openacr/spark_py
+add_to_path $HOME/av_openacr/kdi
+add_to_path $JAVA_HOME/bin
+add_to_path /opt/kafka/current/bin
+add_to_path $SPARK_HOME/bin
+export PATH
 
 
 

@@ -307,6 +307,11 @@ dkr -ps_ns -k8ns:nj1-4
 //inspect
 dkr -inspect -node:dev.x2-17
 
+
+// natiuve  k8s
+x2node  -node:nj1.sn2.bm
+sudo kubectl describe pod nj1-4-kafka-1--nj1-sv2 -n nj1-4
+
 //build image
 dkr -build -node:dev.kafkacw-02 > ~/av_openacr/logs_dkr/dbld.log
 
@@ -494,3 +499,46 @@ bash: bin/acr_compl: No such file or directory
 $ ai
 abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:gcache
 report.abt  n_target:123  time:00:00:00.081780348  hitrate:0%  pch_hitrate:0%  n_warn:0  n_err:0  n_install:123
+
+
+# stress tap
+
+ grep atf_snf.session_ tap_all.log
+atf_snf.session_stats0---------------  current_time:2026-03-03T15:40:27.162571053  "elapsed(sec)":160.278
+atf_snf.session_tcp_stats------------  iframe_count:10221  tcp_pair_count:138  seq_gap_pos_count:0  seq_gap_neg_count:0  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
+atf_snf.session_kafka_stats----------  kafka_req_count_total:2146  kafka_req_ack_count_total:2144  kafka_req_wo_rsp:2  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":3323  "frame_parse((usec)":2729
+atf_snf.session_poll_stats-----------  poll_count:1911761801  poll_hit_delta_max:117912238  poll_hit_delta_min:1  poll_hit_delta_avg:95246
+atf_snf.session_poll_delta1_stats----  poll_hit_delta1_count:10143  delta1_run_count:73  delta1_run_len_avg:2.57534  delta1_run_len_max:49
+atf_snf.session_poll_queue_delay(%)--  q5%:0.945205  q50%:0.0547945  q500%:0  q5000:0  q5000+:0
+atf_snf.session_poll_queue_delay(abs)  q5:69  q50:4  q500:0  q5000:0  q5000+:0
+atf_snf.session_stats0---------------  current_time:2026-03-03T15:40:27.312770007  "elapsed(sec)":160.413
+atf_snf.session_tcp_stats------------  iframe_count:10413  tcp_pair_count:136  seq_gap_pos_count:0  seq_gap_neg_count:0  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
+atf_snf.session_kafka_stats----------  kafka_req_count_total:2244  kafka_req_ack_count_total:2243  kafka_req_wo_rsp:1  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":2157  "frame_parse((usec)":3335
+atf_snf.session_poll_stats-----------  poll_count:1898880328  poll_hit_delta_max:118954287  poll_hit_delta_min:1  poll_hit_delta_avg:91965
+atf_snf.session_poll_delta1_stats----  poll_hit_delta1_count:10331  delta1_run_count:74  delta1_run_len_avg:1.83784  delta1_run_len_max:28
+atf_snf.session_poll_queue_delay(%)--  q5%:0.945946  q50%:0.0540541  q500%:0  q5000:0  q5000+:0
+atf_snf.session_poll_queue_delay(abs)  q5:70  q50:4  q500:0  q5000:0  q5000+:0
+atf_snf.session_stats0---------------  current_time:2026-03-03T15:40:27.424091457  "elapsed(sec)":160.516
+atf_snf.session_tcp_stats------------  iframe_count:10152  tcp_pair_count:142  seq_gap_pos_count:0  seq_gap_neg_count:1  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
+atf_snf.session_kafka_stats----------  kafka_req_count_total:2159  kafka_req_ack_count_total:2158  kafka_req_wo_rsp:1  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":2900  "frame_parse((usec)":3415
+atf_snf.session_poll_stats-----------  poll_count:1894899872  poll_hit_delta_max:116207189  poll_hit_delta_min:1  poll_hit_delta_avg:91646
+atf_snf.session_poll_delta1_stats----  poll_hit_delta1_count:10073  delta1_run_count:74  delta1_run_len_avg:2.27027  delta1_run_len_max:47
+atf_snf.session_poll_queue_delay(%)--  q5%:0.945946  q50%:0.0540541  q500%:0  q5000:0  q5000+:0
+atf_snf.session_poll_queue_delay(abs)  q5:70  q50:4  q500:0  q5000:0  q5000+:0
+atf_snf.session_stats0---------------  current_time:2026-03-03T15:40:27.056606478  "elapsed(sec)":160.182
+atf_snf.session_tcp_stats------------  iframe_count:18910  tcp_pair_count:138  seq_gap_pos_count:6  seq_gap_neg_count:0  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
+atf_snf.session_kafka_stats----------  kafka_req_count_total:6828  kafka_req_ack_count_total:6823  kafka_req_wo_rsp:5  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":1667  "frame_parse((usec)":2590
+atf_snf.session_poll_stats-----------  poll_count:1906825018  poll_hit_delta_max:117630316  poll_hit_delta_min:1  poll_hit_delta_avg:47577
+atf_snf.session_poll_delta1_stats----  poll_hit_delta1_count:18817  delta1_run_count:76  delta1_run_len_avg:1.80263  delta1_run_len_max:11
+atf_snf.session_poll_queue_delay(%)--  q5%:0.907895  q50%:0.0921053  q500%:0  q5000:0  q5000+:0
+atf_snf.session_poll_queue_delay(abs)  q5:69  q50:7  q500:0  q5000:0  q5000+:0
++ grep tcp_stats tap_all.log
+atf_snf.session_tcp_stats------------  iframe_count:10221  tcp_pair_count:138  seq_gap_pos_count:0  seq_gap_neg_count:0  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
+atf_snf.session_tcp_stats------------  iframe_count:10413  tcp_pair_count:136  seq_gap_pos_count:0  seq_gap_neg_count:0  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
+atf_snf.session_tcp_stats------------  iframe_count:10152  tcp_pair_count:142  seq_gap_pos_count:0  seq_gap_neg_count:1  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
+atf_snf.session_tcp_stats------------  iframe_count:18910  tcp_pair_count:138  seq_gap_pos_count:6  seq_gap_neg_count:0  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
++ grep kafka_stats tap_all.log
+atf_snf.session_kafka_stats----------  kafka_req_count_total:2146  kafka_req_ack_count_total:2144  kafka_req_wo_rsp:2  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":3323  "frame_parse((usec)":2729
+atf_snf.session_kafka_stats----------  kafka_req_count_total:2244  kafka_req_ack_count_total:2243  kafka_req_wo_rsp:1  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":2157  "frame_parse((usec)":3335
+atf_snf.session_kafka_stats----------  kafka_req_count_total:2159  kafka_req_ack_count_total:2158  kafka_req_wo_rsp:1  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":2900  "frame_parse((usec)":3415
+atf_snf.session_kafka_stats----------  kafka_req_count_total:6828  kafka_req_ack_count_total:6823  kafka_req_wo_rsp:5  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":1667  "fra

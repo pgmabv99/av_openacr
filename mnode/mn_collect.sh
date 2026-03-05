@@ -44,7 +44,6 @@ collect_and_process_logs_atf_snf() {
   grep "!seq_gap" -rnI .
   grep "atf_snf.error" -rnI .
   echo "  "
-  grep x2msg.info tap_all.log
   grep atf_snf.session_ tap_all.log
   grep tcp_stats tap_all.log
   grep kafka_stats tap_all.log
@@ -67,6 +66,6 @@ collect_and_process_logs_kafkacw() {
 }
 
 collect_and_process_logs_atf_snf
-collect_and_process_logs_kafkacw
+# collect_and_process_logs_kafkacw
 set +x 
 cd ~/arnd

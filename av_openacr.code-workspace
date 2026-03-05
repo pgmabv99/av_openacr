@@ -31,6 +31,9 @@
 		{
 			"name": "atf_rdk_logs",
 			"path": "../arnd/temp/atf_rdk_logs"
+		},
+		{
+			"path": "../../../opt/kafka/current/logs"
 		}
 	],
 	"settings": {

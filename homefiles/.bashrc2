@@ -14,8 +14,8 @@ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export SPARK_HOME=/opt/spark
 
 
-add_to_path $HOME/bin
-add_to_path $HOME/arnd/bin
+
+add_to_path $HOME/arnd/temp/sandbox.abt_md/build/Linux-g++.release-x86_64
 add_to_path $HOME/av_openacr/mnode
 add_to_path $HOME/av_openacr
 add_to_path $HOME/av_openacr/ktest_cpp
@@ -25,9 +25,11 @@ add_to_path $HOME/av_openacr/ktest_python
 add_to_path $HOME/av_openacr/x2
 add_to_path $HOME/av_openacr/spark_py
 add_to_path $HOME/av_openacr/kdi
+add_to_path $HOME/av_openacr/issues/1614
 add_to_path $JAVA_HOME/bin
 add_to_path /opt/kafka/current/bin
 add_to_path $SPARK_HOME/bin
+add_to_path bin
 export PATH
 
 

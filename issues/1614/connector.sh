@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#  test kafka connector with file stream sink connector to see if we can reproduce rebalance bug
+#  test kafka connector with file stream sink connector to see if we can reproduce rebalance bugnorm
 set -u  # Exit if an undefined variable is used
 bootstrap_servers=nj1-4.kafka-1.ext-0:1643,nj1-4.kafka-2.ext-0:1650,nj1-4.kafka-3.ext-0:1657,nj1-4.kafka-4.ext-0:1664
 # bootstrap_servers=localhost:54005

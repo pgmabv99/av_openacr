@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #
 set -u  # Exit if an undefined variable is used
-# bootstrap_servers=nj1-4.kafka-1.ext-0:1643,nj1-4.kafka-2.ext-0:1650,nj1-4.kafka-3.ext-0:1657,nj1-4.kafka-4.ext-0:1664
-bootstrap_servers=localhost:54005
+bootstrap_servers=nj1-4.kafka-1.ext-0:1643,nj1-4.kafka-2.ext-0:1650,nj1-4.kafka-3.ext-0:1657,nj1-4.kafka-4.ext-0:1664
+# bootstrap_servers=localhost:54005
 
 #worker
 listeners=http://localhost:1683
@@ -21,7 +21,7 @@ bootstrap.servers=${bootstrap_servers}
 config.storage.replication.factor=1
 config.storage.topic=connect-storage-kafkacw-1-configs
 config.storage.topic.creation.enable=false
-group.id=nj1-4.kafkacw-1
+group.id=kafkacw-1
 listeners=$listeners
 offset.flush.interval.ms=10000
 offset.storage.replication.factor=3

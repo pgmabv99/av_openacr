@@ -34,6 +34,9 @@
 		},
 		{
 			"path": "../../../opt/kafka/current/logs"
+		},
+		{
+			"path": "../arnd/temp/kafka_connect"
 		}
 	],
 	"settings": {

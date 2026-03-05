@@ -9,7 +9,7 @@ source mn_set.sh
 
 # === Configuration ========================================
 
-TOPIC="perf-test-topic"
+TOPIC="test-topic"
 # NUM_RECORDS=1000000          # 1 million messages
 NUM_RECORDS=100000       # 1 million messages
 NUM_RECORDS=10000        # 1 million messages

@@ -1,8 +1,8 @@
 
 #!/bin/bash 
-# =====================================
+echo "=====================dkr-destroy - clean all nodes=============================="
 pkill java || true
-omcli nj1-4 -dkr_destroy -force -ignore_omplat -ignore_omnode_use
+omcli nj1-4 -dkr_destroy -force -ignore_omplat   -ignore_node_passive
 
 exit 0
 # cheat for brokers

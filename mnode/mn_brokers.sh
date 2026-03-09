@@ -6,7 +6,7 @@ cfg=${1:-release}
 start_ak_brokers() {
   echo "===============================================================start kafka brokers omplat:$omplat"
   omcli nj1-4.kafka-% -omplat:ak -dkr_clean_run
-  x2rel -create -product:"x2|x2w" -omenv:nj1-4 -upload:Y -create:Y    
+  x2rel -create -product:"tap" -node:nj1-4.kafka-% -node_selects_x2:false -upload:Y -create:Y     
   omcli nj1-4.kafka-% -omplat:ak -start_tap
   omcli nj1-4.kafka-% -omplat:ak -start_clean 
 }
@@ -35,8 +35,8 @@ start_ak_ui() {
 
 start_minio() {
   echo "===============================================================start minio"
-  omcli nj1-4.minio-1 -dkr_clean_run
-  omcli nj1-4.minio-1  -start_clean
+  omcli nj1-4.minio-1 -dkr_clean_run  -ignore_node_passive
+  omcli nj1-4.minio-1  -start_clean  -ignore_node_passive
 }
 
 

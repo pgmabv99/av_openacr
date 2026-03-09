@@ -294,18 +294,18 @@ native  k8s
 kubectl describe pod x2-17--nj1-sv2 -n nj1-4
 
 
-dkr ps            -dctr:nj1.sn5.avorovich 
-dkr -clean_run     -dctr:nj1.sn5.avorovich 
-dkr -clean_run     -dctr:nj1.sn5.user-avorovich 
+dkr ps            -rspec:nj1.sn5.avorovich 
+dkr -clean_run     -rspec:nj1.sn5.avorovich 
+dkr -clean_run     -rspec:nj1.sn5.user-avorovich 
 
 docker exec -u root  2ed30abac818 mount --bind /lib/modules /lib/modules
 
 // get container sizes
-dkr -ps_size  -dctr:nj1.sn6.bm
+dkr -ps_size  -rspec:nj1.sn6.bm
 //  list of pods in ns
 dkr -ps_ns -k8ns:nj1-4
 //inspect
-dkr -inspect -node:dev.x2-17
+dkr -inspect -node:nj1-4.minio-1
 
 
 // natiuve  k8s
@@ -463,10 +463,6 @@ omdb.omenv  omenv:nj1-4  omenvtype:dev  owner:avorovich  comment:""
 ```
 
 
-# notes on tap
-
--master produce pcap master_smallb is read by branch fiel locally
--remote run rbanch produces pos/neg gaps
 
 # atf_comp java tree
 
@@ -501,44 +497,53 @@ abt.config  builddir:Linux-g++.release-x86_64  ood_src:0  ood_target:0  cache:gc
 report.abt  n_target:123  time:00:00:00.081780348  hitrate:0%  pch_hitrate:0%  n_warn:0  n_err:0  n_install:123
 
 
-# stress tap
+# atf_exp kafka tests
+atfdb.comptest  comptest:atf_exp.Kafka                 timeout:10   memcheck:N  coverage:Y  exit_code:0  ncore:1024  repeat:3  comment:"KAFKA Smoke test"
+atfdb.comptest  comptest:atf_exp.Kafka32KB_1K_kcat     timeout:60   memcheck:N  coverage:N  exit_code:0  ncore:1024  repeat:1  comment:"kcat 1K of 32KB messages"
+atfdb.comptest  comptest:atf_exp.KafkaAcl              timeout:10   memcheck:Y  coverage:Y  exit_code:0  ncore:1024  repeat:3  comment:"KAFKA ACL test"
+atfdb.comptest  comptest:atf_exp.KafkaAclMgt           timeout:10   memcheck:Y  coverage:Y  exit_code:0  ncore:1024  repeat:3  comment:"KAFKA ACL management test"
+atfdb.comptest  comptest:atf_exp.KafkaAuth             timeout:10   memcheck:Y  coverage:Y  exit_code:0  ncore:1024  repeat:3  comment:"KAFKA Authentication test"
+atfdb.comptest  comptest:atf_exp.KafkaClient           timeout:40   memcheck:Y  coverage:Y  exit_code:0  ncore:1024  repeat:0  comment:"KAFKA native client test"
+atfdb.comptest  comptest:atf_exp.KafkaCrc              timeout:10   memcheck:Y  coverage:Y  exit_code:0  ncore:1024  repeat:3  comment:"KAFKA Smoke test"
+atfdb.comptest  comptest:atf_exp.KafkaCreateTopic      timeout:10   memcheck:Y  coverage:Y  exit_code:0  ncore:1024  repeat:3  comment:"KAFKA Create Topic Test"
+atfdb.comptest  comptest:atf_exp.KafkaDescribeCluster  timeout:10   memcheck:Y  coverage:Y  exit_code:0  ncore:1024  repeat:3  comment:"KAFKA DescribeCluster Test"
+atfdb.comptest  comptest:atf_exp.KafkaKv               timeout:10   memcheck:Y  coverage:Y  exit_code:0  ncore:1024  repeat:3  comment:"KAFKA Key-Value test"
+atfdb.comptest  comptest:atf_exp.KafkaMtls             timeout:10   memcheck:Y  coverage:Y  exit_code:0  ncore:1024  repeat:3  comment:"KAFKA mTLS  test"
+atfdb.comptest  comptest:atf_exp.KafkaPub2000x1MB      timeout:240  memcheck:N  coverage:N  exit_code:0  ncore:1024  repeat:1  comment:"KAFKA 2K of 1MB messages"
+atfdb.comptest  comptest:atf_exp.KafkaPubPart10x8KB    timeout:60   memcheck:N  coverage:Y  exit_code:0  ncore:1024  repeat:1  comment:"KAFKA 10K of 8KB messages to 10 partitions, 1K per partition, kafka-consumer and kcat"
+atfdb.comptest  comptest:atf_exp.KafkaTls              timeout:10   memcheck:Y  coverage:Y  exit_code:0  ncore:1024  repeat:3  comment:"KAFKA TLS test"
 
- grep atf_snf.session_ tap_all.log
-atf_snf.session_stats0---------------  current_time:2026-03-03T15:40:27.162571053  "elapsed(sec)":160.278
-atf_snf.session_tcp_stats------------  iframe_count:10221  tcp_pair_count:138  seq_gap_pos_count:0  seq_gap_neg_count:0  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
-atf_snf.session_kafka_stats----------  kafka_req_count_total:2146  kafka_req_ack_count_total:2144  kafka_req_wo_rsp:2  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":3323  "frame_parse((usec)":2729
-atf_snf.session_poll_stats-----------  poll_count:1911761801  poll_hit_delta_max:117912238  poll_hit_delta_min:1  poll_hit_delta_avg:95246
-atf_snf.session_poll_delta1_stats----  poll_hit_delta1_count:10143  delta1_run_count:73  delta1_run_len_avg:2.57534  delta1_run_len_max:49
-atf_snf.session_poll_queue_delay(%)--  q5%:0.945205  q50%:0.0547945  q500%:0  q5000:0  q5000+:0
-atf_snf.session_poll_queue_delay(abs)  q5:69  q50:4  q500:0  q5000:0  q5000+:0
-atf_snf.session_stats0---------------  current_time:2026-03-03T15:40:27.312770007  "elapsed(sec)":160.413
-atf_snf.session_tcp_stats------------  iframe_count:10413  tcp_pair_count:136  seq_gap_pos_count:0  seq_gap_neg_count:0  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
-atf_snf.session_kafka_stats----------  kafka_req_count_total:2244  kafka_req_ack_count_total:2243  kafka_req_wo_rsp:1  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":2157  "frame_parse((usec)":3335
-atf_snf.session_poll_stats-----------  poll_count:1898880328  poll_hit_delta_max:118954287  poll_hit_delta_min:1  poll_hit_delta_avg:91965
-atf_snf.session_poll_delta1_stats----  poll_hit_delta1_count:10331  delta1_run_count:74  delta1_run_len_avg:1.83784  delta1_run_len_max:28
-atf_snf.session_poll_queue_delay(%)--  q5%:0.945946  q50%:0.0540541  q500%:0  q5000:0  q5000+:0
-atf_snf.session_poll_queue_delay(abs)  q5:70  q50:4  q500:0  q5000:0  q5000+:0
-atf_snf.session_stats0---------------  current_time:2026-03-03T15:40:27.424091457  "elapsed(sec)":160.516
-atf_snf.session_tcp_stats------------  iframe_count:10152  tcp_pair_count:142  seq_gap_pos_count:0  seq_gap_neg_count:1  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
-atf_snf.session_kafka_stats----------  kafka_req_count_total:2159  kafka_req_ack_count_total:2158  kafka_req_wo_rsp:1  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":2900  "frame_parse((usec)":3415
-atf_snf.session_poll_stats-----------  poll_count:1894899872  poll_hit_delta_max:116207189  poll_hit_delta_min:1  poll_hit_delta_avg:91646
-atf_snf.session_poll_delta1_stats----  poll_hit_delta1_count:10073  delta1_run_count:74  delta1_run_len_avg:2.27027  delta1_run_len_max:47
-atf_snf.session_poll_queue_delay(%)--  q5%:0.945946  q50%:0.0540541  q500%:0  q5000:0  q5000+:0
-atf_snf.session_poll_queue_delay(abs)  q5:70  q50:4  q500:0  q5000:0  q5000+:0
-atf_snf.session_stats0---------------  current_time:2026-03-03T15:40:27.056606478  "elapsed(sec)":160.182
-atf_snf.session_tcp_stats------------  iframe_count:18910  tcp_pair_count:138  seq_gap_pos_count:6  seq_gap_neg_count:0  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
-atf_snf.session_kafka_stats----------  kafka_req_count_total:6828  kafka_req_ack_count_total:6823  kafka_req_wo_rsp:5  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":1667  "frame_parse((usec)":2590
-atf_snf.session_poll_stats-----------  poll_count:1906825018  poll_hit_delta_max:117630316  poll_hit_delta_min:1  poll_hit_delta_avg:47577
-atf_snf.session_poll_delta1_stats----  poll_hit_delta1_count:18817  delta1_run_count:76  delta1_run_len_avg:1.80263  delta1_run_len_max:11
-atf_snf.session_poll_queue_delay(%)--  q5%:0.907895  q50%:0.0921053  q500%:0  q5000:0  q5000+:0
-atf_snf.session_poll_queue_delay(abs)  q5:69  q50:7  q500:0  q5000:0  q5000+:0
-+ grep tcp_stats tap_all.log
-atf_snf.session_tcp_stats------------  iframe_count:10221  tcp_pair_count:138  seq_gap_pos_count:0  seq_gap_neg_count:0  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
-atf_snf.session_tcp_stats------------  iframe_count:10413  tcp_pair_count:136  seq_gap_pos_count:0  seq_gap_neg_count:0  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
-atf_snf.session_tcp_stats------------  iframe_count:10152  tcp_pair_count:142  seq_gap_pos_count:0  seq_gap_neg_count:1  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
-atf_snf.session_tcp_stats------------  iframe_count:18910  tcp_pair_count:138  seq_gap_pos_count:6  seq_gap_neg_count:0  decode_err_count!!:0  false_candidate_count!!:0  max_pkt_len:9014
-+ grep kafka_stats tap_all.log
-atf_snf.session_kafka_stats----------  kafka_req_count_total:2146  kafka_req_ack_count_total:2144  kafka_req_wo_rsp:2  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":3323  "frame_parse((usec)":2729
-atf_snf.session_kafka_stats----------  kafka_req_count_total:2244  kafka_req_ack_count_total:2243  kafka_req_wo_rsp:1  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":2157  "frame_parse((usec)":3335
-atf_snf.session_kafka_stats----------  kafka_req_count_total:2159  kafka_req_ack_count_total:2158  kafka_req_wo_rsp:1  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":2900  "frame_parse((usec)":3415
-atf_snf.session_kafka_stats----------  kafka_req_count_total:6828  kafka_req_ack_count_total:6823  kafka_req_wo_rsp:5  kafka_rsp_wo_req:0  "kafka_req_to_rsp_duration_avg(usec)":1667  "fra
+
+
+comptest  atf_exp.Kafka -bindir:$bindir -comptest:$comptest -timeout:$timeout
+comment KAFKA Smoke test
+ncore 1024
+timeout 10
+repeat 3
+memcheck N
+coverage Y
+exit_code 0
+filter sed -E -f test/filt.sed
+x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -initdir:$tempdir -bindir:$bindir -random_ports -temp"
+x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
+x2.ProcStartMsg  proc:kcat-pub  cmd:"kcat -b 127.0.0.1:$kafkaport -P -t public.anon"
+x2.ProcMsg  proc:kcat-pub  payload:"EST AVIS IN DEXTRA MELIOR QUAM QUATTUOR EXTRA"
+x2.ProcEofMsg  proc:kcat-pub
+x2.ProcReadMsg  proc:kcat-pub
+x2.ProcStartMsg  proc:kcat-sub  cmd:"kcat -b 127.0.0.1:$kafkaport -C -t public.anon -e -X fetch.wait.max.ms=0"
+x2.ProcReadMsg  proc:kcat-sub
+x2.ProcMsg proc:x2  payload:ams.TerminateMsg
+x2.ProcReadMsg  proc:x2
+ams.TerminateMsg
+
+
+ kafka-connect start nj1-4.kafka-1.ext-0:1643 test-topic0
+
+ kafka-connect start 127.0.0.1:$kafkaport public.anon
+
+
+
+ # new nodes
+
+ $ ls -ltr data/x2rdb/* | grep spec
+-rw-rw-r-- 1 avorovich avorovich  12936 Mar  8 18:56 data/x2rdb/noderspec.ssim

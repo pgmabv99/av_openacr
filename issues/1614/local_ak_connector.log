@@ -1,0 +1,72 @@
+producing JSON messages
+nj1-4.kafka-1.ext-0:1643
+test-topic0
+nbatch:1 nrec:2000
+---- batch 1 messages done ----
+remove and create bucket minio-1/test-bucket-kafkacw-1
+Removed `minio-1/test-bucket-kafkacw-1` successfully.
+Bucket created successfully `minio-1/test-bucket-kafkacw-1`.
+Cleaning up local Kafka Connect logs in /opt/kafka/current/logs/
+Stopping Kafka Connect worker... via TERM 
+====Was not running
+Creating required topics for Kafka Connect...
+Created topic connect-storage-kafkacw-1-offsets.
+Created topic connect-storage-kafkacw-1-configs.
+Created topic connect-storage-kafkacw-1-status.
+Starting Kafka Connect worker... logs will be in /opt/kafka/current/logs/connect.log
+Connection to worker established on port 1683
+Posting connector json 
+{
+  "name": "test_connector",
+  "config": {
+    "aws.access.key.id": "minioadmin",
+    "aws.s3.bucket.name": "test-bucket-kafkacw-1",
+    "aws.s3.endpoint": "http://nj1-4.minio-1.ext-0:1673",
+    "aws.s3.path.style.access": "true",
+    "aws.s3.region": "us-east-1",
+    "aws.secret.access.key": "minioadmin",
+    "connector.class": "io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector",
+    "consumer.override.auto.offset.reset": "earliest",
+    "consumer.override.enable.auto.commit": "false",
+    "errors.log.enable": "true",
+    "file.compression.type": "none",
+    "file.name.template": "{{topic}}-{{partition:padding=true}}-{{start_offset:padding=true}}",
+    "format.class": "io.aiven.kafka.connect.s3.format.json.JsonFormat",
+    "format.output.fields": "key,offset,timestamp,value,headers",
+    "format.output.type": "jsonl",
+    "key.converter": "org.apache.kafka.connect.converters.ByteArrayConverter",
+    "tasks.max": "3",
+    "topics.regex": "^(?i)(?!(__.*|_schemas|connect-.*|public..*)$).*",
+    "value.converter": "org.apache.kafka.connect.converters.ByteArrayConverter",
+    "name": "test_connector"
+  },
+  "tasks": [],
+  "type": "sink"
+}
+List of connectors after posting new connector:
+[
+  "test_connector"
+]
+KafkaConnect_started
+Stopping Kafka Connect worker... via TERM 
+KafkaConnect_stopped
+dumping list of objects in bucket test-bucket-kafkacw-1 at s3 endpoint http://nj1-4.minio-1.ext-0:1673 via minio
+Added `minio-1` successfully.
+[2026-03-10 16:47:21 EDT]  83KiB STANDARD test-topic0-0000000000-00000000000000000000
+[2026-03-10 16:47:21 EDT]  86KiB STANDARD test-topic0-0000000004-00000000000000000000
+[2026-03-10 16:47:21 EDT] 145KiB STANDARD test-topic0-0000000007-00000000000000000000
+count number of lines
+1997
+GREP FOR errors in Kafka Connect logs:
+GREP FOR Processing in Kafka Connect logs:
+[2026-03-10 16:47:17,440] INFO [test_connector|task-1] Processing 500 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:47:17,440] INFO [test_connector|task-0] Processing 500 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:47:17,440] INFO [test_connector|task-2] Processing 500 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:47:17,468] INFO [test_connector|task-0] Processing 28 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:47:17,469] INFO [test_connector|task-1] Processing 49 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:47:17,470] INFO [test_connector|task-2] Processing 423 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:47:21,143] INFO [test_connector|task-2] Processing 0 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:47:21,144] INFO [test_connector|task-0] Processing 0 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:47:21,144] INFO [test_connector|task-1] Processing 0 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[0 Mar 10 16:47:25] avorovich@nj1.sv5:~/arnd 
+$ 

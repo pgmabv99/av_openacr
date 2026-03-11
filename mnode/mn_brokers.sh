@@ -15,7 +15,8 @@ start_x2_brokers() {
   echo "===============================================================start x2 brokers omplat:$omplat"
   omcli nj1-4.x2-% -omplat:x2 -dkr_clean_run
   echo "install x2"
-  x2rel -create -product:"x2|x2w" -omenv:nj1-4 -upload:Y -create:Y   -cfg:$cfg 
+  # x2rel -create -product:"x2|x2w|tap" -node:nj1-4.x2-% -upload:Y -create:Y   -cfg:$cfg 
+  x2rel -create -product:"x2|x2w|tap" -env:nj1-4 -upload:Y -create:Y   -cfg:$cfg 
   echo "start x2"
   omcli nj1-4.x2-% -omplat:x2 -start_tap
   debug_x2sup=""

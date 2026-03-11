@@ -3,18 +3,19 @@ echo "=====================================stop and collect logs"
 
 
 source mn_set.sh
-# echo "====================stopping  brokers and taps"
-# if [ "$omplat" = "ak" ]; then
-#   echo "stop kafka brokers"
-#   omcli nj1-4.kafka-% -omplat:$omplat  -stop
-#   omcli nj1-4.kafka-% -omplat:$omplat  -stop_tap
-# elif [ "$omplat" = "x2" ]; then
-#   echo "stop x2"
-#   omcli nj1-4.x2% -omplat:$omplat  -stop
-#   omcli nj1-4.x2% -omplat:$omplat  -stop_tap
-# else
-#   echo "unknown omplat:$omplat - no action"
-# fi
+echo "====================stopping  brokers and taps"
+if [ "$omplat" = "ak" ]; then
+  echo "stop kafka brokers"
+  omcli nj1-4.kafka-% -omplat:$omplat  -stop
+  omcli nj1-4.kafka-% -omplat:$omplat  -stop_tap
+elif [ "$omplat" = "x2" ]; then
+  echo "stop x2"
+  omcli nj1-4.x2% -omplat:$omplat  -stop
+  omcli nj1-4.x2% -omplat:$omplat  -stop_tap
+else
+  echo "unknown omplat:$omplat - no action"
+fi
+
 
 omcli nj1-4.% -omplat:$omplat  -collect_logs  -ignore_node_passive
 sleep 2
@@ -56,16 +57,22 @@ collect_and_process_logs_atf_snf() {
 
 
 collect_and_process_logs_kafkacw() {
-    echo " aiven and confluent  connector"
+    echo " ====aiven and confluent  connector"
+    echo " grep for Processing"
     grep -R 'Processing' | grep -v 'Processing 0 records'
-    grep -R 'Files committed to S3' 
+    echo " grep for errors"
+    grep -R 'ERR' nj1-4.kafkacw-1/connect.log
+    # echo " grep Files committed to S3"
+    # grep -R 'Files committed to S3' 
     
-    echo  "iceberg connector"
-    mc ls --recursive minio-02/bucket-nj1-4.kafkacw-1/
-    grep -R -o 'addedRecords=CounterResult{unit=COUNT, value=[0-9]\+}' 
+    # echo  "====iceberg connector"
+    # echo " list files in s3 bucket"
+    # mc ls --recursive minio-02/bucket-nj1-4.kafkacw-1/
+    # echo " grep for iceberg commit success"
+    # grep -R -o 'addedRecords=CounterResult{unit=COUNT, value=[0-9]\+}' 
 }
 
-collect_and_process_logs_atf_snf
+# collect_and_process_logs_atf_snf
 collect_and_process_logs_kafkacw
 set +x 
 cd ~/arnd

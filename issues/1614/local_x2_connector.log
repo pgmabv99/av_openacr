@@ -1,0 +1,192 @@
+producing JSON messages
+localhost:54005
+test-topic0
+nbatch:1 nrec:2000
+---- batch 1 messages done ----
+remove and create bucket minio-1/test-bucket-kafkacw-1
+Removed `minio-1/test-bucket-kafkacw-1` successfully.
+Bucket created successfully `minio-1/test-bucket-kafkacw-1`.
+Cleaning up local Kafka Connect logs in /opt/kafka/current/logs/
+Stopping Kafka Connect worker... via TERM 
+====Was not running
+Creating required topics for Kafka Connect...
+Created topic connect-storage-kafkacw-1-offsets.
+Created topic connect-storage-kafkacw-1-configs.
+Created topic connect-storage-kafkacw-1-status.
+Starting Kafka Connect worker... logs will be in /opt/kafka/current/logs/connect.log
+Connection to worker established on port 1683
+Posting connector json 
+{
+  "name": "test_connector",
+  "config": {
+    "aws.access.key.id": "minioadmin",
+    "aws.s3.bucket.name": "test-bucket-kafkacw-1",
+    "aws.s3.endpoint": "http://nj1-4.minio-1.ext-0:1673",
+    "aws.s3.path.style.access": "true",
+    "aws.s3.region": "us-east-1",
+    "aws.secret.access.key": "minioadmin",
+    "connector.class": "io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector",
+    "consumer.override.auto.offset.reset": "earliest",
+    "consumer.override.enable.auto.commit": "false",
+    "errors.log.enable": "true",
+    "file.compression.type": "none",
+    "file.name.template": "{{topic}}-{{partition:padding=true}}-{{start_offset:padding=true}}",
+    "format.class": "io.aiven.kafka.connect.s3.format.json.JsonFormat",
+    "format.output.fields": "key,offset,timestamp,value,headers",
+    "format.output.type": "jsonl",
+    "key.converter": "org.apache.kafka.connect.converters.ByteArrayConverter",
+    "tasks.max": "3",
+    "topics.regex": "^(?i)(?!(__.*|_schemas|connect-.*|public..*)$).*",
+    "value.converter": "org.apache.kafka.connect.converters.ByteArrayConverter",
+    "name": "test_connector"
+  },
+  "tasks": [],
+  "type": "sink"
+}
+List of connectors after posting new connector:
+[
+  "test_connector"
+]
+KafkaConnect_started
+Stopping Kafka Connect worker... via TERM 
+KafkaConnect_stopped
+dumping list of objects in bucket test-bucket-kafkacw-1 at s3 endpoint http://nj1-4.minio-1.ext-0:1673 via minio
+Added `minio-1` successfully.
+[2026-03-10 16:49:53 EDT]  13KiB STANDARD test-topic0-0000000004-00000000000000000000
+[2026-03-10 16:49:56 EDT]  86KiB STANDARD test-topic0-0000000005-00000000000000000000
+count number of lines
+628
+GREP FOR errors in Kafka Connect logs:
+[2026-03-10 16:49:50,013] ERROR [test_connector|task-0] WorkerSinkTask{id=test_connector-0} Task threw an uncaught and unrecoverable exception. Task is being killed and will not recover until manually restarted (org.apache.kafka.connect.runtime.WorkerTask:234)
+[2026-03-10 16:49:53,661] ERROR [test_connector|task-1] [Consumer clientId=connector-consumer-test_connector-1, groupId=connect-test_connector] Offset commit failed on partition test-topic0-6 at offset 0: The group is rebalancing, so a rejoin is needed. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1332)
+[2026-03-10 16:49:53,661] ERROR [test_connector|task-1] WorkerSinkTask{id=test_connector-1} Commit of offsets threw an unexpected exception for sequence number 1: {test-topic0-6=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}, test-topic0-5=OffsetAndMetadata{offset=549, leaderEpoch=null, metadata=''}, test-topic0-4=OffsetAndMetadata{offset=81, leaderEpoch=null, metadata=''}} (org.apache.kafka.connect.runtime.WorkerSinkTask:282)
+[2026-03-10 16:49:53,721] ERROR [test_connector|task-1] WorkerSinkTask{id=test_connector-1} Task threw an uncaught and unrecoverable exception. Task is being killed and will not recover until manually restarted (org.apache.kafka.connect.runtime.WorkerTask:234)
+[2026-03-10 16:49:56,565] ERROR [test_connector|task-2] [Consumer clientId=connector-consumer-test_connector-2, groupId=connect-test_connector] Offset commit failed on partition test-topic0-9 at offset 0: The group is rebalancing, so a rejoin is needed. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1332)
+[2026-03-10 16:49:56,565] ERROR [test_connector|task-2] WorkerSinkTask{id=test_connector-2} Commit of offsets threw an unexpected exception for sequence number 2: {test-topic0-9=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}, test-topic0-8=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}, test-topic0-7=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}, test-topic0-6=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}, test-topic0-5=OffsetAndMetadata{offset=549, leaderEpoch=null, metadata=''}} (org.apache.kafka.connect.runtime.WorkerSinkTask:282)
+[2026-03-10 16:49:57,127] ERROR [test_connector|task-2] [Consumer clientId=connector-consumer-test_connector-2, groupId=connect-test_connector] Offset commit failed on partition test-topic0-9 at offset 0: The group is rebalancing, so a rejoin is needed. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1332)
+[2026-03-10 16:49:57,127] ERROR [test_connector|task-2] WorkerSinkTask{id=test_connector-2} Commit of offsets threw an unexpected exception for sequence number 3: {test-topic0-9=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}, test-topic0-8=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}, test-topic0-7=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}, test-topic0-6=OffsetAndMetadata{offset=0, leaderEpoch=null, metadata=''}, test-topic0-5=OffsetAndMetadata{offset=549, leaderEpoch=null, metadata=''}} (org.apache.kafka.connect.runtime.WorkerSinkTask:282)
+[2026-03-10 16:49:57,188] ERROR [test_connector|task-2] WorkerSinkTask{id=test_connector-2} Task threw an uncaught and unrecoverable exception. Task is being killed and will not recover until manually restarted (org.apache.kafka.connect.runtime.WorkerTask:234)
+GREP FOR Processing in Kafka Connect logs:
+[2026-03-10 16:49:50,015] INFO [test_connector|task-1] Processing 2 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,019] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,022] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,025] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,027] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,030] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,032] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,035] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,037] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,039] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,041] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,043] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,045] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,047] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,049] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,051] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,053] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,055] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,056] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,058] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,060] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,062] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,063] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,065] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,067] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,069] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,071] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,072] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,074] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,075] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,076] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,077] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,078] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,080] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,081] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,082] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,083] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,084] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,086] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,088] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,089] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,090] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,091] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,092] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,093] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,093] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,094] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,095] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,096] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,096] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,097] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,098] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,099] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,100] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,101] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,102] INFO [test_connector|task-1] Processing 8 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,103] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,104] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,104] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,105] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,106] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,106] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,107] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:50,107] INFO [test_connector|task-1] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,721] INFO [test_connector|task-2] Processing 1 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,722] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,722] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,723] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,723] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,724] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,724] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,724] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,725] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,725] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,726] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,726] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,727] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,727] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,727] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,728] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,728] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,729] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,729] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,730] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,730] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,730] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,731] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,731] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,732] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,732] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,733] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,733] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,734] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,734] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,734] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,735] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,735] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,736] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,736] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,737] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,737] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,738] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,738] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,738] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,739] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,739] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,740] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,741] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,741] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,742] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,742] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,743] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,743] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,744] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,745] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,745] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,746] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,746] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,747] INFO [test_connector|task-2] Processing 10 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:53,747] INFO [test_connector|task-2] Processing 8 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[2026-03-10 16:49:56,527] INFO [test_connector|task-2] Processing 0 records (io.aiven.kafka.connect.s3.AivenKafkaConnectS3SinkConnector:113)
+[0 Mar 10 16:50:00] avorovich@nj1.sv5:~/arnd 
+$ 

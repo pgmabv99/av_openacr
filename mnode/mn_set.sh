@@ -6,11 +6,12 @@
 # client=rdk
 client=ak
 
+# 
 omplat=ak
 # omplat=x2
 # omplat=x2/akmn
 # omplat=rp
-# omplat=local
+omplat=local
 
 
 if [ "$omplat" = "ak" ]; then
@@ -32,6 +33,7 @@ broker=$server
 cfg=release
 
 topic=test-topic0
-nbatch=5
-nrec=5
+nbatch=1
+nrec=100
 echo "setup  omplat:$omplat   " 
+

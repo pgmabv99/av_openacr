@@ -7,7 +7,8 @@ echo "====================starting produce"
 # skip delete as  x2 crashes 11/26
 # /opt/kafka/current/bin/kafka-topics.sh --bootstrap-server "$server" --delete --topic ${topic} || true
 # sleep 1
-/opt/kafka/current/bin/kafka-topics.sh --bootstrap-server "$server" --create --topic ${topic} --partitions 1 --replication-factor 1
+partitions=10
+/opt/kafka/current/bin/kafka-topics.sh --bootstrap-server "$server" --create --topic ${topic} --partitions $partitions --replication-factor 1
 sleep 1
 /opt/kafka/current/bin/kafka-topics.sh --bootstrap-server "$server" --describe --topic "$topic"
 

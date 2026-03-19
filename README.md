@@ -64,7 +64,7 @@ $ git diff HEAD -- data/ | grep '^+[^+]'
 ```
 acr_ed -create -finput -target:omcli ssimfile:x2db.nodeintf
 acr_ed -create -finput -target:omcli  -ssimfile:x2db.nodeintf -write 
-this should eb called
+this should be  called
 LoadTuplesMaybe(algo::strptr root, bool recursive)
 !!!!!
 acr -merge -write <<EOF 
@@ -547,3 +547,63 @@ ams.TerminateMsg
 
  $ ls -ltr data/x2rdb/* | grep spec
 -rw-rw-r-- 1 avorovich avorovich  12936 Mar  8 18:56 data/x2rdb/noderspec.ssim
+
+
+# atf_lat dashboard for v2
+```
+================ local snapshot count 154 taps nj1-4.x2-0|nj1-4.x2-1|nj1-4.x2-2|nj1-4.x2-3
+  
+================ Kafka metrics:Tcp pairs sorted by client_id 
+================== AVG_LAT(USEC)            - avg latency req/rsp for !!current!! snapshot 
+================== AVG_LAT_CUM(USEC)        - avg latency  of req/rsp ave latency for !!all!! snapshots 
+================== AVG_LAT_PROD_MSG(USEC)   - avg latency for 1 produce msg for current   snapshot  
+CLIENT_ID_KEY                TAP HOST  TCP_SHORT    AVG_LAT(USEC)  AVG_LAT_CUM(USEC)  AVG_LAT_PROD_MSG(USEC)  PROD_MSG_COUNT_PER_STEP  REQ_COUNT  FRAME_COUNT_PER_STEP  SNAPSHOT_ID  TIME
+adminclient-1                nj1.sv2   104.7-104.2  0              41.971             0                       0                        2          0                     154          2026-03-12T15:35:29.065406139
+adminclient-1                nj1.sv2   104.6-104.2  0              21.575             0                       0                        2          0                     154          2026-03-12T15:35:29.065406139
+adminclient-1                nj1.sv3   104.6-104.3  0              243.641            0                       0                        2          0                     154          2026-03-12T15:35:29.183808588
+consumer-sub-000-PS71uYs-1   nj1.sv2   104.7-104.2  4286.22        5253.36            0                       0                        25332      477                   154          2026-03-12T15:35:29.065406139
+consumer-sub-000-PS71uYs-1   nj1.sv2   104.7-104.2  0              11.575             0                       0                        3          0                     154          2026-03-12T15:35:29.065406139
+consumer-sub-000-PS71uYs-1   nj1.sv3   104.7-104.3  68.56          7259.53            0                       0                        122020     1281                  154          2026-03-12T15:35:29.183808588
+consumer-sub-000-PS71uYs-1   nj1.sv3   104.7-104.3  3347.55        3310.3             0                       0                        37764      627                   154          2026-03-12T15:35:29.183808588
+consumer-sub-000-PS71uYs-1   nj1.sv4   104.7-104.4  4628.08        5104.01            0                       0                        25657      508                   154          2026-03-12T15:35:29.206261106
+consumer-sub-000-PS71uYs-1   nj1.sv5   104.7-104.5  3165.32        3407.67            0                       0                        37353      660                   154          2026-03-12T15:35:29.093269067
+kafka-ui-admin-1773343999-1  nj1.sv2   104.1-104.2  0              31.686             0                       0                        2          0                     154          2026-03-12T15:35:29.065406139
+kafka-ui-admin-1773343999-1  nj1.sv2   104.1-104.2  0              75.993             0                       0                        13         0                     154          2026-03-12T15:35:29.065406139
+kafka-ui-admin-1773343999-1  nj1.sv3   104.1-104.3  0              68.647             0                       0                        16         0                     154          2026-03-12T15:35:29.183808588
+kafka-ui-admin-1773343999-1  nj1.sv4   104.1-104.4  0              90.075             0                       0                        12         0                     154          2026-03-12T15:35:29.206261106
+kafka-ui-admin-1773343999-1  nj1.sv5   104.1-104.5  0              52.629             0                       0                        11         0                     154          2026-03-12T15:35:29.093269067
+producer-1                   nj1.sv2   104.6-104.2  0              9.04               0                       0                        2          0                     154          2026-03-12T15:35:29.065406139
+producer-1                   nj1.sv2   104.6-104.2  115.773        130.533            11.056                  2377                     22566      430                   154          2026-03-12T15:35:29.065406139
+producer-1                   nj1.sv3   104.6-104.3  95.806         103.431            9.102                   2526                     33933      454                   154          2026-03-12T15:35:29.183808588
+producer-1                   nj1.sv4   104.6-104.4  196.599        189.6              18.34                   2787                     22611      477                   154          2026-03-12T15:35:29.206261106
+producer-1                   nj1.sv5   104.6-104.5  101.238        103.41             9.206                   2870                     33974      514                   154          2026-03-12T15:35:29.093269067
+producer-1                   nj1.sv5   104.6-104.5  0              31.83              0                       0                        2          0                     154          2026-03-12T15:35:29.093269067
+redpanda-console             nj1.sv2   104.1-104.2  0              3179.74            0                       0                        4          0                     154          2026-03-12T15:35:29.065406139
+redpanda-console             nj1.sv3   104.1-104.3  0              122.383            0                       0                        7          0                     154          2026-03-12T15:35:29.183808588
+redpanda-console             nj1.sv3   104.1-104.3  0              6533.1             0                       0                        2          0                     154          2026-03-12T15:35:29.183808588
+redpanda-console             nj1.sv3   104.1-104.3  0              581.955            0                       0                        2          0                     154          2026-03-12T15:35:29.183808588
+redpanda-console             nj1.sv4   104.1-104.4  0              4257.97            0                       0                        3          0                     154          2026-03-12T15:35:29.206261106
+redpanda-console             nj1.sv4   104.1-104.4  0              580.422            0                       0                        2          0                     154          2026-03-12T15:35:29.206261106
+redpanda-console             nj1.sv5   104.1-104.5  0              11.168             0                       0                        2          0                     154          2026-03-12T15:35:29.093269067
+redpanda-console             nj1.sv5   104.1-104.5  0              298.357            0                       0                        3          0                     154          2026-03-12T15:35:29.093269067
+redpanda-console             nj1.sv5   104.1-104.5  0              6035.02            0                       0                        2          0                     154          2026-03-12T15:35:29.093269067
+
+================= Kafka metrics: Topic partitionsinfo based on fetch 
+TOPIC_ID/PARTITION                      NAME                        TAP HOST  OFFSET_FETCH_LST  HIGH_WATERMARK  LAG  SNAPSHOT_ID  TIME                           OFFSET_PRODUCE(BASE!)
+a1eb3fe7-5071-4e78-b23c-61d3382e3d4e/0  test-topic-0000000-LRmZcF8  nj1.sv4   120990            120991          1    154          2026-03-12T15:35:29.206261106  121535
+a1eb3fe7-5071-4e78-b23c-61d3382e3d4e/1  test-topic-0000000-LRmZcF8  nj1.sv3   124416            124417          1    154          2026-03-12T15:35:29.183808588  124416
+a1eb3fe7-5071-4e78-b23c-61d3382e3d4e/2  test-topic-0000000-LRmZcF8  nj1.sv5   123551            123552          1    154          2026-03-12T15:35:29.093269067  123551
+a1eb3fe7-5071-4e78-b23c-61d3382e3d4e/3  test-topic-0000000-LRmZcF8  nj1.sv2   123128            123129          1    154          2026-03-12T15:35:29.065406139  123263
+a1eb3fe7-5071-4e78-b23c-61d3382e3d4e/4  test-topic-0000000-LRmZcF8  nj1.sv2   119580            119581          1    154          2026-03-12T15:35:29.065406139  119580
+a1eb3fe7-5071-4e78-b23c-61d3382e3d4e/5  test-topic-0000000-LRmZcF8  nj1.sv3   121076            121077          1    154          2026-03-12T15:35:29.183808588  121076
+a1eb3fe7-5071-4e78-b23c-61d3382e3d4e/6  test-topic-0000000-LRmZcF8  nj1.sv4   118668            118669          1    154          2026-03-12T15:35:29.206261106  119318
+a1eb3fe7-5071-4e78-b23c-61d3382e3d4e/7  test-topic-0000000-LRmZcF8  nj1.sv5   123036            123037          1    154          2026-03-12T15:35:29.093269067  123166
+a1eb3fe7-5071-4e78-b23c-61d3382e3d4e/8  test-topic-0000000-LRmZcF8  nj1.sv5   119314            119316          2    154          2026-03-12T15:35:29.093269067  119579
+a1eb3fe7-5071-4e78-b23c-61d3382e3d4e/9  test-topic-0000000-LRmZcF8  nj1.sv3   120545            120546          1    154          2026-03-12T15:35:29.183808588  120545
+
+================= x2 metrics
+================== AVG_LAT_REQ(USEC) -avg latency of x2write ack for current snapshot
+================== AVG_LAT_SEQ(USEC) -avg latency of x2read      for current snapshot
+
+gli pbash
+```

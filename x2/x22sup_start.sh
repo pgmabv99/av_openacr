@@ -39,7 +39,7 @@ if [ $? -ne 0 ]; then
 fi
 echo "==x2sup started successfully"
 
-
-# mn_topic_crt.sh  
+# kafka-topics.sh --bootstrap-server  localhost:54005 --describe
+# mn_topic_crt.sh  localhost:54005 1
 # sleep 1
 # lsof -Pan -p $(pidof x2gw) -i

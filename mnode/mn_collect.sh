@@ -72,7 +72,7 @@ collect_and_process_logs_kafkacw() {
     # grep -R -o 'addedRecords=CounterResult{unit=COUNT, value=[0-9]\+}' 
 }
 
-# collect_and_process_logs_atf_snf
-collect_and_process_logs_kafkacw
+collect_and_process_logs_atf_snf
+# collect_and_process_logs_kafkacw
 set +x 
 cd ~/arnd

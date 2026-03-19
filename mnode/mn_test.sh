@@ -20,15 +20,19 @@
 # mn_collect.sh
 
 
-# # == This is a simple test script to run Kafka producer performance test against x2 lost req ?? ===
-# source mn_set.sh
-# mn_brokers.sh
-# sleep 5
-# mn_perf.sh
-# sleep 2
-# mn_collect.sh
+# == This is a simple test script to run Kafka producer performance test against x2 lost req ?? ===
+source mn_set.sh
+mn_brokers.sh
+sleep 5
+mn_perf.sh
+sleep 2
+mn_perf.sh
+sleep 2
+mn_perf.sh
+sleep 2
+mn_collect.sh
 
-# exit
+exit
 
 
 
@@ -58,14 +62,14 @@
 
 # echo "====================local kafka connect"
 
-pkill -f java  || true
-source mn_set.sh
-mn_brokers.sh
-sleep 8
-mn_produce.sh
-kafka-connect start $server $topic
-sleep 12
-kafka-connect stop   
+# pkill -f java  || true
+# source mn_set.sh
+# mn_brokers.sh
+# sleep 8
+# mn_produce.sh
+# kafka-connect start $server $topic
+# sleep 12
+# kafka-connect stop   
 
 
 # # echo "====================VP connector test"

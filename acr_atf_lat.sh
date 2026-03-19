@@ -69,12 +69,14 @@ acr_ed -create -field  atf_lat.FMcb.dashboard_ready                    -arg bool
 acr_ed -create -field  atf_lat.FMcb.remote_time_cur                    -arg algo.UnTime       -dflt:0       -write -comment "remote time from cur  step" 
 acr_ed -create -field  atf_lat.FMcb.remote_time_last                   -arg algo.UnTime       -dflt:0       -write -comment "remote time from last step" 
 acr_ed -create -field  atf_lat.FMcb.atf_lat_dir                        -arg algo.Smallstr50   -dflt:0       -write -comment "directory for library files and dashboard" 
-acr_ed -create -field  atf_lat.FMcb.buf                                -arg algo.ByteAry                     -write -comment "test buffer" 
+acr_ed -create -field  atf_lat.FMcb.broker_nodetype                     -arg algo.Smallstr50                      -write -comment "node type of the broker used for tap - ak or x2 " 
+acr_ed -create -field  atf_lat.FMcb.broker_list                        -arg  algo.cstring                      -write -comment "list of broker nodes used for tap - ak or x2 " 
 
 
 # include into _db
 acr_ed -del    -field  atf_lat.FDb.mcb                                  -write
 acr_ed -create -field  atf_lat.FDb.mcb                                  -arg atf_lat.FMcb      -write -comment ""
+amc
 
 #----------FDb  steps
 
@@ -83,20 +85,31 @@ acr_ed -create -field  atf_lat.FDb.mcb                                  -arg atf
 acr -merge  -write <<EOF
 acr.delete dmmeta.field  field:command.atf_lat.in_file
 acr.delete dmmeta.field  field:command.atf_lat.out_file
-acr.delete dmmeta.field  field:command.atf_lat.skip_old
-acr.delete dmmeta.field  field:command.atf_lat.omenv
-acr.delete dmmeta.field  field:command.atf_lat.omplat
-acr.delete dmmeta.field  field:command.atf_lat.step_count_start
+acr.delete dmmeta.field  field:command.atf_lat.skip_old 
+acr.delete dmmeta.field  field:command.atf_lat.node
+acr.delete dmmeta.field  field:command.atf_lat.skip_n 
 acr.delete dmmeta.field  field:command.atf_lat.client_id  
 EOF
 acr -merge -write <<EOF
     dmmeta.field  field:command.atf_lat.in_file                   arg:algo.cstring         reftype:Val      dflt:'""'         comment:"read local saved ssim file instead of remote  "
     dmmeta.field  field:command.atf_lat.out_file                  arg:algo.cstring         reftype:Val      dflt:'"rem_saved.ssim"'         comment:"ssim file to save locally  "
-    dmmeta.field  field:command.atf_lat.skip_old                  arg:bool                 reftype:Val      dflt:false        comment:"skip snapshots before current local one "
-    dmmeta.field  field:command.atf_lat.omenv                     arg:omdb.Omenv           reftype:Pkey     dflt:'""'         comment:"omcli env with the sniffers"
-    dmmeta.field  field:command.atf_lat.omplat                    arg:omdb.Omplat          reftype:Pkey     dflt:'""'         comment:"Overwrites default omenv platform"
-    dmmeta.field  field:command.atf_lat.step_count_start          arg:u32                  reftype:Val      dflt:0            comment:"starting step to skip prologue"
+    dmmeta.field  field:command.atf_lat.node                  arg:x2rdb.Node           reftype:RegxSql     dflt:'""'      comment:"selector for nodes to start tap on "
+    dmmeta.field  field:command.atf_lat.skip_old                  arg:bool                 reftype:Val      dflt:false        comment:"skip snapshots before current local time "
+    dmmeta.field  field:command.atf_lat.skip_n                arg:u32                  reftype:Val      dflt:0            comment:"skip first N snapshots"
     dmmeta.field  field:command.atf_lat.client_id                 arg:algo.cstring         reftype:RegxSql  dflt:'"%"'        comment:"selector for client id displayed in dashboard"
+EOF
+
+# import ctype from ssimfile
+acr_ed -create  -finput -ssimfile:x2rdb.node -target:atf_lat -write -comment "inherited from ssimfile"
+
+# pointers from _db
+acr_ed -del  -field  atf_lat.FDb.zd_node   -write || true
+# note that if you add cascdel  you get gen error of node_Delete missing
+acr_ed -create -field  atf_lat.FDb.zd_node                                             -write -comment ""
+
+# load the tuples reminder
+acr -merge -write <<EOF 
+dmmeta.floadtuples  field:command.atf_lat.in  comment:""
 EOF
 
 

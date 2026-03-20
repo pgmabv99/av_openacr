@@ -7,8 +7,6 @@ set -e
 acr_ed -del    -ctype atf_lat.FTcp_pair_hist    -write || tru
 acr_ed -create -ctype  atf_lat.FTcp_pair_hist                          -pooltype Tpool       -write -comment "tcp pair entry"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.tcp_pair_hist            -arg algo.Smallstr50   -write -comment "tcp pair string key host:port-host:port"
-acr_ed -create -field  atf_lat.FTcp_pair_hist.kafka_lat_tot_cum        -arg u64              -write -comment "cum latency for all steps"
-acr_ed -create -field  atf_lat.FTcp_pair_hist.step_count_cum           -arg u64              -write -comment "count with non nzero latency  "
 acr_ed -create -field  atf_lat.FTcp_pair_hist.progress                 -arg omdb.OmTcpPair  -write -comment "current progress stats"
 acr_ed -create -field  atf_lat.FTcp_pair_hist.last_progress            -arg omdb.OmTcpPair  -write -comment "last progress stats"
 
@@ -85,22 +83,20 @@ amc
 acr -merge  -write <<EOF
 acr.delete dmmeta.field  field:command.atf_lat.in_file
 acr.delete dmmeta.field  field:command.atf_lat.out_file
-acr.delete dmmeta.field  field:command.atf_lat.skip_old 
 acr.delete dmmeta.field  field:command.atf_lat.node
-acr.delete dmmeta.field  field:command.atf_lat.skip_n 
+acr.delete dmmeta.field  field:command.atf_lat.start_snapshot
 acr.delete dmmeta.field  field:command.atf_lat.client_id  
 EOF
 acr -merge -write <<EOF
-    dmmeta.field  field:command.atf_lat.in_file                   arg:algo.cstring         reftype:Val      dflt:'""'         comment:"read local saved ssim file instead of remote  "
-    dmmeta.field  field:command.atf_lat.out_file                  arg:algo.cstring         reftype:Val      dflt:'"rem_saved.ssim"'         comment:"ssim file to save locally  "
-    dmmeta.field  field:command.atf_lat.node                  arg:x2rdb.Node           reftype:RegxSql     dflt:'""'      comment:"selector for nodes to start tap on "
-    dmmeta.field  field:command.atf_lat.skip_old                  arg:bool                 reftype:Val      dflt:false        comment:"skip snapshots before current local time "
-    dmmeta.field  field:command.atf_lat.skip_n                arg:u32                  reftype:Val      dflt:0            comment:"skip first N snapshots"
-    dmmeta.field  field:command.atf_lat.client_id                 arg:algo.cstring         reftype:RegxSql  dflt:'"%"'        comment:"selector for client id displayed in dashboard"
+dmmeta.field  field:command.atf_lat.in_file            arg:algo.cstring      reftype:Val        dflt:'""'              comment:"read local saved ssim file instead of remote  "
+dmmeta.field  field:command.atf_lat.out_file           arg:algo.cstring      reftype:Val        dflt:'"rem_saved.ssim"' comment:"ssim file to save locally  "
+dmmeta.field  field:command.atf_lat.node               arg:x2rdb.Node        reftype:RegxSql    dflt:'""'              comment:"selector for nodes to start tap on "
+dmmeta.field  field:command.atf_lat.start_snapshot     arg:i32               reftype:Val        dflt:-1                comment:"start from snapshot N. Need -history with  atf_snf .default -start with current time"
+dmmeta.field  field:command.atf_lat.client_id          arg:algo.cstring      reftype:RegxSql    dflt:'"%"'             comment:"selector for client id displayed in dashboard"
 EOF
 
-# import ctype from ssimfile
-acr_ed -create  -finput -ssimfile:x2rdb.node -target:atf_lat -write -comment "inherited from ssimfile"
+# import ctype from ssimfile (one time , how to delete )
+# acr_ed -create  -finput -ssimfile:x2rdb.node -target:atf_lat -write -comment "inherited from ssimfile"
 
 # pointers from _db
 acr_ed -del  -field  atf_lat.FDb.zd_node   -write || true

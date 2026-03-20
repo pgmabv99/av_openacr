@@ -55,17 +55,11 @@ acr_ed -create -field atf_snf.FTcp_pair.swin_offset           -arg u64          
 acr_ed -create -field atf_snf.FTcp_pair.kafka_req_corr_id     -arg u32              -write -comment "latest kafka req corr_id. used to prescreen rsp"
 
 # Kafka stats
-acr_ed -create -field atf_snf.FTcp_pair.kafka_count           -arg u32              -write -comment "kafka req or rsp count. cum per tcp pair"
-acr_ed -create -field atf_snf.FTcp_pair.kafka_req_ack_count   -arg u32              -write -comment "kafka req ack count"
-acr_ed -create -field atf_snf.FTcp_pair.kafka_len_tot         -arg u32              -write -comment "total of kafka req/rsp length per pair"
-acr_ed -create -field atf_snf.FTcp_pair.kafka_per_frame_count -arg u32              -write -comment "count of kafka req/rsp per frame"
-acr_ed -create -field atf_snf.FTcp_pair.kafka_lat_tot_per_step -arg u64              -write -comment "sum of  latencies  per step"
-acr_ed -create -field atf_snf.FTcp_pair.kafka_lat_max_per_step -arg u64              -write -comment "maxof  latencies  per step"
-acr_ed -create -field atf_snf.FTcp_pair.kafka_lat_min_per_step -arg u64              -write -comment "min of  latencies  per step"
-acr_ed -create -field atf_snf.FTcp_pair.kafka_count_per_step  -arg u64              -write -comment "count of kafa req per step"
-acr_ed -create -field atf_snf.FTcp_pair.kafka_prod_msg_count_per_step  -arg u64              -write -comment "produce msg count per step. across all paritions"
-acr_ed -create -field atf_snf.FTcp_pair.kafka_fetch_msg_lat_tot_per_step  -arg u64              -write -comment "fetch msg total fetch latency. host_time - max_timestamp"
-acr_ed -create -field atf_snf.FTcp_pair.kafka_fetch_msg_count_per_step  -arg u64              -write -comment "fetch msg count per step. across all partitions"
+acr_ed -create -field atf_snf.FTcp_pair.kafka_count                       -arg u32              -write -comment "kafka req or rsp count. cum per tcp pair"
+acr_ed -create -field atf_snf.FTcp_pair.kafka_req_ack_count               -arg u32              -write -comment "kafka req ack count"
+acr_ed -create -field atf_snf.FTcp_pair.kafka_len_tot                     -arg u32              -write -comment "total of kafka req/rsp length per pair"
+acr_ed -create -field atf_snf.FTcp_pair.kafka_per_frame_count             -arg u32              -write -comment "count of kafka req/rsp per frame"
+acr_ed -create -field atf_snf.FTcp_pair.progress                          -arg omdb.OmTcpPair   -write -comment "metrics progress"
 
 #x2 stats
 acr_ed -create -field atf_snf.FTcp_pair.x2msg_count           -arg u32              -write -comment "x2 msg . only read.In_Seqmsg"
@@ -275,6 +269,7 @@ acr.delete dmmeta.field  field:command.atf_snf.dir
 acr.delete dmmeta.field  field:command.atf_snf.hex_print
 acr.delete dmmeta.field  field:command.atf_snf.timestamp_log
 acr.delete dmmeta.field  field:command.atf_snf.kafka_buf_dump
+acr.delete dmmeta.field  field:command.atf_snf.history
 acr.delete dmmeta.field  field:command.atf_snf.broker_ports
 EOF
 acr -merge -write <<EOF
@@ -285,11 +280,13 @@ acr -merge -write <<EOF
     dmmeta.field  field:command.atf_snf.dir                    arg:algo.cstring  reftype:Val      dflt:'""'   comment:"dir under temp/atf_snf_logs/ to store output files"
     dmmeta.field  field:command.atf_snf.hex_print              arg:bool          reftype:Val      dflt:false       comment:"print kafka req/rsp in hex"
     dmmeta.field  field:command.atf_snf.timestamp_log          arg:bool          reftype:Val      dflt:true        comment:"add time stamp to log files directory"
+    dmmeta.field  field:command.atf_snf.history                arg:bool          reftype:Val      dflt:false       comment:"keep history of latency info in ssim for atf_lat. defautl keep 2 only""
     dmmeta.field  field:command.atf_snf.kafka_buf_dump         arg:bool          reftype:Val      dflt:false       comment:"collect/dump kafka req/rsp. may cause frame loss if high rate"
     dmmeta.field  field:command.atf_snf.broker_ports           arg:algo.cstring  reftype:Val      dflt:'""'        comment:"broker port list (p1,p2,...).used to discover client->broker direction.if absent number comparison used"
 EOF
 
 
+# dispatch for x2gw 
 # dispatch for x2gw 
 acr -merge  -write <<EOF
  acr.delete dmmeta.dispatch  dispatch:atf_snf.In 

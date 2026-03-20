@@ -51,6 +51,7 @@
 		},
 		//   "terminal.integrated.defaultProfile.linux": "bash",
 		  "terminal.integrated.cwd": "${workspaceFolder:arnd}",
+		  "terminal.integrated.wordWrap": false,
 		"files.associations": {
 			"array": "cpp",
 			"atomic": "cpp",

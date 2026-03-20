@@ -607,3 +607,37 @@ a1eb3fe7-5071-4e78-b23c-61d3382e3d4e/9  test-topic-0000000-LRmZcF8  nj1.sv3   12
 
 gli pbash
 ```
+
+
+```
+atf_snf.info intfname:data0-4T  port:1  ib:mlx5_10  pci:0000:c5:01.4  comment:"Flow created successfully, sniffing all traffic"
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.1:38939-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.6:41996-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.6:42004-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.6:42012-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.1:38939-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.6:41996-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.6:42004-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.6:42012-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.1:2521-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.1:37506-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.1:38939-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.6:41996-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.6:42004-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.6:42012-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.1:2521-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.1:37506-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+max_timestamp lat_max_timestamp_ns:3032872944  lat_max_timestamp_ms:3032  topic_id:9c1c7b0a-c3b0-434f-9002-b8eeac509c23  partition_index:1  record_count:1
+max_timestamp lat_max_timestamp_ns:1774027083189880553  lat_max_timestamp_ms:1774027083189  topic_id:9c1c7b0a-c3b0-434f-9002-b8eeac509c23  partition_index:7  record_count:0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.1:38939-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.6:41996-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.6:42004-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.6:42012-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.1:2521-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.1:37506-192.168.104.2:1643  fetch_count:0  fetch_lat_tot:0  "fetch_lat_tot(ms)":0  "fetch_lat_tot(sec)":0
+om_tcp_pair progress========================  tcp_pair_key:192.168.104.7:37210-192.168.104.2:1643  fetch_count:1  fetch_lat_tot:1774027086222753497  "fetch_lat_tot(ms)":1.77403e+12  "fetch_lat_tot(sec)":1.77403e+09
+max_timestamp lat_max_timestamp_ns:2328599  lat_max_timestamp_ms:2  topic_id:9c1c7b0a-c3b0-434f-9002-b8eeac509c23  partition_index:7  record_count:16
+max_timestamp lat_max_timestamp_ns:2763340  lat_max_timestamp_ms:2  topic_id:9c1c7b0a-c3b0-434f-9002-b8eeac509c23  partition_index:7  record_count:26
+max_timestamp lat_max_timestamp_ns:1848656  lat_max_timestamp_ms:1  topic_id:9c1c7b0a-c3b0-434f-9002-b8eeac509c23  partition_index:7  record_count:36
+
+```                                                                                                                                                                                                             m

@@ -5,10 +5,10 @@
 |Tpool kafka-----------------------------------|------------------------->/ atf_snf.FKafka                      
 |                                              |<-------------------------|Upptr p_tcp_pair                     
 |Bheap bh_ts_ns--------------------------------|------------------------->|                                     
-|                                              |Llist zd_kafka_obsolete-->|                                     
 |                                              |Ptr p_cur_kafka---------->|                                     
-|                                              |Thash ind_kafka_corr_id-->|                                     
+|                                              |Llist zd_kafka_obsolete-->|                                     
 |                                              |Bheap bh_kafka_corr_id--->|                                     
+|                                              |Thash ind_kafka_corr_id-->|                                     
 |                                              |                          -                                     
 |Lary snf--------------------------------------|------------------------->/ atf_snf.FSnf                        
 |Tpool client_id-------------------------------|--------------------------|---------------->/ atf_snf.FClient_id
@@ -16,33 +16,30 @@
 |                                              |Llist zd_client_id--------|---------------->|                   
 |                                              |Thash ind_client_id-------|---------------->|                   
 |                                              |                          |                 -                   
+|Tpool top_name_id------>/ atf_snf.FTopNameId  |                          |                                     
+|Bheap bh_top_name_id--->|                     |                          |                                     
+|Thash ind_top_name_id-->|                     |                          |                                     
+|                        -                     |                          |                                     
 |Tpool x2req------------>/ atf_snf.FX2req      |                          |                                     
 |Llist zd_x2req--------->|                     |                          |                                     
 |Thash ind_x2req-------->|                     |                          |                                     
-|                        -                     |                          |                                     
-|Tpool toppart---------->/ atf_snf.FToppart    |                          |                                     
-|Bheap bh_toppart------->|                     |                          |                                     
-|Thash ind_toppart------>|                     |                          |                                     
 |                        -                     |                          |                                     
 |Tpool x2seq------------>/ atf_snf.FX2seq      |                          |                                     
 |Llist zd_x2seq--------->|                     |                          |                                     
 |Thash ind_x2seq-------->|                     |                          |                                     
 |                        -                     |                          |                                     
+|Tpool toppart---------->/ atf_snf.FToppart    |                          |                                     
+|Bheap bh_toppart------->|                     |                          |                                     
+|Thash ind_toppart------>|                     |                          |                                     
+|                        -                     |                          |                                     
+|Lary intfname---------------------------------|--------------------------|---------------->/ atf_snf.FIntfname 
+|Thash ind_intfname----------------------------|--------------------------|---------------->|                   
+|                                              |                          |Ptr p_intfname-->|                   
+|                                              |                          |                 -                   
 |Val mcb---------------->/ atf_snf.FMcb        |                          |                                     
 |                        |Ptr p_cur_tcp_pair-->|                          |                                     
 |                        |                     -                          |                                     
 |                        |Ptr snf---------------------------------------->|                                     
-|                        -                                                |                                     
-|Tpool top_name_id------>/ atf_snf.FTopNameId                             |                                     
-|Bheap bh_top_name_id--->|                                                |                                     
-|Thash ind_top_name_id-->|                                                |                                     
-|                        -                                                |                                     
-|Lary intfname------------------------------------------------------------|---------------->/ atf_snf.FIntfname 
-|Thash ind_intfname-------------------------------------------------------|---------------->|                   
-|                                                                         |Ptr p_intfname-->|                   
-|                                                                         |                 -                   
-|Lary omnode------------>/ atf_snf.FOmnode                                |                                     
-|Llist zd_omnode-------->|                                                |                                     
 |                        -                                                |                                     
 |Lary memqp---------------------------------------------------------------|---------------->/ atf_snf.FMemqp    
 |                                                                         |Ptrary c_memqp-->|                   

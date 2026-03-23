@@ -39,7 +39,7 @@ collect_and_process_logs_atf_snf() {
     cat "$f"
   done > tap_all.log
 
-  set -x
+  # set -x
   echo " grep for produce/fetch responses in current log dir $(pwd) "
   grep "KafkaStorePayLoad" -rnI .
   grep "!seq_gap" -rnI .
@@ -74,5 +74,5 @@ collect_and_process_logs_kafkacw() {
 
 collect_and_process_logs_atf_snf
 # collect_and_process_logs_kafkacw
-set +x 
+# set +x 
 cd ~/arnd

@@ -6,8 +6,6 @@ cfg=${1:-release}
 start_ak_brokers() {
   echo "===============================================================start kafka brokers omplat:$omplat"
   omcli nj1-4.kafka-% -omplat:ak -dkr_clean_run
-  # x2rel -create -product:"tap" -node:nj1-4.kafka-% -node_selects_x2:false -upload:Y -create:Y     
-  # x2rel -create   -node:nj1-4.%   -upload:Y -create:Y  
   x2rel -create   -node:nj1-4.kafka-%  -upload:Y -create:Y  -product:tap -match_product_node:N 
   omcli nj1-4.kafka-% -omplat:ak -start_tap
   omcli nj1-4.kafka-% -omplat:ak -start_clean 
@@ -19,7 +17,7 @@ start_x2_brokers() {
   echo "install x2"
   # x2rel -create -product:"x2|x2w|tap" -node:nj1-4.x2-% -upload:Y -create:Y   -cfg:$cfg 
   # x2rel -create -product:"x2|x2w|tap" -env:nj1-4 -upload:Y -create:Y   -cfg:$cfg 
-  x2rel -create  -node:nj1-4.% -upload:Y -create:Y   -cfg:$cfg 
+  x2rel -create  -node:nj1-4.x2-% -upload:Y -create:Y  -product:"tap|x2|x2w" -match_product_node:N   -cfg:$cfg 
   echo "start x2"
   omcli nj1-4.x2-% -omplat:x2 -start_tap
   debug_x2sup=""

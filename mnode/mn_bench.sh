@@ -17,5 +17,5 @@ omcli nj1-4 -omtest:om_benchmark -omplat:$omplat -omrun_minutes:1 -omrun_driver:
 
 mn_collect.sh
 
-grep "option start_clean" $logname
-grep "Pub Latency" $logname
+
+exit 

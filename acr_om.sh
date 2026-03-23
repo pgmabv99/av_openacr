@@ -25,22 +25,30 @@ acr_ed -create -field omdb.OmTopNameId.time                           -arg algo.
 acr_ed -create -field omdb.OmTopNameId.snapshot_id                   -arg u32                           -write -comment "snap"
 
 #-------------OmTcpPair 
-set -e
 acr_ed -del     -ssimfile:omdb.om_tcp_pair  -write || true
 acr_ed -create  -ssimfile:omdb.om_tcp_pair   -write -comment "tcp pair  record for transfer latency"
 acr_ed -create -field  omdb.OmTcpPair.snapshot_id                   -arg u32              -write -comment "snap"
 acr_ed -create -field  omdb.OmTcpPair.time                          -arg algo.UnTime      -write -comment "Report time"
 acr_ed -create -field  omdb.OmTcpPair.frame_count                   -arg u32              -write -comment "number of frames for this pair"
+
 acr_ed -create -field  omdb.OmTcpPair.kafka_count                   -arg u32              -write -comment "number of kafka req  for this pair"
 acr_ed -create -field  omdb.OmTcpPair.req_lat_tot                   -arg u64              -write -comment "sum of  req/rsp latencies per step"
 acr_ed -create -field  omdb.OmTcpPair.req_lat_max                   -arg u64              -write -comment "max of  req/rsp latencies per step"
 acr_ed -create -field  omdb.OmTcpPair.req_lat_min                   -arg u64              -write -comment "min of  req/rsp latencies per step"
+
 acr_ed -create -field  omdb.OmTcpPair.prod_count                    -arg u64              -write -comment "produce msg count  across all partitions"
+acr_ed -create -field  omdb.OmTcpPair.prod_lat_tot                  -arg u64              -write -comment "produce msg total produce latency. "
+acr_ed -create -field  omdb.OmTcpPair.prod_lat_max                  -arg u64              -write -comment "max produce latency"
+acr_ed -create -field  omdb.OmTcpPair.prod_lat_min                  -arg u64              -write -comment "min produce latency"
+
+acr_ed -create -field  omdb.OmTcpPair.fetch_count                   -arg u64              -write -comment "fetch msg count"
 acr_ed -create -field  omdb.OmTcpPair.fetch_lat_tot                 -arg u64              -write -comment "fetch msg total fetch latency. host_time - max_timestamp"
-acr_ed -create -field  omdb.OmTcpPair.fetch_count                   -arg u64              -write -comment "fetch msg count per step. across all partitions"
+acr_ed -create -field  omdb.OmTcpPair.fetch_lat_max                 -arg u64              -write -comment "max fetch latency"
+acr_ed -create -field  omdb.OmTcpPair.fetch_lat_min                 -arg u64              -write -comment "min fetch latency" 
+
 acr_ed -create -field  omdb.OmTcpPair.client_id_key                 -arg algo.Smallstr50  -write -comment "kafka client id"
 acr_ed -create -field  omdb.OmTcpPair.host                          -arg algo.Smallstr50  -write -comment "capture host"
-amc
+
 
 #-------------OmTapHost (used for x2metrics for now)
 acr_ed -del     -ssimfile:omdb.om_tap_host  -write || true

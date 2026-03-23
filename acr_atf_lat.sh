@@ -85,13 +85,20 @@ acr.delete dmmeta.field  field:command.atf_lat.in_file
 acr.delete dmmeta.field  field:command.atf_lat.out_file
 acr.delete dmmeta.field  field:command.atf_lat.node
 acr.delete dmmeta.field  field:command.atf_lat.start_snapshot
-acr.delete dmmeta.field  field:command.atf_lat.client_id  
+acr.delete dmmeta.field  field:command.atf_lat.client_id
+acr.delete dmmeta.field  field:command.atf_lat.refresh
+acr.delete dmmeta.field  field:command.atf_lat.log
+acr.delete dmmeta.field  field:command.atf_lat.min_max
 EOF
+
 acr -merge -write <<EOF
 dmmeta.field  field:command.atf_lat.in_file            arg:algo.cstring      reftype:Val        dflt:'""'              comment:"read local saved ssim file instead of remote  "
 dmmeta.field  field:command.atf_lat.out_file           arg:algo.cstring      reftype:Val        dflt:'"rem_saved.ssim"' comment:"ssim file to save locally  "
 dmmeta.field  field:command.atf_lat.node               arg:x2rdb.Node        reftype:RegxSql    dflt:'""'              comment:"selector for nodes to start tap on "
 dmmeta.field  field:command.atf_lat.start_snapshot     arg:i32               reftype:Val        dflt:-1                comment:"start from snapshot N. Need -history with  atf_snf .default -start with current time"
+dmmeta.field  field:command.atf_lat.refresh            arg:i32               reftype:Val        dflt:4                 comment:"dashboard refresh interval in seconds for atf_lat"
+dmmeta.field  field:command.atf_lat.log                arg:bool              reftype:Val        dflt:false             comment:"enable stdout logging for atf_lat in addition to dashboard"
+dmmeta.field  field:command.atf_lat.min_max            arg:bool              reftype:Val        dflt:false             comment:"add min/max  to dashboard"
 dmmeta.field  field:command.atf_lat.client_id          arg:algo.cstring      reftype:RegxSql    dflt:'"%"'             comment:"selector for client id displayed in dashboard"
 EOF
 

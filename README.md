@@ -641,3 +641,67 @@ max_timestamp lat_max_timestamp_ns:2763340  lat_max_timestamp_ms:2  topic_id:9c1
 max_timestamp lat_max_timestamp_ns:1848656  lat_max_timestamp_ms:1  topic_id:9c1c7b0a-c3b0-434f-9002-b8eeac509c23  partition_index:7  record_count:36
 
 ```                                                                                                                                                                                                             m
+
+
+x2.ProcMsg  proc:redis-cli  payload:"Error: Connection reset by peer"
+
+x2.ProcMsg  proc:redis-cli  payload:"Error: Server closed the connection"
+
+
+$ git diff
+diff --git a/test/atf_comp/atf_exp.RespMtls b/test/atf_comp/atf_exp.RespMtls
+index 50d9b03c2..b9e740186 100644
+--- a/test/atf_comp/atf_exp.RespMtls
++++ b/test/atf_comp/atf_exp.RespMtls
+@@ -24,7 +24,7 @@ x2.ProcStatusMsg  proc:redis-cli  status:"Exited: 0"
+ x2.ProcStartMsg  proc:redis-cli  pty:N  cmd:"redis-cli -p $respsport --tls --cacert test/crt/ca.crt --cert test/crt/dave.crt --key test/crt/dave.key ACL WHOAMI"
+ x2.ProcReadMsg  proc:redis-cli  until:""
+ x2.ProcStatusMsg  proc:redis-cli  status:Running
+-x2.ProcMsg  proc:redis-cli  payload:"Error: Connection reset by peer"
++x2.ProcMsg  proc:redis-cli  payload:"Error: Server closed the connection"
+ x2.ProcStatusMsg  proc:redis-cli  status:"Exited: 0"
+ x2.ProcStartMsg  proc:redis-cli  pty:N  cmd:"redis-cli -p $respsport --tls --cacert test/crt/ca.crt --cert test/crt/mallory.crt --key test/crt/mallory.key ACL WHOAMI"
+ x2.ProcReadMsg  proc:redis-cli  until:""
+
+
+
+ $ git diff
+diff --git a/test/atf_comp/atf_exp.RespMtls b/test/atf_comp/atf_exp.RespMtls
+index b9e740186..b0c2aac60 100644
+--- a/test/atf_comp/atf_exp.RespMtls
++++ b/test/atf_comp/atf_exp.RespMtls
+@@ -29,7 +29,7 @@ x2.ProcStatusMsg  proc:redis-cli  status:"Exited: 0"
+ x2.ProcStartMsg  proc:redis-cli  pty:N  cmd:"redis-cli -p $respsport --tls --cacert test/crt/ca.crt --cert test/crt/mallory.crt --key test/crt/mallory.key ACL WHOAMI"
+ x2.ProcReadMsg  proc:redis-cli  until:""
+ x2.ProcStatusMsg  proc:redis-cli  status:Running
+-x2.ProcMsg  proc:redis-cli  payload:"Error: Server closed the connection"
++x2.ProcMsg  proc:redis-cli  payload:"Error: Connection reset by peer"
+ x2.ProcStatusMsg  proc:redis-cli  status:"Exited: 0"
+ x2.ProcReadMsg  proc:x2  until:""
+ x2.ProcStatusMsg  proc:x2  status:"Exited: 0"
+
+
+ tf_comp.comptest  comptest:atf_exp.Pub2kLarge  nrun:1  success:Y  elapsed:3.18256  comment:""
+Component test output below:
+    x2.ProcStartMsg  proc:x2  pty:N  cmd:"$bindir/x2sup -i -initdir:$tempdir -bindir:$bindir -random_ports -proc:dev4.x2sup-0-0 -temp"
+    x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
+    x2.ProcStatusMsg  proc:x2  status:Running
+    x2.ProcMsg  proc:x2  payload:"x2fs.done  path:temp/atf_comp/atf_exp.PubEachGw  fsid:879dcfea-4b8b-4572-807f-c09927eb7cb8"
+    x2.ProcMsg  proc:x2  payload:"x2sup-0-0: deleting vars file, initdir temp/atf_comp/atf_exp.PubEachGw"
+    x2.ProcMsg  proc:x2  payload:"x2sup.start  me:dev4.x2sup-0-0  nproc:11"
+    x2.ProcMsg  proc:x2  payload:"atf.var  http00port:45443"
+    x2.ProcMsg  proc:x2  payload:"atf.var  httpport:45443"
+    x2.ProcMsg  proc:x2  payload:"atf.var  kafka00port:36271"
+    x2.ProcMsg  proc:x2  payload:"atf.var  kafkaport:36271"
+    x2.ProcMsg  proc:x2  payload:"atf.var  mqtt00port:34905"
+    x2.ProcMsg  proc:x2  payload:"atf.var  mqttport:34905"
+    x2.ProcMsg  proc:x2  payload:"atf.var  nats00port:35237"
+    x2.ProcMsg  proc:x2  payload:"atf.var  natsport:35237"
+    x2.ProcMsg  proc:x2  payload:"atf.var  resp00port:36535"
+    x2.ProcMsg  proc:x2  payload:"atf.var  respport:36535"
+    x2.ProcMsg  proc:x2  payload:"atf.var  x200port:33577"
+    x2.ProcMsg  proc:x2  payload:"atf.var  x2port:33577"
+    x2.ProcMsg  proc:x2  payload:'x2sup.proc  proc:x2sup-3-0  status:Signaled  signal:"Bus error"  core:Y'
+    x2.ProcMsg  proc:x2  payload:'x2sup.proc  proc:x2sup-1-0  status:Signaled  signal:"Bus error"  core:Y'
+    x2.ProcMsg  proc:x2  payload:'x2sup.proc  proc:x2sup-2-0  status:Signaled  signal:"Bus error"  core:Y'
+    x2.ProcMsg  proc:x2  payload:"x2sup.proc  proc:x2cmt-0-0  status:Exited  code:0"

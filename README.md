@@ -56,20 +56,25 @@ void x2gw::Shm_EnableMetricsMsg(x2::EnableMetricsMsg &msg)
 ...
 ```
 ## to add ctype to read ssim in mmemory
+
 ```
-$ git diff HEAD -- data/ | grep '^+[^+]'
-+dmmeta.ctype  ctype:omcli.FNodeintf  comment:""
-+dmmeta.field  field:omcli.FDb.nodeintf  arg:omcli.FNodeintf  reftype:Lary  dflt:""  comment:""
-+dmmeta.field  field:omcli.FNodeintf.base  arg:x2db.Nodeintf  reftype:Base  dflt:""  comment:""
-```
-acr_ed -create -finput -target:omcli ssimfile:x2db.nodeintf
-acr_ed -create -finput -target:omcli  -ssimfile:x2db.nodeintf -write 
-this should be  called
-LoadTuplesMaybe(algo::strptr root, bool recursive)
-!!!!!
-acr -merge -write <<EOF 
-dmmeta.floadtuples  field:command.atf_snf.in  comment:""
+acr_ed -create -ssimfile awsdb.awtest -write
+
+acr_ed -create -finput -ssimfile:awsdb.awtest -indexed -target:atf_awcli -write -comment "include   from ssimfile"
+
+
+acr -merge  -write <<EOF
+ acr.delete dmmeta.floadtuples  field:command.atf_awcli.in 
 EOF
+acr -merge -write <<EOF
+dmmeta.floadtuples  field:command.atf_awcli.in  comment:""
+EOF
+```
+
+this should be  called
+```
+LoadTuplesMaybe(algo::strptr root, bool recursive)
+```
 
 ## Visuals
 
@@ -705,3 +710,25 @@ Component test output below:
     x2.ProcMsg  proc:x2  payload:'x2sup.proc  proc:x2sup-1-0  status:Signaled  signal:"Bus error"  core:Y'
     x2.ProcMsg  proc:x2  payload:'x2sup.proc  proc:x2sup-2-0  status:Signaled  signal:"Bus error"  core:Y'
     x2.ProcMsg  proc:x2  payload:"x2sup.proc  proc:x2cmt-0-0  status:Exited  code:0"
+
+
+dmmeta.field  field:x2rest.Commit.from  arg:algo.Smallstr20  reftype:Val  dflt:""  comment:"source process"
+dmmeta.field  field:x2rest.Commit.stream  arg:algo.Smallstr100  reftype:Val  dflt:""  comment:"stream path"
+dmmeta.field  field:x2rest.Commit.eof  arg:algo.Smallstr20  reftype:Val  dflt:""  comment:"end of file sequence"
+dmmeta.field  field:x2rest.Commit.flags  arg:algo.Smallstr50  reftype:Val  dflt:""  comment:"commit flags"
+dmmeta.field  field:x2rest.Commit.datasize  arg:algo.Smallstr20  reftype:Val  dflt:""  comment:"data size"
+dmmeta.field  field:x2rest.Commit.indexsize  arg:algo.Smallstr20  reftype:Val  dflt:""  comment:"index size"
+dmmeta.field  field:x2rest.Commit.data  arg:algo.cstring  reftype:Val  dflt:""  comment:"data file path"
+dmmeta.field  field:x2rest.Commit.n_snap  arg:algo.Smallstr20  reftype:Val  dflt:""  comment:"snapshot count"
+dmmeta.field  field:x2rest.Commit.n_reindex  arg:algo.Smallstr20  reftype:Val  dflt:""  comment:"reindex count"
+dmmeta.field  field:x2rest.Commit.index  arg:algo.cstring  reftype:Val  dflt:""  comment:"index file path"
+dmmeta.field  field:x2rest.Commit.snap_seq  arg:algo.Smallstr20  reftype:Val  dflt:""  comment:"snapshot sequence"
+dmmeta.field  field:x2rest.Commit.id  arg:algo.Smallstr20  reftype:Val  dflt:""  comment:"stream id"
+dmmeta.field  field:x2rest.Commit.comment  arg:algo.cstring  reftype:Val  dflt:""  comment:""
+
+
+
+$ awcli -create -awvpc -v
+awcli.info awvpc:aws1  comment:"awvpc already defined, skipping"
+awcli.info awvpc:aws1  igw_id:igw-09330e157e5651156  comment:"igw already exists, skipping"
+awcli.info awvpc:aws1  vpc_id:vpc-06e98ae6f0dc1cff7  igw_id:igw-09330e157e565115

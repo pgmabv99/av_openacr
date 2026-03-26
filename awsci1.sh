@@ -19,7 +19,7 @@ acr -merge -write <<EOF
 
     awsdb.envvtpath  envvtpath:awsci1.aws/awsx2admin  comment:"amazon keys to awsci1 env"
     x2rdb.device  device:awsci1.sv1  devtype:server  os:Linux  comment:"host on AWS"
-      awsdb.devawspec  device:awsci1.sv1  awspec:test-1  comment:""
+      awsdb.devawspec  device:awsci1.sv1  awspec:test-1  comment:""https://gitlab.vovaco.com/algornd/arnd/-/merge_requests/1443
       awsdb.devebs  devebs:awsci1.sv1/sdf  size_gb:100  voltype:gp3  comment:""
       x2rdb.devintf  devintf:awsci1.sv1/ctrl  subnet:awsci1.ctrl  ip:10.0.10.11  comment:"control interface"
         x2rdb.devintfip  devintf:awsci1.sv1/ctrl  public_ip:54.211.255.69  comment:""
@@ -69,3 +69,13 @@ EOF
 
 
 echo "done!!!!!!!!!!!!"
+
+exit 0
+
+
+
+awcli  -create    -devintfip:awsci1.sv1/ctrl     -env:awsci1  
+  echo " exit code $?"
+awcli  -del     -devintfip:awsci1.sv1/ctrl     -env:awsci1  
+awcli  -del     -devintfip:awsci1.sv1/ctrl     -env:awsci2 
+  echo " exit code $?"

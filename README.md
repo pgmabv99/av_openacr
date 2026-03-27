@@ -58,17 +58,31 @@ void x2gw::Shm_EnableMetricsMsg(x2::EnableMetricsMsg &msg)
 ## to add ctype to read ssim in mmemory
 
 ```
+# for dynamic input
+
+# new ssim file
 acr_ed -create -ssimfile awsdb.awtest -write
-
+# recreate finput
+acr -merge  -write <<EOF
+ acr.delete mmeta.finput  field:atf_awcli.FDb.awtest
+EOF
 acr_ed -create -finput -ssimfile:awsdb.awtest -indexed -target:atf_awcli -write -comment "include   from ssimfile"
-
-
+# make it loaf 
 acr -merge  -write <<EOF
  acr.delete dmmeta.floadtuples  field:command.atf_awcli.in 
 EOF
 acr -merge -write <<EOF
 dmmeta.floadtuples  field:command.atf_awcli.in  comment:""
 EOF
+
+# this should be called
+#LoadTuplesMaybe(algo::strptr root, bool recursive)
+
+# for static
+# new ssim file
+acr_ed -create -ssimfile awsdb.awtest -write
+# move in at compile time
+acr_ed -create -gstatic  -ssimfile:awsdb.awtest -indexed -target:atf_awcli -write -comment "include static from ssimfile"
 ```
 
 this should be  called

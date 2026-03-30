@@ -35,6 +35,7 @@ acr -merge  -write <<EOF
 acr.delete dmmeta.field  field:command.atf_awcli.test
 acr.delete dmmeta.field  field:command.atf_awcli.env
 acr.delete dmmeta.field  field:command.atf_awcli.maxerr
+acr.delete dmmeta.field  field:command.atf_awcli.cleanup_only
 
 EOF
 
@@ -42,6 +43,7 @@ acr -merge -write <<EOF
     dmmeta.field  field:command.atf_awcli.test                 arg:algo.cstring  reftype:RegxSql  dflt:'"%"'  comment:"test selector"
     dmmeta.field  field:command.atf_awcli.env                  arg:algo.cstring  reftype:Val  dflt:'"awsci1"'  comment:"aws* environment"
     dmmeta.field  field:command.atf_awcli.maxerr               arg:u32           reftype:Val  dflt:3   comment:"Exit after this many errors"
+    dmmeta.field  field:command.atf_awcli.cleanup_only               arg:bool          reftype:Val  dflt:false   comment:"Only perform cleanup, do not run tests"
 EOF
 
 

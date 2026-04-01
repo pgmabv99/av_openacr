@@ -37,6 +37,9 @@
 		},
 		{
 			"path": "../arnd/temp/kafka_connect"
+		},
+		{
+			"path": "../arnd/temp/atf_awcli"
 		}
 	],
 	"settings": {

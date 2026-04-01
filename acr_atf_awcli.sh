@@ -21,7 +21,8 @@ fi
 set -e
 acr_ed -del    -ctype atf_awcli.FMcb                               -write  || true
 acr_ed -create -ctype atf_awcli.FMcb                               -write -comment "Main CB"
-acr_ed -create -field atf_awcli.FMcb.current_test                       -arg bool    -write -comment "current test result passed fro step"
+acr_ed -create -field atf_awcli.FMcb.current_test                       -arg bool    -write -comment "current test result passed from step"
+acr_ed -create -field atf_awcli.FMcb.cleanup_in_progress                       -arg bool    -write -comment "cleanup in progress flag"
 
 
 # include  atf_awcli.FMcb into _db
@@ -35,15 +36,22 @@ acr -merge  -write <<EOF
 acr.delete dmmeta.field  field:command.atf_awcli.test
 acr.delete dmmeta.field  field:command.atf_awcli.env
 acr.delete dmmeta.field  field:command.atf_awcli.maxerr
-acr.delete dmmeta.field  field:command.atf_awcli.cleanup_only
+acr.delete dmmeta.field  field:command.atf_awcli.maxwait
+acr.delete dmmeta.field  field:command.atf_awcli.cleanup
+acr.delete dmmeta.field  field:command.atf_awcli.snap
+acr.delete dmmeta.field  field:command.atf_awcli.snap
+acr.delete dmmeta.field  field:command.atf_awcli.keep_instance
 
 EOF
 
 acr -merge -write <<EOF
-    dmmeta.field  field:command.atf_awcli.test                 arg:algo.cstring  reftype:RegxSql  dflt:'"%"'  comment:"test selector"
+    dmmeta.field  field:command.atf_awcli.test                 arg:algo.cstring  reftype:RegxSql  dflt:'""'  comment:"test selector"
     dmmeta.field  field:command.atf_awcli.env                  arg:algo.cstring  reftype:Val  dflt:'"awsci1"'  comment:"aws* environment"
     dmmeta.field  field:command.atf_awcli.maxerr               arg:u32           reftype:Val  dflt:3   comment:"Exit after this many errors"
-    dmmeta.field  field:command.atf_awcli.cleanup_only               arg:bool          reftype:Val  dflt:false   comment:"Only perform cleanup, do not run tests"
+    dmmeta.field  field:command.atf_awcli.maxwait              arg:u32           reftype:Val  dflt:60  comment:"Exit polling loop  after this many seconds"
+    dmmeta.field  field:command.atf_awcli.cleanup              arg:bool          reftype:Val  dflt:false   comment:"perform cleanup before tests"
+    dmmeta.field  field:command.atf_awcli.snap                 arg:bool          reftype:Val  dflt:false   comment:"include longrunnign snap ~ 40 sec "
+    dmmeta.field  field:command.atf_awcli.keep_instance        arg:bool          reftype:Val  dflt:false   comment:"keep device/instance after test"
 EOF
 
 

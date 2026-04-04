@@ -48,7 +48,7 @@ alias gitlog='git log --oneline --graph --decorate --all --date=iso-strict'
 
 alias gitclean_bin='git checkout -- bin .vscode/launch.json'
 alias x2tree='ps -e --forest -o pid,ppid,cmd | grep x2'
-alias gr='git-rebase-remote origin'
+alias gr='git-rebase-rgbemote origin'
 
 
 alias al='source  ~/arnd/conf/alexei/bash_profile'
@@ -184,7 +184,7 @@ export LANG=en_US.UTF-8
 export TERM=xterm-256color
 
 
-bind '"\t":menu-complete'
+[[ $- == *i* ]] && bind '"\t":menu-complete'
 
 # reset for vscode remote development
 

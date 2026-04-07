@@ -746,3 +746,27 @@ $ awcli -create -awvpc -v
 awcli.info awvpc:aws1  comment:"awvpc already defined, skipping"
 awcli.info awvpc:aws1  igw_id:igw-09330e157e5651156  comment:"igw already exists, skipping"
 awcli.info awvpc:aws1  vpc_id:vpc-06e98ae6f0dc1cff7  igw_id:igw-09330e157e565115
+
+
+
+x2rdb.userid  userid:amenshov/aws1.1685    comment:""
+x2rdb.userid  userid:awsx2admin/aws1.2000  comment:""
+x2rdb.userid  userid:dkrusr/aws1.1020      comment:""
+x2rdb.userid  userid:vparizhs/aws1.2024    comment:""
+x2rdb.userid  userid:x2admin/aws1.1100     comment:""
+x2rdb.userid  userid:x2usr/aws1.1134       comment:""
+
+
+Guys, I don't want to spam the main thread with aws , so here is a new one.
+
+Need  help/question, pls
+
+Is there a new approach to user structure as of last 4 commits in master.  this started failing   for my env
+$ awcli -create    -device:awsci1.sv1 -env:awsci1 
+awcli.error  awcli.error  userid:x2admin/awsci1.  comment:"userid not found"
+
+I noted that acr -t env:aws1  contain about 5 user definition (seem to map to aws logins), but the awsci1 tree does not.  If I remove last 4 commits the command  works (as it did today before I rebased).
+
+What is the correct way to fix this.. ?  
+
+Also , this check is not triggered for option like -whoami

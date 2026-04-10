@@ -789,3 +789,108 @@ awcli: awcli_rc:0
 atf_awcli.info comment:"network deletion ended"
 atf_awcli.info time:2026-04-09T21:34:28.242654604  awtest:"device    "  comment:passed  duration:272.314
 atf_awcli.info nrun:5  npass:5  nerr:0  duration_all_tests:303.095
+
+
+
+
+
+
+comptest x2traf.SmokeBin -msg_rate:500K -msg_size:128 -payload:bin -max_msgs:2 -report:N
+comment Binary data from x2traf
+timeout 10
+repeat 1
+
+# Expected output below (test/atf_comp/x2traf.SmokeBin)
+# 0000000  \0 001 002 003 004 005 006  \a  \b  \t  \n  \v  \f  \r 016 017
+# 0000020 020 021 022 023 024 025 026 027 030 031 032 033 034 035 036 037
+
+
+
+
+
+comptest atf_exp.Resp -bindir:$bindir -comptest:$comptest -timeout:$timeout
+comment RESP Smoke test
+ncore 1024
+timeout 10
+exit_code 0
+filter sed -E -f test/filt.sed
+x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -initdir:$tempdir -bindir:$bindir -random_ports -temp"
+x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
+.....
+ams.TerminateMsg
+
+# Expected output below (test/atf_comp/atf_exp.Resp)
+# x2.ProcStartMsg  proc:x2  pty:N  cmd:"$bindir/x2sup -i -initdir:$tempdir -bindir:$bindir -random_ports -temp"
+# x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
+
+
+
+
+x2.ProcReadMsg  proc:x2aws  until:arn:aws:iam::123456789012:user/awcli
+====================
+
+comptest atf_exp.AwsSmoke -bindir:$bindir -comptest:$comptest -timeout:$timeout
+comment Aws Smoke test
+ncore 1024
+timeout 100
+repeat 1
+memcheck N
+coverage N
+exit_code 0
+x2.ProcStartMsg  proc:x2aws  cmd:"$bindir/awcli -whoami -env:awsci1 "
+x2.ProcReadMsg  proc:x2aws
+
+# Expected output below (test/atf_comp/atf_exp.AwsSmoke)
+# x2.ProcStartMsg  proc:x2aws  pty:N  cmd:"$bindir/awcli -whoami -env:awsci1 "
+# x2.ProcReadMsg  proc:x2aws  until:arn:aws:iam::123456789012:user/awcli
+# x2.ProcStatusMsg  proc:x2aws  status:Running
+# x2.ProcMsg  proc:x2aws  payload:'awsdb.awuser  awuser:awsx2admin  awgroup:awsx2admin  arn:arn:aws:iam::723738377939:user/awsx2admin  user_id:AIDA2RARLH3JTISJQVOXB  comment:""'
+
+
+comptest atf_x2aws.AwsSmoke 
+comment Aws Smoke test
+ncore 1024
+timeout 100
+repeat 1
+memcheck N
+coverage N
+exit_code 0
+x2.ProcStartMsg  proc:x2aws  cmd:"$bindir/x2aws -whoami -env:awsci1"
+x2.ProcReadMsg   proc:x2aws   until:bla
+x2.ProcStartMsg  proc:x2aws  cmd:"$bindir/x2aws -create -devsnap:awsci1.sv1/sda1 -env:awsci1"
+x2.ProcReadMsg   proc:x2aws    until:bla
+
+# Expected output below (test/atf_comp/atf_x2aws.AwsSmoke)
+
+atf_exp invocation from atf_comp
+
+atf_exp -h#!/usr/bin/env bash
+export tempdir=temp/atf_comp/atf_exp.Resp
+export comptest=atf_exp.Resp
+export compdir=temp/atf_comp/atf_exp.Resp
+export bindir=build/release
+export timeout=10
+mkdir -p temp/atf_comp/atf_exp.Resp
+cat > temp/atf_comp/atf_exp.Resp/in << 'ATFEOF'
+x2.ProcStartMsg  proc:x2  cmd:"$bindir/x2sup -i -initdir:$tempdir -bindir:$bindir -random_ports -temp"
+x2.ProcReadMsg  proc:x2  until:READY_FOR_TEST
+x2.ProcStartMsg  proc:redis-cli  cmd:"redis-cli -p $respport COMMAND"
+x2.ProcReadMsg  proc:redis-cli
+x2.ProcStartMsg  proc:redis-cli  cmd:"redis-cli -p $respport HELLO 3"
+x2.ProcReadMsg  proc:redis-cli
+x2.ProcStartMsg  proc:redis-cli  cmd:'redis-cli -p $respport ECHO "VIA TRITA VIA TUTA"'
+x2.ProcReadMsg  proc:redis-cli
+x2.ProcStartMsg  proc:redis-cli-sub  cmd:"redis-cli -p $respport SUBSCRIBE /public/anon"
+x2.ProcReadMsg  proc:redis-cli-sub  until:subscribe
+x2.ProcReadMsg  proc:redis-cli-sub  until:/public/anon
+x2.ProcReadMsg  proc:redis-cli-sub  until:payload:1
+x2.ProcStartMsg  proc:redis-cli-pub  cmd:'redis-cli -p $respport PUBLISH /public/anon "QUOD LICET JOVI, NON LICET BOVI"'
+x2.ProcReadMsg  proc:redis-cli-pub
+x2.ProcReadMsg  proc:redis-cli-sub  until:QUOD
+x2.ProcKillMsg  proc:redis-cli-sub
+x2.ProcReadMsg  proc:redis-cli-sub
+x2.ProcMsg  proc:x2  payload:ams.TerminateMsg
+x2.ProcReadMsg  proc:x2
+ams.TerminateMsg
+ATFEOF
+build/release/atf_exp -bindir:build/release -comptest:atf_exp.Resp -timeout:10 < temp/atf_comp/atf_exp.Resp/in > temp/atf_comp/atf_exp.Resp/out 2>&1

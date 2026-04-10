@@ -1,0 +1,417 @@
+0 Apr 09 21:28:39] avorovich@nj1.sv5:~/arnd 
+$ atf_awcli -cleanup -test:% -trace:awcli
+atf_awcli.info comment:"performing cleanup of all objects in "  env:awsci1
+atf_awcli.info comment:"device/instance deletion started"
+awcli: atf_awcli.info cmd:"awcli -del -force  -device:awsci1.sv1 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:""
+awcli: awcli.warn  device:awsci1.sv1  comment:"instance not defined"
+awcli: awcli.info  device:awsci1.sv1  state:"instance not defined"
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe    -device:awsci1.sv1 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"instance not defined"
+awcli: awcli.info  device:awsci1.sv1  state:"instance not defined"
+awcli: awcli_rc:0
+atf_awcli.info comment:"device/instance deletion ended"
+atf_awcli.info comment:"network deletion started"
+awcli: atf_awcli.info cmd:"awcli -del -force  -devintf:awsci1.sv1/% -trace:awcli -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:""
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  eni_id:""  comment:"deleting eni"
+awcli: awcli.info  devintf:awsci1.sv1/data0  eni_id:""  comment:"deleting eni"
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  devintf:""
+awcli: awcli.info  devintf:awsci1.sv1/data0  devintf:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe   -devintf:awsci1.sv1/% -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:'devintf:""'
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  devintf:""
+awcli: awcli.info  devintf:awsci1.sv1/data0  devintf:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del        -devintfip:awsci1.sv1/ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:public_ip
+awcli: awcli.info device:awsci1.sv1/ctrl  alloc_id:eipalloc-0ae0fc74ecb67b911  comment:"releasing eip"
+awcli: awcli.info device:awsci1.sv1/ctrl  alloc_id:eipalloc-0ae0fc74ecb67b911  public_ip:184.73.61.248  assoc_id:""
+awcli: x2rdb.devintfip  devintf:awsci1.sv1/ctrl  public_ip:184.73.61.248  comment:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del        -awsg -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"will be deleted"
+awcli: awcli.warn awsg:awsci1.sg-1  comment:"awsg is not defined"
+awcli: awcli.info awsg:awsci1.sg-1  group_id:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del      -subnet:awsci1.ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"deleting subnet"
+awcli: awcli.warn  subnet:awsci1.ctrl  comment:"subnet not found, skipping"
+awcli: awcli.info  subnet:awsci1.ctrl  cidr:10.0.10.0/24  az:use1-az1  subnet_id:""
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:""  assoc_id:""  dst:0.0.0.0/0  gwtype:igw
+awcli: awcli.info  subnetrt:awsci1.ctrl/local  rt_id:""  assoc_id:""  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe -subnet:awsci1.ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:'subnet_id:""'
+awcli: awcli.info  subnet:awsci1.ctrl  cidr:10.0.10.0/24  az:use1-az1  subnet_id:""
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:""  assoc_id:""  dst:0.0.0.0/0  gwtype:igw
+awcli: awcli.info  subnetrt:awsci1.ctrl/local  rt_id:""  assoc_id:""  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del      -subnet:awsci1.data0 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"deleting subnet"
+awcli: awcli.warn  subnet:awsci1.data0  comment:"subnet not found, skipping"
+awcli: awcli.info  subnet:awsci1.data0  cidr:10.0.20.0/24  az:use1-az1  subnet_id:""
+awcli: awcli.info  subnetrt:awsci1.data0/local  rt_id:""  assoc_id:""  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe -subnet:awsci1.data0 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:'subnet_id:""'
+awcli: awcli.info  subnet:awsci1.data0  cidr:10.0.20.0/24  az:use1-az1  subnet_id:""
+awcli: awcli.info  subnetrt:awsci1.data0/local  rt_id:""  assoc_id:""  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del      -awvpc:awsci1 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"awvpc:awsci1  vpc_id:vpc"
+awcli: awcli.warn awvpc:awsci1  comment:"igw not found, skipping detach/delete"
+awcli: awcli.warn awvpc:awsci1  comment:"awvpc is not defined"
+awcli: awcli.info awvpc:awsci1  vpc_id:""  igw_id:""
+awcli: awcli_rc:0
+atf_awcli.info comment:"network deletion ended"
+atf_awcli.info comment:"data disk deletion started"
+awcli: atf_awcli.info cmd:"awcli -del          -devebs:awsci1.sv1/sdf -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"volume deleted"
+awcli: awcli.warn  devebs:awsci1.sv1/sdf  comment:"volume not found, skipping"
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:""  size_gb:100  voltype:gp3  dev:/dev/sdf  state:""  instance_id:""
+awcli: awcli_rc:0
+atf_awcli.info comment:"data disk deletion ended"
+atf_awcli.info comment:"running tests============================================================================="
+atf_awcli.info time:2026-04-09T21:28:57.326429675  awtest:"whoami    "  comment:whoami
+awcli: atf_awcli.info cmd:"awcli -whoami -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:awuser:awsx2admin
+awcli: awsdb.awuser  awuser:awsx2admin  awgroup:awsx2admin  arn:arn:aws:iam::723738377939:user/awsx2admin  user_id:AIDA2RARLH3JTISJQVOXB  comment:""
+awcli: awcli_rc:0
+atf_awcli.info time:2026-04-09T21:28:57.435055014  awtest:"whoami    "  comment:passed  duration:0.0994933
+atf_awcli.info time:2026-04-09T21:28:57.435096663  awtest:"devintfip "  comment:"elastic IP create/delete"
+awcli: atf_awcli.info cmd:"awcli -create -devintfip:awsci1.sv1/ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:public_ip
+awcli: awcli.info device:awsci1.sv1/ctrl  comment:"allocating eip"
+awcli: awcli.info device:awsci1.sv1/ctrl  alloc_id:eipalloc-0dbf07b817922f334  public_ip:98.89.249.123  assoc_id:""
+awcli: x2rdb.devintfip  devintf:awsci1.sv1/ctrl  public_ip:98.89.249.123  comment:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del    -devintfip:awsci1.sv1/ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:public_ip
+awcli: awcli.info device:awsci1.sv1/ctrl  alloc_id:eipalloc-0dbf07b817922f334  comment:"releasing eip"
+awcli: awcli.info device:awsci1.sv1/ctrl  alloc_id:eipalloc-0dbf07b817922f334  public_ip:98.89.249.123  assoc_id:""
+awcli: x2rdb.devintfip  devintf:awsci1.sv1/ctrl  public_ip:98.89.249.123  comment:""
+awcli: awcli_rc:0
+atf_awcli.info time:2026-04-09T21:29:00.285803701  awtest:"devintfip "  comment:passed  duration:2.61104
+atf_awcli.info time:2026-04-09T21:29:00.285820531  awtest:"network   "  comment:"vpc/subnet/eni create/delete"
+atf_awcli.info comment:"network creation started"
+awcli: atf_awcli.info cmd:"awcli -create       -awvpc:awsci1 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"awvpc:awsci1  vpc_id:vpc"
+awcli: awcli.info awvpc:awsci1  comment:"creating awvpc"
+awcli: awcli.info awvpc:awsci1  comment:"creating igw"
+awcli: awcli.info awvpc:awsci1  igw_id:igw-0058f6b597a3a7dca  comment:"attaching igw to vpc"
+awcli: awcli.info awvpc:awsci1  vpc_id:vpc-0dfddd0297fe737b6  igw_id:igw-0058f6b597a3a7dca
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -create       -subnet:awsci1.ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"associating route table"
+awcli: awcli.info  subnet:awsci1.ctrl  cidr:10.0.10.0/24  az:use1-az1  comment:"creating subnet"
+awcli: awcli.info  subnet:awsci1.ctrl  comment:"creating route table"
+awcli: awcli.info  subnet:awsci1.ctrl  comment:"associating route table with subnet"
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:rtb-0ce9b8e0ab297c428  dst:0.0.0.0/0  gwtype:igw  comment:"adding route"
+awcli: awcli.info  subnet:awsci1.ctrl  cidr:10.0.10.0/24  az:use1-az1  subnet_id:subnet-0de3dfae59b5786d2
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:rtb-0ce9b8e0ab297c428  assoc_id:rtbassoc-023d4c4165d429ce7  dst:0.0.0.0/0  gwtype:igw
+awcli: awcli.info  subnetrt:awsci1.ctrl/local  rt_id:rtb-0ce9b8e0ab297c428  assoc_id:rtbassoc-023d4c4165d429ce7  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe     -subnet:awsci1.ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:subnet_id:subnet
+awcli: awcli.info  subnet:awsci1.ctrl  cidr:10.0.10.0/24  az:use1-az1  subnet_id:subnet-0de3dfae59b5786d2
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:rtb-0ce9b8e0ab297c428  assoc_id:rtbassoc-023d4c4165d429ce7  dst:0.0.0.0/0  gwtype:igw
+awcli: awcli.info  subnetrt:awsci1.ctrl/local  rt_id:rtb-0ce9b8e0ab297c428  assoc_id:rtbassoc-023d4c4165d429ce7  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -create       -subnet:awsci1.data0 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"associating route table"
+awcli: awcli.info  subnet:awsci1.data0  cidr:10.0.20.0/24  az:use1-az1  comment:"creating subnet"
+awcli: awcli.info  subnet:awsci1.data0  comment:"creating route table"
+awcli: awcli.info  subnet:awsci1.data0  comment:"associating route table with subnet"
+awcli: awcli.info  subnet:awsci1.data0  cidr:10.0.20.0/24  az:use1-az1  subnet_id:subnet-04dd442328d3e0bbe
+awcli: awcli.info  subnetrt:awsci1.data0/local  rt_id:rtb-0ed36db684b8780b3  assoc_id:rtbassoc-0440a0ab858e243e9  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe     -subnet:awsci1.data0 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:subnet_id:subnet
+awcli: awcli.info  subnet:awsci1.data0  cidr:10.0.20.0/24  az:use1-az1  subnet_id:subnet-04dd442328d3e0bbe
+awcli: awcli.info  subnetrt:awsci1.data0/local  rt_id:rtb-0ed36db684b8780b3  assoc_id:rtbassoc-0440a0ab858e243e9  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -create       -awsg -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"creating awsg"
+awcli: awcli.info awsg:awsci1.sg-1  comment:"creating awsg"
+awcli: awcli.info awsg:awsci1.sg-1  group_id:sg-07d105ac0a40047a5
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -create       -devintfip:awsci1.sv1/ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:public_ip
+awcli: awcli.info device:awsci1.sv1/ctrl  comment:"allocating eip"
+awcli: awcli.info device:awsci1.sv1/ctrl  alloc_id:eipalloc-0d46f063884c94b39  public_ip:184.73.61.248  assoc_id:""
+awcli: x2rdb.devintfip  devintf:awsci1.sv1/ctrl  public_ip:184.73.61.248  comment:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -create       -devintf:awsci1.sv1/% -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"creating eni"
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  subnet_id:subnet-0de3dfae59b5786d2  private_ip:10.0.10.11  comment:"creating eni"
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  eni_id:eni-083f089b880750bdd  alloc_id:eipalloc-0d46f063884c94b39  public_ip:54.211.255.69  comment:"associating eip to eni"
+awcli: awcli.info  devintf:awsci1.sv1/data0  subnet_id:subnet-04dd442328d3e0bbe  private_ip:10.0.20.11  comment:"creating eni"
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  eni_id:eni-083f089b880750bdd  status:available  private_ip:10.0.10.11  subnet_id:subnet-0de3dfae59b5786d2  mac:02:51:40:df:c5:8f  attach_id:""  instance_id:""
+awcli: awcli.info  devintf:awsci1.sv1/data0  eni_id:eni-09f68cdb8304b0faa  status:available  private_ip:10.0.20.11  subnet_id:subnet-04dd442328d3e0bbe  mac:02:cb:72:72:22:eb  attach_id:""  instance_id:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe     -devintf:awsci1.sv1/% -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:status:available
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  eni_id:eni-083f089b880750bdd  status:available  private_ip:10.0.10.11  subnet_id:subnet-0de3dfae59b5786d2  mac:02:51:40:df:c5:8f  attach_id:""  instance_id:""
+awcli: awcli.info  devintf:awsci1.sv1/data0  eni_id:eni-09f68cdb8304b0faa  status:available  private_ip:10.0.20.11  subnet_id:subnet-04dd442328d3e0bbe  mac:02:cb:72:72:22:eb  attach_id:""  instance_id:""
+awcli: awcli_rc:0
+atf_awcli.info comment:"network creation ended"
+atf_awcli.info comment:"network deletion started"
+awcli: atf_awcli.info cmd:"awcli -del -force  -devintf:awsci1.sv1/% -trace:awcli -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:""
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  eni_id:eni-083f089b880750bdd  comment:"deleting eni"
+awcli: awcli.info  devintf:awsci1.sv1/data0  eni_id:eni-09f68cdb8304b0faa  comment:"deleting eni"
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  eni_id:eni-083f089b880750bdd  status:available  private_ip:10.0.10.11  subnet_id:subnet-0de3dfae59b5786d2  mac:02:51:40:df:c5:8f  attach_id:""  instance_id:""
+awcli: awcli.info  devintf:awsci1.sv1/data0  eni_id:eni-09f68cdb8304b0faa  status:available  private_ip:10.0.20.11  subnet_id:subnet-04dd442328d3e0bbe  mac:02:cb:72:72:22:eb  attach_id:""  instance_id:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe   -devintf:awsci1.sv1/% -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:'devintf:""'
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  devintf:""
+awcli: awcli.info  devintf:awsci1.sv1/data0  devintf:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del        -devintfip:awsci1.sv1/ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:public_ip
+awcli: awcli.info device:awsci1.sv1/ctrl  alloc_id:eipalloc-0d46f063884c94b39  comment:"releasing eip"
+awcli: awcli.info device:awsci1.sv1/ctrl  alloc_id:eipalloc-0d46f063884c94b39  public_ip:184.73.61.248  assoc_id:""
+awcli: x2rdb.devintfip  devintf:awsci1.sv1/ctrl  public_ip:184.73.61.248  comment:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del        -awsg -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"will be deleted"
+awcli: awcli.info awsg:awsci1.sg-1  id:sg-07d105ac0a40047a5  comment:"will be deleted"
+awcli: awcli.info awsg:awsci1.sg-1  group_id:sg-07d105ac0a40047a5
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del      -subnet:awsci1.ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"deleting subnet"
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  assoc_id:rtbassoc-023d4c4165d429ce7  comment:"disassociating route table"
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:rtb-0ce9b8e0ab297c428  comment:"deleting route table"
+awcli: awcli.info  subnet:awsci1.ctrl  id:subnet-0de3dfae59b5786d2  comment:"deleting subnet"
+awcli: awcli.info  subnet:awsci1.ctrl  cidr:10.0.10.0/24  az:use1-az1  subnet_id:subnet-0de3dfae59b5786d2
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:rtb-0ce9b8e0ab297c428  assoc_id:rtbassoc-023d4c4165d429ce7  dst:0.0.0.0/0  gwtype:igw
+awcli: awcli.info  subnetrt:awsci1.ctrl/local  rt_id:rtb-0ce9b8e0ab297c428  assoc_id:rtbassoc-023d4c4165d429ce7  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe -subnet:awsci1.ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:'subnet_id:""'
+awcli: awcli.info  subnet:awsci1.ctrl  cidr:10.0.10.0/24  az:use1-az1  subnet_id:""
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:""  assoc_id:""  dst:0.0.0.0/0  gwtype:igw
+awcli: awcli.info  subnetrt:awsci1.ctrl/local  rt_id:""  assoc_id:""  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del      -subnet:awsci1.data0 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"deleting subnet"
+awcli: awcli.info  subnetrt:awsci1.data0/local  assoc_id:rtbassoc-0440a0ab858e243e9  comment:"disassociating route table"
+awcli: awcli.info  subnetrt:awsci1.data0/local  rt_id:rtb-0ed36db684b8780b3  comment:"deleting route table"
+awcli: awcli.info  subnet:awsci1.data0  id:subnet-04dd442328d3e0bbe  comment:"deleting subnet"
+awcli: awcli.info  subnet:awsci1.data0  cidr:10.0.20.0/24  az:use1-az1  subnet_id:subnet-04dd442328d3e0bbe
+awcli: awcli.info  subnetrt:awsci1.data0/local  rt_id:rtb-0ed36db684b8780b3  assoc_id:rtbassoc-0440a0ab858e243e9  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe -subnet:awsci1.data0 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:'subnet_id:""'
+awcli: awcli.info  subnet:awsci1.data0  cidr:10.0.20.0/24  az:use1-az1  subnet_id:""
+awcli: awcli.info  subnetrt:awsci1.data0/local  rt_id:""  assoc_id:""  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del      -awvpc:awsci1 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"awvpc:awsci1  vpc_id:vpc"
+awcli: awcli.info awvpc:awsci1  igw:igw-0058f6b597a3a7dca  comment:"detaching igw"
+awcli: awcli.info awvpc:awsci1  igw:igw-0058f6b597a3a7dca  comment:"deleting igw"
+awcli: awcli.info awvpc:awsci1  id:vpc-0dfddd0297fe737b6  comment:"will be deleted"
+awcli: awcli.info awvpc:awsci1  vpc_id:vpc-0dfddd0297fe737b6  igw_id:igw-0058f6b597a3a7dca
+awcli: awcli_rc:0
+atf_awcli.info comment:"network deletion ended"
+atf_awcli.info time:2026-04-09T21:29:25.579887984  awtest:"network   "  comment:passed  duration:23.1675
+atf_awcli.info time:2026-04-09T21:29:25.579908383  awtest:"disk      "  comment:"EBS  create/delete. snapshot under option"
+atf_awcli.info comment:"data disk creation started"
+awcli: atf_awcli.info cmd:"awcli -create    -devebs:awsci1.sv1/sdf -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"creating volume"
+awcli: awcli.info  devebs:awsci1.sv1/sdf  size_gb:100  voltype:gp3  comment:"creating volume"
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0cbad0ad16dbd312e  comment:"no running instance, skipping attach"
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0cbad0ad16dbd312e  size_gb:100  voltype:gp3  dev:/dev/sdf  state:creating  instance_id:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe  -devebs:awsci1.sv1/sdf -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:state:available
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0cbad0ad16dbd312e  size_gb:100  voltype:gp3  dev:/dev/sdf  state:creating  instance_id:""
+awcli: awcli_rc:0
+.awcli: atf_awcli.info cmd:"awcli -describe  -devebs:awsci1.sv1/sdf -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:state:available
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0cbad0ad16dbd312e  size_gb:100  voltype:gp3  dev:/dev/sdf  state:available  instance_id:""
+awcli: awcli_rc:0
+
+atf_awcli.info comment:"data disk creation ended"
+atf_awcli.info comment:"data disk deletion started"
+awcli: atf_awcli.info cmd:"awcli -del          -devebs:awsci1.sv1/sdf -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"volume deleted"
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0cbad0ad16dbd312e  instance_id:""  attach_status:""
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0cbad0ad16dbd312e  comment:"deleting volume"
+awcli: .
+awcli: awcli.info  devebs:awsci1.sv1/sdf  comment:"volume deleted"
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:""  size_gb:100  voltype:gp3  dev:/dev/sdf  state:""  instance_id:""
+awcli: awcli_rc:0
+atf_awcli.info comment:"data disk deletion ended"
+atf_awcli.info time:2026-04-09T21:29:30.93304554  awtest:"disk      "  comment:passed  duration:4.90309
+atf_awcli.info time:2026-04-09T21:29:30.933059679  awtest:"device    "  comment:"device/instance with all prerequisites create/delete"
+atf_awcli.info comment:"network creation started"
+awcli: atf_awcli.info cmd:"awcli -create       -awvpc:awsci1 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"awvpc:awsci1  vpc_id:vpc"
+awcli: awcli.info awvpc:awsci1  comment:"creating awvpc"
+awcli: awcli.info awvpc:awsci1  comment:"creating igw"
+awcli: awcli.info awvpc:awsci1  igw_id:igw-0242197dca97773ab  comment:"attaching igw to vpc"
+awcli: awcli.info awvpc:awsci1  vpc_id:vpc-0040d40c0c6594615  igw_id:igw-0242197dca97773ab
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -create       -subnet:awsci1.ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"associating route table"
+awcli: awcli.info  subnet:awsci1.ctrl  cidr:10.0.10.0/24  az:use1-az1  comment:"creating subnet"
+awcli: awcli.info  subnet:awsci1.ctrl  comment:"creating route table"
+awcli: awcli.info  subnet:awsci1.ctrl  comment:"associating route table with subnet"
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:rtb-0620586fad2e876e4  dst:0.0.0.0/0  gwtype:igw  comment:"adding route"
+awcli: awcli.info  subnet:awsci1.ctrl  cidr:10.0.10.0/24  az:use1-az1  subnet_id:subnet-0ff827bf73c3f7414
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:rtb-0620586fad2e876e4  assoc_id:rtbassoc-0f62f9a08ff97f103  dst:0.0.0.0/0  gwtype:igw
+awcli: awcli.info  subnetrt:awsci1.ctrl/local  rt_id:rtb-0620586fad2e876e4  assoc_id:rtbassoc-0f62f9a08ff97f103  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe     -subnet:awsci1.ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:subnet_id:subnet
+awcli: awcli.info  subnet:awsci1.ctrl  cidr:10.0.10.0/24  az:use1-az1  subnet_id:subnet-0ff827bf73c3f7414
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:rtb-0620586fad2e876e4  assoc_id:rtbassoc-0f62f9a08ff97f103  dst:0.0.0.0/0  gwtype:igw
+awcli: awcli.info  subnetrt:awsci1.ctrl/local  rt_id:rtb-0620586fad2e876e4  assoc_id:rtbassoc-0f62f9a08ff97f103  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -create       -subnet:awsci1.data0 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"associating route table"
+awcli: awcli.info  subnet:awsci1.data0  cidr:10.0.20.0/24  az:use1-az1  comment:"creating subnet"
+awcli: awcli.info  subnet:awsci1.data0  comment:"creating route table"
+awcli: awcli.info  subnet:awsci1.data0  comment:"associating route table with subnet"
+awcli: awcli.info  subnet:awsci1.data0  cidr:10.0.20.0/24  az:use1-az1  subnet_id:subnet-0d0dfd442536e0b94
+awcli: awcli.info  subnetrt:awsci1.data0/local  rt_id:rtb-06b394365ac0711a7  assoc_id:rtbassoc-0c778d859d014800a  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe     -subnet:awsci1.data0 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:subnet_id:subnet
+awcli: awcli.info  subnet:awsci1.data0  cidr:10.0.20.0/24  az:use1-az1  subnet_id:subnet-0d0dfd442536e0b94
+awcli: awcli.info  subnetrt:awsci1.data0/local  rt_id:rtb-06b394365ac0711a7  assoc_id:rtbassoc-0c778d859d014800a  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -create       -awsg -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"creating awsg"
+awcli: awcli.info awsg:awsci1.sg-1  comment:"creating awsg"
+awcli: awcli.info awsg:awsci1.sg-1  group_id:sg-02aa68b796c2715cf
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -create       -devintfip:awsci1.sv1/ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:public_ip
+awcli: awcli.info device:awsci1.sv1/ctrl  comment:"allocating eip"
+awcli: awcli.info device:awsci1.sv1/ctrl  alloc_id:eipalloc-07a73ec05401d894d  public_ip:98.89.249.123  assoc_id:""
+awcli: x2rdb.devintfip  devintf:awsci1.sv1/ctrl  public_ip:98.89.249.123  comment:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -create       -devintf:awsci1.sv1/% -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"creating eni"
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  subnet_id:subnet-0ff827bf73c3f7414  private_ip:10.0.10.11  comment:"creating eni"
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  eni_id:eni-00e0da67eed052348  alloc_id:eipalloc-07a73ec05401d894d  public_ip:54.211.255.69  comment:"associating eip to eni"
+awcli: awcli.info  devintf:awsci1.sv1/data0  subnet_id:subnet-0d0dfd442536e0b94  private_ip:10.0.20.11  comment:"creating eni"
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  eni_id:eni-00e0da67eed052348  status:available  private_ip:10.0.10.11  subnet_id:subnet-0ff827bf73c3f7414  mac:02:ce:6e:6a:39:83  attach_id:""  instance_id:""
+awcli: awcli.info  devintf:awsci1.sv1/data0  eni_id:eni-095bd4af7191a3cb0  status:available  private_ip:10.0.20.11  subnet_id:subnet-0d0dfd442536e0b94  mac:02:c1:2f:8b:e3:19  attach_id:""  instance_id:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe     -devintf:awsci1.sv1/% -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:status:available
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  eni_id:eni-00e0da67eed052348  status:available  private_ip:10.0.10.11  subnet_id:subnet-0ff827bf73c3f7414  mac:02:ce:6e:6a:39:83  attach_id:""  instance_id:""
+awcli: awcli.info  devintf:awsci1.sv1/data0  eni_id:eni-095bd4af7191a3cb0  status:available  private_ip:10.0.20.11  subnet_id:subnet-0d0dfd442536e0b94  mac:02:c1:2f:8b:e3:19  attach_id:""  instance_id:""
+awcli: awcli_rc:0
+atf_awcli.info comment:"network creation ended"
+atf_awcli.info comment:"data disk creation started"
+awcli: atf_awcli.info cmd:"awcli -create    -devebs:awsci1.sv1/sdf -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"creating volume"
+awcli: awcli.info  devebs:awsci1.sv1/sdf  size_gb:100  voltype:gp3  comment:"creating volume"
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0de5ea173349d491e  comment:"no running instance, skipping attach"
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0de5ea173349d491e  size_gb:100  voltype:gp3  dev:/dev/sdf  state:creating  instance_id:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe  -devebs:awsci1.sv1/sdf -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:state:available
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0de5ea173349d491e  size_gb:100  voltype:gp3  dev:/dev/sdf  state:creating  instance_id:""
+awcli: awcli_rc:0
+.awcli: atf_awcli.info cmd:"awcli -describe  -devebs:awsci1.sv1/sdf -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:state:available
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0de5ea173349d491e  size_gb:100  voltype:gp3  dev:/dev/sdf  state:available  instance_id:""
+awcli: awcli_rc:0
+
+atf_awcli.info comment:"data disk creation ended"
+atf_awcli.info comment:"device/instance creation started"
+awcli: atf_awcli.info cmd:"awcli -create    -device:awsci1.sv1 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:""
+awcli: awcli.info  device:awsci1.sv1  comment:"creating instance"
+awcli: awcli.info  device:awsci1.sv1  state:pending  comment:"waiting for running state"
+awcli: awcli.info  device:awsci1.sv1  state:pending  comment:"waiting for running state"
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0de5ea173349d491e  instance_id:i-08cd692ca45bd8a27  dev:/dev/sdf  comment:"attaching volume"
+awcli: awcli.info  device_id:awsci1.sv1/i-064db50bf0b1be3eb  state:terminated  public_ip:""  eni_ctrl:""  image_id:ami-07d5da81c47e22ee4
+awcli: awcli.info  device_id:awsci1.sv1/i-0f4c4d53f5f51a949  state:terminated  public_ip:""  eni_ctrl:""  image_id:ami-07d5da81c47e22ee4
+awcli: awcli.info  device_id:awsci1.sv1/i-08cd692ca45bd8a27  state:running  public_ip:98.89.249.123  eni_ctrl:eni-00e0da67eed052348  image_id:ami-07d5da81c47e22ee4
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe  -device:awsci1.sv1 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:state:running
+awcli: awcli.info  device_id:awsci1.sv1/i-064db50bf0b1be3eb  state:terminated  public_ip:""  eni_ctrl:""  image_id:ami-07d5da81c47e22ee4
+awcli: awcli.info  device_id:awsci1.sv1/i-0f4c4d53f5f51a949  state:terminated  public_ip:""  eni_ctrl:""  image_id:ami-07d5da81c47e22ee4
+awcli: awcli.info  device_id:awsci1.sv1/i-08cd692ca45bd8a27  state:running  public_ip:98.89.249.123  eni_ctrl:eni-00e0da67eed052348  image_id:ami-07d5da81c47e22ee4
+awcli: awcli_rc:0
+atf_awcli.info comment:"device/instance creation ended"
+atf_awcli.info comment:"device/instance deletion started"
+awcli: atf_awcli.info cmd:"awcli -del -force  -device:awsci1.sv1 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:""
+awcli: awcli.info  device:awsci1.sv1  comment:"instance will be terminated"
+awcli: awcli.info  device:awsci1.sv1  state:"instance not defined"
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe    -device:awsci1.sv1 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"instance not defined"
+awcli: awcli.info  device:awsci1.sv1  state:"instance not defined"
+awcli: awcli_rc:0
+atf_awcli.info comment:"device/instance deletion ended"
+atf_awcli.info comment:"data disk deletion started"
+awcli: atf_awcli.info cmd:"awcli -del          -devebs:awsci1.sv1/sdf -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"volume deleted"
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0de5ea173349d491e  instance_id:i-08cd692ca45bd8a27  attach_status:attached
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0de5ea173349d491e  comment:"detaching stale volume"
+awcli: ....
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0de5ea173349d491e  comment:"volume detached, status:available"
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:vol-0de5ea173349d491e  comment:"deleting volume"
+awcli: .
+awcli: awcli.info  devebs:awsci1.sv1/sdf  comment:"volume deleted"
+awcli: awcli.info  devebs:awsci1.sv1/sdf  vol_id:""  size_gb:100  voltype:gp3  dev:/dev/sdf  state:""  instance_id:i-08cd692ca45bd8a27
+awcli: awcli_rc:0
+atf_awcli.info comment:"data disk deletion ended"
+atf_awcli.info comment:"network deletion started"
+awcli: atf_awcli.info cmd:"awcli -del -force  -devintf:awsci1.sv1/% -trace:awcli -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:""
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  eni_id:eni-00e0da67eed052348  attach_id:eni-attach-079dc202ae85afdd2  comment:"detaching eni"
+awcli: ..........
+awcli: awcli.info  eni_id:eni-00e0da67eed052348  status:in-use  elapsed_sec:10  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-00e0da67eed052348  status:in-use  elapsed_sec:20  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-00e0da67eed052348  status:in-use  elapsed_sec:30  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-00e0da67eed052348  status:in-use  elapsed_sec:40  waiting_for:available
+awcli: .........
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  eni_id:eni-00e0da67eed052348  comment:"eni detached, status:available"
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  eni_id:eni-00e0da67eed052348  comment:"deleting eni"
+awcli: awcli.info  devintf:awsci1.sv1/data0  eni_id:eni-095bd4af7191a3cb0  attach_id:eni-attach-0969ebe55752d5ca6  comment:"detaching eni"
+awcli: ..........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:10  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:20  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:30  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:40  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:50  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:60  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:70  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:80  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:90  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:100  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:110  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:120  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:130  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:140  waiting_for:available
+awcli: .........
+awcli: awcli.info  eni_id:eni-095bd4af7191a3cb0  status:in-use  elapsed_sec:150  waiting_for:available
+awcli: .....
+awcli: awcli.info  devintf:awsci1.sv1/data0  eni_id:eni-095bd4af7191a3cb0  comment:"eni detached, status:available"
+awcli: awcli.info  devintf:awsci1.sv1/data0  eni_id:eni-095bd4af7191a3cb0  comment:"deleting eni"
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  eni_id:eni-00e0da67eed052348  status:in-use  private_ip:10.0.10.11  subnet_id:subnet-0ff827bf73c3f7414  mac:02:ce:6e:6a:39:83  attach_id:eni-attach-079dc202ae85afdd2  instance_id:i-08cd692ca45bd8a27
+awcli: awcli.info  devintf:awsci1.sv1/data0  eni_id:eni-095bd4af7191a3cb0  status:in-use  private_ip:10.0.20.11  subnet_id:subnet-0d0dfd442536e0b94  mac:02:c1:2f:8b:e3:19  attach_id:eni-attach-0969ebe55752d5ca6  instance_id:i-08cd692ca45bd8a27
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe   -devintf:awsci1.sv1/% -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:'devintf:""'
+awcli: awcli.info  devintf:awsci1.sv1/ctrl  devintf:""
+awcli: awcli.info  devintf:awsci1.sv1/data0  devintf:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del        -devintfip:awsci1.sv1/ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:public_ip
+awcli: awcli.info device:awsci1.sv1/ctrl  alloc_id:eipalloc-07a73ec05401d894d  comment:"releasing eip"
+awcli: awcli.info device:awsci1.sv1/ctrl  alloc_id:eipalloc-07a73ec05401d894d  public_ip:98.89.249.123  assoc_id:""
+awcli: x2rdb.devintfip  devintf:awsci1.sv1/ctrl  public_ip:98.89.249.123  comment:""
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del        -awsg -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"will be deleted"
+awcli: awcli.info awsg:awsci1.sg-1  id:sg-02aa68b796c2715cf  comment:"will be deleted"
+awcli: awcli.info awsg:awsci1.sg-1  group_id:sg-02aa68b796c2715cf
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del      -subnet:awsci1.ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"deleting subnet"
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  assoc_id:rtbassoc-0f62f9a08ff97f103  comment:"disassociating route table"
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:rtb-0620586fad2e876e4  comment:"deleting route table"
+awcli: awcli.info  subnet:awsci1.ctrl  id:subnet-0ff827bf73c3f7414  comment:"deleting subnet"
+awcli: awcli.info  subnet:awsci1.ctrl  cidr:10.0.10.0/24  az:use1-az1  subnet_id:subnet-0ff827bf73c3f7414
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:rtb-0620586fad2e876e4  assoc_id:rtbassoc-0f62f9a08ff97f103  dst:0.0.0.0/0  gwtype:igw
+awcli: awcli.info  subnetrt:awsci1.ctrl/local  rt_id:rtb-0620586fad2e876e4  assoc_id:rtbassoc-0f62f9a08ff97f103  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe -subnet:awsci1.ctrl -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:'subnet_id:""'
+awcli: awcli.info  subnet:awsci1.ctrl  cidr:10.0.10.0/24  az:use1-az1  subnet_id:""
+awcli: awcli.info  subnetrt:awsci1.ctrl/igw  rt_id:""  assoc_id:""  dst:0.0.0.0/0  gwtype:igw
+awcli: awcli.info  subnetrt:awsci1.ctrl/local  rt_id:""  assoc_id:""  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del      -subnet:awsci1.data0 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"deleting subnet"
+awcli: awcli.info  subnetrt:awsci1.data0/local  assoc_id:rtbassoc-0c778d859d014800a  comment:"disassociating route table"
+awcli: awcli.info  subnetrt:awsci1.data0/local  rt_id:rtb-06b394365ac0711a7  comment:"deleting route table"
+awcli: awcli.info  subnet:awsci1.data0  id:subnet-0d0dfd442536e0b94  comment:"deleting subnet"
+awcli: awcli.info  subnet:awsci1.data0  cidr:10.0.20.0/24  az:use1-az1  subnet_id:subnet-0d0dfd442536e0b94
+awcli: awcli.info  subnetrt:awsci1.data0/local  rt_id:rtb-06b394365ac0711a7  assoc_id:rtbassoc-0c778d859d014800a  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -describe -subnet:awsci1.data0 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:'subnet_id:""'
+awcli: awcli.info  subnet:awsci1.data0  cidr:10.0.20.0/24  az:use1-az1  subnet_id:""
+awcli: awcli.info  subnetrt:awsci1.data0/local  rt_id:""  assoc_id:""  dst:10.0.0.0/16  gwtype:local
+awcli: awcli_rc:0
+awcli: atf_awcli.info cmd:"awcli -del      -awvpc:awsci1 -env:awsci1\n 2>&1 ; echo awcli_rc:$?"  pattern:"awvpc:awsci1  vpc_id:vpc"
+awcli: awcli.info awvpc:awsci1  igw:igw-0242197dca97773ab  comment:"detaching igw"
+awcli: awcli.info awvpc:awsci1  igw:igw-0242197dca97773ab  comment:"deleting igw"
+awcli: awcli.info awvpc:awsci1  id:vpc-0040d40c0c6594615  comment:"will be deleted"
+awcli: awcli.info awvpc:awsci1  vpc_id:vpc-0040d40c0c6594615  igw_id:igw-0242197dca97773ab
+awcli: awcli_rc:0
+atf_awcli.info comment:"network deletion ended"
+atf_awcli.info time:2026-04-09T21:34:28.242654604  awtest:"device    "  comment:passed  duration:272.314
+atf_awcli.info nrun:5  npass:5  nerr:0  duration_all_tests:303.095
+[0 Apr 09 21:34:28] avorovich@nj1.sv5:~/arnd 
+$ 

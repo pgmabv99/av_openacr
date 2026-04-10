@@ -1,0 +1,42 @@
+$ atf_awcli -cleanup -test:% 
+atf_awcli.info comment:"performing cleanup of all objects in "  env:awsci1
+atf_awcli.info comment:"device/instance deletion started"
+atf_awcli.info comment:"device/instance deletion ended"
+atf_awcli.info comment:"network deletion started"
+atf_awcli.info comment:"network deletion ended"
+atf_awcli.info comment:"data disk deletion started"
+atf_awcli.info comment:"data disk deletion ended"
+atf_awcli.info comment:"running tests============================================================================="
+atf_awcli.info time:2026-04-09T21:37:17.92538442  awtest:"whoami    "  comment:whoami
+atf_awcli.info time:2026-04-09T21:37:18.047429618  awtest:"whoami    "  comment:passed  duration:0.111788
+atf_awcli.info time:2026-04-09T21:37:18.047462728  awtest:"devintfip "  comment:"elastic IP create/delete"
+atf_awcli.info time:2026-04-09T21:37:21.147835749  awtest:"devintfip "  comment:passed  duration:2.83972
+atf_awcli.info time:2026-04-09T21:37:21.147866569  awtest:"network   "  comment:"vpc/subnet/eni create/delete"
+atf_awcli.info comment:"network creation started"
+atf_awcli.info comment:"network creation ended"
+atf_awcli.info comment:"network deletion started"
+atf_awcli.info comment:"network deletion ended"
+atf_awcli.info time:2026-04-09T21:37:46.332554957  awtest:"network   "  comment:passed  duration:23.0674
+atf_awcli.info time:2026-04-09T21:37:46.332567056  awtest:"disk      "  comment:"EBS  create/delete. snapshot under option"
+atf_awcli.info comment:"data disk creation started"
+.
+atf_awcli.info comment:"data disk creation ended"
+atf_awcli.info comment:"data disk deletion started"
+atf_awcli.info comment:"data disk deletion ended"
+atf_awcli.info time:2026-04-09T21:37:51.63980556  awtest:"disk      "  comment:passed  duration:4.86105
+atf_awcli.info time:2026-04-09T21:37:51.63981877  awtest:"device    "  comment:"device/instance with all prerequisites create/delete"
+atf_awcli.info comment:"network creation started"
+atf_awcli.info comment:"network creation ended"
+atf_awcli.info comment:"data disk creation started"
+.
+atf_awcli.info comment:"data disk creation ended"
+atf_awcli.info comment:"device/instance creation started"
+atf_awcli.info comment:"device/instance creation ended"
+atf_awcli.info comment:"device/instance deletion started"
+atf_awcli.info comment:"device/instance deletion ended"
+atf_awcli.info comment:"data disk deletion started"
+atf_awcli.info comment:"data disk deletion ended"
+atf_awcli.info comment:"network deletion started"
+atf_awcli.info comment:"network deletion ended"
+atf_awcli.info time:2026-04-09T21:42:40.825502455  awtest:"device    "  comment:passed  duration:264.873
+atf_awcli.info nrun:5  npass:5  nerr:0  duration_all_tests:295.753

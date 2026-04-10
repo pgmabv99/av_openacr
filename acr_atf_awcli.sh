@@ -40,8 +40,8 @@ acr.delete dmmeta.field  field:command.atf_awcli.maxerr
 acr.delete dmmeta.field  field:command.atf_awcli.maxwait
 acr.delete dmmeta.field  field:command.atf_awcli.cleanup
 acr.delete dmmeta.field  field:command.atf_awcli.snap
-acr.delete dmmeta.field  field:command.atf_awcli.snap
 acr.delete dmmeta.field  field:command.atf_awcli.keep_instance
+acr.delete dmmeta.field  field:command.atf_awcli.trace
 
 EOF
 
@@ -53,6 +53,7 @@ acr -merge -write <<EOF
     dmmeta.field  field:command.atf_awcli.cleanup              arg:bool          reftype:Val  dflt:false   comment:"perform cleanup before tests"
     dmmeta.field  field:command.atf_awcli.snap                 arg:bool          reftype:Val  dflt:false   comment:"include longrunnign snap ~ 40 sec "
     dmmeta.field  field:command.atf_awcli.keep_instance        arg:bool          reftype:Val  dflt:false   comment:"keep device/instance after test"
+    dmmeta.field  field:command.atf_awcli.trace                arg:algo.cstring  reftype:Val  dflt:'""'  comment:"Regx of things to trace"
 EOF
 
 

@@ -9,8 +9,10 @@ mkdir -p temp/atf_x2aws
 cat > "$input" <<EOF
 x2.ProcStartMsg  proc:x2aws  cmd:"\$bindir/x2aws -whoami -env:awsci1"
 x2.ProcReadMsg  proc:x2aws   until:awuser:awsx2admin 
-x2.ProcStartMsg  proc:x2aws1  cmd:"\$bindir/x2aws -describe  -devsnap:awsci1.sv1/sda1 -env:awsci1"
-x2.ProcReadMsg  proc:x2aws1   until:state:completed
+x2.ProcReadMsg  proc:x2aws   until:"" 
+x2.ProcStartMsg  proc:x2aws  cmd:"\$bindir/x2aws -describe  -devsnap:awsci1.sv1/sda1 -env:awsci1"
+x2.ProcReadMsg  proc:x2aws   until:state:completed
+x2.ProcReadMsg  proc:x2aws   until:"" 
 ams.TerminateMsg
 EOF
 

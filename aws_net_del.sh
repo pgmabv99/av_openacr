@@ -55,6 +55,34 @@ while IFS= read -r line; do
             --data-urlencode "RouteTableId=$RTB_ID" | grep -o '<return>[^<]*</return>' || true
 done <<< "$RTBS"
 
+# --- ENIs ---
+echo "--- ENIs ---"
+ENIS=$(awscurl \
+    --data-urlencode "Action=DescribeNetworkInterfaces" \
+    --data-urlencode "Version=2016-11-15" \
+    --data-urlencode "Filter.1.Name=tag:Name" \
+    --data-urlencode "Filter.1.Value.1=$PREFIX*" | python3 -c '
+import sys,json,xmltodict
+j=json.loads(json.dumps(xmltodict.parse(sys.stdin.read())))
+items=(j.get("DescribeNetworkInterfacesResponse",{}).get("networkInterfaceSet") or {}).get("item",[])
+if not isinstance(items,list): items=[items]
+for e in items:
+    tags=(e.get("tagSet") or {}).get("item",[])
+    if not isinstance(tags,list): tags=[tags]
+    name=next((t["value"] for t in tags if t.get("key")=="Name"),"")
+    print(e.get("networkInterfaceId",""), name)
+')
+
+while IFS= read -r line; do
+    [ -z "$line" ] && continue
+    ENI_ID=$(echo "$line" | awk '{print $1}')
+    NAME=$(echo "$line" | awk '{print $2}')
+    echo "  deleting ENI $ENI_ID ($NAME)"
+    awscurl --data-urlencode "Action=DeleteNetworkInterface" \
+            --data-urlencode "Version=2016-11-15" \
+            --data-urlencode "NetworkInterfaceId=$ENI_ID" | grep -o '<return>[^<]*</return>' || true
+done <<< "$ENIS"
+
 # --- Subnets ---
 echo "--- subnets ---"
 SUBNETS=$(awscurl \

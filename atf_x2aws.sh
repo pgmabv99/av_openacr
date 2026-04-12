@@ -13,6 +13,12 @@ x2.ProcReadMsg  proc:x2aws   until:""
 x2.ProcStartMsg  proc:x2aws  cmd:"\$bindir/x2aws -describe  -devsnap:awsci1.sv1/sda1 -env:awsci1"
 x2.ProcReadMsg  proc:x2aws   until:state:completed
 x2.ProcReadMsg  proc:x2aws   until:"" 
+x2.ProcStartMsg  proc:x2aws  cmd:"\$bindir/x2aws  -create     -awvpc:awsci1 -env:awsci1"
+x2.ProcReadMsg  proc:x2aws   until:"" 
+x2.ProcStartMsg  proc:x2aws  cmd:"\$bindir/x2aws  -describe   -awvpc:awsci1 -env:awsci1"
+x2.ProcReadMsg  proc:x2aws   until:"" 
+x2.ProcStartMsg  proc:x2aws  cmd:"\$bindir/x2aws  -del        -awvpc:awsci1 -env:awsci1"
+x2.ProcReadMsg  proc:x2aws   until:"" 
 ams.TerminateMsg
 EOF
 
